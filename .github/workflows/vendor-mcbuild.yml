@@ -1,0 +1,59 @@
+name: Vendor mcbuild upstream
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/vendor-mcbuild.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  vendor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout tooling repository
+        uses: actions/checkout@v4
+        with:
+          path: tooling
+
+      - name: Checkout upstream mcbuild
+        uses: actions/checkout@v4
+        with:
+          repository: harrynull/mcbuild
+          path: upstream
+          fetch-depth: 1
+
+      - name: Vendor upstream snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf tooling/vendor/mcbuild
+          mkdir -p tooling/vendor/mcbuild
+          rsync -a --delete --exclude='.git' upstream/ tooling/vendor/mcbuild/
+          git -C upstream rev-parse HEAD > tooling/vendor/mcbuild/UPSTREAM_COMMIT
+          {
+            echo "# Vendored mcbuild"
+            echo
+            echo "Source: https://github.com/harrynull/mcbuild"
+            echo
+            echo "This directory is an upstream snapshot used so Codex Cloud does not need to clone external source at task runtime."
+            echo
+            echo "Upstream commit: $(git -C upstream rev-parse HEAD)"
+          } > tooling/vendor/mcbuild/UPSTREAM.md
+
+      - name: Commit snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd tooling
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add vendor/mcbuild
+          if git diff --cached --quiet; then
+            echo "mcbuild snapshot already current."
+            exit 0
+          fi
+          git commit -m "vendor: sync upstream mcbuild"
+          git push
