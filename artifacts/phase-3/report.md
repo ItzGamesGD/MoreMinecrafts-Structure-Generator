@@ -4,7 +4,7 @@
 
 - **CAPABILITY PROBE:** PASS
 - **PHASE 3:** PASS
-- **GITHUB HANDOFF:** BRANCH CREATED; CONTENT COMMIT IN PROGRESS
+- **GITHUB HANDOFF:** PASS
 
 ## Capability probe
 
@@ -67,8 +67,8 @@
 
 - Base branch: `main` at `f15ab6764baabf01936a22714479e9fc6e6b7305`
 - Phase 3 branch: `phase-3/ruined-watchtower-2026-10-05`
-- Commit: pending
-- Pull request: pending
+- Phase 3 artifact commit: `f0c2ddb73f1556a8d4644a049fee390c2d522369`
+- Pull request: [#2](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/pull/2)
 
 ## Phase 3 repository files
 
