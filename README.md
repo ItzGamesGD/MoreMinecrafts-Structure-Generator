@@ -1,0 +1,2 @@
+# MoreMinecrafts-Structure-Generator
+test
