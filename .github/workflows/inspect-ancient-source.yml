@@ -1,0 +1,36 @@
+name: Inspect three vanilla Ancient City source NBT modules
+
+on:
+  push:
+    branches:
+      - prototype/ancient-city-armory-coldstore-statue-20261014
+    paths:
+      - tools/inspect_vanilla_ancient_nbt.py
+      - .github/workflows/inspect-ancient-source.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect-originals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: astral-sh/setup-uv@v6
+      - name: Install vendored mcbuild dependencies
+        working-directory: vendor/mcbuild
+        run: uv sync --frozen --extra dev
+      - name: Read pinned vanilla NBTs and record exact coordinate maps
+        run: vendor/mcbuild/.venv/bin/python tools/inspect_vanilla_ancient_nbt.py
+      - name: Publish coordinates and source geometry reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: three-vanilla-source-layouts
+          path: out/ancient-city-source-inspection/
+          if-no-files-found: warn
