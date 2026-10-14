@@ -209,6 +209,24 @@ def ice_box(r):
     for x,z in ((8,6),(10,10)):
         r.set(x,3,z,"soul_lantern[hanging=true]","pantry_light")
 
+    # Rebuild a compact roof over the cold pantry, without changing the
+    # original exposed blue-ice blocks, access hatch or original jigsaws.
+    for x in range(5,18):
+        for z in range(1,14):
+            rise=min(x-5,17-x)//3
+            y=7+rise
+            if r.get((x,y,z))=="air":
+                facing="east" if x<=11 else "west"
+                block="deepslate_tile_stairs[facing="+facing+",half=bottom]"
+                r.set(x,y,z,block,"roof_restoration")
+    for z in (2,12):
+        for x in range(6,17):
+            if r.get((x,6,z))=="air":
+                r.set(x,6,z,"deepslate_bricks","upper_wall_restoration")
+    for x,z in ((6,2),(16,2),(6,12),(16,12)):
+        if r.get((x,5,z))=="air":
+            r.set(x,5,z,"polished_basalt[axis=y]","roof_support")
+
 def small_statue(r):
     assert r.size==(10,8,8)
     # No altered sculpture or candles: only fill two asymmetric corner gaps.
