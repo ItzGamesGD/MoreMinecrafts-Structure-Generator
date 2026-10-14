@@ -104,3 +104,19 @@ for x, z in ((2, 7), (8, 7), (2, 14), (8, 14)):
 for x in range(1, 10):
     set_block(x, 7, 0, "deepslate_tile_slab[type=top]")
     set_block(x, 7, 8, "deepslate_tile_slab[type=top]")
+
+
+# Visual-review correction: the nave previously had NO ROOF.
+# Complete the chapel's front nave while preserving the tower's open parapet.
+for z in range(0, 8):
+    set_block(0, 7, z, "deepslate_bricks")
+    set_block(10, 7, z, "deepslate_bricks")
+for step in range(6):
+    for z in range(-1, 8):
+        set_block(step - 1, 8 + step, z, "deepslate_tile_stairs[facing=east,half=bottom,shape=straight]")
+        set_block(11 - step, 8 + step, z, "deepslate_tile_stairs[facing=west,half=bottom,shape=straight]")
+for z in range(-1, 8):
+    set_block(5, 14, z, "deepslate_tiles")
+for rise in range(1, 6):
+    for x in range(rise, 11 - rise):
+        set_block(x, 7 + rise, 0, "deepslate_bricks")
