@@ -1,113 +1,74 @@
-# tall_ruin_3: user-approved Ancient City peak-era restoration concept.
-# Independent Ancient City peak-era building concept.
-# This is a NEW interpretation, not an edited/verified vanilla NBT.
-# Entrance is centered on the SOUTH face (z=0); x east, y up.
-# Only the selected structure is built; no city/worldgen/other modules.
-def stone_floor(w, d):
-    floor(0, 0, w - 1, d - 1, 0, "polished_deepslate")
-    for x in range(w):
-        for z in range(d):
-            if x == 0 or z == 0 or x == w - 1 or z == d - 1:
-                set_block(x, 0, z, "deepslate_tiles")
-
-def doorway(cx):
-    clear(cx, 1, 0, cx, 2, 0)
-    set_block(cx, 1, 0, "dark_oak_door[facing=south,half=lower,hinge=left,open=false]")
-    set_block(cx, 2, 0, "dark_oak_door[facing=south,half=upper,hinge=left,open=false]")
-    set_block(cx, 3, 0, "chiseled_deepslate")
-
-def window(x, y, z):
-    set_block(x, y, z, "light_blue_stained_glass_pane")
-
-def house_shell(w, d, h):
-    stone_floor(w, d)
-    walls(0, 0, w - 1, d - 1, 1, h, "deepslate_bricks")
-    for y in range(1, h + 1):
-        for x, z in ((0, 0), (w - 1, 0), (0, d - 1), (w - 1, d - 1)):
-            set_block(x, y, z, "polished_basalt[axis=y]")
-    for x in range(1, w - 1, 3):
-        set_block(x, h, 0, "deepslate_tiles")
-        set_block(x, h, d - 1, "deepslate_tiles")
-    doorway(w // 2)
-    for x in (2, w - 3):
-        if x > 0 and x < w - 1 and x != w // 2:
-            window(x, 2, 0)
-            window(x, 2, d - 1)
-    for z in (2, d - 3):
-        if z > 0 and z < d - 1:
-            window(0, 2, z)
-            window(w - 1, 2, z)
-
-def pitched_roof(w, d, eave):
-    # Complete two-slope stone-tile roof with extended eaves and a ridge.
-    middle = (w - 1) // 2
-    for step in range(middle + 1):
-        y = eave + step
-        for z in range(-1, d + 1):
-            set_block(step - 1, y, z, "deepslate_tile_stairs[facing=east,half=bottom,shape=straight]")
-            set_block(w - step, y, z, "deepslate_tile_stairs[facing=west,half=bottom,shape=straight]")
-    for z in range(-1, d + 1):
-        set_block(middle, eave + middle + 1, z, "deepslate_tiles")
-    # Fill front/back triangular gables below the pitched roof.
-    for rise in range(1, middle + 1):
-        for x in range(rise, w - rise):
-            set_block(x, eave + rise, 0, "deepslate_bricks")
-            set_block(x, eave + rise, d - 1, "deepslate_bricks")
-
-def home_furniture(w, d):
-    # Real bed footprint: two complementary blocks on solid ground.
-    set_block(2, 1, d - 3, "blue_bed[facing=north,part=foot,occupied=false]")
-    set_block(2, 1, d - 4, "blue_bed[facing=north,part=head,occupied=false]")
-    set_block(w - 3, 1, d - 2, "chest[facing=north,type=single,waterlogged=false]")
-    set_block(w - 3, 1, 2, "crafting_table")
-    set_block(1, 1, d - 2, "bookshelf")
-    set_block(1, 2, d - 2, "soul_lantern[hanging=false]")
-
-def eave_trim(w, d, h):
-    for x in range(1, w - 1):
-        set_block(x, h + 1, 0, "deepslate_brick_slab[type=top]")
-        set_block(x, h + 1, d - 1, "deepslate_brick_slab[type=top]")
-
-# Priest church B: narrower high tower and side prayer alcove; not a watchtower.
-stone_floor(9, 13)
-walls(0, 0, 8, 12, 1, 7, "deepslate_bricks")
-walls(1, 5, 7, 12, 8, 16, "deepslate_tiles")
-doorway(4)
-clear(3, 7, 5, 5, 9, 5)
-for x in (1, 7):
-    for z in (3, 10):
-        set_block(x, 3, z, "light_blue_stained_glass_pane")
-for x in (2, 6):
-    for y in (11, 14):
-        set_block(x, y, 12, "light_blue_stained_glass_pane")
-for z in range(3, 6):
-    set_block(2, 1, z, "dark_oak_stairs[facing=east,half=bottom,shape=straight]")
-    set_block(6, 1, z, "dark_oak_stairs[facing=west,half=bottom,shape=straight]")
-set_block(4, 1, 10, "brewing_stand")
-set_block(3, 1, 10, "bookshelf")
-for y in range(1, 16):
-    set_block(2, y, 10, "ladder[facing=east]")
-floor(2, 9, 6, 11, 15, "deepslate_bricks")
-clear(2, 15, 10, 2, 15, 10)
-for x in range(0, 9):
-    set_block(x, 17, 5, "deepslate_tile_stairs[facing=north,half=bottom,shape=straight]")
-    set_block(x, 17, 12, "deepslate_tile_stairs[facing=south,half=bottom,shape=straight]")
-set_block(4, 18, 9, "chiseled_deepslate")
-set_block(4, 19, 9, "soul_lantern")
-for x in (1, 7):
-    set_block(x, 8, 0, "soul_lantern")
-
-
-# Visual-review correction: enclose the exposed lower prayer hall, not the tower balcony.
-for z in range(0, 5):
-    set_block(0, 8, z, "deepslate_bricks")
-    set_block(8, 8, z, "deepslate_bricks")
-for step in range(5):
-    for z in range(-1, 6):
-        set_block(step - 1, 9 + step, z, "deepslate_tile_stairs[facing=east,half=bottom,shape=straight]")
-        set_block(9 - step, 9 + step, z, "deepslate_tile_stairs[facing=west,half=bottom,shape=straight]")
-for z in range(-1, 6):
-    set_block(4, 14, z, "deepslate_tiles")
-for rise in range(1, 5):
-    for x in range(rise, 9 - rise):
-        set_block(x, 8 + rise, 0, "deepslate_bricks")
+# tall_ruin_3 revised silhouette after user review
+# Individual Ancient City structure prototype, not a vanilla NBT copy.
+# Entrance towards z=0; the Warden monument / worldgen is out of scope.
+def footing(x1,z1,x2,z2):
+    floor(x1,z1,x2,z2,0,"polished_deepslate")
+    for x in range(x1,x2+1):
+        for z in (z1,z2):set_block(x,0,z,"deepslate_tiles")
+    for z in range(z1,z2+1):
+        for x in (x1,x2):set_block(x,0,z,"deepslate_tiles")
+def shell(x1,z1,x2,z2,y1,y2):
+    walls(x1,z1,x2,z2,y1,y2,"deepslate_bricks")
+    for x in (x1,x2):
+        for z in (z1,z2):
+            for y in range(y1,y2+1):set_block(x,y,z,"polished_basalt[axis=y]")
+def door(x,z):
+    set_block(x,1,z,"dark_oak_door[facing=south,half=lower]")
+    set_block(x,2,z,"dark_oak_door[facing=south,half=upper]")
+    set_block(x,3,z,"chiseled_deepslate")
+def roof(x1,x2,z1,z2,eave):
+    # Low stepped gable avoids a fantasy cathedral silhouette.
+    for x in range(x1-1,x2+2):
+        rise=max(0,min(x-x1+1,x2+1-x)//2)
+        for z in range(z1-1,z2+2):
+            block="deepslate_tile_stairs[facing=east]" if x<=(x1+x2)//2 else "deepslate_tile_stairs[facing=west]"
+            set_block(x,eave+rise,z,block)
+    for z in (z1,z2):
+        for x in range(x1,x2+1):
+            rise=max(0,min(x-x1+1,x2+1-x)//2)
+            for y in range(eave,eave+rise):
+                set_block(x,y,z,"deepslate_bricks")
+def slit(x,y,z):
+    set_block(x,y,z,"light_blue_stained_glass_pane")
+def lantern(x,y,z):
+    set_block(x,y,z,"soul_lantern")
+# CHURCH B: village church variant with a narrow high tower and side vestry.
+footing(0,0,9,11)
+shell(1,0,7,5,1,12)
+shell(0,5,9,11,1,5)
+clear(3,1,5,5,4,5)
+door(4,0)
+for y in (4,5,8,9):slit(4,y,0)
+for z in (2,4):
+    slit(1,4,z)
+    slit(7,4,z)
+for z in (7,9):
+    slit(0,3,z)
+    slit(9,3,z)
+for z in (7,9):
+    set_block(2,1,z,"dark_oak_stairs[facing=east]")
+    set_block(7,1,z,"dark_oak_stairs[facing=west]")
+set_block(4,1,10,"brewing_stand")
+set_block(3,1,10,"bookshelf")
+set_block(5,1,10,"chest")
+for y in range(1,12):set_block(2,y,2,"ladder[facing=east]")
+floor(2,1,6,4,11,"deepslate_tiles")
+clear(2,11,2,2,11,2)
+for z in (1,4):
+    slit(1,11,z)
+    slit(7,11,z)
+# Open bell-chamber rim of a classic stone church tower.
+floor(0,-1,8,6,13,"deepslate_tiles")
+for x in (1,7):
+    for z in (0,5):set_block(x,14,z,"deepslate_brick_wall")
+for x in (1,4,7):
+    for z in (0,5):set_block(x,14,z,"deepslate_brick_wall")
+set_block(4,14,2,"chiseled_deepslate")
+lantern(4,15,2)
+roof(0,9,6,11,6)
+# Modest side entry overhang, distinctive from Church A.
+floor(-1,0,0,3,0,"deepslate_tiles")
+for y in range(1,4):set_block(-1,y,1,"polished_basalt[axis=y]")
+for x in (-1,0):
+    for z in range(0,4):set_block(x,4,z,"deepslate_tile_slab[type=top]")
+lantern(-1,3,2)
