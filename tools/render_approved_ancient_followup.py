@@ -253,6 +253,16 @@ def main():
         assert len(grid)>100
         image,labels,stats=build_contact_sheet(grid,VIEWS)
         image.save(out/"render.png")
+        # Review-only cutaway: remove upper materials in a COPY of the grid.
+        # Never change the native NBT or the exported full candidate schematic.
+        if name in ("barracks","ice_box_1"):
+            cutaway=grid.clone()
+            xlo,xhi,zlo,zhi=(3,16,3,13) if name=="barracks" else (6,17,2,12)
+            for (x,y,z),_ in list(cutaway.items()):
+                if xlo<=x<=xhi and zlo<=z<=zhi and y>=4:
+                    cutaway.clear_block(x,y,z)
+            detail,_,_=build_contact_sheet(cutaway,VIEWS)
+            detail.save(out/"interior_cutaway.png")
         export_schem(grid,str(out/"candidate.schem"))
         schem=nbtlib.load(out/"candidate.schem")["Schematic"]
         assert int(schem["Version"])==3
