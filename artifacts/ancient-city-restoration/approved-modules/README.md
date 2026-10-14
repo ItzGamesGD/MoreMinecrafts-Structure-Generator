@@ -1,29 +1,25 @@
-# Ancient City peak-era: approved modules only
+# Ancient City: approved individual module prototypes (feedback revision)
 
-**Status:** individual building BLUEPRINT CANDIDATES; not yet original-NBT aligned, visually approved, or merged. This is **not** a whole-city restoration.
+Scope: exactly 10 standalone buildings only. This folder is NOT a whole-city restore.
+The central Warden structure is reserved for the monumental/majestic landmark: DO NOT EDIT IT.
 
-Approved mappings:
-- `chamber_1/2/3` → three variant single-family residences.
-- `camp_1/2/3` → three variant residences, some retaining blue/cyan wool canopy and raised camp-platform vocabulary.
-- `tall_ruin_1/3` → priest churches with tall deepslate towers and brewing stands.
-- `tall_ruin_2/4` → two-story residences.
+| Source module | Role in the inhabited peak-era city |
+| --- | --- |
+| chamber_1, chamber_2, chamber_3 | Three residential units, unchanged this revision |
+| camp_1, camp_2, camp_3 | Three low-profile smithy/blacksmith silhouette variants |
+| tall_ruin_1, tall_ruin_3 | Modest vanilla-village-like church towers (no grand cathedral) |
+| tall_ruin_2 | Two-story home with upper-floor overhang, dormer, porch |
+| tall_ruin_4 | L-shaped upper-story home with side stairs and open rear terrace |
 
-Each folder contains a **standalone sandbox Python mcbuild DSL blueprint** with the same module basename as the vanilla jigsaw piece. The authoring entrance faces +z conceptually; paths were intentionally kept independent.
+Materials: deepslate bricks and tiles, polished deepslate, polished basalt, soul lanterns, limited blue/cyan and dark oak.
 
-All blueprints are **new interpretations** based on the user-approved role mapping, not geometric restoration verified against each vanilla Java 26.3 NBT. The actual vanilla footprints, junctions, jigsaw connectors, block palettes, and module-by-module transforms remain to be measured before any worldgen integration.
+Validation boundaries: blueprints are freshly conceived 3D structures, NOT original Minecraft Java jigsaw NBT restorations.
+Original module footprints, entry connections, jigsaw link orientation and structure metadata are NOT verified.
+Camp smithies are visual prototypes; no new smelting logic or villager professions have been implemented.
 
-Approved palette emphasizes `deepslate_bricks`, `deepslate_tiles`, `polished_deepslate`, `polished_basalt`, blue/cyan accents, and `soul_lantern`. Bed, doors, ladder and brewing stand are illustrative functional blocks, not gameplay hooks.
-
-## Hard scope fence
-
-Do not add any other original Ancient City structure, city center, streets, arena, death/nether variants, jigsaw placement, Fabric world generation, mobs, gameplay or global restore. Do not merge until user visual review.
-
-## Render/export
-
-From repository root with vendored mcbuild installed:
-
-```bash
+Generate previews and Sponge v3 schematic candidates via:
 vendor/mcbuild/.venv/bin/python tools/render_approved_ancient_modules.py
-```
 
-Output goes to `out/ancient-city-approved-modules/<piece>/` with `render.png`, `candidate.schem`, `report.json`, and combined `summary.json`. These are *candidates*, not final approvals. This batch covers **exactly 10** pieces.
+Outputs appear under out/ancient-city-approved-modules/<name>/.
+Action success proves sandbox execution and export checks, NOT Minecraft-client appearance or final artistic approval.
+Do not merge without user design review.

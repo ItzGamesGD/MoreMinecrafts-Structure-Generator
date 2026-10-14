@@ -47,8 +47,12 @@ def main() -> None:
         assert not any("sculk" in material for material in material_counts), name
         if name in ("tall_ruin_1", "tall_ruin_3"):
             assert any("brewing_stand" in material for material in material_counts), name
-        if name.startswith(("camp_", "chamber_")) or name in ("tall_ruin_2", "tall_ruin_4"):
+        if name.startswith("chamber_") or name in ("tall_ruin_2", "tall_ruin_4"):
             assert any("_bed" in material for material in material_counts), name
+        if name.startswith("camp_"):
+            assert any("anvil" in material for material in material_counts), name
+            assert any("smithing_table" in material for material in material_counts), name
+            assert any("blast_furnace" in material for material in material_counts), name
 
         image, labels, render_stats = build_contact_sheet(grid, VIEWS)
         assert image.size[0] > 100 and image.size[1] > 100
