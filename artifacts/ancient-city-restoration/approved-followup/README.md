@@ -7,7 +7,7 @@ Scope: ONLY barracks, ice_box_1, small_statue. Pillar and ruin families remain d
 | Vanilla structure | Peak-era use | Hard requirement |
 | --- | --- | --- |
 | barracks | Armoury | Original exterior and shrine remain; the space *below the new surface hatch* is a true underground room, not a ground-floor extension. Stocked weapons/armour, ladders, workstations, basement supports. |
-| ice_box_1 | Refrigerated food and grain store | Original ice, iron trapdoor and ladder stay. Wheat, seeds, raw meat and fish kept in new food storage barrels inside. |
+| ice_box_1 | Refrigerated food and grain store | Original ice, iron trapdoor and ladder stay; simple tiled shelter roof and wall repairs complete the cold store. Wheat, seeds, raw meat and fish are stocked in food barrels inside. |
 | small_statue | Conservatively restored small shrine | Keep original statue silhouette, candles and structural layout; only tiny corner-edge repairs. |
 
 ## Source and evidence
@@ -22,7 +22,7 @@ Scope: ONLY barracks, ice_box_1, small_statue. Pillar and ruin families remain d
 
     vendor/mcbuild/.venv/bin/python tools/render_approved_ancient_followup.py
 
-Output folder: out/ancient-city-followup/<module>/{candidate.nbt,candidate.schem,render.png,report.json}; aggregate summary.json.
+Output folder: out/ancient-city-followup/<module>/{candidate.nbt,candidate.schem,render.png,report.json}, plus interior_cutaway.png for barracks and ice_box_1; aggregate summary.json.
 
 ## Validation and limits
 
