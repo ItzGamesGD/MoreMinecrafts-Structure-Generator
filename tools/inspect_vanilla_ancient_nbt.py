@@ -37,7 +37,7 @@ def load_template(name: str):
     request = Request(url, headers={"User-Agent": "MoreMinecrafts-source-inspector"})
     with urlopen(request, timeout=60) as response:
         data = response.read()
-    sha = hashlib.sha1(f"blob {len(data)}\\0".encode() + data).hexdigest()
+    sha = hashlib.sha1(f"blob {len(data)}\0".encode() + data).hexdigest()
     assert sha == EXPECTED[name], (name, sha)
     with tempfile.TemporaryDirectory() as tmp:
         target = Path(tmp) / f"{name}.nbt"
@@ -117,7 +117,7 @@ def main():
     OUT.mkdir(parents=True,exist_ok=True)
     for name in EXPECTED:
         report=analyse(name)
-        (OUT/f"{name}.json").write_text(json.dumps(report,indent=2,ensure_ascii=False)+"\\n",encoding="utf-8")
+        (OUT/f"{name}.json").write_text(json.dumps(report,indent=2,ensure_ascii=False)+"\n",encoding="utf-8")
         summary={
             "module":name,
             "size_xyz":report["size_xyz"],
