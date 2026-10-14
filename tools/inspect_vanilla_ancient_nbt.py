@@ -43,7 +43,7 @@ def load_template(name: str):
         target = Path(tmp) / f"{name}.nbt"
         target.write_bytes(data)
         nbt = nbtlib.load(target)
-        return nbt.root, url, sha
+        return nbt, url, sha
 
 
 def analyse(name: str):
