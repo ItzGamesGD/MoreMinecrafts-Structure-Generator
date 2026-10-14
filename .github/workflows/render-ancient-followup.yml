@@ -1,0 +1,37 @@
+name: Restore approved Ancient City follow-up modules
+
+on:
+  push:
+    branches:
+      - prototype/ancient-city-armory-coldstore-statue-20261014
+    paths:
+      - tools/render_approved_ancient_followup.py
+      - tools/inspect_vanilla_ancient_nbt.py
+      - .github/workflows/render-ancient-followup.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render-3-native-modules:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: astral-sh/setup-uv@v6
+      - name: Install pinned vendor dependencies
+        working-directory: vendor/mcbuild
+        run: uv sync --frozen --extra dev
+      - name: Restore three original NBT templates and export candidates
+        run: vendor/mcbuild/.venv/bin/python tools/render_approved_ancient_followup.py
+      - name: Upload NBT schematics renders reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ancient-city-armory-coldstore-statue
+          path: out/ancient-city-followup/
+          if-no-files-found: warn
