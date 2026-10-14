@@ -96,3 +96,18 @@ set_block(4, 18, 9, "chiseled_deepslate")
 set_block(4, 19, 9, "soul_lantern")
 for x in (1, 7):
     set_block(x, 8, 0, "soul_lantern")
+
+
+# Visual-review correction: enclose the exposed lower prayer hall, not the tower balcony.
+for z in range(0, 5):
+    set_block(0, 8, z, "deepslate_bricks")
+    set_block(8, 8, z, "deepslate_bricks")
+for step in range(5):
+    for z in range(-1, 6):
+        set_block(step - 1, 9 + step, z, "deepslate_tile_stairs[facing=east,half=bottom,shape=straight]")
+        set_block(9 - step, 9 + step, z, "deepslate_tile_stairs[facing=west,half=bottom,shape=straight]")
+for z in range(-1, 6):
+    set_block(4, 14, z, "deepslate_tiles")
+for rise in range(1, 5):
+    for x in range(rise, 9 - rise):
+        set_block(x, 8 + rise, 0, "deepslate_bricks")
