@@ -89,12 +89,27 @@ def main():
         body=[old_function],type_ignores=[])), "<base ice_box>", "exec"),namespace)
     broken=Candidate("ice_box_1")
     namespace["ice_box"](broken)
+    baseline_containers={
+        p:(get_key(broken.palette[int(b["state"])]),str(b.get("nbt","")))
+        for p,b in broken.positions.items()
+        if get_key(broken.palette[int(b["state"])]).split("[",1)[0]
+           in ("minecraft:barrel","minecraft:chest")
+    }
     before=inspect(broken,"before-repair")
     assert not before["checks"]["ladder_support"], before["checks"]
     assert not before["checks"]["surface_boundary_to_ladder_open_hatch"], before["checks"]
 
     c=Candidate("ice_box_1")
     ice_box(c)
+    candidate_containers={
+        p:(get_key(c.palette[int(b["state"])]),str(b.get("nbt","")))
+        for p,b in c.positions.items()
+        if get_key(c.palette[int(b["state"])]).split("[",1)[0]
+           in ("minecraft:barrel","minecraft:chest")
+    }
+    assert candidate_containers==baseline_containers,(
+        "food container positions, states, or block entities changed",
+        baseline_containers,candidate_containers)
     c.verify()
     result=inspect(c,"repaired-candidate")
 
@@ -168,6 +183,7 @@ def main():
         "jigsaws_preserved":len(source_jigsaws),
         "original_ice_positions_preserved":len(source_ice),
         "original_container_positions_and_nbt_preserved":len(source_contents),
+        "candidate_food_container_count_and_nbt_preserved":len(baseline_containers),
         "original_iron_trapdoor_preserved":True,
         "ladder_support_positions":[[11,y,5] for y in (1,2,3)],
         "west_passage":west_route,
