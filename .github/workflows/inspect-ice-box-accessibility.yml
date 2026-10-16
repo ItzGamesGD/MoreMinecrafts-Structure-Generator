@@ -1,0 +1,59 @@
+name: Inspect ice_box_1 entrance and accessibility
+
+on:
+  push:
+    branches:
+      - inspection/ice-box-accessibility-20261016
+    paths:
+      - tools/inspect_ice_box_accessibility.py
+      - .github/workflows/inspect-ice-box-accessibility.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Guard inspection-only scope and exact base
+        shell: bash
+        run: |
+          python - <<'PY'
+          import subprocess
+          base="7ffa4ec3877f585d4cb205ffed610c9b06a81910"
+          subprocess.run(["git","merge-base","--is-ancestor",base,"HEAD"],check=True)
+          actual=subprocess.check_output(["git","rev-parse","origin/prototype/ancient-city-armory-coldstore-statue-20261014"],text=True).strip()
+          assert actual==base, ("Base moved; stop for review",actual)
+          allowed={"tools/inspect_ice_box_accessibility.py",".github/workflows/inspect-ice-box-accessibility.yml"}
+          paths=set(subprocess.check_output(["git","diff","--name-only",base,"HEAD"],text=True).splitlines())
+          assert paths<=allowed, ("Out-of-scope changes",sorted(paths-allowed))
+          print("Unchanged generator, source inspector, all approved modules and production workflows.")
+          PY
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: astral-sh/setup-uv@v6
+      - name: Install existing locked vendor dependencies
+        working-directory: vendor/mcbuild
+        run: uv sync --frozen --extra dev
+      - name: Inspect vanilla and reproduce existing ice_box_1 only
+        run: vendor/mcbuild/.venv/bin/python tools/inspect_ice_box_accessibility.py
+      - name: Publish human-readable diagnostic summary
+        if: always()
+        run: |
+          if [ -f out/ice-box-inspection/README.md ]; then
+            cat out/ice-box-inspection/README.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Upload maps accessibility results and diagnostic renders
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ice-box-inspection-${{ github.sha }}
+          path: out/ice-box-inspection/
+          if-no-files-found: error
+          retention-days: 14
