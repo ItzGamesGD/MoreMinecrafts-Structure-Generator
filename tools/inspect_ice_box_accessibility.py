@@ -24,6 +24,8 @@ FULL = {"deepslate", "cobbled_deepslate", "polished_deepslate",
         "smooth_basalt", "stone", "barrel", "note_block",
         "soul_soil"}
 AIR = {"air", "cave_air", "void_air", "structure_void"}
+# These fixtures have no entity collision; their presence is NOT activation proof.
+NO_COLLISION = {"stone_pressure_plate", "lever"}
 
 def plain(value):
     if isinstance(value, dict):
@@ -44,7 +46,8 @@ def add(a,b):
 
 class Geometry:
     """Conservative centered 0.6-wide, two-cell-high route model.
-    Partial blocks other than ladders/open hatch are obstacles. No jumping,
+    Partial blocks other than ladders/open hatch and known non-colliding
+    pressure plates/levers are conservatively obstacles. No jumping,
     swimming, crouching, diagonal corner cutting or external terrain assumed.
     Failed conservative paths are not a proof that all Minecraft routes fail.
     """
@@ -72,7 +75,7 @@ class Geometry:
         if not self.inside(p):
             return False
         name = self.name(p)
-        return (name in AIR or name == "ladder" or
+        return (name in AIR or name in NO_COLLISION or name == "ladder" or
                 (p==HATCH and opened))
     def blockers(self,p,opened=False):
         return [{"pos":q,"state":self.state(q)} for q in (p,add(p,(0,1,0)))
@@ -163,6 +166,8 @@ def inspect(c,label):
             "lid_above":g.state(add(p,(0,1,0))),
             "pass":bool(path)})
     results["containers"]=container_access
+    results["activation_fixtures"]=[{"pos":p,"state":g.state(p)}
+        for p in c.positions if g.name(p) in NO_COLLISION]
     for face in DIRECTIONS:
         # Surface y=4 top => feet y=5; boundary sampling is explicit, not
         # evidence that a city street actually exists outside that boundary.
@@ -235,7 +240,28 @@ def inspect(c,label):
     img.save(folder/"top-down-surface-y4.png")
     return results
 
+def model_self_test():
+    # Algorithm checks only. Never described as Minecraft player-input testing.
+    class Fixture:
+        size=(19,10,15)
+        positions={}
+    g=Geometry(Fixture())
+    g.blocks={(11,4,5):{"Name":"minecraft:polished_basalt"},
+              (11,5,5):{"Name":"minecraft:stone_pressure_plate"}}
+    assert g.node((11,5,5),False), "Pressure plates have no entity collision"
+    g.blocks[(11,6,5)]={"Name":"minecraft:deepslate"}
+    assert not g.node((11,5,5),False), "A full head obstruction must fail"
+    g.blocks={(11,2,4):{"Name":"minecraft:ladder","Properties":{"facing":"north"}},
+              (11,2,5):{"Name":"minecraft:deepslate"}}
+    assert g.ladder_valid((11,2,4))["pass"]
+    g.blocks.pop((11,2,5))
+    assert not g.ladder_valid((11,2,4))["pass"], "Unsupported ladder must fail"
+    g.blocks={HATCH:{"Name":"minecraft:iron_trapdoor"}}
+    assert not g.clear(HATCH,False) and g.clear(HATCH,True)
+    print("GEOMETRY_MODEL_SELF_TESTS=PASS (synthetic algorithm checks only)",flush=True)
+
 def main():
+    model_self_test()
     OUT.mkdir(parents=True,exist_ok=True)
     c=Candidate("ice_box_1")
     original=snapshot(c)
@@ -279,6 +305,9 @@ def main():
     print("ICE_BOX_LADDER="+json.dumps(existing["ladder"]),flush=True)
     print("ICE_BOX_CORRIDOR="+json.dumps(existing["ladder_to_pantry_probe"]),flush=True)
     print("ICE_BOX_HATCH="+json.dumps(existing["trapdoor"]),flush=True)
+    print("ICE_BOX_CONTROLS="+json.dumps(existing["activation_fixtures"]),flush=True)
+    print("ICE_BOX_SURFACE_PATHS="+json.dumps({f:v["closed_hatch_surface_path"]
+          for f,v in existing["approaches"].items()}),flush=True)
     print("ICE_BOX_APPROACHES="+json.dumps({f:{"pass":v["pass"],
           "valid_starts":v["valid_starts"],"path":v["open_hatch_to_ladder_path"]}
           for f,v in existing["approaches"].items()}),flush=True)
