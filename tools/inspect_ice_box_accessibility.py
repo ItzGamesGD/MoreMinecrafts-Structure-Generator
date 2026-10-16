@@ -215,7 +215,8 @@ def inspect(c,label):
         "lever":lever,"lever_support":lever_support,"iron_hatch":hatch,
         "plate_support_adjacent_to_hatch":plate_model,
         "lever_support_adjacent_to_hatch":lever_model,
-        "simulated":{"idle_closed":not (plate_model or lever_model),
+        "simulated":{"idle_closed":(g.props(HATCH).get("open")=="false" and
+                         g.props(HATCH).get("powered")=="false"),
                      "plate_pressed_opens":plate_model,
                      "lever_on_opens":lever_model},
     }
@@ -312,7 +313,7 @@ def main():
         "limitations":["No actual Minecraft client/player input.",
             "No external terrain or city placement/rotation verified.",
             "Conservative integer-height routes; partial shapes and stepping/jumping unresolved.",
-            "Open hatch evaluated conditionally; no redstone circuit simulation.",
+            "Open hatch evaluated conditionally; control wiring checked with a static adjacency model, not live redstone ticks.",
             "Barrel access means adjacent standing space; inventory interaction not tested.",
             "Cutaways are render copies, never structural edits."],
         "checks":existing["checks"]}
