@@ -189,7 +189,7 @@ def inspect(c,label):
             "closed_hatch_surface_path":closed_path,
             "open_hatch_to_ladder_path":path,
             "pass":bool(path),"reached":visited,"blocked_frontier":frontier}
-    corridor=[(11,1,z) for z in range(4,11)]
+    corridor=[(11,1,4),(10,1,4),(10,1,5),(10,1,6),(11,1,6)]
     results["ladder_to_pantry_probe"]=[
         {"feet":p,"body_blockers":g.blockers(p,True),
          "floor_state":g.state(add(p,(0,-1,0))),"pass":g.node(p,True)}
@@ -200,11 +200,34 @@ def inspect(c,label):
         "rule":"Jigsaw orientation and final_state are evidence, not a walkable street.",
         "surface_boundary_feet_y":5,
         "geometrically_reachable_faces":[f for f,v in results["approaches"].items() if v["pass"]]}
+    plate,plate_support,lever,lever_support=(11,5,5),(11,4,5),(11,3,3),(11,4,3)
+    hatch=HATCH
+    plate_model=(g.name(plate)=="stone_pressure_plate"
+        and g.name(plate_support)=="polished_basalt"
+        and sum(abs(a-b) for a,b in zip(plate_support,hatch))==1)
+    lever_model=(g.name(lever)=="lever"
+        and g.props(lever).get("face")=="ceiling"
+        and g.name(lever_support)=="deepslate_tiles"
+        and sum(abs(a-b) for a,b in zip(lever_support,hatch))==1)
+    results["trapdoor"]["static_control_model"]={
+        "classification":"static vanilla adjacent-block power model; not Minecraft interaction testing",
+        "pressure_plate":plate,"pressure_plate_support":plate_support,
+        "lever":lever,"lever_support":lever_support,"iron_hatch":hatch,
+        "plate_support_adjacent_to_hatch":plate_model,
+        "lever_support_adjacent_to_hatch":lever_model,
+        "simulated":{"idle_closed":not (plate_model or lever_model),
+                     "plate_pressed_opens":plate_model,
+                     "lever_on_opens":lever_model},
+    }
     results["checks"]={
         "dimensions_19_10_15":c.size==(19,10,15),
         "ladder_support":all(x["pass"] for x in ladder),
         "hatch_above_clear":not g.blockers((11,5,4)),
         "ladder_to_pantry_probe":all(g.node(p,True) for p in corridor),
+        "iron_hatch_static_redstone_path":plate_model and lever_model,
+        "entrance_markers_present":all(g.name((x,5,4))=="deepslate_bricks" and
+            g.name((x,6,4))=="blue_ice" and g.name((x,5,5))=="soul_lantern"
+            for x in (10,12)),
         "surface_boundary_to_ladder_open_hatch":any(v["pass"] for v in results["approaches"].values()),
         "all_container_sides_reachable":all(v["pass"] for v in container_access),
         "iron_hatch_activation_verified":False}
