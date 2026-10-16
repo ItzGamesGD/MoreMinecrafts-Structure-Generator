@@ -2,9 +2,12 @@
 """Regression and delivery checks for the Ancient City ice box."""
 from __future__ import annotations
 from collections import deque
+import ast
+import subprocess
 import json
 import math
 from pathlib import Path
+from PIL import Image
 
 import nbtlib
 from mcbuild.export.schem import export_schem
@@ -12,6 +15,7 @@ from inspect_ice_box_accessibility import Candidate, Geometry, inspect
 from render_approved_ancient_followup import get_key, get_name, ice_box
 
 OUT=Path("out/ice-box-inspection")
+BASE="7ffa4ec3877f585d4cb205ffed610c9b06a81910"
 
 def state(c,p):
     b=c.positions.get(p)
@@ -44,8 +48,7 @@ def redstone_model(c, plate_pressed: bool, lever_on: bool) -> bool:
 
 def reachable_lever_position(c):
     g=Geometry(c)
-    nodes,edges=g.graph(True)
-    path,visited=g.search([(11,1,4)],set(edges),set())
+    _,edges=g.graph(True)
     # Explicit BFS because a distance-reach node need not be the first goal.
     start=(11,1,4)
     if start not in edges:return []
@@ -74,6 +77,21 @@ def main():
                 ("minecraft:ice","minecraft:packed_ice","minecraft:blue_ice")}
     source_contents={p:v for p,v in source_snapshot.items()
                      if v[0].split("[",1)[0] in ("minecraft:barrel","minecraft:chest")}
+
+    # Reproduce the exact base-branch ice_box function as the before image.
+    baseline_source=subprocess.check_output(
+        ["git","show",f"{BASE}:tools/render_approved_ancient_followup.py"],text=True)
+    tree=ast.parse(baseline_source)
+    old_function=next(n for n in tree.body
+                      if isinstance(n,ast.FunctionDef) and n.name=="ice_box")
+    namespace={}
+    exec(compile(ast.fix_missing_locations(ast.Module(
+        body=[old_function],type_ignores=[])), "<base ice_box>", "exec"),namespace)
+    broken=Candidate("ice_box_1")
+    namespace["ice_box"](broken)
+    before=inspect(broken,"before-repair")
+    assert not before["checks"]["ladder_support"], before["checks"]
+    assert not before["checks"]["surface_boundary_to_ladder_open_hatch"], before["checks"]
 
     c=Candidate("ice_box_1")
     ice_box(c)
@@ -126,6 +144,13 @@ def main():
         assert c.get((x,5,5))=="soul_lantern"
     assert result["checks"]["hatch_above_clear"]
 
+    # Side-by-side renders use the exact base function and repaired function.
+    before_image=Image.open(OUT/"before-repair"/"exterior-four-directions.png").convert("RGB")
+    after_image=Image.open(OUT/"repaired-candidate"/"exterior-four-directions.png").convert("RGB")
+    comparison=Image.new("RGB",(before_image.width+after_image.width,before_image.height),(24,24,28))
+    comparison.paste(before_image,(0,0));comparison.paste(after_image,(before_image.width,0))
+    comparison.save(OUT/"before-after-exterior.png")
+
     # Export native NBT and visual schematic, then reload both.
     out=OUT/"repaired-candidate"
     out.mkdir(parents=True,exist_ok=True)
@@ -165,6 +190,7 @@ def main():
         ]+[{"pos":[x,6,4],"block":"blue_ice"} for x in (10,12)]
          +[{"pos":[x,5,5],"block":"soul_lantern"} for x in (10,12)],
         "actual_minecraft_client_gameplay":"NOT TESTED",
+        "before_repair_checks":before["checks"],
         "automated_checks":result["checks"],
     }
     (OUT/"summary.json").write_text(json.dumps(summary,indent=2)+"\n")
