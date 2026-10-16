@@ -68,7 +68,7 @@ def main():
     source=Candidate("ice_box_1")
     source_snapshot=dict(source.before)
     source_jigsaws={p:v for p,v in source_snapshot.items()
-                    if v[0]=="minecraft:jigsaw"}
+                    if v[0].split("[",1)[0]=="minecraft:jigsaw"}
     source_ice={p:v for p,v in source_snapshot.items()
                 if v[0].split("[",1)[0] in
                 ("minecraft:ice","minecraft:packed_ice","minecraft:blue_ice")}
