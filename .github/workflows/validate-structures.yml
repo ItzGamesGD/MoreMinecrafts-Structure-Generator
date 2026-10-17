@@ -59,7 +59,7 @@ jobs:
           java-version: "25"
       - uses: gradle/actions/setup-gradle@v4
       - name: Install Xvfb, llvmpipe and screenshot tools
-        run: sudo apt-get update && sudo apt-get install -y xvfb libgl1-mesa-dri libglx-mesa0 mesa-utils xdotool imagemagick python3
+        run: sudo apt-get update && sudo apt-get install -y xvfb libgl1-mesa-dri libglx-mesa0 mesa-vulkan-drivers mesa-utils vulkan-tools xdotool imagemagick python3
       - name: Build untouched datapack and verify bytes
         run: |
           python3 -m pip install -r requirements-export.txt
@@ -76,6 +76,13 @@ jobs:
           set -euo pipefail
           chmod +x validation/minecraft-visual/gradlew
           validation/minecraft-visual/run-acceptance.sh "$GITHUB_WORKSPACE" "$RUNNER_TEMP/sg01-datapack"
+      - name: Record software graphics capabilities
+        if: steps.runtime.outcome == 'success'
+        shell: bash
+        run: |
+          mkdir -p validation/minecraft-visual/evidence
+          xvfb-run -a -s '-screen 0 1280x720x24 +extension GLX +render' glxinfo -B > validation/minecraft-visual/evidence/graphics-capabilities.txt 2>&1 || true
+          xvfb-run -a -s '-screen 0 1280x720x24 +extension GLX +render' vulkaninfo --summary >> validation/minecraft-visual/evidence/graphics-capabilities.txt 2>&1 || true
       - name: Run Minecraft 26.3 client and capture in-game views
         if: steps.runtime.outcome == 'success'
         timeout-minutes: 12
