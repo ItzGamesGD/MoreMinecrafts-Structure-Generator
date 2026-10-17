@@ -1,0 +1,3 @@
+# mcbuild.palette imports the renderer's texture adapter for block metadata.
+# Pin this image dependency because PNG/GLB bytes are checked for reproducibility.
+Pillow==12.3.0

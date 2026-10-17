@@ -26,5 +26,6 @@ python3 examples/forgotten_kingdom/preview.py
 PYTHONPATH=vendor/mcbuild/src python3 -m unittest discover -s tests -v
 ```
 
-The export and tests use only the Python standard library plus the bundled mcbuild block registry. An actual Minecraft
+The exporter uses Python's standard library, the bundled mcbuild block registry, and Pillow for mcbuild's texture
+adapter (`python3 -m pip install -r requirements-export.txt`). An actual Minecraft
 26.3 client/server is still needed for in-game loading, world-generation, fluid, and visual validation.

@@ -1,0 +1,216 @@
+{
+  "assembled_coordinate_state_sha256": "d930f5f247b14e5de7206bcce67992414a7af08af27007842dceecca6e85c15d",
+  "assembled_solid_block_count": 8443,
+  "block_counts": {
+    "chiseled_tuff_bricks": 256,
+    "deepslate_brick_wall": 100,
+    "deepslate_bricks": 2588,
+    "deepslate_tiles": 3261,
+    "polished_deepslate": 561,
+    "sea_lantern": 9,
+    "stone_brick_stairs": 84,
+    "tuff_bricks": 1584
+  },
+  "covered_block_position_count": 8443,
+  "glb_bytes": 3601316,
+  "glb_embeds_texture_atlas": true,
+  "glb_sha256": "1344a0aee608d161ea14f1bb04f9ae6c8740ba2b3039026963db6d9a0f024e3e",
+  "glb_vertex_count": 112272,
+  "glb_world_bounds": [
+    [
+      -14.0,
+      55.0
+    ],
+    [
+      0.0,
+      17.0
+    ],
+    [
+      -14.0,
+      55.0
+    ]
+  ],
+  "limitations": [
+    "Texture atlas uses bundled mcbuild vanilla PNGs; deepslate_brick_wall maps to deepslate_bricks and stone_brick_stairs maps to stone_bricks.",
+    "Only SG-01's actual non-full block types are walls and stone-brick stairs. Wall connections are inferred from adjacent wall blocks.",
+    "Stair shape/facing is modeled; stair inner/outer corner state variants are represented as straight stair geometry.",
+    "Balcony wall neighbor/up and wall post states are approximated geometrically; no fences, slabs, entities, or mobs are present in the exported templates.",
+    "Preview rasterizer shades GLB triangles with representative block colors; the interactive GLB includes the block texture atlas."
+  ],
+  "model_materials": [
+    "chiseled_tuff_bricks",
+    "deepslate_brick_wall",
+    "deepslate_bricks",
+    "deepslate_tiles",
+    "polished_deepslate",
+    "sea_lantern",
+    "stone_brick_stairs",
+    "tuff_bricks"
+  ],
+  "parent_owned_shared_boundary_blocks": {
+    "east": 33,
+    "north": 33,
+    "south": 33,
+    "west": 33
+  },
+  "preview_png_sha256": {
+    "elevated-balconies-supports.png": "03703bb3df3bb5503c36e2ef75283796de180d17f8483ab5aec33aa882bb4f1a",
+    "exterior-isometric.png": "7c2f781f4af4c17a081485811a104a241d36e7c7690c4f06d65a17602228e51e",
+    "interior-central-plaza.png": "6a110648b54cd391e8fac42e6ae2438d33a775582e9724484689e35171e31f25",
+    "jigsaw-connections-diagnostic.png": "979a9a40087b6542d399ad4e9e63b13648d1e190a23b90742081ce0ecc1ed045",
+    "sectional-cutaway.png": "92847066796c0436079ccee2e8ddaf2ef1f79b16471a9b709addf67449288ebf",
+    "top-down-overview.png": "3825898fa3d3232d31613af81e8698ce2806598f3438798292184102d4df4a50"
+  },
+  "seams": {
+    "east": {
+      "room_connector": [
+        40,
+        1,
+        20
+      ],
+      "rotation": "none",
+      "seam_block": [
+        40,
+        1,
+        20
+      ],
+      "tunnel_connector_world": [
+        40,
+        1,
+        20
+      ],
+      "tunnel_origin": [
+        40,
+        0,
+        18
+      ]
+    },
+    "north": {
+      "room_connector": [
+        20,
+        1,
+        0
+      ],
+      "rotation": "none",
+      "seam_block": [
+        20,
+        1,
+        0
+      ],
+      "tunnel_connector_world": [
+        20,
+        1,
+        0
+      ],
+      "tunnel_origin": [
+        18,
+        0,
+        -14
+      ]
+    },
+    "south": {
+      "room_connector": [
+        20,
+        1,
+        40
+      ],
+      "rotation": "none",
+      "seam_block": [
+        20,
+        1,
+        40
+      ],
+      "tunnel_connector_world": [
+        20,
+        1,
+        40
+      ],
+      "tunnel_origin": [
+        18,
+        0,
+        40
+      ]
+    },
+    "west": {
+      "room_connector": [
+        0,
+        1,
+        20
+      ],
+      "rotation": "none",
+      "seam_block": [
+        0,
+        1,
+        20
+      ],
+      "tunnel_connector_world": [
+        0,
+        1,
+        20
+      ],
+      "tunnel_origin": [
+        -14,
+        0,
+        18
+      ]
+    }
+  },
+  "source_block_bounds": [
+    [
+      -14,
+      55
+    ],
+    [
+      0,
+      17
+    ],
+    [
+      -14,
+      55
+    ]
+  ],
+  "source_nbt_sha256": {
+    "main_chamber": "abb0b09d4a7e7241e7c92775360e931e0df4ca4f6ca0a250f2211c07d8861ea9",
+    "tunnel_east": "e97d7ff3ec289dc4c035cd8d6c2509c7cbe377f9c5a7b5cf30ea156fa4735f28",
+    "tunnel_north": "5d5d09407fefe6a6400c39186e1a92c72e4caf07e755613e14ac4e3e7e829054",
+    "tunnel_south": "272e99dabf0b4f59e55685cd50083e328e071548aa68c7cfe9e38f492104095b",
+    "tunnel_west": "d6bcd042fe980bed3b3bf89ce0df5c7a864d84f4e2fbbe219f6ae82ec131977e"
+  },
+  "texture_sources": {
+    "chiseled_tuff_bricks": "chiseled_tuff_bricks.png",
+    "deepslate_brick_wall": "deepslate_bricks.png",
+    "deepslate_bricks": "deepslate_bricks.png",
+    "deepslate_tiles": "deepslate_tiles.png",
+    "polished_deepslate": "polished_deepslate.png",
+    "sea_lantern": "sea_lantern.png",
+    "stone_brick_stairs": "stone_bricks.png",
+    "tuff_bricks": "tuff_bricks.png"
+  },
+  "transforms": {
+    "main_chamber": [
+      0,
+      0,
+      0
+    ],
+    "tunnel_east": [
+      40,
+      0,
+      18
+    ],
+    "tunnel_north": [
+      18,
+      0,
+      -14
+    ],
+    "tunnel_south": [
+      18,
+      0,
+      40
+    ],
+    "tunnel_west": [
+      -14,
+      0,
+      18
+    ]
+  }
+}
