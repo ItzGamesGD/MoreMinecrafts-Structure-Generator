@@ -31,3 +31,22 @@ This is a **client startup/resource smoke**, not SG-01 validation. It does not i
 A follow-up temporary client harness must launch Minecraft 26.3 with this exact datapack, create or load a disposable world, verify the registered command/template IDs in game, and place the chamber and tunnel templates plus the assembled structure. It must set a fixed time/weather and GUI scale, capture at least 1280×720 screenshots of the plaza, upper walkway, supports/ceiling, four passages, and exterior, and upload those images to this PR. The current Beta smoke workflow supplies a virtual-display starting point but does not provide this world/command/screenshot harness.
 
 Until that run exists, the game-side placement and visual-quality verdicts remain **NOT RUN**. The current design is unchanged pending the requested screenshot review.
+
+## SG-01B automated acceptance harness
+
+The workflow now defines a disposable Fabric Loom client/server fixture at `validation/minecraft-visual/` and a bounded `minecraft-26-3-visual` job. It targets Java 25 and Minecraft 26.3 (Fabric Loader 0.19.5 / Fabric API 0.161.0+26.3), follows the referenced Beta runner's Ubuntu + Xvfb + Mesa llvmpipe setup, and limits the overall job to 30 minutes. The server loads a generated pack only after its full directory has passed the repository's byte-for-byte comparison against the committed export. It uses an isolated flat world, fixed seed 173, noon, clear weather and RCON enabled only on loopback.
+
+The job gates placement on the live `/datapack list enabled` result for `file/sg01`, then records `/place template` attempts for the main chamber and four tunnel resource paths and `/place structure moreminecrafts:forgotten_kingdom/central_cavern`. A quick-play Minecraft client connects to that server at 1280×720 under Xvfb/llvmpipe; the client options set GUI scale 2. RCON moves the player to documented fixed positions and yaw/pitch; `F2` writes each actual Minecraft frame. Logs, camera commands and screenshots are uploaded as the workflow artifact. This is a test-only launch fixture; it adds no gameplay content and does not change the cavern design.
+
+The harness source is documented in [`validation/minecraft-visual/README.md`](../../validation/minecraft-visual/README.md). Runtime outcomes must be filled in from the GitHub Actions run. Until that run produces the runtime log and PNG artifact, client startup, datapack/resource loading, live placements, assembly and screenshots remain **NOT RUN**. The previous GLB-derived previews are not runtime evidence.
+
+### Latest SG-01B run
+
+- Workflow run: **NOT RUN** (run after this change is pushed to PR #5)
+- Minecraft server/client: **NOT RUN**
+- Datapack recognized and loaded: **NOT RUN**
+- `/place template` chamber + four tunnels: **NOT RUN**
+- `/place structure` Jigsaw assembly: **NOT RUN**
+- Actual Minecraft screenshots: **NOT RUN**
+- Structural validation: **NOT RUN**
+- Architectural visual-quality review: **NOT RUN** (awaiting screenshots; no redesign made)

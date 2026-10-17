@@ -1,0 +1,29 @@
+plugins {
+    id 'fabric-loom' version '1.17.21'
+}
+
+group = 'dev.itzgamesgd.validation'
+version = '1.0.0'
+base { archivesName = 'sg01-visual-validation' }
+
+repositories { mavenCentral() }
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings loom.officialMojangMappings()
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+}
+
+loom {
+    runs {
+        client {
+            client()
+            runDir = 'run/client'
+        }
+        server {
+            server()
+            runDir = 'run/server'
+        }
+    }
+}
