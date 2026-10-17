@@ -1,0 +1,34 @@
+name: Validate structure exports
+
+on:
+  pull_request:
+    paths:
+      - "structure_export/**"
+      - "examples/forgotten_kingdom/**"
+      - "exports/sg-01/**"
+      - "tests/**"
+      - ".github/workflows/validate-structures.yml"
+  push:
+    paths:
+      - "structure_export/**"
+      - "examples/forgotten_kingdom/**"
+      - "exports/sg-01/**"
+      - "tests/**"
+      - ".github/workflows/validate-structures.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  portable-export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify exported pack is reproducible
+        run: python3 examples/forgotten_kingdom/build_cavern.py "$RUNNER_TEMP/sg01-datapack"
+      - name: Run export and Jigsaw tests
+        run: PYTHONPATH=vendor/mcbuild/src python3 -m unittest discover -s tests -v
