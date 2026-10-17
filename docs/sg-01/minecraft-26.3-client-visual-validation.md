@@ -42,8 +42,8 @@ The harness source is documented in [`validation/minecraft-visual/README.md`](..
 
 ### Latest SG-01B run
 
-- [Workflow run #15](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39059078466): **FAIL** in the Minecraft fixture configuration step; the independent portable-export job **PASS**ed.
-- Runtime log artifact: [download from run #15](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39059078466/artifacts/12110806008). It records the fixture's Gradle configuration failure.
+- [Workflow run #17](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39064242089), on the final report commit: **FAIL** in the Minecraft fixture configuration step; the independent portable-export job **PASS**ed.
+- Runtime log artifact: [download from run #17](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39064242089/artifacts/12112612092). It records the fixture's Gradle configuration failure.
 - Minecraft server/client: **NOT RUN**. Fabric Loom failed before either runtime launched: `Could not find method modImplementation() ...` in the fixture's `build.gradle` dependency block.
 - Datapack recognized and loaded: **NOT RUN**. Export generation and byte comparison did pass before the fixture failure, but the runtime never opened the disposable world.
 - `/place template` chamber + four tunnels: **NOT RUN**.
@@ -52,4 +52,4 @@ The harness source is documented in [`validation/minecraft-visual/README.md`](..
 - Structural validation: **NOT RUN in game**. Existing static Jigsaw seam/orientation tests remain **PASS** in the portable-export job.
 - Architectural visual-quality review: **NOT RUN** (awaiting real screenshots; no redesign made).
 
-The fixture was limited to three CI repair attempts. The remaining build-configuration failure is the concrete blocker at this checkpoint; further runtime claims or screenshot links are intentionally absent until a later authorized repair and successful run.
+An earlier run on the same fixture, [run #15](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39059078466), showed the same dependency configuration failure. The remaining build-configuration failure is the concrete blocker at this checkpoint; further runtime claims or screenshot links are intentionally absent until a later authorized repair and successful run.
