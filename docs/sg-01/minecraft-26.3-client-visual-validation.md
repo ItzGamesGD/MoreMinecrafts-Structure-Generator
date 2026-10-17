@@ -36,20 +36,19 @@ Until that run exists, the game-side placement and visual-quality verdicts remai
 
 The workflow now defines a disposable Fabric Loom client/server fixture at `validation/minecraft-visual/` and a bounded `minecraft-26-3-visual` job. It targets Java 25 and Minecraft 26.3 (Fabric Loader 0.19.5 / Fabric API 0.161.0+26.3), follows the referenced Beta runner's Ubuntu + Xvfb + Mesa llvmpipe setup, and limits the overall job to 30 minutes. The server loads a generated pack only after its full directory has passed the repository's byte-for-byte comparison against the committed export. It uses an isolated flat world, fixed seed 173, noon, clear weather and RCON enabled only on loopback.
 
-The job gates placement on the live `/datapack list enabled` result for `file/sg01`, then records `/place template` attempts for the main chamber and four tunnel resource paths and `/place structure moreminecrafts:forgotten_kingdom/central_cavern`. A quick-play Minecraft client connects to that server at 1280×720 under Xvfb/llvmpipe; the client options set GUI scale 2. RCON moves the player to documented fixed positions and yaw/pitch; `F2` writes each actual Minecraft frame. Logs, camera commands and screenshots are uploaded as the workflow artifact. This is a test-only launch fixture; it adds no gameplay content and does not change the cavern design.
+The job first runs a configuration-only Gradle `help` step with a five-minute timeout. It does not launch Minecraft. Only after that gate passes does the bounded server task run. The job gates placement on the live `/datapack list enabled` result for `file/sg01`, then records `/place template` attempts for the main chamber and four tunnel resource paths and `/place structure moreminecrafts:forgotten_kingdom/central_cavern`. A quick-play Minecraft client connects to that server at 1280×720 under Xvfb/llvmpipe; the client options set GUI scale 2. RCON moves the player to documented fixed positions and yaw/pitch; `F2` writes each actual Minecraft frame. Logs, camera commands and screenshots are uploaded as the workflow artifact. This is a test-only launch fixture; it adds no gameplay content and does not change the cavern design.
 
 The harness source is documented in [`validation/minecraft-visual/README.md`](../../validation/minecraft-visual/README.md). Runtime outcomes must be filled in from the GitHub Actions run. Until that run produces the runtime log and PNG artifact, client startup, datapack/resource loading, live placements, assembly and screenshots remain **NOT RUN**. The previous GLB-derived previews are not runtime evidence.
 
-### Latest SG-01B run
+### Latest SG-01B checkpoint
 
-- [Workflow run #17](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39064242089), on the final report commit: **FAIL** in the Minecraft fixture configuration step; the independent portable-export job **PASS**ed.
-- Runtime log artifact: [download from run #17](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39064242089/artifacts/12112612092). It records the fixture's Gradle configuration failure.
-- Minecraft server/client: **NOT RUN**. Fabric Loom failed before either runtime launched: `Could not find method modImplementation() ...` in the fixture's `build.gradle` dependency block.
-- Datapack recognized and loaded: **NOT RUN**. Export generation and byte comparison did pass before the fixture failure, but the runtime never opened the disposable world.
+- Prior final-head workflow [run #19](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39064385344): portable-export **PASS**; Minecraft visual job **FAIL** during Gradle configuration.
+- Exact prior failure: `Could not find method modImplementation() ...`. The fixture now uses the Beta project's `implementation` configuration for Fabric Loader and Fabric API.
+- A configuration-only `gradlew help` step now gates the Minecraft server/client launch. It has not yet been observed on GitHub Actions in this checkpoint.
+- Local configuration check: **NOT RUN** because the execution environment could not resolve `services.gradle.org` to download the wrapper distribution. Existing Python export/Jigsaw tests remain **PASS** locally.
+- Minecraft server/client: **NOT RUN** after the dependency correction.
+- Datapack recognized and loaded: **NOT RUN**.
 - `/place template` chamber + four tunnels: **NOT RUN**.
 - `/place structure` Jigsaw assembly: **NOT RUN**.
-- Actual Minecraft screenshots: **NOT RUN**. The uploaded artifact contains logs only; no Minecraft frames were produced.
-- Structural validation: **NOT RUN in game**. Existing static Jigsaw seam/orientation tests remain **PASS** in the portable-export job.
-- Architectural visual-quality review: **NOT RUN** (awaiting real screenshots; no redesign made).
-
-An earlier run on the same fixture, [run #15](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39059078466), showed the same dependency configuration failure. The remaining build-configuration failure is the concrete blocker at this checkpoint; further runtime claims or screenshot links are intentionally absent until a later authorized repair and successful run.
+- Actual Minecraft screenshots: **NOT RUN**. No Minecraft frames exist in this checkpoint.
+- Architectural visual-quality review: **NOT RUN**; no redesign made.

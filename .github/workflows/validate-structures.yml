@@ -65,9 +65,13 @@ jobs:
           python3 -m pip install -r requirements-export.txt
           python3 examples/forgotten_kingdom/build_cavern.py "$RUNNER_TEMP/sg01-datapack"
           diff -r exports/sg-01/forgotten-underground-kingdom/datapack "$RUNNER_TEMP/sg01-datapack"
+      - name: Configure Minecraft 26.3 Gradle fixture (no game launch)
+        timeout-minutes: 5
+        run: ./validation/minecraft-visual/gradlew --no-daemon -p validation/minecraft-visual help
       - name: Start Minecraft 26.3 server and perform live datapack acceptance
         id: runtime
         shell: bash
+        timeout-minutes: 12
         run: |
           set -euo pipefail
           chmod +x validation/minecraft-visual/gradlew
