@@ -42,11 +42,14 @@ The harness source is documented in [`validation/minecraft-visual/README.md`](..
 
 ### Latest SG-01B run
 
-- Workflow run: **NOT RUN** (run after this change is pushed to PR #5)
-- Minecraft server/client: **NOT RUN**
-- Datapack recognized and loaded: **NOT RUN**
-- `/place template` chamber + four tunnels: **NOT RUN**
-- `/place structure` Jigsaw assembly: **NOT RUN**
-- Actual Minecraft screenshots: **NOT RUN**
-- Structural validation: **NOT RUN**
-- Architectural visual-quality review: **NOT RUN** (awaiting screenshots; no redesign made)
+- [Workflow run #15](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39059078466): **FAIL** in the Minecraft fixture configuration step; the independent portable-export job **PASS**ed.
+- Runtime log artifact: [download from run #15](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39059078466/artifacts/12110806008). It records the fixture's Gradle configuration failure.
+- Minecraft server/client: **NOT RUN**. Fabric Loom failed before either runtime launched: `Could not find method modImplementation() ...` in the fixture's `build.gradle` dependency block.
+- Datapack recognized and loaded: **NOT RUN**. Export generation and byte comparison did pass before the fixture failure, but the runtime never opened the disposable world.
+- `/place template` chamber + four tunnels: **NOT RUN**.
+- `/place structure` Jigsaw assembly: **NOT RUN**.
+- Actual Minecraft screenshots: **NOT RUN**. The uploaded artifact contains logs only; no Minecraft frames were produced.
+- Structural validation: **NOT RUN in game**. Existing static Jigsaw seam/orientation tests remain **PASS** in the portable-export job.
+- Architectural visual-quality review: **NOT RUN** (awaiting real screenshots; no redesign made).
+
+The fixture was limited to three CI repair attempts. The remaining build-configuration failure is the concrete blocker at this checkpoint; further runtime claims or screenshot links are intentionally absent until a later authorized repair and successful run.
