@@ -42,6 +42,14 @@ How the isolated path works:
   and drops the current directory from `sys.path`.
 - The child starts with an **empty environment** (`OPENROUTER_API_KEY` is not visible to
   it) and a **fresh scratch working directory**, deleted afterwards.
+- After decoding the trusted request, the worker installs a Linux x86-64 **seccomp** filter
+  (kernel-enforced) before running any blueprint code. It rejects new file opens, socket
+  operations, process creation and several alternative kernel interfaces. The worker fails
+  closed if filter installation fails or the architecture is unsupported. This is a
+  syscall-restriction layer, **not** a general-purpose container or VM.
+- The worker uses a child-local uncolored palette while placing blocks; the parent later
+  re-resolves block state names and textures. This prevents legitimate dynamic block states
+  from requiring filesystem reads after syscall filtering.
 - CPU and address-space rlimits are applied (20 s CPU, 1 GiB address space). The parent
   enforces a 15 s deadline, kills an overdue child immediately, and always reaps the child.
 - Requests and results are **JSON only**. Nothing is unpickled from the child, because a
@@ -76,13 +84,26 @@ Verification (all run in this environment unless marked):
 | Loop regression: all three paths invoke the isolated executor; the in-process executor is forbidden in the same run | PASS |
 | Loop regression mutation: reverting one call site to in-process fails the test; starting `edit_region` from an empty grid fails the existing edit test | PASS (mutation caught) |
 | Child started on Windows | NOT RUN (no Windows environment; behavior is refusal by design) |
+| Linux kernel denies opening an external fixture file, creating a socket and forking a child | **PASS** (`tests/test_os_confinement.py`, GitHub Actions run #39103118228) |
+| Dynamic block state placement without opening texture files in the child; full agent loop regression | **PASS** (217 Python tests on GitHub Actions run #39103118228) |
+| Filesystem namespace isolation using Bubblewrap on Ubuntu runner | **BLOCKED** (runner permissions; no fallback to unconfined execution) |
 
-**Limitations that remain (not fixed here):**
+**Limitations that remain:**
 
-- The child still runs as the same OS user, with the same filesystem and network access. It
-  cannot read the API key, but it can read any file that user can read, and open network
-  connections. A real boundary needs a container, `nsjail`/seccomp, a no-network namespace,
-  or a dedicated low-privilege user. These are tracked as follow-ups.
+- Seccomp now blocks new file opens, network sockets, and process creation in the child on
+  Linux x86-64; real kernel denial tests pass. It does **not** unmount the host filesystem,
+  change the OS user, create a complete filesystem namespace, or prove that every possible
+  kernel escape route is closed. The trusted parent still has host access. This policy is
+  intentionally more restrictive than scratch-only file access: the blueprint cannot open
+  files even inside its scratch directory. Legitimate DSL execution does not require this.
+- Only Linux x86-64 is verified for the syscall filter. Other architectures and platforms
+  fail closed. New Linux syscall interfaces require security review when the policy changes.
+- We tested Bubblewrap on GitHub's Ubuntu 24.04 runner. Its network namespace setup failed
+  with `Failed RTM_NEWADDR: Operation not permitted`, and filesystem-only setup failed with
+  `setting up uid map: Permission denied` (diagnostic runs #39102073092 and #39102213166).
+  We did not bypass runner restrictions to force namespace isolation.
+- This is defense in depth, not a claim of perfect containment of arbitrary native code;
+  independent review is required before production exposure.
 - Blueprint `print()` output is discarded (the child's stdout is `/dev/null`). Previously it
   went to the server's stdout.
 - Each blueprint costs one interpreter start plus the `mcbuild` import (about 0.1 s measured).
@@ -176,11 +197,10 @@ overwritten. Now:
   Applying twice gives identical output. A deliberately drifted upstream fails with
   `patch does not apply` and exit 1.
 
-**Open:** the pristine reference used here is `origin/main:vendor/mcbuild`, because this
-environment cannot reach `harrynull/mcbuild` (only this repository is in scope). The
-`vendor-drift` job is the check that confirms that reference equals the pinned upstream
-`34ce86372d4c23f4d83d4e24fc256cb399d6c3e3`. Until that job passes on the PR, the claim
-"patches preserved against the real upstream" is unverified.
+**Verified:** GitHub Actions run #39103118228 independently fetched pinned upstream
+`34ce86372d4c23f4d83d4e24fc256cb399d6c3e3` and confirmed the committed vendor tree
+matches that upstream plus the local patch series. GitHub Actions still cannot create PRs
+under the current repository setting, so vendor-sync PR creation is a manual step.
 
 ## Summary
 
@@ -190,9 +210,10 @@ environment cannot reach `harrynull/mcbuild` (only this repository is in scope).
 | AST denylist bypass via frame, generator and code introspection | CONFIRMED; fixed; regression tests |
 | Full RCE, filesystem or process-spawn chain | NOT ATTEMPTED |
 | In-process execution as a boundary for LLM-authored blueprints | CONFIRMED as inadequate; **every LLM-facing path now runs isolated** |
-| Process isolation as a complete boundary | **Not achieved**: same OS user, unrestricted filesystem and network. Follow-up: container / nsjail / no-network |
+| OS-level file/network syscall restriction | **PASS for tested Linux x86-64 operations**: kernel seccomp denies new file opens, network sockets and forks; not a complete container boundary |
+| Full OS isolation | **Not achieved**: same OS user and mounted host filesystem; namespace attempts blocked by runner privileges |
 | Unauthenticated WebSocket server | CONFIRMED; fixed (required token, verified end to end) |
 | Missing Origin validation | CONFIRMED; fixed (`origins=[None]`, verified with HTTP 403) |
 | `/build` permission level 0 (any player) | CONFIRMED; raised to 2; Java **compile PASS**, runtime **NOT RUN** |
-| Vendored fixes overwritten by the next upstream sync | Fixed by patch series, fail-closed apply, drift check; **real-upstream drift check NOT YET RUN** |
+| Vendored fixes overwritten by the next upstream sync | Fixed by deterministic patch series and **GitHub vendor-drift PASS** |
 | Pre-existing: final protocol message dropped | Fixed; regression tests |

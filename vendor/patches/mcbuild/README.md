@@ -9,6 +9,7 @@ future upstream sync cannot silently overwrite them.
 | Path | Purpose |
 |---|---|
 | `0001-security-audit-2026-10-18.patch` | Fixes for the two 2026-10-18 audit findings (DSL sandbox, WebSocket server) and the Java `/build` permission level. |
+| `0002-os-syscall-confinement.patch` | Linux x86-64 seccomp file/network/process denial, child-side palette identity separation, and security regression tests. |
 | `../apply.sh` | Builds a tree from a pristine upstream checkout plus every patch here. Fails if any patch does not apply. |
 | `../make-patch.sh` | Regenerates a patch from the pristine upstream tree and the current `vendor/mcbuild`. |
 
@@ -46,10 +47,9 @@ diff -r -x .git -x UPSTREAM.md -x UPSTREAM_COMMIT /tmp/rebuilt vendor/mcbuild   
 
 ## Known limitations of this process
 
-- The first patch was generated against `origin/main:vendor/mcbuild`, used as a stand-in
-  for the pinned upstream snapshot. The `vendor-drift` job is what confirms that stand-in
-  equals `harrynull/mcbuild@34ce863`. Until that job passes on the PR, treat this as
-  unverified.
+- The first patch was generated against `origin/main:vendor/mcbuild` as a stand-in for
+  the pinned upstream snapshot. The `vendor-drift` job now **passes** against the actual
+  pinned `harrynull/mcbuild@34ce863` in GitHub Actions (#39103118228).
 - Patches cannot protect against an upstream change that touches the same lines. Those
   cases fail loudly (by design), so a human must reconcile them.
 - Upstream fixes should be proposed upstream. Once upstream contains a fix, drop the
@@ -73,3 +73,14 @@ diff -r -x .git -x UPSTREAM.md -x UPSTREAM_COMMIT /tmp/rebuilt vendor/mcbuild   
 - `mod/gradle/wrapper/gradle-wrapper.jar`: the missing wrapper bootstrap, plus regenerated
   scripts, so `./gradlew` works from a clean checkout.
 - Regression tests under `tests/`.
+
+## OS syscall restrictions (0002)
+
+- Linux x86-64 blueprint workers must successfully install a seccomp filter before running
+  untrusted code. File opens, sockets and process spawning are denied.
+- Unknown architectures and failed seccomp setup are not silently downgraded to
+  unconstrained execution.
+- Child-side palette calculation preserves block identity without opening rendering assets;
+  the trusted parent resolves texture and color metadata after JSON IPC.
+- The GitHub CI security tests exercise actual denial and legitimate blueprint generation.
+  Full process/filesystem namespace isolation is not claimed.
