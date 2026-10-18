@@ -48,70 +48,111 @@ done
 if [ "$ready" -ne 1 ]; then tail -200 "$fixture/run/logs/server.log"; mark_stage "$current_stage" FAIL "$result_file"; exit 1; fi
 mark_stage server-startup PASS "$result_file"
 current_stage=datapack-load
-# The enabled-pack query is the gate: no placement command is issued until the exact pack is live.
 python3 "$fixture/rcon.py" <<'CMDS' | tee "$evidence/runtime-commands.log"
 datapack list enabled
 CMDS
 grep -F 'file/sg01' "$evidence/runtime-commands.log"
 mark_stage datapack-load PASS "$result_file"
-# Offline-mode test clients require an explicit whitelist entry on the hosted runner.
+
+# NBT local origin is [0,0,0]. /place coordinates are absolute and use
+# rotation=none, mirror=none, so world = [x, y+100, z].
 python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
-whitelist add SG01Visual
+execute in minecraft:overworld run forceload add -64 -64 64 64
+execute in minecraft:overworld run time set noon
+execute in minecraft:overworld run weather clear
 CMDS
-# PlaceCommand rejects positions outside loaded chunks. Force-load only the test coordinates
-# so command results prove template/structure resolution rather than merely accepting syntax.
-python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
-forceload add -64 -64 64 64
-forceload add 0 0
-forceload add 100 0
-forceload add 130 0
-forceload add 160 0
-forceload add 190 0
-CMDS
-# These IDs are the resource paths in the exact loaded datapack.
 current_stage=template-placement
 python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
-place template moreminecrafts:forgotten_kingdom/central_cavern/main_chamber 0 100 0
-place template moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north 100 100 0
-place template moreminecrafts:forgotten_kingdom/central_cavern/tunnel_east 130 100 0
-place template moreminecrafts:forgotten_kingdom/central_cavern/tunnel_south 160 100 0
-place template moreminecrafts:forgotten_kingdom/central_cavern/tunnel_west 190 100 0
+execute in minecraft:overworld run place template moreminecrafts:forgotten_kingdom/central_cavern/main_chamber 0 100 0
 CMDS
-if grep -Eiq 'Unknown (structure|template)|Failed|Could not|Error executing|No key|That position is not loaded' "$evidence/runtime-commands.log"; then
-  echo 'Minecraft reported a placement or registry error.' >&2
-  exit 1
-fi
-for template in main_chamber tunnel_north tunnel_east tunnel_south tunnel_west; do
+grep -Fq 'RESULT Loaded template "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber" at 0, 100, 0' "$evidence/runtime-commands.log"
+mark_stage template-placement PASS "$result_file"
+
+# Sample a point for each non-air block state, checking live world queries and
+# then independently decoding the saved region MCA data.
+current_stage=template-world-write
+template_nbt="$repo/exports/sg-01/forgotten-underground-kingdom/datapack/data/moreminecrafts/structure/forgotten_kingdom/central_cavern/main_chamber.nbt"
+python3 - "$template_nbt" "$evidence/template-probes.commands" <<'PY'
+import sys
+from structure_export.nbt import read_nbt
+nbt = read_nbt(open(sys.argv[1], "rb").read())["value"]
+samples = {}
+for block in nbt["blocks"]:
+    state = nbt["palette"][block["state"]]
+    if state["Name"] == "minecraft:air":
+        continue
+    samples.setdefault(block["state"], (block["pos"], state))
+with open(sys.argv[2], "w") as out:
+    for i, (_state_id, (local, state)) in enumerate(samples.items()):
+        x, y, z = local
+        props = state.get("Properties", {})
+        suffix = "[" + ",".join(f"{k}={v}" for k, v in props.items()) + "]" if props else ""
+        block_id = state["Name"] + suffix
+        out.write(f"execute in minecraft:overworld if block {x} {100+y} {z} {block_id} run say SG01_TEMPLATE_PROBE_{i:02d}_MATCH\n")
+        out.write(f"execute in minecraft:overworld unless block {x} {100+y} {z} {block_id} run say SG01_TEMPLATE_PROBE_{i:02d}_MISS\n")
+PY
+python3 "$fixture/rcon.py" < "$evidence/template-probes.commands" | tee -a "$evidence/runtime-commands.log"
+python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
+save-all flush
+CMDS
+mkdir -p "$evidence/world/template-only"
+cp -a "$run/world/region/." "$evidence/world/template-only/"
+python3 "$fixture/probe-world.py" \
+  --region-dir "$evidence/world/template-only" \
+  --template "$template_nbt" --origin 0 100 0 \
+  --server-log "$fixture/run/logs/server.log" \
+  --output "$evidence/template-world-probes.json"
+python3 - "$evidence/template-world-probes.json" <<'PY'
+import json, sys
+r = json.load(open(sys.argv[1]))
+if r["saved_world_samples_matched"] != r["sample_count"]:
+    raise SystemExit("Saved chunk palette does not match all NBT-derived states")
+if any(s["rcon_probe"] != "MATCH" for s in r["samples"]):
+    raise SystemExit("At least one live explicit-overworld block probe did not match")
+PY
+mark_stage template-world-write PASS "$result_file"
+
+# Place connector templates separately to verify IDs, then verify the jigsaw
+# assembled world after the direct-template checks have passed.
+current_stage=connector-template-placement
+python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
+execute in minecraft:overworld run place template moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north 100 100 0
+execute in minecraft:overworld run place template moreminecrafts:forgotten_kingdom/central_cavern/tunnel_east 130 100 0
+execute in minecraft:overworld run place template moreminecrafts:forgotten_kingdom/central_cavern/tunnel_south 160 100 0
+execute in minecraft:overworld run place template moreminecrafts:forgotten_kingdom/central_cavern/tunnel_west 190 100 0
+CMDS
+for template in tunnel_north tunnel_east tunnel_south tunnel_west; do
   grep -Fq "RESULT Loaded template \"moreminecrafts:forgotten_kingdom/central_cavern/$template\"" "$evidence/runtime-commands.log"
 done
-mark_stage template-placement PASS "$result_file"
-# Verify a source-NBT block is present immediately after `/place template`,
-# before the Jigsaw command can replace or obscure the chamber at this position.
-current_stage=template-world-write
-python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
-data get block 20 100 20
-execute if block 20 100 20 minecraft:polished_deepslate run say SG01_TEMPLATE_FLOOR_PRESENT
-CMDS
-if ! grep -Fq 'SG01_TEMPLATE_FLOOR_PRESENT' "$run/logs/server.log"; then
-  echo 'The successful /place template response did not produce the expected NBT floor block.' >&2
-  exit 1
-fi
-mark_stage template-world-write PASS "$result_file"
+mark_stage connector-template-placement PASS "$result_file"
+
 current_stage=jigsaw-placement
 python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
-place structure moreminecrafts:forgotten_kingdom/central_cavern 0 100 0
-time set noon
-weather clear
+execute in minecraft:overworld run place structure moreminecrafts:forgotten_kingdom/central_cavern 0 100 0
 CMDS
 grep -Fq 'RESULT Generated structure "moreminecrafts:forgotten_kingdom/central_cavern"' "$evidence/runtime-commands.log"
-# The generated structure must leave the same chamber floor at the placement origin.
 python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
-data get block 20 100 20
-execute if block 20 100 20 minecraft:polished_deepslate run say SG01_JIGSAW_FLOOR_PRESENT
+save-all flush
 CMDS
-if ! grep -Fq 'SG01_JIGSAW_FLOOR_PRESENT' "$run/logs/server.log"; then
-  echo 'The successful /place structure response did not produce the expected chamber floor block.' >&2
-  exit 1
-fi
+mkdir -p "$evidence/world/jigsaw-assembled"
+cp -a "$run/world/region/." "$evidence/world/jigsaw-assembled/"
+python3 "$fixture/probe-world.py" \
+  --region-dir "$evidence/world/jigsaw-assembled" \
+  --template "$template_nbt" --origin 0 100 0 \
+  --server-log "$fixture/run/logs/server.log" \
+  --jigsaw-transforms "$repo/exports/sg-01/forgotten-underground-kingdom/visual/validation-report.json" \
+  --output "$evidence/jigsaw-world-probes.json"
+python3 - "$evidence/jigsaw-world-probes.json" <<'PY'
+import json, sys
+r = json.load(open(sys.argv[1]))
+bad_passages = {d: p for d, p in r["jigsaw_passage_floor_probes"].items() if not p["match"]}
+bad_pieces = {n: p for n, p in r["jigsaw_piece_samples"].items() if p["matched"] != p["sample_count"]}
+if bad_passages or bad_pieces:
+    raise SystemExit(f"Jigsaw world-data mismatch: passages={bad_passages}; pieces={bad_pieces}")
+PY
 mark_stage jigsaw-placement PASS "$result_file"
+python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
+execute in minecraft:overworld run time set noon
+execute in minecraft:overworld run weather clear
+CMDS
 echo 'runtime-place=PASS'
