@@ -67,15 +67,20 @@ def bed(c, x, y, z, facing="south"):
     c.features.setdefault("beds", []).append([[x, y, z], [x + dx, y, z + dz]])
 
 
-def wall_state(pos, ring):
-    """deepslate_tile_wall state connecting to neighbouring ring cells (low connections, post at corners/ends)."""
+def wall_state(c, pos, ring):
+    """polished_deepslate_wall state (not in #ancient_city_replaceable, so the 5% block_rot processor cannot punch holes in it) connecting to neighbouring ring cells (low connections, post at corners/ends)."""
     x, y, z = pos
-    conn = {d: ((x + dx, y, z + dz) in ring) for d, (dx, dz) in
+    def joins(q):
+        # the game also joins walls to neighbouring full blocks (e.g. the retained ruin stubs at x=0/6, z=0)
+        return q in ring or (c.get_block(q) != "minecraft:air" and c.get_block(q).split("[")[0] not in
+                             ("minecraft:jigsaw", "minecraft:ladder", "minecraft:structure_void"))
+
+    conn = {d: joins((x + dx, y, z + dz)) for d, (dx, dz) in
             {"north": (0, -1), "east": (1, 0), "south": (0, 1), "west": (-1, 0)}.items()}
     straight = (conn["north"] and conn["south"] and not conn["east"] and not conn["west"]) or \
                (conn["east"] and conn["west"] and not conn["north"] and not conn["south"])
     props = ",".join(f"{d}={'low' if conn[d] else 'none'}" for d in ("east", "north", "south", "west"))
-    return f"deepslate_tile_wall[{props},up={'false' if straight else 'true'},waterlogged=false]"
+    return f"polished_deepslate_wall[{props},up={'false' if straight else 'true'},waterlogged=false]"
 
 
 def lantern_state(c, pos):
@@ -214,6 +219,9 @@ def house_medium_two(c):
         # Stage 24-C: a 1.8-block player on the stair's high half needs two clear cells above it. The
         # ground-floor roof tile at (5,4,5) and the upper west wall at (7,6,5) blocked the 2nd and 4th steps.
         clear(c, (x, y + 2, z), "stair_headroom")
+        # While stepping from this stair onto the next, the body still overlaps this cell at feet+0.5+1.8.
+        if (x, y, z) != stair_coords[-1]:
+            clear(c, (x, y + 3, z), "stair_step_headroom")
     # Reserve an open landing onto the raised floor.
     for y in (5, 6):
         clear(c, (8, y, 5))
@@ -328,14 +336,15 @@ def large_tower(c):
     for y in (1, 2):
         clear(c, (0, y, 2), "tower_entry_opening")
         clear(c, (1, y, 2), "tower_entry_tunnel")
-    for y in range(1, 13):
+    # Stage 24-C: the ladder must run up through the deck hatch (y=13) so a climber can step out onto the
+    # deck; ending it at y=12 left players hanging 1 block below the deck surface.
+    for y in range(1, 14):
         place(c, (3, y, 2), "polished_basalt[axis=y]", "ladder_support")
         # Stage 24-C: the ladder is mounted on the polished-basalt support at x=3 (faces west). The
         # former facing=east needed a block at x=1, which is the open entrance tunnel at y=1..2.
         place(c, (2, y, 2), "ladder[facing=west]", "tower_ladder")
         clear(c, (2, y + 1, 2), "ladder_headroom")
     # Top y=13 deck, y=14 retained outer parapet ring; open a ladder hatch through cap.
-    clear(c, (2, 13, 2), "observation_ladder_hatch")
     for x in (2, 3):
         for z in (2, 3):
             clear(c, (x, 14, z), "observation_opening")
@@ -343,7 +352,7 @@ def large_tower(c):
                 place(c, (x, 13, z), TILE, "observation_deck")
     for x, z in ((1, 1), (4, 1), (1, 4), (4, 4)):
         lamp(c, x, 12, z)
-    c.features.update({"entrance": [0, 2], "ladder_run": list(range(1, 13)),
+    c.features.update({"entrance": [0, 2], "ladder_run": list(range(1, 14)),
                        "observation_platform": [13, 2, 2, 3, 3], "landings": [2, 6, 10]})
 
 
@@ -393,7 +402,7 @@ def medium_tower(c):
     # blocks). Restore the intended parapet as a ring of tile walls on the deck perimeter at y=9.
     ring = [(x, 9, z) for x in range(1, 6) for z in range(1, 7) if x in (1, 5) or z in (1, 6)]
     for pos in ring:
-        place(c, pos, wall_state(pos, set(ring)), "observation_parapet")
+        place(c, pos, wall_state(c, pos, set(ring)), "observation_parapet")
     c.features["parapet"] = [list(p) for p in ring]
     c.features.update({"entrance": [3, 0], "ladder_run": list(range(1, 9)),
                        "observation_platform": [8, 1, 1, 5, 6], "guard_space": [1, 2, 1, 5, 6]})

@@ -5,19 +5,20 @@
     8,
     11
   ],
-  "change_count": 666,
+  "change_count": 665,
   "operation_counts": {
     "added": 660,
     "floor_repair": 157,
     "outer_wall": 148,
-    "replaced": 15,
+    "replaced": 16,
     "lower_wing_roof": 77,
     "upper_floor": 99,
     "upper_wall": 72,
     "upper_roof": 99,
     "upper_stair": 4,
+    "carved": 5,
+    "stair_step_headroom": 1,
     "stair_support": 3,
-    "carved": 4,
     "stair_headroom": 2,
     "interior_clearance": 2,
     "sleeping_bed": 4,
@@ -2088,19 +2089,6 @@
         4,
         4,
         4
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_tiles",
-      "reasons": [
-        "lower_wing_roof"
-      ]
-    },
-    {
-      "pos_xyz": [
-        4,
-        4,
-        5
       ],
       "action": "add",
       "original_state": "minecraft:air",

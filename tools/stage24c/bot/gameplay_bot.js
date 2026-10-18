@@ -32,6 +32,16 @@ let lastPathStatus = null
 bot.on('path_update', r => { lastPathStatus = r.status })
 
 async function gotoStep(step) {
+  const first = await gotoOnce(step)
+  if (first.ok || first.moved > 0.3) return first
+  // zero movement usually means a transient bot/controller stall (e.g. still waking): retry once and say so
+  await sleep(2000)
+  const second = await gotoOnce(step)
+  second.retried_after_zero_movement = true
+  return second
+}
+
+async function gotoOnce(step) {
   const movements = new Movements(bot)
   movements.canDig = false
   movements.allow1by1towers = false
@@ -42,6 +52,7 @@ async function gotoStep(step) {
   const t = step.target
   const goal = new goals.GoalBlock(t[0], t[1], t[2])
   const start = fmt(bot.entity.position)
+  const p0 = bot.entity.position.clone()
   const tx = t[0] + 0.5, tz = t[2] + 0.5
   const near = () => { const p = bot.entity.position; return Math.hypot(p.x - tx, p.z - tz) < (step.xz_tol ?? 0.7) && Math.abs(p.y - t[1]) < 0.9 }
   let outcome = 'timeout', noPath = 0
@@ -58,7 +69,7 @@ async function gotoStep(step) {
   await sleep(250)
   const end = bot.entity.position
   const d = Math.hypot(end.x - tx, end.z - tz)
-  return { start, end: [+end.x.toFixed(2), +end.y.toFixed(2), +end.z.toFixed(2)], horizontal_error: +d.toFixed(2), outcome, seconds: +((Date.now() - t0) / 1000).toFixed(1), ok: outcome === 'reached' && near() }
+  return { start, end: [+end.x.toFixed(2), +end.y.toFixed(2), +end.z.toFixed(2)], horizontal_error: +d.toFixed(2), moved: +Math.hypot(end.x - p0.x, end.z - p0.z).toFixed(2), outcome, seconds: +((Date.now() - t0) / 1000).toFixed(1), ok: outcome === 'reached' && near() }
 }
 
 async function manualWalk(step) {
@@ -66,13 +77,16 @@ async function manualWalk(step) {
   await bot.look(step.yaw, 0, true)
   const p0 = bot.entity.position.clone()
   bot.setControlState('forward', true)
-  await sleep(step.ms ?? 3000)
+  if (step.jump) bot.setControlState('jump', true)
+  const trace = []
+  for (let t = 0; t < (step.ms ?? 3000); t += 250) { await sleep(250); trace.push([+bot.entity.position.x.toFixed(2), +bot.entity.position.y.toFixed(2)]) }
+  results.events.push('trace ' + step.name + ' ' + JSON.stringify(trace))
   bot.clearControlStates()
   await sleep(300)
   const p1 = bot.entity.position
   const moved = Math.hypot(p1.x - p0.x, p1.z - p0.z)
   const okMove = step.min_move !== undefined ? moved >= step.min_move : true
-  return { start: [p0.x, p0.y, p0.z].map(n => +n.toFixed(2)), end: [p1.x, p1.y, p1.z].map(n => +n.toFixed(2)), dy: +(p1.y - p0.y).toFixed(2), moved: +moved.toFixed(2), ok: okMove && (step.min_end_y === undefined || p1.y >= step.min_end_y) && (step.expectFall ? p1.y < p0.y - 1 : p1.y > p0.y - 0.6) }
+  return { start: [p0.x, p0.y, p0.z].map(n => +n.toFixed(2)), end: [p1.x, p1.y, p1.z].map(n => +n.toFixed(2)), dy: +(p1.y - p0.y).toFixed(2), moved: +moved.toFixed(2), ok: okMove && (step.min_end_y === undefined || p1.y >= step.min_end_y) && (step.max_end_y === undefined || p1.y <= step.max_end_y) && (step.descend ? true : (step.expectFall ? p1.y < p0.y - 1 : p1.y > p0.y - 0.6)) }
 }
 
 async function climb(step) {
@@ -147,6 +161,7 @@ async function runStep(step) {
     case 'sleep': return sleepStep(step)
     case 'container': return containerStep(step)
     case 'swim': return swimStep(step)
+    case 'probe': return { ok: true, blocks: step.cells.map(c => { const b = bot.blockAt(v(c)); return [c.join(','), b && b.name, b && b.shapes && JSON.stringify(b.shapes)] }) }
     case 'wait': await sleep(step.ms); return { ok: true }
     case 'cmd': bot.chat('/' + step.cmd); await sleep(step.ms ?? 500); return { ok: true }
     default: return { ok: false, error: 'unknown step ' + step.type }

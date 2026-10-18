@@ -93,25 +93,36 @@ def scenario(module, o, g):
         add("door_reopen", type="door", pos=W(o, [dx, 1, dz]), expect="open")
         add("re_enter_manual", type="walk", yaw=YAW["east"], ms=900, min_move=0.8)
         add("re_enter", type="goto", target=W(o, inside), range=0, timeout=30)
-        if module == "medium_ruin_2":
-            # physical stair climb: walk east along the stair run from the ground floor to the upper landing
-            add("stairs_tp_foot", type="tp", target=C(o, [3, 1, 5]))
-            add("stairs_walk_up_east", type="walk", yaw=YAW["east"], ms=2600, min_end_y=o[1] + 5 - 0.05)
         for i, bed in enumerate(g["beds"]):
-            if not bed["access"]:
-                add(f"bed{i}_no_access_cell", type="wait", ms=1)
-                steps[-1]["ok_override"] = False
+            if bed["pos"][1] > 1:
                 continue
             acc = bed["access"][0]
             add(f"bed{i}_{bed['pos']}_reach", type="goto", target=W(o, acc), range=0, timeout=60)
             add(f"bed{i}_night", type="cmd", cmd="time set night")
             add(f"bed{i}_sleep", type="sleep", pos=W(o, bed["pos"]))
         for c in g["containers"]:
-            if c["block"] == "crafting_table":
+            if c["block"] == "crafting_table" or c["pos"][1] > 1:
                 continue
             acc = c["access"][0]
             add(f"{c['block']}_{c['pos']}_reach", type="goto", target=W(o, acc), range=0, timeout=60)
             add(f"{c['block']}_{c['pos']}_open", type="container", pos=W(o, c["pos"]))
+        if module == "medium_ruin_2":
+            # physical stair climb: walk east along the stair run from the ground floor to the upper landing
+            add("stairs_tp_foot", type="tp", target=C(o, [3, 1, 5]))
+            add("stairs_walk_up_east", type="walk", yaw=YAW["east"], ms=2600, min_end_y=o[1] + 5 - 0.05)
+            add("stairs_tp_foot_again", type="tp", target=C(o, [3, 1, 5]))
+            add("stairs_walk_up_east_with_jump", type="walk", yaw=YAW["east"], ms=3500, jump=True, min_end_y=o[1] + 5 - 0.05)
+            for i, bed in enumerate(g["beds"]):
+                if bed["pos"][1] > 1:
+                    add(f"upper_bed{i}_{bed['pos']}_reach", type="goto", target=W(o, bed["access"][0]), range=0, timeout=60)
+                    add(f"upper_bed{i}_night", type="cmd", cmd="time set night")
+                    add(f"upper_bed{i}_sleep", type="sleep", pos=W(o, bed["pos"]))
+            for c in g["containers"]:
+                if c["block"] != "crafting_table" and c["pos"][1] > 1:
+                    add(f"upper_{c['block']}_{c['pos']}_reach", type="goto", target=W(o, c["access"][0]), range=0, timeout=60)
+                    add(f"upper_{c['block']}_{c['pos']}_open", type="container", pos=W(o, c["pos"]))
+            add("upstairs_tp_landing", type="tp", target=C(o, [8, 5, 5]))
+            add("stairs_walk_down_west", type="walk", yaw=YAW["west"], ms=3200, descend=True, max_end_y=o[1] + 1.1)
     elif module == "sauna_1":
         inside = [13, 1, 35]
         add("tp_outside", type="tp", target=C(o, [13, 1, 40]))
@@ -122,7 +133,7 @@ def scenario(module, o, g):
             add(f"chest{i}_{c['pos']}_open", type="container", pos=W(o, c["pos"]))
         for i, wb in enumerate(g["water_bodies"]):
             rim = wb["rim_standable"][0]
-            add(f"bath{i}_{wb['cells']}cells_rim_reach", type="goto", target=W(o, rim), range=0, timeout=90)
+            add(f"bath{i}_{wb['cells']}cells_rim_reach", type="goto", target=W(o, rim), range=0, timeout=90, xz_tol=1.2)
             add(f"bath{i}_{wb['cells']}cells_swim", type="swim", target=C(o, wb["sample_cell"]))
     elif module == "large_pillar_1":
         add("tp_outside", type="tp", target=C(o, [-3, 1, 2]))

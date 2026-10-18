@@ -110,8 +110,8 @@ def analyse_seed(seed, src_root):
             continue
         others_overlap, others_touch = [], []
         for j, q in enumerate(cp):
-            if i == j:
-                continue
+            if i == j or not q["template"]:
+                continue  # empty pool elements carry a 1-block placeholder BB; they place nothing
             v = inter(p["bb"], q["bb"])
             if v:
                 others_overlap.append({"template": q["template"].split("/")[-1], "bb": q["bb"], "volume": v})
@@ -138,6 +138,7 @@ def analyse_seed(seed, src_root):
             rec["model_bb_z"] = [origin[2] + min(q[2] for q in pts), origin[2] + max(q[2] for q in pts)]
             rec["model_matches_piece_bb"] = (rec["model_bb_x"] == [p["bb"][0], p["bb"][3]] and rec["model_bb_z"] == [p["bb"][2], p["bb"][5]])
             cls, samples = Counter(), []
+            crit = {}
             template_cells = set()
             for pos, (st, _) in blocks.items():
                 if st.startswith(("minecraft:jigsaw", "minecraft:structure_void")):
@@ -148,9 +149,18 @@ def analyse_seed(seed, src_root):
                 got = world.block(*w)
                 c = classify(rotate_state(st, r), got)
                 cls[c] += 1
+                n_ = st.split("[")[0].replace("minecraft:", "")
+                cat = ("ladder" if n_ == "ladder" else "stairs" if n_.endswith("_stairs") else "parapet_wall" if n_.endswith("_wall")
+                       else "lantern" if n_ == "soul_lantern" else "bed" if n_.endswith("_bed") else "door" if n_.endswith("_door")
+                       else "container" if n_ in ("chest", "barrel") else None)
+                if cat:
+                    t_ = crit.setdefault(cat, [0, 0])
+                    t_[0] += 1
+                    t_[1] += 1 if c in ("removed_to_air", "replaced_by_other") else 0
                 if c in ("replaced_by_other",) and len(samples) < 6:
                     samples.append({"rel": list(pos), "world": list(w), "expected": st, "got": got})
             rec["block_replacement"] = dict(cls)
+            rec["critical_blocks_total_lost"] = crit
             rec["block_replacement_samples"] = samples
             # what fills the BB cells the template does not specify?
             fill = Counter()
@@ -166,7 +176,7 @@ def analyse_seed(seed, src_root):
             tot = sum(fill.values())
             rec["unspecified_cells"] = tot
             rec["unspecified_air_fraction"] = round(fill.get("air", 0) / tot, 3) if tot else None
-            rec["unspecified_solid_fraction"] = round(sum(v for k, v in fill.items() if k not in ("air", "cave_air", "void_air", "water", "unloaded")) / tot, 3) if tot else None
+            rec["unspecified_solid_fraction"] = round(sum(v for k, v in fill.items() if k not in ("air", "cave_air", "void_air", "water", "unloaded", "sculk_vein", "glow_lichen", "vine")) / tot, 3) if tot else None
             # terrain exposure: 1-block shell around the BB
             shell = Counter()
             for x in range(bb[0] - 1, bb[3] + 2):

@@ -45,7 +45,7 @@ def test_sauna_protects_water_rims_chests_and_stairs(candidates):
 
 def test_large_tower_is_ladder_connected_and_has_observation_platform(candidates):
     c = candidates["large_pillar_1"]
-    assert c.features["ladder_run"] == list(range(1, 13))
+    assert c.features["ladder_run"] == list(range(1, 14))
     assert c.features["observation_platform"]
     assert c.features["entrance"]
 

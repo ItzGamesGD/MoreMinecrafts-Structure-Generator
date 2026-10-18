@@ -684,7 +684,7 @@
       ],
       "action": "add",
       "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_tile_wall[east=low,north=none,south=low,up=true,waterlogged=false,west=none]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=low,north=none,south=low,up=true,waterlogged=false,west=none]",
       "reasons": [
         "observation_parapet"
       ]
@@ -697,7 +697,7 @@
       ],
       "action": "replace",
       "original_state": "minecraft:polished_deepslate",
-      "restored_state": "minecraft:deepslate_tile_wall[east=none,north=low,south=low,up=false,waterlogged=false,west=none]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=none,north=low,south=low,up=false,waterlogged=false,west=none]",
       "reasons": [
         "observation_headroom",
         "observation_parapet"
@@ -711,7 +711,7 @@
       ],
       "action": "replace",
       "original_state": "minecraft:deepslate[axis=y]",
-      "restored_state": "minecraft:deepslate_tile_wall[east=none,north=low,south=low,up=false,waterlogged=false,west=none]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=none,north=low,south=low,up=true,waterlogged=false,west=low]",
       "reasons": [
         "observation_headroom",
         "observation_parapet"
@@ -725,7 +725,7 @@
       ],
       "action": "replace",
       "original_state": "minecraft:deepslate[axis=y]",
-      "restored_state": "minecraft:deepslate_tile_wall[east=none,north=low,south=low,up=false,waterlogged=false,west=none]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=none,north=low,south=low,up=true,waterlogged=false,west=low]",
       "reasons": [
         "observation_headroom",
         "observation_parapet"
@@ -739,7 +739,7 @@
       ],
       "action": "replace",
       "original_state": "minecraft:deepslate[axis=y]",
-      "restored_state": "minecraft:deepslate_tile_wall[east=none,north=low,south=low,up=false,waterlogged=false,west=none]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=none,north=low,south=low,up=true,waterlogged=false,west=low]",
       "reasons": [
         "observation_headroom",
         "observation_parapet"
@@ -753,7 +753,7 @@
       ],
       "action": "replace",
       "original_state": "minecraft:deepslate[axis=y]",
-      "restored_state": "minecraft:deepslate_tile_wall[east=low,north=low,south=none,up=true,waterlogged=false,west=none]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=low,north=low,south=none,up=true,waterlogged=false,west=low]",
       "reasons": [
         "observation_headroom",
         "observation_parapet"
@@ -1118,7 +1118,7 @@
       ],
       "action": "replace",
       "original_state": "minecraft:deepslate[axis=y]",
-      "restored_state": "minecraft:deepslate_tile_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]",
       "reasons": [
         "observation_headroom",
         "observation_parapet"
@@ -1184,7 +1184,7 @@
       ],
       "action": "replace",
       "original_state": "minecraft:deepslate[axis=y]",
-      "restored_state": "minecraft:deepslate_tile_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]",
       "reasons": [
         "observation_headroom",
         "observation_parapet"
@@ -1471,7 +1471,7 @@
       ],
       "action": "replace",
       "original_state": "minecraft:deepslate[axis=y]",
-      "restored_state": "minecraft:deepslate_tile_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=low,north=low,south=none,up=true,waterlogged=false,west=low]",
       "reasons": [
         "observation_headroom",
         "observation_parapet"
@@ -1537,7 +1537,7 @@
       ],
       "action": "replace",
       "original_state": "minecraft:deepslate[axis=y]",
-      "restored_state": "minecraft:deepslate_tile_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]",
       "reasons": [
         "observation_headroom",
         "observation_parapet"
@@ -2007,7 +2007,7 @@
       ],
       "action": "replace",
       "original_state": "minecraft:deepslate[axis=y]",
-      "restored_state": "minecraft:deepslate_tile_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]",
       "reasons": [
         "observation_headroom",
         "observation_parapet"
@@ -2073,7 +2073,7 @@
       ],
       "action": "add",
       "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_tile_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]",
       "reasons": [
         "observation_parapet"
       ]
@@ -2829,7 +2829,7 @@
       ],
       "action": "add",
       "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_tile_wall[east=none,north=none,south=low,up=true,waterlogged=false,west=low]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=none,north=none,south=low,up=true,waterlogged=false,west=low]",
       "reasons": [
         "observation_parapet"
       ]
@@ -2842,7 +2842,7 @@
       ],
       "action": "add",
       "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_tile_wall[east=none,north=low,south=low,up=false,waterlogged=false,west=none]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=none,north=low,south=low,up=false,waterlogged=false,west=none]",
       "reasons": [
         "observation_parapet"
       ]
@@ -2855,7 +2855,7 @@
       ],
       "action": "replace",
       "original_state": "minecraft:deepslate[axis=y]",
-      "restored_state": "minecraft:deepslate_tile_wall[east=none,north=low,south=low,up=false,waterlogged=false,west=none]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=low,north=low,south=low,up=true,waterlogged=false,west=none]",
       "reasons": [
         "observation_headroom",
         "observation_parapet"
@@ -2869,7 +2869,7 @@
       ],
       "action": "replace",
       "original_state": "minecraft:deepslate[axis=y]",
-      "restored_state": "minecraft:deepslate_tile_wall[east=none,north=low,south=low,up=false,waterlogged=false,west=none]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=low,north=low,south=low,up=true,waterlogged=false,west=none]",
       "reasons": [
         "observation_headroom",
         "observation_parapet"
@@ -2883,7 +2883,7 @@
       ],
       "action": "replace",
       "original_state": "minecraft:deepslate[axis=y]",
-      "restored_state": "minecraft:deepslate_tile_wall[east=none,north=low,south=low,up=false,waterlogged=false,west=none]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=none,north=low,south=low,up=false,waterlogged=false,west=none]",
       "reasons": [
         "observation_headroom",
         "observation_parapet"
@@ -2897,7 +2897,7 @@
       ],
       "action": "add",
       "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_tile_wall[east=none,north=low,south=none,up=true,waterlogged=false,west=low]",
+      "restored_state": "minecraft:polished_deepslate_wall[east=none,north=low,south=none,up=true,waterlogged=false,west=low]",
       "reasons": [
         "observation_parapet"
       ]

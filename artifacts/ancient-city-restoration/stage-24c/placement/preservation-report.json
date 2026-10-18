@@ -1,0 +1,441 @@
+{
+ "large_ruin_1": {
+  "block_entities_checked": 1,
+  "all_preserved_and_live": true,
+  "water_original": 0,
+  "water_restored": 0,
+  "entries": [
+   {
+    "pos": [
+     0,
+     0,
+     7
+    ],
+    "block": "minecraft:jigsaw",
+    "original": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:cobbled_deepslate",
+     "joint": "rollable"
+    },
+    "restored_identical": true,
+    "live": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:cobbled_deepslate",
+     "joint": "rollable"
+    },
+    "live_matches_original": true
+   }
+  ]
+ },
+ "medium_ruin_1": {
+  "block_entities_checked": 1,
+  "all_preserved_and_live": true,
+  "water_original": 0,
+  "water_restored": 0,
+  "entries": [
+   {
+    "pos": [
+     0,
+     0,
+     6
+    ],
+    "block": "minecraft:jigsaw",
+    "original": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:structure_void",
+     "joint": "rollable"
+    },
+    "restored_identical": true,
+    "live": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:structure_void",
+     "joint": "rollable"
+    },
+    "live_matches_original": true
+   }
+  ]
+ },
+ "medium_ruin_2": {
+  "block_entities_checked": 1,
+  "all_preserved_and_live": true,
+  "water_original": 0,
+  "water_restored": 0,
+  "entries": [
+   {
+    "pos": [
+     0,
+     0,
+     5
+    ],
+    "block": "minecraft:jigsaw",
+    "original": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:cobbled_deepslate",
+     "joint": "rollable"
+    },
+    "restored_identical": true,
+    "live": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:cobbled_deepslate",
+     "joint": "rollable"
+    },
+    "live_matches_original": true
+   }
+  ]
+ },
+ "small_ruin_1": {
+  "block_entities_checked": 1,
+  "all_preserved_and_live": true,
+  "water_original": 0,
+  "water_restored": 0,
+  "entries": [
+   {
+    "pos": [
+     0,
+     0,
+     3
+    ],
+    "block": "minecraft:jigsaw",
+    "original": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:structure_void",
+     "joint": "rollable"
+    },
+    "restored_identical": true,
+    "live": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:structure_void",
+     "joint": "rollable"
+    },
+    "live_matches_original": true
+   }
+  ]
+ },
+ "small_ruin_2": {
+  "block_entities_checked": 1,
+  "all_preserved_and_live": true,
+  "water_original": 0,
+  "water_restored": 0,
+  "entries": [
+   {
+    "pos": [
+     0,
+     0,
+     2
+    ],
+    "block": "minecraft:jigsaw",
+    "original": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:cobbled_deepslate",
+     "joint": "rollable"
+    },
+    "restored_identical": true,
+    "live": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:cobbled_deepslate",
+     "joint": "rollable"
+    },
+    "live_matches_original": true
+   }
+  ]
+ },
+ "sauna_1": {
+  "block_entities_checked": 8,
+  "all_preserved_and_live": true,
+  "water_original": 43,
+  "water_restored": 43,
+  "entries": [
+   {
+    "pos": [
+     5,
+     0,
+     26
+    ],
+    "block": "minecraft:jigsaw",
+    "original": {
+     "name": "minecraft:bottom",
+     "pool": "minecraft:ancient_city/sculk",
+     "target": "minecraft:bottom",
+     "final_state": "minecraft:deepslate",
+     "joint": "rollable"
+    },
+    "restored_identical": true,
+    "live": {
+     "name": "minecraft:bottom",
+     "pool": "minecraft:ancient_city/sculk",
+     "target": "minecraft:bottom",
+     "final_state": "minecraft:deepslate",
+     "joint": "rollable"
+    },
+    "live_matches_original": true
+   },
+   {
+    "pos": [
+     8,
+     0,
+     12
+    ],
+    "block": "minecraft:jigsaw",
+    "original": {
+     "name": "minecraft:bottom",
+     "pool": "minecraft:ancient_city/sculk",
+     "target": "minecraft:bottom",
+     "final_state": "minecraft:deepslate",
+     "joint": "rollable"
+    },
+    "restored_identical": true,
+    "live": {
+     "name": "minecraft:bottom",
+     "pool": "minecraft:ancient_city/sculk",
+     "target": "minecraft:bottom",
+     "final_state": "minecraft:deepslate",
+     "joint": "rollable"
+    },
+    "live_matches_original": true
+   },
+   {
+    "pos": [
+     12,
+     1,
+     19
+    ],
+    "block": "minecraft:chest",
+    "original": {
+     "LootTable": "minecraft:chests/ancient_city"
+    },
+    "restored_identical": true,
+    "live": {
+     "LootTable": "minecraft:chests/ancient_city",
+     "LootTableSeed": "Long(-8367858514485406073)"
+    },
+    "live_matches_original": true
+   },
+   {
+    "pos": [
+     18,
+     0,
+     33
+    ],
+    "block": "minecraft:jigsaw",
+    "original": {
+     "name": "minecraft:bottom",
+     "pool": "minecraft:ancient_city/sculk",
+     "target": "minecraft:bottom",
+     "final_state": "minecraft:deepslate",
+     "joint": "rollable"
+    },
+    "restored_identical": true,
+    "live": {
+     "name": "minecraft:bottom",
+     "pool": "minecraft:ancient_city/sculk",
+     "target": "minecraft:bottom",
+     "final_state": "minecraft:deepslate",
+     "joint": "rollable"
+    },
+    "live_matches_original": true
+   },
+   {
+    "pos": [
+     21,
+     0,
+     9
+    ],
+    "block": "minecraft:jigsaw",
+    "original": {
+     "name": "minecraft:bottom",
+     "pool": "minecraft:ancient_city/sculk",
+     "target": "minecraft:bottom",
+     "final_state": "minecraft:deepslate",
+     "joint": "rollable"
+    },
+    "restored_identical": true,
+    "live": {
+     "name": "minecraft:bottom",
+     "pool": "minecraft:ancient_city/sculk",
+     "target": "minecraft:bottom",
+     "final_state": "minecraft:deepslate",
+     "joint": "rollable"
+    },
+    "live_matches_original": true
+   },
+   {
+    "pos": [
+     21,
+     1,
+     18
+    ],
+    "block": "minecraft:chest",
+    "original": {
+     "LootTable": "minecraft:chests/ancient_city"
+    },
+    "restored_identical": true,
+    "live": {
+     "LootTable": "minecraft:chests/ancient_city",
+     "LootTableSeed": "Long(-7439810962077911238)"
+    },
+    "live_matches_original": true
+   },
+   {
+    "pos": [
+     25,
+     1,
+     10
+    ],
+    "block": "minecraft:chest",
+    "original": {
+     "LootTable": "minecraft:chests/ancient_city"
+    },
+    "restored_identical": true,
+    "live": {
+     "LootTable": "minecraft:chests/ancient_city",
+     "LootTableSeed": "Long(6492740532199589579)"
+    },
+    "live_matches_original": true
+   },
+   {
+    "pos": [
+     28,
+     0,
+     21
+    ],
+    "block": "minecraft:jigsaw",
+    "original": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:structure_void",
+     "joint": "rollable"
+    },
+    "restored_identical": true,
+    "live": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:structure_void",
+     "joint": "rollable"
+    },
+    "live_matches_original": true
+   }
+  ]
+ },
+ "large_pillar_1": {
+  "block_entities_checked": 1,
+  "all_preserved_and_live": true,
+  "water_original": 0,
+  "water_restored": 0,
+  "entries": [
+   {
+    "pos": [
+     5,
+     0,
+     2
+    ],
+    "block": "minecraft:jigsaw",
+    "original": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:structure_void",
+     "joint": "rollable"
+    },
+    "restored_identical": true,
+    "live": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:structure_void",
+     "joint": "rollable"
+    },
+    "live_matches_original": true
+   }
+  ]
+ },
+ "medium_pillar_1": {
+  "block_entities_checked": 3,
+  "all_preserved_and_live": true,
+  "water_original": 0,
+  "water_restored": 0,
+  "entries": [
+   {
+    "pos": [
+     4,
+     1,
+     4
+    ],
+    "block": "minecraft:skeleton_skull",
+    "original": {},
+    "restored_identical": true,
+    "live": {},
+    "live_matches_original": true
+   },
+   {
+    "pos": [
+     6,
+     0,
+     3
+    ],
+    "block": "minecraft:jigsaw",
+    "original": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:structure_void",
+     "joint": "rollable"
+    },
+    "restored_identical": true,
+    "live": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:structure_void",
+     "joint": "rollable"
+    },
+    "live_matches_original": true
+   },
+   {
+    "pos": [
+     6,
+     0,
+     4
+    ],
+    "block": "minecraft:jigsaw",
+    "original": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:structure_void",
+     "joint": "rollable"
+    },
+    "restored_identical": true,
+    "live": {
+     "name": "minecraft:connect_structure",
+     "pool": "minecraft:empty",
+     "target": "minecraft:empty",
+     "final_state": "minecraft:structure_void",
+     "joint": "rollable"
+    },
+    "live_matches_original": true
+   }
+  ]
+ }
+}

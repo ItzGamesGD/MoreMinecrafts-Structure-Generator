@@ -82,7 +82,7 @@ def test_medium_ruin_2_stair_run_has_two_cells_of_headroom(structures):
     for x, y, z in run:
         assert bid(at(b, (x, y, z))) == "deepslate_tile_stairs"
         assert prop(at(b, (x, y, z)), "facing") == "east"
-        for dy in (1, 2):
+        for dy in (1, 2) + ((3,) if (x, y, z) != run[-1] else ()):
             assert bid(at(b, (x, y + dy, z))) == "air", ((x, y, z), dy, at(b, (x, y + dy, z)))
     # the landing keeps a 2-high clear opening in the upper west wall
     for dy in (1, 2):
@@ -97,10 +97,20 @@ def test_medium_pillar_1_deck_has_a_complete_parapet(structures):
     assert deck
     perimeter = {(x, z) for x, z in deck if x in (1, 5) or z in (1, 6)}
     for x, z in perimeter:
-        assert bid(at(b, (x, 9, z))) == "deepslate_tile_wall", ((x, z), at(b, (x, 9, z)))
+        assert bid(at(b, (x, 9, z))) == "polished_deepslate_wall", ((x, z), at(b, (x, 9, z)))
     # the ladder, east of the retained spine, is untouched (owner constraint)
     assert [bid(at(b, (4, y, 3))) for y in range(1, 9)] == ["ladder"] * 8
     assert prop(at(b, (4, 1, 3)), "facing") == "west"
+
+
+def test_medium_pillar_1_parapet_survives_vanilla_degradation(structures):
+    """Real generation (24 seeds): 27/630 parapet walls were rotted away when made of deepslate_tile_wall."""
+    rottable = {"deepslate", "deepslate_bricks", "deepslate_tiles", "deepslate_brick_slab", "deepslate_tile_slab",
+                "deepslate_brick_stairs", "deepslate_tile_wall", "deepslate_brick_wall", "cobbled_deepslate",
+                "cracked_deepslate_bricks", "cracked_deepslate_tiles", "gray_wool"}
+    b = structures["medium_pillar_1"]
+    ring = [bid(s) for (x, y, z), s in b.items() if y == 9 and bid(s).endswith("_wall")]
+    assert len(ring) == 18 and not (set(ring) & rottable)
 
 
 def test_large_pillar_1_deck_edges_are_closed(structures):
@@ -108,3 +118,10 @@ def test_large_pillar_1_deck_edges_are_closed(structures):
     ring = [(x, z) for x in range(6) for z in range(6) if x in (0, 1, 4, 5) or z in (0, 1, 4, 5)]
     for x, z in ring:
         assert bid(at(b, (x, 14, z))) != "air", ((x, z), "gap in deck parapet ring")
+
+
+def test_large_pillar_1_ladder_reaches_deck_surface(structures):
+    """Live defect: ladder ended at y=12 and the climber hung 1 block under the y=13 deck (feet need y=14)."""
+    b = structures["large_pillar_1"]
+    assert [bid(at(b, (2, y, 2))) for y in range(1, 14)] == ["ladder"] * 13
+    assert bid(at(b, (2, 14, 2))) == "air"

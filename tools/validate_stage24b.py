@@ -197,13 +197,13 @@ def test_candidate(c: Candidate) -> dict:
                        "fluid_ticks": "LIVE_PENDING"})
     elif c.module == "large_pillar_1":
         run = c.features["ladder_run"]
-        assert run == list(range(1, 13))
+        assert run == list(range(1, 14))  # Stage 24-C: ladder continues through the deck hatch
         for y in run:
             assert block_id(c.get_block((2, y, 2))) == "minecraft:ladder", ("ladder", y)
             assert solid(c, (3, y, 2)), ("unsupported ladder", y)
             assert clear_body(c, (2, y + 1, 2)), ("ladder headroom", y)
         assert standable(c, (1, 1, 2))
-        assert c.get_block((2, 13, 2)) == "minecraft:air"
+        assert block_id(c.get_block((2, 13, 2))) == "minecraft:ladder"
         assert reachable(c, (1, 1, 2), {(3, 14, 3)})[0], "entry ladder does not transition onto the observation platform"
         for x in range(6):
             for z in range(6):
