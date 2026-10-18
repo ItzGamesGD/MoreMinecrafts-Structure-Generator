@@ -14,7 +14,7 @@
 | `/place structure` live Jigsaw generation | **PASS (command)** | Run #25's RCON transcript records `Generated structure "moreminecrafts:forgotten_kingdom/central_cavern" at 0, 100, 0`. |
 | Minecraft client startup | **PASS** | Run #27 selected Vulkan llvmpipe, created an SDL X11 window and loaded Minecraft texture atlases. OpenGL's GLX initialization failed first; the client continued on Vulkan. |
 | Minecraft client joins the loaded world | **PASS** | Run #29 added `SG01Visual` to the test server whitelist; server logs show the client logged in, joined, and RCON teleported it to the plaza camera position. |
-| Minecraft screenshots | **FAIL (F2 capture)** | Run #31 passed world join and the first plaza teleport, but produced no PNG after F2. The SDL window had ID `543` and an empty title. The next correction sends F2 directly to that window and captures X11/client diagnostics if no file appears. No PNG was produced. |
+| Minecraft screenshots | **FAIL (Xvfb focus)** | Run #33 passed world join and the first plaza teleport, but wrote no PNG. Diagnostics showed X input focus remained on root window `1`, not Minecraft window `543`; Xvfb had no window manager. The current correction launches Openbox inside Xvfb and uses its managed window activation. No PNG was produced in run #33. |
 | Architectural visual quality review | **NOT RUN** | There are no Minecraft-rendered screenshots. The cavern design remains unchanged. |
 
 ## Read-only CI environment investigation
@@ -44,7 +44,7 @@ The job first runs a configuration-only Gradle `help` step with a five-minute ti
 
 The harness source is documented in [`validation/minecraft-visual/README.md`](../../validation/minecraft-visual/README.md). Runtime outcomes below are taken from uploaded GitHub Actions logs. The previous GLB-derived previews are not Minecraft runtime evidence.
 
-### Run #23, #25, #27, #29 and #31 evidence and resumed correction
+### Run #23, #25, #27, #29, #31 and #33 evidence and resumed correction
 
 - Workflow run [#23](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39065733597), at branch head `11491b65fb65e15e956b27a04fca1680aad92807`: portable-export and all 17 tests **PASS**; datapack reproducibility and committed resource checksums **PASS**; Gradle configuration **PASS**; server started and recognized the exact pack **PASS**.
 - Run #23 client log showed Vulkan llvmpipe and a created X11 window, but failed to connect because the server process ended between Actions steps. The run's [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39065733597/artifacts/12112524684) contains logs and command transcripts but **no PNGs**.
@@ -53,5 +53,6 @@ The harness source is documented in [`validation/minecraft-visual/README.md`](..
 - Run #27 [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39087556594/artifacts/12121622245) confirms all placements and includes client logs, but no PNG. The client selected Vulkan and loaded its texture atlases. The server rejected `SG01Visual` as not whitelisted; the script's title filter also failed to detect the created SDL window.
 - Run #29 [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39088129974/artifacts/12121278096) shows the whitelist fix worked: client startup, world join and RCON camera teleport passed. Xvfb's lack of a window manager caused `windowactivate` to fail.
 - Run #31 [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39088364176/artifacts/12121796937) passed the plaza join and teleport but the `F2` action produced no PNG. Its evidence records X window 543 with an empty title; no capture was saved.
-- The current correction targets F2 directly to the X11 window, ensures the screenshot directory exists, and captures client/window diagnostics if Minecraft does not write a PNG. The next Actions run must verify saved and uploaded frames.
-- Local validation: shell syntax, workflow YAML parsing and `git diff --check` **PASS**. All 17 tests and deterministic pack/visual exports passed on the prior commit; CI run #31 passed portable export, byte comparisons and all 17 tests. Minecraft screenshots and architectural review remain **NOT RUN**; no design change was made.
+- Run #33 [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39088625611/artifacts/12121867071) again passed world join and camera teleport but produced no image. Its focus diagnostic reports root window `1`; the runner had no window manager and lacked `xwininfo`.
+- The current correction installs Openbox and `x11-utils`, starts Openbox within Xvfb, then uses managed window activation and F2. It retains the screenshot directory guard and failure diagnostics. The next Actions run must verify actual PNG files.
+- Local validation: shell syntax, workflow YAML parsing and `git diff --check` **PASS**. All 17 tests and deterministic pack/visual exports passed on the prior commit; CI run #33 passed portable export, byte comparisons and all 17 tests. Minecraft screenshots and architectural review remain **NOT RUN**; no design change was made.

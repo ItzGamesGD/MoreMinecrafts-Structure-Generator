@@ -26,9 +26,7 @@ if [ -z "$window" ]; then
 fi
 printf 'window_id=%s\nwindow_title=%s\n' "$window" "$(xdotool getwindowname "$window" 2>/dev/null || true)" > "$evidence/client-windows.txt"
 echo 'client-startup=PASS' >> "$evidence/runtime-result.txt"
-# Xvfb runs without a window manager, so _NET_ACTIVE_WINDOW based activation may fail.
-# Set X input focus directly and keep a diagnostic instead of aborting the capture.
-xdotool windowfocus --sync "$window" 2> "$evidence/window-focus.log" || true
+xdotool windowactivate --sync "$window"
 sleep 40
 joined=0
 for _ in $(seq 1 30); do
@@ -46,7 +44,7 @@ capture() {
 tp SG01Visual $x $y $z $yaw $pitch
 CMDS
   sleep 3
-  xdotool key --clearmodifiers --window "$window" F2
+  xdotool key --clearmodifiers F2
   sleep 2
   local src
   src=$(find "$fixture/run/client/screenshots" -type f -name '*.png' -printf '%T@ %p\n' 2>/dev/null | sort -nr | head -1 | cut -d' ' -f2- || true)

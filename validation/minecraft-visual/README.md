@@ -2,7 +2,7 @@
 
 A temporary Fabric Loom client/server launches Minecraft 26.3 with Java 25. The acceptance workflow copies the generated SG-01 datapack byte-for-byte into a disposable server world before startup, verifies the pack is enabled, attempts the five resource-derived `/place template` IDs and the Jigsaw `/place structure` ID, then connects a real graphical client under Xvfb/llvmpipe. RCON camera teleports and Minecraft's F2 screenshot action produce the PNG evidence.
 
-Run from repository root on Linux with Java 25, Xvfb, Mesa llvmpipe, xdotool, ImageMagick and Python 3:
+Run from repository root on Linux with Java 25, Xvfb, Openbox, Mesa llvmpipe, xdotool, ImageMagick and Python 3:
 
 ```sh
 python3 examples/forgotten_kingdom/build_cavern.py /tmp/sg01-datapack
