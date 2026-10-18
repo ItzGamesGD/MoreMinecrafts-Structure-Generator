@@ -1,39 +1,42 @@
 """AST-denylist sandbox + op-budget executor for blueprint code.
 
-SECURITY NOTE (2026-10-18 audit): this module's docstring previously described
-its threat model as "LLM accidents... not a malicious adversary." That is no
-longer the operating assumption. `run_blueprint` executes text that ultimately
-originates from an LLM response to a user-supplied prompt (see
-`agent/loop.py`, reachable from the WebSocket server); a sufficiently
-adversarial prompt or a compromised/confused model can produce blueprint text
-designed to escape the sandbox. The denylist below (banned names, banned
-attribute names, import stripping) is defense in depth, not a security
-boundary: an AST denylist can only ever enumerate *known* escape shapes, and
-Python's reflection surface is large enough that new ones keep turning up
-(this audit added a `str.format()`/`format_map()` dunder-chain block and a
-frame/generator/code-introspection attribute block; both were previously
-unfiltered — see tests/test_dsl_sandbox.py's "audit" tests for the PoCs that
-motivated them). Treat `run_blueprint` as suitable only for trusted or
-low-stakes input. For untrusted/LLM-authored blueprints, prefer
-`run_blueprint_isolated`, which runs the same validate+exec in a separate
-process with CPU/memory rlimits, so a successful sandbox escape reaches a
-disposable child process's address space rather than the host process
-(API keys, other sessions' state, the filesystem) directly. Process isolation
-is still not a hard boundary on its own (no seccomp/namespace/container layer
-here) — see docs/SECURITY.md for the full assessment and open follow-ups.
+SECURITY NOTE (2026-10-18 audit): blueprint text is LLM output produced from a user prompt,
+so it is treated as untrusted. Two layers apply:
 
-Import statements are stripped rather than rejected (everything a blueprint
-needs is already injected as globals; see dsl/REFERENCE.md), dunder/attribute
-escapes and a handful of dangerous builtins are blocked outright, and
-execution runs under a line-count + wall-clock budget via sys.settrace.
+1. `run_blueprint` (in-process): the AST denylist, import stripping, and the line/time budget.
+   The denylist is defense in depth, not a security boundary. It can only enumerate escape
+   shapes already known, and Python's reflection surface keeps producing new ones (the audit
+   added `str.format()` dunder chains and frame/generator/code-introspection attributes).
+   In-process execution is for trusted input only: the repository's own blueprints and tests.
+
+2. `run_blueprint_isolated` (out-of-process): every LLM-authored blueprint in the agent loop
+   runs here. The child is a fresh `python -I` process with an empty environment, a scratch
+   working directory, CPU and address-space rlimits, a parent-side deadline, JSON-only
+   exchange (no pickle), and a validated result. A sandbox escape therefore reaches a
+   disposable process without the parent's secrets or memory. This is not a complete
+   boundary: the child still runs as the same OS user with filesystem and network access, and
+   there is no seccomp, namespace, or container layer. See docs/SECURITY.md for the full
+   assessment and the open follow-ups.
+
+Import statements are stripped rather than rejected (everything a blueprint needs is already
+injected as globals; see dsl/REFERENCE.md), dunder/attribute escapes and a handful of dangerous
+builtins are blocked outright, and execution runs under a line-count + wall-clock budget via
+sys.settrace.
 """
 
 from __future__ import annotations
 
 import ast
 import builtins as _builtins
-import multiprocessing
+import importlib.util
+import json
+import os
+import re
+import select
+import shutil
+import subprocess
 import sys
+import tempfile
 import time
 
 from mcbuild import palette
@@ -247,95 +250,236 @@ def run_blueprint(
 
 
 # --- Process-isolated execution (for untrusted/LLM-authored blueprints) ---------------
+#
+# The child is a fresh `python -I -m mcbuild.dsl.isolated_child` process. Requests and results
+# are JSON only (never pickle), and blocks cross the boundary as coordinates plus block-state
+# strings, not palette indices: indices are process-local, and a blueprint can create dynamic
+# indices (e.g. "oak_stairs[facing=north]") that the parent has never seen.
 
-ISOLATION_MAX_SECONDS = 15.0  # wall-clock backstop; a bit above the default in-sandbox budget
-ISOLATION_CPU_SECONDS = 20  # hard CPU-time rlimit applied inside the child
-ISOLATION_MEMORY_BYTES = 1_024 * 1_024 * 1_024  # 1 GiB address-space rlimit applied inside the child
+ISOLATION_MAX_SECONDS = 15.0  # parent-side wall-clock backstop, above the in-sandbox MAX_SECONDS
+ISOLATION_CPU_SECONDS = 20  # hard CPU-time rlimit inside the child (SIGXCPU if exceeded)
+ISOLATION_MEMORY_BYTES = 1_024 * 1_024 * 1_024  # 1 GiB address-space rlimit inside the child
+MAX_ISOLATED_RESULT_BYTES = 256 * 1024 * 1024  # cap on what the parent will read back from a child
+_STATE_NAME = re.compile(r"[a-z0-9_]+(\[[a-z0-9_=,]+\])?")
+_MAX_STATE_NAME_CHARS = 256
 
 
-class IsolatedExecutionError(Exception):
-    """Raised by run_blueprint_isolated when the child process fails, times out, or is killed."""
+class IsolatedExecutionError(errors.BlueprintError):
+    """The isolated child timed out, crashed, was killed, returned a malformed result, or could
+    not enforce its limits. Subclasses BlueprintError so the agent loop treats it as a
+    recoverable failure instead of aborting the run."""
+
+    def __init__(self, message: str):
+        super().__init__(message)
 
 
-def _isolated_worker(source: str, seed: int, max_lines: int, max_seconds: float, conn) -> None:
-    """Child-process entry point: apply resource limits, run the blueprint, send back the result.
+def isolation_supported() -> bool:
+    """True when this platform can apply the child's resource limits (POSIX `resource` module).
 
-    Runs in a freshly spawned interpreter (multiprocessing "spawn" context, not "fork"), so it
-    does not inherit the parent's open file descriptors, imported modules' live state, or memory
-    contents -- a sandbox escape here reaches a disposable process, not the parent's.
+    Isolation without limits is not offered: where `resource` is missing (e.g. Windows),
+    run_blueprint_isolated refuses to run rather than executing unconstrained (fail closed).
     """
-    try:
-        import contextlib
-        import resource
+    return importlib.util.find_spec("resource") is not None
 
-        # Best-effort hard caps; a successful escape past the AST/budget checks still can't
-        # consume unbounded CPU or memory, and can't outlive this process's exit.
-        resource.setrlimit(resource.RLIMIT_CPU, (ISOLATION_CPU_SECONDS, ISOLATION_CPU_SECONDS))
-        with contextlib.suppress(ValueError, OSError):
-            # RLIMIT_AS is unreliable under some allocators/platforms; CPU + join-timeout remain.
-            resource.setrlimit(resource.RLIMIT_AS, (ISOLATION_MEMORY_BYTES, ISOLATION_MEMORY_BYTES))
-    except ImportError:
-        pass  # resource is POSIX-only; on platforms without it, the parent's join timeout is the backstop.
+
+def _apply_child_limits() -> None:
+    """Apply CPU and address-space caps in the child. Failures raise; they are never ignored."""
+    import resource
+
+    resource.setrlimit(resource.RLIMIT_CPU, (ISOLATION_CPU_SECONDS, ISOLATION_CPU_SECONDS))
+    resource.setrlimit(resource.RLIMIT_AS, (ISOLATION_MEMORY_BYTES, ISOLATION_MEMORY_BYTES))
+
+
+def _state_string(block: palette.Block) -> str:
+    if not block.state:
+        return block.name
+    return f"{block.name}[" + ",".join(f"{k}={v}" for k, v in block.state) + "]"
+
+
+def encode_grid(grid: _voxel.VoxelGrid) -> dict:
+    """Serialize a grid to JSON-safe values: block coordinates plus block-state strings."""
+    blocks = [[x, y, z, _state_string(palette.get_block_by_index(index))] for (x, y, z), index in grid.items()]
+    return {"blocks": blocks, "warnings": list(getattr(grid, "palette_warnings", None) or [])}
+
+
+def decode_grid(payload: object) -> _voxel.VoxelGrid:
+    """Rebuild a grid from encode_grid output, validating every field.
+
+    The result comes from a child that may be compromised, so nothing is trusted: types are
+    checked (bool is rejected as an int), names must match the block-state grammar and length
+    limit, and placement goes through VoxelGrid.set so the block-count and extent limits apply.
+    """
+    if not isinstance(payload, dict) or not isinstance(payload.get("blocks"), list):
+        raise IsolatedExecutionError("isolated result has an unexpected shape.")
+    warnings = payload.get("warnings", [])
+    if not isinstance(warnings, list) or not all(isinstance(w, str) for w in warnings):
+        raise IsolatedExecutionError("isolated result has invalid warnings.")
 
     grid = _voxel.VoxelGrid()
     try:
-        run_blueprint(source, grid, seed=seed, max_lines=max_lines, max_seconds=max_seconds)
-    except errors.BlueprintError as e:
-        conn.send(("error", e.raw_message, e.line))
-        return
-    except BaseException as e:  # noqa: BLE001 - must not let an unexpected escape crash silently
-        conn.send(("error", f"{type(e).__name__}: {e}", None))
-        return
-    conn.send(("ok", grid, None))
+        for entry in payload["blocks"]:
+            if not isinstance(entry, list) or len(entry) != 4:
+                raise IsolatedExecutionError("isolated result has a malformed block entry.")
+            x, y, z, name = entry
+            if any(type(c) is not int for c in (x, y, z)) or not isinstance(name, str):
+                raise IsolatedExecutionError("isolated result has a block entry with invalid types.")
+            if len(name) > _MAX_STATE_NAME_CHARS or _STATE_NAME.fullmatch(name) is None:
+                raise IsolatedExecutionError("isolated result has a block name outside the allowed grammar.")
+            try:
+                index = palette.get_block(name).index
+            except (PaletteError, ValueError, KeyError) as e:
+                raise IsolatedExecutionError(f"isolated result names an unknown block: {e}") from e
+            grid.set(x, y, z, index)
+    except _voxel.VoxelLimitError as e:
+        raise IsolatedExecutionError(f"isolated result exceeds grid limits: {e}") from e
+    finally:
+        # get_block may append alias/correction warnings in this process; discard them here.
+        palette.pop_warnings()
+    grid.palette_warnings = list(warnings)
+    return grid
+
+
+def _send_all(fd: int, data: bytes, deadline: float) -> None:
+    view = memoryview(data)
+    while view:
+        remaining = deadline - time.monotonic()
+        if remaining <= 0 or not select.select([], [fd], [], remaining)[1]:
+            raise TimeoutError
+        view = view[os.write(fd, view[:65536]) :]
+
+
+def _recv_all(fd: int, deadline: float) -> bytes:
+    chunks: list[bytes] = []
+    total = 0
+    while True:
+        remaining = deadline - time.monotonic()
+        if remaining <= 0 or not select.select([fd], [], [], remaining)[0]:
+            raise TimeoutError
+        chunk = os.read(fd, 65536)
+        if not chunk:
+            return b"".join(chunks)
+        total += len(chunk)
+        if total > MAX_ISOLATED_RESULT_BYTES:
+            raise IsolatedExecutionError("isolated result exceeds the size limit.")
+        chunks.append(chunk)
 
 
 def run_blueprint_isolated(
     source: str,
+    grid: _voxel.VoxelGrid,
     seed: int = 0,
     max_lines: int = MAX_LINES,
     max_seconds: float = MAX_SECONDS,
     timeout: float = ISOLATION_MAX_SECONDS,
 ) -> _voxel.VoxelGrid:
-    """Like run_blueprint, but executes in a separate, resource-limited child process.
+    """Run a blueprint against a copy of `grid` inside a resource-limited child process.
 
-    Recommended entry point for untrusted/LLM-authored blueprint text (see the module
-    docstring). Returns a populated VoxelGrid on success; raises BlueprintError for a
-    blueprint-level failure (syntax/sandbox/runtime/budget) with the same semantics as
-    run_blueprint, or IsolatedExecutionError if the child times out or is killed outright
-    (e.g. by its own CPU/memory rlimit, OOM-killer, or a segfault) without reporting back.
+    Returns a new VoxelGrid with the result; `grid` is not modified. Starting from `grid` keeps
+    edit semantics: get_block() and edits see the existing build.
+
+    Raises:
+        BlueprintError: the blueprint itself failed (syntax, sandbox violation, runtime error,
+            or its own line/time budget). Same message and line information as run_blueprint.
+        IsolatedExecutionError: the child exceeded `timeout`, was killed (its CPU or memory
+            limit, the OOM killer, a crash), returned a malformed result, could not apply its
+            limits, or isolation is unsupported on this platform.
+
+    The child is always reaped before this function returns or raises.
     """
-    ctx = multiprocessing.get_context("spawn")
-    parent_conn, child_conn = ctx.Pipe(duplex=False)
-    process = ctx.Process(
-        target=_isolated_worker,
-        args=(source, seed, max_lines, max_seconds, child_conn),
-        daemon=True,
-    )
-    process.start()
-    child_conn.close()
-    try:
-        if parent_conn.poll(timeout):
-            status, payload, line = parent_conn.recv()
-        else:
-            status, payload, line = "timeout", None, None
-    except EOFError:
-        status, payload, line = "crashed", None, None
-    finally:
-        if process.is_alive():
-            process.terminate()
-            process.join(2.0)
-            if process.is_alive():
-                process.kill()
-                process.join()
-        parent_conn.close()
+    if not isolation_supported():
+        raise IsolatedExecutionError(
+            "Blueprint isolation is unavailable on this platform (no POSIX resource limits); "
+            "refusing to run the blueprint unconstrained."
+        )
 
+    request = json.dumps(
+        {
+            "source": source,
+            "seed": seed,
+            "max_lines": max_lines,
+            "max_seconds": max_seconds,
+            "grid": encode_grid(grid),
+        }
+    ).encode("utf-8")
+
+    # The child gets an empty environment (so it cannot read API keys such as OPENROUTER_API_KEY
+    # from os.environ) and a fresh empty working directory (so it cannot read the repository by
+    # relative path). Both are removed afterwards.
+    scratch = tempfile.mkdtemp(prefix="mcbuild-isolated-")
+    result_read, result_write = os.pipe()
+    try:
+        # -I: ignore PYTHON* env vars and drop the cwd from sys.path. start_new_session keeps the
+        # child out of our process group, so a terminal Ctrl-C does not race the cleanup below.
+        child = subprocess.Popen(
+            [sys.executable, "-I", "-m", "mcbuild.dsl.isolated_child", str(result_write)],
+            stdin=subprocess.PIPE,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            pass_fds=(result_write,),
+            start_new_session=True,
+            env={},
+            cwd=scratch,
+        )
+    except OSError as e:
+        os.close(result_read)
+        os.close(result_write)
+        shutil.rmtree(scratch, ignore_errors=True)
+        raise IsolatedExecutionError(f"could not start the isolated process: {e}") from e
+    os.close(result_write)  # keep only the child's copy, so EOF means the child has exited
+
+    deadline = time.monotonic() + timeout
+    try:
+        try:
+            _send_all(child.stdin.fileno(), request, deadline)
+        except (BrokenPipeError, TimeoutError):
+            pass  # the child died or stalled before reading; reported below as no result
+        finally:
+            child.stdin.close()
+        raw = _recv_all(result_read, deadline)
+    except TimeoutError as e:
+        child.kill()  # a child that blew its deadline is hung or spinning; do not grant it a grace period
+        raise IsolatedExecutionError(
+            f"Blueprint execution did not finish within {timeout}s (isolated process killed)."
+        ) from e
+    finally:
+        os.close(result_read)
+        _reap(child)
+        shutil.rmtree(scratch, ignore_errors=True)
+
+    if not raw:
+        raise IsolatedExecutionError(
+            f"Isolated blueprint process ended without a result (exit code {child.returncode}); "
+            "likely its CPU or memory limit, the OS OOM killer, or a crash."
+        )
+    try:
+        envelope = json.loads(raw.decode("utf-8"))
+    except (UnicodeDecodeError, ValueError) as e:
+        raise IsolatedExecutionError("isolated result is not valid JSON.") from e
+    if not isinstance(envelope, dict):
+        raise IsolatedExecutionError("isolated result has an unexpected shape.")
+
+    status = envelope.get("status")
     if status == "ok":
-        return payload
+        return decode_grid(envelope.get("grid"))
+    message = envelope.get("message")
+    if not isinstance(message, str):
+        raise IsolatedExecutionError("isolated result has no message.")
     if status == "error":
-        raise errors.BlueprintError(payload, line=line, source=source)
-    if status == "timeout":
-        raise IsolatedExecutionError(f"Blueprint execution did not complete within {timeout}s (isolated process).")
-    raise IsolatedExecutionError(
-        f"Isolated blueprint process exited without a result (exit code {process.exitcode}); "
-        "likely killed by its own resource limit, the OS OOM-killer, or a crash."
-    )
+        line = envelope.get("line")
+        raise errors.BlueprintError(message, line=line if type(line) is int else None, source=source)
+    if status == "isolation_failed":
+        raise IsolatedExecutionError(message)
+    raise IsolatedExecutionError("isolated result has an unknown status.")
+
+
+def _reap(child: subprocess.Popen) -> None:
+    """Make sure the child is gone: wait briefly for its own exit, then terminate, then kill."""
+    try:
+        child.wait(timeout=2.0)
+    except subprocess.TimeoutExpired:
+        child.terminate()
+        try:
+            child.wait(timeout=2.0)
+        except subprocess.TimeoutExpired:
+            child.kill()
+            child.wait()

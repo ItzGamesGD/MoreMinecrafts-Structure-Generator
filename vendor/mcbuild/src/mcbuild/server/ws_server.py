@@ -24,7 +24,8 @@ this audit and are both fixed below:
    Origin), so it narrows the field, it does not replace authentication.
 
 Neither of these is a reason to bind to a non-loopback host; that remains the operator's
-explicit choice via --host and is unrelated to this fix.
+explicit choice via --host and is unrelated to this fix. The token is required at startup
+(no generated or default value) and is never printed, so it cannot leak through the server log.
 """
 
 from __future__ import annotations
@@ -35,7 +36,6 @@ import functools
 import hmac
 import json
 import os
-import secrets
 
 from dotenv import load_dotenv
 from websockets.asyncio.server import ServerConnection, serve
@@ -43,6 +43,8 @@ from websockets.asyncio.server import ServerConnection, serve
 from mcbuild.config import Config
 from mcbuild.server import protocol
 from mcbuild.server.session import run_build_session
+
+MIN_TOKEN_CHARS = 16
 
 # Only one build runs at a time in this version; a second connection while a build is in
 # flight is rejected outright rather than queued.
@@ -95,8 +97,8 @@ async def _serve(host: str, port: int, config: Config) -> None:
     # forge it; a non-browser client (our Forge mod's java_websocket) sends none. This
     # rejects every browser-originated connection regardless of which site it came from.
     async with serve(handler, host, port, origins=[None]) as server:
-        print(f"mcbuild server listening on ws://{host}:{port} (model={config.model})")
-        print(f"Auth token for this run: {config.auth_token}")
+        # The token is deliberately never printed or logged: it is a credential.
+        print(f"mcbuild server listening on ws://{host}:{port} (model={config.model}, token required)")
         await server.serve_forever()
 
 
@@ -117,14 +119,17 @@ def main() -> None:
     parser.add_argument(
         "--token",
         default=None,
-        help=(
-            "Shared secret clients must send to connect (see MCBUILD_SERVER_TOKEN env var). "
-            "If neither is given, a random one is generated and printed at startup."
-        ),
+        help="Shared secret clients must send to connect. Prefer the MCBUILD_SERVER_TOKEN env var, "
+        "which keeps the value out of shell history and process listings.",
     )
     args = parser.parse_args()
 
-    token = args.token or os.environ.get("MCBUILD_SERVER_TOKEN") or secrets.token_urlsafe(24)
+    token = args.token or os.environ.get("MCBUILD_SERVER_TOKEN")
+    if not token or len(token) < MIN_TOKEN_CHARS:
+        # Fail closed: there is no unauthenticated mode, and no generated token is printed.
+        parser.error(
+            f"a shared token of at least {MIN_TOKEN_CHARS} characters is required (--token or MCBUILD_SERVER_TOKEN)"
+        )
 
     config = Config(
         model=args.model,

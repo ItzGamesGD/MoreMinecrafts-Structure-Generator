@@ -60,7 +60,7 @@ async def run_build_session(prompt: str, send: Send, config: Config | None = Non
         llm = OpenRouterClient()
     except RuntimeError as e:
         enqueue(protocol.error(str(e)))
-        await queue.join()
+        await _flush(queue)
         drain_task.cancel()
         return
 
@@ -99,8 +99,19 @@ async def run_build_session(prompt: str, send: Send, config: Config | None = Non
     else:
         enqueue(protocol.error(result.summary))
 
-    await queue.join()  # let the drain task flush everything enqueued above before we return
+    await _flush(queue)  # let the drain task flush everything enqueued above before we return
     drain_task.cancel()
+
+
+async def _flush(queue: asyncio.Queue[str]) -> None:
+    """Wait until every enqueued message has been sent.
+
+    enqueue() hands each put to the event loop with call_soon_threadsafe, so a message enqueued
+    just before this call may not be in the queue yet, and join() would return without counting
+    it. Yielding once lets those scheduled puts run first.
+    """
+    await asyncio.sleep(0)
+    await queue.join()
 
 
 async def _drain_forever(queue: asyncio.Queue[str], send: Send) -> None:
