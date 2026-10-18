@@ -2,6 +2,9 @@ name: Ancient City combined Stage 24-C and ice_box validation
 
 on:
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - integration/ancient-city-stage24c-icebox-20261018
