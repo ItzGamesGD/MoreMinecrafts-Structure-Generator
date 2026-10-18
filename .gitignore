@@ -22,3 +22,12 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Generated Phase 2 validation outputs
+artifacts/phase-2/control/final.schem
+artifacts/phase-2/control/render.png
+artifacts/phase-2/control/structure-report.txt
+
+# Python bytecode
+__pycache__/
+*.pyc
