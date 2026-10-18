@@ -1,0 +1,630 @@
+[
+  {
+    "name": "cavern-lower-doors",
+    "x": 982.5,
+    "y": -23.0,
+    "z": 972.5,
+    "yaw": -0.0,
+    "pitch": -12.2,
+    "note": "plaza view under the north platform: lower-level doorway at slot a",
+    "feet_cell": [
+      982,
+      -23,
+      972
+    ],
+    "target_cell": [
+      982,
+      -18,
+      990
+    ]
+  },
+  {
+    "name": "cavern-upper-vestibules",
+    "x": 962.5,
+    "y": -15.0,
+    "z": 985.5,
+    "yaw": -75.3,
+    "pitch": -2.6,
+    "note": "north deck lane: the upper vestibule opening in the gallery-back masonry",
+    "feet_cell": [
+      962,
+      -15,
+      985
+    ],
+    "target_cell": [
+      981,
+      -13,
+      990
+    ]
+  },
+  {
+    "name": "cavern-overview",
+    "x": 974.5,
+    "y": -23.0,
+    "z": 960.5,
+    "yaw": 10.9,
+    "pitch": -14.6,
+    "note": "plaza, stairs, north platform",
+    "feet_cell": [
+      974,
+      -23,
+      960
+    ],
+    "target_cell": [
+      969,
+      -15,
+      986
+    ]
+  },
+  {
+    "name": "lower-entrance-guard_room",
+    "x": 984.5,
+    "y": -23.0,
+    "z": 981.5,
+    "yaw": -0.0,
+    "pitch": -4.6,
+    "note": "lower slot north/a: guard_room",
+    "feet_cell": [
+      984,
+      -23,
+      981
+    ],
+    "target_cell": [
+      984,
+      -21,
+      992
+    ]
+  },
+  {
+    "name": "upper-entrance-grand_hall",
+    "x": 981.5,
+    "y": -15.0,
+    "z": 985.5,
+    "yaw": -0.0,
+    "pitch": -7.2,
+    "note": "upper slot north/a: grand_hall",
+    "feet_cell": [
+      981,
+      -15,
+      985
+    ],
+    "target_cell": [
+      981,
+      -13,
+      992
+    ]
+  },
+  {
+    "commands": [
+      "fill 69 101 3012 73 105 3012 minecraft:polished_deepslate",
+      "fill 133 101 3018 137 105 3018 minecraft:polished_deepslate",
+      "fill 196 101 3016 200 105 3016 minecraft:polished_deepslate",
+      "fill 263 101 3026 269 105 3026 minecraft:polished_deepslate",
+      "fill 328 101 3030 334 105 3030 minecraft:polished_deepslate",
+      "fill 392 101 3028 398 105 3028 minecraft:polished_deepslate"
+    ]
+  },
+  {
+    "name": "lower-guard_room-a-hall",
+    "x": 71.5,
+    "y": 101.0,
+    "z": 3008.5,
+    "yaw": -180.0,
+    "pitch": -7.2,
+    "note": "guard_room interior",
+    "feet_cell": [
+      71,
+      101,
+      3008
+    ],
+    "target_cell": [
+      71,
+      103,
+      3001
+    ]
+  },
+  {
+    "name": "lower-guard_room-b-watch-step",
+    "x": 71.5,
+    "y": 103.0,
+    "z": 3002.5,
+    "yaw": -0.0,
+    "pitch": 7.1,
+    "note": "guard_room interior",
+    "feet_cell": [
+      71,
+      103,
+      3002
+    ],
+    "target_cell": [
+      71,
+      103,
+      3011
+    ]
+  },
+  {
+    "name": "lower-guard_room-c-armoury",
+    "x": 74.5,
+    "y": 101.0,
+    "z": 3006.5,
+    "yaw": 108.4,
+    "pitch": -5.3,
+    "note": "guard_room interior",
+    "feet_cell": [
+      74,
+      101,
+      3006
+    ],
+    "target_cell": [
+      65,
+      103,
+      3003
+    ]
+  },
+  {
+    "name": "lower-residence_ruin-a-hall",
+    "x": 135.5,
+    "y": 101.0,
+    "z": 3016.5,
+    "yaw": -180.0,
+    "pitch": -6.3,
+    "note": "residence_ruin interior",
+    "feet_cell": [
+      135,
+      101,
+      3016
+    ],
+    "target_cell": [
+      135,
+      103,
+      3008
+    ]
+  },
+  {
+    "name": "lower-residence_ruin-b-bedroom",
+    "x": 135.5,
+    "y": 101.0,
+    "z": 3006.5,
+    "yaw": -0.0,
+    "pitch": 0.8,
+    "note": "residence_ruin interior",
+    "feet_cell": [
+      135,
+      101,
+      3006
+    ],
+    "target_cell": [
+      135,
+      102,
+      3015
+    ]
+  },
+  {
+    "name": "lower-residence_ruin-c-hearth",
+    "x": 138.5,
+    "y": 101.0,
+    "z": 3012.5,
+    "yaw": 119.7,
+    "pitch": 0.9,
+    "note": "residence_ruin interior",
+    "feet_cell": [
+      138,
+      101,
+      3012
+    ],
+    "target_cell": [
+      131,
+      102,
+      3008
+    ]
+  },
+  {
+    "name": "lower-storage_room-a-aisle",
+    "x": 198.5,
+    "y": 101.0,
+    "z": 3014.5,
+    "yaw": -180.0,
+    "pitch": -4.6,
+    "note": "storage_room interior",
+    "feet_cell": [
+      198,
+      101,
+      3014
+    ],
+    "target_cell": [
+      198,
+      103,
+      3003
+    ]
+  },
+  {
+    "name": "lower-storage_room-b-corner",
+    "x": 194.5,
+    "y": 101.0,
+    "z": 3014.5,
+    "yaw": -141.3,
+    "pitch": 0.5,
+    "note": "storage_room interior",
+    "feet_cell": [
+      194,
+      101,
+      3014
+    ],
+    "target_cell": [
+      202,
+      102,
+      3004
+    ]
+  },
+  {
+    "name": "lower-storage_room-c-stash",
+    "x": 198.5,
+    "y": 103.0,
+    "z": 3003.5,
+    "yaw": -0.0,
+    "pitch": 10.0,
+    "note": "storage_room interior",
+    "feet_cell": [
+      198,
+      103,
+      3003
+    ],
+    "target_cell": [
+      198,
+      102,
+      3015
+    ]
+  },
+  {
+    "name": "upper-barracks_hall-a-mess",
+    "x": 266.5,
+    "y": 101.0,
+    "z": 3024.5,
+    "yaw": -180.0,
+    "pitch": -8.9,
+    "note": "barracks_hall interior",
+    "feet_cell": [
+      266,
+      101,
+      3024
+    ],
+    "target_cell": [
+      266,
+      104,
+      3012
+    ]
+  },
+  {
+    "name": "upper-barracks_hall-b-bunks-and-stair",
+    "x": 266.5,
+    "y": 101.0,
+    "z": 3020.5,
+    "yaw": 122.0,
+    "pitch": -17.0,
+    "note": "barracks_hall interior",
+    "feet_cell": [
+      266,
+      101,
+      3020
+    ],
+    "target_cell": [
+      258,
+      105,
+      3015
+    ]
+  },
+  {
+    "name": "upper-barracks_hall-d-mezzanine",
+    "x": 266.5,
+    "y": 101.0,
+    "z": 3022.5,
+    "yaw": -180.0,
+    "pitch": -20.6,
+    "note": "barracks_hall interior",
+    "feet_cell": [
+      266,
+      101,
+      3022
+    ],
+    "target_cell": [
+      266,
+      107,
+      3009
+    ]
+  },
+  {
+    "name": "upper-barracks_hall-c-armoury",
+    "x": 266.5,
+    "y": 101.0,
+    "z": 3008.5,
+    "yaw": -125.5,
+    "pitch": 0.8,
+    "note": "barracks_hall interior",
+    "feet_cell": [
+      266,
+      101,
+      3008
+    ],
+    "target_cell": [
+      273,
+      102,
+      3003
+    ]
+  },
+  {
+    "name": "upper-grand_hall-a-nave",
+    "x": 331.5,
+    "y": 101.0,
+    "z": 3028.5,
+    "yaw": -180.0,
+    "pitch": -11.0,
+    "note": "grand_hall interior",
+    "feet_cell": [
+      331,
+      101,
+      3028
+    ],
+    "target_cell": [
+      331,
+      107,
+      3003
+    ]
+  },
+  {
+    "name": "upper-grand_hall-b-gallery",
+    "x": 323.5,
+    "y": 107.0,
+    "z": 3019.5,
+    "yaw": -180.0,
+    "pitch": -6.3,
+    "note": "grand_hall interior",
+    "feet_cell": [
+      323,
+      107,
+      3019
+    ],
+    "target_cell": [
+      323,
+      110,
+      3002
+    ]
+  },
+  {
+    "name": "upper-grand_hall-c-dais",
+    "x": 331.5,
+    "y": 104.0,
+    "z": 3005.5,
+    "yaw": -0.0,
+    "pitch": -2.2,
+    "note": "grand_hall interior",
+    "feet_cell": [
+      331,
+      104,
+      3005
+    ],
+    "target_cell": [
+      331,
+      106,
+      3028
+    ]
+  },
+  {
+    "name": "upper-trial_chamber-a-entry",
+    "x": 395.5,
+    "y": 101.0,
+    "z": 3026.5,
+    "yaw": -180.0,
+    "pitch": -3.1,
+    "note": "trial_chamber interior",
+    "feet_cell": [
+      395,
+      101,
+      3026
+    ],
+    "target_cell": [
+      395,
+      103,
+      3010
+    ]
+  },
+  {
+    "name": "upper-trial_chamber-b-ledge",
+    "x": 386.5,
+    "y": 103.0,
+    "z": 3012.5,
+    "yaw": -74.1,
+    "pitch": 12.1,
+    "note": "trial_chamber interior",
+    "feet_cell": [
+      386,
+      103,
+      3012
+    ],
+    "target_cell": [
+      400,
+      101,
+      3016
+    ]
+  },
+  {
+    "name": "upper-trial_chamber-c-alcove",
+    "x": 395.5,
+    "y": 103.0,
+    "z": 3006.5,
+    "yaw": -0.0,
+    "pitch": 6.7,
+    "note": "trial_chamber interior",
+    "feet_cell": [
+      395,
+      103,
+      3006
+    ],
+    "target_cell": [
+      395,
+      102,
+      3024
+    ]
+  },
+  {
+    "commands": [
+      "fill 862 -25 862 885 -2 885 minecraft:air",
+      "fill 862 -25 886 885 -2 909 minecraft:air",
+      "fill 862 -25 910 885 -2 933 minecraft:air",
+      "fill 862 -25 934 885 -2 957 minecraft:air",
+      "fill 862 -25 958 885 -2 981 minecraft:air",
+      "fill 862 -25 982 885 -2 1005 minecraft:air",
+      "fill 862 -25 1006 885 -2 1029 minecraft:air",
+      "fill 862 -25 1030 885 -2 1053 minecraft:air",
+      "fill 862 -25 1054 885 -2 1077 minecraft:air",
+      "fill 862 -25 1078 885 -2 1082 minecraft:air",
+      "fill 862 -1 862 885 3 885 minecraft:air",
+      "fill 862 -1 886 885 3 909 minecraft:air",
+      "fill 862 -1 910 885 3 933 minecraft:air",
+      "fill 862 -1 934 885 3 957 minecraft:air",
+      "fill 862 -1 958 885 3 981 minecraft:air",
+      "fill 862 -1 982 885 3 1005 minecraft:air",
+      "fill 862 -1 1006 885 3 1029 minecraft:air",
+      "fill 862 -1 1030 885 3 1053 minecraft:air",
+      "fill 862 -1 1054 885 3 1077 minecraft:air",
+      "fill 862 -1 1078 885 3 1082 minecraft:air",
+      "fill 886 -25 862 909 -2 885 minecraft:air",
+      "fill 886 -25 886 909 -2 909 minecraft:air",
+      "fill 886 -25 910 909 -2 933 minecraft:air",
+      "fill 886 -25 934 909 -2 957 minecraft:air",
+      "fill 886 -25 958 909 -2 981 minecraft:air",
+      "fill 886 -25 982 909 -2 1005 minecraft:air",
+      "fill 886 -25 1006 909 -2 1029 minecraft:air",
+      "fill 886 -25 1030 909 -2 1053 minecraft:air",
+      "fill 886 -25 1054 909 -2 1077 minecraft:air",
+      "fill 886 -25 1078 909 -2 1082 minecraft:air",
+      "fill 886 -1 862 909 3 885 minecraft:air",
+      "fill 886 -1 886 909 3 909 minecraft:air",
+      "fill 886 -1 910 909 3 933 minecraft:air",
+      "fill 886 -1 934 909 3 957 minecraft:air",
+      "fill 886 -1 958 909 3 981 minecraft:air",
+      "fill 886 -1 982 909 3 1005 minecraft:air",
+      "fill 886 -1 1006 909 3 1029 minecraft:air",
+      "fill 886 -1 1030 909 3 1053 minecraft:air",
+      "fill 886 -1 1054 909 3 1077 minecraft:air",
+      "fill 886 -1 1078 909 3 1082 minecraft:air",
+      "fill 910 -25 862 933 -2 885 minecraft:air",
+      "fill 910 -25 886 933 -2 909 minecraft:air",
+      "fill 910 -25 910 933 -2 933 minecraft:air",
+      "fill 910 -25 934 933 -2 957 minecraft:air",
+      "fill 910 -25 958 933 -2 981 minecraft:air",
+      "fill 910 -25 982 933 -2 1005 minecraft:air",
+      "fill 910 -25 1006 933 -2 1029 minecraft:air",
+      "fill 910 -25 1030 933 -2 1053 minecraft:air",
+      "fill 910 -25 1054 933 -2 1077 minecraft:air",
+      "fill 910 -25 1078 933 -2 1082 minecraft:air",
+      "fill 910 -1 862 933 3 885 minecraft:air",
+      "fill 910 -1 886 933 3 909 minecraft:air",
+      "fill 910 -1 910 933 3 933 minecraft:air",
+      "fill 910 -1 934 933 3 957 minecraft:air",
+      "fill 910 -1 958 933 3 981 minecraft:air",
+      "fill 910 -1 982 933 3 1005 minecraft:air",
+      "fill 910 -1 1006 933 3 1029 minecraft:air",
+      "fill 910 -1 1030 933 3 1053 minecraft:air",
+      "fill 910 -1 1054 933 3 1077 minecraft:air",
+      "fill 910 -1 1078 933 3 1082 minecraft:air",
+      "fill 934 -25 862 957 -2 885 minecraft:air",
+      "fill 934 -25 886 957 -2 909 minecraft:air",
+      "fill 934 -25 910 957 -2 933 minecraft:air",
+      "fill 934 -25 934 957 -2 957 minecraft:air",
+      "fill 934 -25 958 957 -2 981 minecraft:air",
+      "fill 934 -25 982 957 -2 1005 minecraft:air",
+      "fill 934 -25 1006 957 -2 1029 minecraft:air",
+      "fill 934 -25 1030 957 -2 1053 minecraft:air",
+      "fill 934 -25 1054 957 -2 1077 minecraft:air",
+      "fill 934 -25 1078 957 -2 1082 minecraft:air",
+      "fill 934 -1 862 957 3 885 minecraft:air",
+      "fill 934 -1 886 957 3 909 minecraft:air",
+      "fill 934 -1 910 957 3 933 minecraft:air",
+      "fill 934 -1 934 957 3 957 minecraft:air",
+      "fill 934 -1 958 957 3 981 minecraft:air",
+      "fill 934 -1 982 957 3 1005 minecraft:air",
+      "fill 934 -1 1006 957 3 1029 minecraft:air",
+      "fill 934 -1 1030 957 3 1053 minecraft:air",
+      "fill 934 -1 1054 957 3 1077 minecraft:air",
+      "fill 934 -1 1078 957 3 1082 minecraft:air",
+      "fill 958 -25 862 981 -2 885 minecraft:air",
+      "fill 958 -25 886 981 -2 909 minecraft:air",
+      "fill 958 -25 910 981 -2 933 minecraft:air",
+      "fill 958 -25 934 981 -2 957 minecraft:air",
+      "fill 958 -25 958 981 -2 981 minecraft:air",
+      "fill 958 -25 982 981 -2 1005 minecraft:air",
+      "fill 958 -25 1006 981 -2 1029 minecraft:air",
+      "fill 958 -25 1030 981 -2 1053 minecraft:air",
+      "fill 958 -25 1054 981 -2 1077 minecraft:air",
+      "fill 958 -25 1078 981 -2 1082 minecraft:air",
+      "fill 958 -1 862 981 3 885 minecraft:air",
+      "fill 958 -1 886 981 3 909 minecraft:air",
+      "fill 958 -1 910 981 3 933 minecraft:air",
+      "fill 958 -1 934 981 3 957 minecraft:air",
+      "fill 958 -1 958 981 3 981 minecraft:air",
+      "fill 958 -1 982 981 3 1005 minecraft:air",
+      "fill 958 -1 1006 981 3 1029 minecraft:air",
+      "fill 958 -1 1030 981 3 1053 minecraft:air",
+      "fill 958 -1 1054 981 3 1077 minecraft:air",
+      "fill 958 -1 1078 981 3 1082 minecraft:air",
+      "fill 982 -25 862 982 -2 885 minecraft:air",
+      "fill 982 -25 886 982 -2 909 minecraft:air",
+      "fill 982 -25 910 982 -2 933 minecraft:air",
+      "fill 982 -25 934 982 -2 957 minecraft:air",
+      "fill 982 -25 958 982 -2 981 minecraft:air",
+      "fill 982 -25 982 982 -2 1005 minecraft:air",
+      "fill 982 -25 1006 982 -2 1029 minecraft:air",
+      "fill 982 -25 1030 982 -2 1053 minecraft:air",
+      "fill 982 -25 1054 982 -2 1077 minecraft:air",
+      "fill 982 -25 1078 982 -2 1082 minecraft:air",
+      "fill 982 -1 862 982 3 885 minecraft:air",
+      "fill 982 -1 886 982 3 909 minecraft:air",
+      "fill 982 -1 910 982 3 933 minecraft:air",
+      "fill 982 -1 934 982 3 957 minecraft:air",
+      "fill 982 -1 958 982 3 981 minecraft:air",
+      "fill 982 -1 982 982 3 1005 minecraft:air",
+      "fill 982 -1 1006 982 3 1029 minecraft:air",
+      "fill 982 -1 1030 982 3 1053 minecraft:air",
+      "fill 982 -1 1054 982 3 1077 minecraft:air",
+      "fill 982 -1 1078 982 3 1082 minecraft:air"
+    ]
+  },
+  {
+    "name": "section-multilevel",
+    "x": 948.5,
+    "y": -10.0,
+    "z": 984.5,
+    "yaw": -90.0,
+    "pitch": 10.2,
+    "note": "vertical section through the north lower/upper stack (evidence world cut at local x=10)",
+    "feet_cell": [
+      948,
+      -10,
+      984
+    ],
+    "target_cell": [
+      982,
+      -15,
+      984
+    ]
+  },
+  {
+    "name": "elevated-separation",
+    "x": 958.5,
+    "y": 6.0,
+    "z": 1018.5,
+    "yaw": -137.0,
+    "pitch": 29.4,
+    "note": "elevated oblique view of the cut: lower band, upper band, tunnels and chamber",
+    "feet_cell": [
+      958,
+      6,
+      1018
+    ],
+    "target_cell": [
+      986,
+      -16,
+      988
+    ]
+  }
+]

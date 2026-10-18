@@ -91,6 +91,7 @@ def main() -> int:
         for cmd_text in (f"gamemode spectator {PLAYER}", "time set noon", "weather clear",
                          f"effect give {PLAYER} minecraft:night_vision infinite 0 true"):
             rcon.run(cmd_text)
+        time.sleep(16)  # let the client's one-time join toast expire before the first frame
         cameras = json.loads(args.cameras.read_text())
         log = open(args.evidence / "camera-positions.log", "a")
         failed = []
