@@ -74,13 +74,13 @@ the Beta repository.
 | NBT type encoding and deterministic gzip output | **PASS** | NBT reader/writer round-trip and byte-equality tests. |
 | Block-state and block-entity ID consistency | **PASS** | Chest and Jigsaw fixtures; mismatched known block-entity IDs are rejected. |
 | Template and worldgen JSON reference validation | **PASS** | Missing templates, pools, and connector target names are rejected by the builder. |
-| Four Jigsaw seams, socket directions, and doorway boundaries | **PASS** (static) | Four chamber/tunnel joins have opposing faces and aligned seam coordinates; 90° rotation math has a separate test. |
+| Four Jigsaw seams, socket directions, and doorway boundaries | **PASS** (static) | Four chamber/tunnel joins have opposing faces and the child connector in the cell in front of the parent connector (vanilla adjacency); 90° rotation math has a separate test. Confirmed against Minecraft 26.3 generation (see below). |
 | Built wall, roof, and floor integrity | **PASS** (static) | Generated block-layer tests confirm the constructed shell; only the four 3 × 4 doors break the perimeter. |
 | Export reproducibility | **PASS** | Two independently generated packs match byte-for-byte; manifest checksums match each file. |
 | Vanilla Trial Chambers exclusion definition | **PASS** (static) | Independent structure set references `minecraft:trial_chambers` with `chunk_count: 12`. |
-| Automated tests | **PASS** | `PYTHONPATH=vendor/mcbuild/src python3 -m unittest discover -s tests -v`: 17 tests passed. |
+| Automated tests | **PASS** | `PYTHONPATH=vendor/mcbuild/src python3 -m unittest discover -s tests -v`: 19 tests passed. |
 | Existing upstream mcbuild test suite | **NOT RUN** | This task does not modify mcbuild; pytest and its dependencies are not installed in this environment. |
-| Minecraft 26.3 datapack load and world generation | **NOT RUN** | No Minecraft server/client, server jar, or JDK 25 runtime is available here. A valid NBT file is not evidence that Minecraft loaded or generated it. |
+| Minecraft 26.3 datapack load and world generation | **PASS** (vanilla 26.3 server) | Server-side only; see `minecraft-26.3-client-visual-validation.md`. Pack enabled, all five templates place, 15/15 live and 15/15 saved-chunk block probes match, and `/place structure` produces 8,575/8,575 expected blocks (180° rotation). |
 | Mountain/cave placement, fluids, natural-cave intersections, and in-world Trial Chambers coexistence | **NOT RUN** | Requires actual Minecraft world generation; PR #117 informs placement choices but does not validate this export. |
 | In-client visual inspection/screenshots | **NOT RUN** | A text layer and vertical-section preview is provided in `structural-evidence.md`; this is structural evidence, not client rendering. |
 

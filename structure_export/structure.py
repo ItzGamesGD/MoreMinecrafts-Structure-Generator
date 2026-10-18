@@ -119,9 +119,9 @@ def grid_to_structure(
     palette = []
     state_ids = {}
     for state_id, (identifier, property_items) in enumerate(palette_states):
-        entry: dict[str, object] = {"Name": identifier}
+        entry: dict[str, object] = {"id": identifier}
         if property_items:
-            entry["Properties"] = dict(property_items)
+            entry["properties"] = dict(property_items)
         palette.append(entry)
         state_ids[(identifier, property_items)] = state_id
 
@@ -168,12 +168,12 @@ def validate_structure(template: dict[str, object]) -> None:
         raise ValueError("Structure template blocks must be a list")
     seen = set()
     for entry in palette:
-        if not isinstance(entry, dict) or not isinstance(entry.get("Name"), str):
-            raise ValueError("Every palette entry must contain a block Name")
-        _parse_block_id(entry["Name"])
-        props = entry.get("Properties", {})
+        if not isinstance(entry, dict) or not isinstance(entry.get("id"), str):
+            raise ValueError("Every palette entry must contain a block id")
+        _parse_block_id(entry["id"])
+        props = entry.get("properties", {})
         if not isinstance(props, dict) or any(not isinstance(k, str) or not isinstance(v, str) for k, v in props.items()):
-            raise ValueError("Block-state Properties must be a string-to-string compound")
+            raise ValueError("Block-state properties must be a string-to-string compound")
     for block in blocks:
         if not isinstance(block, dict) or not isinstance(block.get("pos"), list) or len(block["pos"]) != 3:
             raise ValueError("Every structure block must have a three-coordinate pos")

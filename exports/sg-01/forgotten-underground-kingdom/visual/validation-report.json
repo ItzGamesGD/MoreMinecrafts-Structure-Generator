@@ -1,33 +1,33 @@
 {
-  "assembled_coordinate_state_sha256": "d930f5f247b14e5de7206bcce67992414a7af08af27007842dceecca6e85c15d",
-  "assembled_solid_block_count": 8443,
+  "assembled_coordinate_state_sha256": "8039d2a2c7b799e84a5542c0883597455ea1ceb4eb4da7ece826117e166a326a",
+  "assembled_solid_block_count": 8575,
   "block_counts": {
     "chiseled_tuff_bricks": 256,
     "deepslate_brick_wall": 100,
-    "deepslate_bricks": 2588,
-    "deepslate_tiles": 3261,
+    "deepslate_bricks": 2644,
+    "deepslate_tiles": 3281,
     "polished_deepslate": 561,
     "sea_lantern": 9,
     "stone_brick_stairs": 84,
-    "tuff_bricks": 1584
+    "tuff_bricks": 1640
   },
-  "covered_block_position_count": 8443,
-  "glb_bytes": 3601316,
+  "covered_block_position_count": 8575,
+  "glb_bytes": 3633572,
   "glb_embeds_texture_atlas": true,
-  "glb_sha256": "1344a0aee608d161ea14f1bb04f9ae6c8740ba2b3039026963db6d9a0f024e3e",
-  "glb_vertex_count": 112272,
+  "glb_sha256": "401567bbb02e16e606ab7ed3665130a548c7c95d0312f2396e38f34041acfebe",
+  "glb_vertex_count": 113280,
   "glb_world_bounds": [
     [
-      -14.0,
-      55.0
+      -15.0,
+      56.0
     ],
     [
       0.0,
       17.0
     ],
     [
-      -14.0,
-      55.0
+      -15.0,
+      56.0
     ]
   ],
   "limitations": [
@@ -47,19 +47,13 @@
     "stone_brick_stairs",
     "tuff_bricks"
   ],
-  "parent_owned_shared_boundary_blocks": {
-    "east": 33,
-    "north": 33,
-    "south": 33,
-    "west": 33
-  },
   "preview_png_sha256": {
-    "elevated-balconies-supports.png": "03703bb3df3bb5503c36e2ef75283796de180d17f8483ab5aec33aa882bb4f1a",
-    "exterior-isometric.png": "7c2f781f4af4c17a081485811a104a241d36e7c7690c4f06d65a17602228e51e",
-    "interior-central-plaza.png": "6a110648b54cd391e8fac42e6ae2438d33a775582e9724484689e35171e31f25",
-    "jigsaw-connections-diagnostic.png": "979a9a40087b6542d399ad4e9e63b13648d1e190a23b90742081ce0ecc1ed045",
-    "sectional-cutaway.png": "92847066796c0436079ccee2e8ddaf2ef1f79b16471a9b709addf67449288ebf",
-    "top-down-overview.png": "3825898fa3d3232d31613af81e8698ce2806598f3438798292184102d4df4a50"
+    "elevated-balconies-supports.png": "8a7ef794c4ba413ad1fe1880a90bf9479c8029246ca56aba5c69c0890a93a2fc",
+    "exterior-isometric.png": "7c3964e4cfa0fb20256545dda27dd13b7fb42243431773c77bad0c7c7faa6cc5",
+    "interior-central-plaza.png": "49a875ba6634d47c0643f6b192bd393e918ec316bca8007a206fe567d6d44fa2",
+    "jigsaw-connections-diagnostic.png": "6ada2b69a0c3b0350cea7588ec5f12320d27899a0e9d1774bb009e6e516ca490",
+    "sectional-cutaway.png": "1b68314eadda3bd6532872cbeaf1488f42df676ece47e9c20669092e2be7eb8f",
+    "top-down-overview.png": "30ab07dda2103a05ad47f9c28bd96226133b6277719229249c6b3f233cef6703"
   },
   "seams": {
     "east": {
@@ -69,18 +63,13 @@
         20
       ],
       "rotation": "none",
-      "seam_block": [
-        40,
-        1,
-        20
-      ],
       "tunnel_connector_world": [
-        40,
+        41,
         1,
         20
       ],
       "tunnel_origin": [
-        40,
+        41,
         0,
         18
       ]
@@ -92,20 +81,15 @@
         0
       ],
       "rotation": "none",
-      "seam_block": [
-        20,
-        1,
-        0
-      ],
       "tunnel_connector_world": [
         20,
         1,
-        0
+        -1
       ],
       "tunnel_origin": [
         18,
         0,
-        -14
+        -15
       ]
     },
     "south": {
@@ -115,20 +99,15 @@
         40
       ],
       "rotation": "none",
-      "seam_block": [
-        20,
-        1,
-        40
-      ],
       "tunnel_connector_world": [
         20,
         1,
-        40
+        41
       ],
       "tunnel_origin": [
         18,
         0,
-        40
+        41
       ]
     },
     "west": {
@@ -138,18 +117,13 @@
         20
       ],
       "rotation": "none",
-      "seam_block": [
-        0,
-        1,
-        20
-      ],
       "tunnel_connector_world": [
-        0,
+        -1,
         1,
         20
       ],
       "tunnel_origin": [
-        -14,
+        -15,
         0,
         18
       ]
@@ -157,24 +131,24 @@
   },
   "source_block_bounds": [
     [
-      -14,
-      55
+      -15,
+      56
     ],
     [
       0,
       17
     ],
     [
-      -14,
-      55
+      -15,
+      56
     ]
   ],
   "source_nbt_sha256": {
-    "main_chamber": "abb0b09d4a7e7241e7c92775360e931e0df4ca4f6ca0a250f2211c07d8861ea9",
-    "tunnel_east": "e97d7ff3ec289dc4c035cd8d6c2509c7cbe377f9c5a7b5cf30ea156fa4735f28",
-    "tunnel_north": "5d5d09407fefe6a6400c39186e1a92c72e4caf07e755613e14ac4e3e7e829054",
-    "tunnel_south": "272e99dabf0b4f59e55685cd50083e328e071548aa68c7cfe9e38f492104095b",
-    "tunnel_west": "d6bcd042fe980bed3b3bf89ce0df5c7a864d84f4e2fbbe219f6ae82ec131977e"
+    "main_chamber": "b6904ec9c98105a00d4683156c66ad18a4e4a179dd5c4aa9245d395241d4305e",
+    "tunnel_east": "291e8874b42b36b7a825f748930bb350baecfb8420cc51806f5d8e53cfe3f808",
+    "tunnel_north": "67cbf0db331dbe460e389888bc4a109b9297875354009c3d447edb56dfd656e2",
+    "tunnel_south": "e92364348cfc208b3c3887b5a7499478dcb051f83cc7e9393387fbe43c30bfad",
+    "tunnel_west": "cf0869b8c05702122b8956faedd593e29f304514f70f7c192e78771f94dd26d6"
   },
   "texture_sources": {
     "chiseled_tuff_bricks": "chiseled_tuff_bricks.png",
@@ -193,22 +167,22 @@
       0
     ],
     "tunnel_east": [
-      40,
+      41,
       0,
       18
     ],
     "tunnel_north": [
       18,
       0,
-      -14
+      -15
     ],
     "tunnel_south": [
       18,
       0,
-      40
+      41
     ],
     "tunnel_west": [
-      -14,
+      -15,
       0,
       18
     ]

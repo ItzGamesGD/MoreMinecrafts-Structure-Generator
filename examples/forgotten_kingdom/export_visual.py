@@ -24,6 +24,7 @@ PACK = ROOT / "exports/sg-01/forgotten-underground-kingdom/datapack"
 OUT = ROOT / "exports/sg-01/forgotten-underground-kingdom/visual"
 BASE = "moreminecrafts:forgotten_kingdom/central_cavern"
 DIRECTIONS = ("north", "east", "south", "west")
+FACE_VECTORS = {"north": (0, 0, -1), "east": (1, 0, 0), "south": (0, 0, 1), "west": (-1, 0, 0)}
 CONNECTORS = {
     "north": ((20, 1, 0), (2, 1, 14)),
     "east": ((40, 1, 20), (0, 1, 2)),
@@ -61,21 +62,21 @@ def _load_templates() -> tuple[dict[str, dict[str, Any]], dict[str, str]]:
 
 
 def _state(entry: dict[str, Any]) -> tuple[str, dict[str, str]]:
-    return entry["Name"].split(":", 1)[-1], entry.get("Properties", {})
+    return entry["id"].split(":", 1)[-1], entry.get("properties", {})
 
 
 def _assembled_blocks(templates: dict[str, dict[str, Any]]) -> tuple[dict[tuple[int, int, int], tuple[str, dict[str, str]]], dict[str, Any]]:
     room = templates["main_chamber"]
     transforms = {"main_chamber": (0, 0, 0)}
     for direction, (parent_pos, child_pos) in CONNECTORS.items():
-        # These four joins are authored without rotation; calculate origin from the
-        # connector block coordinates stored in the exported templates.
-        child = templates[f"tunnel_{direction}"]
-        origin = tuple(parent_pos[i] - child_pos[i] for i in range(3))
+        # These four joins are authored without rotation. As in vanilla jigsaw assembly the child
+        # connector sits in the cell in front of the parent connector, so tunnels are adjacent
+        # to the chamber and never overlap it.
+        front = FACE_VECTORS[direction]
+        origin = tuple(parent_pos[i] + front[i] - child_pos[i] for i in range(3))
         transforms[f"tunnel_{direction}"] = origin
     blocks: dict[tuple[int, int, int], tuple[str, dict[str, str]]] = {}
     counts = Counter()
-    shared_seam_blocks = Counter()
     for template_name, template in templates.items():
         origin = transforms[template_name]
         for block in template["blocks"]:
@@ -84,28 +85,19 @@ def _assembled_blocks(templates: dict[str, dict[str, Any]]) -> tuple[dict[tuple[
                 continue
             pos = tuple(block["pos"][i] + origin[i] for i in range(3))
             if pos in blocks:
-                if template_name == "main_chamber":
-                    raise ValueError(f"Unexpected duplicate in central chamber at {pos}")
-                # Templates share the one-block connector boundary. The parent
-                # chamber owns that plane; the tunnel continues from the next block.
-                direction = template_name.removeprefix("tunnel_")
-                seam_axis = {"north": (2, 0), "south": (2, 40), "east": (0, 40), "west": (0, 0)}[direction]
-                if pos[seam_axis[0]] != seam_axis[1]:
-                    raise ValueError(f"Unexpected overlap away from {direction} connector plane at {pos}")
-                shared_seam_blocks[direction] += 1
-                continue
+                raise ValueError(f"Unexpected overlap between assembled templates at {pos}")
             blocks[pos] = (state_name, props)
             counts[state_name] += 1
     seam_report = {}
     for direction, (parent_pos, child_pos) in CONNECTORS.items():
         origin = transforms[f"tunnel_{direction}"]
         child_world = tuple(origin[i] + child_pos[i] for i in range(3))
-        if child_world != parent_pos:
-            raise ValueError(f"{direction} connector seam mismatch: {parent_pos} != {child_world}")
+        expected_child = tuple(parent_pos[i] + FACE_VECTORS[direction][i] for i in range(3))
+        if child_world != expected_child:
+            raise ValueError(f"{direction} connector seam mismatch: {expected_child} != {child_world}")
         seam_report[direction] = {"room_connector": list(parent_pos), "tunnel_connector_world": list(child_world),
-                                  "tunnel_origin": list(origin), "rotation": "none", "seam_block": list(parent_pos)}
+                                  "tunnel_origin": list(origin), "rotation": "none"}
     return blocks, {"transforms": {k: list(v) for k, v in transforms.items()}, "seams": seam_report,
-                    "parent_owned_shared_boundary_blocks": dict(sorted(shared_seam_blocks.items())),
                     "block_counts": dict(sorted(counts.items()))}
 
 

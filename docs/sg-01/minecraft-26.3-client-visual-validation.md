@@ -4,72 +4,84 @@
 **Draft PR:** [#5](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/pull/5)
 **Branch:** `feat/sg-01-central-cavern-portable-export`
 
-## SG-01C diagnosis
+## Root cause: `/place template` succeeded but placed nothing
 
-The run #41 failure did **not** establish that /place omitted the chamber. Its RCON transcript shows the exact command `place template moreminecrafts:forgotten_kingdom/central_cavern/main_chamber 0 100 0` and Minecraft responded `Loaded template ... at 0, 100, 0`. The template file has NBT size `[41,17,41]`, with local minimum coordinate `[0,0,0]`. With this absolute placement origin, no rotation, and no mirror, the coordinate rule is:
+The exported templates wrote block-state palette entries as `{Name, Properties}`. Minecraft 26.3 reads
+structure-template palette entries as `{id, properties}` (compare the game's own `igloo/top.nbt`, `DataVersion` 5023).
+With the old keys the game still finds and loads the template, and `/place template` still prints
+`Loaded template ... at 0, 100, 0`, but every palette entry decodes to air, so no block is written.
 
-```
-world_x = local_x
-world_y = 100 + local_y
-world_z = local_z
-```
+Evidence, all from the real Minecraft 26.3 server (`server.jar` SHA-1 `33680f5f…`, `world_version` 5023,
+`pack_version.data_major` 121, Java 25) with the exact same data pack:
 
-For this template, local `[20,0,20]` is indeed `minecraft:polished_deepslate`, so its expected world position is `[20,100,20]`. The earlier expectation was correct.
-
-Run #41 then used `data get block 20 100 20`, which only returns block-entity NBT and reports “The target block is not a block entity” for ordinary blocks. It followed with a valid `execute if block` command, but its result was incorrectly judged by searching `validation/minecraft-visual/run/server/logs/server.log`. The server output was actually redirected to `validation/minecraft-visual/run/logs/server.log`; the checked path could not exist. Therefore the reported “missing block” was a **harness false failure**, and run #41 did not actually determine the block state. Its placement command source was the dedicated-server console (Overworld context); the replacement probes explicitly use `execute in minecraft:overworld` to remove that ambiguity.
-
-### NBT-derived sample states
-
-These are the first local positions for ten distinct non-air palette states. Their expected world coordinates follow the mapping above.
-
-| Local NBT position | Expected world position | Expected block state |
-|---|---|---|
-| `[0,0,0]` | `[0,100,0]` | `minecraft:deepslate_tiles` |
-| `[12,0,12]` | `[12,100,12]` | `minecraft:chiseled_tuff_bricks` |
-| `[13,0,12]` | `[13,100,12]` | `minecraft:tuff_bricks` |
-| `[13,0,13]` | `[13,100,13]` | `minecraft:polished_deepslate` |
-| `[0,1,0]` | `[0,101,0]` | `minecraft:deepslate_bricks` |
-| `[20,1,0]` | `[20,101,0]` | `minecraft:jigsaw[orientation=north_up]` |
-| `[19,1,13]` | `[19,101,13]` | `minecraft:stone_brick_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]` |
-| `[13,1,19]` | `[13,101,19]` | `minecraft:stone_brick_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]` |
-| `[27,1,19]` | `[27,101,19]` | `minecraft:stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]` |
-| `[19,1,27]` | `[19,101,27]` | `minecraft:stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]` |
-| `[0,1,20]` | `[0,101,20]` | `minecraft:jigsaw[orientation=west_up]` |
-| `[40,1,20]` | `[40,101,20]` | `minecraft:jigsaw[orientation=east_up]` |
-| `[20,1,40]` | `[20,101,40]` | `minecraft:jigsaw[orientation=south_up]` |
-| `[4,9,4]` | `[4,109,4]` | `minecraft:deepslate_brick_wall` |
-| `[20,15,5]` | `[20,115,5]` | `minecraft:sea_lantern` |
-
-The replacement run checks each of the 15 distinct non-air palette states with an explicit Overworld `execute if/unless block` query. After `save-all flush`, it independently reads the saved Anvil region data and compares the decoded chunk palette at those positions. It stops before Jigsaw or client startup if any template probe fails. This makes the command response, live block state, and persisted world state separate results.
-
-## Jigsaw checks
-
-Only after direct chamber placement and saved-chunk probes pass, the workflow places each tunnel template at a separate test origin and runs `/place structure moreminecrafts:forgotten_kingdom/central_cavern 0 100 0` in the Overworld. It flushes and decodes the saved chunk data again, checking sampled states for the chamber and four tunnel transforms as well as the floor immediately beyond the north, east, south, and west seams.
-
-The exported transforms are:
-
-| Piece | Origin offset from Jigsaw placement |
+| Observation | Result |
 |---|---|
-| Main chamber | `[0,0,0]` |
-| East tunnel | `[40,0,18]` |
-| North tunnel | `[18,0,-14]` |
-| South tunnel | `[18,0,40]` |
-| West tunnel | `[-14,0,18]` |
+| `datapack list enabled` | `file/sg01 (world)` enabled; namespace `moreminecrafts`, template ids resolve (not a loading problem) |
+| Live probes after `/place template` with `Name`/`Properties` | 15/15 `SG01_TEMPLATE_PROBE_nn_MISS` in the server log (run 45 artifact) |
+| `fill 0 100 0 40 116 40 air` after placing | `No blocks were filled`, so nothing was written (not a probe problem) |
+| Same NBT with only `Name`→`id`, `Properties`→`properties` | All probes pass, jigsaw block entity data (`pool`, `target`, `name`, `joint`) intact |
+| Minecraft's version, `DataVersion`, `pack_format`, origin, chunk loading, world height | All correct, ruled out |
 
-The assembled local bounds are expected at x/z `-14..54`, y `0..16`; with the placement origin `[0,100,0]`, the expected world bounds are x/z `-14..54`, y `100..116`. Jigsaw validation is reported separately from direct template placement.
+Fix: `structure_export/structure.py` now writes `id`/`properties` and rejects the old keys. Tests pin the schema
+(`test_palette_uses_minecraft_26_3_keys_not_legacy_name_properties`, `test_legacy_name_palette_is_rejected`).
+
+## Other defects found and repaired
+
+1. **Wrong Jigsaw seam model (exporter).** `connect_templates` and the visual assembler assumed the chamber and tunnel
+   connectors share one cell. Vanilla places the child connector in the cell *in front of* the parent connector. The
+   corrected tunnel origins are north `[18,0,-15]`, east `[41,0,18]`, south `[18,0,41]`, west `[-15,0,18]` (relative to the
+   chamber), giving a 71 × 17 × 71 assembly of 8,575 solid blocks. Minecraft generated exactly 8,575 blocks; the old model
+   predicted 8,443 and 69-wide bounds. The preview GLB/PNGs and `validation-report.json` were regenerated.
+2. **Saved-world path (harness).** Minecraft 26.x stores the Overworld at `world/dimensions/minecraft/overworld/region`, not
+   `world/region`. The `cp` in run #45 failed on that path, so saved-chunk probes had never run.
+3. **Saved-chunk decoding (harness).** Chunk palettes use `{id, properties}` or, for a block without properties, a bare string
+   (a `{"": value}` wrapper in mixed lists). Default-valued properties (`facing=north`, `orientation=north_up`, …) are omitted
+   when saving, and walls get game-derived connection properties. `probe-world.py` now compares block id and every
+   expected property, accepting an omitted property only when it equals the known default.
+4. **Jigsaw probe assumptions (harness).** `/place structure` ignores the y of the command: the structure's `start_height`
+   (absolute −40…−20) decides the height, and the game picks the rotation. `probe-jigsaw.py` reconstructs the expected assembly
+   from the templates and finds the rotation/offset in the saved chunks; all blocks must match and no extra structure block may
+   exist. Rotation rotates stair `facing` too.
+5. **Connector forceload (harness).** Connector test origins at x=100…190 were not force-loaded (`That position is not loaded`).
+
+## Probes versus placement: how they are separated
+
+* **Controls** run first (`control-placement`): vanilla `minecraft:igloo/top` (shipped in the game jar) and a 3 × 3 × 3
+  `sg01_control:cube` built by this repo's exporter in a *separate* control pack. A probe or harness fault shows up here, not as
+  an SG-01 failure. An earlier control miss was a real probe error (the igloo's first snow block is at local `[0,0,3]`, not `[0,0,0]`).
+* **Live probes:** one `execute in minecraft:overworld if/unless block … run say` pair per non-air palette state; the marker is
+  read from the server log.
+* **Saved chunks:** after `save-all flush` the Anvil region files are decoded independently.
+* A successful `/place` response, exported NBT or a synthetic render is never treated as proof of placement.
+
+## Current verdicts
+
+| Stage | Vanilla 26.3 server, local run | GitHub Actions (Fabric Loom fixture) |
+|---|---|---|
+| Server start, data pack `file/sg01` enabled | PASS | see PR checks |
+| Control placement (vanilla igloo + exporter cube) | PASS | see PR checks |
+| `/place template` main chamber, 15 live probes | PASS 15/15 | see PR checks |
+| Saved-chunk probes (15 states) | PASS 15/15 | see PR checks |
+| Connector templates place | PASS | see PR checks |
+| `/place structure` Jigsaw assembly | PASS: 8,575/8,575 blocks, 0 extra, rotation 180°, bounds 71 × 17 × 71 | see PR checks |
+| Native client screenshots | Needs the graphical CI fixture | see PR checks |
+
+The local run drove the same `run-acceptance.sh` against the unmodified vanilla server jar via `SG01_SERVER_CMD`. The
+Fabric/client screenshot path remains the existing native `Screenshot.grab` harness.
 
 ## Screenshot acceptance
 
-The capture method remains the existing test-only Fabric harness calling Minecraft's native `Screenshot.grab(...)` after the client world and renderer are ready. The first camera is the central plaza at `[20,102,20]`; further views start only after the plaza PNG is saved, is nonempty, and has the expected 1280×720 dimensions. Screenshots are accepted only after direct block verification succeeds.
-
-This method was verified in MoreMinecrafts-Beta PR #83 and [Actions run #38345195208](https://github.com/MoreMinecrafts-Beta/actions/runs/38345195208), whose [artifact #11787944376](https://github.com/MoreMinecrafts-Beta/actions/runs/38345195208/artifacts/11787944376) contains Minecraft-rendered PNGs. The Beta repository remains read-only.
+The capture method is unchanged: a test-only Fabric client entrypoint calls Minecraft's native `Screenshot.grab(...)` after
+the client world and renderer are ready. The first camera is the central plaza at `[20,102,20]`; further views start only
+after the plaza PNG is saved, is nonempty and is 1280×720. Screenshots are accepted only after direct block verification
+succeeds.
 
 ## Historical results
 
-- [Run #37](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39091006597): the native harness wrote ten PNGs, but inspected plaza/interior images show the flat-world scene rather than SG-01.
-- [Run #39](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39091506040): `/place structure` returned success; the subsequent test used the same invalid ordinary-block NBT query / log-path assumption and did not prove block placement.
-- [Run #41](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39091758916): exporter checks, deterministic export, 17 existing tests, and Gradle configuration passed. Its world-write verdict was invalid because of the path mismatch documented above. The [run #41 artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39091758916/artifacts/12122908412) contains its command and server logs.
+- [Run #37](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39091006597): ten PNGs, but they show the empty flat world (consistent with the palette bug).
+- [Run #39](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39091506040): `/place structure` returned success; the check was invalid.
+- [Run #41](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39091758916): verdict invalid (log-path mismatch).
+- [Run #45](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39092916208): live probes ran for the first time and reported 15/15 `MISS`, which exposed the palette bug; saved-chunk copy failed on the 26.x region path.
 
-Current SG-01C runtime and screenshot verdicts will be filled from the next workflow run. This document distinguishes command success, persisted block verification, Jigsaw assembly, and visual review; a successful `/place` response alone is never treated as placement acceptance.
-
-The harness is test-only. No gameplay systems, mobs, bosses, loot, research features, or cavern redesign are included. PR #5 remains **Draft** and **unmerged**.
+The harness is test-only. No gameplay systems, mobs, bosses, loot, research features, or cavern redesign are included.
+PR #5 remains **Draft** and **unmerged**.

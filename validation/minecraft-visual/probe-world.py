@@ -8,10 +8,45 @@ import gzip
 import json
 import re
 import struct
+import sys
 import zlib
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
 from structure_export.nbt import read_nbt
+
+
+def normalize_palette_entry(entry: dict | str) -> dict:
+    """Saved-chunk palette entries are {id, properties}; a block without properties is a bare string.
+
+    Since 1.21.5 mixed-type NBT lists store a non-compound element wrapped as {"": value}.
+    """
+    if isinstance(entry, str):
+        return {"id": entry}
+    if "" in entry:
+        return {"id": entry[""]}
+    return entry
+
+
+# Saved chunks omit properties that equal their default value, so an expected property
+# missing from the saved state is accepted only if it equals the default listed here.
+DEFAULT_PROPERTIES = {
+    "facing": "north", "half": "bottom", "shape": "straight",
+    "waterlogged": "false", "orientation": "north_up",
+}
+
+
+def state_matches(expected: dict, actual: dict) -> bool:
+    """Same block id; every expected property equals the saved (or default) value.
+
+    Properties the game derived itself (e.g. wall connections after neighbour updates)
+    are not part of the template and are ignored.
+    """
+    if expected["id"] != actual["id"]:
+        return False
+    saved = actual.get("properties", {})
+    return all(saved.get(key, DEFAULT_PROPERTIES.get(key)) == value for key, value in expected.get("properties", {}).items())
 
 
 def unpack_state(section: dict, local_x: int, local_y: int, local_z: int) -> dict:
@@ -35,6 +70,7 @@ def chunk_states(chunk: dict) -> dict[tuple[int, int, int], dict]:
         if not block_states:
             continue
         section_y = int(section["Y"])
+        section = {**section, "block_states": {**block_states, "palette": [normalize_palette_entry(e) for e in block_states["palette"]]}}
         for local_y in range(16):
             y = section_y * 16 + local_y
             for local_z in range(16):
@@ -95,9 +131,9 @@ def state_at(chunks: dict, x: int, y: int, z: int) -> dict:
     chunk_x, chunk_z = x // 16, z // 16
     loaded = chunks.get((chunk_x, chunk_z))
     if loaded is None:
-        return {"Name": "minecraft:unloaded"}
+        return {"id": "minecraft:unloaded"}
     _chunk, states = loaded
-    return states.get((x % 16, y, z % 16), {"Name": "minecraft:air"})
+    return states.get((x % 16, y, z % 16), {"id": "minecraft:air"})
 
 
 def main() -> None:
@@ -109,7 +145,6 @@ def main() -> None:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--radius", type=int, default=64)
     parser.add_argument("--control-origin", type=int, nargs=3)
-    parser.add_argument("--jigsaw-transforms", type=Path)
     args = parser.parse_args()
 
     template = read_nbt(args.template.read_bytes())["value"]
@@ -127,10 +162,6 @@ def main() -> None:
             min(bounds[0], cx - 24), min(bounds[1], cy), min(bounds[2], cz - 24),
             max(bounds[3], cx + 24), max(bounds[4], cy + 40), max(bounds[5], cz + 24),
         )
-    if args.jigsaw_transforms:
-        extra = 64
-        load_bounds = (min(load_bounds[0], origin_x - extra), min(load_bounds[1], origin_y - 20), min(load_bounds[2], origin_z - extra),
-                       max(load_bounds[3], origin_x + extra), max(load_bounds[4], origin_y + 40), max(load_bounds[5], origin_z + extra))
     chunks = load_regions(args.region_dir, load_bounds)
     server_log = args.server_log.read_text(errors="replace")
 
@@ -140,7 +171,7 @@ def main() -> None:
     palette = template["palette"]
     for block in template["blocks"]:
         expected = palette[block["state"]]
-        if expected["Name"] == "minecraft:air":
+        if expected["id"] == "minecraft:air":
             continue
         samples_by_state.setdefault(block["state"], (block["pos"], expected))
 
@@ -163,18 +194,18 @@ def main() -> None:
             "expected_world": world,
             "expected_state": expected,
             "saved_world_state": actual,
-            "saved_world_match": actual == expected,
+            "saved_world_match": state_matches(expected, actual),
             "rcon_probe": command_result,
         })
 
-    distinctive_names = {state["Name"] for _pos, state in samples_by_state.values()}
+    distinctive_names = {state["id"] for _pos, state in samples_by_state.values()}
     found = {name: [] for name in sorted(distinctive_names)}
     min_x, min_y, min_z, max_x, max_y, max_z = bounds
     for (chunk_x, chunk_z), (_chunk, states) in chunks.items():
         for (local_x, y, local_z), state in states.items():
             x, z = chunk_x * 16 + local_x, chunk_z * 16 + local_z
             if min_x <= x <= max_x and min_y <= y <= max_y and min_z <= z <= max_z:
-                name = state.get("Name")
+                name = state.get("id")
                 if name in found:
                     found[name].append([x, y, z])
 
@@ -194,49 +225,6 @@ def main() -> None:
         "search_bounds_inclusive": {"min": [min_x, min_y, min_z], "max": [max_x, max_y, max_z]},
         "distinctive_palette_search": {name: {"count": len(points), "first_positions": points[:20]} for name, points in found.items()},
     }
-    if args.jigsaw_transforms:
-        transforms_doc = json.loads(args.jigsaw_transforms.read_text())
-        pieces = {}
-        for piece_name, offset in transforms_doc["transforms"].items():
-            piece_path = args.template.parent / f"{piece_name}.nbt"
-            piece = read_nbt(piece_path.read_bytes())["value"]
-            piece_palette = piece["palette"]
-            first_by_state = {}
-            for block in piece["blocks"]:
-                expected = piece_palette[block["state"]]
-                if expected["Name"] in ("minecraft:air", "minecraft:jigsaw"):
-                    continue
-                first_by_state.setdefault(block["state"], (block["pos"], expected))
-            piece_samples = []
-            for state_id, (local, expected) in first_by_state.items():
-                local_x, local_y, local_z = local
-                world = [origin_x + offset[0] + local_x, origin_y + offset[1] + local_y, origin_z + offset[2] + local_z]
-                actual = state_at(chunks, *world)
-                piece_samples.append({
-                    "local": local,
-                    "expected_world": world,
-                    "expected_state": expected,
-                    "saved_world_state": actual,
-                    "match": actual == expected,
-                })
-            pieces[piece_name] = {
-                "template_origin_offset": offset,
-                "sample_count": len(piece_samples),
-                "matched": sum(sample["match"] for sample in piece_samples),
-                "samples": piece_samples,
-            }
-        passage_probes = {
-            "north": ([origin_x + 20, origin_y, origin_z - 1], {"Name": "minecraft:deepslate_tiles"}),
-            "east": ([origin_x + 41, origin_y, origin_z + 20], {"Name": "minecraft:deepslate_tiles"}),
-            "south": ([origin_x + 20, origin_y, origin_z + 41], {"Name": "minecraft:deepslate_tiles"}),
-            "west": ([origin_x - 1, origin_y, origin_z + 20], {"Name": "minecraft:deepslate_tiles"}),
-        }
-        passage_results = {}
-        for direction, (world, expected) in passage_probes.items():
-            actual = state_at(chunks, *world)
-            passage_results[direction] = {"world": world, "expected_state": expected, "saved_world_state": actual, "match": actual == expected}
-        report["jigsaw_piece_samples"] = pieces
-        report["jigsaw_passage_floor_probes"] = passage_results
     if args.control_origin:
         control_x, control_y, control_z = args.control_origin
         control_bounds = (control_x - 24, control_y, control_z - 24, control_x + 24, control_y + 40, control_z + 24)
@@ -246,7 +234,7 @@ def main() -> None:
             for (local_x, y, local_z), state in states.items():
                 x, z = chunk_x * 16 + local_x, chunk_z * 16 + local_z
                 if cmin_x <= x <= cmax_x and cmin_y <= y <= cmax_y and cmin_z <= z <= cmax_z:
-                    name = state.get("Name", "")
+                    name = state.get("id", "")
                     if name not in ("minecraft:air", "minecraft:cave_air", "minecraft:void_air"):
                         entry = counts.setdefault(name, {"count": 0, "first_positions": []})
                         entry["count"] += 1

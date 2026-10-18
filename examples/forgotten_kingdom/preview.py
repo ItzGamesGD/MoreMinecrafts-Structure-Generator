@@ -32,7 +32,7 @@ def _read_template(path: Path) -> tuple[tuple[int, int, int], dict[tuple[int, in
     template = read_nbt(path.read_bytes())["value"]
     size = tuple(template["size"])
     palette = template["palette"]
-    blocks = {tuple(block["pos"]): palette[block["state"]]["Name"] for block in template["blocks"]}
+    blocks = {tuple(block["pos"]): palette[block["state"]]["id"] for block in template["blocks"]}
     return size, blocks
 
 

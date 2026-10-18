@@ -22,7 +22,7 @@ class ForgottenKingdomCavernTests(unittest.TestCase):
         root = templates["moreminecrafts:forgotten_kingdom/central_cavern/main_chamber"]
         self.assertEqual(root["size"], [41, 17, 41])
         palette = root["palette"]
-        states = {tuple(block["pos"]): palette[block["state"]]["Name"] for block in root["blocks"]}
+        states = {tuple(block["pos"]): palette[block["state"]]["id"] for block in root["blocks"]}
         self.assertTrue(all(states[(x, 0, z)] != "minecraft:air" for x in range(41) for z in range(41)))
         self.assertTrue(all(states[(x, 16, z)] != "minecraft:air" for x in range(41) for z in range(41)))
         for y in range(1, 16):
@@ -41,7 +41,13 @@ class ForgottenKingdomCavernTests(unittest.TestCase):
         joins = validate_connections(templates)
         self.assertEqual(set(joins), {"north", "east", "south", "west"})
         for connection in joins.values():
-            self.assertEqual(connection["parent_pos"], connection["child_connector_world_pos"])
+            front = {"north": (0, 0, -1), "east": (1, 0, 0), "south": (0, 0, 1), "west": (-1, 0, 0)}[
+                connection["parent_facing"]
+            ]
+            self.assertEqual(
+                connection["child_connector_world_pos"],
+                tuple(connection["parent_pos"][i] + front[i] for i in range(3)),
+            )
             self.assertEqual(connection["world_child_facing"], {
                 "north": "south", "east": "west", "south": "north", "west": "east"
             }[connection["parent_facing"]])
@@ -73,7 +79,7 @@ class ForgottenKingdomCavernTests(unittest.TestCase):
         chamber = templates["moreminecrafts:forgotten_kingdom/central_cavern/main_chamber"]
         north = templates["moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north"]
         connection = connect_templates(chamber, (20, 1, 0), north, (2, 1, 14))
-        self.assertEqual(connection["origin"], (18, 0, -14))
+        self.assertEqual(connection["origin"], (18, 0, -15))
 
     def test_full_export_is_byte_reproducible(self) -> None:
         with tempfile.TemporaryDirectory() as first_dir, tempfile.TemporaryDirectory() as second_dir:

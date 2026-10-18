@@ -51,7 +51,9 @@ class JigsawTests(unittest.TestCase):
         )
         connection = connect_templates(parent, (2, 1, 0), child, (2, 1, 14), rotation="none")
         self.assertEqual(connection["rotation"], "none")
-        self.assertEqual(connection["origin"], (0, 0, -14))
+        self.assertEqual(connection["origin"], (0, 0, -15))
+        # The child connector is the cell in front of the parent connector, not the same cell.
+        self.assertEqual(connection["child_connector_world_pos"], (2, 1, -1))
         self.assertEqual(connection["world_child_facing"], "south")
 
     def test_rotation_transforms_horizontal_position_and_facing(self) -> None:

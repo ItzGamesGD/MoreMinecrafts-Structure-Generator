@@ -6,6 +6,7 @@ from typing import Any
 
 ROTATIONS = {"none", "clockwise_90", "180", "counterclockwise_90"}
 _DIRECTIONS = ("north", "east", "south", "west")
+_FACE_VECTORS = {"north": (0, 0, -1), "east": (1, 0, 0), "south": (0, 0, 1), "west": (-1, 0, 0)}
 
 
 def _parts(template: dict[str, Any]) -> tuple[tuple[int, int, int], list[dict[str, Any]], list[dict[str, Any]]]:
@@ -64,9 +65,9 @@ def find_jigsaw(template: dict[str, Any], pos: tuple[int, int, int] | list[int])
             raise ValueError(f"Invalid state reference at connector position {target_pos}")
         state = palette[state_id]
         entity = block.get("nbt")
-        if state.get("Name") != "minecraft:jigsaw" or not isinstance(entity, dict) or entity.get("id") != "minecraft:jigsaw":
+        if state.get("id") != "minecraft:jigsaw" or not isinstance(entity, dict) or entity.get("id") != "minecraft:jigsaw":
             raise ValueError(f"No jigsaw block and block entity at {target_pos}")
-        properties = state.get("Properties", {})
+        properties = state.get("properties", {})
         orientation = properties.get("orientation") if isinstance(properties, dict) else None
         face = _face(orientation)
         for key in ("name", "target", "pool", "final_state"):
@@ -95,7 +96,7 @@ def _validate_mouth(template: dict[str, Any], connector: dict[str, Any], *, widt
         lateral = ((x + dx, y + dy, z) for dx in range(-(width // 2), width // 2 + 1) for dy in range(height))
     else:
         lateral = ((x, y + dy, z + dz) for dz in range(-(width // 2), width // 2 + 1) for dy in range(height))
-    states = {tuple(block["pos"]): palette[block["state"]]["Name"] for block in blocks}
+    states = {tuple(block["pos"]): palette[block["state"]]["id"] for block in blocks}
     missing = [pos for pos in lateral if states.get(pos) not in {"minecraft:air", "minecraft:jigsaw"}]
     if missing:
         raise ValueError(f"Jigsaw mouth at {connector['pos']} is obstructed at {missing[0]}")
@@ -114,8 +115,9 @@ def connect_templates(
     """Validate connector names, opposing directions, door openings, and child placement.
 
     The returned origin is the child's translated template origin for a parent whose origin is
-    ``(0, 0, 0)``. Both jigsaw blocks occupy the same seam coordinate and are replaced by their
-    configured final states by vanilla placement.
+    ``(0, 0, 0)``. Vanilla places the child so its jigsaw block occupies the cell directly in
+    front of the parent's jigsaw block, i.e. the two connector blocks are adjacent and the
+    templates do not overlap. Both are replaced by their configured final states.
     """
     if doorway_width <= 0 or doorway_width % 2 != 1 or doorway_height <= 0:
         raise ValueError("Doorway dimensions require a positive odd width and positive height")
@@ -138,7 +140,8 @@ def connect_templates(
     expected = _DIRECTIONS[(_DIRECTIONS.index(parent_connector["face"]) + 2) % 4]
     if child_face != expected:
         raise ValueError(f"Jigsaw faces do not oppose: parent {parent_connector['face']}, child {child_face}")
-    origin = tuple(parent_pos[i] - rotated_pos[i] for i in range(3))
+    front = _FACE_VECTORS[parent_connector["face"]]
+    origin = tuple(parent_pos[i] + front[i] - rotated_pos[i] for i in range(3))
     return {
         "origin": origin,
         "rotation": rotation,

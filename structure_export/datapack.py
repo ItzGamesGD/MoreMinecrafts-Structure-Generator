@@ -247,7 +247,7 @@ class DatapackBuilder:
             references = set(self.references.get(template_path, []))
             for block in template["blocks"]:
                 entity = block.get("nbt", {})
-                if palette[block["state"]]["Name"] != "minecraft:jigsaw" or entity.get("id") != "minecraft:jigsaw":
+                if palette[block["state"]]["id"] != "minecraft:jigsaw" or entity.get("id") != "minecraft:jigsaw":
                     continue
                 pool_id = entity.get("pool")
                 target = entity.get("target")
@@ -270,7 +270,7 @@ class DatapackBuilder:
                     for target_block in target_template["blocks"]:
                         target_entity = target_block.get("nbt", {})
                         if (
-                            target_palette[target_block["state"]]["Name"] == "minecraft:jigsaw"
+                            target_palette[target_block["state"]]["id"] == "minecraft:jigsaw"
                             and target_entity.get("id") == "minecraft:jigsaw"
                         ):
                             provided_names.add(target_entity.get("name"))

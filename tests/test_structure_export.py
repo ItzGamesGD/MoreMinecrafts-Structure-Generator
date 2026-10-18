@@ -33,12 +33,12 @@ class StructureExportTests(unittest.TestCase):
         self.assertEqual(decoded["size"], [2, 2, 2])
         palette = decoded["palette"]
         self.assertEqual(
-            {entry["Name"] for entry in palette},
+            {entry["id"] for entry in palette},
             {"minecraft:polished_deepslate", "minecraft:oak_stairs", "minecraft:chest", "minecraft:air"},
         )
-        stairs = next(entry for entry in palette if entry["Name"] == "minecraft:oak_stairs")
+        stairs = next(entry for entry in palette if entry["id"] == "minecraft:oak_stairs")
         self.assertEqual(
-            stairs["Properties"],
+            stairs["properties"],
             {"facing": "east", "half": "bottom", "shape": "straight", "waterlogged": "false"},
         )
         block = next(
@@ -46,8 +46,29 @@ class StructureExportTests(unittest.TestCase):
         )
         self.assertEqual(block["pos"], [1, 0, 1])
         self.assertEqual(block["nbt"]["LootTable"], "minecraft:chests/simple_dungeon")
-        self.assertTrue(any(palette[block["state"]]["Name"] == "minecraft:air" for block in decoded["blocks"]))
+        self.assertTrue(any(palette[block["state"]]["id"] == "minecraft:air" for block in decoded["blocks"]))
         self.assertEqual(decoded["entities"], [])
+
+    def test_palette_uses_minecraft_26_3_keys_not_legacy_name_properties(self) -> None:
+        # Minecraft 26.3 reads palette entries as {id, properties}. Entries written as
+        # {Name, Properties} are accepted by /place template yet decode to air, so
+        # nothing is placed. The vanilla 26.3 structures (e.g. igloo/top.nbt) use id.
+        grid = VoxelGrid()
+        grid.set(0, 0, 0, get_block("oak_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]").index)
+        decoded = read_nbt(structure_bytes(grid_to_structure(grid, data_version=5023)))["value"]
+        for entry in decoded["palette"]:
+            self.assertIn("id", entry)
+            self.assertNotIn("Name", entry)
+            self.assertNotIn("Properties", entry)
+        self.assertTrue(any("properties" in entry for entry in decoded["palette"]))
+
+    def test_legacy_name_palette_is_rejected(self) -> None:
+        grid = VoxelGrid()
+        grid.set(0, 0, 0, get_block("stone").index)
+        template = grid_to_structure(grid, data_version=5023)
+        template["palette"] = [{"Name": entry["id"]} for entry in template["palette"]]
+        with self.assertRaises(ValueError):
+            structure_bytes(template)
 
     def test_template_output_is_byte_reproducible(self) -> None:
         grid = VoxelGrid()
