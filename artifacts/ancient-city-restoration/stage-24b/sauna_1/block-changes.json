@@ -1,0 +1,736 @@
+{
+  "module": "sauna_1",
+  "dimensions_xyz": [
+    29,
+    10,
+    37
+  ],
+  "change_count": 55,
+  "operation_counts": {
+    "replaced": 1,
+    "carved": 1,
+    "bathhouse_circulation_opening": 1,
+    "added": 54,
+    "changing_bench": 4,
+    "resting_bench": 5,
+    "bathhouse_lighting": 3,
+    "reception_roof": 42
+  },
+  "changes": [
+    {
+      "pos_xyz": [
+        4,
+        1,
+        20
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:polished_deepslate_slab[type=bottom,waterlogged=false]",
+      "reasons": [
+        "resting_bench"
+      ]
+    },
+    {
+      "pos_xyz": [
+        4,
+        1,
+        21
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:polished_deepslate_slab[type=bottom,waterlogged=false]",
+      "reasons": [
+        "resting_bench"
+      ]
+    },
+    {
+      "pos_xyz": [
+        5,
+        1,
+        20
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:polished_deepslate_slab[type=bottom,waterlogged=false]",
+      "reasons": [
+        "resting_bench"
+      ]
+    },
+    {
+      "pos_xyz": [
+        5,
+        1,
+        21
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:polished_deepslate_slab[type=bottom,waterlogged=false]",
+      "reasons": [
+        "resting_bench"
+      ]
+    },
+    {
+      "pos_xyz": [
+        8,
+        3,
+        17
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:soul_lantern[hanging=false]",
+      "reasons": [
+        "bathhouse_lighting"
+      ]
+    },
+    {
+      "pos_xyz": [
+        9,
+        3,
+        32
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:soul_lantern[hanging=false]",
+      "reasons": [
+        "bathhouse_lighting"
+      ]
+    },
+    {
+      "pos_xyz": [
+        9,
+        8,
+        32
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        9,
+        8,
+        33
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        9,
+        8,
+        34
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        9,
+        8,
+        35
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        9,
+        8,
+        36
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        10,
+        1,
+        34
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:polished_deepslate_slab[type=bottom,waterlogged=false]",
+      "reasons": [
+        "changing_bench"
+      ]
+    },
+    {
+      "pos_xyz": [
+        10,
+        1,
+        35
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:polished_deepslate_slab[type=bottom,waterlogged=false]",
+      "reasons": [
+        "changing_bench"
+      ]
+    },
+    {
+      "pos_xyz": [
+        10,
+        8,
+        32
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        10,
+        8,
+        33
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        10,
+        8,
+        34
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        10,
+        8,
+        35
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        11,
+        2,
+        33
+      ],
+      "action": "remove",
+      "original_state": "minecraft:cracked_deepslate_bricks",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "bathhouse_circulation_opening"
+      ]
+    },
+    {
+      "pos_xyz": [
+        11,
+        8,
+        32
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        11,
+        8,
+        33
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        11,
+        8,
+        34
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        11,
+        8,
+        35
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        12,
+        8,
+        32
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        12,
+        8,
+        33
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        12,
+        8,
+        34
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        12,
+        8,
+        35
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        13,
+        8,
+        32
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        13,
+        8,
+        33
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        13,
+        8,
+        34
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        13,
+        8,
+        35
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        13,
+        8,
+        36
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        14,
+        8,
+        32
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        14,
+        8,
+        33
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        14,
+        8,
+        34
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        14,
+        8,
+        35
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        14,
+        8,
+        36
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        15,
+        8,
+        32
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        15,
+        8,
+        33
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        15,
+        8,
+        34
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        15,
+        8,
+        35
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        15,
+        8,
+        36
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        16,
+        1,
+        34
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:polished_deepslate_slab[type=bottom,waterlogged=false]",
+      "reasons": [
+        "changing_bench"
+      ]
+    },
+    {
+      "pos_xyz": [
+        16,
+        1,
+        35
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:polished_deepslate_slab[type=bottom,waterlogged=false]",
+      "reasons": [
+        "changing_bench"
+      ]
+    },
+    {
+      "pos_xyz": [
+        16,
+        8,
+        32
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        16,
+        8,
+        33
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        16,
+        8,
+        34
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        16,
+        8,
+        35
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        16,
+        8,
+        36
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        17,
+        8,
+        32
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        17,
+        8,
+        33
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        17,
+        8,
+        34
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        17,
+        8,
+        35
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        17,
+        8,
+        36
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]",
+      "reasons": [
+        "reception_roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        23,
+        3,
+        20
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:soul_lantern[hanging=false]",
+      "reasons": [
+        "bathhouse_lighting"
+      ]
+    },
+    {
+      "pos_xyz": [
+        24,
+        1,
+        31
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:polished_deepslate_slab[type=bottom,waterlogged=false]",
+      "reasons": [
+        "resting_bench"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,991 @@
+{
+  "baseline_sha": "049c791ad8e7255d15c30f66774f427a343522e5",
+  "source_commit": "bb6d6451fb5fff54d3930fd8bf19d81200f00e6d",
+  "modules": [
+    {
+      "module": "large_ruin_1",
+      "original_dimensions_xyz": [
+        17,
+        5,
+        17
+      ],
+      "dimensions_xyz": [
+        17,
+        5,
+        17
+      ],
+      "source_status": "ORIGINAL SOURCE VERIFIED",
+      "geometry_status": "GEOMETRY VERIFIED",
+      "design_status": "DESIGN PROPOSED",
+      "visual_status": "VISUAL PENDING OWNER REVIEW",
+      "live_status": "LIVE PENDING",
+      "conflicts": [],
+      "checks": {
+        "source_hash": "PASS",
+        "dimensions": "PASS",
+        "jigsaw_full_nbt": "PASS",
+        "protected_block_entities": "PASS",
+        "candidate_bounds": "PASS",
+        "entry_access": "PASS",
+        "internal_route_to_bed": "PASS",
+        "bed_and_clearance": "PASS",
+        "workstation_clearance": "PASS",
+        "container_interaction_clearance": "PASS",
+        "wall_and_roof_integrity": "PASS",
+        "blockstate_palette_resolution": "PASS",
+        "native_nbt_round_trip": "PASS",
+        "schematic_export_reload": "PASS"
+      },
+      "original_block_count": 38,
+      "candidate_block_records": 861,
+      "changed_original_positions": 12,
+      "added_positions": 823,
+      "source_blob_sha1": "3ce04aa7cd68ab706ed7e7910cbf8453f090fb39",
+      "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/large_ruin_1.nbt",
+      "jigsaw_count": 1,
+      "jigsaw_preserved": true,
+      "block_entities_preserved": true,
+      "status": "CANDIDATE_VALIDATED_STATIC_REVIEW_PENDING",
+      "schematic_bounds_xyz": [
+        17,
+        5,
+        17
+      ],
+      "render_labels": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "render_stats": {
+        "dims": [
+          17,
+          5,
+          17
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            16,
+            4,
+            16
+          ]
+        ],
+        "block_count": 860,
+        "top_materials": [
+          [
+            "deepslate_bricks",
+            519
+          ],
+          [
+            "deepslate_tiles",
+            264
+          ],
+          [
+            "polished_deepslate",
+            39
+          ],
+          [
+            "cobbled_deepslate",
+            22
+          ],
+          [
+            "polished_deepslate_slab",
+            4
+          ],
+          [
+            "soul_lantern",
+            4
+          ],
+          [
+            "spruce_door",
+            1
+          ],
+          [
+            "spruce_door",
+            1
+          ],
+          [
+            "gray_bed",
+            1
+          ],
+          [
+            "gray_bed",
+            1
+          ]
+        ]
+      },
+      "visual_generation": "COMPLETE_STATIC_RENDER",
+      "minecraft_client_status": "LIVE PENDING"
+    },
+    {
+      "module": "medium_ruin_1",
+      "original_dimensions_xyz": [
+        8,
+        5,
+        13
+      ],
+      "dimensions_xyz": [
+        8,
+        5,
+        13
+      ],
+      "source_status": "ORIGINAL SOURCE VERIFIED",
+      "geometry_status": "GEOMETRY VERIFIED",
+      "design_status": "DESIGN PROPOSED",
+      "visual_status": "VISUAL PENDING OWNER REVIEW",
+      "live_status": "LIVE PENDING",
+      "conflicts": [],
+      "checks": {
+        "source_hash": "PASS",
+        "dimensions": "PASS",
+        "jigsaw_full_nbt": "PASS",
+        "protected_block_entities": "PASS",
+        "candidate_bounds": "PASS",
+        "entry_access": "PASS",
+        "internal_route_to_bed": "PASS",
+        "bed_and_clearance": "PASS",
+        "workstation_clearance": "PASS",
+        "container_interaction_clearance": "PASS",
+        "wall_and_roof_integrity": "PASS",
+        "blockstate_palette_resolution": "PASS",
+        "native_nbt_round_trip": "PASS",
+        "schematic_export_reload": "PASS"
+      },
+      "original_block_count": 20,
+      "candidate_block_records": 330,
+      "changed_original_positions": 6,
+      "added_positions": 310,
+      "source_blob_sha1": "c476ea76624d25ac483f723c55ef39695ac86aee",
+      "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/medium_ruin_1.nbt",
+      "jigsaw_count": 1,
+      "jigsaw_preserved": true,
+      "block_entities_preserved": true,
+      "status": "CANDIDATE_VALIDATED_STATIC_REVIEW_PENDING",
+      "schematic_bounds_xyz": [
+        8,
+        5,
+        13
+      ],
+      "render_labels": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "render_stats": {
+        "dims": [
+          8,
+          5,
+          13
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            4,
+            12
+          ]
+        ],
+        "block_count": 329,
+        "top_materials": [
+          [
+            "deepslate_bricks",
+            180
+          ],
+          [
+            "deepslate_tiles",
+            92
+          ],
+          [
+            "polished_deepslate",
+            21
+          ],
+          [
+            "cobbled_deepslate",
+            13
+          ],
+          [
+            "deepslate_tile_stairs",
+            12
+          ],
+          [
+            "polished_deepslate_slab",
+            2
+          ],
+          [
+            "soul_lantern",
+            2
+          ],
+          [
+            "cyan_stained_glass",
+            1
+          ],
+          [
+            "spruce_door",
+            1
+          ],
+          [
+            "spruce_door",
+            1
+          ]
+        ]
+      },
+      "visual_generation": "COMPLETE_STATIC_RENDER",
+      "minecraft_client_status": "LIVE PENDING"
+    },
+    {
+      "module": "medium_ruin_2",
+      "original_dimensions_xyz": [
+        16,
+        5,
+        11
+      ],
+      "dimensions_xyz": [
+        16,
+        8,
+        11
+      ],
+      "source_status": "ORIGINAL SOURCE VERIFIED",
+      "geometry_status": "GEOMETRY VERIFIED",
+      "design_status": "DESIGN PROPOSED",
+      "visual_status": "VISUAL PENDING OWNER REVIEW",
+      "live_status": "LIVE PENDING",
+      "conflicts": [
+        {
+          "type": "generation_boundary",
+          "status": "BLOCKED",
+          "detail": "Neighboring structure transforms are not available for collision testing."
+        }
+      ],
+      "checks": {
+        "source_hash": "PASS",
+        "dimensions": "PASS",
+        "jigsaw_full_nbt": "PASS",
+        "protected_block_entities": "PASS",
+        "candidate_bounds": "PASS",
+        "entry_access": "PASS",
+        "internal_route_to_bed": "PASS",
+        "bed_and_clearance": "PASS",
+        "workstation_clearance": "PASS",
+        "container_interaction_clearance": "PASS",
+        "wall_and_roof_integrity": "PASS",
+        "stair_geometry": "PASS",
+        "upper_floor_and_headroom": "PASS",
+        "internal_stair_route_to_upper_floor": "PASS",
+        "blockstate_palette_resolution": "PASS",
+        "native_nbt_round_trip": "PASS",
+        "schematic_export_reload": "PASS"
+      },
+      "original_block_count": 29,
+      "candidate_block_records": 689,
+      "changed_original_positions": 10,
+      "added_positions": 660,
+      "source_blob_sha1": "0f8b01b7aff4bd43c8e5ecc18292940ca648bf03",
+      "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/medium_ruin_2.nbt",
+      "jigsaw_count": 1,
+      "jigsaw_preserved": true,
+      "block_entities_preserved": true,
+      "status": "CANDIDATE_VALIDATED_STATIC_REVIEW_PENDING",
+      "schematic_bounds_xyz": [
+        16,
+        8,
+        11
+      ],
+      "render_labels": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "render_stats": {
+        "dims": [
+          16,
+          8,
+          11
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            15,
+            7,
+            10
+          ]
+        ],
+        "block_count": 686,
+        "top_materials": [
+          [
+            "deepslate_bricks",
+            379
+          ],
+          [
+            "deepslate_tiles",
+            273
+          ],
+          [
+            "cobbled_deepslate",
+            18
+          ],
+          [
+            "deepslate_tile_stairs",
+            4
+          ],
+          [
+            "barrel",
+            2
+          ],
+          [
+            "soul_lantern",
+            2
+          ],
+          [
+            "gray_bed",
+            1
+          ],
+          [
+            "gray_bed",
+            1
+          ],
+          [
+            "gray_bed",
+            1
+          ],
+          [
+            "gray_bed",
+            1
+          ]
+        ]
+      },
+      "visual_generation": "COMPLETE_STATIC_RENDER",
+      "minecraft_client_status": "LIVE PENDING"
+    },
+    {
+      "module": "small_ruin_1",
+      "original_dimensions_xyz": [
+        7,
+        5,
+        8
+      ],
+      "dimensions_xyz": [
+        7,
+        5,
+        8
+      ],
+      "source_status": "ORIGINAL SOURCE VERIFIED",
+      "geometry_status": "GEOMETRY VERIFIED",
+      "design_status": "DESIGN PROPOSED",
+      "visual_status": "VISUAL PENDING OWNER REVIEW",
+      "live_status": "LIVE PENDING",
+      "conflicts": [],
+      "checks": {
+        "source_hash": "PASS",
+        "dimensions": "PASS",
+        "jigsaw_full_nbt": "PASS",
+        "protected_block_entities": "PASS",
+        "candidate_bounds": "PASS",
+        "entry_access": "PASS",
+        "internal_route_to_bed": "PASS",
+        "bed_and_clearance": "PASS",
+        "workstation_clearance": "PASS",
+        "container_interaction_clearance": "PASS",
+        "wall_and_roof_integrity": "PASS",
+        "blockstate_palette_resolution": "PASS",
+        "native_nbt_round_trip": "PASS",
+        "schematic_export_reload": "PASS"
+      },
+      "original_block_count": 17,
+      "candidate_block_records": 199,
+      "changed_original_positions": 4,
+      "added_positions": 182,
+      "source_blob_sha1": "b1b9c2ac7c4b06a1a80e53adf4dd4fd706f2a799",
+      "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/small_ruin_1.nbt",
+      "jigsaw_count": 1,
+      "jigsaw_preserved": true,
+      "block_entities_preserved": true,
+      "status": "CANDIDATE_VALIDATED_STATIC_REVIEW_PENDING",
+      "schematic_bounds_xyz": [
+        7,
+        5,
+        8
+      ],
+      "render_labels": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "render_stats": {
+        "dims": [
+          7,
+          5,
+          8
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            4,
+            7
+          ]
+        ],
+        "block_count": 198,
+        "top_materials": [
+          [
+            "deepslate_bricks",
+            107
+          ],
+          [
+            "deepslate_tiles",
+            46
+          ],
+          [
+            "polished_deepslate",
+            15
+          ],
+          [
+            "cobbled_deepslate",
+            12
+          ],
+          [
+            "deepslate_tile_stairs",
+            5
+          ],
+          [
+            "deepslate_tile_stairs",
+            5
+          ],
+          [
+            "cyan_stained_glass",
+            1
+          ],
+          [
+            "spruce_door",
+            1
+          ],
+          [
+            "spruce_door",
+            1
+          ],
+          [
+            "gray_bed",
+            1
+          ]
+        ]
+      },
+      "visual_generation": "COMPLETE_STATIC_RENDER",
+      "minecraft_client_status": "LIVE PENDING"
+    },
+    {
+      "module": "small_ruin_2",
+      "original_dimensions_xyz": [
+        8,
+        5,
+        4
+      ],
+      "dimensions_xyz": [
+        8,
+        5,
+        4
+      ],
+      "source_status": "ORIGINAL SOURCE VERIFIED",
+      "geometry_status": "GEOMETRY VERIFIED",
+      "design_status": "DESIGN PROPOSED",
+      "visual_status": "VISUAL PENDING OWNER REVIEW",
+      "live_status": "LIVE PENDING",
+      "conflicts": [],
+      "checks": {
+        "source_hash": "PASS",
+        "dimensions": "PASS",
+        "jigsaw_full_nbt": "PASS",
+        "protected_block_entities": "PASS",
+        "candidate_bounds": "PASS",
+        "entry_access": "PASS",
+        "internal_route_to_bed": "PASS",
+        "bed_and_clearance": "PASS",
+        "workstation_clearance": "PASS",
+        "container_interaction_clearance": "PASS",
+        "wall_and_roof_integrity": "PASS",
+        "blockstate_palette_resolution": "PASS",
+        "native_nbt_round_trip": "PASS",
+        "schematic_export_reload": "PASS"
+      },
+      "original_block_count": 16,
+      "candidate_block_records": 126,
+      "changed_original_positions": 7,
+      "added_positions": 110,
+      "source_blob_sha1": "34d14f95c92675e6d97d212baf88e84c4f506fbd",
+      "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/small_ruin_2.nbt",
+      "jigsaw_count": 1,
+      "jigsaw_preserved": true,
+      "block_entities_preserved": true,
+      "status": "CANDIDATE_VALIDATED_STATIC_REVIEW_PENDING",
+      "schematic_bounds_xyz": [
+        8,
+        5,
+        4
+      ],
+      "render_labels": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "render_stats": {
+        "dims": [
+          8,
+          5,
+          4
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            4,
+            3
+          ]
+        ],
+        "block_count": 125,
+        "top_materials": [
+          [
+            "deepslate_bricks",
+            66
+          ],
+          [
+            "deepslate_tiles",
+            32
+          ],
+          [
+            "polished_deepslate",
+            12
+          ],
+          [
+            "cobbled_deepslate",
+            8
+          ],
+          [
+            "spruce_door",
+            1
+          ],
+          [
+            "gray_bed",
+            1
+          ],
+          [
+            "gray_bed",
+            1
+          ],
+          [
+            "barrel",
+            1
+          ],
+          [
+            "spruce_door",
+            1
+          ],
+          [
+            "polished_deepslate_slab",
+            1
+          ]
+        ]
+      },
+      "visual_generation": "COMPLETE_STATIC_RENDER",
+      "minecraft_client_status": "LIVE PENDING"
+    },
+    {
+      "module": "sauna_1",
+      "original_dimensions_xyz": [
+        29,
+        10,
+        37
+      ],
+      "dimensions_xyz": [
+        29,
+        10,
+        37
+      ],
+      "source_status": "ORIGINAL SOURCE VERIFIED",
+      "geometry_status": "GEOMETRY VERIFIED",
+      "design_status": "DESIGN PROPOSED",
+      "visual_status": "VISUAL PENDING OWNER REVIEW",
+      "live_status": "LIVE PENDING",
+      "conflicts": [
+        {
+          "type": "original_wall_opening",
+          "status": "OWNER_REVIEW",
+          "position": [
+            11,
+            2,
+            33
+          ],
+          "detail": "Removed one cracked-brick head block to connect south reception to preserved bath circulation."
+        }
+      ],
+      "checks": {
+        "source_hash": "PASS",
+        "dimensions": "PASS",
+        "jigsaw_full_nbt": "PASS",
+        "protected_block_entities": "PASS",
+        "candidate_bounds": "PASS",
+        "water_count_and_containment_geometry": "PASS_STATIC_ONLY",
+        "chest_loot_nbt": "PASS",
+        "chest_interaction_clearance": "PASS",
+        "bath_and_plunge_route_connectivity": "PASS_STATIC",
+        "stair_and_route_preservation": "PASS",
+        "reception_roof": "PASS_STATIC",
+        "fluid_ticks": "LIVE_PENDING",
+        "blockstate_palette_resolution": "PASS",
+        "native_nbt_round_trip": "PASS",
+        "schematic_export_reload": "PASS"
+      },
+      "original_block_count": 1847,
+      "candidate_block_records": 1901,
+      "changed_original_positions": 1,
+      "added_positions": 54,
+      "source_blob_sha1": "ef56d35f13f3acb8d62095ccc2f7e85d58d253b1",
+      "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/sauna_1.nbt",
+      "jigsaw_count": 5,
+      "jigsaw_preserved": true,
+      "block_entities_preserved": true,
+      "status": "CANDIDATE_VALIDATED_STATIC_REVIEW_PENDING",
+      "schematic_bounds_xyz": [
+        29,
+        9,
+        37
+      ],
+      "render_labels": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "render_stats": {
+        "dims": [
+          29,
+          9,
+          37
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            28,
+            8,
+            36
+          ]
+        ],
+        "block_count": 1895,
+        "top_materials": [
+          [
+            "deepslate_bricks",
+            1038
+          ],
+          [
+            "deepslate_tiles",
+            342
+          ],
+          [
+            "cracked_deepslate_bricks",
+            156
+          ],
+          [
+            "deepslate",
+            69
+          ],
+          [
+            "chiseled_deepslate",
+            46
+          ],
+          [
+            "water",
+            43
+          ],
+          [
+            "deepslate_tile_slab",
+            43
+          ],
+          [
+            "cracked_deepslate_tiles",
+            23
+          ],
+          [
+            "white_candle",
+            12
+          ],
+          [
+            "deepslate_tile_stairs",
+            12
+          ]
+        ]
+      },
+      "visual_generation": "COMPLETE_STATIC_RENDER",
+      "minecraft_client_status": "LIVE PENDING"
+    },
+    {
+      "module": "large_pillar_1",
+      "original_dimensions_xyz": [
+        6,
+        15,
+        6
+      ],
+      "dimensions_xyz": [
+        6,
+        15,
+        6
+      ],
+      "source_status": "ORIGINAL SOURCE VERIFIED",
+      "geometry_status": "GEOMETRY VERIFIED",
+      "design_status": "DESIGN PROPOSED",
+      "visual_status": "VISUAL PENDING OWNER REVIEW",
+      "live_status": "LIVE PENDING",
+      "conflicts": [],
+      "checks": {
+        "source_hash": "PASS",
+        "dimensions": "PASS",
+        "jigsaw_full_nbt": "PASS",
+        "protected_block_entities": "PASS",
+        "candidate_bounds": "PASS",
+        "entrance_and_ladder_support": "PASS",
+        "continuous_ladder_and_headroom": "PASS",
+        "observation_hatch_and_deck": "PASS",
+        "structural_stability": "GEOMETRY_REVIEW_PENDING",
+        "blockstate_palette_resolution": "PASS",
+        "native_nbt_round_trip": "PASS",
+        "schematic_export_reload": "PASS"
+      },
+      "original_block_count": 320,
+      "candidate_block_records": 320,
+      "changed_original_positions": 57,
+      "added_positions": 0,
+      "source_blob_sha1": "4d619829f48909054996945d01a77d949946e678",
+      "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/large_pillar_1.nbt",
+      "jigsaw_count": 1,
+      "jigsaw_preserved": true,
+      "block_entities_preserved": true,
+      "status": "CANDIDATE_VALIDATED_STATIC_REVIEW_PENDING",
+      "schematic_bounds_xyz": [
+        6,
+        15,
+        6
+      ],
+      "render_labels": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "render_stats": {
+        "dims": [
+          6,
+          15,
+          6
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            14,
+            5
+          ]
+        ],
+        "block_count": 299,
+        "top_materials": [
+          [
+            "deepslate",
+            113
+          ],
+          [
+            "polished_deepslate",
+            50
+          ],
+          [
+            "deepslate_tiles",
+            29
+          ],
+          [
+            "chiseled_deepslate",
+            16
+          ],
+          [
+            "ladder",
+            12
+          ],
+          [
+            "polished_basalt",
+            12
+          ],
+          [
+            "deepslate_tile_stairs",
+            6
+          ],
+          [
+            "deepslate_tile_stairs",
+            6
+          ],
+          [
+            "deepslate_tile_stairs",
+            6
+          ],
+          [
+            "deepslate_tile_stairs",
+            6
+          ]
+        ]
+      },
+      "visual_generation": "COMPLETE_STATIC_RENDER",
+      "minecraft_client_status": "LIVE PENDING"
+    },
+    {
+      "module": "medium_pillar_1",
+      "original_dimensions_xyz": [
+        7,
+        11,
+        8
+      ],
+      "dimensions_xyz": [
+        7,
+        11,
+        8
+      ],
+      "source_status": "ORIGINAL SOURCE VERIFIED",
+      "geometry_status": "GEOMETRY VERIFIED",
+      "design_status": "DESIGN PROPOSED",
+      "visual_status": "VISUAL PENDING OWNER REVIEW",
+      "live_status": "LIVE PENDING",
+      "conflicts": [
+        {
+          "type": "ladder_orientation",
+          "status": "OWNER_REVIEW",
+          "detail": "Ladder climbs the east face of the retained spine for an accessible route clear of both jigsaws."
+        }
+      ],
+      "checks": {
+        "source_hash": "PASS",
+        "dimensions": "PASS",
+        "jigsaw_full_nbt": "PASS",
+        "protected_block_entities": "PASS",
+        "candidate_bounds": "PASS",
+        "guard_space": "PASS",
+        "ladder_support_and_headroom": "PASS",
+        "observation_deck": "PASS",
+        "guard_room_walls": "PASS_STATIC",
+        "skull_nbt": "PASS",
+        "blockstate_palette_resolution": "PASS",
+        "native_nbt_round_trip": "PASS",
+        "schematic_export_reload": "PASS"
+      },
+      "original_block_count": 130,
+      "candidate_block_records": 281,
+      "changed_original_positions": 67,
+      "added_positions": 151,
+      "source_blob_sha1": "38ece3d8a57c9fed3f2a050ffd21b5b636121bbe",
+      "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/medium_pillar_1.nbt",
+      "jigsaw_count": 2,
+      "jigsaw_preserved": true,
+      "block_entities_preserved": true,
+      "status": "CANDIDATE_VALIDATED_STATIC_REVIEW_PENDING",
+      "schematic_bounds_xyz": [
+        7,
+        11,
+        8
+      ],
+      "render_labels": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "render_stats": {
+        "dims": [
+          7,
+          11,
+          8
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            10,
+            7
+          ]
+        ],
+        "block_count": 233,
+        "top_materials": [
+          [
+            "deepslate_bricks",
+            130
+          ],
+          [
+            "deepslate_tiles",
+            37
+          ],
+          [
+            "deepslate",
+            28
+          ],
+          [
+            "chiseled_deepslate",
+            12
+          ],
+          [
+            "polished_deepslate",
+            8
+          ],
+          [
+            "ladder",
+            8
+          ],
+          [
+            "deepslate_tile_stairs",
+            2
+          ],
+          [
+            "cyan_stained_glass",
+            2
+          ],
+          [
+            "deepslate",
+            1
+          ],
+          [
+            "deepslate_tile_stairs",
+            1
+          ]
+        ]
+      },
+      "visual_generation": "COMPLETE_STATIC_RENDER",
+      "minecraft_client_status": "LIVE PENDING"
+    }
+  ],
+  "status": "STATIC_CANDIDATES_AND_EVIDENCE_GENERATED_LIVE_PENDING"
+}
