@@ -6,6 +6,7 @@ evidence="$fixture/evidence"
 mkdir -p "$evidence/screenshots"
 cd "$repo"
 mkdir -p validation/minecraft-visual/run/client
+mkdir -p validation/minecraft-visual/run/client/screenshots
 printf 'guiScale:2\n' > validation/minecraft-visual/run/client/options.txt
 ./validation/minecraft-visual/gradlew --no-daemon -p validation/minecraft-visual runClient \
   --args='--quickPlayMultiplayer 127.0.0.1:25565 --username SG01Visual --version 26.3' \
@@ -45,11 +46,22 @@ capture() {
 tp SG01Visual $x $y $z $yaw $pitch
 CMDS
   sleep 3
-  xdotool key --clearmodifiers F2
+  xdotool key --clearmodifiers --window "$window" F2
   sleep 2
   local src
-  src=$(find "$fixture/run/client/screenshots" -type f -name '*.png' -printf '%T@ %p\n' 2>/dev/null | sort -nr | head -1 | cut -d' ' -f2-)
-  [ -n "$src" ] || { echo "No Minecraft screenshot after $name" >&2; exit 1; }
+  src=$(find "$fixture/run/client/screenshots" -type f -name '*.png' -printf '%T@ %p\n' 2>/dev/null | sort -nr | head -1 | cut -d' ' -f2- || true)
+  if [ -z "$src" ]; then
+    {
+      echo "screenshot_missing_after=$name"
+      echo "window_id=$window"
+      xdotool getwindowfocus 2>&1 || true
+      xwininfo -id "$window" 2>&1 || true
+      find "$fixture/run/client" -maxdepth 3 -type f -print
+      tail -80 "$fixture/run/logs/client.log"
+    } > "$evidence/capture-failure.log"
+    echo "No Minecraft screenshot after $name" >&2
+    exit 1
+  fi
   cp "$src" "$evidence/screenshots/$name.png"
 }
 capture plaza-eye 20 106 20 0 8
