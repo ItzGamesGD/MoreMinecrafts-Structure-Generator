@@ -75,6 +75,18 @@ delay) were harness errors, fixed in `capture-session.sh`. Full passes: run #49 
 The local run drove the same `run-acceptance.sh` against the unmodified vanilla server jar via `SG01_SERVER_CMD`. The
 Fabric/client screenshot path remains the existing native `Screenshot.grab` harness.
 
+## Natural world-generation validation
+
+**Latest runtime evidence:** [Actions run 39109240434](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39109240434), PR branch head `cd20ccfa851f7d84fa5c4b23af768571189d4a27`; [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39109240434/artifacts/12130195454).
+
+This is separate from the forced-placement checks above. The disposable server used `level-type=minecraft:normal`, seed `173`, and structure generation enabled. After the forced-placement stage completed, the harness ran `/locate structure moreminecrafts:forgotten_kingdom/central_cavern` from `(5000,0,5000)`; Minecraft returned `[5184, ~, 4944]`. The harness generated and saved the candidate chunks and did not call `/place` for this structure. The separate controlled test still uses `/place template` and `/place structure`, and remains identified as forced placement.
+
+The saved-region probes found 8,575/8,575 expected blocks with zero extras. Actual bounds are `[5169,-37,4929]..[5239,-21,4999]` (71×17×71), with rotation 0°. All expected block states in the assembled structure matched. Eight sampled natural surface columns had top-solid heights 31–59; the cavern's maximum y is −21, so the structure is below every sampled surface. The adjacent one-block exterior shell contains 14,765 solid terrain blocks and 8 water blocks elsewhere, but no direct cave-air, water, or lava contact. Those three contact scenarios are **NOT RUN** for this site; this does not establish safety at other sites or seeds.
+
+The artifact contains the natural candidate coordinates, probe JSON, RCON command log, server log, saved MCA region files, and native client screenshots `natural-worldgen-entry.png` and `natural-worldgen-plaza.png` (1280×720). I visually inspected these screenshots; they show the generated interior. The client was teleported to camera locations, so they do not prove that a player can traverse the entrances or tunnels. Survival accessibility, varied seeds/biomes, natural cave intersections, water/lava contact, and Trial Chambers coexistence remain unverified.
+
+The first normal-world run, [run 39108672537](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39108672537), stopped before terrain checks because its initial 81-chunk `forceload` exceeded the RCON client's five-second timeout. The bounded socket timeout was raised to 60 seconds in `rcon.py`; [run 39108836307](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39108836307) then passed natural generation and saved-world validation. No SG-01 design geometry or exported structure blocks were changed.
+
 ## Screenshot acceptance
 
 The capture method is unchanged: a test-only Fabric client entrypoint calls Minecraft's native `Screenshot.grab(...)` after
