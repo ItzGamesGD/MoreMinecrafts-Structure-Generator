@@ -1,0 +1,105 @@
+name: NeoForge /build permission smoke
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "vendor/mcbuild/mod/**"
+      - ".github/workflows/neoforge-permission-smoke.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  neoforge-server-permissions:
+    name: NeoForge server dispatcher permission gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - name: Inject disposable test-only server event observer
+        working-directory: vendor/mcbuild/mod
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path("src/main/java/com/mcbuild/mod/McbuildMod.java")
+          src = p.read_text()
+          old = chr(10).join(["        }", "    }", "}", ""])
+          assert src.endswith(old), "mod entrypoint changed; investigate before injecting"
+          extra = [
+              "        }",
+              "",
+              "        @SubscribeEvent",
+              "        public static void checkPermissionOnServerStarted(",
+              "                net.neoforged.neoforge.event.server.ServerStartedEvent event) {",
+              '            var dispatcher = event.getServer().getCommands().getDispatcher();',
+              '            var command = dispatcher.getRoot().getChild("build");',
+              '            if (command == null) {',
+              '                throw new IllegalStateException("MCBUILD_RUNTIME_PERMISSION_FAIL: command missing");',
+              '            }',
+              '            var source = event.getServer().createCommandSourceStack();',
+              '            boolean denied0 = !command.canUse(source.withPermission(0));',
+              '            boolean denied1 = !command.canUse(source.withPermission(1));',
+              '            boolean allowed2 = command.canUse(source.withPermission(2));',
+              '            if (!denied0 || !denied1 || !allowed2) {',
+              '                throw new IllegalStateException(',
+              '                    "MCBUILD_RUNTIME_PERMISSION_FAIL: level0=" + denied0',
+              '                    + " level1=" + denied1 + " level2=" + allowed2);',
+              '            }',
+              '            System.out.println("MCBUILD_RUNTIME_PERMISSION_PASS: denied levels 0,1; accepted level 2");',
+              '        }',
+              '    }',
+              '}',
+          ]
+          p.write_text(src[:-len(old)] + chr(10).join(extra) + chr(10))
+          print("Injected ephemeral server-event-only check, not part of the committed mod")
+          PY
+      - name: Run disposable NeoForge server and assert command-node permissions
+        working-directory: vendor/mcbuild/mod
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p run runs/server
+          printf 'eula=true\n' > run/eula.txt
+          printf 'eula=true\n' > runs/server/eula.txt
+          chmod +x gradlew
+          # Run as a process group so the disposable server can be reaped as
+          # soon as the live dispatcher predicate emits a verified marker.
+          setsid timeout --signal=TERM --kill-after=15s 10m \
+            ./gradlew runServer --no-daemon > server-smoke.log 2>&1 &
+          server_pid=$!
+          success=0
+          for attempt in $(seq 1 180); do
+            if grep -Fq "MCBUILD_RUNTIME_PERMISSION_PASS: denied levels 0,1; accepted level 2" server-smoke.log; then
+              success=1
+              break
+            fi
+            if grep -Fq "MCBUILD_RUNTIME_PERMISSION_FAIL" server-smoke.log; then
+              break
+            fi
+            if ! kill -0 "$server_pid" 2>/dev/null; then
+              break
+            fi
+            sleep 3
+          done
+          kill -TERM -- "-$server_pid" 2>/dev/null || true
+          wait "$server_pid" 2>/dev/null || true
+          if [ "$success" -eq 1 ]; then
+            echo "Actual NeoForge server loaded the mod and evaluated the registered /build command predicate."
+            echo "This verifies server dispatcher permission gating; it does NOT simulate real human player login."
+            echo "## Runtime PASS: NeoForge /build permission predicate" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "::error::NeoForge runtime permission smoke did not reach a passing server event."
+            tail -n 160 server-smoke.log
+            exit 1
+          fi
+      - name: Print limited diagnostic log after failure
+        if: failure()
+        working-directory: vendor/mcbuild/mod
+        run: |
+          test ! -f server-smoke.log || tail -n 120 server-smoke.log

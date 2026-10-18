@@ -1,0 +1,1664 @@
+diff --git a/mod/gradlew b/mod/gradlew
+old mode 100644
+new mode 100755
+index adff685..23d15a9
+--- a/mod/gradlew
++++ b/mod/gradlew
+@@ -1,7 +1,7 @@
+ #!/bin/sh
+ 
+ #
+-# Copyright © 2015 the original authors.
++# Copyright © 2015-2021 the original authors.
+ #
+ # Licensed under the Apache License, Version 2.0 (the "License");
+ # you may not use this file except in compliance with the License.
+@@ -114,6 +114,7 @@ case "$( uname )" in                #(
+   NONSTOP* )        nonstop=true ;;
+ esac
+ 
++CLASSPATH="\\\"\\\""
+ 
+ 
+ # Determine the Java command to use to start the JVM.
+@@ -171,6 +172,7 @@ fi
+ # For Cygwin or MSYS, switch paths to Windows format before running java
+ if "$cygwin" || "$msys" ; then
+     APP_HOME=$( cygpath --path --mixed "$APP_HOME" )
++    CLASSPATH=$( cygpath --path --mixed "$CLASSPATH" )
+ 
+     JAVACMD=$( cygpath --unix "$JAVACMD" )
+ 
+@@ -210,6 +212,7 @@ DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
+ 
+ set -- \
+         "-Dorg.gradle.appname=$APP_BASE_NAME" \
++        -classpath "$CLASSPATH" \
+         -jar "$APP_HOME/gradle/wrapper/gradle-wrapper.jar" \
+         "$@"
+ 
+diff --git a/mod/gradlew.bat b/mod/gradlew.bat
+index c4bdd3a..5eed7ee 100644
+--- a/mod/gradlew.bat
++++ b/mod/gradlew.bat
+@@ -1,93 +1,94 @@
+-@rem
+-@rem Copyright 2015 the original author or authors.
+-@rem
+-@rem Licensed under the Apache License, Version 2.0 (the "License");
+-@rem you may not use this file except in compliance with the License.
+-@rem You may obtain a copy of the License at
+-@rem
+-@rem      https://www.apache.org/licenses/LICENSE-2.0
+-@rem
+-@rem Unless required by applicable law or agreed to in writing, software
+-@rem distributed under the License is distributed on an "AS IS" BASIS,
+-@rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-@rem See the License for the specific language governing permissions and
+-@rem limitations under the License.
+-@rem
+-@rem SPDX-License-Identifier: Apache-2.0
+-@rem
+-
+-@if "%DEBUG%"=="" @echo off
+-@rem ##########################################################################
+-@rem
+-@rem  Gradle startup script for Windows
+-@rem
+-@rem ##########################################################################
+-
+-@rem Set local scope for the variables with windows NT shell
+-if "%OS%"=="Windows_NT" setlocal
+-
+-set DIRNAME=%~dp0
+-if "%DIRNAME%"=="" set DIRNAME=.
+-@rem This is normally unused
+-set APP_BASE_NAME=%~n0
+-set APP_HOME=%DIRNAME%
+-
+-@rem Resolve any "." and ".." in APP_HOME to make it shorter.
+-for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
+-
+-@rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
+-set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
+-
+-@rem Find java.exe
+-if defined JAVA_HOME goto findJavaFromJavaHome
+-
+-set JAVA_EXE=java.exe
+-%JAVA_EXE% -version >NUL 2>&1
+-if %ERRORLEVEL% equ 0 goto execute
+-
+-echo. 1>&2
+-echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH. 1>&2
+-echo. 1>&2
+-echo Please set the JAVA_HOME variable in your environment to match the 1>&2
+-echo location of your Java installation. 1>&2
+-
+-goto fail
+-
+-:findJavaFromJavaHome
+-set JAVA_HOME=%JAVA_HOME:"=%
+-set JAVA_EXE=%JAVA_HOME%/bin/java.exe
+-
+-if exist "%JAVA_EXE%" goto execute
+-
+-echo. 1>&2
+-echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME% 1>&2
+-echo. 1>&2
+-echo Please set the JAVA_HOME variable in your environment to match the 1>&2
+-echo location of your Java installation. 1>&2
+-
+-goto fail
+-
+-:execute
+-@rem Setup the command line
+-
+-
+-
+-@rem Execute Gradle
+-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -jar "%APP_HOME%\gradle\wrapper\gradle-wrapper.jar" %*
+-
+-:end
+-@rem End local scope for the variables with windows NT shell
+-if %ERRORLEVEL% equ 0 goto mainEnd
+-
+-:fail
+-rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
+-rem the _cmd.exe /c_ return code!
+-set EXIT_CODE=%ERRORLEVEL%
+-if %EXIT_CODE% equ 0 set EXIT_CODE=1
+-if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
+-exit /b %EXIT_CODE%
+-
+-:mainEnd
+-if "%OS%"=="Windows_NT" endlocal
+-
+-:omega
++@rem
++@rem Copyright 2015 the original author or authors.
++@rem
++@rem Licensed under the Apache License, Version 2.0 (the "License");
++@rem you may not use this file except in compliance with the License.
++@rem You may obtain a copy of the License at
++@rem
++@rem      https://www.apache.org/licenses/LICENSE-2.0
++@rem
++@rem Unless required by applicable law or agreed to in writing, software
++@rem distributed under the License is distributed on an "AS IS" BASIS,
++@rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++@rem See the License for the specific language governing permissions and
++@rem limitations under the License.
++@rem
++@rem SPDX-License-Identifier: Apache-2.0
++@rem
++
++@if "%DEBUG%"=="" @echo off
++@rem ##########################################################################
++@rem
++@rem  Gradle startup script for Windows
++@rem
++@rem ##########################################################################
++
++@rem Set local scope for the variables with windows NT shell
++if "%OS%"=="Windows_NT" setlocal
++
++set DIRNAME=%~dp0
++if "%DIRNAME%"=="" set DIRNAME=.
++@rem This is normally unused
++set APP_BASE_NAME=%~n0
++set APP_HOME=%DIRNAME%
++
++@rem Resolve any "." and ".." in APP_HOME to make it shorter.
++for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
++
++@rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
++set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
++
++@rem Find java.exe
++if defined JAVA_HOME goto findJavaFromJavaHome
++
++set JAVA_EXE=java.exe
++%JAVA_EXE% -version >NUL 2>&1
++if %ERRORLEVEL% equ 0 goto execute
++
++echo. 1>&2
++echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH. 1>&2
++echo. 1>&2
++echo Please set the JAVA_HOME variable in your environment to match the 1>&2
++echo location of your Java installation. 1>&2
++
++goto fail
++
++:findJavaFromJavaHome
++set JAVA_HOME=%JAVA_HOME:"=%
++set JAVA_EXE=%JAVA_HOME%/bin/java.exe
++
++if exist "%JAVA_EXE%" goto execute
++
++echo. 1>&2
++echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME% 1>&2
++echo. 1>&2
++echo Please set the JAVA_HOME variable in your environment to match the 1>&2
++echo location of your Java installation. 1>&2
++
++goto fail
++
++:execute
++@rem Setup the command line
++
++set CLASSPATH=
++
++
++@rem Execute Gradle
++"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" -jar "%APP_HOME%\gradle\wrapper\gradle-wrapper.jar" %*
++
++:end
++@rem End local scope for the variables with windows NT shell
++if %ERRORLEVEL% equ 0 goto mainEnd
++
++:fail
++rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
++rem the _cmd.exe /c_ return code!
++set EXIT_CODE=%ERRORLEVEL%
++if %EXIT_CODE% equ 0 set EXIT_CODE=1
++if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
++exit /b %EXIT_CODE%
++
++:mainEnd
++if "%OS%"=="Windows_NT" endlocal
++
++:omega
+diff --git a/mod/src/main/java/com/mcbuild/mod/command/BuildCommand.java b/mod/src/main/java/com/mcbuild/mod/command/BuildCommand.java
+index ec5ba43..e708b00 100644
+--- a/mod/src/main/java/com/mcbuild/mod/command/BuildCommand.java
++++ b/mod/src/main/java/com/mcbuild/mod/command/BuildCommand.java
+@@ -12,9 +12,21 @@ import net.minecraft.server.level.ServerPlayer;
+ 
+ /**
+  * {@code /build <prompt>}: anchors a live mcbuild session at the invoking player's position
+- * and starts streaming block placements from the Python agent. No permission is required
+- * (auth is intentionally out of scope for this feature); only one build may run at a time,
+- * enforced by {@link BuildSessionManager}.
++ * and starts streaming block placements from the Python agent; only one build may run at a
++ * time, enforced by {@link BuildSessionManager}.
++ *
++ * <p><b>Security note (2026-10-18 audit):</b> this previously required permission level 0,
++ * i.e. any player on the server, including one with no other elevated permission, could
++ * trigger an LLM-driven build. That build incurs real LLM API spend (see {@code
++ * Config.cost_ceiling} on the Python side, which caps one build's cost but not how many
++ * a non-trusted player can start back-to-back) and places blocks anywhere the invoking
++ * player stands, with no claim/region-protection check of its own -- this mod doesn't
++ * know about WorldGuard-style protection plugins, so a player who can reach a protected
++ * area through some other means could still have {@code /build} place blocks there.
++ * Raised to level 2 (the vanilla "server operator" level used by commands like {@code
++ * /gamemode}) so only operators can invoke it, matching the trust level the feature
++ * actually needs. A server wanting finer-grained access (e.g. via a permissions plugin
++ * and a dedicated node) should wrap or replace this {@code .requires(...)} predicate.
+  */
+ public final class BuildCommand {
+     private BuildCommand() {}
+@@ -22,7 +34,7 @@ public final class BuildCommand {
+     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
+         dispatcher.register(
+                 Commands.literal("build")
+-                        .requires(source -> source.hasPermission(0))
++                        .requires(source -> source.hasPermission(2))
+                         .then(Commands.argument("prompt", StringArgumentType.greedyString())
+                                 .executes(BuildCommand::run)));
+     }
+diff --git a/mod/src/main/java/com/mcbuild/mod/net/WsClient.java b/mod/src/main/java/com/mcbuild/mod/net/WsClient.java
+index 67546e1..169e5da 100644
+--- a/mod/src/main/java/com/mcbuild/mod/net/WsClient.java
++++ b/mod/src/main/java/com/mcbuild/mod/net/WsClient.java
+@@ -14,10 +14,21 @@ import org.java_websocket.handshake.ServerHandshake;
+  * <p>All {@code on*} callbacks here fire on this client's own network thread, not the server
+  * thread -- {@link BuildSessionManager.Session} is responsible for hopping back onto the
+  * server thread before touching any {@code Level}/{@code Player} state.
++ *
++ * <p><b>Security note (2026-10-18 audit):</b> the Python server now requires a {@code
++ * token} on this first message (see {@code server/ws_server.py}; without it any local
++ * process could request a build for free). This client reads it from the {@code
++ * MCBUILD_SERVER_TOKEN} environment variable of the Minecraft server process -- the same
++ * variable name {@code ws_server.py main()} reads -- so the operator sets one value in
++ * both places. If it's unset, the request is still sent (so the existing "A build is
++ * already in progress" vs. a clear auth error distinction comes from the server, not a
++ * guess here); the server will reject it and the player sees that error in chat via
++ * {@link BuildSessionManager.Session#onError}.
+  */
+ public class WsClient extends WebSocketClient {
+     private static final Gson GSON = new Gson();
+     private static final URI SERVER_URI = URI.create("ws://127.0.0.1:8765");
++    private static final String TOKEN_ENV_VAR = "MCBUILD_SERVER_TOKEN";
+ 
+     private final String prompt;
+     private final BuildSessionManager.Session session;
+@@ -33,6 +44,10 @@ public class WsClient extends WebSocketClient {
+         JsonObject request = new JsonObject();
+         request.addProperty("cmd", "build");
+         request.addProperty("prompt", prompt);
++        String token = System.getenv(TOKEN_ENV_VAR);
++        if (token != null) {
++            request.addProperty("token", token);
++        }
+         send(request.toString());
+     }
+ 
+diff --git a/src/mcbuild/agent/loop.py b/src/mcbuild/agent/loop.py
+index f96d548..84a1a5b 100644
+--- a/src/mcbuild/agent/loop.py
++++ b/src/mcbuild/agent/loop.py
+@@ -580,9 +580,8 @@ def run_agent(
+                     (iter_dir / "blueprint.py").write_text(code, encoding="utf-8")
+                     emit("submit_blueprint", iteration=iteration, design_notes=design_notes, code=code)
+ 
+-                    grid = VoxelGrid()
+                     try:
+-                        sandbox.run_blueprint(code, grid, seed=config.seed)
++                        grid = sandbox.run_blueprint_isolated(code, VoxelGrid(), seed=config.seed)
+                     except BlueprintError as e:
+                         consecutive_failures += 1
+                         emit("blueprint_error", iteration=iteration, error=str(e))
+@@ -637,7 +636,7 @@ def run_agent(
+                     if region is not None:
+                         _clear_region(candidate, region)
+                     try:
+-                        sandbox.run_blueprint(code, candidate, seed=config.seed)
++                        candidate = sandbox.run_blueprint_isolated(code, candidate, seed=config.seed)
+                     except BlueprintError as e:
+                         consecutive_failures += 1
+                         emit("blueprint_error", iteration=iteration, error=str(e))
+@@ -737,9 +736,8 @@ def run_agent(
+                     (iter_dir / "blueprint.py").write_text(new_source, encoding="utf-8")
+                     emit("str_replace", iteration=iteration, design_notes=design_notes, code=new_source)
+ 
+-                    candidate = VoxelGrid()
+                     try:
+-                        sandbox.run_blueprint(new_source, candidate, seed=config.seed)
++                        candidate = sandbox.run_blueprint_isolated(new_source, VoxelGrid(), seed=config.seed)
+                     except BlueprintError as e:
+                         consecutive_failures += 1
+                         emit("blueprint_error", iteration=iteration, error=str(e))
+diff --git a/src/mcbuild/config.py b/src/mcbuild/config.py
+index 4b3a247..5bcf826 100644
+--- a/src/mcbuild/config.py
++++ b/src/mcbuild/config.py
+@@ -19,3 +19,8 @@ class Config:
+     cost_ceiling: float | None = None
+     max_consecutive_failures: int = 10
+     stream: bool = True
++    # Shared secret the WebSocket server requires on the first message of every
++    # connection (see server/ws_server.py). None only when the server itself hasn't
++    # been given one, which main() treats as "generate a random one for this run" --
++    # it is never silently optional.
++    auth_token: str | None = None
+diff --git a/src/mcbuild/dsl/isolated_child.py b/src/mcbuild/dsl/isolated_child.py
+new file mode 100644
+index 0000000..bde0484
+--- /dev/null
++++ b/src/mcbuild/dsl/isolated_child.py
+@@ -0,0 +1,68 @@
++"""Child-process entry point for run_blueprint_isolated. Not a public API.
++
++Invoked as `python -I -m mcbuild.dsl.isolated_child <result_fd>`:
++
++* stdin carries one JSON request: {"source", "seed", "max_lines", "max_seconds", "grid"}.
++* the result is one JSON object written to file descriptor <result_fd>.
++
++Both directions are JSON. Nothing is pickled, so the parent never deserializes bytes the
++(possibly compromised) child chose to send beyond plain JSON values it validates itself.
++`-I` ignores PYTHON* environment variables and drops the current directory from sys.path,
++so a planted module in the working directory cannot shadow a stdlib import in the child.
++"""
++
++from __future__ import annotations
++
++import json
++import os
++import sys
++
++from mcbuild.dsl import sandbox
++from mcbuild.dsl.errors import BlueprintError
++
++
++def _respond(result_fd: int, payload: dict) -> None:
++    data = json.dumps(payload).encode("utf-8")
++    view = memoryview(data)
++    while view:
++        written = os.write(result_fd, view)
++        view = view[written:]
++
++
++def main(argv: list[str]) -> int:
++    result_fd = int(argv[1])
++    try:
++        sandbox._apply_child_limits()
++    except OSError as e:
++        _respond(result_fd, {"status": "isolation_failed", "message": f"could not apply resource limits: {e}"})
++        return 0
++
++    request = json.load(sys.stdin)
++    try:
++        grid = sandbox.decode_grid(request["grid"])
++        sandbox.run_blueprint(
++            request["source"],
++            grid,
++            seed=request["seed"],
++            max_lines=request["max_lines"],
++            max_seconds=request["max_seconds"],
++        )
++    except BlueprintError as e:
++        message = e.raw_message
++        if isinstance(e.__cause__, MemoryError):
++            message = "MemoryError: blueprint exceeded the isolated process memory limit"
++        _respond(result_fd, {"status": "error", "message": message, "line": e.line})
++    except MemoryError:
++        _respond(
++            result_fd,
++            {"status": "error", "message": "MemoryError: blueprint exceeded the isolated process memory limit"},
++        )
++    except BaseException as e:  # noqa: BLE001 - every outcome must be reported, never lost
++        _respond(result_fd, {"status": "error", "message": f"{type(e).__name__}: {e}"})
++    else:
++        _respond(result_fd, {"status": "ok", "grid": sandbox.encode_grid(grid)})
++    return 0
++
++
++if __name__ == "__main__":
++    sys.exit(main(sys.argv))
+diff --git a/src/mcbuild/dsl/sandbox.py b/src/mcbuild/dsl/sandbox.py
+index 509d098..5750823 100644
+--- a/src/mcbuild/dsl/sandbox.py
++++ b/src/mcbuild/dsl/sandbox.py
+@@ -1,18 +1,42 @@
+-"""AST-whitelist sandbox + op-budget executor for blueprint code.
+-
+-Threat model: LLM accidents (infinite loops, silly mistakes), not a malicious
+-adversary — execution stays in-process. Import statements are stripped rather
+-than rejected (everything a blueprint needs is already injected as globals;
+-see dsl/REFERENCE.md), dunder/attribute escapes and a handful of dangerous
+-builtins are blocked outright, and execution runs under a line-count +
+-wall-clock budget via sys.settrace.
++"""AST-denylist sandbox + op-budget executor for blueprint code.
++
++SECURITY NOTE (2026-10-18 audit): blueprint text is LLM output produced from a user prompt,
++so it is treated as untrusted. Two layers apply:
++
++1. `run_blueprint` (in-process): the AST denylist, import stripping, and the line/time budget.
++   The denylist is defense in depth, not a security boundary. It can only enumerate escape
++   shapes already known, and Python's reflection surface keeps producing new ones (the audit
++   added `str.format()` dunder chains and frame/generator/code-introspection attributes).
++   In-process execution is for trusted input only: the repository's own blueprints and tests.
++
++2. `run_blueprint_isolated` (out-of-process): every LLM-authored blueprint in the agent loop
++   runs here. The child is a fresh `python -I` process with an empty environment, a scratch
++   working directory, CPU and address-space rlimits, a parent-side deadline, JSON-only
++   exchange (no pickle), and a validated result. A sandbox escape therefore reaches a
++   disposable process without the parent's secrets or memory. This is not a complete
++   boundary: the child still runs as the same OS user with filesystem and network access, and
++   there is no seccomp, namespace, or container layer. See docs/SECURITY.md for the full
++   assessment and the open follow-ups.
++
++Import statements are stripped rather than rejected (everything a blueprint needs is already
++injected as globals; see dsl/REFERENCE.md), dunder/attribute escapes and a handful of dangerous
++builtins are blocked outright, and execution runs under a line-count + wall-clock budget via
++sys.settrace.
+ """
+ 
+ from __future__ import annotations
+ 
+ import ast
+ import builtins as _builtins
++import importlib.util
++import json
++import os
++import re
++import select
++import shutil
++import subprocess
+ import sys
++import tempfile
+ import time
+ 
+ from mcbuild import palette
+@@ -51,6 +75,46 @@ BANNED_NAMES = {
+     "__build_class__",
+ }
+ 
++# Attribute names that don't start with "_" (so the dunder check below misses them) but
++# still expose frame/generator/code-object internals an attacker can walk to reach the
++# real __builtins__, other frames' locals (including the host process's), or arbitrary
++# live objects via __subclasses__()-style traversal. None of mcbuild's DSL primitives or
++# the allowed stdlib names use these, so blocking them has no legitimate-blueprint cost.
++BANNED_ATTRS = {
++    # generator / coroutine / async-generator frame and code objects
++    "gi_frame",
++    "gi_code",
++    "gi_yieldfrom",
++    "cr_frame",
++    "cr_code",
++    "cr_await",
++    "ag_frame",
++    "ag_code",
++    "ag_await",
++    # frame objects
++    "f_back",
++    "f_globals",
++    "f_locals",
++    "f_builtins",
++    "f_code",
++    "f_trace",
++    # traceback / code objects
++    "tb_frame",
++    "tb_next",
++    "co_consts",
++    "co_code",
++    "co_names",
++    "co_varnames",
++    "co_freevars",
++    "co_cellvars",
++    "cell_contents",
++    # str.format()/format_map() interpret their template at runtime, so a dunder chain
++    # inside the template string (e.g. "{0.__class__.__bases__}".format(x)) never appears
++    # as an ast.Attribute node and bypasses the leading-underscore check entirely.
++    "format",
++    "format_map",
++}
++
+ _SAFE_BUILTIN_NAMES = (
+     "range",
+     "len",
+@@ -94,7 +158,7 @@ class BudgetExceeded(Exception):
+ 
+ def validate_ast(tree: ast.AST) -> None:
+     for node in ast.walk(tree):
+-        if isinstance(node, ast.Attribute) and node.attr.startswith("_"):
++        if isinstance(node, ast.Attribute) and (node.attr.startswith("_") or node.attr in BANNED_ATTRS):
+             raise SandboxViolation(f"Access to attribute '{node.attr}' is not allowed.", node.lineno)
+         if isinstance(node, ast.Name) and node.id in BANNED_NAMES:
+             raise SandboxViolation(f"Use of '{node.id}' is not allowed.", node.lineno)
+@@ -183,3 +247,239 @@ def run_blueprint(
+     finally:
+         sys.settrace(old_trace)
+     grid.palette_warnings = palette.pop_warnings()
++
++
++# --- Process-isolated execution (for untrusted/LLM-authored blueprints) ---------------
++#
++# The child is a fresh `python -I -m mcbuild.dsl.isolated_child` process. Requests and results
++# are JSON only (never pickle), and blocks cross the boundary as coordinates plus block-state
++# strings, not palette indices: indices are process-local, and a blueprint can create dynamic
++# indices (e.g. "oak_stairs[facing=north]") that the parent has never seen.
++
++ISOLATION_MAX_SECONDS = 15.0  # parent-side wall-clock backstop, above the in-sandbox MAX_SECONDS
++ISOLATION_CPU_SECONDS = 20  # hard CPU-time rlimit inside the child (SIGXCPU if exceeded)
++ISOLATION_MEMORY_BYTES = 1_024 * 1_024 * 1_024  # 1 GiB address-space rlimit inside the child
++MAX_ISOLATED_RESULT_BYTES = 256 * 1024 * 1024  # cap on what the parent will read back from a child
++_STATE_NAME = re.compile(r"[a-z0-9_]+(\[[a-z0-9_=,]+\])?")
++_MAX_STATE_NAME_CHARS = 256
++
++
++class IsolatedExecutionError(errors.BlueprintError):
++    """The isolated child timed out, crashed, was killed, returned a malformed result, or could
++    not enforce its limits. Subclasses BlueprintError so the agent loop treats it as a
++    recoverable failure instead of aborting the run."""
++
++    def __init__(self, message: str):
++        super().__init__(message)
++
++
++def isolation_supported() -> bool:
++    """True when this platform can apply the child's resource limits (POSIX `resource` module).
++
++    Isolation without limits is not offered: where `resource` is missing (e.g. Windows),
++    run_blueprint_isolated refuses to run rather than executing unconstrained (fail closed).
++    """
++    return importlib.util.find_spec("resource") is not None
++
++
++def _apply_child_limits() -> None:
++    """Apply CPU and address-space caps in the child. Failures raise; they are never ignored."""
++    import resource
++
++    resource.setrlimit(resource.RLIMIT_CPU, (ISOLATION_CPU_SECONDS, ISOLATION_CPU_SECONDS))
++    resource.setrlimit(resource.RLIMIT_AS, (ISOLATION_MEMORY_BYTES, ISOLATION_MEMORY_BYTES))
++
++
++def _state_string(block: palette.Block) -> str:
++    if not block.state:
++        return block.name
++    return f"{block.name}[" + ",".join(f"{k}={v}" for k, v in block.state) + "]"
++
++
++def encode_grid(grid: _voxel.VoxelGrid) -> dict:
++    """Serialize a grid to JSON-safe values: block coordinates plus block-state strings."""
++    blocks = [[x, y, z, _state_string(palette.get_block_by_index(index))] for (x, y, z), index in grid.items()]
++    return {"blocks": blocks, "warnings": list(getattr(grid, "palette_warnings", None) or [])}
++
++
++def decode_grid(payload: object) -> _voxel.VoxelGrid:
++    """Rebuild a grid from encode_grid output, validating every field.
++
++    The result comes from a child that may be compromised, so nothing is trusted: types are
++    checked (bool is rejected as an int), names must match the block-state grammar and length
++    limit, and placement goes through VoxelGrid.set so the block-count and extent limits apply.
++    """
++    if not isinstance(payload, dict) or not isinstance(payload.get("blocks"), list):
++        raise IsolatedExecutionError("isolated result has an unexpected shape.")
++    warnings = payload.get("warnings", [])
++    if not isinstance(warnings, list) or not all(isinstance(w, str) for w in warnings):
++        raise IsolatedExecutionError("isolated result has invalid warnings.")
++
++    grid = _voxel.VoxelGrid()
++    try:
++        for entry in payload["blocks"]:
++            if not isinstance(entry, list) or len(entry) != 4:
++                raise IsolatedExecutionError("isolated result has a malformed block entry.")
++            x, y, z, name = entry
++            if any(type(c) is not int for c in (x, y, z)) or not isinstance(name, str):
++                raise IsolatedExecutionError("isolated result has a block entry with invalid types.")
++            if len(name) > _MAX_STATE_NAME_CHARS or _STATE_NAME.fullmatch(name) is None:
++                raise IsolatedExecutionError("isolated result has a block name outside the allowed grammar.")
++            try:
++                index = palette.get_block(name).index
++            except (PaletteError, ValueError, KeyError) as e:
++                raise IsolatedExecutionError(f"isolated result names an unknown block: {e}") from e
++            grid.set(x, y, z, index)
++    except _voxel.VoxelLimitError as e:
++        raise IsolatedExecutionError(f"isolated result exceeds grid limits: {e}") from e
++    finally:
++        # get_block may append alias/correction warnings in this process; discard them here.
++        palette.pop_warnings()
++    grid.palette_warnings = list(warnings)
++    return grid
++
++
++def _send_all(fd: int, data: bytes, deadline: float) -> None:
++    view = memoryview(data)
++    while view:
++        remaining = deadline - time.monotonic()
++        if remaining <= 0 or not select.select([], [fd], [], remaining)[1]:
++            raise TimeoutError
++        view = view[os.write(fd, view[:65536]) :]
++
++
++def _recv_all(fd: int, deadline: float) -> bytes:
++    chunks: list[bytes] = []
++    total = 0
++    while True:
++        remaining = deadline - time.monotonic()
++        if remaining <= 0 or not select.select([fd], [], [], remaining)[0]:
++            raise TimeoutError
++        chunk = os.read(fd, 65536)
++        if not chunk:
++            return b"".join(chunks)
++        total += len(chunk)
++        if total > MAX_ISOLATED_RESULT_BYTES:
++            raise IsolatedExecutionError("isolated result exceeds the size limit.")
++        chunks.append(chunk)
++
++
++def run_blueprint_isolated(
++    source: str,
++    grid: _voxel.VoxelGrid,
++    seed: int = 0,
++    max_lines: int = MAX_LINES,
++    max_seconds: float = MAX_SECONDS,
++    timeout: float = ISOLATION_MAX_SECONDS,
++) -> _voxel.VoxelGrid:
++    """Run a blueprint against a copy of `grid` inside a resource-limited child process.
++
++    Returns a new VoxelGrid with the result; `grid` is not modified. Starting from `grid` keeps
++    edit semantics: get_block() and edits see the existing build.
++
++    Raises:
++        BlueprintError: the blueprint itself failed (syntax, sandbox violation, runtime error,
++            or its own line/time budget). Same message and line information as run_blueprint.
++        IsolatedExecutionError: the child exceeded `timeout`, was killed (its CPU or memory
++            limit, the OOM killer, a crash), returned a malformed result, could not apply its
++            limits, or isolation is unsupported on this platform.
++
++    The child is always reaped before this function returns or raises.
++    """
++    if not isolation_supported():
++        raise IsolatedExecutionError(
++            "Blueprint isolation is unavailable on this platform (no POSIX resource limits); "
++            "refusing to run the blueprint unconstrained."
++        )
++
++    request = json.dumps(
++        {
++            "source": source,
++            "seed": seed,
++            "max_lines": max_lines,
++            "max_seconds": max_seconds,
++            "grid": encode_grid(grid),
++        }
++    ).encode("utf-8")
++
++    # The child gets an empty environment (so it cannot read API keys such as OPENROUTER_API_KEY
++    # from os.environ) and a fresh empty working directory (so it cannot read the repository by
++    # relative path). Both are removed afterwards.
++    scratch = tempfile.mkdtemp(prefix="mcbuild-isolated-")
++    result_read, result_write = os.pipe()
++    try:
++        # -I: ignore PYTHON* env vars and drop the cwd from sys.path. start_new_session keeps the
++        # child out of our process group, so a terminal Ctrl-C does not race the cleanup below.
++        child = subprocess.Popen(
++            [sys.executable, "-I", "-m", "mcbuild.dsl.isolated_child", str(result_write)],
++            stdin=subprocess.PIPE,
++            stdout=subprocess.DEVNULL,
++            stderr=subprocess.DEVNULL,
++            pass_fds=(result_write,),
++            start_new_session=True,
++            env={},
++            cwd=scratch,
++        )
++    except OSError as e:
++        os.close(result_read)
++        os.close(result_write)
++        shutil.rmtree(scratch, ignore_errors=True)
++        raise IsolatedExecutionError(f"could not start the isolated process: {e}") from e
++    os.close(result_write)  # keep only the child's copy, so EOF means the child has exited
++
++    deadline = time.monotonic() + timeout
++    try:
++        try:
++            _send_all(child.stdin.fileno(), request, deadline)
++        except (BrokenPipeError, TimeoutError):
++            pass  # the child died or stalled before reading; reported below as no result
++        finally:
++            child.stdin.close()
++        raw = _recv_all(result_read, deadline)
++    except TimeoutError as e:
++        child.kill()  # a child that blew its deadline is hung or spinning; do not grant it a grace period
++        raise IsolatedExecutionError(
++            f"Blueprint execution did not finish within {timeout}s (isolated process killed)."
++        ) from e
++    finally:
++        os.close(result_read)
++        _reap(child)
++        shutil.rmtree(scratch, ignore_errors=True)
++
++    if not raw:
++        raise IsolatedExecutionError(
++            f"Isolated blueprint process ended without a result (exit code {child.returncode}); "
++            "likely its CPU or memory limit, the OS OOM killer, or a crash."
++        )
++    try:
++        envelope = json.loads(raw.decode("utf-8"))
++    except (UnicodeDecodeError, ValueError) as e:
++        raise IsolatedExecutionError("isolated result is not valid JSON.") from e
++    if not isinstance(envelope, dict):
++        raise IsolatedExecutionError("isolated result has an unexpected shape.")
++
++    status = envelope.get("status")
++    if status == "ok":
++        return decode_grid(envelope.get("grid"))
++    message = envelope.get("message")
++    if not isinstance(message, str):
++        raise IsolatedExecutionError("isolated result has no message.")
++    if status == "error":
++        line = envelope.get("line")
++        raise errors.BlueprintError(message, line=line if type(line) is int else None, source=source)
++    if status == "isolation_failed":
++        raise IsolatedExecutionError(message)
++    raise IsolatedExecutionError("isolated result has an unknown status.")
++
++
++def _reap(child: subprocess.Popen) -> None:
++    """Make sure the child is gone: wait briefly for its own exit, then terminate, then kill."""
++    try:
++        child.wait(timeout=2.0)
++    except subprocess.TimeoutExpired:
++        child.terminate()
++        try:
++            child.wait(timeout=2.0)
++        except subprocess.TimeoutExpired:
++            child.kill()
++            child.wait()
+diff --git a/src/mcbuild/server/protocol.py b/src/mcbuild/server/protocol.py
+index 60bef90..80c7464 100644
+--- a/src/mcbuild/server/protocol.py
++++ b/src/mcbuild/server/protocol.py
+@@ -8,6 +8,17 @@ keep the two in sync when changing shapes here.
+     {"type": "blocks", "iteration": int, "changes": [{"x": int, "y": int, "z": int, "block": str|None}]}
+     {"type": "finish", "summary": str}
+     {"type": "error", "reason": str}
++
++Inbound (client -> server), since the 2026-10-18 security audit:
++
++    {"cmd": "build", "prompt": str, "token": str}
++
++`token` must match the server's configured `Config.auth_token` (see server/ws_server.py);
++a connection that omits it or sends the wrong value is rejected with an `error` message
++and closed before any build starts. This exists because `serve()`'s Origin check (also
++added in that audit) only stops *browser* clients; it does nothing against another local
++process, user, or container on the same host opening a raw TCP/WebSocket connection to
++127.0.0.1, which previously got a build (and whatever LLM spend it incurs) for free.
+ """
+ 
+ from __future__ import annotations
+diff --git a/src/mcbuild/server/session.py b/src/mcbuild/server/session.py
+index b1fc6e9..acfeaf5 100644
+--- a/src/mcbuild/server/session.py
++++ b/src/mcbuild/server/session.py
+@@ -60,7 +60,7 @@ async def run_build_session(prompt: str, send: Send, config: Config | None = Non
+         llm = OpenRouterClient()
+     except RuntimeError as e:
+         enqueue(protocol.error(str(e)))
+-        await queue.join()
++        await _flush(queue)
+         drain_task.cancel()
+         return
+ 
+@@ -99,10 +99,21 @@ async def run_build_session(prompt: str, send: Send, config: Config | None = Non
+     else:
+         enqueue(protocol.error(result.summary))
+ 
+-    await queue.join()  # let the drain task flush everything enqueued above before we return
++    await _flush(queue)  # let the drain task flush everything enqueued above before we return
+     drain_task.cancel()
+ 
+ 
++async def _flush(queue: asyncio.Queue[str]) -> None:
++    """Wait until every enqueued message has been sent.
++
++    enqueue() hands each put to the event loop with call_soon_threadsafe, so a message enqueued
++    just before this call may not be in the queue yet, and join() would return without counting
++    it. Yielding once lets those scheduled puts run first.
++    """
++    await asyncio.sleep(0)
++    await queue.join()
++
++
+ async def _drain_forever(queue: asyncio.Queue[str], send: Send) -> None:
+     while True:
+         message = await queue.get()
+diff --git a/src/mcbuild/server/ws_server.py b/src/mcbuild/server/ws_server.py
+index 75ac4c9..c9674ba 100644
+--- a/src/mcbuild/server/ws_server.py
++++ b/src/mcbuild/server/ws_server.py
+@@ -1,11 +1,41 @@
+-"""WebSocket server entry point: accepts a mod client, runs one build per connection."""
++"""WebSocket server entry point: accepts a mod client, runs one build per connection.
++
++SECURITY NOTE (2026-10-18 audit): this server binds to 127.0.0.1 by default, which stops
++other machines on the network, but not every local threat. Two were unaddressed before
++this audit and are both fixed below:
++
++1. Any other local process/user/container could open a raw connection to 127.0.0.1:8765
++   and get a build for free (no auth at all) -- a resource-exhaustion / LLM-spend-abuse
++   vector (`Config.cost_ceiling` limits one build's spend, not how many builds a
++   non-owner can trigger). Fixed with a shared-secret `token` the client must send on its
++   first message (see protocol.py); compared with `hmac.compare_digest` to avoid a timing
++   oracle.
++2. A page open in the operator's browser can have its JavaScript open a plain
++   `ws://127.0.0.1:8765` connection -- browsers do not apply same-origin restrictions to
++   WebSocket connections, so this works from *any* site the operator has open, not just a
++   malicious one (e.g. via a compromised ad, XSS on an unrelated site, or a supply-chain
++   issue in a browser extension). That request carries a real `Origin` header the browser
++   sets and cannot be overridden by page JS; a non-browser client like the Forge mod's
++   `java_websocket`-based `WsClient` does not send one at all. `serve(..., origins=[None])`
++   below accepts only connections with no Origin header, so it rejects every
++   browser-originated connection outright, regardless of which page it came from. The auth
++   token is still required on top of this -- Origin filtering is a header the client
++   controls on some code paths (e.g. non-browser HTTP libraries can set an arbitrary
++   Origin), so it narrows the field, it does not replace authentication.
++
++Neither of these is a reason to bind to a non-loopback host; that remains the operator's
++explicit choice via --host and is unrelated to this fix. The token is required at startup
++(no generated or default value) and is never printed, so it cannot leak through the server log.
++"""
+ 
+ from __future__ import annotations
+ 
+ import argparse
+ import asyncio
+ import functools
++import hmac
+ import json
++import os
+ 
+ from dotenv import load_dotenv
+ from websockets.asyncio.server import ServerConnection, serve
+@@ -14,11 +44,21 @@ from mcbuild.config import Config
+ from mcbuild.server import protocol
+ from mcbuild.server.session import run_build_session
+ 
++MIN_TOKEN_CHARS = 16
++
+ # Only one build runs at a time in this version; a second connection while a build is in
+ # flight is rejected outright rather than queued.
+ _build_in_progress = False
+ 
+ 
++def _token_matches(config: Config, candidate: object) -> bool:
++    if not isinstance(candidate, str) or config.auth_token is None:
++        return False
++    # Constant-time comparison: a naive `==` leaks the token one byte at a time to an
++    # attacker measuring response latency across many attempts.
++    return hmac.compare_digest(candidate, config.auth_token)
++
++
+ async def _handler(connection: ServerConnection, config: Config) -> None:
+     global _build_in_progress
+ 
+@@ -29,8 +69,14 @@ async def _handler(connection: ServerConnection, config: Config) -> None:
+         await connection.send(protocol.error("Malformed request: expected JSON."))
+         return
+ 
++    if not _token_matches(config, request.get("token")):
++        # Deliberately generic: don't confirm/deny whether a token was configured, or
++        # distinguish "missing" from "wrong", beyond what's needed to self-diagnose.
++        await connection.send(protocol.error("Unauthorized: missing or invalid 'token'."))
++        return
++
+     if request.get("cmd") != "build" or not request.get("prompt"):
+-        await connection.send(protocol.error('Expected {"cmd": "build", "prompt": "..."}.'))
++        await connection.send(protocol.error('Expected {"cmd": "build", "prompt": "...", "token": "..."}.'))
+         return
+ 
+     if _build_in_progress:
+@@ -46,8 +92,13 @@ async def _handler(connection: ServerConnection, config: Config) -> None:
+ 
+ async def _serve(host: str, port: int, config: Config) -> None:
+     handler = functools.partial(_handler, config=config)
+-    async with serve(handler, host, port) as server:
+-        print(f"mcbuild server listening on ws://{host}:{port} (model={config.model})")
++    # origins=[None]: accept only connections with no Origin header. Browsers always set
++    # one on a WebSocket handshake (same-origin or not) and page JS cannot suppress or
++    # forge it; a non-browser client (our Forge mod's java_websocket) sends none. This
++    # rejects every browser-originated connection regardless of which site it came from.
++    async with serve(handler, host, port, origins=[None]) as server:
++        # The token is deliberately never printed or logged: it is a credential.
++        print(f"mcbuild server listening on ws://{host}:{port} (model={config.model}, token required)")
+         await server.serve_forever()
+ 
+ 
+@@ -65,13 +116,27 @@ def main() -> None:
+         default=None,
+         help="Abort a build (keeping its best build so far) once usage cost reaches this many USD.",
+     )
++    parser.add_argument(
++        "--token",
++        default=None,
++        help="Shared secret clients must send to connect. Prefer the MCBUILD_SERVER_TOKEN env var, "
++        "which keeps the value out of shell history and process listings.",
++    )
+     args = parser.parse_args()
+ 
++    token = args.token or os.environ.get("MCBUILD_SERVER_TOKEN")
++    if not token or len(token) < MIN_TOKEN_CHARS:
++        # Fail closed: there is no unauthenticated mode, and no generated token is printed.
++        parser.error(
++            f"a shared token of at least {MIN_TOKEN_CHARS} characters is required (--token or MCBUILD_SERVER_TOKEN)"
++        )
++
+     config = Config(
+         model=args.model,
+         max_iters=args.max_iters,
+         reasoning=args.reasoning,
+         cost_ceiling=args.cost_ceiling,
++        auth_token=token,
+     )
+     asyncio.run(_serve(args.host, args.port, config))
+ 
+diff --git a/tests/test_agent_loop_isolation.py b/tests/test_agent_loop_isolation.py
+new file mode 100644
+index 0000000..970b915
+--- /dev/null
++++ b/tests/test_agent_loop_isolation.py
+@@ -0,0 +1,145 @@
++"""Regression tests: every LLM-facing blueprint execution path goes through the isolated executor.
++
++The three call sites in agent/loop.py are submit_blueprint, edit_region and str_replace. Each
++test drives the real agent loop with a scripted LLM, and asserts two things:
++
++* run_blueprint_isolated handled the blueprint, and
++* the in-process run_blueprint was never reached from the loop (it is forbidden for this run).
++"""
++
++from __future__ import annotations
++
++import json
++
++import pytest
++
++from mcbuild.agent.loop import run_agent
++from mcbuild.config import Config
++from mcbuild.dsl import sandbox
++from mcbuild.dsl.sandbox import IsolatedExecutionError
++from mcbuild.llm.fake import FakeLLM, _FakeMessage, _FnCall, _ToolCall
++from mcbuild.rundir import RunDir
++
++
++def _tool_msg(name, args, call_id="c"):
++    return _FakeMessage(tool_calls=[_ToolCall(id=call_id, function=_FnCall(name=name, arguments=json.dumps(args)))])
++
++
++@pytest.fixture
++def isolation_spy(monkeypatch):
++    """Count isolated executions, and make any in-process execution from the loop a failure."""
++    calls: list[str] = []
++    real_isolated = sandbox.run_blueprint_isolated
++
++    def spy(source, grid, **kwargs):
++        calls.append(source)
++        return real_isolated(source, grid, **kwargs)
++
++    def forbidden_in_process(*args, **kwargs):
++        raise AssertionError("agent loop executed a blueprint in-process; it must use run_blueprint_isolated")
++
++    monkeypatch.setattr(sandbox, "run_blueprint_isolated", spy)
++    monkeypatch.setattr(sandbox, "run_blueprint", forbidden_in_process)
++    return calls
++
++
++class _ScriptedLLM(FakeLLM):
++    def __init__(self, steps):
++        super().__init__()
++        self._script = steps
++
++
++def test_every_llm_facing_build_path_runs_through_isolation(tmp_path, isolation_spy):
++    steps = [
++        lambda: _tool_msg(
++            "submit_blueprint",
++            {"code": "fill(0,0,0,4,0,4,'stone')", "design_notes": "slab", "views": [{"yaw": 0}]},
++            call_id="s1",
++        ),
++        lambda: _tool_msg(
++            "edit_region",
++            {
++                "region": [1, 0, 1, 3, 0, 3],
++                "code": "fill(1,0,1,3,0,3,'glass')",
++                "design_notes": "glass centre",
++                "views": [{"yaw": 0}],
++            },
++            call_id="e1",
++        ),
++        lambda: _tool_msg(
++            "str_replace",
++            {
++                "old_str": "fill(1,0,1,3,0,3,'glass')",
++                "new_str": "fill(1,0,1,3,0,3,'glass')\nfill(0,1,0,0,1,0,'oak_planks')",
++                "design_notes": "one extra block",
++                "submit": True,
++                "views": [{"yaw": 0}],
++            },
++            call_id="r1",
++        ),
++    ]
++    llm = _ScriptedLLM(
++        steps
++        + [_scripted(FakeLLM, "_verify_query"), _scripted(FakeLLM, "_verify_inspect"), _scripted(FakeLLM, "_finish")]
++    )
++    events = []
++    config = Config(max_iters=6, seed=1)
++    rundir = RunDir.create("slab", base=str(tmp_path))
++
++    result = run_agent("slab", llm, config, rundir, on_event=lambda t, d: events.append((t, d)))
++
++    assert result.finished is True
++    assert len(isolation_spy) == 3  # one isolated execution per LLM-facing build path
++    event_types = {t for t, _ in events}
++    assert {"submit_blueprint", "edit_region", "str_replace"} <= event_types
++    grid = result.grid
++    assert grid.get(2, 0, 2) is not None  # centre built by edit_region, preserved across later steps
++
++
++def _scripted(cls, name):
++    """Bind a FakeLLM step method so it can be placed in a plain script list."""
++    return getattr(cls(), name)
++
++
++def test_isolation_failure_is_a_recoverable_blueprint_failure_not_a_crash(tmp_path, monkeypatch):
++    """A killed/timed-out child must not abort the agent run: the model sees the error as a failed
++    tool call, the edit budget is untouched, and the next submission can still succeed."""
++    real_isolated = sandbox.run_blueprint_isolated
++    attempts = {"n": 0}
++
++    def flaky(source, grid, **kwargs):
++        attempts["n"] += 1
++        if attempts["n"] == 1:
++            raise IsolatedExecutionError("Blueprint execution did not finish within 15.0s (isolated process killed).")
++        return real_isolated(source, grid, **kwargs)
++
++    monkeypatch.setattr(sandbox, "run_blueprint_isolated", flaky)
++    monkeypatch.setattr(sandbox, "run_blueprint", lambda *a, **k: (_ for _ in ()).throw(AssertionError("in-process")))
++
++    llm = _ScriptedLLM(
++        [
++            lambda: _tool_msg(
++                "submit_blueprint",
++                {"code": "fill(0,0,0,1,1,1,'stone')", "design_notes": "a", "views": [{"yaw": 0}]},
++                call_id="s1",
++            ),
++            lambda: _tool_msg(
++                "submit_blueprint",
++                {"code": "fill(0,0,0,1,1,1,'stone')", "design_notes": "b", "views": [{"yaw": 0}]},
++                call_id="s2",
++            ),
++            _scripted(FakeLLM, "_verify_query"),
++            _scripted(FakeLLM, "_verify_inspect"),
++            _scripted(FakeLLM, "_finish"),
++        ]
++    )
++    events = []
++    config = Config(max_iters=6, seed=1)
++    rundir = RunDir.create("hut", base=str(tmp_path))
++
++    result = run_agent("hut", llm, config, rundir, on_event=lambda t, d: events.append((t, d)))
++
++    assert result.finished is True
++    assert attempts["n"] == 2
++    assert any(t == "blueprint_error" and "isolated process killed" in d["error"] for t, d in events)
++    assert result.grid is not None and len(result.grid) == 8
+diff --git a/tests/test_dsl_sandbox.py b/tests/test_dsl_sandbox.py
+index 890f338..a703a85 100644
+--- a/tests/test_dsl_sandbox.py
++++ b/tests/test_dsl_sandbox.py
+@@ -1,7 +1,7 @@
+ import pytest
+ 
+ from mcbuild.dsl.errors import BlueprintError
+-from mcbuild.dsl.sandbox import run_blueprint
++from mcbuild.dsl.sandbox import SandboxViolation, compile_blueprint, run_blueprint
+ from mcbuild.voxel import VoxelGrid
+ 
+ 
+@@ -69,6 +69,50 @@ def test_unknown_block_reports_line_and_suggestion():
+     assert "stone" in str(err)
+ 
+ 
++### Regression tests for the 2026-10-18 security audit (confirmed sandbox-escape gaps). ###
++### These reproduce the exact PoCs used to validate the finding; each failed (was NOT    ###
++### blocked) before BANNED_ATTRS was added to validate_ast.                              ###
++
++
++def test_str_format_dunder_chain_blocked():
++    """str.format()'s template string is interpreted at runtime, not parsed as an
++    ast.Attribute node, so a dunder chain inside it (the classic Python sandbox-escape
++    primitive: reach object -> __subclasses__() -> an exploitable class) used to bypass
++    the leading-underscore attribute check entirely."""
++    with pytest.raises(SandboxViolation):
++        compile_blueprint('x = "{0.__class__.__bases__}".format(0)')
++
++
++def test_str_format_map_dunder_chain_blocked():
++    with pytest.raises(SandboxViolation):
++        compile_blueprint('x = "{a.__class__}".format_map({"a": 0})')
++
++
++@pytest.mark.parametrize(
++    "attr",
++    [
++        "gi_frame",
++        "cr_frame",
++        "ag_frame",
++        "f_back",
++        "f_globals",
++        "f_locals",
++        "f_builtins",
++        "tb_frame",
++        "co_consts",
++        "cell_contents",
++    ],
++)
++def test_frame_and_code_introspection_attrs_blocked(attr):
++    """None of these start with '_', so they were invisible to the old dunder-only check.
++    A generator's .gi_frame.f_back.f_globals chain (when reached while a frame is live on
++    the call stack, e.g. during a generator's own next()/send()) walks back through
++    run_blueprint's own call stack and beyond -- toward the embedding process's frames,
++    not just the blueprint's."""
++    with pytest.raises(SandboxViolation):
++        compile_blueprint(f"x = None\nf = x.{attr}\n")
++
++
+ def test_infinite_loop_hits_budget():
+     grid = VoxelGrid()
+     with pytest.raises(BlueprintError) as exc_info:
+diff --git a/tests/test_sandbox_isolation.py b/tests/test_sandbox_isolation.py
+new file mode 100644
+index 0000000..daf9a75
+--- /dev/null
++++ b/tests/test_sandbox_isolation.py
+@@ -0,0 +1,294 @@
++"""Tests for run_blueprint_isolated (2026-10-18 security audit remediation).
++
++The "real child" tests start `python -I -m mcbuild.dsl.isolated_child`, so they are slower than
++the rest of the suite. The rest test the parent's validation and status mapping with stubs.
++"""
++
++from __future__ import annotations
++
++import json
++import re
++import subprocess
++import time
++from pathlib import Path
++
++import pytest
++
++import mcbuild.dsl.sandbox as sandbox
++from mcbuild import palette
++from mcbuild.dsl.errors import BlueprintError
++from mcbuild.dsl.sandbox import (
++    IsolatedExecutionError,
++    decode_grid,
++    encode_grid,
++    run_blueprint,
++    run_blueprint_isolated,
++)
++from mcbuild.palette import get_block
++from mcbuild.voxel import VoxelGrid
++
++_SRC_DIR = Path(sandbox.__file__).parent
++
++
++class _RecordingPopen(subprocess.Popen):
++    """Real Popen that remembers every child (and how it was launched) so tests can prove each
++    was reaped and started with the expected isolation settings."""
++
++    instances: list[subprocess.Popen] = []
++    launch_kwargs: list[dict] = []
++
++    def __init__(self, *args, **kwargs):
++        _RecordingPopen.launch_kwargs.append(kwargs)
++        super().__init__(*args, **kwargs)
++        _RecordingPopen.instances.append(self)
++
++
++@pytest.fixture
++def recorded_children(monkeypatch):
++    _RecordingPopen.instances = []
++    _RecordingPopen.launch_kwargs = []
++    monkeypatch.setattr(sandbox.subprocess, "Popen", _RecordingPopen)
++    yield _RecordingPopen.instances
++    for child in _RecordingPopen.instances:
++        assert child.returncode is not None, "isolated child was left running"
++
++
++# --- real child: behavior parity and edit semantics ----------------------------------------
++
++
++def test_isolated_execution_matches_in_process_result(recorded_children):
++    source = "fill(0, 0, 0, 2, 2, 2, 'stone')"
++    in_process = VoxelGrid()
++    run_blueprint(source, in_process, seed=0)
++
++    isolated = run_blueprint_isolated(source, VoxelGrid(), seed=0)
++
++    assert isolated.bounds == in_process.bounds
++    assert dict(isolated.items()) == dict(in_process.items())
++    assert len(recorded_children) == 1
++
++
++def test_dynamic_block_states_survive_the_process_boundary(recorded_children):
++    """Regression: a state like oak_stairs[facing=north] exists only in the child's palette.
++    Sending raw palette indices would resolve to the wrong block (or fail) in the parent."""
++    result = run_blueprint_isolated("fill(0, 0, 0, 1, 0, 0, 'oak_stairs[facing=north]')", VoxelGrid(), seed=0)
++
++    names = {palette.get_block_by_index(index).mc_id for _, index in result.items()}
++    assert names == {"minecraft:oak_stairs[facing=north]"}
++
++
++def test_isolated_execution_preserves_existing_build_for_edits(recorded_children):
++    """Edit semantics: the blueprint runs against the current build, so get_block() sees it."""
++    stone = get_block("stone").index
++    start = VoxelGrid()
++    start.set(7, 0, 7, stone)
++
++    result = run_blueprint_isolated(
++        "assert get_block(7, 0, 7) is not None\nfill(0, 0, 0, 1, 0, 1, 'stone')", start, seed=0
++    )
++
++    assert result.get(7, 0, 7) == stone
++    assert len(result) == 5
++
++
++def test_input_grid_is_not_mutated(recorded_children):
++    start = VoxelGrid()
++    start.set(0, 0, 0, get_block("stone").index)
++    before = dict(start.items())
++
++    run_blueprint_isolated("fill(0, 0, 0, 3, 0, 3, 'dirt')", start, seed=0)
++
++    assert dict(start.items()) == before
++
++
++def test_isolated_execution_reports_blueprint_errors_as_blueprint_error(recorded_children):
++    with pytest.raises(BlueprintError) as exc_info:
++        run_blueprint_isolated("this_name_does_not_exist()", VoxelGrid(), seed=0)
++    assert "this_name_does_not_exist" in str(exc_info.value)
++    assert exc_info.value.line == 1
++    assert not isinstance(exc_info.value, IsolatedExecutionError)
++
++
++def test_isolated_execution_reports_sandbox_violations(recorded_children):
++    with pytest.raises(BlueprintError) as exc_info:
++        run_blueprint_isolated("x = (1).__class__\n", VoxelGrid(), seed=0)
++    assert "not allowed" in str(exc_info.value)
++
++
++def test_runaway_python_loop_stops_on_the_in_sandbox_budget(recorded_children):
++    start = time.monotonic()
++    with pytest.raises(BlueprintError) as exc_info:
++        run_blueprint_isolated("while True:\n    pass\n", VoxelGrid(), seed=0, max_seconds=1.0, timeout=10.0)
++    assert "budget" in str(exc_info.value).lower() or "lines" in str(exc_info.value).lower()
++    assert time.monotonic() - start < 10.0
++
++
++# --- real child: resource limits and cleanup -----------------------------------------------
++
++
++def test_c_level_busy_work_is_killed_by_parent_timeout(recorded_children):
++    """sum() over a huge range runs in C with no Python line events, so the in-sandbox budget
++    never fires. The parent deadline must still kill the child promptly and report it."""
++    start = time.monotonic()
++    with pytest.raises(IsolatedExecutionError) as exc_info:
++        run_blueprint_isolated("sum(range(10 ** 12))", VoxelGrid(), seed=0, timeout=3.0)
++    elapsed = time.monotonic() - start
++    assert "did not finish" in str(exc_info.value)
++    assert elapsed < 6.0  # deadline + a short reap, not a grace period
++
++
++def test_memory_hog_is_stopped_by_the_address_space_limit(recorded_children):
++    """[0] * 10**10 needs ~80 GB; the 1 GiB address-space cap makes the child raise MemoryError,
++    which is reported as an ordinary blueprint error while the parent keeps running."""
++    with pytest.raises(BlueprintError) as exc_info:
++        run_blueprint_isolated("x = [0] * (10 ** 10)\n", VoxelGrid(), seed=0, timeout=30.0)
++    assert "memory limit" in exc_info.value.raw_message
++    assert not isinstance(exc_info.value, IsolatedExecutionError)
++
++
++def test_child_gets_no_inherited_secrets_and_no_repository_cwd(recorded_children, monkeypatch):
++    """Regression: the child used to inherit os.environ, so an escaped blueprint could read
++    OPENROUTER_API_KEY. It must start with an empty environment and a scratch working directory."""
++    import os
++
++    monkeypatch.setenv("OPENROUTER_API_KEY", "sk-test-should-not-leak")
++    run_blueprint_isolated("pass", VoxelGrid(), seed=0)
++
++    launch = _RecordingPopen.launch_kwargs[-1]
++    assert launch["env"] == {}
++    assert "OPENROUTER_API_KEY" not in launch["env"]
++    assert launch["cwd"] != os.getcwd()
++    assert not os.path.exists(launch["cwd"])  # scratch directory removed after the run
++
++
++def test_child_runs_in_isolated_mode_with_no_pickle_on_the_boundary(recorded_children):
++    run_blueprint_isolated("pass", VoxelGrid(), seed=0)
++    assert "-I" in recorded_children[0].args
++    banned_import = re.compile(r"^\s*(import|from)\s+(pickle|marshal|shelve|multiprocessing)\b", re.MULTILINE)
++    for module in (sandbox, _load_child_module()):
++        source = Path(module.__file__).read_text(encoding="utf-8")
++        assert banned_import.search(source) is None, module.__name__
++
++
++def _load_child_module():
++    import mcbuild.dsl.isolated_child as child
++
++    return child
++
++
++# --- fail closed ----------------------------------------------------------------------------
++
++
++def test_fails_closed_when_isolation_is_unsupported(monkeypatch):
++    monkeypatch.setattr(sandbox, "isolation_supported", lambda: False)
++    spawned = []
++    monkeypatch.setattr(sandbox.subprocess, "Popen", lambda *a, **k: spawned.append((a, k)))
++
++    with pytest.raises(IsolatedExecutionError) as exc_info:
++        run_blueprint_isolated("fill(0, 0, 0, 1, 1, 1, 'stone')", VoxelGrid(), seed=0)
++
++    assert "refusing to run" in str(exc_info.value)
++    assert spawned == []
++
++
++# --- parent-side validation and status mapping (stubbed child) -------------------------------
++
++
++class _StubChild:
++    def __init__(self):
++        self.returncode = 0
++        self.stdin = _StubStdin()
++
++    def wait(self, timeout=None):
++        return 0
++
++    def kill(self):
++        pass
++
++    def terminate(self):
++        pass
++
++
++class _StubStdin:
++    def fileno(self):
++        return -1
++
++    def close(self):
++        pass
++
++
++@pytest.fixture
++def stub_child(monkeypatch):
++    """Replace the child and its pipe reads, so tests choose exactly the bytes the parent sees."""
++    result = {"raw": b""}
++    monkeypatch.setattr(sandbox.subprocess, "Popen", lambda *a, **k: _StubChild())
++    monkeypatch.setattr(sandbox, "_send_all", lambda fd, data, deadline: None)
++    monkeypatch.setattr(sandbox, "_recv_all", lambda fd, deadline: result["raw"])
++    return result
++
++
++@pytest.mark.parametrize(
++    "payload, message",
++    [
++        ({"status": "isolation_failed", "message": "could not apply resource limits: boom"}, "boom"),
++        ({"status": "error", "message": "NameError: x", "line": 3}, "NameError"),
++    ],
++)
++def test_status_mapping(stub_child, payload, message):
++    stub_child["raw"] = json.dumps(payload).encode()
++    with pytest.raises(BlueprintError) as exc_info:
++        run_blueprint_isolated("pass", VoxelGrid(), seed=0)
++    assert message in str(exc_info.value)
++    assert isinstance(exc_info.value, IsolatedExecutionError) == (payload["status"] == "isolation_failed")
++
++
++@pytest.mark.parametrize(
++    "raw, fragment",
++    [
++        (b"", "without a result"),
++        (b"not json", "not valid JSON"),
++        (b"[1, 2]", "unexpected shape"),
++        (json.dumps({"status": "mystery"}).encode(), "no message"),
++        (json.dumps({"status": "mystery", "message": "?"}).encode(), "unknown status"),
++    ],
++)
++def test_malformed_results_are_isolated_execution_errors(stub_child, raw, fragment):
++    stub_child["raw"] = raw
++    with pytest.raises(IsolatedExecutionError) as exc_info:
++        run_blueprint_isolated("pass", VoxelGrid(), seed=0)
++    assert fragment in str(exc_info.value)
++
++
++@pytest.mark.parametrize(
++    "payload",
++    [
++        "x",
++        {"blocks": "not-a-list"},
++        {"blocks": [[0, 0, 0]]},
++        {"blocks": [[True, 0, 0, "stone"]]},
++        {"blocks": [[0, 0, 0, "__import__('os')"]]},
++        {"blocks": [[0, 0, 0, "stone[" + "a" * 300 + "]"]]},
++        {"blocks": [[0, 0, 0, "not_a_real_block"]]},
++        {"blocks": [[0, 0, 0, "stone"]], "warnings": [1]},
++    ],
++)
++def test_decoder_rejects_malicious_or_malformed_grids(payload):
++    with pytest.raises(IsolatedExecutionError):
++        decode_grid(payload)
++
++
++def test_decoder_enforces_grid_extent_between_blocks():
++    payload = {"blocks": [[0, 0, 0, "stone"], [10_000, 0, 0, "stone"]]}
++    with pytest.raises(IsolatedExecutionError):
++        decode_grid(payload)
++
++
++def test_encode_decode_round_trip_keeps_blocks_and_warnings():
++    grid = VoxelGrid()
++    grid.set(1, 2, 3, get_block("oak_stairs[facing=east]").index)
++    grid.palette_warnings = ["a warning"]
++
++    decoded = decode_grid(json.loads(json.dumps(encode_grid(grid))))
++
++    assert dict(decoded.items()) == dict(grid.items())
++    assert decoded.palette_warnings == ["a warning"]
+diff --git a/tests/test_server_session_flush.py b/tests/test_server_session_flush.py
+new file mode 100644
+index 0000000..dcf626c
+--- /dev/null
++++ b/tests/test_server_session_flush.py
+@@ -0,0 +1,48 @@
++"""Regression: the final protocol message must reach the client before run_build_session returns.
++
++Before the fix, enqueue() scheduled its put with call_soon_threadsafe and join() could return
++before that put ran, so the closing message (finish/error) was silently dropped.
++"""
++
++from __future__ import annotations
++
++import asyncio
++import json
++
++from mcbuild.config import Config
++from mcbuild.llm.fake import FakeLLM
++from mcbuild.server import session
++
++
++def _collect(prompt: str, config: Config) -> list[dict]:
++    sent: list[dict] = []
++
++    async def send(message: str) -> None:
++        sent.append(json.loads(message))
++
++    asyncio.run(session.run_build_session(prompt, send, config=config))
++    return sent
++
++
++def test_missing_api_key_error_is_delivered(monkeypatch, tmp_path):
++    monkeypatch.chdir(tmp_path)
++
++    def no_key():
++        raise RuntimeError("OPENROUTER_API_KEY is not set.")
++
++    monkeypatch.setattr(session, "OpenRouterClient", no_key)
++
++    sent = _collect("hut", Config(max_iters=1))
++
++    assert [m["type"] for m in sent] == ["hello", "error"]
++    assert "OPENROUTER_API_KEY" in sent[-1]["reason"]
++
++
++def test_finish_message_is_delivered_after_a_successful_build(monkeypatch, tmp_path):
++    monkeypatch.chdir(tmp_path)
++    monkeypatch.setattr(session, "OpenRouterClient", FakeLLM)
++
++    sent = _collect("a tiny stone hut", Config(max_iters=6, seed=1))
++
++    assert sent[-1]["type"] in ("finish", "error")
++    assert sent[-1]["type"] == "finish", sent[-1]
+diff --git a/tests/test_ws_server_security.py b/tests/test_ws_server_security.py
+new file mode 100644
+index 0000000..ec63bad
+--- /dev/null
++++ b/tests/test_ws_server_security.py
+@@ -0,0 +1,123 @@
++"""Regression tests for the 2026-10-18 security audit's WebSocket server fixes.
++
++No real network socket is opened: `_handler` is exercised directly against a minimal fake
++connection, so these stay fast and don't depend on a free port.
++"""
++
++from __future__ import annotations
++
++import asyncio
++import json
++
++from mcbuild.config import Config
++from mcbuild.server.ws_server import _handler, _token_matches
++
++
++class _FakeConnection:
++    """Just enough of websockets' ServerConnection for _handler: one inbound message,
++    and a list capturing everything sent back."""
++
++    def __init__(self, inbound: dict):
++        self._inbound = json.dumps(inbound)
++        self.sent: list[dict] = []
++
++    async def recv(self) -> str:
++        return self._inbound
++
++    async def send(self, message: str) -> None:
++        self.sent.append(json.loads(message))
++
++
++def _run(coro):
++    return asyncio.run(coro)
++
++
++def test_token_matches_rejects_wrong_token():
++    config = Config(auth_token="correct-horse-battery-staple")
++    assert _token_matches(config, "correct-horse-battery-staple") is True
++    assert _token_matches(config, "wrong") is False
++    assert _token_matches(config, None) is False
++    assert _token_matches(config, 12345) is False  # non-string candidate must not crash
++
++
++def test_token_matches_rejects_everything_when_server_has_no_token_configured():
++    config = Config(auth_token=None)
++    assert _token_matches(config, None) is False
++    assert _token_matches(config, "") is False
++    assert _token_matches(config, "anything") is False
++
++
++def test_handler_rejects_missing_token_without_starting_a_build():
++    config = Config(auth_token="s3cr3t")
++    conn = _FakeConnection({"cmd": "build", "prompt": "a castle"})
++
++    _run(_handler(conn, config))
++
++    assert len(conn.sent) == 1
++    assert conn.sent[0]["type"] == "error"
++    assert "token" in conn.sent[0]["reason"].lower()
++
++
++def test_handler_rejects_wrong_token_without_starting_a_build():
++    config = Config(auth_token="s3cr3t")
++    conn = _FakeConnection({"cmd": "build", "prompt": "a castle", "token": "nope"})
++
++    _run(_handler(conn, config))
++
++    assert len(conn.sent) == 1
++    assert conn.sent[0]["type"] == "error"
++
++
++def test_handler_rejects_malformed_json_before_checking_token():
++    config = Config(auth_token="s3cr3t")
++
++    class _RawConnection(_FakeConnection):
++        async def recv(self) -> str:
++            return "not json"
++
++    conn = _RawConnection({})
++    _run(_handler(conn, config))
++
++    assert len(conn.sent) == 1
++    assert conn.sent[0]["type"] == "error"
++    assert "json" in conn.sent[0]["reason"].lower()
++
++
++def test_handler_with_correct_token_gets_past_auth(monkeypatch):
++    """Doesn't exercise a real build (that needs an LLM client); just confirms a
++    correctly authenticated request reaches run_build_session instead of being rejected."""
++    import mcbuild.server.ws_server as ws_server_module
++
++    called_with = {}
++
++    async def fake_run_build_session(prompt, send, config=None):
++        called_with["prompt"] = prompt
++        called_with["config"] = config
++
++    monkeypatch.setattr(ws_server_module, "run_build_session", fake_run_build_session)
++
++    config = Config(auth_token="s3cr3t")
++    conn = _FakeConnection({"cmd": "build", "prompt": "a castle", "token": "s3cr3t"})
++
++    _run(_handler(conn, config))
++
++    assert called_with.get("prompt") == "a castle"
++    assert conn.sent == []  # no error was sent; auth passed through to the real session
++
++
++def test_handler_rejects_second_build_while_one_in_progress(monkeypatch):
++    import mcbuild.server.ws_server as ws_server_module
++
++    async def hanging_run_build_session(prompt, send, config=None):
++        await asyncio.sleep(3600)
++
++    monkeypatch.setattr(ws_server_module, "run_build_session", hanging_run_build_session)
++    monkeypatch.setattr(ws_server_module, "_build_in_progress", True)
++
++    config = Config(auth_token="s3cr3t")
++    conn = _FakeConnection({"cmd": "build", "prompt": "a castle", "token": "s3cr3t"})
++
++    _run(_handler(conn, config))
++
++    assert len(conn.sent) == 1
++    assert "already in progress" in conn.sent[0]["reason"]

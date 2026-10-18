@@ -580,9 +580,8 @@ def run_agent(
                     (iter_dir / "blueprint.py").write_text(code, encoding="utf-8")
                     emit("submit_blueprint", iteration=iteration, design_notes=design_notes, code=code)
 
-                    grid = VoxelGrid()
                     try:
-                        sandbox.run_blueprint(code, grid, seed=config.seed)
+                        grid = sandbox.run_blueprint_isolated(code, VoxelGrid(), seed=config.seed)
                     except BlueprintError as e:
                         consecutive_failures += 1
                         emit("blueprint_error", iteration=iteration, error=str(e))
@@ -637,7 +636,7 @@ def run_agent(
                     if region is not None:
                         _clear_region(candidate, region)
                     try:
-                        sandbox.run_blueprint(code, candidate, seed=config.seed)
+                        candidate = sandbox.run_blueprint_isolated(code, candidate, seed=config.seed)
                     except BlueprintError as e:
                         consecutive_failures += 1
                         emit("blueprint_error", iteration=iteration, error=str(e))
@@ -737,9 +736,8 @@ def run_agent(
                     (iter_dir / "blueprint.py").write_text(new_source, encoding="utf-8")
                     emit("str_replace", iteration=iteration, design_notes=design_notes, code=new_source)
 
-                    candidate = VoxelGrid()
                     try:
-                        sandbox.run_blueprint(new_source, candidate, seed=config.seed)
+                        candidate = sandbox.run_blueprint_isolated(new_source, VoxelGrid(), seed=config.seed)
                     except BlueprintError as e:
                         consecutive_failures += 1
                         emit("blueprint_error", iteration=iteration, error=str(e))

@@ -1,0 +1,82 @@
+name: mcbuild CI
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: Python tests and Ruff (locked versions)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Install locked dependencies
+        working-directory: vendor/mcbuild
+        run: uv sync --frozen --extra dev
+      - name: Pytest (includes the 2026-10-18 security regression tests)
+        working-directory: vendor/mcbuild
+        run: uv run pytest -q
+      - name: Ruff lint
+        working-directory: vendor/mcbuild
+        run: uv run ruff check .
+      - name: Ruff format
+        working-directory: vendor/mcbuild
+        run: uv run ruff format --check .
+
+  vendor-drift:
+    name: Committed vendor tree == pinned upstream + patches
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: repo
+      - name: Read upstream pin
+        id: pin
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha="$(cat repo/vendor/mcbuild/UPSTREAM_COMMIT)"
+          if ! [[ "$sha" =~ ^[0-9a-f]{40}$ ]]; then
+            echo "::error::vendor/mcbuild/UPSTREAM_COMMIT is not a full commit SHA"
+            exit 1
+          fi
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        with:
+          repository: harrynull/mcbuild
+          ref: ${{ steps.pin.outputs.sha }}
+          path: upstream
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Rebuild from pin + patches and compare
+        shell: bash
+        env:
+          PIN: ${{ steps.pin.outputs.sha }}
+        run: |
+          set -euo pipefail
+          test "$(git -C upstream rev-parse HEAD)" = "$PIN"
+          repo/vendor/patches/apply.sh upstream built
+          # Any difference means someone edited vendor/mcbuild without updating the patch series,
+          # or the snapshot drifted from the pin. Both must be fixed before merging.
+          diff -r -x .git -x UPSTREAM.md -x UPSTREAM_COMMIT repo/vendor/mcbuild built
+
+  java:
+    name: Java compile (Gradle wrapper, JDK 21)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - name: Compile and assemble the mod
+        working-directory: vendor/mcbuild/mod
+        run: |
+          chmod +x gradlew
+          ./gradlew assemble --no-daemon
+
