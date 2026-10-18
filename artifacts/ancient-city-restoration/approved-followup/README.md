@@ -27,3 +27,16 @@ Output folder: out/ancient-city-followup/<module>/{candidate.nbt,candidate.schem
 ## Validation and limits
 
 Verified by executable tests: pinned original source blobs; in-bounds writes; original jigsaws, chests, lantern shrine fixtures, food-cellar iron trapdoor/ladder unchanged; native NBT reload; material export; 4-angle image rendering. Architecture still requires real Minecraft placement checks, particularly barrel ItemStack NBT semantics and worldgen processors. This is a prototype, NOT merged production world generation. No city streets, monuments, extra buildings, PR or merge.
+
+
+## ice_box_1 entrance and access repair
+
+Root cause in the prior candidate: its excavation carved away the original ladder backing at `(11,1..3,5)`, leaving the north-facing ladder at `(11,1..3,4)` unsupported. The repair preserves those original polished-basalt blocks and cuts a two-block-high west turn through `x=10`, joining the existing pantry at `z=6`.
+
+The original iron trapdoor at `(11,4,4)`, ceiling lever at `(11,3,3)`, and stone pressure plate at `(11,5,5)` remain in place. The pressure plate powers its original support block at `(11,4,5)`, adjacent to the hatch. The lever powers its ceiling support at `(11,4,3)`, also adjacent to the hatch. Validation models these vanilla neighbor-power paths and the closed/open signal states; it does not run a Minecraft redstone tick or survival interaction.
+
+A compact threshold frames the existing hatch at `x=11,z=4`: deepslate brick shoulders at `(10,5,4)` and `(12,5,4)`, blue-ice accents directly above, and soul lanterns at `(10,5,5)` and `(12,5,5)`. These stay inside the 19×10×15 template and clear the central player route. Original ice states, containers, dimensions, ladder, hatch, redstone fixtures and all jigsaw block entities/states are asserted unchanged.
+
+The repair validator reconstructs the exact base-branch `ice_box` candidate as the before case, requires its ladder/access checks to fail, then requires the repaired route and fixtures to pass. It exports and reloads native NBT and Sponge v3 schematic and creates four-direction, entrance, top-down, cutaway and before/after previews.
+
+All checks are static geometry, block-state preservation, or a simple redstone adjacency model. Actual Minecraft client gameplay and survival-mode interaction remain NOT TESTED.
