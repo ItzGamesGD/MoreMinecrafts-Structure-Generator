@@ -10,6 +10,7 @@ future upstream sync cannot silently overwrite them.
 |---|---|
 | `0001-security-audit-2026-10-18.patch` | Fixes for the two 2026-10-18 audit findings (DSL sandbox, WebSocket server) and the Java `/build` permission level. |
 | `0002-os-syscall-confinement.patch` | Linux x86-64 seccomp file/network/process denial, child-side palette identity separation, and security regression tests. |
+| `0003-peer-process-signal-and-limits.patch` | Denies same-user peer signals and resource-limits operations; adds harmless real-kernel denial probes. |
 | `../apply.sh` | Builds a tree from a pristine upstream checkout plus every patch here. Fails if any patch does not apply. |
 | `../make-patch.sh` | Regenerates a patch from the pristine upstream tree and the current `vendor/mcbuild`. |
 
@@ -84,3 +85,10 @@ diff -r -x .git -x UPSTREAM.md -x UPSTREAM_COMMIT /tmp/rebuilt vendor/mcbuild   
   the trusted parent resolves texture and color metadata after JSON IPC.
 - The GitHub CI security tests exercise actual denial and legitimate blueprint generation.
   Full process/filesystem namespace isolation is not claimed.
+
+## Second-pass review
+
+See [`docs/SECURITY_REVIEW_PR7_20261018.md`](../../../docs/SECURITY_REVIEW_PR7_20261018.md).
+The author of earlier remediation also performed the second pass, so independent sign-off
+remains pending. The real NeoForge command predicate was verified in Actions, but real player
+login and world placement remain untested.

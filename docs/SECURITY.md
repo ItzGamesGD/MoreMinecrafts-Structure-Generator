@@ -84,14 +84,16 @@ Verification (all run in this environment unless marked):
 | Loop regression: all three paths invoke the isolated executor; the in-process executor is forbidden in the same run | PASS |
 | Loop regression mutation: reverting one call site to in-process fails the test; starting `edit_region` from an empty grid fails the existing edit test | PASS (mutation caught) |
 | Child started on Windows | NOT RUN (no Windows environment; behavior is refusal by design) |
-| Linux kernel denies opening an external fixture file, creating a socket and forking a child | **PASS** (`tests/test_os_confinement.py`, GitHub Actions run #39103118228) |
+| Linux kernel denies opening an external fixture file, creating a socket and forking a child | **PASS** (`tests/test_os_confinement.py`, GitHub Actions run #39104184895) |
+| Linux denies peer signal-0 checks and read-only peer resource-limit queries | **PASS** (security patch 0003, GitHub Actions #39104184895) |
 | Dynamic block state placement without opening texture files in the child; full agent loop regression | **PASS** (217 Python tests on GitHub Actions run #39103118228) |
 | Filesystem namespace isolation using Bubblewrap on Ubuntu runner | **BLOCKED** (runner permissions; no fallback to unconfined execution) |
 
 **Limitations that remain:**
 
-- Seccomp now blocks new file opens, network sockets, and process creation in the child on
-  Linux x86-64; real kernel denial tests pass. It does **not** unmount the host filesystem,
+- Seccomp now blocks new file opens, network sockets, process creation, and selected
+  peer-process signaling and resource-modification syscalls in the child on Linux x86-64;
+  real kernel denial tests pass. It does **not** unmount the host filesystem,
   change the OS user, create a complete filesystem namespace, or prove that every possible
   kernel escape route is closed. The trusted parent still has host access. This policy is
   intentionally more restrictive than scratch-only file access: the blueprint cannot open
@@ -172,11 +174,13 @@ yield) fails both tests.
 | Protocol compatibility: the Python `protocol.py` shapes (`chat`, `blocks` with `null` air, `finish`, `error`, `hello`) decode into the Java POJOs with the right coordinates and block strings | **PASS** (fake server built from `protocol.py`, `origins=[None]`) |
 | Authentication on reconnection | Each `WsClient` opens a new connection and sends the token in `onOpen`. There is no automatic reconnect, so each connection is authenticated. **PASS by inspection and harness** |
 | Token does not reach logs (Java logs nothing; server log checked) | **PASS** |
-| `/build` requires permission level 2, so only operators can run it | **Inspection only**: `hasPermission(2)`. **NOT RUN** at runtime, because this needs a Minecraft server with an operator and a non-operator player |
+| `/build` requires permission level 2 | **LIVE SERVER COMMAND-DISPATCHER PASS:** actual NeoForge server evaluated levels 0/1 as denied and level 2 as allowed (Actions #39104185011). **PLAYER LOGIN NOT RUN** |
 | Runtime behavior of a build inside a live Minecraft world | **NOT RUN** |
 
-The Java changes are compile-verified and protocol-verified, not game-verified. Treat the
-`/build` permission change as unverified until someone runs it on a live NeoForge server.
+The Java changes are compile-verified, protocol-verified, and **server-dispatcher-verified**.
+The permission predicate was exercised in a live NeoForge server with synthetic source
+permission levels, not with real operator/nonoperator players. Actual player command
+execution and world placement remain **NOT RUN**.
 
 ## Vendor patch preservation
 
@@ -210,10 +214,22 @@ under the current repository setting, so vendor-sync PR creation is a manual ste
 | AST denylist bypass via frame, generator and code introspection | CONFIRMED; fixed; regression tests |
 | Full RCE, filesystem or process-spawn chain | NOT ATTEMPTED |
 | In-process execution as a boundary for LLM-authored blueprints | CONFIRMED as inadequate; **every LLM-facing path now runs isolated** |
-| OS-level file/network syscall restriction | **PASS for tested Linux x86-64 operations**: kernel seccomp denies new file opens, network sockets and forks; not a complete container boundary |
+| OS-level file/network/peer-process syscall restriction | **PASS for tested Linux x86-64 operations**: seccomp denies new file opens, sockets, forks, peer signals and prlimit; not a complete containment boundary |
 | Full OS isolation | **Not achieved**: same OS user and mounted host filesystem; namespace attempts blocked by runner privileges |
 | Unauthenticated WebSocket server | CONFIRMED; fixed (required token, verified end to end) |
 | Missing Origin validation | CONFIRMED; fixed (`origins=[None]`, verified with HTTP 403) |
-| `/build` permission level 0 (any player) | CONFIRMED; raised to 2; Java **compile PASS**, runtime **NOT RUN** |
+| `/build` permission level 0 (any player) | CONFIRMED; raised to 2; **live NeoForge dispatcher PASS**, actual player login NOT RUN |
 | Vendored fixes overwritten by the next upstream sync | Fixed by deterministic patch series and **GitHub vendor-drift PASS** |
 | Pre-existing: final protocol message dropped | Fixed; regression tests |
+
+## Second-pass review and real-server handoff (2026-10-18)
+
+A second-pass review identified remaining same-user peer signaling/resource mutation risks
+through syscalls not covered by the initial seccomp denylist. Local patch `0003` blocks
+these calls and adds harmless real-kernel denial tests. The tests do **not** send damaging
+signals. See `docs/SECURITY_REVIEW_PR7_20261018.md` for the review's evidence and scope.
+
+**Independent sign-off is still missing:** this review was performed by the same assistant
+involved in prior implementation. Kernel syscall denial tests do not establish exhaustive
+filesystem containment. Live NeoForge dispatcher permission testing passed in GitHub Actions
+#39104185011; no real multiplayer player or full live build was tested.
