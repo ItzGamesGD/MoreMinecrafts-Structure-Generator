@@ -114,12 +114,29 @@ class Candidate:
             assert self.get((4,1,5))=="barrel"
         elif self.name=="ice_box_1":
             assert self.get((11,4,4))=="iron_trapdoor"
-            for y in (1,2,3):assert self.get((11,y,4))=="ladder"
+            for y in (1,2,3):
+                assert self.get((11,y,4))=="ladder"
+                support=(11,y,5)
+                assert self.get(support)=="polished_basalt",("ladder support lost",y)
+                assert self.before[support][0]==get_key(
+                    self.palette[int(self.positions[support]["state"])]),("support changed",support)
+            for fixture in ((11,3,3),(11,5,5)):
+                now=(get_key(self.palette[int(self.positions[fixture]["state"])]),
+                     str(self.positions[fixture].get("nbt","")))
+                assert now==self.before[fixture],("original control changed",fixture)
             assert self.get((12,1,7))=="chest"
-            ice_now=sum(self.get(p) in ("ice","packed_ice","blue_ice")
-                        for p in self.positions)
-            assert ice_now>=self.original_ice*0.8,(ice_now,self.original_ice)
+            # Every original ice block remains byte-for-byte the same state.
+            for p,(state,_) in self.before.items():
+                if state.split("[",1)[0] in (
+                    "minecraft:ice","minecraft:packed_ice","minecraft:blue_ice"
+                ):
+                    assert get_key(self.palette[int(self.positions[p]["state"])])==state,(
+                        "original ice changed",p,state)
             assert self.operations["filled_food_or_equipment_containers"]>=3
+            for x in (10,12):
+                assert self.get((x,5,4))=="deepslate_bricks"
+                assert self.get((x,6,4))=="blue_ice"
+                assert self.get((x,5,5))=="soul_lantern"
         elif self.name=="small_statue":
             assert all(get_key(self.palette[int(self.positions[p]["state"])])==a
                        for p,(a,_) in self.before.items())
@@ -190,14 +207,15 @@ def barracks(r):
 
 def ice_box(r):
     assert r.size==(19,10,15)
-    # Interior pantry excavated next to ORIGINAL ladder (11,1..3,4).
-    # Keep ice barriers, note blocks, original chest, hatch and all outer walls.
+    # Preserve the original north-facing ladder's polished-basalt backing
+    # at (11,1..3,5). Enter the existing pantry by turning west through x=10.
     for x in range(8,12):
         for z in range(6,11):
             for y in (1,2,3):r.carve(x,y,z)
             r.set(x,0,z,"polished_deepslate","pantry_floor")
-    for z in range(5,10):
-        for y in (1,2,3):r.carve(11,y,z)
+    for z in (4,5):
+        for y in (1,2,3):r.set(10,y,z,"air","west_passage")
+
     for x,z,contents in (
         (8,7,[("wheat",64),("wheat_seeds",32),("bread",16)]),
         (9,7,[("beef",32),("porkchop",24),("chicken",16)]),
@@ -209,8 +227,15 @@ def ice_box(r):
     for x,z in ((8,6),(10,10)):
         r.set(x,3,z,"soul_lantern[hanging=true]","pantry_light")
 
-    # Rebuild a compact roof over the cold pantry, without changing the
-    # original exposed blue-ice blocks, access hatch or original jigsaws.
+    # A compact, lit threshold frames the original hatch inside the existing
+    # footprint. The one-block-wide centerline remains open.
+    for x in (10,12):
+        r.set(x,5,4,"deepslate_bricks","entrance_threshold")
+        r.set(x,6,4,"blue_ice","cold_store_marker")
+        r.set(x,5,5,"soul_lantern","entrance_lighting")
+
+    # Rebuild the existing low tiled roof without altering original ice,
+    # ladder, hatch or jigsaw fixtures.
     for x in range(5,18):
         for z in range(1,14):
             rise=min(x-5,17-x)//3
