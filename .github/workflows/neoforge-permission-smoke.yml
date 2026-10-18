@@ -29,36 +29,34 @@ jobs:
           from pathlib import Path
           p = Path("src/main/java/com/mcbuild/mod/McbuildMod.java")
           src = p.read_text()
-          old = """        }
-    }
-}
-"""
+          old = "        }\\n    }\\n}\\n"
           assert src.endswith(old), "mod entrypoint changed; investigate before injecting"
-          added = """        }
-
-        @SubscribeEvent
-        public static void checkPermissionOnServerStarted(
-                net.neoforged.neoforge.event.server.ServerStartedEvent event) {
-            var dispatcher = event.getServer().getCommands().getDispatcher();
-            var command = dispatcher.getRoot().getChild("build");
-            if (command == null) {
-                throw new IllegalStateException("MCBUILD_RUNTIME_PERMISSION_FAIL: command missing");
-            }
-            var source = event.getServer().createCommandSourceStack();
-            boolean denied0 = !command.canUse(source.withPermission(0));
-            boolean denied1 = !command.canUse(source.withPermission(1));
-            boolean allowed2 = command.canUse(source.withPermission(2));
-            if (!denied0 || !denied1 || !allowed2) {
-                throw new IllegalStateException(
-                    "MCBUILD_RUNTIME_PERMISSION_FAIL: level0=" + denied0
-                    + " level1=" + denied1 + " level2=" + allowed2);
-            }
-            System.out.println("MCBUILD_RUNTIME_PERMISSION_PASS: denied levels 0,1; accepted level 2");
-        }
-    }
-}
-"""
-          p.write_text(src[:-len(old)] + added)
+          extra = [
+              "        }",
+              "",
+              "        @SubscribeEvent",
+              "        public static void checkPermissionOnServerStarted(",
+              "                net.neoforged.neoforge.event.server.ServerStartedEvent event) {",
+              '            var dispatcher = event.getServer().getCommands().getDispatcher();',
+              '            var command = dispatcher.getRoot().getChild("build");',
+              '            if (command == null) {',
+              '                throw new IllegalStateException("MCBUILD_RUNTIME_PERMISSION_FAIL: command missing");',
+              '            }',
+              '            var source = event.getServer().createCommandSourceStack();',
+              '            boolean denied0 = !command.canUse(source.withPermission(0));',
+              '            boolean denied1 = !command.canUse(source.withPermission(1));',
+              '            boolean allowed2 = command.canUse(source.withPermission(2));',
+              '            if (!denied0 || !denied1 || !allowed2) {',
+              '                throw new IllegalStateException(',
+              '                    "MCBUILD_RUNTIME_PERMISSION_FAIL: level0=" + denied0',
+              '                    + " level1=" + denied1 + " level2=" + allowed2);',
+              '            }',
+              '            System.out.println("MCBUILD_RUNTIME_PERMISSION_PASS: denied levels 0,1; accepted level 2");',
+              '        }',
+              '    }',
+              '}',
+          ]
+          p.write_text(src[:-len(old)] + "\\n".join(extra) + "\\n")
           print("Injected ephemeral server-event-only check, not part of the committed mod")
           PY
       - name: Run disposable NeoForge server and assert command-node permissions
