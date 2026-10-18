@@ -93,4 +93,17 @@ weather clear
 CMDS
 grep -Fq 'RESULT Generated structure "moreminecrafts:forgotten_kingdom/central_cavern"' "$evidence/runtime-commands.log"
 mark_stage jigsaw-placement PASS "$result_file"
+# A successful command response proves resource lookup, but also verify that the
+# generated template's known floor block reached the actual world at its NBT
+# coordinates. This catches false-positive captures of the untouched flat map.
+current_stage=world-block-verification
+python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
+execute unless block 20 100 20 minecraft:polished_deepslate run say SG01_CHAMBER_FLOOR_MISSING
+CMDS
+if grep -Fq 'RESULT Test passed' "$evidence/runtime-commands.log"; then
+  echo 'The expected chamber floor is absent at its source NBT coordinate.' >&2
+  exit 1
+fi
+grep -Fq 'RESULT Test failed' "$evidence/runtime-commands.log"
+mark_stage world-block-verification PASS "$result_file"
 echo 'runtime-place=PASS'

@@ -77,8 +77,12 @@ capture() {
   local src="$client_dir/screenshots/$name.png"
   python3 "$fixture/rcon.py" <<CMDS | tee -a "$evidence/camera-positions.log"
 tp SG01Visual $x $y $z $yaw $pitch
+data get entity SG01Visual Pos
+data get entity SG01Visual Rotation
+execute as SG01Visual at @s run data get block ~ ~-2 ~
 CMDS
-  sleep 1
+  # Allow the server's teleport and chunk updates to reach the client renderer.
+  sleep 3
   printf '%s.png\n' "$name" > "$SG01_SCREENSHOT_REQUEST"
 
   local written=0
@@ -119,7 +123,7 @@ CMDS
 # The plaza PNG is written and validated first. Remaining views run only after
 # that native Minecraft framebuffer capture succeeds.
 current_stage=plaza-screenshot
-capture plaza-eye 20 106 20 0 8
+capture plaza-eye 20 102 20 0 0
 mark_stage plaza-screenshot PASS "$result_file"
 current_stage=screenshots
 capture interior-overview 20 112 20 0 35
