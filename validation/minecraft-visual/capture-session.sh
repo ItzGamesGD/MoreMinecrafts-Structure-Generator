@@ -126,13 +126,13 @@ current_stage=plaza-screenshot
 capture plaza-eye 20 102 20 0 0
 mark_stage plaza-screenshot PASS "$result_file"
 current_stage=screenshots
-capture interior-overview 20 112 20 0 35
-capture upper-balconies 20 117 14 0 20
+capture interior-overview 20 106 6 0 12
+capture upper-balconies 6 110 20 -90 8
 capture support-columns 12 105 20 90 5
 capture ceiling-details 20 113 24 180 -55
 capture entrance-north 20 105 4 0 5
 capture entrance-east 36 105 20 90 5
 capture entrance-south 20 105 36 180 5
 capture entrance-west 4 105 20 -90 5
-capture exterior-cutaway 48 126 48 -135 35
+capture exterior-cutaway 70 124 70 135 22
 mark_stage screenshots PASS "$result_file"
