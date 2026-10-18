@@ -79,3 +79,32 @@ jobs:
         run: |
           chmod +x gradlew
           ./gradlew assemble --no-daemon
+
+  isolation-capabilities:
+    name: Isolation capabilities (diagnostic, not a security pass)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe Linux namespace and Bubblewrap support
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "Runner kernel: $(uname -r)"
+          echo "Runner architecture: $(uname -m)"
+          if ! command -v bwrap >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq bubblewrap
+          fi
+          set +e
+          output="$(bwrap --unshare-user --unshare-net --unshare-pid --die-with-parent \
+            --ro-bind /usr /usr --proc /proc --dev /dev --tmpfs /tmp \
+            --chdir /tmp /usr/bin/python3 -c 'print("BWRAP_NAMESPACE_PROBE_OK")' 2>&1)"
+          status=$?
+          set -e
+          echo "$output"
+          if [ "$status" -eq 0 ] && grep -q BWRAP_NAMESPACE_PROBE_OK <<< "$output"; then
+            echo "Namespace probe: SUPPORTED" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Namespace probe: UNSUPPORTED (exit $status); do not weaken fail-closed isolation" >> "$GITHUB_STEP_SUMMARY"
+            echo "::warning::Bubblewrap/user namespaces unavailable. This is a diagnostic, not an accepted sandbox."
+          fi
+          echo "This probe does not test filesystem denial, networking denial, or live NeoForge permissions." >> "$GITHUB_STEP_SUMMARY"
