@@ -3,7 +3,8 @@
 
 The comparison is on decoded NBT, not file bytes: the exporter writes a gzip stream and the
 Sponge Schematic v3 format does not require deterministic compressed bytes. Output goes to a
-temporary directory so nothing generated is left in the working tree.
+temporary directory so nothing generated is left in the working tree. Traversal/headroom is
+checked separately by tests/test_phase3_watchtower.py.
 """
 
 from __future__ import annotations
@@ -25,13 +26,15 @@ ITERATION_2 = ROOT / "artifacts" / "phase-3" / "iteration-2"
 
 def main() -> int:
     blueprint = FINAL / "blueprint.py"
-    if blueprint.read_bytes() != (ITERATION_2 / "blueprint.py").read_bytes():
-        print("FAIL: final/blueprint.py differs from iteration-2/blueprint.py")
+    # final/ is iteration-2 plus the PR #6 integration-time stair-exit correction, so the two
+    # blueprints are expected to differ; iteration-2 itself is left as originally reviewed.
+    if blueprint.read_bytes() == (ITERATION_2 / "blueprint.py").read_bytes():
+        print("FAIL: final/blueprint.py is missing the integration-time stair-exit correction")
         return 1
 
     grid = VoxelGrid()
     run_blueprint(blueprint.read_text(encoding="utf-8"), grid, seed=0)
-    if len(grid) != 649 or grid.bounds != ((0, 0, 0), (10, 16, 10)):
+    if len(grid) != 648 or grid.bounds != ((0, 0, 0), (10, 16, 10)):
         print(f"FAIL: unexpected geometry: {len(grid)} blocks, bounds {grid.bounds}")
         return 1
 

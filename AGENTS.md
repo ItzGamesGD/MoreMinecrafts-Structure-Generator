@@ -7,4 +7,4 @@
 - Do not include unfinished SG-01 work or unapproved Ancient City changes/experiments in integration branches.
 - `vendor/mcbuild` is an upstream snapshot; avoid editing it by hand (it is refreshed by `.github/workflows/vendor-mcbuild.yml`).
 - Report verification honestly: distinguish newly run results from historical ones, and report failures with their output.
-- Unresolved P1 review findings and any security findings block merge until explicitly resolved or waived by the owner; do not invent finding details, and record missing evidence instead (see `docs/MAIN_INTEGRATION_PLAN.md`).
+- Unresolved P1 review findings and externally reported security findings block merge until explicitly resolved or waived by the owner; do not invent finding details, and record missing evidence instead (see `docs/MAIN_INTEGRATION_PLAN.md`).

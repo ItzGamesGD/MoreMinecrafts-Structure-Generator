@@ -35,6 +35,9 @@ jobs:
       - name: Phase 2 validation
         run: uv run --project vendor/mcbuild python tools/phase2_validate.py
 
+      - name: Phase 3 structural and headroom regression tests
+        run: uv run --project vendor/mcbuild pytest -q tests
+
       - name: Phase 3 watchtower NBT equivalence
         run: uv run --project vendor/mcbuild python tools/phase3_validate.py
 
