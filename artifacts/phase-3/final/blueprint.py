@@ -1,4 +1,4 @@
-# Ruined Watchtower — iteration 2
+# Ruined Watchtower — iteration 2, with the PR #6 integration-time stair-exit correction
 # Coordinate convention: x east, y up, z south; the entrance faces +z.
 
 # Broad stone footing and continuous lower-room floor.
@@ -66,8 +66,15 @@ for x in range(2, 9):
 # Continuous east-rising stair flight from the ground floor to the upper landing.
 for step in range(0, 6):
     set_block(2 + step, 1 + step, 5, "stone_brick_stairs[facing=east,half=bottom,shape=straight]")
-    set_block(2 + step, 8, 4, "stone_brick_wall")
+    if step < 5:
+        set_block(2 + step, 8, 4, "stone_brick_wall")
     set_block(2 + step, 8, 6, "stone_brick_wall")
+
+# Integration-time correction (PR #6): the flight ends at feet height y=7, one block below the
+# deck surface (y=8), with the east wall and the stairwell rails blocking every exit. Turn the
+# deck block north of the top step into a half-height stair and drop the rail above it, so the
+# top step reaches the deck in 0.5-block steps with full headroom.
+set_block(7, 7, 4, "stone_brick_stairs[facing=north,half=bottom,shape=straight]")
 
 # A one-sided lookout ledge, carried by stone brackets and tied into the shaft.
 for z in range(3, 8):

@@ -1,5 +1,18 @@
 # Phase 3 report — Ruined Watchtower
 
+> **Integration-time correction (PR #6, 2026-10-18).** The text below is the original Phase 3
+> report and is otherwise unchanged. It described the stair route as reaching the upper deck, but
+> the unresolved Codex P1 review finding on PR #2 was correct: the six stairs end at feet height
+> y=7, one block below the deck surface (y=8), and the landing `(8, 7, 5)` has solid blocks at
+> `(8, 8, 5)` and `(8, 9, 5)`; the stairwell rails blocked the side exits. Corrected in
+> `artifacts/phase-3/final/` only, by integration, not on the Phase 3 source branch:
+> `(7, 7, 4)` became `stone_brick_stairs[facing=north,half=bottom]` and the rail wall at
+> `(7, 8, 4)` was removed. The final now has 648 blocks (stone_bricks 479, stone_brick_stairs 7,
+> stone_brick_wall 12; other counts unchanged). `iteration-1/` and `iteration-2/` are untouched.
+> Regenerated: `final/blueprint.py`, `final.schem` (603 bytes), `render.png`,
+> `structure-report.txt`. Figures below such as 649 blocks and 588 bytes describe iteration 2.
+> Regression tests: `tests/test_phase3_watchtower.py`.
+
 ## Status
 
 - **CAPABILITY PROBE:** PASS
