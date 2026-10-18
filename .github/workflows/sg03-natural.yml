@@ -1,0 +1,53 @@
+name: SG-03 natural-world integration
+
+on:
+  pull_request:
+    paths:
+      - "validation/minecraft-visual/sg03-natural/**"
+      - ".github/workflows/sg03-natural.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  natural-world:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        seed: [173, 42]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "25"
+      - name: Build SG-03 and verify committed datapack
+        run: |
+          python3 -m pip install -r requirements-export.txt numpy
+          python3 examples/forgotten_kingdom/build_sg03.py "$RUNNER_TEMP/pack"
+          diff -r exports/sg-03/forgotten-underground-kingdom/datapack "$RUNNER_TEMP/pack"
+          python3 -m unittest discover -s validation/minecraft-visual/sg03-natural -p 'test_*.py' -v
+      - name: Download official 26.3 server with SHA-1 verification
+        run: bash validation/minecraft-visual/sg03-natural/fetch-server.sh "$RUNNER_TEMP/server.jar" 26.3
+      - name: Naturally generate SG-03 and inspect 21 Jigsaw pieces
+        timeout-minutes: 35
+        run: |
+          python3 validation/minecraft-visual/sg03-natural/run_natural.py \
+            --jar "$RUNNER_TEMP/server.jar" --pack "$RUNNER_TEMP/pack" \
+            --out "$RUNNER_TEMP/sg03-natural" --seed ${{ matrix.seed }} --sites 2 --ticks 200
+      - name: Upload runtime evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sg03-natural-seed-${{ matrix.seed }}-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/sg03-natural/natural-*.json
+            ${{ runner.temp }}/sg03-natural/server-*.log
+          if-no-files-found: warn
+          retention-days: 30
