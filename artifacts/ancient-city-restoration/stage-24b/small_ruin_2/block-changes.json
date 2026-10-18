@@ -5,12 +5,12 @@
     5,
     4
   ],
-  "change_count": 117,
+  "change_count": 119,
   "operation_counts": {
-    "added": 110,
+    "added": 112,
     "floor_repair": 23,
     "outer_wall": 58,
-    "replaced": 10,
+    "replaced": 8,
     "roof": 32,
     "entry_door": 2,
     "sleeping_bed": 2,
@@ -478,196 +478,221 @@
       "pos_xyz": [
         2,
         1,
-        3
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:polished_deepslate",
-      "reasons": [
-        "outer_wall"
-      ]
-    },
-    {
-      "pos_xyz": [
-        2,
-        2,
-        0
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_bricks",
-      "reasons": [
-        "outer_wall"
-      ]
-    },
-    {
-      "pos_xyz": [
-        2,
-        2,
-        3
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:polished_deepslate",
-      "reasons": [
-        "outer_wall"
-      ]
-    },
-    {
-      "pos_xyz": [
-        2,
-        3,
-        0
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_bricks",
-      "reasons": [
-        "outer_wall"
-      ]
-    },
-    {
-      "pos_xyz": [
-        2,
-        3,
-        3
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:polished_deepslate",
-      "reasons": [
-        "outer_wall"
-      ]
-    },
-    {
-      "pos_xyz": [
-        2,
-        4,
-        0
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_tiles",
-      "reasons": [
-        "roof"
-      ]
-    },
-    {
-      "pos_xyz": [
-        2,
-        4,
         1
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_tiles",
-      "reasons": [
-        "roof"
-      ]
-    },
-    {
-      "pos_xyz": [
-        2,
-        4,
-        2
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_tiles",
-      "reasons": [
-        "roof"
-      ]
-    },
-    {
-      "pos_xyz": [
-        2,
-        4,
-        3
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_tiles",
-      "reasons": [
-        "roof"
-      ]
-    },
-    {
-      "pos_xyz": [
-        3,
-        0,
-        0
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_bricks",
-      "reasons": [
-        "floor_repair"
-      ]
-    },
-    {
-      "pos_xyz": [
-        3,
-        0,
-        1
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_bricks",
-      "reasons": [
-        "floor_repair"
-      ]
-    },
-    {
-      "pos_xyz": [
-        3,
-        0,
-        2
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_bricks",
-      "reasons": [
-        "floor_repair"
-      ]
-    },
-    {
-      "pos_xyz": [
-        3,
-        0,
-        3
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_bricks",
-      "reasons": [
-        "floor_repair"
-      ]
-    },
-    {
-      "pos_xyz": [
-        3,
-        1,
-        0
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_bricks",
-      "reasons": [
-        "outer_wall"
-      ]
-    },
-    {
-      "pos_xyz": [
-        3,
-        1,
-        3
       ],
       "action": "add",
       "original_state": "minecraft:air",
       "restored_state": "minecraft:gray_bed[facing=east,occupied=false,part=foot]",
       "reasons": [
-        "outer_wall",
         "sleeping_bed"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        1,
+        3
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:polished_deepslate",
+      "reasons": [
+        "outer_wall"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        2,
+        0
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_bricks",
+      "reasons": [
+        "outer_wall"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        2,
+        3
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:polished_deepslate",
+      "reasons": [
+        "outer_wall"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        3,
+        0
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_bricks",
+      "reasons": [
+        "outer_wall"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        3,
+        3
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:polished_deepslate",
+      "reasons": [
+        "outer_wall"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        4,
+        0
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tiles",
+      "reasons": [
+        "roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        4,
+        1
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tiles",
+      "reasons": [
+        "roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        4,
+        2
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tiles",
+      "reasons": [
+        "roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        4,
+        3
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_tiles",
+      "reasons": [
+        "roof"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        0,
+        0
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_bricks",
+      "reasons": [
+        "floor_repair"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        0,
+        1
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_bricks",
+      "reasons": [
+        "floor_repair"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        0,
+        2
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_bricks",
+      "reasons": [
+        "floor_repair"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        0,
+        3
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_bricks",
+      "reasons": [
+        "floor_repair"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        1,
+        0
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_bricks",
+      "reasons": [
+        "outer_wall"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        1,
+        1
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:gray_bed[facing=east,occupied=false,part=head]",
+      "reasons": [
+        "sleeping_bed"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        1,
+        3
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:deepslate_bricks",
+      "reasons": [
+        "outer_wall"
       ]
     },
     {
@@ -830,27 +855,13 @@
       "pos_xyz": [
         4,
         1,
-        1
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:polished_deepslate_slab[type=bottom,waterlogged=false]",
-      "reasons": [
-        "north_end_table"
-      ]
-    },
-    {
-      "pos_xyz": [
-        4,
-        1,
         3
       ],
       "action": "add",
       "original_state": "minecraft:air",
-      "restored_state": "minecraft:gray_bed[facing=east,occupied=false,part=head]",
+      "restored_state": "minecraft:deepslate_bricks",
       "reasons": [
-        "outer_wall",
-        "sleeping_bed"
+        "outer_wall"
       ]
     },
     {
@@ -1020,6 +1031,19 @@
       "restored_state": "minecraft:polished_deepslate",
       "reasons": [
         "outer_wall"
+      ]
+    },
+    {
+      "pos_xyz": [
+        5,
+        1,
+        1
+      ],
+      "action": "add",
+      "original_state": "minecraft:air",
+      "restored_state": "minecraft:polished_deepslate_slab[type=bottom,waterlogged=false]",
+      "reasons": [
+        "north_end_table"
       ]
     },
     {
@@ -1265,7 +1289,7 @@
       ],
       "action": "add",
       "original_state": "minecraft:air",
-      "restored_state": "minecraft:soul_lantern[hanging=false]",
+      "restored_state": "minecraft:soul_lantern[hanging=true]",
       "reasons": [
         "soul_lantern_lighting"
       ]

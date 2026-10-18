@@ -1045,7 +1045,7 @@
       ],
       "action": "add",
       "original_state": "minecraft:air",
-      "restored_state": "minecraft:soul_lantern[hanging=false]",
+      "restored_state": "minecraft:soul_lantern[hanging=true]",
       "reasons": [
         "soul_lantern_lighting"
       ]
@@ -3187,7 +3187,7 @@
       ],
       "action": "add",
       "original_state": "minecraft:air",
-      "restored_state": "minecraft:soul_lantern[hanging=false]",
+      "restored_state": "minecraft:soul_lantern[hanging=true]",
       "reasons": [
         "soul_lantern_lighting"
       ]

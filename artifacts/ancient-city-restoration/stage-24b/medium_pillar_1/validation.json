@@ -38,9 +38,9 @@
     "schematic_export_reload": "PASS"
   },
   "original_block_count": 130,
-  "candidate_block_records": 281,
+  "candidate_block_records": 286,
   "changed_original_positions": 67,
-  "added_positions": 151,
+  "added_positions": 156,
   "source_blob_sha1": "38ece3d8a57c9fed3f2a050ffd21b5b636121bbe",
   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/medium_pillar_1.nbt",
   "jigsaw_count": 2,
@@ -76,7 +76,7 @@
         7
       ]
     ],
-    "block_count": 233,
+    "block_count": 251,
     "top_materials": [
       [
         "deepslate_bricks",
@@ -99,8 +99,16 @@
         8
       ],
       [
+        "deepslate_tile_wall",
+        8
+      ],
+      [
         "ladder",
         8
+      ],
+      [
+        "deepslate_tile_wall",
+        6
       ],
       [
         "deepslate_tile_stairs",
@@ -109,14 +117,6 @@
       [
         "cyan_stained_glass",
         2
-      ],
-      [
-        "deepslate",
-        1
-      ],
-      [
-        "deepslate_tile_stairs",
-        1
       ]
     ]
   },

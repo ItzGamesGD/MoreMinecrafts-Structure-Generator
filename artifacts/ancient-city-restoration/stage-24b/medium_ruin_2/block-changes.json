@@ -5,19 +5,20 @@
     8,
     11
   ],
-  "change_count": 668,
+  "change_count": 666,
   "operation_counts": {
     "added": 660,
     "floor_repair": 157,
     "outer_wall": 148,
-    "replaced": 13,
+    "replaced": 15,
     "lower_wing_roof": 77,
     "upper_floor": 99,
     "upper_wall": 72,
     "upper_roof": 99,
     "upper_stair": 4,
     "stair_support": 3,
-    "carved": 2,
+    "carved": 4,
+    "stair_headroom": 2,
     "interior_clearance": 2,
     "sleeping_bed": 4,
     "upper_storage": 1,
@@ -1245,7 +1246,7 @@
       ],
       "action": "add",
       "original_state": "minecraft:air",
-      "restored_state": "minecraft:soul_lantern[hanging=false]",
+      "restored_state": "minecraft:soul_lantern[hanging=true]",
       "reasons": [
         "soul_lantern_lighting"
       ]
@@ -2476,19 +2477,6 @@
       "pos_xyz": [
         5,
         4,
-        5
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_tiles",
-      "reasons": [
-        "lower_wing_roof"
-      ]
-    },
-    {
-      "pos_xyz": [
-        5,
-        4,
         6
       ],
       "action": "add",
@@ -3453,19 +3441,6 @@
         7,
         6,
         4
-      ],
-      "action": "add",
-      "original_state": "minecraft:air",
-      "restored_state": "minecraft:deepslate_bricks",
-      "reasons": [
-        "upper_wall"
-      ]
-    },
-    {
-      "pos_xyz": [
-        7,
-        6,
-        5
       ],
       "action": "add",
       "original_state": "minecraft:air",
