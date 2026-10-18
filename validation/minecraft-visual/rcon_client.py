@@ -77,7 +77,7 @@ def start_server(run_dir: Path, pack_dirs: dict[str, Path], java_cmd: str, log: 
     (run_dir / "server.properties").write_text(PROPERTIES.format(password=PASSWORD, port=port, rcon_port=rcon_port))
     log.parent.mkdir(parents=True, exist_ok=True)
     handle = open(log, "w")
-    proc = subprocess.Popen(java_cmd, shell=True, cwd=run_dir, stdout=handle, stderr=subprocess.STDOUT, start_new_session=True)
+    proc = subprocess.Popen("exec " + java_cmd, shell=True, cwd=run_dir, stdout=handle, stderr=subprocess.STDOUT, start_new_session=True)
     for _ in range(240):
         if "Done (" in log.read_text(errors="replace"):
             return proc

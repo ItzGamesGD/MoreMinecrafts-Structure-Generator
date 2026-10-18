@@ -72,7 +72,7 @@ class PaletteSchemaTests(unittest.TestCase):
             "minecraft:chest": "minecraft:chest", "minecraft:barrel": "minecraft:barrel",
             "minecraft:trial_spawner": "minecraft:trial_spawner", "minecraft:lectern": "minecraft:lectern",
             "minecraft:campfire": "minecraft:campfire", "minecraft:decorated_pot": "minecraft:decorated_pot",
-            "minecraft:jigsaw": "minecraft:jigsaw", "minecraft:blast_furnace": "minecraft:furnace",
+            "minecraft:jigsaw": "minecraft:jigsaw",
         }
         for name, template in self.templates.items():
             for block in template["blocks"]:

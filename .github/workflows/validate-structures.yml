@@ -9,6 +9,8 @@ on:
       - "docs/sg-01/**"
       - "exports/sg-02/**"
       - "docs/sg-02/**"
+      - "exports/sg-03/**"
+      - "docs/sg-03/**"
       - "tests/**"
       - "requirements-export.txt"
       - "validation/minecraft-visual/**"
@@ -21,6 +23,8 @@ on:
       - "docs/sg-01/**"
       - "exports/sg-02/**"
       - "docs/sg-02/**"
+      - "exports/sg-03/**"
+      - "docs/sg-03/**"
       - "tests/**"
       - "requirements-export.txt"
       - "validation/minecraft-visual/**"
@@ -52,6 +56,10 @@ jobs:
         run: |
           python3 examples/forgotten_kingdom/build_sg02.py "$RUNNER_TEMP/sg02-datapack"
           diff -r exports/sg-02/forgotten-underground-kingdom/datapack "$RUNNER_TEMP/sg02-datapack"
+      - name: Verify SG-03 pack is reproducible and matches the committed export
+        run: |
+          python3 examples/forgotten_kingdom/build_sg03.py "$RUNNER_TEMP/sg03-datapack"
+          diff -r exports/sg-03/forgotten-underground-kingdom/datapack "$RUNNER_TEMP/sg03-datapack"
       - name: Run export and Jigsaw tests
         run: PYTHONPATH=vendor/mcbuild/src python3 -m unittest discover -s tests -v
 
@@ -108,7 +116,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        stage: [sg02]
+        stage: [sg02, sg03]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v5
