@@ -1,17 +1,19 @@
 # SG-01 Minecraft 26.3 client and visual validation
 
-**Target:** Structure Generator PR #5, head `81c56bc23e6d266689d34ab445c934204dc83fad`
-**Status:** Real client placement, Jigsaw assembly, and in-game visuals are **NOT RUN**. No design changes were made.
+**Target:** Structure Generator PR #5, current branch `feat/sg-01-central-cavern-portable-export`
+**Status:** SG-01B runtime harness is being corrected from actual run #23 evidence. No design changes were made.
 
 ## Verdicts
 
 | Check | Verdict | Evidence |
 |---|---|---|
 | Portable NBT/datapack generation and static NBT/Jigsaw checks | **PASS** | Structure Generator [GitHub Actions run #4](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39056031517); it rebuilds the datapack, compares committed resources byte-for-byte, regenerates the prior GLB/PNG package, and runs all 17 exporter/Jigsaw tests. |
-| Minecraft 26.3 client available in this execution environment | **NOT RUN** | No Minecraft launcher, 26.3 client jar, or `~/.minecraft` installation was present. The available Java runtime is 21; this environment has no Xvfb/virtual display. |
-| `/place template` for the chamber and four tunnels | **NOT RUN** | No in-game command tree or registered template IDs were observed. Exact command IDs therefore remain unverified. |
-| `/place structure` and live Jigsaw assembly | **NOT RUN** | No Minecraft 26.3 world was loaded with this pack. Static connector-coordinate checks are not a runtime placement result. |
-| Minecraft screenshots and architectural quality review | **NOT RUN** | No screenshots from the Minecraft renderer are available. The existing GLB-derived previews remain structural references only and are not presented as in-game evidence. |
+| Gradle fixture configuration | **PASS** | Run #23 completed the Gradle 9.6 / Fabric Loom 1.17.21 configuration-only `help` step successfully using `implementation` for Fabric Loader and Fabric API. |
+| Minecraft 26.3 server startup and datapack recognition | **PASS** | Run #23 started the server to `Done`; `datapack list enabled` included `[file/sg01 (world)]`. Exact runtime logs are in [artifact #12112524684](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39065733597/artifacts/12112524684). |
+| `/place template` and `/place structure` actual placement | **FAIL (harness check)** | Commands were issued with the expected resource IDs, but all six returned `That position is not loaded`. The previous script failed to recognize this message and incorrectly wrote `runtime-place=PASS`; that verdict is invalid. The corrected runner force-loads the relevant chunks and requires explicit successful placement messages before reporting PASS. |
+| Minecraft client startup | **PASS** | Run #23 selected Vulkan llvmpipe and created an X11 window at 1280×720. OpenGL's GLX initialization failed, then Minecraft successfully selected Vulkan. |
+| Client joins a loaded world and screenshots | **FAIL (harness lifecycle)** | Quick play received `Connection refused` because the server was launched in an earlier GitHub Actions step and the runner cleaned up its background process at that step boundary. The new combined runner keeps server acceptance and client capture in one bounded step. No PNG was produced. |
+| Architectural visual quality review | **NOT RUN** | There are no Minecraft-rendered screenshots. The cavern design remains unchanged. |
 
 ## Read-only CI environment investigation
 
@@ -40,15 +42,10 @@ The job first runs a configuration-only Gradle `help` step with a five-minute ti
 
 The harness source is documented in [`validation/minecraft-visual/README.md`](../../validation/minecraft-visual/README.md). Runtime outcomes must be filled in from the GitHub Actions run. Until that run produces the runtime log and PNG artifact, client startup, datapack/resource loading, live placements, assembly and screenshots remain **NOT RUN**. The previous GLB-derived previews are not runtime evidence.
 
-### Latest SG-01B checkpoint
+### Run #23 evidence and resumed correction
 
-- Prior final-head workflow [run #19](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39064385344): portable-export **PASS**; Minecraft visual job **FAIL** during Gradle configuration.
-- Exact prior failure: `Could not find method modImplementation() ...`. The fixture now uses the Beta project's `implementation` configuration for Fabric Loader and Fabric API.
-- A configuration-only `gradlew help` step now gates the Minecraft server/client launch. It has not yet been observed on GitHub Actions in this checkpoint.
-- Local configuration check: **NOT RUN** because the execution environment could not resolve `services.gradle.org` to download the wrapper distribution. Existing Python export/Jigsaw tests remain **PASS** locally.
-- Minecraft server/client: **NOT RUN** after the dependency correction.
-- Datapack recognized and loaded: **NOT RUN**.
-- `/place template` chamber + four tunnels: **NOT RUN**.
-- `/place structure` Jigsaw assembly: **NOT RUN**.
-- Actual Minecraft screenshots: **NOT RUN**. No Minecraft frames exist in this checkpoint.
-- Architectural visual-quality review: **NOT RUN**; no redesign made.
+- Workflow run [#23](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39065733597), at branch head `11491b65fb65e15e956b27a04fca1680aad92807`: portable-export and all 17 tests **PASS**; datapack reproducibility and committed resource checksums **PASS**; Gradle configuration **PASS**; server started and recognized the exact pack **PASS**.
+- Run #23 client log showed Vulkan llvmpipe and a created X11 window, but failed to connect because the server process ended between Actions steps. The run's [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39065733597/artifacts/12112524684) contains logs and command transcripts but **no PNGs**.
+- Review of the RCON transcript found all five `/place template` calls and the `/place structure` call returned `That position is not loaded`. The old result check missed that error and wrote a false PASS. Do not use that marker as evidence.
+- The current patch moves server acceptance and client capture into a single 22-minute Actions step, force-loads test chunks before placement, and requires explicit positive placement responses. Local `bash -n`, YAML parsing, and `git diff --check` passed before the latest placement-result correction; a new Actions run is needed to verify it.
+- Current visual verdict: **NOT RUN**. No actual Minecraft PNGs exist yet, so architectural quality is **NOT RUN**. The cavern design is unchanged.

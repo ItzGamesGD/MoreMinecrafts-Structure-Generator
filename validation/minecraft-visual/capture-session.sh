@@ -19,6 +19,7 @@ for _ in $(seq 1 180); do
   sleep 2
 done
 if [ -z "$window" ]; then tail -160 "$fixture/run/logs/client.log"; exit 1; fi
+echo 'client-startup=PASS' >> "$evidence/runtime-result.txt"
 xdotool windowactivate --sync "$window" || true
 sleep 40
 joined=0
@@ -30,6 +31,7 @@ CMDS
   sleep 2
 done
 if [ "$joined" -ne 1 ]; then echo 'The Minecraft client did not join the acceptance server.' >&2; exit 1; fi
+echo 'world-join=PASS' >> "$evidence/runtime-result.txt"
 capture() {
   local name=$1 x=$2 y=$3 z=$4 yaw=$5 pitch=$6
   python3 "$fixture/rcon.py" <<CMDS >> "$evidence/camera-positions.log"
@@ -55,4 +57,5 @@ capture entrance-west 4 105 20 -90 5
 capture exterior-cutaway 48 126 48 -135 35
 identify "$evidence/screenshots"/*.png | tee "$evidence/screenshot-dimensions.txt"
 grep -q '1280x720' "$evidence/screenshot-dimensions.txt"
+echo 'screenshots=PASS' >> "$evidence/runtime-result.txt"
 echo 'minecraft-client-screenshots=PASS' >> "$evidence/runtime-result.txt"

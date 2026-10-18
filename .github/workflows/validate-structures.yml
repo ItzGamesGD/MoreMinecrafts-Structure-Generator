@@ -68,29 +68,20 @@ jobs:
       - name: Configure Minecraft 26.3 Gradle fixture (no game launch)
         timeout-minutes: 5
         run: ./validation/minecraft-visual/gradlew --no-daemon -p validation/minecraft-visual help
-      - name: Start Minecraft 26.3 server and perform live datapack acceptance
-        id: runtime
-        shell: bash
-        timeout-minutes: 12
-        run: |
-          set -euo pipefail
-          chmod +x validation/minecraft-visual/gradlew
-          validation/minecraft-visual/run-acceptance.sh "$GITHUB_WORKSPACE" "$RUNNER_TEMP/sg01-datapack"
       - name: Record software graphics capabilities
-        if: steps.runtime.outcome == 'success'
         shell: bash
         run: |
           mkdir -p validation/minecraft-visual/evidence
           xvfb-run -a -s '-screen 0 1280x720x24 +extension GLX +render' glxinfo -B > validation/minecraft-visual/evidence/graphics-capabilities.txt 2>&1 || true
           xvfb-run -a -s '-screen 0 1280x720x24 +extension GLX +render' vulkaninfo --summary >> validation/minecraft-visual/evidence/graphics-capabilities.txt 2>&1 || true
-      - name: Run Minecraft 26.3 client and capture in-game views
-        if: steps.runtime.outcome == 'success'
-        timeout-minutes: 12
+      - name: Start Minecraft 26.3 server, accept datapack, and capture client views
+        id: runtime
+        timeout-minutes: 22
         shell: bash
         run: |
           set -euo pipefail
           chmod +x validation/minecraft-visual/gradlew
-          validation/minecraft-visual/capture-client.sh "$GITHUB_WORKSPACE"
+          validation/minecraft-visual/run-runtime-visual.sh "$GITHUB_WORKSPACE" "$RUNNER_TEMP/sg01-datapack"
       - name: Upload Minecraft runtime evidence
         if: always()
         uses: actions/upload-artifact@v4
