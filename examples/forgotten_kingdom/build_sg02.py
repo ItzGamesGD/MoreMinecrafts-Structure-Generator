@@ -12,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from kingdom_common import (
     BASE, CENTER, LOWER_U, UPPER_U, DATA_VERSION, LOWER_DOOR, LOWER_POOL, NAMESPACE, OPPOSITE, PACK_FORMAT,
-    REPO_ROOT, SIDES, SIZE, TUNNEL_DOOR, UPPER_DOOR, UPPER_POOL,
+    REPO_ROOT, SIDES, SIZE, TUNNEL_DOOR, UPPER_DOOR, UPPER_POOL, to_26_3,
 )
 from build_cavern import _tunnel
 from sg02_cavern import build_chamber, side_xz
@@ -44,14 +44,14 @@ def upper_pool_members() -> list[str]:
 def build_templates(rooms: dict[str, tuple[Any, dict]] | None = None) -> dict[str, dict[str, Any]]:
     templates: dict[str, dict[str, Any]] = {}
     grid, entities = build_chamber()
-    templates[MAIN] = grid_to_structure(grid, data_version=DATA_VERSION, block_entities=entities)
+    templates[MAIN] = to_26_3(grid_to_structure(grid, data_version=DATA_VERSION, block_entities=entities))
     for direction in SIDES:
         tgrid, tentities = _tunnel(direction)
-        templates[f"{BASE}/tunnel_{direction}"] = grid_to_structure(
+        templates[f"{BASE}/tunnel_{direction}"] = to_26_3(grid_to_structure(
             tgrid, data_version=DATA_VERSION, block_entities=tentities
-        )
+        ))
     for identifier, (rgrid, rentities) in (rooms if rooms is not None else room_modules()).items():
-        templates[identifier] = grid_to_structure(rgrid, data_version=DATA_VERSION, block_entities=rentities)
+        templates[identifier] = to_26_3(grid_to_structure(rgrid, data_version=DATA_VERSION, block_entities=rentities))
     return templates
 
 

@@ -95,6 +95,11 @@ def main() -> int:
         log = open(args.evidence / "camera-positions.log", "a")
         failed = []
         for cam in cameras:
+            if "commands" in cam:  # evidence-world edits (cutaways) applied after verification
+                for command in cam["commands"]:
+                    log.write(f"setup: {command} -> {rcon.run(command)[:120]}\n")
+                time.sleep(args.settle)
+                continue
             name = cam["name"]
             reply = rcon.run(f"tp {PLAYER} {cam['x']} {cam['y']} {cam['z']} {cam['yaw']} {cam['pitch']}")
             log.write(f"{name}: {cam} -> {reply}\n")

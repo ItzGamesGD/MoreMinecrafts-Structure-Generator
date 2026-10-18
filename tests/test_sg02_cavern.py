@@ -65,7 +65,10 @@ class EnvelopeAndBaselineTests(Sg02Fixture):
         # SG-01 ring cells keep their original floor pattern after translation.
         for (x, y, z), state in self.sg01_cells.items():
             if y == 8 and state["id"] != AIR and 1 <= x <= 39 and 1 <= z <= 39:
-                self.assertEqual(self.cells[(x + 3, 8, z + 3)], state)
+                new = self.cells[(x + 3, 8, z + 3)]
+                if new["id"] == "minecraft:deepslate_brick_stairs":
+                    continue  # the 12 flush mouth steps added at the stair landings
+                self.assertEqual(new, state)
 
     def test_no_stone_brick_stairs_remain_and_all_stairs_are_complete_states(self):
         for state in self.chamber["palette"]:
@@ -84,11 +87,17 @@ class EnvelopeAndBaselineTests(Sg02Fixture):
                     self.assertEqual(state["id"], "minecraft:deepslate_brick_stairs")
                     self.assertEqual(state["properties"]["facing"], side)
                     self.assertEqual(state["properties"]["half"], "bottom")
+            # A flush final step at deck level (the stair mouth) joins the last SG-01 step to the deck top.
+            for u in kc.STAIR_WIDTH_U:
+                x, z = side_xz(side, u, kc.DECK_FAR)
+                state = self.cells[(x, kc.DECK_Y, z)]
+                self.assertEqual(state["id"], "minecraft:deepslate_brick_stairs")
+                self.assertEqual(state["properties"]["facing"], side)
             # The step below each run and the landing are open: nothing obstructs the climb.
             x, z = side_xz(side, kc.CENTER, kc.STAIR_FIRST_D + 1)
             self.assertEqual(self.block(x, 1, z), AIR)
             x, z = side_xz(side, kc.CENTER, kc.DECK_FAR)
-            self.assertEqual(self.block(x, 8, z) != AIR, True)
+            self.assertNotEqual(self.block(x, 8, z), AIR)
             self.assertEqual(self.block(x, 9, z), AIR)
 
 

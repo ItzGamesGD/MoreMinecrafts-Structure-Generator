@@ -55,6 +55,8 @@ def check_clear(cams, solid, view_blocks=2):
     """Reject cameras whose body or first ``view_blocks`` of sight line sit inside masonry."""
     problems = []
     for cam in cams:
+        if "commands" in cam:
+            continue
         x, y, z = cam["feet_cell"]
         if (x, y, z) in solid or (x, y + 1, z) in solid:
             problems.append(f"{cam['name']}: camera body inside {solid.get((x, y, z)) or solid.get((x, y + 1, z))}")
@@ -101,6 +103,7 @@ def sg02_cameras(templates, assembly):
         camera("platform-lanes", chamber, (7, 9, 7), (36, 9, 7), "four-lane north platform, deepslate rails on plaza edge"),
         camera("stairs-and-rail", chamber, (17, 1, 22), (23, 4, 13), "deepslate brick stairs meeting the railed platform"),
         camera("rail-detail", chamber, (18, 9, 6), (23, 9, 9), "wall rail ends beside the open stair mouth"),
+        camera("stair-landing", chamber, (23, 9, 6), (23, 6, 14), "looking down the stair run from the deck: flush final step at the mouth, rails either side"),
         camera("lower-door", chamber, (10, 1, 17), (8, 3, 0), "lower-level connection under the platform"),
         camera("upper-vestibule", chamber, (11, 9, 8), (11, 11, 0), "upper-level 5x5 vestibule from the gallery lane"),
         camera("undercroft", chamber, (12, 1, 19), (4, 3, 8), "open undercroft carrying the deck"),
@@ -134,6 +137,9 @@ def main():
         import plan_cameras_sg03
 
         cams = plan_cameras_sg03.cameras(templates, assembly, report, ap, camera, placed_pieces)
+        standalone = [(None, ap.Placed(templates[i], 0, tuple(o))) for i, o in report["standalone_origins"].items()]
+        check_clear(cams, occupancy(placed_pieces(templates, assembly) + standalone))
+        cams += plan_cameras_sg03.section_cameras(templates, assembly, ap, camera, placed_pieces)
     args.output.write_text(json.dumps(cams, indent=2) + "\n")
     print(f"{len(cams)} cameras -> {args.output}")
 

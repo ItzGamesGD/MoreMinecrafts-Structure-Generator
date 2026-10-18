@@ -702,6 +702,18 @@
         "pieces": 21,
         "expected_blocks": 50031,
         "world_blocks": 50031,
+        "volume": [
+          [
+            911,
+            -27,
+            911
+          ],
+          [
+            1027,
+            4,
+            1027
+          ]
+        ],
         "missing_or_wrong": 0,
         "missing_examples": [],
         "unexplained_extra_blocks": 0,
@@ -1439,6 +1451,18 @@
         "pieces": 21,
         "expected_blocks": 50031,
         "world_blocks": 50031,
+        "volume": [
+          [
+            1311,
+            -29,
+            911
+          ],
+          [
+            1427,
+            2,
+            1027
+          ]
+        ],
         "missing_or_wrong": 0,
         "missing_examples": [],
         "unexplained_extra_blocks": 0,
@@ -1552,6 +1576,3047 @@
         },
         "pass": true
       },
+      "pass": true
+    },
+    {
+      "requested_at": [
+        1800,
+        1000
+      ],
+      "blocks_in_volume": 50031,
+      "start_rotation_turns": 2,
+      "start_origin": [
+        1746,
+        -34,
+        946
+      ],
+      "pieces": [
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "origin": [
+            1746,
+            -34,
+            946
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1746,
+              -34,
+              946
+            ],
+            [
+              1792,
+              -18,
+              992
+            ]
+          ],
+          "slot": null
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1776,
+            -34,
+            993
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1776,
+              -34,
+              993
+            ],
+            [
+              1792,
+              -26,
+              1016
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north",
+          "origin": [
+            1767,
+            -34,
+            993
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1767,
+              -34,
+              993
+            ],
+            [
+              1771,
+              -26,
+              1007
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1746,
+            -34,
+            993
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1746,
+              -34,
+              993
+            ],
+            [
+              1762,
+              -26,
+              1016
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1793,
+            -34,
+            976
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1793,
+              -34,
+              976
+            ],
+            [
+              1816,
+              -26,
+              992
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1722,
+            -34,
+            976
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              1722,
+              -34,
+              976
+            ],
+            [
+              1745,
+              -26,
+              992
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_west",
+          "origin": [
+            1793,
+            -34,
+            967
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1793,
+              -34,
+              967
+            ],
+            [
+              1807,
+              -26,
+              971
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_east",
+          "origin": [
+            1731,
+            -34,
+            967
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1731,
+              -34,
+              967
+            ],
+            [
+              1745,
+              -26,
+              971
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1793,
+            -34,
+            946
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1793,
+              -34,
+              946
+            ],
+            [
+              1816,
+              -26,
+              962
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1722,
+            -34,
+            946
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              1722,
+              -34,
+              946
+            ],
+            [
+              1745,
+              -26,
+              962
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1776,
+            -34,
+            922
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1776,
+              -34,
+              922
+            ],
+            [
+              1792,
+              -26,
+              945
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_south",
+          "origin": [
+            1767,
+            -34,
+            931
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1767,
+              -34,
+              931
+            ],
+            [
+              1771,
+              -26,
+              945
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1746,
+            -34,
+            922
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1746,
+              -34,
+              922
+            ],
+            [
+              1762,
+              -26,
+              945
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1770,
+            -25,
+            993
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1770,
+              -25,
+              993
+            ],
+            [
+              1792,
+              -9,
+              1024
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1746,
+            -25,
+            993
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1746,
+              -25,
+              993
+            ],
+            [
+              1768,
+              -9,
+              1024
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1793,
+            -25,
+            970
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1793,
+              -25,
+              970
+            ],
+            [
+              1824,
+              -9,
+              992
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1714,
+            -25,
+            970
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              1714,
+              -25,
+              970
+            ],
+            [
+              1745,
+              -9,
+              992
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1793,
+            -25,
+            946
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1793,
+              -25,
+              946
+            ],
+            [
+              1824,
+              -9,
+              968
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1714,
+            -25,
+            946
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              1714,
+              -25,
+              946
+            ],
+            [
+              1745,
+              -9,
+              968
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1770,
+            -25,
+            914
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1770,
+              -25,
+              914
+            ],
+            [
+              1792,
+              -9,
+              945
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1746,
+            -25,
+            914
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1746,
+              -25,
+              914
+            ],
+            [
+              1768,
+              -9,
+              945
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_b"
+        }
+      ],
+      "slots": [
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/north",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/west",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_west"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/east",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_east"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/south",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_south"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        }
+      ],
+      "verification": {
+        "pieces": 21,
+        "expected_blocks": 50031,
+        "world_blocks": 50031,
+        "volume": [
+          [
+            1711,
+            -37,
+            911
+          ],
+          [
+            1827,
+            -6,
+            1027
+          ]
+        ],
+        "missing_or_wrong": 0,
+        "missing_examples": [],
+        "unexplained_extra_blocks": 0,
+        "extra_examples": [],
+        "block_overlaps": 0,
+        "bounding_box_overlaps": [],
+        "unfilled_slots": [],
+        "pass": true
+      },
+      "accessibility": {
+        "reachable_cells": 10761,
+        "checks": {
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_north_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/cavern_link reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_north_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_west_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_east_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_west_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_east_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_south_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_south_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_north_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_north_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_west_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_east_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_west_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_east_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_south_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_south_b reachable": true,
+          "deck lane cells reachable": "528/528",
+          "room 1 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 2 tunnel_north": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 3 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 4 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 5 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 6 tunnel_west": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 7 tunnel_east": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 8 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 9 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 10 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 11 tunnel_south": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 12 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 13 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 14 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 15 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 16 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 17 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 18 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 19 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 20 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          }
+        },
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "requested_at": [
+        1000,
+        1400
+      ],
+      "blocks_in_volume": 50031,
+      "start_rotation_turns": 2,
+      "start_origin": [
+        946,
+        -24,
+        1346
+      ],
+      "pieces": [
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "origin": [
+            946,
+            -24,
+            1346
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              946,
+              -24,
+              1346
+            ],
+            [
+              992,
+              -8,
+              1392
+            ]
+          ],
+          "slot": null
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            976,
+            -24,
+            1393
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              976,
+              -24,
+              1393
+            ],
+            [
+              992,
+              -16,
+              1416
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north",
+          "origin": [
+            967,
+            -24,
+            1393
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              967,
+              -24,
+              1393
+            ],
+            [
+              971,
+              -16,
+              1407
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            946,
+            -24,
+            1393
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              946,
+              -24,
+              1393
+            ],
+            [
+              962,
+              -16,
+              1416
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            993,
+            -24,
+            1376
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              993,
+              -24,
+              1376
+            ],
+            [
+              1016,
+              -16,
+              1392
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            922,
+            -24,
+            1376
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              922,
+              -24,
+              1376
+            ],
+            [
+              945,
+              -16,
+              1392
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_west",
+          "origin": [
+            993,
+            -24,
+            1367
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              993,
+              -24,
+              1367
+            ],
+            [
+              1007,
+              -16,
+              1371
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_east",
+          "origin": [
+            931,
+            -24,
+            1367
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              931,
+              -24,
+              1367
+            ],
+            [
+              945,
+              -16,
+              1371
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            993,
+            -24,
+            1346
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              993,
+              -24,
+              1346
+            ],
+            [
+              1016,
+              -16,
+              1362
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            922,
+            -24,
+            1346
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              922,
+              -24,
+              1346
+            ],
+            [
+              945,
+              -16,
+              1362
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            976,
+            -24,
+            1322
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              976,
+              -24,
+              1322
+            ],
+            [
+              992,
+              -16,
+              1345
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_south",
+          "origin": [
+            967,
+            -24,
+            1331
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              967,
+              -24,
+              1331
+            ],
+            [
+              971,
+              -16,
+              1345
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            946,
+            -24,
+            1322
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              946,
+              -24,
+              1322
+            ],
+            [
+              962,
+              -16,
+              1345
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            970,
+            -15,
+            1393
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              970,
+              -15,
+              1393
+            ],
+            [
+              992,
+              1,
+              1424
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            946,
+            -15,
+            1393
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              946,
+              -15,
+              1393
+            ],
+            [
+              968,
+              1,
+              1424
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            993,
+            -15,
+            1370
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              993,
+              -15,
+              1370
+            ],
+            [
+              1024,
+              1,
+              1392
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            914,
+            -15,
+            1370
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              914,
+              -15,
+              1370
+            ],
+            [
+              945,
+              1,
+              1392
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            993,
+            -15,
+            1346
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              993,
+              -15,
+              1346
+            ],
+            [
+              1024,
+              1,
+              1368
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            914,
+            -15,
+            1346
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              914,
+              -15,
+              1346
+            ],
+            [
+              945,
+              1,
+              1368
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            970,
+            -15,
+            1314
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              970,
+              -15,
+              1314
+            ],
+            [
+              992,
+              1,
+              1345
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            946,
+            -15,
+            1314
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              946,
+              -15,
+              1314
+            ],
+            [
+              968,
+              1,
+              1345
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_b"
+        }
+      ],
+      "slots": [
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/north",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/west",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_west"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/east",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_east"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/south",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_south"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        }
+      ],
+      "verification": {
+        "pieces": 21,
+        "expected_blocks": 50031,
+        "world_blocks": 50031,
+        "volume": [
+          [
+            911,
+            -27,
+            1311
+          ],
+          [
+            1027,
+            4,
+            1427
+          ]
+        ],
+        "missing_or_wrong": 0,
+        "missing_examples": [],
+        "unexplained_extra_blocks": 0,
+        "extra_examples": [],
+        "block_overlaps": 0,
+        "bounding_box_overlaps": [],
+        "unfilled_slots": [],
+        "pass": true
+      },
+      "accessibility": {
+        "reachable_cells": 10761,
+        "checks": {
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_north_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/cavern_link reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_north_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_west_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_east_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_west_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_east_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_south_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_south_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_north_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_north_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_west_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_east_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_west_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_east_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_south_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_south_b reachable": true,
+          "deck lane cells reachable": "528/528",
+          "room 1 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 2 tunnel_north": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 3 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 4 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 5 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 6 tunnel_west": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 7 tunnel_east": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 8 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 9 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 10 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 11 tunnel_south": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 12 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 13 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 14 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 15 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 16 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 17 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 18 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 19 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 20 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          }
+        },
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "requested_at": [
+        1400,
+        1400
+      ],
+      "blocks_in_volume": 50031,
+      "start_rotation_turns": 0,
+      "start_origin": [
+        1392,
+        -35,
+        1392
+      ],
+      "pieces": [
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "origin": [
+            1392,
+            -35,
+            1392
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1392,
+              -35,
+              1392
+            ],
+            [
+              1438,
+              -19,
+              1438
+            ]
+          ],
+          "slot": null
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1392,
+            -35,
+            1368
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1392,
+              -35,
+              1368
+            ],
+            [
+              1408,
+              -27,
+              1391
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north",
+          "origin": [
+            1413,
+            -35,
+            1377
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1413,
+              -35,
+              1377
+            ],
+            [
+              1417,
+              -27,
+              1391
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1422,
+            -35,
+            1368
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1422,
+              -35,
+              1368
+            ],
+            [
+              1438,
+              -27,
+              1391
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1368,
+            -35,
+            1392
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              1368,
+              -35,
+              1392
+            ],
+            [
+              1391,
+              -27,
+              1408
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1439,
+            -35,
+            1392
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1439,
+              -35,
+              1392
+            ],
+            [
+              1462,
+              -27,
+              1408
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_west",
+          "origin": [
+            1377,
+            -35,
+            1413
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1377,
+              -35,
+              1413
+            ],
+            [
+              1391,
+              -27,
+              1417
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_east",
+          "origin": [
+            1439,
+            -35,
+            1413
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1439,
+              -35,
+              1413
+            ],
+            [
+              1453,
+              -27,
+              1417
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1368,
+            -35,
+            1422
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              1368,
+              -35,
+              1422
+            ],
+            [
+              1391,
+              -27,
+              1438
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1439,
+            -35,
+            1422
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1439,
+              -35,
+              1422
+            ],
+            [
+              1462,
+              -27,
+              1438
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1392,
+            -35,
+            1439
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1392,
+              -35,
+              1439
+            ],
+            [
+              1408,
+              -27,
+              1462
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_south",
+          "origin": [
+            1413,
+            -35,
+            1439
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1413,
+              -35,
+              1439
+            ],
+            [
+              1417,
+              -27,
+              1453
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1422,
+            -35,
+            1439
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1422,
+              -35,
+              1439
+            ],
+            [
+              1438,
+              -27,
+              1462
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1392,
+            -26,
+            1360
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1392,
+              -26,
+              1360
+            ],
+            [
+              1414,
+              -10,
+              1391
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1416,
+            -26,
+            1360
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1416,
+              -26,
+              1360
+            ],
+            [
+              1438,
+              -10,
+              1391
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1360,
+            -26,
+            1392
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              1360,
+              -26,
+              1392
+            ],
+            [
+              1391,
+              -10,
+              1414
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1439,
+            -26,
+            1392
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1439,
+              -26,
+              1392
+            ],
+            [
+              1470,
+              -10,
+              1414
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1360,
+            -26,
+            1416
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              1360,
+              -26,
+              1416
+            ],
+            [
+              1391,
+              -10,
+              1438
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1439,
+            -26,
+            1416
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1439,
+              -26,
+              1416
+            ],
+            [
+              1470,
+              -10,
+              1438
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1392,
+            -26,
+            1439
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1392,
+              -26,
+              1439
+            ],
+            [
+              1414,
+              -10,
+              1470
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1416,
+            -26,
+            1439
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1416,
+              -26,
+              1439
+            ],
+            [
+              1438,
+              -10,
+              1470
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_b"
+        }
+      ],
+      "slots": [
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/north",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/west",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_west"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/east",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_east"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/south",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_south"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        }
+      ],
+      "verification": {
+        "pieces": 21,
+        "expected_blocks": 50031,
+        "world_blocks": 50031,
+        "volume": [
+          [
+            1357,
+            -38,
+            1357
+          ],
+          [
+            1473,
+            -7,
+            1473
+          ]
+        ],
+        "missing_or_wrong": 0,
+        "missing_examples": [],
+        "unexplained_extra_blocks": 0,
+        "extra_examples": [],
+        "block_overlaps": 0,
+        "bounding_box_overlaps": [],
+        "unfilled_slots": [],
+        "pass": true
+      },
+      "accessibility": {
+        "reachable_cells": 10761,
+        "checks": {
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_north_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/cavern_link reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_north_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_west_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_east_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_west_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_east_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_south_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_south_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_north_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_north_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_west_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_east_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_west_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_east_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_south_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_south_b reachable": true,
+          "deck lane cells reachable": "528/528",
+          "room 1 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 2 tunnel_north": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 3 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 4 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 5 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 6 tunnel_west": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 7 tunnel_east": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 8 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 9 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 10 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 11 tunnel_south": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 12 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 13 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 14 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 15 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 16 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 17 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 18 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 19 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 20 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          }
+        },
+        "pass": true
+      },
+      "pass": true
+    },
+    {
+      "requested_at": [
+        1800,
+        1400
+      ],
+      "blocks_in_volume": 50031,
+      "start_rotation_turns": 1,
+      "start_origin": [
+        1746,
+        -23,
+        1392
+      ],
+      "pieces": [
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "origin": [
+            1746,
+            -23,
+            1392
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1746,
+              -23,
+              1392
+            ],
+            [
+              1792,
+              -7,
+              1438
+            ]
+          ],
+          "slot": null
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1793,
+            -23,
+            1392
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1793,
+              -23,
+              1392
+            ],
+            [
+              1816,
+              -15,
+              1408
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north",
+          "origin": [
+            1793,
+            -23,
+            1413
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1793,
+              -23,
+              1413
+            ],
+            [
+              1807,
+              -15,
+              1417
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1793,
+            -23,
+            1422
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1793,
+              -23,
+              1422
+            ],
+            [
+              1816,
+              -15,
+              1438
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1776,
+            -23,
+            1368
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1776,
+              -23,
+              1368
+            ],
+            [
+              1792,
+              -15,
+              1391
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1776,
+            -23,
+            1439
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1776,
+              -23,
+              1439
+            ],
+            [
+              1792,
+              -15,
+              1462
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_west",
+          "origin": [
+            1767,
+            -23,
+            1377
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1767,
+              -23,
+              1377
+            ],
+            [
+              1771,
+              -15,
+              1391
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_east",
+          "origin": [
+            1767,
+            -23,
+            1439
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1767,
+              -23,
+              1439
+            ],
+            [
+              1771,
+              -15,
+              1453
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1746,
+            -23,
+            1368
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1746,
+              -23,
+              1368
+            ],
+            [
+              1762,
+              -15,
+              1391
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1746,
+            -23,
+            1439
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1746,
+              -23,
+              1439
+            ],
+            [
+              1762,
+              -15,
+              1462
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1722,
+            -23,
+            1392
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              1722,
+              -23,
+              1392
+            ],
+            [
+              1745,
+              -15,
+              1408
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_south",
+          "origin": [
+            1731,
+            -23,
+            1413
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1731,
+              -23,
+              1413
+            ],
+            [
+              1745,
+              -15,
+              1417
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub",
+          "origin": [
+            1722,
+            -23,
+            1422
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              1722,
+              -23,
+              1422
+            ],
+            [
+              1745,
+              -15,
+              1438
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1793,
+            -14,
+            1392
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1793,
+              -14,
+              1392
+            ],
+            [
+              1824,
+              2,
+              1414
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1793,
+            -14,
+            1416
+          ],
+          "turns": 1,
+          "bbox": [
+            [
+              1793,
+              -14,
+              1416
+            ],
+            [
+              1824,
+              2,
+              1438
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1770,
+            -14,
+            1360
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1770,
+              -14,
+              1360
+            ],
+            [
+              1792,
+              2,
+              1391
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1770,
+            -14,
+            1439
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1770,
+              -14,
+              1439
+            ],
+            [
+              1792,
+              2,
+              1470
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1746,
+            -14,
+            1360
+          ],
+          "turns": 0,
+          "bbox": [
+            [
+              1746,
+              -14,
+              1360
+            ],
+            [
+              1768,
+              2,
+              1391
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1746,
+            -14,
+            1439
+          ],
+          "turns": 2,
+          "bbox": [
+            [
+              1746,
+              -14,
+              1439
+            ],
+            [
+              1768,
+              2,
+              1470
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_b"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1714,
+            -14,
+            1392
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              1714,
+              -14,
+              1392
+            ],
+            [
+              1745,
+              2,
+              1414
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_a"
+        },
+        {
+          "template": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub",
+          "origin": [
+            1714,
+            -14,
+            1416
+          ],
+          "turns": 3,
+          "bbox": [
+            [
+              1714,
+              -14,
+              1416
+            ],
+            [
+              1745,
+              2,
+              1438
+            ]
+          ],
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_b"
+        }
+      ],
+      "slots": [
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/north",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_north_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/west",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_west"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/east",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_east"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_west_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_east_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/cavern_link",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/tunnels/south",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_south"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/lower_room_link_south_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_north_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "east",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_west_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "north",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_east_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "south",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_a",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        },
+        {
+          "slot": "moreminecrafts:forgotten_kingdom/upper_room_link_south_b",
+          "parent": "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+          "pool": "moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms",
+          "face": "west",
+          "filled_with": "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+        }
+      ],
+      "verification": {
+        "pieces": 21,
+        "expected_blocks": 50031,
+        "world_blocks": 50031,
+        "volume": [
+          [
+            1711,
+            -26,
+            1357
+          ],
+          [
+            1827,
+            5,
+            1473
+          ]
+        ],
+        "missing_or_wrong": 0,
+        "missing_examples": [],
+        "unexplained_extra_blocks": 0,
+        "extra_examples": [],
+        "block_overlaps": 0,
+        "bounding_box_overlaps": [],
+        "unfilled_slots": [],
+        "pass": true
+      },
+      "accessibility": {
+        "reachable_cells": 10761,
+        "checks": {
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_north_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/cavern_link reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_north_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_west_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_east_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_west_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_east_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_south_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/lower_room_link_south_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_north_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_north_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_west_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_east_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_west_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_east_b reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_south_a reachable": true,
+          "connector moreminecrafts:forgotten_kingdom/upper_room_link_south_b reachable": true,
+          "deck lane cells reachable": "528/528",
+          "room 1 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 2 tunnel_north": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 3 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 4 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 5 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 6 tunnel_west": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 7 tunnel_east": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 8 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 9 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 10 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 11 tunnel_south": {
+            "reachable_standing_cells": 45,
+            "poi_reachable": "0/0"
+          },
+          "room 12 stub": {
+            "reachable_standing_cells": 333,
+            "poi_reachable": "0/0"
+          },
+          "room 13 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 14 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 15 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 16 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 17 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 18 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 19 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          },
+          "room 20 stub": {
+            "reachable_standing_cells": 635,
+            "poi_reachable": "0/0"
+          }
+        },
+        "pass": true
+      },
+      "pass": true
+    }
+  ],
+  "standalone_origins": {
+    "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber": [
+      0,
+      100,
+      3000
+    ],
+    "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub": [
+      64,
+      100,
+      3000
+    ],
+    "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub": [
+      128,
+      100,
+      3000
+    ],
+    "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_east": [
+      192,
+      100,
+      3000
+    ],
+    "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north": [
+      256,
+      100,
+      3000
+    ],
+    "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_south": [
+      320,
+      100,
+      3000
+    ],
+    "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_west": [
+      384,
+      100,
+      3000
+    ]
+  },
+  "block_entities": [
+    {
+      "loot_table_negative_control": "minecraft:chests/sg_control_does_not_exist",
+      "rejected": true,
+      "reply": "Can't find element 'minecraft:chests/sg_control_does_not_exist' in registry 'minecraft:loot_table'..._not_exist<--[HERE]",
       "pass": true
     }
   ],

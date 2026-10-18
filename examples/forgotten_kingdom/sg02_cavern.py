@@ -159,6 +159,12 @@ def build_chamber() -> tuple[Any, Entities]:
             for u in STAIR_WIDTH_U:
                 _put(grid, side, u, STAIR_FIRST_D - i, i + 1, stairs(side))
 
+    # The SG-01 run ends one block below the deck (last step back-top y=8 vs deck top y=9). One more
+    # stair at deck level (the open stair mouth) makes the climb continuous without moving any step.
+    for side in SIDES:
+        for u in STAIR_WIDTH_U:
+            _put(grid, side, u, DECK_FAR, DECK_Y, stairs(side))
+
     # Doorways. Tunnels (SG-01 3x4) at the centre of each side.
     def carve(side: str, u: int, width: int, y0: int, height: int, depth: int) -> None:
         for du in range(-(width // 2), width // 2 + 1):

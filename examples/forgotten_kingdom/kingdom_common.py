@@ -68,6 +68,18 @@ UPPER_LINK = f"{NAMESPACE}:forgotten_kingdom/upper_room_link"
 
 Entities = dict[tuple[int, int, int], dict[str, object]]
 
+# The vendored mcbuild registry predates 26.3. Blocks it cannot name correctly are authored under
+# their registry name and renamed here on export; every exported id is then checked against the
+# 26.3 data-generator report (validation/minecraft-visual/block-states-26.3.json) by the tests.
+ID_RENAMES_26_3 = {"minecraft:chain": "minecraft:iron_chain"}
+
+
+def to_26_3(template: dict) -> dict:
+    """Rename palette ids to their 26.3 names (in place) and return the template."""
+    for entry in template["palette"]:
+        entry["id"] = ID_RENAMES_26_3.get(entry["id"], entry["id"])
+    return template
+
 
 def set_block(grid: VoxelGrid, x: int, y: int, z: int, name: str) -> None:
     grid.set(x, y, z, get_block(name).index)
@@ -108,8 +120,8 @@ def place_jigsaw(
     }
 
 
-def stairs(facing: str, *, half: str = "bottom", material: str = "deepslate_brick_stairs") -> str:
-    return f"{material}[facing={facing},half={half},shape=straight,waterlogged=false]"
+def stairs(facing: str, *, half: str = "bottom", material: str = "deepslate_brick_stairs", shape: str = "straight") -> str:
+    return f"{material}[facing={facing},half={half},shape={shape},waterlogged=false]"
 
 
 def block_name(grid: VoxelGrid, pos: tuple[int, int, int]) -> str | None:

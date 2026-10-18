@@ -38,6 +38,52 @@ def mark(result_file: Path, name: str, verdict: str) -> None:
     result_file.write_text("\n".join(lines) + "\n")
 
 
+def check_block_entities(rcon, templates, origins, failures):
+    """Read block-entity data back from the running server and compare with the template contract."""
+    import re
+
+    results = []
+    tables = set()
+    for identifier, (ox, oy, oz) in origins.items():
+        t = templates[identifier]
+        for local, nbt in sorted(t.nbt.items()):
+            if nbt["id"] == "minecraft:jigsaw":
+                continue
+            wx, wy, wz = ox + local[0], oy + local[1], oz + local[2]
+            text = rcon.run(f"data get block {wx} {wy} {wz}")
+            entry = {"template": identifier.rsplit("/", 1)[-1], "pos": list(local), "id": nbt["id"], "pass": True}
+            if f'id: "{nbt["id"]}"' not in text:
+                entry["pass"] = False
+                entry["actual"] = text[:200]
+            for key in ("LootTable", "normal_config", "ominous_config"):
+                if key in nbt:
+                    match = re.search(rf'{key}: "([^"]+)"', text)
+                    entry[key] = match.group(1) if match else None
+                    if key == "LootTable":
+                        tables.add(nbt[key])
+                    # A config equal to the game's default is omitted from the readback; only a *different* value is an error.
+                    if entry[key] is not None and entry[key] != nbt[key]:
+                        entry["pass"] = False
+                    if key == "LootTable" and entry[key] != nbt[key]:
+                        entry["pass"] = False
+            results.append(entry)
+            if not entry["pass"]:
+                failures.append(f"block entity mismatch {entry}")
+    # Negative control first: the checker must reject a table that does not exist.
+    control = rcon.run("execute in minecraft:overworld run loot spawn 0 120 3000 loot minecraft:chests/sg_control_does_not_exist")
+    control_rejected = "Dropped" not in control and "dropped" not in control
+    results.append({"loot_table_negative_control": "minecraft:chests/sg_control_does_not_exist", "rejected": control_rejected, "reply": control[:120], "pass": control_rejected})
+    if not control_rejected:
+        failures.append("loot-table check accepted a nonexistent table: checker is not trustworthy")
+    for table in sorted(tables):
+        out = rcon.run(f"execute in minecraft:overworld run loot spawn 0 120 3000 loot {table}")
+        ok = "Dropped" in out or "dropped" in out
+        results.append({"loot_table": table, "pass": ok, "reply": out[:120]})
+        if not ok:
+            failures.append(f"loot table {table} rejected: {out}")
+    return results
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--pack", type=Path, required=True)
@@ -80,6 +126,7 @@ def main() -> int:
                 failures.append(f"place template {identifier}: {out}")
         rcon.run("save-all flush")
         time.sleep(1)
+        report["standalone_origins"] = {k: list(v) for k, v in origins.items()}
         world = ap.World(region_dir, (-32, 90, 2980), (64 * len(origins) + 80, 140, 3100))
         all_ok = True
         for identifier, (ox, oy, oz) in origins.items():
@@ -95,6 +142,10 @@ def main() -> int:
         mark(result_file, "template-placement", "PASS" if all_ok and not failures else "FAIL")
         if not all_ok:
             failures.append("template world comparison failed")
+
+        # --- block entities the game must have accepted (loot tables, trial spawner configs) ----
+        report["block_entities"] = check_block_entities(rcon, templates, origins, failures)
+        mark(result_file, "block-entities", "PASS" if not any(e["pass"] is False for e in report["block_entities"]) else "FAIL")
 
         # --- jigsaw assemblies ----------------------------------------------------------
         origins_xz = ASSEMBLY_ORIGINS[: args.assemblies]

@@ -60,6 +60,13 @@ class Rcon:
 
 def start_server(run_dir: Path, pack_dirs: dict[str, Path], java_cmd: str, log: Path, *, port: int = 25565, rcon_port: int = 25575):
     """Prepare a disposable flat world with the given packs enabled and start the server."""
+    for busy in (port, rcon_port):
+        probe = socket.socket()
+        probe.settimeout(1)
+        if probe.connect_ex(("127.0.0.1", busy)) == 0:
+            probe.close()
+            raise RuntimeError(f"port {busy} is already in use: a previous --keep-server run is still alive; stop it first")
+        probe.close()
     run_dir.mkdir(parents=True, exist_ok=True)
     (run_dir / "world/datapacks").mkdir(parents=True, exist_ok=True)
     for name, source in pack_dirs.items():

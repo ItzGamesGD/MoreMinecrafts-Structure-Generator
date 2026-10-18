@@ -27,6 +27,24 @@ AIR = {"minecraft:air", "minecraft:cave_air", "minecraft:void_air"}
 SIDE_PROPS = ("north", "east", "south", "west")
 
 
+BLOCK_STATES = json.loads((HERE / "block-states-26.3.json").read_text())
+# Properties the running game owns (it changes them after placement); they are not part of the template contract.
+ENGINE_MANAGED = {"trial_spawner_state"}
+
+
+def state_matches(expected, actual):
+    """Same block; every template property equals the saved value (a missing saved value is the vanilla default)."""
+    if expected["id"] != actual["id"]:
+        return False
+    defaults = BLOCK_STATES.get(expected["id"], {}).get("default", {})
+    saved = actual.get("properties", {})
+    return all(
+        saved.get(key, defaults.get(key)) == value
+        for key, value in expected.get("properties", {}).items()
+        if key not in ENGINE_MANAGED
+    )
+
+
 def rot_pos(pos, size, turns):
     x, y, z = pos
     sx, sy, sz = size
@@ -69,6 +87,7 @@ class Template:
         self.size = tuple(nbt["size"])
         self.palette = nbt["palette"]
         self.cells = {}
+        self.nbt = {}
         self.jigsaws = []
         for block in nbt["blocks"]:
             state = self.palette[block["state"]]
@@ -78,6 +97,8 @@ class Template:
                 self.jigsaws.append({"pos": pos, "face": face, **block["nbt"]})
                 continue
             self.cells[pos] = state
+            if "nbt" in block:
+                self.nbt[pos] = block["nbt"]
         self.solid = {p: s for p, s in self.cells.items() if s["id"] not in AIR}
 
 
@@ -182,7 +203,7 @@ def match_fraction(placed, world_non_air, include_air=False, world=None):
             actual = {"id": "minecraft:air"} if pos not in world_non_air else world_non_air[pos]
         else:
             actual = world_non_air.get(pos, {"id": "minecraft:air"})
-        if probe_world.state_matches(state, actual):
+        if state_matches(state, actual):
             ok += 1
         elif len(bad) < 8:
             bad.append((pos, state, actual))
@@ -206,7 +227,7 @@ def locate_start(template, world_cells, anchor_local, anchor_id):
             origin = tuple(pos[i] - rotated[i] for i in range(3))
             placed = Placed(template, turns, origin)
             if all(
-                probe_world.state_matches(rot_state(s, turns), world_cells.get(placed.world(p), {"id": "minecraft:air"}))
+                state_matches(rot_state(s, turns), world_cells.get(placed.world(p), {"id": "minecraft:air"}))
                 for p, s in probes
             ):
                 found.append(placed)
@@ -281,12 +302,17 @@ def verify_assembly(pieces, slots, world_cells):
             expected[pos] = state
     boxes = [p["placed"].bbox() for p in pieces]
     bbox_overlaps = [(i, j) for i in range(len(boxes)) for j in range(i + 1, len(boxes)) if bbox_overlap(boxes[i], boxes[j])]
-    extras = [p for p in world_cells if p not in expected]
-    missing = [p for p, s in expected.items() if not probe_world.state_matches(s, world_cells.get(p, {"id": "minecraft:air"}))]
+    # Blocks inside the assembly's own bounding volume (+3) that no recovered piece explains. Neighbouring
+    # vanilla world generation (e.g. villages on the flat surface) outside that volume is not ours.
+    vlo = tuple(min(b[0][i] for b in boxes) - 3 for i in range(3))
+    vhi = tuple(max(b[1][i] for b in boxes) + 3 for i in range(3))
+    extras = [p for p in world_cells if p not in expected and all(vlo[i] <= p[i] <= vhi[i] for i in range(3))]
+    missing = [p for p, s in expected.items() if not state_matches(s, world_cells.get(p, {"id": "minecraft:air"}))]
     return {
         "pieces": len(pieces),
         "expected_blocks": len(expected),
         "world_blocks": len(world_cells),
+        "volume": [list(vlo), list(vhi)],
         "missing_or_wrong": len(missing),
         "missing_examples": [list(p) for p in missing[:5]],
         "unexplained_extra_blocks": len(extras),
@@ -343,8 +369,19 @@ def reachable(cells_fn, start, limit_box, max_nodes=2_000_000):
     return seen
 
 
-POI_BLOCKS = {"chest", "barrel", "trapped_chest", "spawner", "trial_spawner", "vault", "lectern", "crafting_table",
-              "furnace", "blast_furnace", "smoker", "enchanting_table", "anvil"}
+POI_BLOCKS = {"spawner", "trial_spawner", "vault", "lectern", "smithing_table", "fletching_table", "grindstone",
+              "cartography_table", "loom", "crafting_table", "blast_furnace", "anvil"}
+
+
+def points_of_interest(template):
+    """Loot containers, spawners and workstations that a player is expected to reach (beds are decoration)."""
+    out = []
+    for local, state in template.solid.items():
+        name = state["id"].split(":")[1]
+        loot = "LootTable" in template.nbt.get(local, {})
+        if loot or name in POI_BLOCKS:
+            out.append((local, name))
+    return out
 
 
 def assembly_walk_report(pieces, world):
@@ -386,13 +423,11 @@ def assembly_walk_report(pieces, world):
             ok &= deck_total > 0 and deck_ok == deck_total
         else:
             poi_total = poi_ok = 0
-            for local, state in template.solid.items():
-                name = state["id"].split(":")[1]
-                if name in POI_BLOCKS or name.endswith("_bed"):
-                    wp = placed.world(local)
-                    near = [(wp[0] + dx, wp[1] + dy, wp[2] + dz) for dx in (-1, 0, 1) for dz in (-1, 0, 1) for dy in (0, -1, 1)]
-                    poi_total += 1
-                    poi_ok += any(n in seen for n in near)
+            for local, _name in points_of_interest(template):
+                wp = placed.world(local)
+                near = [(wp[0] + dx, wp[1] + dy, wp[2] + dz) for dx in (-1, 0, 1) for dz in (-1, 0, 1) for dy in (0, -1, 1)]
+                poi_total += 1
+                poi_ok += any(n in seen for n in near)
             lo_b, hi_b = placed.bbox()
             inside = sum(1 for p in seen if all(lo_b[i] <= p[i] <= hi_b[i] for i in range(3)))
             report["checks"][f"room {index} {piece['id'].rsplit('/', 1)[-1]}"] = {

@@ -16,7 +16,7 @@ replacement — load **one** of the two packs, not both).
 |---|---|---|
 | Envelope | 41×17×41 | **47×17×47** (+3 on every side; the exporter's 48-block template limit makes 47 the largest symmetric envelope) |
 | Plaza, stairs, pillars, roof pattern, lights | — | identical geometry, translated by (+3, 0, +3); a regression test compares every SG-01 cell in the plaza box |
-| Stairs | `stone_brick_stairs` | `deepslate_brick_stairs`, same routes/orientation/`shape=straight`/`half=bottom` |
+| Stairs | `stone_brick_stairs` | `deepslate_brick_stairs`, same routes/orientation/`shape=straight`/`half=bottom`, plus one flush stair at deck level in each stair mouth (see below) |
 | Platform | 3-wide ring, rail on the outer edge → 2 usable lanes | 5-wide deck (d=5..9), rail on the plaza-facing edge → **4 clear lanes** (d=5..8) |
 | Rails | outer-edge `deepslate_brick_wall` | `deepslate_brick_wall` on the exposed plaza edge, open at all four stair mouths, with vanilla-consistent connection states |
 | Outer envelope | thin shell, 3-wide empty bay behind the ring | 5-thick gallery-back masonry (d=0..4) at deck level and above, open undercroft (piers, fascia beam) below, extended roof |
@@ -29,6 +29,9 @@ plane (`d=0`). All four sides are rotations of one design.
 
 * Stairs are unchanged relative to the plaza: step *i* (0..6) is at `d = 16 − i`, `y = i + 1`, `u = 22..24`.
   Their inner edge did not move; the plaza interior (SG-01 x/z 7..33, translated 10..36) is unchanged.
+* SG-01's run of seven steps ends with its last step's back at `y = 8` while the deck top is `y = 9` — a one-block
+  jump at the top. SG-02 adds one `deepslate_brick_stairs` at deck level (`d = 9`, `y = 8`, the three open mouth cells
+  of each run) so the climb is continuous. No existing step moved; the lanes (`d = 5..8`) are unaffected.
 * The deck is at `y = 8`, `d = 5..9`. The rail stands on `d = 9`, leaving **`d = 5..8` (four lanes)** with two
   blocks of headroom. Pillars, rails and the vestibule stairs are not counted as lane width.
 * Under the deck the undercroft stays open (`y = 1..7`), carried by a continuous fascia beam at `d = 9` and
@@ -72,9 +75,14 @@ footprint, entry connector only) instead of final rooms. SG-03 replaces them.
 
 ## Verification
 
-* `python3 -m unittest discover -s tests` — exporter, Jigsaw seam, SG-01 baseline and the 27 SG-02 regression tests
-  (geometry from NBT: envelope, SG-01 plaza regression, stair states, 4-lane width, rails, connector table,
-  reserved-volume disjointness, sightlines, walkability, determinism).
+* `python3 -m unittest discover -s tests` — exporter, Jigsaw seam, SG-01 baseline, 27 SG-02 geometry tests
+  (envelope, SG-01 plaza regression, stair states, 4-lane width, rails, connector table, reserved-volume
+  disjointness, sightlines, walkability, determinism) and 4 palette-schema tests.
+* Palette schema: every exported block id and every property/value is checked against
+  `validation/minecraft-visual/block-states-26.3.json`, compacted from the 26.3 server's own data-generator report
+  (`java -DbundlerMainClass=net.minecraft.data.Main -jar server.jar --reports`; `extract_block_states.py`). The
+  vendored mcbuild registry predates 26.3 (e.g. `minecraft:chain` is now `minecraft:iron_chain`), so the exporter
+  applies `ID_RENAMES_26_3` and the tests fail on any id the game does not know.
 * `validation/minecraft-visual/run_runtime.py` — real Minecraft 26.3 server: every template placed with
   `/place template` and compared cell-for-cell (air included) with saved region data; the Jigsaw structure placed
   with `/place structure`, each assembly recovered from the world, and every non-air block explained by exactly one

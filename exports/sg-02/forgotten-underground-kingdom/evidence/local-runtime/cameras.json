@@ -76,6 +76,25 @@
     ]
   },
   {
+    "name": "stair-landing",
+    "x": 969.5,
+    "y": -15.0,
+    "z": 986.5,
+    "yaw": -180.0,
+    "pitch": 27.2,
+    "note": "looking down the stair run from the deck: flush final step at the mouth, rails either side",
+    "feet_cell": [
+      969,
+      -15,
+      986
+    ],
+    "target_cell": [
+      969,
+      -18,
+      978
+    ]
+  },
+  {
     "name": "lower-door",
     "x": 982.5,
     "y": -23.0,
