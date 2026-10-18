@@ -77,7 +77,7 @@ Fabric/client screenshot path remains the existing native `Screenshot.grab` harn
 
 ## Natural world-generation validation
 
-**Latest runtime evidence:** [Actions run 39109240434](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39109240434), PR branch head `cd20ccfa851f7d84fa5c4b23af768571189d4a27`; [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39109240434/artifacts/12130195454).
+**Natural-generation runtime evidence:** [run 39109240434](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39109240434), head `cd20ccfa851f7d84fa5c4b23af768571189d4a27`; [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39109240434/artifacts/12130195454). The same test and screenshot steps passed again on final documentation head `b82cf64158154d957196e22e78d48ef282e57371` in [run 39109618020](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39109618020), [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39109618020/artifacts/12130075800).
 
 This is separate from the forced-placement checks above. The disposable server used `level-type=minecraft:normal`, seed `173`, and structure generation enabled. After the forced-placement stage completed, the harness ran `/locate structure moreminecrafts:forgotten_kingdom/central_cavern` from `(5000,0,5000)`; Minecraft returned `[5184, ~, 4944]`. The harness generated and saved the candidate chunks and did not call `/place` for this structure. The separate controlled test still uses `/place template` and `/place structure`, and remains identified as forced placement.
 
