@@ -25,7 +25,9 @@ if [ -z "$window" ]; then
 fi
 printf 'window_id=%s\nwindow_title=%s\n' "$window" "$(xdotool getwindowname "$window" 2>/dev/null || true)" > "$evidence/client-windows.txt"
 echo 'client-startup=PASS' >> "$evidence/runtime-result.txt"
-xdotool windowactivate --sync "$window" || true
+# Xvfb runs without a window manager, so _NET_ACTIVE_WINDOW based activation may fail.
+# Set X input focus directly and keep a diagnostic instead of aborting the capture.
+xdotool windowfocus --sync "$window" 2> "$evidence/window-focus.log" || true
 sleep 40
 joined=0
 for _ in $(seq 1 30); do
