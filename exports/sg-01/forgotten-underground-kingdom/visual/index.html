@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SG-01 Central Cavern — 3D Model</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    :root { color-scheme: dark; font: 16px system-ui, sans-serif; background: #15191f; color: #eee; }
+    body { margin: 0; padding: 1rem; max-width: 1000px; margin-inline: auto; }
+    h1 { font-size: 1.25rem; }
+    model-viewer { width: 100%; height: min(72vh, 720px); min-height: 420px; background: #20262e; border-radius: 8px; }
+    a { color: #9ad7ff; }
+  </style>
+</head>
+<body>
+  <h1>SG-01 Forgotten Underground Kingdom — Central Cavern</h1>
+  <p>Drag to rotate, pinch or scroll to zoom, and use two fingers to pan. The embedded GLB contains the assembled cavern and all four tunnel templates.</p>
+  <model-viewer src="./sg-01-central-cavern.glb" alt="3D model of the SG-01 central cavern and four tunnels"
+    camera-controls touch-action="pan-y" interaction-prompt="auto" shadow-intensity="0.7" exposure="1.1"
+    camera-orbit="35deg 65deg auto" min-camera-orbit="auto 5deg auto" max-camera-orbit="auto 175deg auto"
+    ar="false" environment-image="neutral" loading="eager"></model-viewer>
+  <p><a href="./sg-01-central-cavern.glb" download>Download the standalone 3D model (GLB)</a></p>
+  <p>Textures are embedded in the GLB. The browser viewer loads Google’s model-viewer library from unpkg, so it needs an internet connection.</p>
+</body>
+</html>

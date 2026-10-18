@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "sg01_visual_validation",
+  "version": "0.1.0",
+  "name": "SG-01 Minecraft visual validation fixture",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.itzgamesgd.sg01visual.ScreenshotCaptureHarness"
+    ],
+    "main": [
+      "dev.itzgamesgd.sg01visual.TraversalProbe"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "26.3",
+    "java": ">=25"
+  }
+}
