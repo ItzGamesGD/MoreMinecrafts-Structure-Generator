@@ -26,3 +26,9 @@ replay_pid*
 # Python test and script caches
 __pycache__/
 *.py[cod]
+
+# Local Minecraft acceptance fixture output
+validation/minecraft-visual/.gradle/
+validation/minecraft-visual/build/
+validation/minecraft-visual/run/
+validation/minecraft-visual/evidence/
