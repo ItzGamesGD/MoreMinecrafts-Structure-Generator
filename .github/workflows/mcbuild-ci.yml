@@ -107,4 +107,17 @@ jobs:
             echo "Namespace probe: UNSUPPORTED (exit $status); do not weaken fail-closed isolation" >> "$GITHUB_STEP_SUMMARY"
             echo "::warning::Bubblewrap/user namespaces unavailable. This is a diagnostic, not an accepted sandbox."
           fi
-          echo "This probe does not test filesystem denial, networking denial, or live NeoForge permissions." >> "$GITHUB_STEP_SUMMARY"
+          set +e
+          fs_output="$(bwrap --unshare-user --unshare-pid --die-with-parent \
+            --ro-bind /usr /usr --proc /proc --dev /dev --tmpfs /tmp \
+            --chdir /tmp /usr/bin/python3 -c 'print("BWRAP_FS_PROBE_OK")' 2>&1)"
+          fs_status=$?
+          set -e
+          echo "$fs_output"
+          if [ "$fs_status" -eq 0 ] && grep -q BWRAP_FS_PROBE_OK <<< "$fs_output"; then
+            echo "Filesystem namespace probe (no network namespace): SUPPORTED" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Filesystem namespace probe (no network namespace): UNSUPPORTED (exit $fs_status)" >> "$GITHUB_STEP_SUMMARY"
+            echo "::warning::Bubblewrap mount isolation is unavailable on this runner."
+          fi
+          echo "This probe does not test effective file-read denial, network syscall filtering, or live NeoForge permissions." >> "$GITHUB_STEP_SUMMARY"
