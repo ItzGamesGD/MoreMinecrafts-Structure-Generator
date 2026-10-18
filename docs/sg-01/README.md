@@ -86,7 +86,6 @@ the Beta repository.
 | Native client screenshots | **PASS** (current-head run 39109240434) | Ten controlled-placement views plus two native 1280×720 screenshots of the naturally generated entrance and plaza were captured and visually inspected. Owner design acceptance remains pending. |
 | Survival player traversal/accessibility and ordinary user-managed world acceptance | **NOT RUN** | Saved block data and teleport-to-camera screenshots do not prove traversal or normal-world pack behavior. See `minecraft-26.3-client-visual-validation.md`. |
 
-| In-client visual inspection/screenshots | **NOT RUN** | A text layer and vertical-section preview is provided in `structural-evidence.md`; this is structural evidence, not client rendering. |
 
 ## Risks and limitations
 
