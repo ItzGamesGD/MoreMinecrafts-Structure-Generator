@@ -41,6 +41,33 @@ jobs:
           python3 validation/minecraft-visual/sg03-natural/run_natural.py \
             --jar "$RUNNER_TEMP/server.jar" --pack "$RUNNER_TEMP/pack" \
             --out "$RUNNER_TEMP/sg03-natural" --seed ${{ matrix.seed }} --sites 2 --ticks 200
+      - name: Print natural-world site diagnostics
+        if: always()
+        run: |
+          python3 - <<'PY'
+          import glob
+          import json
+          for name in glob.glob("/home/runner/work/_temp/sg03-natural/natural-*.json"):
+              result = json.load(open(name))
+              print("NATURAL_VALIDATION", result.get("seed"), "PASS", result.get("pass"), "ERROR", result.get("error"))
+              for site in result.get("sites", []):
+                  for stage in ("before_ticks", "after_ticks"):
+                      check = site.get(stage, {})
+                      print(json.dumps({
+                          "site": site.get("candidate_chunk"), "stage": stage,
+                          "pass": check.get("pass"), "generated": site.get("generated"),
+                          "pieces": check.get("piece_count"), "rooms": check.get("rooms"),
+                          "expected": check.get("expected"), "matched": check.get("matched"),
+                          "overwrites": check.get("overwrites"),
+                          "missing_or_other": check.get("missing_or_other"),
+                          "examples": check.get("examples"),
+                          "interior_fluids": check.get("interior_fluids"),
+                          "exterior_contacts": check.get("exterior_contacts"),
+                          "spawner_entities": check.get("trial_spawner_entities"),
+                          "spawner_blocks": check.get("trial_spawners"),
+                          "errors": check.get("errors"),
+                      }, sort_keys=True))
+          PY
       - name: Upload runtime evidence
         if: always()
         uses: actions/upload-artifact@v4
