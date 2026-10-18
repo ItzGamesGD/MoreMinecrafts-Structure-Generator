@@ -17,7 +17,7 @@
 - [ ] vendored mcbuild `pytest`
 - [ ] `ruff check` / `ruff format --check`
 - [ ] Phase 2 validation / artifact checks
-- [ ] Phase 3 blueprint regeneration and schematic comparison
+- [ ] Phase 3 blueprint regeneration and schematic NBT comparison
 - [ ] `git diff --check` and merge conflict check against `main`
 
 ## Known blockers
@@ -29,3 +29,4 @@
 - [ ] Draft until verified
 - [ ] No force-push, history rewrite, or ruleset bypass
 - [ ] No security settings changed
+- [ ] No unresolved P1 review findings (or each is listed under Known blockers)

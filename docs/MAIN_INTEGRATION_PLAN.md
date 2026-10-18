@@ -22,9 +22,10 @@ This integration was reconstructed after the original local integration branch w
 
 ## Acceptance blockers
 
-- **Security P1 findings remain unresolved** and block acceptance into `main`. The finding details are not recorded in this repository; they must be linked here before the PR leaves Draft.
+- **Open P1 review finding (functional, not security)** on PR #2 (`artifacts/phase-3/final/blueprint.py` line 100): solid blocks at `(8, 8, 5)` and `(8, 9, 5)` leave no headroom at the stair landing `(8, 7, 5)`, so the staircase has no player-height exit. Reproduced on this branch from the generated voxel grid. The thread is unresolved and the Phase 3 report's "walkable upper deck" claim is not supported until it is fixed or waived.
+- **Security P1 findings: evidence not found.** The earlier handoff referred to known security P1 findings, but no issue, PR comment, review thread, or file in this repository contains them. The merge blocker is retained until the owner supplies or links the original findings (or states there are none).
 - Human review and the repository ruleset requirements for `main`.
 
 ## Verification
 
-See the PR description for newly run results versus historical results quoted in `artifacts/phase-2/report.md` and `artifacts/phase-3/report.md`.
+CI is defined in `.github/workflows/pr-checks.yml` (pytest, Ruff lint/format with the Ruff version pinned in `vendor/mcbuild/uv.lock`, Phase 2 validation, Phase 3 NBT-equivalence). Phase 3 schematics are compared on decoded NBT, not file bytes, because the exporter writes gzip and the Sponge Schematic v3 format does not require deterministic compressed bytes. See the PR description for newly run results versus historical results quoted in `artifacts/phase-2/report.md` and `artifacts/phase-3/report.md`.

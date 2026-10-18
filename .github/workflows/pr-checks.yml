@@ -1,0 +1,46 @@
+name: PR checks
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      # --frozen installs the versions in uv.lock (including the pinned Ruff).
+      - name: Install vendored mcbuild
+        working-directory: vendor/mcbuild
+        run: uv sync --frozen --extra dev
+
+      - name: Pytest
+        working-directory: vendor/mcbuild
+        run: uv run pytest -q
+
+      - name: Ruff lint
+        working-directory: vendor/mcbuild
+        run: uv run ruff check .
+
+      - name: Ruff format
+        working-directory: vendor/mcbuild
+        run: uv run ruff format --check .
+
+      - name: Phase 2 validation
+        run: uv run --project vendor/mcbuild python tools/phase2_validate.py
+
+      - name: Phase 3 watchtower NBT equivalence
+        run: uv run --project vendor/mcbuild python tools/phase3_validate.py
+
+      - name: Generated outputs must stay untracked
+        run: |
+          git diff --exit-code
+          if git ls-files --error-unmatch artifacts/phase-2/control/final.schem 2>/dev/null; then
+            echo "generated Phase 2 outputs must not be tracked"; exit 1
+          fi
