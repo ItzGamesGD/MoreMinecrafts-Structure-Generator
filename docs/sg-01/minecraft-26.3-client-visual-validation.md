@@ -58,13 +58,19 @@ Fix: `structure_export/structure.py` now writes `id`/`properties` and rejects th
 
 | Stage | Vanilla 26.3 server, local run | GitHub Actions (Fabric Loom fixture) |
 |---|---|---|
-| Server start, data pack `file/sg01` enabled | PASS | see PR checks |
-| Control placement (vanilla igloo + exporter cube) | PASS | see PR checks |
-| `/place template` main chamber, 15 live probes | PASS 15/15 | see PR checks |
-| Saved-chunk probes (15 states) | PASS 15/15 | see PR checks |
-| Connector templates place | PASS | see PR checks |
-| `/place structure` Jigsaw assembly | PASS: 8,575/8,575 blocks, 0 extra, rotation 180°, bounds 71 × 17 × 71 | see PR checks |
-| Native client screenshots | Needs the graphical CI fixture | see PR checks |
+| Server start, data pack `file/sg01` enabled | PASS | PASS ([run #53](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39097876094), head `5af87be`) |
+| Control placement (vanilla igloo + exporter cube) | PASS | PASS ([run #53](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39097876094), head `5af87be`) |
+| `/place template` main chamber, 15 live probes | PASS 15/15 | PASS ([run #53](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39097876094), head `5af87be`) |
+| Saved-chunk probes (15 states) | PASS 15/15 | PASS ([run #53](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39097876094), head `5af87be`) |
+| Connector templates place | PASS | PASS ([run #53](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39097876094), head `5af87be`) |
+| `/place structure` Jigsaw assembly | PASS: 8,575/8,575 blocks, 0 extra, rotation 180°, bounds 71 × 17 × 71 | PASS ([run #53](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39097876094), head `5af87be`) |
+| Native client screenshots | Needs the graphical CI fixture | PASS ([run #53](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39097876094), head `5af87be`) |
+
+Screenshots: ten native Minecraft 1280×720 PNGs per run, in the `sg-01-minecraft-26.3-visual-<run id>` artifact (30 days). Viewed:
+plaza, north entrance, interior overview, balconies/columns and the exterior from outside. The exterior shows the chamber placed
+directly at `0,100,0`, so it floats above the flat test world; the Jigsaw assembly itself is verified by block data, not by
+screenshot. Two earlier camera bugs (a view facing away from the chamber, and a player falling to the terrain during the capture
+delay) were harness errors, fixed in `capture-session.sh`. Full passes: run #49 (`7de32d3`), #51 (`b172d04`), #53 (`5af87be`).
 
 The local run drove the same `run-acceptance.sh` against the unmodified vanilla server jar via `SG01_SERVER_CMD`. The
 Fabric/client screenshot path remains the existing native `Screenshot.grab` harness.
