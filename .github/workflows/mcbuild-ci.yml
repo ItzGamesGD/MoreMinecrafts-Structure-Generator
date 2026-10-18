@@ -27,6 +27,10 @@ jobs:
       - name: Ruff format
         working-directory: vendor/mcbuild
         run: uv run ruff format --check .
+      - name: Show formatting differences after failure
+        if: failure()
+        working-directory: vendor/mcbuild
+        run: uv run ruff format --diff src/mcbuild/dsl/os_confinement.py
 
   vendor-drift:
     name: Committed vendor tree == pinned upstream + patches
