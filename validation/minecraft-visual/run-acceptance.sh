@@ -74,9 +74,9 @@ if grep -Eiq 'Unknown (structure|template)|Failed|Could not|Error executing|No k
   exit 1
 fi
 for template in main_chamber tunnel_north tunnel_east tunnel_south tunnel_west; do
-  grep -Fq "RESULT Placed template moreminecrafts:forgotten_kingdom/central_cavern/$template" "$evidence/runtime-commands.log"
+  grep -Fq "RESULT Loaded template \"moreminecrafts:forgotten_kingdom/central_cavern/$template\"" "$evidence/runtime-commands.log"
 done
-grep -Fq 'RESULT Placed structure moreminecrafts:forgotten_kingdom/central_cavern' "$evidence/runtime-commands.log"
 echo 'template-placement=PASS' >> "$evidence/runtime-result.txt"
+grep -Fq 'RESULT Generated structure "moreminecrafts:forgotten_kingdom/central_cavern"' "$evidence/runtime-commands.log"
 echo 'jigsaw-placement=PASS' >> "$evidence/runtime-result.txt"
 echo 'runtime-place=PASS'
