@@ -24,6 +24,8 @@ def test_real_kernel_denies_file_network_and_spawn(tmp_path):
         timeout=15,
     )
     assert json.loads(result.stdout) == {
+        "peer_signal_denied": True,
+        "peer_limit_denied": True,
         "file_denied": True,
         "network_denied": True,
         "spawn_denied": True,

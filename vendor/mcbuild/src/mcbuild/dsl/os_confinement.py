@@ -110,6 +110,22 @@ _DENIED_X86_64 = frozenset(
         248,
         249,
         250,  # kernel keyrings
+        # Review finding: same-user process interference via kill/prlimit.
+        62,   # kill
+        129,  # rt_sigqueueinfo
+        200,  # tkill
+        234,  # tgkill
+        297,  # rt_tgsigqueueinfo
+        424,  # pidfd_send_signal
+        302,  # prlimit64 (can modify another same-user process' limits)
+        160,  # setrlimit
+        141,  # setpriority
+        142,  # sched_setparam
+        144,  # sched_setscheduler
+        203,  # sched_setaffinity
+        312,  # kcmp
+        440,  # process_madvise
+        448,  # process_mrelease
     }
 )
 
@@ -168,12 +184,15 @@ def install() -> None:
 def _probe(path: str) -> dict[str, bool]:
     """Harmless real-syscall probe for tests, never called by production blueprints."""
     import os
+    import resource
     import socket
 
     install()
     file_denied = False
     network_denied = False
     spawn_denied = False
+    peer_signal_denied = False
+    peer_limit_denied = False
     try:
         with open(path, "rb") as stream:
             stream.read(1)
@@ -187,7 +206,19 @@ def _probe(path: str) -> dict[str, bool]:
         os.fork()
     except PermissionError:
         spawn_denied = True
+    # kill(pid, 0) is a no-signal existence/permission check: safe to probe.
+    try:
+        os.kill(os.getppid(), 0)
+    except PermissionError:
+        peer_signal_denied = True
+    # Read-only prlimit query; the restriction must deny peer resource access.
+    try:
+        resource.prlimit(os.getppid(), resource.RLIMIT_NOFILE)
+    except PermissionError:
+        peer_limit_denied = True
     return {
+        "peer_signal_denied": peer_signal_denied,
+        "peer_limit_denied": peer_limit_denied,
         "file_denied": file_denied,
         "network_denied": network_denied,
         "spawn_denied": spawn_denied,
