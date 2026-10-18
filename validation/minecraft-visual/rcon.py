@@ -15,8 +15,8 @@ def packet(sock, rid, kind, body):
         raise RuntimeError("RCON authentication failed")
     return payload[8:-2].decode("utf-8", "replace")
 
-with socket.create_connection((HOST, PORT), timeout=5) as sock:
-    sock.settimeout(5)
+with socket.create_connection((HOST, PORT), timeout=60) as sock:
+    sock.settimeout(60)
     packet(sock, 1, 3, PASSWORD)
     for line in sys.stdin:
         cmd = line.rstrip("\n")
