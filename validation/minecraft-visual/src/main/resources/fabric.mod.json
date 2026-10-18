@@ -7,6 +7,9 @@
   "entrypoints": {
     "client": [
       "dev.itzgamesgd.sg01visual.ScreenshotCaptureHarness"
+    ],
+    "main": [
+      "dev.itzgamesgd.sg01visual.TraversalProbe"
     ]
   },
   "depends": {

@@ -92,3 +92,64 @@ jobs:
             validation/minecraft-visual/run/logs/
           if-no-files-found: warn
           retention-days: 30
+
+  sg01-environment-stress:
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    env:
+      SG01_STRESS_SEEDS: "173 1 2 3 42 1337 2024 31415 271828 8675309 -7 -9999 123456789 20261017 555 9001"
+      # Pinned sites reproduce the interactions found in SG-01-B (see docs/sg-01/environmental-stress-validation.md).
+      SG01_TRAVERSAL_SITES: "--site 31415:38:76 --site 2024:69:0 --site 1337:-84:3 --site 3:-29:38 --site 1:20:-48 --site 173:-83:-15 --site 173:-19:15"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "25"
+      - uses: gradle/actions/setup-gradle@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies and rebuild the untouched datapack
+        run: |
+          python3 -m pip install -r requirements-export.txt -r validation/minecraft-visual/stress/requirements.txt
+          python3 examples/forgotten_kingdom/build_cavern.py "$RUNNER_TEMP/sg01-datapack"
+          diff -r exports/sg-01/forgotten-underground-kingdom/datapack "$RUNNER_TEMP/sg01-datapack"
+      - name: Static accessibility and spread-math tests
+        run: PYTHONPATH=vendor/mcbuild/src python3 -m unittest discover -s tests -v
+      - name: Download official Minecraft 26.3 server (SHA-1 verified)
+        run: validation/minecraft-visual/stress/fetch-server.sh "$RUNNER_TEMP/server.jar"
+      - name: Natural-generation stress (multi-seed, no /place)
+        timeout-minutes: 50
+        run: |
+          python3 validation/minecraft-visual/stress/run_stress.py --jar "$RUNNER_TEMP/server.jar" \
+            --pack "$RUNNER_TEMP/sg01-datapack" --seeds $SG01_STRESS_SEEDS --sites 6 --suppressed-sample 2 --ring 6 \
+            --ticks 2400 --extra-site 173:324:309 --keep-notable --out "$GITHUB_WORKSPACE/sg01-stress/natural"
+      - name: Synthetic fluid-contact scenarios (supplementary)
+        timeout-minutes: 10
+        run: |
+          python3 validation/minecraft-visual/stress/run_synthetic.py --jar "$RUNNER_TEMP/server.jar" \
+            --pack "$RUNNER_TEMP/sg01-datapack" --seed 173 --ticks 2400 --out "$GITHUB_WORKSPACE/sg01-stress/synthetic"
+      - name: Runtime traversal probe on pinned natural sites (real mob locomotion, not a live player)
+        timeout-minutes: 30
+        run: |
+          chmod +x validation/minecraft-visual/gradlew
+          python3 validation/minecraft-visual/stress/run_traversal.py --fixture validation/minecraft-visual \
+            --pack "$RUNNER_TEMP/sg01-datapack" $SG01_TRAVERSAL_SITES --out "$GITHUB_WORKSPACE/sg01-stress/traversal"
+      - name: Summarize and enforce invariants
+        run: |
+          python3 validation/minecraft-visual/stress/summarize.py --stress-dir sg01-stress/natural \
+            --traversal sg01-stress/traversal/traversal.json --pinned validation/minecraft-visual/stress/pinned-sites.json \
+            --synthetic sg01-stress/synthetic/synthetic-fluid.json \
+            --out-json sg01-stress/summary.json --out-md sg01-stress/summary.md | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Upload stress evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sg-01-environment-stress-${{ github.run_id }}
+          path: |
+            sg01-stress/
+            !sg01-stress/**/run-synthetic/**
+          if-no-files-found: warn
+          retention-days: 30
