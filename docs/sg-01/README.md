@@ -80,16 +80,20 @@ the Beta repository.
 | Vanilla Trial Chambers exclusion definition | **PASS** (static) | Independent structure set references `minecraft:trial_chambers` with `chunk_count: 12`. |
 | Automated tests | **PASS** | `PYTHONPATH=vendor/mcbuild/src python3 -m unittest discover -s tests -v`: 19 tests passed. |
 | Existing upstream mcbuild test suite | **NOT RUN** | This task does not modify mcbuild; pytest and its dependencies are not installed in this environment. |
-| Minecraft 26.3 datapack load and world generation | **PASS** (vanilla 26.3 server) | Server-side only; see `minecraft-26.3-client-visual-validation.md`. Pack enabled, all five templates place, 15/15 live and 15/15 saved-chunk block probes match, and `/place structure` produces 8,575/8,575 expected blocks (180° rotation). |
-| Mountain/cave placement, fluids, natural-cave intersections, and in-world Trial Chambers coexistence | **NOT RUN** | Requires actual Minecraft world generation; PR #117 informs placement choices but does not validate this export. |
+| Minecraft 26.3 explicit placement | **PASS** (Fabric Loom runtime) | Separate controlled tests use `/place template` and `/place structure`: main-chamber live/saved probes 15/15; all tunnel templates load; forced Jigsaw assembly matches 8,575/8,575 blocks at 180°. This is not natural world generation. |
+| Natural structure-set generation in normal terrain | **PASS** (seed 173, current-head Actions run 39109240434) | Minecraft `/locate structure` found candidate `[5184, ~, 4944]`; chunk generation wrote the structure without `/place`. Saved-region probe: 8,575/8,575 blocks, 0 extras, bounds 71×17×71 at `[5169,-37,4929]..[5239,-21,4999]`, rotation 0°. Eight surrounding surface samples had minimum top-solid y=31, above the structure. Artifact includes MCA region files, RCON/server logs, probes, and native entry/plaza screenshots. |
+| Cave-air, water, and lava contact | **NOT RUN** for this deterministic site | The one-block exterior shell contained 14,765 solid terrain blocks and 8 water blocks elsewhere, but no direct cave-air, water, or lava contact. This does not establish cave/fluid safety. Other seeds/sites and Trial Chambers coexistence were not tested. |
+| Native client screenshots | **PASS** (current-head run 39109240434) | Ten controlled-placement views plus two native 1280×720 screenshots of the naturally generated entrance and plaza were captured and visually inspected. Owner design acceptance remains pending. |
+| Survival player traversal/accessibility and ordinary user-managed world acceptance | **NOT RUN** | Saved block data and teleport-to-camera screenshots do not prove traversal or normal-world pack behavior. See `minecraft-26.3-client-visual-validation.md`. |
+
 | In-client visual inspection/screenshots | **NOT RUN** | A text layer and vertical-section preview is provided in `structural-evidence.md`; this is structural evidence, not client rendering. |
 
 ## Risks and limitations
 
-- Actual 26.3 codec loading, Jigsaw runtime placement, worldgen frequency, and chunk/biome behavior remain unverified.
-- Natural cave and fluid intersections cannot be concluded from static shell checks. The template contains its walls, floor,
+- Minecraft 26.3 loading and one natural seed placement are verified; worldgen frequency, varied biomes, and Trial Chambers coexistence remain unverified.
+- This natural seed had no direct cave-air, water, or lava contact at the exterior shell. Other seeds and fluid/cave contact remain unverified. The template contains its walls, floor,
   and roof; `encapsulate` is only supplementary.
 - The four district endpoints are intentionally capped with `minecraft:empty` until future district templates are approved.
 - The static state parser preserves mcbuild's state strings but does not independently compare every block-state property
   against a live 26.3 registry.
-- No game screenshots or performance measurements were available in this environment.
+- Native screenshots are available for controlled placement and the natural seed site; no performance measurement was made.
