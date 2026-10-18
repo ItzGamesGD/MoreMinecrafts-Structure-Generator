@@ -1,31 +1,61 @@
-# Main Integration Plan
+# Main Integration Plan — Phase 2 refresh
 
-## Scope of the first integration
+Repository state refreshed from GitHub on 2026-10-18 UTC. No branches were merged, deleted, force-pushed, or retargeted in this review. All listed open PRs remain Draft.
 
-Branch `integration/main-prep-20261018`, cut from `origin/main` (`5ca7d73`), merging with `--no-ff`:
+## Current base and integration PR
 
-| Source branch | Verified HEAD | Commits | Files |
+- `main`: `5ca7d731d8b4111ba3c674876c355bd8b146dbdc`.
+- PR #6 `integration/main-prep-20261018`: `2d85d8959c78370ce091c58d890e609a8abf7bf6`, based on current main; 13 commits ahead, 0 behind; merge base is main. GitHub reports mergeable and its current `checks` workflow is green ([run 39095781312](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39095781312)).
+- PR #6 integrates Phase 2 headless validation and Phase 3 ruined watchtower assets plus an integration-time stair-exit correction. It excludes SG-01, Ancient City, and PR #7 security remediation. Its original local branch was lost; the current branch is the reconstructed branch described in its PR body.
+
+The original Phase 2 and Phase 3 sources share base `f15ab6764baabf01936a22714479e9fc6e6b7305`; they touch distinct artifact paths. Their merge into PR #6 is conflict-free. The stair-exit correction is guarded by the new Phase 3 regression test; it changes only `artifacts/phase-3/final/`, not source iterations or the source branch.
+
+## Current branch and PR readiness
+
+| Change | Source branch / exact HEAD | Current status and evidence | Main-target readiness |
 |---|---|---|---|
-| `recovery/phase-2-headless-validation` | `0828f49` | 5 | `artifacts/phase-2/*`, `tools/phase2_validate.py` |
-| `phase-3/ruined-watchtower-2026-10-05` | `8fa0003` | 2 | `artifacts/phase-3/*` |
+| Main | `main` — `5ca7d731d8b4111ba3c674876c355bd8b146dbdc` | Current default branch | Base |
+| Phase 2 + Phase 3 integration | PR #6, `integration/main-prep-20261018` — `2d85d8959c78370ce091c58d890e609a8abf7bf6` | Draft; PR checks pass: pytest, Ruff, Phase 2 validation, Phase 3 structural/NBT checks. Actual Minecraft runtime and client visual review are not included. | Candidate first, subject to open PR #2 stair-exit review thread being resolved by its owner and human review. |
+| SG-01 export / Forgotten Underground Kingdom | PR #5, `feat/sg-01-central-cavern-portable-export` — `a743ba0524bae1597d0a44bf6635be528632d30b` | Draft. Current SHA has portable-export and Minecraft 26.3 visual workflow jobs green ([run 39098343272](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39098343272)); artifact `sg-01-minecraft-26.3-visual-39098343272` is available. This supersedes the older failed run #45 described in the current PR body. | Candidate after #6; update the stale PR description and inspect the new runtime evidence before accepting. Automated Minecraft launch/capture is not human visual/architectural approval or natural world-generation validation. |
+| Ice-box inspection | PR #3, `inspection/ice-box-accessibility-20261016` — `72ce3484579b3b6794fa5635c40340a5109c412b` | Draft; intentionally red CI ([run 38856466618](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/38856466618)): unsupported ladder and continuous surface-to-basement route. | Diagnostic only; do not integrate as production repair. Its observed failure is addressed by PR #4. |
+| Ice-box repair | PR #4, `repair/ice-box-entrance-accessibility-20261016` — `10164aa8aea7c33a2305c5eb7e0f15e6aaddc3ca` | Draft; automated validation/render job passes ([run 38858537998](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/38858537998)). Static route, preservation, NBT and schematic checks pass; survival interaction/redstone ticks are explicitly untested. | Not directly mergeable as a focused main PR: it targets an Ancient City prototype base and includes inherited work. Split/rebase only approved repair files onto current main after design review. |
+| Ancient City whole-variant probe | `probe/ancient-city-whole-variants-20261014` — `b63297bf370453a85717f0e9b4b0c67dbfddf107` | Render-generation CI passes ([run 38492265867](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/38492265867)); six preliminary drafts, not final or render-informed approved assets. | Experimental; retain branch, do not combine with module restoration. |
+| Ancient City ten approved-module prototypes | `prototype/ancient-city-approved-modules-20261014` — `46856bc097c25960418f2a1b3db43cb40635ec78` | Render CI passes ([run 38505365168](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/38505365168)); blueprint/render generation only. Original NBT footprints, connectors and client appearance are not verified; module README explicitly requests user design review. | Scope is approved for ten standalone concepts, but assets remain prototypes; no merge until visual/design review and integration packaging. |
+| Ancient City NBT follow-ups | `prototype/ancient-city-armory-coldstore-statue-20261014` — `7ffa4ec3877f585d4cb205ffed610c9b06a81910` | Ancestor of PR #3/#4; original NBT-derived barracks, ice-box and small-statue candidates with static checks/render outputs. | Prototype; separate from whole-city variants and from the ten modules. Minecraft placement/processors and barrel item-stack semantics remain unverified. |
+| Security remediation | PR #7, `security/mcbuild-sandbox-ws-20261018` — `0eb8f40a9338631d5d269ea90c6bfd7d49779bb9` | Draft; current mcbuild CI and NeoForge permission smoke pass ([run 39104467116](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39104467116), [run 39104467117](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39104467117)). | Keep separate. Merge blocked pending independent third-party review or explicit owner acceptance of residual risks: no exhaustive hostile-native-code containment, namespaces blocked on hosted runner, path/modern-kernel interfaces not exhaustively reviewed, no real-player authenticated LLM session/world placement. |
+| Vendor sync | `vendor-sync/34ce86372d4c` — `ae11886c03de72530fa6a8c9568f9e5d50e82ce1` | Active branch; no PR identified in current inventory. | Independent upstream sync candidate; review ancestry and patch behavior before opening a PR. |
+| Ice-box accessibility review | `inspection/ice-box-accessibility-20261016` — `72ce3484579b3b6794fa5635c40340a5109c412b` | Same head as PR #3. | Diagnostic source only. |
+| Recovery source | `recovery/phase-2-headless-validation` — `0828f49023a2dbe355167074e9ac1c5b1567ec51` | Included in PR #6. | Preserve; do not merge separately while #6 contains it. |
+| Phase 3 source | `phase-3/ruined-watchtower-2026-10-05` — `8fa00039161b06000a65ee01aa9c96093a9aa451` | Included in PR #6; source branch unchanged by integration correction. | Preserve; do not merge separately while #6 contains it. |
 
-Both branch from `f15ab67`, touch disjoint files, and merge without conflicts.
+Branch inventory was read live from GitHub `refs/heads`; it includes all active heads returned by the repository. PR #3/#4 are based on `7ffa4ec`, not main. Their base-to-head ancestry includes shared Ancient City/Phase 3 work, so “mergeable” against that base does not make either a clean main-target PR.
 
-This integration was reconstructed after the original local integration branch was lost with its container. Its merge commits are new and do not share SHAs or ancestry with the lost ones.
+## Merge-base and overlap findings
 
-## Explicitly excluded
+- `main...PR #6`: merge base is main; PR #6 is 13 ahead and 0 behind.
+- `main...PR #5`: merge base is main; PR #5 is 28 ahead and 0 behind.
+- `main...PR #7`: merge base is main; PR #7 is 19 ahead and 0 behind.
+- PR #6 vs #5 and PR #6 vs #7 diverge from main. File scopes are mostly separate, but `.gitignore` is modified by all three; PR #5 also changes `README.md`. Rebase/merge sequentially and preserve each intended ignore rule and README section. Re-run full CI after resolution.
+- PR #3 and #4 share base `7ffa4ec3877f585d4cb205ffed610c9b06a81910`; PR #4 is the repair follow-up. Their changed scopes overlap on `tools/inspect_ice_box_accessibility.py` and `artifacts/ancient-city-restoration/approved-followup/README.md`; use the PR #4 version for a repair, retain PR #3's failed inspection report as historical evidence, and do not combine both heads wholesale.
+- Whole-variant probe and approved-module prototype diverge from common Phase 3 base `8fa00039161b06000a65ee01aa9c96093a9aa451`. Both carry overlapping inherited Phase 3 artifacts, while their Ancient City assets have different goals and paths. Keep separate; if either is promoted, create a focused branch from current main and cherry-pick only reviewed final assets and required tooling.
+- PR #4 is 10 commits ahead of PR #3's shared base, while PR #3 is 3 commits ahead of that base. Prefer PR #4 repair content; do not merge both complete histories.
 
-- `feat/sg-01-central-cavern-portable-export` (SG-01, unfinished)
-- `probe/ancient-city-*`, `prototype/ancient-city-*` (unapproved Ancient City work)
-- `inspection/ice-box-*`, `repair/ice-box-*` (not part of this integration)
-- Any security-related changes unrelated to the above
+## Dependency-aware proposed order (all remain Draft)
 
-## Acceptance blockers
+1. **PR #6 — Phase 2/3 integration**. Source `integration/main-prep-20261018`, SHA `2d85d8959c78370ce091c58d890e609a8abf7bf6`. Includes headless Phase 2 recovery, Phase 3 watchtower assets, CI/docs, stair-exit integration correction. Checks: current PR checks pass. Missing: owner resolution of PR #2 review thread and human review; runtime Minecraft acceptance is not part of its automated checks. Conflict strategy: none against current main; if staged with later PRs, retain shared `.gitignore` additions. Blockers: review thread and approval.
+2. **PR #5 — SG-01 export**. Source `feat/sg-01-central-cavern-portable-export`, SHA `a743ba0524bae1597d0a44bf6635be528632d30b`. Includes portable vanilla 26.3 NBT/Jigsaw export, visual assets, and runtime harness. Checks: portable export and Minecraft 26.3 workflow pass on exact head. Missing: inspect artifact/screenshots; human architecture review, natural generation/terrain-fluid intersection behavior. Conflict strategy: after #6, reconcile `.gitignore` and append SG-01 README material to the integrated README; do not copy the old failing-run text as current. Blocker: evidence review and refreshed PR report.
+3. **Focused Ancient City repair PR (new branch required; not PR #4 as currently targeted)**. Source material from PR #4 SHA `10164aa8aea7c33a2305c5eb7e0f15e6aaddc3ca`; include only reviewed ice-box repair workflow, tool/test, and focused docs. Checks: #4 automated static validation passes. Missing: actual survival gameplay, redstone tick behavior, real Minecraft placement; human design approval. Strategy: branch from then-current main and cherry-pick selected repair commits/files, excluding inherited Phase 3 and other Ancient City prototypes. Blockers: design review and runtime play test.
+4. **PR #7 security remediation, held separately**. Source `security/mcbuild-sandbox-ws-20261018`, SHA `0eb8f40a9338631d5d269ea90c6bfd7d49779bb9`. Checks pass, but check success does not establish full sandbox security. Before any merge: independent third-party security review or explicit owner acceptance of each residual risk, plus requested real-player/runtime coverage where applicable. If later integrated, resolve shared `.gitignore` changes and rerun CI on the resulting combined head.
+5. **Ancient City concepts remain unsequenced** until design review. Whole variants, ten modules, and NBT-backed follow-ups are separate scopes and must not be consolidated into one prototype PR.
 
-- **Phase 3 stair headroom (Codex P1 on PR #2): corrected on this branch, pending CI.** Reproduced from the generated voxel grid: the six stairs end at feet y=7, one block under the deck surface, and solid blocks at `(8, 8, 5)`/`(8, 9, 5)` plus the stairwell rails left no exit. This is an **integration-time correction** applied only to `artifacts/phase-3/final/` (`(7, 7, 4)` becomes a north-facing half-height stair; rail `(7, 8, 4)` removed); the Phase 3 source branch and `iteration-1/`, `iteration-2/` are unchanged. The PR #2 review thread is still open and should be resolved by its owner. Guarded by `tests/test_phase3_watchtower.py`.
-- **Externally reported security findings (audit dated 2026-10-18), not independently reproduced.** (1) Potential mcbuild DSL sandbox escape; (2) unauthenticated WebSocket server and missing Origin validation. They were not recorded in GitHub issues or PR discussions, and no details beyond these two titles are in this repository. They are retained as open, unreproduced findings and tracked as **separate remediation dependencies**; no security fix is made in this PR, and `vendor/mcbuild` is unchanged. Acceptance into `main` stays blocked until the owner decides how they are resolved or waived.
-- Human review and the repository ruleset requirements for `main`.
+Do not merge PR #7 ahead of that gate. Do not move PRs #3/#4 to main with their current base. Do not merge or retarget anything as part of this preparation.
 
-## Verification
+## Security dependency boundary
 
-CI is defined in `.github/workflows/pr-checks.yml` (pytest, Ruff lint/format with the Ruff version pinned in `vendor/mcbuild/uv.lock`, Phase 2 validation, Phase 3 NBT-equivalence). Phase 3 schematics are compared on decoded NBT, not file bytes, because the exporter writes gzip and the Sponge Schematic v3 format does not require deterministic compressed bytes. See the PR description for newly run results versus historical results quoted in `artifacts/phase-2/report.md` and `artifacts/phase-3/report.md`.
+PR #7 remains independent from PR #6 and PR #5. The security PR's passing tests cover stated cases only. Residual risks recorded in PR #7 include incomplete containment against hostile native code, unavailable namespace isolation on the hosted runner, incomplete review of path/kernel interfaces, and missing real-player authenticated LLM world-placement testing. Keep all security conclusions scoped to the evidence; do not claim the sandbox is proven secure.
+
+## Final validation and next executable task
+
+- Latest remote CI evidence is linked per row above; old historical results are not substituted for current-head checks.
+- Automated structure-generation, static geometry, and scripted Minecraft workflows are distinct from human client visual review and live gameplay. Generated preview PNGs are not Minecraft screenshots.
+- **Next task:** inspect the screenshots, runtime logs and stage verdicts in artifact `sg-01-minecraft-26.3-visual-39098343272`; update PR #5's stale run #45 summary to reflect exact-head run #39098343272, and record which client views were reviewed by a person. Then resolve PR #6's outstanding PR #2 review thread. No PR leaves Draft until its listed review gates are complete.
