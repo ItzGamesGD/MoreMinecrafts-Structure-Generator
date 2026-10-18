@@ -12,9 +12,21 @@ import net.minecraft.server.level.ServerPlayer;
 
 /**
  * {@code /build <prompt>}: anchors a live mcbuild session at the invoking player's position
- * and starts streaming block placements from the Python agent. No permission is required
- * (auth is intentionally out of scope for this feature); only one build may run at a time,
- * enforced by {@link BuildSessionManager}.
+ * and starts streaming block placements from the Python agent; only one build may run at a
+ * time, enforced by {@link BuildSessionManager}.
+ *
+ * <p><b>Security note (2026-10-18 audit):</b> this previously required permission level 0,
+ * i.e. any player on the server, including one with no other elevated permission, could
+ * trigger an LLM-driven build. That build incurs real LLM API spend (see {@code
+ * Config.cost_ceiling} on the Python side, which caps one build's cost but not how many
+ * a non-trusted player can start back-to-back) and places blocks anywhere the invoking
+ * player stands, with no claim/region-protection check of its own -- this mod doesn't
+ * know about WorldGuard-style protection plugins, so a player who can reach a protected
+ * area through some other means could still have {@code /build} place blocks there.
+ * Raised to level 2 (the vanilla "server operator" level used by commands like {@code
+ * /gamemode}) so only operators can invoke it, matching the trust level the feature
+ * actually needs. A server wanting finer-grained access (e.g. via a permissions plugin
+ * and a dedicated node) should wrap or replace this {@code .requires(...)} predicate.
  */
 public final class BuildCommand {
     private BuildCommand() {}
@@ -22,7 +34,7 @@ public final class BuildCommand {
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
         dispatcher.register(
                 Commands.literal("build")
-                        .requires(source -> source.hasPermission(0))
+                        .requires(source -> source.hasPermission(2))
                         .then(Commands.argument("prompt", StringArgumentType.greedyString())
                                 .executes(BuildCommand::run)));
     }

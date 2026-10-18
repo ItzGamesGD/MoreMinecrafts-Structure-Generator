@@ -14,10 +14,21 @@ import org.java_websocket.handshake.ServerHandshake;
  * <p>All {@code on*} callbacks here fire on this client's own network thread, not the server
  * thread -- {@link BuildSessionManager.Session} is responsible for hopping back onto the
  * server thread before touching any {@code Level}/{@code Player} state.
+ *
+ * <p><b>Security note (2026-10-18 audit):</b> the Python server now requires a {@code
+ * token} on this first message (see {@code server/ws_server.py}; without it any local
+ * process could request a build for free). This client reads it from the {@code
+ * MCBUILD_SERVER_TOKEN} environment variable of the Minecraft server process -- the same
+ * variable name {@code ws_server.py main()} reads -- so the operator sets one value in
+ * both places. If it's unset, the request is still sent (so the existing "A build is
+ * already in progress" vs. a clear auth error distinction comes from the server, not a
+ * guess here); the server will reject it and the player sees that error in chat via
+ * {@link BuildSessionManager.Session#onError}.
  */
 public class WsClient extends WebSocketClient {
     private static final Gson GSON = new Gson();
     private static final URI SERVER_URI = URI.create("ws://127.0.0.1:8765");
+    private static final String TOKEN_ENV_VAR = "MCBUILD_SERVER_TOKEN";
 
     private final String prompt;
     private final BuildSessionManager.Session session;
@@ -33,6 +44,10 @@ public class WsClient extends WebSocketClient {
         JsonObject request = new JsonObject();
         request.addProperty("cmd", "build");
         request.addProperty("prompt", prompt);
+        String token = System.getenv(TOKEN_ENV_VAR);
+        if (token != null) {
+            request.addProperty("token", token);
+        }
         send(request.toString());
     }
 

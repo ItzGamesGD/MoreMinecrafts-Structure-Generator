@@ -1,7 +1,7 @@
 import pytest
 
 from mcbuild.dsl.errors import BlueprintError
-from mcbuild.dsl.sandbox import run_blueprint
+from mcbuild.dsl.sandbox import SandboxViolation, compile_blueprint, run_blueprint
 from mcbuild.voxel import VoxelGrid
 
 
@@ -67,6 +67,50 @@ def test_unknown_block_reports_line_and_suggestion():
     err = exc_info.value
     assert err.line == 2
     assert "stone" in str(err)
+
+
+### Regression tests for the 2026-10-18 security audit (confirmed sandbox-escape gaps). ###
+### These reproduce the exact PoCs used to validate the finding; each failed (was NOT    ###
+### blocked) before BANNED_ATTRS was added to validate_ast.                              ###
+
+
+def test_str_format_dunder_chain_blocked():
+    """str.format()'s template string is interpreted at runtime, not parsed as an
+    ast.Attribute node, so a dunder chain inside it (the classic Python sandbox-escape
+    primitive: reach object -> __subclasses__() -> an exploitable class) used to bypass
+    the leading-underscore attribute check entirely."""
+    with pytest.raises(SandboxViolation):
+        compile_blueprint('x = "{0.__class__.__bases__}".format(0)')
+
+
+def test_str_format_map_dunder_chain_blocked():
+    with pytest.raises(SandboxViolation):
+        compile_blueprint('x = "{a.__class__}".format_map({"a": 0})')
+
+
+@pytest.mark.parametrize(
+    "attr",
+    [
+        "gi_frame",
+        "cr_frame",
+        "ag_frame",
+        "f_back",
+        "f_globals",
+        "f_locals",
+        "f_builtins",
+        "tb_frame",
+        "co_consts",
+        "cell_contents",
+    ],
+)
+def test_frame_and_code_introspection_attrs_blocked(attr):
+    """None of these start with '_', so they were invisible to the old dunder-only check.
+    A generator's .gi_frame.f_back.f_globals chain (when reached while a frame is live on
+    the call stack, e.g. during a generator's own next()/send()) walks back through
+    run_blueprint's own call stack and beyond -- toward the embedding process's frames,
+    not just the blueprint's."""
+    with pytest.raises(SandboxViolation):
+        compile_blueprint(f"x = None\nf = x.{attr}\n")
 
 
 def test_infinite_loop_hits_budget():

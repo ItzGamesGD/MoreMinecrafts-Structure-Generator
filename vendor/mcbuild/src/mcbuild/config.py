@@ -19,3 +19,8 @@ class Config:
     cost_ceiling: float | None = None
     max_consecutive_failures: int = 10
     stream: bool = True
+    # Shared secret the WebSocket server requires on the first message of every
+    # connection (see server/ws_server.py). None only when the server itself hasn't
+    # been given one, which main() treats as "generate a random one for this run" --
+    # it is never silently optional.
+    auth_token: str | None = None
