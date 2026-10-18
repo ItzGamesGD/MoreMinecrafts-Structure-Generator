@@ -1,0 +1,248 @@
+{
+  "module": "small_ruin_1",
+  "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/small_ruin_1.nbt",
+  "source_repository": "InventivetalentDev/minecraft-assets",
+  "source_commit": "bb6d6451fb5fff54d3930fd8bf19d81200f00e6d",
+  "source_blob_sha1": "b1b9c2ac7c4b06a1a80e53adf4dd4fd706f2a799",
+  "source_bytes": 315,
+  "verified": true,
+  "size_xyz": [
+    7,
+    5,
+    8
+  ],
+  "block_count": 17,
+  "palette_size": 2,
+  "palette": [
+    {
+      "name": "minecraft:cobbled_deepslate",
+      "properties": {}
+    },
+    {
+      "name": "minecraft:jigsaw",
+      "properties": {
+        "orientation": "west_up"
+      }
+    }
+  ],
+  "material_counts": {
+    "minecraft:cobbled_deepslate": 16,
+    "minecraft:jigsaw": 1
+  },
+  "per_y_counts": {
+    "0": {
+      "total": 13,
+      "materials": {
+        "minecraft:cobbled_deepslate": 12,
+        "minecraft:jigsaw": 1
+      }
+    },
+    "1": {
+      "total": 3,
+      "materials": {
+        "minecraft:cobbled_deepslate": 3
+      }
+    },
+    "2": {
+      "total": 1,
+      "materials": {
+        "minecraft:cobbled_deepslate": 1
+      }
+    }
+  },
+  "occupancy_maps_x_by_z_per_y": {
+    "0": [
+      "# ### #",
+      "       ",
+      "       ",
+      "J      ",
+      "       ",
+      "#     #",
+      "#      ",
+      "##   ##"
+    ],
+    "1": [
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "#      ",
+      "##     "
+    ],
+    "2": [
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "#      "
+    ],
+    "3": [
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ],
+    "4": [
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       ",
+      "       "
+    ]
+  },
+  "palette_index_maps_x_by_z_per_y": {
+    "0": [
+      "0.000.0",
+      ".......",
+      ".......",
+      "1......",
+      ".......",
+      "0.....0",
+      "0......",
+      "00...00"
+    ],
+    "1": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "0......",
+      "00....."
+    ],
+    "2": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "0......"
+    ],
+    "3": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "4": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ]
+  },
+  "palette_index_symbol_legend": {
+    "0": 0,
+    "1": 1
+  },
+  "jigsaws": [
+    {
+      "pos": [
+        0,
+        0,
+        3
+      ],
+      "block": "minecraft:jigsaw",
+      "properties": {
+        "orientation": "west_up"
+      },
+      "nbt": {
+        "joint": "rollable",
+        "final_state": "minecraft:structure_void",
+        "name": "minecraft:connect_structure",
+        "pool": "minecraft:empty",
+        "id": "minecraft:jigsaw",
+        "target": "minecraft:empty"
+      }
+    }
+  ],
+  "functional_blocks": [],
+  "block_entities": [
+    {
+      "pos": [
+        0,
+        0,
+        3
+      ],
+      "block": "minecraft:jigsaw",
+      "properties": {
+        "orientation": "west_up"
+      },
+      "nbt": {
+        "joint": "rollable",
+        "final_state": "minecraft:structure_void",
+        "name": "minecraft:connect_structure",
+        "pool": "minecraft:empty",
+        "id": "minecraft:jigsaw",
+        "target": "minecraft:empty"
+      }
+    }
+  ],
+  "entity_count": 0,
+  "entities": [],
+  "render": {
+    "generated": true,
+    "method": "mcbuild color voxel preview; source block states preserved in report but non-cube block shapes are approximated as cubes",
+    "error": null,
+    "file": "original-four-view.png",
+    "views": [
+      "yaw 0deg",
+      "yaw 90deg",
+      "yaw 180deg",
+      "yaw 270deg"
+    ],
+    "stats": {
+      "dims": [
+        7,
+        3,
+        8
+      ],
+      "bounds": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          6,
+          2,
+          7
+        ]
+      ],
+      "block_count": 17,
+      "top_materials": [
+        [
+          "cobbled_deepslate",
+          16
+        ],
+        [
+          "jigsaw",
+          1
+        ]
+      ]
+    }
+  }
+}
