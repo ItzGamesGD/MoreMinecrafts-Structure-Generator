@@ -26,7 +26,7 @@ rcon.port=25575
 server-port=25565
 server-ip=127.0.0.1
 motd=SG-01 disposable acceptance runtime
-level-type=minecraft:flat
+level-type=minecraft:normal\ngenerate-structures=true
 gamemode=creative
 difficulty=peaceful
 spawn-monsters=false
@@ -193,6 +193,43 @@ python3 "$fixture/probe-jigsaw.py" \
   --search-min 900 -64 900 --search-max 1100 100 1100 \
   --output "$evidence/jigsaw-world-probes.json"
 mark_stage jigsaw-placement PASS "$result_file"
+
+# This is a distinct natural-generation check. It never invokes /place for SG-01:
+# Minecraft locates a structure-set candidate, then generates its normal-world chunks.
+current_stage=natural-worldgen
+locate_output=$(python3 "$fixture/rcon.py" <<'CMDS'
+execute positioned 5000 0 5000 run locate structure moreminecrafts:forgotten_kingdom/central_cavern
+CMDS
+)
+printf '%s\n' "$locate_output" | tee -a "$evidence/runtime-commands.log"
+candidate=$(printf '%s\n' "$locate_output" | sed -nE 's/.*at \[(-?[0-9]+), ~, (-?[0-9]+)\].*/\1 \2/p' | head -1)
+if [ -z "$candidate" ]; then
+  echo "Minecraft did not return a natural structure-set candidate" >&2
+  exit 1
+fi
+read -r candidate_x candidate_z <<< "$candidate"
+printf 'candidate_x=%s\ncandidate_z=%s\nseed=173\nworld_type=minecraft:normal\n' "$candidate_x" "$candidate_z" | tee "$evidence/natural-worldgen-candidate.txt"
+python3 "$fixture/rcon.py" <<CMDS | tee -a "$evidence/runtime-commands.log"
+execute in minecraft:overworld run forceload add $((candidate_x - 64)) $((candidate_z - 64)) $((candidate_x + 64)) $((candidate_z + 64))
+CMDS
+sleep 6
+python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
+save-all flush
+CMDS
+mkdir -p "$evidence/world/natural-worldgen"
+cp -a "$region_dir/." "$evidence/world/natural-worldgen/"
+python3 "$fixture/probe-jigsaw.py" \\
+  --region-dir "$evidence/world/natural-worldgen" \\
+  --template-dir "$(dirname "$template_nbt")" \\
+  --search-min $((candidate_x - 128)) -64 $((candidate_z - 128)) \\
+  --search-max $((candidate_x + 128)) 64 $((candidate_z + 128)) \\
+  --output "$evidence/natural-jigsaw-world-probes.json"
+python3 "$fixture/probe-natural-world.py" \\
+  --region-dir "$evidence/world/natural-worldgen" \\
+  --template-dir "$(dirname "$template_nbt")" \\
+  --assembly-report "$evidence/natural-jigsaw-world-probes.json" \\
+  --output "$evidence/natural-terrain-report.json"
+mark_stage natural-worldgen PASS "$result_file"
 python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
 execute in minecraft:overworld run time set noon
 execute in minecraft:overworld run weather clear
