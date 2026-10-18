@@ -126,8 +126,9 @@ def _chamber() -> tuple[VoxelGrid, dict[tuple[int, int, int], dict[str, object]]
             if not 18 <= z <= 22:
                 _set(grid, x, 9, z, "deepslate_brick_wall")
 
-    # Four broad stair runs connect the plaza floor to the upper ring.
-    for i in range(7):
+    # Four broad stair runs connect the plaza floor to the upper ring. Eight steps: the eighth sits in the ring's
+    # inner band (level 8) so its back is flush with the ring floor surface and no 1.0-block jump is needed.
+    for i in range(8):
         level = i + 1
         offset = 13 - i
         for x in range(center - 1, center + 2):
