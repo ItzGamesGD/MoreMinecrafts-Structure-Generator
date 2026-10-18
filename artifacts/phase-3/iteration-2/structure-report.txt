@@ -1,0 +1,10 @@
+Ruined Watchtower — iteration 2
+Populated blocks: 649
+Bounds: (0, 0, 0) .. (10, 16, 10)
+Dimensions: 11 x 17 x 11
+Material counts: cobblestone=50, cracked_stone_bricks=7, mossy_stone_bricks=18, spruce_log=25, spruce_planks=7, spruce_stairs=43, stone_brick_stairs=6, stone_brick_wall=13, stone_bricks=480
+Render resolution: 1100 x 550
+Render success: yes (/workspace/artifacts/phase-3/iteration-2/render.png)
+Views: yaw 0deg, yaw 90deg, yaw 180deg, yaw 270deg, yaw 180deg, slice z=5
+Renderer: mcbuild.render.views.build_contact_sheet -> mcbuild.render.iso.render_iso
+Sandbox: mcbuild.dsl.sandbox.run_blueprint(seed=0)
