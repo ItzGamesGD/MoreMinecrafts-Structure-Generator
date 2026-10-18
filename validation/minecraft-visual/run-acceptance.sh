@@ -27,6 +27,7 @@ spawn-animals=false
 view-distance=8
 simulation-distance=6
 allow-flight=true
+white-list=false
 PROPS
 setsid bash -c 'cd "$1" && exec timeout 480s ./gradlew --no-daemon runServer' _ "$fixture" \
   > "$fixture/run/logs/server.log" 2>&1 &
@@ -48,6 +49,10 @@ datapack list enabled
 CMDS
 grep -F 'file/sg01' "$evidence/runtime-commands.log"
 echo 'datapack-load=PASS' >> "$evidence/runtime-result.txt"
+# Offline-mode test clients require an explicit whitelist entry on the hosted runner.
+python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
+whitelist add SG01Visual
+CMDS
 # PlaceCommand rejects positions outside loaded chunks. Force-load only the test coordinates
 # so command results prove template/structure resolution rather than merely accepting syntax.
 python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"

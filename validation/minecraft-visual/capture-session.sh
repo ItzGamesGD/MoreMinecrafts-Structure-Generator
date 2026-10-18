@@ -14,11 +14,16 @@ client_pid=$!
 trap 'kill "$client_pid" 2>/dev/null || true' EXIT
 window=''
 for _ in $(seq 1 180); do
-  window=$(xdotool search --onlyvisible --name 'Minecraft' 2>/dev/null | head -1 || true)
+  window=$(xdotool search --onlyvisible --name '.*' 2>/dev/null | tail -1 || true)
   [ -n "$window" ] && break
   sleep 2
 done
-if [ -z "$window" ]; then tail -160 "$fixture/run/logs/client.log"; exit 1; fi
+if [ -z "$window" ]; then
+  xwininfo -root -tree > "$evidence/client-windows.txt" 2>&1 || true
+  tail -160 "$fixture/run/logs/client.log"
+  exit 1
+fi
+printf 'window_id=%s\nwindow_title=%s\n' "$window" "$(xdotool getwindowname "$window" 2>/dev/null || true)" > "$evidence/client-windows.txt"
 echo 'client-startup=PASS' >> "$evidence/runtime-result.txt"
 xdotool windowactivate --sync "$window" || true
 sleep 40

@@ -12,8 +12,8 @@
 | Minecraft 26.3 server startup and datapack recognition | **PASS** | Run #23 started the server to `Done`; `datapack list enabled` included `[file/sg01 (world)]`. Exact runtime logs are in [artifact #12112524684](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39065733597/artifacts/12112524684). |
 | `/place template` chamber + four tunnels | **PASS** | Run #25's RCON transcript records five `Loaded template "moreminecrafts:forgotten_kingdom/central_cavern/<template>" at ...` results at the requested coordinates. |
 | `/place structure` live Jigsaw generation | **PASS (command)** | Run #25's RCON transcript records `Generated structure "moreminecrafts:forgotten_kingdom/central_cavern" at 0, 100, 0`. |
-| Minecraft client startup | **PASS** | Run #23 selected Vulkan llvmpipe and created an X11 window at 1280×720. OpenGL's GLX initialization failed, then Minecraft successfully selected Vulkan. |
-| Client joins a loaded world and screenshots | **NOT RUN** | Run #25 ended when the harness compared actual successful response text against the wrong expected words, before launching the client. No PNG was produced. The fixed verifier will be exercised in the next run. |
+| Minecraft client startup | **PASS** | Run #27 selected Vulkan llvmpipe, created an SDL X11 window and loaded Minecraft texture atlases. OpenGL's GLX initialization failed first; the client continued on Vulkan. |
+| Client joins a loaded world and screenshots | **FAIL (test setup)** | Run #27's server rejected `SG01Visual` because the disposable server did not whitelist the offline test username. The capture script's title-specific window lookup also failed to recognize the created SDL window. No PNG was produced. The next correction explicitly allows the test name and detects the visible window independently of its title. |
 | Architectural visual quality review | **NOT RUN** | There are no Minecraft-rendered screenshots. The cavern design remains unchanged. |
 
 ## Read-only CI environment investigation
@@ -33,7 +33,7 @@ This is a **client startup/resource smoke**, not SG-01 validation. It does not i
 
 A follow-up temporary client harness must launch Minecraft 26.3 with this exact datapack, create or load a disposable world, verify the registered command/template IDs in game, and place the chamber and tunnel templates plus the assembled structure. It must set a fixed time/weather and GUI scale, capture at least 1280×720 screenshots of the plaza, upper walkway, supports/ceiling, four passages, and exterior, and upload those images to this PR. The current Beta smoke workflow supplies a virtual-display starting point but does not provide this world/command/screenshot harness.
 
-Until that run exists, the game-side placement and visual-quality verdicts remain **NOT RUN**. The current design is unchanged pending the requested screenshot review.
+The latest server-side placement verdicts are documented below. Visual-quality review remains **NOT RUN** until actual Minecraft-rendered screenshots are available. The current design is unchanged pending the requested screenshot review.
 
 ## SG-01B automated acceptance harness
 
@@ -43,11 +43,12 @@ The job first runs a configuration-only Gradle `help` step with a five-minute ti
 
 The harness source is documented in [`validation/minecraft-visual/README.md`](../../validation/minecraft-visual/README.md). Runtime outcomes below are taken from uploaded GitHub Actions logs. The previous GLB-derived previews are not Minecraft runtime evidence.
 
-### Run #23 and #25 evidence and resumed correction
+### Run #23, #25 and #27 evidence and resumed correction
 
 - Workflow run [#23](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39065733597), at branch head `11491b65fb65e15e956b27a04fca1680aad92807`: portable-export and all 17 tests **PASS**; datapack reproducibility and committed resource checksums **PASS**; Gradle configuration **PASS**; server started and recognized the exact pack **PASS**.
 - Run #23 client log showed Vulkan llvmpipe and a created X11 window, but failed to connect because the server process ended between Actions steps. The run's [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39065733597/artifacts/12112524684) contains logs and command transcripts but **no PNGs**.
 - Review of the RCON transcript found all five `/place template` calls and the `/place structure` call returned `That position is not loaded`. The old result check missed that error and wrote a false PASS. Do not use that marker as evidence.
 - Run #25's [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39087368914/artifacts/12121058947) shows all five `/place template` commands returned `Loaded template ...` and the `/place structure` command returned `Generated structure ...`. The server loaded the exact pack and generated the structure. The harness stopped because its success matcher expected `Placed ...` instead of the actual 26.3 response text; the client step did not run, and the artifact has no PNGs.
-- The current patch matches the observed responses and records server start, datapack load, template placement, Jigsaw placement, client start, world join and screenshots as separate evidence markers. A new Actions run is required to verify the screenshot path.
-- Local validation after these script changes: shell syntax, workflow YAML parsing, `git diff --check`, all 17 tests, and byte-for-byte datapack regeneration **PASS**. Minecraft-rendered screenshots and architectural quality remain **NOT RUN**; no design change was made.
+- Run #27 [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39087556594/artifacts/12121622245) confirms all placements and includes client logs, but no PNG. The client selected Vulkan and loaded its texture atlases. The server rejected `SG01Visual` as not whitelisted; the script's title filter also failed to detect the created SDL window.
+- The current correction explicitly whitelists `SG01Visual` in the disposable offline world and detects a visible X11 window without assuming its title. The window ID and title are recorded for diagnosis. A new Actions run is required to verify world join and screenshot generation.
+- Local validation: shell syntax, workflow YAML parsing and `git diff --check` **PASS**. All 17 tests and deterministic pack/visual exports passed on the previous commit; CI run #27 also passed portable export, byte comparisons and all 17 tests. Minecraft screenshots and architectural review remain **NOT RUN**; no design change was made.
