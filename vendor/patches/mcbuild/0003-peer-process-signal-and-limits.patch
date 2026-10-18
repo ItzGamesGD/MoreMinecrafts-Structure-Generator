@@ -315,7 +315,7 @@ diff --git a/src/mcbuild/dsl/os_confinement.py b/src/mcbuild/dsl/os_confinement.
 +        249,
 +        250,  # kernel keyrings
 +        # Review finding: same-user process interference via kill/prlimit.
-+        62,   # kill
++        62,  # kill
 +        129,  # rt_sigqueueinfo
 +        200,  # tkill
 +        234,  # tgkill

@@ -111,7 +111,7 @@ _DENIED_X86_64 = frozenset(
         249,
         250,  # kernel keyrings
         # Review finding: same-user process interference via kill/prlimit.
-        62,   # kill
+        62,  # kill
         129,  # rt_sigqueueinfo
         200,  # tkill
         234,  # tgkill
