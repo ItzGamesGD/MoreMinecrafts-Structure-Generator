@@ -71,7 +71,7 @@ exterior contact counts, mouth states, interior non-air blocks, block integrity.
 | Scenario | Verdict | Evidence |
 |---|---|---|
 | Walk each tunnel mouth → chamber door → plaza centre, and back (runtime probe) | **PASS** | 7 pinned natural sites: 250 of 252 interior legs PASS. The 2 FAILs end in fluid-filled mouths (`s3_c-29_38:door_west_to_entrance`, `s1337_c-84_3:door_north_to_entrance`), as expected (the pathfinder avoids lava/water). |
-| Plaza → stair foot → ring landing → full ring lap → back down (runtime probe) | **PASS** | All 28 stair-up legs reached the ring; each needed a jump (peak height above the landing). |
+| Plaza → stair foot → ring landing → full ring lap → back down (runtime probe, jumping allowed) | **PASS** | All 28 stair-up legs reached the ring. **Correction (SG-01-C):** the original claim that the runtime probe proved a jump was needed is withdrawn; the mob also hops on valid half-block stairs, so it cannot show this. The jump requirement rests on the static model and on the SG-01-C walk-only control run (see `sg-01c-environmental-compatibility-repair.md`). |
 | Same, static model | **PASS** with jump | Mouths reach the plaza and each other on walk-only edges; the ring needs a jump edge. |
 | Reach the structure from the surface / from outside | **BLOCKED** | 94 % of mouths are solid rock; the structure has no surface entrance by design. A player must dig or find a connecting cave. |
 | Walk from cave air into an open mouth (runtime probe) | **NOT RUN** | The simple "goal 6 blocks outward" probe could not stand on irregular cave floors, so it is inconclusive (all 28 outward probes ended FAIL, including at open mouths). Only sealed mouths are a meaningful negative control. |
@@ -111,7 +111,7 @@ decision; none was "fixed" by silently redesigning.
   suppressed, so effective frequency is about one third of the nominal random-spread rate, and 12 loaded suppressed sites
   had no trial chamber at all. Decision needed on `chunk_count`/spacing/salt.
 * **F-4 Ring landing needs a jump.** The last stair's back surface is at 8.0, the ring floor surface at 9.0, a 1.0 rise
-  (runtime: the mob only reaches the ring with a jump, static model agrees). Walkable by a player who jumps; not by
+  (static model; confirmed at runtime in SG-01-C with jumping disabled: all four stair legs stop one block below the ring on this geometry). Walkable by a player who jumps; not by
   walk-only movement. A characterisation test (`test_ring_is_reachable_but_only_with_a_jump`) pins this; an eighth stair step
   at the ring edge would remove it (geometry change, left to the owner).
 * **F-5 Terrain-sealed entrances.** See Phase 2.

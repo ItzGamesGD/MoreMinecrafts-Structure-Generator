@@ -1,0 +1,10153 @@
+{
+ "seeds": [
+  -9999,
+  -7,
+  1,
+  2,
+  3,
+  42,
+  173,
+  555,
+  1337,
+  2024,
+  9001,
+  31415,
+  271828,
+  8675309,
+  20261017,
+  123456789
+ ],
+ "sample": {
+  "seeds": 16,
+  "sites_loaded": 129,
+  "generated_sites": 97,
+  "outcomes": {
+   "generated": 97,
+   "suppressed_by_exclusion_zone": 32
+  },
+  "sg01_candidates_in_scanned_rings": 2704,
+  "candidates_predicted_suppressed_by_trial_exclusion": 1811,
+  "candidates_predicted_free": 893,
+  "prediction_vs_minecraft_mismatches": []
+ },
+ "rotations": {
+  "COUNTERCLOCKWISE_90": 23,
+  "CLOCKWISE_90": 28,
+  "CLOCKWISE_180": 21,
+  "NONE": 25
+ },
+ "plaza_biomes": {
+  "minecraft:forest": 9,
+  "minecraft:plains": 9,
+  "minecraft:ocean": 7,
+  "minecraft:taiga": 5,
+  "minecraft:lukewarm_ocean": 5,
+  "minecraft:deep_dark": 4,
+  "minecraft:dripstone_caves": 4,
+  "minecraft:river": 4,
+  "minecraft:beach": 4,
+  "minecraft:desert": 4,
+  "minecraft:deep_ocean": 4,
+  "minecraft:birch_forest": 3,
+  "minecraft:lush_caves": 3,
+  "minecraft:frozen_ocean": 3,
+  "minecraft:warm_ocean": 3,
+  "minecraft:snowy_plains": 3,
+  "minecraft:deep_cold_ocean": 2,
+  "minecraft:deep_frozen_ocean": 2,
+  "minecraft:cold_ocean": 2,
+  "minecraft:deep_lukewarm_ocean": 2,
+  "minecraft:jungle": 2,
+  "minecraft:swamp": 2,
+  "minecraft:ice_spikes": 1,
+  "minecraft:sunflower_plains": 1,
+  "minecraft:frozen_river": 1,
+  "minecraft:dappled_forest": 1,
+  "minecraft:sulfur_caves": 1,
+  "minecraft:badlands": 1,
+  "minecraft:snowy_taiga": 1,
+  "minecraft:savanna": 1,
+  "minecraft:mushroom_fields": 1,
+  "minecraft:bamboo_jungle": 1,
+  "minecraft:old_growth_birch_forest": 1
+ },
+ "surface_biomes": {
+  "minecraft:plains": 11,
+  "minecraft:forest": 10,
+  "minecraft:ocean": 8,
+  "minecraft:river": 7,
+  "minecraft:taiga": 5,
+  "minecraft:lukewarm_ocean": 5,
+  "minecraft:beach": 4,
+  "minecraft:desert": 4,
+  "minecraft:deep_ocean": 4,
+  "minecraft:birch_forest": 3,
+  "minecraft:frozen_ocean": 3,
+  "minecraft:warm_ocean": 3,
+  "minecraft:snowy_plains": 3,
+  "minecraft:deep_cold_ocean": 2,
+  "minecraft:deep_frozen_ocean": 2,
+  "minecraft:cold_ocean": 2,
+  "minecraft:deep_lukewarm_ocean": 2,
+  "minecraft:jungle": 2,
+  "minecraft:dark_forest": 2,
+  "minecraft:swamp": 2,
+  "minecraft:grove": 2,
+  "minecraft:cherry_grove": 1,
+  "minecraft:ice_spikes": 1,
+  "minecraft:sunflower_plains": 1,
+  "minecraft:frozen_river": 1,
+  "minecraft:dappled_forest": 1,
+  "minecraft:badlands": 1,
+  "minecraft:snowy_taiga": 1,
+  "minecraft:savanna": 1,
+  "minecraft:mushroom_fields": 1,
+  "minecraft:bamboo_jungle": 1,
+  "minecraft:old_growth_birch_forest": 1
+ },
+ "y_min_range": [
+  -41,
+  -21
+ ],
+ "y_top_max": -5,
+ "min_surface_clearance_above_structure_top": 67,
+ "integrity": {
+  "sites_with_all_blocks_matched_post_generation": 93,
+  "sites_with_all_blocks_matched_after_ticks": 93
+ },
+ "exterior_contact_sites": {
+  "cave_air": 85,
+  "water": 13,
+  "lava": 13,
+  "of": 97
+ },
+ "aperture_states": {
+  "blocked_by_terrain": 368,
+  "open_to_cave": 16,
+  "flooded": 4
+ },
+ "feature_overlay_sites": {
+  "deep_dark_sculk": 1,
+  "amethyst_geode": 2,
+  "monster_room": 1
+ },
+ "interior_shrieker_sites": 0,
+ "sculk_conversion_sites": [
+  {
+   "seed": -9999,
+   "chunk": [
+    51,
+    12
+   ],
+   "converted": {
+    "minecraft:deepslate_tiles -> minecraft:sculk": 2
+   },
+   "footprint_biomes": {
+    "minecraft:forest": 189,
+    "minecraft:deep_dark": 135
+   },
+   "interior_sculk": {
+    "block:minecraft:sculk_vein": 3
+   }
+  }
+ ],
+ "interior_fluid_sites": [
+  {
+   "seed": 3,
+   "chunk": [
+    -29,
+    38
+   ],
+   "interior_non_air": {
+    "block:minecraft:glow_lichen": 3,
+    "water": 23
+   },
+   "apertures": {
+    "north@592": {
+     "state": "flooded",
+     "outside": {
+      "solid": 6,
+      "water": 1,
+      "air": 5
+     },
+     "interior": {
+      "water": 5,
+      "air": 7
+     }
+    }
+   }
+  },
+  {
+   "seed": 9001,
+   "chunk": [
+    -58,
+    68
+   ],
+   "interior_non_air": {
+    "block:minecraft:glow_lichen": 2,
+    "water": 24
+   },
+   "apertures": {
+    "south@1104": {
+     "state": "flooded",
+     "outside": {
+      "solid": 11,
+      "water": 1
+     },
+     "interior": {
+      "water": 6,
+      "air": 6
+     }
+    }
+   }
+  }
+ ],
+ "interior_vegetation_sites": 75,
+ "trial_chamber_min_bb_gap_blocks": 73,
+ "trial_chamber_pairs_measured": 33,
+ "sites": [
+  {
+   "seed": -9999,
+   "chunk": [
+    -20,
+    19
+   ],
+   "plaza_biome": "minecraft:forest",
+   "surface_biome": "minecraft:forest",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -22,
+    -6
+   ],
+   "surface_clearance_above_top": 68,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -335,
+     -22,
+     249
+    ],
+    [
+     -265,
+     -6,
+     319
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:forest": 307,
+    "minecraft:taiga": 17
+   },
+   "chamber_non_air": {
+    "other_block": 2
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 16,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7668,
+    "air": 22
+   },
+   "apertures": {
+    "east@-264": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@248": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@320": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-336": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": -9999,
+   "chunk": [
+    39,
+    34
+   ],
+   "plaza_biome": "minecraft:birch_forest",
+   "surface_biome": "minecraft:birch_forest",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -35,
+    -19
+   ],
+   "surface_clearance_above_top": 83,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     569,
+     -35,
+     529
+    ],
+    [
+     639,
+     -19,
+     599
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:birch_forest": 281,
+    "minecraft:forest": 43
+   },
+   "chamber_non_air": {
+    "other_block": 1
+   },
+   "tunnel_non_air": {
+    "tunnel_north": {
+     "other_block": 1
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 123,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7573,
+    "air": 117
+   },
+   "apertures": {
+    "east@640": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 11,
+      "solid": 1
+     }
+    },
+    "north@528": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@600": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@568": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": -9999,
+   "chunk": [
+    51,
+    12
+   ],
+   "plaza_biome": "minecraft:forest",
+   "surface_biome": "minecraft:forest",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -40,
+    -24
+   ],
+   "surface_clearance_above_top": 115,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     761,
+     -40,
+     137
+    ],
+    [
+     831,
+     -24,
+     207
+    ]
+   ],
+   "blocks_matched": "8573/8575",
+   "block_conversions_after_ticks": {
+    "minecraft:deepslate_tiles -> minecraft:sculk": 2
+   },
+   "footprint_biomes": {
+    "minecraft:forest": 189,
+    "minecraft:deep_dark": 135
+   },
+   "chamber_non_air": {
+    "other_block": 14
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8573/8575",
+   "exterior_contact_blocks": {
+    "air": 58,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7635,
+    "air": 55
+   },
+   "apertures": {
+    "east@832": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@136": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@208": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@760": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 11,
+    "block:minecraft:sculk_vein": 3
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 11,
+    "block:minecraft:sculk_vein": 3
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": -9999,
+   "chunk": [
+    -34,
+    53
+   ],
+   "plaza_biome": "minecraft:taiga",
+   "surface_biome": "minecraft:taiga",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -35,
+    -19
+   ],
+   "surface_clearance_above_top": 78,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -559,
+     -35,
+     793
+    ],
+    [
+     -489,
+     -19,
+     863
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:taiga": 324
+   },
+   "chamber_non_air": {
+    "other_block": 4
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 0,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7690
+   },
+   "apertures": {
+    "east@-488": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@792": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@864": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-560": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": -9999,
+   "chunk": [
+    74,
+    21
+   ],
+   "plaza_biome": "minecraft:deep_dark",
+   "surface_biome": "minecraft:cherry_grove",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -23,
+    -7
+   ],
+   "surface_clearance_above_top": 105,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     1129,
+     -23,
+     321
+    ],
+    [
+     1199,
+     -7,
+     391
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:deep_dark": 280,
+    "minecraft:cherry_grove": 44
+   },
+   "chamber_non_air": {
+    "other_block": 4
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 61,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7623,
+    "air": 67
+   },
+   "apertures": {
+    "east@1200": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@320": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@392": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@1128": {
+     "state": "open_to_cave",
+     "outside": {
+      "solid": 9,
+      "air": 3
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      88,
+      8
+     ],
+     "chebyshev_chunks": 14,
+     "start_present": true,
+     "bb_gap_blocks": 162
+    }
+   ]
+  },
+  {
+   "seed": -9999,
+   "chunk": [
+    75,
+    -31
+   ],
+   "plaza_biome": "minecraft:dripstone_caves",
+   "surface_biome": "minecraft:river",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -35,
+    -19
+   ],
+   "surface_clearance_above_top": 81,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     1145,
+     -35,
+     -511
+    ],
+    [
+     1215,
+     -19,
+     -441
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:dripstone_caves": 142,
+    "minecraft:birch_forest": 102,
+    "minecraft:old_growth_birch_forest": 47,
+    "minecraft:river": 19,
+    "minecraft:deep_dark": 14
+   },
+   "chamber_non_air": {
+    "other_block": 8
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 67,
+    "water": 29,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7591,
+    "air": 70,
+    "water": 29
+   },
+   "apertures": {
+    "east@1216": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-512": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-440": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@1144": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 8
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 8
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      89,
+      -32
+     ],
+     "chebyshev_chunks": 14,
+     "start_present": false,
+     "bb_gap_blocks": null
+    }
+   ]
+  },
+  {
+   "seed": -7,
+   "chunk": [
+    -29,
+    15
+   ],
+   "plaza_biome": "minecraft:deep_cold_ocean",
+   "surface_biome": "minecraft:deep_cold_ocean",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -27,
+    -11
+   ],
+   "surface_clearance_above_top": 73,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -519,
+     -27,
+     225
+    ],
+    [
+     -449,
+     -11,
+     295
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:deep_cold_ocean": 324
+   },
+   "chamber_non_air": {
+    "other_block": 3
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 345,
+    "water": 0,
+    "lava": 11
+   },
+   "exterior_shell_counts": {
+    "solid": 7325,
+    "air": 354,
+    "lava": 11
+   },
+   "apertures": {
+    "east@-448": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@224": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@296": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-520": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 3
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 3
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": -7,
+   "chunk": [
+    -18,
+    37
+   ],
+   "plaza_biome": "minecraft:deep_frozen_ocean",
+   "surface_biome": "minecraft:deep_frozen_ocean",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -32,
+    -16
+   ],
+   "surface_clearance_above_top": 78,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -343,
+     -32,
+     577
+    ],
+    [
+     -273,
+     -16,
+     647
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:deep_frozen_ocean": 321,
+    "minecraft:sulfur_caves": 3
+   },
+   "chamber_non_air": {
+    "other_block": 7
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 1,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7689,
+    "air": 1
+   },
+   "apertures": {
+    "east@-272": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@576": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@648": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-344": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 7
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 7
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": -7,
+   "chunk": [
+    -50,
+    -20
+   ],
+   "plaza_biome": "minecraft:cold_ocean",
+   "surface_biome": "minecraft:cold_ocean",
+   "rotation": "NONE",
+   "y_range": [
+    -31,
+    -15
+   ],
+   "surface_clearance_above_top": 77,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -815,
+     -31,
+     -335
+    ],
+    [
+     -745,
+     -15,
+     -265
+    ]
+   ],
+   "blocks_matched": "8556/8575",
+   "block_conversions_after_ticks": {
+    "minecraft:deepslate_tiles -> minecraft:smooth_basalt": 5,
+    "minecraft:deepslate_tiles -> minecraft:calcite": 5,
+    "minecraft:deepslate_bricks -> minecraft:smooth_basalt": 4,
+    "minecraft:tuff_bricks -> minecraft:smooth_basalt": 3,
+    "minecraft:deepslate_bricks -> minecraft:calcite": 2
+   },
+   "footprint_biomes": {
+    "minecraft:cold_ocean": 295,
+    "minecraft:beach": 18,
+    "minecraft:river": 11
+   },
+   "chamber_non_air": {
+    "other_block": 209
+   },
+   "tunnel_non_air": {
+    "tunnel_south": {
+     "other_block": 14
+    },
+    "tunnel_north": {
+     "other_block": 1
+    },
+    "tunnel_west": {
+     "other_block": 1
+    }
+   },
+   "blocks_matched_after_ticks": "8556/8575",
+   "exterior_contact_blocks": {
+    "air": 356,
+    "water": 0,
+    "lava": 6
+   },
+   "exterior_shell_counts": {
+    "solid": 7289,
+    "air": 394,
+    "lava": 7
+   },
+   "apertures": {
+    "east@-744": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-336": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-264": {
+     "state": "open_to_cave",
+     "outside": {
+      "solid": 8,
+      "air": 4
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-816": {
+     "state": "open_to_cave",
+     "outside": {
+      "solid": 7,
+      "air": 5
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:cave_vines": 41,
+    "block:minecraft:cave_vines_plant": 151,
+    "block:minecraft:spore_blossom": 5,
+    "block:minecraft:vine": 10,
+    "block:minecraft:smooth_basalt": 11,
+    "block:minecraft:calcite": 3
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:cave_vines": 41,
+    "block:minecraft:cave_vines_plant": 154,
+    "block:minecraft:spore_blossom": 5,
+    "block:minecraft:vine": 11,
+    "block:minecraft:smooth_basalt": 11,
+    "block:minecraft:calcite": 3
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      -63,
+      -15
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 141
+    }
+   ]
+  },
+  {
+   "seed": -7,
+   "chunk": [
+    -54,
+    43
+   ],
+   "plaza_biome": "minecraft:deep_frozen_ocean",
+   "surface_biome": "minecraft:deep_frozen_ocean",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -27,
+    -11
+   ],
+   "surface_clearance_above_top": 73,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -879,
+     -27,
+     633
+    ],
+    [
+     -809,
+     -11,
+     703
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:deep_frozen_ocean": 324
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 49,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7636,
+    "air": 54
+   },
+   "apertures": {
+    "east@-808": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@632": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@704": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-880": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      -67,
+      41
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 178
+    }
+   ]
+  },
+  {
+   "seed": -7,
+   "chunk": [
+    50,
+    53
+   ],
+   "plaza_biome": "minecraft:ice_spikes",
+   "surface_biome": "minecraft:ice_spikes",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -34,
+    -18
+   ],
+   "surface_clearance_above_top": 86,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     745,
+     -34,
+     833
+    ],
+    [
+     815,
+     -18,
+     903
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:snowy_plains": 187,
+    "minecraft:ice_spikes": 137
+   },
+   "chamber_non_air": {
+    "other_block": 2
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 0,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7690
+   },
+   "apertures": {
+    "east@816": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@832": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@904": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@744": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": -7,
+   "chunk": [
+    -61,
+    -48
+   ],
+   "plaza_biome": "minecraft:forest",
+   "surface_biome": "minecraft:forest",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -33,
+    -17
+   ],
+   "surface_clearance_above_top": 89,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -1031,
+     -33,
+     -823
+    ],
+    [
+     -961,
+     -17,
+     -753
+    ]
+   ],
+   "blocks_matched": "8570/8575",
+   "block_conversions_after_ticks": {
+    "minecraft:deepslate_bricks -> minecraft:smooth_basalt": 5
+   },
+   "footprint_biomes": {
+    "minecraft:forest": 323,
+    "minecraft:taiga": 1
+   },
+   "chamber_non_air": {
+    "other_block": 9
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8570/8575",
+   "exterior_contact_blocks": {
+    "air": 7,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7680,
+    "air": 10
+   },
+   "apertures": {
+    "east@-960": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-824": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-752": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-1032": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 9
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 9
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 1,
+   "chunk": [
+    -33,
+    -34
+   ],
+   "plaza_biome": "minecraft:river",
+   "surface_biome": "minecraft:river",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -31,
+    -15
+   ],
+   "surface_clearance_above_top": 77,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -583,
+     -31,
+     -559
+    ],
+    [
+     -513,
+     -15,
+     -489
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:river": 233,
+    "minecraft:plains": 78,
+    "minecraft:dappled_forest": 13
+   },
+   "chamber_non_air": {
+    "other_block": 2
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 72,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7607,
+    "air": 83
+   },
+   "apertures": {
+    "east@-512": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-560": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-488": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-584": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      -28,
+      -20
+     ],
+     "chebyshev_chunks": 14,
+     "start_present": true,
+     "bb_gap_blocks": 122
+    }
+   ]
+  },
+  {
+   "seed": 1,
+   "chunk": [
+    51,
+    3
+   ],
+   "plaza_biome": "minecraft:plains",
+   "surface_biome": "minecraft:plains",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -22,
+    -6
+   ],
+   "surface_clearance_above_top": 68,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     761,
+     -22,
+     33
+    ],
+    [
+     831,
+     -6,
+     103
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:plains": 167,
+    "minecraft:river": 157
+   },
+   "chamber_non_air": {
+    "other_block": 4
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 0,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7690
+   },
+   "apertures": {
+    "east@832": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@32": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@104": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@760": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      37,
+      6
+     ],
+     "chebyshev_chunks": 14,
+     "start_present": true,
+     "bb_gap_blocks": 88
+    }
+   ]
+  },
+  {
+   "seed": 1,
+   "chunk": [
+    -21,
+    -47
+   ],
+   "plaza_biome": "minecraft:beach",
+   "surface_biome": "minecraft:beach",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -25,
+    -9
+   ],
+   "surface_clearance_above_top": 71,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -391,
+     -25,
+     -767
+    ],
+    [
+     -321,
+     -9,
+     -697
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:forest": 157,
+    "minecraft:beach": 96,
+    "minecraft:cold_ocean": 35,
+    "minecraft:plains": 15,
+    "minecraft:snowy_plains": 12,
+    "minecraft:sulfur_caves": 9
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 524,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7156,
+    "air": 534
+   },
+   "apertures": {
+    "east@-320": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-768": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-696": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-392": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      -34,
+      -56
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 106
+    }
+   ]
+  },
+  {
+   "seed": 1,
+   "chunk": [
+    20,
+    -48
+   ],
+   "plaza_biome": "minecraft:deep_cold_ocean",
+   "surface_biome": "minecraft:deep_cold_ocean",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -26,
+    -10
+   ],
+   "surface_clearance_above_top": 72,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     265,
+     -26,
+     -783
+    ],
+    [
+     335,
+     -10,
+     -713
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:deep_cold_ocean": 205,
+    "minecraft:cold_ocean": 119
+   },
+   "chamber_non_air": {
+    "other_block": 2
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 380,
+    "water": 0,
+    "lava": 1
+   },
+   "exterior_shell_counts": {
+    "solid": 7302,
+    "air": 387,
+    "lava": 1
+   },
+   "apertures": {
+    "east@336": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-784": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-712": {
+     "state": "open_to_cave",
+     "outside": {
+      "air": 6,
+      "solid": 6
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@264": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 1,
+   "chunk": [
+    70,
+    15
+   ],
+   "plaza_biome": "minecraft:sunflower_plains",
+   "surface_biome": "minecraft:sunflower_plains",
+   "rotation": "NONE",
+   "y_range": [
+    -41,
+    -25
+   ],
+   "surface_clearance_above_top": 90,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     1105,
+     -41,
+     225
+    ],
+    [
+     1175,
+     -25,
+     295
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:sunflower_plains": 214,
+    "minecraft:cherry_grove": 110
+   },
+   "chamber_non_air": {
+    "other_block": 1
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 113,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7577,
+    "air": 113
+   },
+   "apertures": {
+    "east@1176": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@224": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@296": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@1104": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      83,
+      16
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 142
+    }
+   ]
+  },
+  {
+   "seed": 1,
+   "chunk": [
+    -62,
+    52
+   ],
+   "plaza_biome": "minecraft:deep_lukewarm_ocean",
+   "surface_biome": "minecraft:deep_lukewarm_ocean",
+   "rotation": "NONE",
+   "y_range": [
+    -23,
+    -7
+   ],
+   "surface_clearance_above_top": 69,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -1007,
+     -23,
+     817
+    ],
+    [
+     -937,
+     -7,
+     887
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:deep_lukewarm_ocean": 324
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 55,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7633,
+    "air": 57
+   },
+   "apertures": {
+    "east@-936": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@816": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@888": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-1008": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": []
+  },
+  {
+   "seed": 2,
+   "chunk": [
+    -14,
+    -16
+   ],
+   "plaza_biome": "minecraft:forest",
+   "surface_biome": "minecraft:forest",
+   "rotation": "NONE",
+   "y_range": [
+    -23,
+    -7
+   ],
+   "surface_clearance_above_top": 85,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -239,
+     -23,
+     -271
+    ],
+    [
+     -169,
+     -7,
+     -201
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:forest": 324
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 207,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7475,
+    "air": 215
+   },
+   "apertures": {
+    "east@-168": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-272": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-200": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-240": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": []
+  },
+  {
+   "seed": 2,
+   "chunk": [
+    14,
+    -68
+   ],
+   "plaza_biome": "minecraft:frozen_river",
+   "surface_biome": "minecraft:frozen_river",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -29,
+    -13
+   ],
+   "surface_clearance_above_top": 75,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     169,
+     -29,
+     -1143
+    ],
+    [
+     239,
+     -13,
+     -1073
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:snowy_taiga": 235,
+    "minecraft:frozen_river": 64,
+    "minecraft:taiga": 25
+   },
+   "chamber_non_air": {
+    "other_block": 63
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 168,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7500,
+    "air": 190
+   },
+   "apertures": {
+    "east@240": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-1144": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-1072": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@168": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 5,
+    "block:minecraft:cave_vines": 11,
+    "block:minecraft:cave_vines_plant": 43,
+    "block:minecraft:vine": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 5,
+    "block:minecraft:cave_vines": 11,
+    "block:minecraft:cave_vines_plant": 46,
+    "block:minecraft:vine": 1
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      16,
+      -54
+     ],
+     "chebyshev_chunks": 14,
+     "start_present": true,
+     "bb_gap_blocks": 128
+    }
+   ]
+  },
+  {
+   "seed": 2,
+   "chunk": [
+    -59,
+    40
+   ],
+   "plaza_biome": "minecraft:river",
+   "surface_biome": "minecraft:river",
+   "rotation": "NONE",
+   "y_range": [
+    -29,
+    -13
+   ],
+   "surface_clearance_above_top": 75,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -959,
+     -29,
+     625
+    ],
+    [
+     -889,
+     -13,
+     695
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:river": 174,
+    "minecraft:beach": 73,
+    "minecraft:ocean": 69,
+    "minecraft:forest": 8
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 146,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7517,
+    "air": 173
+   },
+   "apertures": {
+    "east@-888": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@624": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@696": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-960": {
+     "state": "open_to_cave",
+     "outside": {
+      "air": 10,
+      "solid": 2
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": []
+  },
+  {
+   "seed": 2,
+   "chunk": [
+    -82,
+    4
+   ],
+   "plaza_biome": "minecraft:ocean",
+   "surface_biome": "minecraft:ocean",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -24,
+    -8
+   ],
+   "surface_clearance_above_top": 70,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -1367,
+     -24,
+     49
+    ],
+    [
+     -1297,
+     -8,
+     119
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:ocean": 324
+   },
+   "chamber_non_air": {
+    "other_block": 3
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 427,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7250,
+    "air": 440
+   },
+   "apertures": {
+    "east@-1296": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@48": {
+     "state": "open_to_cave",
+     "outside": {
+      "air": 11,
+      "solid": 1
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@120": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-1368": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 3
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 3
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      -95,
+      7
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 82
+    }
+   ]
+  },
+  {
+   "seed": 2,
+   "chunk": [
+    37,
+    74
+   ],
+   "plaza_biome": "minecraft:forest",
+   "surface_biome": "minecraft:forest",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -22,
+    -6
+   ],
+   "surface_clearance_above_top": 68,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     537,
+     -22,
+     1129
+    ],
+    [
+     607,
+     -6,
+     1199
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:forest": 244,
+    "minecraft:river": 77,
+    "minecraft:taiga": 3
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 0,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7690
+   },
+   "apertures": {
+    "east@608": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@1128": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@1200": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@536": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      50,
+      79
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 151
+    }
+   ]
+  },
+  {
+   "seed": 2,
+   "chunk": [
+    -15,
+    85
+   ],
+   "plaza_biome": "minecraft:ocean",
+   "surface_biome": "minecraft:ocean",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -36,
+    -20
+   ],
+   "surface_clearance_above_top": 82,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -295,
+     -36,
+     1305
+    ],
+    [
+     -225,
+     -20,
+     1375
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:ocean": 316,
+    "minecraft:old_growth_birch_forest": 8
+   },
+   "chamber_non_air": {
+    "other_block": 5
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 68,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7626,
+    "air": 64
+   },
+   "apertures": {
+    "east@-224": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@1304": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@1376": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-296": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 5
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 5
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 3,
+   "chunk": [
+    -21,
+    -16
+   ],
+   "plaza_biome": "minecraft:jungle",
+   "surface_biome": "minecraft:jungle",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -31,
+    -15
+   ],
+   "surface_clearance_above_top": 77,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -391,
+     -31,
+     -271
+    ],
+    [
+     -321,
+     -15,
+     -201
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:jungle": 236,
+    "minecraft:river": 69,
+    "minecraft:sparse_jungle": 19
+   },
+   "chamber_non_air": {
+    "other_block": 1
+   },
+   "tunnel_non_air": {
+    "tunnel_south": {
+     "other_block": 1
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 0,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7690
+   },
+   "apertures": {
+    "east@-320": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-272": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-200": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-392": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 11,
+      "solid": 1
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 3,
+   "chunk": [
+    34,
+    13
+   ],
+   "plaza_biome": "minecraft:plains",
+   "surface_biome": "minecraft:plains",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -27,
+    -11
+   ],
+   "surface_clearance_above_top": 73,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     489,
+     -27,
+     153
+    ],
+    [
+     559,
+     -11,
+     223
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:plains": 158,
+    "minecraft:river": 139,
+    "minecraft:beach": 27
+   },
+   "chamber_non_air": {
+    "other_block": 2
+   },
+   "tunnel_non_air": {
+    "tunnel_north": {
+     "other_block": 2
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 327,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7345,
+    "air": 345
+   },
+   "apertures": {
+    "east@560": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@152": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@224": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 10,
+      "solid": 2
+     }
+    },
+    "west@488": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 3,
+   "chunk": [
+    -29,
+    38
+   ],
+   "plaza_biome": "minecraft:dripstone_caves",
+   "surface_biome": "minecraft:dark_forest",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -28,
+    -12
+   ],
+   "surface_clearance_above_top": 84,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -519,
+     -28,
+     593
+    ],
+    [
+     -449,
+     -12,
+     663
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:dripstone_caves": 324
+   },
+   "chamber_non_air": {
+    "other_block": 3
+   },
+   "tunnel_non_air": {
+    "tunnel_west": {
+     "fluid": 23
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 405,
+    "water": 70,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7190,
+    "air": 431,
+    "water": 69
+   },
+   "apertures": {
+    "east@-448": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@592": {
+     "state": "flooded",
+     "outside": {
+      "solid": 6,
+      "water": 1,
+      "air": 5
+     },
+     "interior": {
+      "water": 5,
+      "air": 7
+     }
+    },
+    "south@664": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-520": {
+     "state": "open_to_cave",
+     "outside": {
+      "solid": 6,
+      "air": 6
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 3,
+    "water": 23
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 3,
+    "water": 23
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 3,
+   "chunk": [
+    34,
+    47
+   ],
+   "plaza_biome": "minecraft:dappled_forest",
+   "surface_biome": "minecraft:dappled_forest",
+   "rotation": "NONE",
+   "y_range": [
+    -33,
+    -17
+   ],
+   "surface_clearance_above_top": 79,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     529,
+     -33,
+     737
+    ],
+    [
+     599,
+     -17,
+     807
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:dappled_forest": 241,
+    "minecraft:river": 81,
+    "minecraft:plains": 2
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 303,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7390,
+    "air": 300
+   },
+   "apertures": {
+    "east@600": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@736": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@808": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@528": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": []
+  },
+  {
+   "seed": 3,
+   "chunk": [
+    75,
+    1
+   ],
+   "plaza_biome": "minecraft:taiga",
+   "surface_biome": "minecraft:taiga",
+   "rotation": "NONE",
+   "y_range": [
+    -33,
+    -17
+   ],
+   "surface_clearance_above_top": 81,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     1185,
+     -33,
+     1
+    ],
+    [
+     1255,
+     -17,
+     71
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:taiga": 300,
+    "minecraft:old_growth_spruce_taiga": 24
+   },
+   "chamber_non_air": {
+    "other_block": 1
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 58,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7632,
+    "air": 58
+   },
+   "apertures": {
+    "east@1256": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@0": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@72": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@1184": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      74,
+      14
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 105
+    }
+   ]
+  },
+  {
+   "seed": 3,
+   "chunk": [
+    73,
+    -24
+   ],
+   "plaza_biome": "minecraft:plains",
+   "surface_biome": "minecraft:plains",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -25,
+    -9
+   ],
+   "surface_clearance_above_top": 78,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     1153,
+     -25,
+     -439
+    ],
+    [
+     1223,
+     -9,
+     -369
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:plains": 324
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 34,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7646,
+    "air": 44
+   },
+   "apertures": {
+    "east@1224": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-440": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-368": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@1152": {
+     "state": "open_to_cave",
+     "outside": {
+      "air": 6,
+      "solid": 6
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": []
+  },
+  {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "plaza_biome": "minecraft:lush_caves",
+   "surface_biome": "minecraft:ocean",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -27,
+    -11
+   ],
+   "surface_clearance_above_top": 73,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     9,
+     -27,
+     193
+    ],
+    [
+     79,
+     -11,
+     263
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:lush_caves": 324
+   },
+   "chamber_non_air": {
+    "other_block": 173
+   },
+   "tunnel_non_air": {
+    "tunnel_south": {
+     "other_block": 4
+    },
+    "tunnel_north": {
+     "other_block": 4
+    },
+    "tunnel_west": {
+     "other_block": 8
+    },
+    "tunnel_east": {
+     "other_block": 4
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 218,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7466,
+    "air": 224
+   },
+   "apertures": {
+    "east@80": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@192": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@264": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@8": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:vine": 32,
+    "block:minecraft:cave_vines": 40,
+    "block:minecraft:cave_vines_plant": 104,
+    "block:minecraft:glow_lichen": 6,
+    "block:minecraft:spore_blossom": 5
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:cave_vines": 40,
+    "block:minecraft:vine": 33,
+    "block:minecraft:cave_vines_plant": 109,
+    "block:minecraft:glow_lichen": 6,
+    "block:minecraft:spore_blossom": 5
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      17,
+      7
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 168
+    }
+   ]
+  },
+  {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "plaza_biome": "minecraft:beach",
+   "surface_biome": "minecraft:beach",
+   "rotation": "NONE",
+   "y_range": [
+    -31,
+    -15
+   ],
+   "surface_clearance_above_top": 77,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     81,
+     -31,
+     -319
+    ],
+    [
+     151,
+     -15,
+     -249
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:dark_forest": 193,
+    "minecraft:stony_shore": 69,
+    "minecraft:beach": 41,
+    "minecraft:old_growth_birch_forest": 20,
+    "minecraft:river": 1
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 17,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7673,
+    "air": 17
+   },
+   "apertures": {
+    "east@152": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-320": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-248": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@80": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      19,
+      -15
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 142
+    }
+   ]
+  },
+  {
+   "seed": 42,
+   "chunk": [
+    -17,
+    -24
+   ],
+   "plaza_biome": "minecraft:birch_forest",
+   "surface_biome": "minecraft:birch_forest",
+   "rotation": "NONE",
+   "y_range": [
+    -25,
+    -9
+   ],
+   "surface_clearance_above_top": 78,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -287,
+     -25,
+     -399
+    ],
+    [
+     -217,
+     -9,
+     -329
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:birch_forest": 268,
+    "minecraft:dark_forest": 56
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 25,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7662,
+    "air": 28
+   },
+   "apertures": {
+    "east@-216": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-400": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-328": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-288": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": []
+  },
+  {
+   "seed": 42,
+   "chunk": [
+    -17,
+    -50
+   ],
+   "plaza_biome": "minecraft:ocean",
+   "surface_biome": "minecraft:ocean",
+   "rotation": "NONE",
+   "y_range": [
+    -27,
+    -11
+   ],
+   "surface_clearance_above_top": 73,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -287,
+     -27,
+     -815
+    ],
+    [
+     -217,
+     -11,
+     -745
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:ocean": 303,
+    "minecraft:beach": 21
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {
+    "tunnel_south": {
+     "other_block": 1
+    },
+    "tunnel_north": {
+     "other_block": 1
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 64,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7620,
+    "air": 70
+   },
+   "apertures": {
+    "east@-216": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-816": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "solid": 1,
+      "air": 11
+     }
+    },
+    "south@-744": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 11,
+      "solid": 1
+     }
+    },
+    "west@-288": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 42,
+   "chunk": [
+    21,
+    -49
+   ],
+   "plaza_biome": "minecraft:plains",
+   "surface_biome": "minecraft:plains",
+   "rotation": "NONE",
+   "y_range": [
+    -21,
+    -5
+   ],
+   "surface_clearance_above_top": 67,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     321,
+     -21,
+     -799
+    ],
+    [
+     391,
+     -5,
+     -729
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:plains": 311,
+    "minecraft:river": 13
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 34,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7656,
+    "air": 34
+   },
+   "apertures": {
+    "east@392": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-800": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-728": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@320": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": []
+  },
+  {
+   "seed": 42,
+   "chunk": [
+    -29,
+    53
+   ],
+   "plaza_biome": "minecraft:ocean",
+   "surface_biome": "minecraft:ocean",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -23,
+    -7
+   ],
+   "surface_clearance_above_top": 69,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -519,
+     -23,
+     833
+    ],
+    [
+     -449,
+     -7,
+     903
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:ocean": 203,
+    "minecraft:beach": 121
+   },
+   "chamber_non_air": {
+    "other_block": 4
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 214,
+    "water": 3,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7455,
+    "air": 232,
+    "water": 3
+   },
+   "apertures": {
+    "east@-448": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@832": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@904": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-520": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      -15,
+      50
+     ],
+     "chebyshev_chunks": 14,
+     "start_present": true,
+     "bb_gap_blocks": 162
+    }
+   ]
+  },
+  {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "plaza_biome": "minecraft:plains",
+   "surface_biome": "minecraft:plains",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -36,
+    -20
+   ],
+   "surface_clearance_above_top": 97,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -359,
+     -36,
+     185
+    ],
+    [
+     -289,
+     -20,
+     255
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:plains": 265,
+    "minecraft:cherry_grove": 59
+   },
+   "chamber_non_air": {
+    "other_block": 4
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 0,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7690
+   },
+   "apertures": {
+    "east@-288": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@184": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@256": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-360": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      -16,
+      2
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 124
+    }
+   ]
+  },
+  {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "plaza_biome": "minecraft:forest",
+   "surface_biome": "minecraft:forest",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -41,
+    -25
+   ],
+   "surface_clearance_above_top": 87,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -303,
+     -41,
+     521
+    ],
+    [
+     -233,
+     -25,
+     591
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:forest": 227,
+    "minecraft:river": 63,
+    "minecraft:plains": 34
+   },
+   "chamber_non_air": {
+    "other_block": 1
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 14,
+    "water": 2,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7671,
+    "water": 2,
+    "air": 17
+   },
+   "apertures": {
+    "east@-232": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@520": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@592": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-304": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 173,
+   "chunk": [
+    -64,
+    8
+   ],
+   "plaza_biome": "minecraft:lukewarm_ocean",
+   "surface_biome": "minecraft:lukewarm_ocean",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -23,
+    -7
+   ],
+   "surface_clearance_above_top": 69,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -1079,
+     -23,
+     113
+    ],
+    [
+     -1009,
+     -7,
+     183
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:lukewarm_ocean": 264,
+    "minecraft:deep_lukewarm_ocean": 60
+   },
+   "chamber_non_air": {
+    "other_block": 2
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 93,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7583,
+    "air": 107
+   },
+   "apertures": {
+    "east@-1008": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@112": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@184": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-1080": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      -51,
+      17
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 164
+    }
+   ]
+  },
+  {
+   "seed": 173,
+   "chunk": [
+    -83,
+    -15
+   ],
+   "plaza_biome": "minecraft:beach",
+   "surface_biome": "minecraft:beach",
+   "rotation": "NONE",
+   "y_range": [
+    -25,
+    -9
+   ],
+   "surface_clearance_above_top": 71,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -1343,
+     -25,
+     -255
+    ],
+    [
+     -1273,
+     -9,
+     -185
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:beach": 297,
+    "minecraft:savanna": 14,
+    "minecraft:lukewarm_ocean": 13
+   },
+   "chamber_non_air": {
+    "other_block": 1
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 228,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7453,
+    "air": 237
+   },
+   "apertures": {
+    "east@-1272": {
+     "state": "open_to_cave",
+     "outside": {
+      "solid": 3,
+      "air": 9
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-256": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-184": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-1344": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 173,
+   "chunk": [
+    14,
+    -90
+   ],
+   "plaza_biome": "minecraft:plains",
+   "surface_biome": "minecraft:plains",
+   "rotation": "NONE",
+   "y_range": [
+    -35,
+    -19
+   ],
+   "surface_clearance_above_top": 81,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     209,
+     -35,
+     -1455
+    ],
+    [
+     279,
+     -19,
+     -1385
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:plains": 324
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {
+    "tunnel_north": {
+     "other_block": 1
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 681,
+    "water": 0,
+    "lava": 44
+   },
+   "exterior_shell_counts": {
+    "solid": 6927,
+    "air": 717,
+    "lava": 46
+   },
+   "apertures": {
+    "east@280": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-1456": {
+     "state": "flooded",
+     "outside": {
+      "solid": 9,
+      "lava": 3
+     },
+     "interior": {
+      "air": 11,
+      "solid": 1
+     }
+    },
+    "south@-1384": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@208": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      0,
+      -93
+     ],
+     "chebyshev_chunks": 14,
+     "start_present": true,
+     "bb_gap_blocks": 180
+    }
+   ]
+  },
+  {
+   "seed": 173,
+   "chunk": [
+    -47,
+    -85
+   ],
+   "plaza_biome": "minecraft:ocean",
+   "surface_biome": "minecraft:ocean",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -27,
+    -11
+   ],
+   "surface_clearance_above_top": 73,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -807,
+     -27,
+     -1415
+    ],
+    [
+     -737,
+     -11,
+     -1345
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:ocean": 324
+   },
+   "chamber_non_air": {
+    "other_block": 8
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 0,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7690
+   },
+   "apertures": {
+    "east@-736": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-1416": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-1344": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-808": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 8
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 8
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      -50,
+      -98
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 81
+    }
+   ]
+  },
+  {
+   "seed": 173,
+   "chunk": [
+    324,
+    309
+   ],
+   "plaza_biome": "minecraft:lukewarm_ocean",
+   "surface_biome": "minecraft:lukewarm_ocean",
+   "rotation": "NONE",
+   "y_range": [
+    -37,
+    -21
+   ],
+   "surface_clearance_above_top": 83,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     5169,
+     -37,
+     4929
+    ],
+    [
+     5239,
+     -21,
+     4999
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:lukewarm_ocean": 291,
+    "minecraft:beach": 21,
+    "minecraft:river": 12
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {
+    "tunnel_south": {
+     "other_block": 2
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 194,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7481,
+    "air": 209
+   },
+   "apertures": {
+    "east@5240": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@4928": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@5000": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 10,
+      "solid": 2
+     }
+    },
+    "west@5168": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 555,
+   "chunk": [
+    37,
+    15
+   ],
+   "plaza_biome": "minecraft:swamp",
+   "surface_biome": "minecraft:swamp",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -32,
+    -16
+   ],
+   "surface_clearance_above_top": 78,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     577,
+     -32,
+     185
+    ],
+    [
+     647,
+     -16,
+     255
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:swamp": 206,
+    "minecraft:snowy_plains": 60,
+    "minecraft:dappled_forest": 27,
+    "minecraft:river": 25,
+    "minecraft:plains": 6
+   },
+   "chamber_non_air": {
+    "other_block": 2
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 18,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7672,
+    "air": 18
+   },
+   "apertures": {
+    "east@648": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@184": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@256": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@576": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      50,
+      10
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 73
+    }
+   ]
+  },
+  {
+   "seed": 555,
+   "chunk": [
+    52,
+    -14
+   ],
+   "plaza_biome": "minecraft:sulfur_caves",
+   "surface_biome": "minecraft:plains",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -32,
+    -16
+   ],
+   "surface_clearance_above_top": 78,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     777,
+     -32,
+     -239
+    ],
+    [
+     847,
+     -16,
+     -169
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:sulfur_caves": 324
+   },
+   "chamber_non_air": {
+    "other_block": 1
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 251,
+    "water": 74,
+    "lava": 2
+   },
+   "exterior_shell_counts": {
+    "solid": 7359,
+    "air": 254,
+    "water": 74,
+    "lava": 3
+   },
+   "apertures": {
+    "east@848": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-240": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-168": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@776": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 555,
+   "chunk": [
+    -18,
+    55
+   ],
+   "plaza_biome": "minecraft:taiga",
+   "surface_biome": "minecraft:taiga",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -38,
+    -22
+   ],
+   "surface_clearance_above_top": 84,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -343,
+     -38,
+     865
+    ],
+    [
+     -273,
+     -22,
+     935
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:taiga": 246,
+    "minecraft:snowy_taiga": 70,
+    "minecraft:snowy_beach": 8
+   },
+   "chamber_non_air": {
+    "other_block": 5
+   },
+   "tunnel_non_air": {
+    "tunnel_west": {
+     "other_block": 1
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 514,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "air": 546,
+    "solid": 7144
+   },
+   "apertures": {
+    "east@-272": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@864": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "solid": 1,
+      "air": 11
+     }
+    },
+    "south@936": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-344": {
+     "state": "open_to_cave",
+     "outside": {
+      "solid": 9,
+      "air": 3
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 6
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 6
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      -24,
+      41
+     ],
+     "chebyshev_chunks": 14,
+     "start_present": true,
+     "bb_gap_blocks": 157
+    }
+   ]
+  },
+  {
+   "seed": 555,
+   "chunk": [
+    52,
+    36
+   ],
+   "plaza_biome": "minecraft:swamp",
+   "surface_biome": "minecraft:swamp",
+   "rotation": "NONE",
+   "y_range": [
+    -21,
+    -5
+   ],
+   "surface_clearance_above_top": 67,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     817,
+     -21,
+     561
+    ],
+    [
+     887,
+     -5,
+     631
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:swamp": 252,
+    "minecraft:forest": 63,
+    "minecraft:plains": 7,
+    "minecraft:snowy_plains": 2
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 5,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7685,
+    "air": 5
+   },
+   "apertures": {
+    "east@888": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@560": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@632": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@816": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": []
+  },
+  {
+   "seed": 555,
+   "chunk": [
+    16,
+    -64
+   ],
+   "plaza_biome": "minecraft:plains",
+   "surface_biome": "minecraft:plains",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -41,
+    -25
+   ],
+   "surface_clearance_above_top": 87,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     241,
+     -41,
+     -1079
+    ],
+    [
+     311,
+     -25,
+     -1009
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:beach": 165,
+    "minecraft:river": 62,
+    "minecraft:plains": 59,
+    "minecraft:dappled_forest": 38
+   },
+   "chamber_non_air": {
+    "other_block": 3
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 133,
+    "water": 7,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7548,
+    "air": 135,
+    "water": 7
+   },
+   "apertures": {
+    "east@312": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-1080": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-1008": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@240": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 3
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 3
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 555,
+   "chunk": [
+    -22,
+    -63
+   ],
+   "plaza_biome": "minecraft:frozen_ocean",
+   "surface_biome": "minecraft:frozen_ocean",
+   "rotation": "NONE",
+   "y_range": [
+    -33,
+    -17
+   ],
+   "surface_clearance_above_top": 79,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -367,
+     -33,
+     -1023
+    ],
+    [
+     -297,
+     -17,
+     -953
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:frozen_ocean": 249,
+    "minecraft:snowy_beach": 70,
+    "minecraft:frozen_river": 5
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 182,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7509,
+    "air": 181
+   },
+   "apertures": {
+    "east@-296": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-1024": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-952": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-368": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": []
+  },
+  {
+   "seed": 1337,
+   "chunk": [
+    -13,
+    21
+   ],
+   "plaza_biome": "minecraft:desert",
+   "surface_biome": "minecraft:desert",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -37,
+    -21
+   ],
+   "surface_clearance_above_top": 83,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -263,
+     -37,
+     281
+    ],
+    [
+     -193,
+     -21,
+     351
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:desert": 259,
+    "minecraft:dripstone_caves": 37,
+    "minecraft:river": 28
+   },
+   "chamber_non_air": {
+    "other_block": 5
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 196,
+    "water": 0,
+    "lava": 12
+   },
+   "exterior_shell_counts": {
+    "solid": 7472,
+    "air": 206,
+    "lava": 12
+   },
+   "apertures": {
+    "east@-192": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@280": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@352": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-264": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 5
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 5
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 1337,
+   "chunk": [
+    19,
+    44
+   ],
+   "plaza_biome": "minecraft:plains",
+   "surface_biome": "minecraft:plains",
+   "rotation": "NONE",
+   "y_range": [
+    -40,
+    -24
+   ],
+   "surface_clearance_above_top": 86,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     289,
+     -40,
+     689
+    ],
+    [
+     359,
+     -24,
+     759
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:plains": 314,
+    "minecraft:savanna": 6,
+    "minecraft:river": 4
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 250,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7429,
+    "air": 261
+   },
+   "apertures": {
+    "east@360": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@688": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@760": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@288": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      5,
+      47
+     ],
+     "chebyshev_chunks": 14,
+     "start_present": true,
+     "bb_gap_blocks": 162
+    }
+   ]
+  },
+  {
+   "seed": 1337,
+   "chunk": [
+    51,
+    8
+   ],
+   "plaza_biome": "minecraft:lush_caves",
+   "surface_biome": "minecraft:river",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -21,
+    -5
+   ],
+   "surface_clearance_above_top": 67,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     801,
+     -21,
+     73
+    ],
+    [
+     871,
+     -5,
+     143
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:lush_caves": 293,
+    "minecraft:bamboo_jungle": 14,
+    "minecraft:jungle": 13,
+    "minecraft:river": 4
+   },
+   "chamber_non_air": {
+    "other_block": 188
+   },
+   "tunnel_non_air": {
+    "tunnel_north": {
+     "other_block": 7
+    },
+    "tunnel_east": {
+     "other_block": 1
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 0,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7690
+   },
+   "apertures": {
+    "east@872": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@72": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@144": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@800": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2,
+    "block:minecraft:cave_vines": 41,
+    "block:minecraft:vine": 18,
+    "block:minecraft:cave_vines_plant": 128,
+    "block:minecraft:spore_blossom": 4
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2,
+    "block:minecraft:cave_vines": 41,
+    "block:minecraft:vine": 19,
+    "block:minecraft:cave_vines_plant": 130,
+    "block:minecraft:spore_blossom": 4
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 1337,
+   "chunk": [
+    -49,
+    -31
+   ],
+   "plaza_biome": "minecraft:desert",
+   "surface_biome": "minecraft:desert",
+   "rotation": "NONE",
+   "y_range": [
+    -27,
+    -11
+   ],
+   "surface_clearance_above_top": 73,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -799,
+     -27,
+     -511
+    ],
+    [
+     -729,
+     -11,
+     -441
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:desert": 324
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 643,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7035,
+    "air": 655
+   },
+   "apertures": {
+    "east@-728": {
+     "state": "open_to_cave",
+     "outside": {
+      "solid": 6,
+      "air": 6
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-512": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-440": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-800": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": []
+  },
+  {
+   "seed": 1337,
+   "chunk": [
+    -28,
+    -59
+   ],
+   "plaza_biome": "minecraft:warm_ocean",
+   "surface_biome": "minecraft:warm_ocean",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -28,
+    -12
+   ],
+   "surface_clearance_above_top": 74,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -503,
+     -28,
+     -999
+    ],
+    [
+     -433,
+     -12,
+     -929
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:warm_ocean": 215,
+    "minecraft:desert": 106,
+    "minecraft:river": 3
+   },
+   "chamber_non_air": {
+    "other_block": 3
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 234,
+    "water": 10,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7428,
+    "air": 252,
+    "water": 10
+   },
+   "apertures": {
+    "east@-432": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-1000": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-928": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-504": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 3
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 3
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      -15,
+      -52
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 182
+    }
+   ]
+  },
+  {
+   "seed": 1337,
+   "chunk": [
+    -84,
+    3
+   ],
+   "plaza_biome": "minecraft:warm_ocean",
+   "surface_biome": "minecraft:warm_ocean",
+   "rotation": "NONE",
+   "y_range": [
+    -41,
+    -25
+   ],
+   "surface_clearance_above_top": 87,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -1359,
+     -41,
+     33
+    ],
+    [
+     -1289,
+     -25,
+     103
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:warm_ocean": 324
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 98,
+    "water": 0,
+    "lava": 18
+   },
+   "exterior_shell_counts": {
+    "solid": 7571,
+    "air": 102,
+    "lava": 17
+   },
+   "apertures": {
+    "east@-1288": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@32": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@104": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-1360": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": []
+  },
+  {
+   "seed": 2024,
+   "chunk": [
+    54,
+    4
+   ],
+   "plaza_biome": "minecraft:desert",
+   "surface_biome": "minecraft:desert",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -28,
+    -12
+   ],
+   "surface_clearance_above_top": 74,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     849,
+     -28,
+     9
+    ],
+    [
+     919,
+     -12,
+     79
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:desert": 155,
+    "minecraft:wooded_badlands": 84,
+    "minecraft:river": 55,
+    "minecraft:stony_shore": 26,
+    "minecraft:badlands": 4
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {
+    "tunnel_east": {
+     "other_block": 1
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 0,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7690
+   },
+   "apertures": {
+    "east@920": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@8": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 11,
+      "solid": 1
+     }
+    },
+    "south@80": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@848": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      48,
+      17
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 125
+    }
+   ]
+  },
+  {
+   "seed": 2024,
+   "chunk": [
+    52,
+    -32
+   ],
+   "plaza_biome": "minecraft:river",
+   "surface_biome": "minecraft:river",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -34,
+    -18
+   ],
+   "surface_clearance_above_top": 80,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     817,
+     -34,
+     -567
+    ],
+    [
+     887,
+     -18,
+     -497
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:wooded_badlands": 215,
+    "minecraft:lush_caves": 66,
+    "minecraft:river": 43
+   },
+   "chamber_non_air": {
+    "other_block": 159
+   },
+   "tunnel_non_air": {
+    "tunnel_west": {
+     "other_block": 1
+    },
+    "tunnel_east": {
+     "other_block": 4
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 185,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7482,
+    "air": 208
+   },
+   "apertures": {
+    "east@888": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-568": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-496": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@816": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:cave_vines": 34,
+    "block:minecraft:cave_vines_plant": 99,
+    "block:minecraft:vine": 12,
+    "block:minecraft:glow_lichen": 3,
+    "block:minecraft:spore_blossom": 6
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:cave_vines": 34,
+    "block:minecraft:cave_vines_plant": 107,
+    "block:minecraft:vine": 14,
+    "block:minecraft:glow_lichen": 3,
+    "block:minecraft:spore_blossom": 6
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 2024,
+   "chunk": [
+    69,
+    0
+   ],
+   "plaza_biome": "minecraft:badlands",
+   "surface_biome": "minecraft:badlands",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -37,
+    -21
+   ],
+   "surface_clearance_above_top": 83,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     1089,
+     -37,
+     -55
+    ],
+    [
+     1159,
+     -21,
+     15
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:badlands": 118,
+    "minecraft:deep_dark": 109,
+    "minecraft:river": 87,
+    "minecraft:wooded_badlands": 10
+   },
+   "chamber_non_air": {
+    "other_block": 3
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 183,
+    "water": 0,
+    "lava": 28
+   },
+   "exterior_shell_counts": {
+    "solid": 7472,
+    "air": 190,
+    "lava": 28
+   },
+   "apertures": {
+    "east@1160": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-56": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@16": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@1088": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 3
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 3
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      82,
+      14
+     ],
+     "chebyshev_chunks": 14,
+     "start_present": true,
+     "bb_gap_blocks": 155
+    }
+   ]
+  },
+  {
+   "seed": 2024,
+   "chunk": [
+    77,
+    -18
+   ],
+   "plaza_biome": "minecraft:warm_ocean",
+   "surface_biome": "minecraft:warm_ocean",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -32,
+    -16
+   ],
+   "surface_clearance_above_top": 78,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     1177,
+     -32,
+     -343
+    ],
+    [
+     1247,
+     -16,
+     -273
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:warm_ocean": 308,
+    "minecraft:desert": 8,
+    "minecraft:river": 6,
+    "minecraft:stony_shore": 2
+   },
+   "chamber_non_air": {
+    "other_block": 46
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 314,
+    "water": 0,
+    "lava": 13
+   },
+   "exterior_shell_counts": {
+    "solid": 7358,
+    "air": 321,
+    "lava": 11
+   },
+   "apertures": {
+    "east@1248": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-344": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-272": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@1176": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 7,
+    "block:minecraft:cave_vines": 8,
+    "block:minecraft:cave_vines_plant": 27,
+    "block:minecraft:vine": 1,
+    "block:minecraft:spore_blossom": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 7,
+    "block:minecraft:cave_vines": 8,
+    "block:minecraft:cave_vines_plant": 29,
+    "block:minecraft:vine": 1,
+    "block:minecraft:spore_blossom": 1
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 2024,
+   "chunk": [
+    -18,
+    83
+   ],
+   "plaza_biome": "minecraft:ocean",
+   "surface_biome": "minecraft:ocean",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -35,
+    -19
+   ],
+   "surface_clearance_above_top": 81,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -303,
+     -35,
+     1273
+    ],
+    [
+     -233,
+     -19,
+     1343
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:ocean": 324
+   },
+   "chamber_non_air": {
+    "other_block": 7
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 0,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7690
+   },
+   "apertures": {
+    "east@-232": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@1272": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@1344": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-304": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 7
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 7
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      -31,
+      77
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 150
+    }
+   ]
+  },
+  {
+   "seed": 2024,
+   "chunk": [
+    51,
+    69
+   ],
+   "plaza_biome": "minecraft:lukewarm_ocean",
+   "surface_biome": "minecraft:lukewarm_ocean",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -39,
+    -23
+   ],
+   "surface_clearance_above_top": 85,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     761,
+     -39,
+     1049
+    ],
+    [
+     831,
+     -23,
+     1119
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:lukewarm_ocean": 324
+   },
+   "chamber_non_air": {
+    "other_block": 8
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 113,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7568,
+    "air": 122
+   },
+   "apertures": {
+    "east@832": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@1048": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@1120": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@760": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 8
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 8
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 9001,
+   "chunk": [
+    17,
+    3
+   ],
+   "plaza_biome": "minecraft:snowy_plains",
+   "surface_biome": "minecraft:snowy_plains",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -26,
+    -10
+   ],
+   "surface_clearance_above_top": 72,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     217,
+     -26,
+     -7
+    ],
+    [
+     287,
+     -10,
+     63
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:snowy_plains": 306,
+    "minecraft:windswept_hills": 18
+   },
+   "chamber_non_air": {
+    "other_block": 4
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 52,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7640,
+    "air": 50
+   },
+   "apertures": {
+    "east@288": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-8": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@64": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@216": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 9001,
+   "chunk": [
+    -15,
+    -13
+   ],
+   "plaza_biome": "minecraft:frozen_ocean",
+   "surface_biome": "minecraft:frozen_ocean",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -38,
+    -22
+   ],
+   "surface_clearance_above_top": 84,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -295,
+     -38,
+     -263
+    ],
+    [
+     -225,
+     -22,
+     -193
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:frozen_ocean": 226,
+    "minecraft:snowy_beach": 90,
+    "minecraft:ice_spikes": 8
+   },
+   "chamber_non_air": {
+    "other_block": 5
+   },
+   "tunnel_non_air": {
+    "tunnel_south": {
+     "other_block": 1
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 37,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7653,
+    "air": 37
+   },
+   "apertures": {
+    "east@-224": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-264": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 11,
+      "solid": 1
+     }
+    },
+    "south@-192": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-296": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 6
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 6
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 9001,
+   "chunk": [
+    68,
+    17
+   ],
+   "plaza_biome": "minecraft:snowy_taiga",
+   "surface_biome": "minecraft:snowy_taiga",
+   "rotation": "NONE",
+   "y_range": [
+    -24,
+    -8
+   ],
+   "surface_clearance_above_top": 70,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     1073,
+     -24,
+     257
+    ],
+    [
+     1143,
+     -8,
+     327
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:snowy_taiga": 287,
+    "minecraft:frozen_river": 37
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {
+    "tunnel_west": {
+     "other_block": 2
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 33,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7653,
+    "air": 37
+   },
+   "apertures": {
+    "east@1144": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@256": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@328": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@1072": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 10,
+      "solid": 2
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 9001,
+   "chunk": [
+    48,
+    -61
+   ],
+   "plaza_biome": "minecraft:frozen_ocean",
+   "surface_biome": "minecraft:frozen_ocean",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -39,
+    -23
+   ],
+   "surface_clearance_above_top": 85,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     713,
+     -39,
+     -991
+    ],
+    [
+     783,
+     -23,
+     -921
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:frozen_ocean": 286,
+    "minecraft:snowy_taiga": 37,
+    "minecraft:snowy_beach": 1
+   },
+   "chamber_non_air": {
+    "other_block": 1
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 10,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7680,
+    "air": 10
+   },
+   "apertures": {
+    "east@784": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-992": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-920": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@712": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      49,
+      -47
+     ],
+     "chebyshev_chunks": 14,
+     "start_present": true,
+     "bb_gap_blocks": 122
+    }
+   ]
+  },
+  {
+   "seed": 9001,
+   "chunk": [
+    55,
+    69
+   ],
+   "plaza_biome": "minecraft:snowy_plains",
+   "surface_biome": "minecraft:snowy_plains",
+   "rotation": "NONE",
+   "y_range": [
+    -34,
+    -18
+   ],
+   "surface_clearance_above_top": 80,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     865,
+     -34,
+     1089
+    ],
+    [
+     935,
+     -18,
+     1159
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:snowy_plains": 290,
+    "minecraft:frozen_river": 34
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 214,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7456,
+    "air": 234
+   },
+   "apertures": {
+    "east@936": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@1088": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@1160": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@864": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      41,
+      80
+     ],
+     "chebyshev_chunks": 14,
+     "start_present": true,
+     "bb_gap_blocks": 129
+    }
+   ]
+  },
+  {
+   "seed": 9001,
+   "chunk": [
+    -58,
+    68
+   ],
+   "plaza_biome": "minecraft:snowy_plains",
+   "surface_biome": "minecraft:snowy_plains",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -22,
+    -6
+   ],
+   "surface_clearance_above_top": 68,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -943,
+     -22,
+     1033
+    ],
+    [
+     -873,
+     -6,
+     1103
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:snowy_plains": 324
+   },
+   "chamber_non_air": {
+    "other_block": 2
+   },
+   "tunnel_non_air": {
+    "tunnel_west": {
+     "fluid": 24
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 7,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7680,
+    "air": 10
+   },
+   "apertures": {
+    "east@-872": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@1032": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@1104": {
+     "state": "flooded",
+     "outside": {
+      "solid": 11,
+      "water": 1
+     },
+     "interior": {
+      "water": 6,
+      "air": 6
+     }
+    },
+    "west@-944": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2,
+    "water": 24
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2,
+    "water": 24
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 31415,
+   "chunk": [
+    34,
+    3
+   ],
+   "plaza_biome": "minecraft:lush_caves",
+   "surface_biome": "minecraft:dark_forest",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -37,
+    -21
+   ],
+   "surface_clearance_above_top": 83,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     529,
+     -37,
+     -7
+    ],
+    [
+     599,
+     -21,
+     63
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:lush_caves": 324
+   },
+   "chamber_non_air": {
+    "other_block": 186
+   },
+   "tunnel_non_air": {
+    "tunnel_east": {
+     "other_block": 6
+    },
+    "tunnel_west": {
+     "other_block": 13
+    },
+    "tunnel_south": {
+     "other_block": 2
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 120,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7586,
+    "air": 104
+   },
+   "apertures": {
+    "east@600": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-8": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@64": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@528": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:vine": 26,
+    "block:minecraft:cave_vines": 39,
+    "block:minecraft:cave_vines_plant": 130,
+    "block:minecraft:spore_blossom": 3
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:vine": 30,
+    "block:minecraft:cave_vines": 39,
+    "block:minecraft:cave_vines_plant": 135,
+    "block:minecraft:spore_blossom": 3
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 31415,
+   "chunk": [
+    -27,
+    -68
+   ],
+   "plaza_biome": "minecraft:savanna",
+   "surface_biome": "minecraft:savanna",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -36,
+    -20
+   ],
+   "surface_clearance_above_top": 82,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -487,
+     -36,
+     -1103
+    ],
+    [
+     -417,
+     -20,
+     -1033
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:savanna": 166,
+    "minecraft:river": 158
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 358,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "air": 412,
+    "solid": 7278
+   },
+   "apertures": {
+    "east@-416": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-1104": {
+     "state": "open_to_cave",
+     "outside": {
+      "air": 5,
+      "solid": 7
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-1032": {
+     "state": "open_to_cave",
+     "outside": {
+      "air": 4,
+      "solid": 8
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-488": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": []
+  },
+  {
+   "seed": 31415,
+   "chunk": [
+    74,
+    2
+   ],
+   "plaza_biome": "minecraft:dripstone_caves",
+   "surface_biome": "minecraft:river",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -21,
+    -5
+   ],
+   "surface_clearance_above_top": 67,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     1129,
+     -21,
+     -23
+    ],
+    [
+     1199,
+     -5,
+     47
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:dripstone_caves": 243,
+    "minecraft:old_growth_birch_forest": 80,
+    "minecraft:birch_forest": 1
+   },
+   "chamber_non_air": {
+    "other_block": 9
+   },
+   "tunnel_non_air": {
+    "tunnel_east": {
+     "other_block": 1
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 231,
+    "water": 0,
+    "lava": 4
+   },
+   "exterior_shell_counts": {
+    "solid": 7434,
+    "air": 252,
+    "lava": 4
+   },
+   "apertures": {
+    "east@1200": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-24": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@48": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@1128": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 11,
+      "solid": 1
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2,
+    "block:minecraft:dripstone_block": 8
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2,
+    "block:minecraft:dripstone_block": 8
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 31415,
+   "chunk": [
+    -30,
+    68
+   ],
+   "plaza_biome": "minecraft:cold_ocean",
+   "surface_biome": "minecraft:cold_ocean",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -34,
+    -18
+   ],
+   "surface_clearance_above_top": 80,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -535,
+     -34,
+     1033
+    ],
+    [
+     -465,
+     -18,
+     1103
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:cold_ocean": 312,
+    "minecraft:stony_shore": 12
+   },
+   "chamber_non_air": {
+    "other_block": 5
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 84,
+    "water": 26,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7577,
+    "air": 87,
+    "water": 26
+   },
+   "apertures": {
+    "east@-464": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@1032": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@1104": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-536": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 5
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 5
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 31415,
+   "chunk": [
+    38,
+    76
+   ],
+   "plaza_biome": "minecraft:deep_dark",
+   "surface_biome": "minecraft:grove",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -26,
+    -10
+   ],
+   "surface_clearance_above_top": 108,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     553,
+     -26,
+     1201
+    ],
+    [
+     623,
+     -10,
+     1271
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:deep_dark": 309,
+    "minecraft:forest": 15
+   },
+   "chamber_non_air": {
+    "other_block": 2
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 15,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7672,
+    "air": 18
+   },
+   "apertures": {
+    "east@624": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@1200": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@1272": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@552": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      51,
+      68
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 146
+    }
+   ]
+  },
+  {
+   "seed": 31415,
+   "chunk": [
+    -68,
+    54
+   ],
+   "plaza_biome": "minecraft:forest",
+   "surface_biome": "minecraft:forest",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -21,
+    -5
+   ],
+   "surface_clearance_above_top": 88,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -1143,
+     -21,
+     809
+    ],
+    [
+     -1073,
+     -5,
+     879
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:forest": 157,
+    "minecraft:meadow": 94,
+    "minecraft:grove": 73
+   },
+   "chamber_non_air": {
+    "other_block": 5
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 0,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7690
+   },
+   "apertures": {
+    "east@-1072": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@808": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@880": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-1144": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 5
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 5
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 271828,
+   "chunk": [
+    -18,
+    -18
+   ],
+   "plaza_biome": "minecraft:beach",
+   "surface_biome": "minecraft:beach",
+   "rotation": "NONE",
+   "y_range": [
+    -31,
+    -15
+   ],
+   "surface_clearance_above_top": 77,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -303,
+     -31,
+     -303
+    ],
+    [
+     -233,
+     -15,
+     -233
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:ocean": 223,
+    "minecraft:beach": 101
+   },
+   "chamber_non_air": {
+    "other_block": 1
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 518,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7169,
+    "air": 521
+   },
+   "apertures": {
+    "east@-232": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-304": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-232": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-304": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 271828,
+   "chunk": [
+    40,
+    44
+   ],
+   "plaza_biome": "minecraft:birch_forest",
+   "surface_biome": "minecraft:birch_forest",
+   "rotation": "NONE",
+   "y_range": [
+    -31,
+    -15
+   ],
+   "surface_clearance_above_top": 77,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     625,
+     -31,
+     689
+    ],
+    [
+     695,
+     -15,
+     759
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:birch_forest": 324
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 4,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7686,
+    "air": 4
+   },
+   "apertures": {
+    "east@696": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@688": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@760": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@624": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      54,
+      44
+     ],
+     "chebyshev_chunks": 14,
+     "start_present": true,
+     "bb_gap_blocks": 122
+    }
+   ]
+  },
+  {
+   "seed": 271828,
+   "chunk": [
+    -49,
+    -48
+   ],
+   "plaza_biome": "minecraft:deep_ocean",
+   "surface_biome": "minecraft:deep_ocean",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -27,
+    -11
+   ],
+   "surface_clearance_above_top": 73,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -799,
+     -27,
+     -823
+    ],
+    [
+     -729,
+     -11,
+     -753
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:deep_ocean": 312,
+    "minecraft:ocean": 12
+   },
+   "chamber_non_air": {
+    "other_block": 1
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 67,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7617,
+    "air": 73
+   },
+   "apertures": {
+    "east@-728": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-824": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-752": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-800": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 271828,
+   "chunk": [
+    -61,
+    -33
+   ],
+   "plaza_biome": "minecraft:mushroom_fields",
+   "surface_biome": "minecraft:mushroom_fields",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -31,
+    -15
+   ],
+   "surface_clearance_above_top": 77,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -1031,
+     -31,
+     -583
+    ],
+    [
+     -961,
+     -15,
+     -513
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:mushroom_fields": 324
+   },
+   "chamber_non_air": {
+    "other_block": 7
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 370,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7300,
+    "air": 390
+   },
+   "apertures": {
+    "east@-960": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-584": {
+     "state": "open_to_cave",
+     "outside": {
+      "solid": 8,
+      "air": 4
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-512": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-1032": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 7
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 7
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      -50,
+      -20
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 176
+    }
+   ]
+  },
+  {
+   "seed": 271828,
+   "chunk": [
+    68,
+    -27
+   ],
+   "plaza_biome": "minecraft:forest",
+   "surface_biome": "minecraft:forest",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -32,
+    -16
+   ],
+   "surface_clearance_above_top": 78,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     1073,
+     -32,
+     -487
+    ],
+    [
+     1143,
+     -16,
+     -417
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:forest": 295,
+    "minecraft:ocean": 28,
+    "minecraft:stony_shore": 1
+   },
+   "chamber_non_air": {
+    "other_block": 3
+   },
+   "tunnel_non_air": {
+    "tunnel_west": {
+     "other_block": 1
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 429,
+    "water": 63,
+    "lava": 48
+   },
+   "exterior_shell_counts": {
+    "solid": 7132,
+    "air": 443,
+    "lava": 46,
+    "water": 69
+   },
+   "apertures": {
+    "east@1144": {
+     "state": "flooded",
+     "outside": {
+      "solid": 8,
+      "water": 4
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-488": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-416": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 11,
+      "solid": 1
+     }
+    },
+    "west@1072": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 271828,
+   "chunk": [
+    5,
+    86
+   ],
+   "plaza_biome": "minecraft:jungle",
+   "surface_biome": "minecraft:jungle",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -38,
+    -22
+   ],
+   "surface_clearance_above_top": 84,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     25,
+     -38,
+     1361
+    ],
+    [
+     95,
+     -22,
+     1431
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:jungle": 197,
+    "minecraft:forest": 108,
+    "minecraft:river": 19
+   },
+   "chamber_non_air": {
+    "other_block": 8
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 11,
+    "water": 33,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7640,
+    "water": 36,
+    "air": 14
+   },
+   "apertures": {
+    "east@96": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@1360": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@1432": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@24": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 8
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 8
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 8675309,
+   "chunk": [
+    -23,
+    17
+   ],
+   "plaza_biome": "minecraft:dripstone_caves",
+   "surface_biome": "minecraft:plains",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -27,
+    -11
+   ],
+   "surface_clearance_above_top": 73,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -383,
+     -27,
+     217
+    ],
+    [
+     -313,
+     -11,
+     287
+    ]
+   ],
+   "blocks_matched": "8568/8575",
+   "block_conversions_after_ticks": {
+    "minecraft:deepslate_bricks -> minecraft:cobblestone": 4,
+    "minecraft:deepslate_tiles -> minecraft:mossy_cobblestone": 3
+   },
+   "footprint_biomes": {
+    "minecraft:dripstone_caves": 310,
+    "minecraft:plains": 14
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8568/8575",
+   "exterior_contact_blocks": {
+    "air": 169,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7512,
+    "air": 178
+   },
+   "apertures": {
+    "east@-312": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@216": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@288": {
+     "state": "open_to_cave",
+     "outside": {
+      "air": 4,
+      "solid": 8
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-384": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      -25,
+      3
+     ],
+     "chebyshev_chunks": 14,
+     "start_present": true,
+     "bb_gap_blocks": 122
+    }
+   ]
+  },
+  {
+   "seed": 8675309,
+   "chunk": [
+    2,
+    51
+   ],
+   "plaza_biome": "minecraft:plains",
+   "surface_biome": "minecraft:plains",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -39,
+    -23
+   ],
+   "surface_clearance_above_top": 85,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     17,
+     -39,
+     761
+    ],
+    [
+     87,
+     -23,
+     831
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:plains": 307,
+    "minecraft:river": 15,
+    "minecraft:forest": 2
+   },
+   "chamber_non_air": {
+    "other_block": 4
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 400,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7275,
+    "air": 415
+   },
+   "apertures": {
+    "east@88": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@760": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@832": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@16": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 8675309,
+   "chunk": [
+    1,
+    -65
+   ],
+   "plaza_biome": "minecraft:deep_lukewarm_ocean",
+   "surface_biome": "minecraft:deep_lukewarm_ocean",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -23,
+    -7
+   ],
+   "surface_clearance_above_top": 69,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -39,
+     -23,
+     -1095
+    ],
+    [
+     31,
+     -7,
+     -1025
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:deep_lukewarm_ocean": 275,
+    "minecraft:lukewarm_ocean": 49
+   },
+   "chamber_non_air": {
+    "other_block": 1
+   },
+   "tunnel_non_air": {
+    "tunnel_north": {
+     "other_block": 1
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 0,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7690
+   },
+   "apertures": {
+    "east@32": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-1096": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-1024": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 11,
+      "solid": 1
+     }
+    },
+    "west@-40": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 8675309,
+   "chunk": [
+    -66,
+    44
+   ],
+   "plaza_biome": "minecraft:deep_dark",
+   "surface_biome": "minecraft:forest",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -38,
+    -22
+   ],
+   "surface_clearance_above_top": 125,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -1111,
+     -38,
+     649
+    ],
+    [
+     -1041,
+     -22,
+     719
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:deep_dark": 324
+   },
+   "chamber_non_air": {
+    "other_block": 14
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 13,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7677,
+    "air": 13
+   },
+   "apertures": {
+    "east@-1040": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@648": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@720": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-1112": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 14
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 14
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 8675309,
+   "chunk": [
+    -48,
+    -66
+   ],
+   "plaza_biome": "minecraft:desert",
+   "surface_biome": "minecraft:desert",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -24,
+    -8
+   ],
+   "surface_clearance_above_top": 70,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -823,
+     -24,
+     -1071
+    ],
+    [
+     -753,
+     -8,
+     -1001
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:desert": 324
+   },
+   "chamber_non_air": {
+    "other_block": 1
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 2,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7688,
+    "air": 2
+   },
+   "apertures": {
+    "east@-752": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-1072": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-1000": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-824": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 8675309,
+   "chunk": [
+    49,
+    -66
+   ],
+   "plaza_biome": "minecraft:deep_dark",
+   "surface_biome": "minecraft:grove",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -34,
+    -18
+   ],
+   "surface_clearance_above_top": 91,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     729,
+     -34,
+     -1071
+    ],
+    [
+     799,
+     -18,
+     -1001
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:deep_dark": 277,
+    "minecraft:forest": 47
+   },
+   "chamber_non_air": {
+    "other_block": 1
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 20,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7671,
+    "air": 19
+   },
+   "apertures": {
+    "east@800": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-1072": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-1000": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@728": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      46,
+      -53
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 105
+    }
+   ]
+  },
+  {
+   "seed": 20261017,
+   "chunk": [
+    35,
+    17
+   ],
+   "plaza_biome": "minecraft:lukewarm_ocean",
+   "surface_biome": "minecraft:lukewarm_ocean",
+   "rotation": "NONE",
+   "y_range": [
+    -24,
+    -8
+   ],
+   "surface_clearance_above_top": 70,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     545,
+     -24,
+     257
+    ],
+    [
+     615,
+     -8,
+     327
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:lukewarm_ocean": 213,
+    "minecraft:deep_lukewarm_ocean": 111
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {
+    "tunnel_west": {
+     "other_block": 1
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 51,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7639,
+    "air": 51
+   },
+   "apertures": {
+    "east@616": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@256": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@328": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@544": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "solid": 1,
+      "air": 11
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 20261017,
+   "chunk": [
+    -32,
+    34
+   ],
+   "plaza_biome": "minecraft:deep_ocean",
+   "surface_biome": "minecraft:deep_ocean",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -34,
+    -18
+   ],
+   "surface_clearance_above_top": 80,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -567,
+     -34,
+     529
+    ],
+    [
+     -497,
+     -18,
+     599
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:deep_ocean": 322,
+    "minecraft:deep_lukewarm_ocean": 2
+   },
+   "chamber_non_air": {
+    "other_block": 4
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 50,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7628,
+    "air": 62
+   },
+   "apertures": {
+    "east@-496": {
+     "state": "open_to_cave",
+     "outside": {
+      "solid": 9,
+      "air": 3
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@528": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@600": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-568": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 20261017,
+   "chunk": [
+    2,
+    53
+   ],
+   "plaza_biome": "minecraft:deep_ocean",
+   "surface_biome": "minecraft:deep_ocean",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -41,
+    -25
+   ],
+   "surface_clearance_above_top": 87,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     17,
+     -41,
+     793
+    ],
+    [
+     87,
+     -25,
+     863
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:deep_ocean": 251,
+    "minecraft:ocean": 73
+   },
+   "chamber_non_air": {
+    "other_block": 2
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 213,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7481,
+    "air": 209
+   },
+   "apertures": {
+    "east@88": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@792": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@864": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@16": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 20261017,
+   "chunk": [
+    43,
+    -48
+   ],
+   "plaza_biome": "minecraft:lukewarm_ocean",
+   "surface_biome": "minecraft:lukewarm_ocean",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -36,
+    -20
+   ],
+   "surface_clearance_above_top": 82,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     673,
+     -36,
+     -823
+    ],
+    [
+     743,
+     -20,
+     -753
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:lukewarm_ocean": 270,
+    "minecraft:deep_lukewarm_ocean": 54
+   },
+   "chamber_non_air": {
+    "other_block": 3
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 155,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7497,
+    "air": 193
+   },
+   "apertures": {
+    "east@744": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-824": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-752": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@672": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 3
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 3
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 20261017,
+   "chunk": [
+    5,
+    -65
+   ],
+   "plaza_biome": "minecraft:bamboo_jungle",
+   "surface_biome": "minecraft:bamboo_jungle",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -39,
+    -23
+   ],
+   "surface_clearance_above_top": 85,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     65,
+     -39,
+     -1095
+    ],
+    [
+     135,
+     -23,
+     -1025
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:bamboo_jungle": 322,
+    "minecraft:beach": 2
+   },
+   "chamber_non_air": {
+    "other_block": 1
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 270,
+    "water": 30,
+    "lava": 4
+   },
+   "exterior_shell_counts": {
+    "solid": 7366,
+    "air": 289,
+    "water": 30,
+    "lava": 5
+   },
+   "apertures": {
+    "east@136": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-1096": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-1024": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@64": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 20261017,
+   "chunk": [
+    -52,
+    43
+   ],
+   "plaza_biome": "minecraft:deep_ocean",
+   "surface_biome": "minecraft:deep_ocean",
+   "rotation": "NONE",
+   "y_range": [
+    -33,
+    -17
+   ],
+   "surface_clearance_above_top": 79,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -847,
+     -33,
+     673
+    ],
+    [
+     -777,
+     -17,
+     743
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:deep_ocean": 258,
+    "minecraft:deep_lukewarm_ocean": 66
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 128,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7552,
+    "air": 138
+   },
+   "apertures": {
+    "east@-776": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@672": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@744": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-848": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": []
+  },
+  {
+   "seed": 123456789,
+   "chunk": [
+    36,
+    34
+   ],
+   "plaza_biome": "minecraft:old_growth_birch_forest",
+   "surface_biome": "minecraft:old_growth_birch_forest",
+   "rotation": "CLOCKWISE_180",
+   "y_range": [
+    -34,
+    -18
+   ],
+   "surface_clearance_above_top": 80,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     521,
+     -34,
+     489
+    ],
+    [
+     591,
+     -18,
+     559
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:old_growth_birch_forest": 133,
+    "minecraft:dripstone_caves": 94,
+    "minecraft:birch_forest": 61,
+    "minecraft:dark_forest": 29,
+    "minecraft:deep_dark": 7
+   },
+   "chamber_non_air": {
+    "other_block": 2
+   },
+   "tunnel_non_air": {
+    "tunnel_west": {
+     "other_block": 2
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 58,
+    "water": 1,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7628,
+    "air": 61,
+    "water": 1
+   },
+   "apertures": {
+    "east@592": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "solid": 2,
+      "air": 10
+     }
+    },
+    "north@488": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@560": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@520": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 4
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 123456789,
+   "chunk": [
+    54,
+    14
+   ],
+   "plaza_biome": "minecraft:forest",
+   "surface_biome": "minecraft:forest",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -33,
+    -17
+   ],
+   "surface_clearance_above_top": 79,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     849,
+     -33,
+     169
+    ],
+    [
+     919,
+     -17,
+     239
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:forest": 277,
+    "minecraft:river": 47
+   },
+   "chamber_non_air": {
+    "other_block": 2
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 356,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7318,
+    "air": 372
+   },
+   "apertures": {
+    "east@920": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@168": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@240": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@848": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 123456789,
+   "chunk": [
+    -67,
+    54
+   ],
+   "plaza_biome": "minecraft:taiga",
+   "surface_biome": "minecraft:taiga",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -29,
+    -13
+   ],
+   "surface_clearance_above_top": 81,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -1127,
+     -29,
+     849
+    ],
+    [
+     -1057,
+     -13,
+     919
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:taiga": 272,
+    "minecraft:deep_dark": 52
+   },
+   "chamber_non_air": {},
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 416,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7255,
+    "air": 435
+   },
+   "apertures": {
+    "east@-1056": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@848": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@920": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-1128": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {},
+   "interior_non_air_after_ticks": {},
+   "trial_chambers": []
+  },
+  {
+   "seed": 123456789,
+   "chunk": [
+    53,
+    -68
+   ],
+   "plaza_biome": "minecraft:ocean",
+   "surface_biome": "minecraft:ocean",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -27,
+    -11
+   ],
+   "surface_clearance_above_top": 73,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     793,
+     -27,
+     -1103
+    ],
+    [
+     863,
+     -11,
+     -1033
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:ocean": 323,
+    "minecraft:river": 1
+   },
+   "chamber_non_air": {
+    "other_block": 2
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 259,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7408,
+    "air": 282
+   },
+   "apertures": {
+    "east@864": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-1104": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-1032": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@792": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 2
+   },
+   "trial_chambers": []
+  },
+  {
+   "seed": 123456789,
+   "chunk": [
+    -87,
+    6
+   ],
+   "plaza_biome": "minecraft:taiga",
+   "surface_biome": "minecraft:taiga",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "y_range": [
+    -25,
+    -9
+   ],
+   "surface_clearance_above_top": 75,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -1407,
+     -25,
+     41
+    ],
+    [
+     -1337,
+     -9,
+     111
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:taiga": 282,
+    "minecraft:stony_shore": 42
+   },
+   "chamber_non_air": {
+    "other_block": 1
+   },
+   "tunnel_non_air": {},
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 174,
+    "water": 111,
+    "lava": 35
+   },
+   "exterior_shell_counts": {
+    "solid": 7353,
+    "air": 190,
+    "water": 110,
+    "lava": 37
+   },
+   "apertures": {
+    "east@-1336": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@40": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@112": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "west@-1408": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 1
+   },
+   "trial_chambers": [
+    {
+     "candidate_chunk": [
+      -100,
+      19
+     ],
+     "chebyshev_chunks": 13,
+     "start_present": true,
+     "bb_gap_blocks": 131
+    }
+   ]
+  },
+  {
+   "seed": 123456789,
+   "chunk": [
+    -68,
+    -56
+   ],
+   "plaza_biome": "minecraft:river",
+   "surface_biome": "minecraft:river",
+   "rotation": "CLOCKWISE_90",
+   "y_range": [
+    -37,
+    -21
+   ],
+   "surface_clearance_above_top": 83,
+   "dimensions": [
+    71,
+    17,
+    71
+   ],
+   "bounds": [
+    [
+     -1143,
+     -37,
+     -911
+    ],
+    [
+     -1073,
+     -21,
+     -841
+    ]
+   ],
+   "blocks_matched": "8575/8575",
+   "block_conversions_after_ticks": {},
+   "footprint_biomes": {
+    "minecraft:river": 150,
+    "minecraft:stony_shore": 83,
+    "minecraft:plains": 82,
+    "minecraft:ocean": 8,
+    "minecraft:sunflower_plains": 1
+   },
+   "chamber_non_air": {
+    "other_block": 2
+   },
+   "tunnel_non_air": {
+    "tunnel_east": {
+     "other_block": 1
+    }
+   },
+   "blocks_matched_after_ticks": "8575/8575",
+   "exterior_contact_blocks": {
+    "air": 50,
+    "water": 0,
+    "lava": 0
+   },
+   "exterior_shell_counts": {
+    "solid": 7640,
+    "air": 50
+   },
+   "apertures": {
+    "east@-1072": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "north@-912": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    },
+    "south@-840": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 11,
+      "solid": 1
+     }
+    },
+    "west@-1144": {
+     "state": "blocked_by_terrain",
+     "outside": {
+      "solid": 12
+     },
+     "interior": {
+      "air": 12
+     }
+    }
+   },
+   "interior_non_air_post": {
+    "block:minecraft:glow_lichen": 3
+   },
+   "interior_non_air_after_ticks": {
+    "block:minecraft:glow_lichen": 3
+   },
+   "trial_chambers": []
+  }
+ ],
+ "traversal": {
+  "method": "Minecraft 26.3 runtime: player-width Zombie driven by PathNavigation/MoveControl/JumpControl and entity collision; NOT a live player",
+  "sites": 7,
+  "legs": 280,
+  "interior_legs": 252,
+  "interior_legs_pass": 251,
+  "interior_failures": [],
+  "failures_into_fluid_filled_mouths": [
+   "s3_c-29_38:door_west_to_entrance"
+  ],
+  "outward_probe_counts": {
+   "FAIL": 28
+  },
+  "mode": "walk_only",
+  "stair_up_legs": 28,
+  "stair_up_legs_pass": 28,
+  "rotations": {
+   "CLOCKWISE_90": 3,
+   "NONE": 2,
+   "CLOCKWISE_180": 1,
+   "COUNTERCLOCKWISE_90": 1
+  },
+  "completed": true
+ },
+ "synthetic": {
+  "label": "SYNTHETIC (controlled /fill against a naturally generated site); not a natural-generation result",
+  "seed": 173,
+  "site_chunk": [
+   -19,
+   15
+  ],
+  "scenarios": [
+   [
+    "water",
+    "east@-288"
+   ],
+   [
+    "lava",
+    "north@184"
+   ]
+  ],
+  "fluid_cells_by_piece_after": {
+   "tunnel_south:lava": 21,
+   "tunnel_west:water": 33
+  },
+  "integrity_after": {
+   "matched": 8575,
+   "expected_solid_blocks": 8575,
+   "mismatched": 0
+  },
+  "ticks": 2400
+ }
+}

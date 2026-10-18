@@ -13,7 +13,7 @@ templates that end in named district sockets for future content.
 The reproducible datapack is under `exports/sg-01/forgotten-underground-kingdom/datapack/`. It uses the `moreminecrafts`
 namespace, Minecraft 26.3 structure NBT (`DataVersion` 5023), data pack format 121, an independent structure set, and an
 exclusion zone against vanilla Trial Chambers. Built-in `encapsulate` is supplementary terrain adaptation. The structure
-uses the `strongholds` generation step as a candidate supported by the referenced 26.3 probe.
+uses the `vegetal_decoration` generation step (SG-01-C: it runs after the deep-dark sculk features; the earlier `strongholds` step was the PR #117-derived candidate).
 
 See `docs/sg-01/README.md` for the capability audit, design, integration handoff, validation verdicts, and reproducible
 commands. `docs/sg-01/structural-evidence.md` contains layer and section previews generated from the exported templates.

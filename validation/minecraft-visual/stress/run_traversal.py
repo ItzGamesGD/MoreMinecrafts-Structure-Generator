@@ -28,6 +28,7 @@ def main() -> None:
     p.add_argument("--sites", type=int, default=2)
     p.add_argument("--ring", type=int, default=5)
     p.add_argument("--port", type=int, default=25875)
+    p.add_argument("--allow-jump", action="store_true", help="let the mob jump (default: walk-only, jumping disabled)")
     p.add_argument("--out", type=Path, required=True)
     args = p.parse_args()
     args.out.mkdir(parents=True, exist_ok=True)
@@ -46,7 +47,7 @@ def main() -> None:
         result.unlink(missing_ok=True)
         srv = Server("", Path(), run_dir, seed, args.pack, port=args.port,
                      launcher=["./gradlew", "--no-daemon", "runServer"], launcher_cwd=args.fixture,
-                     env={"SG01_TRAVERSE_REQUEST": str(request), "SG01_TRAVERSE_RESULT": str(result)}, start_timeout=600,
+                     env={"SG01_TRAVERSE_REQUEST": str(request), "SG01_TRAVERSE_RESULT": str(result), "SG01_TRAVERSE_ALLOW_JUMP": "1" if args.allow_jump else "0"}, start_timeout=600,
                      extra_props={"difficulty": "easy", "spawn-monsters": "false"})
         try:
             free = [c for c in sorted(candidates_in_ring(seed, SG01, args.ring), key=lambda c: math.hypot(c[0] * 16, c[1] * 16))
@@ -82,7 +83,7 @@ def main() -> None:
             srv.cmd("tick sprint stop")
             rows = [json.loads(line) for line in result.read_text().splitlines()] if result.exists() else []
             rows = [r for r in rows if r["id"] != "__done__"]
-            summary.append({"seed": seed, "sites": sites, "legs": rows, "completed": done, "expected_legs": len(all_legs)})
+            summary.append({"mode": "jump_allowed" if args.allow_jump else "walk_only", "seed": seed, "sites": sites, "legs": rows, "completed": done, "expected_legs": len(all_legs)})
             print(f"seed {seed}: {len(rows)}/{len(all_legs)} legs, done={done}", flush=True)
             shutil.copy2(srv.log_path, args.out / f"traversal-server-seed-{seed}.log")
         finally:

@@ -41,13 +41,25 @@ def top_height(state: dict, i: int, j: int) -> float:
 
 
 class Assembly:
-    def __init__(self, template_dir: Path) -> None:
+    def __init__(self, template_dir: Path, turns: int = 0) -> None:
         templates = probe_jigsaw.load_templates(template_dir)
-        self.model = probe_jigsaw.expected_model(templates)  # solid blocks, chamber origin (0,0,0)
+        self.turns = turns
+        self.chamber_cells = templates["main_chamber"]["size"][0]
+        base = probe_jigsaw.expected_model(templates)  # solid blocks, chamber origin (0,0,0), rotation NONE
+        self.model = {probe_jigsaw.rotate(p, turns, self.chamber_cells): probe_jigsaw.rotate_state(st, turns) for p, st in base.items()}
         self.lo = tuple(min(p[i] for p in self.model) for i in range(3))
         self.hi = tuple(max(p[i] for p in self.model) for i in range(3))
         self.chamber_size = templates["main_chamber"]["size"]
         self._levels: dict[tuple[int, int], list[float]] = {}
+
+    def cell(self, x: int, y: int, z: int) -> tuple[int, int, int]:
+        """Chamber-local cell -> assembly cell after this assembly's rotation."""
+        return probe_jigsaw.rotate((x, y, z), self.turns, self.chamber_cells)
+
+    def point(self, x: float, z: float) -> tuple[float, float]:
+        """Chamber-local continuous (x, z) -> assembly coordinates (rotation is about the chamber's own cell grid)."""
+        cx, _, cz = self.cell(int(x), 0, int(z))
+        return cx + (x - int(x)), cz + (z - int(z))
 
     def inside(self, x: int, y: int, z: int) -> bool:
         return all(self.lo[k] <= v <= self.hi[k] for k, v in enumerate((x, y, z)))
@@ -118,30 +130,37 @@ class Assembly:
 
 
 def mouth_nodes(asm: Assembly) -> dict[str, tuple[int, int, float]]:
-    """Node just inside each tunnel mouth (feet on the tunnel floor, 1.0 above its base layer)."""
-    y = asm.lo[1] + 1.0
-    cx, cz = asm.chamber_size[0] / 2, asm.chamber_size[2] / 2
-    return {
-        "north": asm.node_at(cx, y, asm.lo[2] + 0.5), "south": asm.node_at(cx, y, asm.hi[2] + 0.5),
-        "west": asm.node_at(asm.lo[0] + 0.5, y, cz), "east": asm.node_at(asm.hi[0] + 0.5, y, cz),
-    }
+    """Node at the far end of each tunnel (feet on the tunnel floor), keyed by the chamber-local direction."""
+    n = asm.chamber_cells
+    mid = n // 2
+    far = {"north": (mid, -15 + 1), "south": (mid, n - 1 + 15 - 1), "west": (-15 + 1, mid), "east": (n - 1 + 15 - 1, mid)}
+    out = {}
+    for name, (x, z) in far.items():
+        cx, _, cz = asm.cell(x, 1, z)
+        out[name] = asm.node_at(cx + 0.5, 1.0, cz + 0.5)
+    return out
 
 
-def report(template_dir: Path) -> dict:
-    asm = Assembly(template_dir)
+RING = {"north": (20.5, 5.5), "south": (20.5, 35.5), "east": (35.5, 20.5), "west": (5.5, 20.5)}
+
+
+def report(template_dir: Path, turns: int = 0) -> dict:
+    asm = Assembly(template_dir, turns)
     mouths = mouth_nodes(asm)
-    cx, cz = asm.chamber_size[0] / 2, asm.chamber_size[2] / 2
-    plaza = asm.node_at(cx, 1.0, cz)
-    ring_targets = {"north": (20.5, 9.0, 5.5), "south": (20.5, 9.0, 35.5), "east": (35.5, 9.0, 20.5), "west": (5.5, 9.0, 20.5)}
-    out = {"method": "static geometric reachability, half-block resolution, NOT live player traversal", "mouths": {}, "ring": {}}
+    plaza = asm.node_at(*asm.point(20.5, 20.5)[:1], 1.0, asm.point(20.5, 20.5)[1])
+    out = {"method": "static geometric reachability, half-block resolution, NOT live player traversal", "rotation_quarter_turns": turns,
+           "mouths": {}}
     for name, start in mouths.items():
         for allow in (False, True):
             seen, jumps = asm.search([start], allow_jump=allow)
             key = "walk_and_jump" if allow else "walk_only"
+            ring = {}
+            for d, (x, z) in RING.items():
+                px, pz = asm.point(x, z)
+                ring[d] = asm.node_at(px, 9.0, pz) in seen
             out["mouths"].setdefault(name, {})[key] = {
                 "reaches_plaza_centre": plaza in seen,
                 "reaches_other_mouths": sorted(n for n, node in mouths.items() if node in seen and n != name),
-                "reaches_ring": {d: asm.node_at(*t) in seen for d, t in ring_targets.items()},
-                "jump_edges_used": len(jumps), "reachable_standing_nodes": len(seen),
+                "reaches_ring": ring, "jump_edges_used": len(jumps), "reachable_standing_nodes": len(seen),
             }
     return out

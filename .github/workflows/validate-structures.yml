@@ -138,7 +138,9 @@ jobs:
           python3 validation/minecraft-visual/stress/run_traversal.py --fixture validation/minecraft-visual \
             --pack "$RUNNER_TEMP/sg01-datapack" $SG01_TRAVERSAL_SITES --out "$GITHUB_WORKSPACE/sg01-stress/traversal"
       - name: Summarize and enforce invariants
+        shell: bash
         run: |
+          set -o pipefail
           python3 validation/minecraft-visual/stress/summarize.py --stress-dir sg01-stress/natural \
             --traversal sg01-stress/traversal/traversal.json --pinned validation/minecraft-visual/stress/pinned-sites.json \
             --synthetic sg01-stress/synthetic/synthetic-fluid.json \

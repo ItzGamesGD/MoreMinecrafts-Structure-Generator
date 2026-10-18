@@ -122,8 +122,9 @@ def summarize(seeds: list[dict], traversal: list[dict] | None) -> dict:
             "interior_failures": [l["id"] for _s, l in walk if l["result"] != "PASS" and l["id"].split(":")[0] not in fluid_tags],
             "failures_into_fluid_filled_mouths": [l["id"] for _s, l in walk if l["result"] != "PASS" and l["id"].split(":")[0] in fluid_tags],
             "outward_probe_counts": dict(Counter(l["result"] for _s, l in legs if ":outward_probe_" in l["id"])),
-            "stair_up_legs_requiring_jump": sum(1 for _s, l in legs if "_up_to_ring" in l["id"] and l["max_y"] > l["goal"][1] + 0.1),
+            "mode": traversal[0].get("mode", "unknown"),
             "stair_up_legs": sum(1 for _s, l in legs if "_up_to_ring" in l["id"]),
+            "stair_up_legs_pass": sum(1 for _s, l in legs if "_up_to_ring" in l["id"] and l["result"] == "PASS"),
             "rotations": dict(Counter(s["rotation"] for s in sites)),
             "completed": all(t["completed"] for t in traversal),
         }
@@ -141,6 +142,13 @@ def check(summary: dict) -> list[str]:
                    if any(overlay_kind(kind) is None for kind in r["block_conversions_after_ticks"])]
     if unexplained:
         problems.append(f"structure blocks replaced by something other than a known vanilla feature overlay: {unexplained}")
+    shriekers = [(r["seed"], r["chunk"]) for r in summary["sites"] if r["interior_non_air_after_ticks"].get("block:minecraft:sculk_shrieker")]
+    if shriekers:
+        problems.append(f"summon-capable sculk shriekers inside the structure: {shriekers}")
+    sculk_heavy = [(r["seed"], r["chunk"]) for r in summary["sites"]
+                   if sum(v for k, v in r["block_conversions_after_ticks"].items() if k.split(" -> ")[1].startswith("minecraft:sculk")) > 20]
+    if sculk_heavy:
+        problems.append(f"sculk replaced more than 20 structure blocks (F-2 regression): {sculk_heavy}")
     chamber_fluid = [(r["seed"], r["chunk"]) for r in summary["sites"] if r["chamber_non_air"].get("fluid")]
     if chamber_fluid:
         problems.append(f"fluid inside the main chamber: {chamber_fluid}")
@@ -148,6 +156,10 @@ def check(summary: dict) -> list[str]:
     if t:
         if not t["completed"]:
             problems.append("traversal run did not complete")
+        if t["mode"] != "walk_only":
+            problems.append("traversal was not run in walk-only mode")
+        if t["stair_up_legs_pass"] != t["stair_up_legs"]:
+            problems.append("a stair run did not reach the ring in walk-only mode (F-4 regression)")
         if t["interior_failures"]:
             problems.append(f"interior traversal legs failed: {t['interior_failures']}")
     return problems
@@ -167,6 +179,12 @@ def check_pinned(summary: dict, pinned: list[dict]) -> list[str]:
             if what == "bounds":
                 actual = site["bounds"]
                 ok = actual == expected
+            elif what == "block_conversions_to_sculk_max":
+                actual = sum(v for k, v in site["block_conversions_after_ticks"].items() if k.split(" -> ")[1].startswith("minecraft:sculk"))
+                ok = actual <= expected
+            elif what == "interior_shriekers_max":
+                actual = site["interior_non_air_after_ticks"].get("block:minecraft:sculk_shrieker", 0)
+                ok = actual <= expected
             elif what == "block_conversions_to_sculk":
                 actual = sum(v for k, v in site["block_conversions_after_ticks"].items() if k.split(" -> ")[1].startswith("minecraft:sculk"))
                 ok = actual >= expected
@@ -208,7 +226,7 @@ def markdown(summary: dict) -> str:
     if "traversal" in summary:
         t = summary["traversal"]
         lines += [f"- Runtime traversal ({t['method']}): {t['sites']} sites, {t['interior_legs_pass']}/{t['interior_legs']} interior legs PASS; "
-                  f"stair-up legs needing a jump: {t['stair_up_legs_requiring_jump']}/{t['stair_up_legs']}; legs into fluid-filled mouths that failed (expected): {t['failures_into_fluid_filled_mouths']}; outward probes (6 blocks past a mouth): `{t['outward_probe_counts']}`", ""]
+                  f"mode {t['mode']}, stair-up legs reaching the ring: {t['stair_up_legs_pass']}/{t['stair_up_legs']}; legs into fluid-filled mouths that failed (expected): {t['failures_into_fluid_filled_mouths']}; outward probes (6 blocks past a mouth): `{t['outward_probe_counts']}`", ""]
     lines += ["| seed | chunk | plaza biome | surface biome | rot | Y range | blocks | contact air/water/lava (blocks) | mouths | interior non-air |",
               "|---|---|---|---|---|---|---|---|---|---|"]
     for r in summary["sites"]:

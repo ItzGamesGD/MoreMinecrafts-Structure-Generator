@@ -1,9 +1,93 @@
 [
-  {"seed": 173, "chunk": [324, 309], "note": "original SG-01-A natural proof site: /locate [5184, ~, 4944]", "expect": {"rotation": "NONE", "bounds": [[5169, -37, 4929], [5239, -21, 4999]]}},
-  {"seed": 31415, "chunk": [38, 76], "note": "deep_dark footprint: sculk overwrites floor, shriekers inside", "expect": {"block_conversions_to_sculk": 1000}},
-  {"seed": 2024, "chunk": [69, 0], "note": "deep_dark partially overlaps footprint of a badlands plaza", "expect": {"block_conversions_to_sculk": 200}},
-  {"seed": 1337, "chunk": [-84, 3], "note": "lava enters a tunnel mouth", "expect": {"tunnel_fluid": 10}},
-  {"seed": 3, "chunk": [-29, 38], "note": "water enters a tunnel mouth", "expect": {"tunnel_fluid": 20}},
-  {"seed": 1, "chunk": [20, -48], "note": "tunnel mouth opens into cave air", "expect": {"open_mouths": 1}},
-  {"seed": 173, "chunk": [-83, -15], "note": "tunnel mouth opens into cave air", "expect": {"open_mouths": 1}}
+  {
+    "seed": 173,
+    "chunk": [
+      324,
+      309
+    ],
+    "note": "original SG-01-A natural proof site: /locate [5184, ~, 4944]",
+    "expect": {
+      "rotation": "NONE",
+      "bounds": [
+        [
+          5169,
+          -37,
+          4929
+        ],
+        [
+          5239,
+          -21,
+          4999
+        ]
+      ]
+    }
+  },
+  {
+    "seed": 31415,
+    "chunk": [
+      38,
+      76
+    ],
+    "note": "deep_dark footprint: sculk overwrites floor, shriekers inside (SG-01-C: expected to stay clean with step=vegetal_decoration; baseline step strongholds gave 1,566 / 249 sculk blocks)",
+    "expect": {
+      "block_conversions_to_sculk_max": 20,
+      "interior_shriekers_max": 0
+    }
+  },
+  {
+    "seed": 2024,
+    "chunk": [
+      69,
+      0
+    ],
+    "note": "deep_dark partially overlaps footprint of a badlands plaza (SG-01-C: expected to stay clean with step=vegetal_decoration; baseline step strongholds gave 1,566 / 249 sculk blocks)",
+    "expect": {
+      "block_conversions_to_sculk_max": 20,
+      "interior_shriekers_max": 0
+    }
+  },
+  {
+    "seed": 3,
+    "chunk": [
+      -29,
+      38
+    ],
+    "note": "water enters a tunnel mouth",
+    "expect": {
+      "tunnel_fluid": 20
+    }
+  },
+  {
+    "seed": 1,
+    "chunk": [
+      20,
+      -48
+    ],
+    "note": "tunnel mouth opens into cave air",
+    "expect": {
+      "open_mouths": 1
+    }
+  },
+  {
+    "seed": 173,
+    "chunk": [
+      -83,
+      -15
+    ],
+    "note": "tunnel mouth opens into cave air",
+    "expect": {
+      "open_mouths": 1
+    }
+  },
+  {
+    "seed": 1337,
+    "chunk": [
+      -84,
+      3
+    ],
+    "note": "SG-01-B lava-into-tunnel site; with step=vegetal_decoration the tunnel stays dry (observed, cause not established). F-1 is accepted/deferred, so only the plaza invariant is enforced.",
+    "expect": {
+      "rotation": "NONE"
+    }
+  }
 ]
