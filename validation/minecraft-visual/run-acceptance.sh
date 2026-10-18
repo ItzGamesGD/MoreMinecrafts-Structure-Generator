@@ -85,6 +85,18 @@ for template in main_chamber tunnel_north tunnel_east tunnel_south tunnel_west; 
   grep -Fq "RESULT Loaded template \"moreminecrafts:forgotten_kingdom/central_cavern/$template\"" "$evidence/runtime-commands.log"
 done
 mark_stage template-placement PASS "$result_file"
+# Verify a source-NBT block is present immediately after `/place template`,
+# before the Jigsaw command can replace or obscure the chamber at this position.
+current_stage=template-world-write
+python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
+data get block 20 100 20
+execute if block 20 100 20 minecraft:polished_deepslate run say SG01_TEMPLATE_FLOOR_PRESENT
+CMDS
+if ! grep -Fq 'SG01_TEMPLATE_FLOOR_PRESENT' "$run/logs/server.log"; then
+  echo 'The successful /place template response did not produce the expected NBT floor block.' >&2
+  exit 1
+fi
+mark_stage template-world-write PASS "$result_file"
 current_stage=jigsaw-placement
 python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
 place structure moreminecrafts:forgotten_kingdom/central_cavern 0 100 0
@@ -92,18 +104,14 @@ time set noon
 weather clear
 CMDS
 grep -Fq 'RESULT Generated structure "moreminecrafts:forgotten_kingdom/central_cavern"' "$evidence/runtime-commands.log"
-mark_stage jigsaw-placement PASS "$result_file"
-# A successful command response proves resource lookup, but also verify that the
-# generated template's known floor block reached the actual world at its NBT
-# coordinates. This catches false-positive captures of the untouched flat map.
-current_stage=world-block-verification
+# The generated structure must leave the same chamber floor at the placement origin.
 python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
-execute unless block 20 100 20 minecraft:polished_deepslate run say SG01_CHAMBER_FLOOR_MISSING
+data get block 20 100 20
+execute if block 20 100 20 minecraft:polished_deepslate run say SG01_JIGSAW_FLOOR_PRESENT
 CMDS
-if grep -Fq 'RESULT Test passed' "$evidence/runtime-commands.log"; then
-  echo 'The expected chamber floor is absent at its source NBT coordinate.' >&2
+if ! grep -Fq 'SG01_JIGSAW_FLOOR_PRESENT' "$run/logs/server.log"; then
+  echo 'The successful /place structure response did not produce the expected chamber floor block.' >&2
   exit 1
 fi
-grep -Fq 'RESULT Test failed' "$evidence/runtime-commands.log"
-mark_stage world-block-verification PASS "$result_file"
+mark_stage jigsaw-placement PASS "$result_file"
 echo 'runtime-place=PASS'
