@@ -58,4 +58,4 @@ PR #7 remains independent from PR #6 and PR #5. The security PR's passing tests 
 
 - Latest remote CI evidence is linked per row above; old historical results are not substituted for current-head checks.
 - Automated structure-generation, static geometry, and scripted Minecraft workflows are distinct from human client visual review and live gameplay. Generated preview PNGs are not Minecraft screenshots.
-- **Next task:** resolve PR #6's outstanding PR #2 review thread with its owner. PR #5's stale run #45 summary is being refreshed to record exact-head run #39098343272 and the artifact evidence reviewed in this audit. No PR leaves Draft until its listed review gates are complete. No PR leaves Draft until its listed review gates are complete.
+- **Next task:** resolve PR #6's outstanding PR #2 review thread with its owner. PR #5's PR body now records exact-head run #39098343272, the 8,575-block saved-world probe, and the screenshot review. No PR leaves Draft until its listed review gates are complete.
