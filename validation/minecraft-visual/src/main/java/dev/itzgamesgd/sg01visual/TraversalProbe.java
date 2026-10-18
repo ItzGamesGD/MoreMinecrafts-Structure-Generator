@@ -39,6 +39,12 @@ public final class TraversalProbe implements ModInitializer {
             setPersistenceRequired();
         }
 
+        /** Walk-only by default: SG01_TRAVERSE_ALLOW_JUMP=1 re-enables jumping (the mob otherwise hops on any 1.0 node rise). */
+        @Override
+        public void jumpFromGround() {
+            if ("1".equals(System.getenv("SG01_TRAVERSE_ALLOW_JUMP"))) super.jumpFromGround();
+        }
+
         @Override
         public boolean hurtServer(ServerLevel level, DamageSource source, float damage) {
             return false;

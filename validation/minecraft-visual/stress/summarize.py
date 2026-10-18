@@ -122,8 +122,9 @@ def summarize(seeds: list[dict], traversal: list[dict] | None) -> dict:
             "interior_failures": [l["id"] for _s, l in walk if l["result"] != "PASS" and l["id"].split(":")[0] not in fluid_tags],
             "failures_into_fluid_filled_mouths": [l["id"] for _s, l in walk if l["result"] != "PASS" and l["id"].split(":")[0] in fluid_tags],
             "outward_probe_counts": dict(Counter(l["result"] for _s, l in legs if ":outward_probe_" in l["id"])),
-            "stair_up_legs_requiring_jump": sum(1 for _s, l in legs if "_up_to_ring" in l["id"] and l["max_y"] > l["goal"][1] + 0.1),
+            "mode": traversal[0].get("mode", "unknown"),
             "stair_up_legs": sum(1 for _s, l in legs if "_up_to_ring" in l["id"]),
+            "stair_up_legs_pass": sum(1 for _s, l in legs if "_up_to_ring" in l["id"] and l["result"] == "PASS"),
             "rotations": dict(Counter(s["rotation"] for s in sites)),
             "completed": all(t["completed"] for t in traversal),
         }
@@ -155,8 +156,10 @@ def check(summary: dict) -> list[str]:
     if t:
         if not t["completed"]:
             problems.append("traversal run did not complete")
-        if t["stair_up_legs_requiring_jump"]:
-            problems.append(f"{t['stair_up_legs_requiring_jump']} stair-up legs still needed a jump (F-4 regression)")
+        if t["mode"] != "walk_only":
+            problems.append("traversal was not run in walk-only mode")
+        if t["stair_up_legs_pass"] != t["stair_up_legs"]:
+            problems.append("a stair run did not reach the ring in walk-only mode (F-4 regression)")
         if t["interior_failures"]:
             problems.append(f"interior traversal legs failed: {t['interior_failures']}")
     return problems
@@ -223,7 +226,7 @@ def markdown(summary: dict) -> str:
     if "traversal" in summary:
         t = summary["traversal"]
         lines += [f"- Runtime traversal ({t['method']}): {t['sites']} sites, {t['interior_legs_pass']}/{t['interior_legs']} interior legs PASS; "
-                  f"stair-up legs needing a jump: {t['stair_up_legs_requiring_jump']}/{t['stair_up_legs']}; legs into fluid-filled mouths that failed (expected): {t['failures_into_fluid_filled_mouths']}; outward probes (6 blocks past a mouth): `{t['outward_probe_counts']}`", ""]
+                  f"mode {t['mode']}, stair-up legs reaching the ring: {t['stair_up_legs_pass']}/{t['stair_up_legs']}; legs into fluid-filled mouths that failed (expected): {t['failures_into_fluid_filled_mouths']}; outward probes (6 blocks past a mouth): `{t['outward_probe_counts']}`", ""]
     lines += ["| seed | chunk | plaza biome | surface biome | rot | Y range | blocks | contact air/water/lava (blocks) | mouths | interior non-air |",
               "|---|---|---|---|---|---|---|---|---|---|"]
     for r in summary["sites"]:
