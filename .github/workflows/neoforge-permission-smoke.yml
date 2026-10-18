@@ -29,7 +29,7 @@ jobs:
           from pathlib import Path
           p = Path("src/main/java/com/mcbuild/mod/McbuildMod.java")
           src = p.read_text()
-          old = "        }\\n    }\\n}\\n"
+          old = chr(10).join(["        }", "    }", "}", ""])
           assert src.endswith(old), "mod entrypoint changed; investigate before injecting"
           extra = [
               "        }",
@@ -56,7 +56,7 @@ jobs:
               '    }',
               '}',
           ]
-          p.write_text(src[:-len(old)] + "\\n".join(extra) + "\\n")
+          p.write_text(src[:-len(old)] + chr(10).join(extra) + chr(10))
           print("Injected ephemeral server-event-only check, not part of the committed mod")
           PY
       - name: Run disposable NeoForge server and assert command-node permissions
