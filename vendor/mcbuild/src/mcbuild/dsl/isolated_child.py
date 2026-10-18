@@ -17,7 +17,7 @@ import json
 import os
 import sys
 
-from mcbuild.dsl import sandbox
+from mcbuild.dsl import os_confinement, sandbox
 from mcbuild.dsl.errors import BlueprintError
 
 
@@ -40,6 +40,13 @@ def main(argv: list[str]) -> int:
     request = json.load(sys.stdin)
     try:
         grid = sandbox.decode_grid(request["grid"])
+        # Eagerly construct trusted DSL helpers before file-open syscalls are blocked.
+        sandbox.stdlib.make_stdlib(grid, seed=request["seed"])
+        try:
+            os_confinement.install()
+        except OSError as e:
+            _respond(result_fd, {"status": "isolation_failed", "message": f"OS syscall confinement unavailable: {e}"})
+            return 0
         sandbox.run_blueprint(
             request["source"],
             grid,
