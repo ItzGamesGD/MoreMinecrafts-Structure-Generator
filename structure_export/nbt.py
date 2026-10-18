@@ -99,7 +99,11 @@ def write_nbt(root: dict[str, object]) -> bytes:
     stream.write(struct.pack(">b", COMPOUND))
     stream.write(_string(""))
     _write_payload(stream, COMPOUND, root)
-    return gzip.compress(stream.getvalue(), compresslevel=9, mtime=0)
+    data = bytearray(gzip.compress(stream.getvalue(), compresslevel=9, mtime=0))
+    # Python 3.13 changed the gzip header OS byte from 3 (Unix) to 255 (unknown); pin it so the
+    # output is identical across interpreter versions.
+    data[9] = 3
+    return bytes(data)
 
 
 class _Reader:
