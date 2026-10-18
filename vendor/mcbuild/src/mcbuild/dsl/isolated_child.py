@@ -29,6 +29,16 @@ def _respond(result_fd: int, payload: dict) -> None:
         view = view[written:]
 
 
+def _block_without_child_texture_io(index: int, base: str, state: tuple[tuple[str, str], ...]):
+    """Preserve block identity without resolving texture files in the confined child.
+
+    The parent validates and resolves all block names and visual materials after JSON IPC.
+    Blueprint code only needs the index and state, not the color or preview texture.
+    """
+    p = sandbox.palette
+    return p.Block(index=index, name=base, mc_id=p._mc_id(base, state), rgb=(0, 0, 0), renderable=False, state=state)
+
+
 def main(argv: list[str]) -> int:
     result_fd = int(argv[1])
     try:
@@ -40,6 +50,9 @@ def main(argv: list[str]) -> int:
     request = json.load(sys.stdin)
     try:
         grid = sandbox.decode_grid(request["grid"])
+        # A blueprint needs valid block identity, but never texture file I/O. Parent-side
+        # decode_grid resolves the authoritative color after the process boundary.
+        sandbox.palette._build_block = _block_without_child_texture_io
         # Eagerly construct trusted DSL helpers before file-open syscalls are blocked.
         sandbox.stdlib.make_stdlib(grid, seed=request["seed"])
         try:
