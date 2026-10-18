@@ -6,6 +6,10 @@ keep_server=${3:-}
 fixture="$repo/validation/minecraft-visual"
 run="$fixture/run/server"
 evidence="$fixture/evidence"
+result_file="$evidence/runtime-result.txt"
+source "$fixture/stage-result.sh"
+current_stage=server-startup
+trap 'status=$?; mark_stage "$current_stage" FAIL "$result_file"; exit "$status"' ERR
 mkdir -p "$run/world/datapacks" "$fixture/run/logs" "$evidence"
 cp -a "$pack" "$run/world/datapacks/sg01"
 printf 'eula=true\n' > "$run/eula.txt"
@@ -41,14 +45,15 @@ for _ in $(seq 1 180); do
   if ! kill -0 "$server_pid" 2>/dev/null; then break; fi
   sleep 2
 done
-if [ "$ready" -ne 1 ]; then tail -200 "$fixture/run/logs/server.log"; exit 1; fi
-echo 'server-startup=PASS' >> "$evidence/runtime-result.txt"
+if [ "$ready" -ne 1 ]; then tail -200 "$fixture/run/logs/server.log"; mark_stage "$current_stage" FAIL "$result_file"; exit 1; fi
+mark_stage server-startup PASS "$result_file"
+current_stage=datapack-load
 # The enabled-pack query is the gate: no placement command is issued until the exact pack is live.
 python3 "$fixture/rcon.py" <<'CMDS' | tee "$evidence/runtime-commands.log"
 datapack list enabled
 CMDS
 grep -F 'file/sg01' "$evidence/runtime-commands.log"
-echo 'datapack-load=PASS' >> "$evidence/runtime-result.txt"
+mark_stage datapack-load PASS "$result_file"
 # Offline-mode test clients require an explicit whitelist entry on the hosted runner.
 python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
 whitelist add SG01Visual
@@ -64,15 +69,13 @@ forceload add 160 0
 forceload add 190 0
 CMDS
 # These IDs are the resource paths in the exact loaded datapack.
+current_stage=template-placement
 python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
 place template moreminecrafts:forgotten_kingdom/central_cavern/main_chamber 0 100 0
 place template moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north 100 100 0
 place template moreminecrafts:forgotten_kingdom/central_cavern/tunnel_east 130 100 0
 place template moreminecrafts:forgotten_kingdom/central_cavern/tunnel_south 160 100 0
 place template moreminecrafts:forgotten_kingdom/central_cavern/tunnel_west 190 100 0
-place structure moreminecrafts:forgotten_kingdom/central_cavern 0 100 0
-time set noon
-weather clear
 CMDS
 if grep -Eiq 'Unknown (structure|template)|Failed|Could not|Error executing|No key|That position is not loaded' "$evidence/runtime-commands.log"; then
   echo 'Minecraft reported a placement or registry error.' >&2
@@ -81,7 +84,13 @@ fi
 for template in main_chamber tunnel_north tunnel_east tunnel_south tunnel_west; do
   grep -Fq "RESULT Loaded template \"moreminecrafts:forgotten_kingdom/central_cavern/$template\"" "$evidence/runtime-commands.log"
 done
-echo 'template-placement=PASS' >> "$evidence/runtime-result.txt"
+mark_stage template-placement PASS "$result_file"
+current_stage=jigsaw-placement
+python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
+place structure moreminecrafts:forgotten_kingdom/central_cavern 0 100 0
+time set noon
+weather clear
+CMDS
 grep -Fq 'RESULT Generated structure "moreminecrafts:forgotten_kingdom/central_cavern"' "$evidence/runtime-commands.log"
-echo 'jigsaw-placement=PASS' >> "$evidence/runtime-result.txt"
+mark_stage jigsaw-placement PASS "$result_file"
 echo 'runtime-place=PASS'

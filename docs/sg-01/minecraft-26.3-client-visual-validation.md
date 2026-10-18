@@ -1,7 +1,7 @@
 # SG-01 Minecraft 26.3 client and visual validation
 
 **Target:** Structure Generator PR #5, current branch `feat/sg-01-central-cavern-portable-export`
-**Status:** SG-01B runtime harness is being corrected from actual run #23 evidence. No design changes were made.
+**Status:** SG-01B is adapting the verified native Minecraft 26.3 `Screenshot.grab` client harness from MoreMinecrafts-Beta PR #83. SG-01 screenshots are still **NOT RUN**. No design changes were made.
 
 ## Verdicts
 
@@ -13,8 +13,8 @@
 | `/place template` chamber + four tunnels | **PASS** | Run #25's RCON transcript records five `Loaded template "moreminecrafts:forgotten_kingdom/central_cavern/<template>" at ...` results at the requested coordinates. |
 | `/place structure` live Jigsaw generation | **PASS (command)** | Run #25's RCON transcript records `Generated structure "moreminecrafts:forgotten_kingdom/central_cavern" at 0, 100, 0`. |
 | Minecraft client startup | **PASS** | Run #27 selected Vulkan llvmpipe, created an SDL X11 window and loaded Minecraft texture atlases. OpenGL's GLX initialization failed first; the client continued on Vulkan. |
-| Minecraft client joins the loaded world | **PASS** | Run #29 added `SG01Visual` to the test server whitelist; server logs show the client logged in, joined, and RCON teleported it to the plaza camera position. |
-| Minecraft screenshots | **FAIL (Xvfb focus)** | Run #33 passed world join and the first plaza teleport, but wrote no PNG. Diagnostics showed X input focus remained on root window `1`, not Minecraft window `543`; Xvfb had no window manager. The current correction launches Openbox inside Xvfb and uses its managed window activation. No PNG was produced in run #33. |
+| Minecraft client joins the loaded world | **PASS in earlier runs only** | Run #29 and #31 logs show `SG01Visual` joined and was teleported to the plaza. Run #35 did not verify world join; capture stopped at EWMH activation before its join check. |
+| Minecraft screenshots | **NOT RUN** | Earlier SG-01 runs produced no PNGs. Run #35 failed at EWMH activation. The fixture is being adapted to Minecraft's native `Screenshot.grab` method based on verified PR #83 code and run evidence. |
 | Architectural visual quality review | **NOT RUN** | There are no Minecraft-rendered screenshots. The cavern design remains unchanged. |
 
 ## Read-only CI environment investigation
@@ -44,7 +44,7 @@ The job first runs a configuration-only Gradle `help` step with a five-minute ti
 
 The harness source is documented in [`validation/minecraft-visual/README.md`](../../validation/minecraft-visual/README.md). Runtime outcomes below are taken from uploaded GitHub Actions logs. The previous GLB-derived previews are not Minecraft runtime evidence.
 
-### Run #23, #25, #27, #29, #31 and #33 evidence and resumed correction
+### Runs #23–#35 evidence and verified capture-method investigation
 
 - Workflow run [#23](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39065733597), at branch head `11491b65fb65e15e956b27a04fca1680aad92807`: portable-export and all 17 tests **PASS**; datapack reproducibility and committed resource checksums **PASS**; Gradle configuration **PASS**; server started and recognized the exact pack **PASS**.
 - Run #23 client log showed Vulkan llvmpipe and a created X11 window, but failed to connect because the server process ended between Actions steps. The run's [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39065733597/artifacts/12112524684) contains logs and command transcripts but **no PNGs**.
@@ -54,5 +54,10 @@ The harness source is documented in [`validation/minecraft-visual/README.md`](..
 - Run #29 [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39088129974/artifacts/12121278096) shows the whitelist fix worked: client startup, world join and RCON camera teleport passed. Xvfb's lack of a window manager caused `windowactivate` to fail.
 - Run #31 [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39088364176/artifacts/12121796937) passed the plaza join and teleport but the `F2` action produced no PNG. Its evidence records X window 543 with an empty title; no capture was saved.
 - Run #33 [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39088625611/artifacts/12121867071) again passed world join and camera teleport but produced no image. Its focus diagnostic reports root window `1`; the runner had no window manager and lacked `xwininfo`.
-- The current correction installs Openbox and `x11-utils`, starts Openbox within Xvfb, then uses managed window activation and F2. It retains the screenshot directory guard and failure diagnostics. The next Actions run must verify actual PNG files.
-- Local validation: shell syntax, workflow YAML parsing and `git diff --check` **PASS**. All 17 tests and deterministic pack/visual exports passed on the prior commit; CI run #33 passed portable export, byte comparisons and all 17 tests. Minecraft screenshots and architectural review remain **NOT RUN**; no design change was made.
+- Run #35 [artifact](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39088898276/artifacts/12121149496) passed exporter checks, all 17 tests, Gradle configuration, server startup, pack recognition, and placement. It failed at EWMH activation. Its empty `window-manager.log` and shutdown-only `client.log` do not verify the X session/window relationship, client join, or screenshots. World joins in #29/#31 are separate earlier evidence; run #35 join is **NOT RUN**.
+- Read-only inspection of PR #83's source found a client Fabric harness that calls `net.minecraft.client.Screenshot.grab(...)` in a post-render HUD callback after the world is ready and frames have settled. Its capture script launches Minecraft under Xvfb with the lavapipe Vulkan ICD, uses RCON to set the camera, then waits for the native capture completion marker. It uses no EWMH activation or synthetic key event.
+- PR #83 Actions run [#38345195208](https://github.com/ItzGamesGD/MoreMinecrafts-Beta/actions/runs/38345195208) and artifact [#11787944376](https://github.com/ItzGamesGD/MoreMinecrafts-Beta/actions/runs/38345195208/artifacts/11787944376) were independently inspected. The `arena` job and upload passed; the archive contains two nonempty 1280×720 PNGs, and client logs record Vulkan/Mesa llvmpipe, resource reload, `ARENA_CLIENT_JOINED`, and `ARENA_CAPTURE_WRITTEN`.
+- PR #68 includes five committed PNGs; its README identifies them as actual uncropped Minecraft 26.3 captures from a local single-player world with Mesa llvmpipe Vulkan. No reproducible capture script is included in that tree.
+- The PR #72 branch and supplied commit `098b1f866923c08dbcccc437d3edf7d7bf5a5ecb` do not contain `control.py`, `derive_companions.py`, or `run/command_history.txt`; those files are also absent from the available workspace. PR #72's description refers to a 38-image archive under `/workspace`, but that archive is not available here. Its associated CI run #37733592847 has a failed `client-smoke` job; the workflow does not capture PNGs. Those files and the 38-image claim therefore do not establish a reusable capture method in this workspace.
+- The current fixture adds only the proven native capture API path. It keeps the existing SG-01 server/datapack/placement flow and requests the plaza screenshot first; it validates that PNG before continuing to other camera positions. This implementation has not yet run in Minecraft. Screenshots and architectural review remain **NOT RUN** until a PNG appears in a new run artifact.
+- CI run #35's portable export, deterministic resource comparison, visual export comparison, and all 17 tests passed. No design change was made.
