@@ -29,17 +29,87 @@ _AUDIT_ARCH_X86_64 = 0xC000003E
 # that could bypass the file-open prohibition. Unknown architectures fail closed.
 _DENIED_X86_64 = frozenset(
     {
-        2, 85, 257, 304, 437,  # open, creat, openat, open_by_handle_at, openat2
-        41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55,
-        288, 299, 307,  # networking, including socketpair and accept4
-        56, 57, 58, 59, 322, 435,  # clone, fork, vfork, execve, execveat, clone3
-        101, 310, 311, 438,  # ptrace, process_vm_* and pidfd_getfd
-        321, 298, 425, 426, 427, 323,  # bpf, perf_event_open, io_uring*, userfaultfd
-        165, 166, 155, 161, 272, 308,  # mount, umount2, pivot_root, chroot, unshare, setns
-        428, 429, 430, 431, 432, 433,  # open_tree, move_mount, fsopen, fsconfig, fsmount, fspick
-        76, 77, 82, 83, 84, 86, 87, 88, 90, 91, 92, 93, 94, 133,
-        132, 235, 258, 259, 260, 261, 263, 264, 265, 266, 268, 280, 316,
-        248, 249, 250,  # kernel keyrings
+        2,
+        85,
+        257,
+        304,
+        437,  # open, creat, openat, open_by_handle_at, openat2
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        288,
+        299,
+        307,  # networking, including socketpair and accept4
+        56,
+        57,
+        58,
+        59,
+        322,
+        435,  # clone, fork, vfork, execve, execveat, clone3
+        101,
+        310,
+        311,
+        438,  # ptrace, process_vm_* and pidfd_getfd
+        321,
+        298,
+        425,
+        426,
+        427,
+        323,  # bpf, perf_event_open, io_uring*, userfaultfd
+        165,
+        166,
+        155,
+        161,
+        272,
+        308,  # mount, umount2, pivot_root, chroot, unshare, setns
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,  # open_tree, move_mount, fsopen, fsconfig, fsmount, fspick
+        76,
+        77,
+        82,
+        83,
+        84,
+        86,
+        87,
+        88,
+        90,
+        91,
+        92,
+        93,
+        94,
+        133,
+        132,
+        235,
+        258,
+        259,
+        260,
+        261,
+        263,
+        264,
+        265,
+        266,
+        268,
+        280,
+        316,
+        248,
+        249,
+        250,  # kernel keyrings
     }
 )
 
