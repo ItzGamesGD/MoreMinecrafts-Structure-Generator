@@ -140,4 +140,14 @@ python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/camera-positions.log"
 setblock 70 123 70 minecraft:barrier
 CMDS
 capture exterior-cutaway 70 124 70 135 22
+
+# Capture the actual naturally generated structure separately from the /place views.
+read -r natural_x natural_y natural_z < <(python3 - "$evidence/natural-jigsaw-world-probes.json" <<'PY'
+import json, sys
+origin = json.load(open(sys.argv[1]))["best"]["chamber_origin_after_rotation_shift"]
+print(*origin)
+PY
+)
+capture natural-worldgen-entry "$((natural_x + 20))" "$((natural_y + 2))" "$((natural_z + 1))" 0 0
+capture natural-worldgen-plaza "$((natural_x + 20))" "$((natural_y + 2))" "$((natural_z + 20))" 0 0
 mark_stage screenshots PASS "$result_file"
