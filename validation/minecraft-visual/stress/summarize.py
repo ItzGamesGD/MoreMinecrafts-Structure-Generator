@@ -148,6 +148,8 @@ def check(summary: dict) -> list[str]:
     if t:
         if not t["completed"]:
             problems.append("traversal run did not complete")
+        if t["stair_up_legs_requiring_jump"]:
+            problems.append(f"{t['stair_up_legs_requiring_jump']} stair-up legs still needed a jump (F-4 regression)")
         if t["interior_failures"]:
             problems.append(f"interior traversal legs failed: {t['interior_failures']}")
     return problems
