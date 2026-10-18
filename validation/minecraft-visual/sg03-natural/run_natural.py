@@ -71,6 +71,11 @@ def inspect(world: World, start: dict, templates: dict) -> dict:
             else:
                 solids[pos] = (state, "main" if name.endswith("/main_chamber") else leaf)
     overwrites = Counter()
+    transitions = Counter()
+    affected_biomes = Counter()
+    affected_owners = Counter()
+    affected_y = Counter()
+    clay_positions = []
     fluid = Counter()
     for pos, (expected, owner) in solids.items():
         actual = world.state(*pos)
@@ -80,6 +85,12 @@ def inspect(world: World, start: dict, templates: dict) -> dict:
         else:
             category = overlay_kind(actual["id"])
             overwrites[category] += 1
+            transitions[(expected["id"], actual["id"])] += 1
+            if expected["id"] == "minecraft:moss_block" and actual["id"] == "minecraft:clay":
+                affected_biomes[world.biome(*pos)] += 1
+                affected_owners[owner] += 1
+                affected_y[pos[1]] += 1
+                clay_positions.append(pos)
             if category == "unexplained":
                 result["missing_or_other"] += 1
             if len(result["examples"]) < 12:
@@ -116,6 +127,21 @@ def inspect(world: World, start: dict, templates: dict) -> dict:
         else:
             contacts["solid"] += 1
     result["overwrites"] = dict(overwrites)
+    result["state_transitions"] = [
+        {"expected": src, "actual": dst, "count": n}
+        for (src, dst), n in sorted(transitions.items(), key=lambda kv: (-kv[1], kv[0]))
+    ]
+    result["clay_replacement_diagnostics"] = {
+        "count": len(clay_positions),
+        "biomes": dict(sorted(affected_biomes.items())),
+        "rooms": dict(sorted(affected_owners.items())),
+        "y_levels": {str(k): v for k, v in sorted(affected_y.items())},
+        "bounds": [
+            [min(p[i] for p in clay_positions) for i in range(3)],
+            [max(p[i] for p in clay_positions) for i in range(3)]
+        ] if clay_positions else None,
+        "positions": [list(p) for p in sorted(clay_positions)],
+    }
     result["interior_fluids"] = {f"{k[0]}:{k[1]}": v for k, v in sorted(fluid.items())}
     result["exterior_contacts"] = dict(contacts)
     result["pass"] = (len(children) == 21 and sum(result["rooms"].values()) == 16
