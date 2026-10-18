@@ -1,0 +1,189 @@
+{
+  "data_pack_format": 121,
+  "minecraft_version": "26.3",
+  "namespace": "moreminecrafts",
+  "resources": [
+    {
+      "path": "data/moreminecrafts/structure/forgotten_kingdom/central_cavern/main_chamber.nbt",
+      "references": [
+        "connector_target:moreminecrafts:forgotten_kingdom/lower_room_entry",
+        "connector_target:moreminecrafts:forgotten_kingdom/tunnel_in_east",
+        "connector_target:moreminecrafts:forgotten_kingdom/tunnel_in_north",
+        "connector_target:moreminecrafts:forgotten_kingdom/tunnel_in_south",
+        "connector_target:moreminecrafts:forgotten_kingdom/tunnel_in_west",
+        "connector_target:moreminecrafts:forgotten_kingdom/upper_room_entry",
+        "template_pool:moreminecrafts:forgotten_kingdom/central_cavern/lower_rooms",
+        "template_pool:moreminecrafts:forgotten_kingdom/central_cavern/tunnels/east",
+        "template_pool:moreminecrafts:forgotten_kingdom/central_cavern/tunnels/north",
+        "template_pool:moreminecrafts:forgotten_kingdom/central_cavern/tunnels/south",
+        "template_pool:moreminecrafts:forgotten_kingdom/central_cavern/tunnels/west",
+        "template_pool:moreminecrafts:forgotten_kingdom/central_cavern/upper_rooms"
+      ],
+      "role": "structure_template_nbt",
+      "sha256": "77a5b20f35a5634d58e49060b5557d1fdabd815cb4186bbb44ac57f15e57b123",
+      "size_bytes": 98549
+    },
+    {
+      "path": "data/moreminecrafts/structure/forgotten_kingdom/central_cavern/rooms/lower/stub.nbt",
+      "references": [
+        "template_pool:minecraft:empty"
+      ],
+      "role": "structure_template_nbt",
+      "sha256": "37bd331e662b202eb54845c4b3395fa170cdae5298059376fa04d54c89d5241a",
+      "size_bytes": 9122
+    },
+    {
+      "path": "data/moreminecrafts/structure/forgotten_kingdom/central_cavern/rooms/upper/stub.nbt",
+      "references": [
+        "template_pool:minecraft:empty"
+      ],
+      "role": "structure_template_nbt",
+      "sha256": "c3aed1603602402332abfd1547c343321c375ab71c7c4466805611e29eebbe5d",
+      "size_bytes": 30470
+    },
+    {
+      "path": "data/moreminecrafts/structure/forgotten_kingdom/central_cavern/tunnel_east.nbt",
+      "references": [
+        "connector_target:moreminecrafts:forgotten_kingdom/district_entrance",
+        "template_pool:minecraft:empty"
+      ],
+      "role": "structure_template_nbt",
+      "sha256": "a0ce9b48a2fb9bfef75f7d8b0e0d8f777add39bc6fd1cf1e6e5ff7b73fa8a729",
+      "size_bytes": 2157
+    },
+    {
+      "path": "data/moreminecrafts/structure/forgotten_kingdom/central_cavern/tunnel_north.nbt",
+      "references": [
+        "connector_target:moreminecrafts:forgotten_kingdom/district_entrance",
+        "template_pool:minecraft:empty"
+      ],
+      "role": "structure_template_nbt",
+      "sha256": "3879ddda643cd5fb4e495cf27b3472ae887fa2ea946421ee43ca6c355a8dc85d",
+      "size_bytes": 2130
+    },
+    {
+      "path": "data/moreminecrafts/structure/forgotten_kingdom/central_cavern/tunnel_south.nbt",
+      "references": [
+        "connector_target:moreminecrafts:forgotten_kingdom/district_entrance",
+        "template_pool:minecraft:empty"
+      ],
+      "role": "structure_template_nbt",
+      "sha256": "f19ee2877c0e343a8a39d342d725e5cbc863ec5265eeba8f611e680ce1df2f69",
+      "size_bytes": 2132
+    },
+    {
+      "path": "data/moreminecrafts/structure/forgotten_kingdom/central_cavern/tunnel_west.nbt",
+      "references": [
+        "connector_target:moreminecrafts:forgotten_kingdom/district_entrance",
+        "template_pool:minecraft:empty"
+      ],
+      "role": "structure_template_nbt",
+      "sha256": "bc4f4aa954d4b9be230e2ac32fd517ed151d22617ccb0703f883c5d9da24e7d6",
+      "size_bytes": 2159
+    },
+    {
+      "path": "data/moreminecrafts/worldgen/structure/forgotten_kingdom/central_cavern.json",
+      "references": [
+        "#minecraft:is_overworld",
+        "moreminecrafts:forgotten_kingdom/central_cavern/start"
+      ],
+      "role": "worldgen_structure",
+      "sha256": "a7baf7693e51d57978e2a6d0f118d895619ee90e1ebbca22d7dbac22c5d8820a",
+      "size_bytes": 567
+    },
+    {
+      "path": "data/moreminecrafts/worldgen/structure_set/forgotten_kingdom/central_cavern.json",
+      "references": [
+        "#minecraft:is_overworld",
+        "minecraft:trial_chambers",
+        "moreminecrafts:forgotten_kingdom/central_cavern"
+      ],
+      "role": "structure_set",
+      "sha256": "6534c2dd631f24495edcba26fa6bacc45f5e5b5e1178028ef927d8eec3a00ba3",
+      "size_bytes": 351
+    },
+    {
+      "path": "data/moreminecrafts/worldgen/template_pool/forgotten_kingdom/central_cavern/lower_rooms.json",
+      "references": [
+        "minecraft:empty",
+        "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/stub"
+      ],
+      "role": "template_pool",
+      "sha256": "8d98dd27e827cb627d1fec068c436dc14e29c5831a30580f56b5c47b9f2d31bc",
+      "size_bytes": 352
+    },
+    {
+      "path": "data/moreminecrafts/worldgen/template_pool/forgotten_kingdom/central_cavern/start.json",
+      "references": [
+        "minecraft:empty",
+        "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber"
+      ],
+      "role": "template_pool",
+      "sha256": "f3dd1d69758af4d1be23b9fc3f75e5cf2be564db87ad060718e6ee2804c5c662",
+      "size_bytes": 348
+    },
+    {
+      "path": "data/moreminecrafts/worldgen/template_pool/forgotten_kingdom/central_cavern/tunnels/east.json",
+      "references": [
+        "minecraft:empty",
+        "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_east"
+      ],
+      "role": "template_pool",
+      "sha256": "f6caf5072d58237ba099fee139d02015c1833161a761ce6dc477dfcef936c358",
+      "size_bytes": 347
+    },
+    {
+      "path": "data/moreminecrafts/worldgen/template_pool/forgotten_kingdom/central_cavern/tunnels/north.json",
+      "references": [
+        "minecraft:empty",
+        "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north"
+      ],
+      "role": "template_pool",
+      "sha256": "65f0bcd8476b0599db8a041aa720a17d7cf328c7243fc2bbcbbe409f0f8b0cd8",
+      "size_bytes": 348
+    },
+    {
+      "path": "data/moreminecrafts/worldgen/template_pool/forgotten_kingdom/central_cavern/tunnels/south.json",
+      "references": [
+        "minecraft:empty",
+        "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_south"
+      ],
+      "role": "template_pool",
+      "sha256": "3dc4adbc7609077672ad165a1e0b39871f1ec36c129448420f050dec6e1fbd09",
+      "size_bytes": 348
+    },
+    {
+      "path": "data/moreminecrafts/worldgen/template_pool/forgotten_kingdom/central_cavern/tunnels/west.json",
+      "references": [
+        "minecraft:empty",
+        "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_west"
+      ],
+      "role": "template_pool",
+      "sha256": "3b7212650035e6665c7101a46bad53c03663e69bcdf9351275013891b3a7ee37",
+      "size_bytes": 347
+    },
+    {
+      "path": "data/moreminecrafts/worldgen/template_pool/forgotten_kingdom/central_cavern/upper_rooms.json",
+      "references": [
+        "minecraft:empty",
+        "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/stub"
+      ],
+      "role": "template_pool",
+      "sha256": "8449bed52a52e7067dc810d3c8ef4cae4bcfb242dbfe06f5da0faeaf2db74621",
+      "size_bytes": 352
+    },
+    {
+      "path": "pack.mcmeta",
+      "references": [],
+      "role": "data_pack_metadata",
+      "sha256": "7eb429741104020b7a42af4e579b6a8f979c3621bc05077d264e21c09a0f177f",
+      "size_bytes": 162
+    },
+    {
+      "path": "manifest.json",
+      "references": [],
+      "role": "resource_manifest"
+    }
+  ],
+  "world_version": 5023
+}

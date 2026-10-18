@@ -7,6 +7,8 @@ on:
       - "examples/forgotten_kingdom/**"
       - "exports/sg-01/**"
       - "docs/sg-01/**"
+      - "exports/sg-02/**"
+      - "docs/sg-02/**"
       - "tests/**"
       - "requirements-export.txt"
       - "validation/minecraft-visual/**"
@@ -17,6 +19,8 @@ on:
       - "examples/forgotten_kingdom/**"
       - "exports/sg-01/**"
       - "docs/sg-01/**"
+      - "exports/sg-02/**"
+      - "docs/sg-02/**"
       - "tests/**"
       - "requirements-export.txt"
       - "validation/minecraft-visual/**"
@@ -44,6 +48,10 @@ jobs:
         run: |
           python3 examples/forgotten_kingdom/export_visual.py --output "$RUNNER_TEMP/sg01-visual"
           diff -r exports/sg-01/forgotten-underground-kingdom/visual "$RUNNER_TEMP/sg01-visual"
+      - name: Verify SG-02 pack is reproducible and matches the committed export
+        run: |
+          python3 examples/forgotten_kingdom/build_sg02.py "$RUNNER_TEMP/sg02-datapack"
+          diff -r exports/sg-02/forgotten-underground-kingdom/datapack "$RUNNER_TEMP/sg02-datapack"
       - name: Run export and Jigsaw tests
         run: PYTHONPATH=vendor/mcbuild/src python3 -m unittest discover -s tests -v
 
@@ -89,6 +97,45 @@ jobs:
           name: sg-01-minecraft-26.3-visual-${{ github.run_id }}
           path: |
             validation/minecraft-visual/evidence/
+            validation/minecraft-visual/run/logs/
+          if-no-files-found: warn
+          retention-days: 30
+
+  minecraft-26-3-stages:
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        stage: [sg02]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "25"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Install Xvfb, llvmpipe and screenshot tools
+        run: sudo apt-get update && sudo apt-get install -y xvfb libgl1-mesa-dri libglx-mesa0 mesa-vulkan-drivers libvulkan1 mesa-utils vulkan-tools imagemagick python3
+      - name: Build the stage datapack and verify it matches the committed export
+        run: |
+          python3 -m pip install -r requirements-export.txt
+          python3 examples/forgotten_kingdom/build_${{ matrix.stage }}.py "$RUNNER_TEMP/pack"
+          diff -r exports/${{ matrix.stage == 'sg02' && 'sg-02' || 'sg-03' }}/forgotten-underground-kingdom/datapack "$RUNNER_TEMP/pack"
+      - name: Server placement, Jigsaw assemblies and native client screenshots
+        timeout-minutes: 35
+        shell: bash
+        run: |
+          chmod +x validation/minecraft-visual/gradlew validation/minecraft-visual/run-stage.sh
+          ASSEMBLIES=6 validation/minecraft-visual/run-stage.sh "$GITHUB_WORKSPACE" ${{ matrix.stage }} "$RUNNER_TEMP/pack"
+      - name: Upload Minecraft runtime evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.stage }}-minecraft-26.3-evidence-${{ github.run_id }}
+          path: |
+            validation/minecraft-visual/evidence/${{ matrix.stage }}/
             validation/minecraft-visual/run/logs/
           if-no-files-found: warn
           retention-days: 30

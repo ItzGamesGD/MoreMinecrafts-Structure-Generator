@@ -36,8 +36,16 @@ def _resource_id(value: str, *, allow_external: bool = True) -> tuple[str, str]:
 class DatapackBuilder:
     """Collect resources and emit a complete, reproducible Minecraft data pack."""
 
-    def __init__(self, root: Path | str, *, namespace: str, pack_format: int = DATA_PACK_FORMAT):
+    def __init__(
+        self,
+        root: Path | str,
+        *,
+        namespace: str,
+        pack_format: int = DATA_PACK_FORMAT,
+        description: str = "MoreMinecrafts Forgotten Underground Kingdom — SG-01 prototype",
+    ):
         self.root = Path(root)
+        self.description = description
         if not re.fullmatch(r"[a-z0-9._-]+", namespace):
             raise ValueError(f"Invalid datapack namespace: {namespace!r}")
         self.namespace = namespace
@@ -286,7 +294,7 @@ class DatapackBuilder:
         resources = dict(self.resources)
         pack_meta = {
             "pack": {
-                "description": "MoreMinecrafts Forgotten Underground Kingdom — SG-01 prototype",
+                "description": self.description,
                 "min_format": self.pack_format,
                 "max_format": self.pack_format,
             }
