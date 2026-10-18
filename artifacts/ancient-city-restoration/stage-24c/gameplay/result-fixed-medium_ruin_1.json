@@ -92,12 +92,12 @@
     106.5
    ],
    "end": [
-    161.8,
+    161.58,
     -60,
     106.5
    ],
    "dy": 0,
-   "moved": 9.7,
+   "moved": 9.92,
    "ok": true
   },
   {
@@ -109,14 +109,14 @@
     106
    ],
    "end": [
-    169.5,
+    169.12,
     -60,
     106.5
    ],
-   "horizontal_error": 0,
-   "moved": 7.7,
+   "horizontal_error": 0.38,
+   "moved": 7.54,
    "outcome": "reached",
-   "seconds": 2.1,
+   "seconds": 2,
    "ok": true
   },
   {
@@ -137,12 +137,12 @@
    "name": "re_enter_manual",
    "type": "walk",
    "start": [
-    169.5,
+    169.13,
     -60,
     106.5
    ],
    "end": [
-    173.81,
+    173.44,
     -60,
     106.5
    ],
@@ -159,14 +159,14 @@
     106
    ],
    "end": [
-    171.7,
+    171.94,
     -60,
     106.5
    ],
-   "horizontal_error": 0.2,
-   "moved": 2.11,
+   "horizontal_error": 0.44,
+   "moved": 1.5,
    "outcome": "reached",
-   "seconds": 0.9,
+   "seconds": 0.7,
    "ok": true
   },
   {
@@ -178,14 +178,14 @@
     106
    ],
    "end": [
-    173.51,
+    173.52,
     -60,
-    110.32
+    110.07
    ],
-   "horizontal_error": 0.18,
-   "moved": 4.23,
+   "horizontal_error": 0.43,
+   "moved": 3.9,
    "outcome": "reached",
-   "seconds": 1.5,
+   "seconds": 1.3,
    "ok": true
   },
   {
@@ -208,14 +208,14 @@
     110
    ],
    "end": [
-    175.49,
+    175.48,
     -59,
-    102.5
+    102.63
    ],
-   "horizontal_error": 0.01,
-   "moved": 8.06,
+   "horizontal_error": 0.14,
+   "moved": 7.7,
    "outcome": "reached",
-   "seconds": 7.9,
+   "seconds": 7.7,
    "ok": true
   },
   {
@@ -231,8 +231,8 @@
   "chat: Teleported S24C_medium_r to 167.500000, -60.000000, 106.500000",
   "trace manual_walk_through_open_door [[170.33,-60],[171.4,-60],[172.48,-60],[173.56,-60],[174.64,-60],[175.72,-59.5],[176.7,-59.5],[176.7,-59.5]]",
   "chat: Teleported S24C_medium_r to 171.500000, -60.000000, 106.500000",
-  "trace manual_walk_out_through_door [[170.67,-60],[169.6,-60],[168.52,-60],[167.44,-60],[166.36,-60],[165.28,-60],[164.2,-60],[163.13,-60],[162.05,-60]]",
-  "trace re_enter_manual [[170.33,-60],[171.4,-60],[172.48,-60],[173.56,-60]]",
+  "trace manual_walk_out_through_door [[170.67,-60],[169.6,-60],[168.52,-60],[167.44,-60],[166.36,-60],[165.07,-60],[163.99,-60],[162.91,-60],[161.83,-60]]",
+  "trace re_enter_manual [[169.96,-60],[171.03,-60],[172.1,-60],[173.18,-60]]",
   "chat: Set minecraft:overworld to time marker minecraft:night",
   "chat: Respawn point set",
   "chat: S24C_medium_r has made the advancement [Sweet Dreams]",

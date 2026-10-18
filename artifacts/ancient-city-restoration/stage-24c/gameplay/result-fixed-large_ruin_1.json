@@ -27,7 +27,7 @@
    "horizontal_error": 0,
    "moved": 2,
    "outcome": "reached",
-   "seconds": 0.9,
+   "seconds": 0.8,
    "ok": true
   },
   {
@@ -46,12 +46,12 @@
     107.5
    ],
    "end": [
-    108.13,
+    108.34,
     -60,
     107.5
    ],
    "dy": 0,
-   "moved": 8.63,
+   "moved": 8.84,
    "ok": true
   },
   {
@@ -63,12 +63,12 @@
     107
    ],
    "end": [
-    101.7,
+    101.67,
     -60,
     107.5
    ],
-   "horizontal_error": 0.2,
-   "moved": 6.43,
+   "horizontal_error": 0.17,
+   "moved": 6.68,
    "outcome": "reached",
    "seconds": 1.9,
    "ok": true
@@ -92,29 +92,29 @@
     107.5
    ],
    "end": [
-    91.58,
+    92.01,
     -60,
     107.5
    ],
    "dy": 0,
-   "moved": 9.92,
+   "moved": 9.49,
    "ok": true
   },
   {
    "name": "door_front_after_exit",
    "type": "goto",
    "start": [
-    91,
+    92,
     -60,
     107
    ],
    "end": [
-    99.12,
+    99.3,
     -60,
     107.5
    ],
-   "horizontal_error": 0.38,
-   "moved": 7.54,
+   "horizontal_error": 0.2,
+   "moved": 7.29,
    "outcome": "reached",
    "seconds": 2.1,
    "ok": true
@@ -137,17 +137,17 @@
    "name": "re_enter_manual",
    "type": "walk",
    "start": [
-    99.13,
+    99.3,
     -60,
     107.5
    ],
    "end": [
-    103.44,
+    103.83,
     -60,
     107.5
    ],
    "dy": 0,
-   "moved": 4.31,
+   "moved": 4.53,
    "ok": true
   },
   {
@@ -159,14 +159,14 @@
     107
    ],
    "end": [
-    101.94,
+    101.5,
     -60,
     107.5
    ],
-   "horizontal_error": 0.44,
-   "moved": 1.5,
+   "horizontal_error": 0,
+   "moved": 2.33,
    "outcome": "reached",
-   "seconds": 0.7,
+   "seconds": 0.8,
    "ok": true
   },
   {
@@ -178,12 +178,12 @@
     107
    ],
    "end": [
-    113.52,
+    113.54,
     -60,
-    104.5
+    104.68
    ],
-   "horizontal_error": 0.02,
-   "moved": 11.96,
+   "horizontal_error": 0.18,
+   "moved": 12.36,
    "outcome": "reached",
    "seconds": 3.7,
    "ok": true
@@ -213,7 +213,7 @@
     110.07
    ],
    "horizontal_error": 0.47,
-   "moved": 5.58,
+   "moved": 5.41,
    "outcome": "reached",
    "seconds": 7.5,
    "ok": true
@@ -259,10 +259,10 @@
  ],
  "events": [
   "chat: Teleported S24C_large_ru to 97.500000, -60.000000, 107.500000",
-  "trace manual_walk_through_open_door [[100.33,-60],[101.4,-60],[102.48,-60],[103.56,-60],[104.64,-60],[105.72,-60],[106.8,-60],[107.87,-60]]",
+  "trace manual_walk_through_open_door [[100.33,-60],[101.62,-60],[102.69,-60],[103.77,-60],[104.85,-60],[105.93,-60],[107.01,-60],[108.09,-60]]",
   "chat: Teleported S24C_large_ru to 101.500000, -60.000000, 107.500000",
-  "trace manual_walk_out_through_door [[100.67,-60],[99.6,-60],[98.52,-60],[97.44,-60],[96.36,-60],[95.28,-60],[94.2,-60],[92.91,-60],[91.83,-60]]",
-  "trace re_enter_manual [[99.96,-60],[101.03,-60],[102.1,-60],[103.18,-60]]",
+  "trace manual_walk_out_through_door [[100.67,-60],[99.6,-60],[98.52,-60],[97.44,-60],[96.36,-60],[95.28,-60],[94.2,-60],[93.13,-60],[92.26,-60]]",
+  "trace re_enter_manual [[100.34,-60],[101.42,-60],[102.5,-60],[103.57,-60]]",
   "chat: Set minecraft:overworld to time marker minecraft:night",
   "chat: Respawn point set",
   "chat: S24C_large_ru has made the advancement [Sweet Dreams]",

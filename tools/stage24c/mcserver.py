@@ -73,7 +73,14 @@ class Server:
             time.sleep(1)
         else:
             raise TimeoutError("server did not start")
-        self.rcon = Rcon(port=int(self.props.get("rcon.port", 25575)))
+        for attempt in range(30):  # RCON comes up a moment after "Done"
+            try:
+                self.rcon = Rcon(port=int(self.props.get("rcon.port", 25575)))
+                break
+            except ConnectionRefusedError:
+                time.sleep(1)
+        else:
+            raise ConnectionRefusedError("rcon never came up")
         return self
 
     def cmd(self, c):

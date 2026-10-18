@@ -25,6 +25,7 @@
     102.5
    ],
    "horizontal_error": 0,
+   "moved": 2,
    "outcome": "reached",
    "seconds": 0.9,
    "ok": true
@@ -67,8 +68,9 @@
     102.5
    ],
    "horizontal_error": 0.25,
+   "moved": 4.95,
    "outcome": "reached",
-   "seconds": 1.5,
+   "seconds": 1.4,
    "ok": true
   },
   {
@@ -90,28 +92,29 @@
     102.5
    ],
    "end": [
-    371.79,
+    372.01,
     -60,
     102.5
    ],
    "dy": 0,
-   "moved": 9.71,
+   "moved": 9.49,
    "ok": true
   },
   {
    "name": "door_front_after_exit",
    "type": "goto",
    "start": [
-    371,
+    372,
     -60,
     102
    ],
    "end": [
-    379.12,
+    379.3,
     -60,
     102.5
    ],
-   "horizontal_error": 0.38,
+   "horizontal_error": 0.2,
+   "moved": 7.29,
    "outcome": "reached",
    "seconds": 2.1,
    "ok": true
@@ -134,12 +137,12 @@
    "name": "re_enter_manual",
    "type": "walk",
    "start": [
-    379.13,
+    379.3,
     -60,
     102.5
    ],
    "end": [
-    383.44,
+    383.61,
     -60,
     102.5
    ],
@@ -156,13 +159,14 @@
     102
    ],
    "end": [
-    381.94,
+    381.5,
     -60,
     102.5
    ],
-   "horizontal_error": 0.44,
+   "horizontal_error": 0,
+   "moved": 2.11,
    "outcome": "reached",
-   "seconds": 0.7,
+   "seconds": 0.9,
    "ok": true
   },
   {
@@ -179,6 +183,7 @@
     101.5
    ],
    "horizontal_error": 0,
+   "moved": 3.16,
    "outcome": "reached",
    "seconds": 1.1,
    "ok": true
@@ -208,6 +213,7 @@
     102.51
    ],
    "horizontal_error": 0.01,
+   "moved": 2.24,
    "outcome": "reached",
    "seconds": 6.7,
    "ok": true
@@ -225,8 +231,8 @@
   "chat: Teleported S24C_small_ru to 377.500000, -60.000000, 102.500000",
   "trace manual_walk_through_open_door [[380.33,-60],[381.4,-60],[382.48,-60],[383.56,-60],[384.64,-60],[385.72,-60],[386.7,-60],[386.7,-60]]",
   "chat: Teleported S24C_small_ru to 381.500000, -60.000000, 102.500000",
-  "trace manual_walk_out_through_door [[380.67,-60],[379.6,-60],[378.52,-60],[377.44,-60],[376.36,-60],[375.28,-60],[374.2,-60],[373.13,-60],[372.05,-60]]",
-  "trace re_enter_manual [[379.96,-60],[381.03,-60],[382.1,-60],[383.18,-60]]",
+  "trace manual_walk_out_through_door [[380.67,-60],[379.82,-60],[378.74,-60],[377.66,-60],[376.58,-60],[375.5,-60],[374.42,-60],[373.34,-60],[372.26,-60]]",
+  "trace re_enter_manual [[380.13,-60],[381.2,-60],[382.28,-60],[383.36,-60]]",
   "chat: Set minecraft:overworld to time marker minecraft:night",
   "chat: Respawn point set",
   "chat: Sleeping through this night",

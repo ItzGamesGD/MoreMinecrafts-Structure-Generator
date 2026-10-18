@@ -25,6 +25,7 @@
     135.45
    ],
    "horizontal_error": 0.05,
+   "moved": 5.05,
    "outcome": "reached",
    "seconds": 2.5,
    "ok": true
@@ -43,6 +44,7 @@
     119.5
    ],
    "horizontal_error": 0,
+   "moved": 16.07,
    "outcome": "reached",
    "seconds": 7.1,
    "ok": true
@@ -55,27 +57,11 @@
    "slots": 27,
    "items": [
     {
-     "name": "potion",
+     "name": "lead",
      "count": 1
     },
     {
-     "name": "glow_berries",
-     "count": 1
-    },
-    {
-     "name": "soul_torch",
-     "count": 2
-    },
-    {
-     "name": "book",
-     "count": 1
-    },
-    {
-     "name": "soul_torch",
-     "count": 1
-    },
-    {
-     "name": "music_disc_cat",
+     "name": "echo_shard",
      "count": 1
     },
     {
@@ -83,24 +69,52 @@
      "count": 1
     },
     {
-     "name": "glow_berries",
-     "count": 3
+     "name": "potion",
+     "count": 1
+    },
+    {
+     "name": "experience_bottle",
+     "count": 1
+    },
+    {
+     "name": "echo_shard",
+     "count": 1
     },
     {
      "name": "potion",
      "count": 1
     },
     {
-     "name": "glow_berries",
-     "count": 3
-    },
-    {
-     "name": "enchanted_book",
+     "name": "potion",
      "count": 1
     },
     {
-     "name": "book",
-     "count": 5
+     "name": "experience_bottle",
+     "count": 1
+    },
+    {
+     "name": "compass",
+     "count": 1
+    },
+    {
+     "name": "diamond_hoe",
+     "count": 1
+    },
+    {
+     "name": "amethyst_shard",
+     "count": 12
+    },
+    {
+     "name": "amethyst_shard",
+     "count": 1
+    },
+    {
+     "name": "potion",
+     "count": 1
+    },
+    {
+     "name": "potion",
+     "count": 1
     }
    ]
   },
@@ -118,6 +132,7 @@
     118.5
    ],
    "horizontal_error": 0,
+   "moved": 9.06,
    "outcome": "reached",
    "seconds": 3.3,
    "ok": true
@@ -130,7 +145,27 @@
    "slots": 27,
    "items": [
     {
+     "name": "sculk",
+     "count": 1
+    },
+    {
+     "name": "coal",
+     "count": 12
+    },
+    {
      "name": "book",
+     "count": 4
+    },
+    {
+     "name": "sculk",
+     "count": 3
+    },
+    {
+     "name": "sculk",
+     "count": 1
+    },
+    {
+     "name": "sculk_catalyst",
      "count": 1
     },
     {
@@ -138,11 +173,23 @@
      "count": 1
     },
     {
-     "name": "sculk",
-     "count": 6
+     "name": "coal",
+     "count": 1
+    },
+    {
+     "name": "glow_berries",
+     "count": 13
     },
     {
      "name": "sculk",
+     "count": 3
+    },
+    {
+     "name": "enchanted_book",
+     "count": 1
+    },
+    {
+     "name": "diamond_leggings",
      "count": 1
     },
     {
@@ -150,68 +197,48 @@
      "count": 1
     },
     {
+     "name": "coal",
+     "count": 1
+    },
+    {
+     "name": "echo_shard",
+     "count": 1
+    },
+    {
      "name": "sculk",
+     "count": 1
+    },
+    {
+     "name": "coal",
+     "count": 1
+    },
+    {
+     "name": "sculk",
+     "count": 1
+    },
+    {
+     "name": "enchanted_book",
+     "count": 1
+    },
+    {
+     "name": "book",
+     "count": 1
+    },
+    {
+     "name": "sculk",
+     "count": 1
+    },
+    {
+     "name": "echo_shard",
+     "count": 1
+    },
+    {
+     "name": "book",
      "count": 2
     },
     {
-     "name": "book",
-     "count": 1
-    },
-    {
-     "name": "potion",
-     "count": 1
-    },
-    {
      "name": "sculk",
-     "count": 2
-    },
-    {
-     "name": "soul_torch",
-     "count": 1
-    },
-    {
-     "name": "potion",
-     "count": 1
-    },
-    {
-     "name": "soul_torch",
-     "count": 1
-    },
-    {
-     "name": "book",
-     "count": 1
-    },
-    {
-     "name": "music_disc_cat",
-     "count": 1
-    },
-    {
-     "name": "sculk_sensor",
-     "count": 2
-    },
-    {
-     "name": "book",
-     "count": 1
-    },
-    {
-     "name": "book",
-     "count": 1
-    },
-    {
-     "name": "potion",
-     "count": 1
-    },
-    {
-     "name": "sculk_sensor",
-     "count": 1
-    },
-    {
-     "name": "sculk",
-     "count": 1
-    },
-    {
-     "name": "sculk",
-     "count": 1
+     "count": 5
     }
    ]
   },
@@ -229,6 +256,7 @@
     110.3
    ],
    "horizontal_error": 0.2,
+   "moved": 9.12,
    "outcome": "reached",
    "seconds": 4.7,
    "ok": true
@@ -241,55 +269,55 @@
    "slots": 27,
    "items": [
     {
-     "name": "coal",
+     "name": "iron_leggings",
      "count": 1
     },
     {
-     "name": "coal",
-     "count": 5
+     "name": "potion",
+     "count": 1
+    },
+    {
+     "name": "iron_leggings",
+     "count": 1
+    },
+    {
+     "name": "potion",
+     "count": 1
+    },
+    {
+     "name": "potion",
+     "count": 1
+    },
+    {
+     "name": "experience_bottle",
+     "count": 1
+    },
+    {
+     "name": "experience_bottle",
+     "count": 2
+    },
+    {
+     "name": "potion",
+     "count": 1
     },
     {
      "name": "enchanted_book",
      "count": 1
     },
     {
-     "name": "sculk_sensor",
+     "name": "iron_leggings",
      "count": 1
     },
     {
-     "name": "disc_fragment_5",
+     "name": "enchanted_book",
      "count": 1
     },
     {
-     "name": "sculk",
-     "count": 5
-    },
-    {
-     "name": "coal",
-     "count": 2
-    },
-    {
-     "name": "coal",
-     "count": 4
-    },
-    {
-     "name": "coal",
-     "count": 4
-    },
-    {
-     "name": "coal",
+     "name": "potion",
      "count": 1
     },
     {
-     "name": "sculk",
-     "count": 1
-    },
-    {
-     "name": "sculk_sensor",
-     "count": 1
-    },
-    {
-     "name": "disc_fragment_5",
+     "name": "soul_torch",
      "count": 1
     }
    ]
@@ -308,6 +336,7 @@
     123.65
    ],
    "horizontal_error": 0.85,
+   "moved": 17.96,
    "outcome": "reached",
    "seconds": 5.9,
    "ok": true
@@ -333,8 +362,9 @@
     106.5
    ],
    "horizontal_error": 1,
+   "moved": 21.54,
    "outcome": "reached",
-   "seconds": 18.2,
+   "seconds": 18.1,
    "ok": true
   },
   {

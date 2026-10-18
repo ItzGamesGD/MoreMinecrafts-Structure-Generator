@@ -228,9 +228,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 455,
-     "sculk_feature_overlay": 196,
-     "cracked_by_processor": 186,
+     "identical": 470,
+     "sculk_feature_overlay": 178,
+     "cracked_by_processor": 189,
      "removed_to_air": 23
     },
     "critical_blocks_total_lost": {
@@ -263,10 +263,10 @@
     "unspecified_air_fraction": 0.809,
     "unspecified_solid_fraction": 0.009,
     "shell_top_bottom": {
-     "air": 296,
-     "deepslate": 281,
-     "sculk": 43,
-     "sculk_vein": 41,
+     "air": 298,
+     "deepslate": 291,
+     "sculk_vein": 39,
+     "sculk": 33,
      "tuff": 28,
      "chiseled_deepslate": 14
     },
@@ -320,10 +320,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 182,
-     "cracked_by_processor": 54,
-     "removed_to_air": 13,
-     "sculk_feature_overlay": 80
+     "sculk_feature_overlay": 94,
+     "identical": 170,
+     "cracked_by_processor": 53,
+     "removed_to_air": 12
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -349,18 +349,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 167,
-     "sculk_vein": 24
+     "air": 165,
+     "sculk_vein": 26
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.874,
+    "unspecified_air_fraction": 0.864,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 134,
-     "deepslate": 79,
-     "tuff": 58,
+     "deepslate": 60,
+     "tuff": 45,
+     "sculk": 45,
      "sculk_vein": 13,
-     "sculk": 13,
      "sculk_sensor": 2
     },
     "bb_y_range": [
@@ -413,10 +413,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 37,
-     "identical": 208,
-     "cracked_by_processor": 36,
-     "removed_to_air": 3
+     "identical": 236,
+     "cracked_by_processor": 42,
+     "sculk_feature_overlay": 4,
+     "removed_to_air": 2
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -442,16 +442,17 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 285,
-     "sculk_vein": 47
+     "air": 315,
+     "sculk_vein": 17
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.858,
+    "unspecified_air_fraction": 0.949,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "sculk": 60,
-     "deepslate": 30
+     "deepslate": 54,
+     "sculk": 26,
+     "tuff": 10
     },
     "bb_y_range": [
      -51,
@@ -503,10 +504,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 29,
-     "identical": 279,
-     "cracked_by_processor": 9,
-     "removed_to_air": 2
+     "identical": 287,
+     "sculk_feature_overlay": 20,
+     "removed_to_air": 3,
+     "cracked_by_processor": 9
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -532,8 +533,8 @@
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 64,
-     "sculk": 36,
-     "deepslate": 28
+     "deepslate": 34,
+     "sculk": 30
     },
     "bb_y_range": [
      -51,
@@ -675,10 +676,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 172,
-     "sculk_feature_overlay": 72,
-     "cracked_by_processor": 75,
-     "removed_to_air": 10
+     "identical": 165,
+     "cracked_by_processor": 67,
+     "sculk_feature_overlay": 90,
+     "removed_to_air": 7
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -704,20 +705,19 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 162,
-     "sculk_vein": 28,
-     "sculk_catalyst": 1
+     "air": 166,
+     "sculk_vein": 25
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.848,
-    "unspecified_solid_fraction": 0.005,
+    "unspecified_air_fraction": 0.869,
+    "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 138,
-     "sculk": 74,
-     "deepslate": 56,
-     "gravel": 20,
-     "sculk_vein": 8,
-     "sculk_sensor": 3
+     "air": 133,
+     "deepslate": 92,
+     "sculk": 30,
+     "gravel": 28,
+     "sculk_vein": 14,
+     "sculk_sensor": 2
     },
     "bb_y_range": [
      -51,
@@ -769,10 +769,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 215,
-     "sculk_feature_overlay": 4,
-     "cracked_by_processor": 49,
-     "removed_to_air": 16
+     "identical": 218,
+     "removed_to_air": 16,
+     "cracked_by_processor": 50
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -793,7 +792,7 @@
      ],
      "parapet_wall": [
       18,
-      2
+      0
      ]
     },
     "block_replacement_samples": [],
@@ -806,8 +805,8 @@
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "sculk": 53,
-     "deepslate": 37
+     "deepslate": 50,
+     "sculk": 40
     },
     "bb_y_range": [
      -51,
@@ -1063,9 +1062,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 242,
-     "sculk_feature_overlay": 72,
-     "removed_to_air": 5
+     "sculk_feature_overlay": 13,
+     "identical": 294,
+     "removed_to_air": 6,
+     "cracked_by_processor": 6
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -1083,16 +1083,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 175,
-     "sculk_vein": 46
+     "air": 220,
+     "sculk_vein": 1
     },
     "unspecified_cells": 221,
-    "unspecified_air_fraction": 0.792,
+    "unspecified_air_fraction": 0.995,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 64,
-     "sculk": 55,
-     "deepslate": 9
+     "sculk": 60,
+     "deepslate": 4
     },
     "bb_y_range": [
      -51,
@@ -1223,10 +1223,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "cracked_by_processor": 124,
-     "sculk_feature_overlay": 198,
-     "identical": 347,
-     "removed_to_air": 19
+     "cracked_by_processor": 129,
+     "sculk_feature_overlay": 206,
+     "identical": 331,
+     "removed_to_air": 22
     },
     "critical_blocks_total_lost": {
      "door": [
@@ -1252,20 +1252,21 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 612,
-     "sculk_vein": 103,
-     "sculk_sensor": 4,
+     "air": 620,
+     "sculk_vein": 97,
+     "sculk_sensor": 2,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 720,
-    "unspecified_air_fraction": 0.85,
-    "unspecified_solid_fraction": 0.007,
+    "unspecified_air_fraction": 0.861,
+    "unspecified_solid_fraction": 0.004,
     "shell_top_bottom": {
-     "air": 210,
-     "deepslate": 207,
-     "sculk": 27,
-     "sculk_vein": 19,
-     "sculk_sensor": 5
+     "air": 207,
+     "deepslate": 206,
+     "sculk": 28,
+     "sculk_vein": 22,
+     "sculk_sensor": 4,
+     "water": 1
     },
     "bb_y_range": [
      -51,
@@ -1332,8 +1333,8 @@
     "model_matches_piece_bb": true,
     "block_replacement": {
      "cracked_by_processor": 47,
-     "identical": 223,
-     "removed_to_air": 14
+     "identical": 224,
+     "removed_to_air": 13
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -1354,21 +1355,21 @@
      ],
      "parapet_wall": [
       18,
-      1
+      0
      ]
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 330,
-     "sculk_vein": 2
+     "air": 327,
+     "sculk_vein": 5
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.994,
+    "unspecified_air_fraction": 0.985,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "deepslate": 60,
-     "sculk": 30
+     "deepslate": 55,
+     "sculk": 35
     },
     "bb_y_range": [
      -51,
@@ -1422,10 +1423,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 23,
      "identical": 552,
-     "cracked_by_processor": 251,
-     "removed_to_air": 34
+     "cracked_by_processor": 250,
+     "sculk_feature_overlay": 25,
+     "removed_to_air": 33
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -1455,12 +1456,12 @@
     "unspecified_air_fraction": 0.983,
     "unspecified_solid_fraction": 0.002,
     "shell_top_bottom": {
-     "air": 359,
+     "air": 358,
      "deepslate": 318,
      "sculk": 35,
      "deepslate_redstone_ore": 6,
      "deepslate_gold_ore": 2,
-     "sculk_vein": 1
+     "sculk_vein": 2
     },
     "bb_y_range": [
      -51,
@@ -1512,10 +1513,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 26,
-     "identical": 195,
-     "cracked_by_processor": 54,
-     "removed_to_air": 9
+     "cracked_by_processor": 55,
+     "identical": 194,
+     "sculk_feature_overlay": 27,
+     "removed_to_air": 8
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -1536,23 +1537,22 @@
      ],
      "parapet_wall": [
       18,
-      2
+      0
      ]
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 303,
-     "sculk_vein": 28,
-     "sculk_sensor": 1
+     "air": 308,
+     "sculk_vein": 24
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.913,
-    "unspecified_solid_fraction": 0.003,
+    "unspecified_air_fraction": 0.928,
+    "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "sculk": 69,
-     "deepslate": 20,
-     "tuff": 1
+     "sculk": 64,
+     "deepslate": 24,
+     "tuff": 2
     },
     "bb_y_range": [
      -51,
@@ -1604,10 +1604,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 26,
-     "identical": 276,
-     "removed_to_air": 10,
-     "cracked_by_processor": 7
+     "sculk_feature_overlay": 30,
+     "identical": 274,
+     "cracked_by_processor": 7,
+     "removed_to_air": 8
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -1625,17 +1625,17 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 219,
-     "sculk_vein": 2
+     "air": 220,
+     "sculk_vein": 1
     },
     "unspecified_cells": 221,
-    "unspecified_air_fraction": 0.991,
+    "unspecified_air_fraction": 0.995,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 64,
-     "sculk": 39,
-     "deepslate": 24,
-     "sculk_catalyst": 1
+     "deepslate": 35,
+     "sculk": 28,
+     "gravel": 1
     },
     "bb_y_range": [
      -51,
@@ -1780,9 +1780,9 @@
     "model_matches_piece_bb": true,
     "block_replacement": {
      "identical": 48,
-     "cracked_by_processor": 19,
-     "sculk_feature_overlay": 55,
-     "removed_to_air": 5
+     "sculk_feature_overlay": 53,
+     "cracked_by_processor": 22,
+     "removed_to_air": 4
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -1804,20 +1804,19 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 21,
-     "sculk_vein": 11,
+     "air": 22,
+     "sculk_vein": 10,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 33,
-    "unspecified_air_fraction": 0.636,
+    "unspecified_air_fraction": 0.667,
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
-     "air": 53,
-     "sculk": 50,
+     "air": 52,
+     "sculk": 51,
      "deepslate": 8,
-     "sculk_vein": 6,
-     "tuff": 2,
-     "sculk_sensor": 1
+     "sculk_vein": 8,
+     "tuff": 1
     },
     "bb_y_range": [
      -51,
@@ -1870,10 +1869,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 181,
-     "cracked_by_processor": 33,
-     "removed_to_air": 10,
-     "sculk_feature_overlay": 60
+     "sculk_feature_overlay": 160,
+     "identical": 108,
+     "cracked_by_processor": 8,
+     "removed_to_air": 8
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -1899,16 +1898,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 279,
-     "sculk_vein": 53
+     "air": 277,
+     "sculk_vein": 52,
+     "sculk_sensor": 3
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.84,
-    "unspecified_solid_fraction": 0.0,
+    "unspecified_air_fraction": 0.834,
+    "unspecified_solid_fraction": 0.009,
     "shell_top_bottom": {
-     "air": 90,
-     "deepslate": 56,
-     "sculk": 34
+     "air": 88,
+     "sculk": 53,
+     "deepslate": 37,
+     "sculk_sensor": 2
     },
     "bb_y_range": [
      -51,
@@ -2053,10 +2054,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 159,
-     "identical": 492,
-     "cracked_by_processor": 181,
-     "removed_to_air": 28
+     "identical": 467,
+     "sculk_feature_overlay": 187,
+     "cracked_by_processor": 182,
+     "removed_to_air": 24
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -2078,21 +2079,21 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 498,
-     "sculk_vein": 83,
-     "sculk_sensor": 3,
+     "air": 471,
+     "sculk_vein": 112,
+     "sculk_sensor": 1,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 585,
-    "unspecified_air_fraction": 0.851,
-    "unspecified_solid_fraction": 0.007,
+    "unspecified_air_fraction": 0.805,
+    "unspecified_solid_fraction": 0.003,
     "shell_top_bottom": {
-     "deepslate": 319,
-     "air": 318,
-     "sculk": 40,
-     "sculk_vein": 39,
-     "sculk_sensor": 4,
-     "deepslate_redstone_ore": 1
+     "air": 324,
+     "deepslate": 248,
+     "sculk": 111,
+     "sculk_vein": 37,
+     "deepslate_redstone_ore": 1,
+     "deepslate_diamond_ore": 1
     },
     "bb_y_range": [
      -51,
@@ -2144,10 +2145,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 12,
-     "identical": 204,
-     "cracked_by_processor": 53,
-     "removed_to_air": 15
+     "sculk_feature_overlay": 7,
+     "identical": 207,
+     "cracked_by_processor": 54,
+     "removed_to_air": 16
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -2173,16 +2174,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 306,
-     "sculk_vein": 26
+     "air": 312,
+     "sculk_vein": 20
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.922,
+    "unspecified_air_fraction": 0.94,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 88,
-     "sculk": 53,
-     "deepslate": 27,
+     "deepslate": 42,
+     "sculk": 38,
      "gravel": 10,
      "sculk_vein": 2
     },
@@ -2250,10 +2251,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 4,
-     "removed_to_air": 23,
-     "identical": 215,
-     "cracked_by_processor": 87
+     "sculk_feature_overlay": 23,
+     "identical": 206,
+     "cracked_by_processor": 82,
+     "removed_to_air": 18
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -2279,17 +2280,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 189,
-     "sculk_vein": 2
+     "air": 176,
+     "sculk_vein": 15
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.99,
+    "unspecified_air_fraction": 0.921,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 150,
-     "deepslate": 132,
-     "sculk": 11,
-     "tuff": 7
+     "air": 147,
+     "deepslate": 124,
+     "sculk": 20,
+     "tuff": 6,
+     "sculk_vein": 3
     },
     "bb_y_range": [
      -51,
@@ -2342,10 +2344,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 387,
-     "sculk_feature_overlay": 299,
-     "cracked_by_processor": 151,
-     "removed_to_air": 23
+     "identical": 481,
+     "sculk_feature_overlay": 146,
+     "cracked_by_processor": 209,
+     "removed_to_air": 24
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -2367,23 +2369,21 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 479,
-     "sculk_vein": 95,
-     "sculk_sensor": 7,
-     "sculk_catalyst": 2,
-     "sculk_shrieker": 1,
+     "air": 456,
+     "sculk_vein": 124,
+     "sculk_sensor": 3,
+     "sculk_catalyst": 1,
      "sculk": 1
     },
     "unspecified_cells": 585,
-    "unspecified_air_fraction": 0.819,
-    "unspecified_solid_fraction": 0.019,
+    "unspecified_air_fraction": 0.779,
+    "unspecified_solid_fraction": 0.009,
     "shell_top_bottom": {
-     "air": 337,
-     "sculk": 184,
-     "deepslate": 160,
-     "sculk_vein": 35,
-     "sculk_sensor": 5,
-     "deepslate_diamond_ore": 1
+     "air": 347,
+     "sculk": 178,
+     "deepslate": 165,
+     "sculk_vein": 30,
+     "deepslate_redstone_ore": 2
     },
     "bb_y_range": [
      -51,
@@ -2579,9 +2579,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 53,
-     "cracked_by_processor": 12,
-     "identical": 58,
+     "cracked_by_processor": 10,
+     "identical": 31,
+     "sculk_feature_overlay": 82,
      "removed_to_air": 4
     },
     "critical_blocks_total_lost": {
@@ -2604,20 +2604,21 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 20,
-     "sculk_vein": 12,
-     "sculk": 1
+     "air": 29,
+     "sculk_sensor": 2,
+     "cobbled_deepslate": 1,
+     "sculk_vein": 1
     },
     "unspecified_cells": 33,
-    "unspecified_air_fraction": 0.606,
-    "unspecified_solid_fraction": 0.03,
+    "unspecified_air_fraction": 0.879,
+    "unspecified_solid_fraction": 0.091,
     "shell_top_bottom": {
-     "air": 48,
-     "sculk": 31,
-     "deepslate": 26,
-     "sculk_vein": 11,
-     "deepslate_redstone_ore": 2,
-     "sculk_sensor": 1
+     "air": 57,
+     "deepslate": 30,
+     "sculk": 26,
+     "deepslate_redstone_ore": 3,
+     "sculk_sensor": 3,
+     "deepslate_iron_ore": 1
     },
     "bb_y_range": [
      -51,
@@ -2669,10 +2670,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 43,
-     "identical": 202,
-     "cracked_by_processor": 74,
-     "removed_to_air": 10
+     "sculk_feature_overlay": 237,
+     "identical": 70,
+     "cracked_by_processor": 10,
+     "removed_to_air": 12
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -2698,19 +2699,21 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 177,
-     "sculk_vein": 14
+     "air": 157,
+     "sculk_vein": 31,
+     "sculk_sensor": 2,
+     "sculk_shrieker": 1
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.927,
-    "unspecified_solid_fraction": 0.0,
+    "unspecified_air_fraction": 0.822,
+    "unspecified_solid_fraction": 0.016,
     "shell_top_bottom": {
-     "air": 147,
-     "sculk": 104,
-     "deepslate": 39,
-     "gravel": 7,
-     "sculk_sensor": 2,
-     "sculk_vein": 1
+     "air": 138,
+     "sculk": 80,
+     "deepslate": 65,
+     "sculk_sensor": 8,
+     "gravel": 5,
+     "sculk_vein": 4
     },
     "bb_y_range": [
      -51,
@@ -2762,9 +2765,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 300,
-     "removed_to_air": 9,
-     "cracked_by_processor": 10
+     "identical": 246,
+     "sculk_feature_overlay": 62,
+     "removed_to_air": 8,
+     "cracked_by_processor": 3
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -2782,14 +2786,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 221
+     "air": 184,
+     "sculk_vein": 37
     },
     "unspecified_cells": 221,
-    "unspecified_air_fraction": 1.0,
+    "unspecified_air_fraction": 0.833,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "deepslate": 64,
-     "air": 64
+     "air": 64,
+     "deepslate": 62,
+     "sculk": 2
     },
     "bb_y_range": [
      -51,
@@ -2926,10 +2932,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 25,
-     "identical": 124,
-     "removed_to_air": 5,
-     "cracked_by_processor": 44
+     "sculk_feature_overlay": 4,
+     "identical": 137,
+     "removed_to_air": 7,
+     "cracked_by_processor": 50
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -2955,16 +2961,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 71,
-     "sculk_vein": 11
+     "air": 81,
+     "sculk_vein": 1
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 0.866,
+    "unspecified_air_fraction": 0.988,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "deepslate": 62,
-     "sculk": 28
+     "deepslate": 77,
+     "sculk": 13
     },
     "bb_y_range": [
      -51,
@@ -3136,9 +3142,10 @@
     "unspecified_air_fraction": 0.005,
     "unspecified_solid_fraction": 0.995,
     "shell_top_bottom": {
-     "deepslate": 147,
-     "dripstone_block": 124,
+     "deepslate": 136,
+     "dripstone_block": 134,
      "air": 28,
+     "pointed_dripstone": 1,
      "water": 1
     },
     "bb_y_range": [
@@ -3191,10 +3198,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 145,
-     "removed_to_air": 8,
+     "sculk_feature_overlay": 128,
+     "identical": 148,
      "cracked_by_processor": 51,
-     "sculk_feature_overlay": 125
+     "removed_to_air": 2
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -3220,19 +3227,19 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 158,
-     "sculk_vein": 33
+     "air": 135,
+     "sculk_vein": 56
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.827,
+    "unspecified_air_fraction": 0.707,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 161,
-     "sculk": 93,
-     "deepslate": 21,
-     "sculk_vein": 17,
-     "sculk_sensor": 5,
-     "deepslate_redstone_ore": 2
+     "air": 153,
+     "deepslate": 81,
+     "sculk": 28,
+     "sculk_vein": 27,
+     "deepslate_redstone_ore": 7,
+     "sculk_sensor": 4
     },
     "bb_y_range": [
      -51,
@@ -3472,10 +3479,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 286,
-     "cracked_by_processor": 117,
-     "identical": 272,
-     "removed_to_air": 13
+     "sculk_feature_overlay": 251,
+     "cracked_by_processor": 121,
+     "identical": 300,
+     "removed_to_air": 16
     },
     "critical_blocks_total_lost": {
      "door": [
@@ -3501,22 +3508,23 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 605,
-     "sculk_vein": 107,
-     "sculk_sensor": 6,
+     "air": 621,
+     "sculk_vein": 88,
+     "sculk_sensor": 8,
      "sculk": 1,
-     "sculk_shrieker": 1
+     "sculk_shrieker": 1,
+     "sculk_catalyst": 1
     },
     "unspecified_cells": 720,
-    "unspecified_air_fraction": 0.84,
-    "unspecified_solid_fraction": 0.011,
+    "unspecified_air_fraction": 0.863,
+    "unspecified_solid_fraction": 0.015,
     "shell_top_bottom": {
-     "air": 206,
-     "deepslate": 131,
-     "sculk": 85,
-     "sculk_vein": 23,
-     "gravel": 16,
-     "sculk_sensor": 4
+     "air": 227,
+     "deepslate": 141,
+     "sculk": 68,
+     "gravel": 23,
+     "sculk_vein": 6,
+     "deepslate_diamond_ore": 1
     },
     "bb_y_range": [
      -51,
@@ -3582,10 +3590,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 206,
-     "cracked_by_processor": 78,
-     "sculk_feature_overlay": 36,
-     "removed_to_air": 9
+     "identical": 173,
+     "cracked_by_processor": 62,
+     "sculk_feature_overlay": 86,
+     "removed_to_air": 8
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -3611,17 +3619,19 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 172,
-     "sculk_vein": 19
+     "air": 152,
+     "sculk_vein": 39
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.901,
+    "unspecified_air_fraction": 0.796,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 145,
-     "deepslate": 98,
-     "sculk": 52,
-     "sculk_vein": 5
+     "air": 127,
+     "sculk": 100,
+     "deepslate": 49,
+     "sculk_vein": 19,
+     "sculk_sensor": 4,
+     "sculk_catalyst": 1
     },
     "bb_y_range": [
      -51,
@@ -3673,10 +3683,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 68,
-     "removed_to_air": 7,
-     "identical": 234,
-     "cracked_by_processor": 10
+     "identical": 211,
+     "removed_to_air": 5,
+     "sculk_feature_overlay": 99,
+     "cracked_by_processor": 4
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -3694,17 +3704,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 221
+     "air": 198,
+     "sculk_vein": 23
     },
     "unspecified_cells": 221,
-    "unspecified_air_fraction": 1.0,
+    "unspecified_air_fraction": 0.896,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
+     "deepslate": 62,
      "air": 62,
-     "deepslate": 39,
-     "sculk": 24,
      "sculk_sensor": 2,
-     "deepslate_iron_ore": 1
+     "deepslate_iron_ore": 1,
+     "sculk": 1
     },
     "bb_y_range": [
      -51,
@@ -3756,10 +3767,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 96,
-     "removed_to_air": 5,
-     "identical": 72,
-     "cracked_by_processor": 25
+     "sculk_feature_overlay": 44,
+     "removed_to_air": 7,
+     "identical": 101,
+     "cracked_by_processor": 46
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -3785,19 +3796,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 54,
-     "sculk_vein": 27,
-     "sculk_sensor": 1
+     "air": 70,
+     "sculk_vein": 12
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 0.659,
-    "unspecified_solid_fraction": 0.012,
+    "unspecified_air_fraction": 0.854,
+    "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 78,
-     "deepslate": 48,
-     "sculk": 32,
-     "sculk_vein": 11,
+     "air": 85,
+     "deepslate": 45,
+     "sculk": 35,
      "gravel": 10,
+     "sculk_vein": 4,
      "sculk_shrieker": 1
     },
     "bb_y_range": [
@@ -3852,10 +3862,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 487,
-     "identical": 1047,
-     "cracked_by_processor": 311,
-     "removed_to_air": 51
+     "sculk_feature_overlay": 591,
+     "identical": 973,
+     "cracked_by_processor": 289,
+     "removed_to_air": 43
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -3873,20 +3883,20 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 8472,
-     "sculk_vein": 330,
-     "sculk_sensor": 19,
-     "sculk_shrieker": 6,
+     "air": 8474,
+     "sculk_vein": 320,
+     "sculk_sensor": 26,
+     "sculk_shrieker": 7,
      "sculk": 4,
      "sculk_catalyst": 3
     },
     "unspecified_cells": 8834,
     "unspecified_air_fraction": 0.959,
-    "unspecified_solid_fraction": 0.004,
+    "unspecified_solid_fraction": 0.005,
     "shell_top_bottom": {
      "air": 1209,
-     "deepslate": 800,
-     "sculk": 373,
+     "deepslate": 740,
+     "sculk": 433,
      "gravel": 24,
      "deepslate_redstone_ore": 12
     },
@@ -3940,10 +3950,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 80,
-     "identical": 174,
-     "cracked_by_processor": 67,
-     "removed_to_air": 8
+     "identical": 227,
+     "cracked_by_processor": 88,
+     "removed_to_air": 12,
+     "sculk_feature_overlay": 2
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -3969,19 +3979,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 151,
-     "sculk_vein": 40
+     "air": 191
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.791,
+    "unspecified_air_fraction": 1.0,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 130,
-     "deepslate": 93,
-     "tuff": 30,
-     "sculk": 27,
-     "sculk_vein": 17,
-     "sculk_sensor": 3
+     "air": 150,
+     "deepslate": 112,
+     "tuff": 32,
+     "sculk": 6
     },
     "bb_y_range": [
      -51,
@@ -4033,9 +4040,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "cracked_by_processor": 37,
-     "identical": 82,
-     "sculk_feature_overlay": 5,
+     "sculk_feature_overlay": 10,
+     "identical": 78,
+     "cracked_by_processor": 36,
      "removed_to_air": 3
     },
     "critical_blocks_total_lost": {
@@ -4058,16 +4065,17 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 32,
-     "cobbled_deepslate": 1
+     "air": 30,
+     "sculk_vein": 2,
+     "sculk": 1
     },
     "unspecified_cells": 33,
-    "unspecified_air_fraction": 0.97,
+    "unspecified_air_fraction": 0.909,
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
      "air": 60,
-     "deepslate": 54,
-     "sculk": 4,
+     "deepslate": 37,
+     "sculk": 21,
      "deepslate_redstone_ore": 2
     },
     "bb_y_range": [
@@ -4120,10 +4128,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 6,
+     "sculk_feature_overlay": 7,
      "cracked_by_processor": 47,
-     "identical": 223,
-     "removed_to_air": 8
+     "identical": 224,
+     "removed_to_air": 6
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -4144,22 +4152,21 @@
      ],
      "parapet_wall": [
       18,
-      2
+      0
      ]
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 313,
-     "sculk_vein": 18,
-     "sculk_sensor": 1
+     "air": 312,
+     "sculk_vein": 20
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.943,
-    "unspecified_solid_fraction": 0.003,
+    "unspecified_air_fraction": 0.94,
+    "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "deepslate": 56,
-     "sculk": 33,
+     "deepslate": 57,
+     "sculk": 32,
      "deepslate_gold_ore": 1
     },
     "bb_y_range": [
@@ -4226,10 +4233,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 166,
-     "removed_to_air": 8,
+     "identical": 170,
+     "removed_to_air": 12,
      "cracked_by_processor": 56,
-     "sculk_feature_overlay": 99
+     "sculk_feature_overlay": 91
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -4238,7 +4245,7 @@
      ],
      "door": [
       2,
-      0
+      1
      ],
      "bed": [
       2,
@@ -4255,19 +4262,19 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 157,
-     "sculk_vein": 33,
+     "air": 163,
+     "sculk_vein": 27,
      "sculk_sensor": 1
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.822,
+    "unspecified_air_fraction": 0.853,
     "unspecified_solid_fraction": 0.005,
     "shell_top_bottom": {
-     "air": 131,
-     "deepslate": 130,
-     "sculk": 20,
-     "sculk_vein": 16,
-     "sculk_sensor": 3
+     "air": 137,
+     "deepslate": 127,
+     "sculk": 23,
+     "sculk_vein": 9,
+     "sculk_sensor": 4
     },
     "bb_y_range": [
      -51,
@@ -4321,10 +4328,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 276,
-     "identical": 1205,
-     "removed_to_air": 66,
-     "cracked_by_processor": 349
+     "sculk_feature_overlay": 237,
+     "identical": 1228,
+     "removed_to_air": 70,
+     "cracked_by_processor": 361
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -4342,21 +4349,21 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 8607,
-     "sculk_vein": 204,
-     "sculk_sensor": 13,
+     "air": 8629,
+     "sculk_vein": 186,
+     "sculk_sensor": 9,
      "sculk": 3,
      "sculk_catalyst": 3,
      "sculk_shrieker": 3,
      "deepslate": 1
     },
     "unspecified_cells": 8834,
-    "unspecified_air_fraction": 0.974,
-    "unspecified_solid_fraction": 0.003,
+    "unspecified_air_fraction": 0.977,
+    "unspecified_solid_fraction": 0.002,
     "shell_top_bottom": {
      "air": 1209,
-     "deepslate": 809,
-     "sculk": 395,
+     "deepslate": 882,
+     "sculk": 322,
      "deepslate_redstone_ore": 5
     },
     "bb_y_range": [
@@ -4410,10 +4417,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 283,
-     "replaced_by_other": 4,
-     "sculk_feature_overlay": 12,
-     "removed_to_air": 10,
+     "sculk_feature_overlay": 3,
+     "replaced_by_other": 3,
+     "identical": 291,
+     "removed_to_air": 12,
      "cracked_by_processor": 10
     },
     "critical_blocks_total_lost": {
@@ -4461,28 +4468,14 @@
      },
      {
       "rel": [
+       5,
        0,
-       0,
-       1
+       0
       ],
       "world": [
-       -291,
+       -286,
        -51,
-       944
-      ],
-      "expected": "minecraft:deepslate[axis=y]",
-      "got": "minecraft:tuff"
-     },
-     {
-      "rel": [
-       0,
-       0,
-       2
-      ],
-      "world": [
-       -291,
-       -51,
-       945
+       943
       ],
       "expected": "minecraft:deepslate[axis=y]",
       "got": "minecraft:tuff"
@@ -4490,16 +4483,16 @@
     ],
     "unspecified_cell_fill": {
      "air": 220,
-     "sculk_vein": 1
+     "glow_lichen": 1
     },
     "unspecified_cells": 221,
     "unspecified_air_fraction": 0.995,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 64,
-     "tuff": 25,
-     "deepslate": 22,
-     "sculk": 17
+     "sculk": 46,
+     "deepslate": 13,
+     "tuff": 5
     },
     "bb_y_range": [
      -51,
@@ -4553,8 +4546,8 @@
     "block_replacement": {
      "replaced_by_other": 18,
      "removed_to_air": 7,
-     "identical": 280,
-     "sculk_feature_overlay": 4,
+     "identical": 279,
+     "sculk_feature_overlay": 5,
      "cracked_by_processor": 10
     },
     "critical_blocks_total_lost": {
@@ -4665,8 +4658,8 @@
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 64,
-     "deepslate": 40,
-     "tuff": 21,
+     "deepslate": 39,
+     "tuff": 22,
      "sculk": 3
     },
     "bb_y_range": [
@@ -4719,11 +4712,11 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 66,
-     "identical": 241,
-     "replaced_by_other": 3,
-     "removed_to_air": 4,
-     "cracked_by_processor": 5
+     "sculk_feature_overlay": 40,
+     "identical": 249,
+     "replaced_by_other": 15,
+     "removed_to_air": 5,
+     "cracked_by_processor": 10
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -4742,12 +4735,40 @@
     "block_replacement_samples": [
      {
       "rel": [
-       2,
        0,
-       4
+       0,
+       3
       ],
       "world": [
-       -258,
+       -257,
+       -51,
+       818
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       1,
+       0,
+       3
+      ],
+      "world": [
+       -257,
+       -51,
+       819
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       2,
+       0,
+       3
+      ],
+      "world": [
+       -257,
        -51,
        820
       ],
@@ -4758,10 +4779,10 @@
       "rel": [
        3,
        0,
-       4
+       3
       ],
       "world": [
-       -258,
+       -257,
        -51,
        821
       ],
@@ -4772,31 +4793,45 @@
       "rel": [
        4,
        0,
-       4
+       3
       ],
       "world": [
-       -258,
+       -257,
        -51,
        822
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       5,
+       0,
+       3
+      ],
+      "world": [
+       -257,
+       -51,
+       823
       ],
       "expected": "minecraft:deepslate[axis=y]",
       "got": "minecraft:tuff"
      }
     ],
     "unspecified_cell_fill": {
-     "air": 201,
-     "sculk_vein": 20
+     "air": 219,
+     "sculk_vein": 2
     },
     "unspecified_cells": 221,
-    "unspecified_air_fraction": 0.91,
+    "unspecified_air_fraction": 0.991,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 63,
-     "sculk": 52,
-     "tuff": 8,
-     "deepslate": 3,
-     "sculk_catalyst": 1,
-     "glow_lichen": 1
+     "air": 61,
+     "tuff": 43,
+     "deepslate": 15,
+     "sculk": 6,
+     "sculk_sensor": 2,
+     "sculk_shrieker": 1
     },
     "bb_y_range": [
      -51,
@@ -4848,10 +4883,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 21,
-     "cracked_by_processor": 27,
+     "sculk_feature_overlay": 26,
+     "identical": 71,
      "removed_to_air": 4,
-     "identical": 75
+     "cracked_by_processor": 26
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -4881,9 +4916,10 @@
     "unspecified_air_fraction": 0.697,
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
-     "air": 60,
-     "sculk": 42,
-     "deepslate": 18
+     "air": 58,
+     "deepslate": 44,
+     "sculk": 16,
+     "sculk_vein": 2
     },
     "bb_y_range": [
      -51,
@@ -4990,10 +5026,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 55,
-     "identical": 55,
-     "cracked_by_processor": 15,
-     "removed_to_air": 2
+     "sculk_feature_overlay": 40,
+     "cracked_by_processor": 18,
+     "identical": 66,
+     "removed_to_air": 3
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -5015,18 +5051,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 17,
-     "sculk_vein": 15,
+     "air": 21,
+     "sculk_vein": 11,
      "sculk": 1
     },
     "unspecified_cells": 33,
-    "unspecified_air_fraction": 0.515,
+    "unspecified_air_fraction": 0.636,
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
-     "air": 51,
-     "deepslate": 44,
-     "sculk": 16,
-     "sculk_vein": 6,
+     "air": 53,
+     "deepslate": 39,
+     "sculk": 21,
+     "sculk_vein": 4,
      "sculk_sensor": 3
     },
     "bb_y_range": [
@@ -5079,10 +5115,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "cracked_by_processor": 170,
-     "identical": 390,
-     "sculk_feature_overlay": 102,
-     "removed_to_air": 26
+     "cracked_by_processor": 173,
+     "identical": 383,
+     "sculk_feature_overlay": 103,
+     "removed_to_air": 29
     },
     "critical_blocks_total_lost": {
      "door": [
@@ -5108,18 +5144,20 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 650,
-     "sculk_vein": 65,
-     "sculk_sensor": 4,
-     "sculk": 1
+     "air": 662,
+     "sculk_vein": 54,
+     "sculk_sensor": 3,
+     "cobbled_deepslate": 1
     },
     "unspecified_cells": 720,
-    "unspecified_air_fraction": 0.903,
-    "unspecified_solid_fraction": 0.007,
+    "unspecified_air_fraction": 0.919,
+    "unspecified_solid_fraction": 0.006,
     "shell_top_bottom": {
-     "air": 234,
-     "deepslate": 179,
-     "sculk": 55
+     "air": 217,
+     "deepslate": 195,
+     "sculk": 39,
+     "sculk_vein": 16,
+     "sculk_sensor": 1
     },
     "bb_y_range": [
      -51,
@@ -5171,10 +5209,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 250,
-     "identical": 292,
-     "cracked_by_processor": 118,
-     "removed_to_air": 28
+     "cracked_by_processor": 128,
+     "identical": 328,
+     "sculk_feature_overlay": 197,
+     "removed_to_air": 35
     },
     "critical_blocks_total_lost": {
      "door": [
@@ -5200,19 +5238,19 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 586,
-     "sculk_vein": 124,
-     "sculk_sensor": 8,
+     "air": 613,
+     "sculk_vein": 101,
+     "sculk_sensor": 4,
      "sculk_shrieker": 1,
-     "sculk": 1
+     "cobbled_deepslate": 1
     },
     "unspecified_cells": 720,
-    "unspecified_air_fraction": 0.814,
-    "unspecified_solid_fraction": 0.014,
+    "unspecified_air_fraction": 0.851,
+    "unspecified_solid_fraction": 0.008,
     "shell_top_bottom": {
      "air": 212,
-     "deepslate": 189,
-     "sculk": 38,
+     "deepslate": 188,
+     "sculk": 39,
      "sculk_vein": 19,
      "gravel": 7,
      "sculk_sensor": 3
@@ -5267,10 +5305,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 19,
-     "identical": 289,
-     "removed_to_air": 5,
-     "cracked_by_processor": 5,
+     "sculk_feature_overlay": 25,
+     "identical": 283,
+     "removed_to_air": 6,
+     "cracked_by_processor": 4,
      "replaced_by_other": 1
     },
     "critical_blocks_total_lost": {
@@ -5304,16 +5342,16 @@
      }
     ],
     "unspecified_cell_fill": {
-     "air": 219,
-     "sculk_vein": 2
+     "air": 216,
+     "sculk_vein": 5
     },
     "unspecified_cells": 221,
-    "unspecified_air_fraction": 0.991,
+    "unspecified_air_fraction": 0.977,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 62,
-     "deepslate": 50,
-     "sculk": 14,
+     "deepslate": 40,
+     "sculk": 24,
      "sculk_vein": 2
     },
     "bb_y_range": [
@@ -5367,10 +5405,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "cracked_by_processor": 339,
-     "identical": 1124,
-     "sculk_feature_overlay": 382,
-     "removed_to_air": 51
+     "sculk_feature_overlay": 391,
+     "identical": 1131,
+     "cracked_by_processor": 321,
+     "removed_to_air": 53
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -5389,23 +5427,22 @@
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
      "air": 8561,
-     "sculk_vein": 248,
-     "sculk_sensor": 15,
-     "sculk_shrieker": 5,
+     "sculk_vein": 246,
+     "sculk_sensor": 18,
+     "sculk_shrieker": 3,
      "sculk": 3,
-     "deepslate": 1,
-     "sculk_catalyst": 1
+     "sculk_catalyst": 2,
+     "deepslate": 1
     },
     "unspecified_cells": 8834,
     "unspecified_air_fraction": 0.969,
     "unspecified_solid_fraction": 0.003,
     "shell_top_bottom": {
      "air": 1209,
-     "deepslate": 615,
-     "sculk": 542,
-     "tuff": 48,
-     "deepslate_redstone_ore": 3,
-     "sculk_catalyst": 1
+     "deepslate": 684,
+     "sculk": 457,
+     "tuff": 65,
+     "deepslate_redstone_ore": 3
     },
     "bb_y_range": [
      -51,
@@ -5457,10 +5494,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 54,
-     "sculk_feature_overlay": 56,
-     "cracked_by_processor": 15,
-     "removed_to_air": 2
+     "sculk_feature_overlay": 25,
+     "identical": 77,
+     "cracked_by_processor": 22,
+     "removed_to_air": 3
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -5482,18 +5519,19 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 22,
-     "sculk_vein": 10,
+     "air": 24,
+     "sculk_vein": 8,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 33,
-    "unspecified_air_fraction": 0.667,
+    "unspecified_air_fraction": 0.727,
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
-     "air": 55,
-     "sculk": 30,
-     "deepslate": 30,
-     "sculk_vein": 5
+     "air": 56,
+     "deepslate": 35,
+     "sculk": 24,
+     "sculk_vein": 4,
+     "sculk_catalyst": 1
     },
     "bb_y_range": [
      -51,
@@ -5545,10 +5583,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 12,
-     "cracked_by_processor": 27,
-     "identical": 84,
-     "removed_to_air": 4
+     "cracked_by_processor": 28,
+     "sculk_feature_overlay": 16,
+     "identical": 78,
+     "removed_to_air": 5
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -5570,18 +5608,17 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 31,
-     "sculk": 1,
-     "sculk_vein": 1
+     "air": 24,
+     "sculk_vein": 8,
+     "cobbled_deepslate": 1
     },
     "unspecified_cells": 33,
-    "unspecified_air_fraction": 0.939,
+    "unspecified_air_fraction": 0.727,
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
      "air": 60,
-     "deepslate": 41,
-     "sculk": 18,
-     "tuff": 1
+     "sculk": 50,
+     "deepslate": 10
     },
     "bb_y_range": [
      -51,
@@ -5633,10 +5670,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 116,
+     "identical": 115,
      "cracked_by_processor": 33,
-     "removed_to_air": 5,
-     "sculk_feature_overlay": 44
+     "sculk_feature_overlay": 46,
+     "removed_to_air": 4
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -5662,18 +5699,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 69,
-     "sculk_vein": 13
+     "air": 65,
+     "sculk_vein": 17
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 0.841,
+    "unspecified_air_fraction": 0.793,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 85,
-     "deepslate": 56,
-     "gravel": 18,
-     "sculk": 16,
-     "sculk_vein": 4,
+     "air": 83,
+     "deepslate": 52,
+     "sculk": 24,
+     "gravel": 14,
+     "sculk_vein": 6,
      "sculk_sensor": 1
     },
     "bb_y_range": [
@@ -5726,10 +5763,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 130,
-     "cracked_by_processor": 45,
-     "sculk_feature_overlay": 20,
-     "removed_to_air": 3
+     "identical": 108,
+     "cracked_by_processor": 37,
+     "sculk_feature_overlay": 51,
+     "removed_to_air": 2
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -5755,17 +5792,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 72,
-     "sculk_vein": 9,
-     "sculk_catalyst": 1
+     "air": 61,
+     "sculk_vein": 20,
+     "sculk_sensor": 1
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 0.878,
+    "unspecified_air_fraction": 0.744,
     "unspecified_solid_fraction": 0.012,
     "shell_top_bottom": {
-     "air": 90,
-     "deepslate": 60,
-     "sculk": 30
+     "air": 80,
+     "deepslate": 45,
+     "sculk": 45,
+     "sculk_vein": 10
     },
     "bb_y_range": [
      -51,
@@ -5817,10 +5855,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 137,
-     "cracked_by_processor": 48,
-     "removed_to_air": 8,
-     "sculk_feature_overlay": 5
+     "identical": 121,
+     "cracked_by_processor": 40,
+     "sculk_feature_overlay": 30,
+     "removed_to_air": 7
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -5846,15 +5884,17 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 82
+     "air": 69,
+     "sculk_vein": 13
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 1.0,
+    "unspecified_air_fraction": 0.841,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 90,
-     "deepslate": 79,
-     "sculk": 11
+     "air": 89,
+     "deepslate": 58,
+     "sculk": 32,
+     "sculk_vein": 1
     },
     "bb_y_range": [
      -51,
@@ -6059,17 +6099,17 @@
      }
     ],
     "unspecified_cell_fill": {
-     "air": 77,
-     "lava": 5
+     "air": 76,
+     "lava": 6
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 0.939,
-    "unspecified_solid_fraction": 0.061,
+    "unspecified_air_fraction": 0.927,
+    "unspecified_solid_fraction": 0.073,
     "shell_top_bottom": {
      "air": 84,
-     "sculk": 32,
-     "deepslate": 29,
-     "tuff": 29,
+     "tuff": 36,
+     "deepslate": 35,
+     "sculk": 19,
      "lava": 6
     },
     "bb_y_range": [
@@ -6158,10 +6198,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 446,
-     "cracked_by_processor": 169,
-     "removed_to_air": 28,
-     "sculk_feature_overlay": 217
+     "identical": 488,
+     "sculk_feature_overlay": 157,
+     "cracked_by_processor": 189,
+     "removed_to_air": 26
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -6183,22 +6223,20 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 527,
-     "sculk_vein": 53,
-     "sculk_sensor": 3,
-     "cobbled_deepslate": 1,
-     "sculk_shrieker": 1
+     "air": 514,
+     "sculk_vein": 70,
+     "cobbled_deepslate": 1
     },
     "unspecified_cells": 585,
-    "unspecified_air_fraction": 0.901,
-    "unspecified_solid_fraction": 0.009,
+    "unspecified_air_fraction": 0.879,
+    "unspecified_solid_fraction": 0.002,
     "shell_top_bottom": {
-     "air": 324,
-     "deepslate": 206,
-     "sculk": 150,
-     "sculk_vein": 31,
-     "sculk_sensor": 7,
-     "sculk_shrieker": 2
+     "air": 338,
+     "deepslate": 250,
+     "sculk": 108,
+     "sculk_vein": 19,
+     "sculk_sensor": 6,
+     "sculk_shrieker": 1
     },
     "bb_y_range": [
      -51,
@@ -6342,7 +6380,8 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 307,
+     "identical": 301,
+     "sculk_feature_overlay": 6,
      "removed_to_air": 7,
      "cracked_by_processor": 5
     },
@@ -6362,14 +6401,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 221
+     "air": 220,
+     "sculk_vein": 1
     },
     "unspecified_cells": 221,
-    "unspecified_air_fraction": 1.0,
+    "unspecified_air_fraction": 0.995,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "deepslate": 64,
-     "air": 64
+     "air": 64,
+     "deepslate": 55,
+     "sculk": 9
     },
     "bb_y_range": [
      -51,
@@ -6421,10 +6462,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 159,
-     "removed_to_air": 24,
-     "cracked_by_processor": 170,
-     "identical": 335
+     "sculk_feature_overlay": 129,
+     "cracked_by_processor": 183,
+     "identical": 353,
+     "removed_to_air": 23
     },
     "critical_blocks_total_lost": {
      "door": [
@@ -6450,20 +6491,21 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 638,
-     "sculk_vein": 80,
-     "sculk": 1,
-     "sculk_catalyst": 1
+     "air": 647,
+     "sculk_vein": 70,
+     "cobbled_deepslate": 1,
+     "sculk_catalyst": 1,
+     "sculk_sensor": 1
     },
     "unspecified_cells": 720,
-    "unspecified_air_fraction": 0.886,
-    "unspecified_solid_fraction": 0.003,
+    "unspecified_air_fraction": 0.899,
+    "unspecified_solid_fraction": 0.004,
     "shell_top_bottom": {
-     "air": 218,
-     "sculk": 128,
-     "deepslate": 104,
-     "sculk_vein": 10,
-     "sculk_sensor": 4,
+     "air": 216,
+     "sculk": 150,
+     "deepslate": 83,
+     "sculk_vein": 15,
+     "sculk_sensor": 3,
      "deepslate_iron_ore": 1
     },
     "bb_y_range": [
@@ -6516,10 +6558,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 136,
-     "sculk_feature_overlay": 12,
-     "cracked_by_processor": 42,
-     "removed_to_air": 8
+     "identical": 108,
+     "sculk_feature_overlay": 56,
+     "cracked_by_processor": 28,
+     "removed_to_air": 6
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -6545,16 +6587,20 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 80,
-     "sculk_vein": 2
+     "air": 68,
+     "sculk_vein": 11,
+     "sculk_sensor": 2,
+     "sculk_shrieker": 1
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 0.976,
-    "unspecified_solid_fraction": 0.0,
+    "unspecified_air_fraction": 0.829,
+    "unspecified_solid_fraction": 0.037,
     "shell_top_bottom": {
-     "air": 90,
-     "deepslate": 64,
-     "sculk": 26
+     "air": 80,
+     "sculk": 56,
+     "deepslate": 34,
+     "sculk_vein": 8,
+     "sculk_sensor": 2
     },
     "bb_y_range": [
      -51,
@@ -6982,10 +7028,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 65,
-     "cracked_by_processor": 23,
-     "removed_to_air": 4,
-     "sculk_feature_overlay": 35
+     "identical": 91,
+     "cracked_by_processor": 31,
+     "removed_to_air": 3,
+     "sculk_feature_overlay": 2
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -7007,19 +7053,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 29,
-     "sculk_vein": 3,
+     "air": 32,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 33,
-    "unspecified_air_fraction": 0.879,
+    "unspecified_air_fraction": 0.97,
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
-     "air": 57,
-     "sculk": 47,
-     "deepslate": 13,
-     "sculk_sensor": 2,
-     "sculk_catalyst": 1
+     "air": 60,
+     "deepslate": 38,
+     "sculk": 22
     },
     "bb_y_range": [
      -51,
@@ -7071,10 +7114,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 203,
-     "cracked_by_processor": 61,
-     "removed_to_air": 10,
-     "sculk_feature_overlay": 55
+     "identical": 204,
+     "cracked_by_processor": 58,
+     "removed_to_air": 9,
+     "sculk_feature_overlay": 58
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -7100,17 +7143,17 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 161,
-     "sculk_vein": 30
+     "air": 154,
+     "sculk_vein": 37
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.843,
+    "unspecified_air_fraction": 0.806,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 132,
+     "air": 127,
      "deepslate": 120,
+     "sculk_vein": 23,
      "gravel": 21,
-     "sculk_vein": 18,
      "sculk": 9
     },
     "bb_y_range": [
@@ -7434,10 +7477,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 211,
+     "sculk_feature_overlay": 93,
+     "identical": 219,
      "removed_to_air": 5,
-     "sculk_feature_overlay": 102,
-     "cracked_by_processor": 1
+     "cracked_by_processor": 2
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -7455,17 +7498,17 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 192,
-     "sculk_vein": 29
+     "air": 183,
+     "sculk_vein": 38
     },
     "unspecified_cells": 221,
-    "unspecified_air_fraction": 0.869,
+    "unspecified_air_fraction": 0.828,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 64,
-     "deepslate": 49,
-     "sculk": 8,
-     "gravel": 7
+     "sculk": 30,
+     "deepslate": 29,
+     "gravel": 5
     },
     "bb_y_range": [
      -51,
@@ -7517,10 +7560,11 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 94,
-     "identical": 219,
-     "removed_to_air": 4,
-     "cracked_by_processor": 2
+     "identical": 246,
+     "sculk_feature_overlay": 66,
+     "replaced_by_other": 1,
+     "cracked_by_processor": 3,
+     "removed_to_air": 3
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -7536,21 +7580,36 @@
       0
      ]
     },
-    "block_replacement_samples": [],
+    "block_replacement_samples": [
+     {
+      "rel": [
+       0,
+       0,
+       2
+      ],
+      "world": [
+       -3041,
+       -51,
+       2277
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:deepslate_iron_ore"
+     }
+    ],
     "unspecified_cell_fill": {
-     "air": 184,
-     "sculk_vein": 37
+     "air": 183,
+     "sculk_vein": 38
     },
     "unspecified_cells": 221,
-    "unspecified_air_fraction": 0.833,
+    "unspecified_air_fraction": 0.828,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 62,
-     "sculk": 29,
-     "deepslate": 26,
-     "gravel": 8,
+     "deepslate": 41,
+     "gravel": 15,
+     "sculk": 6,
      "sculk_vein": 2,
-     "deepslate_iron_ore": 1
+     "deepslate_iron_ore": 2
     },
     "bb_y_range": [
      -51,
@@ -7602,10 +7661,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 44,
-     "removed_to_air": 4,
-     "identical": 117,
-     "cracked_by_processor": 33
+     "sculk_feature_overlay": 66,
+     "identical": 96,
+     "cracked_by_processor": 28,
+     "removed_to_air": 8
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -7631,18 +7690,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 70,
-     "sculk_vein": 12
+     "air": 45,
+     "sculk_vein": 36,
+     "sculk_sensor": 1
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 0.854,
-    "unspecified_solid_fraction": 0.0,
+    "unspecified_air_fraction": 0.549,
+    "unspecified_solid_fraction": 0.012,
     "shell_top_bottom": {
-     "air": 86,
-     "deepslate": 53,
-     "sculk": 37,
-     "sculk_vein": 3,
-     "sculk_sensor": 1
+     "air": 83,
+     "deepslate": 52,
+     "sculk": 38,
+     "sculk_vein": 7
     },
     "bb_y_range": [
      -51,
@@ -7780,10 +7839,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 201,
-     "sculk_feature_overlay": 104,
+     "identical": 247,
      "removed_to_air": 9,
-     "cracked_by_processor": 2,
+     "sculk_feature_overlay": 55,
+     "cracked_by_processor": 5,
      "replaced_by_other": 3
     },
     "critical_blocks_total_lost": {
@@ -7845,16 +7904,16 @@
      }
     ],
     "unspecified_cell_fill": {
-     "air": 189,
-     "sculk_vein": 32
+     "air": 187,
+     "sculk_vein": 34
     },
     "unspecified_cells": 221,
-    "unspecified_air_fraction": 0.855,
+    "unspecified_air_fraction": 0.846,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 64,
-     "deepslate": 34,
-     "sculk": 30
+     "deepslate": 36,
+     "sculk": 28
     },
     "bb_y_range": [
      -51,
@@ -8120,9 +8179,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 81,
-     "cracked_by_processor": 15,
-     "identical": 29,
+     "sculk_feature_overlay": 67,
+     "cracked_by_processor": 18,
+     "identical": 40,
      "removed_to_air": 2
     },
     "critical_blocks_total_lost": {
@@ -8145,17 +8204,17 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 20,
-     "sculk_vein": 12,
+     "air": 18,
+     "sculk_vein": 14,
      "sculk": 1
     },
     "unspecified_cells": 33,
-    "unspecified_air_fraction": 0.606,
+    "unspecified_air_fraction": 0.545,
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
      "air": 52,
-     "sculk": 50,
-     "deepslate": 10,
+     "sculk": 47,
+     "deepslate": 13,
      "sculk_vein": 6,
      "sculk_catalyst": 1,
      "sculk_shrieker": 1
@@ -8210,10 +8269,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 107,
-     "sculk_feature_overlay": 171,
-     "cracked_by_processor": 45,
-     "removed_to_air": 6
+     "identical": 150,
+     "sculk_feature_overlay": 118,
+     "cracked_by_processor": 53,
+     "removed_to_air": 8
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -8239,20 +8298,20 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 137,
-     "sculk_vein": 52,
-     "sculk_sensor": 2
+     "air": 154,
+     "sculk_vein": 36,
+     "sculk_sensor": 1
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.717,
-    "unspecified_solid_fraction": 0.01,
+    "unspecified_air_fraction": 0.806,
+    "unspecified_solid_fraction": 0.005,
     "shell_top_bottom": {
-     "air": 130,
-     "sculk": 75,
-     "deepslate": 75,
-     "sculk_vein": 14,
-     "sculk_sensor": 3,
-     "sculk_shrieker": 2
+     "air": 127,
+     "deepslate": 85,
+     "sculk": 65,
+     "sculk_vein": 17,
+     "sculk_sensor": 5,
+     "sculk_shrieker": 1
     },
     "bb_y_range": [
      -51,
@@ -8304,9 +8363,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 17,
-     "identical": 80,
-     "cracked_by_processor": 22,
+     "sculk_feature_overlay": 12,
+     "identical": 81,
+     "cracked_by_processor": 26,
      "removed_to_air": 8
     },
     "critical_blocks_total_lost": {
@@ -8329,17 +8388,17 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 23,
-     "sculk_vein": 9,
-     "sculk": 1
+     "air": 31,
+     "cobbled_deepslate": 1,
+     "sculk_vein": 1
     },
     "unspecified_cells": 33,
-    "unspecified_air_fraction": 0.697,
+    "unspecified_air_fraction": 0.939,
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
      "air": 60,
-     "deepslate": 43,
-     "sculk": 16,
+     "deepslate": 44,
+     "sculk": 15,
      "deepslate_gold_ore": 1
     },
     "bb_y_range": [
@@ -8392,10 +8451,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 55,
-     "identical": 192,
-     "removed_to_air": 7,
-     "cracked_by_processor": 75
+     "sculk_feature_overlay": 92,
+     "identical": 166,
+     "removed_to_air": 8,
+     "cracked_by_processor": 63
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -8421,16 +8480,19 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 161,
-     "sculk_vein": 30
+     "air": 156,
+     "sculk_vein": 33,
+     "sculk_sensor": 2
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.843,
-    "unspecified_solid_fraction": 0.0,
+    "unspecified_air_fraction": 0.817,
+    "unspecified_solid_fraction": 0.01,
     "shell_top_bottom": {
-     "air": 150,
-     "deepslate": 99,
-     "sculk": 51
+     "air": 134,
+     "deepslate": 96,
+     "sculk": 54,
+     "sculk_vein": 14,
+     "sculk_sensor": 2
     },
     "bb_y_range": [
      -51,
@@ -8482,10 +8544,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 444,
-     "sculk_feature_overlay": 226,
-     "cracked_by_processor": 159,
-     "removed_to_air": 31
+     "identical": 543,
+     "removed_to_air": 36,
+     "cracked_by_processor": 194,
+     "sculk_feature_overlay": 87
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -8507,21 +8569,20 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 471,
-     "sculk_vein": 111,
-     "sculk_sensor": 2,
-     "sculk": 1
+     "air": 525,
+     "sculk_vein": 59,
+     "cobbled_deepslate": 1
     },
     "unspecified_cells": 585,
-    "unspecified_air_fraction": 0.805,
-    "unspecified_solid_fraction": 0.005,
+    "unspecified_air_fraction": 0.897,
+    "unspecified_solid_fraction": 0.002,
     "shell_top_bottom": {
-     "air": 316,
-     "deepslate": 303,
-     "sculk": 57,
-     "sculk_vein": 36,
-     "sculk_sensor": 7,
-     "sculk_shrieker": 2
+     "deepslate": 360,
+     "air": 340,
+     "sculk_vein": 17,
+     "sculk_sensor": 3,
+     "sculk_shrieker": 1,
+     "sculk": 1
     },
     "bb_y_range": [
      -51,
@@ -8670,10 +8731,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "cracked_by_processor": 90,
-     "identical": 226,
-     "sculk_feature_overlay": 361,
-     "removed_to_air": 11
+     "sculk_feature_overlay": 252,
+     "identical": 301,
+     "cracked_by_processor": 116,
+     "removed_to_air": 19
     },
     "critical_blocks_total_lost": {
      "door": [
@@ -8699,22 +8760,21 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 560,
-     "sculk_vein": 150,
-     "sculk_sensor": 7,
-     "sculk_catalyst": 1,
-     "cobbled_deepslate": 1,
-     "sculk_shrieker": 1
+     "air": 604,
+     "sculk_vein": 109,
+     "sculk_sensor": 6,
+     "sculk": 1
     },
     "unspecified_cells": 720,
-    "unspecified_air_fraction": 0.778,
-    "unspecified_solid_fraction": 0.014,
+    "unspecified_air_fraction": 0.839,
+    "unspecified_solid_fraction": 0.01,
     "shell_top_bottom": {
      "air": 207,
-     "sculk": 133,
-     "deepslate": 101,
+     "deepslate": 205,
+     "sculk": 25,
      "sculk_vein": 18,
-     "sculk_sensor": 9
+     "sculk_sensor": 9,
+     "deepslate_redstone_ore": 4
     },
     "bb_y_range": [
      -51,
@@ -8766,10 +8826,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 189,
-     "cracked_by_processor": 41,
-     "removed_to_air": 7,
-     "sculk_feature_overlay": 47
+     "identical": 178,
+     "cracked_by_processor": 40,
+     "sculk_feature_overlay": 59,
+     "removed_to_air": 7
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -8790,23 +8850,23 @@
      ],
      "parapet_wall": [
       18,
-      1
+      0
      ]
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 299,
-     "sculk_vein": 32,
-     "sculk_sensor": 1
+     "air": 283,
+     "sculk_vein": 47,
+     "sculk_sensor": 1,
+     "sculk_shrieker": 1
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.901,
-    "unspecified_solid_fraction": 0.003,
+    "unspecified_air_fraction": 0.852,
+    "unspecified_solid_fraction": 0.006,
     "shell_top_bottom": {
-     "air": 88,
-     "sculk": 64,
-     "deepslate": 26,
-     "sculk_sensor": 1,
+     "air": 89,
+     "sculk": 79,
+     "deepslate": 11,
      "sculk_vein": 1
     },
     "bb_y_range": [
@@ -8894,10 +8954,11 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "cracked_by_processor": 36,
-     "removed_to_air": 11,
-     "identical": 169,
-     "sculk_feature_overlay": 68
+     "sculk_feature_overlay": 20,
+     "cracked_by_processor": 49,
+     "identical": 204,
+     "removed_to_air": 10,
+     "replaced_by_other": 1
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -8918,21 +8979,36 @@
      ],
      "parapet_wall": [
       18,
-      1
+      0
      ]
     },
-    "block_replacement_samples": [],
+    "block_replacement_samples": [
+     {
+      "rel": [
+       6,
+       10,
+       3
+      ],
+      "world": [
+       -1355,
+       -41,
+       79
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     }
+    ],
     "unspecified_cell_fill": {
-     "air": 272,
-     "sculk_vein": 60
+     "air": 294,
+     "sculk_vein": 38
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.819,
+    "unspecified_air_fraction": 0.886,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "deepslate": 73,
-     "sculk": 16,
+     "deepslate": 45,
+     "sculk": 44,
      "deepslate_diamond_ore": 1
     },
     "bb_y_range": [
@@ -8986,10 +9062,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 215,
-     "identical": 451,
-     "cracked_by_processor": 167,
-     "removed_to_air": 27
+     "sculk_feature_overlay": 348,
+     "identical": 364,
+     "removed_to_air": 22,
+     "cracked_by_processor": 126
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -9011,22 +9087,21 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 502,
-     "sculk_vein": 77,
-     "sculk_sensor": 4,
-     "sculk_catalyst": 1,
-     "cobbled_deepslate": 1
+     "air": 456,
+     "sculk_vein": 126,
+     "sculk_sensor": 2,
+     "sculk": 1
     },
     "unspecified_cells": 585,
-    "unspecified_air_fraction": 0.858,
-    "unspecified_solid_fraction": 0.01,
+    "unspecified_air_fraction": 0.779,
+    "unspecified_solid_fraction": 0.005,
     "shell_top_bottom": {
-     "air": 328,
-     "deepslate": 245,
-     "sculk": 82,
-     "tuff": 32,
-     "sculk_vein": 28,
-     "sculk_sensor": 5
+     "air": 315,
+     "deepslate": 192,
+     "sculk": 97,
+     "tuff": 70,
+     "sculk_vein": 37,
+     "sculk_sensor": 9
     },
     "bb_y_range": [
      -51,
@@ -9078,9 +9153,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 7,
-     "identical": 212,
-     "cracked_by_processor": 52,
+     "sculk_feature_overlay": 3,
+     "identical": 214,
+     "cracked_by_processor": 54,
      "removed_to_air": 11,
      "replaced_by_other": 2
     },
@@ -9137,16 +9212,17 @@
      }
     ],
     "unspecified_cell_fill": {
-     "air": 310,
-     "sculk_vein": 22
+     "air": 314,
+     "sculk_vein": 17,
+     "sculk_sensor": 1
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.934,
-    "unspecified_solid_fraction": 0.0,
+    "unspecified_air_fraction": 0.946,
+    "unspecified_solid_fraction": 0.003,
     "shell_top_bottom": {
      "air": 89,
-     "sculk": 51,
-     "deepslate": 39,
+     "sculk": 45,
+     "deepslate": 45,
      "sculk_vein": 1
     },
     "bb_y_range": [
@@ -9369,10 +9445,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 134,
-     "cracked_by_processor": 54,
-     "sculk_feature_overlay": 1,
-     "removed_to_air": 9
+     "identical": 125,
+     "cracked_by_processor": 50,
+     "sculk_feature_overlay": 16,
+     "removed_to_air": 7
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -9398,15 +9474,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 82
+     "air": 76,
+     "sculk_vein": 6
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 1.0,
+    "unspecified_air_fraction": 0.927,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 89,
-     "deepslate": 87,
-     "sculk": 3,
+     "deepslate": 64,
+     "sculk": 26,
      "sculk_vein": 1
     },
     "bb_y_range": [
@@ -9460,9 +9537,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 448,
-     "cracked_by_processor": 174,
-     "sculk_feature_overlay": 209,
+     "sculk_feature_overlay": 275,
+     "identical": 397,
+     "cracked_by_processor": 159,
      "removed_to_air": 29
     },
     "critical_blocks_total_lost": {
@@ -9486,20 +9563,20 @@
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
      "air": 472,
-     "sculk_vein": 109,
-     "sculk_sensor": 3,
+     "sculk_vein": 110,
+     "sculk_sensor": 2,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 585,
     "unspecified_air_fraction": 0.807,
-    "unspecified_solid_fraction": 0.007,
+    "unspecified_solid_fraction": 0.005,
     "shell_top_bottom": {
-     "deepslate": 309,
-     "air": 307,
-     "sculk_vein": 46,
-     "sculk": 43,
-     "tuff": 8,
-     "sculk_sensor": 5
+     "air": 325,
+     "deepslate": 263,
+     "sculk": 97,
+     "sculk_vein": 31,
+     "sculk_sensor": 5,
+     "deepslate_diamond_ore": 1
     },
     "bb_y_range": [
      -51,
@@ -9551,9 +9628,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 218,
-     "cracked_by_processor": 54,
-     "removed_to_air": 12
+     "sculk_feature_overlay": 5,
+     "identical": 217,
+     "cracked_by_processor": 52,
+     "removed_to_air": 10
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -9574,22 +9652,22 @@
      ],
      "parapet_wall": [
       18,
-      1
+      0
      ]
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 331,
-     "sculk_vein": 1
+     "air": 314,
+     "sculk_vein": 18
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.997,
+    "unspecified_air_fraction": 0.946,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "deepslate": 79,
-     "gravel": 9,
-     "sculk": 2
+     "deepslate": 67,
+     "sculk": 19,
+     "gravel": 4
     },
     "bb_y_range": [
      -51,
@@ -9641,10 +9719,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 369,
-     "cracked_by_processor": 166,
-     "sculk_feature_overlay": 138,
-     "removed_to_air": 15
+     "identical": 390,
+     "cracked_by_processor": 174,
+     "sculk_feature_overlay": 108,
+     "removed_to_air": 16
     },
     "critical_blocks_total_lost": {
      "door": [
@@ -9670,20 +9748,20 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 631,
-     "sculk_vein": 82,
-     "sculk_sensor": 4,
+     "air": 638,
+     "sculk_vein": 77,
+     "sculk_sensor": 2,
      "sculk_catalyst": 1,
      "sculk_shrieker": 1,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 720,
-    "unspecified_air_fraction": 0.876,
-    "unspecified_solid_fraction": 0.01,
+    "unspecified_air_fraction": 0.886,
+    "unspecified_solid_fraction": 0.007,
     "shell_top_bottom": {
      "air": 241,
-     "deepslate": 119,
-     "sculk": 92,
+     "deepslate": 116,
+     "sculk": 95,
      "sculk_vein": 10,
      "sculk_sensor": 5,
      "deepslate_iron_ore": 1
@@ -9739,10 +9817,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 67,
-     "cracked_by_processor": 31,
-     "identical": 171,
-     "removed_to_air": 15
+     "sculk_feature_overlay": 75,
+     "cracked_by_processor": 27,
+     "identical": 170,
+     "removed_to_air": 12
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -9763,21 +9841,22 @@
      ],
      "parapet_wall": [
       18,
-      2
+      0
      ]
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 294,
-     "sculk_vein": 38
+     "air": 289,
+     "sculk_vein": 43
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.886,
+    "unspecified_air_fraction": 0.87,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 90,
-     "deepslate": 48,
-     "sculk": 42
+     "air": 89,
+     "sculk": 63,
+     "deepslate": 27,
+     "sculk_sensor": 1
     },
     "bb_y_range": [
      -51,
@@ -9999,10 +10078,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "cracked_by_processor": 328,
-     "identical": 1066,
+     "cracked_by_processor": 346,
+     "identical": 1109,
+     "sculk_feature_overlay": 384,
      "replaced_by_other": 4,
-     "sculk_feature_overlay": 445,
      "removed_to_air": 48,
      "same_block_other_state": 5
     },
@@ -10023,20 +10102,6 @@
     "block_replacement_samples": [
      {
       "rel": [
-       14,
-       0,
-       0
-      ],
-      "world": [
-       -1244,
-       -51,
-       117
-      ],
-      "expected": "minecraft:deepslate_bricks",
-      "got": "minecraft:water[level=8]"
-     },
-     {
-      "rel": [
        18,
        0,
        2
@@ -10051,14 +10116,28 @@
      },
      {
       "rel": [
-       13,
+       18,
        0,
-       23
+       3
       ],
       "world": [
-       -1267,
+       -1247,
        -51,
-       116
+       121
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:water[level=8]"
+     },
+     {
+      "rel": [
+       21,
+       0,
+       27
+      ],
+      "world": [
+       -1271,
+       -51,
+       124
       ],
       "expected": "minecraft:deepslate_tiles",
       "got": "minecraft:water[level=1]"
@@ -10079,23 +10158,24 @@
      }
     ],
     "unspecified_cell_fill": {
-     "air": 8557,
-     "sculk_vein": 205,
-     "water": 34,
-     "sculk_sensor": 24,
-     "sculk_shrieker": 6,
+     "air": 8519,
+     "sculk_vein": 244,
+     "water": 43,
+     "sculk_sensor": 15,
+     "sculk_shrieker": 5,
      "sculk": 4,
      "sculk_catalyst": 3,
      "deepslate": 1
     },
     "unspecified_cells": 8834,
-    "unspecified_air_fraction": 0.969,
-    "unspecified_solid_fraction": 0.004,
+    "unspecified_air_fraction": 0.964,
+    "unspecified_solid_fraction": 0.003,
     "shell_top_bottom": {
      "air": 1170,
-     "deepslate": 663,
-     "sculk": 506,
-     "tuff": 78,
+     "deepslate": 705,
+     "sculk": 503,
+     "tuff": 38,
+     "sculk_catalyst": 1,
      "deepslate_redstone_ore": 1
     },
     "bb_y_range": [
@@ -10235,10 +10315,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 135,
-     "sculk_feature_overlay": 28,
-     "removed_to_air": 8,
-     "cracked_by_processor": 27
+     "sculk_feature_overlay": 13,
+     "identical": 146,
+     "cracked_by_processor": 32,
+     "removed_to_air": 7
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -10264,19 +10344,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 63,
-     "sculk_vein": 18,
-     "sculk_sensor": 1
+     "air": 81,
+     "sculk_vein": 1
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 0.768,
-    "unspecified_solid_fraction": 0.012,
+    "unspecified_air_fraction": 0.988,
+    "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 88,
-     "sculk": 65,
-     "deepslate": 24,
-     "sculk_vein": 2,
-     "deepslate_diamond_ore": 1
+     "air": 90,
+     "deepslate": 70,
+     "sculk": 20
     },
     "bb_y_range": [
      -51,
@@ -10342,10 +10419,11 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 89,
-     "cracked_by_processor": 6,
-     "sculk_feature_overlay": 185,
-     "removed_to_air": 4
+     "sculk_feature_overlay": 70,
+     "cracked_by_processor": 31,
+     "identical": 174,
+     "removed_to_air": 8,
+     "replaced_by_other": 1
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -10369,20 +10447,34 @@
       0
      ]
     },
-    "block_replacement_samples": [],
+    "block_replacement_samples": [
+     {
+      "rel": [
+       6,
+       10,
+       3
+      ],
+      "world": [
+       1190,
+       -41,
+       1312
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     }
+    ],
     "unspecified_cell_fill": {
-     "air": 304,
-     "sculk_vein": 26,
-     "sculk_sensor": 2
+     "air": 296,
+     "sculk_vein": 36
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.916,
-    "unspecified_solid_fraction": 0.006,
+    "unspecified_air_fraction": 0.892,
+    "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 89,
-     "sculk": 67,
-     "deepslate": 23,
-     "sculk_sensor": 1
+     "air": 90,
+     "sculk": 45,
+     "deepslate": 44,
+     "deepslate_iron_ore": 1
     },
     "bb_y_range": [
      -51,
@@ -10435,10 +10527,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 1129,
-     "cracked_by_processor": 305,
-     "sculk_feature_overlay": 390,
-     "removed_to_air": 72
+     "identical": 1187,
+     "cracked_by_processor": 337,
+     "sculk_feature_overlay": 288,
+     "removed_to_air": 84
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -10456,22 +10548,22 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 8575,
-     "sculk_vein": 238,
+     "air": 8628,
+     "sculk_vein": 185,
      "sculk_sensor": 12,
      "sculk": 4,
-     "sculk_shrieker": 3,
-     "sculk_catalyst": 2
+     "sculk_shrieker": 4,
+     "sculk_catalyst": 1
     },
     "unspecified_cells": 8834,
-    "unspecified_air_fraction": 0.971,
+    "unspecified_air_fraction": 0.977,
     "unspecified_solid_fraction": 0.002,
     "shell_top_bottom": {
-     "air": 1580,
-     "deepslate": 407,
-     "sculk": 335,
-     "sculk_vein": 75,
-     "water": 15,
+     "air": 1598,
+     "sculk": 371,
+     "deepslate": 370,
+     "sculk_vein": 58,
+     "water": 14,
      "deepslate_redstone_ore": 3
     },
     "bb_y_range": [
@@ -10524,10 +10616,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "cracked_by_processor": 40,
-     "identical": 79,
-     "removed_to_air": 5,
-     "sculk_feature_overlay": 3
+     "cracked_by_processor": 21,
+     "identical": 49,
+     "removed_to_air": 1,
+     "sculk_feature_overlay": 56
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -10544,21 +10636,24 @@
      ],
      "lantern": [
       1,
-      1
+      0
      ]
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 32,
+     "air": 17,
+     "sculk_vein": 15,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 33,
-    "unspecified_air_fraction": 0.97,
+    "unspecified_air_fraction": 0.515,
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
-     "air": 60,
-     "deepslate": 45,
-     "sculk": 15
+     "air": 49,
+     "deepslate": 37,
+     "sculk": 23,
+     "sculk_vein": 9,
+     "sculk_sensor": 2
     },
     "bb_y_range": [
      -51,
@@ -10610,10 +10705,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 213,
-     "cracked_by_processor": 44,
-     "sculk_feature_overlay": 17,
-     "removed_to_air": 10
+     "identical": 158,
+     "cracked_by_processor": 32,
+     "sculk_feature_overlay": 93,
+     "removed_to_air": 1
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -10634,22 +10729,23 @@
      ],
      "parapet_wall": [
       18,
-      1
+      0
      ]
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 308,
-     "sculk_vein": 24
+     "air": 247,
+     "sculk_vein": 85
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.928,
+    "unspecified_air_fraction": 0.744,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 90,
+     "air": 88,
      "sculk": 50,
      "deepslate": 34,
-     "tuff": 6
+     "tuff": 6,
+     "sculk_sensor": 2
     },
     "bb_y_range": [
      -51,
@@ -10794,10 +10890,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 112,
-     "identical": 143,
-     "cracked_by_processor": 23,
-     "removed_to_air": 6
+     "sculk_feature_overlay": 152,
+     "identical": 115,
+     "cracked_by_processor": 10,
+     "removed_to_air": 7
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -10823,18 +10919,17 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 265,
-     "sculk_vein": 66,
-     "sculk_sensor": 1
+     "air": 281,
+     "sculk_vein": 51
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.798,
-    "unspecified_solid_fraction": 0.003,
+    "unspecified_air_fraction": 0.846,
+    "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 89,
-     "sculk": 54,
-     "deepslate": 36,
-     "sculk_vein": 1
+     "air": 90,
+     "deepslate": 52,
+     "sculk": 37,
+     "deepslate_redstone_ore": 1
     },
     "bb_y_range": [
      -51,
@@ -11035,10 +11130,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 233,
-     "sculk_feature_overlay": 5,
-     "cracked_by_processor": 81,
-     "removed_to_air": 10
+     "identical": 228,
+     "sculk_feature_overlay": 12,
+     "cracked_by_processor": 82,
+     "removed_to_air": 7
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -11064,16 +11159,17 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 191
+     "air": 187,
+     "sculk_vein": 4
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 1.0,
+    "unspecified_air_fraction": 0.979,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 150,
-     "deepslate": 122,
-     "tuff": 20,
-     "sculk": 8
+     "deepslate": 103,
+     "sculk": 27,
+     "tuff": 20
     },
     "bb_y_range": [
      -51,
@@ -11220,10 +11316,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "cracked_by_processor": 127,
-     "identical": 388,
-     "removed_to_air": 25,
-     "sculk_feature_overlay": 148
+     "cracked_by_processor": 92,
+     "identical": 309,
+     "removed_to_air": 21,
+     "sculk_feature_overlay": 266
     },
     "critical_blocks_total_lost": {
      "door": [
@@ -11249,21 +11345,21 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 653,
-     "sculk_vein": 62,
-     "sculk_sensor": 3,
+     "air": 629,
+     "sculk_vein": 79,
+     "sculk_sensor": 10,
      "sculk_shrieker": 1,
-     "sculk": 1
+     "cobbled_deepslate": 1
     },
     "unspecified_cells": 720,
-    "unspecified_air_fraction": 0.907,
-    "unspecified_solid_fraction": 0.007,
+    "unspecified_air_fraction": 0.874,
+    "unspecified_solid_fraction": 0.017,
     "shell_top_bottom": {
-     "air": 218,
-     "deepslate": 142,
-     "sculk": 61,
-     "tuff": 31,
-     "sculk_vein": 12,
+     "air": 216,
+     "deepslate": 129,
+     "sculk": 84,
+     "tuff": 21,
+     "sculk_vein": 14,
      "sculk_sensor": 4
     },
     "bb_y_range": [
@@ -11673,9 +11769,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 76,
-     "identical": 38,
-     "cracked_by_processor": 7,
+     "cracked_by_processor": 11,
+     "sculk_feature_overlay": 63,
+     "identical": 47,
      "removed_to_air": 6
     },
     "critical_blocks_total_lost": {
@@ -11698,18 +11794,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "sculk_vein": 16,
-     "air": 16,
+     "air": 20,
+     "sculk_vein": 12,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 33,
-    "unspecified_air_fraction": 0.485,
+    "unspecified_air_fraction": 0.606,
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
-     "air": 54,
-     "deepslate": 31,
-     "sculk": 29,
-     "sculk_vein": 5,
+     "air": 56,
+     "deepslate": 33,
+     "sculk": 27,
+     "sculk_vein": 3,
      "sculk_catalyst": 1
     },
     "bb_y_range": [
@@ -12065,10 +12161,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 131,
-     "sculk_feature_overlay": 5,
-     "cracked_by_processor": 54,
-     "removed_to_air": 8
+     "identical": 125,
+     "sculk_feature_overlay": 14,
+     "cracked_by_processor": 52,
+     "removed_to_air": 7
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -12094,16 +12190,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 79,
-     "sculk_vein": 3
+     "air": 75,
+     "sculk_vein": 7
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 0.963,
+    "unspecified_air_fraction": 0.915,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "deepslate": 79,
-     "sculk": 11
+     "deepslate": 66,
+     "sculk": 24
     },
     "bb_y_range": [
      -51,
@@ -12155,10 +12251,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 70,
-     "identical": 172,
-     "cracked_by_processor": 37,
-     "removed_to_air": 5
+     "sculk_feature_overlay": 59,
+     "identical": 178,
+     "cracked_by_processor": 41,
+     "removed_to_air": 6
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -12184,17 +12280,17 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 245,
-     "sculk_vein": 86,
+     "air": 260,
+     "sculk_vein": 71,
      "sculk_sensor": 1
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.738,
+    "unspecified_air_fraction": 0.783,
     "unspecified_solid_fraction": 0.003,
     "shell_top_bottom": {
      "air": 90,
-     "sculk": 46,
-     "deepslate": 44
+     "deepslate": 70,
+     "sculk": 20
     },
     "bb_y_range": [
      -51,
@@ -12247,10 +12343,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 408,
-     "identical": 1082,
-     "cracked_by_processor": 333,
-     "removed_to_air": 73
+     "identical": 1136,
+     "cracked_by_processor": 341,
+     "sculk_feature_overlay": 340,
+     "removed_to_air": 79
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -12268,20 +12364,20 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 8569,
-     "sculk_vein": 237,
-     "sculk_sensor": 19,
-     "sculk": 4,
+     "air": 8555,
+     "sculk_vein": 256,
+     "sculk_sensor": 14,
      "sculk_shrieker": 4,
+     "sculk": 4,
      "sculk_catalyst": 1
     },
     "unspecified_cells": 8834,
-    "unspecified_air_fraction": 0.97,
+    "unspecified_air_fraction": 0.968,
     "unspecified_solid_fraction": 0.003,
     "shell_top_bottom": {
      "air": 1209,
-     "deepslate": 800,
-     "sculk": 395,
+     "deepslate": 967,
+     "sculk": 228,
      "gravel": 10,
      "deepslate_redstone_ore": 4
     },
@@ -12338,10 +12434,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 378,
-     "identical": 331,
-     "cracked_by_processor": 125,
-     "removed_to_air": 26
+     "sculk_feature_overlay": 163,
+     "identical": 464,
+     "cracked_by_processor": 200,
+     "removed_to_air": 33
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -12363,22 +12459,21 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 458,
-     "sculk_vein": 123,
+     "air": 504,
+     "sculk_vein": 78,
      "sculk_sensor": 2,
-     "sculk_catalyst": 1,
-     "sculk": 1
+     "cobbled_deepslate": 1
     },
     "unspecified_cells": 585,
-    "unspecified_air_fraction": 0.783,
-    "unspecified_solid_fraction": 0.007,
+    "unspecified_air_fraction": 0.862,
+    "unspecified_solid_fraction": 0.005,
     "shell_top_bottom": {
-     "air": 340,
-     "deepslate": 217,
-     "sculk": 101,
-     "sculk_vein": 37,
+     "air": 358,
+     "deepslate": 244,
+     "sculk": 74,
+     "sculk_vein": 25,
      "gravel": 11,
-     "sculk_sensor": 10
+     "sculk_sensor": 5
     },
     "bb_y_range": [
      -51,
@@ -12707,9 +12802,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 149,
-     "removed_to_air": 5,
-     "cracked_by_processor": 44
+     "sculk_feature_overlay": 11,
+     "identical": 142,
+     "removed_to_air": 3,
+     "cracked_by_processor": 42
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -12735,15 +12831,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 82
+     "air": 77,
+     "sculk_vein": 5
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 1.0,
+    "unspecified_air_fraction": 0.939,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "deepslate": 89,
-     "sculk": 1
+     "deepslate": 73,
+     "sculk": 17
     },
     "bb_y_range": [
      -51,
@@ -12795,10 +12892,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 137,
-     "cracked_by_processor": 43,
-     "sculk_feature_overlay": 14,
-     "removed_to_air": 4
+     "identical": 107,
+     "sculk_feature_overlay": 56,
+     "cracked_by_processor": 32,
+     "removed_to_air": 3
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -12824,17 +12921,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 78,
-     "sculk_vein": 4
+     "air": 61,
+     "sculk_vein": 21
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 0.951,
+    "unspecified_air_fraction": 0.744,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 90,
-     "deepslate": 55,
-     "sculk": 33,
-     "deepslate_diamond_ore": 2
+     "air": 79,
+     "deepslate": 54,
+     "sculk": 36,
+     "sculk_vein": 10,
+     "sculk_sensor": 1
     },
     "bb_y_range": [
      -51,
@@ -12900,10 +12998,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 8,
-     "identical": 222,
-     "cracked_by_processor": 47,
-     "removed_to_air": 7
+     "sculk_feature_overlay": 12,
+     "identical": 221,
+     "removed_to_air": 5,
+     "cracked_by_processor": 46
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -12929,16 +13027,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 310,
-     "sculk_vein": 22
+     "air": 312,
+     "sculk_vein": 20
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.934,
+    "unspecified_air_fraction": 0.94,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "deepslate": 57,
-     "sculk": 33
+     "deepslate": 55,
+     "sculk": 35
     },
     "bb_y_range": [
      -51,
@@ -13081,10 +13179,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 50,
-     "cracked_by_processor": 17,
-     "identical": 58,
-     "removed_to_air": 2
+     "identical": 88,
+     "cracked_by_processor": 27,
+     "sculk_feature_overlay": 11,
+     "removed_to_air": 1
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -13106,20 +13204,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "sculk_vein": 20,
-     "air": 12,
-     "cobbled_deepslate": 1
+     "air": 26,
+     "sculk_vein": 6,
+     "sculk": 1
     },
     "unspecified_cells": 33,
-    "unspecified_air_fraction": 0.364,
+    "unspecified_air_fraction": 0.788,
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
-     "air": 45,
-     "deepslate": 30,
-     "sculk": 25,
-     "sculk_vein": 15,
-     "deepslate_redstone_ore": 4,
-     "sculk_catalyst": 1
+     "air": 60,
+     "deepslate": 29,
+     "sculk": 28,
+     "deepslate_redstone_ore": 3
     },
     "bb_y_range": [
      -51,
@@ -13171,10 +13267,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 159,
-     "sculk_feature_overlay": 84,
-     "cracked_by_processor": 37,
-     "removed_to_air": 4
+     "sculk_feature_overlay": 103,
+     "identical": 145,
+     "removed_to_air": 4,
+     "cracked_by_processor": 32
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -13200,17 +13296,19 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 271,
-     "sculk_vein": 60,
+     "air": 247,
+     "sculk_vein": 82,
+     "sculk_catalyst": 1,
+     "sculk_shrieker": 1,
      "sculk_sensor": 1
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.816,
-    "unspecified_solid_fraction": 0.003,
+    "unspecified_air_fraction": 0.744,
+    "unspecified_solid_fraction": 0.009,
     "shell_top_bottom": {
      "air": 89,
-     "sculk": 45,
-     "deepslate": 28,
+     "sculk": 55,
+     "deepslate": 18,
      "tuff": 16,
      "sculk_vein": 1,
      "deepslate_redstone_ore": 1
@@ -13355,9 +13453,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 31,
-     "identical": 272,
-     "removed_to_air": 7,
+     "sculk_feature_overlay": 13,
+     "identical": 289,
+     "removed_to_air": 8,
      "cracked_by_processor": 9
     },
     "critical_blocks_total_lost": {
@@ -13384,8 +13482,8 @@
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 64,
-     "deepslate": 47,
-     "sculk": 17
+     "deepslate": 48,
+     "sculk": 16
     },
     "bb_y_range": [
      -51,
@@ -13437,10 +13535,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 16,
-     "identical": 290,
+     "identical": 242,
+     "sculk_feature_overlay": 69,
      "removed_to_air": 6,
-     "cracked_by_processor": 7
+     "cracked_by_processor": 2
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -13458,15 +13556,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 221
+     "air": 189,
+     "sculk_vein": 32
     },
     "unspecified_cells": 221,
-    "unspecified_air_fraction": 1.0,
+    "unspecified_air_fraction": 0.855,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 64,
-     "sculk": 50,
-     "deepslate": 14
+     "deepslate": 42,
+     "sculk": 22
     },
     "bb_y_range": [
      -51,
@@ -13593,10 +13692,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 470,
-     "cracked_by_processor": 181,
-     "removed_to_air": 36,
-     "sculk_feature_overlay": 1
+     "identical": 449,
+     "cracked_by_processor": 177,
+     "sculk_feature_overlay": 31,
+     "removed_to_air": 31
     },
     "critical_blocks_total_lost": {
      "door": [
@@ -13622,17 +13721,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 719,
+     "air": 695,
+     "sculk_vein": 24,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 720,
-    "unspecified_air_fraction": 0.999,
+    "unspecified_air_fraction": 0.965,
     "unspecified_solid_fraction": 0.001,
     "shell_top_bottom": {
      "air": 234,
-     "deepslate": 149,
-     "tuff": 77,
-     "sculk": 6,
+     "deepslate": 145,
+     "tuff": 69,
+     "sculk": 18,
      "deepslate_gold_ore": 2
     },
     "bb_y_range": [
@@ -13685,11 +13785,11 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 204,
+     "identical": 207,
      "sculk_feature_overlay": 12,
      "cracked_by_processor": 46,
      "replaced_by_other": 14,
-     "removed_to_air": 8
+     "removed_to_air": 5
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -13710,7 +13810,7 @@
      ],
      "parapet_wall": [
       18,
-      3
+      0
      ]
     },
     "block_replacement_samples": [
@@ -13944,10 +14044,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "cracked_by_processor": 138,
-     "identical": 322,
-     "sculk_feature_overlay": 204,
-     "removed_to_air": 24
+     "cracked_by_processor": 104,
+     "sculk_feature_overlay": 282,
+     "identical": 281,
+     "removed_to_air": 21
     },
     "critical_blocks_total_lost": {
      "door": [
@@ -13973,22 +14073,22 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 610,
-     "sculk_vein": 103,
-     "sculk_sensor": 5,
-     "cobbled_deepslate": 1,
-     "sculk_shrieker": 1
+     "air": 617,
+     "sculk_vein": 92,
+     "sculk_sensor": 8,
+     "sculk_shrieker": 2,
+     "sculk": 1
     },
     "unspecified_cells": 720,
-    "unspecified_air_fraction": 0.847,
-    "unspecified_solid_fraction": 0.01,
+    "unspecified_air_fraction": 0.857,
+    "unspecified_solid_fraction": 0.015,
     "shell_top_bottom": {
-     "deepslate": 229,
-     "air": 208,
-     "sculk_vein": 20,
-     "sculk": 5,
-     "sculk_sensor": 5,
-     "sculk_catalyst": 1
+     "air": 211,
+     "deepslate": 196,
+     "sculk": 38,
+     "sculk_vein": 13,
+     "sculk_sensor": 8,
+     "sculk_shrieker": 1
     },
     "bb_y_range": [
      -51,
@@ -14041,9 +14141,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 98,
+     "identical": 233,
      "removed_to_air": 4,
-     "identical": 203,
+     "sculk_feature_overlay": 68,
      "cracked_by_processor": 5,
      "replaced_by_other": 9
     },
@@ -14148,17 +14248,17 @@
      }
     ],
     "unspecified_cell_fill": {
-     "air": 198,
-     "sculk_vein": 23
+     "air": 201,
+     "sculk_vein": 20
     },
     "unspecified_cells": 221,
-    "unspecified_air_fraction": 0.896,
+    "unspecified_air_fraction": 0.91,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 99,
+     "air": 97,
      "sculk": 21,
-     "deepslate": 5,
-     "sculk_vein": 3
+     "sculk_vein": 5,
+     "deepslate": 5
     },
     "bb_y_range": [
      -51,
@@ -14211,10 +14311,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "cracked_by_processor": 21,
-     "identical": 116,
-     "sculk_feature_overlay": 140,
-     "removed_to_air": 7
+     "sculk_feature_overlay": 59,
+     "cracked_by_processor": 39,
+     "identical": 176,
+     "removed_to_air": 10
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -14240,17 +14340,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 276,
-     "sculk_vein": 56
+     "air": 273,
+     "sculk_vein": 57,
+     "sculk_shrieker": 1,
+     "sculk_catalyst": 1
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.831,
-    "unspecified_solid_fraction": 0.0,
+    "unspecified_air_fraction": 0.822,
+    "unspecified_solid_fraction": 0.006,
     "shell_top_bottom": {
-     "air": 89,
-     "sculk": 79,
-     "deepslate": 11,
-     "sculk_shrieker": 1
+     "air": 90,
+     "sculk": 83,
+     "deepslate": 7
     },
     "bb_y_range": [
      -51,
@@ -14386,10 +14487,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 542,
-     "cracked_by_processor": 212,
-     "removed_to_air": 35,
-     "sculk_feature_overlay": 71
+     "identical": 433,
+     "cracked_by_processor": 159,
+     "removed_to_air": 28,
+     "sculk_feature_overlay": 240
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -14411,19 +14512,22 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 549,
-     "sculk_vein": 35,
+     "air": 494,
+     "sculk_vein": 87,
+     "sculk_sensor": 2,
+     "sculk_shrieker": 1,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 585,
-    "unspecified_air_fraction": 0.938,
-    "unspecified_solid_fraction": 0.002,
+    "unspecified_air_fraction": 0.844,
+    "unspecified_solid_fraction": 0.007,
     "shell_top_bottom": {
-     "air": 342,
-     "deepslate": 342,
-     "sculk": 19,
-     "sculk_vein": 17,
-     "sculk_sensor": 2
+     "air": 322,
+     "deepslate": 302,
+     "sculk": 59,
+     "sculk_vein": 30,
+     "sculk_sensor": 8,
+     "sculk_shrieker": 1
     },
     "bb_y_range": [
      -51,
@@ -14476,9 +14580,9 @@
     "model_matches_piece_bb": true,
     "block_replacement": {
      "cracked_by_processor": 115,
-     "identical": 300,
-     "sculk_feature_overlay": 255,
-     "removed_to_air": 18
+     "identical": 261,
+     "sculk_feature_overlay": 288,
+     "removed_to_air": 24
     },
     "critical_blocks_total_lost": {
      "door": [
@@ -14504,22 +14608,21 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 614,
-     "sculk_vein": 101,
-     "sculk_sensor": 3,
-     "sculk_catalyst": 1,
-     "sculk": 1
+     "air": 615,
+     "sculk_vein": 97,
+     "sculk_sensor": 7,
+     "cobbled_deepslate": 1
     },
     "unspecified_cells": 720,
-    "unspecified_air_fraction": 0.853,
-    "unspecified_solid_fraction": 0.007,
+    "unspecified_air_fraction": 0.854,
+    "unspecified_solid_fraction": 0.011,
     "shell_top_bottom": {
-     "air": 210,
-     "sculk": 88,
-     "deepslate": 77,
+     "air": 212,
+     "sculk": 92,
+     "deepslate": 73,
      "tuff": 69,
-     "sculk_vein": 15,
-     "sculk_sensor": 6
+     "sculk_vein": 17,
+     "sculk_sensor": 5
     },
     "bb_y_range": [
      -51,
@@ -14571,9 +14674,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 50,
-     "identical": 212,
-     "cracked_by_processor": 59,
+     "sculk_feature_overlay": 60,
+     "identical": 204,
+     "cracked_by_processor": 57,
      "removed_to_air": 8
     },
     "critical_blocks_total_lost": {
@@ -14600,18 +14703,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 177,
-     "sculk_vein": 14
+     "air": 174,
+     "sculk_vein": 17
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.927,
+    "unspecified_air_fraction": 0.911,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 140,
-     "deepslate": 115,
-     "sculk": 33,
-     "smooth_basalt": 5,
-     "sculk_vein": 3,
+     "air": 137,
+     "deepslate": 112,
+     "sculk": 37,
+     "sculk_vein": 6,
+     "smooth_basalt": 4,
      "sculk_sensor": 2
     },
     "bb_y_range": [
@@ -14664,10 +14767,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 212,
+     "identical": 214,
      "cracked_by_processor": 53,
      "sculk_feature_overlay": 2,
-     "removed_to_air": 10,
+     "removed_to_air": 8,
      "replaced_by_other": 7
     },
     "critical_blocks_total_lost": {
@@ -14689,7 +14792,7 @@
      ],
      "parapet_wall": [
       18,
-      2
+      0
      ]
     },
     "block_replacement_samples": [
@@ -14779,16 +14882,16 @@
      }
     ],
     "unspecified_cell_fill": {
-     "air": 327,
-     "sculk_vein": 5
+     "air": 324,
+     "sculk_vein": 8
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.985,
+    "unspecified_air_fraction": 0.976,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "deepslate": 85,
-     "sculk": 3,
+     "deepslate": 75,
+     "sculk": 13,
      "tuff": 2
     },
     "bb_y_range": [
@@ -14855,10 +14958,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 117,
-     "sculk_feature_overlay": 39,
-     "cracked_by_processor": 33,
-     "removed_to_air": 9
+     "identical": 106,
+     "removed_to_air": 10,
+     "cracked_by_processor": 30,
+     "sculk_feature_overlay": 52
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -14884,18 +14987,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 72,
-     "sculk_vein": 10
+     "air": 75,
+     "sculk_vein": 7
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 0.878,
+    "unspecified_air_fraction": 0.915,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 85,
-     "sculk": 61,
-     "deepslate": 29,
-     "sculk_vein": 3,
-     "sculk_sensor": 2
+     "sculk": 66,
+     "deepslate": 24,
+     "sculk_sensor": 3,
+     "sculk_vein": 2
     },
     "bb_y_range": [
      -51,
@@ -14947,10 +15050,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 216,
-     "sculk_feature_overlay": 26,
-     "cracked_by_processor": 77,
-     "removed_to_air": 10
+     "sculk_feature_overlay": 23,
+     "cracked_by_processor": 80,
+     "identical": 218,
+     "removed_to_air": 8
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -14976,17 +15079,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 176,
-     "sculk_vein": 14,
-     "sculk_sensor": 1
+     "air": 184,
+     "sculk_vein": 7
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.921,
-    "unspecified_solid_fraction": 0.005,
+    "unspecified_air_fraction": 0.963,
+    "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 150,
-     "deepslate": 116,
-     "sculk": 34
+     "deepslate": 132,
+     "sculk": 18
     },
     "bb_y_range": [
      -51,
@@ -15038,10 +15140,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 64,
-     "identical": 244,
+     "identical": 249,
      "removed_to_air": 8,
      "replaced_by_other": 2,
+     "sculk_feature_overlay": 59,
      "cracked_by_processor": 1
     },
     "critical_blocks_total_lost": {
@@ -15097,8 +15199,8 @@
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 64,
-     "deepslate": 59,
-     "sculk": 5
+     "deepslate": 63,
+     "sculk": 1
     },
     "bb_y_range": [
      -51,
@@ -15150,10 +15252,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 55,
-     "identical": 252,
-     "cracked_by_processor": 8,
-     "removed_to_air": 4
+     "identical": 300,
+     "sculk_feature_overlay": 2,
+     "removed_to_air": 7,
+     "cracked_by_processor": 10
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -15171,18 +15273,17 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 219,
-     "sculk_vein": 2
+     "air": 220,
+     "sculk_vein": 1
     },
     "unspecified_cells": 221,
-    "unspecified_air_fraction": 0.991,
+    "unspecified_air_fraction": 0.995,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 61,
-     "tuff": 31,
-     "sculk": 30,
-     "deepslate": 3,
-     "sculk_sensor": 3
+     "air": 64,
+     "tuff": 49,
+     "sculk": 12,
+     "deepslate": 3
     },
     "bb_y_range": [
      -51,
@@ -15235,10 +15336,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "removed_to_air": 39,
-     "identical": 519,
-     "sculk_feature_overlay": 75,
-     "cracked_by_processor": 227
+     "removed_to_air": 35,
+     "sculk_feature_overlay": 78,
+     "identical": 523,
+     "cracked_by_processor": 224
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -15260,20 +15361,20 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 539,
-     "sculk_vein": 44,
-     "sculk": 1,
-     "sculk_sensor": 1
+     "air": 551,
+     "sculk_vein": 33,
+     "sculk": 1
     },
     "unspecified_cells": 585,
-    "unspecified_air_fraction": 0.921,
-    "unspecified_solid_fraction": 0.003,
+    "unspecified_air_fraction": 0.942,
+    "unspecified_solid_fraction": 0.002,
     "shell_top_bottom": {
-     "air": 348,
-     "deepslate": 308,
-     "sculk": 53,
-     "sculk_vein": 12,
-     "sculk_sensor": 1
+     "air": 350,
+     "deepslate": 321,
+     "sculk": 40,
+     "sculk_vein": 8,
+     "sculk_sensor": 2,
+     "sculk_catalyst": 1
     },
     "bb_y_range": [
      -51,
@@ -15326,8 +15427,8 @@
     "model_matches_piece_bb": true,
     "block_replacement": {
      "cracked_by_processor": 55,
-     "identical": 223,
-     "removed_to_air": 6
+     "identical": 224,
+     "removed_to_air": 5
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -15348,7 +15449,7 @@
      ],
      "parapet_wall": [
       18,
-      1
+      0
      ]
     },
     "block_replacement_samples": [],
@@ -15413,10 +15514,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 72,
-     "cracked_by_processor": 32,
-     "sculk_feature_overlay": 20,
-     "removed_to_air": 3
+     "identical": 82,
+     "cracked_by_processor": 37,
+     "removed_to_air": 5,
+     "sculk_feature_overlay": 3
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -15438,18 +15539,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 22,
-     "sculk_vein": 10,
+     "air": 32,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 33,
-    "unspecified_air_fraction": 0.667,
+    "unspecified_air_fraction": 0.97,
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
-     "air": 56,
-     "deepslate": 39,
-     "sculk": 21,
-     "sculk_vein": 4
+     "air": 60,
+     "deepslate": 49,
+     "sculk": 11
     },
     "bb_y_range": [
      -51,
@@ -15503,10 +15602,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 1131,
-     "cracked_by_processor": 324,
-     "removed_to_air": 66,
-     "sculk_feature_overlay": 375
+     "identical": 1343,
+     "cracked_by_processor": 376,
+     "removed_to_air": 80,
+     "sculk_feature_overlay": 97
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -15524,24 +15623,22 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 8615,
-     "sculk_vein": 190,
-     "sculk_sensor": 18,
-     "sculk_catalyst": 5,
-     "sculk": 2,
-     "sculk_shrieker": 2,
-     "deepslate": 1,
+     "air": 8761,
+     "sculk_vein": 64,
+     "sculk_sensor": 4,
+     "deepslate": 3,
+     "sculk_catalyst": 1,
      "gravel": 1
     },
     "unspecified_cells": 8834,
-    "unspecified_air_fraction": 0.975,
-    "unspecified_solid_fraction": 0.003,
+    "unspecified_air_fraction": 0.992,
+    "unspecified_solid_fraction": 0.001,
     "shell_top_bottom": {
      "air": 1209,
-     "deepslate": 825,
-     "sculk": 250,
-     "gravel": 67,
-     "tuff": 58,
+     "deepslate": 1010,
+     "tuff": 85,
+     "gravel": 78,
+     "sculk": 27,
      "deepslate_diamond_ore": 5
     },
     "bb_y_range": [
@@ -15629,10 +15726,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 358,
-     "sculk_feature_overlay": 165,
-     "cracked_by_processor": 146,
-     "removed_to_air": 19
+     "identical": 390,
+     "cracked_by_processor": 158,
+     "removed_to_air": 26,
+     "sculk_feature_overlay": 114
     },
     "critical_blocks_total_lost": {
      "door": [
@@ -15658,20 +15755,19 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 622,
-     "sculk_vein": 92,
-     "sculk_sensor": 4,
-     "sculk_catalyst": 1,
+     "air": 700,
+     "sculk_vein": 16,
+     "sculk_sensor": 3,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 720,
-    "unspecified_air_fraction": 0.864,
-    "unspecified_solid_fraction": 0.008,
+    "unspecified_air_fraction": 0.972,
+    "unspecified_solid_fraction": 0.006,
     "shell_top_bottom": {
      "air": 234,
-     "deepslate": 113,
-     "sculk": 69,
-     "tuff": 52
+     "deepslate": 145,
+     "tuff": 53,
+     "sculk": 36
     },
     "bb_y_range": [
      -51,
@@ -15723,10 +15819,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 42,
-     "identical": 205,
-     "cracked_by_processor": 28,
-     "removed_to_air": 9
+     "identical": 134,
+     "removed_to_air": 6,
+     "sculk_feature_overlay": 130,
+     "cracked_by_processor": 14
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -15747,24 +15843,21 @@
      ],
      "parapet_wall": [
       18,
-      1
+      0
      ]
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 292,
-     "sculk_vein": 38,
-     "sculk_sensor": 1,
-     "sculk_catalyst": 1
+     "air": 264,
+     "sculk_vein": 68
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.88,
-    "unspecified_solid_fraction": 0.006,
+    "unspecified_air_fraction": 0.795,
+    "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "sculk": 47,
-     "deepslate": 42,
-     "sculk_catalyst": 1
+     "deepslate": 65,
+     "sculk": 25
     },
     "bb_y_range": [
      -51,
@@ -15817,10 +15910,10 @@
     "model_matches_piece_bb": true,
     "block_replacement": {
      "replaced_by_other": 2,
-     "identical": 303,
-     "sculk_feature_overlay": 1,
+     "identical": 259,
      "removed_to_air": 5,
-     "cracked_by_processor": 8
+     "cracked_by_processor": 4,
+     "sculk_feature_overlay": 49
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -15867,15 +15960,15 @@
      }
     ],
     "unspecified_cell_fill": {
-     "air": 221
+     "air": 188,
+     "sculk_vein": 33
     },
     "unspecified_cells": 221,
-    "unspecified_air_fraction": 1.0,
+    "unspecified_air_fraction": 0.851,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 64,
-     "deepslate": 35,
-     "sculk": 16,
+     "deepslate": 51,
      "tuff": 13
     },
     "bb_y_range": [
@@ -15944,11 +16037,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "cracked_by_processor": 331,
-     "identical": 1274,
-     "removed_to_air": 77,
-     "sculk_feature_overlay": 209,
-     "same_block_other_state": 5
+     "cracked_by_processor": 312,
+     "identical": 1200,
+     "removed_to_air": 66,
+     "sculk_feature_overlay": 318
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -15966,25 +16058,24 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 8607,
-     "sculk_vein": 156,
-     "water": 48,
+     "air": 8586,
+     "sculk_vein": 226,
      "sculk_sensor": 10,
-     "sculk_shrieker": 7,
+     "sculk_shrieker": 6,
      "sculk": 3,
      "sculk_catalyst": 2,
      "deepslate": 1
     },
     "unspecified_cells": 8834,
-    "unspecified_air_fraction": 0.974,
-    "unspecified_solid_fraction": 0.003,
+    "unspecified_air_fraction": 0.972,
+    "unspecified_solid_fraction": 0.002,
     "shell_top_bottom": {
-     "air": 1239,
-     "deepslate": 931,
-     "sculk": 188,
-     "tuff": 55,
-     "gravel": 3,
-     "sculk_vein": 1
+     "air": 1237,
+     "deepslate": 883,
+     "sculk": 250,
+     "tuff": 44,
+     "sculk_vein": 2,
+     "sculk_sensor": 1
     },
     "bb_y_range": [
      -51,
@@ -16036,10 +16127,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 146,
-     "removed_to_air": 5,
-     "cracked_by_processor": 46,
-     "sculk_feature_overlay": 1
+     "identical": 101,
+     "sculk_feature_overlay": 57,
+     "removed_to_air": 4,
+     "cracked_by_processor": 36
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -16065,16 +16156,20 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 82
+     "air": 54,
+     "sculk_vein": 27,
+     "sculk_sensor": 1
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 1.0,
-    "unspecified_solid_fraction": 0.0,
+    "unspecified_air_fraction": 0.659,
+    "unspecified_solid_fraction": 0.012,
     "shell_top_bottom": {
-     "air": 90,
-     "deepslate": 83,
-     "deepslate_gold_ore": 4,
-     "sculk": 3
+     "air": 77,
+     "sculk": 61,
+     "deepslate": 27,
+     "sculk_vein": 12,
+     "deepslate_gold_ore": 2,
+     "sculk_sensor": 1
     },
     "bb_y_range": [
      -51,
@@ -16220,10 +16315,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 515,
-     "cracked_by_processor": 190,
-     "removed_to_air": 28,
-     "sculk_feature_overlay": 127
+     "sculk_feature_overlay": 190,
+     "identical": 468,
+     "cracked_by_processor": 178,
+     "removed_to_air": 24
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -16245,20 +16340,20 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 514,
-     "sculk_vein": 70,
-     "cobbled_deepslate": 1
+     "air": 506,
+     "sculk_vein": 78,
+     "sculk": 1
     },
     "unspecified_cells": 585,
-    "unspecified_air_fraction": 0.879,
+    "unspecified_air_fraction": 0.865,
     "unspecified_solid_fraction": 0.002,
     "shell_top_bottom": {
-     "air": 317,
-     "deepslate": 261,
-     "tuff": 87,
-     "sculk_vein": 35,
-     "sculk_sensor": 5,
-     "sculk": 5
+     "air": 314,
+     "deepslate": 165,
+     "sculk": 142,
+     "tuff": 49,
+     "sculk_vein": 36,
+     "sculk_sensor": 7
     },
     "bb_y_range": [
      -51,
@@ -16310,10 +16405,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 65,
-     "identical": 41,
-     "cracked_by_processor": 18,
-     "removed_to_air": 3
+     "sculk_feature_overlay": 96,
+     "identical": 19,
+     "removed_to_air": 6,
+     "cracked_by_processor": 6
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -16335,20 +16430,20 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 21,
-     "sculk_vein": 11,
+     "air": 25,
+     "sculk_vein": 7,
      "sculk": 1
     },
     "unspecified_cells": 33,
-    "unspecified_air_fraction": 0.636,
+    "unspecified_air_fraction": 0.758,
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
-     "air": 53,
-     "deepslate": 38,
-     "sculk": 16,
-     "tuff": 6,
-     "sculk_vein": 5,
-     "sculk_sensor": 2
+     "air": 55,
+     "sculk": 31,
+     "deepslate": 28,
+     "sculk_sensor": 4,
+     "tuff": 1,
+     "sculk_vein": 1
     },
     "bb_y_range": [
      -51,
@@ -16400,10 +16495,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 179,
-     "cracked_by_processor": 73,
-     "removed_to_air": 9,
-     "sculk_feature_overlay": 68
+     "identical": 149,
+     "cracked_by_processor": 61,
+     "sculk_feature_overlay": 112,
+     "removed_to_air": 7
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -16429,20 +16524,19 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 168,
-     "sculk_vein": 21,
-     "sculk_sensor": 2
+     "air": 153,
+     "sculk_vein": 38
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.88,
-    "unspecified_solid_fraction": 0.01,
+    "unspecified_air_fraction": 0.801,
+    "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 139,
-     "deepslate": 93,
-     "sculk": 53,
-     "sculk_vein": 9,
-     "tuff": 4,
-     "sculk_sensor": 2
+     "air": 137,
+     "sculk": 74,
+     "deepslate": 71,
+     "sculk_vein": 8,
+     "sculk_sensor": 5,
+     "tuff": 5
     },
     "bb_y_range": [
      -51,
@@ -16494,10 +16588,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 82,
-     "identical": 181,
-     "removed_to_air": 6,
-     "cracked_by_processor": 60
+     "identical": 237,
+     "cracked_by_processor": 75,
+     "removed_to_air": 10,
+     "sculk_feature_overlay": 7
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -16523,19 +16617,17 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 147,
-     "sculk_vein": 44
+     "air": 181,
+     "sculk_vein": 10
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.77,
+    "unspecified_air_fraction": 0.948,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 133,
-     "deepslate": 60,
-     "sculk": 49,
-     "tuff": 41,
-     "sculk_vein": 15,
-     "sculk_sensor": 2
+     "air": 150,
+     "deepslate": 73,
+     "tuff": 62,
+     "sculk": 15
     },
     "bb_y_range": [
      -51,
@@ -16587,9 +16679,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 30,
-     "sculk_feature_overlay": 80,
-     "cracked_by_processor": 11,
+     "identical": 37,
+     "sculk_feature_overlay": 71,
+     "cracked_by_processor": 13,
      "removed_to_air": 6
     },
     "critical_blocks_total_lost": {
@@ -16613,19 +16705,19 @@
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
      "air": 23,
-     "sculk_vein": 8,
-     "sculk_sensor": 1,
-     "sculk": 1
+     "sculk_vein": 9,
+     "cobbled_deepslate": 1
     },
     "unspecified_cells": 33,
     "unspecified_air_fraction": 0.697,
-    "unspecified_solid_fraction": 0.061,
+    "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
-     "air": 53,
-     "deepslate": 36,
-     "sculk": 24,
-     "sculk_sensor": 4,
-     "sculk_vein": 3
+     "air": 54,
+     "deepslate": 48,
+     "sculk": 7,
+     "gravel": 5,
+     "sculk_vein": 3,
+     "sculk_sensor": 3
     },
     "bb_y_range": [
      -51,
@@ -16712,10 +16804,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 30,
-     "identical": 206,
-     "cracked_by_processor": 84,
-     "removed_to_air": 9
+     "sculk_feature_overlay": 28,
+     "identical": 209,
+     "cracked_by_processor": 85,
+     "removed_to_air": 7
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -16749,8 +16841,8 @@
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 150,
-     "tuff": 61,
-     "deepslate": 53,
+     "tuff": 59,
+     "deepslate": 55,
      "sculk": 36
     },
     "bb_y_range": [
@@ -16803,9 +16895,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 243,
-     "removed_to_air": 7,
-     "sculk_feature_overlay": 69
+     "sculk_feature_overlay": 78,
+     "identical": 218,
+     "replaced_by_other": 17,
+     "removed_to_air": 6
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -16821,18 +16914,104 @@
       0
      ]
     },
-    "block_replacement_samples": [],
+    "block_replacement_samples": [
+     {
+      "rel": [
+       2,
+       0,
+       1
+      ],
+      "world": [
+       -281,
+       -51,
+       116
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       3,
+       0,
+       1
+      ],
+      "world": [
+       -280,
+       -51,
+       116
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       4,
+       0,
+       1
+      ],
+      "world": [
+       -279,
+       -51,
+       116
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       2,
+       0,
+       2
+      ],
+      "world": [
+       -281,
+       -51,
+       117
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       3,
+       0,
+       2
+      ],
+      "world": [
+       -280,
+       -51,
+       117
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       4,
+       0,
+       2
+      ],
+      "world": [
+       -279,
+       -51,
+       117
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     }
+    ],
     "unspecified_cell_fill": {
-     "air": 184,
-     "sculk_vein": 37
+     "air": 183,
+     "sculk_vein": 38
     },
     "unspecified_cells": 221,
-    "unspecified_air_fraction": 0.833,
+    "unspecified_air_fraction": 0.828,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 64,
-     "deepslate": 46,
-     "tuff": 18
+     "deepslate": 38,
+     "sculk": 15,
+     "tuff": 11
     },
     "bb_y_range": [
      -51,
@@ -16884,10 +17063,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 13,
-     "identical": 208,
-     "cracked_by_processor": 54,
-     "removed_to_air": 9
+     "sculk_feature_overlay": 9,
+     "identical": 212,
+     "cracked_by_processor": 56,
+     "removed_to_air": 7
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -16908,21 +17087,21 @@
      ],
      "parapet_wall": [
       18,
-      2
+      0
      ]
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 316,
-     "sculk_vein": 16
+     "air": 318,
+     "sculk_vein": 14
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.952,
+    "unspecified_air_fraction": 0.958,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "deepslate": 54,
-     "sculk": 21,
+     "deepslate": 57,
+     "sculk": 18,
      "tuff": 11,
      "deepslate_redstone_ore": 4
     },
@@ -16978,10 +17157,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 445,
-     "removed_to_air": 28,
-     "cracked_by_processor": 154,
-     "sculk_feature_overlay": 233
+     "identical": 538,
+     "removed_to_air": 33,
+     "cracked_by_processor": 197,
+     "sculk_feature_overlay": 92
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -17003,20 +17182,19 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 500,
-     "sculk_vein": 82,
-     "sculk_sensor": 2,
+     "air": 543,
+     "sculk_vein": 41,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 585,
-    "unspecified_air_fraction": 0.855,
-    "unspecified_solid_fraction": 0.005,
+    "unspecified_air_fraction": 0.928,
+    "unspecified_solid_fraction": 0.002,
     "shell_top_bottom": {
-     "air": 312,
-     "deepslate": 279,
-     "sculk": 85,
-     "sculk_vein": 34,
-     "sculk_sensor": 5,
+     "deepslate": 351,
+     "air": 319,
+     "sculk_vein": 28,
+     "sculk": 14,
+     "sculk_sensor": 4,
      "dark_oak_planks": 2
     },
     "bb_y_range": [
@@ -17069,8 +17247,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "cracked_by_processor": 36,
-     "identical": 91
+     "sculk_feature_overlay": 15,
+     "identical": 80,
+     "cracked_by_processor": 32
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -17100,7 +17279,8 @@
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
      "air": 60,
-     "deepslate": 56,
+     "deepslate": 34,
+     "sculk": 22,
      "deepslate_redstone_ore": 4
     },
     "bb_y_range": [
@@ -17153,9 +17333,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 228,
-     "cracked_by_processor": 79,
-     "sculk_feature_overlay": 12,
+     "sculk_feature_overlay": 32,
+     "identical": 211,
+     "cracked_by_processor": 76,
      "removed_to_air": 10
     },
     "critical_blocks_total_lost": {
@@ -17182,17 +17362,18 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 184,
-     "sculk_vein": 7
+     "air": 172,
+     "sculk_vein": 19
     },
     "unspecified_cells": 191,
-    "unspecified_air_fraction": 0.963,
+    "unspecified_air_fraction": 0.901,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
-     "air": 150,
-     "tuff": 90,
-     "deepslate": 30,
-     "sculk": 26,
+     "air": 145,
+     "tuff": 88,
+     "sculk": 46,
+     "deepslate": 12,
+     "sculk_vein": 5,
      "deepslate_redstone_ore": 4
     },
     "bb_y_range": [
@@ -17279,12 +17460,12 @@
     "unspecified_air_fraction": 0.993,
     "unspecified_solid_fraction": 0.002,
     "shell_top_bottom": {
-     "air": 359,
+     "air": 358,
      "deepslate": 324,
      "sculk": 26,
      "gravel": 7,
      "deepslate_redstone_ore": 4,
-     "lava": 2
+     "lava": 3
     },
     "bb_y_range": [
      -51,
@@ -17336,11 +17517,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "cracked_by_processor": 49,
-     "identical": 214,
-     "sculk_feature_overlay": 12,
-     "replaced_by_other": 1,
-     "removed_to_air": 8
+     "sculk_feature_overlay": 57,
+     "identical": 187,
+     "cracked_by_processor": 36,
+     "removed_to_air": 4
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -17361,37 +17541,23 @@
      ],
      "parapet_wall": [
       18,
-      1
+      0
      ]
     },
-    "block_replacement_samples": [
-     {
-      "rel": [
-       2,
-       2,
-       4
-      ],
-      "world": [
-       -179,
-       -49,
-       205
-      ],
-      "expected": "minecraft:deepslate[axis=y]",
-      "got": "minecraft:tuff"
-     }
-    ],
+    "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 311,
-     "sculk_vein": 21
+     "air": 280,
+     "sculk_vein": 52
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.937,
+    "unspecified_air_fraction": 0.843,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "sculk": 44,
-     "deepslate": 36,
-     "tuff": 10
+     "sculk": 58,
+     "deepslate": 30,
+     "sculk_catalyst": 1,
+     "tuff": 1
     },
     "bb_y_range": [
      -51,
@@ -17443,10 +17609,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 204,
-     "identical": 330,
-     "removed_to_air": 15,
-     "cracked_by_processor": 139
+     "sculk_feature_overlay": 191,
+     "identical": 336,
+     "removed_to_air": 18,
+     "cracked_by_processor": 143
     },
     "critical_blocks_total_lost": {
      "door": [
@@ -17472,20 +17638,21 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 621,
-     "sculk_vein": 98,
-     "sculk": 1
+     "air": 623,
+     "sculk_vein": 95,
+     "sculk": 1,
+     "sculk_sensor": 1
     },
     "unspecified_cells": 720,
-    "unspecified_air_fraction": 0.863,
-    "unspecified_solid_fraction": 0.001,
+    "unspecified_air_fraction": 0.865,
+    "unspecified_solid_fraction": 0.003,
     "shell_top_bottom": {
-     "air": 227,
-     "deepslate": 102,
-     "sculk": 82,
-     "tuff": 28,
-     "sculk_vein": 18,
-     "sculk_sensor": 7
+     "air": 223,
+     "deepslate": 99,
+     "sculk": 84,
+     "tuff": 29,
+     "sculk_vein": 23,
+     "sculk_sensor": 6
     },
     "bb_y_range": [
      -51,
@@ -17593,10 +17760,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 426,
-     "cracked_by_processor": 191,
-     "removed_to_air": 37,
-     "sculk_feature_overlay": 206
+     "identical": 373,
+     "cracked_by_processor": 157,
+     "removed_to_air": 31,
+     "sculk_feature_overlay": 299
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -17618,22 +17785,21 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 532,
-     "sculk_vein": 48,
-     "sculk_sensor": 3,
-     "sculk_shrieker": 1,
+     "air": 527,
+     "sculk_vein": 52,
+     "sculk_sensor": 5,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 585,
-    "unspecified_air_fraction": 0.909,
-    "unspecified_solid_fraction": 0.009,
+    "unspecified_air_fraction": 0.901,
+    "unspecified_solid_fraction": 0.01,
     "shell_top_bottom": {
-     "air": 336,
-     "deepslate": 295,
-     "sculk": 67,
-     "sculk_vein": 16,
-     "sculk_sensor": 7,
-     "deepslate_redstone_ore": 1
+     "air": 328,
+     "deepslate": 221,
+     "sculk": 140,
+     "sculk_vein": 24,
+     "sculk_sensor": 6,
+     "cracked_deepslate_bricks": 1
     },
     "bb_y_range": [
      -51,
@@ -17685,8 +17851,8 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 227,
-     "removed_to_air": 9,
+     "identical": 228,
+     "removed_to_air": 8,
      "cracked_by_processor": 41,
      "sculk_feature_overlay": 7
     },
@@ -17709,7 +17875,7 @@
      ],
      "parapet_wall": [
       18,
-      1
+      0
      ]
     },
     "block_replacement_samples": [],
@@ -17956,10 +18122,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 140,
-     "identical": 373,
-     "cracked_by_processor": 151,
-     "removed_to_air": 24
+     "identical": 446,
+     "sculk_feature_overlay": 33,
+     "cracked_by_processor": 182,
+     "removed_to_air": 27
     },
     "critical_blocks_total_lost": {
      "door": [
@@ -17985,21 +18151,19 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 680,
-     "sculk_vein": 31,
-     "sculk_sensor": 6,
+     "air": 698,
+     "sculk_vein": 18,
+     "sculk_sensor": 2,
      "cobbled_deepslate": 1,
-     "sculk_catalyst": 1,
-     "sculk_shrieker": 1
+     "sculk_catalyst": 1
     },
     "unspecified_cells": 720,
-    "unspecified_air_fraction": 0.944,
-    "unspecified_solid_fraction": 0.013,
+    "unspecified_air_fraction": 0.969,
+    "unspecified_solid_fraction": 0.006,
     "shell_top_bottom": {
      "air": 234,
-     "deepslate": 194,
-     "sculk": 33,
-     "gravel": 7
+     "deepslate": 171,
+     "sculk": 63
     },
     "bb_y_range": [
      -51,
@@ -18201,9 +18365,9 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 215,
+     "identical": 216,
      "cracked_by_processor": 63,
-     "removed_to_air": 6
+     "removed_to_air": 5
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -18224,7 +18388,7 @@
      ],
      "parapet_wall": [
       18,
-      1
+      0
      ]
     },
     "block_replacement_samples": [],
@@ -18291,10 +18455,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 56,
-     "identical": 57,
-     "cracked_by_processor": 10,
-     "removed_to_air": 4
+     "cracked_by_processor": 11,
+     "identical": 59,
+     "sculk_feature_overlay": 49,
+     "removed_to_air": 8
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -18316,20 +18480,19 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "sculk_vein": 19,
-     "air": 13,
+     "air": 23,
+     "sculk_vein": 9,
      "cobbled_deepslate": 1
     },
     "unspecified_cells": 33,
-    "unspecified_air_fraction": 0.394,
+    "unspecified_air_fraction": 0.697,
     "unspecified_solid_fraction": 0.03,
     "shell_top_bottom": {
-     "air": 48,
-     "sculk": 47,
-     "sculk_vein": 9,
-     "tuff": 9,
-     "deepslate": 4,
-     "sculk_sensor": 2
+     "air": 56,
+     "tuff": 22,
+     "sculk": 21,
+     "deepslate": 17,
+     "sculk_vein": 4
     },
     "bb_y_range": [
      -51,
@@ -18472,11 +18635,11 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 4,
      "identical": 218,
-     "cracked_by_processor": 40,
-     "removed_to_air": 12,
-     "replaced_by_other": 10
+     "sculk_feature_overlay": 7,
+     "removed_to_air": 11,
+     "replaced_by_other": 10,
+     "cracked_by_processor": 38
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -18497,7 +18660,7 @@
      ],
      "parapet_wall": [
       18,
-      1
+      0
      ]
     },
     "block_replacement_samples": [
@@ -18587,16 +18750,16 @@
      }
     ],
     "unspecified_cell_fill": {
-     "air": 312,
-     "sculk_vein": 20
+     "air": 305,
+     "sculk_vein": 27
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.94,
+    "unspecified_air_fraction": 0.919,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 99,
-     "deepslate": 47,
-     "sculk": 34
+     "deepslate": 43,
+     "sculk": 38
     },
     "bb_y_range": [
      -51,
@@ -18649,9 +18812,9 @@
     "model_matches_piece_bb": true,
     "block_replacement": {
      "sculk_feature_overlay": 72,
-     "identical": 177,
+     "identical": 178,
      "cracked_by_processor": 26,
-     "removed_to_air": 9
+     "removed_to_air": 8
     },
     "critical_blocks_total_lost": {
      "stairs": [
@@ -18672,7 +18835,7 @@
      ],
      "parapet_wall": [
       18,
-      1
+      0
      ]
     },
     "block_replacement_samples": [],
@@ -19008,10 +19171,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "sculk_feature_overlay": 27,
-     "identical": 132,
+     "sculk_feature_overlay": 23,
+     "identical": 134,
      "cracked_by_processor": 35,
-     "removed_to_air": 4
+     "removed_to_air": 6
     },
     "critical_blocks_total_lost": {
      "bed": [
@@ -19037,16 +19200,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 72,
-     "sculk_vein": 10
+     "air": 73,
+     "sculk_vein": 9
     },
     "unspecified_cells": 82,
-    "unspecified_air_fraction": 0.878,
+    "unspecified_air_fraction": 0.89,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "sculk": 47,
-     "deepslate": 43
+     "deepslate": 59,
+     "sculk": 31
     },
     "bb_y_range": [
      -51,
@@ -19114,10 +19277,10 @@
     ],
     "model_matches_piece_bb": true,
     "block_replacement": {
-     "identical": 387,
-     "sculk_feature_overlay": 293,
-     "cracked_by_processor": 151,
-     "removed_to_air": 29
+     "sculk_feature_overlay": 313,
+     "identical": 372,
+     "cracked_by_processor": 149,
+     "removed_to_air": 26
     },
     "critical_blocks_total_lost": {
      "container": [
@@ -19139,20 +19302,20 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 440,
-     "sculk_vein": 142,
+     "air": 436,
+     "sculk_vein": 146,
      "sculk_sensor": 2,
-     "cobbled_deepslate": 1
+     "sculk": 1
     },
     "unspecified_cells": 585,
-    "unspecified_air_fraction": 0.752,
+    "unspecified_air_fraction": 0.745,
     "unspecified_solid_fraction": 0.005,
     "shell_top_bottom": {
      "air": 330,
-     "deepslate": 228,
-     "sculk": 66,
+     "deepslate": 214,
+     "sculk": 81,
      "sculk_vein": 65,
-     "tuff": 15,
+     "tuff": 14,
      "sculk_sensor": 10
     },
     "bb_y_range": [
@@ -19233,16 +19396,16 @@
     },
     "block_replacement_samples": [],
     "unspecified_cell_fill": {
-     "air": 323,
-     "sculk_vein": 9
+     "air": 328,
+     "sculk_vein": 4
     },
     "unspecified_cells": 332,
-    "unspecified_air_fraction": 0.973,
+    "unspecified_air_fraction": 0.988,
     "unspecified_solid_fraction": 0.0,
     "shell_top_bottom": {
      "air": 90,
-     "deepslate": 77,
-     "sculk": 13
+     "deepslate": 86,
+     "sculk": 4
     },
     "bb_y_range": [
      -51,
