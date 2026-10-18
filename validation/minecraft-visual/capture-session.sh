@@ -134,5 +134,10 @@ capture entrance-north 20 105 4 0 5
 capture entrance-east 36 105 20 90 5
 capture entrance-south 20 105 36 180 5
 capture entrance-west 4 105 20 -90 5
+# The player is not flying, so an open-air camera needs a floor or it falls to the terrain
+# (y=-61) during the capture delay. A barrier block is invisible in the screenshot.
+python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/camera-positions.log"
+setblock 70 123 70 minecraft:barrier
+CMDS
 capture exterior-cutaway 70 124 70 135 22
 mark_stage screenshots PASS "$result_file"
