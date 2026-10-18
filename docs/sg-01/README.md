@@ -27,7 +27,7 @@ districts. The template pool and structure identifiers remain under `moreminecra
 The Jigsaw graph has one start pool and one tunnel pool per direction. The start structure size is 1, so each chamber
 socket places its tunnel once; the tunnel's far-end socket uses `minecraft:empty` until a future district is designed.
 An independent structure set uses random-spread placement and a 12-chunk exclusion zone against
-`minecraft:trial_chambers`. The structure uses the `strongholds` step, `encapsulate`, and a uniform Y range of −40 to −20.
+`minecraft:trial_chambers`. The structure uses the `vegetal_decoration` step (SG-01-C; was `strongholds`), `encapsulate`, and a uniform Y range of −40 to −20.
 As established in PR #117, encapsulate is supplementary; built geometry provides the actual shell.
 
 No mobs, bosses, rewards, research, puzzles, or custom gameplay are introduced. Future rare rewards remain

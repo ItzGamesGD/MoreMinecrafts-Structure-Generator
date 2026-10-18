@@ -36,6 +36,21 @@ class ForgottenKingdomCavernTests(unittest.TestCase):
         self.assertEqual(states[(20, 1, 40)], "minecraft:jigsaw")
         self.assertEqual(states[(0, 1, 20)], "minecraft:jigsaw")
 
+    def test_structure_step_runs_after_deep_dark_sculk_features(self) -> None:
+        """SG-01-C F-2: sculk_patch_deep_dark is an underground_decoration feature (step index 7); placing the structure
+        in an earlier step let sculk overwrite its blocks. Biome, height and materials are intentionally unchanged."""
+        steps = ["raw_generation", "lakes", "local_modifications", "underground_structures", "surface_structures",
+                 "strongholds", "underground_ores", "underground_decoration", "fluid_springs", "vegetal_decoration",
+                 "top_layer_modification"]
+        with tempfile.TemporaryDirectory() as tmp:
+            root = build_pack(Path(tmp) / "datapack")
+            structure = json.loads((root / "data/moreminecrafts/worldgen/structure/forgotten_kingdom/central_cavern.json").read_text())
+        self.assertGreater(steps.index(structure["step"]), steps.index("underground_decoration"))
+        self.assertEqual(structure["biomes"], "#minecraft:is_overworld")
+        self.assertEqual(structure["start_height"]["min_inclusive"], {"absolute": -40})
+        self.assertEqual(structure["start_height"]["max_inclusive"], {"absolute": -20})
+        self.assertEqual(structure["terrain_adaptation"], "encapsulate")
+
     def test_four_tunnel_connections_have_resolved_targets_and_aligned_seams(self) -> None:
         templates, _ = build_templates()
         joins = validate_connections(templates)

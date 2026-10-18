@@ -141,6 +141,13 @@ def check(summary: dict) -> list[str]:
                    if any(overlay_kind(kind) is None for kind in r["block_conversions_after_ticks"])]
     if unexplained:
         problems.append(f"structure blocks replaced by something other than a known vanilla feature overlay: {unexplained}")
+    shriekers = [(r["seed"], r["chunk"]) for r in summary["sites"] if r["interior_non_air_after_ticks"].get("block:minecraft:sculk_shrieker")]
+    if shriekers:
+        problems.append(f"summon-capable sculk shriekers inside the structure: {shriekers}")
+    sculk_heavy = [(r["seed"], r["chunk"]) for r in summary["sites"]
+                   if sum(v for k, v in r["block_conversions_after_ticks"].items() if k.split(" -> ")[1].startswith("minecraft:sculk")) > 20]
+    if sculk_heavy:
+        problems.append(f"sculk replaced more than 20 structure blocks (F-2 regression): {sculk_heavy}")
     chamber_fluid = [(r["seed"], r["chunk"]) for r in summary["sites"] if r["chamber_non_air"].get("fluid")]
     if chamber_fluid:
         problems.append(f"fluid inside the main chamber: {chamber_fluid}")
@@ -169,6 +176,12 @@ def check_pinned(summary: dict, pinned: list[dict]) -> list[str]:
             if what == "bounds":
                 actual = site["bounds"]
                 ok = actual == expected
+            elif what == "block_conversions_to_sculk_max":
+                actual = sum(v for k, v in site["block_conversions_after_ticks"].items() if k.split(" -> ")[1].startswith("minecraft:sculk"))
+                ok = actual <= expected
+            elif what == "interior_shriekers_max":
+                actual = site["interior_non_air_after_ticks"].get("block:minecraft:sculk_shrieker", 0)
+                ok = actual <= expected
             elif what == "block_conversions_to_sculk":
                 actual = sum(v for k, v in site["block_conversions_after_ticks"].items() if k.split(" -> ")[1].startswith("minecraft:sculk"))
                 ok = actual >= expected

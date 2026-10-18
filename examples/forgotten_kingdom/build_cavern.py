@@ -303,7 +303,7 @@ def build_pack(output: Path | str) -> Path:
         structure_id,
         start_pool=start_pool,
         size=1,
-        step="strongholds",
+        step="vegetal_decoration",  # SG-01-C F-2: after deep-dark sculk (underground_decoration)
         terrain_adaptation="encapsulate",
         max_distance_from_center=64,
         start_height={
