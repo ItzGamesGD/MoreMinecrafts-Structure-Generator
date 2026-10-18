@@ -61,4 +61,4 @@ Stair runs previously ended at back-surface 8.0 under a 9.0 ring surface (static
 | Surface access (F-5) | **BLOCKED** (deferred) | 94 % of mouths remain sealed; reserved for a future entrance module; district Jigsaw sockets unchanged |
 | SG-02 / SG-03 compatibility | **NOT RUN** | |
 
-Final CI numbers for this PR's head are in the PR description.
+Evidence for the repaired head: Actions [run 39122474979](https://github.com/ItzGamesGD/MoreMinecrafts-Structure-Generator/actions/runs/39122474979) on `b46bf2a` (all three jobs success, with invariants now enforced via `pipefail`; the earlier run 39120456942 did not enforce them because `tee` masked the exit status, which also applies to the SG-01-B runs, whose invariants I verified locally). Summary: `evidence/sg01-c-stress-summary.md` / `.json`. Cave-air shell contact was 85 sites in this run vs 86 earlier (load-order variation).
