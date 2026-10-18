@@ -26,7 +26,8 @@ rcon.port=25575
 server-port=25565
 server-ip=127.0.0.1
 motd=SG-01 disposable acceptance runtime
-level-type=minecraft:normal\ngenerate-structures=true
+level-type=minecraft:normal
+generate-structures=true
 gamemode=creative
 difficulty=peaceful
 spawn-monsters=false
@@ -218,16 +219,16 @@ save-all flush
 CMDS
 mkdir -p "$evidence/world/natural-worldgen"
 cp -a "$region_dir/." "$evidence/world/natural-worldgen/"
-python3 "$fixture/probe-jigsaw.py" \\
-  --region-dir "$evidence/world/natural-worldgen" \\
-  --template-dir "$(dirname "$template_nbt")" \\
-  --search-min $((candidate_x - 128)) -64 $((candidate_z - 128)) \\
-  --search-max $((candidate_x + 128)) 64 $((candidate_z + 128)) \\
+python3 "$fixture/probe-jigsaw.py" \
+  --region-dir "$evidence/world/natural-worldgen" \
+  --template-dir "$(dirname "$template_nbt")" \
+  --search-min $((candidate_x - 128)) -64 $((candidate_z - 128)) \
+  --search-max $((candidate_x + 128)) 64 $((candidate_z + 128)) \
   --output "$evidence/natural-jigsaw-world-probes.json"
-python3 "$fixture/probe-natural-world.py" \\
-  --region-dir "$evidence/world/natural-worldgen" \\
-  --template-dir "$(dirname "$template_nbt")" \\
-  --assembly-report "$evidence/natural-jigsaw-world-probes.json" \\
+python3 "$fixture/probe-natural-world.py" \
+  --region-dir "$evidence/world/natural-worldgen" \
+  --template-dir "$(dirname "$template_nbt")" \
+  --assembly-report "$evidence/natural-jigsaw-world-probes.json" \
   --output "$evidence/natural-terrain-report.json"
 mark_stage natural-worldgen PASS "$result_file"
 python3 "$fixture/rcon.py" <<'CMDS' | tee -a "$evidence/runtime-commands.log"
