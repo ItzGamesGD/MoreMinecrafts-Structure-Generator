@@ -195,6 +195,14 @@ def run(args, templates):
             start = ((chunk.nbt.get("structures") or {}).get("starts") or {}).get(STRUCT) if chunk else None
             site = {"candidate_chunk": [cx, cz], "generated": bool(start),
                     "chunk_status": chunk.status if chunk else "unloaded"}
+            # Full placement identity, not merely the count of Jigsaw pieces.
+            # The A/B comparison must reject changes to any room or bounding box.
+            site["start_signature"] = [
+                {"location": c.get("pool_element", {}).get("location"),
+                 "rotation": c.get("rotation"), "bb": list(c.get("BB", [])),
+                 "pos": list(c.get("Pos", []))}
+                for c in (start.get("Children", []) if start else [])
+            ]
             result["sites"].append(site)
             if not start:
                 continue
