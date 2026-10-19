@@ -1,0 +1,80 @@
+name: SG-03-N4 clay resolution
+
+on:
+  pull_request:
+    paths:
+      - "validation/minecraft-visual/sg03-natural/**"
+      - "examples/forgotten_kingdom/**"
+      - "exports/sg-0*/**"
+      - "tests/test_sg03_clay_resolution.py"
+      - ".github/workflows/sg03-n4-clay.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  natural-world:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        seed: [173, 42]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "25"
+      - name: Build all packs, verify committed bytes, run unit tests
+        run: |
+          python3 -m pip install -r requirements-export.txt numpy pytest nbtlib
+          for n in 1 2 3; do
+            case $n in 1) b=build_cavern;; 2) b=build_sg02;; 3) b=build_sg03;; esac
+            python3 examples/forgotten_kingdom/$b.py "$RUNNER_TEMP/pack$n" > /dev/null
+            diff -r exports/sg-0$n/forgotten-underground-kingdom/datapack "$RUNNER_TEMP/pack$n"
+          done
+          PYTHONPATH=vendor/mcbuild/src python3 -m pytest -q tests/test_sg03_clay_resolution.py tests/test_sg03_rooms.py
+          python3 -m unittest discover -s validation/minecraft-visual/sg03-natural -p 'test_*.py' -v
+      - name: Pre-fix control pack (identical except structure step = vegetal_decoration)
+        run: python3 validation/minecraft-visual/stress/variant_pack.py --pack "$RUNNER_TEMP/pack3" --step vegetal_decoration --out "$RUNNER_TEMP/control-pack"
+      - name: Download official 26.3 server with SHA-1 verification
+        run: bash validation/minecraft-visual/sg03-natural/fetch-server.sh "$RUNNER_TEMP/server.jar" 26.3
+      - name: Natural generation, production and control (never /place), two independent runs each
+        timeout-minutes: 40
+        run: |
+          set +e
+          for rep in 1 2; do
+            python3 validation/minecraft-visual/sg03-natural/run_natural.py --jar "$RUNNER_TEMP/server.jar" --pack "$RUNNER_TEMP/pack3" \
+              --out "$RUNNER_TEMP/prod-$rep" --seed ${{ matrix.seed }} --sites 2 --ticks 200 --port $((25575+rep*10))
+            echo "prod-$rep exit $?"
+          done
+          python3 validation/minecraft-visual/sg03-natural/run_natural.py --jar "$RUNNER_TEMP/server.jar" --pack "$RUNNER_TEMP/control-pack" \
+            --out "$RUNNER_TEMP/control" --seed ${{ matrix.seed }} --sites 2 --ticks 200 --port 25610
+          echo "control exit $?"
+          exit 0
+      - name: Assert acceptance
+        run: |
+          extra=""
+          if [ "${{ matrix.seed }}" = "42" ]; then extra="--require-clay-outside"; fi
+          for rep in 1 2; do
+            python3 validation/minecraft-visual/sg03-natural/assert_n4.py --production "$RUNNER_TEMP/prod-$rep/natural-${{ matrix.seed }}.json" \
+              --control "$RUNNER_TEMP/control/natural-${{ matrix.seed }}.json" $extra --out "$RUNNER_TEMP/assert-$rep.json"
+          done
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sg03-n4-seed-${{ matrix.seed }}-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/prod-*/natural-*.json
+            ${{ runner.temp }}/prod-*/server-*.log
+            ${{ runner.temp }}/control/natural-*.json
+            ${{ runner.temp }}/control/server-*.log
+            ${{ runner.temp }}/assert-*.json
+          if-no-files-found: warn
+          retention-days: 30

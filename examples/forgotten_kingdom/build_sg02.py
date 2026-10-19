@@ -15,6 +15,7 @@ from kingdom_common import (
     REPO_ROOT, SIDES, SIZE, TUNNEL_DOOR, UPPER_DOOR, UPPER_POOL, to_26_3,
 )
 from build_cavern import _tunnel
+from worldgen_steps import STRUCTURE_STEP
 from sg02_cavern import build_chamber, side_xz
 from sg02_stubs import lower_stub, upper_stub
 from structure_export.datapack import DatapackBuilder
@@ -127,7 +128,7 @@ def write_pack(
         structure_id,
         start_pool=start_pool,
         size=1,
-        step="strongholds",
+        step=STRUCTURE_STEP,
         terrain_adaptation="encapsulate",
         max_distance_from_center=112,
         start_height={
