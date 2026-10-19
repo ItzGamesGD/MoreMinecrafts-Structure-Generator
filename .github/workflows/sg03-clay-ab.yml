@@ -27,6 +27,11 @@ jobs:
           diff -r exports/sg-03/forgotten-underground-kingdom/datapack "$RUNNER_TEMP/control-pack"
           python3 -m unittest discover -s validation/minecraft-visual/sg03-natural -p 'test_*.py' -v
           python3 -m unittest discover -s validation/minecraft-visual/sg03-natural/ab -p 'test_*.py' -v
+      - name: Rebuild the pre-fix ordering as the A/B control (structure step vegetal_decoration, SG-03-N4)
+        run: |
+          python3 validation/minecraft-visual/stress/variant_pack.py --pack "$RUNNER_TEMP/control-pack" --step vegetal_decoration --out "$RUNNER_TEMP/prefix-pack"
+          rm -rf "$RUNNER_TEMP/control-pack"
+          mv "$RUNNER_TEMP/prefix-pack" "$RUNNER_TEMP/control-pack"
       - name: Make isolated treatment with clay placement count zero
         run: |
           cp -a "$RUNNER_TEMP/control-pack" "$RUNNER_TEMP/treatment-pack"

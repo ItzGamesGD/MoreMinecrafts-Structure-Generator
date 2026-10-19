@@ -55,9 +55,12 @@ after 200 ticks, trial spawner blocks == spawner block entities (3 / 3 and 12 / 
 step). Natural lush-cave clay remains: 156,967 clay blocks in the lush-caves biome within 64 blocks of seed 42 site (4,13) (`vanilla_clay_outside_structure`).
 Control arm (pre-fix ordering `vegetal_decoration` on the final pack) at seed 42: 40 clay-family overwrites, 0 others.
 
-Observation, not part of N4: in one run with three servers generating concurrently, seed 173 (-18,36) showed 139 geode overlays
-(amethyst, calcite, smooth basalt, air) under steps 5 and 10 but not under step 9; all later runs at lower load passed (8 site-runs of that site). Geodes (step 2) can only overwrite
-through cross-chunk ordering, which is timing dependent. The integrity assertion was **not** relaxed for it (geode air is classed "unexplained").
+Observation, not part of N4 (geode race): seed 173 site (-18,36) showed 139 overlays (131 amethyst/calcite/smooth basalt, 8 geode air) in
+one concurrent local run and again in CI run 39190827805 (inherited `sg03-natural` job, seed 173), while the same site passed in 8 other local
+site-runs and in both repetitions of the N4 workflow. Geodes (feature step 2) can only overwrite the structure when a neighbouring chunk is decorated
+after the structure's chunk; that order is timing dependent and independent of the structure step, so step 10 cannot remove it. This is a pre-existing
+F-2 limitation, not a regression of the fix, but it means the inherited seed-173 job is **flaky**. The integrity assertion was **not** relaxed (geode air is
+classed "unexplained"); a robust fix needs a design decision (see 7).
 
 ## 5. Regression tests
 
@@ -79,7 +82,9 @@ pools, sets, previews). `pytest tests` (139) pass. SG-01-C's F-2 intent is resto
 ## 7. Remaining risks and recommendation
 
 * Step 10 also removes lush vegetation (glow lichen, vines, spore blossom) that would otherwise grow into template air: **VISUAL PENDING**, owner decision.
-* Cross-chunk ordering can still let a neighbouring chunk's feature overwrite blocks (geodes, monster rooms observed earlier); not solved, no global suppression added.
-* The fix is empirical on 2 seeds / 4 sites x 3 repetitions locally; CI repeats it. Ancient City overlap, performance and live-player traversal are **NOT RUN**.
+* Cross-chunk ordering can still let a neighbouring chunk's feature overwrite blocks. Geodes at seed 173 (-18,36) did so in CI (see section 4), so the inherited `sg03-natural` seed-173 job can fail intermittently. Not solved; no global suppression added.
+* The fix is empirical on 2 seeds / 4 sites x 3 repetitions locally and 2 repetitions in the N4 CI job. Ancient City overlap, performance and live-player traversal are **NOT RUN**.
 * Merge recommendation: **do not merge automatically**. Recommend approving candidate A after owner confirms the vegetation trade-off; if rejected, choose
   E (material change) rather than any global feature override.
+
+`sg03-clay-ab.yml` (from #15) now builds its control from the pre-fix ordering (step 9) so the A/B stays meaningful on the fixed baseline.
