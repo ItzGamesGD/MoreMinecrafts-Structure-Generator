@@ -19,7 +19,8 @@ public final class SpikeMod implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.info("SG_SPIKE mode={}", Guard.MODE);
-        ServerLifecycleEvents.SERVER_STARTED.register(server -> {
+        // Spawn-area chunks are generated before SERVER_STARTED, so the configuration must be resolved at SERVER_STARTING.
+        ServerLifecycleEvents.SERVER_STARTING.register(server -> {
             verifyHooks();
             ProtectionConfig.resolve(server);
         });
