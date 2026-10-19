@@ -22,7 +22,11 @@ import net.minecraft.world.level.levelgen.structure.StructureStart;
 public final class Guard {
     public enum Mode { OBSERVE, ENFORCE }
 
+    /** Test-only fault injection (SG01_FAULT): exercises the "structure data unavailable" paths on demand. */
+    public enum Fault { NONE, OUT_OF_RANGE, STATUS_TOO_HIGH, MISSING_START }
+
     public static final Mode MODE = parseMode();
+    public static final Fault FAULT = parseFault();
     public static final GuardStats GEODE = new GuardStats("geode");
     public static final GuardStats MONSTER_ROOM = new GuardStats("monster_room");
 
@@ -34,6 +38,12 @@ public final class Guard {
         if (value == null || value.isBlank() || value.equalsIgnoreCase("enforce")) return Mode.ENFORCE;
         if (value.equalsIgnoreCase("observe")) return Mode.OBSERVE;
         throw new IllegalStateException("SG protection spike: unknown guard mode '" + value + "' (use observe or enforce)");
+    }
+
+    private static Fault parseFault() {
+        String value = System.getProperty("sg01.fault", System.getenv("SG01_FAULT"));
+        if (value == null || value.isBlank() || value.equalsIgnoreCase("none")) return Fault.NONE;
+        return Fault.valueOf(value.toUpperCase(java.util.Locale.ROOT));
     }
 
     /** @return true if the feature instance must be cancelled (always false in OBSERVE mode, where the decision is only recorded). */
@@ -74,6 +84,21 @@ public final class Guard {
                 for (Map.Entry<Structure, LongSet> entry : references.entrySet()) {
                     if (!protectedSet.contains(entry.getKey())) continue;
                     sawReference = true;
+                    if (FAULT == Fault.OUT_OF_RANGE && !region.hasChunk(centre.x() + 9, centre.z())) {
+                        verdict = "unavailable";
+                        detail = "[fault-injection] chunk at distance 9 is outside the step's chunk cache (hasChunk=false)";
+                        break scan;
+                    }
+                    if (FAULT == Fault.STATUS_TOO_HIGH) {
+                        try {
+                            region.getChunk(centre.x() + 2, centre.z(), ChunkStatus.STRUCTURE_REFERENCES);
+                            detail = "[fault-injection] getChunk at distance 2 returned a chunk (NOT expected)";
+                        } catch (RuntimeException e) {
+                            verdict = "unavailable";
+                            detail = "[fault-injection] getChunk(distance 2, STRUCTURE_REFERENCES) threw " + e.getClass().getSimpleName() + " instead of generating";
+                            break scan;
+                        }
+                    }
                     for (long key : entry.getValue()) {
                         if (!seenStarts.add(key)) continue;
                         ChunkPos startPos = ChunkPos.unpack(key);
@@ -90,9 +115,11 @@ public final class Guard {
                             detail = "start chunk " + startPos.x() + "," + startPos.z() + ": " + e.getClass().getSimpleName();
                             break scan;
                         }
+                        if (FAULT == Fault.MISSING_START) start = null;
                         if (start == null || !start.isValid()) {
                             verdict = "unavailable";
-                            detail = "referenced start at " + startPos.x() + "," + startPos.z() + " is " + (start == null ? "missing" : "invalid");
+                            detail = (FAULT == Fault.MISSING_START ? "[fault-injection] " : "") + "referenced start at " + startPos.x() + "," + startPos.z() + " is "
+                                    + (start == null ? "missing" : "invalid");
                             break scan;
                         }
                         int index = 0;
