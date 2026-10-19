@@ -1,0 +1,12 @@
+{
+ "expected": "startup fails loudly",
+ "outcome": "startup failed",
+ "message_tail": "-spike/run/server/crash-reports/crash-2026-10-19_07.44.53-server.txt\n[07:44:53] [Server thread/INFO] (sg01-spike) SG_SPIKE_REPORT {\"mode\":\"ENFORCE\",\"geode\":{\"attempts\":0,\"fast_path\":0,\"collisions\":0,\"unavailable\":0,\"cancelled\":0,\"would_cancel\":0,\"not_worldgen\":0,\"events\":[]},\"monster_room\":{\"attempts\":0,\"fast_path\":0,\"collisions\":0,\"unavailable\":0,\"cancelled\":0,\"would_cancel\":0,\"not_worldgen\":0,\"events\":[]}}\n[07:44:53] [Server thread/INFO] (Minecraft) Stopping server\n[07:44:53] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 18s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+ "log_lines": [
+  "[07:44:50] [main/INFO] (sg01-spike) SG_SPIKE mode=ENFORCE",
+  "[07:44:53] [Server thread/INFO] (sg01-spike) SG_SPIKE hook GeodeFeature.place applied=true MonsterRoomFeature.place applied=true",
+  "java.lang.IllegalStateException: SG protection spike: structure tag #moreminecrafts:protected_from_overlays resolves to no structure (is the SG datapack loaded?)",
+  "[07:44:53] [Server thread/INFO] (sg01-spike) SG_SPIKE_REPORT {\"mode\":\"ENFORCE\",\"geode\":{\"attempts\":0,\"fast_path\":0,\"collisions\":0,\"unavailable\":0,\"cancelled\":0,\"would_cancel\":0,\"not_worldgen\":0,\"events\":[]},\"monster_room\":{\"attempts\":0,\"fast_path\":0,\"collisions\":0,\"unavailable\":0,\"cancelled\":0,\"woul"
+ ],
+ "pass": true
+}

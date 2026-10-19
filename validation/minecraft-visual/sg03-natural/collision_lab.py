@@ -57,18 +57,31 @@ def main() -> None:
     p.add_argument("--ticks", type=int, default=200)
     p.add_argument("--port", type=int, default=25575)
     p.add_argument("--java", default="java")
+    p.add_argument("--fabric-project", type=Path, help="Loom project to launch with `gradlew runServer` instead of the vanilla jar (N7-A spike)")
+    p.add_argument("--guard-mode", choices=["observe", "enforce"], default="enforce", help="N7-A spike guard mode (only with --fabric-project)")
+    p.add_argument("--features", default="both", help="N7-A spike: enable only one hook (geode | monster_room | both)")
+    p.add_argument("--fault", default="none", help="N7-A spike fault injection: none | out_of_range | status_too_high | missing_start")
     p.add_argument("--launcher-prefix", nargs="*", default=[], help="e.g. taskset -c 0,1 to emulate a 2-vCPU runner")
     a = p.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
     templates, _ = ap.load_pack(a.pack)
     folder = a.out / "world"
+    spike_report = (a.out / "spike-report.json").resolve()
+    if a.fabric_project:
+        folder = (a.fabric_project / "run" / "server").resolve()
     shutil.rmtree(folder, ignore_errors=True)
     folder.mkdir(parents=True)
     extra = [f"-Dmax.bg.threads={a.threads}"] if a.threads else []
     launcher = None
     if a.launcher_prefix:
         launcher = [*a.launcher_prefix, a.java, "-Xmx3G", *extra, "-jar", str(a.jar.resolve()), "nogui"]
-    server = Server(a.java, a.jar.resolve(), folder, a.seed, a.pack.resolve(), port=a.port, extra_args=extra, launcher=launcher,
+    fabric = {}
+    if a.fabric_project:
+        launcher = ["./gradlew", "--no-daemon", "runServer"]
+        fabric = dict(launcher_cwd=a.fabric_project.resolve(), start_timeout=600,
+                      env={"SG01_GUARD_MODE": a.guard_mode, "SG01_SPIKE_REPORT": str(spike_report), "SG01_FAULT": a.fault, "SG01_FEATURES": a.features})
+        spike_report.unlink(missing_ok=True)
+    server = Server(a.java, a.jar.resolve(), folder, a.seed, a.pack.resolve(), port=a.port, extra_args=extra, launcher=launcher, **fabric,
                     extra_props={"difficulty": "normal", "spawn-monsters": "true", "max-tick-time": "-1"})
     cx, cz = a.chunk
     report = {"seed": a.seed, "chunk": [cx, cz], "order": a.order, "threads": a.threads, "prefix": a.launcher_prefix}
@@ -108,14 +121,62 @@ def main() -> None:
             server.save()
             world = World(server.region_dir)
             report["after_ticks"] = summarize(inspect(world, start, templates), world, start, templates)
+        report["audit"] = audit(world, report["bbox"], (cx, cz), a.radius, [sig[2] for sig in report["start_signature"]])
         report["elapsed_s"] = round(time.time() - t0, 1)
     finally:
         server.stop()
         shutil.copy2(server.log_path, a.out / "server.log")
+        if a.fabric_project:
+            report["guard_mode"] = a.guard_mode
+            report["fault"] = a.fault
+            report["features"] = a.features
+            report["spike_report"] = json.loads(spike_report.read_text()) if spike_report.exists() else None
+            log = (a.out / "server.log").read_text(errors="replace")
+            report["mixin_log"] = [ln.split("]: ", 1)[-1] for ln in log.splitlines() if "SG_SPIKE" in ln and "SG_SPIKE_REPORT" not in ln][:40]
         (a.out / "lab.json").write_text(json.dumps(report, indent=1, default=str) + "\n")
         print(json.dumps({k: report.get(k) for k in ("order", "threads", "generated")} | {
             "after": {k: report.get("after_ticks", {}).get(k) for k in ("matched", "expected", "by_feature")}}))
-        shutil.rmtree(folder, ignore_errors=True)
+        if not a.fabric_project:
+            shutil.rmtree(folder, ignore_errors=True)
+
+
+def audit(world: World, bbox: list, centre: tuple, radius: int, piece_boxes: list) -> dict:
+    """Block entities and vanilla feature material inside vs outside the structure's bounding box (chunks of the loaded lab area)."""
+    lo, hi = bbox[:3], bbox[3:]
+    inside = Counter()
+    outside = Counter()
+    in_pieces = Counter()
+    in_gap = Counter()
+    far_geode_spawners = []
+    blocks = Counter()
+    margin = 16
+    for cx in range(centre[0] - radius - 8, centre[0] + radius + 9):
+        for cz in range(centre[1] - radius - 8, centre[1] + radius + 9):
+            chunk = world.chunk(cx, cz)
+            if chunk is None or str(chunk.status) != "minecraft:full":
+                continue
+            for be in chunk.nbt.get("block_entities", []):
+                x, y, z = be.get("x"), be.get("y"), be.get("z")
+                kind = be.get("id", "?")
+                in_box = lo[0] <= x <= hi[0] and lo[1] <= y <= hi[1] and lo[2] <= z <= hi[2]
+                (inside if in_box else outside)[kind] += 1
+                if in_box:
+                    hit = any(b[0] <= x <= b[3] and b[1] <= y <= b[4] and b[2] <= z <= b[5] for b in piece_boxes)
+                    (in_pieces if hit else in_gap)[kind] += 1
+                    if not hit and "spawner" in kind and kind != "minecraft:trial_spawner":
+                        far_geode_spawners.append([x, y, z])
+            for sec_y, (palette, idx) in chunk.sections.items():
+                for name in ("minecraft:budding_amethyst", "minecraft:amethyst_block"):
+                    ids = [i for i, st in enumerate(palette) if st["id"] == name]
+                    if not ids:
+                        continue
+                    for flat in __import__("numpy").flatnonzero(__import__("numpy").isin(idx, ids)):
+                        x, y, z = cx * 16 + (flat & 15), sec_y * 16 + (flat >> 8), cz * 16 + ((flat >> 4) & 15)
+                        near = lo[0] - margin <= x <= hi[0] + margin and lo[1] - margin <= y <= hi[1] + margin and lo[2] - margin <= z <= hi[2] + margin
+                        blocks[("near_structure_" if near else "far_from_structure_") + name.split(":")[1]] += 1
+    return {"block_entities_inside_piece_boxes": dict(in_pieces), "block_entities_in_bbox_but_outside_all_pieces": dict(in_gap),
+            "natural_spawners_in_bbox_gaps": far_geode_spawners, "block_entities_inside_bbox": dict(inside), "block_entities_outside_bbox": dict(outside),
+            "amethyst_blocks": dict(blocks), "note": "spawner = minecraft:spawner/mob_spawner (SG templates contain none; trial_spawner is separate)"}
 
 
 def summarize(result: dict, world: World, start: dict, templates: dict) -> dict:

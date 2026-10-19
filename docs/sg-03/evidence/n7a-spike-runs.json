@@ -1,0 +1,1251 @@
+[
+ {
+  "run": "a1",
+  "seed": 173,
+  "chunk": [
+   -18,
+   36
+  ],
+  "order": "rowmajor",
+  "mode": "observe",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 7,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 2
+  },
+  "monster_room": {
+   "attempts": 4382,
+   "fast_path": 3124,
+   "collisions": 59,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 59
+  },
+  "be_in_piece_boxes": null,
+  "be_in_bbox_gaps": null,
+  "mob_spawners_outside_bbox": 7,
+  "amethyst": {
+   "far_from_structure_budding_amethyst": 235,
+   "far_from_structure_amethyst_block": 2783,
+   "near_structure_budding_amethyst": 38,
+   "near_structure_amethyst_block": 369
+  },
+  "elapsed_s": 26.5
+ },
+ {
+  "run": "b1",
+  "seed": 173,
+  "chunk": [
+   -18,
+   36
+  ],
+  "order": "colmajor_rev",
+  "mode": "observe",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 139,
+  "by_feature": {
+   "amethyst_geode": 131,
+   "monster_room_or_geode_air": 8
+  },
+  "foreign_blocks_in_template_air": 37,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 7,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 2
+  },
+  "monster_room": {
+   "attempts": 4382,
+   "fast_path": 3124,
+   "collisions": 59,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 59
+  },
+  "be_in_piece_boxes": null,
+  "be_in_bbox_gaps": null,
+  "mob_spawners_outside_bbox": 7,
+  "amethyst": {
+   "far_from_structure_budding_amethyst": 235,
+   "far_from_structure_amethyst_block": 2783,
+   "near_structure_budding_amethyst": 39,
+   "near_structure_amethyst_block": 394
+  },
+  "elapsed_s": 25.2
+ },
+ {
+  "run": "b2",
+  "seed": 173,
+  "chunk": [
+   -18,
+   36
+  ],
+  "order": "random:1",
+  "mode": "observe",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 139,
+  "by_feature": {
+   "amethyst_geode": 131,
+   "monster_room_or_geode_air": 8
+  },
+  "foreign_blocks_in_template_air": 37,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 7,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 2
+  },
+  "monster_room": {
+   "attempts": 4382,
+   "fast_path": 3124,
+   "collisions": 59,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 59
+  },
+  "be_in_piece_boxes": null,
+  "be_in_bbox_gaps": null,
+  "mob_spawners_outside_bbox": 7,
+  "amethyst": {
+   "far_from_structure_budding_amethyst": 235,
+   "far_from_structure_amethyst_block": 2783,
+   "near_structure_budding_amethyst": 39,
+   "near_structure_amethyst_block": 394
+  },
+  "elapsed_s": 19.6
+ },
+ {
+  "run": "b3",
+  "seed": 173,
+  "chunk": [
+   -18,
+   36
+  ],
+  "order": "spiral_out",
+  "mode": "observe",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 139,
+  "by_feature": {
+   "amethyst_geode": 131,
+   "monster_room_or_geode_air": 8
+  },
+  "foreign_blocks_in_template_air": 37,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 7,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 2
+  },
+  "monster_room": {
+   "attempts": 4382,
+   "fast_path": 3124,
+   "collisions": 59,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 59
+  },
+  "be_in_piece_boxes": null,
+  "be_in_bbox_gaps": null,
+  "mob_spawners_outside_bbox": 7,
+  "amethyst": {
+   "far_from_structure_budding_amethyst": 235,
+   "far_from_structure_amethyst_block": 2783,
+   "near_structure_budding_amethyst": 39,
+   "near_structure_amethyst_block": 394
+  },
+  "elapsed_s": 24.5
+ },
+ {
+  "run": "c1",
+  "seed": 173,
+  "chunk": [
+   -19,
+   15
+  ],
+  "order": "rowmajor_rev",
+  "mode": "observe",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 226,
+  "by_feature": {
+   "monster_room": 73,
+   "monster_room_or_geode_air": 62,
+   "amethyst_geode": 90,
+   "other:minecraft:small_amethyst_bud": 1
+  },
+  "foreign_blocks_in_template_air": 473,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 6,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 2
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "fast_path": 3321,
+   "collisions": 76,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 76
+  },
+  "be_in_piece_boxes": null,
+  "be_in_bbox_gaps": null,
+  "mob_spawners_outside_bbox": 12,
+  "amethyst": {
+   "far_from_structure_amethyst_block": 1767,
+   "far_from_structure_budding_amethyst": 161,
+   "near_structure_budding_amethyst": 25,
+   "near_structure_amethyst_block": 264
+  },
+  "elapsed_s": 27.1
+ },
+ {
+  "run": "c2",
+  "seed": 173,
+  "chunk": [
+   -19,
+   15
+  ],
+  "order": "colmajor_rev",
+  "mode": "observe",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 173,
+  "by_feature": {
+   "monster_room": 61,
+   "monster_room_or_geode_air": 50,
+   "amethyst_geode": 61,
+   "other:minecraft:small_amethyst_bud": 1
+  },
+  "foreign_blocks_in_template_air": 338,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 6,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 2
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "fast_path": 3321,
+   "collisions": 76,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 76
+  },
+  "be_in_piece_boxes": null,
+  "be_in_bbox_gaps": null,
+  "mob_spawners_outside_bbox": 12,
+  "amethyst": {
+   "far_from_structure_amethyst_block": 1767,
+   "far_from_structure_budding_amethyst": 161,
+   "near_structure_budding_amethyst": 21,
+   "near_structure_amethyst_block": 224
+  },
+  "elapsed_s": 20.8
+ },
+ {
+  "run": "c3",
+  "seed": 173,
+  "chunk": [
+   -19,
+   15
+  ],
+  "order": "spiral_out",
+  "mode": "observe",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 173,
+  "by_feature": {
+   "monster_room": 61,
+   "monster_room_or_geode_air": 50,
+   "amethyst_geode": 61,
+   "other:minecraft:small_amethyst_bud": 1
+  },
+  "foreign_blocks_in_template_air": 338,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 6,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 2
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "fast_path": 3321,
+   "collisions": 76,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 76
+  },
+  "be_in_piece_boxes": null,
+  "be_in_bbox_gaps": null,
+  "mob_spawners_outside_bbox": 12,
+  "amethyst": {
+   "far_from_structure_amethyst_block": 1767,
+   "far_from_structure_budding_amethyst": 161,
+   "near_structure_budding_amethyst": 21,
+   "near_structure_amethyst_block": 224
+  },
+  "elapsed_s": 17.3
+ },
+ {
+  "run": "d1",
+  "seed": 173,
+  "chunk": [
+   -18,
+   36
+  ],
+  "order": "colmajor_rev",
+  "mode": "enforce",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 7,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 2,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4382,
+   "fast_path": 3124,
+   "collisions": 62,
+   "unavailable": 0,
+   "cancelled": 62,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": null,
+  "be_in_bbox_gaps": null,
+  "mob_spawners_outside_bbox": 7,
+  "amethyst": {
+   "far_from_structure_budding_amethyst": 235,
+   "far_from_structure_amethyst_block": 2783,
+   "near_structure_budding_amethyst": 7,
+   "near_structure_amethyst_block": 72
+  },
+  "elapsed_s": 18.9
+ },
+ {
+  "run": "d2",
+  "seed": 173,
+  "chunk": [
+   -18,
+   36
+  ],
+  "order": "random:1",
+  "mode": "enforce",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 7,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 2,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4382,
+   "fast_path": 3124,
+   "collisions": 62,
+   "unavailable": 0,
+   "cancelled": 62,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": null,
+  "be_in_bbox_gaps": null,
+  "mob_spawners_outside_bbox": 7,
+  "amethyst": {
+   "far_from_structure_budding_amethyst": 235,
+   "far_from_structure_amethyst_block": 2783,
+   "near_structure_budding_amethyst": 7,
+   "near_structure_amethyst_block": 72
+  },
+  "elapsed_s": 23.3
+ },
+ {
+  "run": "d3",
+  "seed": 173,
+  "chunk": [
+   -18,
+   36
+  ],
+  "order": "spiral_out",
+  "mode": "enforce",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 7,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 2,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4382,
+   "fast_path": 3124,
+   "collisions": 62,
+   "unavailable": 0,
+   "cancelled": 62,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": null,
+  "be_in_bbox_gaps": null,
+  "mob_spawners_outside_bbox": 7,
+  "amethyst": {
+   "far_from_structure_budding_amethyst": 235,
+   "far_from_structure_amethyst_block": 2783,
+   "near_structure_budding_amethyst": 7,
+   "near_structure_amethyst_block": 72
+  },
+  "elapsed_s": 17.9
+ },
+ {
+  "run": "d4",
+  "seed": 173,
+  "chunk": [
+   -18,
+   36
+  ],
+  "order": "rowmajor",
+  "mode": "enforce",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 7,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 2,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4382,
+   "fast_path": 3124,
+   "collisions": 62,
+   "unavailable": 0,
+   "cancelled": 62,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": null,
+  "be_in_bbox_gaps": null,
+  "mob_spawners_outside_bbox": 7,
+  "amethyst": {
+   "far_from_structure_budding_amethyst": 235,
+   "far_from_structure_amethyst_block": 2783,
+   "near_structure_budding_amethyst": 7,
+   "near_structure_amethyst_block": 72
+  },
+  "elapsed_s": 21.2
+ },
+ {
+  "run": "e1",
+  "seed": 173,
+  "chunk": [
+   -19,
+   15
+  ],
+  "order": "rowmajor_rev",
+  "mode": "enforce",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 6,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 2,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "fast_path": 3321,
+   "collisions": 70,
+   "unavailable": 0,
+   "cancelled": 70,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": null,
+  "be_in_bbox_gaps": null,
+  "mob_spawners_outside_bbox": 12,
+  "amethyst": {
+   "far_from_structure_amethyst_block": 1767,
+   "far_from_structure_budding_amethyst": 161
+  },
+  "elapsed_s": 25.7
+ },
+ {
+  "run": "e2",
+  "seed": 173,
+  "chunk": [
+   -19,
+   15
+  ],
+  "order": "colmajor_rev",
+  "mode": "enforce",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 6,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 2,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "fast_path": 3321,
+   "collisions": 70,
+   "unavailable": 0,
+   "cancelled": 70,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": null,
+  "be_in_bbox_gaps": null,
+  "mob_spawners_outside_bbox": 12,
+  "amethyst": {
+   "far_from_structure_amethyst_block": 1767,
+   "far_from_structure_budding_amethyst": 161
+  },
+  "elapsed_s": 24.5
+ },
+ {
+  "run": "e3",
+  "seed": 173,
+  "chunk": [
+   -19,
+   15
+  ],
+  "order": "spiral_out",
+  "mode": "enforce",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 6,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 2,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "fast_path": 3321,
+   "collisions": 70,
+   "unavailable": 0,
+   "cancelled": 70,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": null,
+  "be_in_bbox_gaps": null,
+  "mob_spawners_outside_bbox": 12,
+  "amethyst": {
+   "far_from_structure_amethyst_block": 1767,
+   "far_from_structure_budding_amethyst": 161
+  },
+  "elapsed_s": 21.1
+ },
+ {
+  "run": "e4",
+  "seed": 173,
+  "chunk": [
+   -19,
+   15
+  ],
+  "order": "random:2",
+  "mode": "enforce",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 6,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 2,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "fast_path": 3321,
+   "collisions": 70,
+   "unavailable": 0,
+   "cancelled": 70,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": null,
+  "be_in_bbox_gaps": null,
+  "mob_spawners_outside_bbox": 12,
+  "amethyst": {
+   "far_from_structure_amethyst_block": 1767,
+   "far_from_structure_budding_amethyst": 161
+  },
+  "elapsed_s": 24.6
+ },
+ {
+  "run": "f1",
+  "seed": 173,
+  "chunk": [
+   -19,
+   15
+  ],
+  "order": "rowmajor_rev",
+  "mode": "observe",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 120,
+  "by_feature": {
+   "monster_room_or_geode_air": 29,
+   "amethyst_geode": 90,
+   "other:minecraft:small_amethyst_bud": 1
+  },
+  "foreign_blocks_in_template_air": 473,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 6,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 2
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "fast_path": 3321,
+   "collisions": 75,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 75
+  },
+  "be_in_piece_boxes": {
+   "minecraft:lectern": 5,
+   "minecraft:barrel": 57,
+   "minecraft:chest": 18,
+   "minecraft:campfire": 4,
+   "minecraft:trial_spawner": 3,
+   "minecraft:blast_furnace": 4
+  },
+  "be_in_bbox_gaps": {
+   "minecraft:chest": 1,
+   "minecraft:mob_spawner": 1
+  },
+  "mob_spawners_outside_bbox": 12,
+  "amethyst": {
+   "far_from_structure_amethyst_block": 1767,
+   "far_from_structure_budding_amethyst": 161,
+   "near_structure_budding_amethyst": 25,
+   "near_structure_amethyst_block": 264
+  },
+  "elapsed_s": 21.7
+ },
+ {
+  "run": "f2",
+  "seed": 173,
+  "chunk": [
+   -19,
+   15
+  ],
+  "order": "rowmajor_rev",
+  "mode": "enforce",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 6,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 2,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "fast_path": 3321,
+   "collisions": 70,
+   "unavailable": 0,
+   "cancelled": 70,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": {
+   "minecraft:lectern": 5,
+   "minecraft:barrel": 57,
+   "minecraft:chest": 18,
+   "minecraft:campfire": 4,
+   "minecraft:trial_spawner": 3,
+   "minecraft:blast_furnace": 4
+  },
+  "be_in_bbox_gaps": {
+   "minecraft:chest": 1,
+   "minecraft:mob_spawner": 1
+  },
+  "mob_spawners_outside_bbox": 12,
+  "amethyst": {
+   "far_from_structure_amethyst_block": 1767,
+   "far_from_structure_budding_amethyst": 161
+  },
+  "elapsed_s": 27.9
+ },
+ {
+  "run": "f3",
+  "seed": 173,
+  "chunk": [
+   -18,
+   36
+  ],
+  "order": "spiral_out",
+  "mode": "observe",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 139,
+  "by_feature": {
+   "amethyst_geode": 131,
+   "monster_room_or_geode_air": 8
+  },
+  "foreign_blocks_in_template_air": 37,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 7,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 2
+  },
+  "monster_room": {
+   "attempts": 4382,
+   "fast_path": 3124,
+   "collisions": 59,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 59
+  },
+  "be_in_piece_boxes": {
+   "minecraft:lectern": 8,
+   "minecraft:barrel": 154,
+   "minecraft:chest": 26,
+   "minecraft:blast_furnace": 3,
+   "minecraft:campfire": 3,
+   "minecraft:decorated_pot": 16,
+   "minecraft:trial_spawner": 3
+  },
+  "be_in_bbox_gaps": {},
+  "mob_spawners_outside_bbox": 7,
+  "amethyst": {
+   "far_from_structure_budding_amethyst": 235,
+   "far_from_structure_amethyst_block": 2783,
+   "near_structure_budding_amethyst": 39,
+   "near_structure_amethyst_block": 394
+  },
+  "elapsed_s": 16.6
+ },
+ {
+  "run": "f4",
+  "seed": 173,
+  "chunk": [
+   -18,
+   36
+  ],
+  "order": "spiral_out",
+  "mode": "enforce",
+  "fault": null,
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 7,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 2,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4382,
+   "fast_path": 3124,
+   "collisions": 62,
+   "unavailable": 0,
+   "cancelled": 62,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": {
+   "minecraft:lectern": 8,
+   "minecraft:barrel": 154,
+   "minecraft:chest": 26,
+   "minecraft:blast_furnace": 3,
+   "minecraft:campfire": 3,
+   "minecraft:decorated_pot": 16,
+   "minecraft:trial_spawner": 3
+  },
+  "be_in_bbox_gaps": {},
+  "mob_spawners_outside_bbox": 7,
+  "amethyst": {
+   "far_from_structure_budding_amethyst": 235,
+   "far_from_structure_amethyst_block": 2783,
+   "near_structure_budding_amethyst": 7,
+   "near_structure_amethyst_block": 72
+  },
+  "elapsed_s": 17.7
+ },
+ {
+  "run": "g1",
+  "seed": 173,
+  "chunk": [
+   -18,
+   36
+  ],
+  "order": "spiral_out",
+  "mode": "enforce",
+  "fault": "out_of_range",
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 7,
+   "collisions": 0,
+   "unavailable": 3,
+   "cancelled": 3,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4382,
+   "fast_path": 3128,
+   "collisions": 0,
+   "unavailable": 1254,
+   "cancelled": 1254,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": {
+   "minecraft:lectern": 8,
+   "minecraft:barrel": 154,
+   "minecraft:chest": 26,
+   "minecraft:blast_furnace": 3,
+   "minecraft:campfire": 3,
+   "minecraft:decorated_pot": 16,
+   "minecraft:trial_spawner": 3
+  },
+  "be_in_bbox_gaps": {},
+  "mob_spawners_outside_bbox": 5,
+  "amethyst": {
+   "far_from_structure_budding_amethyst": 225,
+   "far_from_structure_amethyst_block": 2655
+  },
+  "elapsed_s": 22.7
+ },
+ {
+  "run": "g2",
+  "seed": 173,
+  "chunk": [
+   -18,
+   36
+  ],
+  "order": "spiral_out",
+  "mode": "enforce",
+  "fault": "status_too_high",
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 7,
+   "collisions": 0,
+   "unavailable": 3,
+   "cancelled": 3,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4382,
+   "fast_path": 3128,
+   "collisions": 0,
+   "unavailable": 1254,
+   "cancelled": 1254,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": {
+   "minecraft:lectern": 8,
+   "minecraft:barrel": 154,
+   "minecraft:chest": 26,
+   "minecraft:blast_furnace": 3,
+   "minecraft:campfire": 3,
+   "minecraft:decorated_pot": 16,
+   "minecraft:trial_spawner": 3
+  },
+  "be_in_bbox_gaps": {},
+  "mob_spawners_outside_bbox": 5,
+  "amethyst": {
+   "far_from_structure_budding_amethyst": 225,
+   "far_from_structure_amethyst_block": 2655
+  },
+  "elapsed_s": 38.7
+ },
+ {
+  "run": "g3",
+  "seed": 173,
+  "chunk": [
+   -18,
+   36
+  ],
+  "order": "spiral_out",
+  "mode": "enforce",
+  "fault": "missing_start",
+  "features": "both",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 7,
+   "collisions": 0,
+   "unavailable": 3,
+   "cancelled": 3,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4382,
+   "fast_path": 3128,
+   "collisions": 0,
+   "unavailable": 1254,
+   "cancelled": 1254,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": {
+   "minecraft:lectern": 8,
+   "minecraft:barrel": 154,
+   "minecraft:chest": 26,
+   "minecraft:blast_furnace": 3,
+   "minecraft:campfire": 3,
+   "minecraft:decorated_pot": 16,
+   "minecraft:trial_spawner": 3
+  },
+  "be_in_bbox_gaps": {},
+  "mob_spawners_outside_bbox": 5,
+  "amethyst": {
+   "far_from_structure_budding_amethyst": 225,
+   "far_from_structure_amethyst_block": 2655
+  },
+  "elapsed_s": 23.5
+ },
+ {
+  "run": "h1",
+  "seed": 173,
+  "chunk": [
+   -19,
+   15
+  ],
+  "order": "rowmajor_rev",
+  "mode": "enforce",
+  "fault": "none",
+  "features": "geode",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 6,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 2,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "fast_path": 0,
+   "collisions": 0,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": {
+   "minecraft:lectern": 5,
+   "minecraft:barrel": 57,
+   "minecraft:chest": 18,
+   "minecraft:campfire": 4,
+   "minecraft:trial_spawner": 3,
+   "minecraft:blast_furnace": 4
+  },
+  "be_in_bbox_gaps": {
+   "minecraft:chest": 1,
+   "minecraft:mob_spawner": 1
+  },
+  "mob_spawners_outside_bbox": 12,
+  "amethyst": {
+   "far_from_structure_amethyst_block": 1767,
+   "far_from_structure_budding_amethyst": 161
+  },
+  "elapsed_s": 23.8
+ },
+ {
+  "run": "h2",
+  "seed": 173,
+  "chunk": [
+   -19,
+   15
+  ],
+  "order": "rowmajor_rev",
+  "mode": "enforce",
+  "fault": "none",
+  "features": "monster_room",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 120,
+  "by_feature": {
+   "monster_room_or_geode_air": 29,
+   "amethyst_geode": 90,
+   "other:minecraft:small_amethyst_bud": 1
+  },
+  "foreign_blocks_in_template_air": 473,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 0,
+   "collisions": 0,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "fast_path": 3321,
+   "collisions": 70,
+   "unavailable": 0,
+   "cancelled": 70,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": {
+   "minecraft:lectern": 5,
+   "minecraft:barrel": 57,
+   "minecraft:chest": 18,
+   "minecraft:campfire": 4,
+   "minecraft:trial_spawner": 3,
+   "minecraft:blast_furnace": 4
+  },
+  "be_in_bbox_gaps": {
+   "minecraft:chest": 1,
+   "minecraft:mob_spawner": 1
+  },
+  "mob_spawners_outside_bbox": 12,
+  "amethyst": {
+   "far_from_structure_amethyst_block": 1767,
+   "far_from_structure_budding_amethyst": 161,
+   "near_structure_budding_amethyst": 25,
+   "near_structure_amethyst_block": 264
+  },
+  "elapsed_s": 28.7
+ }
+]

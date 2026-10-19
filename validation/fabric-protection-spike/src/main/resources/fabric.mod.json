@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "sg01_worldgen_protection_spike",
+  "version": "0.0.1-spike",
+  "name": "SG worldgen protection technical spike (experimental)",
+  "description": "N7-A spike: cancels vanilla geode / monster room instances whose reach intersects a protected structure piece. Not production.",
+  "environment": "server",
+  "entrypoints": { "main": [ "dev.itzgamesgd.sg01spike.SpikeMod" ] },
+  "mixins": [ { "config": "sg01spike.mixins.json", "environment": "server" } ],
+  "depends": { "fabricloader": ">=0.19.5", "minecraft": "26.3", "java": ">=25" }
+}
