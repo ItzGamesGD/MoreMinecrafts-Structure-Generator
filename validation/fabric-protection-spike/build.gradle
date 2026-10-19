@@ -19,6 +19,10 @@ loom {
         server {
             server()
             runDir = 'run/server'
+            // N7-A3: same heap as the vanilla lab launch (java -Xmx3G). SG01_BG_THREADS, if set, pins -Dmax.bg.threads for concurrency runs.
+            vmArgs '-Xmx3G'
+            def bgThreads = System.getenv('SG01_BG_THREADS')
+            if (bgThreads) vmArgs "-Dmax.bg.threads=${bgThreads}"
         }
     }
 }

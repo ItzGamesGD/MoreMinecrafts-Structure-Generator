@@ -47,16 +47,16 @@ public final class SpikeMod implements ModInitializer {
     private static String stats(GuardStats s) {
         List<String> events = s.events().stream().map(e -> "\"" + e.replace("\\", "\\\\").replace("\"", "'") + "\"").collect(Collectors.toList());
         return String.format("\"%s\":{\"attempts\":%d,\"fast_path\":%d,\"collisions\":%d,\"unavailable\":%d,\"cancelled\":%d,\"would_cancel\":%d,\"not_worldgen\":%d,"
-                        + "\"clear\":%d,\"no_write\":%d,\"oracle_non_air_write\":%d,\"oracle_no_write\":%d,\"oracle_unknown\":%d,\"confusion\":{\"refined\":{\"tp\":%d,\"fp\":%d,\"fn\":%d,\"tn\":%d},\"n7a\":{\"tp\":%d,\"fp\":%d,\"fn\":%d,\"tn\":%d}},\"events\":[%s]}",
+                        + "\"clear\":%d,\"hybrid_skip\":%d,\"shadow_checks\":%d,\"shadow_violations\":%d,\"no_write\":%d,\"oracle_non_air_write\":%d,\"oracle_no_write\":%d,\"oracle_unknown\":%d,\"confusion\":{\"refined\":{\"tp\":%d,\"fp\":%d,\"fn\":%d,\"tn\":%d},\"n7a\":{\"tp\":%d,\"fp\":%d,\"fn\":%d,\"tn\":%d}},\"events\":[%s]}",
                 s.feature, s.attempts.get(), s.fastPath.get(), s.collisions.get(), s.unavailable.get(), s.cancelled.get(), s.wouldCancel.get(),
-                s.notWorldgen.get(), s.clear.get(), s.noWrite.get(), s.oracleNonAirWrite.get(), s.oracleNoWrite.get(), s.oracleUnknown.get(), s.refinedTp.get(), s.refinedFp.get(), s.refinedFn.get(), s.refinedTn.get(),
+                s.notWorldgen.get(), s.clear.get(), s.hybridSkip.get(), s.shadowChecks.get(), s.shadowViolations.get(), s.noWrite.get(), s.oracleNonAirWrite.get(), s.oracleNoWrite.get(), s.oracleUnknown.get(), s.refinedTp.get(), s.refinedFp.get(), s.refinedFn.get(), s.refinedTn.get(),
                 s.n7aTp.get(), s.n7aFp.get(), s.n7aFn.get(), s.n7aTn.get(), String.join(",", events));
     }
 
     private static void writeReport() {
-        String json = "{\"mode\":\"" + Guard.MODE + "\",\"fixture\":\"" + Guard.FIXTURE + "\",\"refine\":\"" + Guard.REFINE + "\",\"oracle\":\""
+        String json = "{\"mode\":\"" + Guard.MODE + "\",\"fixture\":\"" + Guard.FIXTURE + "\",\"refine\":\"" + Guard.REFINE + "\",\"shadow\":" + Guard.SHADOW + ",\"oracle\":\""
                 + (Guard.ORACLE_MONSTER_ROOM ? "monster_room" : "off") + "\"," + stats(Guard.GEODE) + "," + stats(Guard.MONSTER_ROOM) + ",\"probe\":"
-                + Probe.json() + "}\n";
+                + Probe.json() + ",\"perf\":" + Perf.json() + "}\n";
         LOGGER.info("SG_SPIKE_REPORT {}", json.replace("\n", ""));
         String path = System.getenv("SG01_SPIKE_REPORT");
         if (path != null && !path.isBlank()) {

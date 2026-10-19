@@ -40,6 +40,12 @@ public final class GuardStats {
     public final AtomicLong n7aFp = new AtomicLong();
     public final AtomicLong n7aFn = new AtomicLong();
     public final AtomicLong n7aTn = new AtomicLong();
+    /** HYBRID: broad-phase said no protected piece can be reached, so the narrow precheck was never run. */
+    public final AtomicLong hybridSkip = new AtomicLong();
+    /** SHADOW (HYBRID only): the broad-phase decision was compared with the refined decision. */
+    public final AtomicLong shadowChecks = new AtomicLong();
+    /** SHADOW: broad-phase said no, but the refined decision would cancel. Must stay 0. */
+    public final AtomicLong shadowViolations = new AtomicLong();
     private final List<String> events = new ArrayList<>();
 
     GuardStats(String feature) {

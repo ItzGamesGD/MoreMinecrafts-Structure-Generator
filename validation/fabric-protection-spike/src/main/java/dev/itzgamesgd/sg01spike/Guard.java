@@ -35,7 +35,7 @@ public final class Guard {
     public enum Fixture { NONE, NO_GEODE }
 
     /** Experiment-only refinement (SG01_REFINE). PRECHECK replicates vanilla's read-only precheck per room variant. OFF is the N7-A behaviour. */
-    public enum Refine { OFF, PRECHECK }
+    public enum Refine { OFF, PRECHECK, HYBRID }
 
     public static final Mode MODE = parseEnum("sg01.guard.mode", "SG01_GUARD_MODE", Mode.class, Mode.ENFORCE, true);
     public static final Fault FAULT = parseEnum("sg01.fault", "SG01_FAULT", Fault.class, Fault.NONE, false);
@@ -43,6 +43,8 @@ public final class Guard {
     public static final Refine REFINE = parseEnum("sg01.refine", "SG01_REFINE", Refine.class, Refine.OFF, false);
     /** Experiment-only oracle (SG01_ORACLE=monster_room): vanilla runs unguarded and the outcome is classified. Never cancels. */
     public static final boolean ORACLE_MONSTER_ROOM = "monster_room".equalsIgnoreCase(env("sg01.oracle", "SG01_ORACLE"));
+    /** Experiment-only (SG01_SHADOW=1, HYBRID only): also checks that the broad phase never rejects an attempt the refined decision would cancel. */
+    public static final boolean SHADOW = "1".equals(env("sg01.shadow", "SG01_SHADOW"));
     public static final GuardStats GEODE = new GuardStats("geode");
     public static final GuardStats MONSTER_ROOM = new GuardStats("monster_room");
 
@@ -95,6 +97,41 @@ public final class Guard {
         }
         Probe.enter();
         try {
+            return decide(stats, region, origin, reaches);
+        } finally {
+            Probe.exit();
+        }
+    }
+
+    /**
+     * HYBRID decision (N7-A3). The broad phase is the N7-A reach: if no protected piece intersects it, no variant of the refined reach can
+     * intersect one either (every refined reach is a subset of it), so the narrow precheck is skipped. Otherwise the refined decision is taken.
+     * Decisions are identical to PRECHECK; this is checked by SHADOW.
+     */
+    public static boolean shouldCancelHybrid(GuardStats stats, WorldGenLevel level, BlockPos origin, BoundingBox broad,
+                                             java.util.function.Supplier<List<BoundingBox>> narrow) {
+        stats.attempts.incrementAndGet();
+        if (!enabled(stats.feature)) return false;
+        if (!(level instanceof WorldGenRegion region)) {
+            stats.notWorldgen.incrementAndGet();
+            return false;
+        }
+        Probe.enter();
+        try {
+            boolean broadHit = scan(region, List.of(broad), false).verdict != null;
+            if (!broadHit) {
+                stats.hybridSkip.incrementAndGet();
+                if (SHADOW) {
+                    stats.shadowChecks.incrementAndGet();
+                    if (collides(level, narrow.get())) stats.shadowViolations.incrementAndGet();
+                }
+                return false;
+            }
+            List<BoundingBox> reaches = narrow.get();
+            if (reaches.isEmpty()) {
+                stats.noWrite.incrementAndGet();
+                return false;
+            }
             return decide(stats, region, origin, reaches);
         } finally {
             Probe.exit();

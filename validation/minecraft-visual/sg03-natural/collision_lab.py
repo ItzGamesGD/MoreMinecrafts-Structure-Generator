@@ -60,10 +60,12 @@ def main() -> None:
     p.add_argument("--fabric-project", type=Path, help="Loom project to launch with `gradlew runServer` instead of the vanilla jar (N7-A spike)")
     p.add_argument("--guard-mode", choices=["observe", "enforce"], default="enforce", help="N7-A spike guard mode (only with --fabric-project)")
     p.add_argument("--features", default="both", help="N7-A spike: enable only one hook (geode | monster_room | both | none)")
-    p.add_argument("--refine", default="off", choices=["off", "precheck"], help="N7-A2: monster-room footprint refinement (off = N7-A reach)")
+    p.add_argument("--refine", default="off", choices=["off", "precheck", "hybrid"], help="N7-A2: monster-room footprint refinement (off = N7-A reach)")
     p.add_argument("--fixture", default="none", choices=["none", "no_geode"], help="N7-A2 causal fixture only (never shipped): no_geode disables all geodes")
     p.add_argument("--oracle", default="off", choices=["off", "monster_room"], help="N7-A2 measurement only: vanilla runs, outcome classified, nothing cancelled")
     p.add_argument("--fault", default="none", help="N7-A spike fault injection: none | out_of_range | status_too_high | missing_start")
+    p.add_argument("--shadow", action="store_true", help="N7-A3: with --refine hybrid, also check the broad phase against the refined decision (SG01_SHADOW=1)")
+    p.add_argument("--keep-world", action="store_true", help="N7-A3: copy the region files of the run into <out>/regions (for full-world comparison)")
     p.add_argument("--launcher-prefix", nargs="*", default=[], help="e.g. taskset -c 0,1 to emulate a 2-vCPU runner")
     a = p.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
@@ -83,7 +85,7 @@ def main() -> None:
         launcher = ["./gradlew", "--no-daemon", "runServer"]
         fabric = dict(launcher_cwd=a.fabric_project.resolve(), start_timeout=600,
                       env={"SG01_GUARD_MODE": a.guard_mode, "SG01_SPIKE_REPORT": str(spike_report), "SG01_FAULT": a.fault, "SG01_FEATURES": a.features,
-                           "SG01_REFINE": a.refine, "SG01_FIXTURE": a.fixture, "SG01_ORACLE": "" if a.oracle == "off" else a.oracle})
+                           "SG01_REFINE": a.refine, "SG01_SHADOW": "1" if a.shadow else "", "SG01_FIXTURE": a.fixture, "SG01_ORACLE": "" if a.oracle == "off" else a.oracle})
         spike_report.unlink(missing_ok=True)
     server = Server(a.java, a.jar.resolve(), folder, a.seed, a.pack.resolve(), port=a.port, extra_args=extra, launcher=launcher, **fabric,
                     extra_props={"difficulty": "normal", "spawn-monsters": "true", "max-tick-time": "-1"})
@@ -91,6 +93,7 @@ def main() -> None:
     report = {"seed": a.seed, "chunk": [cx, cz], "order": a.order, "threads": a.threads, "prefix": a.launcher_prefix}
     try:
         t0 = time.time()
+        gen0 = time.perf_counter()
         if a.order == "region":
             server.cmd(f"forceload add {cx*16-a.radius*16} {cz*16-a.radius*16} {cx*16+a.radius*16} {cz*16+a.radius*16}")
             wait_loaded(server, cx * 16, cz * 16)
@@ -98,6 +101,7 @@ def main() -> None:
             for x, z in chunk_order(a.order, cx, cz, a.radius):
                 server.cmd(f"forceload add {x*16} {z*16}")
                 wait_loaded(server, x * 16, z * 16)
+        report["gen_window_s"] = round(time.perf_counter() - gen0, 3)
         server.save()
         world = World(server.region_dir)
         chunk = world.chunk(cx, cz)
@@ -130,6 +134,8 @@ def main() -> None:
     finally:
         server.stop()
         shutil.copy2(server.log_path, a.out / "server.log")
+        if a.keep_world and server.region_dir.is_dir():
+            shutil.copytree(server.region_dir, a.out / "regions", dirs_exist_ok=True)
         if a.fabric_project:
             report["guard_mode"] = a.guard_mode
             report["fault"] = a.fault

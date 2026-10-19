@@ -4,6 +4,7 @@ import dev.itzgamesgd.sg01spike.Guard;
 import dev.itzgamesgd.sg01spike.GuardMarker;
 import dev.itzgamesgd.sg01spike.MonsterRoomGeometry;
 import dev.itzgamesgd.sg01spike.MonsterRoomOracle;
+import dev.itzgamesgd.sg01spike.Perf;
 import dev.itzgamesgd.sg01spike.Probe;
 import java.util.List;
 import net.minecraft.core.BlockPos;
@@ -32,25 +33,36 @@ public abstract class MonsterRoomFeatureMixin implements GuardMarker {
             MonsterRoomOracle.begin(Guard.MONSTER_ROOM, level, origin, refined);
             return;
         }
-        List<BoundingBox> reaches;
-        if (Guard.REFINE == Guard.Refine.PRECHECK) {
-            Probe.enter();
-            try {
-                reaches = MonsterRoomGeometry.passingBoxes(level, origin);
-            } finally {
-                Probe.exit();
-            }
-        } else {
-            // N7-A reach: origin +-4 horizontally, y -1..+4 (the union of every variant's footprint).
-            reaches = List.of(MonsterRoomGeometry.maxBox(origin));
+        Perf.mark();
+        boolean cancel;
+        switch (Guard.REFINE) {
+            case HYBRID -> cancel = Guard.shouldCancelHybrid(Guard.MONSTER_ROOM, level, origin, MonsterRoomGeometry.maxBox(origin),
+                    () -> refinedBoxes(level, origin));
+            case PRECHECK -> cancel = Guard.shouldCancel(Guard.MONSTER_ROOM, level, origin, refinedBoxes(level, origin));
+            default -> cancel = Guard.shouldCancel(Guard.MONSTER_ROOM, level, origin, List.of(MonsterRoomGeometry.maxBox(origin)));
         }
-        if (Guard.shouldCancel(Guard.MONSTER_ROOM, level, origin, reaches)) {
+        Perf.decisionDone(Perf.MONSTER_DECISION_NS, Perf.MONSTER_DECISION_BYTES);
+        if (cancel) {
             cir.setReturnValue(false);
+            Perf.placeDone(Perf.MONSTER_PLACE_NS, null);
         }
     }
 
     @Inject(method = "place", at = @At("RETURN"), require = 1)
-    private void sg01spike$oracle(WorldGenLevel level, ChunkGenerator generator, RandomSource random, BlockPos origin, CallbackInfoReturnable<Boolean> cir) {
-        if (Guard.ORACLE_MONSTER_ROOM) MonsterRoomOracle.end(Guard.MONSTER_ROOM, level, origin);
+    private void sg01spike$return(WorldGenLevel level, ChunkGenerator generator, RandomSource random, BlockPos origin, CallbackInfoReturnable<Boolean> cir) {
+        if (Guard.ORACLE_MONSTER_ROOM) {
+            MonsterRoomOracle.end(Guard.MONSTER_ROOM, level, origin);
+            return;
+        }
+        Perf.placeDone(Perf.MONSTER_PLACE_NS, Perf.MONSTER_VANILLA_NS);
+    }
+
+    private static List<BoundingBox> refinedBoxes(WorldGenLevel level, BlockPos origin) {
+        Probe.enter();
+        try {
+            return MonsterRoomGeometry.passingBoxes(level, origin);
+        } finally {
+            Probe.exit();
+        }
     }
 }
