@@ -1,0 +1,851 @@
+{
+ "stage": "24-D",
+ "stage_24c_head": "b92a4be1e9e1b901a08f1629c4f19b63dab43dce",
+ "implementation_pr10_head": "b750da2e06cb646c63283603a7fec4ee93a33db7",
+ "minecraft": "26.1.2",
+ "source_repository": "InventivetalentDev/minecraft-assets",
+ "head_at_generation": "b92a4be1e9e1b901a08f1629c4f19b63dab43dce",
+ "modules": {
+  "large_ruin_1": {
+   "title": "Large Ruin \u2014 Courtyard House",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/large_ruin_1.nbt",
+   "source_blob_sha1": "3ce04aa7cd68ab706ed7e7910cbf8453f090fb39",
+   "source_blob_sha1_expected": "3ce04aa7cd68ab706ed7e7910cbf8453f090fb39",
+   "source_sha1_verified": true,
+   "candidate_path": "artifacts/ancient-city-restoration/stage-24b/large_ruin_1/restored.nbt",
+   "candidate_sha256": "1eae09e6865481cae06f994a7938a6f460ec44586d325887b827109c7f844752",
+   "candidate_git_blob_sha1": "e6ed053ce2de49e705f10017eb32bdae27787925",
+   "candidate_identical_to_stage24c_head": true,
+   "pr10_candidate_sha256": "6368fab3d614e356d627f314c97e06b9d403bf1525ba6b4d2cb173e01ce09edb",
+   "original_dimensions_xyz": [
+    17,
+    5,
+    17
+   ],
+   "final_dimensions_xyz": [
+    17,
+    5,
+    17
+   ],
+   "dimensions_as_expected": true,
+   "jigsaws": {
+    "original": 1,
+    "final": 1,
+    "metadata_identical": true
+   },
+   "block_entities": {
+    "original": 1,
+    "final": 1,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 4,
+    "by_kind": {
+     "soul_lantern -> soul_lantern": 4
+    },
+    "cells": [
+     {
+      "pos": [
+       2,
+       3,
+       2
+      ],
+      "pr10": "minecraft:soul_lantern[hanging=false]",
+      "final": "minecraft:soul_lantern[hanging=true]"
+     },
+     {
+      "pos": [
+       2,
+       3,
+       14
+      ],
+      "pr10": "minecraft:soul_lantern[hanging=false]",
+      "final": "minecraft:soul_lantern[hanging=true]"
+     },
+     {
+      "pos": [
+       13,
+       3,
+       2
+      ],
+      "pr10": "minecraft:soul_lantern[hanging=false]",
+      "final": "minecraft:soul_lantern[hanging=true]"
+     },
+     {
+      "pos": [
+       13,
+       3,
+       14
+      ],
+      "pr10": "minecraft:soul_lantern[hanging=false]",
+      "final": "minecraft:soul_lantern[hanging=true]"
+     }
+    ]
+   }
+  },
+  "medium_ruin_1": {
+   "title": "Medium Ruin 1 \u2014 Single-story House",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/medium_ruin_1.nbt",
+   "source_blob_sha1": "c476ea76624d25ac483f723c55ef39695ac86aee",
+   "source_blob_sha1_expected": "c476ea76624d25ac483f723c55ef39695ac86aee",
+   "source_sha1_verified": true,
+   "candidate_path": "artifacts/ancient-city-restoration/stage-24b/medium_ruin_1/restored.nbt",
+   "candidate_sha256": "89f58c3f982dcb992e585f2e3324fe89660e6492d25fc0a6724b0231afa968af",
+   "candidate_git_blob_sha1": "b5e4468b225890212a48f7e3702be843504c03ce",
+   "candidate_identical_to_stage24c_head": true,
+   "pr10_candidate_sha256": "c79e1ea1c6a7c5f75bb4d0b52f80181481d36b92b882ef289ca6fa7ab606be93",
+   "original_dimensions_xyz": [
+    8,
+    5,
+    13
+   ],
+   "final_dimensions_xyz": [
+    8,
+    5,
+    13
+   ],
+   "dimensions_as_expected": true,
+   "jigsaws": {
+    "original": 1,
+    "final": 1,
+    "metadata_identical": true
+   },
+   "block_entities": {
+    "original": 1,
+    "final": 1,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 2,
+    "by_kind": {
+     "soul_lantern -> soul_lantern": 2
+    },
+    "cells": [
+     {
+      "pos": [
+       1,
+       3,
+       10
+      ],
+      "pr10": "minecraft:soul_lantern[hanging=false]",
+      "final": "minecraft:soul_lantern[hanging=true]"
+     },
+     {
+      "pos": [
+       6,
+       3,
+       2
+      ],
+      "pr10": "minecraft:soul_lantern[hanging=false]",
+      "final": "minecraft:soul_lantern[hanging=true]"
+     }
+    ]
+   }
+  },
+  "medium_ruin_2": {
+   "title": "Medium Ruin 2 \u2014 Partial Two-story House",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/medium_ruin_2.nbt",
+   "source_blob_sha1": "0f8b01b7aff4bd43c8e5ecc18292940ca648bf03",
+   "source_blob_sha1_expected": "0f8b01b7aff4bd43c8e5ecc18292940ca648bf03",
+   "source_sha1_verified": true,
+   "candidate_path": "artifacts/ancient-city-restoration/stage-24b/medium_ruin_2/restored.nbt",
+   "candidate_sha256": "f897372f2917e9f189f01f7d54365a4da0414f36e198a09231ff4518abd1ec48",
+   "candidate_git_blob_sha1": "a8b3656d4511379f9fc24914556df01415e8de8d",
+   "candidate_identical_to_stage24c_head": true,
+   "pr10_candidate_sha256": "0a17d2ea76b7786e08ff0264a98ad6ab5de896d947f9b4ae403bfca8c5beb1d7",
+   "original_dimensions_xyz": [
+    16,
+    5,
+    11
+   ],
+   "final_dimensions_xyz": [
+    16,
+    8,
+    11
+   ],
+   "dimensions_as_expected": true,
+   "jigsaws": {
+    "original": 1,
+    "final": 1,
+    "metadata_identical": true
+   },
+   "block_entities": {
+    "original": 1,
+    "final": 1,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 4,
+    "by_kind": {
+     "deepslate_tiles -> air": 2,
+     "soul_lantern -> soul_lantern": 1,
+     "deepslate_bricks -> air": 1
+    },
+    "cells": [
+     {
+      "pos": [
+       2,
+       3,
+       4
+      ],
+      "pr10": "minecraft:soul_lantern[hanging=false]",
+      "final": "minecraft:soul_lantern[hanging=true]"
+     },
+     {
+      "pos": [
+       4,
+       4,
+       5
+      ],
+      "pr10": "minecraft:deepslate_tiles",
+      "final": "minecraft:air"
+     },
+     {
+      "pos": [
+       5,
+       4,
+       5
+      ],
+      "pr10": "minecraft:deepslate_tiles",
+      "final": "minecraft:air"
+     },
+     {
+      "pos": [
+       7,
+       6,
+       5
+      ],
+      "pr10": "minecraft:deepslate_bricks",
+      "final": "minecraft:air"
+     }
+    ]
+   }
+  },
+  "small_ruin_1": {
+   "title": "Small Ruin 1 \u2014 Small House A",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/small_ruin_1.nbt",
+   "source_blob_sha1": "b1b9c2ac7c4b06a1a80e53adf4dd4fd706f2a799",
+   "source_blob_sha1_expected": "b1b9c2ac7c4b06a1a80e53adf4dd4fd706f2a799",
+   "source_sha1_verified": true,
+   "candidate_path": "artifacts/ancient-city-restoration/stage-24b/small_ruin_1/restored.nbt",
+   "candidate_sha256": "647fa12a5210756f509e45a9b77f4bb2f57c732b1d1d74f3a9cb0be3dc838ec1",
+   "candidate_git_blob_sha1": "d9f1a894670910f899d5590e9697a45dc2c86c08",
+   "candidate_identical_to_stage24c_head": true,
+   "pr10_candidate_sha256": "7bfa3993d9f22ad4d7d2b3b0b174cfa3ba4acd89980f4e641372b38dbf21572f",
+   "original_dimensions_xyz": [
+    7,
+    5,
+    8
+   ],
+   "final_dimensions_xyz": [
+    7,
+    5,
+    8
+   ],
+   "dimensions_as_expected": true,
+   "jigsaws": {
+    "original": 1,
+    "final": 1,
+    "metadata_identical": true
+   },
+   "block_entities": {
+    "original": 1,
+    "final": 1,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 1,
+    "by_kind": {
+     "soul_lantern -> soul_lantern": 1
+    },
+    "cells": [
+     {
+      "pos": [
+       5,
+       3,
+       6
+      ],
+      "pr10": "minecraft:soul_lantern[hanging=false]",
+      "final": "minecraft:soul_lantern[hanging=true]"
+     }
+    ]
+   }
+  },
+  "small_ruin_2": {
+   "title": "Small Ruin 2 \u2014 Small House B",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/small_ruin_2.nbt",
+   "source_blob_sha1": "34d14f95c92675e6d97d212baf88e84c4f506fbd",
+   "source_blob_sha1_expected": "34d14f95c92675e6d97d212baf88e84c4f506fbd",
+   "source_sha1_verified": true,
+   "candidate_path": "artifacts/ancient-city-restoration/stage-24b/small_ruin_2/restored.nbt",
+   "candidate_sha256": "0135f1df50b93d6953daa1da658fd3f137bd15468265cf484a7452a1516bad6d",
+   "candidate_git_blob_sha1": "fd25b68885dd739c5dde34582f3f24dd3aed46a3",
+   "candidate_identical_to_stage24c_head": true,
+   "pr10_candidate_sha256": "71fc2ddff6476107b67c2f447b896b045e2448f458a5fb273cffe7a7408eae01",
+   "original_dimensions_xyz": [
+    8,
+    5,
+    4
+   ],
+   "final_dimensions_xyz": [
+    8,
+    5,
+    4
+   ],
+   "dimensions_as_expected": true,
+   "jigsaws": {
+    "original": 1,
+    "final": 1,
+    "metadata_identical": true
+   },
+   "block_entities": {
+    "original": 1,
+    "final": 1,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 7,
+    "by_kind": {
+     "air -> gray_bed": 2,
+     "gray_bed -> deepslate_bricks": 2,
+     "polished_deepslate_slab -> air": 1,
+     "air -> polished_deepslate_slab": 1,
+     "soul_lantern -> soul_lantern": 1
+    },
+    "cells": [
+     {
+      "pos": [
+       2,
+       1,
+       1
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:gray_bed[facing=east,occupied=false,part=foot]"
+     },
+     {
+      "pos": [
+       3,
+       1,
+       1
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:gray_bed[facing=east,occupied=false,part=head]"
+     },
+     {
+      "pos": [
+       3,
+       1,
+       3
+      ],
+      "pr10": "minecraft:gray_bed[facing=east,occupied=false,part=foot]",
+      "final": "minecraft:deepslate_bricks"
+     },
+     {
+      "pos": [
+       4,
+       1,
+       1
+      ],
+      "pr10": "minecraft:polished_deepslate_slab[type=bottom,waterlogged=false]",
+      "final": "minecraft:air"
+     },
+     {
+      "pos": [
+       4,
+       1,
+       3
+      ],
+      "pr10": "minecraft:gray_bed[facing=east,occupied=false,part=head]",
+      "final": "minecraft:deepslate_bricks"
+     },
+     {
+      "pos": [
+       5,
+       1,
+       1
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_slab[type=bottom,waterlogged=false]"
+     },
+     {
+      "pos": [
+       6,
+       3,
+       2
+      ],
+      "pr10": "minecraft:soul_lantern[hanging=false]",
+      "final": "minecraft:soul_lantern[hanging=true]"
+     }
+    ]
+   }
+  },
+  "sauna_1": {
+   "title": "Sauna \u2014 Public Bathhouse",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/sauna_1.nbt",
+   "source_blob_sha1": "ef56d35f13f3acb8d62095ccc2f7e85d58d253b1",
+   "source_blob_sha1_expected": "ef56d35f13f3acb8d62095ccc2f7e85d58d253b1",
+   "source_sha1_verified": true,
+   "candidate_path": "artifacts/ancient-city-restoration/stage-24b/sauna_1/restored.nbt",
+   "candidate_sha256": "879e21a0a4daf1b5d4fe547fe78aaa9fad5cf55ede913112d2e8a32f5697288f",
+   "candidate_git_blob_sha1": "1ec7f60097e18fad849c8da0503f1877421af8c0",
+   "candidate_identical_to_stage24c_head": true,
+   "pr10_candidate_sha256": "91506a1ae206fa1c88ef8ea67511cf6d9b736a61d2951b34cc9c985f86b3515e",
+   "original_dimensions_xyz": [
+    29,
+    10,
+    37
+   ],
+   "final_dimensions_xyz": [
+    29,
+    10,
+    37
+   ],
+   "dimensions_as_expected": true,
+   "jigsaws": {
+    "original": 5,
+    "final": 5,
+    "metadata_identical": true
+   },
+   "block_entities": {
+    "original": 8,
+    "final": 8,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 6,
+    "by_kind": {
+     "air -> soul_lantern": 3,
+     "soul_lantern -> air": 3
+    },
+    "cells": [
+     {
+      "pos": [
+       6,
+       4,
+       17
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:soul_lantern[hanging=false]"
+     },
+     {
+      "pos": [
+       8,
+       3,
+       17
+      ],
+      "pr10": "minecraft:soul_lantern[hanging=false]",
+      "final": "minecraft:air"
+     },
+     {
+      "pos": [
+       9,
+       3,
+       32
+      ],
+      "pr10": "minecraft:soul_lantern[hanging=false]",
+      "final": "minecraft:air"
+     },
+     {
+      "pos": [
+       9,
+       4,
+       29
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:soul_lantern[hanging=false]"
+     },
+     {
+      "pos": [
+       22,
+       3,
+       19
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:soul_lantern[hanging=false]"
+     },
+     {
+      "pos": [
+       23,
+       3,
+       20
+      ],
+      "pr10": "minecraft:soul_lantern[hanging=false]",
+      "final": "minecraft:air"
+     }
+    ]
+   }
+  },
+  "large_pillar_1": {
+   "title": "Large Pillar \u2014 Large Watchtower",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/large_pillar_1.nbt",
+   "source_blob_sha1": "4d619829f48909054996945d01a77d949946e678",
+   "source_blob_sha1_expected": "4d619829f48909054996945d01a77d949946e678",
+   "source_sha1_verified": true,
+   "candidate_path": "artifacts/ancient-city-restoration/stage-24b/large_pillar_1/restored.nbt",
+   "candidate_sha256": "a17b693c10337724e3c01402cd19a497926c1fa2afe0c81e839e2c9d61bfb9b1",
+   "candidate_git_blob_sha1": "6784ac140ee90c965fedc99b1102b9ede50fd589",
+   "candidate_identical_to_stage24c_head": true,
+   "pr10_candidate_sha256": "988e1291822be10abf8a532935cfb09ff808f83cbfb517382190fe014bcf8496",
+   "original_dimensions_xyz": [
+    6,
+    15,
+    6
+   ],
+   "final_dimensions_xyz": [
+    6,
+    15,
+    6
+   ],
+   "dimensions_as_expected": true,
+   "jigsaws": {
+    "original": 1,
+    "final": 1,
+    "metadata_identical": true
+   },
+   "block_entities": {
+    "original": 1,
+    "final": 1,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 13,
+    "by_kind": {
+     "ladder -> ladder": 12,
+     "air -> ladder": 1
+    },
+    "cells": [
+     {
+      "pos": [
+       2,
+       1,
+       2
+      ],
+      "pr10": "minecraft:ladder[facing=east]",
+      "final": "minecraft:ladder[facing=west]"
+     },
+     {
+      "pos": [
+       2,
+       2,
+       2
+      ],
+      "pr10": "minecraft:ladder[facing=east]",
+      "final": "minecraft:ladder[facing=west]"
+     },
+     {
+      "pos": [
+       2,
+       3,
+       2
+      ],
+      "pr10": "minecraft:ladder[facing=east]",
+      "final": "minecraft:ladder[facing=west]"
+     },
+     {
+      "pos": [
+       2,
+       4,
+       2
+      ],
+      "pr10": "minecraft:ladder[facing=east]",
+      "final": "minecraft:ladder[facing=west]"
+     },
+     {
+      "pos": [
+       2,
+       5,
+       2
+      ],
+      "pr10": "minecraft:ladder[facing=east]",
+      "final": "minecraft:ladder[facing=west]"
+     },
+     {
+      "pos": [
+       2,
+       6,
+       2
+      ],
+      "pr10": "minecraft:ladder[facing=east]",
+      "final": "minecraft:ladder[facing=west]"
+     },
+     {
+      "pos": [
+       2,
+       7,
+       2
+      ],
+      "pr10": "minecraft:ladder[facing=east]",
+      "final": "minecraft:ladder[facing=west]"
+     },
+     {
+      "pos": [
+       2,
+       8,
+       2
+      ],
+      "pr10": "minecraft:ladder[facing=east]",
+      "final": "minecraft:ladder[facing=west]"
+     },
+     {
+      "pos": [
+       2,
+       9,
+       2
+      ],
+      "pr10": "minecraft:ladder[facing=east]",
+      "final": "minecraft:ladder[facing=west]"
+     },
+     {
+      "pos": [
+       2,
+       10,
+       2
+      ],
+      "pr10": "minecraft:ladder[facing=east]",
+      "final": "minecraft:ladder[facing=west]"
+     },
+     {
+      "pos": [
+       2,
+       11,
+       2
+      ],
+      "pr10": "minecraft:ladder[facing=east]",
+      "final": "minecraft:ladder[facing=west]"
+     },
+     {
+      "pos": [
+       2,
+       12,
+       2
+      ],
+      "pr10": "minecraft:ladder[facing=east]",
+      "final": "minecraft:ladder[facing=west]"
+     },
+     {
+      "pos": [
+       2,
+       13,
+       2
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:ladder[facing=west]"
+     }
+    ]
+   }
+  },
+  "medium_pillar_1": {
+   "title": "Medium Pillar \u2014 Medium Watchtower",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/medium_pillar_1.nbt",
+   "source_blob_sha1": "38ece3d8a57c9fed3f2a050ffd21b5b636121bbe",
+   "source_blob_sha1_expected": "38ece3d8a57c9fed3f2a050ffd21b5b636121bbe",
+   "source_sha1_verified": true,
+   "candidate_path": "artifacts/ancient-city-restoration/stage-24b/medium_pillar_1/restored.nbt",
+   "candidate_sha256": "8705305a7bec348c40b5e7434c651526e0145aac90a9352e315150faf6a7a09d",
+   "candidate_git_blob_sha1": "7cc016809aeccedbaa446e560af03ad060cbaa2a",
+   "candidate_identical_to_stage24c_head": true,
+   "pr10_candidate_sha256": "8f41c7bd2f5edac04c07ca63b5366d353ffbc5b17597031c203f1755489637f5",
+   "original_dimensions_xyz": [
+    7,
+    11,
+    8
+   ],
+   "final_dimensions_xyz": [
+    7,
+    11,
+    8
+   ],
+   "dimensions_as_expected": true,
+   "jigsaws": {
+    "original": 2,
+    "final": 2,
+    "metadata_identical": true
+   },
+   "block_entities": {
+    "original": 3,
+    "final": 3,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 19,
+    "by_kind": {
+     "air -> polished_deepslate_wall": 18,
+     "soul_lantern -> soul_lantern": 1
+    },
+    "cells": [
+     {
+      "pos": [
+       1,
+       9,
+       1
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=low,north=none,south=low,up=true,waterlogged=false,west=none]"
+     },
+     {
+      "pos": [
+       1,
+       9,
+       2
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=none,north=low,south=low,up=false,waterlogged=false,west=none]"
+     },
+     {
+      "pos": [
+       1,
+       9,
+       3
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=none,north=low,south=low,up=true,waterlogged=false,west=low]"
+     },
+     {
+      "pos": [
+       1,
+       9,
+       4
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=none,north=low,south=low,up=true,waterlogged=false,west=low]"
+     },
+     {
+      "pos": [
+       1,
+       9,
+       5
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=none,north=low,south=low,up=true,waterlogged=false,west=low]"
+     },
+     {
+      "pos": [
+       1,
+       9,
+       6
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=low,north=low,south=none,up=true,waterlogged=false,west=low]"
+     },
+     {
+      "pos": [
+       2,
+       7,
+       2
+      ],
+      "pr10": "minecraft:soul_lantern[hanging=false]",
+      "final": "minecraft:soul_lantern[hanging=true]"
+     },
+     {
+      "pos": [
+       2,
+       9,
+       1
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]"
+     },
+     {
+      "pos": [
+       2,
+       9,
+       6
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]"
+     },
+     {
+      "pos": [
+       3,
+       9,
+       1
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=low,north=low,south=none,up=true,waterlogged=false,west=low]"
+     },
+     {
+      "pos": [
+       3,
+       9,
+       6
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]"
+     },
+     {
+      "pos": [
+       4,
+       9,
+       1
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]"
+     },
+     {
+      "pos": [
+       4,
+       9,
+       6
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]"
+     },
+     {
+      "pos": [
+       5,
+       9,
+       1
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=none,north=none,south=low,up=true,waterlogged=false,west=low]"
+     },
+     {
+      "pos": [
+       5,
+       9,
+       2
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=none,north=low,south=low,up=false,waterlogged=false,west=none]"
+     },
+     {
+      "pos": [
+       5,
+       9,
+       3
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=low,north=low,south=low,up=true,waterlogged=false,west=none]"
+     },
+     {
+      "pos": [
+       5,
+       9,
+       4
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=low,north=low,south=low,up=true,waterlogged=false,west=none]"
+     },
+     {
+      "pos": [
+       5,
+       9,
+       5
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=none,north=low,south=low,up=false,waterlogged=false,west=none]"
+     },
+     {
+      "pos": [
+       5,
+       9,
+       6
+      ],
+      "pr10": "minecraft:air",
+      "final": "minecraft:polished_deepslate_wall[east=none,north=low,south=none,up=true,waterlogged=false,west=low]"
+     }
+    ]
+   }
+  }
+ }
+}

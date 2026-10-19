@@ -1,0 +1,10 @@
+{
+  "name": "stage24d-gallery-renderer",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Minecraft block-model renderer (three.js in headless Chromium) for the Stage 24-D review gallery",
+  "dependencies": {
+    "playwright-core": "1.56.1",
+    "three": "0.170.0"
+  }
+}

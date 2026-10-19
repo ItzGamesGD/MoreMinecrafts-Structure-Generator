@@ -1,0 +1,184 @@
+{
+ "large_ruin_1": {
+  "seed": 24011,
+  "rotation": "COUNTERCLOCKWISE_90",
+  "city_xz": [
+   -192,
+   -560
+  ],
+  "bb": [
+   -99,
+   -51,
+   -582,
+   -83,
+   -47,
+   -566
+  ],
+  "lost_critical": [
+   "soul_lantern@[14, 3, 3]"
+  ],
+  "lost_other_blocks": 35,
+  "cracked": 194,
+  "sculk_overlay": 87,
+  "blocks_checked": 860
+ },
+ "medium_ruin_1": {
+  "seed": 24007,
+  "rotation": "NONE",
+  "city_xz": [
+   -320,
+   912
+  ],
+  "bb": [
+   -264,
+   -51,
+   922,
+   -257,
+   -47,
+   934
+  ],
+  "lost_critical": [
+   "spruce_door@[0, 1, 6]"
+  ],
+  "lost_other_blocks": 11,
+  "cracked": 56,
+  "sculk_overlay": 91,
+  "blocks_checked": 329
+ },
+ "medium_ruin_2": {
+  "seed": 24008,
+  "rotation": "CLOCKWISE_180",
+  "city_xz": [
+   496,
+   1296
+  ],
+  "bb": [
+   432,
+   -51,
+   1319,
+   447,
+   -44,
+   1329
+  ],
+  "lost_critical": [
+   "soul_lantern@[13, 3, 6]"
+  ],
+  "lost_other_blocks": 34,
+  "cracked": 128,
+  "sculk_overlay": 197,
+  "blocks_checked": 688
+ },
+ "small_ruin_1": {
+  "seed": 24022,
+  "rotation": "COUNTERCLOCKWISE_90",
+  "city_xz": [
+   -1008,
+   -272
+  ],
+  "bb": [
+   -986,
+   -51,
+   -388,
+   -979,
+   -47,
+   -382
+  ],
+  "lost_critical": [
+   "soul_lantern@[6, 3, 1]"
+  ],
+  "lost_other_blocks": 7,
+  "cracked": 44,
+  "sculk_overlay": 6,
+  "blocks_checked": 198
+ },
+ "small_ruin_2": {
+  "seed": 24014,
+  "rotation": "CLOCKWISE_90",
+  "city_xz": [
+   1376,
+   -944
+  ],
+  "bb": [
+   1293,
+   -51,
+   -971,
+   1296,
+   -47,
+   -964
+  ],
+  "lost_critical": [
+   "soul_lantern@[1, 3, 6]"
+  ],
+  "lost_other_blocks": 5,
+  "cracked": 11,
+  "sculk_overlay": 63,
+  "blocks_checked": 127
+ },
+ "sauna_1": {
+  "seed": 24013,
+  "rotation": "CLOCKWISE_180",
+  "city_xz": [
+   1184,
+   1232
+  ],
+  "bb": [
+   1191,
+   -51,
+   1138,
+   1219,
+   -42,
+   1174
+  ],
+  "lost_critical": [],
+  "lost_other_blocks": 84,
+  "cracked": 337,
+  "sculk_overlay": 288,
+  "blocks_checked": 1896
+ },
+ "large_pillar_1": {
+  "seed": 24007,
+  "rotation": "NONE",
+  "city_xz": [
+   -320,
+   912
+  ],
+  "bb": [
+   -291,
+   -51,
+   943,
+   -286,
+   -37,
+   948
+  ],
+  "lost_critical": [
+   "soul_lantern@[4, 12, 4]"
+  ],
+  "lost_other_blocks": 11,
+  "cracked": 10,
+  "sculk_overlay": 3,
+  "blocks_checked": 319
+ },
+ "medium_pillar_1": {
+  "seed": 24003,
+  "rotation": "CLOCKWISE_90",
+  "city_xz": [
+   576,
+   0
+  ],
+  "bb": [
+   529,
+   -51,
+   -22,
+   536,
+   -41,
+   -16
+  ],
+  "lost_critical": [
+   "soul_lantern@[5, 7, 2]"
+  ],
+  "lost_other_blocks": 12,
+  "cracked": 47,
+  "sculk_overlay": 0,
+  "blocks_checked": 284
+ }
+}

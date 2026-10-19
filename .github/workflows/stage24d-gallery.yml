@@ -1,0 +1,73 @@
+name: Stage 24-D visual review gallery
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - stage-24d-visual-review-gallery
+    paths:
+      - "tools/stage24d/**"
+      - "artifacts/ancient-city-restoration/stage-24d/generated-pieces/**"
+      - "artifacts/ancient-city-restoration/stage-24d/reference-inputs/**"
+      - ".github/workflows/stage24d-gallery.yml"
+
+permissions:
+  contents: read
+
+env:
+  MC_CLIENT_URL: "https://piston-data.mojang.com/v1/objects/4e618f09a0c649dde3fdf829df443ce0b8831e65/client.jar"
+  MC_CLIENT_SHA1: "4e618f09a0c649dde3fdf829df443ce0b8831e65"
+  MC_ASSETS: ${{ github.workspace }}/.mc/x/assets
+  S24D_BUILD: ${{ github.workspace }}/.s24d-build
+
+jobs:
+  gallery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install pinned mcbuild environment (read-only use)
+        working-directory: vendor/mcbuild
+        run: uv sync --frozen --extra dev
+      - name: Install renderer dependencies and headless Chromium
+        working-directory: tools/stage24d
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright-core install --with-deps chromium
+      - name: Download and verify the Minecraft 26.1.2 client assets (models and textures)
+        run: |
+          mkdir -p .mc/x && curl -fsSL "$MC_CLIENT_URL" -o .mc/client.jar
+          echo "$MC_CLIENT_SHA1  .mc/client.jar" | sha1sum -c -
+          cd .mc/x && unzip -q ../client.jar 'assets/minecraft/blockstates/*' 'assets/minecraft/models/block/*' 'assets/minecraft/textures/block/*' \
+            'assets/minecraft/textures/entity/bed/*' 'assets/minecraft/textures/entity/chest/normal.png' 'assets/minecraft/textures/entity/skeleton/skeleton.png'
+      - name: Phase 1 input manifest (hash and metadata verification)
+        run: vendor/mcbuild/.venv/bin/python tools/stage24d/manifest.py
+      - name: Render per-module image sets
+        run: vendor/mcbuild/.venv/bin/python tools/stage24d/render_gallery.py
+      - name: Render V1-V4 comparison sheets and V5 degradation sheets
+        run: |
+          vendor/mcbuild/.venv/bin/python tools/stage24d/priority.py
+          vendor/mcbuild/.venv/bin/python tools/stage24d/v5.py
+      - name: Build the offline gallery and ZIP
+        run: vendor/mcbuild/.venv/bin/python tools/stage24d/build_gallery.py
+      - name: Verify the structure NBTs were not modified
+        run: git diff --exit-code -- artifacts/ancient-city-restoration/stage-24b
+      - name: Upload gallery
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage-24d-offline-gallery
+          path: |
+            artifacts/ancient-city-restoration/stage-24d/stage-24d-offline-gallery.zip
+            artifacts/ancient-city-restoration/stage-24d/gallery
+            artifacts/ancient-city-restoration/stage-24d/OWNER-REVIEW.md
+            artifacts/ancient-city-restoration/stage-24d/INPUT-MANIFEST.json
+          if-no-files-found: error
