@@ -1,0 +1,219 @@
+{
+ "note": "Local runs, official 26.3 server, seeds 173 and 42, sites 2, ticks 200. 'strongholds' = integration #18 production step, 'top_layer_modification' = fix. Three independent repetitions each. Clay family = clay, water, big_dripleaf(+stem) replacing moss_block (all produced by minecraft:lush_caves_clay).",
+ "repetitions": {
+  "strongholds|seed173|chunk(-19, 15)": [
+   {
+    "rep": "r1",
+    "integrity": "PASS",
+    "matched": "55305/55305",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   },
+   {
+    "rep": "r2",
+    "integrity": "PASS",
+    "matched": "55305/55305",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   },
+   {
+    "rep": "r3",
+    "integrity": "PASS",
+    "matched": "55305/55305",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   }
+  ],
+  "strongholds|seed173|chunk(-18, 36)": [
+   {
+    "rep": "r1",
+    "integrity": "PASS",
+    "matched": "53252/53252",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   },
+   {
+    "rep": "r2",
+    "integrity": "PASS",
+    "matched": "53252/53252",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   },
+   {
+    "rep": "r3",
+    "integrity": "PASS",
+    "matched": "53252/53252",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   }
+  ],
+  "strongholds|seed42|chunk(4, 13)": [
+   {
+    "rep": "r1",
+    "integrity": "FAIL",
+    "matched": "52410/52443",
+    "overwrites": {
+     "clay_family": 33
+    },
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   },
+   {
+    "rep": "r2",
+    "integrity": "FAIL",
+    "matched": "52397/52443",
+    "overwrites": {
+     "clay_family": 46
+    },
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   },
+   {
+    "rep": "r3",
+    "integrity": "FAIL",
+    "matched": "52398/52443",
+    "overwrites": {
+     "clay_family": 45
+    },
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   }
+  ],
+  "strongholds|seed42|chunk(6, -19)": [
+   {
+    "rep": "r1",
+    "integrity": "PASS",
+    "matched": "48556/48556",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "12/12"
+   },
+   {
+    "rep": "r2",
+    "integrity": "PASS",
+    "matched": "48556/48556",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "12/12"
+   },
+   {
+    "rep": "r3",
+    "integrity": "PASS",
+    "matched": "48556/48556",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "12/12"
+   }
+  ],
+  "top_layer_modification|seed173|chunk(-19, 15)": [
+   {
+    "rep": "r1",
+    "integrity": "PASS",
+    "matched": "55305/55305",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   },
+   {
+    "rep": "r2",
+    "integrity": "PASS",
+    "matched": "55305/55305",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   },
+   {
+    "rep": "r3",
+    "integrity": "PASS",
+    "matched": "55305/55305",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   }
+  ],
+  "top_layer_modification|seed173|chunk(-18, 36)": [
+   {
+    "rep": "r1",
+    "integrity": "PASS",
+    "matched": "53252/53252",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   },
+   {
+    "rep": "r2",
+    "integrity": "PASS",
+    "matched": "53252/53252",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   },
+   {
+    "rep": "r3",
+    "integrity": "PASS",
+    "matched": "53252/53252",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   }
+  ],
+  "top_layer_modification|seed42|chunk(4, 13)": [
+   {
+    "rep": "r1",
+    "integrity": "PASS",
+    "matched": "52443/52443",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   },
+   {
+    "rep": "r2",
+    "integrity": "PASS",
+    "matched": "52443/52443",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   },
+   {
+    "rep": "r3",
+    "integrity": "PASS",
+    "matched": "52443/52443",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "3/3"
+   }
+  ],
+  "top_layer_modification|seed42|chunk(6, -19)": [
+   {
+    "rep": "r1",
+    "integrity": "PASS",
+    "matched": "48556/48556",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "12/12"
+   },
+   {
+    "rep": "r2",
+    "integrity": "PASS",
+    "matched": "48556/48556",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "12/12"
+   },
+   {
+    "rep": "r3",
+    "integrity": "PASS",
+    "matched": "48556/48556",
+    "overwrites": {},
+    "pieces": 21,
+    "trial_spawners": "12/12"
+   }
+  ]
+ }
+}
