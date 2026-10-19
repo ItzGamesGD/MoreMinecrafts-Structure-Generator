@@ -16,7 +16,8 @@ class SpikeConfigTests(unittest.TestCase):
         cfg = json.loads((RES / "sg01spike.mixins.json").read_text())
         self.assertTrue(cfg["required"])
         self.assertEqual(cfg["injectors"]["defaultRequire"], 1)
-        self.assertEqual(sorted(cfg["mixins"]), ["GeodeFeatureMixin", "MonsterRoomFeatureMixin"])
+        # N7-A2 added observe-only probe mixins (tests/test_n72_spike_guard.py); the two protection hooks are unchanged.
+        self.assertTrue({"GeodeFeatureMixin", "MonsterRoomFeatureMixin"} <= set(cfg["mixins"]))
         for name, target in (("GeodeFeatureMixin", "GeodeFeature"), ("MonsterRoomFeatureMixin", "MonsterRoomFeature")):
             src = (JAVA / "mixin" / f"{name}.java").read_text()
             self.assertIn(f"@Mixin({target}.class)", src)
@@ -24,7 +25,9 @@ class SpikeConfigTests(unittest.TestCase):
 
     def test_no_global_block_write_interception_or_feature_override(self) -> None:
         sources = "\n".join(p.read_text() for p in JAVA.rglob("*.java"))
-        self.assertNotIn("WorldGenRegion.class", sources)  # no mixin on setBlock
+        # N7-A2: the only WorldGenRegion mixin is the observe-only read probe, which targets hasChunk/getChunk, never setBlock
+        region_mixins = [p for p in JAVA.rglob("*.java") if "WorldGenRegion.class" in p.read_text()]
+        self.assertEqual([p.name for p in region_mixins], ["WorldGenRegionProbeMixin.java"])
         self.assertNotIn("@Redirect", sources)
         self.assertNotIn("@Overwrite", sources)
         self.assertFalse(re.search(r"\bsetBlock\s*\(", sources))

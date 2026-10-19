@@ -17,6 +17,11 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class GeodeFeatureMixin implements GuardMarker {
     @Inject(method = "place", at = @At("HEAD"), cancellable = true, require = 1)
     private void sg01spike$guard(WorldGenLevel level, ChunkGenerator generator, RandomSource random, BlockPos origin, CallbackInfoReturnable<Boolean> cir) {
+        // Experiment-only fixture for causal attribution (SG01_FIXTURE=no_geode). Never shipped.
+        if (Guard.FIXTURE == Guard.Fixture.NO_GEODE) {
+            cir.setReturnValue(false);
+            return;
+        }
         GeodeFeature self = (GeodeFeature) (Object) this;
         // Hard bound of GeodeFeature.place: it only writes inside origin + [minGenOffset, maxGenOffset] on every axis.
         BoundingBox reach = new BoundingBox(

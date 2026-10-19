@@ -2,6 +2,10 @@ package dev.itzgamesgd.sg01spike.mixin;
 
 import dev.itzgamesgd.sg01spike.Guard;
 import dev.itzgamesgd.sg01spike.GuardMarker;
+import dev.itzgamesgd.sg01spike.MonsterRoomGeometry;
+import dev.itzgamesgd.sg01spike.MonsterRoomOracle;
+import dev.itzgamesgd.sg01spike.Probe;
+import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.WorldGenLevel;
@@ -17,10 +21,29 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class MonsterRoomFeatureMixin implements GuardMarker {
     @Inject(method = "place", at = @At("HEAD"), cancellable = true, require = 1)
     private void sg01spike$guard(WorldGenLevel level, ChunkGenerator generator, RandomSource random, BlockPos origin, CallbackInfoReturnable<Boolean> cir) {
-        // MonsterRoomFeature.place: xr, zr in 2..3, walls at +-(r+1) => +-4 horizontally; y from -1 to 4.
-        BoundingBox reach = new BoundingBox(origin.getX() - 4, origin.getY() - 1, origin.getZ() - 4, origin.getX() + 4, origin.getY() + 4, origin.getZ() + 4);
-        if (Guard.shouldCancel(Guard.MONSTER_ROOM, level, origin, reach)) {
+        if (Guard.ORACLE_MONSTER_ROOM) {
+            MonsterRoomOracle.begin(Guard.MONSTER_ROOM, level, origin);
+            return;
+        }
+        List<BoundingBox> reaches;
+        if (Guard.REFINE == Guard.Refine.PRECHECK) {
+            Probe.enter();
+            try {
+                reaches = MonsterRoomGeometry.passingBoxes(level, origin);
+            } finally {
+                Probe.exit();
+            }
+        } else {
+            // N7-A reach: origin +-4 horizontally, y -1..+4 (the union of every variant's footprint).
+            reaches = List.of(MonsterRoomGeometry.maxBox(origin));
+        }
+        if (Guard.shouldCancel(Guard.MONSTER_ROOM, level, origin, reaches)) {
             cir.setReturnValue(false);
         }
+    }
+
+    @Inject(method = "place", at = @At("RETURN"), require = 1)
+    private void sg01spike$oracle(WorldGenLevel level, ChunkGenerator generator, RandomSource random, BlockPos origin, CallbackInfoReturnable<Boolean> cir) {
+        if (Guard.ORACLE_MONSTER_ROOM) MonsterRoomOracle.end(Guard.MONSTER_ROOM, level, origin);
     }
 }

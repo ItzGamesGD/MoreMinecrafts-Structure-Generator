@@ -18,7 +18,11 @@ public final class SpikeMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        LOGGER.info("SG_SPIKE mode={}", Guard.MODE);
+        LOGGER.info("SG_SPIKE mode={} fixture={} refine={} oracle={} features={}", Guard.MODE, Guard.FIXTURE, Guard.REFINE, Guard.ORACLE_MONSTER_ROOM ? "monster_room" : "off",
+                System.getenv().getOrDefault("SG01_FEATURES", "both"));
+        if (Guard.FIXTURE != Guard.Fixture.NONE) {
+            LOGGER.warn("SG_SPIKE EXPERIMENT FIXTURE {} active: causal attribution only, never ship", Guard.FIXTURE);
+        }
         // Spawn-area chunks are generated before SERVER_STARTED, so the configuration must be resolved at SERVER_STARTING.
         ServerLifecycleEvents.SERVER_STARTING.register(server -> {
             verifyHooks();
@@ -42,13 +46,16 @@ public final class SpikeMod implements ModInitializer {
 
     private static String stats(GuardStats s) {
         List<String> events = s.events().stream().map(e -> "\"" + e.replace("\\", "\\\\").replace("\"", "'") + "\"").collect(Collectors.toList());
-        return String.format("\"%s\":{\"attempts\":%d,\"fast_path\":%d,\"collisions\":%d,\"unavailable\":%d,\"cancelled\":%d,\"would_cancel\":%d,\"not_worldgen\":%d,\"events\":[%s]}",
+        return String.format("\"%s\":{\"attempts\":%d,\"fast_path\":%d,\"collisions\":%d,\"unavailable\":%d,\"cancelled\":%d,\"would_cancel\":%d,\"not_worldgen\":%d,"
+                        + "\"clear\":%d,\"no_write\":%d,\"oracle_non_air_write\":%d,\"oracle_no_write\":%d,\"oracle_unknown\":%d,\"events\":[%s]}",
                 s.feature, s.attempts.get(), s.fastPath.get(), s.collisions.get(), s.unavailable.get(), s.cancelled.get(), s.wouldCancel.get(),
-                s.notWorldgen.get(), String.join(",", events));
+                s.notWorldgen.get(), s.clear.get(), s.noWrite.get(), s.oracleNonAirWrite.get(), s.oracleNoWrite.get(), s.oracleUnknown.get(), String.join(",", events));
     }
 
     private static void writeReport() {
-        String json = "{\"mode\":\"" + Guard.MODE + "\"," + stats(Guard.GEODE) + "," + stats(Guard.MONSTER_ROOM) + "}\n";
+        String json = "{\"mode\":\"" + Guard.MODE + "\",\"fixture\":\"" + Guard.FIXTURE + "\",\"refine\":\"" + Guard.REFINE + "\",\"oracle\":\""
+                + (Guard.ORACLE_MONSTER_ROOM ? "monster_room" : "off") + "\"," + stats(Guard.GEODE) + "," + stats(Guard.MONSTER_ROOM) + ",\"probe\":"
+                + Probe.json() + "}\n";
         LOGGER.info("SG_SPIKE_REPORT {}", json.replace("\n", ""));
         String path = System.getenv("SG01_SPIKE_REPORT");
         if (path != null && !path.isBlank()) {
