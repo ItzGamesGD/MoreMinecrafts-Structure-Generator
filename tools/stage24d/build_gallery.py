@@ -58,6 +58,8 @@ def section(m, man, v5):
     ext = [("front", "Front exterior"), ("rear", "Rear exterior"), ("left", "Left exterior"), ("right", "Right exterior"), ("elevated", "Elevated three-quarter"), ("roof", "Roof view"), ("entrance", "Entrance close-up")]
     inn = [("interior-dollhouse", "Interior — roof removed"), ("interior-section", "Interior — vertical section")] + [(f"floor-{i}", f"Floor-by-floor {i}") for i in range(1, 9) if (AS / m / f"floor-{i}.jpg").exists()]
     cmpn = [("compare-a", "Original vs restored (front three-quarter)"), ("compare-b", "Original vs restored (rear three-quarter)")]
+    cmpn += [(f"stage24c-vs-final-{v}", f"Stage 24-C candidate vs final ({lab})") for v, lab in
+             (("front34", "front three-quarter"), ("rear34", "rear three-quarter"), ("street", "street elevation"), ("side", "side silhouette"))]
     deg = [("v5-degradation-a", "V5: pristine vs naturally generated (front)"), ("v5-degradation-b", "V5: pristine vs naturally generated (rear)")]
     sect = lambda title, lst: f'<h3>{title}</h3><div class="grid">' + "".join(fig(f"assets/{m}/{n}.jpg", f"{TITLES[m]} — {lab}") for n, lab in lst if (AS / m / f"{n}.jpg").exists()) + "</div>"
     v5t = v5[m]

@@ -1,0 +1,240 @@
+{
+ "cities": 24,
+ "placements_identical_cities": 24,
+ "modules": {
+  "large_pillar_1": {
+   "pieces": 32,
+   "rotations": {
+    "CLOCKWISE_90": 5,
+    "COUNTERCLOCKWISE_90": 11,
+    "CLOCKWISE_180": 9,
+    "NONE": 7
+   },
+   "bb_overlaps": 0,
+   "jigsaw_unconnected": 0,
+   "pieces_with_terrain_in_bb": 0,
+   "terrain_cells_in_bb_total": 0,
+   "stage24c_sweep_terrain_cells_in_bb_total": 0,
+   "pieces_with_terrain_in_added_height": 0,
+   "added_height_terrain_cells_total": 0,
+   "block_survival": {
+    "identical": 0.8309,
+    "replaced_by_other": 0.0141,
+    "sculk_feature_overlay": 0.1134,
+    "removed_to_air": 0.0205,
+    "cracked_by_processor": 0.0211
+   },
+   "critical_lost": {
+    "stairs": "0/2016",
+    "ladder": "0/416",
+    "lantern": "6/128"
+   }
+  },
+  "large_ruin_1": {
+   "pieces": 20,
+   "rotations": {
+    "CLOCKWISE_180": 7,
+    "COUNTERCLOCKWISE_90": 5,
+    "CLOCKWISE_90": 5,
+    "NONE": 3
+   },
+   "bb_overlaps": 0,
+   "jigsaw_unconnected": 0,
+   "pieces_with_terrain_in_bb": 2,
+   "terrain_cells_in_bb_total": 14,
+   "stage24c_sweep_terrain_cells_in_bb_total": 7,
+   "pieces_with_terrain_in_added_height": 1,
+   "added_height_terrain_cells_total": 1,
+   "block_survival": {
+    "identical": 0.6441,
+    "sculk_feature_overlay": 0.1902,
+    "cracked_by_processor": 0.142,
+    "removed_to_air": 0.0237,
+    "replaced_by_other": 0.0
+   },
+   "critical_lost": {
+    "container": "0/20",
+    "bed": "0/80",
+    "door": "0/40",
+    "lantern": "1/80",
+    "stairs": "0/5160"
+   }
+  },
+  "medium_ruin_1": {
+   "pieces": 26,
+   "rotations": {
+    "COUNTERCLOCKWISE_90": 12,
+    "CLOCKWISE_180": 4,
+    "NONE": 6,
+    "CLOCKWISE_90": 4
+   },
+   "bb_overlaps": 0,
+   "jigsaw_unconnected": 0,
+   "pieces_with_terrain_in_bb": 1,
+   "terrain_cells_in_bb_total": 189,
+   "stage24c_sweep_terrain_cells_in_bb_total": 189,
+   "pieces_with_terrain_in_added_height": 0,
+   "added_height_terrain_cells_total": 0,
+   "block_survival": {
+    "identical": 0.5774,
+    "cracked_by_processor": 0.2019,
+    "sculk_feature_overlay": 0.1904,
+    "removed_to_air": 0.0288,
+    "replaced_by_other": 0.0015
+   },
+   "critical_lost": {
+    "container": "0/26",
+    "door": "1/52",
+    "bed": "0/52",
+    "lantern": "3/52",
+    "stairs": "0/312"
+   }
+  },
+  "medium_pillar_1": {
+   "pieces": 35,
+   "rotations": {
+    "CLOCKWISE_90": 10,
+    "NONE": 5,
+    "CLOCKWISE_180": 12,
+    "COUNTERCLOCKWISE_90": 8
+   },
+   "bb_overlaps": 0,
+   "jigsaw_unconnected": 0,
+   "pieces_with_terrain_in_bb": 1,
+   "terrain_cells_in_bb_total": 3,
+   "stage24c_sweep_terrain_cells_in_bb_total": 3,
+   "pieces_with_terrain_in_added_height": 0,
+   "added_height_terrain_cells_total": 0,
+   "block_survival": {
+    "identical": 0.6834,
+    "sculk_feature_overlay": 0.1386,
+    "cracked_by_processor": 0.1462,
+    "removed_to_air": 0.0283,
+    "replaced_by_other": 0.0035
+   },
+   "critical_lost": {
+    "stairs": "0/105",
+    "ladder": "0/280",
+    "container": "0/35",
+    "lantern": "3/35",
+    "parapet_wall": "0/630"
+   }
+  },
+  "small_ruin_2": {
+   "pieces": 28,
+   "rotations": {
+    "COUNTERCLOCKWISE_90": 7,
+    "NONE": 7,
+    "CLOCKWISE_90": 6,
+    "CLOCKWISE_180": 8
+   },
+   "bb_overlaps": 0,
+   "jigsaw_unconnected": 0,
+   "pieces_with_terrain_in_bb": 0,
+   "terrain_cells_in_bb_total": 0,
+   "stage24c_sweep_terrain_cells_in_bb_total": 0,
+   "pieces_with_terrain_in_added_height": 0,
+   "added_height_terrain_cells_total": 0,
+   "block_survival": {
+    "sculk_feature_overlay": 0.2337,
+    "cracked_by_processor": 0.1828,
+    "identical": 0.5489,
+    "removed_to_air": 0.0346
+   },
+   "critical_lost": {
+    "bed": "0/56",
+    "door": "0/56",
+    "container": "0/28",
+    "lantern": "5/28"
+   }
+  },
+  "medium_ruin_2": {
+   "pieces": 20,
+   "rotations": {
+    "COUNTERCLOCKWISE_90": 6,
+    "NONE": 8,
+    "CLOCKWISE_90": 4,
+    "CLOCKWISE_180": 2
+   },
+   "bb_overlaps": 0,
+   "jigsaw_unconnected": 0,
+   "pieces_with_terrain_in_bb": 0,
+   "terrain_cells_in_bb_total": 0,
+   "stage24c_sweep_terrain_cells_in_bb_total": 0,
+   "pieces_with_terrain_in_added_height": 0,
+   "added_height_terrain_cells_total": 0,
+   "block_survival": {
+    "cracked_by_processor": 0.1711,
+    "identical": 0.5985,
+    "sculk_feature_overlay": 0.2008,
+    "removed_to_air": 0.0296
+   },
+   "critical_lost": {
+    "door": "0/40",
+    "stairs": "0/1740",
+    "bed": "0/80",
+    "container": "0/40",
+    "lantern": "2/40"
+   }
+  },
+  "small_ruin_1": {
+   "pieces": 22,
+   "rotations": {
+    "CLOCKWISE_90": 5,
+    "NONE": 6,
+    "CLOCKWISE_180": 7,
+    "COUNTERCLOCKWISE_90": 4
+   },
+   "bb_overlaps": 0,
+   "jigsaw_unconnected": 0,
+   "pieces_with_terrain_in_bb": 1,
+   "terrain_cells_in_bb_total": 5,
+   "stage24c_sweep_terrain_cells_in_bb_total": 6,
+   "pieces_with_terrain_in_added_height": 0,
+   "added_height_terrain_cells_total": 0,
+   "block_survival": {
+    "identical": 0.6015,
+    "cracked_by_processor": 0.1917,
+    "sculk_feature_overlay": 0.1768,
+    "removed_to_air": 0.0298,
+    "replaced_by_other": 0.0002
+   },
+   "critical_lost": {
+    "bed": "0/44",
+    "door": "0/44",
+    "container": "0/22",
+    "lantern": "2/22",
+    "stairs": "0/220"
+   }
+  },
+  "sauna_1": {
+   "pieces": 9,
+   "rotations": {
+    "CLOCKWISE_90": 4,
+    "CLOCKWISE_180": 3,
+    "COUNTERCLOCKWISE_90": 1,
+    "NONE": 1
+   },
+   "bb_overlaps": 0,
+   "jigsaw_unconnected": 12,
+   "pieces_with_terrain_in_bb": 2,
+   "terrain_cells_in_bb_total": 6,
+   "stage24c_sweep_terrain_cells_in_bb_total": 7,
+   "pieces_with_terrain_in_added_height": 0,
+   "added_height_terrain_cells_total": 0,
+   "block_survival": {
+    "sculk_feature_overlay": 0.1784,
+    "identical": 0.6108,
+    "cracked_by_processor": 0.1745,
+    "removed_to_air": 0.034,
+    "replaced_by_other": 0.0019,
+    "same_block_other_state": 0.0003
+   },
+   "critical_lost": {
+    "stairs": "0/774",
+    "container": "0/27",
+    "lantern": "0/27"
+   }
+  }
+ }
+}

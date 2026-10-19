@@ -1,0 +1,1972 @@
+[
+ {
+  "seed": 24001,
+  "module": "medium_ruin_1",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   -356,
+   -48,
+   138
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24003,
+  "module": "medium_pillar_1",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   534,
+   -44,
+   -20
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24003,
+  "module": "medium_pillar_1",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   592,
+   -44,
+   50
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24003,
+  "module": "small_ruin_2",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   594,
+   -48,
+   67
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24004,
+  "module": "large_ruin_1",
+  "type": "terrain_inside_bounding_box",
+  "piece_bb": [
+   -249,
+   -51,
+   -1035,
+   -233,
+   -38,
+   -1019
+  ],
+  "rotation": "CLOCKWISE_180",
+  "count": 1,
+  "cells": [
+   [
+    -249,
+    -40,
+    -1035,
+    "smooth_basalt"
+   ]
+  ]
+ },
+ {
+  "seed": 24004,
+  "module": "large_ruin_1",
+  "type": "terrain_inside_added_height",
+  "piece_bb": [
+   -249,
+   -51,
+   -1035,
+   -233,
+   -38,
+   -1019
+  ],
+  "count": 1,
+  "cells": [
+   [
+    -249,
+    -40,
+    -1035,
+    "smooth_basalt"
+   ]
+  ]
+ },
+ {
+  "seed": 24005,
+  "module": "medium_ruin_1",
+  "type": "terrain_inside_bounding_box",
+  "piece_bb": [
+   -1348,
+   -51,
+   1023,
+   -1341,
+   -47,
+   1035
+  ],
+  "rotation": "NONE",
+  "count": 189,
+  "cells": [
+   [
+    -1347,
+    -50,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -50,
+    1025,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -50,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -50,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -50,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -50,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -50,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -50,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -50,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -50,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -49,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -49,
+    1025,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -49,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -49,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -49,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -49,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -49,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -49,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -49,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -49,
+    1033,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -49,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -48,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -48,
+    1025,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -48,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -48,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -48,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -48,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -48,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -48,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -48,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1347,
+    -48,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -50,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -50,
+    1025,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -50,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -50,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -50,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -50,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -50,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -50,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -50,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -50,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -49,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -49,
+    1025,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -49,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -49,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -49,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -49,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -49,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -49,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -49,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -49,
+    1033,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -49,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -48,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -48,
+    1025,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -48,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -48,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -48,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -48,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -48,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -48,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -48,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -48,
+    1033,
+    "dripstone_block"
+   ],
+   [
+    -1346,
+    -48,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -50,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -50,
+    1025,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -50,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -50,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -50,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -50,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -50,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -50,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -50,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -50,
+    1033,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -50,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -49,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -49,
+    1025,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -49,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -49,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -49,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -49,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -49,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -49,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -49,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -49,
+    1033,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -49,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -48,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -48,
+    1025,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -48,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -48,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -48,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -48,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -48,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -48,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -48,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -48,
+    1033,
+    "dripstone_block"
+   ],
+   [
+    -1345,
+    -48,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -50,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -50,
+    1025,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -50,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -50,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -50,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -50,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -50,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -50,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -50,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -50,
+    1033,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -50,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -49,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -49,
+    1025,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -49,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -49,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -49,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -49,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -49,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -49,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -49,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -49,
+    1033,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -49,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -48,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -48,
+    1025,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -48,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -48,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -48,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -48,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -48,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -48,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -48,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -48,
+    1033,
+    "dripstone_block"
+   ],
+   [
+    -1344,
+    -48,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -50,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -50,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -50,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -50,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -50,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -50,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -50,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -50,
+    1033,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -50,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -49,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -49,
+    1025,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -49,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -49,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -49,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -49,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -49,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -49,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -49,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -49,
+    1033,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -49,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -48,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -48,
+    1025,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -48,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -48,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -48,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -48,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -48,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -48,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -48,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -48,
+    1033,
+    "dripstone_block"
+   ],
+   [
+    -1343,
+    -48,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -50,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -50,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -50,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -50,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -50,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -50,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -50,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -50,
+    1033,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -50,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -49,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -49,
+    1025,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -49,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -49,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -49,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -49,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -49,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -49,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -49,
+    1032,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -49,
+    1033,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -49,
+    1034,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -48,
+    1024,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -48,
+    1026,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -48,
+    1027,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -48,
+    1028,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -48,
+    1029,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -48,
+    1030,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -48,
+    1031,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -48,
+    1033,
+    "dripstone_block"
+   ],
+   [
+    -1342,
+    -48,
+    1034,
+    "dripstone_block"
+   ]
+  ]
+ },
+ {
+  "seed": 24005,
+  "module": "medium_ruin_1",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   -1374,
+   -48,
+   997
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24007,
+  "module": "medium_ruin_1",
+  "type": "protected_functional_block_lost",
+  "category": "door",
+  "block": "spruce_door",
+  "world": [
+   -264,
+   -50,
+   928
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24007,
+  "module": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "jigsaw_world": [
+   -404,
+   -51,
+   873
+  ],
+  "facing": "up",
+  "target": [
+   -404,
+   -50,
+   873
+  ],
+  "connected_to": [],
+  "connected": false,
+  "pool": "minecraft:ancient_city/sculk"
+ },
+ {
+  "seed": 24007,
+  "module": "large_pillar_1",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   -287,
+   -39,
+   947
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24007,
+  "module": "large_pillar_1",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   -255,
+   -39,
+   819
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24008,
+  "module": "medium_ruin_2",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   445,
+   -48,
+   1325
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24008,
+  "module": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "jigsaw_world": [
+   512,
+   -51,
+   1346
+  ],
+  "facing": "up",
+  "target": [
+   512,
+   -50,
+   1346
+  ],
+  "connected_to": [],
+  "connected": false,
+  "pool": "minecraft:ancient_city/sculk"
+ },
+ {
+  "seed": 24008,
+  "module": "small_ruin_1",
+  "type": "terrain_inside_bounding_box",
+  "piece_bb": [
+   593,
+   -51,
+   1278,
+   600,
+   -47,
+   1284
+  ],
+  "rotation": "COUNTERCLOCKWISE_90",
+  "count": 5,
+  "cells": [
+   [
+    596,
+    -50,
+    1280,
+    "lava"
+   ],
+   [
+    597,
+    -50,
+    1280,
+    "lava"
+   ],
+   [
+    597,
+    -50,
+    1281,
+    "lava"
+   ],
+   [
+    597,
+    -49,
+    1280,
+    "lava"
+   ],
+   [
+    597,
+    -48,
+    1280,
+    "lava"
+   ]
+  ]
+ },
+ {
+  "seed": 24009,
+  "module": "large_ruin_1",
+  "type": "terrain_inside_bounding_box",
+  "piece_bb": [
+   588,
+   -51,
+   551,
+   604,
+   -38,
+   567
+  ],
+  "rotation": "CLOCKWISE_90",
+  "count": 13,
+  "cells": [
+   [
+    595,
+    -50,
+    557,
+    "dripstone_block"
+   ],
+   [
+    595,
+    -50,
+    558,
+    "dripstone_block"
+   ],
+   [
+    595,
+    -49,
+    558,
+    "dripstone_block"
+   ],
+   [
+    596,
+    -50,
+    557,
+    "dripstone_block"
+   ],
+   [
+    596,
+    -50,
+    558,
+    "dripstone_block"
+   ],
+   [
+    596,
+    -50,
+    559,
+    "dripstone_block"
+   ],
+   [
+    596,
+    -49,
+    557,
+    "dripstone_block"
+   ],
+   [
+    596,
+    -49,
+    558,
+    "dripstone_block"
+   ],
+   [
+    596,
+    -49,
+    559,
+    "dripstone_block"
+   ],
+   [
+    596,
+    -48,
+    558,
+    "dripstone_block"
+   ],
+   [
+    597,
+    -50,
+    557,
+    "dripstone_block"
+   ],
+   [
+    597,
+    -50,
+    558,
+    "dripstone_block"
+   ],
+   [
+    597,
+    -50,
+    559,
+    "dripstone_block"
+   ]
+  ]
+ },
+ {
+  "seed": 24009,
+  "module": "small_ruin_2",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   560,
+   -48,
+   596
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24009,
+  "module": "large_pillar_1",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   421,
+   -39,
+   597
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24010,
+  "module": "large_pillar_1",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   -3011,
+   -39,
+   2324
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24010,
+  "module": "small_ruin_2",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   -3077,
+   -48,
+   2222
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24011,
+  "module": "large_ruin_1",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   -85,
+   -48,
+   -579
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24011,
+  "module": "large_pillar_1",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   -261,
+   -39,
+   -517
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24012,
+  "module": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "jigsaw_world": [
+   -1270,
+   -51,
+   108
+  ],
+  "facing": "up",
+  "target": [
+   -1270,
+   -50,
+   108
+  ],
+  "connected_to": [],
+  "connected": false,
+  "pool": "minecraft:ancient_city/sculk"
+ },
+ {
+  "seed": 24012,
+  "module": "sauna_1",
+  "type": "terrain_inside_bounding_box",
+  "piece_bb": [
+   -1280,
+   -51,
+   103,
+   -1244,
+   -42,
+   131
+  ],
+  "rotation": "CLOCKWISE_90",
+  "count": 1,
+  "cells": [
+   [
+    -1245,
+    -42,
+    112,
+    "deepslate"
+   ]
+  ]
+ },
+ {
+  "seed": 24012,
+  "module": "small_ruin_1",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   -1329,
+   -48,
+   -39
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24013,
+  "module": "small_ruin_2",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   1123,
+   -48,
+   1183
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24014,
+  "module": "medium_pillar_1",
+  "type": "terrain_inside_bounding_box",
+  "piece_bb": [
+   1272,
+   -51,
+   -938,
+   1279,
+   -41,
+   -932
+  ],
+  "rotation": "COUNTERCLOCKWISE_90",
+  "count": 3,
+  "cells": [
+   [
+    1276,
+    -41,
+    -932,
+    "deepslate"
+   ],
+   [
+    1279,
+    -43,
+    -932,
+    "deepslate"
+   ],
+   [
+    1279,
+    -42,
+    -932,
+    "deepslate"
+   ]
+  ]
+ },
+ {
+  "seed": 24014,
+  "module": "small_ruin_2",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   1294,
+   -48,
+   -965
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24014,
+  "module": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "jigsaw_world": [
+   1306,
+   -51,
+   -1000
+  ],
+  "facing": "up",
+  "target": [
+   1306,
+   -50,
+   -1000
+  ],
+  "connected_to": [],
+  "connected": false,
+  "pool": "minecraft:ancient_city/sculk"
+ },
+ {
+  "seed": 24014,
+  "module": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "jigsaw_world": [
+   1303,
+   -51,
+   -1013
+  ],
+  "facing": "up",
+  "target": [
+   1303,
+   -50,
+   -1013
+  ],
+  "connected_to": [],
+  "connected": false,
+  "pool": "minecraft:ancient_city/sculk"
+ },
+ {
+  "seed": 24014,
+  "module": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "jigsaw_world": [
+   1289,
+   -51,
+   -1016
+  ],
+  "facing": "up",
+  "target": [
+   1289,
+   -50,
+   -1016
+  ],
+  "connected_to": [],
+  "connected": false,
+  "pool": "minecraft:ancient_city/sculk"
+ },
+ {
+  "seed": 24014,
+  "module": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "jigsaw_world": [
+   1282,
+   -51,
+   -1003
+  ],
+  "facing": "up",
+  "target": [
+   1282,
+   -50,
+   -1003
+  ],
+  "connected_to": [],
+  "connected": false,
+  "pool": "minecraft:ancient_city/sculk"
+ },
+ {
+  "seed": 24014,
+  "module": "sauna_1",
+  "type": "terrain_inside_bounding_box",
+  "piece_bb": [
+   1279,
+   -51,
+   -1021,
+   1315,
+   -42,
+   -993
+  ],
+  "rotation": "CLOCKWISE_90",
+  "count": 5,
+  "cells": [
+   [
+    1293,
+    -46,
+    -1017,
+    "lava"
+   ],
+   [
+    1293,
+    -45,
+    -1017,
+    "lava"
+   ],
+   [
+    1293,
+    -44,
+    -1017,
+    "lava"
+   ],
+   [
+    1293,
+    -43,
+    -1017,
+    "lava"
+   ],
+   [
+    1293,
+    -42,
+    -1017,
+    "lava"
+   ]
+  ]
+ },
+ {
+  "seed": 24018,
+  "module": "large_pillar_1",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   1265,
+   -39,
+   45
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24018,
+  "module": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "jigsaw_world": [
+   1295,
+   -51,
+   39
+  ],
+  "facing": "up",
+  "target": [
+   1295,
+   -50,
+   39
+  ],
+  "connected_to": [],
+  "connected": false,
+  "pool": "minecraft:ancient_city/sculk"
+ },
+ {
+  "seed": 24018,
+  "module": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "jigsaw_world": [
+   1308,
+   -51,
+   36
+  ],
+  "facing": "up",
+  "target": [
+   1308,
+   -50,
+   36
+  ],
+  "connected_to": [],
+  "connected": false,
+  "pool": "minecraft:ancient_city/sculk"
+ },
+ {
+  "seed": 24018,
+  "module": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "jigsaw_world": [
+   1311,
+   -51,
+   22
+  ],
+  "facing": "up",
+  "target": [
+   1311,
+   -50,
+   22
+  ],
+  "connected_to": [],
+  "connected": false,
+  "pool": "minecraft:ancient_city/sculk"
+ },
+ {
+  "seed": 24018,
+  "module": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "jigsaw_world": [
+   1298,
+   -51,
+   15
+  ],
+  "facing": "up",
+  "target": [
+   1298,
+   -50,
+   15
+  ],
+  "connected_to": [],
+  "connected": false,
+  "pool": "minecraft:ancient_city/sculk"
+ },
+ {
+  "seed": 24020,
+  "module": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "jigsaw_world": [
+   1727,
+   -51,
+   -836
+  ],
+  "facing": "up",
+  "target": [
+   1727,
+   -50,
+   -836
+  ],
+  "connected_to": [],
+  "connected": false,
+  "pool": "minecraft:ancient_city/sculk"
+ },
+ {
+  "seed": 24022,
+  "module": "medium_pillar_1",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   -989,
+   -44,
+   -189
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24022,
+  "module": "medium_ruin_2",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   -943,
+   -48,
+   -300
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24022,
+  "module": "small_ruin_1",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   -980,
+   -48,
+   -387
+  ],
+  "got": "minecraft:air"
+ },
+ {
+  "seed": 24023,
+  "module": "medium_ruin_1",
+  "type": "protected_functional_block_lost",
+  "category": "lantern",
+  "block": "soul_lantern",
+  "world": [
+   -554,
+   -48,
+   1683
+  ],
+  "got": "minecraft:air"
+ }
+]

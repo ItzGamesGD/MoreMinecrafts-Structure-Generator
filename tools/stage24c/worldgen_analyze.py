@@ -201,9 +201,11 @@ def analyse_seed(seed, src_root, variant="candidate"):
                 rx, ry, rz = rot(pos, r)
                 w = (origin[0] + rx, origin[1] + ry, origin[2] + rz)
                 tgt = (w[0] + d[0], w[1] + d[1], w[2] + d[2])
-                hosts = [q["template"].split("/")[-1] for q in cp if q is not p and q["template"]
+                hosts = [(q["template"].split("/")[-1] or q["element_type"].replace("minecraft:", "")) for q in cp if q is not p
                          and q["bb"][0] <= tgt[0] <= q["bb"][3] and q["bb"][1] <= tgt[1] <= q["bb"][4] and q["bb"][2] <= tgt[2] <= q["bb"][5]]
-                jig.append({"jigsaw_world": list(w), "facing": f, "target": list(tgt), "connected_to": hosts, "connected": bool(hosts)})
+                # template pieces, vanilla feature elements (sculk patches) and empty elements are all valid jigsaw resolutions
+                jig.append({"jigsaw_world": list(w), "facing": f, "target": list(tgt), "connected_to": hosts, "connected": bool(hosts),
+                            "pool": str(nb["pool"]) if nb is not None and "pool" in nb else None})
             rec["jigsaws"] = jig
             tot = sum(fill.values())
             rec["unspecified_cells"] = tot

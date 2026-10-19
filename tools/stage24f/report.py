@@ -20,7 +20,7 @@ def collect():
 
 def worldgen():
     final = json.loads((D24F / "worldgen/f24-analysis.json").read_text())
-    base = {c["seed"]: c for c in json.loads((S24C_WG / "worldgen-analysis.json").read_text())}
+    base = {c["seed"]: c for c in json.loads((D24F / "worldgen/stage24c-same-method-analysis.json").read_text())}
     per = defaultdict(lambda: {"pieces": 0, "rot": Counter(), "overlaps": 0, "cls": Counter(), "crit": defaultdict(lambda: [0, 0]),
                                "jig_bad": [], "terrain": [], "expansion": [], "crit_cells": []})
     issues = []
@@ -44,10 +44,12 @@ def worldgen():
                 if not j["connected"]:
                     d["jig_bad"].append(j)
                     issues.append({"seed": seed, "module": m, "type": "jigsaw_unconnected", **j})
-            if p.get("terrain_cells_in_bb"):
-                d["terrain"].append(p["terrain_cells_in_bb"])
+            jig_cells = {tuple(j["jigsaw_world"]) for j in p.get("jigsaws", [])}   # jigsaws become their final_state: not terrain
+            cells = [c for c in p.get("terrain_cells_in_bb_list", []) if tuple(c[:3]) not in jig_cells]
+            if cells:
+                d["terrain"].append(len(cells))
                 issues.append({"seed": seed, "module": m, "type": "terrain_inside_bounding_box", "piece_bb": p["bb"], "rotation": p["rotation"],
-                               "count": p["terrain_cells_in_bb"], "cells": p["terrain_cells_in_bb_list"]})
+                               "count": len(cells), "cells": cells})
             e = p.get("expansion_layers")
             if e:
                 d["expansion"].append(len(e["terrain_cells"]))
@@ -59,8 +61,8 @@ def worldgen():
     base_terrain = Counter()
     for seed, c in base.items():
         for p in c["modules"]:
-            fill = p.get("unspecified_cell_fill", {})
-            base_terrain[p["module"]] += sum(v for k, v in fill.items() if k not in ("air", "cave_air", "void_air", "water", "unloaded", "sculk_vein", "glow_lichen", "vine", "sculk", "sculk_sensor", "sculk_shrieker", "sculk_catalyst"))
+            jig_cells = {tuple(j["jigsaw_world"]) for j in p.get("jigsaws", [])}
+            base_terrain[p["module"]] += sum(1 for c_ in p.get("terrain_cells_in_bb_list", []) if tuple(c_[:3]) not in jig_cells)
     summary = {"cities": len(final), "placements_identical_cities": sum(1 for c in final if c["placements_identical_to_vanilla"]),
                "modules": {m: {"pieces": d["pieces"], "rotations": dict(d["rot"]), "bb_overlaps": d["overlaps"], "jigsaw_unconnected": len(d["jig_bad"]),
                                "pieces_with_terrain_in_bb": len(d["terrain"]), "terrain_cells_in_bb_total": sum(d["terrain"]),
