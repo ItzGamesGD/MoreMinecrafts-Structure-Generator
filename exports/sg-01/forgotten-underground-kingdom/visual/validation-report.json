@@ -1,21 +1,21 @@
 {
-  "assembled_coordinate_state_sha256": "8039d2a2c7b799e84a5542c0883597455ea1ceb4eb4da7ece826117e166a326a",
+  "assembled_coordinate_state_sha256": "596907fb726045e5828da46b03d9b15e92589ac810417c4380942a0d383b0925",
   "assembled_solid_block_count": 8575,
   "block_counts": {
     "chiseled_tuff_bricks": 256,
     "deepslate_brick_wall": 100,
     "deepslate_bricks": 2644,
-    "deepslate_tiles": 3281,
+    "deepslate_tiles": 3269,
     "polished_deepslate": 561,
     "sea_lantern": 9,
-    "stone_brick_stairs": 84,
+    "stone_brick_stairs": 96,
     "tuff_bricks": 1640
   },
   "covered_block_position_count": 8575,
-  "glb_bytes": 3633572,
+  "glb_bytes": 3658148,
   "glb_embeds_texture_atlas": true,
-  "glb_sha256": "401567bbb02e16e606ab7ed3665130a548c7c95d0312f2396e38f34041acfebe",
-  "glb_vertex_count": 113280,
+  "glb_sha256": "fe09c4f083e65b2149af8ece3074e33cda191144db39f4f89cc6de27ee03d20f",
+  "glb_vertex_count": 114048,
   "glb_world_bounds": [
     [
       -15.0,
@@ -48,11 +48,11 @@
     "tuff_bricks"
   ],
   "preview_png_sha256": {
-    "elevated-balconies-supports.png": "8a7ef794c4ba413ad1fe1880a90bf9479c8029246ca56aba5c69c0890a93a2fc",
+    "elevated-balconies-supports.png": "4001a26ccbdeca77dff1c7e9673391d8e79b2c24d69bc6034e85c32cbb8e2308",
     "exterior-isometric.png": "7c3964e4cfa0fb20256545dda27dd13b7fb42243431773c77bad0c7c7faa6cc5",
-    "interior-central-plaza.png": "49a875ba6634d47c0643f6b192bd393e918ec316bca8007a206fe567d6d44fa2",
+    "interior-central-plaza.png": "221c545c5c710d1c010a75b84b4f1428e81e7b37e05bdd891abd726c2e0a5dfd",
     "jigsaw-connections-diagnostic.png": "6ada2b69a0c3b0350cea7588ec5f12320d27899a0e9d1774bb009e6e516ca490",
-    "sectional-cutaway.png": "1b68314eadda3bd6532872cbeaf1488f42df676ece47e9c20669092e2be7eb8f",
+    "sectional-cutaway.png": "da77542bea5753bfab1fcc8bc5919b8c7d3792c18779c9f06151ce7d6a2d66a7",
     "top-down-overview.png": "30ab07dda2103a05ad47f9c28bd96226133b6277719229249c6b3f233cef6703"
   },
   "seams": {
@@ -144,7 +144,7 @@
     ]
   ],
   "source_nbt_sha256": {
-    "main_chamber": "f5f6f68b7622c4be5104da437583da6592a9821a73ff0a265a67aceb852343c4",
+    "main_chamber": "fb87ec0fa262d881240c2d941d7253d2b06e9764630a39304fca3394fca3cd9c",
     "tunnel_east": "a0ce9b48a2fb9bfef75f7d8b0e0d8f777add39bc6fd1cf1e6e5ff7b73fa8a729",
     "tunnel_north": "3879ddda643cd5fb4e495cf27b3472ae887fa2ea946421ee43ca6c355a8dc85d",
     "tunnel_south": "f19ee2877c0e343a8a39d342d725e5cbc863ec5265eeba8f611e680ce1df2f69",

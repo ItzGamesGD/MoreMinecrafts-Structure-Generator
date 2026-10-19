@@ -27,7 +27,7 @@ districts. The template pool and structure identifiers remain under `moreminecra
 The Jigsaw graph has one start pool and one tunnel pool per direction. The start structure size is 1, so each chamber
 socket places its tunnel once; the tunnel's far-end socket uses `minecraft:empty` until a future district is designed.
 An independent structure set uses random-spread placement and a 12-chunk exclusion zone against
-`minecraft:trial_chambers`. The structure uses the `strongholds` step, `encapsulate`, and a uniform Y range of −40 to −20.
+`minecraft:trial_chambers`. The structure uses the `vegetal_decoration` step (SG-01-C; was `strongholds`), `encapsulate`, and a uniform Y range of −40 to −20.
 As established in PR #117, encapsulate is supplementary; built geometry provides the actual shell.
 
 No mobs, bosses, rewards, research, puzzles, or custom gameplay are introduced. Future rare rewards remain
@@ -80,16 +80,21 @@ the Beta repository.
 | Vanilla Trial Chambers exclusion definition | **PASS** (static) | Independent structure set references `minecraft:trial_chambers` with `chunk_count: 12`. |
 | Automated tests | **PASS** | `PYTHONPATH=vendor/mcbuild/src python3 -m unittest discover -s tests -v`: 19 tests passed. |
 | Existing upstream mcbuild test suite | **NOT RUN** | This task does not modify mcbuild; pytest and its dependencies are not installed in this environment. |
-| Minecraft 26.3 datapack load and world generation | **PASS** (vanilla 26.3 server) | Server-side only; see `minecraft-26.3-client-visual-validation.md`. Pack enabled, all five templates place, 15/15 live and 15/15 saved-chunk block probes match, and `/place structure` produces 8,575/8,575 expected blocks (180° rotation). |
-| Mountain/cave placement, fluids, natural-cave intersections, and in-world Trial Chambers coexistence | **NOT RUN** | Requires actual Minecraft world generation; PR #117 informs placement choices but does not validate this export. |
-| In-client visual inspection/screenshots | **NOT RUN** | A text layer and vertical-section preview is provided in `structural-evidence.md`; this is structural evidence, not client rendering. |
+| Minecraft 26.3 explicit placement | **PASS** (Fabric Loom runtime) | Separate controlled tests use `/place template` and `/place structure`: main-chamber live/saved probes 15/15; all tunnel templates load; forced Jigsaw assembly matches 8,575/8,575 blocks at 180°. This is not natural world generation. |
+| Natural structure-set generation in normal terrain | **PASS** (seed 173; validated again at final head by Actions run 39109618020) | Minecraft `/locate structure` found candidate `[5184, ~, 4944]`; chunk generation wrote the structure without `/place`. Saved-region probe: 8,575/8,575 blocks, 0 extras, bounds 71×17×71 at `[5169,-37,4929]..[5239,-21,4999]`, rotation 0°. Eight surrounding surface samples had minimum top-solid y=31, above the structure. Artifact includes MCA region files, RCON/server logs, probes, and native entry/plaza screenshots. |
+| Cave-air, water, and lava contact | **PASS** (natural, 97 generated sites, 16 seeds; shell intact) with findings | Stage SG-01-B, Actions run 39114506648: cave air touches 86 sites, water 12, lava 10; no wall or interior breach. Fluid enters open tunnel mouths at 5 sites (never the plaza). Later vanilla features overwrite shell blocks at 10 sites (deep-dark sculk incl. summon-capable shriekers at 5). Details and owner decisions: `environmental-stress-validation.md`. |
+| Trial Chambers coexistence | **PASS** (sample of 33 pairs, min gap 73 blocks); frequency finding | Exclusion zone is positional and suppresses 67 % of candidates (predicted offline with 0 mismatches). |
+| Survival accessibility | Runtime probe **PASS**; live player **NOT RUN**; surface entrance **BLOCKED** | Player-width mob pathfinding: 250/252 interior legs (the 2 failures end in fluid-filled mouths); ring landing needs a jump; 94 % of mouths are sealed by rock. |
+| Native client screenshots | **PASS** (current-head run 39109240434) | Ten controlled-placement views plus two native 1280×720 screenshots of the naturally generated entrance and plaza were captured and visually inspected. Owner design acceptance remains pending. |
+| Live player traversal and ordinary user-managed world acceptance | **NOT RUN** | Saved block data and teleport-to-camera screenshots do not prove traversal or normal-world pack behavior. See `minecraft-26.3-client-visual-validation.md`. |
+
 
 ## Risks and limitations
 
-- Actual 26.3 codec loading, Jigsaw runtime placement, worldgen frequency, and chunk/biome behavior remain unverified.
-- Natural cave and fluid intersections cannot be concluded from static shell checks. The template contains its walls, floor,
+- Minecraft 26.3 loading and one natural seed placement are verified; worldgen frequency is lower than nominal (F-3 in the SG-01-B document).
+- SG-01-B sampled 16 seeds / 97 sites (see `environmental-stress-validation.md`); no frequency or universal reliability claim. The template contains its walls, floor,
   and roof; `encapsulate` is only supplementary.
 - The four district endpoints are intentionally capped with `minecraft:empty` until future district templates are approved.
 - The static state parser preserves mcbuild's state strings but does not independently compare every block-state property
   against a live 26.3 registry.
-- No game screenshots or performance measurements were available in this environment.
+- Native screenshots are available for controlled placement and the natural seed site; no performance measurement was made.
