@@ -56,7 +56,7 @@ step). Natural lush-cave clay remains: 156,967 clay blocks in the lush-caves bio
 Control arm (pre-fix ordering `vegetal_decoration` on the final pack) at seed 42: 40 clay-family overwrites, 0 others.
 
 Observation, not part of N4: in one run with three servers generating concurrently, seed 173 (-18,36) showed 139 geode overlays
-(amethyst, calcite, smooth basalt, air) under steps 5 and 10 but not under step 9; 12 later runs at normal load passed. Geodes (step 2) can only overwrite
+(amethyst, calcite, smooth basalt, air) under steps 5 and 10 but not under step 9; all later runs at lower load passed (8 site-runs of that site). Geodes (step 2) can only overwrite
 through cross-chunk ordering, which is timing dependent. The integrity assertion was **not** relaxed for it (geode air is classed "unexplained").
 
 ## 5. Regression tests
