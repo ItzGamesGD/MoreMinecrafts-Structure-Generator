@@ -86,9 +86,9 @@ def classify(expected, got):
     return "replaced_by_other"
 
 
-def analyse_seed(seed, src_root):
+def analyse_seed(seed, src_root, variant="candidate"):
     vm = json.loads((OUT / f"worldgen/manifest-{seed}-vanilla.json").read_text())
-    cm = json.loads((OUT / f"worldgen/manifest-{seed}-candidate.json").read_text())
+    cm = json.loads((OUT / f"worldgen/manifest-{seed}-{variant}.json").read_text())
     if not vm.get("cities") or not cm.get("cities"):
         return None
     vp, cp = vm["cities"][0]["pieces"], cm["cities"][0]["pieces"]
@@ -97,7 +97,7 @@ def analyse_seed(seed, src_root):
     first_diff = next((i for i, (a, b) in enumerate(zip(sig(vp), sig(cp))) if a != b), None)
     bb_diffs = [{"index": i, "template": a["template"].split("/")[-1], "vanilla_bb": a["bb"], "candidate_bb": b["bb"]}
                 for i, (a, b) in enumerate(zip(vp, cp)) if a["bb"] != b["bb"]]
-    wdir = OUT / f"_work/wg-{seed}-candidate/world/dimensions/minecraft/overworld"
+    wdir = OUT / f"_work/wg-{seed}-{variant}/world/dimensions/minecraft/overworld"
     world = World(wdir) if wdir.exists() else None
     res = {"seed": seed, "city_xz": cm["city_xz"], "pieces_vanilla": len(vp), "pieces_candidate": len(cp),
            "placements_identical_to_vanilla": layout_same, "first_placement_diff_index": first_diff,
@@ -184,6 +184,17 @@ def analyse_seed(seed, src_root):
                     for y in (bb[1] - 1, bb[4] + 1):
                         shell[(world.block(x, y, z) or "unloaded").split("[")[0].replace("minecraft:", "")] += 1
             rec["shell_top_bottom"] = dict(shell.most_common(6))
+            # cells added by a taller proposal (above the Stage 24-C height) that the template leaves empty: terrain intrusion check
+            base_h = int(load_nbt(S24B / m / "restored.nbt")["size"][1])
+            if size[1] > base_h:
+                extra = Counter()
+                for x in range(bb[0], bb[3] + 1):
+                    for y in range(bb[1] + base_h, bb[4] + 1):
+                        for z in range(bb[2], bb[5] + 1):
+                            if (x, y, z) not in template_cells:
+                                extra[(world.block(x, y, z) or "unloaded").split("[")[0].replace("minecraft:", "")] += 1
+                rec["expansion_layers"] = {"from_y": bb[1] + base_h, "to_y": bb[4], "unspecified_fill": dict(extra.most_common(8)),
+                                           "solid_terrain_cells": sum(v for k, v in extra.items() if k not in ("air", "cave_air", "void_air", "water", "unloaded", "sculk_vein", "glow_lichen", "vine"))}
             rec["bb_y_range"] = [bb[1], bb[4]]
         res["modules"].append(rec)
     return res
@@ -194,11 +205,12 @@ def main():
     ap.add_argument("--seeds", type=int, nargs="+", required=True)
     ap.add_argument("--src", default=None)
     ap.add_argument("--out", default="worldgen-analysis.json")
+    ap.add_argument("--variant", default="candidate")
     a = ap.parse_args()
     src = Path(a.src) if a.src else S24B
     out = []
     for s in a.seeds:
-        r = analyse_seed(s, src)
+        r = analyse_seed(s, src, a.variant)
         if r:
             out.append(r)
             mods = Counter(m["module"] for m in r["modules"])

@@ -1,0 +1,651 @@
+{
+ "module": "medium_ruin_2",
+ "steps": [
+  {
+   "name": "tp_outside",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    237,
+    -60,
+    105
+   ]
+  },
+  {
+   "name": "walk_to_door_front",
+   "type": "goto",
+   "start": [
+    237,
+    -60,
+    105
+   ],
+   "end": [
+    239.5,
+    -60,
+    105.5
+   ],
+   "horizontal_error": 0,
+   "moved": 2,
+   "outcome": "reached",
+   "seconds": 0.9,
+   "ok": true
+  },
+  {
+   "name": "spruce_door",
+   "type": "door",
+   "before": false,
+   "after": true,
+   "ok": true
+  },
+  {
+   "name": "manual_walk_through_open_door",
+   "type": "walk",
+   "start": [
+    239.5,
+    -60,
+    105.5
+   ],
+   "end": [
+    248.13,
+    -56,
+    105.5
+   ],
+   "dy": 4,
+   "moved": 8.63,
+   "ok": true
+  },
+  {
+   "name": "walk_to_entry_inside",
+   "type": "goto",
+   "start": [
+    248,
+    -56,
+    105
+   ],
+   "end": [
+    241.69,
+    -60,
+    105.5
+   ],
+   "horizontal_error": 0.19,
+   "moved": 6.44,
+   "outcome": "reached",
+   "seconds": 2.9,
+   "ok": true
+  },
+  {
+   "name": "manual_walk_out_through_door_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    241,
+    -60,
+    105
+   ]
+  },
+  {
+   "name": "manual_walk_out_through_door",
+   "type": "walk",
+   "start": [
+    241.5,
+    -60,
+    105.5
+   ],
+   "end": [
+    232.01,
+    -60,
+    105.5
+   ],
+   "dy": 0,
+   "moved": 9.49,
+   "ok": true
+  },
+  {
+   "name": "door_front_after_exit",
+   "type": "goto",
+   "start": [
+    232,
+    -60,
+    105
+   ],
+   "end": [
+    239.3,
+    -60,
+    105.5
+   ],
+   "horizontal_error": 0.2,
+   "moved": 7.29,
+   "outcome": "reached",
+   "seconds": 2.1,
+   "ok": true
+  },
+  {
+   "name": "spruce_door",
+   "type": "door",
+   "before": true,
+   "after": false,
+   "ok": true
+  },
+  {
+   "name": "spruce_door",
+   "type": "door",
+   "before": false,
+   "after": true,
+   "ok": true
+  },
+  {
+   "name": "re_enter_manual",
+   "type": "walk",
+   "start": [
+    239.3,
+    -60,
+    105.5
+   ],
+   "end": [
+    243.61,
+    -59.5,
+    105.5
+   ],
+   "dy": 0.5,
+   "moved": 4.31,
+   "ok": true
+  },
+  {
+   "name": "re_enter",
+   "type": "goto",
+   "start": [
+    243,
+    -60,
+    105
+   ],
+   "end": [
+    241.7,
+    -60,
+    105.5
+   ],
+   "horizontal_error": 0.2,
+   "moved": 1.92,
+   "outcome": "reached",
+   "seconds": 0.9,
+   "ok": true
+  },
+  {
+   "name": "bed0_[11, 1, 7]_reach",
+   "type": "goto",
+   "start": [
+    241,
+    -60,
+    105
+   ],
+   "end": [
+    252.5,
+    -60,
+    107.5
+   ],
+   "horizontal_error": 0,
+   "moved": 10.99,
+   "outcome": "reached",
+   "seconds": 3.1,
+   "ok": true
+  },
+  {
+   "name": "bed0_night",
+   "type": "cmd",
+   "ok": true
+  },
+  {
+   "name": "bed0_sleep",
+   "type": "sleep",
+   "ok": true,
+   "bed": "gray_bed"
+  },
+  {
+   "name": "barrel_[3, 1, 9]_reach",
+   "type": "goto",
+   "start": [
+    252,
+    -60,
+    107
+   ],
+   "end": [
+    244.5,
+    -60,
+    109.5
+   ],
+   "horizontal_error": 0,
+   "moved": 8.25,
+   "outcome": "reached",
+   "seconds": 7.5,
+   "ok": true
+  },
+  {
+   "name": "barrel_[3, 1, 9]_open",
+   "type": "container",
+   "ok": true,
+   "block": "barrel",
+   "slots": 27,
+   "items": []
+  },
+  {
+   "name": "stairs_tp_foot",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    243,
+    -60,
+    105
+   ]
+  },
+  {
+   "name": "stairs_walk_up_east",
+   "type": "walk",
+   "start": [
+    243.5,
+    -60,
+    105.5
+   ],
+   "end": [
+    254.7,
+    -56,
+    105.5
+   ],
+   "dy": 4,
+   "moved": 11.2,
+   "ok": true
+  },
+  {
+   "name": "stairs_tp_foot_again",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    243,
+    -60,
+    105
+   ]
+  },
+  {
+   "name": "stairs_walk_up_east_with_jump",
+   "type": "walk",
+   "start": [
+    243.5,
+    -60,
+    105.5
+   ],
+   "end": [
+    254.7,
+    -56,
+    105.5
+   ],
+   "dy": 4,
+   "moved": 11.2,
+   "ok": true
+  },
+  {
+   "name": "upper_bed1_[11, 5, 3]_reach",
+   "type": "goto",
+   "start": [
+    254,
+    -56,
+    105
+   ],
+   "end": [
+    252.5,
+    -56,
+    103.5
+   ],
+   "horizontal_error": 0,
+   "moved": 2.97,
+   "outcome": "reached",
+   "seconds": 1.1,
+   "ok": true
+  },
+  {
+   "name": "upper_bed1_night",
+   "type": "cmd",
+   "ok": true
+  },
+  {
+   "name": "upper_bed1_sleep",
+   "type": "sleep",
+   "ok": true,
+   "bed": "gray_bed"
+  },
+  {
+   "name": "upper_barrel_[13, 5, 8]_reach",
+   "type": "goto",
+   "start": [
+    252,
+    -56,
+    103
+   ],
+   "end": [
+    254.51,
+    -56,
+    108.33
+   ],
+   "horizontal_error": 0.17,
+   "moved": 5.23,
+   "outcome": "reached",
+   "seconds": 1.7,
+   "ok": true,
+   "retried_after_zero_movement": true
+  },
+  {
+   "name": "upper_barrel_[13, 5, 8]_open",
+   "type": "container",
+   "ok": true,
+   "block": "barrel",
+   "slots": 27,
+   "items": []
+  },
+  {
+   "name": "upstairs_tp_landing",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    248,
+    -56,
+    105
+   ]
+  },
+  {
+   "name": "stairs_walk_down_west",
+   "type": "walk",
+   "start": [
+    248.5,
+    -56,
+    105.5
+   ],
+   "end": [
+    235.59,
+    -60,
+    105.5
+   ],
+   "dy": -4,
+   "moved": 12.91,
+   "ok": true
+  }
+ ],
+ "events": [
+  "chat: Teleported S24C_medium_r to 237.500000, -60.000000, 105.500000",
+  "trace manual_walk_through_open_door [[240.33,-60],[241.4,-60],[242.48,-60],[243.34,-59.5],[244.64,-59],[245.72,-57.5],[246.8,-56.5],[247.87,-56]]",
+  "chat: Teleported S24C_medium_r to 241.500000, -60.000000, 105.500000",
+  "trace manual_walk_out_through_door [[240.67,-60],[239.6,-60],[238.52,-60],[237.44,-60],[236.58,-60],[235.5,-60],[234.42,-60],[233.34,-60],[232.26,-60]]",
+  "trace re_enter_manual [[240.13,-60],[241.2,-60],[242.28,-60],[243.36,-59.5]]",
+  "chat: Set minecraft:overworld to time marker minecraft:night",
+  "chat: Respawn point set",
+  "chat: Sleeping through this night",
+  "actionbar: Sleeping through this night",
+  "chat: Teleported S24C_medium_r to 243.500000, -60.000000, 105.500000",
+  "trace stairs_walk_up_east [[244.33,-59],[245.4,-58],[246.48,-57],[247.56,-56],[248.64,-56],[249.72,-56],[250.8,-56],[251.87,-56],[252.95,-56],[254.03,-56],[254.7,-56]]",
+  "chat: Teleported S24C_medium_r to 243.500000, -60.000000, 105.500000",
+  "trace stairs_walk_up_east_with_jump [[243.96,-58.75],[244.72,-58.5],[245.38,-57.33],[246.23,-57],[247.34,-56],[248.43,-56],[249.38,-56],[250.47,-56],[251.42,-56],[252.51,-56],[253.46,-56],[254.55,-56],[254.7,-56],[254.7,-56]]",
+  "chat: Set minecraft:overworld to time marker minecraft:night",
+  "chat: Respawn point set",
+  "chat: Sleeping through this night",
+  "actionbar: Sleeping through this night",
+  "chat: Teleported S24C_medium_r to 248.500000, -56.000000, 105.500000",
+  "trace stairs_walk_down_west [[247.67,-56],[246.68,-56.23],[245.76,-57.08],[244.89,-58.08],[243.99,-59],[243.05,-59.5],[242.09,-59.96],[241.03,-60],[239.94,-60],[238.86,-60],[238,-60],[236.92,-60],[235.84,-60]]"
+ ],
+ "final_health": 20,
+ "origin": [
+  240,
+  -61,
+  100
+ ],
+ "scenario_steps": [
+  {
+   "name": "tp_outside",
+   "type": "tp",
+   "target": [
+    237.5,
+    -60,
+    105.5
+   ]
+  },
+  {
+   "name": "walk_to_door_front",
+   "type": "goto",
+   "target": [
+    239,
+    -60,
+    105
+   ],
+   "range": 0,
+   "timeout": 30
+  },
+  {
+   "name": "door_open_from_outside",
+   "type": "door",
+   "pos": [
+    240,
+    -60,
+    105
+   ],
+   "expect": "open"
+  },
+  {
+   "name": "manual_walk_through_open_door",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 1800,
+   "min_move": 1.6
+  },
+  {
+   "name": "walk_to_entry_inside",
+   "type": "goto",
+   "target": [
+    241,
+    -60,
+    105
+   ],
+   "range": 0,
+   "timeout": 60
+  },
+  {
+   "name": "manual_walk_out_through_door_recentre",
+   "type": "tp",
+   "target": [
+    241.5,
+    -60,
+    105.5
+   ]
+  },
+  {
+   "name": "manual_walk_out_through_door",
+   "type": "walk",
+   "yaw": 1.5707963267948966,
+   "ms": 2200,
+   "min_move": 1.8
+  },
+  {
+   "name": "door_front_after_exit",
+   "type": "goto",
+   "target": [
+    239,
+    -60,
+    105
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "door_close_from_outside",
+   "type": "door",
+   "pos": [
+    240,
+    -60,
+    105
+   ],
+   "expect": "closed"
+  },
+  {
+   "name": "door_reopen",
+   "type": "door",
+   "pos": [
+    240,
+    -60,
+    105
+   ],
+   "expect": "open"
+  },
+  {
+   "name": "re_enter_manual",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 900,
+   "min_move": 0.8
+  },
+  {
+   "name": "re_enter",
+   "type": "goto",
+   "target": [
+    241,
+    -60,
+    105
+   ],
+   "range": 0,
+   "timeout": 30
+  },
+  {
+   "name": "bed0_[11, 1, 7]_reach",
+   "type": "goto",
+   "target": [
+    252,
+    -60,
+    107
+   ],
+   "range": 0,
+   "timeout": 60
+  },
+  {
+   "name": "bed0_night",
+   "type": "cmd",
+   "cmd": "time set night"
+  },
+  {
+   "name": "bed0_sleep",
+   "type": "sleep",
+   "pos": [
+    251,
+    -60,
+    107
+   ]
+  },
+  {
+   "name": "barrel_[3, 1, 9]_reach",
+   "type": "goto",
+   "target": [
+    244,
+    -60,
+    109
+   ],
+   "range": 0,
+   "timeout": 60
+  },
+  {
+   "name": "barrel_[3, 1, 9]_open",
+   "type": "container",
+   "pos": [
+    243,
+    -60,
+    109
+   ]
+  },
+  {
+   "name": "stairs_tp_foot",
+   "type": "tp",
+   "target": [
+    243.5,
+    -60,
+    105.5
+   ]
+  },
+  {
+   "name": "stairs_walk_up_east",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 2600,
+   "min_end_y": -56.05
+  },
+  {
+   "name": "stairs_tp_foot_again",
+   "type": "tp",
+   "target": [
+    243.5,
+    -60,
+    105.5
+   ]
+  },
+  {
+   "name": "stairs_walk_up_east_with_jump",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 3500,
+   "jump": true,
+   "min_end_y": -56.05
+  },
+  {
+   "name": "upper_bed1_[11, 5, 3]_reach",
+   "type": "goto",
+   "target": [
+    252,
+    -56,
+    103
+   ],
+   "range": 0,
+   "timeout": 60
+  },
+  {
+   "name": "upper_bed1_night",
+   "type": "cmd",
+   "cmd": "time set night"
+  },
+  {
+   "name": "upper_bed1_sleep",
+   "type": "sleep",
+   "pos": [
+    251,
+    -56,
+    103
+   ]
+  },
+  {
+   "name": "upper_barrel_[13, 5, 8]_reach",
+   "type": "goto",
+   "target": [
+    254,
+    -56,
+    108
+   ],
+   "range": 0,
+   "timeout": 60
+  },
+  {
+   "name": "upper_barrel_[13, 5, 8]_open",
+   "type": "container",
+   "pos": [
+    253,
+    -56,
+    108
+   ]
+  },
+  {
+   "name": "upstairs_tp_landing",
+   "type": "tp",
+   "target": [
+    248.5,
+    -56,
+    105.5
+   ]
+  },
+  {
+   "name": "stairs_walk_down_west",
+   "type": "walk",
+   "yaw": 1.5707963267948966,
+   "ms": 3200,
+   "descend": true,
+   "max_end_y": -59.9
+  }
+ ]
+}

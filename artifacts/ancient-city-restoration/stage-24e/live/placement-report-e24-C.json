@@ -1,0 +1,583 @@
+{
+ "minecraft": "26.1.2",
+ "server_jar_sha1": "97ccd4c0ed3f81bbb7bfacddd1090b0c56f9bc51",
+ "world": "flat (bedrock+3 stone, surface y=-60), peaceful, structures off",
+ "results": {
+  "large_ruin_1@0": {
+   "origin": [
+    100,
+    -60,
+    100
+   ],
+   "rotation": 0,
+   "place_output": "Loaded template \"s24c:large_ruin_1\" at 100, -60, 100",
+   "blocks_checked": 1163,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": true,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "large_ruin_1@90": {
+   "origin": [
+    100,
+    -60,
+    180
+   ],
+   "rotation": 90,
+   "place_output": "Loaded template \"s24c:large_ruin_1\" at 100, -60, 180",
+   "blocks_checked": 1163,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "large_ruin_1@180": {
+   "origin": [
+    100,
+    -60,
+    260
+   ],
+   "rotation": 180,
+   "place_output": "Loaded template \"s24c:large_ruin_1\" at 100, -60, 260",
+   "blocks_checked": 1163,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "large_ruin_1@270": {
+   "origin": [
+    100,
+    -60,
+    340
+   ],
+   "rotation": 270,
+   "place_output": "Loaded template \"s24c:large_ruin_1\" at 100, -60, 340",
+   "blocks_checked": 1163,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "medium_ruin_1@0": {
+   "origin": [
+    180,
+    -60,
+    100
+   ],
+   "rotation": 0,
+   "place_output": "Loaded template \"s24c:medium_ruin_1\" at 180, -60, 100",
+   "blocks_checked": 330,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": true,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "medium_ruin_1@90": {
+   "origin": [
+    180,
+    -60,
+    180
+   ],
+   "rotation": 90,
+   "place_output": "Loaded template \"s24c:medium_ruin_1\" at 180, -60, 180",
+   "blocks_checked": 330,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "medium_ruin_1@180": {
+   "origin": [
+    180,
+    -60,
+    260
+   ],
+   "rotation": 180,
+   "place_output": "Loaded template \"s24c:medium_ruin_1\" at 180, -60, 260",
+   "blocks_checked": 330,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "medium_ruin_1@270": {
+   "origin": [
+    180,
+    -60,
+    340
+   ],
+   "rotation": 270,
+   "place_output": "Loaded template \"s24c:medium_ruin_1\" at 180, -60, 340",
+   "blocks_checked": 330,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "medium_ruin_2@0": {
+   "origin": [
+    260,
+    -60,
+    100
+   ],
+   "rotation": 0,
+   "place_output": "Loaded template \"s24c:medium_ruin_2\" at 260, -60, 100",
+   "blocks_checked": 689,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": true,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "medium_ruin_2@90": {
+   "origin": [
+    260,
+    -60,
+    180
+   ],
+   "rotation": 90,
+   "place_output": "Loaded template \"s24c:medium_ruin_2\" at 260, -60, 180",
+   "blocks_checked": 689,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "medium_ruin_2@180": {
+   "origin": [
+    260,
+    -60,
+    260
+   ],
+   "rotation": 180,
+   "place_output": "Loaded template \"s24c:medium_ruin_2\" at 260, -60, 260",
+   "blocks_checked": 689,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "medium_ruin_2@270": {
+   "origin": [
+    260,
+    -60,
+    340
+   ],
+   "rotation": 270,
+   "place_output": "Loaded template \"s24c:medium_ruin_2\" at 260, -60, 340",
+   "blocks_checked": 689,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "small_ruin_1@0": {
+   "origin": [
+    340,
+    -60,
+    100
+   ],
+   "rotation": 0,
+   "place_output": "Loaded template \"s24c:small_ruin_1\" at 340, -60, 100",
+   "blocks_checked": 199,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": true,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "small_ruin_1@90": {
+   "origin": [
+    340,
+    -60,
+    180
+   ],
+   "rotation": 90,
+   "place_output": "Loaded template \"s24c:small_ruin_1\" at 340, -60, 180",
+   "blocks_checked": 199,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "small_ruin_1@180": {
+   "origin": [
+    340,
+    -60,
+    260
+   ],
+   "rotation": 180,
+   "place_output": "Loaded template \"s24c:small_ruin_1\" at 340, -60, 260",
+   "blocks_checked": 199,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "small_ruin_1@270": {
+   "origin": [
+    340,
+    -60,
+    340
+   ],
+   "rotation": 270,
+   "place_output": "Loaded template \"s24c:small_ruin_1\" at 340, -60, 340",
+   "blocks_checked": 199,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "small_ruin_2@0": {
+   "origin": [
+    420,
+    -60,
+    100
+   ],
+   "rotation": 0,
+   "place_output": "Loaded template \"s24c:small_ruin_2\" at 420, -60, 100",
+   "blocks_checked": 128,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": true,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "small_ruin_2@90": {
+   "origin": [
+    420,
+    -60,
+    180
+   ],
+   "rotation": 90,
+   "place_output": "Loaded template \"s24c:small_ruin_2\" at 420, -60, 180",
+   "blocks_checked": 128,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "small_ruin_2@180": {
+   "origin": [
+    420,
+    -60,
+    260
+   ],
+   "rotation": 180,
+   "place_output": "Loaded template \"s24c:small_ruin_2\" at 420, -60, 260",
+   "blocks_checked": 128,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "small_ruin_2@270": {
+   "origin": [
+    420,
+    -60,
+    340
+   ],
+   "rotation": 270,
+   "place_output": "Loaded template \"s24c:small_ruin_2\" at 420, -60, 340",
+   "blocks_checked": 128,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "sauna_1@0": {
+   "origin": [
+    500,
+    -60,
+    100
+   ],
+   "rotation": 0,
+   "place_output": "Loaded template \"s24c:sauna_1\" at 500, -60, 100",
+   "blocks_checked": 1901,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": true,
+   "expected_water": 43,
+   "water_present_after_1200_ticks": 43,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "sauna_1@90": {
+   "origin": [
+    500,
+    -60,
+    180
+   ],
+   "rotation": 90,
+   "place_output": "Loaded template \"s24c:sauna_1\" at 500, -60, 180",
+   "blocks_checked": 1901,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 43,
+   "water_present_after_1200_ticks": 43,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "sauna_1@180": {
+   "origin": [
+    500,
+    -60,
+    260
+   ],
+   "rotation": 180,
+   "place_output": "Loaded template \"s24c:sauna_1\" at 500, -60, 260",
+   "blocks_checked": 1901,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 43,
+   "water_present_after_1200_ticks": 43,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "sauna_1@270": {
+   "origin": [
+    500,
+    -60,
+    340
+   ],
+   "rotation": 270,
+   "place_output": "Loaded template \"s24c:sauna_1\" at 500, -60, 340",
+   "blocks_checked": 1901,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 43,
+   "water_present_after_1200_ticks": 43,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "large_pillar_1@0": {
+   "origin": [
+    580,
+    -60,
+    100
+   ],
+   "rotation": 0,
+   "place_output": "Loaded template \"s24c:large_pillar_1\" at 580, -60, 100",
+   "blocks_checked": 320,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": true,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "large_pillar_1@90": {
+   "origin": [
+    580,
+    -60,
+    180
+   ],
+   "rotation": 90,
+   "place_output": "Loaded template \"s24c:large_pillar_1\" at 580, -60, 180",
+   "blocks_checked": 320,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "large_pillar_1@180": {
+   "origin": [
+    580,
+    -60,
+    260
+   ],
+   "rotation": 180,
+   "place_output": "Loaded template \"s24c:large_pillar_1\" at 580, -60, 260",
+   "blocks_checked": 320,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "large_pillar_1@270": {
+   "origin": [
+    580,
+    -60,
+    340
+   ],
+   "rotation": 270,
+   "place_output": "Loaded template \"s24c:large_pillar_1\" at 580, -60, 340",
+   "blocks_checked": 320,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "medium_pillar_1@0": {
+   "origin": [
+    660,
+    -60,
+    100
+   ],
+   "rotation": 0,
+   "place_output": "Loaded template \"s24c:medium_pillar_1\" at 660, -60, 100",
+   "blocks_checked": 286,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": true,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "medium_pillar_1@90": {
+   "origin": [
+    660,
+    -60,
+    180
+   ],
+   "rotation": 90,
+   "place_output": "Loaded template \"s24c:medium_pillar_1\" at 660, -60, 180",
+   "blocks_checked": 286,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "medium_pillar_1@180": {
+   "origin": [
+    660,
+    -60,
+    260
+   ],
+   "rotation": 180,
+   "place_output": "Loaded template \"s24c:medium_pillar_1\" at 660, -60, 260",
+   "blocks_checked": 286,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  },
+  "medium_pillar_1@270": {
+   "origin": [
+    660,
+    -60,
+    340
+   ],
+   "rotation": 270,
+   "place_output": "Loaded template \"s24c:medium_pillar_1\" at 660, -60, 340",
+   "blocks_checked": 286,
+   "mismatches": 0,
+   "mismatch_list": [],
+   "block_entities_missing": [],
+   "exact_compare": false,
+   "expected_water": 0,
+   "water_present_after_1200_ticks": 0,
+   "stray_water_blocks": 0,
+   "stray_water_list": []
+  }
+ }
+}

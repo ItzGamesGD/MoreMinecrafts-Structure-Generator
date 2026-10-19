@@ -1,0 +1,70 @@
+name: Stage 24-E roof alternatives (proposals only)
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - stage-24e-residential-roof-alternatives
+    paths:
+      - "tools/stage24e/**"
+      - "tests/test_stage24e_proposals.py"
+      - ".github/workflows/stage24e-roof-alternatives.yml"
+
+permissions:
+  contents: read
+
+env:
+  MC_CLIENT_URL: "https://piston-data.mojang.com/v1/objects/4e618f09a0c649dde3fdf829df443ce0b8831e65/client.jar"
+  MC_CLIENT_SHA1: "4e618f09a0c649dde3fdf829df443ce0b8831e65"
+  MC_ASSETS: ${{ github.workspace }}/.mc/x/assets
+  S24D_BUILD: ${{ github.workspace }}/.s24d-build
+
+jobs:
+  proposals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install pinned mcbuild environment
+        working-directory: vendor/mcbuild
+        run: uv sync --frozen --extra dev
+      - name: Install renderer dependencies and headless Chromium
+        working-directory: tools/stage24d
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright-core install --with-deps chromium
+      - name: Download and verify the Minecraft 26.1.2 client assets
+        run: |
+          mkdir -p .mc/x && curl -fsSL "$MC_CLIENT_URL" -o .mc/client.jar
+          echo "$MC_CLIENT_SHA1  .mc/client.jar" | sha1sum -c -
+          cd .mc/x && unzip -q ../client.jar 'assets/minecraft/blockstates/*' 'assets/minecraft/models/block/*' 'assets/minecraft/textures/block/*' \
+            'assets/minecraft/textures/entity/bed/*' 'assets/minecraft/textures/entity/chest/normal.png' 'assets/minecraft/textures/entity/skeleton/skeleton.png'
+      - name: Stage 24-B/24-C/24-E tests (baseline regressions + proposal functional checks)
+        run: vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24b_*.py tests/test_stage24c_regressions.py tests/test_stage24e_proposals.py -q
+      - name: Build proposals, static checks and comparison renders
+        run: |
+          vendor/mcbuild/.venv/bin/python tools/stage24e/check.py
+          vendor/mcbuild/.venv/bin/python tools/stage24e/render_options.py
+          vendor/mcbuild/.venv/bin/python tools/stage24e/build_review.py
+      - name: Verify the Stage 24-C candidates were not modified
+        run: git diff --exit-code -- artifacts/ancient-city-restoration/stage-24b
+      - name: Upload review package
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage-24e-roof-alternatives
+          path: |
+            artifacts/ancient-city-restoration/stage-24e/stage-24e-roof-alternatives.zip
+            artifacts/ancient-city-restoration/stage-24e/review
+            artifacts/ancient-city-restoration/stage-24e/proposals
+            artifacts/ancient-city-restoration/stage-24e/PROPOSALS.md
+            artifacts/ancient-city-restoration/stage-24e/static-checks.json
+          if-no-files-found: error
