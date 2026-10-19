@@ -30,6 +30,16 @@ public final class GuardStats {
     public final AtomicLong oracleNoWrite = new AtomicLong();
     /** ORACLE: piece boxes could not be read, so the attempt is unclassified. */
     public final AtomicLong oracleUnknown = new AtomicLong();
+    /** ORACLE confusion matrix: decision (cancel?) of the REFINED guard vs. whether vanilla changed a block inside a protected piece box. */
+    public final AtomicLong refinedTp = new AtomicLong();
+    public final AtomicLong refinedFp = new AtomicLong();
+    public final AtomicLong refinedFn = new AtomicLong();
+    public final AtomicLong refinedTn = new AtomicLong();
+    /** Same matrix for the N7-A reach box. */
+    public final AtomicLong n7aTp = new AtomicLong();
+    public final AtomicLong n7aFp = new AtomicLong();
+    public final AtomicLong n7aFn = new AtomicLong();
+    public final AtomicLong n7aTn = new AtomicLong();
     private final List<String> events = new ArrayList<>();
 
     GuardStats(String feature) {

@@ -22,7 +22,14 @@ public abstract class MonsterRoomFeatureMixin implements GuardMarker {
     @Inject(method = "place", at = @At("HEAD"), cancellable = true, require = 1)
     private void sg01spike$guard(WorldGenLevel level, ChunkGenerator generator, RandomSource random, BlockPos origin, CallbackInfoReturnable<Boolean> cir) {
         if (Guard.ORACLE_MONSTER_ROOM) {
-            MonsterRoomOracle.begin(Guard.MONSTER_ROOM, level, origin);
+            List<BoundingBox> refined;
+            Probe.enter();
+            try {
+                refined = MonsterRoomGeometry.passingBoxes(level, origin);
+            } finally {
+                Probe.exit();
+            }
+            MonsterRoomOracle.begin(Guard.MONSTER_ROOM, level, origin, refined);
             return;
         }
         List<BoundingBox> reaches;

@@ -101,6 +101,17 @@ public final class Guard {
         }
     }
 
+    /** Side-effect-free decision for the oracle: true if the reaches intersect a protected piece or the structure data is unavailable. */
+    public static boolean collides(WorldGenLevel level, List<BoundingBox> reaches) {
+        if (reaches.isEmpty() || !(level instanceof WorldGenRegion region)) return false;
+        Probe.enter();
+        try {
+            return scan(region, reaches, false).verdict != null;
+        } finally {
+            Probe.exit();
+        }
+    }
+
     /** Protected piece boxes intersecting {@code box} (for the oracle). Returns null if the structure data is unavailable. */
     static List<BoundingBox> pieceBoxes(WorldGenRegion region, BoundingBox box) {
         Finding f = scan(region, List.of(box), true);

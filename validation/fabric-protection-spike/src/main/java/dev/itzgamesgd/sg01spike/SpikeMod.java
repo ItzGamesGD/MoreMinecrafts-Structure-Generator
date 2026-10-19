@@ -47,9 +47,10 @@ public final class SpikeMod implements ModInitializer {
     private static String stats(GuardStats s) {
         List<String> events = s.events().stream().map(e -> "\"" + e.replace("\\", "\\\\").replace("\"", "'") + "\"").collect(Collectors.toList());
         return String.format("\"%s\":{\"attempts\":%d,\"fast_path\":%d,\"collisions\":%d,\"unavailable\":%d,\"cancelled\":%d,\"would_cancel\":%d,\"not_worldgen\":%d,"
-                        + "\"clear\":%d,\"no_write\":%d,\"oracle_non_air_write\":%d,\"oracle_no_write\":%d,\"oracle_unknown\":%d,\"events\":[%s]}",
+                        + "\"clear\":%d,\"no_write\":%d,\"oracle_non_air_write\":%d,\"oracle_no_write\":%d,\"oracle_unknown\":%d,\"confusion\":{\"refined\":{\"tp\":%d,\"fp\":%d,\"fn\":%d,\"tn\":%d},\"n7a\":{\"tp\":%d,\"fp\":%d,\"fn\":%d,\"tn\":%d}},\"events\":[%s]}",
                 s.feature, s.attempts.get(), s.fastPath.get(), s.collisions.get(), s.unavailable.get(), s.cancelled.get(), s.wouldCancel.get(),
-                s.notWorldgen.get(), s.clear.get(), s.noWrite.get(), s.oracleNonAirWrite.get(), s.oracleNoWrite.get(), s.oracleUnknown.get(), String.join(",", events));
+                s.notWorldgen.get(), s.clear.get(), s.noWrite.get(), s.oracleNonAirWrite.get(), s.oracleNoWrite.get(), s.oracleUnknown.get(), s.refinedTp.get(), s.refinedFp.get(), s.refinedFn.get(), s.refinedTn.get(),
+                s.n7aTp.get(), s.n7aFp.get(), s.n7aFn.get(), s.n7aTn.get(), String.join(",", events));
     }
 
     private static void writeReport() {
