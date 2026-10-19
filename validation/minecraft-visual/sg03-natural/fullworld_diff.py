@@ -5,6 +5,7 @@ Compares every block state and block entity of every chunk present in both regio
   protected      : inside a protected piece box (vanilla damage the guard prevents; checked against the template by the lab)
   cancelled      : outside protected boxes, inside a reach box of a feature the guard cancelled in the GUARDED run (intended)
   downstream     : outside those, within DOWNSTREAM margin of a cancelled reach (candidate for changed random/neighbour data)
+  nondeterministic: positions that also differ between two vanilla runs of the same unit (baseline generation noise; optional --noise-a/--noise-b)
   unexplained    : everything else (must be zero or explained)
 Block entities are compared as (x, y, z, id) sets and classified the same way.
 """
@@ -113,19 +114,33 @@ def classify(x, y, z, protected, cancel) -> str:
     return "unexplained"
 
 
+def block_differences(base: Path, other: Path, coords):
+    for cx, cz in coords:
+        ca, cb = Chunk(read_chunk(base, cx, cz)), Chunk(read_chunk(other, cx, cz))
+        for y, i, ia, ib in diff_chunk(ca, cb):
+            yield cx * 16 + (i & 15), y, cz * 16 + ((i >> 4) & 15), ia, ib
+
+
 def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--base", type=Path, required=True, help="region dir of the reference run (e.g. vanilla)")
     p.add_argument("--other", type=Path, required=True, help="region dir of the compared run")
     p.add_argument("--other-lab", type=Path, required=True, help="lab.json of the compared run (protected boxes, cancellation events)")
     p.add_argument("--out", type=Path, required=True)
+    p.add_argument("--noise-a", type=Path, help="region dir of a second vanilla run of the same unit")
+    p.add_argument("--noise-b", type=Path, help="region dir of a third vanilla run of the same unit")
     a = p.parse_args()
     lab = json.loads(a.other_lab.read_text())
     protected = boxes_from_lab(lab)
     cancel = cancelled_reaches(lab)
     coords = sorted(set(chunk_coords(a.base)) & set(chunk_coords(a.other)))
+    noise = set()
+    if a.noise_a and a.noise_b:
+        noise_coords = sorted(set(chunk_coords(a.noise_a)) & set(chunk_coords(a.noise_b)) & set(coords))
+        noise = {(x, y, z) for x, y, z, _, _ in block_differences(a.noise_a, a.noise_b, noise_coords)}
     totals = Counter()
     block_pairs = Counter()
+    noise_hits = 0
     unexplained = []
     be_totals = Counter()
     per_chunk = {}
@@ -135,7 +150,11 @@ def main() -> None:
         for y, i, ia, ib in diff_chunk(ca, cb):
             x = cx * 16 + (i & 15)
             z = cz * 16 + ((i >> 4) & 15)
-            cat = classify(x, y, z, protected, cancel)
+            if (x, y, z) in noise:
+                cat = "nondeterministic"
+                noise_hits += 1
+            else:
+                cat = classify(x, y, z, protected, cancel)
             totals[cat] += 1
             n_chunk[cat] += 1
             block_pairs[(cat, INTER_INV[ia], INTER_INV[ib])] += 1
@@ -153,6 +172,7 @@ def main() -> None:
         "top_block_pairs": [[cat, a_, b_, n] for (cat, a_, b_), n in block_pairs.most_common(40)],
         "unexplained_samples": unexplained, "per_chunk": per_chunk,
         "protected_boxes": len(protected), "cancelled_reach_boxes": len(cancel), "downstream_margin": DOWNSTREAM,
+        "noise_positions_from_vanilla_pair": len(noise), "differences_at_noise_positions": noise_hits,
     }
     a.out.write_text(json.dumps(report, indent=1) + "\n")
     print(json.dumps({k: report[k] for k in ("chunks_compared", "block_differences", "block_entity_differences")}))
