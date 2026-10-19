@@ -1,0 +1,859 @@
+[
+  {
+    "module": "large_ruin_1",
+    "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/large_ruin_1.nbt",
+    "source_blob_sha1": "3ce04aa7cd68ab706ed7e7910cbf8453f090fb39",
+    "source_bytes": 399,
+    "size_xyz": [
+      17,
+      5,
+      17
+    ],
+    "block_count": 38,
+    "palette_size": 3,
+    "material_counts": {
+      "minecraft:cobbled_deepslate": 34,
+      "minecraft:deepslate_bricks": 3,
+      "minecraft:jigsaw": 1
+    },
+    "jigsaws": [
+      {
+        "pos": [
+          0,
+          0,
+          7
+        ],
+        "block": "minecraft:jigsaw",
+        "properties": {
+          "orientation": "west_up"
+        },
+        "nbt": {
+          "joint": "rollable",
+          "final_state": "minecraft:cobbled_deepslate",
+          "name": "minecraft:connect_structure",
+          "pool": "minecraft:empty",
+          "id": "minecraft:jigsaw",
+          "target": "minecraft:empty"
+        }
+      }
+    ],
+    "render": {
+      "generated": true,
+      "method": "mcbuild color voxel preview; source block states preserved in report but non-cube block shapes are approximated as cubes",
+      "error": null,
+      "file": "original-four-view.png",
+      "views": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "stats": {
+        "dims": [
+          17,
+          3,
+          17
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            16,
+            2,
+            16
+          ]
+        ],
+        "block_count": 38,
+        "top_materials": [
+          [
+            "cobbled_deepslate",
+            34
+          ],
+          [
+            "deepslate_bricks",
+            3
+          ],
+          [
+            "jigsaw",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "module": "medium_ruin_1",
+    "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/medium_ruin_1.nbt",
+    "source_blob_sha1": "c476ea76624d25ac483f723c55ef39695ac86aee",
+    "source_bytes": 327,
+    "size_xyz": [
+      8,
+      5,
+      13
+    ],
+    "block_count": 20,
+    "palette_size": 2,
+    "material_counts": {
+      "minecraft:cobbled_deepslate": 19,
+      "minecraft:jigsaw": 1
+    },
+    "jigsaws": [
+      {
+        "pos": [
+          0,
+          0,
+          6
+        ],
+        "block": "minecraft:jigsaw",
+        "properties": {
+          "orientation": "west_up"
+        },
+        "nbt": {
+          "joint": "rollable",
+          "final_state": "minecraft:structure_void",
+          "name": "minecraft:connect_structure",
+          "pool": "minecraft:empty",
+          "id": "minecraft:jigsaw",
+          "target": "minecraft:empty"
+        }
+      }
+    ],
+    "render": {
+      "generated": true,
+      "method": "mcbuild color voxel preview; source block states preserved in report but non-cube block shapes are approximated as cubes",
+      "error": null,
+      "file": "original-four-view.png",
+      "views": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "stats": {
+        "dims": [
+          8,
+          3,
+          13
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            2,
+            12
+          ]
+        ],
+        "block_count": 20,
+        "top_materials": [
+          [
+            "cobbled_deepslate",
+            19
+          ],
+          [
+            "jigsaw",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "module": "medium_ruin_2",
+    "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/medium_ruin_2.nbt",
+    "source_blob_sha1": "0f8b01b7aff4bd43c8e5ecc18292940ca648bf03",
+    "source_bytes": 354,
+    "size_xyz": [
+      16,
+      5,
+      11
+    ],
+    "block_count": 29,
+    "palette_size": 2,
+    "material_counts": {
+      "minecraft:cobbled_deepslate": 28,
+      "minecraft:jigsaw": 1
+    },
+    "jigsaws": [
+      {
+        "pos": [
+          0,
+          0,
+          5
+        ],
+        "block": "minecraft:jigsaw",
+        "properties": {
+          "orientation": "west_up"
+        },
+        "nbt": {
+          "joint": "rollable",
+          "final_state": "minecraft:cobbled_deepslate",
+          "name": "minecraft:connect_structure",
+          "pool": "minecraft:empty",
+          "id": "minecraft:jigsaw",
+          "target": "minecraft:empty"
+        }
+      }
+    ],
+    "render": {
+      "generated": true,
+      "method": "mcbuild color voxel preview; source block states preserved in report but non-cube block shapes are approximated as cubes",
+      "error": null,
+      "file": "original-four-view.png",
+      "views": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "stats": {
+        "dims": [
+          16,
+          3,
+          11
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            15,
+            2,
+            10
+          ]
+        ],
+        "block_count": 29,
+        "top_materials": [
+          [
+            "cobbled_deepslate",
+            28
+          ],
+          [
+            "jigsaw",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "module": "small_ruin_1",
+    "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/small_ruin_1.nbt",
+    "source_blob_sha1": "b1b9c2ac7c4b06a1a80e53adf4dd4fd706f2a799",
+    "source_bytes": 315,
+    "size_xyz": [
+      7,
+      5,
+      8
+    ],
+    "block_count": 17,
+    "palette_size": 2,
+    "material_counts": {
+      "minecraft:cobbled_deepslate": 16,
+      "minecraft:jigsaw": 1
+    },
+    "jigsaws": [
+      {
+        "pos": [
+          0,
+          0,
+          3
+        ],
+        "block": "minecraft:jigsaw",
+        "properties": {
+          "orientation": "west_up"
+        },
+        "nbt": {
+          "joint": "rollable",
+          "final_state": "minecraft:structure_void",
+          "name": "minecraft:connect_structure",
+          "pool": "minecraft:empty",
+          "id": "minecraft:jigsaw",
+          "target": "minecraft:empty"
+        }
+      }
+    ],
+    "render": {
+      "generated": true,
+      "method": "mcbuild color voxel preview; source block states preserved in report but non-cube block shapes are approximated as cubes",
+      "error": null,
+      "file": "original-four-view.png",
+      "views": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "stats": {
+        "dims": [
+          7,
+          3,
+          8
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            2,
+            7
+          ]
+        ],
+        "block_count": 17,
+        "top_materials": [
+          [
+            "cobbled_deepslate",
+            16
+          ],
+          [
+            "jigsaw",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "module": "small_ruin_2",
+    "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/small_ruin_2.nbt",
+    "source_blob_sha1": "34d14f95c92675e6d97d212baf88e84c4f506fbd",
+    "source_bytes": 312,
+    "size_xyz": [
+      8,
+      5,
+      4
+    ],
+    "block_count": 16,
+    "palette_size": 2,
+    "material_counts": {
+      "minecraft:cobbled_deepslate": 15,
+      "minecraft:jigsaw": 1
+    },
+    "jigsaws": [
+      {
+        "pos": [
+          0,
+          0,
+          2
+        ],
+        "block": "minecraft:jigsaw",
+        "properties": {
+          "orientation": "west_up"
+        },
+        "nbt": {
+          "joint": "rollable",
+          "final_state": "minecraft:cobbled_deepslate",
+          "name": "minecraft:connect_structure",
+          "pool": "minecraft:empty",
+          "id": "minecraft:jigsaw",
+          "target": "minecraft:empty"
+        }
+      }
+    ],
+    "render": {
+      "generated": true,
+      "method": "mcbuild color voxel preview; source block states preserved in report but non-cube block shapes are approximated as cubes",
+      "error": null,
+      "file": "original-four-view.png",
+      "views": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "stats": {
+        "dims": [
+          8,
+          3,
+          4
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            7,
+            2,
+            3
+          ]
+        ],
+        "block_count": 16,
+        "top_materials": [
+          [
+            "cobbled_deepslate",
+            15
+          ],
+          [
+            "jigsaw",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "module": "sauna_1",
+    "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/sauna_1.nbt",
+    "source_blob_sha1": "ef56d35f13f3acb8d62095ccc2f7e85d58d253b1",
+    "source_bytes": 6958,
+    "size_xyz": [
+      29,
+      10,
+      37
+    ],
+    "block_count": 1847,
+    "palette_size": 42,
+    "material_counts": {
+      "minecraft:deepslate_bricks": 1038,
+      "minecraft:deepslate_tiles": 342,
+      "minecraft:cracked_deepslate_bricks": 157,
+      "minecraft:deepslate_tile_stairs": 86,
+      "minecraft:deepslate": 69,
+      "minecraft:chiseled_deepslate": 46,
+      "minecraft:water": 43,
+      "minecraft:white_candle": 31,
+      "minecraft:cracked_deepslate_tiles": 23,
+      "minecraft:jigsaw": 5,
+      "minecraft:deepslate_tile_slab": 3,
+      "minecraft:chest": 3,
+      "minecraft:deepslate_brick_slab": 1
+    },
+    "jigsaws": [
+      {
+        "pos": [
+          5,
+          0,
+          26
+        ],
+        "block": "minecraft:jigsaw",
+        "properties": {
+          "orientation": "up_east"
+        },
+        "nbt": {
+          "joint": "rollable",
+          "final_state": "minecraft:deepslate",
+          "name": "minecraft:bottom",
+          "pool": "minecraft:ancient_city/sculk",
+          "id": "minecraft:jigsaw",
+          "target": "minecraft:bottom"
+        }
+      },
+      {
+        "pos": [
+          8,
+          0,
+          12
+        ],
+        "block": "minecraft:jigsaw",
+        "properties": {
+          "orientation": "up_west"
+        },
+        "nbt": {
+          "joint": "rollable",
+          "final_state": "minecraft:deepslate",
+          "name": "minecraft:bottom",
+          "pool": "minecraft:ancient_city/sculk",
+          "id": "minecraft:jigsaw",
+          "target": "minecraft:bottom"
+        }
+      },
+      {
+        "pos": [
+          18,
+          0,
+          33
+        ],
+        "block": "minecraft:jigsaw",
+        "properties": {
+          "orientation": "up_west"
+        },
+        "nbt": {
+          "joint": "rollable",
+          "final_state": "minecraft:deepslate",
+          "name": "minecraft:bottom",
+          "pool": "minecraft:ancient_city/sculk",
+          "id": "minecraft:jigsaw",
+          "target": "minecraft:bottom"
+        }
+      },
+      {
+        "pos": [
+          21,
+          0,
+          9
+        ],
+        "block": "minecraft:jigsaw",
+        "properties": {
+          "orientation": "up_west"
+        },
+        "nbt": {
+          "joint": "rollable",
+          "final_state": "minecraft:deepslate",
+          "name": "minecraft:bottom",
+          "pool": "minecraft:ancient_city/sculk",
+          "id": "minecraft:jigsaw",
+          "target": "minecraft:bottom"
+        }
+      },
+      {
+        "pos": [
+          28,
+          0,
+          21
+        ],
+        "block": "minecraft:jigsaw",
+        "properties": {
+          "orientation": "east_up"
+        },
+        "nbt": {
+          "joint": "rollable",
+          "final_state": "minecraft:structure_void",
+          "name": "minecraft:connect_structure",
+          "pool": "minecraft:empty",
+          "id": "minecraft:jigsaw",
+          "target": "minecraft:empty"
+        }
+      }
+    ],
+    "render": {
+      "generated": true,
+      "method": "mcbuild color voxel preview; source block states preserved in report but non-cube block shapes are approximated as cubes",
+      "error": null,
+      "file": "original-four-view.png",
+      "views": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "stats": {
+        "dims": [
+          29,
+          9,
+          37
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            28,
+            8,
+            36
+          ]
+        ],
+        "block_count": 1847,
+        "top_materials": [
+          [
+            "deepslate_bricks",
+            1038
+          ],
+          [
+            "deepslate_tiles",
+            342
+          ],
+          [
+            "cracked_deepslate_bricks",
+            157
+          ],
+          [
+            "deepslate",
+            69
+          ],
+          [
+            "chiseled_deepslate",
+            46
+          ],
+          [
+            "water",
+            43
+          ],
+          [
+            "cracked_deepslate_tiles",
+            23
+          ],
+          [
+            "white_candle",
+            12
+          ],
+          [
+            "deepslate_tile_stairs",
+            12
+          ],
+          [
+            "deepslate_tile_stairs",
+            9
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "module": "large_pillar_1",
+    "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/large_pillar_1.nbt",
+    "source_blob_sha1": "4d619829f48909054996945d01a77d949946e678",
+    "source_bytes": 1478,
+    "size_xyz": [
+      6,
+      15,
+      6
+    ],
+    "block_count": 320,
+    "palette_size": 23,
+    "material_counts": {
+      "minecraft:deepslate": 135,
+      "minecraft:polished_deepslate": 84,
+      "minecraft:deepslate_tile_stairs": 64,
+      "minecraft:deepslate_tiles": 20,
+      "minecraft:chiseled_deepslate": 16,
+      "minecraft:jigsaw": 1
+    },
+    "jigsaws": [
+      {
+        "pos": [
+          5,
+          0,
+          2
+        ],
+        "block": "minecraft:jigsaw",
+        "properties": {
+          "orientation": "east_up"
+        },
+        "nbt": {
+          "joint": "rollable",
+          "final_state": "minecraft:structure_void",
+          "name": "minecraft:connect_structure",
+          "pool": "minecraft:empty",
+          "id": "minecraft:jigsaw",
+          "target": "minecraft:empty"
+        }
+      }
+    ],
+    "render": {
+      "generated": true,
+      "method": "mcbuild color voxel preview; source block states preserved in report but non-cube block shapes are approximated as cubes",
+      "error": null,
+      "file": "original-four-view.png",
+      "views": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "stats": {
+        "dims": [
+          6,
+          15,
+          6
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            14,
+            5
+          ]
+        ],
+        "block_count": 320,
+        "top_materials": [
+          [
+            "deepslate",
+            135
+          ],
+          [
+            "polished_deepslate",
+            84
+          ],
+          [
+            "deepslate_tiles",
+            20
+          ],
+          [
+            "chiseled_deepslate",
+            16
+          ],
+          [
+            "deepslate_tile_stairs",
+            6
+          ],
+          [
+            "deepslate_tile_stairs",
+            6
+          ],
+          [
+            "deepslate_tile_stairs",
+            6
+          ],
+          [
+            "deepslate_tile_stairs",
+            6
+          ],
+          [
+            "deepslate_tile_stairs",
+            6
+          ],
+          [
+            "deepslate_tile_stairs",
+            6
+          ]
+        ]
+      }
+    }
+  },
+  {
+    "module": "medium_pillar_1",
+    "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/medium_pillar_1.nbt",
+    "source_blob_sha1": "38ece3d8a57c9fed3f2a050ffd21b5b636121bbe",
+    "source_bytes": 961,
+    "size_xyz": [
+      7,
+      11,
+      8
+    ],
+    "block_count": 130,
+    "palette_size": 21,
+    "material_counts": {
+      "minecraft:deepslate": 75,
+      "minecraft:deepslate_tile_stairs": 20,
+      "minecraft:chiseled_deepslate": 12,
+      "minecraft:polished_deepslate": 10,
+      "minecraft:deepslate_tiles": 8,
+      "minecraft:deepslate_tile_slab": 2,
+      "minecraft:jigsaw": 2,
+      "minecraft:skeleton_skull": 1
+    },
+    "jigsaws": [
+      {
+        "pos": [
+          6,
+          0,
+          3
+        ],
+        "block": "minecraft:jigsaw",
+        "properties": {
+          "orientation": "east_up"
+        },
+        "nbt": {
+          "joint": "rollable",
+          "final_state": "minecraft:structure_void",
+          "name": "minecraft:connect_structure",
+          "pool": "minecraft:empty",
+          "id": "minecraft:jigsaw",
+          "target": "minecraft:empty"
+        }
+      },
+      {
+        "pos": [
+          6,
+          0,
+          4
+        ],
+        "block": "minecraft:jigsaw",
+        "properties": {
+          "orientation": "east_up"
+        },
+        "nbt": {
+          "joint": "rollable",
+          "final_state": "minecraft:structure_void",
+          "name": "minecraft:connect_structure",
+          "pool": "minecraft:empty",
+          "id": "minecraft:jigsaw",
+          "target": "minecraft:empty"
+        }
+      }
+    ],
+    "render": {
+      "generated": true,
+      "method": "mcbuild color voxel preview; source block states preserved in report but non-cube block shapes are approximated as cubes",
+      "error": null,
+      "file": "original-four-view.png",
+      "views": [
+        "yaw 0deg",
+        "yaw 90deg",
+        "yaw 180deg",
+        "yaw 270deg"
+      ],
+      "stats": {
+        "dims": [
+          7,
+          11,
+          8
+        ],
+        "bounds": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            6,
+            10,
+            7
+          ]
+        ],
+        "block_count": 130,
+        "top_materials": [
+          [
+            "deepslate",
+            74
+          ],
+          [
+            "chiseled_deepslate",
+            12
+          ],
+          [
+            "polished_deepslate",
+            10
+          ],
+          [
+            "deepslate_tiles",
+            8
+          ],
+          [
+            "deepslate_tile_stairs",
+            2
+          ],
+          [
+            "deepslate_tile_stairs",
+            2
+          ],
+          [
+            "deepslate_tile_stairs",
+            2
+          ],
+          [
+            "deepslate_tile_slab",
+            2
+          ],
+          [
+            "deepslate_tile_stairs",
+            2
+          ],
+          [
+            "deepslate_tile_stairs",
+            2
+          ]
+        ]
+      }
+    }
+  }
+]

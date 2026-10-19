@@ -31,3 +31,8 @@ artifacts/phase-2/control/structure-report.txt
 # Python bytecode
 __pycache__/
 *.pyc
+
+# Ancient City Stage 24-C generated files
+node_modules/
+tools/stage24c/bot/node_modules/
+artifacts/ancient-city-restoration/stage-24c/_work/

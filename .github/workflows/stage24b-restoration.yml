@@ -1,0 +1,43 @@
+name: Stage 24-B Ancient City restoration candidates
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - stage-24b-eight-module-restoration
+    paths:
+      - "tools/stage24b_*.py"
+      - "tools/validate_stage24b.py"
+      - "tests/test_stage24b_*.py"
+      - "artifacts/ancient-city-restoration/stage-24a/**"
+      - ".github/workflows/stage24b-restoration.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: astral-sh/setup-uv@v6
+      - name: Install pinned mcbuild environment
+        working-directory: vendor/mcbuild
+        run: uv sync --frozen --extra dev
+      - name: Verify source, candidate NBT and structural invariants
+        run: vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24b_*.py -q
+      - name: Generate NBT, schematic, renders, floor plans and validation reports
+        run: vendor/mcbuild/.venv/bin/python tools/validate_stage24b.py
+      - name: Upload review evidence and downloadable candidates
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage-24b-eight-restoration-candidates
+          path: artifacts/ancient-city-restoration/stage-24b/
+          if-no-files-found: error

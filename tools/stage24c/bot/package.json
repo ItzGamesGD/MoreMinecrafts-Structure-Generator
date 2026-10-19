@@ -1,0 +1,11 @@
+{
+  "name": "stage24c-gameplay-bot",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Mineflayer player-simulation harness for Stage 24-C live checks",
+  "dependencies": {
+    "mineflayer": "4.39.0",
+    "mineflayer-pathfinder": "2.4.5",
+    "vec3": "0.1.10"
+  }
+}

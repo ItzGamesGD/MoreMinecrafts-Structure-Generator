@@ -1,0 +1,36 @@
+name: Inspect Stage 24-A Ancient City sources
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - stage-24a-remaining-eight-design
+    paths:
+      - "tools/inspect_remaining_ancient_nbt.py"
+      - ".github/workflows/inspect-stage-24a.yml"
+      - "artifacts/ancient-city-restoration/stage-24a/**"
+
+permissions:
+  contents: read
+
+jobs:
+  inspect-pinned-nbt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: astral-sh/setup-uv@v6
+      - name: Install pinned mcbuild environment
+        working-directory: vendor/mcbuild
+        run: uv sync --frozen --extra dev
+      - name: Verify source blobs, extract maps, and render originals
+        run: vendor/mcbuild/.venv/bin/python tools/inspect_remaining_ancient_nbt.py
+      - name: Upload verified inspection evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage-24a-source-inspection
+          path: out/ancient-city-stage-24a/
+          if-no-files-found: error

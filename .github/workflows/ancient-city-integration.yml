@@ -1,0 +1,83 @@
+name: Ancient City combined Stage 24-C and ice_box validation
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - integration/ancient-city-stage24c-icebox-20261018
+    paths:
+      - "tools/stage24c/**"
+      - "tools/stage24b_*.py"
+      - "tests/test_stage24*.py"
+      - ".github/workflows/ancient-city-integration.yml"
+      - "tools/test_ice_box_accessibility.py"
+      - "tools/inspect_ice_box_accessibility.py"
+      - "tools/render_approved_ancient_followup.py"
+
+permissions:
+  contents: read
+
+env:
+  MC_VERSION: "26.1.2"
+  MC_SERVER_URL: "https://piston-data.mojang.com/v1/objects/97ccd4c0ed3f81bbb7bfacddd1090b0c56f9bc51/server.jar"
+  MC_SERVER_SHA1: "97ccd4c0ed3f81bbb7bfacddd1090b0c56f9bc51"
+  MC_DIR: ${{ github.workspace }}/.mc
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "25"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install pinned mcbuild environment
+        working-directory: vendor/mcbuild
+        run: uv sync --frozen --extra dev
+      - name: Download and verify the Minecraft ${{ env.MC_VERSION }} server
+        run: |
+          mkdir -p "$MC_DIR"
+          curl -fsSL "$MC_SERVER_URL" -o "$MC_DIR/server.jar"
+          echo "$MC_SERVER_SHA1  $MC_DIR/server.jar" | sha1sum -c -
+          echo "MC_JAVA=$(command -v java)" >> "$GITHUB_ENV"
+      - name: Install the player-simulation bot
+        working-directory: tools/stage24c/bot
+        run: npm install --no-audit --no-fund
+      - name: Static + regression tests (Stage 24-B and 24-C)
+        run: vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24b_*.py tests/test_stage24c_regressions.py -q
+      - name: Ice box entrance regression and artifact generation
+        run: vendor/mcbuild/.venv/bin/python tools/test_ice_box_accessibility.py
+      - name: Isolated placement (8 modules x 4 rotations) on a real server
+        run: vendor/mcbuild/.venv/bin/python -I tools/stage24c/placement.py --variant fixed
+      - name: Player gameplay simulation (all modules)
+        run: vendor/mcbuild/.venv/bin/python -I tools/stage24c/gameplay.py --variant fixed
+      - name: Real Ancient City generation sample (vanilla vs candidate)
+        run: |
+          vendor/mcbuild/.venv/bin/python -I tools/stage24c/worldgen.py --seeds 24001 24002 24003 24004 24005 24006
+          vendor/mcbuild/.venv/bin/python -I tools/stage24c/worldgen_analyze.py --seeds 24001 24002 24003 24004 24005 24006 --out ci-analysis.json
+      - name: Upload validation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage-24c-validation-evidence
+          path: |
+            artifacts/ancient-city-restoration/stage-24c/placement
+            artifacts/ancient-city-restoration/stage-24c/gameplay
+            artifacts/ancient-city-restoration/stage-24c/worldgen
+            artifacts/ancient-city-restoration/stage-24b
+            out/ice-box-inspection
+          if-no-files-found: error
