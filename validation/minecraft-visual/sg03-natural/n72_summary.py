@@ -31,6 +31,7 @@ def row(path: Path) -> dict:
         "geode": {k: g.get(k) for k in ("attempts", "fast_path", "clear", "collisions", "unavailable", "cancelled", "would_cancel", "no_write")},
         "monster_room": {k: m.get(k) for k in ("attempts", "fast_path", "clear", "collisions", "unavailable", "cancelled", "would_cancel", "no_write",
                                                "oracle_non_air_write", "oracle_no_write", "oracle_unknown")},
+        "confusion": m.get("confusion"),
         "probe": sr.get("probe"),
         "be_in_piece_boxes": au.get("block_entities_inside_piece_boxes"),
         "gap_spawners": (au.get("natural_spawners_in_bbox_gaps") or []),

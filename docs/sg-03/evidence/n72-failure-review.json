@@ -1,0 +1,97 @@
+{
+ "fault_injection": [
+  {
+   "run": "F_missing_start_s173b_spiral_out",
+   "fault": "missing_start",
+   "mismatch": 0,
+   "pieces": 21,
+   "geode": {
+    "attempts": 10,
+    "unavailable": 3,
+    "cancelled": 3
+   },
+   "monster": {
+    "attempts": 4382,
+    "unavailable": 1254,
+    "cancelled": 1254
+   },
+   "probe": {
+    "has_chunk_false": 0,
+    "region_get_calls": 9574,
+    "region_get_served": 9574,
+    "region_get_null": 0,
+    "server_get_blocking": 0,
+    "server_get_future": 0,
+    "chunkmap_schedule": 0,
+    "holder_schedule": 0
+   }
+  },
+  {
+   "run": "F_out_of_range_s173b_spiral_out",
+   "fault": "out_of_range",
+   "mismatch": 0,
+   "pieces": 21,
+   "geode": {
+    "attempts": 10,
+    "unavailable": 3,
+    "cancelled": 3
+   },
+   "monster": {
+    "attempts": 4382,
+    "unavailable": 1254,
+    "cancelled": 1254
+   },
+   "probe": {
+    "has_chunk_false": 1257,
+    "region_get_calls": 8317,
+    "region_get_served": 8317,
+    "region_get_null": 0,
+    "server_get_blocking": 0,
+    "server_get_future": 0,
+    "chunkmap_schedule": 0,
+    "holder_schedule": 0
+   }
+  },
+  {
+   "run": "F_status_too_high_s173b_spiral_out",
+   "fault": "status_too_high",
+   "mismatch": 0,
+   "pieces": 21,
+   "geode": {
+    "attempts": 10,
+    "unavailable": 3,
+    "cancelled": 3
+   },
+   "monster": {
+    "attempts": 4382,
+    "unavailable": 1254,
+    "cancelled": 1254
+   },
+   "probe": {
+    "has_chunk_false": 0,
+    "region_get_calls": 9574,
+    "region_get_served": 8317,
+    "region_get_null": 0,
+    "server_get_blocking": 0,
+    "server_get_future": 0,
+    "chunkmap_schedule": 0,
+    "holder_schedule": 0
+   }
+  }
+ ],
+ "fail_loud_no_datapack": {
+  "outcome": "startup failed",
+  "pass": true,
+  "log_lines": [
+   "[11:31:05] [main/INFO] (sg01-spike) SG_SPIKE mode=ENFORCE fixture=NONE refine=OFF oracle=off features=both",
+   "[11:31:07] [Server thread/INFO] (sg01-spike) SG_SPIKE hook GeodeFeature.place applied=true MonsterRoomFeature.place applied=true",
+   "java.lang.IllegalStateException: SG protection spike: structure tag #moreminecrafts:protected_from_overlays resolves to no structure (is the SG datapack loaded?)",
+   "[11:31:07] [Server thread/INFO] (sg01-spike) SG_SPIKE_REPORT {\"mode\":\"ENFORCE\",\"fixture\":\"NONE\",\"refine\":\"OFF\",\"oracle\":\"off\",\"geode\":{\"attempts\":0,\"fast_path\":0,\"collisions\":0,\"unavailable\":0,\"cancelled\":0,\"would_cancel\":0,\"not_worldgen\":0,\"clear\":0,\"no_write\":0,\"oracle_non_air_write\":0,\"oracle_no_"
+  ]
+ },
+ "mixin_failure_observed": {
+  "note": "an earlier probe-mixin revision used CallbackInfo for a non-void method; Mixin refused to apply and the server exited before worldgen (fail-loud, no silent deactivation). Observed in smoke run, not a committed test.",
+  "mixin": "ChunkMap/ServerChunkCache probes",
+  "result": "server exited early with InvalidInjectionException"
+ }
+}
