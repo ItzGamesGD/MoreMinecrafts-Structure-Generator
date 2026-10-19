@@ -194,6 +194,18 @@ jobs:
         run: |
           python3 validation/minecraft-visual/stress/run_synthetic.py --jar "$RUNNER_TEMP/server.jar" \
             --pack "$RUNNER_TEMP/sg01-datapack" --seed 173 --ticks 2400 --out "$GITHUB_WORKSPACE/sg01-stress/synthetic"
+      - name: Guard Fabric traversal server entrypoint
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          fixture = Path("validation/minecraft-visual")
+          data = json.loads((fixture / "src/main/resources/fabric.mod.json").read_text())
+          entry = "dev.itzgamesgd.sg01visual.TraversalProbe"
+          assert entry in data.get("entrypoints", {}).get("main", []), "SG-01 traversal server initializer missing"
+          assert (fixture / "src/main/java/dev/itzgamesgd/sg01visual/TraversalProbe.java").is_file()
+          print("TraversalProbe server initializer and source: PASS")
+          PY
       - name: Runtime traversal probe on pinned natural sites (real mob locomotion, not a live player)
         timeout-minutes: 30
         run: |
