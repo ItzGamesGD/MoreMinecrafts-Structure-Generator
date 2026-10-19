@@ -33,6 +33,12 @@ def main():
                 problems.append(f"production {chunk} {phase}: {r['piece_count']} pieces")
             if r["trial_spawners"] != r["trial_spawner_entities"] or r["trial_spawners"] < 1:
                 problems.append(f"production {chunk} {phase}: spawners {r['trial_spawners']}/{r['trial_spawner_entities']}")
+            # SG-03-N5: inspect() tolerates blocks it classifies as geode/sculk/monster-room overlays; the acceptance does not.
+            if r["matched"] != r["expected"]:
+                problems.append(f"production {chunk} {phase}: {r['expected'] - r['matched']} structure blocks overwritten "
+                                f"({[(t['expected'][10:], t['actual'][10:], t['count']) for t in r['state_transitions'][:4]]})")
+            if sum(r.get("interior_intrusions", {}).values()):
+                problems.append(f"production {chunk} {phase}: foreign blocks inside template air {dict(list(r['interior_intrusions'].items())[:4])}")
             clay = [t for t in r["state_transitions"] if t["actual"] in CLAY_FAMILY]
             if clay:
                 problems.append(f"production {chunk} {phase}: clay-family overwrites {clay}")
