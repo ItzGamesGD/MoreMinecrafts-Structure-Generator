@@ -45,11 +45,14 @@ def main() -> None:
     p.add_argument("--out-md", type=Path)
     a = p.parse_args()
     rows = [row(d) for d in sorted(a.root.iterdir()) if (d / "lab.json").exists() and d.name.count("_") >= 2]
-    ref = {r["site"]: r["start_signature"] for r in rows if r["arm"] == "A" and r["order"] == "rowmajor"}
+    # Per-site references come from arm A (observe, nothing cancelled), rowmajor. Trial-spawner counts differ by site (3 at seed 173,
+    # 12 at seed 42 (6,-19)), so the expected count is taken from the reference run, never hard-coded.
+    ref_run = {r["site"]: r for r in rows if r["arm"] == "A" and r["order"] == "rowmajor"}
     for r in rows:
-        r["starts_match_reference"] = r["start_signature"] == ref.get(r["site"])
-        r["pieces_expected"] = r["pieces"] == 21
-        r["spawners_expected"] = r["trial_spawners"] == [3, 3]
+        ref = ref_run.get(r["site"])
+        r["starts_match_reference"] = ref is not None and r["start_signature"] == ref["start_signature"]
+        r["pieces_expected"] = ref is not None and r["pieces"] == ref["pieces"]
+        r["spawners_expected"] = ref is not None and r["trial_spawners"] == ref["trial_spawners"] and r["trial_spawners"][0] == r["trial_spawners"][1]
         r["corrupted"] = bool(r["mismatched_blocks"])
     a.out_json.write_text(json.dumps(rows, indent=1) + "\n")
     if a.out_md:
