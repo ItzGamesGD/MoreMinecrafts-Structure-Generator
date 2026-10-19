@@ -9,6 +9,7 @@
   "order": "rowmajor",
   "mode": "observe",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -56,6 +57,7 @@
   "order": "colmajor_rev",
   "mode": "observe",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -106,6 +108,7 @@
   "order": "random:1",
   "mode": "observe",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -156,6 +159,7 @@
   "order": "spiral_out",
   "mode": "observe",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -206,6 +210,7 @@
   "order": "rowmajor_rev",
   "mode": "observe",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -258,6 +263,7 @@
   "order": "colmajor_rev",
   "mode": "observe",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -310,6 +316,7 @@
   "order": "spiral_out",
   "mode": "observe",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -362,6 +369,7 @@
   "order": "colmajor_rev",
   "mode": "enforce",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -409,6 +417,7 @@
   "order": "random:1",
   "mode": "enforce",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -456,6 +465,7 @@
   "order": "spiral_out",
   "mode": "enforce",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -503,6 +513,7 @@
   "order": "rowmajor",
   "mode": "enforce",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -550,6 +561,7 @@
   "order": "rowmajor_rev",
   "mode": "enforce",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -595,6 +607,7 @@
   "order": "colmajor_rev",
   "mode": "enforce",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -640,6 +653,7 @@
   "order": "spiral_out",
   "mode": "enforce",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -685,6 +699,7 @@
   "order": "random:2",
   "mode": "enforce",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -730,6 +745,7 @@
   "order": "rowmajor_rev",
   "mode": "observe",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -791,6 +807,7 @@
   "order": "rowmajor_rev",
   "mode": "enforce",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -846,6 +863,7 @@
   "order": "spiral_out",
   "mode": "observe",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -904,6 +922,7 @@
   "order": "spiral_out",
   "mode": "enforce",
   "fault": null,
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -959,6 +978,7 @@
   "order": "spiral_out",
   "mode": "enforce",
   "fault": "out_of_range",
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -1012,6 +1032,7 @@
   "order": "spiral_out",
   "mode": "enforce",
   "fault": "status_too_high",
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -1065,6 +1086,7 @@
   "order": "spiral_out",
   "mode": "enforce",
   "fault": "missing_start",
+  "features": "both",
   "hooks_applied": true,
   "tag_resolved": true,
   "pieces": 21,
@@ -1107,5 +1129,123 @@
    "far_from_structure_amethyst_block": 2655
   },
   "elapsed_s": 23.5
+ },
+ {
+  "run": "h1",
+  "seed": 173,
+  "chunk": [
+   -19,
+   15
+  ],
+  "order": "rowmajor_rev",
+  "mode": "enforce",
+  "fault": "none",
+  "features": "geode",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 0,
+  "by_feature": {},
+  "foreign_blocks_in_template_air": 0,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 6,
+   "collisions": 2,
+   "unavailable": 0,
+   "cancelled": 2,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "fast_path": 0,
+   "collisions": 0,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": {
+   "minecraft:lectern": 5,
+   "minecraft:barrel": 57,
+   "minecraft:chest": 18,
+   "minecraft:campfire": 4,
+   "minecraft:trial_spawner": 3,
+   "minecraft:blast_furnace": 4
+  },
+  "be_in_bbox_gaps": {
+   "minecraft:chest": 1,
+   "minecraft:mob_spawner": 1
+  },
+  "mob_spawners_outside_bbox": 12,
+  "amethyst": {
+   "far_from_structure_amethyst_block": 1767,
+   "far_from_structure_budding_amethyst": 161
+  },
+  "elapsed_s": 23.8
+ },
+ {
+  "run": "h2",
+  "seed": 173,
+  "chunk": [
+   -19,
+   15
+  ],
+  "order": "rowmajor_rev",
+  "mode": "enforce",
+  "fault": "none",
+  "features": "monster_room",
+  "hooks_applied": true,
+  "tag_resolved": true,
+  "pieces": 21,
+  "mismatched_blocks": 120,
+  "by_feature": {
+   "monster_room_or_geode_air": 29,
+   "amethyst_geode": 90,
+   "other:minecraft:small_amethyst_bud": 1
+  },
+  "foreign_blocks_in_template_air": 473,
+  "trial_spawner_block_entity": [
+   3,
+   3
+  ],
+  "geode": {
+   "attempts": 10,
+   "fast_path": 0,
+   "collisions": 0,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "fast_path": 3321,
+   "collisions": 70,
+   "unavailable": 0,
+   "cancelled": 70,
+   "would_cancel": 0
+  },
+  "be_in_piece_boxes": {
+   "minecraft:lectern": 5,
+   "minecraft:barrel": 57,
+   "minecraft:chest": 18,
+   "minecraft:campfire": 4,
+   "minecraft:trial_spawner": 3,
+   "minecraft:blast_furnace": 4
+  },
+  "be_in_bbox_gaps": {
+   "minecraft:chest": 1,
+   "minecraft:mob_spawner": 1
+  },
+  "mob_spawners_outside_bbox": 12,
+  "amethyst": {
+   "far_from_structure_amethyst_block": 1767,
+   "far_from_structure_budding_amethyst": 161,
+   "near_structure_budding_amethyst": 25,
+   "near_structure_amethyst_block": 264
+  },
+  "elapsed_s": 28.7
  }
 ]
