@@ -1,0 +1,1471 @@
+{
+ "note": "SG-03-N5 lab: official 26.3 server, pack = PR #19 head (structure step 10), max.bg.threads=1, radius 5 chunk-by-chunk loading in the named order, then bbox+16 load, 200 ticks. Values: blocks of the expected structure that no longer match.",
+ "matrix_t1": {
+  "t1-s173_c-18_36_colmajor_rev_th1": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "colmajor_rev",
+   "mismatched": 139,
+   "expected": 53252,
+   "by_feature": {
+    "amethyst_geode": 131,
+    "monster_room_or_geode_air": 8
+   },
+   "by_chunk": {
+    "-17,32": {
+     "monster_room_or_geode_air": 8,
+     "amethyst_geode": 131
+    }
+   },
+   "by_room": {
+    "barracks_hall": 27,
+    "trial_chamber": 73,
+    "tunnel_east": 39
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s173_c-18_36_colmajor_th1": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "colmajor",
+   "mismatched": 0,
+   "expected": 53252,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s173_c-18_36_random1_th1": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "random:1",
+   "mismatched": 139,
+   "expected": 53252,
+   "by_feature": {
+    "amethyst_geode": 131,
+    "monster_room_or_geode_air": 8
+   },
+   "by_chunk": {
+    "-17,32": {
+     "monster_room_or_geode_air": 8,
+     "amethyst_geode": 131
+    }
+   },
+   "by_room": {
+    "barracks_hall": 27,
+    "trial_chamber": 73,
+    "tunnel_east": 39
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s173_c-18_36_random2_th1": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "random:2",
+   "mismatched": 139,
+   "expected": 53252,
+   "by_feature": {
+    "amethyst_geode": 131,
+    "monster_room_or_geode_air": 8
+   },
+   "by_chunk": {
+    "-17,32": {
+     "monster_room_or_geode_air": 8,
+     "amethyst_geode": 131
+    }
+   },
+   "by_room": {
+    "barracks_hall": 27,
+    "trial_chamber": 73,
+    "tunnel_east": 39
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s173_c-18_36_rowmajor_rev_th1": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 0,
+   "expected": 53252,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s173_c-18_36_rowmajor_th1": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "rowmajor",
+   "mismatched": 139,
+   "expected": 53252,
+   "by_feature": {
+    "amethyst_geode": 131,
+    "monster_room_or_geode_air": 8
+   },
+   "by_chunk": {
+    "-17,32": {
+     "monster_room_or_geode_air": 8,
+     "amethyst_geode": 131
+    }
+   },
+   "by_room": {
+    "barracks_hall": 27,
+    "trial_chamber": 73,
+    "tunnel_east": 39
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s173_c-18_36_spiral_in_th1": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "spiral_in",
+   "mismatched": 0,
+   "expected": 53252,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s173_c-18_36_spiral_out_th1": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "spiral_out",
+   "mismatched": 139,
+   "expected": 53252,
+   "by_feature": {
+    "amethyst_geode": 131,
+    "monster_room_or_geode_air": 8
+   },
+   "by_chunk": {
+    "-17,32": {
+     "monster_room_or_geode_air": 8,
+     "amethyst_geode": 131
+    }
+   },
+   "by_room": {
+    "barracks_hall": 27,
+    "trial_chamber": 73,
+    "tunnel_east": 39
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s173_c-19_15_colmajor_rev_th1": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "colmajor_rev",
+   "mismatched": 212,
+   "expected": 55305,
+   "by_feature": {
+    "monster_room": 61,
+    "monster_room_or_geode_air": 60,
+    "amethyst_geode": 90,
+    "other:minecraft:small_amethyst_bud": 1
+   },
+   "by_chunk": {
+    "-21,12": {
+     "amethyst_geode": 29,
+     "monster_room_or_geode_air": 10
+    },
+    "-21,13": {
+     "amethyst_geode": 14,
+     "monster_room_or_geode_air": 5
+    },
+    "-22,13": {
+     "amethyst_geode": 47,
+     "monster_room_or_geode_air": 14,
+     "other:minecraft:small_amethyst_bud": 1
+    },
+    "-22,15": {
+     "monster_room": 61,
+     "monster_room_or_geode_air": 31
+    }
+   },
+   "by_room": {
+    "main": 153,
+    "guard_room": 59
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s173_c-19_15_colmajor_th1": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "colmajor",
+   "mismatched": 0,
+   "expected": 55305,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s173_c-19_15_random1_th1": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "random:1",
+   "mismatched": 81,
+   "expected": 55305,
+   "by_feature": {
+    "amethyst_geode": 61,
+    "monster_room_or_geode_air": 19,
+    "other:minecraft:small_amethyst_bud": 1
+   },
+   "by_chunk": {
+    "-21,13": {
+     "amethyst_geode": 14,
+     "monster_room_or_geode_air": 5
+    },
+    "-22,13": {
+     "amethyst_geode": 47,
+     "monster_room_or_geode_air": 14,
+     "other:minecraft:small_amethyst_bud": 1
+    }
+   },
+   "by_room": {
+    "main": 81
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s173_c-19_15_random2_th1": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "random:2",
+   "mismatched": 92,
+   "expected": 55305,
+   "by_feature": {
+    "monster_room": 61,
+    "monster_room_or_geode_air": 31
+   },
+   "by_chunk": {
+    "-22,15": {
+     "monster_room": 61,
+     "monster_room_or_geode_air": 31
+    }
+   },
+   "by_room": {
+    "main": 33,
+    "guard_room": 59
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s173_c-19_15_rowmajor_rev_th1": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 120,
+   "expected": 55305,
+   "by_feature": {
+    "monster_room_or_geode_air": 29,
+    "amethyst_geode": 90,
+    "other:minecraft:small_amethyst_bud": 1
+   },
+   "by_chunk": {
+    "-21,12": {
+     "amethyst_geode": 29,
+     "monster_room_or_geode_air": 10
+    },
+    "-21,13": {
+     "amethyst_geode": 14,
+     "monster_room_or_geode_air": 5
+    },
+    "-22,13": {
+     "amethyst_geode": 47,
+     "monster_room_or_geode_air": 14,
+     "other:minecraft:small_amethyst_bud": 1
+    }
+   },
+   "by_room": {
+    "main": 120
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s173_c-19_15_rowmajor_th1": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "rowmajor",
+   "mismatched": 0,
+   "expected": 55305,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s173_c-19_15_spiral_in_th1": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "spiral_in",
+   "mismatched": 0,
+   "expected": 55305,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s173_c-19_15_spiral_out_th1": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "spiral_out",
+   "mismatched": 120,
+   "expected": 55305,
+   "by_feature": {
+    "monster_room_or_geode_air": 29,
+    "amethyst_geode": 90,
+    "other:minecraft:small_amethyst_bud": 1
+   },
+   "by_chunk": {
+    "-21,12": {
+     "amethyst_geode": 29,
+     "monster_room_or_geode_air": 10
+    },
+    "-21,13": {
+     "amethyst_geode": 14,
+     "monster_room_or_geode_air": 5
+    },
+    "-22,13": {
+     "amethyst_geode": 47,
+     "monster_room_or_geode_air": 14,
+     "other:minecraft:small_amethyst_bud": 1
+    }
+   },
+   "by_room": {
+    "main": 120
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c4_13_colmajor_rev_th1": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "colmajor_rev",
+   "mismatched": 341,
+   "expected": 52443,
+   "by_feature": {
+    "monster_room_or_geode_air": 94,
+    "amethyst_geode": 247
+   },
+   "by_chunk": {
+    "1,16": {
+     "amethyst_geode": 130,
+     "monster_room_or_geode_air": 66
+    },
+    "2,15": {
+     "amethyst_geode": 19,
+     "monster_room_or_geode_air": 7
+    },
+    "2,16": {
+     "amethyst_geode": 22
+    },
+    "3,14": {
+     "amethyst_geode": 2
+    },
+    "4,14": {
+     "amethyst_geode": 74,
+     "monster_room_or_geode_air": 21
+    }
+   },
+   "by_room": {
+    "main": 36,
+    "barracks_hall": 305
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c4_13_colmajor_th1": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "colmajor",
+   "mismatched": 0,
+   "expected": 52443,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c4_13_random1_th1": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "random:1",
+   "mismatched": 26,
+   "expected": 52443,
+   "by_feature": {
+    "amethyst_geode": 19,
+    "monster_room_or_geode_air": 7
+   },
+   "by_chunk": {
+    "2,15": {
+     "amethyst_geode": 19,
+     "monster_room_or_geode_air": 7
+    }
+   },
+   "by_room": {
+    "main": 2,
+    "barracks_hall": 24
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c4_13_random2_th1": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "random:2",
+   "mismatched": 0,
+   "expected": 52443,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c4_13_rowmajor_rev_th1": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 484,
+   "expected": 52443,
+   "by_feature": {
+    "monster_room_or_geode_air": 140,
+    "amethyst_geode": 343,
+    "other:minecraft:small_amethyst_bud": 1
+   },
+   "by_chunk": {
+    "2,15": {
+     "amethyst_geode": 19,
+     "monster_room_or_geode_air": 7
+    },
+    "2,16": {
+     "amethyst_geode": 22
+    },
+    "3,14": {
+     "amethyst_geode": 2
+    },
+    "4,13": {
+     "amethyst_geode": 226,
+     "monster_room_or_geode_air": 112,
+     "other:minecraft:small_amethyst_bud": 1
+    },
+    "4,14": {
+     "amethyst_geode": 74,
+     "monster_room_or_geode_air": 21
+    }
+   },
+   "by_room": {
+    "main": 88,
+    "barracks_hall": 173,
+    "storage_room": 223
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c4_13_rowmajor_th1": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "rowmajor",
+   "mismatched": 0,
+   "expected": 52443,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c4_13_spiral_in_th1": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "spiral_in",
+   "mismatched": 0,
+   "expected": 52443,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c4_13_spiral_out_th1": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "spiral_out",
+   "mismatched": 48,
+   "expected": 52443,
+   "by_feature": {
+    "amethyst_geode": 41,
+    "monster_room_or_geode_air": 7
+   },
+   "by_chunk": {
+    "2,15": {
+     "amethyst_geode": 19,
+     "monster_room_or_geode_air": 7
+    },
+    "2,16": {
+     "amethyst_geode": 22
+    }
+   },
+   "by_room": {
+    "main": 2,
+    "barracks_hall": 46
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c6_-19_colmajor_rev_th1": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "colmajor_rev",
+   "mismatched": 81,
+   "expected": 48556,
+   "by_feature": {
+    "monster_room_or_geode_air": 34,
+    "amethyst_geode": 46,
+    "other:minecraft:medium_amethyst_bud": 1
+   },
+   "by_chunk": {
+    "5,-19": {
+     "amethyst_geode": 46,
+     "other:minecraft:medium_amethyst_bud": 1,
+     "monster_room_or_geode_air": 34
+    }
+   },
+   "by_room": {
+    "barracks_hall": 56,
+    "storage_room": 25
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c6_-19_colmajor_th1": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "colmajor",
+   "mismatched": 0,
+   "expected": 48556,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c6_-19_random1_th1": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "random:1",
+   "mismatched": 0,
+   "expected": 48556,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c6_-19_random2_th1": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "random:2",
+   "mismatched": 0,
+   "expected": 48556,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c6_-19_rowmajor_rev_th1": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 81,
+   "expected": 48556,
+   "by_feature": {
+    "monster_room_or_geode_air": 34,
+    "amethyst_geode": 46,
+    "other:minecraft:medium_amethyst_bud": 1
+   },
+   "by_chunk": {
+    "5,-19": {
+     "amethyst_geode": 46,
+     "other:minecraft:medium_amethyst_bud": 1,
+     "monster_room_or_geode_air": 34
+    }
+   },
+   "by_room": {
+    "barracks_hall": 56,
+    "storage_room": 25
+   },
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c6_-19_rowmajor_th1": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "rowmajor",
+   "mismatched": 0,
+   "expected": 48556,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c6_-19_spiral_in_th1": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "spiral_in",
+   "mismatched": 0,
+   "expected": 48556,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t1-s42_c6_-19_spiral_out_th1": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "spiral_out",
+   "mismatched": 81,
+   "expected": 48556,
+   "by_feature": {
+    "monster_room_or_geode_air": 34,
+    "amethyst_geode": 46,
+    "other:minecraft:medium_amethyst_bud": 1
+   },
+   "by_chunk": {
+    "5,-19": {
+     "amethyst_geode": 46,
+     "other:minecraft:medium_amethyst_bud": 1,
+     "monster_room_or_geode_air": 34
+    }
+   },
+   "by_room": {
+    "barracks_hall": 56,
+    "storage_room": 25
+   },
+   "interior_intrusion_blocks": 0
+  }
+ },
+ "attribution_t2": {
+  "t2-ctl-s173_c-18_36-rowmajor": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "rowmajor",
+   "mismatched": 0,
+   "expected": 53252,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t2-ctl-s173_c-19_15-rowmajor_rev": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 226,
+   "expected": 55305,
+   "by_feature": {
+    "monster_room": 73,
+    "monster_room_or_geode_air": 62,
+    "amethyst_geode": 90,
+    "other:minecraft:small_amethyst_bud": 1
+   },
+   "by_chunk": {
+    "-20,11": {
+     "monster_room": 12,
+     "monster_room_or_geode_air": 2
+    },
+    "-21,12": {
+     "amethyst_geode": 29,
+     "monster_room_or_geode_air": 10
+    },
+    "-21,13": {
+     "amethyst_geode": 14,
+     "monster_room_or_geode_air": 5
+    },
+    "-22,13": {
+     "amethyst_geode": 47,
+     "monster_room_or_geode_air": 14,
+     "other:minecraft:small_amethyst_bud": 1
+    },
+    "-22,15": {
+     "monster_room": 61,
+     "monster_room_or_geode_air": 31
+    }
+   },
+   "by_room": {
+    "main": 153,
+    "guard_room": 73
+   },
+   "interior_intrusion_blocks": 473
+  },
+  "t2-ctl-s42_c4_13-rowmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 678,
+   "expected": 52443,
+   "by_feature": {
+    "amethyst_geode": 471,
+    "monster_room_or_geode_air": 207
+   },
+   "by_chunk": {
+    "1,16": {
+     "amethyst_geode": 130,
+     "monster_room_or_geode_air": 66
+    },
+    "2,15": {
+     "amethyst_geode": 19,
+     "monster_room_or_geode_air": 7
+    },
+    "2,16": {
+     "amethyst_geode": 22
+    },
+    "4,13": {
+     "amethyst_geode": 226,
+     "monster_room_or_geode_air": 113
+    },
+    "4,14": {
+     "amethyst_geode": 74,
+     "monster_room_or_geode_air": 21
+    }
+   },
+   "by_room": {
+    "main": 86,
+    "barracks_hall": 369,
+    "storage_room": 223
+   },
+   "interior_intrusion_blocks": 826
+  },
+  "t2-ctl-s42_c6_-19-colmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "colmajor_rev",
+   "mismatched": 81,
+   "expected": 48556,
+   "by_feature": {
+    "monster_room_or_geode_air": 34,
+    "amethyst_geode": 46,
+    "other:minecraft:medium_amethyst_bud": 1
+   },
+   "by_chunk": {
+    "5,-19": {
+     "amethyst_geode": 46,
+     "other:minecraft:medium_amethyst_bud": 1,
+     "monster_room_or_geode_air": 34
+    }
+   },
+   "by_room": {
+    "barracks_hall": 56,
+    "storage_room": 25
+   },
+   "interior_intrusion_blocks": 139
+  },
+  "t2-tg-s173_c-18_36-rowmajor": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "rowmajor",
+   "mismatched": 0,
+   "expected": 53252,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t2-tg-s173_c-19_15-rowmajor_rev": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 0,
+   "expected": 55305,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t2-tg-s42_c4_13-rowmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 0,
+   "expected": 52443,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t2-tg-s42_c6_-19-colmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "colmajor_rev",
+   "mismatched": 0,
+   "expected": 48556,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t2-tgm-s173_c-18_36-rowmajor": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "rowmajor",
+   "mismatched": 0,
+   "expected": 53252,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t2-tgm-s173_c-19_15-rowmajor_rev": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 0,
+   "expected": 55305,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t2-tgm-s42_c4_13-rowmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 0,
+   "expected": 52443,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t2-tgm-s42_c6_-19-colmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "colmajor_rev",
+   "mismatched": 0,
+   "expected": 48556,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t2-tm-s173_c-18_36-rowmajor": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "rowmajor",
+   "mismatched": 0,
+   "expected": 53252,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t2-tm-s173_c-19_15-rowmajor_rev": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 58,
+   "expected": 55305,
+   "by_feature": {
+    "monster_room_or_geode_air": 15,
+    "amethyst_geode": 43
+   },
+   "by_chunk": {
+    "-21,12": {
+     "amethyst_geode": 29,
+     "monster_room_or_geode_air": 10
+    },
+    "-21,13": {
+     "amethyst_geode": 14,
+     "monster_room_or_geode_air": 5
+    }
+   },
+   "by_room": {
+    "main": 58
+   },
+   "interior_intrusion_blocks": 277
+  },
+  "t2-tm-s42_c4_13-rowmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 484,
+   "expected": 52443,
+   "by_feature": {
+    "monster_room_or_geode_air": 141,
+    "amethyst_geode": 343
+   },
+   "by_chunk": {
+    "2,15": {
+     "amethyst_geode": 19,
+     "monster_room_or_geode_air": 7
+    },
+    "2,16": {
+     "amethyst_geode": 22
+    },
+    "3,14": {
+     "amethyst_geode": 2
+    },
+    "4,13": {
+     "amethyst_geode": 226,
+     "monster_room_or_geode_air": 113
+    },
+    "4,14": {
+     "amethyst_geode": 74,
+     "monster_room_or_geode_air": 21
+    }
+   },
+   "by_room": {
+    "main": 88,
+    "barracks_hall": 173,
+    "storage_room": 223
+   },
+   "interior_intrusion_blocks": 326
+  },
+  "t2-tm-s42_c6_-19-colmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "colmajor_rev",
+   "mismatched": 81,
+   "expected": 48556,
+   "by_feature": {
+    "monster_room_or_geode_air": 34,
+    "amethyst_geode": 46,
+    "other:minecraft:medium_amethyst_bud": 1
+   },
+   "by_chunk": {
+    "5,-19": {
+     "amethyst_geode": 46,
+     "other:minecraft:medium_amethyst_bud": 1,
+     "monster_room_or_geode_air": 34
+    }
+   },
+   "by_room": {
+    "barracks_hall": 56,
+    "storage_room": 25
+   },
+   "interior_intrusion_blocks": 139
+  }
+ },
+ "tag_candidate_t3": {
+  "t3-ctla-s173_c-18_36-rowmajor": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "rowmajor",
+   "mismatched": 0,
+   "expected": 53252,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t3-ctla-s173_c-19_15-rowmajor_rev": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 212,
+   "expected": 55305,
+   "by_feature": {
+    "monster_room": 61,
+    "monster_room_or_geode_air": 60,
+    "amethyst_geode": 90,
+    "other:minecraft:small_amethyst_bud": 1
+   },
+   "by_chunk": {
+    "-21,12": {
+     "amethyst_geode": 29,
+     "monster_room_or_geode_air": 10
+    },
+    "-21,13": {
+     "amethyst_geode": 14,
+     "monster_room_or_geode_air": 5
+    },
+    "-22,13": {
+     "amethyst_geode": 47,
+     "monster_room_or_geode_air": 14,
+     "other:minecraft:small_amethyst_bud": 1
+    },
+    "-22,15": {
+     "monster_room": 61,
+     "monster_room_or_geode_air": 31
+    }
+   },
+   "by_room": {
+    "main": 153,
+    "guard_room": 59
+   },
+   "interior_intrusion_blocks": 473
+  },
+  "t3-ctla-s42_c4_13-rowmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 678,
+   "expected": 52443,
+   "by_feature": {
+    "amethyst_geode": 471,
+    "monster_room_or_geode_air": 207
+   },
+   "by_chunk": {
+    "1,16": {
+     "amethyst_geode": 130,
+     "monster_room_or_geode_air": 66
+    },
+    "2,15": {
+     "amethyst_geode": 19,
+     "monster_room_or_geode_air": 7
+    },
+    "2,16": {
+     "amethyst_geode": 22
+    },
+    "4,13": {
+     "amethyst_geode": 226,
+     "monster_room_or_geode_air": 113
+    },
+    "4,14": {
+     "amethyst_geode": 74,
+     "monster_room_or_geode_air": 21
+    }
+   },
+   "by_room": {
+    "main": 86,
+    "barracks_hall": 369,
+    "storage_room": 223
+   },
+   "interior_intrusion_blocks": 826
+  },
+  "t3-ctla-s42_c6_-19-colmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "colmajor_rev",
+   "mismatched": 81,
+   "expected": 48556,
+   "by_feature": {
+    "monster_room_or_geode_air": 34,
+    "amethyst_geode": 46,
+    "other:minecraft:medium_amethyst_bud": 1
+   },
+   "by_chunk": {
+    "5,-19": {
+     "amethyst_geode": 46,
+     "other:minecraft:medium_amethyst_bud": 1,
+     "monster_room_or_geode_air": 34
+    }
+   },
+   "by_room": {
+    "barracks_hall": 56,
+    "storage_room": 25
+   },
+   "interior_intrusion_blocks": 139
+  },
+  "t3-ctlb-s173_c-18_36-rowmajor": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "rowmajor",
+   "mismatched": 0,
+   "expected": 53252,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t3-ctlb-s173_c-19_15-rowmajor_rev": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 226,
+   "expected": 55305,
+   "by_feature": {
+    "monster_room": 73,
+    "monster_room_or_geode_air": 62,
+    "amethyst_geode": 90,
+    "other:minecraft:small_amethyst_bud": 1
+   },
+   "by_chunk": {
+    "-20,11": {
+     "monster_room": 12,
+     "monster_room_or_geode_air": 2
+    },
+    "-21,12": {
+     "amethyst_geode": 29,
+     "monster_room_or_geode_air": 10
+    },
+    "-21,13": {
+     "amethyst_geode": 14,
+     "monster_room_or_geode_air": 5
+    },
+    "-22,13": {
+     "amethyst_geode": 47,
+     "monster_room_or_geode_air": 14,
+     "other:minecraft:small_amethyst_bud": 1
+    },
+    "-22,15": {
+     "monster_room": 61,
+     "monster_room_or_geode_air": 31
+    }
+   },
+   "by_room": {
+    "main": 153,
+    "guard_room": 73
+   },
+   "interior_intrusion_blocks": 473
+  },
+  "t3-ctlb-s42_c4_13-rowmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 484,
+   "expected": 52443,
+   "by_feature": {
+    "monster_room_or_geode_air": 140,
+    "amethyst_geode": 343,
+    "other:minecraft:small_amethyst_bud": 1
+   },
+   "by_chunk": {
+    "2,15": {
+     "amethyst_geode": 19,
+     "monster_room_or_geode_air": 6,
+     "other:minecraft:small_amethyst_bud": 1
+    },
+    "2,16": {
+     "amethyst_geode": 22
+    },
+    "3,14": {
+     "amethyst_geode": 2
+    },
+    "4,13": {
+     "amethyst_geode": 226,
+     "monster_room_or_geode_air": 113
+    },
+    "4,14": {
+     "amethyst_geode": 74,
+     "monster_room_or_geode_air": 21
+    }
+   },
+   "by_room": {
+    "main": 88,
+    "barracks_hall": 173,
+    "storage_room": 223
+   },
+   "interior_intrusion_blocks": 326
+  },
+  "t3-ctlb-s42_c6_-19-colmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "colmajor_rev",
+   "mismatched": 0,
+   "expected": 48556,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t3-taga-s173_c-18_36-rowmajor": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "rowmajor",
+   "mismatched": 0,
+   "expected": 53252,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t3-taga-s173_c-19_15-rowmajor_rev": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 0,
+   "expected": 55305,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 277
+  },
+  "t3-taga-s42_c4_13-rowmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 111,
+   "expected": 52443,
+   "by_feature": {
+    "monster_room_or_geode_air": 37,
+    "amethyst_geode": 74
+   },
+   "by_chunk": {
+    "2,16": {
+     "amethyst_geode": 4
+    },
+    "4,13": {
+     "amethyst_geode": 46,
+     "monster_room_or_geode_air": 21
+    },
+    "4,14": {
+     "amethyst_geode": 24,
+     "monster_room_or_geode_air": 16
+    }
+   },
+   "by_room": {
+    "barracks_hall": 87,
+    "storage_room": 24
+   },
+   "interior_intrusion_blocks": 326
+  },
+  "t3-taga-s42_c6_-19-colmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "colmajor_rev",
+   "mismatched": 0,
+   "expected": 48556,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t3-tagb-s173_c-18_36-rowmajor": {
+   "seed": 173,
+   "chunk": [
+    -18,
+    36
+   ],
+   "order": "rowmajor",
+   "mismatched": 0,
+   "expected": 53252,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  },
+  "t3-tagb-s173_c-19_15-rowmajor_rev": {
+   "seed": 173,
+   "chunk": [
+    -19,
+    15
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 5,
+   "expected": 55305,
+   "by_feature": {
+    "monster_room_or_geode_air": 2,
+    "monster_room": 3
+   },
+   "by_chunk": {
+    "-20,11": {
+     "monster_room": 2,
+     "monster_room_or_geode_air": 2
+    },
+    "-22,15": {
+     "monster_room": 1
+    }
+   },
+   "by_room": {
+    "guard_room": 5
+   },
+   "interior_intrusion_blocks": 474
+  },
+  "t3-tagb-s42_c4_13-rowmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    4,
+    13
+   ],
+   "order": "rowmajor_rev",
+   "mismatched": 111,
+   "expected": 52443,
+   "by_feature": {
+    "monster_room_or_geode_air": 37,
+    "amethyst_geode": 74
+   },
+   "by_chunk": {
+    "2,16": {
+     "amethyst_geode": 4
+    },
+    "4,13": {
+     "amethyst_geode": 46,
+     "monster_room_or_geode_air": 21
+    },
+    "4,14": {
+     "amethyst_geode": 24,
+     "monster_room_or_geode_air": 16
+    }
+   },
+   "by_room": {
+    "barracks_hall": 87,
+    "storage_room": 24
+   },
+   "interior_intrusion_blocks": 326
+  },
+  "t3-tagb-s42_c6_-19-colmajor_rev": {
+   "seed": 42,
+   "chunk": [
+    6,
+    -19
+   ],
+   "order": "colmajor_rev",
+   "mismatched": 0,
+   "expected": 48556,
+   "by_feature": {},
+   "by_chunk": {},
+   "by_room": {},
+   "interior_intrusion_blocks": 0
+  }
+ }
+}

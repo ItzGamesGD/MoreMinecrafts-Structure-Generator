@@ -72,7 +72,7 @@ def inspect(world: World, start: dict, templates: dict) -> dict:
     children = start.get("Children", [])
     result = {"piece_count": len(children), "pieces": {}, "rooms": {}, "matched": 0,
               "expected": 0, "overwrites": {}, "missing_or_other": 0,
-              "examples": [], "interior_fluids": {}, "exterior_contacts": {},
+              "examples": [], "mismatches": [], "interior_fluids": {}, "exterior_contacts": {},
               "trial_spawners": 0, "trial_spawner_entities": 0, "errors": []}
     solids, inside, empty = {}, set(), {}
     boxes = []
@@ -125,6 +125,8 @@ def inspect(world: World, start: dict, templates: dict) -> dict:
                 clay_positions.append(pos)
             if category == "unexplained":
                 result["missing_or_other"] += 1
+            if len(result["mismatches"]) < 20000:
+                result["mismatches"].append([pos[0], pos[1], pos[2], owner, expected["id"], actual["id"]])
             if len(result["examples"]) < 12:
                 result["examples"].append({"pos": pos, "room": owner,
                     "expected": expected["id"], "actual": actual["id"], "type": category})
@@ -135,10 +137,13 @@ def inspect(world: World, start: dict, templates: dict) -> dict:
                              and (e.get("x"), e.get("y"), e.get("z")) == pos
                              for e in chunk.nbt.get("block_entities", [])):
                 result["trial_spawner_entities"] += 1
+    intrusions = Counter()
     for pos, owner in empty.items():
         state = world.block_id(*pos)
         if state in FLUID:
             fluid[(owner, state.rsplit(":", 1)[-1])] += 1
+        elif state not in AIR and state != "minecraft:unloaded":
+            intrusions[state] += 1
     shell = set()
     for x, y, z in solids:
         for dx, dy, dz in NEIGHBORS:
@@ -174,6 +179,7 @@ def inspect(world: World, start: dict, templates: dict) -> dict:
         ] if clay_positions else None,
         "positions": [list(p) for p in sorted(clay_positions)],
     }
+    result["interior_intrusions"] = dict(intrusions.most_common())
     result["vanilla_clay_outside_structure"] = count_clay_outside(world, boxes, inside)
     result["interior_fluids"] = {f"{k[0]}:{k[1]}": v for k, v in sorted(fluid.items())}
     result["exterior_contacts"] = dict(contacts)
