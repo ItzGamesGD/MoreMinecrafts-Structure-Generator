@@ -119,7 +119,7 @@ def main() -> None:
             server.save()
             world = World(server.region_dir)
             report["after_ticks"] = summarize(inspect(world, start, templates), world, start, templates)
-        report["audit"] = audit(world, report["bbox"], (cx, cz), a.radius)
+        report["audit"] = audit(world, report["bbox"], (cx, cz), a.radius, [sig[2] for sig in report["start_signature"]])
         report["elapsed_s"] = round(time.time() - t0, 1)
     finally:
         server.stop()
@@ -136,11 +136,14 @@ def main() -> None:
             shutil.rmtree(folder, ignore_errors=True)
 
 
-def audit(world: World, bbox: list, centre: tuple, radius: int) -> dict:
+def audit(world: World, bbox: list, centre: tuple, radius: int, piece_boxes: list) -> dict:
     """Block entities and vanilla feature material inside vs outside the structure's bounding box (chunks of the loaded lab area)."""
     lo, hi = bbox[:3], bbox[3:]
     inside = Counter()
     outside = Counter()
+    in_pieces = Counter()
+    in_gap = Counter()
+    far_geode_spawners = []
     blocks = Counter()
     margin = 16
     for cx in range(centre[0] - radius - 8, centre[0] + radius + 9):
@@ -153,6 +156,11 @@ def audit(world: World, bbox: list, centre: tuple, radius: int) -> dict:
                 kind = be.get("id", "?")
                 in_box = lo[0] <= x <= hi[0] and lo[1] <= y <= hi[1] and lo[2] <= z <= hi[2]
                 (inside if in_box else outside)[kind] += 1
+                if in_box:
+                    hit = any(b[0] <= x <= b[3] and b[1] <= y <= b[4] and b[2] <= z <= b[5] for b in piece_boxes)
+                    (in_pieces if hit else in_gap)[kind] += 1
+                    if not hit and "spawner" in kind and kind != "minecraft:trial_spawner":
+                        far_geode_spawners.append([x, y, z])
             for sec_y, (palette, idx) in chunk.sections.items():
                 for name in ("minecraft:budding_amethyst", "minecraft:amethyst_block"):
                     ids = [i for i, st in enumerate(palette) if st["id"] == name]
@@ -162,7 +170,8 @@ def audit(world: World, bbox: list, centre: tuple, radius: int) -> dict:
                         x, y, z = cx * 16 + (flat & 15), sec_y * 16 + (flat >> 8), cz * 16 + ((flat >> 4) & 15)
                         near = lo[0] - margin <= x <= hi[0] + margin and lo[1] - margin <= y <= hi[1] + margin and lo[2] - margin <= z <= hi[2] + margin
                         blocks[("near_structure_" if near else "far_from_structure_") + name.split(":")[1]] += 1
-    return {"block_entities_inside_bbox": dict(inside), "block_entities_outside_bbox": dict(outside),
+    return {"block_entities_inside_piece_boxes": dict(in_pieces), "block_entities_in_bbox_but_outside_all_pieces": dict(in_gap),
+            "natural_spawners_in_bbox_gaps": far_geode_spawners, "block_entities_inside_bbox": dict(inside), "block_entities_outside_bbox": dict(outside),
             "amethyst_blocks": dict(blocks), "note": "spawner = minecraft:spawner/mob_spawner (SG templates contain none; trial_spawner is separate)"}
 
 
