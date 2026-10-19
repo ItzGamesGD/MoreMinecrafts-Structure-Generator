@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "exclusion_zone": {
+      "chunk_count": 12,
+      "other_set": "minecraft:trial_chambers"
+    },
+    "salt": 20261017,
+    "separation": 12,
+    "spacing": 34,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "moreminecrafts:forgotten_kingdom/central_cavern",
+      "weight": 1
+    }
+  ]
+}

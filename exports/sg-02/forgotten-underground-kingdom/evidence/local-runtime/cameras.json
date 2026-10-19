@@ -1,0 +1,211 @@
+[
+  {
+    "name": "cavern-overview",
+    "x": 974.5,
+    "y": -23.0,
+    "z": 960.5,
+    "yaw": 10.9,
+    "pitch": -14.6,
+    "note": "plaza, symmetrical stairs, north platform, rails",
+    "feet_cell": [
+      974,
+      -23,
+      960
+    ],
+    "target_cell": [
+      969,
+      -15,
+      986
+    ]
+  },
+  {
+    "name": "platform-lanes",
+    "x": 985.5,
+    "y": -15.0,
+    "z": 985.5,
+    "yaw": 90.0,
+    "pitch": 2.2,
+    "note": "four-lane north platform, deepslate rails on plaza edge",
+    "feet_cell": [
+      985,
+      -15,
+      985
+    ],
+    "target_cell": [
+      956,
+      -15,
+      985
+    ]
+  },
+  {
+    "name": "stairs-and-rail",
+    "x": 975.5,
+    "y": -23.0,
+    "z": 970.5,
+    "yaw": 33.7,
+    "pitch": -9.9,
+    "note": "deepslate brick stairs meeting the railed platform",
+    "feet_cell": [
+      975,
+      -23,
+      970
+    ],
+    "target_cell": [
+      969,
+      -20,
+      979
+    ]
+  },
+  {
+    "name": "rail-detail",
+    "x": 974.5,
+    "y": -15.0,
+    "z": 986.5,
+    "yaw": 121.0,
+    "pitch": 10.9,
+    "note": "wall rail ends beside the open stair mouth",
+    "feet_cell": [
+      974,
+      -15,
+      986
+    ],
+    "target_cell": [
+      969,
+      -15,
+      983
+    ]
+  },
+  {
+    "name": "stair-landing",
+    "x": 969.5,
+    "y": -15.0,
+    "z": 986.5,
+    "yaw": -180.0,
+    "pitch": 27.2,
+    "note": "looking down the stair run from the deck: flush final step at the mouth, rails either side",
+    "feet_cell": [
+      969,
+      -15,
+      986
+    ],
+    "target_cell": [
+      969,
+      -18,
+      978
+    ]
+  },
+  {
+    "name": "lower-door",
+    "x": 982.5,
+    "y": -23.0,
+    "z": 975.5,
+    "yaw": -6.7,
+    "pitch": -2.9,
+    "note": "lower-level connection under the platform",
+    "feet_cell": [
+      982,
+      -23,
+      975
+    ],
+    "target_cell": [
+      984,
+      -21,
+      992
+    ]
+  },
+  {
+    "name": "upper-vestibule",
+    "x": 981.5,
+    "y": -15.0,
+    "z": 984.5,
+    "yaw": -0.0,
+    "pitch": -6.3,
+    "note": "upper-level 5x5 vestibule from the gallery lane",
+    "feet_cell": [
+      981,
+      -15,
+      984
+    ],
+    "target_cell": [
+      981,
+      -13,
+      992
+    ]
+  },
+  {
+    "name": "undercroft",
+    "x": 980.5,
+    "y": -23.0,
+    "z": 973.5,
+    "yaw": -36.0,
+    "pitch": -3.7,
+    "note": "open undercroft carrying the deck",
+    "feet_cell": [
+      980,
+      -23,
+      973
+    ],
+    "target_cell": [
+      988,
+      -21,
+      984
+    ]
+  },
+  {
+    "name": "lower-stub-interior",
+    "x": 984.5,
+    "y": -23.0,
+    "z": 1012.5,
+    "yaw": -180.0,
+    "pitch": 0.4,
+    "note": "reserved lower volume looking back at the cavern door",
+    "feet_cell": [
+      984,
+      -23,
+      1012
+    ],
+    "target_cell": [
+      984,
+      -22,
+      993
+    ]
+  },
+  {
+    "name": "upper-stub-interior",
+    "x": 981.5,
+    "y": -14.0,
+    "z": 1020.5,
+    "yaw": -180.0,
+    "pitch": -6.1,
+    "note": "reserved upper volume looking back at the cavern door",
+    "feet_cell": [
+      981,
+      -14,
+      1020
+    ],
+    "target_cell": [
+      981,
+      -10,
+      993
+    ]
+  },
+  {
+    "name": "exterior-reserved-volumes",
+    "x": 889.5,
+    "y": 47.0,
+    "z": 889.5,
+    "yaw": -45.0,
+    "pitch": 31.1,
+    "note": "whole assembly: chamber, tunnels, 8 lower and 8 upper reserved volumes",
+    "feet_cell": [
+      889,
+      47,
+      889
+    ],
+    "target_cell": [
+      969,
+      -20,
+      969
+    ]
+  }
+]
