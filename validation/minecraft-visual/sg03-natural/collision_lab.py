@@ -59,6 +59,7 @@ def main() -> None:
     p.add_argument("--java", default="java")
     p.add_argument("--fabric-project", type=Path, help="Loom project to launch with `gradlew runServer` instead of the vanilla jar (N7-A spike)")
     p.add_argument("--guard-mode", choices=["observe", "enforce"], default="enforce", help="N7-A spike guard mode (only with --fabric-project)")
+    p.add_argument("--features", default="both", help="N7-A spike: enable only one hook (geode | monster_room | both)")
     p.add_argument("--fault", default="none", help="N7-A spike fault injection: none | out_of_range | status_too_high | missing_start")
     p.add_argument("--launcher-prefix", nargs="*", default=[], help="e.g. taskset -c 0,1 to emulate a 2-vCPU runner")
     a = p.parse_args()
@@ -78,7 +79,7 @@ def main() -> None:
     if a.fabric_project:
         launcher = ["./gradlew", "--no-daemon", "runServer"]
         fabric = dict(launcher_cwd=a.fabric_project.resolve(), start_timeout=600,
-                      env={"SG01_GUARD_MODE": a.guard_mode, "SG01_SPIKE_REPORT": str(spike_report), "SG01_FAULT": a.fault})
+                      env={"SG01_GUARD_MODE": a.guard_mode, "SG01_SPIKE_REPORT": str(spike_report), "SG01_FAULT": a.fault, "SG01_FEATURES": a.features})
         spike_report.unlink(missing_ok=True)
     server = Server(a.java, a.jar.resolve(), folder, a.seed, a.pack.resolve(), port=a.port, extra_args=extra, launcher=launcher, **fabric,
                     extra_props={"difficulty": "normal", "spawn-monsters": "true", "max-tick-time": "-1"})
@@ -128,6 +129,7 @@ def main() -> None:
         if a.fabric_project:
             report["guard_mode"] = a.guard_mode
             report["fault"] = a.fault
+            report["features"] = a.features
             report["spike_report"] = json.loads(spike_report.read_text()) if spike_report.exists() else None
             log = (a.out / "server.log").read_text(errors="replace")
             report["mixin_log"] = [ln.split("]: ", 1)[-1] for ln in log.splitlines() if "SG_SPIKE" in ln and "SG_SPIKE_REPORT" not in ln][:40]

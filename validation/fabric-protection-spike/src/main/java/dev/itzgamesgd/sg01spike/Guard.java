@@ -40,6 +40,13 @@ public final class Guard {
         throw new IllegalStateException("SG protection spike: unknown guard mode '" + value + "' (use observe or enforce)");
     }
 
+    /** Test-only (SG01_FEATURES = geode | monster_room | both): enable the decision for one hook at a time to prove each hook independently. */
+    private static final String FEATURES = System.getProperty("sg01.features", System.getenv("SG01_FEATURES") == null ? "both" : System.getenv("SG01_FEATURES"));
+
+    private static boolean enabled(String feature) {
+        return FEATURES.equals("both") || FEATURES.equals(feature);
+    }
+
     private static Fault parseFault() {
         String value = System.getProperty("sg01.fault", System.getenv("SG01_FAULT"));
         if (value == null || value.isBlank() || value.equalsIgnoreCase("none")) return Fault.NONE;
@@ -49,6 +56,7 @@ public final class Guard {
     /** @return true if the feature instance must be cancelled (always false in OBSERVE mode, where the decision is only recorded). */
     public static boolean shouldCancel(GuardStats stats, WorldGenLevel level, BlockPos origin, BoundingBox reach) {
         stats.attempts.incrementAndGet();
+        if (!enabled(stats.feature)) return false;
         if (!(level instanceof WorldGenRegion region)) {
             stats.notWorldgen.incrementAndGet();
             return false;

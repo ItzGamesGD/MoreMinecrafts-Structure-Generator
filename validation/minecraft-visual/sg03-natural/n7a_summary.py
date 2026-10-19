@@ -14,7 +14,7 @@ def row(path: Path) -> dict:
     log = " ".join(n.get("mixin_log", []))
     return {
         "run": path.name, "seed": n["seed"], "chunk": n["chunk"], "order": n["order"], "mode": n.get("guard_mode"),
-        "fault": n.get("fault"),
+        "fault": n.get("fault"), "features": n.get("features", "both"),
         "hooks_applied": "GeodeFeature.place applied=true MonsterRoomFeature.place applied=true" in log,
         "tag_resolved": "protected structures resolved" in log,
         "pieces": a.get("pieces"), "mismatched_blocks": (a.get("expected", 0) - a.get("matched", 0)) if a else None,
