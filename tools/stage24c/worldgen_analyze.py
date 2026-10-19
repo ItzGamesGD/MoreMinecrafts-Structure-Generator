@@ -23,6 +23,9 @@ def rot(pos, r):
 CW = ["north", "east", "south", "west"]
 
 
+NON_TERRAIN = {"air", "cave_air", "void_air", "water", "unloaded", "sculk_vein", "glow_lichen", "vine", "sculk", "sculk_sensor", "sculk_shrieker", "sculk_catalyst"}
+
+
 def rotate_state(state, deg):
     """Apply StructureTemplate rotation to block-state properties (clockwise steps of 90 degrees)."""
     steps = deg // 90
@@ -139,6 +142,7 @@ def analyse_seed(seed, src_root, variant="candidate"):
             rec["model_matches_piece_bb"] = (rec["model_bb_x"] == [p["bb"][0], p["bb"][3]] and rec["model_bb_z"] == [p["bb"][2], p["bb"][5]])
             cls, samples = Counter(), []
             crit = {}
+            crit_lost_cells = []
             template_cells = set()
             for pos, (st, _) in blocks.items():
                 if st.startswith(("minecraft:jigsaw", "minecraft:structure_void")):
@@ -157,10 +161,13 @@ def analyse_seed(seed, src_root, variant="candidate"):
                     t_ = crit.setdefault(cat, [0, 0])
                     t_[0] += 1
                     t_[1] += 1 if c in ("removed_to_air", "replaced_by_other") else 0
+                    if c in ("removed_to_air", "replaced_by_other"):
+                        crit_lost_cells.append({"category": cat, "block": n_, "world": list(w), "got": got})
                 if c in ("replaced_by_other",) and len(samples) < 6:
                     samples.append({"rel": list(pos), "world": list(w), "expected": st, "got": got})
             rec["block_replacement"] = dict(cls)
             rec["critical_blocks_total_lost"] = crit
+            rec["critical_lost_cells"] = crit_lost_cells
             rec["block_replacement_samples"] = samples
             # what fills the BB cells the template does not specify?
             fill = Counter()
@@ -173,6 +180,31 @@ def analyse_seed(seed, src_root, variant="candidate"):
                         b = world.block(x, y, z)
                         fill[(b or "unloaded").split("[")[0].replace("minecraft:", "")] += 1
             rec["unspecified_cell_fill"] = dict(fill.most_common(8))
+            terrain_cells = []
+            for x in range(bb[0], bb[3] + 1):
+                for y in range(bb[1], bb[4] + 1):
+                    for z in range(bb[2], bb[5] + 1):
+                        if (x, y, z) not in template_cells:
+                            n = (world.block(x, y, z) or "unloaded").split("[")[0].replace("minecraft:", "")
+                            if n not in NON_TERRAIN:
+                                terrain_cells.append([x, y, z, n])
+            rec["terrain_cells_in_bb"] = len(terrain_cells)
+            rec["terrain_cells_in_bb_list"] = terrain_cells[:300]
+            # jigsaw connectivity: the cell each template jigsaw points at must lie inside another generated piece
+            jig = []
+            for pos, (st, nb) in blocks.items():
+                if not st.startswith("minecraft:jigsaw"):
+                    continue
+                ori = st.split("orientation=")[1].split("_")[0].rstrip("]")
+                f = rotate_state(f"minecraft:x[facing={ori}]", r).split("facing=")[1].rstrip("]") if ori in CW else ori
+                d = {"north": (0, 0, -1), "south": (0, 0, 1), "east": (1, 0, 0), "west": (-1, 0, 0), "up": (0, 1, 0), "down": (0, -1, 0)}[f]
+                rx, ry, rz = rot(pos, r)
+                w = (origin[0] + rx, origin[1] + ry, origin[2] + rz)
+                tgt = (w[0] + d[0], w[1] + d[1], w[2] + d[2])
+                hosts = [q["template"].split("/")[-1] for q in cp if q is not p and q["template"]
+                         and q["bb"][0] <= tgt[0] <= q["bb"][3] and q["bb"][1] <= tgt[1] <= q["bb"][4] and q["bb"][2] <= tgt[2] <= q["bb"][5]]
+                jig.append({"jigsaw_world": list(w), "facing": f, "target": list(tgt), "connected_to": hosts, "connected": bool(hosts)})
+            rec["jigsaws"] = jig
             tot = sum(fill.values())
             rec["unspecified_cells"] = tot
             rec["unspecified_air_fraction"] = round(fill.get("air", 0) / tot, 3) if tot else None
@@ -194,6 +226,7 @@ def analyse_seed(seed, src_root, variant="candidate"):
                             if (x, y, z) not in template_cells:
                                 extra[(world.block(x, y, z) or "unloaded").split("[")[0].replace("minecraft:", "")] += 1
                 rec["expansion_layers"] = {"from_y": bb[1] + base_h, "to_y": bb[4], "unspecified_fill": dict(extra.most_common(8)),
+                                           "terrain_cells": [c for c in terrain_cells if c[1] >= bb[1] + base_h],
                                            "solid_terrain_cells": sum(v for k, v in extra.items() if k not in ("air", "cave_air", "void_air", "water", "unloaded", "sculk_vein", "glow_lichen", "vine"))}
             rec["bb_y_range"] = [bb[1], bb[4]]
         res["modules"].append(rec)

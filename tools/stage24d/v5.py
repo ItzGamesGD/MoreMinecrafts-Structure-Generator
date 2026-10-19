@@ -6,6 +6,7 @@ generated-pieces/*.json (committed, so CI renders without a Minecraft server). `
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -36,12 +37,13 @@ def pick(analysis, m):
 
 
 def extract():
-    analysis = json.loads((ROOT / "artifacts/ancient-city-restoration/stage-24c/worldgen/worldgen-analysis.json").read_text())
+    analysis = json.loads(Path(os.environ.get("S24D_WG_ANALYSIS", ROOT / "artifacts/ancient-city-restoration/stage-24c/worldgen/worldgen-analysis.json")).read_text())
     work = ROOT / "artifacts/ancient-city-restoration/stage-24c/_work"
+    wg_variant = os.environ.get("S24D_WG_VARIANT", "candidate")
     GEN.mkdir(parents=True, exist_ok=True)
     for m in MODULES:
         score, seed, p = pick(analysis, m)
-        w = World(work / f"wg-{seed}-candidate/world/dimensions/minecraft/overworld")
+        w = World(work / f"wg-{seed}-{wg_variant}/world/dimensions/minecraft/overworld")
         bb = p["bb"]
         blocks = []
         for x in range(bb[0], bb[3] + 1):

@@ -16,7 +16,7 @@ from tools.stage24d.lib import *  # noqa
 from tools.stage24d.config import CFG, HOUSES, REFERENCE_HOMES
 from tools.stage24d.render_gallery import ASSET, font, TAG, restored_scene, original_scene
 
-REF_IN = D24 / "reference-inputs"
+REF_IN = ROOT / "artifacts/ancient-city-restoration/stage-24d/reference-inputs"  # approved prototypes (read-only copies)
 
 
 def approved_scene(name):

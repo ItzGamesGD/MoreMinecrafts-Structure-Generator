@@ -56,8 +56,11 @@ def main(only=None):
     jobs, meta = [], []
     modules = only or MODULES
     for m in modules:
-        c = CFG[m]
+        c = dict(CFG[m])
         rs, size = restored_scene(m)
+        if m == "large_ruin_1" and size[1] > 5:   # a raised large_ruin_1 (Stage 24-E option C) also shows its full-height rooms
+            c["dollhouse"] = 5
+            c["floors"] = c["floors"] + [("Full-height rooms — walls to y = 5, roof removed", 5)]
         os_, osize = original_scene(m)
         fa = c["front_az"]
         sx, sy, sz = size

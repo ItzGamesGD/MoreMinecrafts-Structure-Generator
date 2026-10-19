@@ -12,6 +12,13 @@ from tools.stage24d.lib import *  # noqa
 from tools.stage24d.config import CFG
 from tools.stage24d.content import DESIGN, LIMITS, STATUS, QUESTIONS
 
+_ov = D24 / "content-overrides.json"
+if _ov.exists():  # a later stage may describe its own final candidates without editing this module
+    _o = json.loads(_ov.read_text())
+    DESIGN = {**DESIGN, **_o.get("DESIGN", {})}
+    LIMITS = {**LIMITS, **_o.get("LIMITS", {})}
+    STATUS = _o.get("STATUS", STATUS)
+
 G = D24 / "gallery"
 AS = G / "assets"
 
@@ -34,6 +41,7 @@ def fig(path, cap):
 
 
 def section(m, man, v5):
+    """one building section; `man` follows the INPUT-MANIFEST.json schema"""
     c = CFG[m]
     mm = man["modules"][m]
     dims = "×".join(map(str, mm["final_dimensions_xyz"]))
@@ -48,7 +56,7 @@ def section(m, man, v5):
     sr = mm["stage24c_repair"]
     kinds = "; ".join(f"{k} ×{v}" for k, v in list(sr["by_kind"].items())[:6]) or "none"
     ext = [("front", "Front exterior"), ("rear", "Rear exterior"), ("left", "Left exterior"), ("right", "Right exterior"), ("elevated", "Elevated three-quarter"), ("roof", "Roof view"), ("entrance", "Entrance close-up")]
-    inn = [("interior-dollhouse", "Interior — roof removed"), ("interior-section", "Interior — vertical section")] + [(f"floor-{i}", f"Floor-by-floor {i}") for i in range(1, len(c["floors"]) + 1)]
+    inn = [("interior-dollhouse", "Interior — roof removed"), ("interior-section", "Interior — vertical section")] + [(f"floor-{i}", f"Floor-by-floor {i}") for i in range(1, 9) if (AS / m / f"floor-{i}.jpg").exists()]
     cmpn = [("compare-a", "Original vs restored (front three-quarter)"), ("compare-b", "Original vs restored (rear three-quarter)")]
     deg = [("v5-degradation-a", "V5: pristine vs naturally generated (front)"), ("v5-degradation-b", "V5: pristine vs naturally generated (rear)")]
     sect = lambda title, lst: f'<h3>{title}</h3><div class="grid">' + "".join(fig(f"assets/{m}/{n}.jpg", f"{TITLES[m]} — {lab}") for n, lab in lst if (AS / m / f"{n}.jpg").exists()) + "</div>"
@@ -61,7 +69,7 @@ def section(m, man, v5):
 <div class="cols"><div><h3>Design characteristics</h3><ul>{"".join(f"<li>{html.escape(x)}</li>" for x in DESIGN[m])}</ul>
 <h3>Facts</h3><ul>{"".join(f"<li>{x}</li>" for x in facts)}</ul></div>
 <div><h3>Known defects / limitations</h3><ul>{"".join(f"<li>{html.escape(x)}</li>" for x in LIMITS[m])}</ul>
-<h3>Stage 24-C repairs vs PR #10 ({sr["changed_cells_vs_pr10"]} cells)</h3><p class="small">{html.escape(kinds)}</p>
+<h3>{html.escape(man.get("repair_label", "Stage 24-C repairs vs PR #10"))} ({sr["changed_cells_vs_pr10"]} cells)</h3><p class="small">{html.escape(kinds)}</p>
 <h3>Vanilla degradation sample</h3><p class="small">Seed {v5t["seed"]}, rotation {v5t["rotation"]}: lost critical blocks: {html.escape(lost)}; {v5t["cracked"]} cracked substitutions; {v5t["sculk_overlay"]} sculk-overlaid blocks.</p></div></div>
 {sect("Exterior", ext)}{sect("Interior and cutaways", inn)}{sect("Original versus restored", cmpn)}{sect("Vanilla degradation (V5)", deg)}
 <div class="decide" data-module="{m}"><h3>Owner decision</h3>
@@ -90,7 +98,7 @@ def build():
     secs = "".join(section(m, man, v5) for m in MODULES)
     nav = "".join(f'<a href="#{m}">{html.escape(TITLES[m].split(" — ")[0])}</a>' for m in MODULES)
     page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Ancient City restoration — visual review</title><style>
+<title>{html.escape(man.get("gallery_title", "Ancient City restoration — visual review"))}</title><style>
 :root{{--bg:#12151a;--fg:#e8ecf1;--mut:#9aa6b4;--card:#1b2027;--ln:#2c343e;--ok:#2f8f5b;--pend:#b7791f;--ac:#6cb6ff}}
 @media (prefers-color-scheme:light){{:root{{--bg:#f4f6f9;--fg:#1a2028;--mut:#5b6877;--card:#fff;--ln:#d6dde6}}}}
 *{{box-sizing:border-box}}body{{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 -apple-system,system-ui,"Segoe UI",sans-serif;padding:0 16px 80px}}
@@ -110,8 +118,8 @@ textarea,select{{width:100%;margin-top:8px;padding:10px;font:inherit;background:
 button{{font:inherit;padding:12px 16px;border-radius:10px;border:1px solid var(--ln);background:var(--ac);color:#06121f;font-weight:600;margin:6px 8px 6px 0}}
 #lb{{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;z-index:20;overflow:auto;-webkit-overflow-scrolling:touch}}#lb img{{display:block;max-width:none;width:max(100vw,900px);margin:0 auto}}#lb b{{position:fixed;right:12px;top:8px;color:#fff;font-size:2rem;z-index:21}}
 </style></head><body>
-<header><h1>Ancient City restoration — visual review gallery</h1>
-<div class="small">Stage 24-D · Minecraft Java 26.1.2 · Stage 24-C final candidates (PR #16 head {man["stage_24c_head"][:10]}) · all eight: <b>OWNER REVIEW PENDING</b></div></header>
+<header><h1>{html.escape(man.get("gallery_title", "Ancient City restoration — visual review gallery"))}</h1>
+<div class="small">{html.escape(man.get("gallery_subtitle", "Stage 24-D · Minecraft Java 26.1.2 · Stage 24-C final candidates (PR #16 head " + man["stage_24c_head"][:10] + ")"))} · all eight: <b>OWNER REVIEW PENDING</b></div></header>
 <nav><a href="#priority">V1–V5</a>{nav}<a href="#export">Export</a></nav>
 <div class="notice"><b>How these images were made.</b> Every image is rendered from the actual restored NBT block states with the vanilla 26.1.2 client's block models and textures (stairs, slabs, walls, doors, beds, lanterns, water, glass and orientation are real). Lighting is flat studio shading — <b>not</b> in-game lighting — and beds/chests/skulls are rebuilt from entity textures. These are <b>not Minecraft-client screenshots</b>. The blocky figure beside entrances is a 1.8-block scale reference. Tap an image to enlarge.</div>
 {pri}{secs}
@@ -120,19 +128,19 @@ button{{font:inherit;padding:12px 16px;border-radius:10px;border:1px solid var(-
 <div id="lb"><b>×</b><img alt=""></div>
 <script>
 (function(){{
-var KEY="stage24d-decisions-v1",st={{}};try{{st=JSON.parse(localStorage.getItem(KEY)||"{{}}")}}catch(e){{}}
+var KEY="{man.get("storage_key", "stage24d-decisions-v1")}",st={{}};try{{st=JSON.parse(localStorage.getItem(KEY)||"{{}}")}}catch(e){{}}
 function save(){{try{{localStorage.setItem(KEY,JSON.stringify(st))}}catch(e){{}}render()}}
 document.querySelectorAll(".decide[data-module]").forEach(function(box){{var m=box.dataset.module,s=st[m]||{{}};
  box.querySelectorAll("input[type=radio]").forEach(function(r){{if(s.decision===r.value)r.checked=true;r.onchange=function(){{(st[m]=st[m]||{{}}).decision=r.value;save()}}}});
  var t=box.querySelector("textarea");t.value=s.comment||"";t.oninput=function(){{(st[m]=st[m]||{{}}).comment=t.value;save()}}}});
 document.querySelectorAll(".q").forEach(function(q){{var k=q.dataset.q,s=st[k]||{{}},sel=q.querySelector("select"),t=q.querySelector("textarea");sel.value=s.choice||"";t.value=s.comment||"";
  sel.onchange=function(){{(st[k]=st[k]||{{}}).choice=sel.value;save()}};t.oninput=function(){{(st[k]=st[k]||{{}}).comment=t.value;save()}}}});
-function data(){{var o={{stage:"24-D",exported_at:new Date().toISOString(),baseline_stage_24c_head:"{man["stage_24c_head"]}",note:"Local export from the offline gallery; not synced to GitHub. Unset decisions mean OWNER REVIEW PENDING.",modules:{{}},questions:{{}}}};
+function data(){{var o={{stage:"{man.get("stage_label", "24-D")}",exported_at:new Date().toISOString(),baseline_stage_24c_head:"{man["stage_24c_head"]}",note:"Local export from the offline gallery; not synced to GitHub. Unset decisions mean OWNER REVIEW PENDING.",modules:{{}},questions:{{}}}};
  {json.dumps(list(MODULES))}.forEach(function(m){{var s=st[m]||{{}};o.modules[m]={{decision:s.decision||"pending",comment:s.comment||""}}}});
  {json.dumps(list(QUESTIONS))}.forEach(function(k){{var s=st[k]||{{}};o.questions[k]={{choice:s.choice||"pending",comment:s.comment||""}}}});return o}}
-function text(){{var o=data(),l=["Stage 24-D owner review ("+o.exported_at+")",""];for(var m in o.modules)l.push(m+": "+o.modules[m].decision+(o.modules[m].comment?" — "+o.modules[m].comment:""));l.push("");for(var k in o.questions)l.push(k+": "+o.questions[k].choice+(o.questions[k].comment?" — "+o.questions[k].comment:""));return l.join("\\n")}}
+function text(){{var o=data(),l=["Stage {man.get("stage_label", "24-D")} owner review ("+o.exported_at+")",""];for(var m in o.modules)l.push(m+": "+o.modules[m].decision+(o.modules[m].comment?" — "+o.modules[m].comment:""));l.push("");for(var k in o.questions)l.push(k+": "+o.questions[k].choice+(o.questions[k].comment?" — "+o.questions[k].comment:""));return l.join("\\n")}}
 function render(){{document.getElementById("out").textContent=text()}}
-document.getElementById("bj").onclick=function(){{var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(data(),null,2)],{{type:"application/json"}}));a.download="stage24d-owner-decisions.json";a.click()}};
+document.getElementById("bj").onclick=function(){{var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(data(),null,2)],{{type:"application/json"}}));a.download="{man.get("storage_key", "stage24d")}-owner-decisions.json";a.click()}};
 document.getElementById("bc").onclick=function(){{var t=text();if(navigator.clipboard&&navigator.clipboard.writeText){{navigator.clipboard.writeText(t).then(function(){{alert("Copied")}},function(){{prompt("Copy:",t)}})}}else{{prompt("Copy:",t)}}}};
 document.getElementById("br").onclick=function(){{if(confirm("Clear all decisions?")){{st={{}};save();location.reload()}}}};
 var lb=document.getElementById("lb"),li=lb.querySelector("img");
@@ -151,9 +159,9 @@ def owner_review(n_images):
         base = f"gallery/assets/{m}"
         rows.append(f"| [{TITLES[m]}]({base}/front.jpg) | [exterior]({base}/elevated.jpg) · [roof]({base}/roof.jpg) | [interior]({base}/interior-dollhouse.jpg) · [section]({base}/interior-section.jpg) · [floors]({base}/floor-1.jpg) | [original vs restored]({base}/compare-a.jpg) · [V5 degradation]({base}/v5-degradation-a.jpg) | VISUAL PENDING · OWNER REVIEW PENDING | ☐ approve ☐ changes ☐ discuss |")
     q = "\n".join(f"| {k} | {t} | {' / '.join(o)} | |" for k, (t, o) in QUESTIONS.items())
-    (D24 / "OWNER-REVIEW.md").write_text(f"""# Owner review — Ancient City restorations (Stage 24-D)
+    (D24 / "OWNER-REVIEW.md").write_text(f"""# Owner review — Ancient City restorations (Stage {man.get('stage_label', '24-D')})
 
-Open `gallery/index.html` (works offline; the ZIP `stage-24d-offline-gallery.zip` contains the same). Baseline: Stage 24-C head `{man['stage_24c_head']}`.
+Open `gallery/index.html` (works offline; the ZIP `{man.get('zip_name', 'stage-24d-offline-gallery.zip')}` contains the same). Baseline: Stage 24-C head `{man['stage_24c_head']}`.
 Images are model-accurate renders of the final NBTs (26.1.2 block models/textures, studio lighting) — **not Minecraft-client screenshots**. No visual approval is implied.
 
 ## Per-module decisions
@@ -175,12 +183,15 @@ Total images: {n_images}. Decisions entered in the gallery are exported locally 
 
 
 def make_zip():
-    zp = D24 / "stage-24d-offline-gallery.zip"
+    man = json.loads((D24 / "INPUT-MANIFEST.json").read_text())
+    zp = D24 / man.get("zip_name", "stage-24d-offline-gallery.zip")
     with zipfile.ZipFile(zp, "w", zipfile.ZIP_STORED) as z:  # JPEGs are already compressed
         for p in sorted(G.rglob("*")):
             if p.is_file():
                 z.write(p, "stage-24d-gallery/" + str(p.relative_to(G)))
         z.write(D24 / "OWNER-REVIEW.md", "stage-24d-gallery/OWNER-REVIEW.md")
+        if (D24 / "VALIDATION-MATRIX.md").exists():
+            z.write(D24 / "VALIDATION-MATRIX.md", "stage-24d-gallery/VALIDATION-MATRIX.md")
     return zp
 
 

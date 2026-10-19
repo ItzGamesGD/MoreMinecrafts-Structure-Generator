@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
 from tools.stage24c.common import MODULES, S24B, blocks_of, load_nbt, state_str  # noqa: E402
 
-D24 = ROOT / "artifacts/ancient-city-restoration/stage-24d"
+D24 = Path(os.environ.get("S24D_ROOT", ROOT / "artifacts/ancient-city-restoration/stage-24d"))
 BUILD = Path(os.environ.get("S24D_BUILD", "/tmp/s24d-build"))
 ASSETS = Path(os.environ.get("MC_ASSETS", "/tmp/mc/client/x/assets"))
 PYMOD = sys.executable

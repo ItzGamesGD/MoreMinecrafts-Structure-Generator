@@ -1,0 +1,266 @@
+{
+ "stage": "24-F",
+ "stage_label": "24-F",
+ "storage_key": "stage24f-decisions-v1",
+ "gallery_title": "Ancient City restoration \u2014 Stage 24-F final candidates",
+ "gallery_subtitle": "Stage 24-F \u00b7 Minecraft Java 26.1.2 \u00b7 owner-selected final set (large_ruin_1 option C, medium_ruin_2 option A; others = Stage 24-C b92a4be1e9)",
+ "repair_label": "Changes vs the Stage 24-C candidate",
+ "stage_24c_head": "b92a4be1e9e1b901a08f1629c4f19b63dab43dce",
+ "modules": {
+  "large_ruin_1": {
+   "candidate_sha256": "92827808edb9f8f623515e983cddcc0f5aa59fcfc4a5cc95d9dafd1b3597b229",
+   "source_blob_sha1": "3ce04aa7cd68ab706ed7e7910cbf8453f090fb39",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/large_ruin_1.nbt",
+   "final_dimensions_xyz": [
+    17,
+    14,
+    17
+   ],
+   "original_dimensions_xyz": [
+    17,
+    5,
+    17
+   ],
+   "jigsaws": {
+    "original": 1,
+    "final": 1
+   },
+   "block_entities": {
+    "original": 1,
+    "final": 1,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 735,
+    "by_kind": {
+     "air -> deepslate_tile_stairs": 258,
+     "deepslate_tiles -> air": 162,
+     "air -> deepslate_bricks": 124,
+     "deepslate_tiles -> deepslate_bricks": 74,
+     "air -> polished_deepslate": 31,
+     "air -> deepslate_tiles": 30,
+     "air -> iron_chain": 12,
+     "deepslate_tiles -> cyan_stained_glass": 11,
+     "deepslate_tiles -> polished_deepslate": 11,
+     "deepslate_bricks -> polished_basalt": 6,
+     "air -> cyan_stained_glass": 6,
+     "deepslate_tiles -> iron_chain": 4,
+     "deepslate_tiles -> polished_basalt": 2,
+     "air -> polished_basalt": 2,
+     "deepslate_bricks -> chiseled_deepslate": 1,
+     "air -> chiseled_deepslate": 1
+    }
+   }
+  },
+  "medium_ruin_1": {
+   "candidate_sha256": "89f58c3f982dcb992e585f2e3324fe89660e6492d25fc0a6724b0231afa968af",
+   "source_blob_sha1": "c476ea76624d25ac483f723c55ef39695ac86aee",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/medium_ruin_1.nbt",
+   "final_dimensions_xyz": [
+    8,
+    5,
+    13
+   ],
+   "original_dimensions_xyz": [
+    8,
+    5,
+    13
+   ],
+   "jigsaws": {
+    "original": 1,
+    "final": 1
+   },
+   "block_entities": {
+    "original": 1,
+    "final": 1,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 0,
+    "by_kind": {}
+   }
+  },
+  "medium_ruin_2": {
+   "candidate_sha256": "d1e239c42bda2b7c0551f5b910fcc87ec10ef7ad640cf9a1bc7b4f78e7838404",
+   "source_blob_sha1": "0f8b01b7aff4bd43c8e5ecc18292940ca648bf03",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/medium_ruin_2.nbt",
+   "final_dimensions_xyz": [
+    16,
+    8,
+    11
+   ],
+   "original_dimensions_xyz": [
+    16,
+    5,
+    11
+   ],
+   "jigsaws": {
+    "original": 1,
+    "final": 1
+   },
+   "block_entities": {
+    "original": 1,
+    "final": 1,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 193,
+    "by_kind": {
+     "deepslate_tiles -> air": 41,
+     "deepslate_tiles -> deepslate_tile_stairs": 34,
+     "deepslate_bricks -> deepslate_tile_stairs": 27,
+     "air -> deepslate_tile_stairs": 22,
+     "air -> deepslate_tile_slab": 22,
+     "air -> deepslate_tiles": 11,
+     "deepslate_tiles -> deepslate_tile_slab": 11,
+     "deepslate_tiles -> deepslate_bricks": 10,
+     "air -> deepslate_bricks": 8,
+     "deepslate_bricks -> polished_basalt": 4,
+     "deepslate_tiles -> iron_chain": 1,
+     "deepslate_bricks -> cyan_stained_glass": 1,
+     "deepslate_bricks -> chiseled_deepslate": 1
+    }
+   }
+  },
+  "small_ruin_1": {
+   "candidate_sha256": "647fa12a5210756f509e45a9b77f4bb2f57c732b1d1d74f3a9cb0be3dc838ec1",
+   "source_blob_sha1": "b1b9c2ac7c4b06a1a80e53adf4dd4fd706f2a799",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/small_ruin_1.nbt",
+   "final_dimensions_xyz": [
+    7,
+    5,
+    8
+   ],
+   "original_dimensions_xyz": [
+    7,
+    5,
+    8
+   ],
+   "jigsaws": {
+    "original": 1,
+    "final": 1
+   },
+   "block_entities": {
+    "original": 1,
+    "final": 1,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 0,
+    "by_kind": {}
+   }
+  },
+  "small_ruin_2": {
+   "candidate_sha256": "0135f1df50b93d6953daa1da658fd3f137bd15468265cf484a7452a1516bad6d",
+   "source_blob_sha1": "34d14f95c92675e6d97d212baf88e84c4f506fbd",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/small_ruin_2.nbt",
+   "final_dimensions_xyz": [
+    8,
+    5,
+    4
+   ],
+   "original_dimensions_xyz": [
+    8,
+    5,
+    4
+   ],
+   "jigsaws": {
+    "original": 1,
+    "final": 1
+   },
+   "block_entities": {
+    "original": 1,
+    "final": 1,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 0,
+    "by_kind": {}
+   }
+  },
+  "sauna_1": {
+   "candidate_sha256": "879e21a0a4daf1b5d4fe547fe78aaa9fad5cf55ede913112d2e8a32f5697288f",
+   "source_blob_sha1": "ef56d35f13f3acb8d62095ccc2f7e85d58d253b1",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/sauna_1.nbt",
+   "final_dimensions_xyz": [
+    29,
+    10,
+    37
+   ],
+   "original_dimensions_xyz": [
+    29,
+    10,
+    37
+   ],
+   "jigsaws": {
+    "original": 5,
+    "final": 5
+   },
+   "block_entities": {
+    "original": 8,
+    "final": 8,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 0,
+    "by_kind": {}
+   }
+  },
+  "large_pillar_1": {
+   "candidate_sha256": "a17b693c10337724e3c01402cd19a497926c1fa2afe0c81e839e2c9d61bfb9b1",
+   "source_blob_sha1": "4d619829f48909054996945d01a77d949946e678",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/large_pillar_1.nbt",
+   "final_dimensions_xyz": [
+    6,
+    15,
+    6
+   ],
+   "original_dimensions_xyz": [
+    6,
+    15,
+    6
+   ],
+   "jigsaws": {
+    "original": 1,
+    "final": 1
+   },
+   "block_entities": {
+    "original": 1,
+    "final": 1,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 0,
+    "by_kind": {}
+   }
+  },
+  "medium_pillar_1": {
+   "candidate_sha256": "8705305a7bec348c40b5e7434c651526e0145aac90a9352e315150faf6a7a09d",
+   "source_blob_sha1": "38ece3d8a57c9fed3f2a050ffd21b5b636121bbe",
+   "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/medium_pillar_1.nbt",
+   "final_dimensions_xyz": [
+    7,
+    11,
+    8
+   ],
+   "original_dimensions_xyz": [
+    7,
+    11,
+    8
+   ],
+   "jigsaws": {
+    "original": 2,
+    "final": 2
+   },
+   "block_entities": {
+    "original": 3,
+    "final": 3,
+    "all_original_entities_identical": true
+   },
+   "stage24c_repair": {
+    "changed_cells_vs_pr10": 0,
+    "by_kind": {}
+   }
+  }
+ }
+}

@@ -1,0 +1,1080 @@
+{
+ "module": "medium_pillar_1",
+ "steps": [
+  {
+   "name": "tp_outside",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    593,
+    -60,
+    97
+   ]
+  },
+  {
+   "name": "walk_to_entry",
+   "type": "goto",
+   "start": [
+    593,
+    -60,
+    97
+   ],
+   "end": [
+    593.5,
+    -60,
+    101.34
+   ],
+   "horizontal_error": 0.16,
+   "moved": 3.84,
+   "outcome": "reached",
+   "seconds": 1.3,
+   "ok": true
+  },
+  {
+   "name": "walk_to_ladder_approach",
+   "type": "goto",
+   "start": [
+    593,
+    -60,
+    101
+   ],
+   "end": [
+    594.33,
+    -60,
+    102.53
+   ],
+   "horizontal_error": 0.18,
+   "moved": 1.45,
+   "outcome": "reached",
+   "seconds": 0.8,
+   "ok": true
+  },
+  {
+   "name": "climb_ground_to_deck",
+   "type": "climb",
+   "start_y": -60,
+   "max_y": -51.94,
+   "end": [
+    594.61,
+    -52,
+    103.5
+   ],
+   "seconds": 3.6,
+   "onGround": true,
+   "ok": true
+  },
+  {
+   "name": "step_onto_deck",
+   "type": "goto",
+   "start": [
+    594,
+    -52,
+    103
+   ],
+   "end": [
+    593.5,
+    -52,
+    104.5
+   ],
+   "horizontal_error": 0,
+   "moved": 1.49,
+   "outcome": "reached",
+   "seconds": 0.7,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_north_line1_from1_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    591,
+    -52,
+    102
+   ]
+  },
+  {
+   "name": "deck_edge_north_line1",
+   "type": "walk",
+   "start": [
+    591.5,
+    -52,
+    102.5
+   ],
+   "end": [
+    591.5,
+    -52,
+    102.3
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_north_line2_from2_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    592,
+    -52,
+    102
+   ]
+  },
+  {
+   "name": "deck_edge_north_line2",
+   "type": "walk",
+   "start": [
+    592.5,
+    -52,
+    102.5
+   ],
+   "end": [
+    592.5,
+    -52,
+    101.99
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_north_line3_from3_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    593,
+    -52,
+    102
+   ]
+  },
+  {
+   "name": "deck_edge_north_line3",
+   "type": "walk",
+   "start": [
+    593.5,
+    -52,
+    102.5
+   ],
+   "end": [
+    593.5,
+    -52,
+    102.05
+   ],
+   "dy": 0,
+   "moved": 0.45,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_north_line4_from4_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    594,
+    -52,
+    102
+   ]
+  },
+  {
+   "name": "deck_edge_north_line4",
+   "type": "walk",
+   "start": [
+    594.5,
+    -52,
+    102.5
+   ],
+   "end": [
+    594.5,
+    -52,
+    101.99
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_north_line5_from5_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    595,
+    -52,
+    102
+   ]
+  },
+  {
+   "name": "deck_edge_north_line5",
+   "type": "walk",
+   "start": [
+    595.5,
+    -52,
+    102.5
+   ],
+   "end": [
+    595.5,
+    -52,
+    102.3
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_south_line1_from1_5_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    591,
+    -52,
+    105
+   ]
+  },
+  {
+   "name": "deck_edge_south_line1",
+   "type": "walk",
+   "start": [
+    591.5,
+    -52,
+    105.5
+   ],
+   "end": [
+    591.5,
+    -52,
+    105.7
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_south_line2_from2_5_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    592,
+    -52,
+    105
+   ]
+  },
+  {
+   "name": "deck_edge_south_line2",
+   "type": "walk",
+   "start": [
+    592.5,
+    -52,
+    105.5
+   ],
+   "end": [
+    592.5,
+    -52,
+    106.01
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_south_line3_from3_5_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    593,
+    -52,
+    105
+   ]
+  },
+  {
+   "name": "deck_edge_south_line3",
+   "type": "walk",
+   "start": [
+    593.5,
+    -52,
+    105.5
+   ],
+   "end": [
+    593.5,
+    -52,
+    106.01
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_south_line4_from4_5_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    594,
+    -52,
+    105
+   ]
+  },
+  {
+   "name": "deck_edge_south_line4",
+   "type": "walk",
+   "start": [
+    594.5,
+    -52,
+    105.5
+   ],
+   "end": [
+    594.5,
+    -52,
+    106.01
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_south_line5_from5_5_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    595,
+    -52,
+    105
+   ]
+  },
+  {
+   "name": "deck_edge_south_line5",
+   "type": "walk",
+   "start": [
+    595.5,
+    -52,
+    105.5
+   ],
+   "end": [
+    595.5,
+    -52,
+    105.7
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_east_line1_from4_1_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    594,
+    -52,
+    101
+   ]
+  },
+  {
+   "name": "deck_edge_east_line1",
+   "type": "walk",
+   "start": [
+    594.5,
+    -52,
+    101.5
+   ],
+   "end": [
+    594.7,
+    -52,
+    101.5
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_east_line2_from4_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    594,
+    -52,
+    102
+   ]
+  },
+  {
+   "name": "deck_edge_east_line2",
+   "type": "walk",
+   "start": [
+    594.5,
+    -52,
+    102.5
+   ],
+   "end": [
+    595.01,
+    -52,
+    102.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_east_line4_from4_4_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    594,
+    -52,
+    104
+   ]
+  },
+  {
+   "name": "deck_edge_east_line4",
+   "type": "walk",
+   "start": [
+    594.5,
+    -52,
+    104.5
+   ],
+   "end": [
+    594.95,
+    -52,
+    104.5
+   ],
+   "dy": 0,
+   "moved": 0.45,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_east_line5_from4_5_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    594,
+    -52,
+    105
+   ]
+  },
+  {
+   "name": "deck_edge_east_line5",
+   "type": "walk",
+   "start": [
+    594.5,
+    -52,
+    105.5
+   ],
+   "end": [
+    595.01,
+    -52,
+    105.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_east_line6_from4_6_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    594,
+    -52,
+    106
+   ]
+  },
+  {
+   "name": "deck_edge_east_line6",
+   "type": "walk",
+   "start": [
+    594.5,
+    -52,
+    106.5
+   ],
+   "end": [
+    594.7,
+    -52,
+    106.5
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line1_from2_1_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    592,
+    -52,
+    101
+   ]
+  },
+  {
+   "name": "deck_edge_west_line1",
+   "type": "walk",
+   "start": [
+    592.5,
+    -52,
+    101.5
+   ],
+   "end": [
+    592.3,
+    -52,
+    101.5
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line2_from2_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    592,
+    -52,
+    102
+   ]
+  },
+  {
+   "name": "deck_edge_west_line2",
+   "type": "walk",
+   "start": [
+    592.5,
+    -52,
+    102.5
+   ],
+   "end": [
+    591.99,
+    -52,
+    102.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line3_from2_3_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    592,
+    -52,
+    103
+   ]
+  },
+  {
+   "name": "deck_edge_west_line3",
+   "type": "walk",
+   "start": [
+    592.5,
+    -52,
+    103.5
+   ],
+   "end": [
+    592.05,
+    -52,
+    103.5
+   ],
+   "dy": 0,
+   "moved": 0.45,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line4_from2_4_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    592,
+    -52,
+    104
+   ]
+  },
+  {
+   "name": "deck_edge_west_line4",
+   "type": "walk",
+   "start": [
+    592.5,
+    -52,
+    104.5
+   ],
+   "end": [
+    592.05,
+    -52,
+    104.5
+   ],
+   "dy": 0,
+   "moved": 0.45,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line5_from2_5_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    592,
+    -52,
+    105
+   ]
+  },
+  {
+   "name": "deck_edge_west_line5",
+   "type": "walk",
+   "start": [
+    592.5,
+    -52,
+    105.5
+   ],
+   "end": [
+    592.05,
+    -52,
+    105.5
+   ],
+   "dy": 0,
+   "moved": 0.45,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line6_from2_6_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    592,
+    -52,
+    106
+   ]
+  },
+  {
+   "name": "deck_edge_west_line6",
+   "type": "walk",
+   "start": [
+    592.5,
+    -52,
+    106.5
+   ],
+   "end": [
+    592.3,
+    -52,
+    106.5
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  }
+ ],
+ "events": [
+  "chat: Teleported S24C_medium_p to 593.500000, -60.000000, 97.500000",
+  "chat: Teleported S24C_medium_p to 594.500000, -60.000000, 103.500000",
+  "chat: Teleported S24C_medium_p to 591.500000, -52.000000, 102.500000",
+  "trace deck_edge_north_line1 [[591.5,-52],[591.5,-52],[591.5,-52],[591.5,-52],[591.5,-52],[591.5,-52],[591.5,-52],[591.5,-52],[591.5,-52],[591.5,-52]]",
+  "chat: Teleported S24C_medium_p to 592.500000, -52.000000, 102.500000",
+  "trace deck_edge_north_line2 [[592.5,-52],[592.5,-52],[592.5,-52],[592.5,-52],[592.5,-52],[592.5,-52],[592.5,-52],[592.5,-52],[592.5,-52],[592.5,-52]]",
+  "chat: Teleported S24C_medium_p to 593.500000, -52.000000, 102.500000",
+  "trace deck_edge_north_line3 [[593.5,-52],[593.5,-52],[593.5,-52],[593.5,-52],[593.5,-52],[593.5,-52],[593.5,-52],[593.5,-52],[593.5,-52],[593.5,-52]]",
+  "chat: Teleported S24C_medium_p to 594.500000, -52.000000, 102.500000",
+  "trace deck_edge_north_line4 [[594.5,-52],[594.5,-52],[594.5,-52],[594.5,-52],[594.5,-52],[594.5,-52],[594.5,-52],[594.5,-52],[594.5,-52],[594.5,-52]]",
+  "chat: Teleported S24C_medium_p to 595.500000, -52.000000, 102.500000",
+  "trace deck_edge_north_line5 [[595.5,-52],[595.5,-52],[595.5,-52],[595.5,-52],[595.5,-52],[595.5,-52],[595.5,-52],[595.5,-52],[595.5,-52],[595.5,-52]]",
+  "chat: Teleported S24C_medium_p to 591.500000, -52.000000, 105.500000",
+  "trace deck_edge_south_line1 [[591.5,-52],[591.5,-52],[591.5,-52],[591.5,-52],[591.5,-52],[591.5,-52],[591.5,-52],[591.5,-52],[591.5,-52],[591.5,-52]]",
+  "chat: Teleported S24C_medium_p to 592.500000, -52.000000, 105.500000",
+  "trace deck_edge_south_line2 [[592.5,-52],[592.5,-52],[592.5,-52],[592.5,-52],[592.5,-52],[592.5,-52],[592.5,-52],[592.5,-52],[592.5,-52],[592.5,-52]]",
+  "chat: Teleported S24C_medium_p to 593.500000, -52.000000, 105.500000",
+  "trace deck_edge_south_line3 [[593.5,-52],[593.5,-52],[593.5,-52],[593.5,-52],[593.5,-52],[593.5,-52],[593.5,-52],[593.5,-52],[593.5,-52],[593.5,-52]]",
+  "chat: Teleported S24C_medium_p to 594.500000, -52.000000, 105.500000",
+  "trace deck_edge_south_line4 [[594.5,-52],[594.5,-52],[594.5,-52],[594.5,-52],[594.5,-52],[594.5,-52],[594.5,-52],[594.5,-52],[594.5,-52],[594.5,-52]]",
+  "chat: Teleported S24C_medium_p to 595.500000, -52.000000, 105.500000",
+  "trace deck_edge_south_line5 [[595.5,-52],[595.5,-52],[595.5,-52],[595.5,-52],[595.5,-52],[595.5,-52],[595.5,-52],[595.5,-52],[595.5,-52],[595.5,-52]]",
+  "chat: Teleported S24C_medium_p to 594.500000, -52.000000, 101.500000",
+  "trace deck_edge_east_line1 [[594.7,-52],[594.7,-52],[594.7,-52],[594.7,-52],[594.7,-52],[594.7,-52],[594.7,-52],[594.7,-52],[594.7,-52],[594.7,-52]]",
+  "chat: Teleported S24C_medium_p to 594.500000, -52.000000, 102.500000",
+  "trace deck_edge_east_line2 [[595.01,-52],[595.01,-52],[595.01,-52],[595.01,-52],[595.01,-52],[595.01,-52],[595.01,-52],[595.01,-52],[595.01,-52],[595.01,-52]]",
+  "chat: Teleported S24C_medium_p to 594.500000, -52.000000, 104.500000",
+  "trace deck_edge_east_line4 [[594.95,-52],[594.95,-52],[594.95,-52],[594.95,-52],[594.95,-52],[594.95,-52],[594.95,-52],[594.95,-52],[594.95,-52],[594.95,-52]]",
+  "chat: Teleported S24C_medium_p to 594.500000, -52.000000, 105.500000",
+  "trace deck_edge_east_line5 [[595.01,-52],[595.01,-52],[595.01,-52],[595.01,-52],[595.01,-52],[595.01,-52],[595.01,-52],[595.01,-52],[595.01,-52],[595.01,-52]]",
+  "chat: Teleported S24C_medium_p to 594.500000, -52.000000, 106.500000",
+  "trace deck_edge_east_line6 [[594.7,-52],[594.7,-52],[594.7,-52],[594.7,-52],[594.7,-52],[594.7,-52],[594.7,-52],[594.7,-52],[594.7,-52],[594.7,-52]]",
+  "chat: Teleported S24C_medium_p to 592.500000, -52.000000, 101.500000",
+  "trace deck_edge_west_line1 [[592.3,-52],[592.3,-52],[592.3,-52],[592.3,-52],[592.3,-52],[592.3,-52],[592.3,-52],[592.3,-52],[592.3,-52],[592.3,-52]]",
+  "chat: Teleported S24C_medium_p to 592.500000, -52.000000, 102.500000",
+  "trace deck_edge_west_line2 [[591.99,-52],[591.99,-52],[591.99,-52],[591.99,-52],[591.99,-52],[591.99,-52],[591.99,-52],[591.99,-52],[591.99,-52],[591.99,-52]]",
+  "chat: Teleported S24C_medium_p to 592.500000, -52.000000, 103.500000",
+  "trace deck_edge_west_line3 [[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52]]",
+  "chat: Teleported S24C_medium_p to 592.500000, -52.000000, 104.500000",
+  "trace deck_edge_west_line4 [[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52]]",
+  "chat: Teleported S24C_medium_p to 592.500000, -52.000000, 105.500000",
+  "trace deck_edge_west_line5 [[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52],[592.05,-52]]",
+  "chat: Teleported S24C_medium_p to 592.500000, -52.000000, 106.500000",
+  "trace deck_edge_west_line6 [[592.3,-52],[592.3,-52],[592.3,-52],[592.3,-52],[592.3,-52],[592.3,-52],[592.3,-52],[592.3,-52],[592.3,-52],[592.3,-52]]"
+ ],
+ "final_health": 20,
+ "origin": [
+  590,
+  -61,
+  100
+ ],
+ "scenario_steps": [
+  {
+   "name": "tp_outside",
+   "type": "tp",
+   "target": [
+    593.5,
+    -60,
+    97.5
+   ]
+  },
+  {
+   "name": "walk_to_entry",
+   "type": "goto",
+   "target": [
+    593,
+    -60,
+    101
+   ],
+   "range": 0,
+   "timeout": 30
+  },
+  {
+   "name": "walk_to_ladder_approach",
+   "type": "goto",
+   "target": [
+    594,
+    -60,
+    102
+   ],
+   "range": 0,
+   "timeout": 30
+  },
+  {
+   "name": "climb_ground_to_deck",
+   "type": "climb",
+   "base": [
+    594,
+    -60,
+    103
+   ],
+   "top": [
+    594,
+    -52,
+    103
+   ],
+   "yaw": -1.5707963267948966,
+   "timeout": 60
+  },
+  {
+   "name": "step_onto_deck",
+   "type": "goto",
+   "target": [
+    593,
+    -52,
+    104
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "deck_edge_north_line1_from1_2_recentre",
+   "type": "tp",
+   "target": [
+    591.5,
+    -52,
+    102.5
+   ]
+  },
+  {
+   "name": "deck_edge_north_line1",
+   "type": "walk",
+   "yaw": 0.0,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_north_line2_from2_2_recentre",
+   "type": "tp",
+   "target": [
+    592.5,
+    -52,
+    102.5
+   ]
+  },
+  {
+   "name": "deck_edge_north_line2",
+   "type": "walk",
+   "yaw": 0.0,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_north_line3_from3_2_recentre",
+   "type": "tp",
+   "target": [
+    593.5,
+    -52,
+    102.5
+   ]
+  },
+  {
+   "name": "deck_edge_north_line3",
+   "type": "walk",
+   "yaw": 0.0,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_north_line4_from4_2_recentre",
+   "type": "tp",
+   "target": [
+    594.5,
+    -52,
+    102.5
+   ]
+  },
+  {
+   "name": "deck_edge_north_line4",
+   "type": "walk",
+   "yaw": 0.0,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_north_line5_from5_2_recentre",
+   "type": "tp",
+   "target": [
+    595.5,
+    -52,
+    102.5
+   ]
+  },
+  {
+   "name": "deck_edge_north_line5",
+   "type": "walk",
+   "yaw": 0.0,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_south_line1_from1_5_recentre",
+   "type": "tp",
+   "target": [
+    591.5,
+    -52,
+    105.5
+   ]
+  },
+  {
+   "name": "deck_edge_south_line1",
+   "type": "walk",
+   "yaw": 3.141592653589793,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_south_line2_from2_5_recentre",
+   "type": "tp",
+   "target": [
+    592.5,
+    -52,
+    105.5
+   ]
+  },
+  {
+   "name": "deck_edge_south_line2",
+   "type": "walk",
+   "yaw": 3.141592653589793,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_south_line3_from3_5_recentre",
+   "type": "tp",
+   "target": [
+    593.5,
+    -52,
+    105.5
+   ]
+  },
+  {
+   "name": "deck_edge_south_line3",
+   "type": "walk",
+   "yaw": 3.141592653589793,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_south_line4_from4_5_recentre",
+   "type": "tp",
+   "target": [
+    594.5,
+    -52,
+    105.5
+   ]
+  },
+  {
+   "name": "deck_edge_south_line4",
+   "type": "walk",
+   "yaw": 3.141592653589793,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_south_line5_from5_5_recentre",
+   "type": "tp",
+   "target": [
+    595.5,
+    -52,
+    105.5
+   ]
+  },
+  {
+   "name": "deck_edge_south_line5",
+   "type": "walk",
+   "yaw": 3.141592653589793,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_east_line1_from4_1_recentre",
+   "type": "tp",
+   "target": [
+    594.5,
+    -52,
+    101.5
+   ]
+  },
+  {
+   "name": "deck_edge_east_line1",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_east_line2_from4_2_recentre",
+   "type": "tp",
+   "target": [
+    594.5,
+    -52,
+    102.5
+   ]
+  },
+  {
+   "name": "deck_edge_east_line2",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_east_line4_from4_4_recentre",
+   "type": "tp",
+   "target": [
+    594.5,
+    -52,
+    104.5
+   ]
+  },
+  {
+   "name": "deck_edge_east_line4",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_east_line5_from4_5_recentre",
+   "type": "tp",
+   "target": [
+    594.5,
+    -52,
+    105.5
+   ]
+  },
+  {
+   "name": "deck_edge_east_line5",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_east_line6_from4_6_recentre",
+   "type": "tp",
+   "target": [
+    594.5,
+    -52,
+    106.5
+   ]
+  },
+  {
+   "name": "deck_edge_east_line6",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line1_from2_1_recentre",
+   "type": "tp",
+   "target": [
+    592.5,
+    -52,
+    101.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line1",
+   "type": "walk",
+   "yaw": 1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line2_from2_2_recentre",
+   "type": "tp",
+   "target": [
+    592.5,
+    -52,
+    102.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line2",
+   "type": "walk",
+   "yaw": 1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line3_from2_3_recentre",
+   "type": "tp",
+   "target": [
+    592.5,
+    -52,
+    103.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line3",
+   "type": "walk",
+   "yaw": 1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line4_from2_4_recentre",
+   "type": "tp",
+   "target": [
+    592.5,
+    -52,
+    104.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line4",
+   "type": "walk",
+   "yaw": 1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line5_from2_5_recentre",
+   "type": "tp",
+   "target": [
+    592.5,
+    -52,
+    105.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line5",
+   "type": "walk",
+   "yaw": 1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line6_from2_6_recentre",
+   "type": "tp",
+   "target": [
+    592.5,
+    -52,
+    106.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line6",
+   "type": "walk",
+   "yaw": 1.5707963267948966,
+   "ms": 2500
+  }
+ ]
+}
