@@ -75,9 +75,12 @@ def main() -> None:
             srv.cmd("time set midnight")
             srv.cmd("tick sprint 40000")
             deadline = time.time() + 1500
+            request_accept_deadline = time.time() + 90
             done = False
             while time.time() < deadline and not done:
                 time.sleep(3)
+                if request.exists() and time.time() >= request_accept_deadline:
+                    raise RuntimeError("TraversalProbe did not consume request within 90 seconds; verify Fabric main entrypoint and server log")
                 if result.exists() and '"__done__"' in result.read_text():
                     done = True
             srv.cmd("tick sprint stop")
