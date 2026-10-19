@@ -1,0 +1,287 @@
+{
+ "large_ruin_1": {
+  "B": {
+   "summary": "20 generated pieces in 13 of 24 cities; placements identical to vanilla in 24/24 cities; 0 bounding-box overlaps; terrain cells inside the added height: max 0, pieces with any 0 of 20",
+   "pieces": 20,
+   "cities": 24,
+   "cities_with_piece": 13,
+   "placements_identical_cities": 24,
+   "bb_overlaps": 0,
+   "expansion_terrain_cells_per_piece": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "expansion_fill": {
+    "air": 21760,
+    "sculk_vein": 1833,
+    "sculk_sensor": 4,
+    "sculk": 3
+   },
+   "rotations": {
+    "CLOCKWISE_180": 7,
+    "COUNTERCLOCKWISE_90": 5,
+    "CLOCKWISE_90": 5,
+    "NONE": 3
+   },
+   "vertical_clearance_to_piece_above": []
+  },
+  "C": {
+   "summary": "20 generated pieces in 13 of 24 cities; placements identical to vanilla in 24/24 cities; 0 bounding-box overlaps; terrain cells inside the added height: max 1, pieces with any 1 of 20",
+   "pieces": 20,
+   "cities": 24,
+   "cities_with_piece": 13,
+   "placements_identical_cities": 24,
+   "bb_overlaps": 0,
+   "expansion_terrain_cells_per_piece": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "expansion_fill": {
+    "air": 41183,
+    "sculk_vein": 1537,
+    "sculk_sensor": 10,
+    "sculk": 8,
+    "smooth_basalt": 1,
+    "sculk_shrieker": 1
+   },
+   "rotations": {
+    "CLOCKWISE_180": 7,
+    "COUNTERCLOCKWISE_90": 5,
+    "CLOCKWISE_90": 5,
+    "NONE": 3
+   },
+   "vertical_clearance_to_piece_above": []
+  }
+ },
+ "medium_ruin_1": {
+  "B": {
+   "summary": "26 generated pieces in 16 of 24 cities; placements identical to vanilla in 24/24 cities; 0 bounding-box overlaps; terrain cells inside the added height: max 170, pieces with any 2 of 26",
+   "pieces": 26,
+   "cities": 24,
+   "cities_with_piece": 16,
+   "placements_identical_cities": 24,
+   "bb_overlaps": 0,
+   "expansion_terrain_cells_per_piece": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    170,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "expansion_fill": {
+    "air": 5394,
+    "sculk_vein": 205,
+    "dripstone_block": 168,
+    "pointed_dripstone": 2,
+    "smooth_basalt": 1,
+    "sculk": 1,
+    "glow_lichen": 1
+   },
+   "rotations": {
+    "COUNTERCLOCKWISE_90": 12,
+    "CLOCKWISE_180": 4,
+    "NONE": 6,
+    "CLOCKWISE_90": 4
+   },
+   "vertical_clearance_to_piece_above": []
+  }
+ },
+ "small_ruin_2": {
+  "B": {
+   "summary": "28 generated pieces in 18 of 24 cities; placements identical to vanilla in 24/24 cities; 0 bounding-box overlaps; terrain cells inside the added height: max 0, pieces with any 0 of 28",
+   "pieces": 28,
+   "cities": 24,
+   "cities_with_piece": 18,
+   "placements_identical_cities": 24,
+   "bb_overlaps": 0,
+   "expansion_terrain_cells_per_piece": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "expansion_fill": {
+    "air": 882,
+    "sculk_vein": 14
+   },
+   "rotations": {
+    "COUNTERCLOCKWISE_90": 7,
+    "NONE": 7,
+    "CLOCKWISE_90": 6,
+    "CLOCKWISE_180": 8
+   },
+   "vertical_clearance_to_piece_above": []
+  }
+ },
+ "medium_ruin_2": {
+  "B": {
+   "summary": "20 generated pieces in 13 of 24 cities; placements identical to vanilla in 24/24 cities; 0 bounding-box overlaps; terrain cells inside the added height: max 0, pieces with any 0 of 20",
+   "pieces": 20,
+   "cities": 24,
+   "cities_with_piece": 13,
+   "placements_identical_cities": 24,
+   "bb_overlaps": 0,
+   "expansion_terrain_cells_per_piece": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "expansion_fill": {
+    "air": 5570,
+    "sculk_vein": 90
+   },
+   "rotations": {
+    "COUNTERCLOCKWISE_90": 6,
+    "NONE": 8,
+    "CLOCKWISE_90": 4,
+    "CLOCKWISE_180": 2
+   },
+   "vertical_clearance_to_piece_above": []
+  }
+ },
+ "small_ruin_1": {
+  "B": {
+   "summary": "22 generated pieces in 14 of 24 cities; placements identical to vanilla in 24/24 cities; 0 bounding-box overlaps; terrain cells inside the added height: max 7, pieces with any 1 of 22",
+   "pieces": 22,
+   "cities": 24,
+   "cities_with_piece": 14,
+   "placements_identical_cities": 24,
+   "bb_overlaps": 0,
+   "expansion_terrain_cells_per_piece": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    7,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "expansion_fill": {
+    "air": 2420,
+    "sculk_vein": 81,
+    "deepslate": 6,
+    "deepslate_lapis_ore": 1
+   },
+   "rotations": {
+    "CLOCKWISE_90": 5,
+    "NONE": 6,
+    "CLOCKWISE_180": 7,
+    "COUNTERCLOCKWISE_90": 4
+   },
+   "vertical_clearance_to_piece_above": []
+  }
+ }
+}

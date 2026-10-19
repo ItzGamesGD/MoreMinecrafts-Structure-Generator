@@ -111,6 +111,19 @@ Open `review/index.html` (offline) or the ZIP `stage-24e-roof-alternatives.zip`.
 |---|---|---|---|---|---|---|---|
 {chr(10).join(md_rows)}
 
+## Generation compatibility of the taller options (needs authorisation before implementation)
+
+Method: the taller options were injected as overrides of the vanilla `ancient_city/structures/*.nbt` (datapack), and real Ancient Cities were generated on a
+Minecraft 26.1.2 server for the same 24 seeds as Stage 24-C (24001–24024). Every piece list was compared with the vanilla run of the same seed.
+Height-only growth: footprints, jigsaw positions/orientations and pool weights are unchanged; the bounding box grows upward only.
+
+{chr(10).join(f"- **{m} option {k}** ({'×'.join(map(str, static[m][k]['dimensions']))}): {v['summary']}." for m in HOUSES for k, v in sorted(wg.get(m, {}).items()))}
+
+Terrain cells counted are natural blocks (rock, dripstone, ore) left inside the added height that the template does not fill, i.e. places where the new roof
+meets the cave wall or ceiling; sculk decoration and air are excluded. The 170-cell `medium_ruin_1` case is the seed-24005 piece that is buried in a dripstone
+cave in vanilla as well (Stage 24-C finding). Limitations: 24 seeds; pieces are sampled where the vanilla pool weights place them; in-bounds options (A) keep the
+Stage 24-C bounding box and need no generation re-test.
+
 Proposal SHA-256: {json.dumps(hashes, indent=1)}
 """)
     zp = D24E / "stage-24e-roof-alternatives.zip"

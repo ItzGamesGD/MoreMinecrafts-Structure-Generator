@@ -7,7 +7,7 @@ Open `review/index.html` (offline) or the ZIP `stage-24e-roof-alternatives.zip`.
 |---|---|---|---|---|---|---|---|
 | large_ruin_1 | A | Impluvium court — stepped eaves falling outward and into the court (in bounds) | 17×5×17 | no | PASS | 20/20 simulated-player steps, placement mismatches 0 | [front](review/assets/large_ruin_1/A-front34.jpg) · [street](review/assets/large_ruin_1/A-street.jpg) · [cutaway](review/assets/large_ruin_1/A-section.jpg) |
 | large_ruin_1 | B | Raised cloister house — 5-high walls under a steep (2:1) double-pitched ring roof around the court (17×11×17, needs authorisation) | 17×11×17 | **yes** | PASS | 20/20 simulated-player steps, placement mismatches 0 | [front](review/assets/large_ruin_1/B-front34.jpg) · [street](review/assets/large_ruin_1/B-street.jpg) · [cutaway](review/assets/large_ruin_1/B-section.jpg) |
-| large_ruin_1 | C | Lancet gatehouse — raised walls, a low ring roof and one steep pointed gable over the entrance range (17×15×17, needs authorisation) | 17×14×17 | **yes** | PASS | 20/20 simulated-player steps, placement mismatches 0 | [front](review/assets/large_ruin_1/C-front34.jpg) · [street](review/assets/large_ruin_1/C-street.jpg) · [cutaway](review/assets/large_ruin_1/C-section.jpg) |
+| large_ruin_1 | C | Lancet gatehouse — raised walls, a low ring roof and one steep pointed gable over the entrance range (17×14×17, needs authorisation) | 17×14×17 | **yes** | PASS | 20/20 simulated-player steps, placement mismatches 0 | [front](review/assets/large_ruin_1/C-front34.jpg) · [street](review/assets/large_ruin_1/C-street.jpg) · [cutaway](review/assets/large_ruin_1/C-section.jpg) |
 | medium_ruin_1 | A | Stepped hip — two-tier eaves on all four sides, polished portal (in bounds) | 8×5×13 | no | PASS | 17/17 simulated-player steps, placement mismatches 0 | [front](review/assets/medium_ruin_1/A-front34.jpg) · [street](review/assets/medium_ruin_1/A-street.jpg) · [cutaway](review/assets/medium_ruin_1/A-section.jpg) |
 | medium_ruin_1 | B | Long gable — 45° roof along the house with brick gable ends (8×8×13, needs authorisation) | 8×8×13 | **yes** | PASS | 17/17 simulated-player steps, placement mismatches 0 | [front](review/assets/medium_ruin_1/B-front34.jpg) · [street](review/assets/medium_ruin_1/B-street.jpg) · [cutaway](review/assets/medium_ruin_1/B-section.jpg) |
 | medium_ruin_2 | A | Saltbox — the hall roof climbs in a long 1:2 slope into a hipped upper storey (in bounds) | 16×8×11 | no | PASS | 28/28 simulated-player steps, placement mismatches 0 | [front](review/assets/medium_ruin_2/A-front34.jpg) · [street](review/assets/medium_ruin_2/A-street.jpg) · [cutaway](review/assets/medium_ruin_2/A-section.jpg) |
@@ -16,6 +16,24 @@ Open `review/index.html` (offline) or the ZIP `stage-24e-roof-alternatives.zip`.
 | small_ruin_1 | B | Steep street gable — 45° roof with the gable and a window facing the street (7×8×8, needs authorisation) | 7×8×8 | **yes** | PASS | 17/17 simulated-player steps, placement mismatches 0 | [front](review/assets/small_ruin_1/B-front34.jpg) · [street](review/assets/small_ruin_1/B-street.jpg) · [cutaway](review/assets/small_ruin_1/B-section.jpg) |
 | small_ruin_2 | A | Mono-pitch — single slope rising to the north wall, glazed south front, framed doorway (in bounds) | 8×5×4 | no | PASS | 17/17 simulated-player steps, placement mismatches 0 | [front](review/assets/small_ruin_2/A-front34.jpg) · [street](review/assets/small_ruin_2/A-street.jpg) · [cutaway](review/assets/small_ruin_2/A-section.jpg) |
 | small_ruin_2 | B | Steep A-frame — 2:1 pitch closing in a back-to-back stair ridge (8×7×4, needs authorisation) | 8×7×4 | **yes** | PASS | 17/17 simulated-player steps, placement mismatches 0 | [front](review/assets/small_ruin_2/B-front34.jpg) · [street](review/assets/small_ruin_2/B-street.jpg) · [cutaway](review/assets/small_ruin_2/B-section.jpg) |
+
+## Generation compatibility of the taller options (needs authorisation before implementation)
+
+Method: the taller options were injected as overrides of the vanilla `ancient_city/structures/*.nbt` (datapack), and real Ancient Cities were generated on a
+Minecraft 26.1.2 server for the same 24 seeds as Stage 24-C (24001–24024). Every piece list was compared with the vanilla run of the same seed.
+Height-only growth: footprints, jigsaw positions/orientations and pool weights are unchanged; the bounding box grows upward only.
+
+- **large_ruin_1 option B** (17×11×17): 20 generated pieces in 13 of 24 cities; placements identical to vanilla in 24/24 cities; 0 bounding-box overlaps; terrain cells inside the added height: max 0, pieces with any 0 of 20.
+- **large_ruin_1 option C** (17×14×17): 20 generated pieces in 13 of 24 cities; placements identical to vanilla in 24/24 cities; 0 bounding-box overlaps; terrain cells inside the added height: max 1, pieces with any 1 of 20.
+- **medium_ruin_1 option B** (8×8×13): 26 generated pieces in 16 of 24 cities; placements identical to vanilla in 24/24 cities; 0 bounding-box overlaps; terrain cells inside the added height: max 170, pieces with any 2 of 26.
+- **medium_ruin_2 option B** (16×10×11): 20 generated pieces in 13 of 24 cities; placements identical to vanilla in 24/24 cities; 0 bounding-box overlaps; terrain cells inside the added height: max 0, pieces with any 0 of 20.
+- **small_ruin_1 option B** (7×8×8): 22 generated pieces in 14 of 24 cities; placements identical to vanilla in 24/24 cities; 0 bounding-box overlaps; terrain cells inside the added height: max 7, pieces with any 1 of 22.
+- **small_ruin_2 option B** (8×7×4): 28 generated pieces in 18 of 24 cities; placements identical to vanilla in 24/24 cities; 0 bounding-box overlaps; terrain cells inside the added height: max 0, pieces with any 0 of 28.
+
+Terrain cells counted are natural blocks (rock, dripstone, ore) left inside the added height that the template does not fill, i.e. places where the new roof
+meets the cave wall or ceiling; sculk decoration and air are excluded. The 170-cell `medium_ruin_1` case is the seed-24005 piece that is buried in a dripstone
+cave in vanilla as well (Stage 24-C finding). Limitations: 24 seeds; pieces are sampled where the vanilla pool weights place them; in-bounds options (A) keep the
+Stage 24-C bounding box and need no generation re-test.
 
 Proposal SHA-256: {
  "proposals/large_ruin_1/A/candidate.nbt": "162838a3c42ccaafe5676c4064beb4c1aadc192b0960a29f4904e0437f178abf",

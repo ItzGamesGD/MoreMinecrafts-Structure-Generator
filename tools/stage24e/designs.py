@@ -118,7 +118,7 @@ def large_B():
 
 
 def large_C():
-    v = Variant("large_ruin_1", "C", "Lancet gatehouse — raised walls, a low ring roof and one steep pointed gable over the entrance range (17×15×17, needs authorisation)")
+    v = Variant("large_ruin_1", "C", "Lancet gatehouse — raised walls, a low ring roof and one steep pointed gable over the entrance range (17×14×17, needs authorisation)")
     base = large_ring(v, step=1)
     z0, z1, zc, step = 3, 11, 7, 2
     for x in range(0, 6):                   # clear the ring roof under the cross gable

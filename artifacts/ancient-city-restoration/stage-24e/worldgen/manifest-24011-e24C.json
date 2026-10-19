@@ -1,0 +1,1921 @@
+{
+ "seed": 24011,
+ "variant": "e24C",
+ "locate_output": "The nearest minecraft:ancient_city is at [-192, ~, -560] (554 blocks away)",
+ "locate_seconds": 0.1,
+ "city_xz": [
+  -192,
+  -560
+ ],
+ "gen_seconds": 3.1,
+ "cities": [
+  {
+   "start_chunk": [
+    -12,
+    -35
+   ],
+   "pieces": [
+    {
+     "template": "minecraft:ancient_city/city_center/city_center_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -212,
+      -52,
+      -547
+     ],
+     "bb": [
+      -212,
+      -52,
+      -564,
+      -172,
+      -22,
+      -547
+     ],
+     "ground_level_delta": 1,
+     "junction_count": 4
+    },
+    {
+     "template": "minecraft:ancient_city/city_center/walls/left",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -226,
+      -51,
+      -547
+     ],
+     "bb": [
+      -226,
+      -51,
+      -564,
+      -213,
+      -28,
+      -547
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "minecraft:ancient_city/city_center/walls/right",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -171,
+      -51,
+      -547
+     ],
+     "bb": [
+      -171,
+      -51,
+      -564,
+      -158,
+      -28,
+      -547
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "minecraft:ancient_city/city_center/walls/bottom_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -212,
+      -51,
+      -533
+     ],
+     "bb": [
+      -212,
+      -51,
+      -546,
+      -172,
+      -28,
+      -533
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 4
+    },
+    {
+     "template": "minecraft:ancient_city/city_center/walls/top",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -212,
+      -51,
+      -565
+     ],
+     "bb": [
+      -212,
+      -51,
+      -578,
+      -172,
+      -28,
+      -565
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 4
+    },
+    {
+     "template": "minecraft:ancient_city/walls/ruined_horizontal_wall_stairs_4",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -244,
+      -51,
+      -566
+     ],
+     "bb": [
+      -244,
+      -51,
+      -566,
+      -227,
+      -37,
+      -546
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 4
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_corner_wall_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -157,
+      -51,
+      -565
+     ],
+     "bb": [
+      -157,
+      -51,
+      -565,
+      -137,
+      -37,
+      -545
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 4
+    },
+    {
+     "template": "minecraft:ancient_city/city_center/walls/bottom_right_corner_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -171,
+      -51,
+      -533
+     ],
+     "bb": [
+      -171,
+      -51,
+      -546,
+      -158,
+      -28,
+      -533
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/city/entrance/entrance_connector",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -211,
+      -51,
+      -503
+     ],
+     "bb": [
+      -211,
+      -51,
+      -532,
+      -173,
+      -37,
+      -503
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/city_center/walls/bottom_left_corner",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -226,
+      -51,
+      -533
+     ],
+     "bb": [
+      -226,
+      -51,
+      -546,
+      -213,
+      -28,
+      -533
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/city_center/walls/top_right_corner",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -171,
+      -51,
+      -565
+     ],
+     "bb": [
+      -171,
+      -51,
+      -578,
+      -158,
+      -28,
+      -565
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/city_center/walls/top_left_corner",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -226,
+      -51,
+      -565
+     ],
+     "bb": [
+      -226,
+      -51,
+      -578,
+      -213,
+      -28,
+      -565
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_stairs_4",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -183,
+      -51,
+      -596
+     ],
+     "bb": [
+      -203,
+      -51,
+      -596,
+      -183,
+      -37,
+      -579
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 4
+    },
+    {
+     "template": "minecraft:ancient_city/structures/medium_pillar_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -231,
+      -51,
+      -573
+     ],
+     "bb": [
+      -238,
+      -51,
+      -573,
+      -231,
+      -41,
+      -567
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/structures/small_statue",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -232,
+      -51,
+      -545
+     ],
+     "bb": [
+      -239,
+      -51,
+      -545,
+      -232,
+      -44,
+      -536
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_stairs_4",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -245,
+      -51,
+      -546
+     ],
+     "bb": [
+      -262,
+      -51,
+      -566,
+      -245,
+      -37,
+      -546
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 4
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_bridge",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -157,
+      -51,
+      -566
+     ],
+     "bb": [
+      -157,
+      -51,
+      -583,
+      -137,
+      -37,
+      -566
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_stairs_3",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -157,
+      -51,
+      -527
+     ],
+     "bb": [
+      -157,
+      -51,
+      -544,
+      -137,
+      -37,
+      -527
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -119,
+      -51,
+      -545
+     ],
+     "bb": [
+      -136,
+      -51,
+      -565,
+      -119,
+      -37,
+      -545
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "minecraft:ancient_city/city/entrance/entrance_path_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -211,
+      -51,
+      -468
+     ],
+     "bb": [
+      -211,
+      -51,
+      -502,
+      -173,
+      -37,
+      -468
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/walls/ruined_horizontal_wall_stairs_3",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -229,
+      -51,
+      -532
+     ],
+     "bb": [
+      -229,
+      -51,
+      -532,
+      -212,
+      -37,
+      -512
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/structures/barracks",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -204,
+      -51,
+      -579
+     ],
+     "bb": [
+      -224,
+      -51,
+      -595,
+      -204,
+      -40,
+      -579
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/walls/ruined_corner_wall_2",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -183,
+      -51,
+      -617
+     ],
+     "bb": [
+      -203,
+      -51,
+      -617,
+      -183,
+      -37,
+      -597
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 4
+    },
+    {
+     "template": "minecraft:ancient_city/structures/chamber_3",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -173,
+      -51,
+      -582
+     ],
+     "bb": [
+      -182,
+      -51,
+      -592,
+      -173,
+      -46,
+      -582
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "minecraft:ancient_city/structures/tall_ruin_3",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -262,
+      -51,
+      -583
+     ],
+     "bb": [
+      -262,
+      -51,
+      -583,
+      -246,
+      -29,
+      -567
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_lshape_wall_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -283,
+      -51,
+      -566
+     ],
+     "bb": [
+      -283,
+      -51,
+      -566,
+      -263,
+      -37,
+      -546
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "minecraft:ancient_city/structures/small_ruin_2",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -252,
+      -51,
+      -545
+     ],
+     "bb": [
+      -255,
+      -51,
+      -545,
+      -252,
+      -47,
+      -538
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:list_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -136,
+      -51,
+      -582
+     ],
+     "bb": [
+      -136,
+      -51,
+      -582,
+      -120,
+      -47,
+      -566
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/walls/ruined_horizontal_wall_stairs_2",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -157,
+      -51,
+      -509
+     ],
+     "bb": [
+      -157,
+      -51,
+      -526,
+      -137,
+      -37,
+      -509
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/structures/small_statue",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -136,
+      -51,
+      -539
+     ],
+     "bb": [
+      -136,
+      -51,
+      -539,
+      -127,
+      -44,
+      -532
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_stairs_3",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -118,
+      -51,
+      -565
+     ],
+     "bb": [
+      -118,
+      -51,
+      -565,
+      -101,
+      -37,
+      -545
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 4
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_2",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -155,
+      -51,
+      -472
+     ],
+     "bb": [
+      -172,
+      -51,
+      -492,
+      -155,
+      -37,
+      -472
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 4
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_lshape_wall_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -232,
+      -51,
+      -472
+     ],
+     "bb": [
+      -232,
+      -51,
+      -492,
+      -212,
+      -37,
+      -472
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/structures/chamber_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -227,
+      -51,
+      -493
+     ],
+     "bb": [
+      -227,
+      -51,
+      -511,
+      -213,
+      -42,
+      -493
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "minecraft:ancient_city/walls/ruined_horizontal_wall_stairs_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -247,
+      -51,
+      -532
+     ],
+     "bb": [
+      -247,
+      -51,
+      -532,
+      -230,
+      -37,
+      -512
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -214,
+      -47,
+      -589
+     ],
+     "bb": [
+      -214,
+      -47,
+      -589,
+      -214,
+      -47,
+      -589
+     ],
+     "ground_level_delta": -4,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -215,
+      -47,
+      -581
+     ],
+     "bb": [
+      -215,
+      -47,
+      -581,
+      -215,
+      -47,
+      -581
+     ],
+     "ground_level_delta": -4,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_stairs_4",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -203,
+      -51,
+      -618
+     ],
+     "bb": [
+      -203,
+      -51,
+      -635,
+      -183,
+      -37,
+      -618
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_stairs_2",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -182,
+      -51,
+      -617
+     ],
+     "bb": [
+      -182,
+      -51,
+      -617,
+      -165,
+      -37,
+      -597
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_stairs_4",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -221,
+      -51,
+      -617
+     ],
+     "bb": [
+      -221,
+      -51,
+      -617,
+      -204,
+      -37,
+      -597
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -177,
+      -50,
+      -589
+     ],
+     "bb": [
+      -177,
+      -50,
+      -589,
+      -177,
+      -50,
+      -589
+     ],
+     "ground_level_delta": -1,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_stairs_3",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -263,
+      -51,
+      -545
+     ],
+     "bb": [
+      -283,
+      -51,
+      -545,
+      -263,
+      -37,
+      -528
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/structures/barracks",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -136,
+      -51,
+      -526
+     ],
+     "bb": [
+      -136,
+      -51,
+      -526,
+      -116,
+      -40,
+      -510
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/structures/chamber_2",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -169,
+      -51,
+      -524
+     ],
+     "bb": [
+      -169,
+      -51,
+      -524,
+      -158,
+      -46,
+      -514
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "minecraft:ancient_city/structures/chamber_2",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -115,
+      -51,
+      -533
+     ],
+     "bb": [
+      -115,
+      -51,
+      -544,
+      -105,
+      -46,
+      -533
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_stairs_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -83,
+      -51,
+      -545
+     ],
+     "bb": [
+      -100,
+      -51,
+      -565,
+      -83,
+      -37,
+      -545
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/structures/small_statue",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -114,
+      -51,
+      -566
+     ],
+     "bb": [
+      -114,
+      -51,
+      -575,
+      -107,
+      -44,
+      -566
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/structures/chamber_3",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -169,
+      -51,
+      -462
+     ],
+     "bb": [
+      -169,
+      -51,
+      -471,
+      -159,
+      -46,
+      -462
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_lshape_wall_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -134,
+      -51,
+      -492
+     ],
+     "bb": [
+      -154,
+      -51,
+      -492,
+      -134,
+      -37,
+      -472
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "minecraft:ancient_city/structures/medium_ruin_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -169,
+      -51,
+      -493
+     ],
+     "bb": [
+      -169,
+      -51,
+      -500,
+      -157,
+      -47,
+      -493
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -226,
+      -47,
+      -498
+     ],
+     "bb": [
+      -226,
+      -47,
+      -498,
+      -226,
+      -47,
+      -498
+     ],
+     "ground_level_delta": -4,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/structures/small_ruin_2",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -236,
+      -51,
+      -511
+     ],
+     "bb": [
+      -239,
+      -51,
+      -511,
+      -236,
+      -47,
+      -504
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/structures/medium_ruin_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -182,
+      -51,
+      -633
+     ],
+     "bb": [
+      -182,
+      -51,
+      -633,
+      -175,
+      -47,
+      -621
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/walls/ruined_horizontal_wall_stairs_4",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -183,
+      -51,
+      -653
+     ],
+     "bb": [
+      -203,
+      -51,
+      -653,
+      -183,
+      -37,
+      -636
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_stairs_3",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -164,
+      -51,
+      -617
+     ],
+     "bb": [
+      -164,
+      -51,
+      -617,
+      -147,
+      -37,
+      -597
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 4
+    },
+    {
+     "template": "minecraft:ancient_city/structures/barracks",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -220,
+      -51,
+      -618
+     ],
+     "bb": [
+      -220,
+      -51,
+      -638,
+      -204,
+      -40,
+      -618
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_stairs_4",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -222,
+      -51,
+      -597
+     ],
+     "bb": [
+      -239,
+      -51,
+      -617,
+      -222,
+      -37,
+      -597
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 4
+    },
+    {
+     "template": "minecraft:ancient_city/walls/ruined_horizontal_wall_stairs_4",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -263,
+      -51,
+      -527
+     ],
+     "bb": [
+      -283,
+      -51,
+      -527,
+      -263,
+      -37,
+      -510
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 4
+    },
+    {
+     "template": "minecraft:ancient_city/structures/barracks",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -284,
+      -51,
+      -528
+     ],
+     "bb": [
+      -304,
+      -51,
+      -544,
+      -284,
+      -40,
+      -528
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -125,
+      -47,
+      -524
+     ],
+     "bb": [
+      -125,
+      -47,
+      -524,
+      -125,
+      -47,
+      -524
+     ],
+     "ground_level_delta": -4,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -126,
+      -47,
+      -516
+     ],
+     "bb": [
+      -126,
+      -47,
+      -516,
+      -126,
+      -47,
+      -516
+     ],
+     "ground_level_delta": -4,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -161,
+      -49,
+      -519
+     ],
+     "bb": [
+      -161,
+      -49,
+      -519,
+      -161,
+      -49,
+      -519
+     ],
+     "ground_level_delta": -2,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/structures/large_ruin_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -99,
+      -51,
+      -566
+     ],
+     "bb": [
+      -99,
+      -51,
+      -582,
+      -83,
+      -38,
+      -566
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/structures/chamber_3",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -97,
+      -51,
+      -535
+     ],
+     "bb": [
+      -97,
+      -51,
+      -544,
+      -87,
+      -46,
+      -535
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -162,
+      -50,
+      -466
+     ],
+     "bb": [
+      -162,
+      -50,
+      -466,
+      -162,
+      -50,
+      -466
+     ],
+     "ground_level_delta": -1,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_stairs_2",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -154,
+      -51,
+      -454
+     ],
+     "bb": [
+      -154,
+      -51,
+      -471,
+      -134,
+      -37,
+      -454
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:list_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -164,
+      -51,
+      -637
+     ],
+     "bb": [
+      -182,
+      -51,
+      -651,
+      -164,
+      -42,
+      -637
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/walls/ruined_horizontal_wall_stairs_3",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -203,
+      -51,
+      -654
+     ],
+     "bb": [
+      -203,
+      -51,
+      -671,
+      -183,
+      -37,
+      -654
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/structures/chamber_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -148,
+      -51,
+      -636
+     ],
+     "bb": [
+      -162,
+      -51,
+      -636,
+      -148,
+      -42,
+      -618
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/walls/ruined_horizontal_wall_stairs_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -146,
+      -51,
+      -617
+     ],
+     "bb": [
+      -146,
+      -51,
+      -617,
+      -129,
+      -37,
+      -597
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/structures/small_statue",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -152,
+      -51,
+      -596
+     ],
+     "bb": [
+      -159,
+      -51,
+      -596,
+      -152,
+      -44,
+      -587
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -210,
+      -47,
+      -628
+     ],
+     "bb": [
+      -210,
+      -47,
+      -628,
+      -210,
+      -47,
+      -628
+     ],
+     "ground_level_delta": -4,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/walls/ruined_horizontal_wall_stairs_3",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -257,
+      -51,
+      -617
+     ],
+     "bb": [
+      -257,
+      -51,
+      -617,
+      -240,
+      -37,
+      -597
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/structures/chamber_2",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -237,
+      -51,
+      -585
+     ],
+     "bb": [
+      -237,
+      -51,
+      -596,
+      -227,
+      -46,
+      -585
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 2
+    },
+    {
+     "template": "minecraft:ancient_city/structures/barracks",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -239,
+      -51,
+      -618
+     ],
+     "bb": [
+      -239,
+      -51,
+      -638,
+      -223,
+      -40,
+      -618
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 3
+    },
+    {
+     "template": "minecraft:ancient_city/structures/large_pillar_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -257,
+      -51,
+      -516
+     ],
+     "bb": [
+      -262,
+      -51,
+      -521,
+      -257,
+      -37,
+      -516
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_2",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -283,
+      -51,
+      -492
+     ],
+     "bb": [
+      -283,
+      -51,
+      -509,
+      -263,
+      -37,
+      -492
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/structures/small_statue",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -284,
+      -51,
+      -513
+     ],
+     "bb": [
+      -293,
+      -51,
+      -520,
+      -284,
+      -44,
+      -513
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -295,
+      -47,
+      -530
+     ],
+     "bb": [
+      -295,
+      -47,
+      -530,
+      -295,
+      -47,
+      -530
+     ],
+     "ground_level_delta": -4,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -294,
+      -47,
+      -538
+     ],
+     "bb": [
+      -294,
+      -47,
+      -538,
+      -294,
+      -47,
+      -538
+     ],
+     "ground_level_delta": -4,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -90,
+      -50,
+      -539
+     ],
+     "bb": [
+      -90,
+      -50,
+      -539,
+      -90,
+      -50,
+      -539
+     ],
+     "ground_level_delta": -1,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/structures/small_statue",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -133,
+      -51,
+      -466
+     ],
+     "bb": [
+      -133,
+      -51,
+      -466,
+      -124,
+      -44,
+      -459
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -176,
+      -50,
+      -643
+     ],
+     "bb": [
+      -176,
+      -50,
+      -643,
+      -176,
+      -50,
+      -643
+     ],
+     "ground_level_delta": -1,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -169,
+      -47,
+      -638
+     ],
+     "bb": [
+      -169,
+      -47,
+      -638,
+      -169,
+      -47,
+      -638
+     ],
+     "ground_level_delta": -4,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/structures/small_statue",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -182,
+      -51,
+      -666
+     ],
+     "bb": [
+      -182,
+      -51,
+      -666,
+      -173,
+      -44,
+      -659
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/structures/barracks",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -204,
+      -51,
+      -655
+     ],
+     "bb": [
+      -224,
+      -51,
+      -671,
+      -204,
+      -40,
+      -655
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -154,
+      -50,
+      -624
+     ],
+     "bb": [
+      -154,
+      -50,
+      -624,
+      -154,
+      -50,
+      -624
+     ],
+     "ground_level_delta": -1,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -149,
+      -47,
+      -631
+     ],
+     "bb": [
+      -149,
+      -47,
+      -631,
+      -149,
+      -47,
+      -631
+     ],
+     "ground_level_delta": -4,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/walls/ruined_horizontal_wall_stairs_4",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "NONE",
+     "pos": [
+      -128,
+      -51,
+      -617
+     ],
+     "bb": [
+      -128,
+      -51,
+      -617,
+      -111,
+      -37,
+      -597
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/structures/medium_ruin_2",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -142,
+      -51,
+      -618
+     ],
+     "bb": [
+      -142,
+      -51,
+      -633,
+      -132,
+      -44,
+      -618
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/walls/intact_horizontal_wall_stairs_4",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -258,
+      -51,
+      -597
+     ],
+     "bb": [
+      -275,
+      -51,
+      -617,
+      -258,
+      -37,
+      -597
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "minecraft:ancient_city/structures/medium_pillar_1",
+     "element_type": "minecraft:single_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -245,
+      -51,
+      -624
+     ],
+     "bb": [
+      -252,
+      -51,
+      -624,
+      -245,
+      -41,
+      -618
+     ],
+     "ground_level_delta": 0,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "CLOCKWISE_180",
+     "pos": [
+      -232,
+      -49,
+      -593
+     ],
+     "bb": [
+      -232,
+      -49,
+      -593,
+      -232,
+      -49,
+      -593
+     ],
+     "ground_level_delta": -2,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "COUNTERCLOCKWISE_90",
+     "pos": [
+      -237,
+      -47,
+      -629
+     ],
+     "bb": [
+      -237,
+      -47,
+      -629,
+      -237,
+      -47,
+      -629
+     ],
+     "ground_level_delta": -4,
+     "junction_count": 1
+    },
+    {
+     "template": "",
+     "element_type": "minecraft:feature_pool_element",
+     "rotation": "CLOCKWISE_90",
+     "pos": [
+      -229,
+      -47,
+      -628
+     ],
+     "bb": [
+      -229,
+      -47,
+      -628,
+      -229,
+      -47,
+      -628
+     ],
+     "ground_level_delta": -4,
+     "junction_count": 1
+    }
+   ]
+  }
+ ]
+}
