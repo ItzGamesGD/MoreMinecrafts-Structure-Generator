@@ -1,0 +1,797 @@
+{
+  "module": "large_pillar_1",
+  "dimensions_xyz": [
+    6,
+    15,
+    6
+  ],
+  "change_count": 57,
+  "operation_counts": {
+    "replaced": 88,
+    "carved": 46,
+    "tower_shaft_carve": 36,
+    "tower_landing": 9,
+    "tower_entry_opening": 1,
+    "tower_entry_tunnel": 2,
+    "ladder_support": 13,
+    "tower_ladder": 13,
+    "ladder_headroom": 4,
+    "observation_opening": 3,
+    "observation_deck": 3,
+    "soul_lantern_lighting": 4
+  },
+  "changes": [
+    {
+      "pos_xyz": [
+        0,
+        1,
+        2
+      ],
+      "action": "remove",
+      "original_state": "minecraft:deepslate_tile_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "tower_entry_opening"
+      ]
+    },
+    {
+      "pos_xyz": [
+        1,
+        1,
+        2
+      ],
+      "action": "remove",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "tower_entry_tunnel"
+      ]
+    },
+    {
+      "pos_xyz": [
+        1,
+        2,
+        2
+      ],
+      "action": "remove",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "tower_entry_tunnel"
+      ]
+    },
+    {
+      "pos_xyz": [
+        1,
+        12,
+        1
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:soul_lantern[hanging=false]",
+      "reasons": [
+        "soul_lantern_lighting"
+      ]
+    },
+    {
+      "pos_xyz": [
+        1,
+        12,
+        4
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:soul_lantern[hanging=false]",
+      "reasons": [
+        "soul_lantern_lighting"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        1,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:ladder[facing=west]",
+      "reasons": [
+        "tower_ladder"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        2,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:ladder[facing=west]",
+      "reasons": [
+        "tower_ladder",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        2,
+        3
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:deepslate_tiles",
+      "reasons": [
+        "tower_landing",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        3,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:ladder[facing=west]",
+      "reasons": [
+        "tower_ladder",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        3,
+        3
+      ],
+      "action": "remove",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        4,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:ladder[facing=west]",
+      "reasons": [
+        "tower_ladder",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        4,
+        3
+      ],
+      "action": "remove",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        5,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:ladder[facing=west]",
+      "reasons": [
+        "tower_ladder",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        5,
+        3
+      ],
+      "action": "remove",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        6,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:ladder[facing=west]",
+      "reasons": [
+        "tower_ladder",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        6,
+        3
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:deepslate_tiles",
+      "reasons": [
+        "tower_landing",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        7,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:ladder[facing=west]",
+      "reasons": [
+        "tower_ladder",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        7,
+        3
+      ],
+      "action": "remove",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        8,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:ladder[facing=west]",
+      "reasons": [
+        "tower_ladder",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        8,
+        3
+      ],
+      "action": "remove",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        9,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:ladder[facing=west]",
+      "reasons": [
+        "tower_ladder",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        9,
+        3
+      ],
+      "action": "remove",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        10,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:ladder[facing=west]",
+      "reasons": [
+        "tower_ladder",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        10,
+        3
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:deepslate_tiles",
+      "reasons": [
+        "tower_landing",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        11,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:ladder[facing=west]",
+      "reasons": [
+        "ladder_headroom",
+        "tower_ladder"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        12,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:ladder[facing=west]",
+      "reasons": [
+        "ladder_headroom",
+        "tower_ladder"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        13,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:ladder[facing=west]",
+      "reasons": [
+        "ladder_headroom",
+        "tower_ladder"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        13,
+        3
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:deepslate_tiles",
+      "reasons": [
+        "observation_deck"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        14,
+        2
+      ],
+      "action": "remove",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "ladder_headroom"
+      ]
+    },
+    {
+      "pos_xyz": [
+        2,
+        14,
+        3
+      ],
+      "action": "remove",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "observation_opening"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        1,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:polished_basalt[axis=y]",
+      "reasons": [
+        "ladder_support"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        2,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:polished_basalt[axis=y]",
+      "reasons": [
+        "ladder_support",
+        "tower_landing",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        2,
+        3
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:deepslate_tiles",
+      "reasons": [
+        "tower_landing",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        3,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:polished_basalt[axis=y]",
+      "reasons": [
+        "ladder_support",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        3,
+        3
+      ],
+      "action": "remove",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        4,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:polished_basalt[axis=y]",
+      "reasons": [
+        "ladder_support",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        4,
+        3
+      ],
+      "action": "remove",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        5,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:polished_basalt[axis=y]",
+      "reasons": [
+        "ladder_support",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        5,
+        3
+      ],
+      "action": "remove",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        6,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:polished_basalt[axis=y]",
+      "reasons": [
+        "ladder_support",
+        "tower_landing",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        6,
+        3
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:deepslate_tiles",
+      "reasons": [
+        "tower_landing",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        7,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:polished_basalt[axis=y]",
+      "reasons": [
+        "ladder_support",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        7,
+        3
+      ],
+      "action": "remove",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        8,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:polished_basalt[axis=y]",
+      "reasons": [
+        "ladder_support",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        8,
+        3
+      ],
+      "action": "remove",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        9,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:polished_basalt[axis=y]",
+      "reasons": [
+        "ladder_support",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        9,
+        3
+      ],
+      "action": "remove",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        10,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:polished_basalt[axis=y]",
+      "reasons": [
+        "ladder_support",
+        "tower_landing",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        10,
+        3
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:deepslate_tiles",
+      "reasons": [
+        "tower_landing",
+        "tower_shaft_carve"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        11,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:polished_deepslate",
+      "restored_state": "minecraft:polished_basalt[axis=y]",
+      "reasons": [
+        "ladder_support"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        12,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:polished_basalt[axis=y]",
+      "reasons": [
+        "ladder_support"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        13,
+        2
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:deepslate_tiles",
+      "reasons": [
+        "ladder_support",
+        "observation_deck"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        13,
+        3
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:deepslate_tiles",
+      "reasons": [
+        "observation_deck"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        14,
+        2
+      ],
+      "action": "remove",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "observation_opening"
+      ]
+    },
+    {
+      "pos_xyz": [
+        3,
+        14,
+        3
+      ],
+      "action": "remove",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:air",
+      "reasons": [
+        "observation_opening"
+      ]
+    },
+    {
+      "pos_xyz": [
+        4,
+        12,
+        1
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:soul_lantern[hanging=false]",
+      "reasons": [
+        "soul_lantern_lighting"
+      ]
+    },
+    {
+      "pos_xyz": [
+        4,
+        12,
+        4
+      ],
+      "action": "replace",
+      "original_state": "minecraft:deepslate[axis=y]",
+      "restored_state": "minecraft:soul_lantern[hanging=false]",
+      "reasons": [
+        "soul_lantern_lighting"
+      ]
+    }
+  ]
+}

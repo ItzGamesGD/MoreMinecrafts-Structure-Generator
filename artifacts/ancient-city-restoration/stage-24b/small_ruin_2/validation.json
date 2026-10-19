@@ -1,0 +1,120 @@
+{
+  "module": "small_ruin_2",
+  "original_dimensions_xyz": [
+    8,
+    5,
+    4
+  ],
+  "dimensions_xyz": [
+    8,
+    5,
+    4
+  ],
+  "source_status": "ORIGINAL SOURCE VERIFIED",
+  "geometry_status": "GEOMETRY VERIFIED",
+  "design_status": "DESIGN PROPOSED",
+  "visual_status": "VISUAL PENDING OWNER REVIEW",
+  "live_status": "LIVE PENDING",
+  "conflicts": [],
+  "checks": {
+    "source_hash": "PASS",
+    "dimensions": "PASS",
+    "jigsaw_full_nbt": "PASS",
+    "protected_block_entities": "PASS",
+    "candidate_bounds": "PASS",
+    "entry_access": "PASS",
+    "internal_route_to_bed": "PASS",
+    "bed_and_clearance": "PASS",
+    "workstation_clearance": "PASS",
+    "container_interaction_clearance": "PASS",
+    "wall_and_roof_integrity": "PASS",
+    "blockstate_palette_resolution": "PASS",
+    "native_nbt_round_trip": "PASS",
+    "schematic_export_reload": "PASS"
+  },
+  "original_block_count": 16,
+  "candidate_block_records": 128,
+  "changed_original_positions": 7,
+  "added_positions": 112,
+  "source_blob_sha1": "34d14f95c92675e6d97d212baf88e84c4f506fbd",
+  "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/small_ruin_2.nbt",
+  "jigsaw_count": 1,
+  "jigsaw_preserved": true,
+  "block_entities_preserved": true,
+  "status": "CANDIDATE_VALIDATED_STATIC_REVIEW_PENDING",
+  "schematic_bounds_xyz": [
+    8,
+    5,
+    4
+  ],
+  "render_labels": [
+    "yaw 0deg",
+    "yaw 90deg",
+    "yaw 180deg",
+    "yaw 270deg"
+  ],
+  "render_stats": {
+    "dims": [
+      8,
+      5,
+      4
+    ],
+    "bounds": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        7,
+        4,
+        3
+      ]
+    ],
+    "block_count": 127,
+    "top_materials": [
+      [
+        "deepslate_bricks",
+        68
+      ],
+      [
+        "deepslate_tiles",
+        32
+      ],
+      [
+        "polished_deepslate",
+        12
+      ],
+      [
+        "cobbled_deepslate",
+        8
+      ],
+      [
+        "spruce_door",
+        1
+      ],
+      [
+        "barrel",
+        1
+      ],
+      [
+        "spruce_door",
+        1
+      ],
+      [
+        "gray_bed",
+        1
+      ],
+      [
+        "gray_bed",
+        1
+      ],
+      [
+        "polished_deepslate_slab",
+        1
+      ]
+    ]
+  },
+  "visual_generation": "COMPLETE_STATIC_RENDER",
+  "minecraft_client_status": "LIVE PENDING"
+}

@@ -1,0 +1,132 @@
+{
+  "module": "sauna_1",
+  "original_dimensions_xyz": [
+    29,
+    10,
+    37
+  ],
+  "dimensions_xyz": [
+    29,
+    10,
+    37
+  ],
+  "source_status": "ORIGINAL SOURCE VERIFIED",
+  "geometry_status": "GEOMETRY VERIFIED",
+  "design_status": "DESIGN PROPOSED",
+  "visual_status": "VISUAL PENDING OWNER REVIEW",
+  "live_status": "LIVE PENDING",
+  "conflicts": [
+    {
+      "type": "original_wall_opening",
+      "status": "OWNER_REVIEW",
+      "position": [
+        11,
+        2,
+        33
+      ],
+      "detail": "Removed one cracked-brick head block to connect south reception to preserved bath circulation."
+    }
+  ],
+  "checks": {
+    "source_hash": "PASS",
+    "dimensions": "PASS",
+    "jigsaw_full_nbt": "PASS",
+    "protected_block_entities": "PASS",
+    "candidate_bounds": "PASS",
+    "water_count_and_containment_geometry": "PASS_STATIC_ONLY",
+    "chest_loot_nbt": "PASS",
+    "chest_interaction_clearance": "PASS",
+    "bath_and_plunge_route_connectivity": "PASS_STATIC",
+    "stair_and_route_preservation": "PASS",
+    "reception_roof": "PASS_STATIC",
+    "fluid_ticks": "LIVE_PENDING",
+    "blockstate_palette_resolution": "PASS",
+    "native_nbt_round_trip": "PASS",
+    "schematic_export_reload": "PASS"
+  },
+  "original_block_count": 1847,
+  "candidate_block_records": 1901,
+  "changed_original_positions": 1,
+  "added_positions": 54,
+  "source_blob_sha1": "ef56d35f13f3acb8d62095ccc2f7e85d58d253b1",
+  "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/sauna_1.nbt",
+  "jigsaw_count": 5,
+  "jigsaw_preserved": true,
+  "block_entities_preserved": true,
+  "status": "CANDIDATE_VALIDATED_STATIC_REVIEW_PENDING",
+  "schematic_bounds_xyz": [
+    29,
+    9,
+    37
+  ],
+  "render_labels": [
+    "yaw 0deg",
+    "yaw 90deg",
+    "yaw 180deg",
+    "yaw 270deg"
+  ],
+  "render_stats": {
+    "dims": [
+      29,
+      9,
+      37
+    ],
+    "bounds": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        28,
+        8,
+        36
+      ]
+    ],
+    "block_count": 1895,
+    "top_materials": [
+      [
+        "deepslate_bricks",
+        1038
+      ],
+      [
+        "deepslate_tiles",
+        342
+      ],
+      [
+        "cracked_deepslate_bricks",
+        156
+      ],
+      [
+        "deepslate",
+        69
+      ],
+      [
+        "chiseled_deepslate",
+        46
+      ],
+      [
+        "water",
+        43
+      ],
+      [
+        "deepslate_tile_slab",
+        43
+      ],
+      [
+        "cracked_deepslate_tiles",
+        23
+      ],
+      [
+        "white_candle",
+        12
+      ],
+      [
+        "deepslate_tile_stairs",
+        12
+      ]
+    ]
+  },
+  "visual_generation": "COMPLETE_STATIC_RENDER",
+  "minecraft_client_status": "LIVE PENDING"
+}

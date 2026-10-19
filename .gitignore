@@ -32,3 +32,12 @@ validation/minecraft-visual/.gradle/
 validation/minecraft-visual/build/
 validation/minecraft-visual/run/
 validation/minecraft-visual/evidence/
+
+# Phase 2 / Ancient City integration exclusions
+artifacts/phase-2/control/final.schem
+artifacts/phase-2/control/render.png
+artifacts/phase-2/control/structure-report.txt
+*.pyc
+node_modules/
+tools/stage24c/bot/node_modules/
+artifacts/ancient-city-restoration/stage-24c/_work/

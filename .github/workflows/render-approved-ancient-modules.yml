@@ -1,0 +1,33 @@
+name: Render approved Ancient City modules
+
+on:
+  push:
+    branches:
+      - prototype/ancient-city-approved-modules-20261014
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render-ten-modules:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: astral-sh/setup-uv@v6
+      - name: Install vendored mcbuild
+        working-directory: vendor/mcbuild
+        run: uv sync --frozen --extra dev
+      - name: Run 10 independent module blueprints and export candidates
+        run: vendor/mcbuild/.venv/bin/python tools/render_approved_ancient_modules.py
+      - name: Upload render images and candidate schematics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: approved-ancient-city-modules
+          path: out/ancient-city-approved-modules/
+          if-no-files-found: warn

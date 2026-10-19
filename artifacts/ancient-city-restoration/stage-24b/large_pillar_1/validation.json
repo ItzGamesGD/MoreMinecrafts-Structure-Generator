@@ -1,0 +1,118 @@
+{
+  "module": "large_pillar_1",
+  "original_dimensions_xyz": [
+    6,
+    15,
+    6
+  ],
+  "dimensions_xyz": [
+    6,
+    15,
+    6
+  ],
+  "source_status": "ORIGINAL SOURCE VERIFIED",
+  "geometry_status": "GEOMETRY VERIFIED",
+  "design_status": "DESIGN PROPOSED",
+  "visual_status": "VISUAL PENDING OWNER REVIEW",
+  "live_status": "LIVE PENDING",
+  "conflicts": [],
+  "checks": {
+    "source_hash": "PASS",
+    "dimensions": "PASS",
+    "jigsaw_full_nbt": "PASS",
+    "protected_block_entities": "PASS",
+    "candidate_bounds": "PASS",
+    "entrance_and_ladder_support": "PASS",
+    "continuous_ladder_and_headroom": "PASS",
+    "observation_hatch_and_deck": "PASS",
+    "structural_stability": "GEOMETRY_REVIEW_PENDING",
+    "blockstate_palette_resolution": "PASS",
+    "native_nbt_round_trip": "PASS",
+    "schematic_export_reload": "PASS"
+  },
+  "original_block_count": 320,
+  "candidate_block_records": 320,
+  "changed_original_positions": 57,
+  "added_positions": 0,
+  "source_blob_sha1": "4d619829f48909054996945d01a77d949946e678",
+  "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/large_pillar_1.nbt",
+  "jigsaw_count": 1,
+  "jigsaw_preserved": true,
+  "block_entities_preserved": true,
+  "status": "CANDIDATE_VALIDATED_STATIC_REVIEW_PENDING",
+  "schematic_bounds_xyz": [
+    6,
+    15,
+    6
+  ],
+  "render_labels": [
+    "yaw 0deg",
+    "yaw 90deg",
+    "yaw 180deg",
+    "yaw 270deg"
+  ],
+  "render_stats": {
+    "dims": [
+      6,
+      15,
+      6
+    ],
+    "bounds": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        5,
+        14,
+        5
+      ]
+    ],
+    "block_count": 300,
+    "top_materials": [
+      [
+        "deepslate",
+        113
+      ],
+      [
+        "polished_deepslate",
+        50
+      ],
+      [
+        "deepslate_tiles",
+        29
+      ],
+      [
+        "chiseled_deepslate",
+        16
+      ],
+      [
+        "ladder",
+        13
+      ],
+      [
+        "polished_basalt",
+        12
+      ],
+      [
+        "deepslate_tile_stairs",
+        6
+      ],
+      [
+        "deepslate_tile_stairs",
+        6
+      ],
+      [
+        "deepslate_tile_stairs",
+        6
+      ],
+      [
+        "deepslate_tile_stairs",
+        6
+      ]
+    ]
+  },
+  "visual_generation": "COMPLETE_STATIC_RENDER",
+  "minecraft_client_status": "LIVE PENDING"
+}

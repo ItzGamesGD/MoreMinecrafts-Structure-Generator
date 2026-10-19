@@ -1,0 +1,1600 @@
+{
+  "module": "large_pillar_1",
+  "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/large_pillar_1.nbt",
+  "source_repository": "InventivetalentDev/minecraft-assets",
+  "source_commit": "bb6d6451fb5fff54d3930fd8bf19d81200f00e6d",
+  "source_blob_sha1": "4d619829f48909054996945d01a77d949946e678",
+  "source_bytes": 1478,
+  "verified": true,
+  "size_xyz": [
+    6,
+    15,
+    6
+  ],
+  "block_count": 320,
+  "palette_size": 23,
+  "palette": [
+    {
+      "name": "minecraft:deepslate",
+      "properties": {
+        "axis": "y"
+      }
+    },
+    {
+      "name": "minecraft:polished_deepslate",
+      "properties": {}
+    },
+    {
+      "name": "minecraft:chiseled_deepslate",
+      "properties": {}
+    },
+    {
+      "name": "minecraft:deepslate_tiles",
+      "properties": {}
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "outer_right",
+        "facing": "east"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "outer_left",
+        "facing": "east"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "outer_left",
+        "facing": "west"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "outer_right",
+        "facing": "west"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "outer_right",
+        "facing": "south"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "outer_left",
+        "facing": "south"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "outer_left",
+        "facing": "east"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "outer_right",
+        "facing": "south"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "outer_right",
+        "facing": "west"
+      }
+    },
+    {
+      "name": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "outer_left",
+        "facing": "west"
+      }
+    },
+    {
+      "name": "minecraft:jigsaw",
+      "properties": {
+        "orientation": "east_up"
+      }
+    }
+  ],
+  "material_counts": {
+    "minecraft:deepslate": 135,
+    "minecraft:polished_deepslate": 84,
+    "minecraft:deepslate_tile_stairs": 64,
+    "minecraft:deepslate_tiles": 20,
+    "minecraft:chiseled_deepslate": 16,
+    "minecraft:jigsaw": 1
+  },
+  "per_y_counts": {
+    "0": {
+      "total": 36,
+      "materials": {
+        "minecraft:deepslate": 35,
+        "minecraft:jigsaw": 1
+      }
+    },
+    "1": {
+      "total": 36,
+      "materials": {
+        "minecraft:deepslate_tile_stairs": 20,
+        "minecraft:deepslate": 16
+      }
+    },
+    "2": {
+      "total": 16,
+      "materials": {
+        "minecraft:deepslate": 16
+      }
+    },
+    "3": {
+      "total": 16,
+      "materials": {
+        "minecraft:deepslate_tile_stairs": 12,
+        "minecraft:polished_deepslate": 4
+      }
+    },
+    "4": {
+      "total": 16,
+      "materials": {
+        "minecraft:polished_deepslate": 16
+      }
+    },
+    "5": {
+      "total": 16,
+      "materials": {
+        "minecraft:deepslate_tiles": 8,
+        "minecraft:chiseled_deepslate": 4,
+        "minecraft:polished_deepslate": 4
+      }
+    },
+    "6": {
+      "total": 16,
+      "materials": {
+        "minecraft:polished_deepslate": 16
+      }
+    },
+    "7": {
+      "total": 16,
+      "materials": {
+        "minecraft:chiseled_deepslate": 8,
+        "minecraft:deepslate_tiles": 4,
+        "minecraft:polished_deepslate": 4
+      }
+    },
+    "8": {
+      "total": 16,
+      "materials": {
+        "minecraft:polished_deepslate": 16
+      }
+    },
+    "9": {
+      "total": 16,
+      "materials": {
+        "minecraft:deepslate_tiles": 8,
+        "minecraft:chiseled_deepslate": 4,
+        "minecraft:polished_deepslate": 4
+      }
+    },
+    "10": {
+      "total": 16,
+      "materials": {
+        "minecraft:polished_deepslate": 16
+      }
+    },
+    "11": {
+      "total": 16,
+      "materials": {
+        "minecraft:deepslate_tile_stairs": 12,
+        "minecraft:polished_deepslate": 4
+      }
+    },
+    "12": {
+      "total": 16,
+      "materials": {
+        "minecraft:deepslate": 16
+      }
+    },
+    "13": {
+      "total": 36,
+      "materials": {
+        "minecraft:deepslate_tile_stairs": 20,
+        "minecraft:deepslate": 16
+      }
+    },
+    "14": {
+      "total": 36,
+      "materials": {
+        "minecraft:deepslate": 36
+      }
+    }
+  },
+  "occupancy_maps_x_by_z_per_y": {
+    "0": [
+      "######",
+      "######",
+      "#####J",
+      "######",
+      "######",
+      "######"
+    ],
+    "1": [
+      "ssssss",
+      "s####s",
+      "s####s",
+      "s####s",
+      "s####s",
+      "ssssss"
+    ],
+    "2": [
+      "      ",
+      " #### ",
+      " #### ",
+      " #### ",
+      " #### ",
+      "      "
+    ],
+    "3": [
+      "      ",
+      " ssss ",
+      " s##s ",
+      " s##s ",
+      " ssss ",
+      "      "
+    ],
+    "4": [
+      "      ",
+      " #### ",
+      " #### ",
+      " #### ",
+      " #### ",
+      "      "
+    ],
+    "5": [
+      "      ",
+      " #### ",
+      " #### ",
+      " #### ",
+      " #### ",
+      "      "
+    ],
+    "6": [
+      "      ",
+      " #### ",
+      " #### ",
+      " #### ",
+      " #### ",
+      "      "
+    ],
+    "7": [
+      "      ",
+      " #### ",
+      " #### ",
+      " #### ",
+      " #### ",
+      "      "
+    ],
+    "8": [
+      "      ",
+      " #### ",
+      " #### ",
+      " #### ",
+      " #### ",
+      "      "
+    ],
+    "9": [
+      "      ",
+      " #### ",
+      " #### ",
+      " #### ",
+      " #### ",
+      "      "
+    ],
+    "10": [
+      "      ",
+      " #### ",
+      " #### ",
+      " #### ",
+      " #### ",
+      "      "
+    ],
+    "11": [
+      "      ",
+      " ssss ",
+      " s##s ",
+      " s##s ",
+      " ssss ",
+      "      "
+    ],
+    "12": [
+      "      ",
+      " #### ",
+      " #### ",
+      " #### ",
+      " #### ",
+      "      "
+    ],
+    "13": [
+      "ssssss",
+      "s####s",
+      "s####s",
+      "s####s",
+      "s####s",
+      "ssssss"
+    ],
+    "14": [
+      "######",
+      "######",
+      "######",
+      "######",
+      "######",
+      "######"
+    ]
+  },
+  "palette_index_maps_x_by_z_per_y": {
+    "0": [
+      "000000",
+      "000000",
+      "00000M",
+      "000000",
+      "000000",
+      "000000"
+    ],
+    "1": [
+      "477779",
+      "50000A",
+      "50000A",
+      "50000A",
+      "50000A",
+      "68888B"
+    ],
+    "2": [
+      "......",
+      ".0000.",
+      ".0000.",
+      ".0000.",
+      ".0000.",
+      "......"
+    ],
+    "3": [
+      "......",
+      ".477C.",
+      ".511A.",
+      ".511A.",
+      ".688B.",
+      "......"
+    ],
+    "4": [
+      "......",
+      ".1111.",
+      ".1111.",
+      ".1111.",
+      ".1111.",
+      "......"
+    ],
+    "5": [
+      "......",
+      ".2332.",
+      ".3113.",
+      ".3113.",
+      ".2332.",
+      "......"
+    ],
+    "6": [
+      "......",
+      ".1111.",
+      ".1111.",
+      ".1111.",
+      ".1111.",
+      "......"
+    ],
+    "7": [
+      "......",
+      ".3223.",
+      ".2112.",
+      ".2112.",
+      ".3223.",
+      "......"
+    ],
+    "8": [
+      "......",
+      ".1111.",
+      ".1111.",
+      ".1111.",
+      ".1111.",
+      "......"
+    ],
+    "9": [
+      "......",
+      ".2332.",
+      ".3113.",
+      ".3113.",
+      ".2332.",
+      "......"
+    ],
+    "10": [
+      "......",
+      ".1111.",
+      ".1111.",
+      ".1111.",
+      ".1111.",
+      "......"
+    ],
+    "11": [
+      "......",
+      ".DGGI.",
+      ".E11J.",
+      ".E11J.",
+      ".FHHK.",
+      "......"
+    ],
+    "12": [
+      "......",
+      ".0000.",
+      ".0000.",
+      ".0000.",
+      ".0000.",
+      "......"
+    ],
+    "13": [
+      "DGGGGL",
+      "E0000J",
+      "E0000J",
+      "E0000J",
+      "E0000J",
+      "FHHHHK"
+    ],
+    "14": [
+      "000000",
+      "000000",
+      "000000",
+      "000000",
+      "000000",
+      "000000"
+    ]
+  },
+  "palette_index_symbol_legend": {
+    "0": 0,
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "9": 9,
+    "A": 10,
+    "B": 11,
+    "C": 12,
+    "D": 13,
+    "E": 14,
+    "F": 15,
+    "G": 16,
+    "H": 17,
+    "I": 18,
+    "J": 19,
+    "K": 20,
+    "L": 21,
+    "M": 22
+  },
+  "jigsaws": [
+    {
+      "pos": [
+        5,
+        0,
+        2
+      ],
+      "block": "minecraft:jigsaw",
+      "properties": {
+        "orientation": "east_up"
+      },
+      "nbt": {
+        "joint": "rollable",
+        "final_state": "minecraft:structure_void",
+        "name": "minecraft:connect_structure",
+        "pool": "minecraft:empty",
+        "id": "minecraft:jigsaw",
+        "target": "minecraft:empty"
+      }
+    }
+  ],
+  "functional_blocks": [
+    {
+      "pos": [
+        0,
+        1,
+        0
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "outer_right",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        0,
+        1,
+        1
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        0,
+        1,
+        2
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        0,
+        1,
+        3
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        0,
+        1,
+        4
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        0,
+        1,
+        5
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "outer_left",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        1,
+        1,
+        0
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        1,
+        1,
+        5
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "pos": [
+        2,
+        1,
+        0
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        2,
+        1,
+        5
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "pos": [
+        3,
+        1,
+        0
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        3,
+        1,
+        5
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "pos": [
+        4,
+        1,
+        0
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        4,
+        1,
+        5
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "pos": [
+        5,
+        1,
+        0
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "outer_left",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        5,
+        1,
+        1
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        5,
+        1,
+        2
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        5,
+        1,
+        3
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        5,
+        1,
+        4
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        5,
+        1,
+        5
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "outer_right",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        1,
+        3,
+        1
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "outer_right",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        1,
+        3,
+        2
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        1,
+        3,
+        3
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        1,
+        3,
+        4
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "outer_left",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        2,
+        3,
+        1
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        2,
+        3,
+        4
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "pos": [
+        3,
+        3,
+        1
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        3,
+        3,
+        4
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "pos": [
+        4,
+        3,
+        1
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "outer_right",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        4,
+        3,
+        2
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        4,
+        3,
+        3
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        4,
+        3,
+        4
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "bottom",
+        "waterlogged": "false",
+        "shape": "outer_right",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        1,
+        11,
+        1
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "outer_left",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        1,
+        11,
+        2
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        1,
+        11,
+        3
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        1,
+        11,
+        4
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "outer_left",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        2,
+        11,
+        1
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        2,
+        11,
+        4
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "pos": [
+        3,
+        11,
+        1
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        3,
+        11,
+        4
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "pos": [
+        4,
+        11,
+        1
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "outer_right",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        4,
+        11,
+        2
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        4,
+        11,
+        3
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        4,
+        11,
+        4
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "outer_right",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        0,
+        13,
+        0
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "outer_left",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        0,
+        13,
+        1
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        0,
+        13,
+        2
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        0,
+        13,
+        3
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        0,
+        13,
+        4
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        0,
+        13,
+        5
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "outer_left",
+        "facing": "east"
+      }
+    },
+    {
+      "pos": [
+        1,
+        13,
+        0
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        1,
+        13,
+        5
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "pos": [
+        2,
+        13,
+        0
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        2,
+        13,
+        5
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "pos": [
+        3,
+        13,
+        0
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        3,
+        13,
+        5
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "pos": [
+        4,
+        13,
+        0
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "south"
+      }
+    },
+    {
+      "pos": [
+        4,
+        13,
+        5
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "north"
+      }
+    },
+    {
+      "pos": [
+        5,
+        13,
+        0
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "outer_left",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        5,
+        13,
+        1
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        5,
+        13,
+        2
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        5,
+        13,
+        3
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        5,
+        13,
+        4
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "straight",
+        "facing": "west"
+      }
+    },
+    {
+      "pos": [
+        5,
+        13,
+        5
+      ],
+      "block": "minecraft:deepslate_tile_stairs",
+      "properties": {
+        "half": "top",
+        "waterlogged": "false",
+        "shape": "outer_right",
+        "facing": "west"
+      }
+    }
+  ],
+  "block_entities": [
+    {
+      "pos": [
+        5,
+        0,
+        2
+      ],
+      "block": "minecraft:jigsaw",
+      "properties": {
+        "orientation": "east_up"
+      },
+      "nbt": {
+        "joint": "rollable",
+        "final_state": "minecraft:structure_void",
+        "name": "minecraft:connect_structure",
+        "pool": "minecraft:empty",
+        "id": "minecraft:jigsaw",
+        "target": "minecraft:empty"
+      }
+    }
+  ],
+  "entity_count": 0,
+  "entities": [],
+  "render": {
+    "generated": true,
+    "method": "mcbuild color voxel preview; source block states preserved in report but non-cube block shapes are approximated as cubes",
+    "error": null,
+    "file": "original-four-view.png",
+    "views": [
+      "yaw 0deg",
+      "yaw 90deg",
+      "yaw 180deg",
+      "yaw 270deg"
+    ],
+    "stats": {
+      "dims": [
+        6,
+        15,
+        6
+      ],
+      "bounds": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          14,
+          5
+        ]
+      ],
+      "block_count": 320,
+      "top_materials": [
+        [
+          "deepslate",
+          135
+        ],
+        [
+          "polished_deepslate",
+          84
+        ],
+        [
+          "deepslate_tiles",
+          20
+        ],
+        [
+          "chiseled_deepslate",
+          16
+        ],
+        [
+          "deepslate_tile_stairs",
+          6
+        ],
+        [
+          "deepslate_tile_stairs",
+          6
+        ],
+        [
+          "deepslate_tile_stairs",
+          6
+        ],
+        [
+          "deepslate_tile_stairs",
+          6
+        ],
+        [
+          "deepslate_tile_stairs",
+          6
+        ],
+        [
+          "deepslate_tile_stairs",
+          6
+        ]
+      ]
+    }
+  }
+}

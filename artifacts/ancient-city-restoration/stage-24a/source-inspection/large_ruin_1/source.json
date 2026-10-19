@@ -1,0 +1,350 @@
+{
+  "module": "large_ruin_1",
+  "source_url": "https://raw.githubusercontent.com/InventivetalentDev/minecraft-assets/bb6d6451fb5fff54d3930fd8bf19d81200f00e6d/data/minecraft/structure/ancient_city/structures/large_ruin_1.nbt",
+  "source_repository": "InventivetalentDev/minecraft-assets",
+  "source_commit": "bb6d6451fb5fff54d3930fd8bf19d81200f00e6d",
+  "source_blob_sha1": "3ce04aa7cd68ab706ed7e7910cbf8453f090fb39",
+  "source_bytes": 399,
+  "verified": true,
+  "size_xyz": [
+    17,
+    5,
+    17
+  ],
+  "block_count": 38,
+  "palette_size": 3,
+  "palette": [
+    {
+      "name": "minecraft:cobbled_deepslate",
+      "properties": {}
+    },
+    {
+      "name": "minecraft:deepslate_bricks",
+      "properties": {}
+    },
+    {
+      "name": "minecraft:jigsaw",
+      "properties": {
+        "orientation": "west_up"
+      }
+    }
+  ],
+  "material_counts": {
+    "minecraft:cobbled_deepslate": 34,
+    "minecraft:deepslate_bricks": 3,
+    "minecraft:jigsaw": 1
+  },
+  "per_y_counts": {
+    "0": {
+      "total": 25,
+      "materials": {
+        "minecraft:cobbled_deepslate": 22,
+        "minecraft:deepslate_bricks": 2,
+        "minecraft:jigsaw": 1
+      }
+    },
+    "1": {
+      "total": 11,
+      "materials": {
+        "minecraft:cobbled_deepslate": 10,
+        "minecraft:deepslate_bricks": 1
+      }
+    },
+    "2": {
+      "total": 2,
+      "materials": {
+        "minecraft:cobbled_deepslate": 2
+      }
+    }
+  },
+  "occupancy_maps_x_by_z_per_y": {
+    "0": [
+      "### ## #         ",
+      "#                ",
+      "#                ",
+      "#                ",
+      "                 ",
+      "                 ",
+      "#                ",
+      "J                ",
+      "#               #",
+      "#               #",
+      "                #",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                #",
+      "                #",
+      "        #### # ##"
+    ],
+    "1": [
+      " #   #           ",
+      "#                ",
+      "                 ",
+      "#                ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "#                ",
+      "#                ",
+      "                 ",
+      "                #",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                #",
+      "                 ",
+      "          #  #  #"
+    ],
+    "2": [
+      " #               ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                #"
+    ],
+    "3": [
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 "
+    ],
+    "4": [
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 ",
+      "                 "
+    ]
+  },
+  "palette_index_maps_x_by_z_per_y": {
+    "0": [
+      "000.00.0.........",
+      "0................",
+      "0................",
+      "0................",
+      ".................",
+      ".................",
+      "0................",
+      "2................",
+      "0...............0",
+      "0...............0",
+      "................1",
+      ".................",
+      ".................",
+      ".................",
+      "................1",
+      "................0",
+      "........0000.0.00"
+    ],
+    "1": [
+      ".0...0...........",
+      "0................",
+      ".................",
+      "0................",
+      ".................",
+      ".................",
+      ".................",
+      "0................",
+      "0................",
+      ".................",
+      "................1",
+      ".................",
+      ".................",
+      ".................",
+      "................0",
+      ".................",
+      "..........0..0..0"
+    ],
+    "2": [
+      ".0...............",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      "................0"
+    ],
+    "3": [
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      "................."
+    ],
+    "4": [
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      ".................",
+      "................."
+    ]
+  },
+  "palette_index_symbol_legend": {
+    "0": 0,
+    "1": 1,
+    "2": 2
+  },
+  "jigsaws": [
+    {
+      "pos": [
+        0,
+        0,
+        7
+      ],
+      "block": "minecraft:jigsaw",
+      "properties": {
+        "orientation": "west_up"
+      },
+      "nbt": {
+        "joint": "rollable",
+        "final_state": "minecraft:cobbled_deepslate",
+        "name": "minecraft:connect_structure",
+        "pool": "minecraft:empty",
+        "id": "minecraft:jigsaw",
+        "target": "minecraft:empty"
+      }
+    }
+  ],
+  "functional_blocks": [],
+  "block_entities": [
+    {
+      "pos": [
+        0,
+        0,
+        7
+      ],
+      "block": "minecraft:jigsaw",
+      "properties": {
+        "orientation": "west_up"
+      },
+      "nbt": {
+        "joint": "rollable",
+        "final_state": "minecraft:cobbled_deepslate",
+        "name": "minecraft:connect_structure",
+        "pool": "minecraft:empty",
+        "id": "minecraft:jigsaw",
+        "target": "minecraft:empty"
+      }
+    }
+  ],
+  "entity_count": 0,
+  "entities": [],
+  "render": {
+    "generated": true,
+    "method": "mcbuild color voxel preview; source block states preserved in report but non-cube block shapes are approximated as cubes",
+    "error": null,
+    "file": "original-four-view.png",
+    "views": [
+      "yaw 0deg",
+      "yaw 90deg",
+      "yaw 180deg",
+      "yaw 270deg"
+    ],
+    "stats": {
+      "dims": [
+        17,
+        3,
+        17
+      ],
+      "bounds": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          16,
+          2,
+          16
+        ]
+      ],
+      "block_count": 38,
+      "top_materials": [
+        [
+          "cobbled_deepslate",
+          34
+        ],
+        [
+          "deepslate_bricks",
+          3
+        ],
+        [
+          "jigsaw",
+          1
+        ]
+      ]
+    }
+  }
+}

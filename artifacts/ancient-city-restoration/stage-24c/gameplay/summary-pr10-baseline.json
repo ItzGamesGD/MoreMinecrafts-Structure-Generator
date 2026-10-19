@@ -1,0 +1,41 @@
+{
+ "medium_ruin_2": {
+  "ok": 20,
+  "total": 24,
+  "failed": [
+   "stairs_walk_up_east",
+   "bed1_[11, 5, 3]_reach",
+   "bed1_sleep",
+   "barrel_[13, 5, 8]_reach"
+  ]
+ },
+ "large_pillar_1": {
+  "ok": 13,
+  "total": 17,
+  "failed": [
+   "climb_ground_to_deck",
+   "step_onto_deck",
+   "deck_edge_north_line2",
+   "deck_edge_west_line2"
+  ]
+ },
+ "medium_pillar_1": {
+  "ok": 34,
+  "total": 47,
+  "failed": [
+   "deck_edge_north_line1",
+   "deck_edge_north_line2",
+   "deck_edge_north_line4",
+   "deck_edge_north_line5",
+   "deck_edge_south_line3",
+   "deck_edge_south_line4",
+   "deck_edge_south_line5",
+   "deck_edge_east_line1",
+   "deck_edge_east_line2",
+   "deck_edge_east_line5",
+   "deck_edge_east_line6",
+   "deck_edge_west_line1",
+   "deck_edge_west_line2"
+  ]
+ }
+}
