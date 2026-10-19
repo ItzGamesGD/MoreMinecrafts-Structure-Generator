@@ -61,7 +61,11 @@ jobs:
           python3 examples/forgotten_kingdom/build_sg03.py "$RUNNER_TEMP/sg03-datapack"
           diff -r exports/sg-03/forgotten-underground-kingdom/datapack "$RUNNER_TEMP/sg03-datapack"
       - name: Run export and Jigsaw tests
-        run: PYTHONPATH=vendor/mcbuild/src python3 -m unittest discover -s tests -v
+        run: |
+          set -euo pipefail
+          for testfile in test_block_states.py test_datapack_builder.py test_forgotten_kingdom_cavern.py test_jigsaw.py test_sg01_static_accessibility.py test_sg02_cavern.py test_sg03_rooms.py test_structure_export.py; do
+            PYTHONPATH=vendor/mcbuild/src python3 -m unittest discover -s tests -p "$testfile" -v
+          done
 
   minecraft-26-3-visual:
     if: github.event_name == 'workflow_dispatch' || github.event_name == 'pull_request'
@@ -172,7 +176,11 @@ jobs:
           python3 examples/forgotten_kingdom/build_cavern.py "$RUNNER_TEMP/sg01-datapack"
           diff -r exports/sg-01/forgotten-underground-kingdom/datapack "$RUNNER_TEMP/sg01-datapack"
       - name: Static accessibility and spread-math tests
-        run: PYTHONPATH=vendor/mcbuild/src python3 -m unittest discover -s tests -v
+        run: |
+          set -euo pipefail
+          for testfile in test_block_states.py test_datapack_builder.py test_forgotten_kingdom_cavern.py test_jigsaw.py test_sg01_static_accessibility.py test_sg02_cavern.py test_sg03_rooms.py test_structure_export.py; do
+            PYTHONPATH=vendor/mcbuild/src python3 -m unittest discover -s tests -p "$testfile" -v
+          done
       - name: Download official Minecraft 26.3 server (SHA-1 verified)
         run: validation/minecraft-visual/stress/fetch-server.sh "$RUNNER_TEMP/server.jar"
       - name: Natural-generation stress (multi-seed, no /place)
