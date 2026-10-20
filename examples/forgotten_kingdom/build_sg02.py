@@ -113,6 +113,7 @@ def write_pack(
     lower: list[str],
     upper: list[str],
     description: str = "MoreMinecrafts Forgotten Underground Kingdom — SG-02 cavern expansion",
+    protection_manifest: bool = False,
 ) -> Path:
     pack = DatapackBuilder(output, namespace=NAMESPACE, pack_format=PACK_FORMAT, description=description)
     for identifier, template in templates.items():
@@ -149,6 +150,8 @@ def write_pack(
         exclusion_structure="minecraft:trial_chambers",
         exclusion_chunk_radius=12,
     )
+    if protection_manifest:
+        pack.add_protection_manifest([structure_id])
     return pack.write().parent
 
 

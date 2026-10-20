@@ -136,7 +136,7 @@ def main() -> None:
     # E2a: module, first half of the new chunks (server stops mid-generation)
     new_all = [c for c in [(x, z) for x in range(-19, -8) for z in range(10, 21)] if c not in set(area0)]
     half1, half2 = new_all[: len(new_all) // 2], new_all[len(new_all) // 2:]
-    env = {"SG01_GUARD_MODE": "enforce", "SG01_FEATURES": "both", "SG01_REFINE": "precheck", "SG01_SPIKE_REPORT": str((out / "E2a_spike.json").resolve())}
+    env = {"SG01_LAB": "1", "SG01_GUARD_MODE": "enforce", "SG01_FEATURES": "both", "SG01_REFINE": "precheck", "SG01_SPIKE_REPORT": str((out / "E2a_spike.json").resolve())}
     session(out, "E2a_module_partial", "module", out / "E1_vanilla_fresh" / "world", env, half1, a.pack, 40952)
     coords2a = chunks_of(out / "E2a_module_partial" / "regions")
     report["E2a_existing_vs_E1"] = compare_existing(w1, out / "E2a_module_partial" / "regions", coords1)

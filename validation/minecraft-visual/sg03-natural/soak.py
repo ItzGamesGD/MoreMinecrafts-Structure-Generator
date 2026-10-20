@@ -57,8 +57,9 @@ def main() -> None:
     run_dir = (SPIKE / "run" / "server").resolve()
     shutil.rmtree(run_dir, ignore_errors=True)
     run_dir.mkdir(parents=True)
-    env = {"SG01_PROTECTION": "manifest", "SG01_GUARD_MODE": "enforce", "SG01_REFINE": "hybrid", "SG01_SAMPLE_FILE": str(samples), "SG01_SAMPLE_MS": "5000",
-           "SG01_SPIKE_REPORT": str(report), "SG01_FEATURES": "both" if a.mode == "guarded" else "none"}
+    env = {"SG01_SAMPLE_FILE": str(samples), "SG01_SAMPLE_MS": "5000", "SG01_SPIKE_REPORT": str(report)}  # guarded arm: the production configuration
+    if a.mode == "control":
+        env.update({"SG01_LAB": "1", "SG01_FEATURES": "none"})  # control arm: both hooks disabled (lab setting)
     if a.no_sampler:
         env.pop("SG01_SAMPLE_FILE")
     if a.vanilla:

@@ -26,7 +26,7 @@ public final class Guard {
     public enum Mode { OBSERVE, ENFORCE }
 
     /** Test-only fault injection (SG01_FAULT): exercises the "structure data unavailable" paths on demand. */
-    public enum Fault { NONE, OUT_OF_RANGE, STATUS_TOO_HIGH, MISSING_START }
+    public enum Fault { NONE, OUT_OF_RANGE, STATUS_TOO_HIGH, MISSING_START, PRECHECK_BLIND }
 
     /**
      * Experiment-only fixture (SG01_FIXTURE), used only for causal attribution and never shipped. NO_GEODE cancels every geode placement
@@ -37,19 +37,26 @@ public final class Guard {
     /** Experiment-only refinement (SG01_REFINE). PRECHECK replicates vanilla's read-only precheck per room variant. OFF is the N7-A behaviour. */
     public enum Refine { OFF, PRECHECK, HYBRID }
 
+    /**
+     * Lab switch (SG01_LAB=1). Production runs with ENFORCE, the hybrid monster-room decision and no instrumentation. Every behaviour-changing
+     * knob below (mode, fault injection, fixture, refinement, oracle, shadow check, per-hook selection) and the timing instrumentation exist only
+     * for the validation lab: if one is set without SG01_LAB=1 the server refuses to start instead of silently running a non-production guard.
+     */
+    public static final boolean LAB = "1".equals(env("sg01.lab", "SG01_LAB"));
+
     public static final Mode MODE = parseEnum("sg01.guard.mode", "SG01_GUARD_MODE", Mode.class, Mode.ENFORCE, true);
     public static final Fault FAULT = parseEnum("sg01.fault", "SG01_FAULT", Fault.class, Fault.NONE, false);
     public static final Fixture FIXTURE = parseEnum("sg01.fixture", "SG01_FIXTURE", Fixture.class, Fixture.NONE, false);
-    public static final Refine REFINE = parseEnum("sg01.refine", "SG01_REFINE", Refine.class, Refine.OFF, false);
-    /** Experiment-only oracle (SG01_ORACLE=monster_room): vanilla runs unguarded and the outcome is classified. Never cancels. */
-    public static final boolean ORACLE_MONSTER_ROOM = "monster_room".equalsIgnoreCase(env("sg01.oracle", "SG01_ORACLE"));
-    /** Experiment-only (SG01_SHADOW=1, HYBRID only): also checks that the broad phase never rejects an attempt the refined decision would cancel. */
-    public static final boolean SHADOW = "1".equals(env("sg01.shadow", "SG01_SHADOW"));
+    public static final Refine REFINE = parseEnum("sg01.refine", "SG01_REFINE", Refine.class, Refine.HYBRID, false);
+    /** Lab-only oracle (SG01_ORACLE=monster_room): vanilla runs unguarded and the outcome is classified. Never cancels. */
+    public static final boolean ORACLE_MONSTER_ROOM = "monster_room".equalsIgnoreCase(labEnv("sg01.oracle", "SG01_ORACLE"));
+    /** Lab-only (SG01_SHADOW=1, HYBRID only): also checks that the broad phase never rejects an attempt the refined decision would cancel. */
+    public static final boolean SHADOW = "1".equals(labEnv("sg01.shadow", "SG01_SHADOW"));
     public static final GuardStats GEODE = new GuardStats("geode");
     public static final GuardStats MONSTER_ROOM = new GuardStats("monster_room");
 
-    /** Test-only (SG01_FEATURES = geode | monster_room | both | none): enable the decision for one hook at a time to prove each hook independently. */
-    private static final String FEATURES = env("sg01.features", "SG01_FEATURES") == null ? "both" : env("sg01.features", "SG01_FEATURES");
+    /** Lab-only (SG01_FEATURES = geode | monster_room | both | none): enable the decision for one hook at a time to prove each hook independently. */
+    private static final String FEATURES = labEnv("sg01.features", "SG01_FEATURES") == null ? "both" : labEnv("sg01.features", "SG01_FEATURES");
 
     private Guard() {
     }
@@ -59,8 +66,18 @@ public final class Guard {
         return value == null || value.isBlank() ? null : value.trim();
     }
 
-    private static <E extends Enum<E>> E parseEnum(String property, String variable, Class<E> type, E fallback, boolean guardModeNames) {
+    /** A lab-only setting: its mere presence without SG01_LAB=1 is a configuration error. */
+    private static String labEnv(String property, String variable) {
         String value = env(property, variable);
+        if (value != null && !LAB) {
+            throw new IllegalStateException("SG protection: " + variable + "=" + value + " is a validation-lab setting and is refused in production."
+                    + " Unset it (the production guard needs no configuration), or set SG01_LAB=1 for lab runs.");
+        }
+        return value;
+    }
+
+    private static <E extends Enum<E>> E parseEnum(String property, String variable, Class<E> type, E fallback, boolean guardModeNames) {
+        String value = labEnv(property, variable);
         if (value == null) return fallback;
         if (guardModeNames && value.equalsIgnoreCase("enforce")) return Enum.valueOf(type, "ENFORCE");
         if (guardModeNames && value.equalsIgnoreCase("observe")) return Enum.valueOf(type, "OBSERVE");
@@ -130,12 +147,22 @@ public final class Guard {
             List<BoundingBox> reaches = narrow.get();
             if (reaches.isEmpty()) {
                 stats.noWrite.incrementAndGet();
+                nearMiss(region, broad, stats);
                 return false;
             }
-            return decide(stats, region, origin, reaches);
+            boolean cancel = decide(stats, region, origin, reaches);
+            if (!cancel) nearMiss(region, broad, stats);
+            return cancel;
         } finally {
             Probe.exit();
         }
+    }
+
+    /** The hybrid decision allows vanilla although a protected piece overlaps the widest footprint: arm the monster-room self-check watch. */
+    private static void nearMiss(WorldGenRegion region, BoundingBox broad, GuardStats stats) {
+        if (!stats.feature.equals("monster_room")) return;
+        List<BoundingBox> pieces = pieceBoxes(region, broad);
+        if (pieces != null && !pieces.isEmpty()) MonsterRoomSelfCheck.begin(region, broad, pieces);
     }
 
     /** Side-effect-free decision for the oracle: true if the reaches intersect a protected piece or the structure data is unavailable. */

@@ -26,6 +26,7 @@ public final class SpikeMod implements ModInitializer {
         // Spawn-area chunks are generated before SERVER_STARTED, so the configuration must be resolved at SERVER_STARTING.
         ServerLifecycleEvents.SERVER_STARTING.register(server -> {
             verifyHooks();
+            MonsterRoomSelfCheck.verifyAtStartup();
             ProtectionConfig.resolve(server);
         });
         ServerLifecycleEvents.END_DATA_PACK_RELOAD.register((server, resources, success) -> {
@@ -63,14 +64,22 @@ public final class SpikeMod implements ModInitializer {
         String last = ProtectionConfig.lastRejection == null ? "null" : "\"" + ProtectionConfig.lastRejection.replace("\\", "\\\\").replace("\"", "'") + "\"";
         return String.format("{\"mode\":\"%s\",\"owner\":%s,\"format\":%d,\"revision\":%d,\"required\":%d,\"extensions\":%d,\"warnings\":[%s],"
                         + "\"reload_rejections\":%d,\"last_rejection\":%s}",
-                ProtectionConfig.MANIFEST_MODE ? "manifest" : "legacy", c == null ? "null" : "\"" + c.owner() + "\"", c == null ? 0 : c.format(),
+                "manifest", c == null ? "null" : "\"" + c.owner() + "\"", c == null ? 0 : c.format(),
                 c == null ? 0 : c.revision(), c == null ? 0 : c.required(), c == null ? 0 : c.extensions(), warnings, ProtectionConfig.reloadRejections, last);
+    }
+
+    private static String selfCheckJson() {
+        String reason = MonsterRoomSelfCheck.fallbackReason();
+        return String.format("{\"configured\":\"%s\",\"effective\":\"%s\",\"fallback\":%b,\"fallback_reason\":%s,\"fingerprint\":\"%s\",\"near_misses\":%d,\"violations\":%d}",
+                Guard.REFINE, MonsterRoomSelfCheck.effective(Guard.REFINE), MonsterRoomSelfCheck.inFallback(),
+                reason == null ? "null" : "\"" + reason.replace("\\", "\\\\").replace("\"", "'") + "\"", MonsterRoomSelfCheck.fingerprint(),
+                MonsterRoomSelfCheck.NEAR_MISSES.get(), MonsterRoomSelfCheck.VIOLATIONS.get());
     }
 
     private static void writeReport() {
         String json = "{\"mode\":\"" + Guard.MODE + "\",\"fixture\":\"" + Guard.FIXTURE + "\",\"refine\":\"" + Guard.REFINE + "\",\"shadow\":" + Guard.SHADOW + ",\"oracle\":\""
                 + (Guard.ORACLE_MONSTER_ROOM ? "monster_room" : "off") + "\"," + stats(Guard.GEODE) + "," + stats(Guard.MONSTER_ROOM) + ",\"probe\":"
-                + Probe.json() + ",\"perf\":" + Perf.json() + ",\"contract\":" + contractJson() + ",\"decoration_order\":" + Probe.decorationJson() + "}\n";
+                + Probe.json() + ",\"perf\":" + Perf.json() + ",\"contract\":" + contractJson() + ",\"monster_room_guard\":" + selfCheckJson() + ",\"decoration_order\":" + Probe.decorationJson() + "}\n";
         LOGGER.info("SG_SPIKE_REPORT {}", json.replace("\n", ""));
         String path = System.getenv("SG01_SPIKE_REPORT");
         if (path != null && !path.isBlank()) {

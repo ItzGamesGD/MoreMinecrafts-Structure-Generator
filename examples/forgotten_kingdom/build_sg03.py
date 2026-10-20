@@ -49,6 +49,7 @@ def build_pack(output: Path | str) -> Path:
     return sg02.write_pack(
         output, templates, list(LOWER_IDS.values()), list(UPPER_IDS.values()),
         description="MoreMinecrafts Forgotten Underground Kingdom — SG-03 modular rooms",
+        protection_manifest=True,
     )
 
 

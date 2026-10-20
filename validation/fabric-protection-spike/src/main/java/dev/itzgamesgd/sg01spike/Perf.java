@@ -76,6 +76,7 @@ public final class Perf {
 
     /** Called at the start of a guarded feature call. Index 2 holds an "active" flag, cleared once the call's time is recorded. */
     public static void mark() {
+        if (!Guard.LAB) return; // production: no timing instrumentation
         long[] m = MARK.get();
         m[0] = System.nanoTime();
         m[1] = THREADS.getCurrentThreadAllocatedBytes();

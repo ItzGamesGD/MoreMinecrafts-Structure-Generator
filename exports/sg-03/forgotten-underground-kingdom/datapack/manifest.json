@@ -4,6 +4,15 @@
   "namespace": "moreminecrafts",
   "resources": [
     {
+      "path": "data/moreminecrafts/sg_protection/manifest.json",
+      "references": [
+        "moreminecrafts:forgotten_kingdom/central_cavern"
+      ],
+      "role": "protection_manifest",
+      "sha256": "8d65dde067246053171856743f0ec81989fa114c0d4ae0dafd33e788a8147269",
+      "size_bytes": 135
+    },
+    {
       "path": "data/moreminecrafts/structure/forgotten_kingdom/central_cavern/main_chamber.nbt",
       "references": [
         "connector_target:moreminecrafts:forgotten_kingdom/lower_room_entry",
