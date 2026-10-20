@@ -65,6 +65,7 @@ def main() -> None:
     p.add_argument("--oracle", default="off", choices=["off", "monster_room"], help="N7-A2 measurement only: vanilla runs, outcome classified, nothing cancelled")
     p.add_argument("--fault", default="none", help="N7-A spike fault injection: none | out_of_range | status_too_high | missing_start")
     p.add_argument("--shadow", action="store_true", help="N7-A3: with --refine hybrid, also check the broad phase against the refined decision (SG01_SHADOW=1)")
+    p.add_argument("--settle", type=float, default=0.0, help="N7-A4: seconds to wait after each chunk loads (controlled-order comparison)")
     p.add_argument("--keep-world", action="store_true", help="N7-A3: copy the region files of the run into <out>/regions (for full-world comparison)")
     p.add_argument("--launcher-prefix", nargs="*", default=[], help="e.g. taskset -c 0,1 to emulate a 2-vCPU runner")
     a = p.parse_args()
@@ -101,6 +102,8 @@ def main() -> None:
             for x, z in chunk_order(a.order, cx, cz, a.radius):
                 server.cmd(f"forceload add {x*16} {z*16}")
                 wait_loaded(server, x * 16, z * 16)
+                if a.settle:
+                    time.sleep(a.settle)  # N7-A4: let background generation of neighbours finish before the next chunk is requested
         report["gen_window_s"] = round(time.perf_counter() - gen0, 3)
         server.save()
         world = World(server.region_dir)

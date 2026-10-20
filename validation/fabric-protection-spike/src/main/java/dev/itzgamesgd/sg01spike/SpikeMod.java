@@ -29,9 +29,13 @@ public final class SpikeMod implements ModInitializer {
             ProtectionConfig.resolve(server);
         });
         ServerLifecycleEvents.END_DATA_PACK_RELOAD.register((server, resources, success) -> {
-            if (success) ProtectionConfig.resolve(server);
+            if (success) ProtectionConfig.reload(server);
         });
-        ServerLifecycleEvents.SERVER_STOPPING.register(server -> writeReport());
+        ServerLifecycleEvents.SERVER_STARTED.register(Sampler::start);
+        ServerLifecycleEvents.SERVER_STOPPING.register(server -> {
+            Sampler.stop();
+            writeReport();
+        });
     }
 
     /** The marker interface is only present on the target records if both Mixins were applied. */
@@ -53,10 +57,20 @@ public final class SpikeMod implements ModInitializer {
                 s.n7aTp.get(), s.n7aFp.get(), s.n7aFn.get(), s.n7aTn.get(), String.join(",", events));
     }
 
+    private static String contractJson() {
+        ProtectionContract.Result c = ProtectionConfig.contract;
+        String warnings = c == null ? "" : c.warnings().stream().map(w -> "\"" + w.replace("\\", "\\\\").replace("\"", "'") + "\"").collect(Collectors.joining(","));
+        String last = ProtectionConfig.lastRejection == null ? "null" : "\"" + ProtectionConfig.lastRejection.replace("\\", "\\\\").replace("\"", "'") + "\"";
+        return String.format("{\"mode\":\"%s\",\"owner\":%s,\"format\":%d,\"revision\":%d,\"required\":%d,\"extensions\":%d,\"warnings\":[%s],"
+                        + "\"reload_rejections\":%d,\"last_rejection\":%s}",
+                ProtectionConfig.MANIFEST_MODE ? "manifest" : "legacy", c == null ? "null" : "\"" + c.owner() + "\"", c == null ? 0 : c.format(),
+                c == null ? 0 : c.revision(), c == null ? 0 : c.required(), c == null ? 0 : c.extensions(), warnings, ProtectionConfig.reloadRejections, last);
+    }
+
     private static void writeReport() {
         String json = "{\"mode\":\"" + Guard.MODE + "\",\"fixture\":\"" + Guard.FIXTURE + "\",\"refine\":\"" + Guard.REFINE + "\",\"shadow\":" + Guard.SHADOW + ",\"oracle\":\""
                 + (Guard.ORACLE_MONSTER_ROOM ? "monster_room" : "off") + "\"," + stats(Guard.GEODE) + "," + stats(Guard.MONSTER_ROOM) + ",\"probe\":"
-                + Probe.json() + ",\"perf\":" + Perf.json() + "}\n";
+                + Probe.json() + ",\"perf\":" + Perf.json() + ",\"contract\":" + contractJson() + "}\n";
         LOGGER.info("SG_SPIKE_REPORT {}", json.replace("\n", ""));
         String path = System.getenv("SG01_SPIKE_REPORT");
         if (path != null && !path.isBlank()) {

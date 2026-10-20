@@ -25,6 +25,10 @@ public final class Perf {
             this.name = name;
         }
 
+        synchronized int count() {
+            return count;
+        }
+
         synchronized void add(long value) {
             if (count < CAPACITY) values[count++] = value;
         }
@@ -62,6 +66,12 @@ public final class Perf {
     private static final ThreadLocal<long[]> MARK = ThreadLocal.withInitial(() -> new long[3]);
 
     private Perf() {
+    }
+
+    /** Number of timing samples currently retained (bounded: CAPACITY per series). */
+    public static long retainedSamples() {
+        return (long) GEODE_DECISION_NS.count() + GEODE_PLACE_NS.count() + GEODE_VANILLA_NS.count() + MONSTER_DECISION_NS.count()
+                + MONSTER_DECISION_BYTES.count() + MONSTER_PLACE_NS.count() + MONSTER_VANILLA_NS.count();
     }
 
     /** Called at the start of a guarded feature call. Index 2 holds an "active" flag, cleared once the call's time is recorded. */
