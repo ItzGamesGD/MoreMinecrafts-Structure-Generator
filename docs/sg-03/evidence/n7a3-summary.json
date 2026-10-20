@@ -1,0 +1,7291 @@
+{
+ "regression_H": {
+  "runs": 32,
+  "corrupted": 0,
+  "foreign_runs": 0,
+  "pieces_not_21": 0,
+  "unavailable": 0,
+  "scheduling_requests": 0,
+  "monster_cancelled_total": 4,
+  "geode_cancelled_total": 72,
+  "shadow_checks": 0,
+  "shadow_violations": 0
+ },
+ "regression_C": {
+  "runs": 32,
+  "corrupted": 0,
+  "foreign_runs": 0,
+  "pieces_not_21": 0,
+  "unavailable": 0,
+  "scheduling_requests": 0,
+  "monster_cancelled_total": 4,
+  "geode_cancelled_total": 72,
+  "shadow_checks": 0,
+  "shadow_violations": 0
+ },
+ "shadow_HS": {
+  "runs": 32,
+  "corrupted": 0,
+  "foreign_runs": 0,
+  "pieces_not_21": 0,
+  "unavailable": 0,
+  "scheduling_requests": 0,
+  "monster_cancelled_total": 5,
+  "geode_cancelled_total": 72,
+  "shadow_checks": 138072,
+  "shadow_violations": 0
+ },
+ "concurrency": {
+  "threads_1": {
+   "runs": 8,
+   "corrupted": 0,
+   "foreign_runs": 0,
+   "pieces_not_21": 0,
+   "unavailable": 0,
+   "scheduling_requests": 0,
+   "monster_cancelled_total": 2,
+   "geode_cancelled_total": 16,
+   "shadow_checks": 0,
+   "shadow_violations": 0
+  },
+  "threads_4_H": {
+   "runs": 8,
+   "corrupted": 0,
+   "foreign_runs": 0,
+   "pieces_not_21": 0,
+   "unavailable": 0,
+   "scheduling_requests": 0,
+   "monster_cancelled_total": 4,
+   "geode_cancelled_total": 16,
+   "shadow_checks": 0,
+   "shadow_violations": 0
+  },
+  "threads_4_C": {
+   "runs": 8,
+   "corrupted": 0,
+   "foreign_runs": 0,
+   "pieces_not_21": 0,
+   "unavailable": 0,
+   "scheduling_requests": 0,
+   "monster_cancelled_total": 3,
+   "geode_cancelled_total": 16,
+   "shadow_checks": 0,
+   "shadow_violations": 0
+  }
+ },
+ "single_thread": {
+  "V": [
+   {
+    "run": "V_173_-19_15_rowmajor_rev_rt1a",
+    "generated": true,
+    "mismatch": 58,
+    "foreign_in_template_air": 277,
+    "pieces": 21,
+    "trial_spawners": [
+     3,
+     3
+    ],
+    "monster_cancelled": null,
+    "geode_cancelled": null,
+    "unavailable": 0,
+    "scheduling": 0,
+    "region_reads": null,
+    "hybrid_skip": null,
+    "shadow_checks": null,
+    "shadow_violations": null
+   },
+   {
+    "run": "V_173_-19_15_rowmajor_rev_rt1b",
+    "generated": true,
+    "mismatch": 58,
+    "foreign_in_template_air": 277,
+    "pieces": 21,
+    "trial_spawners": [
+     3,
+     3
+    ],
+    "monster_cancelled": null,
+    "geode_cancelled": null,
+    "unavailable": 0,
+    "scheduling": 0,
+    "region_reads": null,
+    "hybrid_skip": null,
+    "shadow_checks": null,
+    "shadow_violations": null
+   },
+   {
+    "run": "V_173_-19_15_rowmajor_rev_rt1c",
+    "generated": true,
+    "mismatch": 134,
+    "foreign_in_template_air": 473,
+    "pieces": 21,
+    "trial_spawners": [
+     3,
+     3
+    ],
+    "monster_cancelled": null,
+    "geode_cancelled": null,
+    "unavailable": 0,
+    "scheduling": 0,
+    "region_reads": null,
+    "hybrid_skip": null,
+    "shadow_checks": null,
+    "shadow_violations": null
+   },
+   {
+    "run": "V_173_-19_15_rowmajor_rev_rt1d",
+    "generated": true,
+    "mismatch": 226,
+    "foreign_in_template_air": 473,
+    "pieces": 21,
+    "trial_spawners": [
+     3,
+     3
+    ],
+    "monster_cancelled": null,
+    "geode_cancelled": null,
+    "unavailable": 0,
+    "scheduling": 0,
+    "region_reads": null,
+    "hybrid_skip": null,
+    "shadow_checks": null,
+    "shadow_violations": null
+   }
+  ],
+  "A": [
+   {
+    "run": "A_173_-19_15_rowmajor_rev_rt1a",
+    "generated": true,
+    "mismatch": 212,
+    "foreign_in_template_air": 473,
+    "pieces": 21,
+    "trial_spawners": [
+     3,
+     3
+    ],
+    "monster_cancelled": 0,
+    "geode_cancelled": 0,
+    "unavailable": 0,
+    "scheduling": 0,
+    "region_reads": 0,
+    "hybrid_skip": 0,
+    "shadow_checks": 0,
+    "shadow_violations": 0
+   }
+  ],
+  "B": [
+   {
+    "run": "B_173_-19_15_rowmajor_rev_rt1a",
+    "generated": true,
+    "mismatch": 0,
+    "foreign_in_template_air": 0,
+    "pieces": 21,
+    "trial_spawners": [
+     3,
+     3
+    ],
+    "monster_cancelled": 70,
+    "geode_cancelled": 2,
+    "unavailable": 0,
+    "scheduling": 0,
+    "region_reads": 11527,
+    "hybrid_skip": 0,
+    "shadow_checks": 0,
+    "shadow_violations": 0
+   }
+  ],
+  "C": [
+   {
+    "run": "C_173_-19_15_rowmajor_rev_rt1a",
+    "generated": true,
+    "mismatch": 0,
+    "foreign_in_template_air": 0,
+    "pieces": 21,
+    "trial_spawners": [
+     3,
+     3
+    ],
+    "monster_cancelled": 1,
+    "geode_cancelled": 2,
+    "unavailable": 0,
+    "scheduling": 0,
+    "region_reads": 2996527,
+    "hybrid_skip": 0,
+    "shadow_checks": 0,
+    "shadow_violations": 0
+   }
+  ],
+  "H": [
+   {
+    "run": "H_173_-19_15_rowmajor_rev_rt1a",
+    "generated": true,
+    "mismatch": 0,
+    "foreign_in_template_air": 0,
+    "pieces": 21,
+    "trial_spawners": [
+     3,
+     3
+    ],
+    "monster_cancelled": 0,
+    "geode_cancelled": 2,
+    "unavailable": 0,
+    "scheduling": 0,
+    "region_reads": 116967,
+    "hybrid_skip": 4503,
+    "shadow_checks": 0,
+    "shadow_violations": 0
+   }
+  ]
+ },
+ "noise_floor_vanilla": {
+  "runs": 16,
+  "corrupted": 15,
+  "foreign_runs": 15,
+  "pieces_not_21": 0,
+  "unavailable": 0,
+  "scheduling_requests": 0,
+  "monster_cancelled_total": 0,
+  "geode_cancelled_total": 0,
+  "shadow_checks": 0,
+  "shadow_violations": 0
+ },
+ "other_mod_sparse": [
+  {
+   "run": "C_173_-19_15_rowmajor_rev_rsparse",
+   "generated": false,
+   "mismatch": null,
+   "foreign_in_template_air": null,
+   "pieces": null,
+   "trial_spawners": null,
+   "monster_cancelled": 0,
+   "geode_cancelled": 0,
+   "unavailable": 0,
+   "scheduling": 0,
+   "region_reads": 2760868,
+   "hybrid_skip": 0,
+   "shadow_checks": 0,
+   "shadow_violations": 0
+  }
+ ],
+ "soak_radius9": [
+  {
+   "run": "H_173_-19_15_rowmajor_rev_rsoak",
+   "generated": true,
+   "mismatch": 0,
+   "foreign_in_template_air": 0,
+   "pieces": 21,
+   "trial_spawners": [
+    3,
+    3
+   ],
+   "monster_cancelled": 2,
+   "geode_cancelled": 2,
+   "unavailable": 0,
+   "scheduling": 0,
+   "region_reads": 126713,
+   "hybrid_skip": 8801,
+   "shadow_checks": 0,
+   "shadow_violations": 0
+  },
+  {
+   "run": "V_173_-19_15_rowmajor_rev_rsoak",
+   "generated": true,
+   "mismatch": 226,
+   "foreign_in_template_air": 473,
+   "pieces": 21,
+   "trial_spawners": [
+    3,
+    3
+   ],
+   "monster_cancelled": null,
+   "geode_cancelled": null,
+   "unavailable": 0,
+   "scheduling": 0,
+   "region_reads": null,
+   "hybrid_skip": null,
+   "shadow_checks": null,
+   "shadow_violations": null
+  }
+ ],
+ "benchmark_summary": {
+  "V": {
+   "runs": 24,
+   "gen_window_s": {
+    "median": 16.117,
+    "min": 12.261,
+    "max": 20.706,
+    "n": 24
+   },
+   "elapsed_s": {
+    "median": 18.35,
+    "min": 14.3,
+    "max": 22.6,
+    "n": 24
+   }
+  },
+  "A": {
+   "runs": 24,
+   "gen_window_s": {
+    "median": 16.48,
+    "min": 12.33,
+    "max": 21.181,
+    "n": 24
+   },
+   "elapsed_s": {
+    "median": 18.65,
+    "min": 14.6,
+    "max": 22.8,
+    "n": 24
+   },
+   "monster_decision_ns": {
+    "all": {
+     "p50": {
+      "median": 106.5,
+      "min": 98,
+      "max": 122,
+      "n": 24
+     },
+     "p95": {
+      "median": 2856.0,
+      "min": 2043,
+      "max": 3352,
+      "n": 24
+     },
+     "p99": {
+      "median": 7501.5,
+      "min": 5839,
+      "max": 10411,
+      "n": 24
+     },
+     "mean": {
+      "median": 1156.8,
+      "min": 836.8,
+      "max": 3068.8,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 105.5,
+      "min": 96,
+      "max": 126,
+      "n": 24
+     },
+     "p95": {
+      "median": 2815.0,
+      "min": 2033,
+      "max": 3239,
+      "n": 24
+     },
+     "p99": {
+      "median": 10797.5,
+      "min": 8360,
+      "max": 14122,
+      "n": 24
+     },
+     "mean": {
+      "median": 1832.25,
+      "min": 1313.6,
+      "max": 6157.8,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": {
+      "median": 105.0,
+      "min": 97,
+      "max": 124,
+      "n": 24
+     },
+     "p95": {
+      "median": 2859.5,
+      "min": 1909,
+      "max": 3435,
+      "n": 24
+     },
+     "p99": {
+      "median": 4880.0,
+      "min": 3560,
+      "max": 5800,
+      "n": 24
+     },
+     "mean": {
+      "median": 479.85,
+      "min": 359.2,
+      "max": 1102.5,
+      "n": 24
+     }
+    }
+   },
+   "monster_place_ns": {
+    "all": {
+     "p50": {
+      "median": 1157.5,
+      "min": 662,
+      "max": 2902,
+      "n": 24
+     },
+     "p95": {
+      "median": 24140.0,
+      "min": 20351,
+      "max": 29083,
+      "n": 24
+     },
+     "p99": {
+      "median": 63043.5,
+      "min": 50008,
+      "max": 85068,
+      "n": 24
+     },
+     "mean": {
+      "median": 10403.5,
+      "min": 7829.1,
+      "max": 17799.6,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 1363.5,
+      "min": 874,
+      "max": 4089,
+      "n": 24
+     },
+     "p95": {
+      "median": 33600.5,
+      "min": 23951,
+      "max": 45991,
+      "n": 24
+     },
+     "p99": {
+      "median": 79224.5,
+      "min": 60698,
+      "max": 118206,
+      "n": 24
+     },
+     "mean": {
+      "median": 13979.0,
+      "min": 9443.7,
+      "max": 26795.8,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": {
+      "median": 833.5,
+      "min": 453,
+      "max": 2055,
+      "n": 24
+     },
+     "p95": {
+      "median": 20387.5,
+      "min": 16826,
+      "max": 24414,
+      "n": 24
+     },
+     "p99": {
+      "median": 38820.0,
+      "min": 26768,
+      "max": 60600,
+      "n": 24
+     },
+     "mean": {
+      "median": 7273.4,
+      "min": 5250.4,
+      "max": 9515.8,
+      "n": 24
+     }
+    }
+   },
+   "monster_vanilla_ns": {
+    "all": {
+     "p50": {
+      "median": 1157.5,
+      "min": 662,
+      "max": 2902,
+      "n": 24
+     },
+     "p95": {
+      "median": 24140.0,
+      "min": 20351,
+      "max": 29083,
+      "n": 24
+     },
+     "p99": {
+      "median": 63043.5,
+      "min": 50008,
+      "max": 85068,
+      "n": 24
+     },
+     "mean": {
+      "median": 10403.5,
+      "min": 7829.1,
+      "max": 17799.6,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 1363.5,
+      "min": 874,
+      "max": 4089,
+      "n": 24
+     },
+     "p95": {
+      "median": 33600.5,
+      "min": 23951,
+      "max": 45991,
+      "n": 24
+     },
+     "p99": {
+      "median": 79224.5,
+      "min": 60698,
+      "max": 118206,
+      "n": 24
+     },
+     "mean": {
+      "median": 13979.0,
+      "min": 9443.7,
+      "max": 26795.8,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": {
+      "median": 833.5,
+      "min": 453,
+      "max": 2055,
+      "n": 24
+     },
+     "p95": {
+      "median": 20387.5,
+      "min": 16826,
+      "max": 24414,
+      "n": 24
+     },
+     "p99": {
+      "median": 38820.0,
+      "min": 26768,
+      "max": 60600,
+      "n": 24
+     },
+     "mean": {
+      "median": 7273.4,
+      "min": 5250.4,
+      "max": 9515.8,
+      "n": 24
+     }
+    }
+   },
+   "geode_decision_ns": {
+    "all": {
+     "p50": {
+      "median": 6377.0,
+      "min": 4673,
+      "max": 8960,
+      "n": 24
+     },
+     "p95": {
+      "median": 39669.5,
+      "min": 18167,
+      "max": 207819,
+      "n": 24
+     },
+     "p99": {
+      "median": 39669.5,
+      "min": 18167,
+      "max": 207819,
+      "n": 24
+     },
+     "mean": {
+      "median": 11265.85,
+      "min": 7447.3,
+      "max": 20227.2,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 6377.0,
+      "min": 4673,
+      "max": 8960,
+      "n": 24
+     },
+     "p95": {
+      "median": 39669.5,
+      "min": 18167,
+      "max": 207819,
+      "n": 24
+     },
+     "p99": {
+      "median": 39669.5,
+      "min": 18167,
+      "max": 207819,
+      "n": 24
+     },
+     "mean": {
+      "median": 11265.85,
+      "min": 7447.3,
+      "max": 20227.2,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": null,
+     "p95": null,
+     "p99": null,
+     "mean": null
+    }
+   },
+   "geode_place_ns": {
+    "all": {
+     "p50": {
+      "median": 6297294.0,
+      "min": 4602360,
+      "max": 9119431,
+      "n": 24
+     },
+     "p95": {
+      "median": 23786381.5,
+      "min": 17344114,
+      "max": 61815288,
+      "n": 24
+     },
+     "p99": {
+      "median": 23786381.5,
+      "min": 17344114,
+      "max": 61815288,
+      "n": 24
+     },
+     "mean": {
+      "median": 8417681.2,
+      "min": 6745362.4,
+      "max": 10941084.2,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 6297294.0,
+      "min": 4602360,
+      "max": 9119431,
+      "n": 24
+     },
+     "p95": {
+      "median": 23786381.5,
+      "min": 17344114,
+      "max": 61815288,
+      "n": 24
+     },
+     "p99": {
+      "median": 23786381.5,
+      "min": 17344114,
+      "max": 61815288,
+      "n": 24
+     },
+     "mean": {
+      "median": 8417681.2,
+      "min": 6745362.4,
+      "max": 10941084.2,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": null,
+     "p95": null,
+     "p99": null,
+     "mean": null
+    }
+   },
+   "geode_vanilla_ns": {
+    "all": {
+     "p50": {
+      "median": 6297294.0,
+      "min": 4602360,
+      "max": 9119431,
+      "n": 24
+     },
+     "p95": {
+      "median": 23786381.5,
+      "min": 17344114,
+      "max": 61815288,
+      "n": 24
+     },
+     "p99": {
+      "median": 23786381.5,
+      "min": 17344114,
+      "max": 61815288,
+      "n": 24
+     },
+     "mean": {
+      "median": 8417681.2,
+      "min": 6745362.4,
+      "max": 10941084.2,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 6297294.0,
+      "min": 4602360,
+      "max": 9119431,
+      "n": 24
+     },
+     "p95": {
+      "median": 23786381.5,
+      "min": 17344114,
+      "max": 61815288,
+      "n": 24
+     },
+     "p99": {
+      "median": 23786381.5,
+      "min": 17344114,
+      "max": 61815288,
+      "n": 24
+     },
+     "mean": {
+      "median": 8417681.2,
+      "min": 6745362.4,
+      "max": 10941084.2,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": null,
+     "p95": null,
+     "p99": null,
+     "mean": null
+    }
+   },
+   "monster_decision_bytes": {
+    "all_mean": {
+     "median": 90.6,
+     "min": 89.5,
+     "max": 92.0,
+     "n": 24
+    }
+   },
+   "gc_count": {
+    "median": 54.0,
+    "min": 47,
+    "max": 59,
+    "n": 24
+   },
+   "gc_ms": {
+    "median": 584.0,
+    "min": 472,
+    "max": 626,
+    "n": 24
+   },
+   "process_cpu_ms": {
+    "median": 70905.0,
+    "min": 62850,
+    "max": 74160,
+    "n": 24
+   },
+   "heap_used_bytes": {
+    "median": 357025732.0,
+    "min": 266261704,
+    "max": 573134808,
+    "n": 24
+   },
+   "monster_attempts": {
+    "median": 4382.0,
+    "min": 4172,
+    "max": 4578,
+    "n": 24
+   },
+   "monster_cancelled": {
+    "median": 0.0,
+    "min": 0,
+    "max": 0,
+    "n": 24
+   },
+   "geode_attempts": {
+    "median": 12.5,
+    "min": 10,
+    "max": 17,
+    "n": 24
+   },
+   "geode_cancelled": {
+    "median": 0.0,
+    "min": 0,
+    "max": 0,
+    "n": 24
+   },
+   "hybrid_skip": {
+    "median": 0.0,
+    "min": 0,
+    "max": 0,
+    "n": 24
+   },
+   "region_reads": {
+    "median": 0.0,
+    "min": 0,
+    "max": 0,
+    "n": 24
+   },
+   "scheduling_requests": 0,
+   "region_reads_status_below_or_null": 0
+  },
+  "B": {
+   "runs": 24,
+   "gen_window_s": {
+    "median": 16.728,
+    "min": 13.049,
+    "max": 19.83,
+    "n": 24
+   },
+   "elapsed_s": {
+    "median": 18.95,
+    "min": 15.0,
+    "max": 22.2,
+    "n": 24
+   },
+   "monster_decision_ns": {
+    "all": {
+     "p50": {
+      "median": 960.0,
+      "min": 876,
+      "max": 1212,
+      "n": 24
+     },
+     "p95": {
+      "median": 14015.0,
+      "min": 11225,
+      "max": 16313,
+      "n": 24
+     },
+     "p99": {
+      "median": 57514.0,
+      "min": 43036,
+      "max": 75499,
+      "n": 24
+     },
+     "mean": {
+      "median": 6804.65,
+      "min": 4555.5,
+      "max": 12744.9,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 1177.5,
+      "min": 948,
+      "max": 1570,
+      "n": 24
+     },
+     "p95": {
+      "median": 14269.5,
+      "min": 10597,
+      "max": 19137,
+      "n": 24
+     },
+     "p99": {
+      "median": 62963.0,
+      "min": 43911,
+      "max": 80767,
+      "n": 24
+     },
+     "mean": {
+      "median": 9391.15,
+      "min": 5784.3,
+      "max": 21114.5,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": {
+      "median": 772.0,
+      "min": 563,
+      "max": 947,
+      "n": 24
+     },
+     "p95": {
+      "median": 12405.5,
+      "min": 8084,
+      "max": 17535,
+      "n": 24
+     },
+     "p99": {
+      "median": 53565.0,
+      "min": 32533,
+      "max": 91867,
+      "n": 24
+     },
+     "mean": {
+      "median": 4563.35,
+      "min": 2644.1,
+      "max": 12483.6,
+      "n": 24
+     }
+    }
+   },
+   "monster_place_ns": {
+    "all": {
+     "p50": {
+      "median": 3351.5,
+      "min": 2675,
+      "max": 6378,
+      "n": 24
+     },
+     "p95": {
+      "median": 37636.0,
+      "min": 31027,
+      "max": 44634,
+      "n": 24
+     },
+     "p99": {
+      "median": 101669.0,
+      "min": 83432,
+      "max": 147275,
+      "n": 24
+     },
+     "mean": {
+      "median": 15743.85,
+      "min": 12397.4,
+      "max": 25466.3,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 3878.5,
+      "min": 3216,
+      "max": 9504,
+      "n": 24
+     },
+     "p95": {
+      "median": 46393.0,
+      "min": 38832,
+      "max": 59751,
+      "n": 24
+     },
+     "p99": {
+      "median": 130505.0,
+      "min": 87308,
+      "max": 202377,
+      "n": 24
+     },
+     "mean": {
+      "median": 21567.8,
+      "min": 15551.2,
+      "max": 39773.2,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": {
+      "median": 2820.5,
+      "min": 2143,
+      "max": 4769,
+      "n": 24
+     },
+     "p95": {
+      "median": 29012.5,
+      "min": 22865,
+      "max": 35961,
+      "n": 24
+     },
+     "p99": {
+      "median": 84425.0,
+      "min": 48601,
+      "max": 126949,
+      "n": 24
+     },
+     "mean": {
+      "median": 11243.7,
+      "min": 9443.6,
+      "max": 19114.0,
+      "n": 24
+     }
+    }
+   },
+   "monster_vanilla_ns": {
+    "all": {
+     "p50": {
+      "median": 3190.5,
+      "min": 2605,
+      "max": 5913,
+      "n": 24
+     },
+     "p95": {
+      "median": 34488.0,
+      "min": 28812,
+      "max": 41778,
+      "n": 24
+     },
+     "p99": {
+      "median": 90314.5,
+      "min": 72261,
+      "max": 133697,
+      "n": 24
+     },
+     "mean": {
+      "median": 14380.4,
+      "min": 11434.9,
+      "max": 24050.8,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 3852.0,
+      "min": 2842,
+      "max": 9455,
+      "n": 24
+     },
+     "p95": {
+      "median": 42774.5,
+      "min": 35433,
+      "max": 58139,
+      "n": 24
+     },
+     "p99": {
+      "median": 109361.5,
+      "min": 81559,
+      "max": 196578,
+      "n": 24
+     },
+     "mean": {
+      "median": 17995.0,
+      "min": 13599.5,
+      "max": 36707.8,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": {
+      "median": 2782.5,
+      "min": 2070,
+      "max": 4185,
+      "n": 24
+     },
+     "p95": {
+      "median": 26096.5,
+      "min": 21602,
+      "max": 30128,
+      "n": 24
+     },
+     "p99": {
+      "median": 71382.5,
+      "min": 43434,
+      "max": 94479,
+      "n": 24
+     },
+     "mean": {
+      "median": 10536.75,
+      "min": 9186.1,
+      "max": 18607.8,
+      "n": 24
+     }
+    }
+   },
+   "geode_decision_ns": {
+    "all": {
+     "p50": {
+      "median": 20763.0,
+      "min": 13350,
+      "max": 37494,
+      "n": 24
+     },
+     "p95": {
+      "median": 292053.0,
+      "min": 58538,
+      "max": 1217966,
+      "n": 24
+     },
+     "p99": {
+      "median": 292053.0,
+      "min": 58538,
+      "max": 1217966,
+      "n": 24
+     },
+     "mean": {
+      "median": 50226.05,
+      "min": 26751.9,
+      "max": 130441.2,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 20763.0,
+      "min": 13350,
+      "max": 37494,
+      "n": 24
+     },
+     "p95": {
+      "median": 292053.0,
+      "min": 58538,
+      "max": 1217966,
+      "n": 24
+     },
+     "p99": {
+      "median": 292053.0,
+      "min": 58538,
+      "max": 1217966,
+      "n": 24
+     },
+     "mean": {
+      "median": 50226.05,
+      "min": 26751.9,
+      "max": 130441.2,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": null,
+     "p95": null,
+     "p99": null,
+     "mean": null
+    }
+   },
+   "geode_place_ns": {
+    "all": {
+     "p50": {
+      "median": 5781137.0,
+      "min": 3812521,
+      "max": 7644043,
+      "n": 24
+     },
+     "p95": {
+      "median": 25056391.0,
+      "min": 17028049,
+      "max": 36520956,
+      "n": 24
+     },
+     "p99": {
+      "median": 25056391.0,
+      "min": 17028049,
+      "max": 36520956,
+      "n": 24
+     },
+     "mean": {
+      "median": 7462652.15,
+      "min": 4714153.1,
+      "max": 9832452.2,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 5781137.0,
+      "min": 3812521,
+      "max": 7644043,
+      "n": 24
+     },
+     "p95": {
+      "median": 25056391.0,
+      "min": 17028049,
+      "max": 36520956,
+      "n": 24
+     },
+     "p99": {
+      "median": 25056391.0,
+      "min": 17028049,
+      "max": 36520956,
+      "n": 24
+     },
+     "mean": {
+      "median": 7462652.15,
+      "min": 4714153.1,
+      "max": 9832452.2,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": null,
+     "p95": null,
+     "p99": null,
+     "mean": null
+    }
+   },
+   "geode_vanilla_ns": {
+    "all": {
+     "p50": {
+      "median": 6425599.5,
+      "min": 4460502,
+      "max": 9175261,
+      "n": 24
+     },
+     "p95": {
+      "median": 25056391.0,
+      "min": 17028049,
+      "max": 36520956,
+      "n": 24
+     },
+     "p99": {
+      "median": 25056391.0,
+      "min": 17028049,
+      "max": 36520956,
+      "n": 24
+     },
+     "mean": {
+      "median": 9112425.65,
+      "min": 5845200.1,
+      "max": 11133718.5,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 6425599.5,
+      "min": 4460502,
+      "max": 9175261,
+      "n": 24
+     },
+     "p95": {
+      "median": 25056391.0,
+      "min": 17028049,
+      "max": 36520956,
+      "n": 24
+     },
+     "p99": {
+      "median": 25056391.0,
+      "min": 17028049,
+      "max": 36520956,
+      "n": 24
+     },
+     "mean": {
+      "median": 9112425.65,
+      "min": 5845200.1,
+      "max": 11133718.5,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": null,
+     "p95": null,
+     "p99": null,
+     "mean": null
+    }
+   },
+   "monster_decision_bytes": {
+    "all_mean": {
+     "median": 901.6,
+     "min": 757.0,
+     "max": 971.0,
+     "n": 24
+    }
+   },
+   "gc_count": {
+    "median": 51.0,
+    "min": 43,
+    "max": 61,
+    "n": 24
+   },
+   "gc_ms": {
+    "median": 567.0,
+    "min": 453,
+    "max": 665,
+    "n": 24
+   },
+   "process_cpu_ms": {
+    "median": 70350.0,
+    "min": 62090,
+    "max": 78960,
+    "n": 24
+   },
+   "heap_used_bytes": {
+    "median": 369559560.0,
+    "min": 273877992,
+    "max": 535971200,
+    "n": 24
+   },
+   "monster_attempts": {
+    "median": 4382.0,
+    "min": 4172,
+    "max": 4578,
+    "n": 24
+   },
+   "monster_cancelled": {
+    "median": 62.5,
+    "min": 57,
+    "max": 70,
+    "n": 24
+   },
+   "geode_attempts": {
+    "median": 12.5,
+    "min": 10,
+    "max": 17,
+    "n": 24
+   },
+   "geode_cancelled": {
+    "median": 2.0,
+    "min": 2,
+    "max": 3,
+    "n": 24
+   },
+   "hybrid_skip": {
+    "median": 0.0,
+    "min": 0,
+    "max": 0,
+    "n": 24
+   },
+   "region_reads": {
+    "median": 11098.5,
+    "min": 10576,
+    "max": 11527,
+    "n": 24
+   },
+   "scheduling_requests": 0,
+   "region_reads_status_below_or_null": 0
+  },
+  "C": {
+   "runs": 24,
+   "gen_window_s": {
+    "median": 16.674,
+    "min": 11.833,
+    "max": 24.825,
+    "n": 24
+   },
+   "elapsed_s": {
+    "median": 19.1,
+    "min": 14.2,
+    "max": 26.5,
+    "n": 24
+   },
+   "monster_decision_ns": {
+    "all": {
+     "p50": {
+      "median": 1418.0,
+      "min": 786,
+      "max": 4153,
+      "n": 24
+     },
+     "p95": {
+      "median": 88785.5,
+      "min": 76335,
+      "max": 105699,
+      "n": 24
+     },
+     "p99": {
+      "median": 156197.5,
+      "min": 113862,
+      "max": 339913,
+      "n": 24
+     },
+     "mean": {
+      "median": 30094.9,
+      "min": 21458.0,
+      "max": 39600.3,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 1512.5,
+      "min": 989,
+      "max": 6283,
+      "n": 24
+     },
+     "p95": {
+      "median": 97032.0,
+      "min": 79541,
+      "max": 211127,
+      "n": 24
+     },
+     "p99": {
+      "median": 207247.0,
+      "min": 145244,
+      "max": 412023,
+      "n": 24
+     },
+     "mean": {
+      "median": 35556.55,
+      "min": 24905.5,
+      "max": 52968.7,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": {
+      "median": 1331.0,
+      "min": 537,
+      "max": 3897,
+      "n": 24
+     },
+     "p95": {
+      "median": 80769.5,
+      "min": 64081,
+      "max": 90418,
+      "n": 24
+     },
+     "p99": {
+      "median": 107989.5,
+      "min": 93265,
+      "max": 132189,
+      "n": 24
+     },
+     "mean": {
+      "median": 25573.4,
+      "min": 18307.7,
+      "max": 34578.7,
+      "n": 24
+     }
+    }
+   },
+   "monster_place_ns": {
+    "all": {
+     "p50": {
+      "median": 1877.0,
+      "min": 1047,
+      "max": 5732,
+      "n": 24
+     },
+     "p95": {
+      "median": 110891.0,
+      "min": 96489,
+      "max": 134866,
+      "n": 24
+     },
+     "p99": {
+      "median": 210468.5,
+      "min": 160194,
+      "max": 401230,
+      "n": 24
+     },
+     "mean": {
+      "median": 39295.6,
+      "min": 27919.2,
+      "max": 50280.2,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 2115.5,
+      "min": 1263,
+      "max": 8263,
+      "n": 24
+     },
+     "p95": {
+      "median": 125090.0,
+      "min": 108404,
+      "max": 259643,
+      "n": 24
+     },
+     "p99": {
+      "median": 324562.5,
+      "min": 205831,
+      "max": 603390,
+      "n": 24
+     },
+     "mean": {
+      "median": 46835.95,
+      "min": 33245.3,
+      "max": 67784.5,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": {
+      "median": 1690.0,
+      "min": 752,
+      "max": 5095,
+      "n": 24
+     },
+     "p95": {
+      "median": 100253.0,
+      "min": 78614,
+      "max": 111802,
+      "n": 24
+     },
+     "p99": {
+      "median": 133732.0,
+      "min": 114945,
+      "max": 179011,
+      "n": 24
+     },
+     "mean": {
+      "median": 32428.65,
+      "min": 22945.6,
+      "max": 45630.8,
+      "n": 24
+     }
+    }
+   },
+   "monster_vanilla_ns": {
+    "all": {
+     "p50": {
+      "median": 1877.0,
+      "min": 1047,
+      "max": 5732,
+      "n": 24
+     },
+     "p95": {
+      "median": 110891.0,
+      "min": 96489,
+      "max": 134278,
+      "n": 24
+     },
+     "p99": {
+      "median": 210468.5,
+      "min": 160194,
+      "max": 400594,
+      "n": 24
+     },
+     "mean": {
+      "median": 39295.6,
+      "min": 27919.2,
+      "max": 49696.2,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 2115.5,
+      "min": 1263,
+      "max": 8263,
+      "n": 24
+     },
+     "p95": {
+      "median": 125090.0,
+      "min": 108404,
+      "max": 259643,
+      "n": 24
+     },
+     "p99": {
+      "median": 324562.5,
+      "min": 205831,
+      "max": 603390,
+      "n": 24
+     },
+     "mean": {
+      "median": 46835.95,
+      "min": 33245.3,
+      "max": 67784.5,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": {
+      "median": 1690.0,
+      "min": 752,
+      "max": 5095,
+      "n": 24
+     },
+     "p95": {
+      "median": 100087.5,
+      "min": 78614,
+      "max": 111802,
+      "n": 24
+     },
+     "p99": {
+      "median": 133732.0,
+      "min": 114945,
+      "max": 177787,
+      "n": 24
+     },
+     "mean": {
+      "median": 32428.65,
+      "min": 22945.6,
+      "max": 44448.7,
+      "n": 24
+     }
+    }
+   },
+   "geode_decision_ns": {
+    "all": {
+     "p50": {
+      "median": 60369.5,
+      "min": 45871,
+      "max": 73208,
+      "n": 24
+     },
+     "p95": {
+      "median": 3128817.0,
+      "min": 552764,
+      "max": 6625572,
+      "n": 24
+     },
+     "p99": {
+      "median": 3128817.0,
+      "min": 552764,
+      "max": 6625572,
+      "n": 24
+     },
+     "mean": {
+      "median": 326429.5,
+      "min": 130298.8,
+      "max": 794299.1,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 60369.5,
+      "min": 45871,
+      "max": 73208,
+      "n": 24
+     },
+     "p95": {
+      "median": 3128817.0,
+      "min": 552764,
+      "max": 6625572,
+      "n": 24
+     },
+     "p99": {
+      "median": 3128817.0,
+      "min": 552764,
+      "max": 6625572,
+      "n": 24
+     },
+     "mean": {
+      "median": 326429.5,
+      "min": 130298.8,
+      "max": 794299.1,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": null,
+     "p95": null,
+     "p99": null,
+     "mean": null
+    }
+   },
+   "geode_place_ns": {
+    "all": {
+     "p50": {
+      "median": 5801719.5,
+      "min": 4811711,
+      "max": 7742101,
+      "n": 24
+     },
+     "p95": {
+      "median": 22622495.0,
+      "min": 15622517,
+      "max": 43679653,
+      "n": 24
+     },
+     "p99": {
+      "median": 22622495.0,
+      "min": 15622517,
+      "max": 43679653,
+      "n": 24
+     },
+     "mean": {
+      "median": 7049133.7,
+      "min": 5999700.4,
+      "max": 12307399.1,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 5801719.5,
+      "min": 4811711,
+      "max": 7742101,
+      "n": 24
+     },
+     "p95": {
+      "median": 22622495.0,
+      "min": 15622517,
+      "max": 43679653,
+      "n": 24
+     },
+     "p99": {
+      "median": 22622495.0,
+      "min": 15622517,
+      "max": 43679653,
+      "n": 24
+     },
+     "mean": {
+      "median": 7049133.7,
+      "min": 5999700.4,
+      "max": 12307399.1,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": null,
+     "p95": null,
+     "p99": null,
+     "mean": null
+    }
+   },
+   "geode_vanilla_ns": {
+    "all": {
+     "p50": {
+      "median": 6436054.5,
+      "min": 4843403,
+      "max": 9359276,
+      "n": 24
+     },
+     "p95": {
+      "median": 22622495.0,
+      "min": 15622517,
+      "max": 43679653,
+      "n": 24
+     },
+     "p99": {
+      "median": 22622495.0,
+      "min": 15622517,
+      "max": 43679653,
+      "n": 24
+     },
+     "mean": {
+      "median": 8635194.7,
+      "min": 7020008.3,
+      "max": 13615515.6,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 6436054.5,
+      "min": 4843403,
+      "max": 9359276,
+      "n": 24
+     },
+     "p95": {
+      "median": 22622495.0,
+      "min": 15622517,
+      "max": 43679653,
+      "n": 24
+     },
+     "p99": {
+      "median": 22622495.0,
+      "min": 15622517,
+      "max": 43679653,
+      "n": 24
+     },
+     "mean": {
+      "median": 8635194.7,
+      "min": 7020008.3,
+      "max": 13615515.6,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": null,
+     "p95": null,
+     "p99": null,
+     "mean": null
+    }
+   },
+   "monster_decision_bytes": {
+    "all_mean": {
+     "median": 12524.7,
+     "min": 10851.9,
+     "max": 15034.0,
+     "n": 24
+    }
+   },
+   "gc_count": {
+    "median": 54.0,
+    "min": 42,
+    "max": 61,
+    "n": 24
+   },
+   "gc_ms": {
+    "median": 579.5,
+    "min": 499,
+    "max": 686,
+    "n": 24
+   },
+   "process_cpu_ms": {
+    "median": 70920.0,
+    "min": 62880,
+    "max": 82160,
+    "n": 24
+   },
+   "heap_used_bytes": {
+    "median": 375860432.0,
+    "min": 280538304,
+    "max": 502645288,
+    "n": 24
+   },
+   "monster_attempts": {
+    "median": 4382.0,
+    "min": 4172,
+    "max": 4578,
+    "n": 24
+   },
+   "monster_cancelled": {
+    "median": 0.0,
+    "min": 0,
+    "max": 1,
+    "n": 24
+   },
+   "geode_attempts": {
+    "median": 12.5,
+    "min": 10,
+    "max": 17,
+    "n": 24
+   },
+   "geode_cancelled": {
+    "median": 2.0,
+    "min": 2,
+    "max": 3,
+    "n": 24
+   },
+   "hybrid_skip": {
+    "median": 0.0,
+    "min": 0,
+    "max": 0,
+    "n": 24
+   },
+   "region_reads": {
+    "median": 2371118.0,
+    "min": 2115119,
+    "max": 3000108,
+    "n": 24
+   },
+   "scheduling_requests": 0,
+   "region_reads_status_below_or_null": 0
+  },
+  "H": {
+   "runs": 24,
+   "gen_window_s": {
+    "median": 17.52,
+    "min": 13.63,
+    "max": 22.983,
+    "n": 24
+   },
+   "elapsed_s": {
+    "median": 19.4,
+    "min": 15.3,
+    "max": 24.5,
+    "n": 24
+   },
+   "monster_decision_ns": {
+    "all": {
+     "p50": {
+      "median": 995.5,
+      "min": 844,
+      "max": 1328,
+      "n": 24
+     },
+     "p95": {
+      "median": 15024.5,
+      "min": 12362,
+      "max": 18738,
+      "n": 24
+     },
+     "p99": {
+      "median": 107152.5,
+      "min": 92504,
+      "max": 143035,
+      "n": 24
+     },
+     "mean": {
+      "median": 8277.2,
+      "min": 6228.4,
+      "max": 11642.9,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 1199.5,
+      "min": 912,
+      "max": 1551,
+      "n": 24
+     },
+     "p95": {
+      "median": 15190.0,
+      "min": 10214,
+      "max": 24972,
+      "n": 24
+     },
+     "p99": {
+      "median": 100107.5,
+      "min": 43813,
+      "max": 269122,
+      "n": 24
+     },
+     "mean": {
+      "median": 10143.35,
+      "min": 6415.4,
+      "max": 16434.3,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": {
+      "median": 840.0,
+      "min": 482,
+      "max": 1297,
+      "n": 24
+     },
+     "p95": {
+      "median": 15112.5,
+      "min": 6768,
+      "max": 23150,
+      "n": 24
+     },
+     "p99": {
+      "median": 99610.0,
+      "min": 64092,
+      "max": 263195,
+      "n": 24
+     },
+     "mean": {
+      "median": 6561.95,
+      "min": 2908.4,
+      "max": 10384.4,
+      "n": 24
+     }
+    }
+   },
+   "monster_place_ns": {
+    "all": {
+     "p50": {
+      "median": 3517.5,
+      "min": 2488,
+      "max": 7033,
+      "n": 24
+     },
+     "p95": {
+      "median": 39555.0,
+      "min": 31196,
+      "max": 55090,
+      "n": 24
+     },
+     "p99": {
+      "median": 173405.0,
+      "min": 130071,
+      "max": 283400,
+      "n": 24
+     },
+     "mean": {
+      "median": 18170.25,
+      "min": 14878.1,
+      "max": 24061.7,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 3802.5,
+      "min": 3094,
+      "max": 9840,
+      "n": 24
+     },
+     "p95": {
+      "median": 47265.5,
+      "min": 39701,
+      "max": 72615,
+      "n": 24
+     },
+     "p99": {
+      "median": 201296.5,
+      "min": 119570,
+      "max": 319988,
+      "n": 24
+     },
+     "mean": {
+      "median": 22577.2,
+      "min": 18242.8,
+      "max": 31584.6,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": {
+      "median": 2916.5,
+      "min": 2082,
+      "max": 6221,
+      "n": 24
+     },
+     "p95": {
+      "median": 30821.0,
+      "min": 23022,
+      "max": 55846,
+      "n": 24
+     },
+     "p99": {
+      "median": 135868.5,
+      "min": 92003,
+      "max": 312493,
+      "n": 24
+     },
+     "mean": {
+      "median": 14458.8,
+      "min": 9416.0,
+      "max": 18443.0,
+      "n": 24
+     }
+    }
+   },
+   "monster_vanilla_ns": {
+    "all": {
+     "p50": {
+      "median": 3517.5,
+      "min": 2488,
+      "max": 7033,
+      "n": 24
+     },
+     "p95": {
+      "median": 39555.0,
+      "min": 31196,
+      "max": 54966,
+      "n": 24
+     },
+     "p99": {
+      "median": 173160.5,
+      "min": 130071,
+      "max": 281025,
+      "n": 24
+     },
+     "mean": {
+      "median": 18170.25,
+      "min": 14878.1,
+      "max": 24061.7,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 3802.5,
+      "min": 3094,
+      "max": 9840,
+      "n": 24
+     },
+     "p95": {
+      "median": 47265.5,
+      "min": 39701,
+      "max": 72615,
+      "n": 24
+     },
+     "p99": {
+      "median": 201296.5,
+      "min": 119570,
+      "max": 319988,
+      "n": 24
+     },
+     "mean": {
+      "median": 22577.2,
+      "min": 18242.8,
+      "max": 31584.6,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": {
+      "median": 2916.5,
+      "min": 2082,
+      "max": 6221,
+      "n": 24
+     },
+     "p95": {
+      "median": 30821.0,
+      "min": 23022,
+      "max": 54247,
+      "n": 24
+     },
+     "p99": {
+      "median": 135868.5,
+      "min": 92003,
+      "max": 294168,
+      "n": 24
+     },
+     "mean": {
+      "median": 14407.05,
+      "min": 9416.0,
+      "max": 18178.1,
+      "n": 24
+     }
+    }
+   },
+   "geode_decision_ns": {
+    "all": {
+     "p50": {
+      "median": 27149.0,
+      "min": 16992,
+      "max": 49320,
+      "n": 24
+     },
+     "p95": {
+      "median": 307058.5,
+      "min": 104453,
+      "max": 5009992,
+      "n": 24
+     },
+     "p99": {
+      "median": 307058.5,
+      "min": 104453,
+      "max": 5009992,
+      "n": 24
+     },
+     "mean": {
+      "median": 76239.35,
+      "min": 39287.3,
+      "max": 335613.7,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 27149.0,
+      "min": 16992,
+      "max": 49320,
+      "n": 24
+     },
+     "p95": {
+      "median": 307058.5,
+      "min": 104453,
+      "max": 5009992,
+      "n": 24
+     },
+     "p99": {
+      "median": 307058.5,
+      "min": 104453,
+      "max": 5009992,
+      "n": 24
+     },
+     "mean": {
+      "median": 76239.35,
+      "min": 39287.3,
+      "max": 335613.7,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": null,
+     "p95": null,
+     "p99": null,
+     "mean": null
+    }
+   },
+   "geode_place_ns": {
+    "all": {
+     "p50": {
+      "median": 5737607.0,
+      "min": 4750811,
+      "max": 7392745,
+      "n": 24
+     },
+     "p95": {
+      "median": 25555274.0,
+      "min": 14821206,
+      "max": 54041559,
+      "n": 24
+     },
+     "p99": {
+      "median": 25555274.0,
+      "min": 14821206,
+      "max": 54041559,
+      "n": 24
+     },
+     "mean": {
+      "median": 7747705.45,
+      "min": 5575889.3,
+      "max": 10762722.6,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 5737607.0,
+      "min": 4750811,
+      "max": 7392745,
+      "n": 24
+     },
+     "p95": {
+      "median": 25555274.0,
+      "min": 14821206,
+      "max": 54041559,
+      "n": 24
+     },
+     "p99": {
+      "median": 25555274.0,
+      "min": 14821206,
+      "max": 54041559,
+      "n": 24
+     },
+     "mean": {
+      "median": 7747705.45,
+      "min": 5575889.3,
+      "max": 10762722.6,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": null,
+     "p95": null,
+     "p99": null,
+     "mean": null
+    }
+   },
+   "geode_vanilla_ns": {
+    "all": {
+     "p50": {
+      "median": 6413917.0,
+      "min": 5241000,
+      "max": 9973366,
+      "n": 24
+     },
+     "p95": {
+      "median": 25555274.0,
+      "min": 14821206,
+      "max": 54041559,
+      "n": 24
+     },
+     "p99": {
+      "median": 25555274.0,
+      "min": 14821206,
+      "max": 54041559,
+      "n": 24
+     },
+     "mean": {
+      "median": 9323526.65,
+      "min": 6839913.3,
+      "max": 13412286.1,
+      "n": 24
+     }
+    },
+    "cold": {
+     "p50": {
+      "median": 6413917.0,
+      "min": 5241000,
+      "max": 9973366,
+      "n": 24
+     },
+     "p95": {
+      "median": 25555274.0,
+      "min": 14821206,
+      "max": 54041559,
+      "n": 24
+     },
+     "p99": {
+      "median": 25555274.0,
+      "min": 14821206,
+      "max": 54041559,
+      "n": 24
+     },
+     "mean": {
+      "median": 9323526.65,
+      "min": 6839913.3,
+      "max": 13412286.1,
+      "n": 24
+     }
+    },
+    "steady": {
+     "p50": null,
+     "p95": null,
+     "p99": null,
+     "mean": null
+    }
+   },
+   "monster_decision_bytes": {
+    "all_mean": {
+     "median": 1298.4,
+     "min": 1228.6,
+     "max": 1454.6,
+     "n": 24
+    }
+   },
+   "gc_count": {
+    "median": 52.5,
+    "min": 46,
+    "max": 58,
+    "n": 24
+   },
+   "gc_ms": {
+    "median": 577.0,
+    "min": 487,
+    "max": 648,
+    "n": 24
+   },
+   "process_cpu_ms": {
+    "median": 70375.0,
+    "min": 63020,
+    "max": 75700,
+    "n": 24
+   },
+   "heap_used_bytes": {
+    "median": 359880032.0,
+    "min": 273776392,
+    "max": 551841240,
+    "n": 24
+   },
+   "monster_attempts": {
+    "median": 4382.0,
+    "min": 4172,
+    "max": 4578,
+    "n": 24
+   },
+   "monster_cancelled": {
+    "median": 0.0,
+    "min": 0,
+    "max": 1,
+    "n": 24
+   },
+   "geode_attempts": {
+    "median": 12.5,
+    "min": 10,
+    "max": 17,
+    "n": 24
+   },
+   "geode_cancelled": {
+    "median": 2.0,
+    "min": 2,
+    "max": 3,
+    "n": 24
+   },
+   "hybrid_skip": {
+    "median": 4319.0,
+    "min": 4118,
+    "max": 4503,
+    "n": 24
+   },
+   "region_reads": {
+    "median": 90424.5,
+    "min": 73124,
+    "max": 120327,
+    "n": 24
+   },
+   "scheduling_requests": 0,
+   "region_reads_status_below_or_null": 0
+  }
+ },
+ "existing_world": {
+  "seed": 173,
+  "centre": [
+   -19,
+   15
+  ],
+  "damage_order": "colmajor_rev",
+  "sessions": [
+   {
+    "session": "E1_vanilla_fresh",
+    "kind": "vanilla",
+    "player_block": [
+     -327,
+     -28,
+     217
+    ]
+   }
+  ],
+  "E1": {
+   "pass": false,
+   "matched": 55132,
+   "expected": 55305,
+   "pieces": 21,
+   "trial_spawners": [
+    3,
+    3
+   ],
+   "errors": [],
+   "by_feature": {
+    "monster_room": 61,
+    "monster_room_or_geode_air": 50,
+    "amethyst_geode": 61,
+    "other:minecraft:small_amethyst_bud": 1
+   },
+   "interior_intrusions": {
+    "minecraft:smooth_basalt": 132,
+    "minecraft:calcite": 112,
+    "minecraft:amethyst_block": 90,
+    "minecraft:budding_amethyst": 3,
+    "minecraft:gold_block": 1,
+    "minecraft:large_amethyst_bud": 1
+   },
+   "transitions": [
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:cobblestone",
+     "count": 23
+    },
+    {
+     "expected": "minecraft:deepslate_tiles",
+     "actual": "minecraft:mossy_cobblestone",
+     "count": 18
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:cave_air",
+     "count": 15
+    },
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:cave_air",
+     "count": 14
+    },
+    {
+     "expected": "minecraft:deepslate_tiles",
+     "actual": "minecraft:smooth_basalt",
+     "count": 13
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:air",
+     "count": 12
+    },
+    {
+     "expected": "minecraft:deepslate_tiles",
+     "actual": "minecraft:calcite",
+     "count": 8
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:cobblestone",
+     "count": 8
+    },
+    {
+     "expected": "minecraft:tuff_bricks",
+     "actual": "minecraft:calcite",
+     "count": 6
+    },
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:air",
+     "count": 5
+    },
+    {
+     "expected": "minecraft:chiseled_tuff_bricks",
+     "actual": "minecraft:amethyst_block",
+     "count": 4
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:calcite",
+     "count": 4
+    },
+    {
+     "expected": "minecraft:tuff_bricks",
+     "actual": "minecraft:smooth_basalt",
+     "count": 4
+    },
+    {
+     "expected": "minecraft:cracked_deepslate_tiles",
+     "actual": "minecraft:mossy_cobblestone",
+     "count": 3
+    },
+    {
+     "expected": "minecraft:deepslate_brick_wall",
+     "actual": "minecraft:amethyst_block",
+     "count": 3
+    },
+    {
+     "expected": "minecraft:deepslate_tiles",
+     "actual": "minecraft:cobblestone",
+     "count": 3
+    },
+    {
+     "expected": "minecraft:tuff_bricks",
+     "actual": "minecraft:amethyst_block",
+     "count": 3
+    },
+    {
+     "expected": "minecraft:tuff_bricks",
+     "actual": "minecraft:budding_amethyst",
+     "count": 3
+    },
+    {
+     "expected": "minecraft:chiseled_tuff_bricks",
+     "actual": "minecraft:air",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:chiseled_tuff_bricks",
+     "actual": "minecraft:budding_amethyst",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:cracked_deepslate_bricks",
+     "actual": "minecraft:cave_air",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:calcite",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:amethyst_block",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:mossy_cobblestone",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:smooth_basalt",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:chiseled_tuff_bricks",
+     "actual": "minecraft:calcite",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:chiseled_tuff_bricks",
+     "actual": "minecraft:small_amethyst_bud",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:cracked_deepslate_bricks",
+     "actual": "minecraft:cobblestone",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:deepslate_brick_wall",
+     "actual": "minecraft:calcite",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:deepslate_brick_wall",
+     "actual": "minecraft:smooth_basalt",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:amethyst_block",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:smooth_basalt",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:grindstone",
+     "actual": "minecraft:cobblestone",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:chest",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:tuff_bricks",
+     "actual": "minecraft:mossy_cobblestone",
+     "count": 1
+    }
+   ],
+   "by_chunk": {
+    "-21,13": {
+     "amethyst_geode": 14,
+     "monster_room_or_geode_air": 5
+    },
+    "-22,13": {
+     "amethyst_geode": 47,
+     "monster_room_or_geode_air": 14,
+     "other:minecraft:small_amethyst_bud": 1
+    },
+    "-22,15": {
+     "monster_room": 61,
+     "monster_room_or_geode_air": 31
+    }
+   },
+   "by_room": {
+    "main": 114,
+    "guard_room": 59
+   },
+   "mismatches": [
+    [
+     -339,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -340,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -341,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -342,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -343,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:cobblestone"
+    ],
+    [
+     -344,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -345,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -346,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -347,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -339,
+     -35,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -35,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:chest"
+    ],
+    [
+     -344,
+     -35,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -35,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -35,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -35,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -34,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -34,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -34,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -34,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -34,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -34,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -33,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -33,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -33,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -33,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -33,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -33,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -32,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -32,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -32,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -32,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -32,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -32,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -337,
+     -31,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -338,
+     -31,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -336,
+     -30,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:calcite"
+    ],
+    [
+     -337,
+     -30,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:calcite"
+    ],
+    [
+     -338,
+     -30,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:calcite"
+    ],
+    [
+     -341,
+     -29,
+     210,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -29,
+     209,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -336,
+     -29,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:calcite"
+    ],
+    [
+     -337,
+     -29,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -338,
+     -29,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -341,
+     -29,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -341,
+     -28,
+     211,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -28,
+     210,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -342,
+     -28,
+     210,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -28,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -342,
+     -28,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -343,
+     -28,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -336,
+     -28,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -337,
+     -28,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -28,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:air"
+    ],
+    [
+     -341,
+     -28,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:budding_amethyst"
+    ],
+    [
+     -342,
+     -28,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -343,
+     -28,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -27,
+     212,
+     "main",
+     "minecraft:deepslate_brick_wall",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -27,
+     211,
+     "main",
+     "minecraft:deepslate_brick_wall",
+     "minecraft:calcite"
+    ],
+    [
+     -341,
+     -27,
+     210,
+     "main",
+     "minecraft:deepslate_brick_wall",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -341,
+     -27,
+     209,
+     "main",
+     "minecraft:deepslate_brick_wall",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -336,
+     -27,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -337,
+     -27,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -27,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -341,
+     -27,
+     208,
+     "main",
+     "minecraft:deepslate_brick_wall",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -336,
+     -26,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -337,
+     -26,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -26,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -336,
+     -25,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -337,
+     -25,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -25,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -336,
+     -24,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:air"
+    ],
+    [
+     -337,
+     -24,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -24,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:air"
+    ],
+    [
+     -336,
+     -23,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -337,
+     -23,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -23,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -335,
+     -22,
+     209,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -336,
+     -22,
+     209,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -337,
+     -22,
+     209,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:budding_amethyst"
+    ],
+    [
+     -338,
+     -22,
+     209,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:budding_amethyst"
+    ],
+    [
+     -339,
+     -22,
+     209,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -335,
+     -22,
+     208,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -336,
+     -22,
+     208,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -337,
+     -22,
+     208,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:small_amethyst_bud"
+    ],
+    [
+     -338,
+     -22,
+     208,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:air"
+    ],
+    [
+     -339,
+     -22,
+     208,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:air"
+    ],
+    [
+     -335,
+     -21,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -336,
+     -21,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -337,
+     -21,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -338,
+     -21,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:budding_amethyst"
+    ],
+    [
+     -339,
+     -21,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -335,
+     -21,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -336,
+     -21,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -337,
+     -21,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:budding_amethyst"
+    ],
+    [
+     -338,
+     -21,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -339,
+     -21,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -337,
+     -20,
+     210,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -338,
+     -20,
+     210,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -339,
+     -20,
+     210,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -340,
+     -20,
+     210,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -336,
+     -20,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -337,
+     -20,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -338,
+     -20,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -339,
+     -20,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -340,
+     -20,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -20,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -335,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -336,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -337,
+     -20,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -338,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -339,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -340,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -341,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -342,
+     -20,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -339,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -340,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:tuff_bricks",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -341,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -342,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -343,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -344,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -345,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -346,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:cobblestone"
+    ],
+    [
+     -347,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:cracked_deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -339,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -340,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -341,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -342,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:cracked_deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -343,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -344,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:cracked_deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -345,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -346,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -347,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -35,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -35,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -344,
+     -35,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -345,
+     -35,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -346,
+     -35,
+     242,
+     "guard_room",
+     "minecraft:grindstone",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:cracked_deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -34,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -34,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -344,
+     -34,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -345,
+     -34,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:cracked_deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -33,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -33,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -344,
+     -33,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -345,
+     -33,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -32,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -32,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -344,
+     -32,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -345,
+     -32,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:cracked_deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ]
+   ]
+  },
+  "E2a_existing_vs_E1": {
+   "existing_chunks_checked": 1733,
+   "existing_block_changes": 2107883,
+   "existing_block_entity_changes": 18
+  },
+  "E2b_existing_vs_E1": {
+   "existing_chunks_checked": 1733,
+   "existing_block_changes": 3705918,
+   "existing_block_entity_changes": 33
+  },
+  "E2b_existing_vs_E2a": {
+   "existing_chunks_checked": 1793,
+   "existing_block_changes": 1709215,
+   "existing_block_entity_changes": 15
+  },
+  "E2b": {
+   "pass": false,
+   "matched": 55132,
+   "expected": 55305,
+   "pieces": 21,
+   "trial_spawners": [
+    3,
+    3
+   ],
+   "errors": [],
+   "by_feature": {
+    "monster_room": 61,
+    "monster_room_or_geode_air": 50,
+    "amethyst_geode": 61,
+    "other:minecraft:small_amethyst_bud": 1
+   },
+   "interior_intrusions": {
+    "minecraft:smooth_basalt": 132,
+    "minecraft:calcite": 112,
+    "minecraft:amethyst_block": 90,
+    "minecraft:budding_amethyst": 3,
+    "minecraft:gold_block": 1,
+    "minecraft:large_amethyst_bud": 1
+   },
+   "transitions": [
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:cobblestone",
+     "count": 23
+    },
+    {
+     "expected": "minecraft:deepslate_tiles",
+     "actual": "minecraft:mossy_cobblestone",
+     "count": 18
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:cave_air",
+     "count": 15
+    },
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:cave_air",
+     "count": 14
+    },
+    {
+     "expected": "minecraft:deepslate_tiles",
+     "actual": "minecraft:smooth_basalt",
+     "count": 13
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:air",
+     "count": 12
+    },
+    {
+     "expected": "minecraft:deepslate_tiles",
+     "actual": "minecraft:calcite",
+     "count": 8
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:cobblestone",
+     "count": 8
+    },
+    {
+     "expected": "minecraft:tuff_bricks",
+     "actual": "minecraft:calcite",
+     "count": 6
+    },
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:air",
+     "count": 5
+    },
+    {
+     "expected": "minecraft:chiseled_tuff_bricks",
+     "actual": "minecraft:amethyst_block",
+     "count": 4
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:calcite",
+     "count": 4
+    },
+    {
+     "expected": "minecraft:tuff_bricks",
+     "actual": "minecraft:smooth_basalt",
+     "count": 4
+    },
+    {
+     "expected": "minecraft:cracked_deepslate_tiles",
+     "actual": "minecraft:mossy_cobblestone",
+     "count": 3
+    },
+    {
+     "expected": "minecraft:deepslate_brick_wall",
+     "actual": "minecraft:amethyst_block",
+     "count": 3
+    },
+    {
+     "expected": "minecraft:deepslate_tiles",
+     "actual": "minecraft:cobblestone",
+     "count": 3
+    },
+    {
+     "expected": "minecraft:tuff_bricks",
+     "actual": "minecraft:amethyst_block",
+     "count": 3
+    },
+    {
+     "expected": "minecraft:tuff_bricks",
+     "actual": "minecraft:budding_amethyst",
+     "count": 3
+    },
+    {
+     "expected": "minecraft:chiseled_tuff_bricks",
+     "actual": "minecraft:air",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:chiseled_tuff_bricks",
+     "actual": "minecraft:budding_amethyst",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:cracked_deepslate_bricks",
+     "actual": "minecraft:cave_air",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:calcite",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:amethyst_block",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:mossy_cobblestone",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:smooth_basalt",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:chiseled_tuff_bricks",
+     "actual": "minecraft:calcite",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:chiseled_tuff_bricks",
+     "actual": "minecraft:small_amethyst_bud",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:cracked_deepslate_bricks",
+     "actual": "minecraft:cobblestone",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:deepslate_brick_wall",
+     "actual": "minecraft:calcite",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:deepslate_brick_wall",
+     "actual": "minecraft:smooth_basalt",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:amethyst_block",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:smooth_basalt",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:grindstone",
+     "actual": "minecraft:cobblestone",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:chest",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:tuff_bricks",
+     "actual": "minecraft:mossy_cobblestone",
+     "count": 1
+    }
+   ],
+   "by_chunk": {
+    "-21,13": {
+     "amethyst_geode": 14,
+     "monster_room_or_geode_air": 5
+    },
+    "-22,13": {
+     "amethyst_geode": 47,
+     "monster_room_or_geode_air": 14,
+     "other:minecraft:small_amethyst_bud": 1
+    },
+    "-22,15": {
+     "monster_room": 61,
+     "monster_room_or_geode_air": 31
+    }
+   },
+   "by_room": {
+    "main": 114,
+    "guard_room": 59
+   },
+   "mismatches": [
+    [
+     -339,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -340,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -341,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -342,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -343,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:cobblestone"
+    ],
+    [
+     -344,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -345,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -346,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -347,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -339,
+     -35,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -35,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:chest"
+    ],
+    [
+     -344,
+     -35,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -35,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -35,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -35,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -34,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -34,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -34,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -34,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -34,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -34,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -33,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -33,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -33,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -33,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -33,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -33,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -32,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -32,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -32,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -32,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -32,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -32,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -337,
+     -31,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -338,
+     -31,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -336,
+     -30,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:calcite"
+    ],
+    [
+     -337,
+     -30,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:calcite"
+    ],
+    [
+     -338,
+     -30,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:calcite"
+    ],
+    [
+     -341,
+     -29,
+     210,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -29,
+     209,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -336,
+     -29,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:calcite"
+    ],
+    [
+     -337,
+     -29,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -338,
+     -29,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -341,
+     -29,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -341,
+     -28,
+     211,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -28,
+     210,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -342,
+     -28,
+     210,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -28,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -342,
+     -28,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -343,
+     -28,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -336,
+     -28,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -337,
+     -28,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -28,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:air"
+    ],
+    [
+     -341,
+     -28,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:budding_amethyst"
+    ],
+    [
+     -342,
+     -28,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -343,
+     -28,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -27,
+     212,
+     "main",
+     "minecraft:deepslate_brick_wall",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -27,
+     211,
+     "main",
+     "minecraft:deepslate_brick_wall",
+     "minecraft:calcite"
+    ],
+    [
+     -341,
+     -27,
+     210,
+     "main",
+     "minecraft:deepslate_brick_wall",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -341,
+     -27,
+     209,
+     "main",
+     "minecraft:deepslate_brick_wall",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -336,
+     -27,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -337,
+     -27,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -27,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -341,
+     -27,
+     208,
+     "main",
+     "minecraft:deepslate_brick_wall",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -336,
+     -26,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -337,
+     -26,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -26,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -336,
+     -25,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -337,
+     -25,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -25,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -336,
+     -24,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:air"
+    ],
+    [
+     -337,
+     -24,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -24,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:air"
+    ],
+    [
+     -336,
+     -23,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -337,
+     -23,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -23,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -335,
+     -22,
+     209,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -336,
+     -22,
+     209,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -337,
+     -22,
+     209,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:budding_amethyst"
+    ],
+    [
+     -338,
+     -22,
+     209,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:budding_amethyst"
+    ],
+    [
+     -339,
+     -22,
+     209,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -335,
+     -22,
+     208,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -336,
+     -22,
+     208,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -337,
+     -22,
+     208,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:small_amethyst_bud"
+    ],
+    [
+     -338,
+     -22,
+     208,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:air"
+    ],
+    [
+     -339,
+     -22,
+     208,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:air"
+    ],
+    [
+     -335,
+     -21,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -336,
+     -21,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -337,
+     -21,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -338,
+     -21,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:budding_amethyst"
+    ],
+    [
+     -339,
+     -21,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -335,
+     -21,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -336,
+     -21,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -337,
+     -21,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:budding_amethyst"
+    ],
+    [
+     -338,
+     -21,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -339,
+     -21,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -337,
+     -20,
+     210,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -338,
+     -20,
+     210,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -339,
+     -20,
+     210,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -340,
+     -20,
+     210,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -336,
+     -20,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -337,
+     -20,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -338,
+     -20,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -339,
+     -20,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -340,
+     -20,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -20,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -335,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -336,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -337,
+     -20,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -338,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -339,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -340,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -341,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -342,
+     -20,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -339,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -340,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:tuff_bricks",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -341,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -342,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -343,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -344,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -345,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -346,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:cobblestone"
+    ],
+    [
+     -347,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:cracked_deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -339,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -340,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -341,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -342,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:cracked_deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -343,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -344,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:cracked_deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -345,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -346,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -347,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -35,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -35,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -344,
+     -35,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -345,
+     -35,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -346,
+     -35,
+     242,
+     "guard_room",
+     "minecraft:grindstone",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:cracked_deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -34,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -34,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -344,
+     -34,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -345,
+     -34,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:cracked_deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -33,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -33,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -344,
+     -33,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -345,
+     -33,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -32,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -32,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -344,
+     -32,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -345,
+     -32,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:cracked_deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ]
+   ]
+  },
+  "E2b_gold_preserved": true,
+  "E3_existing_vs_E2b": {
+   "existing_chunks_checked": 1843,
+   "existing_block_changes": 3650231,
+   "existing_block_entity_changes": 52
+  },
+  "E4_existing_vs_E3": {
+   "existing_chunks_checked": 1953,
+   "existing_block_changes": 2949383,
+   "existing_block_entity_changes": 78
+  },
+  "E4": {
+   "pass": false,
+   "matched": 55132,
+   "expected": 55305,
+   "pieces": 21,
+   "trial_spawners": [
+    3,
+    3
+   ],
+   "errors": [],
+   "by_feature": {
+    "monster_room": 61,
+    "monster_room_or_geode_air": 50,
+    "amethyst_geode": 61,
+    "other:minecraft:small_amethyst_bud": 1
+   },
+   "interior_intrusions": {
+    "minecraft:smooth_basalt": 132,
+    "minecraft:calcite": 112,
+    "minecraft:amethyst_block": 90,
+    "minecraft:budding_amethyst": 3,
+    "minecraft:gold_block": 1,
+    "minecraft:large_amethyst_bud": 1
+   },
+   "transitions": [
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:cobblestone",
+     "count": 23
+    },
+    {
+     "expected": "minecraft:deepslate_tiles",
+     "actual": "minecraft:mossy_cobblestone",
+     "count": 18
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:cave_air",
+     "count": 15
+    },
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:cave_air",
+     "count": 14
+    },
+    {
+     "expected": "minecraft:deepslate_tiles",
+     "actual": "minecraft:smooth_basalt",
+     "count": 13
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:air",
+     "count": 12
+    },
+    {
+     "expected": "minecraft:deepslate_tiles",
+     "actual": "minecraft:calcite",
+     "count": 8
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:cobblestone",
+     "count": 8
+    },
+    {
+     "expected": "minecraft:tuff_bricks",
+     "actual": "minecraft:calcite",
+     "count": 6
+    },
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:air",
+     "count": 5
+    },
+    {
+     "expected": "minecraft:chiseled_tuff_bricks",
+     "actual": "minecraft:amethyst_block",
+     "count": 4
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:calcite",
+     "count": 4
+    },
+    {
+     "expected": "minecraft:tuff_bricks",
+     "actual": "minecraft:smooth_basalt",
+     "count": 4
+    },
+    {
+     "expected": "minecraft:cracked_deepslate_tiles",
+     "actual": "minecraft:mossy_cobblestone",
+     "count": 3
+    },
+    {
+     "expected": "minecraft:deepslate_brick_wall",
+     "actual": "minecraft:amethyst_block",
+     "count": 3
+    },
+    {
+     "expected": "minecraft:deepslate_tiles",
+     "actual": "minecraft:cobblestone",
+     "count": 3
+    },
+    {
+     "expected": "minecraft:tuff_bricks",
+     "actual": "minecraft:amethyst_block",
+     "count": 3
+    },
+    {
+     "expected": "minecraft:tuff_bricks",
+     "actual": "minecraft:budding_amethyst",
+     "count": 3
+    },
+    {
+     "expected": "minecraft:chiseled_tuff_bricks",
+     "actual": "minecraft:air",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:chiseled_tuff_bricks",
+     "actual": "minecraft:budding_amethyst",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:cracked_deepslate_bricks",
+     "actual": "minecraft:cave_air",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:calcite",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:amethyst_block",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:mossy_cobblestone",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:smooth_basalt",
+     "count": 2
+    },
+    {
+     "expected": "minecraft:chiseled_tuff_bricks",
+     "actual": "minecraft:calcite",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:chiseled_tuff_bricks",
+     "actual": "minecraft:small_amethyst_bud",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:cracked_deepslate_bricks",
+     "actual": "minecraft:cobblestone",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:deepslate_brick_wall",
+     "actual": "minecraft:calcite",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:deepslate_brick_wall",
+     "actual": "minecraft:smooth_basalt",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:amethyst_block",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:deepslate_bricks",
+     "actual": "minecraft:smooth_basalt",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:grindstone",
+     "actual": "minecraft:cobblestone",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:polished_deepslate",
+     "actual": "minecraft:chest",
+     "count": 1
+    },
+    {
+     "expected": "minecraft:tuff_bricks",
+     "actual": "minecraft:mossy_cobblestone",
+     "count": 1
+    }
+   ],
+   "by_chunk": {
+    "-21,13": {
+     "amethyst_geode": 14,
+     "monster_room_or_geode_air": 5
+    },
+    "-22,13": {
+     "amethyst_geode": 47,
+     "monster_room_or_geode_air": 14,
+     "other:minecraft:small_amethyst_bud": 1
+    },
+    "-22,15": {
+     "monster_room": 61,
+     "monster_room_or_geode_air": 31
+    }
+   },
+   "by_room": {
+    "main": 114,
+    "guard_room": 59
+   },
+   "mismatches": [
+    [
+     -339,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -340,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -341,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -342,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -343,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:cobblestone"
+    ],
+    [
+     -344,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -345,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -346,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -347,
+     -36,
+     240,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -339,
+     -35,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -35,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:chest"
+    ],
+    [
+     -344,
+     -35,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -35,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -35,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -35,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -34,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -34,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -34,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -34,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -34,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -34,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -33,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -33,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -33,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -33,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -33,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -33,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -32,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -32,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -32,
+     240,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -32,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -32,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -32,
+     240,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -337,
+     -31,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -338,
+     -31,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -336,
+     -30,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:calcite"
+    ],
+    [
+     -337,
+     -30,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:calcite"
+    ],
+    [
+     -338,
+     -30,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:calcite"
+    ],
+    [
+     -341,
+     -29,
+     210,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -29,
+     209,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -336,
+     -29,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:calcite"
+    ],
+    [
+     -337,
+     -29,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -338,
+     -29,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -341,
+     -29,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -341,
+     -28,
+     211,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -28,
+     210,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -342,
+     -28,
+     210,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -28,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -342,
+     -28,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -343,
+     -28,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -336,
+     -28,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -337,
+     -28,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -28,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:air"
+    ],
+    [
+     -341,
+     -28,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:budding_amethyst"
+    ],
+    [
+     -342,
+     -28,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -343,
+     -28,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -27,
+     212,
+     "main",
+     "minecraft:deepslate_brick_wall",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -27,
+     211,
+     "main",
+     "minecraft:deepslate_brick_wall",
+     "minecraft:calcite"
+    ],
+    [
+     -341,
+     -27,
+     210,
+     "main",
+     "minecraft:deepslate_brick_wall",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -341,
+     -27,
+     209,
+     "main",
+     "minecraft:deepslate_brick_wall",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -336,
+     -27,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -337,
+     -27,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -27,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -341,
+     -27,
+     208,
+     "main",
+     "minecraft:deepslate_brick_wall",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -336,
+     -26,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -337,
+     -26,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -26,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -336,
+     -25,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -337,
+     -25,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -25,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -336,
+     -24,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:air"
+    ],
+    [
+     -337,
+     -24,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -24,
+     208,
+     "main",
+     "minecraft:deepslate_bricks",
+     "minecraft:air"
+    ],
+    [
+     -336,
+     -23,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -337,
+     -23,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -338,
+     -23,
+     208,
+     "main",
+     "minecraft:polished_deepslate",
+     "minecraft:air"
+    ],
+    [
+     -335,
+     -22,
+     209,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -336,
+     -22,
+     209,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -337,
+     -22,
+     209,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:budding_amethyst"
+    ],
+    [
+     -338,
+     -22,
+     209,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:budding_amethyst"
+    ],
+    [
+     -339,
+     -22,
+     209,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -335,
+     -22,
+     208,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -336,
+     -22,
+     208,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -337,
+     -22,
+     208,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:small_amethyst_bud"
+    ],
+    [
+     -338,
+     -22,
+     208,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:air"
+    ],
+    [
+     -339,
+     -22,
+     208,
+     "main",
+     "minecraft:chiseled_tuff_bricks",
+     "minecraft:air"
+    ],
+    [
+     -335,
+     -21,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -336,
+     -21,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -337,
+     -21,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -338,
+     -21,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:budding_amethyst"
+    ],
+    [
+     -339,
+     -21,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -335,
+     -21,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -336,
+     -21,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -337,
+     -21,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:budding_amethyst"
+    ],
+    [
+     -338,
+     -21,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -339,
+     -21,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:amethyst_block"
+    ],
+    [
+     -337,
+     -20,
+     210,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -338,
+     -20,
+     210,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -339,
+     -20,
+     210,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -340,
+     -20,
+     210,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -336,
+     -20,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -337,
+     -20,
+     209,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -338,
+     -20,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -339,
+     -20,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -340,
+     -20,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -341,
+     -20,
+     209,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -335,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -336,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -337,
+     -20,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:calcite"
+    ],
+    [
+     -338,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -339,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -340,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:calcite"
+    ],
+    [
+     -341,
+     -20,
+     208,
+     "main",
+     "minecraft:deepslate_tiles",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -342,
+     -20,
+     208,
+     "main",
+     "minecraft:tuff_bricks",
+     "minecraft:smooth_basalt"
+    ],
+    [
+     -339,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -340,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:tuff_bricks",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -341,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -342,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -343,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -344,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -345,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -346,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:cobblestone"
+    ],
+    [
+     -347,
+     -36,
+     242,
+     "guard_room",
+     "minecraft:cracked_deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -339,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -340,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -341,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -342,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:cracked_deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -343,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -344,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:cracked_deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -345,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -346,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:mossy_cobblestone"
+    ],
+    [
+     -347,
+     -36,
+     241,
+     "guard_room",
+     "minecraft:deepslate_tiles",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -35,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -35,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -344,
+     -35,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -345,
+     -35,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -346,
+     -35,
+     242,
+     "guard_room",
+     "minecraft:grindstone",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:cracked_deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -35,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -34,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -34,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -344,
+     -34,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -345,
+     -34,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:cracked_deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -34,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -33,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -33,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -344,
+     -33,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -345,
+     -33,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -33,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -32,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -32,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -344,
+     -32,
+     242,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cobblestone"
+    ],
+    [
+     -345,
+     -32,
+     242,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -339,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ],
+    [
+     -340,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -344,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:polished_deepslate",
+     "minecraft:cave_air"
+    ],
+    [
+     -345,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:cracked_deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -346,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cave_air"
+    ],
+    [
+     -347,
+     -32,
+     241,
+     "guard_room",
+     "minecraft:deepslate_bricks",
+     "minecraft:cobblestone"
+    ]
+   ]
+  },
+  "E4_gold_preserved": true,
+  "marked_block": {
+   "x": -327,
+   "y": -28,
+   "z": 217
+  }
+ },
+ "existing_world_control": {
+  "full_chunks_before": 226,
+  "protected_boxes": 21,
+  "vanilla_E2a": {
+   "full_chunks": 226,
+   "block_changes": 561,
+   "block_changes_in_protected": 0,
+   "block_entity_changes": 0
+  },
+  "vanilla_E2b": {
+   "full_chunks": 226,
+   "block_changes": 1168,
+   "block_changes_in_protected": 0,
+   "block_entity_changes": 0
+  },
+  "module_E2a": {
+   "full_chunks": 226,
+   "block_changes": 478,
+   "block_changes_in_protected": 0,
+   "block_entity_changes": 0
+  },
+  "module_E2b": {
+   "full_chunks": 226,
+   "block_changes": 993,
+   "block_changes_in_protected": 0,
+   "block_entity_changes": 0
+  }
+ },
+ "tag_variants": [
+  {
+   "variant": "missing_tag",
+   "outcome": "startup failed",
+   "error_tail": "ount\":0},\"cold\":{\"count\":0},\"steady\":{\"count\":0}},\"monster_place_ns\":{\"all\":{\"count\":0},\"cold\":{\"count\":0},\"steady\":{\"count\":0}},\"monster_vanilla_ns\":{\"all\":{\"count\":0},\"cold\":{\"count\":0},\"steady\":{\"count\":0}}}}\n[01:33:19] [Server thread/INFO] (Minecraft) Stopping server\n[01:33:19] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 14s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+   "log_lines": [
+    "[01:33:17] [main/INFO] (sg01-spike) SG_SPIKE mode=ENFORCE fixture=NONE refine=PRECHECK oracle=off features=both",
+    "[01:33:19] [Server thread/INFO] (sg01-spike) SG_SPIKE hook GeodeFeature.place applied=true MonsterRoomFeature.place applied=true",
+    "java.lang.IllegalStateException: SG protection spike: structure tag #moreminecrafts:protected_from_overlays resolves to no structure (is the SG datapack loaded?)",
+    "[01:33:19] [Server thread/INFO] (sg01-spike) SG_SPIKE_REPORT {\"mode\":\"ENFORCE\",\"fixture\":\"NONE\",\"refine\":\"PRECHECK\",\"shadow\":false,\"oracle\":\"off\",\"geode\":{\"attempts\":0,\"fast_path\":0,\"collisions\":0,\"unavailable\":0,\"cancelled\":0,\"would_cancel\":0,\"not_worldgen\":0"
+   ]
+  },
+  {
+   "variant": "stale_only",
+   "outcome": "startup failed",
+   "error_tail": "ount\":0},\"cold\":{\"count\":0},\"steady\":{\"count\":0}},\"monster_place_ns\":{\"all\":{\"count\":0},\"cold\":{\"count\":0},\"steady\":{\"count\":0}},\"monster_vanilla_ns\":{\"all\":{\"count\":0},\"cold\":{\"count\":0},\"steady\":{\"count\":0}}}}\n[01:33:35] [Server thread/INFO] (Minecraft) Stopping server\n[01:33:35] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 14s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+   "log_lines": [
+    "[01:33:33] [main/INFO] (sg01-spike) SG_SPIKE mode=ENFORCE fixture=NONE refine=PRECHECK oracle=off features=both",
+    "[01:33:34] [Server thread/INFO] (sg01-spike) SG_SPIKE hook GeodeFeature.place applied=true MonsterRoomFeature.place applied=true",
+    "java.lang.IllegalStateException: SG protection spike: structure tag #moreminecrafts:protected_from_overlays resolves to no structure (is the SG datapack loaded?)",
+    "[01:33:35] [Server thread/INFO] (sg01-spike) SG_SPIKE_REPORT {\"mode\":\"ENFORCE\",\"fixture\":\"NONE\",\"refine\":\"PRECHECK\",\"shadow\":false,\"oracle\":\"off\",\"geode\":{\"attempts\":0,\"fast_path\":0,\"collisions\":0,\"unavailable\":0,\"cancelled\":0,\"would_cancel\":0,\"not_worldgen\":0"
+   ]
+  },
+  {
+   "variant": "unsupported_format",
+   "outcome": "started",
+   "log_lines": [
+    "[01:33:48] [main/INFO] (sg01-spike) SG_SPIKE mode=ENFORCE fixture=NONE refine=PRECHECK oracle=off features=both",
+    "[01:33:50] [Server thread/INFO] (sg01-spike) SG_SPIKE hook GeodeFeature.place applied=true MonsterRoomFeature.place applied=true",
+    "[01:33:50] [Server thread/INFO] (sg01-spike) SG_SPIKE protected structures resolved from #moreminecrafts:protected_from_overlays: 1 structure(s)",
+    "[01:33:54] [Server thread/INFO] (sg01-spike) SG_SPIKE_REPORT {\"mode\":\"ENFORCE\",\"fixture\":\"NONE\",\"refine\":\"PRECHECK\",\"shadow\":false,\"oracle\":\"off\",\"geode\":{\"attempts\":0,\"fast_path\":0,\"collisions\":0,\"unavailable\":0,\"cancelled\":0,\"would_cancel\":0,\"not_worldgen\":0"
+   ]
+  },
+  {
+   "variant": "superset",
+   "outcome": "started",
+   "log_lines": [
+    "[01:34:07] [main/INFO] (sg01-spike) SG_SPIKE mode=ENFORCE fixture=NONE refine=PRECHECK oracle=off features=both",
+    "[01:34:09] [Server thread/INFO] (sg01-spike) SG_SPIKE hook GeodeFeature.place applied=true MonsterRoomFeature.place applied=true",
+    "[01:34:09] [Server thread/INFO] (sg01-spike) SG_SPIKE protected structures resolved from #moreminecrafts:protected_from_overlays: 2 structure(s)",
+    "[01:34:13] [Server thread/INFO] (sg01-spike) SG_SPIKE_REPORT {\"mode\":\"ENFORCE\",\"fixture\":\"NONE\",\"refine\":\"PRECHECK\",\"shadow\":false,\"oracle\":\"off\",\"geode\":{\"attempts\":0,\"fast_path\":0,\"collisions\":0,\"unavailable\":0,\"cancelled\":0,\"would_cancel\":0,\"not_worldgen\":0"
+   ]
+  }
+ ]
+}

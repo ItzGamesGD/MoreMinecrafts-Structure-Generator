@@ -1,0 +1,105 @@
+{
+ "fw_st4_A.json": {
+  "chunks_compared": 1794,
+  "block_differences": {
+   "nondeterministic": 10303,
+   "unexplained": 2800
+  },
+  "block_entity_differences": {
+   "protected": 1,
+   "unexplained": 5
+  },
+  "noise_positions_from_vanilla_pair": 24450,
+  "differences_at_noise_positions": 10303
+ },
+ "fw_st4_B.json": {
+  "chunks_compared": 1794,
+  "block_differences": {
+   "nondeterministic": 14484,
+   "unexplained": 469,
+   "downstream": 447,
+   "cancelled": 836,
+   "protected": 335
+  },
+  "block_entity_differences": {
+   "downstream": 1,
+   "unexplained": 5
+  },
+  "noise_positions_from_vanilla_pair": 24450,
+  "differences_at_noise_positions": 14484
+ },
+ "fw_st4_C.json": {
+  "chunks_compared": 1794,
+  "block_differences": {
+   "nondeterministic": 11275,
+   "unexplained": 6783,
+   "downstream": 97,
+   "cancelled": 836,
+   "protected": 335
+  },
+  "block_entity_differences": {
+   "unexplained": 3
+  },
+  "noise_positions_from_vanilla_pair": 24450,
+  "differences_at_noise_positions": 11275
+ },
+ "fw_st4_C2.json": {
+  "chunks_compared": 1794,
+  "block_differences": {
+   "nondeterministic": 11275,
+   "unexplained": 6783,
+   "downstream": 97,
+   "cancelled": 836,
+   "protected": 335
+  },
+  "block_entity_differences": {
+   "unexplained": 3
+  },
+  "noise_positions_from_vanilla_pair": 24450,
+  "differences_at_noise_positions": 11275
+ },
+ "fw_st4_H.json": {
+  "chunks_compared": 1794,
+  "block_differences": {
+   "nondeterministic": 11128,
+   "unexplained": 11705,
+   "downstream": 19,
+   "cancelled": 836,
+   "protected": 335
+  },
+  "block_entity_differences": {
+   "unexplained": 39
+  },
+  "noise_positions_from_vanilla_pair": 24450,
+  "differences_at_noise_positions": 11128
+ },
+ "fw_st_HvsC.json": {
+  "chunks_compared": 1794,
+  "block_differences": {
+   "nondeterministic": 8524,
+   "unexplained": 16065,
+   "downstream": 86
+  },
+  "block_entity_differences": {
+   "unexplained": 40
+  },
+  "noise_positions_from_vanilla_pair": 24450,
+  "differences_at_noise_positions": 8524
+ },
+ "noise_pairs_vanilla_per_unit": {
+  "noise_173_-18_36_rowmajor_rev.json": {
+   "unexplained": 48033
+  },
+  "noise_173_-19_15_colmajor_rev.json": {
+   "unexplained": 32131
+  },
+  "noise_173_-19_15_rowmajor_rev.json": {
+   "unexplained": 17318,
+   "protected": 148
+  },
+  "noise_42_4_13_rowmajor_rev.json": {
+   "unexplained": 48957,
+   "protected": 22
+  }
+ }
+}
