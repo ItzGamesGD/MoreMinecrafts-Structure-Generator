@@ -33,6 +33,8 @@ def main() -> None:
     p.add_argument("--settle", type=float, default=4.0)
     p.add_argument("--idle", type=float, default=90.0, help="seconds of idle sampling after the last site")
     p.add_argument("--port", type=int, default=41010)
+    p.add_argument("--vanilla", type=Path, help="N7-A4 isolation: run the plain vanilla server jar (no module, no sampler) instead of the Fabric module")
+    p.add_argument("--no-sampler", action="store_true", help="N7-A4 isolation: run the module without the JVM sampler")
     p.add_argument("--wait", type=float, default=120.0, help="seconds to wait for a site to load before diagnosing a stall")
     a = p.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
@@ -46,8 +48,16 @@ def main() -> None:
     run_dir.mkdir(parents=True)
     env = {"SG01_PROTECTION": "manifest", "SG01_GUARD_MODE": "enforce", "SG01_REFINE": "hybrid", "SG01_SAMPLE_FILE": str(samples), "SG01_SAMPLE_MS": "5000",
            "SG01_SPIKE_REPORT": str(report), "SG01_FEATURES": "both" if a.mode == "guarded" else "none"}
-    srv = Server("java", None, run_dir, a.seed, Path(os.environ["SG_PACK"]), port=a.port, launcher=["./gradlew", "--no-daemon", "runServer"],
-                 launcher_cwd=SPIKE, start_timeout=600, env=env)
+    if a.no_sampler:
+        env.pop("SG01_SAMPLE_FILE")
+    if a.vanilla:
+        run_dir = (a.out / "vanilla-world").resolve()
+        shutil.rmtree(run_dir, ignore_errors=True)
+        run_dir.mkdir(parents=True)
+        srv = Server("java", a.vanilla.resolve(), run_dir, a.seed, Path(os.environ["SG_PACK"]), port=a.port, xmx="3G")
+    else:
+        srv = Server("java", None, run_dir, a.seed, Path(os.environ["SG_PACK"]), port=a.port, launcher=["./gradlew", "--no-daemon", "runServer"],
+                     launcher_cwd=SPIKE, start_timeout=600, env=env)
     steps = []
     t0 = time.time()
     try:
