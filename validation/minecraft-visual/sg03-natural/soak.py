@@ -20,6 +20,8 @@ from run_natural import wait_loaded  # noqa: E402
 from spread import SG01, candidates_in_ring, exclusion_suppressed  # noqa: E402
 from world import Server  # noqa: E402
 
+# Minecraft 26.x pauses an empty dedicated server after 60 s, which stops chunk loading; a long soak without players must disable that.
+NO_PAUSE = {"pause-when-empty-seconds": "-1"}
 SPIKE = HERE.parents[2] / "validation" / "fabric-protection-spike"
 
 
@@ -63,10 +65,10 @@ def main() -> None:
         run_dir = (a.out / "vanilla-world").resolve()
         shutil.rmtree(run_dir, ignore_errors=True)
         run_dir.mkdir(parents=True)
-        srv = Server("java", a.vanilla.resolve(), run_dir, a.seed, Path(os.environ["SG_PACK"]), port=a.port, xmx="3G")
+        srv = Server("java", a.vanilla.resolve(), run_dir, a.seed, Path(os.environ["SG_PACK"]), port=a.port, xmx="3G", extra_props=NO_PAUSE)
     else:
         srv = Server("java", None, run_dir, a.seed, Path(os.environ["SG_PACK"]), port=a.port, launcher=["./gradlew", "--no-daemon", "runServer"],
-                     launcher_cwd=SPIKE, start_timeout=600, env=env)
+                     launcher_cwd=SPIKE, start_timeout=600, env=env, extra_props=NO_PAUSE)
     steps = []
     t0 = time.time()
     try:
