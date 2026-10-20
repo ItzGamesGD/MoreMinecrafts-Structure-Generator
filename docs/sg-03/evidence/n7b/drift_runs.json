@@ -1,0 +1,149 @@
+[
+ {
+  "run": "R_173_-19_15_colmajor_r1",
+  "config": {
+   "mode": "ENFORCE",
+   "refine": "HYBRID",
+   "effective_monster_room": "HYBRID"
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 0,
+   "cancelled": 0,
+   "unavailable": 0
+  },
+  "self_check": {
+   "configured": "HYBRID",
+   "effective": "HYBRID",
+   "fallback": false,
+   "fallback_reason": null,
+   "fingerprint": "006a3287a6b0d65e6e25840f4aea068bd03ce358cfb99e8281f2a55a6529f742",
+   "near_misses": 75,
+   "violations": 0
+  },
+  "after": null,
+  "probe": {
+   "chunkmap_schedule": 0,
+   "holder_schedule": 0,
+   "server_get_blocking": 0,
+   "server_get_future": 0,
+   "region_get_null": 0,
+   "region_get_status_below": 0
+  }
+ },
+ {
+  "run": "R_173_-19_15_rowmajor_rev_r1",
+  "config": {
+   "mode": "ENFORCE",
+   "refine": "HYBRID",
+   "effective_monster_room": "OFF"
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 39,
+   "cancelled": 39,
+   "unavailable": 0
+  },
+  "self_check": {
+   "configured": "HYBRID",
+   "effective": "OFF",
+   "fallback": true,
+   "fallback_reason": "RUNTIME_VIOLATION: vanilla monster room at BlockPos{x=-319, y=-34, z=194} changed 198 cell(s) of a protected piece in an attempt the hybrid decision had allowed",
+   "fingerprint": "006a3287a6b0d65e6e25840f4aea068bd03ce358cfb99e8281f2a55a6529f742",
+   "near_misses": 34,
+   "violations": 1
+  },
+  "after": null,
+  "probe": {
+   "chunkmap_schedule": 0,
+   "holder_schedule": 0,
+   "server_get_blocking": 0,
+   "server_get_future": 0,
+   "region_get_null": 0,
+   "region_get_status_below": 0
+  }
+ },
+ {
+  "run": "R_173_-19_15_spiral_out_r1",
+  "config": {
+   "mode": "ENFORCE",
+   "refine": "HYBRID",
+   "effective_monster_room": "HYBRID"
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 0,
+   "cancelled": 0,
+   "unavailable": 0
+  },
+  "self_check": {
+   "configured": "HYBRID",
+   "effective": "HYBRID",
+   "fallback": false,
+   "fallback_reason": null,
+   "fingerprint": "006a3287a6b0d65e6e25840f4aea068bd03ce358cfb99e8281f2a55a6529f742",
+   "near_misses": 75,
+   "violations": 0
+  },
+  "after": null,
+  "probe": {
+   "chunkmap_schedule": 0,
+   "holder_schedule": 0,
+   "server_get_blocking": 0,
+   "server_get_future": 0,
+   "region_get_null": 0,
+   "region_get_status_below": 0
+  }
+ }
+]

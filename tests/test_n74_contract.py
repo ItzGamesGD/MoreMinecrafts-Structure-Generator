@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SPIKE = ROOT / "validation/fabric-protection-spike/src/main/java/dev/itzgamesgd/sg01spike"
 LAB = ROOT / "validation/minecraft-visual/sg03-natural"
 CODES = ["MANIFEST_MISSING", "MANIFEST_CONFLICT", "MANIFEST_INVALID", "FORMAT_UNSUPPORTED", "MANIFEST_STALE", "MANIFEST_EMPTY", "REQUIRED_UNRESOLVED",
-         "OWNER_PACK_INCOMPATIBLE"]
+         "OWNER_PACK_INCOMPATIBLE", "GAME_VERSION_MISMATCH", "OWNERSHIP_MISMATCH", "EXTENSION_MALFORMED", "EXTENSION_REPLACE_FORBIDDEN", "EXTENSION_UNRESOLVED"]
 
 
 class ProtectionContractTests(unittest.TestCase):
@@ -35,7 +35,7 @@ class ProtectionContractTests(unittest.TestCase):
         self.assertNotIn("getSelectedPacks", self.src)
 
     def test_extensions_are_additive_only(self) -> None:
-        self.assertIn("replace=true; ignored", self.src)
+        self.assertIn("EXTENSION_REPLACE_FORBIDDEN", self.src)  # N7-B: a replace is rejected loudly, never applied and never silently ignored
         self.assertIn("effective.add(", self.src)
         self.assertNotIn("effective.remove", self.src)
         self.assertNotIn("effective.retainAll", self.src)
@@ -47,15 +47,22 @@ class ProtectionContractTests(unittest.TestCase):
         self.assertIn("keeping the last validated protection set", body)
         self.assertNotIn("protectedStructures = null", body)
 
-    def test_manifest_mode_is_opt_in(self) -> None:
+    def test_manifest_is_the_only_mode(self) -> None:
         cfg = (SPIKE / "ProtectionConfig.java").read_text()
-        self.assertRegex(cfg, r'MANIFEST_MODE = "manifest"\.equalsIgnoreCase\(System\.getProperty\("sg01\.protection", System\.getenv\("SG01_PROTECTION"\)\)\)')
+        self.assertNotIn("SG01_PROTECTION", cfg)
+        self.assertNotIn("MANIFEST_MODE", cfg)
+
+    def test_every_error_carries_a_remedy(self) -> None:
+        self.assertIn('" Remedy: "', self.src)
+        # every ContractViolation construction passes message and remedy
+        for m in re.finditer(r'new ContractViolation\("([A-Z_]+)"', self.src):
+            self.assertIn(m.group(1), CODES)
 
     def test_contract_experiment_covers_every_code_and_the_unrelated_pack_case(self) -> None:
         exp = (LAB / "contract_variants.py").read_text()
         for code in CODES:
             self.assertIn(f'"{code}"', exp, code)
-        for case in ("conflicting_provider", "unrelated_pack_format_999", "extension_replace_empty", "legacy_tag_replaced_to_empty", "reload_conflict", "reload_stale"):
+        for case in ("conflicting_provider", "unrelated_pack_format_999", "reload_conflict", "reload_stale"):
             self.assertIn(f'"{case}"', exp, case)
 
 

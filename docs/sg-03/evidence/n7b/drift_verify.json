@@ -1,0 +1,22 @@
+{
+ "runs": 3,
+ "passed": 2,
+ "by_site": {
+  "173_-19_15": [
+   3,
+   2
+  ]
+ },
+ "failures": [
+  {
+   "run": "R_173_-19_15_rowmajor_rev_r1",
+   "site": "173_-19_15",
+   "ok": false,
+   "problems": [
+    "mismatch 14"
+   ],
+   "geode_cancelled": 2,
+   "monster_cancelled": 39
+  }
+ ]
+}

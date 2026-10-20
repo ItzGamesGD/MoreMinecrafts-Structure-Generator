@@ -14,6 +14,8 @@ from structure_export.structure import structure_bytes, validate_structure
 MINECRAFT_VERSION = "26.3"
 WORLD_VERSION = 5023
 DATA_PACK_FORMAT = 121
+PROTECTION_MANIFEST_FORMAT = 1
+PROTECTION_MANIFEST_PATH = "sg_protection/manifest.json"
 _ID_PART = re.compile(r"^[a-z0-9._/-]+$")
 
 
@@ -288,6 +290,30 @@ class DatapackBuilder:
                     )
             self.references[template_path] = sorted(references)
 
+    def add_protection_manifest(self, structures: list[str], *, revision: int = 1) -> None:
+        """Add the SG worldgen-protection manifest (read by the Fabric protection module; see docs/sg-03/n7b-production-guard.md).
+
+        The manifest lists the structures of this pack that other worldgen must not damage. Only structures defined by this pack may be
+        listed: the module rejects a manifest whose owner does not define a listed structure.
+        """
+        if not structures:
+            raise ValueError("The protection manifest must list at least one structure")
+        if len(set(structures)) != len(structures):
+            raise ValueError("The protection manifest lists a structure more than once")
+        for identifier in structures:
+            if identifier not in self.worldgen_structures:
+                raise ValueError(f"Protected structure {identifier!r} is not a worldgen structure of this pack")
+        if not isinstance(revision, int) or isinstance(revision, bool) or revision < 1:
+            raise ValueError("The protection manifest revision must be a positive integer")
+        path = f"data/{self.namespace}/{PROTECTION_MANIFEST_PATH}"
+        if path in self.resources:
+            raise ValueError("Duplicate protection manifest")
+        self._put_json(
+            path,
+            {"format": PROTECTION_MANIFEST_FORMAT, "minecraft": MINECRAFT_VERSION, "revision": revision, "structures": sorted(structures)},
+            references=sorted(structures),
+        )
+
     def write(self) -> Path:
         """Write all pack files and a manifest with checksums and resource references."""
         self._validate_references()
@@ -330,6 +356,8 @@ class DatapackBuilder:
 
 
 def _resource_role(path: str) -> str:
+    if path.endswith("/" + PROTECTION_MANIFEST_PATH):
+        return "protection_manifest"
     if "/worldgen/structure_set/" in path:
         return "structure_set"
     if "/template_pool/" in path:

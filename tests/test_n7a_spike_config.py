@@ -39,14 +39,21 @@ class SpikeConfigTests(unittest.TestCase):
         self.assertEqual(mod["environment"], "server")
         self.assertEqual(mod["mixins"][0]["environment"], "server")
 
-    def test_protection_tag_lists_only_the_sg_structure_and_is_optional_per_entry(self) -> None:
-        tag = json.loads((RES / "data/moreminecrafts/tags/worldgen/structure/protected_from_overlays.json").read_text())
-        self.assertEqual(tag["values"], [{"id": "moreminecrafts:forgotten_kingdom/central_cavern", "required": False}])
+    def test_legacy_tag_mode_is_gone(self) -> None:
+        # N7-B: the manifest contract is the only protection source; the N7-A merged-tag mode and its bundled tag no longer exist
+        self.assertFalse((RES / "data/moreminecrafts/tags/worldgen/structure/protected_from_overlays.json").exists())
+        self.assertFalse((RES / "data").exists() and any((RES / "data").rglob("*.json")), "the module ships no datapack data")
+        for p in JAVA.rglob("*.java"):
+            text = p.read_text()
+            self.assertNotIn("protected_from_overlays", text, p.name)
+            self.assertNotIn("SG01_PROTECTION", text, p.name)
+            self.assertNotIn("MANIFEST_MODE", text, p.name)
 
-    def test_missing_or_empty_tag_is_a_hard_failure(self) -> None:
+    def test_missing_manifest_is_a_hard_failure(self) -> None:
         src = (JAVA / "ProtectionConfig.java").read_text()
-        self.assertEqual(src.count("throw new IllegalStateException"), 2)  # never resolved; tag resolves to nothing
-        self.assertRegex(src, r"orElseThrow\(\s*\(\) -> new IllegalStateException\(\"SG protection spike: required structure tag")  # tag missing
+        self.assertIn("never resolved", src)
+        contract = (JAVA / "ProtectionContract.java").read_text()
+        self.assertRegex(contract, r'new ContractViolation\("MANIFEST_MISSING"')
 
     def test_guard_never_requests_generation(self) -> None:
         src = (JAVA / "Guard.java").read_text()

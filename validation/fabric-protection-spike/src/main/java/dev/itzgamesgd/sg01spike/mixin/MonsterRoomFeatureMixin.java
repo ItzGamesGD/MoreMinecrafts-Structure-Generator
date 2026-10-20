@@ -4,6 +4,7 @@ import dev.itzgamesgd.sg01spike.Guard;
 import dev.itzgamesgd.sg01spike.GuardMarker;
 import dev.itzgamesgd.sg01spike.MonsterRoomGeometry;
 import dev.itzgamesgd.sg01spike.MonsterRoomOracle;
+import dev.itzgamesgd.sg01spike.MonsterRoomSelfCheck;
 import dev.itzgamesgd.sg01spike.Perf;
 import dev.itzgamesgd.sg01spike.Probe;
 import java.util.List;
@@ -33,9 +34,10 @@ public abstract class MonsterRoomFeatureMixin implements GuardMarker {
             MonsterRoomOracle.begin(Guard.MONSTER_ROOM, level, origin, refined);
             return;
         }
+        MonsterRoomSelfCheck.discard();
         Perf.mark();
         boolean cancel;
-        switch (Guard.REFINE) {
+        switch (MonsterRoomSelfCheck.effective(Guard.REFINE)) {
             case HYBRID -> cancel = Guard.shouldCancelHybrid(Guard.MONSTER_ROOM, level, origin, MonsterRoomGeometry.maxBox(origin),
                     () -> refinedBoxes(level, origin));
             case PRECHECK -> cancel = Guard.shouldCancel(Guard.MONSTER_ROOM, level, origin, refinedBoxes(level, origin));
@@ -43,6 +45,7 @@ public abstract class MonsterRoomFeatureMixin implements GuardMarker {
         }
         Perf.decisionDone(Perf.MONSTER_DECISION_NS, Perf.MONSTER_DECISION_BYTES);
         if (cancel) {
+            MonsterRoomSelfCheck.discard();
             cir.setReturnValue(false);
             Perf.placeDone(Perf.MONSTER_PLACE_NS, null);
         }
@@ -54,6 +57,7 @@ public abstract class MonsterRoomFeatureMixin implements GuardMarker {
             MonsterRoomOracle.end(Guard.MONSTER_ROOM, level, origin);
             return;
         }
+        MonsterRoomSelfCheck.end(level, origin);
         Perf.placeDone(Perf.MONSTER_PLACE_NS, Perf.MONSTER_VANILLA_NS);
     }
 

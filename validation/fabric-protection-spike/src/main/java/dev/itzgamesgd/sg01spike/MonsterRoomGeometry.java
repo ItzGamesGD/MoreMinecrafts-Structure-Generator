@@ -31,6 +31,8 @@ public final class MonsterRoomGeometry {
     /** Footprints of the variants whose vanilla precheck passes (only these can write). Empty means vanilla writes nothing. */
     public static List<BoundingBox> passingBoxes(WorldGenLevel level, BlockPos origin) {
         List<BoundingBox> out = new ArrayList<>(4);
+        // Lab fault injection: simulates a vanilla change that makes the replicated precheck under-estimate the footprint (exercises the runtime watch).
+        if (Guard.FAULT == Guard.Fault.PRECHECK_BLIND) return out;
         for (int xr : VARIANTS) {
             for (int zr : VARIANTS) {
                 if (precheck(level, origin, xr, zr)) out.add(box(origin, xr, zr));

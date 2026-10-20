@@ -30,11 +30,17 @@ class SpikeN72Tests(unittest.TestCase):
             # every injector guards its counter with Probe.inGuard() (or only reads its arguments)
             self.assertIn("Probe.", src)
 
-    def test_experiment_switches_default_to_the_n7a_behaviour(self) -> None:
+    def test_production_defaults_and_lab_gating(self) -> None:
         guard = (JAVA / "Guard.java").read_text()
-        self.assertRegex(guard, r'REFINE = parseEnum\("sg01.refine", "SG01_REFINE", Refine.class, Refine.OFF')
+        # N7-B: production runs the hybrid decision; every other experiment switch is lab-only and refused without SG01_LAB=1
+        self.assertRegex(guard, r'REFINE = parseEnum\("sg01.refine", "SG01_REFINE", Refine.class, Refine.HYBRID')
         self.assertRegex(guard, r'FIXTURE = parseEnum\("sg01.fixture", "SG01_FIXTURE", Fixture.class, Fixture.NONE')
-        self.assertRegex(guard, r'ORACLE_MONSTER_ROOM = "monster_room".equalsIgnoreCase')
+        self.assertRegex(guard, r'MODE = parseEnum\("sg01.guard.mode", "SG01_GUARD_MODE", Mode.class, Mode.ENFORCE')
+        self.assertRegex(guard, r'ORACLE_MONSTER_ROOM = "monster_room".equalsIgnoreCase\(labEnv\(')
+        self.assertRegex(guard, r'SHADOW = "1".equals\(labEnv\(')
+        self.assertIn("is a validation-lab setting and is refused in production", guard)
+        self.assertIn('LAB = "1".equals(env("sg01.lab", "SG01_LAB"))', guard)
+        self.assertLess(guard.index("public static final boolean LAB"), guard.index("public static final Mode MODE"))
 
     def test_fixture_is_only_reachable_when_explicitly_set_and_is_never_default(self) -> None:
         geode = (MIXIN / "GeodeFeatureMixin.java").read_text()
