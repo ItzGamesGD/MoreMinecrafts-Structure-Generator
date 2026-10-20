@@ -3,6 +3,7 @@
 # usage: n73_run.sh OUT_DIR CONFIG SEED CX CZ ORDER REPEAT [KEEP_WORLD=0|1] [BG_THREADS]
 # CONFIG: V (vanilla jar, no module) | A (module, observe, no protection) | B (N7-A reach, enforce) |
 #         C (N7-A2 refined precheck, enforce) | H (hybrid broad-phase, enforce) | HS (hybrid + shadow check)
+# RADIUS (default 5) sets the loaded area; SG01_EXTRA_MODS (optional) adds mod jars for compatibility runs.
 # Requires SERVER_JAR (official 26.3 server.jar), SG_PACK (built SG-03 datapack folder), JAVA_HOME (JDK 25) on PATH.
 set -euo pipefail
 OUT="$1"; CONFIG="$2"; SEED="$3"; CX="$4"; CZ="$5"; ORDER="$6"; REP="$7"; KEEP="${8:-0}"; BG="${9:-}"
@@ -10,7 +11,7 @@ OUT="$1"; CONFIG="$2"; SEED="$3"; CX="$4"; CZ="$5"; ORDER="$6"; REP="$7"; KEEP="
 HERE="$(cd "$(dirname "$0")" && pwd)"
 REPO="$(cd "$HERE/../../.." && pwd)"
 TAG="${CONFIG}_${SEED}_${CX}_${CZ}_${ORDER//:/-}_r${REP}"
-ARGS=(--jar "$SERVER_JAR" --pack "$SG_PACK" --out "$OUT/$TAG" --seed "$SEED" --chunk "$CX" "$CZ" --order "$ORDER" --radius 5 --ticks 0 --port 40950)
+ARGS=(--jar "$SERVER_JAR" --pack "$SG_PACK" --out "$OUT/$TAG" --seed "$SEED" --chunk "$CX" "$CZ" --order "$ORDER" --radius "${RADIUS:-5}" --ticks 0 --port 40950)
 [ "$KEEP" = 1 ] && ARGS+=(--keep-world)
 if [ "$CONFIG" = V ]; then
   [ -n "$BG" ] && ARGS+=(--threads "$BG")

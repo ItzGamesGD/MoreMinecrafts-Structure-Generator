@@ -23,6 +23,9 @@ loom {
             vmArgs '-Xmx3G'
             def bgThreads = System.getenv('SG01_BG_THREADS')
             if (bgThreads) vmArgs "-Dmax.bg.threads=${bgThreads}"
+            // N7-A3 compatibility runs: SG01_EXTRA_MODS = path list of extra mod jars (loaded through fabric.addMods, never copied into the project).
+            def extraMods = System.getenv('SG01_EXTRA_MODS')
+            if (extraMods) vmArgs "-Dfabric.addMods=${extraMods}"
         }
     }
 }

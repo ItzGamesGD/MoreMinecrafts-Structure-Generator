@@ -127,17 +127,17 @@ def main() -> None:
     p.add_argument("--other", type=Path, required=True, help="region dir of the compared run")
     p.add_argument("--other-lab", type=Path, required=True, help="lab.json of the compared run (protected boxes, cancellation events)")
     p.add_argument("--out", type=Path, required=True)
-    p.add_argument("--noise-a", type=Path, help="region dir of a second vanilla run of the same unit")
-    p.add_argument("--noise-b", type=Path, help="region dir of a third vanilla run of the same unit")
+    p.add_argument("--noise-pair", nargs=2, type=Path, action="append", default=[], metavar=("A", "B"),
+                   help="two vanilla region dirs of the same unit; repeat the option to take the union of their differences")
     a = p.parse_args()
     lab = json.loads(a.other_lab.read_text())
     protected = boxes_from_lab(lab)
     cancel = cancelled_reaches(lab)
     coords = sorted(set(chunk_coords(a.base)) & set(chunk_coords(a.other)))
     noise = set()
-    if a.noise_a and a.noise_b:
-        noise_coords = sorted(set(chunk_coords(a.noise_a)) & set(chunk_coords(a.noise_b)) & set(coords))
-        noise = {(x, y, z) for x, y, z, _, _ in block_differences(a.noise_a, a.noise_b, noise_coords)}
+    for na, nb in a.noise_pair:
+        noise_coords = sorted(set(chunk_coords(na)) & set(chunk_coords(nb)) & set(coords))
+        noise |= {(x, y, z) for x, y, z, _, _ in block_differences(na, nb, noise_coords)}
     totals = Counter()
     block_pairs = Counter()
     noise_hits = 0
