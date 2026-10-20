@@ -1,0 +1,1884 @@
+{
+ "base": "/tmp/claude-0/-home-user-MoreMinecrafts-Structure-Generator/9b0fb163-9813-5d94-a639-ebb8df5b2921/scratchpad/n74/freeze/V_173_-19_15_rowmajor_rev_rfza/regions",
+ "other": "/tmp/claude-0/-home-user-MoreMinecrafts-Structure-Generator/9b0fb163-9813-5d94-a639-ebb8df5b2921/scratchpad/n74/freeze/V_173_-19_15_rowmajor_rev_rfzc/regions",
+ "chunks_compared": 191,
+ "block_differences": {
+  "unexplained": 15511
+ },
+ "block_entity_differences": {
+  "unexplained": 20
+ },
+ "top_block_pairs": [
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"4\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   "{\"id\": \"minecraft:air\"}",
+   1213
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"4\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   1037
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"5\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   "{\"id\": \"minecraft:air\"}",
+   994
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"3\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   "{\"id\": \"minecraft:air\"}",
+   984
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"5\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   847
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"3\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   844
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"2\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   "{\"id\": \"minecraft:air\"}",
+   571
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"2\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   505
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}",
+   491
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"6\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   "{\"id\": \"minecraft:air\"}",
+   470
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"6\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   469
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:sculk\"}",
+   "{\"id\": \"minecraft:deepslate\"}",
+   365
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:stone\"}",
+   "{\"id\": \"minecraft:coal_ore\"}",
+   309
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}",
+   289
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"1\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   "{\"id\": \"minecraft:air\"}",
+   222
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:diorite\"}",
+   "{\"id\": \"minecraft:granite\"}",
+   203
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:diorite\"}",
+   197
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"1\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   192
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:cherry_log\"}",
+   "{\"id\": \"minecraft:air\"}",
+   186
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:cherry_log\"}",
+   179
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:deepslate\"}",
+   "{\"id\": \"minecraft:sculk\"}",
+   125
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:coal_ore\"}",
+   "{\"id\": \"minecraft:stone\"}",
+   117
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:diorite\"}",
+   105
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:cherry_log\", \"properties\": {\"axis\": \"x\"}}",
+   "{\"id\": \"minecraft:air\"}",
+   84
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"4\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"3\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   84
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:pink_petals\", \"properties\": {\"facing\": \"east\", \"flower_amount\": \"2\"}}",
+   78
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:pink_petals\", \"properties\": {\"facing\": \"south\", \"flower_amount\": \"3\"}}",
+   77
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"5\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"4\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   77
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:cherry_log\", \"properties\": {\"axis\": \"z\"}}",
+   76
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:pink_petals\", \"properties\": {\"facing\": \"west\", \"flower_amount\": \"2\"}}",
+   70
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:pink_petals\"}",
+   70
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:pink_petals\", \"properties\": {\"facing\": \"south\", \"flower_amount\": \"2\"}}",
+   "{\"id\": \"minecraft:air\"}",
+   64
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:pink_petals\", \"properties\": {\"facing\": \"north\", \"flower_amount\": \"4\"}}",
+   63
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:pink_petals\", \"properties\": {\"facing\": \"east\", \"flower_amount\": \"2\"}}",
+   "{\"id\": \"minecraft:air\"}",
+   62
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"3\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   "{\"id\": \"minecraft:cherry_leaves\", \"properties\": {\"distance\": \"4\", \"persistent\": \"false\", \"waterlogged\": \"false\"}}",
+   62
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:pink_petals\", \"properties\": {\"facing\": \"north\", \"flower_amount\": \"3\"}}",
+   61
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:pink_petals\", \"properties\": {\"facing\": \"east\", \"flower_amount\": \"3\"}}",
+   61
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:pink_petals\", \"properties\": {\"facing\": \"south\", \"flower_amount\": \"1\"}}",
+   "{\"id\": \"minecraft:air\"}",
+   61
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:air\"}",
+   "{\"id\": \"minecraft:pink_petals\", \"properties\": {\"facing\": \"south\", \"flower_amount\": \"2\"}}",
+   61
+  ],
+  [
+   "unexplained",
+   "{\"id\": \"minecraft:pink_petals\", \"properties\": {\"facing\": \"east\", \"flower_amount\": \"4\"}}",
+   "{\"id\": \"minecraft:air\"}",
+   60
+  ]
+ ],
+ "unexplained_samples": [
+  [
+   -418,
+   27,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   27,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   27,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -419,
+   28,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -418,
+   28,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   28,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -418,
+   28,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   28,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   28,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   28,
+   115,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -419,
+   29,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -418,
+   29,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   29,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -418,
+   29,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   29,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   29,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   29,
+   115,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -419,
+   30,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -418,
+   30,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   30,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -418,
+   30,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   30,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   30,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   30,
+   115,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -419,
+   31,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -418,
+   31,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   31,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -418,
+   31,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   31,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -417,
+   31,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -432,
+   49,
+   134,
+   "{\"id\": \"minecraft:coal_ore\"}",
+   "{\"id\": \"minecraft:stone\"}"
+  ],
+  [
+   -432,
+   50,
+   133,
+   "{\"id\": \"minecraft:coal_ore\"}",
+   "{\"id\": \"minecraft:stone\"}"
+  ],
+  [
+   -432,
+   50,
+   134,
+   "{\"id\": \"minecraft:coal_ore\"}",
+   "{\"id\": \"minecraft:stone\"}"
+  ],
+  [
+   -413,
+   25,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   26,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -414,
+   26,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -413,
+   26,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -412,
+   26,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -411,
+   26,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -410,
+   26,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   26,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   26,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -414,
+   26,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -413,
+   26,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -412,
+   26,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -411,
+   26,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   26,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   26,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -414,
+   26,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -413,
+   26,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   26,
+   115,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -414,
+   26,
+   115,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   27,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   27,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -414,
+   27,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -413,
+   27,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -412,
+   27,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -411,
+   27,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -410,
+   27,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -409,
+   27,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   27,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   27,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -414,
+   27,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -413,
+   27,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -412,
+   27,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -411,
+   27,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -410,
+   27,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   27,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   27,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -414,
+   27,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -413,
+   27,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -412,
+   27,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   27,
+   115,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   27,
+   115,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -414,
+   27,
+   115,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -413,
+   27,
+   115,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   27,
+   116,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   28,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   28,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -414,
+   28,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -413,
+   28,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -412,
+   28,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -411,
+   28,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -410,
+   28,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -409,
+   28,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   28,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   28,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -414,
+   28,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -413,
+   28,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -412,
+   28,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -411,
+   28,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -410,
+   28,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   28,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   28,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -414,
+   28,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -413,
+   28,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -412,
+   28,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   28,
+   115,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   28,
+   115,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -414,
+   28,
+   115,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   28,
+   116,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   29,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   29,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -414,
+   29,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -413,
+   29,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -412,
+   29,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -411,
+   29,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -410,
+   29,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   29,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   29,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -414,
+   29,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -413,
+   29,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -412,
+   29,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -411,
+   29,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   29,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   29,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -414,
+   29,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -413,
+   29,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   29,
+   115,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -415,
+   29,
+   115,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   30,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   30,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   30,
+   114,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   30,
+   115,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   31,
+   112,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -416,
+   31,
+   113,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -401,
+   54,
+   176,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -401,
+   54,
+   177,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -399,
+   8,
+   174,
+   "{\"id\": \"minecraft:gravel\"}",
+   "{\"id\": \"minecraft:iron_ore\"}"
+  ],
+  [
+   -399,
+   8,
+   175,
+   "{\"id\": \"minecraft:gravel\"}",
+   "{\"id\": \"minecraft:iron_ore\"}"
+  ],
+  [
+   -398,
+   8,
+   175,
+   "{\"id\": \"minecraft:gravel\"}",
+   "{\"id\": \"minecraft:iron_ore\"}"
+  ],
+  [
+   -399,
+   9,
+   174,
+   "{\"id\": \"minecraft:gravel\"}",
+   "{\"id\": \"minecraft:iron_ore\"}"
+  ],
+  [
+   -399,
+   9,
+   175,
+   "{\"id\": \"minecraft:gravel\"}",
+   "{\"id\": \"minecraft:iron_ore\"}"
+  ],
+  [
+   -398,
+   9,
+   175,
+   "{\"id\": \"minecraft:gravel\"}",
+   "{\"id\": \"minecraft:iron_ore\"}"
+  ],
+  [
+   -400,
+   54,
+   175,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -396,
+   55,
+   173,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -395,
+   55,
+   173,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -394,
+   55,
+   173,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -398,
+   55,
+   174,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -397,
+   55,
+   174,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -396,
+   55,
+   174,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -395,
+   55,
+   174,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -394,
+   55,
+   174,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -399,
+   55,
+   175,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -398,
+   55,
+   175,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -397,
+   55,
+   175,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -396,
+   55,
+   175,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -395,
+   55,
+   175,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -394,
+   55,
+   175,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -396,
+   56,
+   171,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -395,
+   56,
+   171,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -394,
+   56,
+   171,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -393,
+   56,
+   171,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -392,
+   56,
+   171,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -397,
+   56,
+   172,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -396,
+   56,
+   172,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -395,
+   56,
+   172,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -394,
+   56,
+   172,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -393,
+   56,
+   172,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -392,
+   56,
+   172,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -397,
+   56,
+   173,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -396,
+   56,
+   173,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -395,
+   56,
+   173,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -394,
+   56,
+   173,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -393,
+   56,
+   173,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -392,
+   56,
+   173,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -398,
+   56,
+   174,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -397,
+   56,
+   174,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -396,
+   56,
+   174,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -395,
+   56,
+   174,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -394,
+   56,
+   174,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -393,
+   56,
+   174,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -398,
+   56,
+   175,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -397,
+   56,
+   175,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -396,
+   56,
+   175,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -395,
+   56,
+   175,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -393,
+   57,
+   170,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -394,
+   57,
+   171,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -393,
+   57,
+   171,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -392,
+   57,
+   171,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -394,
+   57,
+   172,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -393,
+   57,
+   172,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -392,
+   57,
+   172,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -393,
+   58,
+   170,
+   "{\"id\": \"minecraft:andesite\"}",
+   "{\"id\": \"minecraft:granite\"}"
+  ],
+  [
+   -391,
+   1,
+   191,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ],
+  [
+   -390,
+   1,
+   191,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ],
+  [
+   -391,
+   2,
+   189,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ],
+  [
+   -390,
+   2,
+   189,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ],
+  [
+   -392,
+   2,
+   190,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ],
+  [
+   -391,
+   2,
+   190,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ],
+  [
+   -390,
+   2,
+   190,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ],
+  [
+   -389,
+   2,
+   190,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ],
+  [
+   -392,
+   2,
+   191,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ],
+  [
+   -391,
+   2,
+   191,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ],
+  [
+   -390,
+   2,
+   191,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ],
+  [
+   -389,
+   2,
+   191,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ],
+  [
+   -394,
+   3,
+   186,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ],
+  [
+   -393,
+   3,
+   189,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ],
+  [
+   -392,
+   3,
+   189,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ],
+  [
+   -391,
+   3,
+   189,
+   "{\"id\": \"minecraft:granite\"}",
+   "{\"id\": \"minecraft:andesite\"}"
+  ]
+ ],
+ "per_chunk": {
+  "-27,7": {
+   "unexplained": 30
+  },
+  "-27,8": {
+   "unexplained": 3
+  },
+  "-26,7": {
+   "unexplained": 93
+  },
+  "-26,11": {
+   "unexplained": 2
+  },
+  "-25,10": {
+   "unexplained": 56
+  },
+  "-25,11": {
+   "unexplained": 275
+  },
+  "-25,12": {
+   "unexplained": 144
+  },
+  "-25,13": {
+   "unexplained": 8
+  },
+  "-25,14": {
+   "unexplained": 1
+  },
+  "-24,13": {
+   "unexplained": 24
+  },
+  "-24,14": {
+   "unexplained": 3
+  },
+  "-24,16": {
+   "unexplained": 12
+  },
+  "-23,10": {
+   "unexplained": 3
+  },
+  "-23,11": {
+   "unexplained": 6
+  },
+  "-23,15": {
+   "unexplained": 12
+  },
+  "-23,16": {
+   "unexplained": 354
+  },
+  "-23,17": {
+   "unexplained": 4
+  },
+  "-22,10": {
+   "unexplained": 2
+  },
+  "-22,16": {
+   "unexplained": 30
+  },
+  "-22,17": {
+   "unexplained": 5
+  },
+  "-22,20": {
+   "unexplained": 3
+  },
+  "-21,11": {
+   "unexplained": 109
+  },
+  "-21,13": {
+   "unexplained": 22
+  },
+  "-21,14": {
+   "unexplained": 1
+  },
+  "-21,16": {
+   "unexplained": 26
+  },
+  "-21,17": {
+   "unexplained": 36
+  },
+  "-20,10": {
+   "unexplained": 31
+  },
+  "-20,11": {
+   "unexplained": 24
+  },
+  "-20,12": {
+   "unexplained": 44
+  },
+  "-20,13": {
+   "unexplained": 86
+  },
+  "-19,8": {
+   "unexplained": 1
+  },
+  "-19,9": {
+   "unexplained": 31
+  },
+  "-19,10": {
+   "unexplained": 467
+  },
+  "-19,11": {
+   "unexplained": 23
+  },
+  "-19,12": {
+   "unexplained": 74
+  },
+  "-19,13": {
+   "unexplained": 228
+  },
+  "-19,14": {
+   "unexplained": 484
+  },
+  "-19,17": {
+   "unexplained": 15
+  },
+  "-18,7": {
+   "unexplained": 7
+  },
+  "-18,8": {
+   "unexplained": 120
+  },
+  "-18,9": {
+   "unexplained": 371
+  },
+  "-18,10": {
+   "unexplained": 641
+  },
+  "-18,11": {
+   "unexplained": 279
+  },
+  "-18,12": {
+   "unexplained": 200
+  },
+  "-18,13": {
+   "unexplained": 145
+  },
+  "-18,14": {
+   "unexplained": 104
+  },
+  "-18,16": {
+   "unexplained": 41
+  },
+  "-18,17": {
+   "unexplained": 3
+  },
+  "-17,7": {
+   "unexplained": 20
+  },
+  "-17,8": {
+   "unexplained": 507
+  },
+  "-17,9": {
+   "unexplained": 543
+  },
+  "-17,10": {
+   "unexplained": 515
+  },
+  "-17,11": {
+   "unexplained": 245
+  },
+  "-17,12": {
+   "unexplained": 305
+  },
+  "-17,13": {
+   "unexplained": 11
+  },
+  "-17,14": {
+   "unexplained": 2
+  },
+  "-17,15": {
+   "unexplained": 153
+  },
+  "-16,8": {
+   "unexplained": 71
+  },
+  "-16,9": {
+   "unexplained": 551
+  },
+  "-16,10": {
+   "unexplained": 387
+  },
+  "-16,11": {
+   "unexplained": 1080
+  },
+  "-16,12": {
+   "unexplained": 365
+  },
+  "-16,15": {
+   "unexplained": 28
+  },
+  "-15,7": {
+   "unexplained": 63
+  },
+  "-15,8": {
+   "unexplained": 422
+  },
+  "-15,9": {
+   "unexplained": 994
+  },
+  "-15,10": {
+   "unexplained": 911
+  },
+  "-15,11": {
+   "unexplained": 585
+  },
+  "-15,12": {
+   "unexplained": 584
+  },
+  "-15,13": {
+   "unexplained": 2
+  },
+  "-14,10": {
+   "unexplained": 844
+  },
+  "-14,11": {
+   "unexplained": 627
+  },
+  "-14,12": {
+   "unexplained": 826
+  },
+  "-14,13": {
+   "unexplained": 187
+  }
+ },
+ "protected_boxes": 21,
+ "cancelled_reach_boxes": 0,
+ "downstream_margin": 16,
+ "noise_positions_from_vanilla_pair": 0,
+ "differences_at_noise_positions": 0
+}

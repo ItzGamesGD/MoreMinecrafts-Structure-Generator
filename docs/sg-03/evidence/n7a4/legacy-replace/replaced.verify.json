@@ -1,0 +1,23 @@
+{
+ "runs": 1,
+ "passed": 0,
+ "by_site": {
+  "173_-19_15": [
+   1,
+   0
+  ]
+ },
+ "failures": [
+  {
+   "run": "H_173_-19_15_rowmajor_rev_r1",
+   "site": "173_-19_15",
+   "ok": false,
+   "problems": [
+    "mismatch 226",
+    "foreign blocks in template air"
+   ],
+   "geode_cancelled": 0,
+   "monster_cancelled": 0
+  }
+ ]
+}
