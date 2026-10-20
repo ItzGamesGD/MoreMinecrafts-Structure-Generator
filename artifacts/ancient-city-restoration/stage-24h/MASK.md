@@ -17,6 +17,8 @@ Every cell of a template is put in exactly one class (see MASK.md for the rules)
   step_headroom         the cell above a walkable cell from which the walk climbs a step       CLEARED
   interaction_space     the cell above a chest (cannot open under a solid block) or a bed half (cannot sleep)  CLEARED
   pool_headroom         the two cells above stored water inside an enclosed space              CLEARED
+  entrance_threshold    body height straight out of a wall-gap entrance to the box edge (<= 2 cells), where the
+                        city path abuts the piece                                              CLEARED
   decorative_void       unstored cell inside the walls that nobody walks in (roof voids, cavities)  kept
   exterior              unstored cell reachable from the box boundary without passing a wall or a door  kept
 
@@ -28,22 +30,22 @@ flood does not reach in that layer is inside the building.  Walkable cells come 
 
 Courtyard rule: an enclosed walkable cell with no ceiling clears its two body cells and one jump-headroom cell only — never the column above. Paving outside an enclosure clears body height only.
 
-| module | size | stored_architecture | room_interior | walkway | paved_walkway | step_headroom | interaction_space | pool_headroom | decorative_void | exterior | cleared |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| large_ruin_1 | 17×14×17 | 1163 | 1038 | 75 | 0 | 0 | 0 | 0 | 75 | 1695 | **1113** |
-| medium_ruin_1 | 8×5×13 | 330 | 190 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **190** |
-| medium_ruin_2 | 16×8×11 | 711 | 565 | 0 | 0 | 0 | 0 | 0 | 0 | 132 | **565** |
-| small_ruin_1 | 7×5×8 | 199 | 81 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **81** |
-| small_ruin_2 | 8×5×4 | 128 | 32 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **32** |
-| sauna_1 | 29×10×37 | 1901 | 1 | 0 | 1542 | 134 | 3 | 86 | 15 | 7048 | **1766** |
-| large_pillar_1 | 6×15×6 | 320 | 0 | 0 | 39 | 1 | 0 | 0 | 0 | 180 | **40** |
-| medium_pillar_1 | 7×11×8 | 286 | 0 | 0 | 7 | 1 | 0 | 0 | 23 | 299 | **8** |
+| module | size | stored_architecture | room_interior | walkway | paved_walkway | step_headroom | interaction_space | pool_headroom | entrance_threshold | decorative_void | exterior | cleared |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| large_ruin_1 | 17×14×17 | 1163 | 1038 | 75 | 0 | 0 | 0 | 0 | 0 | 75 | 1695 | **1113** |
+| medium_ruin_1 | 8×5×13 | 330 | 190 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **190** |
+| medium_ruin_2 | 16×8×11 | 711 | 565 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 132 | **565** |
+| small_ruin_1 | 7×5×8 | 199 | 81 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **81** |
+| small_ruin_2 | 8×5×4 | 128 | 32 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **32** |
+| sauna_1 | 29×10×37 | 1901 | 1 | 0 | 1542 | 134 | 3 | 86 | 2 | 15 | 7046 | **1768** |
+| large_pillar_1 | 6×15×6 | 320 | 0 | 0 | 39 | 1 | 0 | 0 | 0 | 0 | 180 | **40** |
+| medium_pillar_1 | 7×11×8 | 286 | 0 | 0 | 7 | 1 | 0 | 0 | 2 | 23 | 297 | **10** |
 
 Layers without a cleared cell are omitted below.
 
 ### large_ruin_1
 
-Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
+Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `E` entrance_threshold, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
 
 y = 1
 ```
@@ -268,7 +270,7 @@ y = 11
 
 ### medium_ruin_1
 
-Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
+Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `E` entrance_threshold, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
 
 y = 1
 ```
@@ -321,7 +323,7 @@ y = 3
 
 ### medium_ruin_2
 
-Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
+Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `E` entrance_threshold, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
 
 y = 1
 ```
@@ -410,7 +412,7 @@ y = 6
 
 ### small_ruin_1
 
-Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
+Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `E` entrance_threshold, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
 
 y = 1
 ```
@@ -448,7 +450,7 @@ y = 3
 
 ### small_ruin_2
 
-Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
+Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `E` entrance_threshold, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
 
 y = 1
 ```
@@ -474,12 +476,12 @@ y = 3
 
 ### sauna_1
 
-Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
+Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `E` entrance_threshold, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
 
 y = 1
 ```
 P##############R#######P.....
-.PPPPPPPPPPPPPPPPPPPPPP......
+EPPPPPPPPPPPPPPPPPPPPPP......
 .P##PPP##PPPPPPPPPPP##PPP#.PP
 ..##PPP##PPPPPPPPPPP##PPP##PP
 ..PPPPPPP####PPP#####PPPPPPP#
@@ -519,7 +521,7 @@ PPPPPP###PPPPOOOOOOOOPP#PP...
 y = 2
 ```
 PP#############.P####P#P.....
-.PPPPPPPPPPPPPPPPPPPPPP......
+EPPPPPPPPPPPPPPPPPPPPPP......
 .P##PPP##PPPPPPPPPPP##PPP##PP
 ..#PPPP##PPPPPPPPPPP##PPP##PP
 ..PPPPPPP####PPP####PPPPPPPP#
@@ -719,7 +721,7 @@ y = 6
 
 ### large_pillar_1
 
-Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
+Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `E` entrance_threshold, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
 
 y = 2
 ```
@@ -742,11 +744,11 @@ PPPPPP
 
 ### medium_pillar_1
 
-Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
+Legend: `#` stored_architecture, `R` room_interior, `W` walkway, `P` paved_walkway, `H` step_headroom, `C` interaction_space, `O` pool_headroom, `E` entrance_threshold, `:` decorative_void, `.` exterior. Rows = z (0 at top), columns = x (0 at left).
 
 y = 1
 ```
-.......
+...E...
 .##P##.
 .#####.
 .#####.
@@ -757,7 +759,7 @@ y = 1
 ```
 y = 2
 ```
-.......
+...E...
 .##P##.
 .#PPP#.
 .#####.

@@ -10,6 +10,8 @@ Every cell of a template is put in exactly one class (see MASK.md for the rules)
   step_headroom         the cell above a walkable cell from which the walk climbs a step       CLEARED
   interaction_space     the cell above a chest (cannot open under a solid block) or a bed half (cannot sleep)  CLEARED
   pool_headroom         the two cells above stored water inside an enclosed space              CLEARED
+  entrance_threshold    body height straight out of a wall-gap entrance to the box edge (<= 2 cells), where the
+                        city path abuts the piece                                              CLEARED
   decorative_void       unstored cell inside the walls that nobody walks in (roof voids, cavities)  kept
   exterior              unstored cell reachable from the box boundary without passing a wall or a door  kept
 
@@ -30,7 +32,7 @@ from tools.stage24c.common import MODULES, ROOT  # noqa: E402
 from tools.stage24g.roles import Template, reachable, stand, ladder, short  # noqa: E402
 
 D24F = ROOT / "artifacts/ancient-city-restoration/stage-24f/final-candidates"
-CLEARED = ("room_interior", "walkway", "paved_walkway", "step_headroom", "interaction_space", "pool_headroom")
+CLEARED = ("room_interior", "walkway", "paved_walkway", "step_headroom", "interaction_space", "pool_headroom", "entrance_threshold")
 H4 = [(1, 0), (-1, 0), (0, 1), (0, -1)]
 OPEN_STORED = {"air", "cave_air", "water", "ladder", "soul_lantern", "white_candle", "iron_chain", "skeleton_skull"}
 
@@ -122,6 +124,22 @@ def build_mask(t: Template):
                     and ceiling(t, *nb) is not None):
                 cls[nb] = "room_interior"
                 q.append(nb)
+    # doorway threshold: a walkable cell standing in a gap of a wall line (stored solid blocks on both sides across the
+    # direction of travel) that opens onto exterior cells: clear body height straight out to the box edge, at most 2 cells
+    for x, y, z in sorted(walk):
+        for dx, dz in H4:
+            flank = (solid(t, (x + dz, y, z + dx)) and solid(t, (x - dz, y, z - dx)))
+            line = []
+            c = (x + dx, y, z + dz)
+            while 0 <= c[0] < sx and 0 <= c[2] < sz and c in ext and t.at(c) is None:
+                line.append(c)
+                c = (c[0] + dx, y, c[2] + dz)
+            reaches_edge = not (0 <= c[0] < sx and 0 <= c[2] < sz)
+            if flank and line and reaches_edge and len(line) <= 2:
+                for q in line:
+                    for yy in (y, y + 1):
+                        if t.at((q[0], yy, q[2])) is None:
+                            cls.setdefault((q[0], yy, q[2]), "entrance_threshold")
     for p, st in t.state.items():
         n = short(st)
         if n.endswith("_bed"):

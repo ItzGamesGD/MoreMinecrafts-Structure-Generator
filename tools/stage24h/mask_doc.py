@@ -12,7 +12,7 @@ from tools.stage24h import mask as M  # noqa: E402
 from tools.stage24h.build import D24F, D24H  # noqa: E402
 
 SYM = {"stored_architecture": "#", "room_interior": "R", "walkway": "W", "paved_walkway": "P", "step_headroom": "H",
-       "interaction_space": "C", "pool_headroom": "O", "decorative_void": ":", "exterior": "."}
+       "interaction_space": "C", "pool_headroom": "O", "entrance_threshold": "E", "decorative_void": ":", "exterior": "."}
 DOC = (M.__doc__ or "").strip()
 
 

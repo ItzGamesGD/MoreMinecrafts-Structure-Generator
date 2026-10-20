@@ -30,7 +30,8 @@ NOTE = ("Headless render of real generated world blocks (26.1.2 server, same see
         "NOT a Minecraft-client screenshot")
 GLASS = {"room_interior": "minecraft:light_blue_stained_glass", "walkway": "minecraft:lime_stained_glass",
          "paved_walkway": "minecraft:yellow_stained_glass", "step_headroom": "minecraft:orange_stained_glass",
-         "interaction_space": "minecraft:magenta_stained_glass", "pool_headroom": "minecraft:cyan_stained_glass"}
+         "interaction_space": "minecraft:magenta_stained_glass", "pool_headroom": "minecraft:cyan_stained_glass",
+         "entrance_threshold": "minecraft:red_stained_glass"}
 
 
 def piece(variant, seed, idx):
@@ -106,7 +107,7 @@ def mask_views():
             im.paste(Image.open(BUILD / "png24h" / "mask" / f"{m}-{cut_name}-{vn}.png").convert("RGB").resize((760, 620)), (i * 760, 58))
         d.text((10, 6), f"{TITLES[m]} — Stage 24-H clearance mask ({'whole template' if cut_name == 'full' else 'cut 2 blocks above the lowest cleared layer'})",
                fill=(236, 240, 245), font=font(15, True))
-        d.text((10, 26), "light blue = room interior · lime = enclosed walkway · yellow = paved walkway · orange = step headroom · magenta = chest top · cyan = pool headroom",
+        d.text((10, 26), "light blue = room interior · lime = enclosed walkway · yellow = paved walkway · orange = step headroom · magenta = bed/chest top · cyan = pool headroom · red = entrance threshold",
                fill=(200, 208, 218), font=font(12))
         d.text((10, 42), "Headless render of the template NBT with the mask drawn as stained glass — NOT a Minecraft-client screenshot", fill=(160, 170, 182), font=font(11))
         out = GAL / f"mask-{m}-{cut_name}.jpg"

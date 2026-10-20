@@ -5585,7 +5585,8 @@
    "paved_walkway": [],
    "step_headroom": [],
    "interaction_space": [],
-   "pool_headroom": []
+   "pool_headroom": [],
+   "entrance_threshold": []
   },
   "decorative_void": [
    [
@@ -6932,7 +6933,8 @@
    "paved_walkway": [],
    "step_headroom": [],
    "interaction_space": [],
-   "pool_headroom": []
+   "pool_headroom": [],
+   "entrance_threshold": []
   },
   "decorative_void": []
  },
@@ -9779,7 +9781,8 @@
    "paved_walkway": [],
    "step_headroom": [],
    "interaction_space": [],
-   "pool_headroom": []
+   "pool_headroom": [],
+   "entrance_threshold": []
   },
   "decorative_void": []
  },
@@ -10205,7 +10208,8 @@
    "paved_walkway": [],
    "step_headroom": [],
    "interaction_space": [],
-   "pool_headroom": []
+   "pool_headroom": [],
+   "entrance_threshold": []
   },
   "decorative_void": []
  },
@@ -10386,7 +10390,8 @@
    "paved_walkway": [],
    "step_headroom": [],
    "interaction_space": [],
-   "pool_headroom": []
+   "pool_headroom": [],
+   "entrance_threshold": []
   },
   "decorative_void": []
  },
@@ -10398,7 +10403,8 @@
   ],
   "class_counts": {
    "decorative_void": 15,
-   "exterior": 7048,
+   "entrance_threshold": 2,
+   "exterior": 7046,
    "interaction_space": 3,
    "paved_walkway": 1542,
    "pool_headroom": 86,
@@ -19247,6 +19253,18 @@
      2,
      28
     ]
+   ],
+   "entrance_threshold": [
+    [
+     0,
+     1,
+     1
+    ],
+    [
+     0,
+     2,
+     1
+    ]
    ]
   },
   "decorative_void": [
@@ -19547,7 +19565,8 @@
     ]
    ],
    "interaction_space": [],
-   "pool_headroom": []
+   "pool_headroom": [],
+   "entrance_threshold": []
   },
   "decorative_void": []
  },
@@ -19559,7 +19578,8 @@
   ],
   "class_counts": {
    "decorative_void": 23,
-   "exterior": 299,
+   "entrance_threshold": 2,
+   "exterior": 297,
    "paved_walkway": 7,
    "step_headroom": 1,
    "stored_architecture": 286
@@ -19612,7 +19632,19 @@
     ]
    ],
    "interaction_space": [],
-   "pool_headroom": []
+   "pool_headroom": [],
+   "entrance_threshold": [
+    [
+     3,
+     1,
+     0
+    ],
+    [
+     3,
+     2,
+     0
+    ]
+   ]
   },
   "decorative_void": [
    [

@@ -55,16 +55,17 @@
   "sauna_1": {
    "structure_sha256": "879e21a0a4daf1b5d4fe547fe78aaa9fad5cf55ede913112d2e8a32f5697288f",
    "stage24f_sha256": "879e21a0a4daf1b5d4fe547fe78aaa9fad5cf55ede913112d2e8a32f5697288f",
-   "cleared_cells": 1766,
+   "cleared_cells": 1768,
    "cleared_by_class": {
     "room_interior": 1,
     "paved_walkway": 1542,
     "step_headroom": 134,
     "interaction_space": 3,
-    "pool_headroom": 86
+    "pool_headroom": 86,
+    "entrance_threshold": 2
    },
    "clearance_nbt": "datapack/data/moreminecrafts/structure/ancient_city/interior/sauna_1.nbt",
-   "clearance_sha256": "c58d56ba80fbb90ccd0c5805ca625545723dc20b31a20266099e4643e239177c"
+   "clearance_sha256": "60b65afe0b85b26aefe1d6dd86143e2ff7d26b0859b57f087b08ff2700df5eac"
   },
   "large_pillar_1": {
    "structure_sha256": "a17b693c10337724e3c01402cd19a497926c1fa2afe0c81e839e2c9d61bfb9b1",
@@ -80,13 +81,14 @@
   "medium_pillar_1": {
    "structure_sha256": "8705305a7bec348c40b5e7434c651526e0145aac90a9352e315150faf6a7a09d",
    "stage24f_sha256": "8705305a7bec348c40b5e7434c651526e0145aac90a9352e315150faf6a7a09d",
-   "cleared_cells": 8,
+   "cleared_cells": 10,
    "cleared_by_class": {
     "paved_walkway": 7,
-    "step_headroom": 1
+    "step_headroom": 1,
+    "entrance_threshold": 2
    },
    "clearance_nbt": "datapack/data/moreminecrafts/structure/ancient_city/interior/medium_pillar_1.nbt",
-   "clearance_sha256": "6eced0f9132755cc72216191d5f5d9515c278ae8c5d678b0134c97fb83bfe140"
+   "clearance_sha256": "ed05667011aec54157e569e4a3c2e6a23f3c6c82eaedf130d9ac01eed6476fc3"
   }
  },
  "clearance_modules": [

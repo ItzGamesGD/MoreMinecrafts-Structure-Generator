@@ -54,7 +54,9 @@ def main(out_dir: Path, max_attempts=12):
                 x, z = 6000 + mi * 200, 6000 + k * (2 * span + 40)
                 srv.cmd(f"forceload add {x - span - 12} {z - span - 12} {x + span + 12} {z + span + 12}")
                 time.sleep(0.4)
-                fill(srv, x - span, Y0, z - span, x + span, Y0 + size[1] + 1, z + span, "deepslate")
+                # bury the piece box up to its own top layer; cells above the box are outside every template (in the
+                # 24-seed sweep the space above the tower decks was air in 192/192 cells)
+                fill(srv, x - span, Y0, z - span, x + span, Y0 + size[1] - 1, z + span, "deepslate")
                 outp = srv.cmd(f"place jigsaw s24htest:h24/{m} minecraft:connect_structure 1 {x} {Y0 + 1} {z}")
                 srv.flush()
                 loc = locate(World(root / "world/dimensions/minecraft/overworld"), blocks, (x, Y0 + 1, z), None)
@@ -99,5 +101,6 @@ def main(out_dir: Path, max_attempts=12):
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(D24H / "live/gameplay-buried"))
+    ap.add_argument("--max", type=int, default=16)
     a = ap.parse_args()
-    main(Path(a.out))
+    main(Path(a.out), a.max)
