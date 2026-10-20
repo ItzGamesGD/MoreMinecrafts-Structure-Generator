@@ -33,6 +33,7 @@ def main() -> None:
     p.add_argument("--settle", type=float, default=4.0)
     p.add_argument("--idle", type=float, default=90.0, help="seconds of idle sampling after the last site")
     p.add_argument("--port", type=int, default=41010)
+    p.add_argument("--wait", type=float, default=120.0, help="seconds to wait for a site to load before diagnosing a stall")
     a = p.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
     sites = sorted((c for c in candidates_in_ring(a.seed, SG01, 6) if not exclusion_suppressed(a.seed, c)), key=lambda c: (c[0] ** 2 + c[1] ** 2, c))[:a.sites]
@@ -52,8 +53,22 @@ def main() -> None:
     try:
         for i, (cx, cz) in enumerate(sites):
             r = a.radius
-            srv.cmd(f"forceload add {(cx - r) * 16} {(cz - r) * 16} {(cx + r) * 16} {(cz + r) * 16}")
-            wait_loaded(srv, (cx + r) * 16, (cz + r) * 16, seconds=300)
+            reply = srv.cmd(f"forceload add {(cx - r) * 16} {(cz - r) * 16} {(cx + r) * 16} {(cz + r) * 16}")
+            if "Marked" not in reply and "chunk" not in reply.lower():
+                print(f"step {i + 1}: unexpected forceload reply: {reply!r}", flush=True)
+            try:
+                wait_loaded(srv, (cx + r) * 16, (cz + r) * 16, seconds=a.wait)
+            except RuntimeError:
+                # Diagnose before giving up: command replies and a thread dump of the server JVM.
+                diag = {"step": i + 1, "site": [cx, cz], "forceload_reply": reply, "forceload_list": srv.cmd("forceload query"),
+                        "loaded_check": srv.cmd(f"execute if loaded {(cx + r) * 16} 0 {(cz + r) * 16}")}
+                (a.out / "stall.json").write_text(json.dumps(diag, indent=1) + "\n")
+                import subprocess
+                jpid = subprocess.run(["bash", "-c", "ps -eo pid,args | awk '/fabric\\.dli/ {print $1; exit}'"], capture_output=True, text=True).stdout.strip()
+                if jpid:
+                    (a.out / "threads.txt").write_text(subprocess.run(["jcmd", jpid, "Thread.print"], capture_output=True, text=True).stdout)
+                shutil.copy2(run_dir / "server.log", a.out / "server.log")
+                raise
             time.sleep(a.settle)
             srv.cmd("forceload remove all")
             if i % 8 == 7:
