@@ -8,7 +8,7 @@
    "at": [
     5997,
     -60,
-    6480
+    6000
    ]
   },
   {
@@ -17,17 +17,17 @@
    "start": [
     5997,
     -60,
-    6480
+    6000
    ],
    "end": [
-    5999.5,
+    5999.21,
     -60,
-    6480.5
+    6000.5
    ],
-   "horizontal_error": 0,
-   "moved": 2,
+   "horizontal_error": 0.29,
+   "moved": 1.71,
    "outcome": "reached",
-   "seconds": 0.9,
+   "seconds": 0.7,
    "ok": true
   },
   {
@@ -41,14 +41,14 @@
    "name": "manual_walk_through_open_door",
    "type": "walk",
    "start": [
-    5999.5,
+    5999.22,
     -60,
-    6480.5
+    6000.5
    ],
    "end": [
-    6008.13,
+    6007.85,
     -60,
-    6480.5
+    6000.5
    ],
    "dy": 0,
    "moved": 8.63,
@@ -58,19 +58,19 @@
    "name": "walk_to_entry_inside",
    "type": "goto",
    "start": [
-    6008,
+    6007,
     -60,
-    6480
+    6000
    ],
    "end": [
-    6001.7,
+    6001.82,
     -60,
-    6480.5
+    6000.5
    ],
-   "horizontal_error": 0.2,
-   "moved": 6.43,
+   "horizontal_error": 0.32,
+   "moved": 6.03,
    "outcome": "reached",
-   "seconds": 1.9,
+   "seconds": 1.7,
    "ok": true
   },
   {
@@ -80,7 +80,7 @@
    "at": [
     6001,
     -60,
-    6480
+    6000
    ]
   },
   {
@@ -89,12 +89,12 @@
    "start": [
     6001.5,
     -60,
-    6480.5
+    6000.5
    ],
    "end": [
     5991.79,
     -60,
-    6480.5
+    6000.5
    ],
    "dy": 0,
    "moved": 9.71,
@@ -106,12 +106,12 @@
    "start": [
     5991,
     -60,
-    6480
+    6000
    ],
    "end": [
     5999.33,
     -60,
-    6480.5
+    6000.5
    ],
    "horizontal_error": 0.17,
    "moved": 7.54,
@@ -139,15 +139,15 @@
    "start": [
     5999.34,
     -60,
-    6480.5
+    6000.5
    ],
    "end": [
-    6003.65,
+    6003.87,
     -60,
-    6480.5
+    6000.5
    ],
    "dy": 0,
-   "moved": 4.31,
+   "moved": 4.53,
    "ok": true
   },
   {
@@ -156,15 +156,15 @@
    "start": [
     6003,
     -60,
-    6480
+    6000
    ],
    "end": [
-    6001.5,
+    6001.72,
     -60,
-    6480.5
+    6000.5
    ],
-   "horizontal_error": 0,
-   "moved": 2.15,
+   "horizontal_error": 0.22,
+   "moved": 2.14,
    "outcome": "reached",
    "seconds": 0.8,
    "ok": true
@@ -175,15 +175,15 @@
    "start": [
     6001,
     -60,
-    6480
+    6000
    ],
    "end": [
     6013.52,
     -60,
-    6477.5
+    5997.5
    ],
    "horizontal_error": 0.02,
-   "moved": 12.39,
+   "moved": 12.17,
    "outcome": "reached",
    "seconds": 3.7,
    "ok": true
@@ -196,8 +196,7 @@
   {
    "name": "bed0_sleep",
    "type": "sleep",
-   "ok": false,
-   "error": "bot is not sleeping",
+   "ok": true,
    "bed": "gray_bed"
   },
   {
@@ -206,17 +205,17 @@
    "start": [
     6013,
     -60,
-    6477
+    5997
    ],
    "end": [
-    6013.7,
-    -60,
-    6483.31
+    6013.3,
+    -59.44,
+    6003.07
    ],
-   "horizontal_error": 0.27,
-   "moved": 5.82,
+   "horizontal_error": 0.47,
+   "moved": 5.58,
    "outcome": "reached",
-   "seconds": 2.1,
+   "seconds": 7.5,
    "ok": true
   },
   {
@@ -227,8 +226,7 @@
   {
    "name": "bed1_sleep",
    "type": "sleep",
-   "ok": false,
-   "error": "bot is not sleeping",
+   "ok": true,
    "bed": "gray_bed"
   },
   {
@@ -237,17 +235,17 @@
    "start": [
     6013,
     -60,
-    6483
+    6003
    ],
    "end": [
     6003.49,
     -60,
-    6475.74
+    5995.74
    ],
    "horizontal_error": 0.24,
-   "moved": 12.71,
+   "moved": 12.25,
    "outcome": "reached",
-   "seconds": 4.1,
+   "seconds": 9.1,
    "ok": true
   },
   {
@@ -260,17 +258,20 @@
   }
  ],
  "events": [
-  "chat: Teleported S24C_large_ru to 5997.500000, -60.000000, 6480.500000",
-  "trace manual_walk_through_open_door [[6000.33,-60],[6001.4,-60],[6002.48,-60],[6003.56,-60],[6004.64,-60],[6005.72,-60],[6006.8,-60],[6007.87,-60]]",
-  "chat: Teleported S24C_large_ru to 6001.500000, -60.000000, 6480.500000",
+  "chat: Teleported S24C_large_ru to 5997.500000, -60.000000, 6000.500000",
+  "trace manual_walk_through_open_door [[6000.06,-60],[6001.12,-60],[6002.2,-60],[6003.28,-60],[6004.36,-60],[6005.44,-60],[6006.52,-60],[6007.6,-60]]",
+  "chat: Teleported S24C_large_ru to 6001.500000, -60.000000, 6000.500000",
   "trace manual_walk_out_through_door [[6000.67,-60],[5999.6,-60],[5998.52,-60],[5997.44,-60],[5996.36,-60],[5995.28,-60],[5994.2,-60],[5993.13,-60],[5992.05,-60]]",
-  "trace re_enter_manual [[6000.17,-60],[6001.24,-60],[6002.32,-60],[6003.4,-60]]",
+  "trace re_enter_manual [[6000.17,-60],[6001.24,-60],[6002.32,-60],[6003.61,-60]]",
   "chat: Set minecraft:overworld to time marker minecraft:night",
-  "chat: This bed is obstructed",
-  "actionbar: This bed is obstructed",
+  "chat: Respawn point set",
+  "chat: S24C_large_ru has made the advancement [Sweet Dreams]",
+  "chat: Sleeping through this night",
+  "actionbar: Sleeping through this night",
   "chat: Set minecraft:overworld to time marker minecraft:night",
-  "chat: This bed is obstructed",
-  "actionbar: This bed is obstructed"
+  "chat: Respawn point set",
+  "chat: Sleeping through this night",
+  "actionbar: Sleeping through this night"
  ],
  "final_health": 20,
  "rotation": "NONE",
@@ -278,20 +279,20 @@
   "command_pos": [
    6000,
    -60,
-   6480
+   6000
   ],
-  "place_output": "Generated jigsaw at 6000, -60, 6480",
+  "place_output": "Generated jigsaw at 6000, -60, 6000",
   "box_xz": [
    6000,
-   6473,
+   5993,
    6016,
-   6489
+   6009
   ],
   "rotation": 0,
   "origin": [
    6000,
    -61,
-   6473
+   5993
   ],
   "match": 400,
   "probe": 400
@@ -303,7 +304,7 @@
    "target": [
     5997.5,
     -60,
-    6480.5
+    6000.5
    ]
   },
   {
@@ -312,7 +313,7 @@
    "target": [
     5999,
     -60,
-    6480
+    6000
    ],
    "range": 0,
    "timeout": 30
@@ -323,7 +324,7 @@
    "pos": [
     6000,
     -60,
-    6480
+    6000
    ],
    "expect": "open"
   },
@@ -340,7 +341,7 @@
    "target": [
     6001,
     -60,
-    6480
+    6000
    ],
    "range": 0,
    "timeout": 60
@@ -351,7 +352,7 @@
    "target": [
     6001.5,
     -60,
-    6480.5
+    6000.5
    ]
   },
   {
@@ -367,7 +368,7 @@
    "target": [
     5999,
     -60,
-    6480
+    6000
    ],
    "range": 0,
    "timeout": 20
@@ -378,7 +379,7 @@
    "pos": [
     6000,
     -60,
-    6480
+    6000
    ],
    "expect": "closed"
   },
@@ -388,7 +389,7 @@
    "pos": [
     6000,
     -60,
-    6480
+    6000
    ],
    "expect": "open"
   },
@@ -405,7 +406,7 @@
    "target": [
     6001,
     -60,
-    6480
+    6000
    ],
    "range": 0,
    "timeout": 30
@@ -416,7 +417,7 @@
    "target": [
     6013,
     -60,
-    6477
+    5997
    ],
    "range": 0,
    "timeout": 60
@@ -432,7 +433,7 @@
    "pos": [
     6012,
     -60,
-    6477
+    5997
    ]
   },
   {
@@ -441,7 +442,7 @@
    "target": [
     6013,
     -60,
-    6483
+    6003
    ],
    "range": 0,
    "timeout": 60
@@ -457,7 +458,7 @@
    "pos": [
     6012,
     -60,
-    6483
+    6003
    ]
   },
   {
@@ -466,7 +467,7 @@
    "target": [
     6003,
     -60,
-    6475
+    5995
    ],
    "range": 0,
    "timeout": 60
@@ -477,7 +478,7 @@
    "pos": [
     6002,
     -60,
-    6475
+    5995
    ]
   }
  ]

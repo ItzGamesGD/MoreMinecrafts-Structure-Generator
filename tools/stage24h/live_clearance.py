@@ -136,8 +136,8 @@ def analyse(world, m, kind, loc, inv, mask, fill_block, after_ticks=False):
     return {"counts": dict(c), "violations": bad}
 
 
-def main(out_dir: Path, max_attempts=12, lava_per_module=1):
-    work = OUT / "_work/s24h-live"
+def main(out_dir: Path, max_attempts=12, lava_per_module=1, modules=None, report_name="live-clearance-report.json"):
+    work = OUT / ("_work/s24h-live" + ("-" + "-".join(modules) if modules else ""))
     pack = work / "pack"
     test_pack(pack)
     inv = json.loads((D24G / "protection/protected-cells.json").read_text())
@@ -147,6 +147,8 @@ def main(out_dir: Path, max_attempts=12, lava_per_module=1):
     report = {"datapack_list": srv.cmd("datapack list"), "placements": []}
     try:
         for mi, m in enumerate(MODULES):
+            if modules and m not in modules:
+                continue
             root = load_nbt(D24F / m / "restored.nbt")
             size = [int(v) for v in root["size"]]
             blocks = blocks_of(root)
@@ -182,7 +184,7 @@ def main(out_dir: Path, max_attempts=12, lava_per_module=1):
     finally:
         srv.stop()
     out_dir.mkdir(parents=True, exist_ok=True)
-    (out_dir / "live-clearance-report.json").write_text(json.dumps(report, indent=1, default=list))
+    (out_dir / report_name).write_text(json.dumps(report, indent=1, default=list))
     return report
 
 
@@ -208,8 +210,10 @@ if __name__ == "__main__":
     ap.add_argument("--out", default=str(D24H / "live"))
     ap.add_argument("--max", type=int, default=12)
     ap.add_argument("--reanalyse", action="store_true")
+    ap.add_argument("--modules", nargs="*")
+    ap.add_argument("--report-name", default="live-clearance-report.json")
     a = ap.parse_args()
     if a.reanalyse:
         reanalyse(Path(a.out))
     else:
-        main(Path(a.out), a.max)
+        main(Path(a.out), a.max, modules=a.modules, report_name=a.report_name, lava_per_module=0 if a.modules else 1)
