@@ -95,7 +95,7 @@ The unsupported-format result is a real gap: a datapack version the server does 
 
 * **Thread-count variants** (seed 173 (-19,15), eight orders): hybrid with one background thread (24 runs of H rc1 and rc4, and C rc4): **0 mismatches, 0 unavailable structure reads, 0 scheduling requests in all 24 runs.** The Fabric server was verified to receive `-Dmax.bg.threads=1`. The lab's `threads` field reads 0 for Fabric runs because the lab forwards the thread count only on the vanilla path; the value was applied through the environment.
 * **Decisions vary between runs:** monster cancellations for the same order range 0–2 across runs and thread counts. This follows the world-generation nondeterminism in Phase 2, not a thread-timing dependency of the guard itself, but the test does not separate those causes.
-* **Soak** (radius 9, 361 chunks): hybrid: 0 mismatches, 8,876 monster attempts, 2 cancellations, heap in use 425 MB, generation window 47.5 s. Vanilla on the same area: 226 mismatches. **No memory-growth trend was measured**; this is one end-of-run sample, so "no unbounded memory growth" is NOT demonstrated.
+* **Soak** (radius 9, 361 chunks): hybrid: 0 mismatches, 8,876 monster attempts, 2 cancellations, heap in use 425 MB, generation window 47.5 s. Vanilla on the same area: 226 mismatches. **No memory-growth trend was measured**; this is one end-of-run sample, so "no unbounded memory growth" is NOT demonstrated. The hybrid soak run also logged the `max.bg.threads` error (see Phase 5), so its thread setting is not as intended and it is not a clean sample.
 * **Deadlocks:** no run hung; every run reached its save and stop.
 
 ## Phase 5 — other-mod compatibility
@@ -104,7 +104,7 @@ One compatible mod was tested: **Sparse Structures 3.1.5** for Fabric 26.3 (Modr
 
 * Loaded: the mod and its Mixins applied (`mixinextras 0.5.5`, `sparsestructures 3.1.5`); the spike's hooks applied.
 * Effect on the protected structure: **the structure is not generated at (-19,15) with the mod**, so the module had no structure to protect there. The mod changes structure placement, which is its purpose.
-* Unexplained: the log contains 73 `Wrong max.bg.threads property value '0'` errors. None of the 150+ other runs logged this, and I did not find its source in the mod or in the sources I checked. It is reported, not explained.
+* Unexplained: this log contains 73 `Wrong max.bg.threads property value '0'` errors. The same error appears in one other run, the radius-9 hybrid soak (no mod, no thread pin). Of the 315 server logs scanned, these two runs are the only ones with it, and I did not find its source in the mod or the sources I checked. The soak run's numbers are reported with that caveat.
 * Other modded structures and registry or tag reload behaviour: **NOT RUN** (no second mod, no reload test).
 
 Result: compatibility with one structure-spacing mod is shown to the extent that the module starts and does not crash. It is not evidence of protection under that mod.
@@ -134,7 +134,7 @@ Earlier N7-A2 results (`docs/sg-03/evidence/n72-matrix.json`) remain valid for t
 3. **Unsupported datapack format loads silently** (Phase 3): needs an explicit version check.
 4. **Protection list ships with the module** and merges across datapacks: an overriding datapack must use `replace` to change it, and the module cannot tell a deliberate shrink from a mistake.
 5. **Memory growth** not demonstrated (one soak sample).
-6. **Other mods**: one structure-spacing mod, which moves the protected structure; no reload or cross-mod protection test. The unexplained `max.bg.threads` error under that mod.
+6. **Other mods**: one structure-spacing mod, which moves the protected structure; no reload or cross-mod protection test. An unexplained `max.bg.threads` error appears in two runs (the Sparse Structures run and the radius-9 soak), and not in the other 313 server logs.
 7. **Benchmark scope:** lab only (no players, no other server load), one JVM per run, wall clock dominated by noise, per-run percentiles pooled by median (raw samples not pooled).
 8. **Existing-world:** one world, one player-style block, one damaging order.
 9. **Not tested:** unexpected registry entries, concurrency beyond the loading patterns in the lab, production hardware.
