@@ -10,7 +10,7 @@ SPIKE = Path(__file__).resolve().parents[1] / "validation/fabric-protection-spik
 RES = SPIKE / "src/main/resources"
 JAVA = SPIKE / "src/main/java/dev/itzgamesgd/sg01spike"
 MIXIN = JAVA / "mixin"
-PROBES = ["WorldGenRegionProbeMixin", "ServerChunkCacheProbeMixin", "ChunkMapProbeMixin", "GenerationChunkHolderProbeMixin"]
+PROBES = ["WorldGenRegionProbeMixin", "ServerChunkCacheProbeMixin", "ChunkMapProbeMixin", "GenerationChunkHolderProbeMixin", "DecorationOrderProbeMixin"]
 
 
 class SpikeN72Tests(unittest.TestCase):

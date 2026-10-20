@@ -70,7 +70,7 @@ public final class SpikeMod implements ModInitializer {
     private static void writeReport() {
         String json = "{\"mode\":\"" + Guard.MODE + "\",\"fixture\":\"" + Guard.FIXTURE + "\",\"refine\":\"" + Guard.REFINE + "\",\"shadow\":" + Guard.SHADOW + ",\"oracle\":\""
                 + (Guard.ORACLE_MONSTER_ROOM ? "monster_room" : "off") + "\"," + stats(Guard.GEODE) + "," + stats(Guard.MONSTER_ROOM) + ",\"probe\":"
-                + Probe.json() + ",\"perf\":" + Perf.json() + ",\"contract\":" + contractJson() + "}\n";
+                + Probe.json() + ",\"perf\":" + Perf.json() + ",\"contract\":" + contractJson() + ",\"decoration_order\":" + Probe.decorationJson() + "}\n";
         LOGGER.info("SG_SPIKE_REPORT {}", json.replace("\n", ""));
         String path = System.getenv("SG01_SPIKE_REPORT");
         if (path != null && !path.isBlank()) {

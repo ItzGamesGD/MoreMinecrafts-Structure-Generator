@@ -34,6 +34,7 @@ public final class Probe {
     /** GenerationChunkHolder.scheduleChunkGenerationTask from the guard. Must stay 0. */
     public static final AtomicLong HOLDER_SCHEDULE = new AtomicLong();
     private static final List<String> SCHEDULED = new ArrayList<>();
+    private static final List<String> DECORATION = new ArrayList<>();
 
     private Probe() {
     }
@@ -66,6 +67,15 @@ public final class Probe {
 
     public static synchronized void recordScheduled(String source, ChunkStatus status, ChunkPos pos) {
         if (SCHEDULED.size() < 50) SCHEDULED.add(source + " status=" + status.getName() + " pos=" + pos);
+    }
+
+    /** Order in which chunks started their feature-decoration step (bounded). */
+    public static synchronized void recordDecoration(int cx, int cz) {
+        if (DECORATION.size() < 20000) DECORATION.add(cx + "," + cz);
+    }
+
+    public static synchronized String decorationJson() {
+        return "[" + String.join(",", DECORATION.stream().map(c -> "\"" + c + "\"").toList()) + "]";
     }
 
     public static synchronized String json() {
