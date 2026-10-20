@@ -1,0 +1,77 @@
+name: Stage 24-G functional protection
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - stage-24g-functional-protection
+    paths:
+      - "tools/stage24g/**"
+      - "tools/stage24c/worldgen.py"
+      - "tools/stage24c/worldgen_analyze.py"
+      - "tests/test_stage24g_protection.py"
+      - "tests/fixtures/stage24g/**"
+      - "artifacts/ancient-city-restoration/stage-24g/**"
+      - ".github/workflows/stage24g-functional-protection.yml"
+
+permissions:
+  contents: read
+
+env:
+  MC_SERVER_URL: "https://piston-data.mojang.com/v1/objects/97ccd4c0ed3f81bbb7bfacddd1090b0c56f9bc51/server.jar"
+  MC_SERVER_SHA1: "97ccd4c0ed3f81bbb7bfacddd1090b0c56f9bc51"
+
+jobs:
+  functional-protection:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "25"
+      - name: Install pinned mcbuild environment
+        working-directory: vendor/mcbuild
+        run: uv sync --frozen --extra dev
+      - name: Rebuild the protection datapack from the Stage 24-F final set and compare with the committed one
+        run: |
+          vendor/mcbuild/.venv/bin/python tools/stage24g/build.py > /dev/null
+          vendor/mcbuild/.venv/bin/python tools/stage24g/policy_doc.py
+          git diff --exit-code -- artifacts/ancient-city-restoration/stage-24g/datapack artifacts/ancient-city-restoration/stage-24g/protection artifacts/ancient-city-restoration/stage-24g/PROTECTION-POLICY.md
+      - name: Approved structure NBTs are byte-identical to Stage 24-F
+        run: |
+          cd artifacts/ancient-city-restoration/stage-24f/final-candidates && sha256sum -c SHA256SUMS
+          for m in large_ruin_1 medium_ruin_1 medium_ruin_2 small_ruin_1 small_ruin_2 sauna_1 large_pillar_1 medium_pillar_1; do
+            cmp $m/restored.nbt ../../stage-24g/datapack/data/minecraft/structure/ancient_city/structures/$m.nbt
+          done
+      - name: Stage 24-G tests, plus the Stage 24-B/24-C/24-E/24-F suites
+        run: |
+          vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24g_protection.py tests/test_stage24b_*.py tests/test_stage24c_regressions.py tests/test_stage24e_proposals.py tests/test_stage24f_final.py -q
+          STAGE24B_DIR=$PWD/artifacts/ancient-city-restoration/stage-24f/final-candidates vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24c_regressions.py -q
+      - name: Download and verify the Minecraft 26.1.2 server
+        run: |
+          mkdir -p .mc && curl -fsSL "$MC_SERVER_URL" -o .mc/server.jar
+          echo "$MC_SERVER_SHA1  .mc/server.jar" | sha1sum -c -
+      - name: Live smoke test on a real 26.1.2 server (datapack loads, /place jigsaw with the real processors)
+        env:
+          MC_JAR: ${{ github.workspace }}/.mc/server.jar
+          MC_JAVA: java
+        run: |
+          vendor/mcbuild/.venv/bin/python tools/stage24g/live_processing.py --max 5 --out "$RUNNER_TEMP/s24g-live"
+          vendor/mcbuild/.venv/bin/python tools/stage24g/check_live.py "$RUNNER_TEMP/s24g-live/live-processing-report.json"
+      - name: Earlier-stage artifacts are untouched
+        run: git diff --exit-code -- artifacts/ancient-city-restoration/stage-24b artifacts/ancient-city-restoration/stage-24e/proposals artifacts/ancient-city-restoration/stage-24f
+      - name: Upload Stage 24-G evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage-24g-functional-protection
+          path: |
+            artifacts/ancient-city-restoration/stage-24g
+            ${{ runner.temp }}/s24g-live
+          if-no-files-found: error

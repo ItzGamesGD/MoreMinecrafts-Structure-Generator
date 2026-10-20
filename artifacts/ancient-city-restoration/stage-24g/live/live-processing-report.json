@@ -1,0 +1,5284 @@
+{
+ "datapack_list": "There are 2 data pack(s) enabled: [vanilla (built-in)], [file/pack (world)]There are no more data packs available",
+ "placements": [
+  {
+   "module": "large_ruin_1",
+   "kind": "g24",
+   "attempt": 0,
+   "command_pos": [
+    300,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 300, -60, 300",
+   "rotation": 0,
+   "origin": [
+    300,
+    -61,
+    293
+   ],
+   "match": 400,
+   "probe": 400,
+   "analysis": {
+    "counts": {
+     "rot_removed_decorative": 47,
+     "decorative_rottable_cells": 762,
+     "cells": 1162,
+     "rule_cracked_deepslate_bricks": 219,
+     "rule_cracked_deepslate_tiles": 7
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "large_ruin_1",
+   "kind": "g24",
+   "attempt": 1,
+   "command_pos": [
+    300,
+    -61,
+    363
+   ],
+   "place_output": "Generated jigsaw at 300, -60, 363",
+   "rotation": 270,
+   "origin": [
+    293,
+    -61,
+    363
+   ],
+   "match": 400,
+   "probe": 400,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 762,
+     "cells": 1162,
+     "rule_cracked_deepslate_bricks": 243,
+     "rot_removed_decorative": 44,
+     "rule_cracked_deepslate_tiles": 7
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "large_ruin_1",
+   "kind": "g24",
+   "attempt": 2,
+   "command_pos": [
+    300,
+    -61,
+    426
+   ],
+   "place_output": "Generated jigsaw at 300, -60, 426",
+   "rotation": 90,
+   "origin": [
+    307,
+    -61,
+    426
+   ],
+   "match": 400,
+   "probe": 400,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 762,
+     "cells": 1162,
+     "rule_cracked_deepslate_bricks": 211,
+     "rot_removed_decorative": 40,
+     "rule_cracked_deepslate_tiles": 9
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "large_ruin_1",
+   "kind": "g24",
+   "attempt": 3,
+   "command_pos": [
+    300,
+    -61,
+    489
+   ],
+   "place_output": "Generated jigsaw at 300, -60, 489",
+   "rotation": 180,
+   "origin": [
+    300,
+    -61,
+    496
+   ],
+   "match": 400,
+   "probe": 400,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 762,
+     "cells": 1162,
+     "rule_cracked_deepslate_bricks": 206,
+     "rot_removed_decorative": 44,
+     "rule_cracked_deepslate_tiles": 8
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "large_ruin_1",
+   "kind": "f24",
+   "attempt": 0,
+   "command_pos": [
+    380,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 380, -60, 300",
+   "rotation": 270,
+   "origin": [
+    373,
+    -61,
+    300
+   ],
+   "match": 400,
+   "probe": 400,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 762,
+     "cells": 1162,
+     "rule_cracked_deepslate_bricks": 211,
+     "rot_removed_decorative": 38,
+     "rule_cracked_deepslate_tiles": 11
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "large_ruin_1",
+   "kind": "f24",
+   "attempt": 1,
+   "command_pos": [
+    380,
+    -61,
+    363
+   ],
+   "place_output": "Generated jigsaw at 380, -60, 363",
+   "rotation": 90,
+   "origin": [
+    387,
+    -61,
+    363
+   ],
+   "match": 400,
+   "probe": 400,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 762,
+     "cells": 1162,
+     "rule_cracked_deepslate_bricks": 196,
+     "rot_removed_decorative": 44,
+     "rule_cracked_deepslate_tiles": 14
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "large_ruin_1",
+   "kind": "f24",
+   "attempt": 2,
+   "command_pos": [
+    380,
+    -61,
+    426
+   ],
+   "place_output": "Generated jigsaw at 380, -60, 426",
+   "rotation": 270,
+   "origin": [
+    373,
+    -61,
+    426
+   ],
+   "match": 399,
+   "probe": 400,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 762,
+     "cells": 1162,
+     "rule_cracked_deepslate_bricks": 195,
+     "rot_removed_decorative": 37,
+     "rule_air": 1,
+     "rule_cracked_deepslate_tiles": 10
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "large_ruin_1",
+   "kind": "f24",
+   "attempt": 3,
+   "command_pos": [
+    380,
+    -61,
+    489
+   ],
+   "place_output": "Generated jigsaw at 380, -60, 489",
+   "rotation": 180,
+   "origin": [
+    380,
+    -61,
+    496
+   ],
+   "match": 399,
+   "probe": 400,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 762,
+     "cells": 1162,
+     "rule_cracked_deepslate_bricks": 212,
+     "rot_removed_decorative": 44,
+     "rule_air": 1,
+     "rule_cracked_deepslate_tiles": 6
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "large_ruin_1",
+   "kind": "f24",
+   "attempt": 4,
+   "command_pos": [
+    380,
+    -61,
+    552
+   ],
+   "place_output": "Generated jigsaw at 380, -60, 552",
+   "rotation": 90,
+   "origin": [
+    387,
+    -61,
+    552
+   ],
+   "match": 400,
+   "probe": 400,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 762,
+     "cells": 1162,
+     "rot_removed_decorative": 38,
+     "rule_cracked_deepslate_bricks": 210,
+     "rule_cracked_deepslate_tiles": 8
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "large_ruin_1",
+   "kind": "f24",
+   "attempt": 5,
+   "command_pos": [
+    380,
+    -61,
+    615
+   ],
+   "place_output": "Generated jigsaw at 380, -60, 615",
+   "rotation": 90,
+   "origin": [
+    387,
+    -61,
+    615
+   ],
+   "match": 400,
+   "probe": 400,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 762,
+     "cells": 1162,
+     "rule_cracked_deepslate_bricks": 206,
+     "rot_removed_decorative": 38,
+     "rule_cracked_deepslate_tiles": 8
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "large_ruin_1",
+   "kind": "f24",
+   "attempt": 6,
+   "command_pos": [
+    380,
+    -61,
+    678
+   ],
+   "place_output": "Generated jigsaw at 380, -60, 678",
+   "rotation": 270,
+   "origin": [
+    373,
+    -61,
+    678
+   ],
+   "match": 400,
+   "probe": 400,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 762,
+     "cells": 1162,
+     "rule_cracked_deepslate_bricks": 222,
+     "rot_removed_decorative": 35,
+     "rule_cracked_deepslate_tiles": 10
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "large_ruin_1",
+   "kind": "f24",
+   "attempt": 7,
+   "command_pos": [
+    380,
+    -61,
+    741
+   ],
+   "place_output": "Generated jigsaw at 380, -60, 741",
+   "rotation": 270,
+   "origin": [
+    373,
+    -61,
+    741
+   ],
+   "match": 400,
+   "probe": 400,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 762,
+     "cells": 1162,
+     "rule_cracked_deepslate_bricks": 213,
+     "rot_removed_decorative": 33,
+     "rule_cracked_deepslate_tiles": 15
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "large_ruin_1",
+   "kind": "f24",
+   "attempt": 8,
+   "command_pos": [
+    380,
+    -61,
+    804
+   ],
+   "place_output": "Generated jigsaw at 380, -60, 804",
+   "rotation": 270,
+   "origin": [
+    373,
+    -61,
+    804
+   ],
+   "match": 399,
+   "probe": 400,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 762,
+     "cells": 1162,
+     "rot_removed_decorative": 41,
+     "rule_cracked_deepslate_bricks": 216,
+     "rule_air": 1,
+     "rule_cracked_deepslate_tiles": 5
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "large_ruin_1",
+   "kind": "f24",
+   "attempt": 9,
+   "command_pos": [
+    380,
+    -61,
+    867
+   ],
+   "place_output": "Generated jigsaw at 380, -60, 867",
+   "rotation": 0,
+   "origin": [
+    380,
+    -61,
+    860
+   ],
+   "match": 400,
+   "probe": 400,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 762,
+     "cells": 1162,
+     "rule_cracked_deepslate_bricks": 216,
+     "rot_removed_decorative": 29,
+     "rule_cracked_deepslate_tiles": 13
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "medium_ruin_1",
+   "kind": "g24",
+   "attempt": 0,
+   "command_pos": [
+    460,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 460, -60, 300",
+   "rotation": 180,
+   "origin": [
+    460,
+    -61,
+    306
+   ],
+   "match": 44,
+   "probe": 44,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 285,
+     "cells": 329,
+     "rule_cracked_deepslate_bricks": 52,
+     "rot_removed_decorative": 12,
+     "void_support_filled": 1,
+     "rule_cracked_deepslate_tiles": 26
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "medium_ruin_1",
+   "kind": "g24",
+   "attempt": 1,
+   "command_pos": [
+    460,
+    -61,
+    359
+   ],
+   "place_output": "Generated jigsaw at 460, -60, 359",
+   "rotation": 0,
+   "origin": [
+    460,
+    -61,
+    353
+   ],
+   "match": 44,
+   "probe": 44,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 285,
+     "cells": 329,
+     "rot_removed_decorative": 19,
+     "rule_cracked_deepslate_bricks": 53,
+     "void_support_filled": 1,
+     "rule_cracked_deepslate_tiles": 29
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "medium_ruin_1",
+   "kind": "g24",
+   "attempt": 2,
+   "command_pos": [
+    460,
+    -61,
+    418
+   ],
+   "place_output": "Generated jigsaw at 460, -60, 418",
+   "rotation": 0,
+   "origin": [
+    460,
+    -61,
+    412
+   ],
+   "match": 43,
+   "probe": 44,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 285,
+     "cells": 329,
+     "rot_removed_decorative": 10,
+     "rule_cracked_deepslate_bricks": 56,
+     "void_support_filled": 1,
+     "rule_air": 1,
+     "rule_cracked_deepslate_tiles": 32
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "medium_ruin_1",
+   "kind": "g24",
+   "attempt": 3,
+   "command_pos": [
+    460,
+    -61,
+    477
+   ],
+   "place_output": "Generated jigsaw at 460, -60, 477",
+   "rotation": 180,
+   "origin": [
+    460,
+    -61,
+    483
+   ],
+   "match": 44,
+   "probe": 44,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 285,
+     "cells": 329,
+     "rot_removed_decorative": 11,
+     "rule_cracked_deepslate_bricks": 52,
+     "void_support_filled": 1,
+     "rule_cracked_deepslate_tiles": 30
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "medium_ruin_1",
+   "kind": "g24",
+   "attempt": 4,
+   "command_pos": [
+    460,
+    -61,
+    536
+   ],
+   "place_output": "Generated jigsaw at 460, -60, 536",
+   "rotation": 270,
+   "origin": [
+    454,
+    -61,
+    536
+   ],
+   "match": 44,
+   "probe": 44,
+   "analysis": {
+    "counts": {
+     "rot_removed_decorative": 18,
+     "decorative_rottable_cells": 285,
+     "cells": 329,
+     "rule_cracked_deepslate_bricks": 54,
+     "void_support_filled": 1,
+     "rule_cracked_deepslate_tiles": 29
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "medium_ruin_1",
+   "kind": "g24",
+   "attempt": 5,
+   "command_pos": [
+    460,
+    -61,
+    595
+   ],
+   "place_output": "Generated jigsaw at 460, -60, 595",
+   "rotation": 90,
+   "origin": [
+    466,
+    -61,
+    595
+   ],
+   "match": 44,
+   "probe": 44,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 285,
+     "cells": 329,
+     "rule_cracked_deepslate_bricks": 52,
+     "rot_removed_decorative": 12,
+     "void_support_filled": 1,
+     "rule_cracked_deepslate_tiles": 27
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "medium_ruin_1",
+   "kind": "f24",
+   "attempt": 0,
+   "command_pos": [
+    540,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 540, -60, 300",
+   "rotation": 270,
+   "origin": [
+    534,
+    -61,
+    300
+   ],
+   "match": 44,
+   "probe": 44,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 285,
+     "cells": 329,
+     "rot_removed_decorative": 21,
+     "rule_cracked_deepslate_bricks": 45,
+     "void_left_unwritten": 1,
+     "rule_cracked_deepslate_tiles": 32
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       0,
+       0,
+       6
+      ],
+      "world": [
+       540,
+       -61,
+       300
+      ],
+      "expected": "sturdy support",
+      "got": "minecraft:air",
+      "role": "door_support",
+      "cause": "jigsaw final_state structure_void leaves the cell unwritten"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "medium_ruin_1",
+   "kind": "f24",
+   "attempt": 1,
+   "command_pos": [
+    540,
+    -61,
+    359
+   ],
+   "place_output": "Generated jigsaw at 540, -60, 359",
+   "rotation": 0,
+   "origin": [
+    540,
+    -61,
+    353
+   ],
+   "match": 44,
+   "probe": 44,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 285,
+     "cells": 329,
+     "rule_cracked_deepslate_bricks": 55,
+     "rot_removed_decorative": 14,
+     "void_left_unwritten": 1,
+     "rule_cracked_deepslate_tiles": 26
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       0,
+       0,
+       6
+      ],
+      "world": [
+       540,
+       -61,
+       359
+      ],
+      "expected": "sturdy support",
+      "got": "minecraft:air",
+      "role": "door_support",
+      "cause": "jigsaw final_state structure_void leaves the cell unwritten"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "medium_ruin_1",
+   "kind": "f24",
+   "attempt": 2,
+   "command_pos": [
+    540,
+    -61,
+    418
+   ],
+   "place_output": "Generated jigsaw at 540, -60, 418",
+   "rotation": 0,
+   "origin": [
+    540,
+    -61,
+    412
+   ],
+   "match": 44,
+   "probe": 44,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 285,
+     "cells": 329,
+     "rule_cracked_deepslate_bricks": 65,
+     "void_left_unwritten": 1,
+     "rot_removed_decorative": 12,
+     "rule_cracked_deepslate_tiles": 27
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       0,
+       0,
+       6
+      ],
+      "world": [
+       540,
+       -61,
+       418
+      ],
+      "expected": "sturdy support",
+      "got": "minecraft:air",
+      "role": "door_support",
+      "cause": "jigsaw final_state structure_void leaves the cell unwritten"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "medium_ruin_1",
+   "kind": "f24",
+   "attempt": 3,
+   "command_pos": [
+    540,
+    -61,
+    477
+   ],
+   "place_output": "Generated jigsaw at 540, -60, 477",
+   "rotation": 0,
+   "origin": [
+    540,
+    -61,
+    471
+   ],
+   "match": 43,
+   "probe": 44,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 285,
+     "cells": 329,
+     "rule_cracked_deepslate_bricks": 47,
+     "rot_removed_decorative": 13,
+     "void_left_unwritten": 1,
+     "rule_air": 1,
+     "rule_cracked_deepslate_tiles": 21
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       0,
+       0,
+       6
+      ],
+      "world": [
+       540,
+       -61,
+       477
+      ],
+      "expected": "sturdy support",
+      "got": "minecraft:air",
+      "role": "door_support",
+      "cause": "jigsaw final_state structure_void leaves the cell unwritten"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "medium_ruin_1",
+   "kind": "f24",
+   "attempt": 4,
+   "command_pos": [
+    540,
+    -61,
+    536
+   ],
+   "place_output": "Generated jigsaw at 540, -60, 536",
+   "rotation": 0,
+   "origin": [
+    540,
+    -61,
+    530
+   ],
+   "match": 44,
+   "probe": 44,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 285,
+     "cells": 329,
+     "rule_cracked_deepslate_bricks": 58,
+     "rot_removed_decorative": 12,
+     "void_left_unwritten": 1,
+     "rule_cracked_deepslate_tiles": 19
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       0,
+       0,
+       6
+      ],
+      "world": [
+       540,
+       -61,
+       536
+      ],
+      "expected": "sturdy support",
+      "got": "minecraft:air",
+      "role": "door_support",
+      "cause": "jigsaw final_state structure_void leaves the cell unwritten"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "medium_ruin_1",
+   "kind": "f24",
+   "attempt": 5,
+   "command_pos": [
+    540,
+    -61,
+    595
+   ],
+   "place_output": "Generated jigsaw at 540, -60, 595",
+   "rotation": 90,
+   "origin": [
+    546,
+    -61,
+    595
+   ],
+   "match": 43,
+   "probe": 44,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 285,
+     "cells": 329,
+     "rule_cracked_deepslate_bricks": 49,
+     "rot_removed_decorative": 20,
+     "void_left_unwritten": 1,
+     "rule_air": 1,
+     "rule_cracked_deepslate_tiles": 25
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       0,
+       0,
+       6
+      ],
+      "world": [
+       540,
+       -61,
+       595
+      ],
+      "expected": "sturdy support",
+      "got": "minecraft:air",
+      "role": "door_support",
+      "cause": "jigsaw final_state structure_void leaves the cell unwritten"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "medium_ruin_1",
+   "kind": "f24",
+   "attempt": 6,
+   "command_pos": [
+    540,
+    -61,
+    654
+   ],
+   "place_output": "Generated jigsaw at 540, -60, 654",
+   "rotation": 180,
+   "origin": [
+    540,
+    -61,
+    660
+   ],
+   "match": 44,
+   "probe": 44,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 285,
+     "cells": 329,
+     "rule_cracked_deepslate_bricks": 55,
+     "void_left_unwritten": 1,
+     "rot_removed_decorative": 15,
+     "rule_cracked_deepslate_tiles": 24
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       0,
+       0,
+       6
+      ],
+      "world": [
+       540,
+       -61,
+       654
+      ],
+      "expected": "sturdy support",
+      "got": "minecraft:air",
+      "role": "door_support",
+      "cause": "jigsaw final_state structure_void leaves the cell unwritten"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "medium_ruin_2",
+   "kind": "g24",
+   "attempt": 0,
+   "command_pos": [
+    620,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 620, -60, 300",
+   "rotation": 90,
+   "origin": [
+    625,
+    -61,
+    300
+   ],
+   "match": 106,
+   "probe": 106,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 99,
+     "decorative_rottable_cells": 509,
+     "cells": 710,
+     "rot_removed_decorative": 31,
+     "rule_cracked_deepslate_tiles": 57,
+     "protected_rottable_cells": 90,
+     "rot_then_restored_by_overlay": 6
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 96,
+    "protected_non_air_present": 95
+   }
+  },
+  {
+   "module": "medium_ruin_2",
+   "kind": "g24",
+   "attempt": 1,
+   "command_pos": [
+    620,
+    -61,
+    362
+   ],
+   "place_output": "Generated jigsaw at 620, -60, 362",
+   "rotation": 90,
+   "origin": [
+    625,
+    -61,
+    362
+   ],
+   "match": 104,
+   "probe": 106,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 509,
+     "cells": 710,
+     "rule_cracked_deepslate_bricks": 95,
+     "rot_removed_decorative": 25,
+     "rule_air": 2,
+     "rule_cracked_deepslate_tiles": 57,
+     "protected_rottable_cells": 90,
+     "rot_then_restored_by_overlay": 3
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 96,
+    "protected_non_air_present": 95
+   }
+  },
+  {
+   "module": "medium_ruin_2",
+   "kind": "g24",
+   "attempt": 2,
+   "command_pos": [
+    620,
+    -61,
+    424
+   ],
+   "place_output": "Generated jigsaw at 620, -60, 424",
+   "rotation": 90,
+   "origin": [
+    625,
+    -61,
+    424
+   ],
+   "match": 106,
+   "probe": 106,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 509,
+     "cells": 710,
+     "rule_cracked_deepslate_bricks": 109,
+     "rot_removed_decorative": 32,
+     "rule_cracked_deepslate_tiles": 59,
+     "protected_rottable_cells": 90,
+     "rot_then_restored_by_overlay": 4
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 96,
+    "protected_non_air_present": 95
+   }
+  },
+  {
+   "module": "medium_ruin_2",
+   "kind": "g24",
+   "attempt": 3,
+   "command_pos": [
+    620,
+    -61,
+    486
+   ],
+   "place_output": "Generated jigsaw at 620, -60, 486",
+   "rotation": 0,
+   "origin": [
+    620,
+    -61,
+    481
+   ],
+   "match": 106,
+   "probe": 106,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 509,
+     "cells": 710,
+     "rule_cracked_deepslate_bricks": 113,
+     "rot_removed_decorative": 32,
+     "rule_cracked_deepslate_tiles": 49,
+     "protected_rottable_cells": 90,
+     "rot_then_restored_by_overlay": 5
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 96,
+    "protected_non_air_present": 95
+   }
+  },
+  {
+   "module": "medium_ruin_2",
+   "kind": "g24",
+   "attempt": 4,
+   "command_pos": [
+    620,
+    -61,
+    548
+   ],
+   "place_output": "Generated jigsaw at 620, -60, 548",
+   "rotation": 270,
+   "origin": [
+    615,
+    -61,
+    548
+   ],
+   "match": 105,
+   "probe": 106,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 111,
+     "decorative_rottable_cells": 509,
+     "cells": 710,
+     "rot_removed_decorative": 24,
+     "rule_cracked_deepslate_tiles": 59,
+     "protected_rottable_cells": 90,
+     "rot_then_restored_by_overlay": 3,
+     "rule_air": 1
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 96,
+    "protected_non_air_present": 95
+   }
+  },
+  {
+   "module": "medium_ruin_2",
+   "kind": "g24",
+   "attempt": 5,
+   "command_pos": [
+    620,
+    -61,
+    610
+   ],
+   "place_output": "Generated jigsaw at 620, -60, 610",
+   "rotation": 180,
+   "origin": [
+    620,
+    -61,
+    615
+   ],
+   "match": 106,
+   "probe": 106,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 509,
+     "cells": 710,
+     "rule_cracked_deepslate_bricks": 105,
+     "rot_removed_decorative": 25,
+     "rule_cracked_deepslate_tiles": 61,
+     "protected_rottable_cells": 90,
+     "rot_then_restored_by_overlay": 2
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 96,
+    "protected_non_air_present": 95
+   }
+  },
+  {
+   "module": "medium_ruin_2",
+   "kind": "f24",
+   "attempt": 0,
+   "command_pos": [
+    700,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 700, -60, 300",
+   "rotation": 90,
+   "origin": [
+    705,
+    -61,
+    300
+   ],
+   "match": 106,
+   "probe": 106,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 509,
+     "cells": 710,
+     "rule_cracked_deepslate_bricks": 111,
+     "rot_removed_decorative": 33,
+     "rule_cracked_deepslate_tiles": 60,
+     "protected_rottable_cells": 90,
+     "rot_removed_protected": 7
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       8,
+       4,
+       5
+      ],
+      "world": [
+       700,
+       -57,
+       308
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       10,
+       4,
+       5
+      ],
+      "world": [
+       700,
+       -57,
+       310
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       8,
+       4,
+       7
+      ],
+      "world": [
+       698,
+       -57,
+       308
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       10,
+       5,
+       0
+      ],
+      "world": [
+       705,
+       -56,
+       310
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       13,
+       5,
+       0
+      ],
+      "world": [
+       705,
+       -56,
+       313
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       15,
+       5,
+       1
+      ],
+      "world": [
+       704,
+       -56,
+       315
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       13,
+       5,
+       10
+      ],
+      "world": [
+       695,
+       -56,
+       313
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 96,
+    "protected_non_air_present": 88
+   }
+  },
+  {
+   "module": "medium_ruin_2",
+   "kind": "f24",
+   "attempt": 1,
+   "command_pos": [
+    700,
+    -61,
+    362
+   ],
+   "place_output": "Generated jigsaw at 700, -60, 362",
+   "rotation": 90,
+   "origin": [
+    705,
+    -61,
+    362
+   ],
+   "match": 106,
+   "probe": 106,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 124,
+     "decorative_rottable_cells": 509,
+     "cells": 710,
+     "rot_removed_decorative": 26,
+     "rule_cracked_deepslate_tiles": 58,
+     "protected_rottable_cells": 90,
+     "rot_removed_protected": 3
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       10,
+       4,
+       3
+      ],
+      "world": [
+       702,
+       -57,
+       372
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       13,
+       5,
+       0
+      ],
+      "world": [
+       705,
+       -56,
+       375
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       7,
+       5,
+       6
+      ],
+      "world": [
+       699,
+       -56,
+       369
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 96,
+    "protected_non_air_present": 92
+   }
+  },
+  {
+   "module": "medium_ruin_2",
+   "kind": "f24",
+   "attempt": 2,
+   "command_pos": [
+    700,
+    -61,
+    424
+   ],
+   "place_output": "Generated jigsaw at 700, -60, 424",
+   "rotation": 90,
+   "origin": [
+    705,
+    -61,
+    424
+   ],
+   "match": 106,
+   "probe": 106,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 509,
+     "cells": 710,
+     "rule_cracked_deepslate_bricks": 134,
+     "rot_removed_decorative": 27,
+     "rule_cracked_deepslate_tiles": 51,
+     "protected_rottable_cells": 90,
+     "rot_removed_protected": 4
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       13,
+       4,
+       2
+      ],
+      "world": [
+       703,
+       -57,
+       437
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       14,
+       4,
+       6
+      ],
+      "world": [
+       699,
+       -57,
+       438
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       10,
+       4,
+       9
+      ],
+      "world": [
+       696,
+       -57,
+       434
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       7,
+       5,
+       3
+      ],
+      "world": [
+       702,
+       -56,
+       431
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 96,
+    "protected_non_air_present": 91
+   }
+  },
+  {
+   "module": "medium_ruin_2",
+   "kind": "f24",
+   "attempt": 3,
+   "command_pos": [
+    700,
+    -61,
+    486
+   ],
+   "place_output": "Generated jigsaw at 700, -60, 486",
+   "rotation": 270,
+   "origin": [
+    695,
+    -61,
+    486
+   ],
+   "match": 106,
+   "probe": 106,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 509,
+     "cells": 710,
+     "rule_cracked_deepslate_bricks": 122,
+     "rot_removed_decorative": 20,
+     "rule_cracked_deepslate_tiles": 54,
+     "protected_rottable_cells": 90
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 96,
+    "protected_non_air_present": 95
+   }
+  },
+  {
+   "module": "medium_ruin_2",
+   "kind": "f24",
+   "attempt": 4,
+   "command_pos": [
+    700,
+    -61,
+    548
+   ],
+   "place_output": "Generated jigsaw at 700, -60, 548",
+   "rotation": 0,
+   "origin": [
+    700,
+    -61,
+    543
+   ],
+   "match": 106,
+   "probe": 106,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 509,
+     "cells": 710,
+     "rule_cracked_deepslate_bricks": 102,
+     "rot_removed_decorative": 27,
+     "rule_cracked_deepslate_tiles": 56,
+     "protected_rottable_cells": 90,
+     "rot_removed_protected": 1
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       13,
+       4,
+       1
+      ],
+      "world": [
+       713,
+       -57,
+       544
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 96,
+    "protected_non_air_present": 94
+   }
+  },
+  {
+   "module": "medium_ruin_2",
+   "kind": "f24",
+   "attempt": 5,
+   "command_pos": [
+    700,
+    -61,
+    610
+   ],
+   "place_output": "Generated jigsaw at 700, -60, 610",
+   "rotation": 270,
+   "origin": [
+    695,
+    -61,
+    610
+   ],
+   "match": 106,
+   "probe": 106,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 115,
+     "decorative_rottable_cells": 509,
+     "cells": 710,
+     "rot_removed_decorative": 32,
+     "protected_rottable_cells": 90,
+     "rule_cracked_deepslate_tiles": 57,
+     "rot_removed_protected": 2
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       12,
+       4,
+       5
+      ],
+      "world": [
+       700,
+       -57,
+       598
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       13,
+       5,
+       0
+      ],
+      "world": [
+       695,
+       -56,
+       597
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 96,
+    "protected_non_air_present": 93
+   }
+  },
+  {
+   "module": "medium_ruin_2",
+   "kind": "f24",
+   "attempt": 6,
+   "command_pos": [
+    700,
+    -61,
+    672
+   ],
+   "place_output": "Generated jigsaw at 700, -60, 672",
+   "rotation": 180,
+   "origin": [
+    700,
+    -61,
+    677
+   ],
+   "match": 106,
+   "probe": 106,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 509,
+     "cells": 710,
+     "rule_cracked_deepslate_bricks": 123,
+     "rot_removed_decorative": 27,
+     "rule_cracked_deepslate_tiles": 59,
+     "protected_rottable_cells": 90,
+     "rot_removed_protected": 6
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       12,
+       4,
+       2
+      ],
+      "world": [
+       688,
+       -57,
+       675
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       11,
+       4,
+       5
+      ],
+      "world": [
+       689,
+       -57,
+       672
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       8,
+       5,
+       0
+      ],
+      "world": [
+       692,
+       -56,
+       677
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       11,
+       5,
+       0
+      ],
+      "world": [
+       689,
+       -56,
+       677
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       7,
+       5,
+       1
+      ],
+      "world": [
+       693,
+       -56,
+       676
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       9,
+       5,
+       10
+      ],
+      "world": [
+       691,
+       -56,
+       667
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 96,
+    "protected_non_air_present": 89
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "g24",
+   "attempt": 0,
+   "command_pos": [
+    780,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 780, -60, 300",
+   "rotation": 180,
+   "origin": [
+    780,
+    -61,
+    303
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 165,
+     "cells": 198,
+     "rot_removed_decorative": 8,
+     "rule_cracked_deepslate_bricks": 32,
+     "void_support_filled": 1,
+     "rule_cracked_deepslate_tiles": 20
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "g24",
+   "attempt": 1,
+   "command_pos": [
+    780,
+    -61,
+    354
+   ],
+   "place_output": "Generated jigsaw at 780, -60, 354",
+   "rotation": 0,
+   "origin": [
+    780,
+    -61,
+    351
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 165,
+     "cells": 198,
+     "rule_cracked_deepslate_bricks": 37,
+     "rot_removed_decorative": 3,
+     "void_support_filled": 1,
+     "rule_cracked_deepslate_tiles": 16
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "g24",
+   "attempt": 2,
+   "command_pos": [
+    780,
+    -61,
+    408
+   ],
+   "place_output": "Generated jigsaw at 780, -60, 408",
+   "rotation": 270,
+   "origin": [
+    777,
+    -61,
+    408
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 165,
+     "cells": 198,
+     "rule_cracked_deepslate_bricks": 35,
+     "rot_removed_decorative": 5,
+     "void_support_filled": 1,
+     "rule_cracked_deepslate_tiles": 12
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "g24",
+   "attempt": 3,
+   "command_pos": [
+    780,
+    -61,
+    462
+   ],
+   "place_output": "Generated jigsaw at 780, -60, 462",
+   "rotation": 90,
+   "origin": [
+    783,
+    -61,
+    462
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 165,
+     "cells": 198,
+     "rule_cracked_deepslate_bricks": 32,
+     "rot_removed_decorative": 6,
+     "void_support_filled": 1,
+     "rule_cracked_deepslate_tiles": 11
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "f24",
+   "attempt": 0,
+   "command_pos": [
+    860,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 860, -60, 300",
+   "rotation": 0,
+   "origin": [
+    860,
+    -61,
+    297
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 165,
+     "cells": 198,
+     "rule_cracked_deepslate_bricks": 33,
+     "void_left_unwritten": 1,
+     "rot_removed_decorative": 13,
+     "rule_cracked_deepslate_tiles": 15
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       0,
+       0,
+       3
+      ],
+      "world": [
+       860,
+       -61,
+       300
+      ],
+      "expected": "sturdy support",
+      "got": "minecraft:air",
+      "role": "door_support",
+      "cause": "jigsaw final_state structure_void leaves the cell unwritten"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "f24",
+   "attempt": 1,
+   "command_pos": [
+    860,
+    -61,
+    354
+   ],
+   "place_output": "Generated jigsaw at 860, -60, 354",
+   "rotation": 90,
+   "origin": [
+    863,
+    -61,
+    354
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 165,
+     "cells": 198,
+     "rule_cracked_deepslate_bricks": 43,
+     "rot_removed_decorative": 3,
+     "void_left_unwritten": 1,
+     "rule_cracked_deepslate_tiles": 11
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       0,
+       0,
+       3
+      ],
+      "world": [
+       860,
+       -61,
+       354
+      ],
+      "expected": "sturdy support",
+      "got": "minecraft:air",
+      "role": "door_support",
+      "cause": "jigsaw final_state structure_void leaves the cell unwritten"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "f24",
+   "attempt": 2,
+   "command_pos": [
+    860,
+    -61,
+    408
+   ],
+   "place_output": "Generated jigsaw at 860, -60, 408",
+   "rotation": 270,
+   "origin": [
+    857,
+    -61,
+    408
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 165,
+     "cells": 198,
+     "rule_cracked_deepslate_bricks": 30,
+     "rot_removed_decorative": 19,
+     "void_left_unwritten": 1,
+     "rule_cracked_deepslate_tiles": 9
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       0,
+       0,
+       3
+      ],
+      "world": [
+       860,
+       -61,
+       408
+      ],
+      "expected": "sturdy support",
+      "got": "minecraft:air",
+      "role": "door_support",
+      "cause": "jigsaw final_state structure_void leaves the cell unwritten"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "f24",
+   "attempt": 3,
+   "command_pos": [
+    860,
+    -61,
+    462
+   ],
+   "place_output": "Generated jigsaw at 860, -60, 462",
+   "rotation": 180,
+   "origin": [
+    860,
+    -61,
+    465
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 165,
+     "cells": 198,
+     "rule_cracked_deepslate_bricks": 42,
+     "rot_removed_decorative": 5,
+     "void_left_unwritten": 1,
+     "rule_cracked_deepslate_tiles": 17
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       0,
+       0,
+       3
+      ],
+      "world": [
+       860,
+       -61,
+       462
+      ],
+      "expected": "sturdy support",
+      "got": "minecraft:air",
+      "role": "door_support",
+      "cause": "jigsaw final_state structure_void leaves the cell unwritten"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "g24",
+   "attempt": 0,
+   "command_pos": [
+    940,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 940, -60, 300",
+   "rotation": 0,
+   "origin": [
+    940,
+    -61,
+    298
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rule_cracked_deepslate_bricks": 15,
+     "rot_removed_decorative": 4,
+     "rule_cracked_deepslate_tiles": 11
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "g24",
+   "attempt": 1,
+   "command_pos": [
+    940,
+    -61,
+    354
+   ],
+   "place_output": "Generated jigsaw at 940, -60, 354",
+   "rotation": 0,
+   "origin": [
+    940,
+    -61,
+    352
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rule_cracked_deepslate_bricks": 24,
+     "rot_removed_decorative": 7,
+     "rule_cracked_deepslate_tiles": 12
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "g24",
+   "attempt": 2,
+   "command_pos": [
+    940,
+    -61,
+    408
+   ],
+   "place_output": "Generated jigsaw at 940, -60, 408",
+   "rotation": 270,
+   "origin": [
+    938,
+    -61,
+    408
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rule_cracked_deepslate_bricks": 22,
+     "rot_removed_decorative": 8,
+     "rule_cracked_deepslate_tiles": 13
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "g24",
+   "attempt": 3,
+   "command_pos": [
+    940,
+    -61,
+    462
+   ],
+   "place_output": "Generated jigsaw at 940, -60, 462",
+   "rotation": 0,
+   "origin": [
+    940,
+    -61,
+    460
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rule_cracked_deepslate_bricks": 22,
+     "rot_removed_decorative": 5,
+     "rule_cracked_deepslate_tiles": 11
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "g24",
+   "attempt": 4,
+   "command_pos": [
+    940,
+    -61,
+    516
+   ],
+   "place_output": "Generated jigsaw at 940, -60, 516",
+   "rotation": 270,
+   "origin": [
+    938,
+    -61,
+    516
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rule_cracked_deepslate_bricks": 25,
+     "rot_removed_decorative": 8,
+     "rule_cracked_deepslate_tiles": 10
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "g24",
+   "attempt": 5,
+   "command_pos": [
+    940,
+    -61,
+    570
+   ],
+   "place_output": "Generated jigsaw at 940, -60, 570",
+   "rotation": 0,
+   "origin": [
+    940,
+    -61,
+    568
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 24,
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rot_removed_decorative": 6,
+     "rule_cracked_deepslate_tiles": 10
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "g24",
+   "attempt": 6,
+   "command_pos": [
+    940,
+    -61,
+    624
+   ],
+   "place_output": "Generated jigsaw at 940, -60, 624",
+   "rotation": 270,
+   "origin": [
+    938,
+    -61,
+    624
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rule_cracked_deepslate_bricks": 30,
+     "rot_removed_decorative": 6,
+     "rule_cracked_deepslate_tiles": 5
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "g24",
+   "attempt": 7,
+   "command_pos": [
+    940,
+    -61,
+    678
+   ],
+   "place_output": "Generated jigsaw at 940, -60, 678",
+   "rotation": 270,
+   "origin": [
+    938,
+    -61,
+    678
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rule_cracked_deepslate_bricks": 15,
+     "rot_removed_decorative": 5,
+     "rule_cracked_deepslate_tiles": 12
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "g24",
+   "attempt": 8,
+   "command_pos": [
+    940,
+    -61,
+    732
+   ],
+   "place_output": "Generated jigsaw at 940, -60, 732",
+   "rotation": 0,
+   "origin": [
+    940,
+    -61,
+    730
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rule_cracked_deepslate_bricks": 14,
+     "rot_removed_decorative": 4,
+     "rule_cracked_deepslate_tiles": 7
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "g24",
+   "attempt": 9,
+   "command_pos": [
+    940,
+    -61,
+    786
+   ],
+   "place_output": "Generated jigsaw at 940, -60, 786",
+   "rotation": 180,
+   "origin": [
+    940,
+    -61,
+    788
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 19,
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rot_removed_decorative": 6,
+     "rule_cracked_deepslate_tiles": 8
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "g24",
+   "attempt": 10,
+   "command_pos": [
+    940,
+    -61,
+    840
+   ],
+   "place_output": "Generated jigsaw at 940, -60, 840",
+   "rotation": 270,
+   "origin": [
+    938,
+    -61,
+    840
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 21,
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rot_removed_decorative": 4,
+     "rule_cracked_deepslate_tiles": 7
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "g24",
+   "attempt": 11,
+   "command_pos": [
+    940,
+    -61,
+    894
+   ],
+   "place_output": "Generated jigsaw at 940, -60, 894",
+   "rotation": 0,
+   "origin": [
+    940,
+    -61,
+    892
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rule_cracked_deepslate_bricks": 18,
+     "rot_removed_decorative": 8,
+     "rule_cracked_deepslate_tiles": 11
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "g24",
+   "attempt": 12,
+   "command_pos": [
+    940,
+    -61,
+    948
+   ],
+   "place_output": "Generated jigsaw at 940, -60, 948",
+   "rotation": 90,
+   "origin": [
+    942,
+    -61,
+    948
+   ],
+   "match": 18,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rule_cracked_deepslate_bricks": 22,
+     "rot_removed_decorative": 6,
+     "rule_air": 1,
+     "rule_cracked_deepslate_tiles": 13
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "f24",
+   "attempt": 0,
+   "command_pos": [
+    1020,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 1020, -60, 300",
+   "rotation": 0,
+   "origin": [
+    1020,
+    -61,
+    298
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rot_removed_decorative": 10,
+     "rule_cracked_deepslate_bricks": 20,
+     "rule_cracked_deepslate_tiles": 6
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "f24",
+   "attempt": 1,
+   "command_pos": [
+    1020,
+    -61,
+    354
+   ],
+   "place_output": "Generated jigsaw at 1020, -60, 354",
+   "rotation": 270,
+   "origin": [
+    1018,
+    -61,
+    354
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rule_cracked_deepslate_bricks": 23,
+     "rot_removed_decorative": 4,
+     "rule_cracked_deepslate_tiles": 14
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "f24",
+   "attempt": 2,
+   "command_pos": [
+    1020,
+    -61,
+    408
+   ],
+   "place_output": "Generated jigsaw at 1020, -60, 408",
+   "rotation": 0,
+   "origin": [
+    1020,
+    -61,
+    406
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rot_removed_decorative": 5,
+     "rule_cracked_deepslate_bricks": 13,
+     "rule_cracked_deepslate_tiles": 12
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "f24",
+   "attempt": 3,
+   "command_pos": [
+    1020,
+    -61,
+    462
+   ],
+   "place_output": "Generated jigsaw at 1020, -60, 462",
+   "rotation": 270,
+   "origin": [
+    1018,
+    -61,
+    462
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rule_cracked_deepslate_bricks": 21,
+     "rot_removed_decorative": 2,
+     "rule_cracked_deepslate_tiles": 6
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "f24",
+   "attempt": 4,
+   "command_pos": [
+    1020,
+    -61,
+    516
+   ],
+   "place_output": "Generated jigsaw at 1020, -60, 516",
+   "rotation": 180,
+   "origin": [
+    1020,
+    -61,
+    518
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 20,
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rot_removed_decorative": 5,
+     "rule_cracked_deepslate_tiles": 14
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "f24",
+   "attempt": 5,
+   "command_pos": [
+    1020,
+    -61,
+    570
+   ],
+   "place_output": "Generated jigsaw at 1020, -60, 570",
+   "rotation": 180,
+   "origin": [
+    1020,
+    -61,
+    572
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rot_removed_decorative": 5,
+     "rule_cracked_deepslate_bricks": 25,
+     "rule_cracked_deepslate_tiles": 7
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "f24",
+   "attempt": 6,
+   "command_pos": [
+    1020,
+    -61,
+    624
+   ],
+   "place_output": "Generated jigsaw at 1020, -60, 624",
+   "rotation": 180,
+   "origin": [
+    1020,
+    -61,
+    626
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 20,
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rot_removed_decorative": 6,
+     "rule_cracked_deepslate_tiles": 18
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "f24",
+   "attempt": 7,
+   "command_pos": [
+    1020,
+    -61,
+    678
+   ],
+   "place_output": "Generated jigsaw at 1020, -60, 678",
+   "rotation": 180,
+   "origin": [
+    1020,
+    -61,
+    680
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 20,
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rot_removed_decorative": 5,
+     "rule_cracked_deepslate_tiles": 10
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "f24",
+   "attempt": 8,
+   "command_pos": [
+    1020,
+    -61,
+    732
+   ],
+   "place_output": "Generated jigsaw at 1020, -60, 732",
+   "rotation": 90,
+   "origin": [
+    1022,
+    -61,
+    732
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 108,
+     "cells": 127,
+     "rule_cracked_deepslate_bricks": 17,
+     "rot_removed_decorative": 8,
+     "rule_cracked_deepslate_tiles": 8
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 3,
+    "protected_non_air_present": 2
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "g24",
+   "attempt": 0,
+   "command_pos": [
+    1100,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 1100, -60, 300",
+   "rotation": 90,
+   "origin": [
+    1121,
+    -61,
+    272
+   ],
+   "match": 220,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "rot_removed_decorative": 81,
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rule_cracked_deepslate_bricks": 302,
+     "rule_cracked_deepslate_tiles": 121,
+     "later_sculk_feature_overlay": 94,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25,
+     "rot_then_restored_by_overlay": 2,
+     "rule_air": 1
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "g24",
+   "attempt": 1,
+   "command_pos": [
+    1100,
+    -61,
+    383
+   ],
+   "place_output": "Generated jigsaw at 1100, -60, 383",
+   "rotation": 90,
+   "origin": [
+    1121,
+    -61,
+    355
+   ],
+   "match": 221,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rule_cracked_deepslate_bricks": 293,
+     "rot_removed_decorative": 77,
+     "rule_cracked_deepslate_tiles": 94,
+     "later_sculk_feature_overlay": 153,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "g24",
+   "attempt": 2,
+   "command_pos": [
+    1100,
+    -61,
+    466
+   ],
+   "place_output": "Generated jigsaw at 1100, -60, 466",
+   "rotation": 270,
+   "origin": [
+    1079,
+    -61,
+    494
+   ],
+   "match": 212,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rule_cracked_deepslate_bricks": 338,
+     "rot_removed_decorative": 87,
+     "rule_cracked_deepslate_tiles": 103,
+     "later_sculk_feature_overlay": 157,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25,
+     "rot_then_restored_by_overlay": 2
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "g24",
+   "attempt": 3,
+   "command_pos": [
+    1100,
+    -61,
+    549
+   ],
+   "place_output": "Generated jigsaw at 1100, -60, 549",
+   "rotation": 90,
+   "origin": [
+    1121,
+    -61,
+    521
+   ],
+   "match": 210,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 328,
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rot_removed_decorative": 75,
+     "rule_cracked_deepslate_tiles": 107,
+     "later_sculk_feature_overlay": 154,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "g24",
+   "attempt": 4,
+   "command_pos": [
+    1100,
+    -61,
+    632
+   ],
+   "place_output": "Generated jigsaw at 1100, -60, 632",
+   "rotation": 0,
+   "origin": [
+    1072,
+    -61,
+    611
+   ],
+   "match": 211,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rule_cracked_deepslate_bricks": 310,
+     "rot_removed_decorative": 74,
+     "rule_cracked_deepslate_tiles": 85,
+     "later_sculk_feature_overlay": 172,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25,
+     "rot_then_restored_by_overlay": 1
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "g24",
+   "attempt": 5,
+   "command_pos": [
+    1100,
+    -61,
+    715
+   ],
+   "place_output": "Generated jigsaw at 1100, -60, 715",
+   "rotation": 90,
+   "origin": [
+    1121,
+    -61,
+    687
+   ],
+   "match": 221,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 299,
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rot_removed_decorative": 84,
+     "later_sculk_feature_overlay": 148,
+     "rule_cracked_deepslate_tiles": 106,
+     "void_left_unwritten": 1,
+     "rot_then_restored_by_overlay": 1,
+     "protected_rottable_cells": 25
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "g24",
+   "attempt": 6,
+   "command_pos": [
+    1100,
+    -61,
+    798
+   ],
+   "place_output": "Generated jigsaw at 1100, -60, 798",
+   "rotation": 90,
+   "origin": [
+    1121,
+    -61,
+    770
+   ],
+   "match": 204,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rule_cracked_deepslate_bricks": 335,
+     "rot_removed_decorative": 73,
+     "rule_cracked_deepslate_tiles": 95,
+     "later_sculk_feature_overlay": 209,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25,
+     "rule_air": 1
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "g24",
+   "attempt": 7,
+   "command_pos": [
+    1100,
+    -61,
+    881
+   ],
+   "place_output": "Generated jigsaw at 1100, -60, 881",
+   "rotation": 0,
+   "origin": [
+    1072,
+    -61,
+    860
+   ],
+   "match": 205,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rule_cracked_deepslate_bricks": 303,
+     "rot_removed_decorative": 76,
+     "rule_cracked_deepslate_tiles": 96,
+     "later_sculk_feature_overlay": 214,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25,
+     "rot_then_restored_by_overlay": 4
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "g24",
+   "attempt": 8,
+   "command_pos": [
+    1100,
+    -61,
+    964
+   ],
+   "place_output": "Generated jigsaw at 1100, -60, 964",
+   "rotation": 180,
+   "origin": [
+    1128,
+    -61,
+    985
+   ],
+   "match": 212,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rule_cracked_deepslate_bricks": 316,
+     "rot_removed_decorative": 91,
+     "later_sculk_feature_overlay": 177,
+     "rule_cracked_deepslate_tiles": 114,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25,
+     "rot_then_restored_by_overlay": 1
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "f24",
+   "attempt": 0,
+   "command_pos": [
+    1180,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 1180, -60, 300",
+   "rotation": 270,
+   "origin": [
+    1159,
+    -61,
+    328
+   ],
+   "match": 221,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rule_cracked_deepslate_bricks": 312,
+     "rot_removed_decorative": 75,
+     "rule_cracked_deepslate_tiles": 95,
+     "later_sculk_feature_overlay": 137,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "f24",
+   "attempt": 1,
+   "command_pos": [
+    1180,
+    -61,
+    383
+   ],
+   "place_output": "Generated jigsaw at 1180, -60, 383",
+   "rotation": 180,
+   "origin": [
+    1208,
+    -61,
+    404
+   ],
+   "match": 214,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 311,
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rot_removed_decorative": 65,
+     "rule_cracked_deepslate_tiles": 108,
+     "void_left_unwritten": 1,
+     "later_sculk_feature_overlay": 114,
+     "protected_rottable_cells": 25,
+     "rot_removed_protected": 2,
+     "rule_air": 1
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       15,
+       3,
+       4
+      ],
+      "world": [
+       1193,
+       -58,
+       400
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       8,
+       3,
+       29
+      ],
+      "world": [
+       1200,
+       -58,
+       375
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 30
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "f24",
+   "attempt": 2,
+   "command_pos": [
+    1180,
+    -61,
+    466
+   ],
+   "place_output": "Generated jigsaw at 1180, -60, 466",
+   "rotation": 180,
+   "origin": [
+    1208,
+    -61,
+    487
+   ],
+   "match": 221,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rot_removed_decorative": 85,
+     "rule_cracked_deepslate_bricks": 311,
+     "rule_cracked_deepslate_tiles": 99,
+     "later_sculk_feature_overlay": 153,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "f24",
+   "attempt": 3,
+   "command_pos": [
+    1180,
+    -61,
+    549
+   ],
+   "place_output": "Generated jigsaw at 1180, -60, 549",
+   "rotation": 270,
+   "origin": [
+    1159,
+    -61,
+    577
+   ],
+   "match": 204,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 312,
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rot_removed_decorative": 83,
+     "rule_cracked_deepslate_tiles": 103,
+     "later_sculk_feature_overlay": 180,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "f24",
+   "attempt": 4,
+   "command_pos": [
+    1180,
+    -61,
+    632
+   ],
+   "place_output": "Generated jigsaw at 1180, -60, 632",
+   "rotation": 270,
+   "origin": [
+    1159,
+    -61,
+    660
+   ],
+   "match": 220,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "rot_removed_decorative": 83,
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rule_cracked_deepslate_bricks": 321,
+     "rule_cracked_deepslate_tiles": 98,
+     "later_sculk_feature_overlay": 86,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25,
+     "rule_air": 1
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "f24",
+   "attempt": 5,
+   "command_pos": [
+    1180,
+    -61,
+    715
+   ],
+   "place_output": "Generated jigsaw at 1180, -60, 715",
+   "rotation": 180,
+   "origin": [
+    1208,
+    -61,
+    736
+   ],
+   "match": 221,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rule_cracked_deepslate_bricks": 336,
+     "rot_removed_decorative": 79,
+     "rule_cracked_deepslate_tiles": 103,
+     "later_sculk_feature_overlay": 97,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "f24",
+   "attempt": 6,
+   "command_pos": [
+    1180,
+    -61,
+    798
+   ],
+   "place_output": "Generated jigsaw at 1180, -60, 798",
+   "rotation": 0,
+   "origin": [
+    1152,
+    -61,
+    777
+   ],
+   "match": 209,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rule_cracked_deepslate_bricks": 314,
+     "rot_removed_decorative": 69,
+     "later_sculk_feature_overlay": 100,
+     "rule_cracked_deepslate_tiles": 114,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "f24",
+   "attempt": 7,
+   "command_pos": [
+    1180,
+    -61,
+    881
+   ],
+   "place_output": "Generated jigsaw at 1180, -60, 881",
+   "rotation": 180,
+   "origin": [
+    1208,
+    -61,
+    902
+   ],
+   "match": 214,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 312,
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rot_removed_decorative": 83,
+     "rule_cracked_deepslate_tiles": 105,
+     "later_sculk_feature_overlay": 100,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 32
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "f24",
+   "attempt": 8,
+   "command_pos": [
+    1180,
+    -61,
+    964
+   ],
+   "place_output": "Generated jigsaw at 1180, -60, 964",
+   "rotation": 180,
+   "origin": [
+    1208,
+    -61,
+    985
+   ],
+   "match": 221,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rule_cracked_deepslate_bricks": 313,
+     "rot_removed_decorative": 80,
+     "rule_cracked_deepslate_tiles": 121,
+     "later_sculk_feature_overlay": 118,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25,
+     "rot_removed_protected": 2
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       12,
+       4,
+       33
+      ],
+      "world": [
+       1196,
+       -57,
+       952
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       23,
+       4,
+       33
+      ],
+      "world": [
+       1185,
+       -57,
+       952
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 30
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "f24",
+   "attempt": 9,
+   "command_pos": [
+    1180,
+    -61,
+    1047
+   ],
+   "place_output": "Generated jigsaw at 1180, -60, 1047",
+   "rotation": 90,
+   "origin": [
+    1201,
+    -61,
+    1019
+   ],
+   "match": 212,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 1649,
+     "cells": 1896,
+     "rule_cracked_deepslate_bricks": 306,
+     "rot_removed_decorative": 79,
+     "later_sculk_feature_overlay": 160,
+     "rule_cracked_deepslate_tiles": 109,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 25,
+     "rot_removed_protected": 4
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       13,
+       3,
+       4
+      ],
+      "world": [
+       1197,
+       -58,
+       1032
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       9,
+       3,
+       28
+      ],
+      "world": [
+       1173,
+       -58,
+       1028
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:sculk_vein[down=false,east=false,north=false,south=false,up=false,waterlogged=false,west=true]",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       20,
+       4,
+       33
+      ],
+      "world": [
+       1168,
+       -57,
+       1039
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       23,
+       4,
+       33
+      ],
+      "world": [
+       1168,
+       -57,
+       1042
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:sculk_vein[down=true,east=false,north=false,south=false,up=false,waterlogged=false,west=false]",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 32,
+    "protected_non_air_present": 30
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "g24",
+   "attempt": 0,
+   "command_pos": [
+    1260,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 1260, -60, 300",
+   "rotation": 180,
+   "origin": [
+    1265,
+    -61,
+    302
+   ],
+   "match": 158,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "rot_removed_decorative": 10,
+     "void_left_unwritten": 1,
+     "rule_cracked_deepslate_tiles": 10,
+     "protected_rottable_cells": 9,
+     "rot_then_restored_by_overlay": 1
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 39
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "g24",
+   "attempt": 1,
+   "command_pos": [
+    1260,
+    -61,
+    352
+   ],
+   "place_output": "Generated jigsaw at 1260, -60, 352",
+   "rotation": 90,
+   "origin": [
+    1262,
+    -61,
+    347
+   ],
+   "match": 157,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "void_left_unwritten": 1,
+     "rot_removed_decorative": 2,
+     "rule_cracked_deepslate_tiles": 14,
+     "protected_rottable_cells": 9,
+     "rule_air": 1,
+     "rot_then_restored_by_overlay": 1
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 39
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "g24",
+   "attempt": 2,
+   "command_pos": [
+    1260,
+    -61,
+    404
+   ],
+   "place_output": "Generated jigsaw at 1260, -60, 404",
+   "rotation": 90,
+   "origin": [
+    1262,
+    -61,
+    399
+   ],
+   "match": 157,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "rot_removed_decorative": 8,
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "void_left_unwritten": 1,
+     "rule_cracked_deepslate_tiles": 10,
+     "rot_then_restored_by_overlay": 1,
+     "protected_rottable_cells": 9,
+     "rule_air": 1
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 39
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "g24",
+   "attempt": 3,
+   "command_pos": [
+    1260,
+    -61,
+    456
+   ],
+   "place_output": "Generated jigsaw at 1260, -60, 456",
+   "rotation": 180,
+   "origin": [
+    1265,
+    -61,
+    458
+   ],
+   "match": 158,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "void_left_unwritten": 1,
+     "rot_removed_decorative": 4,
+     "rule_cracked_deepslate_tiles": 5,
+     "protected_rottable_cells": 9,
+     "rot_then_restored_by_overlay": 2
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 39
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "g24",
+   "attempt": 4,
+   "command_pos": [
+    1260,
+    -61,
+    508
+   ],
+   "place_output": "Generated jigsaw at 1260, -60, 508",
+   "rotation": 90,
+   "origin": [
+    1262,
+    -61,
+    503
+   ],
+   "match": 158,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "void_left_unwritten": 1,
+     "rot_removed_decorative": 8,
+     "rule_cracked_deepslate_tiles": 10,
+     "protected_rottable_cells": 9
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 39
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "g24",
+   "attempt": 5,
+   "command_pos": [
+    1260,
+    -61,
+    560
+   ],
+   "place_output": "Generated jigsaw at 1260, -60, 560",
+   "rotation": 90,
+   "origin": [
+    1262,
+    -61,
+    555
+   ],
+   "match": 157,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "rot_removed_decorative": 8,
+     "void_left_unwritten": 1,
+     "rule_cracked_deepslate_tiles": 5,
+     "protected_rottable_cells": 9,
+     "rot_then_restored_by_overlay": 1,
+     "rule_air": 1
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 39
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "g24",
+   "attempt": 6,
+   "command_pos": [
+    1260,
+    -61,
+    612
+   ],
+   "place_output": "Generated jigsaw at 1260, -60, 612",
+   "rotation": 0,
+   "origin": [
+    1255,
+    -61,
+    610
+   ],
+   "match": 158,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "rot_removed_decorative": 7,
+     "void_left_unwritten": 1,
+     "rule_cracked_deepslate_tiles": 8,
+     "protected_rottable_cells": 9
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 39
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "g24",
+   "attempt": 7,
+   "command_pos": [
+    1260,
+    -61,
+    664
+   ],
+   "place_output": "Generated jigsaw at 1260, -60, 664",
+   "rotation": 270,
+   "origin": [
+    1258,
+    -61,
+    669
+   ],
+   "match": 158,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "rot_removed_decorative": 7,
+     "void_left_unwritten": 1,
+     "rule_cracked_deepslate_tiles": 9,
+     "protected_rottable_cells": 9,
+     "rot_then_restored_by_overlay": 1
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 39
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "f24",
+   "attempt": 0,
+   "command_pos": [
+    1340,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 1340, -60, 300",
+   "rotation": 180,
+   "origin": [
+    1345,
+    -61,
+    302
+   ],
+   "match": 158,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "rot_removed_decorative": 8,
+     "void_left_unwritten": 1,
+     "protected_rottable_cells": 9,
+     "rot_removed_protected": 1,
+     "rule_cracked_deepslate_tiles": 4
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       3,
+       6,
+       3
+      ],
+      "world": [
+       1342,
+       -55,
+       299
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "f24",
+   "attempt": 1,
+   "command_pos": [
+    1340,
+    -61,
+    352
+   ],
+   "place_output": "Generated jigsaw at 1340, -60, 352",
+   "rotation": 0,
+   "origin": [
+    1335,
+    -61,
+    350
+   ],
+   "match": 158,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "void_left_unwritten": 1,
+     "rot_removed_decorative": 4,
+     "rule_cracked_deepslate_tiles": 8,
+     "protected_rottable_cells": 9,
+     "rot_removed_protected": 3
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       3,
+       6,
+       3
+      ],
+      "world": [
+       1338,
+       -55,
+       353
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       3,
+       14,
+       1
+      ],
+      "world": [
+       1338,
+       -47,
+       351
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       4,
+       14,
+       3
+      ],
+      "world": [
+       1339,
+       -47,
+       353
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 36
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "f24",
+   "attempt": 2,
+   "command_pos": [
+    1340,
+    -61,
+    404
+   ],
+   "place_output": "Generated jigsaw at 1340, -60, 404",
+   "rotation": 90,
+   "origin": [
+    1342,
+    -61,
+    399
+   ],
+   "match": 157,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "rot_removed_decorative": 7,
+     "void_left_unwritten": 1,
+     "rule_cracked_deepslate_tiles": 7,
+     "protected_rottable_cells": 9,
+     "rule_air": 1
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 39
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "f24",
+   "attempt": 3,
+   "command_pos": [
+    1340,
+    -61,
+    456
+   ],
+   "place_output": "Generated jigsaw at 1340, -60, 456",
+   "rotation": 90,
+   "origin": [
+    1342,
+    -61,
+    451
+   ],
+   "match": 158,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "void_left_unwritten": 1,
+     "rot_removed_decorative": 7,
+     "rule_cracked_deepslate_tiles": 9,
+     "protected_rottable_cells": 9
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 39
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "f24",
+   "attempt": 4,
+   "command_pos": [
+    1340,
+    -61,
+    508
+   ],
+   "place_output": "Generated jigsaw at 1340, -60, 508",
+   "rotation": 90,
+   "origin": [
+    1342,
+    -61,
+    503
+   ],
+   "match": 157,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "rot_removed_decorative": 6,
+     "void_left_unwritten": 1,
+     "rule_cracked_deepslate_tiles": 8,
+     "protected_rottable_cells": 9,
+     "rule_air": 1,
+     "rot_removed_protected": 2
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       4,
+       14,
+       3
+      ],
+      "world": [
+       1339,
+       -47,
+       507
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       2,
+       14,
+       4
+      ],
+      "world": [
+       1338,
+       -47,
+       505
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 37
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "f24",
+   "attempt": 5,
+   "command_pos": [
+    1340,
+    -61,
+    560
+   ],
+   "place_output": "Generated jigsaw at 1340, -60, 560",
+   "rotation": 180,
+   "origin": [
+    1345,
+    -61,
+    562
+   ],
+   "match": 158,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "void_left_unwritten": 1,
+     "rot_removed_decorative": 8,
+     "rule_cracked_deepslate_tiles": 5,
+     "protected_rottable_cells": 9,
+     "rot_removed_protected": 2
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       3,
+       13,
+       2
+      ],
+      "world": [
+       1342,
+       -48,
+       560
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "ladder_attach"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       3,
+       14,
+       1
+      ],
+      "world": [
+       1342,
+       -47,
+       561
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 37
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "f24",
+   "attempt": 6,
+   "command_pos": [
+    1340,
+    -61,
+    612
+   ],
+   "place_output": "Generated jigsaw at 1340, -60, 612",
+   "rotation": 90,
+   "origin": [
+    1342,
+    -61,
+    607
+   ],
+   "match": 158,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "rot_removed_decorative": 5,
+     "void_left_unwritten": 1,
+     "rule_cracked_deepslate_tiles": 9,
+     "rot_removed_protected": 1,
+     "protected_rottable_cells": 9
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       2,
+       6,
+       3
+      ],
+      "world": [
+       1339,
+       -55,
+       609
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "f24",
+   "attempt": 7,
+   "command_pos": [
+    1340,
+    -61,
+    664
+   ],
+   "place_output": "Generated jigsaw at 1340, -60, 664",
+   "rotation": 180,
+   "origin": [
+    1345,
+    -61,
+    666
+   ],
+   "match": 158,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "rot_removed_decorative": 6,
+     "void_left_unwritten": 1,
+     "rule_cracked_deepslate_tiles": 7,
+     "rot_removed_protected": 1,
+     "protected_rottable_cells": 9
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       2,
+       6,
+       3
+      ],
+      "world": [
+       1343,
+       -55,
+       663
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "f24",
+   "attempt": 8,
+   "command_pos": [
+    1340,
+    -61,
+    716
+   ],
+   "place_output": "Generated jigsaw at 1340, -60, 716",
+   "rotation": 270,
+   "origin": [
+    1338,
+    -61,
+    721
+   ],
+   "match": 158,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 133,
+     "cells": 319,
+     "void_left_unwritten": 1,
+     "rot_removed_decorative": 8,
+     "rule_cracked_deepslate_tiles": 7,
+     "protected_rottable_cells": 9
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 39,
+    "protected_non_air_present": 39
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "g24",
+   "attempt": 0,
+   "command_pos": [
+    1420,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 1420, -60, 300",
+   "rotation": 270,
+   "origin": [
+    1416,
+    -61,
+    306
+   ],
+   "match": 55,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rule_cracked_deepslate_bricks": 38,
+     "void_left_unwritten": 2,
+     "rot_removed_decorative": 11,
+     "protected_rottable_cells": 17,
+     "rot_then_restored_by_overlay": 1,
+     "rule_cracked_deepslate_tiles": 13
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "g24",
+   "attempt": 1,
+   "command_pos": [
+    1420,
+    -61,
+    354
+   ],
+   "place_output": "Generated jigsaw at 1420, -60, 354",
+   "rotation": 0,
+   "origin": [
+    1414,
+    -61,
+    350
+   ],
+   "match": 55,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 49,
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rot_removed_decorative": 8,
+     "void_left_unwritten": 2,
+     "protected_rottable_cells": 17,
+     "rule_cracked_deepslate_tiles": 8
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "g24",
+   "attempt": 2,
+   "command_pos": [
+    1420,
+    -61,
+    408
+   ],
+   "place_output": "Generated jigsaw at 1420, -60, 408",
+   "rotation": 270,
+   "origin": [
+    1417,
+    -61,
+    414
+   ],
+   "match": 55,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 26,
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rot_removed_decorative": 18,
+     "void_left_unwritten": 2,
+     "protected_rottable_cells": 17,
+     "rule_cracked_deepslate_tiles": 6
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "g24",
+   "attempt": 3,
+   "command_pos": [
+    1420,
+    -61,
+    462
+   ],
+   "place_output": "Generated jigsaw at 1420, -60, 462",
+   "rotation": 0,
+   "origin": [
+    1414,
+    -61,
+    458
+   ],
+   "match": 54,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rot_removed_decorative": 6,
+     "rule_cracked_deepslate_bricks": 38,
+     "void_left_unwritten": 2,
+     "rule_cracked_deepslate_tiles": 16,
+     "rot_then_restored_by_overlay": 2,
+     "protected_rottable_cells": 17,
+     "rule_air": 1
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "g24",
+   "attempt": 4,
+   "command_pos": [
+    1420,
+    -61,
+    516
+   ],
+   "place_output": "Generated jigsaw at 1420, -60, 516",
+   "rotation": 90,
+   "origin": [
+    1423,
+    -61,
+    510
+   ],
+   "match": 55,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 49,
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rule_cracked_deepslate_tiles": 10,
+     "void_left_unwritten": 2,
+     "protected_rottable_cells": 17,
+     "rot_removed_decorative": 7,
+     "rot_then_restored_by_overlay": 1
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "g24",
+   "attempt": 5,
+   "command_pos": [
+    1420,
+    -61,
+    570
+   ],
+   "place_output": "Generated jigsaw at 1420, -60, 570",
+   "rotation": 90,
+   "origin": [
+    1424,
+    -61,
+    564
+   ],
+   "match": 55,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rule_cracked_deepslate_bricks": 38,
+     "void_left_unwritten": 2,
+     "rule_cracked_deepslate_tiles": 11,
+     "rot_removed_decorative": 12,
+     "protected_rottable_cells": 17,
+     "rot_then_restored_by_overlay": 1
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "g24",
+   "attempt": 6,
+   "command_pos": [
+    1420,
+    -61,
+    624
+   ],
+   "place_output": "Generated jigsaw at 1420, -60, 624",
+   "rotation": 270,
+   "origin": [
+    1416,
+    -61,
+    630
+   ],
+   "match": 55,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rule_cracked_deepslate_bricks": 47,
+     "void_left_unwritten": 2,
+     "rot_removed_decorative": 8,
+     "protected_rottable_cells": 17,
+     "rot_then_restored_by_overlay": 1,
+     "rule_cracked_deepslate_tiles": 12
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "g24",
+   "attempt": 7,
+   "command_pos": [
+    1420,
+    -61,
+    678
+   ],
+   "place_output": "Generated jigsaw at 1420, -60, 678",
+   "rotation": 270,
+   "origin": [
+    1417,
+    -61,
+    684
+   ],
+   "match": 55,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rule_cracked_deepslate_bricks": 40,
+     "rot_removed_decorative": 10,
+     "void_left_unwritten": 2,
+     "protected_rottable_cells": 17,
+     "rot_then_restored_by_overlay": 3,
+     "rule_cracked_deepslate_tiles": 11
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "g24",
+   "attempt": 8,
+   "command_pos": [
+    1420,
+    -61,
+    732
+   ],
+   "place_output": "Generated jigsaw at 1420, -60, 732",
+   "rotation": 180,
+   "origin": [
+    1426,
+    -61,
+    736
+   ],
+   "match": 55,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 42,
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rule_cracked_deepslate_tiles": 7,
+     "void_left_unwritten": 2,
+     "protected_rottable_cells": 17,
+     "rot_removed_decorative": 2
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "f24",
+   "attempt": 0,
+   "command_pos": [
+    1500,
+    -61,
+    300
+   ],
+   "place_output": "Generated jigsaw at 1500, -60, 300",
+   "rotation": 0,
+   "origin": [
+    1494,
+    -61,
+    297
+   ],
+   "match": 55,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rule_cracked_deepslate_bricks": 44,
+     "void_left_unwritten": 2,
+     "rot_removed_decorative": 9,
+     "protected_rottable_cells": 17,
+     "rule_cracked_deepslate_tiles": 6
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "f24",
+   "attempt": 1,
+   "command_pos": [
+    1500,
+    -61,
+    354
+   ],
+   "place_output": "Generated jigsaw at 1500, -60, 354",
+   "rotation": 0,
+   "origin": [
+    1494,
+    -61,
+    351
+   ],
+   "match": 55,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "rule_cracked_deepslate_bricks": 38,
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rot_removed_decorative": 12,
+     "void_left_unwritten": 2,
+     "protected_rottable_cells": 17,
+     "rule_cracked_deepslate_tiles": 8
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "f24",
+   "attempt": 2,
+   "command_pos": [
+    1500,
+    -61,
+    408
+   ],
+   "place_output": "Generated jigsaw at 1500, -60, 408",
+   "rotation": 180,
+   "origin": [
+    1506,
+    -61,
+    411
+   ],
+   "match": 55,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rule_cracked_deepslate_tiles": 8,
+     "rule_cracked_deepslate_bricks": 37,
+     "void_left_unwritten": 2,
+     "protected_rottable_cells": 17,
+     "rot_removed_decorative": 9
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "f24",
+   "attempt": 3,
+   "command_pos": [
+    1500,
+    -61,
+    462
+   ],
+   "place_output": "Generated jigsaw at 1500, -60, 462",
+   "rotation": 0,
+   "origin": [
+    1494,
+    -61,
+    459
+   ],
+   "match": 55,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rule_cracked_deepslate_bricks": 35,
+     "void_left_unwritten": 2,
+     "rot_removed_decorative": 11,
+     "rule_cracked_deepslate_tiles": 11,
+     "protected_rottable_cells": 17
+    },
+    "protected_lost": [],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 38
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "f24",
+   "attempt": 4,
+   "command_pos": [
+    1500,
+    -61,
+    516
+   ],
+   "place_output": "Generated jigsaw at 1500, -60, 516",
+   "rotation": 180,
+   "origin": [
+    1506,
+    -61,
+    520
+   ],
+   "match": 54,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rule_cracked_deepslate_bricks": 38,
+     "rule_cracked_deepslate_tiles": 14,
+     "void_left_unwritten": 2,
+     "protected_rottable_cells": 17,
+     "rot_removed_decorative": 5,
+     "rot_removed_protected": 1,
+     "rule_air": 1
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       2,
+       2,
+       1
+      ],
+      "world": [
+       1504,
+       -59,
+       519
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 37
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "f24",
+   "attempt": 5,
+   "command_pos": [
+    1500,
+    -61,
+    570
+   ],
+   "place_output": "Generated jigsaw at 1500, -60, 570",
+   "rotation": 270,
+   "origin": [
+    1497,
+    -61,
+    576
+   ],
+   "match": 55,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rule_cracked_deepslate_bricks": 33,
+     "void_left_unwritten": 2,
+     "rule_cracked_deepslate_tiles": 11,
+     "protected_rottable_cells": 17,
+     "rot_removed_decorative": 3,
+     "rot_removed_protected": 1
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       4,
+       8,
+       5
+      ],
+      "world": [
+       1502,
+       -53,
+       572
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 37
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "f24",
+   "attempt": 6,
+   "command_pos": [
+    1500,
+    -61,
+    624
+   ],
+   "place_output": "Generated jigsaw at 1500, -60, 624",
+   "rotation": 90,
+   "origin": [
+    1503,
+    -61,
+    618
+   ],
+   "match": 55,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "decorative_rottable_cells": 179,
+     "cells": 284,
+     "rule_cracked_deepslate_bricks": 40,
+     "void_left_unwritten": 2,
+     "rot_removed_protected": 4,
+     "protected_rottable_cells": 17,
+     "rot_removed_decorative": 9,
+     "rule_cracked_deepslate_tiles": 11
+    },
+    "protected_lost": [
+     {
+      "pos": [
+       5,
+       1,
+       3
+      ],
+      "world": [
+       1500,
+       -60,
+       623
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "ladder_attach"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       1,
+       2,
+       2
+      ],
+      "world": [
+       1501,
+       -59,
+       619
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:air",
+      "role": [
+       "railing"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       4,
+       8,
+       4
+      ],
+      "world": [
+       1499,
+       -53,
+       622
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     },
+     {
+      "pos": [
+       2,
+       8,
+       5
+      ],
+      "world": [
+       1498,
+       -53,
+       620
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:air",
+      "role": [
+       "walk_floor"
+      ],
+      "cause": "block_rot"
+     }
+    ],
+    "unexplained": [],
+    "unexplained_count": 0,
+    "protected_cells": 38,
+    "protected_non_air_present": 34
+   }
+  }
+ ]
+}

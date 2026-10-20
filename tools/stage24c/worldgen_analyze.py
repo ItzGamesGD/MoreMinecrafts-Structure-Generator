@@ -89,9 +89,9 @@ def classify(expected, got):
     return "replaced_by_other"
 
 
-def analyse_seed(seed, src_root, variant="candidate"):
+def analyse_seed(seed, src_root, variant="candidate", manifests=None):
     vm = json.loads((OUT / f"worldgen/manifest-{seed}-vanilla.json").read_text())
-    cm = json.loads((OUT / f"worldgen/manifest-{seed}-{variant}.json").read_text())
+    cm = json.loads(((manifests or OUT / "worldgen") / f"manifest-{seed}-{variant}.json").read_text())
     if not vm.get("cities") or not cm.get("cities"):
         return None
     vp, cp = vm["cities"][0]["pieces"], cm["cities"][0]["pieces"]
@@ -241,16 +241,18 @@ def main():
     ap.add_argument("--src", default=None)
     ap.add_argument("--out", default="worldgen-analysis.json")
     ap.add_argument("--variant", default="candidate")
+    ap.add_argument("--manifests", default=None, help="directory holding the variant manifests (default stage-24c/worldgen)")
+    ap.add_argument("--out-dir", default=None, help="directory for --out (default stage-24c/worldgen)")
     a = ap.parse_args()
     src = Path(a.src) if a.src else S24B
     out = []
     for s in a.seeds:
-        r = analyse_seed(s, src, a.variant)
+        r = analyse_seed(s, src, a.variant, Path(a.manifests) if a.manifests else None)
         if r:
             out.append(r)
             mods = Counter(m["module"] for m in r["modules"])
             print(s, "same" if r["placements_identical_to_vanilla"] else "DIFF@%s" % r["first_placement_diff_index"], dict(mods), flush=True)
-    (OUT / "worldgen" / a.out).write_text(json.dumps(out, indent=1))
+    (Path(a.out_dir) if a.out_dir else OUT / "worldgen").joinpath(a.out).write_text(json.dumps(out, indent=1))
 
 
 if __name__ == "__main__":
