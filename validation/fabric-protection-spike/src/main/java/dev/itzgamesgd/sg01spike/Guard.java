@@ -1,7 +1,10 @@
 package dev.itzgamesgd.sg01spike;
 
 import it.unimi.dsi.fastutil.longs.LongSet;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 import net.minecraft.core.BlockPos;
@@ -25,134 +28,147 @@ public final class Guard {
     /** Test-only fault injection (SG01_FAULT): exercises the "structure data unavailable" paths on demand. */
     public enum Fault { NONE, OUT_OF_RANGE, STATUS_TOO_HIGH, MISSING_START }
 
-    public static final Mode MODE = parseMode();
-    public static final Fault FAULT = parseFault();
+    /**
+     * Experiment-only fixture (SG01_FIXTURE), used only for causal attribution and never shipped. NO_GEODE cancels every geode placement
+     * without any guard, so the remaining damage can be attributed to monster rooms alone.
+     */
+    public enum Fixture { NONE, NO_GEODE }
+
+    /** Experiment-only refinement (SG01_REFINE). PRECHECK replicates vanilla's read-only precheck per room variant. OFF is the N7-A behaviour. */
+    public enum Refine { OFF, PRECHECK, HYBRID }
+
+    public static final Mode MODE = parseEnum("sg01.guard.mode", "SG01_GUARD_MODE", Mode.class, Mode.ENFORCE, true);
+    public static final Fault FAULT = parseEnum("sg01.fault", "SG01_FAULT", Fault.class, Fault.NONE, false);
+    public static final Fixture FIXTURE = parseEnum("sg01.fixture", "SG01_FIXTURE", Fixture.class, Fixture.NONE, false);
+    public static final Refine REFINE = parseEnum("sg01.refine", "SG01_REFINE", Refine.class, Refine.OFF, false);
+    /** Experiment-only oracle (SG01_ORACLE=monster_room): vanilla runs unguarded and the outcome is classified. Never cancels. */
+    public static final boolean ORACLE_MONSTER_ROOM = "monster_room".equalsIgnoreCase(env("sg01.oracle", "SG01_ORACLE"));
+    /** Experiment-only (SG01_SHADOW=1, HYBRID only): also checks that the broad phase never rejects an attempt the refined decision would cancel. */
+    public static final boolean SHADOW = "1".equals(env("sg01.shadow", "SG01_SHADOW"));
     public static final GuardStats GEODE = new GuardStats("geode");
     public static final GuardStats MONSTER_ROOM = new GuardStats("monster_room");
+
+    /** Test-only (SG01_FEATURES = geode | monster_room | both | none): enable the decision for one hook at a time to prove each hook independently. */
+    private static final String FEATURES = env("sg01.features", "SG01_FEATURES") == null ? "both" : env("sg01.features", "SG01_FEATURES");
 
     private Guard() {
     }
 
-    private static Mode parseMode() {
-        String value = System.getProperty("sg01.guard.mode", System.getenv("SG01_GUARD_MODE"));
-        if (value == null || value.isBlank() || value.equalsIgnoreCase("enforce")) return Mode.ENFORCE;
-        if (value.equalsIgnoreCase("observe")) return Mode.OBSERVE;
-        throw new IllegalStateException("SG protection spike: unknown guard mode '" + value + "' (use observe or enforce)");
+    private static String env(String property, String variable) {
+        String value = System.getProperty(property, System.getenv(variable));
+        return value == null || value.isBlank() ? null : value.trim();
     }
 
-    /** Test-only (SG01_FEATURES = geode | monster_room | both): enable the decision for one hook at a time to prove each hook independently. */
-    private static final String FEATURES = System.getProperty("sg01.features", System.getenv("SG01_FEATURES") == null ? "both" : System.getenv("SG01_FEATURES"));
+    private static <E extends Enum<E>> E parseEnum(String property, String variable, Class<E> type, E fallback, boolean guardModeNames) {
+        String value = env(property, variable);
+        if (value == null) return fallback;
+        if (guardModeNames && value.equalsIgnoreCase("enforce")) return Enum.valueOf(type, "ENFORCE");
+        if (guardModeNames && value.equalsIgnoreCase("observe")) return Enum.valueOf(type, "OBSERVE");
+        try {
+            return Enum.valueOf(type, value.toUpperCase(Locale.ROOT));
+        } catch (IllegalArgumentException e) {
+            throw new IllegalStateException("SG protection spike: unknown value '" + value + "' for " + variable + " (" + type.getSimpleName() + ")", e);
+        }
+    }
 
     private static boolean enabled(String feature) {
         return FEATURES.equals("both") || FEATURES.equals(feature);
     }
 
-    private static Fault parseFault() {
-        String value = System.getProperty("sg01.fault", System.getenv("SG01_FAULT"));
-        if (value == null || value.isBlank() || value.equalsIgnoreCase("none")) return Fault.NONE;
-        return Fault.valueOf(value.toUpperCase(java.util.Locale.ROOT));
-    }
-
     /** @return true if the feature instance must be cancelled (always false in OBSERVE mode, where the decision is only recorded). */
     public static boolean shouldCancel(GuardStats stats, WorldGenLevel level, BlockPos origin, BoundingBox reach) {
+        return shouldCancel(stats, level, origin, List.of(reach));
+    }
+
+    /**
+     * @param reaches every box the feature could write into; an empty list means vanilla writes nothing, so there is nothing to decide.
+     * @return true if the feature instance must be cancelled (never true in OBSERVE mode).
+     */
+    public static boolean shouldCancel(GuardStats stats, WorldGenLevel level, BlockPos origin, List<BoundingBox> reaches) {
+        stats.attempts.incrementAndGet();
+        if (reaches.isEmpty()) {
+            stats.noWrite.incrementAndGet();
+            return false;
+        }
+        if (!enabled(stats.feature)) return false;
+        if (!(level instanceof WorldGenRegion region)) {
+            stats.notWorldgen.incrementAndGet();
+            return false;
+        }
+        Probe.enter();
+        try {
+            return decide(stats, region, origin, reaches);
+        } finally {
+            Probe.exit();
+        }
+    }
+
+    /**
+     * HYBRID decision (N7-A3). The broad phase is the N7-A reach: if no protected piece intersects it, no variant of the refined reach can
+     * intersect one either (every refined reach is a subset of it), so the narrow precheck is skipped. Otherwise the refined decision is taken.
+     * Decisions are identical to PRECHECK; this is checked by SHADOW.
+     */
+    public static boolean shouldCancelHybrid(GuardStats stats, WorldGenLevel level, BlockPos origin, BoundingBox broad,
+                                             java.util.function.Supplier<List<BoundingBox>> narrow) {
         stats.attempts.incrementAndGet();
         if (!enabled(stats.feature)) return false;
         if (!(level instanceof WorldGenRegion region)) {
             stats.notWorldgen.incrementAndGet();
             return false;
         }
-        Set<Structure> protectedSet = ProtectionConfig.protectedStructures();
-        ChunkPos centre = region.getCenter();
-        Set<Long> seenStarts = new HashSet<>();
-        String verdict = null;
-        String detail = "";
-        boolean sawReference = false;
-        int minCx = Math.max(reach.minX() >> 4, centre.x() - 1);
-        int maxCx = Math.min(reach.maxX() >> 4, centre.x() + 1);
-        int minCz = Math.max(reach.minZ() >> 4, centre.z() - 1);
-        int maxCz = Math.min(reach.maxZ() >> 4, centre.z() + 1);
-        scan:
-        for (int cx = minCx; cx <= maxCx; cx++) {
-            for (int cz = minCz; cz <= maxCz; cz++) {
-                if (!region.hasChunk(cx, cz)) {
-                    verdict = "unavailable";
-                    detail = "chunk " + cx + "," + cz + " outside the step's cache";
-                    break scan;
+        Probe.enter();
+        try {
+            boolean broadHit = scan(region, List.of(broad), false).verdict != null;
+            if (!broadHit) {
+                stats.hybridSkip.incrementAndGet();
+                if (SHADOW) {
+                    stats.shadowChecks.incrementAndGet();
+                    if (collides(level, narrow.get())) stats.shadowViolations.incrementAndGet();
                 }
-                ChunkAccess chunk;
-                Map<Structure, LongSet> references;
-                try {
-                    chunk = region.getChunk(cx, cz, ChunkStatus.STRUCTURE_REFERENCES);
-                    references = chunk.getAllReferences();
-                } catch (RuntimeException e) {
-                    verdict = "unavailable";
-                    detail = "references of chunk " + cx + "," + cz + ": " + e.getClass().getSimpleName();
-                    break scan;
-                }
-                for (Map.Entry<Structure, LongSet> entry : references.entrySet()) {
-                    if (!protectedSet.contains(entry.getKey())) continue;
-                    sawReference = true;
-                    if (FAULT == Fault.OUT_OF_RANGE && !region.hasChunk(centre.x() + 9, centre.z())) {
-                        verdict = "unavailable";
-                        detail = "[fault-injection] chunk at distance 9 is outside the step's chunk cache (hasChunk=false)";
-                        break scan;
-                    }
-                    if (FAULT == Fault.STATUS_TOO_HIGH) {
-                        try {
-                            region.getChunk(centre.x() + 2, centre.z(), ChunkStatus.STRUCTURE_REFERENCES);
-                            detail = "[fault-injection] getChunk at distance 2 returned a chunk (NOT expected)";
-                        } catch (RuntimeException e) {
-                            verdict = "unavailable";
-                            detail = "[fault-injection] getChunk(distance 2, STRUCTURE_REFERENCES) threw " + e.getClass().getSimpleName() + " instead of generating";
-                            break scan;
-                        }
-                    }
-                    for (long key : entry.getValue()) {
-                        if (!seenStarts.add(key)) continue;
-                        ChunkPos startPos = ChunkPos.unpack(key);
-                        if (centre.getChessboardDistance(startPos) > ChunkStatus.MAX_STRUCTURE_DISTANCE || !region.hasChunk(startPos.x(), startPos.z())) {
-                            verdict = "unavailable";
-                            detail = "start chunk " + startPos.x() + "," + startPos.z() + " beyond readable distance";
-                            break scan;
-                        }
-                        StructureStart start;
-                        try {
-                            start = region.getChunk(startPos.x(), startPos.z(), ChunkStatus.STRUCTURE_STARTS).getStartForStructure(entry.getKey());
-                        } catch (RuntimeException e) {
-                            verdict = "unavailable";
-                            detail = "start chunk " + startPos.x() + "," + startPos.z() + ": " + e.getClass().getSimpleName();
-                            break scan;
-                        }
-                        if (FAULT == Fault.MISSING_START) start = null;
-                        if (start == null || !start.isValid()) {
-                            verdict = "unavailable";
-                            detail = (FAULT == Fault.MISSING_START ? "[fault-injection] " : "") + "referenced start at " + startPos.x() + "," + startPos.z() + " is "
-                                    + (start == null ? "missing" : "invalid");
-                            break scan;
-                        }
-                        int index = 0;
-                        for (StructurePiece piece : start.getPieces()) {
-                            if (piece.getBoundingBox().intersects(reach)) {
-                                verdict = "collision";
-                                detail = "start " + startPos.x() + "," + startPos.z() + " piece #" + index + " " + piece.getBoundingBox();
-                                break scan;
-                            }
-                            index++;
-                        }
-                    }
-                }
+                return false;
             }
+            List<BoundingBox> reaches = narrow.get();
+            if (reaches.isEmpty()) {
+                stats.noWrite.incrementAndGet();
+                return false;
+            }
+            return decide(stats, region, origin, reaches);
+        } finally {
+            Probe.exit();
         }
-        if (verdict == null) {
-            if (!sawReference) stats.fastPath.incrementAndGet();
+    }
+
+    /** Side-effect-free decision for the oracle: true if the reaches intersect a protected piece or the structure data is unavailable. */
+    public static boolean collides(WorldGenLevel level, List<BoundingBox> reaches) {
+        if (reaches.isEmpty() || !(level instanceof WorldGenRegion region)) return false;
+        Probe.enter();
+        try {
+            return scan(region, reaches, false).verdict != null;
+        } finally {
+            Probe.exit();
+        }
+    }
+
+    /** Protected piece boxes intersecting {@code box} (for the oracle). Returns null if the structure data is unavailable. */
+    static List<BoundingBox> pieceBoxes(WorldGenRegion region, BoundingBox box) {
+        Finding f = scan(region, List.of(box), true);
+        return "unavailable".equals(f.verdict) ? null : f.hits;
+    }
+
+    private static boolean decide(GuardStats stats, WorldGenRegion region, BlockPos origin, List<BoundingBox> reaches) {
+        Finding f = scan(region, reaches, false);
+        ChunkPos centre = region.getCenter();
+        if (f.verdict == null) {
+            if (f.sawReference) stats.clear.incrementAndGet();
+            else stats.fastPath.incrementAndGet();
             return false;
         }
-        if (verdict.equals("collision")) stats.collisions.incrementAndGet();
+        if (f.verdict.equals("collision")) stats.collisions.incrementAndGet();
         else stats.unavailable.incrementAndGet();
-        stats.event(String.format("%s origin=%d,%d,%d centre=%d,%d reach=%s -> %s (%s)%s", stats.feature, origin.getX(), origin.getY(), origin.getZ(),
-                centre.x(), centre.z(), reach, verdict, detail, MODE == Mode.ENFORCE ? " CANCELLED" : " observed"));
-        if (verdict.equals("unavailable")) {
-            SpikeMod.LOGGER.warn("SG_SPIKE unavailable structure data for {} at {}: {} (instance {})", stats.feature, origin, detail,
+        stats.event(String.format("%s origin=%d,%d,%d centre=%d,%d reaches=%s -> %s (%s)%s", stats.feature, origin.getX(), origin.getY(), origin.getZ(),
+                centre.x(), centre.z(), reaches, f.verdict, f.detail, MODE == Mode.ENFORCE ? " CANCELLED" : " observed"));
+        if (f.verdict.equals("unavailable")) {
+            SpikeMod.LOGGER.warn("SG_SPIKE unavailable structure data for {} at {}: {} (instance {})", stats.feature, origin, f.detail,
                     MODE == Mode.ENFORCE ? "cancelled" : "observed only");
         }
         if (MODE == Mode.ENFORCE) {
@@ -161,5 +177,96 @@ public final class Guard {
         }
         stats.wouldCancel.incrementAndGet();
         return false;
+    }
+
+    private record Finding(String verdict, String detail, List<BoundingBox> hits, boolean sawReference) {
+    }
+
+    /**
+     * Walks the references of the chunks overlapped by the reach boxes and checks every referenced start's pieces.
+     * With {@code collectAll} false it stops at the first collision; with true it returns every piece box that intersects a reach.
+     */
+    private static Finding scan(WorldGenRegion region, List<BoundingBox> reaches, boolean collectAll) {
+        int minX = Integer.MAX_VALUE;
+        int maxX = Integer.MIN_VALUE;
+        int minZ = Integer.MAX_VALUE;
+        int maxZ = Integer.MIN_VALUE;
+        for (BoundingBox r : reaches) {
+            minX = Math.min(minX, r.minX());
+            maxX = Math.max(maxX, r.maxX());
+            minZ = Math.min(minZ, r.minZ());
+            maxZ = Math.max(maxZ, r.maxZ());
+        }
+        Set<Structure> protectedSet = ProtectionConfig.protectedStructures();
+        ChunkPos centre = region.getCenter();
+        Set<Long> seenStarts = new HashSet<>();
+        List<BoundingBox> hits = new ArrayList<>();
+        boolean sawReference = false;
+        int minCx = Math.max(minX >> 4, centre.x() - 1);
+        int maxCx = Math.min(maxX >> 4, centre.x() + 1);
+        int minCz = Math.max(minZ >> 4, centre.z() - 1);
+        int maxCz = Math.min(maxZ >> 4, centre.z() + 1);
+        for (int cx = minCx; cx <= maxCx; cx++) {
+            for (int cz = minCz; cz <= maxCz; cz++) {
+                if (!region.hasChunk(cx, cz)) {
+                    return new Finding("unavailable", "chunk " + cx + "," + cz + " outside the step's cache", hits, sawReference);
+                }
+                ChunkAccess chunk;
+                Map<Structure, LongSet> references;
+                try {
+                    chunk = region.getChunk(cx, cz, ChunkStatus.STRUCTURE_REFERENCES);
+                    references = chunk.getAllReferences();
+                } catch (RuntimeException e) {
+                    return new Finding("unavailable", "references of chunk " + cx + "," + cz + ": " + e.getClass().getSimpleName(), hits, sawReference);
+                }
+                for (Map.Entry<Structure, LongSet> entry : references.entrySet()) {
+                    if (!protectedSet.contains(entry.getKey())) continue;
+                    sawReference = true;
+                    if (FAULT == Fault.OUT_OF_RANGE && !region.hasChunk(centre.x() + 9, centre.z())) {
+                        return new Finding("unavailable", "[fault-injection] chunk at distance 9 is outside the step's chunk cache (hasChunk=false)", hits, sawReference);
+                    }
+                    if (FAULT == Fault.STATUS_TOO_HIGH) {
+                        try {
+                            region.getChunk(centre.x() + 2, centre.z(), ChunkStatus.STRUCTURE_REFERENCES);
+                        } catch (RuntimeException e) {
+                            return new Finding("unavailable", "[fault-injection] getChunk(distance 2, STRUCTURE_REFERENCES) threw " + e.getClass().getSimpleName()
+                                    + " instead of generating", hits, sawReference);
+                        }
+                    }
+                    for (long key : entry.getValue()) {
+                        if (!seenStarts.add(key)) continue;
+                        ChunkPos startPos = ChunkPos.unpack(key);
+                        if (centre.getChessboardDistance(startPos) > ChunkStatus.MAX_STRUCTURE_DISTANCE || !region.hasChunk(startPos.x(), startPos.z())) {
+                            return new Finding("unavailable", "start chunk " + startPos.x() + "," + startPos.z() + " beyond readable distance", hits, sawReference);
+                        }
+                        StructureStart start;
+                        try {
+                            start = region.getChunk(startPos.x(), startPos.z(), ChunkStatus.STRUCTURE_STARTS).getStartForStructure(entry.getKey());
+                        } catch (RuntimeException e) {
+                            return new Finding("unavailable", "start chunk " + startPos.x() + "," + startPos.z() + ": " + e.getClass().getSimpleName(), hits, sawReference);
+                        }
+                        if (FAULT == Fault.MISSING_START) start = null;
+                        if (start == null || !start.isValid()) {
+                            String detail = (FAULT == Fault.MISSING_START ? "[fault-injection] " : "") + "referenced start at " + startPos.x() + "," + startPos.z()
+                                    + " is " + (start == null ? "missing" : "invalid");
+                            return new Finding("unavailable", detail, hits, sawReference);
+                        }
+                        int index = 0;
+                        for (StructurePiece piece : start.getPieces()) {
+                            BoundingBox box = piece.getBoundingBox();
+                            for (BoundingBox reach : reaches) {
+                                if (!box.intersects(reach)) continue;
+                                String detail = "start " + startPos.x() + "," + startPos.z() + " piece #" + index + " " + box;
+                                if (!collectAll) return new Finding("collision", detail, hits, sawReference);
+                                hits.add(box);
+                                break;
+                            }
+                            index++;
+                        }
+                    }
+                }
+            }
+        }
+        return new Finding(hits.isEmpty() ? null : "collision", hits.isEmpty() ? "" : "piece boxes intersecting the box", hits, sawReference);
     }
 }
