@@ -1,0 +1,103 @@
+{
+ "stage24g_pack": "artifacts/ancient-city-restoration/stage-24g/datapack",
+ "modules": {
+  "large_ruin_1": {
+   "structure_sha256": "92827808edb9f8f623515e983cddcc0f5aa59fcfc4a5cc95d9dafd1b3597b229",
+   "stage24f_sha256": "92827808edb9f8f623515e983cddcc0f5aa59fcfc4a5cc95d9dafd1b3597b229",
+   "cleared_cells": 1073,
+   "cleared_by_class": {
+    "room_interior": 998,
+    "walkway": 75
+   },
+   "clearance_nbt": "datapack/data/moreminecrafts/structure/ancient_city/interior/large_ruin_1.nbt",
+   "clearance_sha256": "4d57e28be531e563c10215f890997c74aba07cd9efe836d9dd8d23a8278732cd"
+  },
+  "medium_ruin_1": {
+   "structure_sha256": "89f58c3f982dcb992e585f2e3324fe89660e6492d25fc0a6724b0231afa968af",
+   "stage24f_sha256": "89f58c3f982dcb992e585f2e3324fe89660e6492d25fc0a6724b0231afa968af",
+   "cleared_cells": 184,
+   "cleared_by_class": {
+    "room_interior": 184
+   },
+   "clearance_nbt": "datapack/data/moreminecrafts/structure/ancient_city/interior/medium_ruin_1.nbt",
+   "clearance_sha256": "0f820efdde051cb66a38ed2d8123ac7b731c23e7f353041f466a3f5548e250a5"
+  },
+  "medium_ruin_2": {
+   "structure_sha256": "d1e239c42bda2b7c0551f5b910fcc87ec10ef7ad640cf9a1bc7b4f78e7838404",
+   "stage24f_sha256": "d1e239c42bda2b7c0551f5b910fcc87ec10ef7ad640cf9a1bc7b4f78e7838404",
+   "cleared_cells": 551,
+   "cleared_by_class": {
+    "room_interior": 551
+   },
+   "clearance_nbt": "datapack/data/moreminecrafts/structure/ancient_city/interior/medium_ruin_2.nbt",
+   "clearance_sha256": "ad569811dd8cb00543f1432db9639218627682eea37511c6cdea27bc27725255"
+  },
+  "small_ruin_1": {
+   "structure_sha256": "647fa12a5210756f509e45a9b77f4bb2f57c732b1d1d74f3a9cb0be3dc838ec1",
+   "stage24f_sha256": "647fa12a5210756f509e45a9b77f4bb2f57c732b1d1d74f3a9cb0be3dc838ec1",
+   "cleared_cells": 75,
+   "cleared_by_class": {
+    "room_interior": 75
+   },
+   "clearance_nbt": "datapack/data/moreminecrafts/structure/ancient_city/interior/small_ruin_1.nbt",
+   "clearance_sha256": "07abfe1dee38f5190582a57e2a5be2c898f4a746a7de1dc452314d9446a9a11f"
+  },
+  "small_ruin_2": {
+   "structure_sha256": "0135f1df50b93d6953daa1da658fd3f137bd15468265cf484a7452a1516bad6d",
+   "stage24f_sha256": "0135f1df50b93d6953daa1da658fd3f137bd15468265cf484a7452a1516bad6d",
+   "cleared_cells": 28,
+   "cleared_by_class": {
+    "room_interior": 28
+   },
+   "clearance_nbt": "datapack/data/moreminecrafts/structure/ancient_city/interior/small_ruin_2.nbt",
+   "clearance_sha256": "ac026db5edfa7421834234fd8726854d8ef27d26a1190e8b66946377b0e75b32"
+  },
+  "sauna_1": {
+   "structure_sha256": "879e21a0a4daf1b5d4fe547fe78aaa9fad5cf55ede913112d2e8a32f5697288f",
+   "stage24f_sha256": "879e21a0a4daf1b5d4fe547fe78aaa9fad5cf55ede913112d2e8a32f5697288f",
+   "cleared_cells": 1766,
+   "cleared_by_class": {
+    "room_interior": 1,
+    "paved_walkway": 1542,
+    "step_headroom": 134,
+    "interaction_space": 3,
+    "pool_headroom": 86
+   },
+   "clearance_nbt": "datapack/data/moreminecrafts/structure/ancient_city/interior/sauna_1.nbt",
+   "clearance_sha256": "c58d56ba80fbb90ccd0c5805ca625545723dc20b31a20266099e4643e239177c"
+  },
+  "large_pillar_1": {
+   "structure_sha256": "a17b693c10337724e3c01402cd19a497926c1fa2afe0c81e839e2c9d61bfb9b1",
+   "stage24f_sha256": "a17b693c10337724e3c01402cd19a497926c1fa2afe0c81e839e2c9d61bfb9b1",
+   "cleared_cells": 40,
+   "cleared_by_class": {
+    "paved_walkway": 39,
+    "step_headroom": 1
+   },
+   "clearance_nbt": "datapack/data/moreminecrafts/structure/ancient_city/interior/large_pillar_1.nbt",
+   "clearance_sha256": "7364a72bde44f5327d4a5701698de1dc1fd03d7991ab7d7908b21c10725d2aba"
+  },
+  "medium_pillar_1": {
+   "structure_sha256": "8705305a7bec348c40b5e7434c651526e0145aac90a9352e315150faf6a7a09d",
+   "stage24f_sha256": "8705305a7bec348c40b5e7434c651526e0145aac90a9352e315150faf6a7a09d",
+   "cleared_cells": 8,
+   "cleared_by_class": {
+    "paved_walkway": 7,
+    "step_headroom": 1
+   },
+   "clearance_nbt": "datapack/data/moreminecrafts/structure/ancient_city/interior/medium_pillar_1.nbt",
+   "clearance_sha256": "6eced0f9132755cc72216191d5f5d9515c278ae8c5d678b0134c97fb83bfe140"
+  }
+ },
+ "clearance_modules": [
+  "large_ruin_1",
+  "medium_ruin_1",
+  "medium_ruin_2",
+  "small_ruin_1",
+  "small_ruin_2",
+  "sauna_1",
+  "large_pillar_1",
+  "medium_pillar_1"
+ ],
+ "pool_sha256": "1a0dd10e368cb1669294c92dbbe167ee06b069d89caed8bc87fe8f7e3ab4c4fc"
+}
