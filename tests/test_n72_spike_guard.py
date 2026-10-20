@@ -44,7 +44,8 @@ class SpikeN72Tests(unittest.TestCase):
 
     def test_oracle_never_cancels(self) -> None:
         mm = (MIXIN / "MonsterRoomFeatureMixin.java").read_text()
-        oracle_branch = mm[mm.index("if (Guard.ORACLE_MONSTER_ROOM)"):mm.index("List<BoundingBox> reaches;")]
+        # N7-A3 moved the timing mark right after the oracle branch, so the branch ends where the mark begins.
+        oracle_branch = mm[mm.index("if (Guard.ORACLE_MONSTER_ROOM)"):mm.index("Perf.mark();")]
         self.assertIn("return;", oracle_branch)
         self.assertNotIn("setReturnValue", oracle_branch)
 

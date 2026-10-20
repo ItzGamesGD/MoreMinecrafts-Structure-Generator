@@ -84,6 +84,8 @@ def run(pack: Path, name: str, out: Path, port: int, extras: list[Path], after=N
                      if "protection contract" in ln or "SG protection" in ln or "rejected on reload" in ln or "SG_SPIKE protected" in ln][:8]
     result["codes"] = sorted({c for c in ("MANIFEST_MISSING", "MANIFEST_CONFLICT", "MANIFEST_INVALID", "FORMAT_UNSUPPORTED", "MANIFEST_STALE", "MANIFEST_EMPTY",
                                           "REQUIRED_UNRESOLVED", "OWNER_PACK_INCOMPATIBLE") if c in log})
+    if "Unbound values in registry" in log:
+        result["codes"].append("VANILLA_TAG_LOAD_FAILURE")
     if report_path.exists():
         result["contract"] = json.loads(report_path.read_text()).get("contract")
     return result
@@ -109,6 +111,7 @@ def reload_stale(srv, run_dir: Path) -> dict:
 def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--out", type=Path, required=True)
+    p.add_argument("--only", help="comma-separated case names to run (default: all)")
     a = p.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
     src = Path(os.environ["SG_PACK"])
@@ -126,7 +129,10 @@ def main() -> None:
         ("owner_pack_format_999", make_pack(src, w / "owner999", good_manifest(), mcmeta_format=999), [], ("failed", "OWNER_PACK_INCOMPATIBLE"), None),
         ("conflicting_provider", ok, [extra_pack(w / "zz_override", {str(MANIFEST): json.dumps(good_manifest(structures=[CAVERN]))})], ("failed", "MANIFEST_CONFLICT"), None),
         ("extension_valid", ok, [extra_pack(w / "zz_ext", {str(EXT_TAG): json.dumps({"values": ["minecraft:stronghold"]})})], ("started", None), None),
-        ("extension_unresolvable", ok, [extra_pack(w / "zz_extbad", {str(EXT_TAG): json.dumps({"values": ["thirdparty:not_installed"]})})], ("started", None), None),
+        # A required (default) entry for a structure that is not installed is refused by vanilla's own datapack loader, before the module runs: loud, not silent.
+        ("extension_unresolvable_required", ok, [extra_pack(w / "zz_extbad", {str(EXT_TAG): json.dumps({"values": ["thirdparty:not_installed"]})})], ("failed", "VANILLA_TAG_LOAD_FAILURE"), None),
+        # The standard optional form: the module warns and continues, the required set is unaffected.
+        ("extension_unresolvable_optional", ok, [extra_pack(w / "zz_extopt", {str(EXT_TAG): json.dumps({"values": [{"id": "thirdparty:not_installed", "required": False}]})})], ("started", None), None),
         ("extension_replace_empty", ok, [extra_pack(w / "zz_extrep", {str(EXT_TAG): json.dumps({"replace": True, "values": []})})], ("started", None), None),
         ("legacy_tag_replaced_to_empty", ok, [extra_pack(w / "zz_legacy", {str(LEGACY_TAG): json.dumps({"replace": True, "values": []})})], ("started", None), None),
         ("unrelated_pack_format_999", ok, [extra_pack(w / "zz_unrelated", {"data/other/function/x.mcfunction": "say hi"}, fmt=999)], ("started", None), None),
@@ -134,7 +140,10 @@ def main() -> None:
         ("reload_stale", make_pack(src, w / "reloadstale", good_manifest()), [], ("started", None), reload_stale),
     ]
     results = []
+    only = set(a.only.split(",")) if a.only else None
     for i, (name, pack, extras, (want_outcome, want_code), after) in enumerate(cases):
+        if only and name not in only:
+            continue
         r = run(pack, name, a.out, 40980 + i, extras, after)
         r["expected_outcome"], r["expected_code"] = want_outcome, want_code
         got = r["outcome"] == want_outcome and (want_code is None or want_code in r["codes"])
@@ -143,7 +152,7 @@ def main() -> None:
         r["pass"] = got
         results.append(r)
         print(f"{name:32} {r['outcome']:8} codes={r['codes']} expected={want_outcome}/{want_code} {'PASS' if got else 'FAIL'}", flush=True)
-    (a.out / "contract_variants.json").write_text(json.dumps(results, indent=1) + "\n")
+    (a.out / ("contract_variants.json" if not only else "contract_variants_rerun.json")).write_text(json.dumps(results, indent=1) + "\n")
     print(f"{sum(r['pass'] for r in results)}/{len(results)} cases as expected")
 
 
