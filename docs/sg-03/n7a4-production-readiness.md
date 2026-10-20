@@ -319,4 +319,3 @@ SG01_PROTECTION=manifest n73_run.sh OUT H SEED CX CZ ORDER REP 0   # 4 sites x 8
 python3 regression_verify.py OUT.json OUT_DIR
 # repository tests: see section 8
 ```
-
