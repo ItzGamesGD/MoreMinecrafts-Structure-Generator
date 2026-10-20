@@ -1,0 +1,678 @@
+{
+ "placements": {
+  "large_ruin_1@NONE": {
+   "command_pos": [
+    2000,
+    -60,
+    2400
+   ],
+   "place_output": "Generated jigsaw at 2000, -60, 2400",
+   "rotation": 0,
+   "origin": [
+    2000,
+    -61,
+    2393
+   ],
+   "match": 400,
+   "probe": 400
+  },
+  "large_ruin_1@CLOCKWISE_90": {
+   "command_pos": [
+    2000,
+    -60,
+    2000
+   ],
+   "place_output": "Generated jigsaw at 2000, -60, 2000",
+   "rotation": 90,
+   "origin": [
+    2007,
+    -61,
+    2000
+   ],
+   "match": 399,
+   "probe": 400
+  },
+  "large_ruin_1@CLOCKWISE_180": {
+   "command_pos": [
+    2000,
+    -60,
+    2080
+   ],
+   "place_output": "Generated jigsaw at 2000, -60, 2080",
+   "rotation": 180,
+   "origin": [
+    2000,
+    -61,
+    2087
+   ],
+   "match": 400,
+   "probe": 400
+  },
+  "large_ruin_1@COUNTERCLOCKWISE_90": {
+   "command_pos": [
+    2000,
+    -60,
+    2160
+   ],
+   "place_output": "Generated jigsaw at 2000, -60, 2160",
+   "rotation": 270,
+   "origin": [
+    1993,
+    -61,
+    2160
+   ],
+   "match": 400,
+   "probe": 400
+  },
+  "medium_ruin_1@NONE": {
+   "command_pos": [
+    2200,
+    -60,
+    2000
+   ],
+   "place_output": "Generated jigsaw at 2200, -60, 2000",
+   "rotation": 0,
+   "origin": [
+    2200,
+    -61,
+    1994
+   ],
+   "match": 44,
+   "probe": 44
+  },
+  "medium_ruin_1@CLOCKWISE_90": {
+   "command_pos": [
+    2200,
+    -60,
+    2144
+   ],
+   "place_output": "Generated jigsaw at 2200, -60, 2144",
+   "rotation": 90,
+   "origin": [
+    2206,
+    -61,
+    2144
+   ],
+   "match": 43,
+   "probe": 44
+  },
+  "medium_ruin_1@CLOCKWISE_180": {
+   "command_pos": [
+    2200,
+    -60,
+    2072
+   ],
+   "place_output": "Generated jigsaw at 2200, -60, 2072",
+   "rotation": 180,
+   "origin": [
+    2200,
+    -61,
+    2078
+   ],
+   "match": 44,
+   "probe": 44
+  },
+  "medium_ruin_1@COUNTERCLOCKWISE_90": {
+   "command_pos": [
+    2200,
+    -60,
+    2216
+   ],
+   "place_output": "Generated jigsaw at 2200, -60, 2216",
+   "rotation": 270,
+   "origin": [
+    2194,
+    -61,
+    2216
+   ],
+   "match": 44,
+   "probe": 44
+  },
+  "medium_ruin_2@NONE": {
+   "command_pos": [
+    2400,
+    -60,
+    2468
+   ],
+   "place_output": "Generated jigsaw at 2400, -60, 2468",
+   "rotation": 0,
+   "origin": [
+    2400,
+    -61,
+    2463
+   ],
+   "match": 105,
+   "probe": 106
+  },
+  "medium_ruin_2@CLOCKWISE_90": {
+   "command_pos": [
+    2400,
+    -60,
+    2000
+   ],
+   "place_output": "Generated jigsaw at 2400, -60, 2000",
+   "rotation": 90,
+   "origin": [
+    2405,
+    -61,
+    2000
+   ],
+   "match": 106,
+   "probe": 106
+  },
+  "medium_ruin_2@CLOCKWISE_180": {
+   "command_pos": [
+    2400,
+    -60,
+    2078
+   ],
+   "place_output": "Generated jigsaw at 2400, -60, 2078",
+   "rotation": 180,
+   "origin": [
+    2400,
+    -61,
+    2083
+   ],
+   "match": 106,
+   "probe": 106
+  },
+  "medium_ruin_2@COUNTERCLOCKWISE_90": {
+   "command_pos": [
+    2400,
+    -60,
+    2312
+   ],
+   "place_output": "Generated jigsaw at 2400, -60, 2312",
+   "rotation": 270,
+   "origin": [
+    2395,
+    -61,
+    2312
+   ],
+   "match": 106,
+   "probe": 106
+  },
+  "small_ruin_1@NONE": {
+   "command_pos": [
+    2600,
+    -60,
+    2062
+   ],
+   "place_output": "Generated jigsaw at 2600, -60, 2062",
+   "rotation": 0,
+   "origin": [
+    2600,
+    -61,
+    2059
+   ],
+   "match": 33,
+   "probe": 33
+  },
+  "small_ruin_1@CLOCKWISE_90": {
+   "command_pos": [
+    2600,
+    -60,
+    2124
+   ],
+   "place_output": "Generated jigsaw at 2600, -60, 2124",
+   "rotation": 90,
+   "origin": [
+    2603,
+    -61,
+    2124
+   ],
+   "match": 32,
+   "probe": 33
+  },
+  "small_ruin_1@CLOCKWISE_180": {
+   "command_pos": [
+    2600,
+    -60,
+    2000
+   ],
+   "place_output": "Generated jigsaw at 2600, -60, 2000",
+   "rotation": 180,
+   "origin": [
+    2600,
+    -61,
+    2003
+   ],
+   "match": 33,
+   "probe": 33
+  },
+  "small_ruin_1@COUNTERCLOCKWISE_90": {
+   "command_pos": [
+    2600,
+    -60,
+    2434
+   ],
+   "place_output": "Generated jigsaw at 2600, -60, 2434",
+   "rotation": 270,
+   "origin": [
+    2597,
+    -61,
+    2434
+   ],
+   "match": 33,
+   "probe": 33
+  },
+  "small_ruin_2@NONE": {
+   "command_pos": [
+    2800,
+    -60,
+    2062
+   ],
+   "place_output": "Generated jigsaw at 2800, -60, 2062",
+   "rotation": 0,
+   "origin": [
+    2800,
+    -61,
+    2060
+   ],
+   "match": 19,
+   "probe": 19
+  },
+  "small_ruin_2@CLOCKWISE_90": {
+   "command_pos": [
+    2800,
+    -60,
+    2310
+   ],
+   "place_output": "Generated jigsaw at 2800, -60, 2310",
+   "rotation": 90,
+   "origin": [
+    2802,
+    -61,
+    2310
+   ],
+   "match": 19,
+   "probe": 19
+  },
+  "small_ruin_2@CLOCKWISE_180": {
+   "command_pos": [
+    2800,
+    -60,
+    2000
+   ],
+   "place_output": "Generated jigsaw at 2800, -60, 2000",
+   "rotation": 180,
+   "origin": [
+    2800,
+    -61,
+    2002
+   ],
+   "match": 19,
+   "probe": 19
+  },
+  "small_ruin_2@COUNTERCLOCKWISE_90": {
+   "command_pos": [
+    2800,
+    -60,
+    2124
+   ],
+   "place_output": "Generated jigsaw at 2800, -60, 2124",
+   "rotation": 270,
+   "origin": [
+    2798,
+    -61,
+    2124
+   ],
+   "match": 19,
+   "probe": 19
+  },
+  "sauna_1@NONE": {
+   "command_pos": [
+    3000,
+    -60,
+    2000
+   ],
+   "place_output": "Generated jigsaw at 3000, -60, 2000",
+   "rotation": 0,
+   "origin": [
+    2972,
+    -61,
+    1979
+   ],
+   "match": 221,
+   "probe": 221
+  },
+  "sauna_1@CLOCKWISE_90": {
+   "command_pos": [
+    3000,
+    -60,
+    2720
+   ],
+   "place_output": "Generated jigsaw at 3000, -60, 2720",
+   "rotation": 90,
+   "origin": [
+    3021,
+    -61,
+    2692
+   ],
+   "match": 211,
+   "probe": 221
+  },
+  "sauna_1@CLOCKWISE_180": {
+   "command_pos": [
+    3000,
+    -60,
+    2360
+   ],
+   "place_output": "Generated jigsaw at 3000, -60, 2360",
+   "rotation": 180,
+   "origin": [
+    3028,
+    -61,
+    2381
+   ],
+   "match": 205,
+   "probe": 221
+  },
+  "sauna_1@COUNTERCLOCKWISE_90": {
+   "command_pos": [
+    3000,
+    -60,
+    2240
+   ],
+   "place_output": "Generated jigsaw at 3000, -60, 2240",
+   "rotation": 270,
+   "origin": [
+    2979,
+    -61,
+    2268
+   ],
+   "match": 210,
+   "probe": 221
+  },
+  "large_pillar_1@NONE": {
+   "command_pos": [
+    3200,
+    -60,
+    2290
+   ],
+   "place_output": "Generated jigsaw at 3200, -60, 2290",
+   "rotation": 0,
+   "origin": [
+    3195,
+    -61,
+    2288
+   ],
+   "match": 158,
+   "probe": 158
+  },
+  "large_pillar_1@CLOCKWISE_90": {
+   "command_pos": [
+    3200,
+    -60,
+    2174
+   ],
+   "place_output": "Generated jigsaw at 3200, -60, 2174",
+   "rotation": 90,
+   "origin": [
+    3202,
+    -61,
+    2169
+   ],
+   "match": 158,
+   "probe": 158
+  },
+  "large_pillar_1@CLOCKWISE_180": {
+   "command_pos": [
+    3200,
+    -60,
+    2000
+   ],
+   "place_output": "Generated jigsaw at 3200, -60, 2000",
+   "rotation": 180,
+   "origin": [
+    3205,
+    -61,
+    2002
+   ],
+   "match": 157,
+   "probe": 158
+  },
+  "large_pillar_1@COUNTERCLOCKWISE_90": {
+   "command_pos": [
+    3200,
+    -60,
+    2058
+   ],
+   "place_output": "Generated jigsaw at 3200, -60, 2058",
+   "rotation": 270,
+   "origin": [
+    3198,
+    -61,
+    2063
+   ],
+   "match": 158,
+   "probe": 158
+  },
+  "medium_pillar_1@NONE": {
+   "command_pos": [
+    3400,
+    -60,
+    2124
+   ],
+   "place_output": "Generated jigsaw at 3400, -60, 2124",
+   "rotation": 0,
+   "origin": [
+    3394,
+    -61,
+    2120
+   ],
+   "match": 55,
+   "probe": 55
+  },
+  "medium_pillar_1@CLOCKWISE_90": {
+   "command_pos": [
+    3400,
+    -60,
+    2000
+   ],
+   "place_output": "Generated jigsaw at 3400, -60, 2000",
+   "rotation": 90,
+   "origin": [
+    3404,
+    -61,
+    1994
+   ],
+   "match": 55,
+   "probe": 55
+  },
+  "medium_pillar_1@CLOCKWISE_180": {
+   "command_pos": [
+    3400,
+    -60,
+    2062
+   ],
+   "place_output": "Generated jigsaw at 3400, -60, 2062",
+   "rotation": 180,
+   "origin": [
+    3406,
+    -61,
+    2066
+   ],
+   "match": 55,
+   "probe": 55
+  },
+  "medium_pillar_1@COUNTERCLOCKWISE_90": {
+   "command_pos": [
+    3400,
+    -60,
+    2558
+   ],
+   "place_output": "Generated jigsaw at 3400, -60, 2558",
+   "rotation": 270,
+   "origin": [
+    3397,
+    -61,
+    2564
+   ],
+   "match": 55,
+   "probe": 55
+  }
+ },
+ "summary": {
+  "large_ruin_1@NONE": {
+   "ok": 20,
+   "total": 20,
+   "failed": []
+  },
+  "large_ruin_1@CLOCKWISE_90": {
+   "ok": 20,
+   "total": 20,
+   "failed": []
+  },
+  "large_ruin_1@CLOCKWISE_180": {
+   "ok": 20,
+   "total": 20,
+   "failed": []
+  },
+  "large_ruin_1@COUNTERCLOCKWISE_90": {
+   "ok": 20,
+   "total": 20,
+   "failed": []
+  },
+  "medium_ruin_1@NONE": {
+   "ok": 17,
+   "total": 17,
+   "failed": []
+  },
+  "medium_ruin_1@CLOCKWISE_90": {
+   "ok": 17,
+   "total": 17,
+   "failed": []
+  },
+  "medium_ruin_1@CLOCKWISE_180": {
+   "ok": 17,
+   "total": 17,
+   "failed": []
+  },
+  "medium_ruin_1@COUNTERCLOCKWISE_90": {
+   "ok": 17,
+   "total": 17,
+   "failed": []
+  },
+  "medium_ruin_2@NONE": {
+   "ok": 28,
+   "total": 28,
+   "failed": []
+  },
+  "medium_ruin_2@CLOCKWISE_90": {
+   "ok": 28,
+   "total": 28,
+   "failed": []
+  },
+  "medium_ruin_2@CLOCKWISE_180": {
+   "ok": 28,
+   "total": 28,
+   "failed": []
+  },
+  "medium_ruin_2@COUNTERCLOCKWISE_90": {
+   "ok": 28,
+   "total": 28,
+   "failed": []
+  },
+  "small_ruin_1@NONE": {
+   "ok": 17,
+   "total": 17,
+   "failed": []
+  },
+  "small_ruin_1@CLOCKWISE_90": {
+   "ok": 17,
+   "total": 17,
+   "failed": []
+  },
+  "small_ruin_1@CLOCKWISE_180": {
+   "ok": 17,
+   "total": 17,
+   "failed": []
+  },
+  "small_ruin_1@COUNTERCLOCKWISE_90": {
+   "ok": 17,
+   "total": 17,
+   "failed": []
+  },
+  "small_ruin_2@NONE": {
+   "ok": 17,
+   "total": 17,
+   "failed": []
+  },
+  "small_ruin_2@CLOCKWISE_90": {
+   "ok": 17,
+   "total": 17,
+   "failed": []
+  },
+  "small_ruin_2@CLOCKWISE_180": {
+   "ok": 17,
+   "total": 17,
+   "failed": []
+  },
+  "small_ruin_2@COUNTERCLOCKWISE_90": {
+   "ok": 17,
+   "total": 17,
+   "failed": []
+  },
+  "sauna_1@NONE": {
+   "ok": 12,
+   "total": 12,
+   "failed": []
+  },
+  "sauna_1@CLOCKWISE_90": {
+   "ok": 12,
+   "total": 12,
+   "failed": []
+  },
+  "sauna_1@CLOCKWISE_180": {
+   "ok": 12,
+   "total": 12,
+   "failed": []
+  },
+  "sauna_1@COUNTERCLOCKWISE_90": {
+   "ok": 12,
+   "total": 12,
+   "failed": []
+  },
+  "large_pillar_1@NONE": {
+   "ok": 13,
+   "total": 13,
+   "failed": []
+  },
+  "large_pillar_1@CLOCKWISE_90": {
+   "ok": 13,
+   "total": 13,
+   "failed": []
+  },
+  "large_pillar_1@CLOCKWISE_180": {
+   "ok": 13,
+   "total": 13,
+   "failed": []
+  },
+  "large_pillar_1@COUNTERCLOCKWISE_90": {
+   "ok": 13,
+   "total": 13,
+   "failed": []
+  },
+  "medium_pillar_1@NONE": {
+   "ok": 47,
+   "total": 47,
+   "failed": []
+  },
+  "medium_pillar_1@CLOCKWISE_90": {
+   "ok": 47,
+   "total": 47,
+   "failed": []
+  },
+  "medium_pillar_1@CLOCKWISE_180": {
+   "ok": 47,
+   "total": 47,
+   "failed": []
+  },
+  "medium_pillar_1@COUNTERCLOCKWISE_90": {
+   "ok": 47,
+   "total": 47,
+   "failed": []
+  }
+ }
+}

@@ -1,0 +1,1097 @@
+{
+ "module": "medium_pillar_1",
+ "steps": [
+  {
+   "name": "tp_outside",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3407,
+    -60,
+    1997
+   ]
+  },
+  {
+   "name": "walk_to_entry",
+   "type": "goto",
+   "start": [
+    3407,
+    -60,
+    1997
+   ],
+   "end": [
+    3403.66,
+    -60,
+    1997.5
+   ],
+   "horizontal_error": 0.16,
+   "moved": 3.84,
+   "outcome": "reached",
+   "seconds": 1.3,
+   "ok": true
+  },
+  {
+   "name": "walk_to_ladder_approach",
+   "type": "goto",
+   "start": [
+    3403,
+    -60,
+    1997
+   ],
+   "end": [
+    3402.51,
+    -60,
+    1998.3
+   ],
+   "horizontal_error": 0.2,
+   "moved": 1.41,
+   "outcome": "reached",
+   "seconds": 0.9,
+   "ok": true
+  },
+  {
+   "name": "climb_ground_to_deck",
+   "type": "climb",
+   "start_y": -60,
+   "max_y": -51.9,
+   "end": [
+    3401.5,
+    -52,
+    1998.69
+   ],
+   "seconds": 3.7,
+   "onGround": true,
+   "ok": true
+  },
+  {
+   "name": "step_onto_deck",
+   "type": "goto",
+   "start": [
+    3401,
+    -52,
+    1998
+   ],
+   "end": [
+    3400.69,
+    -52,
+    1997.5
+   ],
+   "horizontal_error": 0.19,
+   "moved": 1.44,
+   "outcome": "reached",
+   "seconds": 0.7,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_north_line1_from1_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3402,
+    -52,
+    1995
+   ]
+  },
+  {
+   "name": "deck_edge_north_line1",
+   "type": "walk",
+   "start": [
+    3402.5,
+    -52,
+    1995.5
+   ],
+   "end": [
+    3402.7,
+    -52,
+    1995.5
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_north_line2_from2_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3402,
+    -52,
+    1996
+   ]
+  },
+  {
+   "name": "deck_edge_north_line2",
+   "type": "walk",
+   "start": [
+    3402.5,
+    -52,
+    1996.5
+   ],
+   "end": [
+    3403.01,
+    -52,
+    1996.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_north_line3_from3_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3402,
+    -52,
+    1997
+   ]
+  },
+  {
+   "name": "deck_edge_north_line3",
+   "type": "walk",
+   "start": [
+    3402.5,
+    -52,
+    1997.5
+   ],
+   "end": [
+    3402.95,
+    -52,
+    1997.5
+   ],
+   "dy": 0,
+   "moved": 0.45,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_north_line4_from4_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3402,
+    -52,
+    1998
+   ]
+  },
+  {
+   "name": "deck_edge_north_line4",
+   "type": "walk",
+   "start": [
+    3402.5,
+    -52,
+    1998.5
+   ],
+   "end": [
+    3403.01,
+    -52,
+    1998.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_north_line5_from5_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3402,
+    -52,
+    1999
+   ]
+  },
+  {
+   "name": "deck_edge_north_line5",
+   "type": "walk",
+   "start": [
+    3402.5,
+    -52,
+    1999.5
+   ],
+   "end": [
+    3402.7,
+    -52,
+    1999.5
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_south_line1_from1_5_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3399,
+    -52,
+    1995
+   ]
+  },
+  {
+   "name": "deck_edge_south_line1",
+   "type": "walk",
+   "start": [
+    3399.5,
+    -52,
+    1995.5
+   ],
+   "end": [
+    3399.3,
+    -52,
+    1995.5
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_south_line2_from2_5_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3399,
+    -52,
+    1996
+   ]
+  },
+  {
+   "name": "deck_edge_south_line2",
+   "type": "walk",
+   "start": [
+    3399.5,
+    -52,
+    1996.5
+   ],
+   "end": [
+    3398.99,
+    -52,
+    1996.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_south_line3_from3_5_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3399,
+    -52,
+    1997
+   ]
+  },
+  {
+   "name": "deck_edge_south_line3",
+   "type": "walk",
+   "start": [
+    3399.5,
+    -52,
+    1997.5
+   ],
+   "end": [
+    3398.99,
+    -52,
+    1997.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_south_line4_from4_5_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3399,
+    -52,
+    1998
+   ]
+  },
+  {
+   "name": "deck_edge_south_line4",
+   "type": "walk",
+   "start": [
+    3399.5,
+    -52,
+    1998.5
+   ],
+   "end": [
+    3398.99,
+    -52,
+    1998.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_south_line5_from5_5_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3399,
+    -52,
+    1999
+   ]
+  },
+  {
+   "name": "deck_edge_south_line5",
+   "type": "walk",
+   "start": [
+    3399.5,
+    -52,
+    1999.5
+   ],
+   "end": [
+    3399.3,
+    -52,
+    1999.5
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_east_line1_from4_1_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3403,
+    -52,
+    1998
+   ]
+  },
+  {
+   "name": "deck_edge_east_line1",
+   "type": "walk",
+   "start": [
+    3403.5,
+    -52,
+    1998.5
+   ],
+   "end": [
+    3403.5,
+    -52,
+    1998.7
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_east_line2_from4_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3402,
+    -52,
+    1998
+   ]
+  },
+  {
+   "name": "deck_edge_east_line2",
+   "type": "walk",
+   "start": [
+    3402.5,
+    -52,
+    1998.5
+   ],
+   "end": [
+    3402.5,
+    -52,
+    1999.01
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_east_line4_from4_4_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3400,
+    -52,
+    1998
+   ]
+  },
+  {
+   "name": "deck_edge_east_line4",
+   "type": "walk",
+   "start": [
+    3400.5,
+    -52,
+    1998.5
+   ],
+   "end": [
+    3400.5,
+    -52,
+    1998.95
+   ],
+   "dy": 0,
+   "moved": 0.45,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_east_line5_from4_5_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3399,
+    -52,
+    1998
+   ]
+  },
+  {
+   "name": "deck_edge_east_line5",
+   "type": "walk",
+   "start": [
+    3399.5,
+    -52,
+    1998.5
+   ],
+   "end": [
+    3399.5,
+    -52,
+    1999.01
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_east_line6_from4_6_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3398,
+    -52,
+    1998
+   ]
+  },
+  {
+   "name": "deck_edge_east_line6",
+   "type": "walk",
+   "start": [
+    3398.5,
+    -52,
+    1998.5
+   ],
+   "end": [
+    3398.5,
+    -52,
+    1998.7
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line1_from2_1_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3403,
+    -52,
+    1996
+   ]
+  },
+  {
+   "name": "deck_edge_west_line1",
+   "type": "walk",
+   "start": [
+    3403.5,
+    -52,
+    1996.5
+   ],
+   "end": [
+    3403.5,
+    -52,
+    1996.3
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line2_from2_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3402,
+    -52,
+    1996
+   ]
+  },
+  {
+   "name": "deck_edge_west_line2",
+   "type": "walk",
+   "start": [
+    3402.5,
+    -52,
+    1996.5
+   ],
+   "end": [
+    3402.5,
+    -52,
+    1995.99
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line3_from2_3_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3401,
+    -52,
+    1996
+   ]
+  },
+  {
+   "name": "deck_edge_west_line3",
+   "type": "walk",
+   "start": [
+    3401.5,
+    -52,
+    1996.5
+   ],
+   "end": [
+    3401.5,
+    -52,
+    1996.05
+   ],
+   "dy": 0,
+   "moved": 0.45,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line4_from2_4_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3400,
+    -52,
+    1996
+   ]
+  },
+  {
+   "name": "deck_edge_west_line4",
+   "type": "walk",
+   "start": [
+    3400.5,
+    -52,
+    1996.5
+   ],
+   "end": [
+    3400.5,
+    -52,
+    1996.05
+   ],
+   "dy": 0,
+   "moved": 0.45,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line5_from2_5_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3399,
+    -52,
+    1996
+   ]
+  },
+  {
+   "name": "deck_edge_west_line5",
+   "type": "walk",
+   "start": [
+    3399.5,
+    -52,
+    1996.5
+   ],
+   "end": [
+    3399.5,
+    -52,
+    1996.05
+   ],
+   "dy": 0,
+   "moved": 0.45,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line6_from2_6_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    3398,
+    -52,
+    1996
+   ]
+  },
+  {
+   "name": "deck_edge_west_line6",
+   "type": "walk",
+   "start": [
+    3398.5,
+    -52,
+    1996.5
+   ],
+   "end": [
+    3398.5,
+    -52,
+    1996.3
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": true
+  }
+ ],
+ "events": [
+  "chat: Teleported S24C_medium_p to 3407.500000, -60.000000, 1997.500000",
+  "chat: Teleported S24C_medium_p to 3401.500000, -60.000000, 1998.500000",
+  "chat: Teleported S24C_medium_p to 3402.500000, -52.000000, 1995.500000",
+  "trace deck_edge_north_line1 [[3402.7,-52],[3402.7,-52],[3402.7,-52],[3402.7,-52],[3402.7,-52],[3402.7,-52],[3402.7,-52],[3402.7,-52],[3402.7,-52],[3402.7,-52]]",
+  "chat: Teleported S24C_medium_p to 3402.500000, -52.000000, 1996.500000",
+  "trace deck_edge_north_line2 [[3403.01,-52],[3403.01,-52],[3403.01,-52],[3403.01,-52],[3403.01,-52],[3403.01,-52],[3403.01,-52],[3403.01,-52],[3403.01,-52],[3403.01,-52]]",
+  "chat: Teleported S24C_medium_p to 3402.500000, -52.000000, 1997.500000",
+  "trace deck_edge_north_line3 [[3402.95,-52],[3402.95,-52],[3402.95,-52],[3402.95,-52],[3402.95,-52],[3402.95,-52],[3402.95,-52],[3402.95,-52],[3402.95,-52],[3402.95,-52]]",
+  "chat: Teleported S24C_medium_p to 3402.500000, -52.000000, 1998.500000",
+  "trace deck_edge_north_line4 [[3403.01,-52],[3403.01,-52],[3403.01,-52],[3403.01,-52],[3403.01,-52],[3403.01,-52],[3403.01,-52],[3403.01,-52],[3403.01,-52],[3403.01,-52]]",
+  "chat: Teleported S24C_medium_p to 3402.500000, -52.000000, 1999.500000",
+  "trace deck_edge_north_line5 [[3402.7,-52],[3402.7,-52],[3402.7,-52],[3402.7,-52],[3402.7,-52],[3402.7,-52],[3402.7,-52],[3402.7,-52],[3402.7,-52],[3402.7,-52]]",
+  "chat: Teleported S24C_medium_p to 3399.500000, -52.000000, 1995.500000",
+  "trace deck_edge_south_line1 [[3399.3,-52],[3399.3,-52],[3399.3,-52],[3399.3,-52],[3399.3,-52],[3399.3,-52],[3399.3,-52],[3399.3,-52],[3399.3,-52],[3399.3,-52]]",
+  "chat: Teleported S24C_medium_p to 3399.500000, -52.000000, 1996.500000",
+  "trace deck_edge_south_line2 [[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52]]",
+  "chat: Teleported S24C_medium_p to 3399.500000, -52.000000, 1997.500000",
+  "trace deck_edge_south_line3 [[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52]]",
+  "chat: Teleported S24C_medium_p to 3399.500000, -52.000000, 1998.500000",
+  "trace deck_edge_south_line4 [[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52],[3398.99,-52]]",
+  "chat: Teleported S24C_medium_p to 3399.500000, -52.000000, 1999.500000",
+  "trace deck_edge_south_line5 [[3399.3,-52],[3399.3,-52],[3399.3,-52],[3399.3,-52],[3399.3,-52],[3399.3,-52],[3399.3,-52],[3399.3,-52],[3399.3,-52],[3399.3,-52]]",
+  "chat: Teleported S24C_medium_p to 3403.500000, -52.000000, 1998.500000",
+  "trace deck_edge_east_line1 [[3403.5,-52],[3403.5,-52],[3403.5,-52],[3403.5,-52],[3403.5,-52],[3403.5,-52],[3403.5,-52],[3403.5,-52],[3403.5,-52],[3403.5,-52]]",
+  "chat: Teleported S24C_medium_p to 3402.500000, -52.000000, 1998.500000",
+  "trace deck_edge_east_line2 [[3402.5,-52],[3402.5,-52],[3402.5,-52],[3402.5,-52],[3402.5,-52],[3402.5,-52],[3402.5,-52],[3402.5,-52],[3402.5,-52],[3402.5,-52]]",
+  "chat: Teleported S24C_medium_p to 3400.500000, -52.000000, 1998.500000",
+  "trace deck_edge_east_line4 [[3400.5,-52],[3400.5,-52],[3400.5,-52],[3400.5,-52],[3400.5,-52],[3400.5,-52],[3400.5,-52],[3400.5,-52],[3400.5,-52],[3400.5,-52]]",
+  "chat: Teleported S24C_medium_p to 3399.500000, -52.000000, 1998.500000",
+  "trace deck_edge_east_line5 [[3399.5,-52],[3399.5,-52],[3399.5,-52],[3399.5,-52],[3399.5,-52],[3399.5,-52],[3399.5,-52],[3399.5,-52],[3399.5,-52],[3399.5,-52]]",
+  "chat: Teleported S24C_medium_p to 3398.500000, -52.000000, 1998.500000",
+  "trace deck_edge_east_line6 [[3398.5,-52],[3398.5,-52],[3398.5,-52],[3398.5,-52],[3398.5,-52],[3398.5,-52],[3398.5,-52],[3398.5,-52],[3398.5,-52],[3398.5,-52]]",
+  "chat: Teleported S24C_medium_p to 3403.500000, -52.000000, 1996.500000",
+  "trace deck_edge_west_line1 [[3403.5,-52],[3403.5,-52],[3403.5,-52],[3403.5,-52],[3403.5,-52],[3403.5,-52],[3403.5,-52],[3403.5,-52],[3403.5,-52],[3403.5,-52]]",
+  "chat: Teleported S24C_medium_p to 3402.500000, -52.000000, 1996.500000",
+  "trace deck_edge_west_line2 [[3402.5,-52],[3402.5,-52],[3402.5,-52],[3402.5,-52],[3402.5,-52],[3402.5,-52],[3402.5,-52],[3402.5,-52],[3402.5,-52],[3402.5,-52]]",
+  "chat: Teleported S24C_medium_p to 3401.500000, -52.000000, 1996.500000",
+  "trace deck_edge_west_line3 [[3401.5,-52],[3401.5,-52],[3401.5,-52],[3401.5,-52],[3401.5,-52],[3401.5,-52],[3401.5,-52],[3401.5,-52],[3401.5,-52],[3401.5,-52]]",
+  "chat: Teleported S24C_medium_p to 3400.500000, -52.000000, 1996.500000",
+  "trace deck_edge_west_line4 [[3400.5,-52],[3400.5,-52],[3400.5,-52],[3400.5,-52],[3400.5,-52],[3400.5,-52],[3400.5,-52],[3400.5,-52],[3400.5,-52],[3400.5,-52]]",
+  "chat: Teleported S24C_medium_p to 3399.500000, -52.000000, 1996.500000",
+  "trace deck_edge_west_line5 [[3399.5,-52],[3399.5,-52],[3399.5,-52],[3399.5,-52],[3399.5,-52],[3399.5,-52],[3399.5,-52],[3399.5,-52],[3399.5,-52],[3399.5,-52]]",
+  "chat: Teleported S24C_medium_p to 3398.500000, -52.000000, 1996.500000",
+  "trace deck_edge_west_line6 [[3398.5,-52],[3398.5,-52],[3398.5,-52],[3398.5,-52],[3398.5,-52],[3398.5,-52],[3398.5,-52],[3398.5,-52],[3398.5,-52],[3398.5,-52]]"
+ ],
+ "final_health": 20,
+ "origin": [
+  3404,
+  -61,
+  1994
+ ],
+ "rotation": "CLOCKWISE_90",
+ "placement": {
+  "command_pos": [
+   3400,
+   -60,
+   2000
+  ],
+  "place_output": "Generated jigsaw at 3400, -60, 2000",
+  "rotation": 90,
+  "origin": [
+   3404,
+   -61,
+   1994
+  ],
+  "match": 55,
+  "probe": 55
+ },
+ "scenario_steps": [
+  {
+   "name": "tp_outside",
+   "type": "tp",
+   "target": [
+    3407.5,
+    -60,
+    1997.5
+   ]
+  },
+  {
+   "name": "walk_to_entry",
+   "type": "goto",
+   "target": [
+    3403,
+    -60,
+    1997
+   ],
+   "range": 0,
+   "timeout": 30
+  },
+  {
+   "name": "walk_to_ladder_approach",
+   "type": "goto",
+   "target": [
+    3402,
+    -60,
+    1998
+   ],
+   "range": 0,
+   "timeout": 30
+  },
+  {
+   "name": "climb_ground_to_deck",
+   "type": "climb",
+   "base": [
+    3401,
+    -60,
+    1998
+   ],
+   "top": [
+    3401,
+    -52,
+    1998
+   ],
+   "yaw": -3.141592653589793,
+   "timeout": 60
+  },
+  {
+   "name": "step_onto_deck",
+   "type": "goto",
+   "target": [
+    3400,
+    -52,
+    1997
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "deck_edge_north_line1_from1_2_recentre",
+   "type": "tp",
+   "target": [
+    3402.5,
+    -52,
+    1995.5
+   ]
+  },
+  {
+   "name": "deck_edge_north_line1",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_north_line2_from2_2_recentre",
+   "type": "tp",
+   "target": [
+    3402.5,
+    -52,
+    1996.5
+   ]
+  },
+  {
+   "name": "deck_edge_north_line2",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_north_line3_from3_2_recentre",
+   "type": "tp",
+   "target": [
+    3402.5,
+    -52,
+    1997.5
+   ]
+  },
+  {
+   "name": "deck_edge_north_line3",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_north_line4_from4_2_recentre",
+   "type": "tp",
+   "target": [
+    3402.5,
+    -52,
+    1998.5
+   ]
+  },
+  {
+   "name": "deck_edge_north_line4",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_north_line5_from5_2_recentre",
+   "type": "tp",
+   "target": [
+    3402.5,
+    -52,
+    1999.5
+   ]
+  },
+  {
+   "name": "deck_edge_north_line5",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_south_line1_from1_5_recentre",
+   "type": "tp",
+   "target": [
+    3399.5,
+    -52,
+    1995.5
+   ]
+  },
+  {
+   "name": "deck_edge_south_line1",
+   "type": "walk",
+   "yaw": 1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_south_line2_from2_5_recentre",
+   "type": "tp",
+   "target": [
+    3399.5,
+    -52,
+    1996.5
+   ]
+  },
+  {
+   "name": "deck_edge_south_line2",
+   "type": "walk",
+   "yaw": 1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_south_line3_from3_5_recentre",
+   "type": "tp",
+   "target": [
+    3399.5,
+    -52,
+    1997.5
+   ]
+  },
+  {
+   "name": "deck_edge_south_line3",
+   "type": "walk",
+   "yaw": 1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_south_line4_from4_5_recentre",
+   "type": "tp",
+   "target": [
+    3399.5,
+    -52,
+    1998.5
+   ]
+  },
+  {
+   "name": "deck_edge_south_line4",
+   "type": "walk",
+   "yaw": 1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_south_line5_from5_5_recentre",
+   "type": "tp",
+   "target": [
+    3399.5,
+    -52,
+    1999.5
+   ]
+  },
+  {
+   "name": "deck_edge_south_line5",
+   "type": "walk",
+   "yaw": 1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_east_line1_from4_1_recentre",
+   "type": "tp",
+   "target": [
+    3403.5,
+    -52,
+    1998.5
+   ]
+  },
+  {
+   "name": "deck_edge_east_line1",
+   "type": "walk",
+   "yaw": -3.141592653589793,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_east_line2_from4_2_recentre",
+   "type": "tp",
+   "target": [
+    3402.5,
+    -52,
+    1998.5
+   ]
+  },
+  {
+   "name": "deck_edge_east_line2",
+   "type": "walk",
+   "yaw": -3.141592653589793,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_east_line4_from4_4_recentre",
+   "type": "tp",
+   "target": [
+    3400.5,
+    -52,
+    1998.5
+   ]
+  },
+  {
+   "name": "deck_edge_east_line4",
+   "type": "walk",
+   "yaw": -3.141592653589793,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_east_line5_from4_5_recentre",
+   "type": "tp",
+   "target": [
+    3399.5,
+    -52,
+    1998.5
+   ]
+  },
+  {
+   "name": "deck_edge_east_line5",
+   "type": "walk",
+   "yaw": -3.141592653589793,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_east_line6_from4_6_recentre",
+   "type": "tp",
+   "target": [
+    3398.5,
+    -52,
+    1998.5
+   ]
+  },
+  {
+   "name": "deck_edge_east_line6",
+   "type": "walk",
+   "yaw": -3.141592653589793,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line1_from2_1_recentre",
+   "type": "tp",
+   "target": [
+    3403.5,
+    -52,
+    1996.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line1",
+   "type": "walk",
+   "yaw": 0.0,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line2_from2_2_recentre",
+   "type": "tp",
+   "target": [
+    3402.5,
+    -52,
+    1996.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line2",
+   "type": "walk",
+   "yaw": 0.0,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line3_from2_3_recentre",
+   "type": "tp",
+   "target": [
+    3401.5,
+    -52,
+    1996.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line3",
+   "type": "walk",
+   "yaw": 0.0,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line4_from2_4_recentre",
+   "type": "tp",
+   "target": [
+    3400.5,
+    -52,
+    1996.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line4",
+   "type": "walk",
+   "yaw": 0.0,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line5_from2_5_recentre",
+   "type": "tp",
+   "target": [
+    3399.5,
+    -52,
+    1996.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line5",
+   "type": "walk",
+   "yaw": 0.0,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line6_from2_6_recentre",
+   "type": "tp",
+   "target": [
+    3398.5,
+    -52,
+    1996.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line6",
+   "type": "walk",
+   "yaw": 0.0,
+   "ms": 2500
+  }
+ ]
+}
