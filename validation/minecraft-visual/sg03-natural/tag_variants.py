@@ -31,13 +31,14 @@ def variant(src: Path, dst: Path, name: str) -> Path:
     tag.parent.mkdir(parents=True, exist_ok=True)
     # The protection tag is shipped by the spike mod itself. A world datapack file with the same id overrides the mod's copy,
     # so each variant is written into the SG datapack copy (loaded later, therefore higher priority).
+    # Tags merge across datapacks unless "replace" is set, so every override replaces the mod's list explicitly.
     if name == "missing_tag":
-        tag.write_text(json.dumps({"values": []}))
+        tag.write_text(json.dumps({"replace": True, "values": []}))
     elif name == "stale_only":
-        tag.write_text(json.dumps({"values": [{"id": "moreminecrafts:forgotten_kingdom/removed_in_2_0", "required": False}]}))
+        tag.write_text(json.dumps({"replace": True, "values": [{"id": "moreminecrafts:forgotten_kingdom/removed_in_2_0", "required": False}]}))
     elif name == "superset":
-        tag.write_text(json.dumps({"values": [{"id": "moreminecrafts:forgotten_kingdom/central_cavern", "required": False},
-                                              {"id": "minecraft:stronghold", "required": False}]}))
+        tag.write_text(json.dumps({"replace": True, "values": [{"id": "moreminecrafts:forgotten_kingdom/central_cavern", "required": False},
+                                                               {"id": "minecraft:stronghold", "required": False}]}))
     elif name == "unsupported_format":
         mcmeta = json.loads((dst / "pack.mcmeta").read_text())
         mcmeta["pack"]["min_format"] = mcmeta["pack"]["max_format"] = 999
