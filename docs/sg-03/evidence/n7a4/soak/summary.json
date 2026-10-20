@@ -1,0 +1,178 @@
+[
+ {
+  "run": "guarded_1",
+  "mode": "guarded",
+  "samples": 111,
+  "duration_min": 9.43,
+  "sites": 36,
+  "heap_after_gc_MB_per_min": {
+   "slope": 8.065,
+   "ci95": 1.853,
+   "includes_zero": false,
+   "n": 89
+  },
+  "non_heap_MB_per_min": {
+   "slope": 1.078,
+   "ci95": 0.112,
+   "includes_zero": false,
+   "n": 89
+  },
+  "heap_after_gc_MB_per_min_last_half": {
+   "slope": -4.075,
+   "ci95": 3.218,
+   "includes_zero": false,
+   "n": 45
+  },
+  "heap_after_gc_MB_per_min_last_third": {
+   "slope": -3.387,
+   "ci95": 5.471,
+   "includes_zero": true,
+   "n": 30
+  },
+  "heap_after_gc_MB_first_third_mean": 330.6,
+  "heap_after_gc_MB_last_third_mean": 370.4,
+  "heap_after_gc_MB_max": 413.3,
+  "gc_count": 300,
+  "gc_time_fraction": 0.0077,
+  "max_last_gc_pause_ms": 45,
+  "allocation_MB_per_s": 5.97,
+  "loaded_chunks_max": 1369,
+  "loaded_chunks_final": 0,
+  "guard_attempts_final": 146211,
+  "guard_events_retained_final": 76,
+  "perf_samples_retained_final": 584339,
+  "perf_samples_retained_max": 584339
+ },
+ {
+  "run": "control_1",
+  "mode": "control",
+  "samples": 110,
+  "duration_min": 9.34,
+  "sites": 36,
+  "heap_after_gc_MB_per_min": {
+   "slope": 6.835,
+   "ci95": 1.511,
+   "includes_zero": false,
+   "n": 88
+  },
+  "non_heap_MB_per_min": {
+   "slope": 1.1,
+   "ci95": 0.126,
+   "includes_zero": false,
+   "n": 88
+  },
+  "heap_after_gc_MB_per_min_last_half": {
+   "slope": 0.875,
+   "ci95": 3.56,
+   "includes_zero": true,
+   "n": 44
+  },
+  "heap_after_gc_MB_per_min_last_third": {
+   "slope": -5.062,
+   "ci95": 3.298,
+   "includes_zero": false,
+   "n": 30
+  },
+  "heap_after_gc_MB_first_third_mean": 334.9,
+  "heap_after_gc_MB_last_third_mean": 370.7,
+  "heap_after_gc_MB_max": 399.8,
+  "gc_count": 291,
+  "gc_time_fraction": 0.0075,
+  "max_last_gc_pause_ms": 40,
+  "allocation_MB_per_s": 6.38,
+  "loaded_chunks_max": 1618,
+  "loaded_chunks_final": 0,
+  "guard_attempts_final": 146211,
+  "guard_events_retained_final": 0,
+  "perf_samples_retained_final": 584415,
+  "perf_samples_retained_max": 584415
+ },
+ {
+  "run": "guarded_2",
+  "mode": "guarded",
+  "samples": 110,
+  "duration_min": 9.34,
+  "sites": 36,
+  "heap_after_gc_MB_per_min": {
+   "slope": 2.02,
+   "ci95": 1.845,
+   "includes_zero": false,
+   "n": 88
+  },
+  "non_heap_MB_per_min": {
+   "slope": 1.144,
+   "ci95": 0.124,
+   "includes_zero": false,
+   "n": 88
+  },
+  "heap_after_gc_MB_per_min_last_half": {
+   "slope": -2.779,
+   "ci95": 3.534,
+   "includes_zero": true,
+   "n": 44
+  },
+  "heap_after_gc_MB_per_min_last_third": {
+   "slope": -8.722,
+   "ci95": 4.957,
+   "includes_zero": false,
+   "n": 30
+  },
+  "heap_after_gc_MB_first_third_mean": 335.8,
+  "heap_after_gc_MB_last_third_mean": 345.4,
+  "heap_after_gc_MB_max": 387.0,
+  "gc_count": 353,
+  "gc_time_fraction": 0.0086,
+  "max_last_gc_pause_ms": 41,
+  "allocation_MB_per_s": 6.25,
+  "loaded_chunks_max": 1392,
+  "loaded_chunks_final": 0,
+  "guard_attempts_final": 146253,
+  "guard_events_retained_final": 77,
+  "perf_samples_retained_final": 584506,
+  "perf_samples_retained_max": 584506
+ },
+ {
+  "run": "control_2",
+  "mode": "control",
+  "samples": 109,
+  "duration_min": 9.26,
+  "sites": 36,
+  "heap_after_gc_MB_per_min": {
+   "slope": 8.409,
+   "ci95": 1.588,
+   "includes_zero": false,
+   "n": 88
+  },
+  "non_heap_MB_per_min": {
+   "slope": 1.067,
+   "ci95": 0.118,
+   "includes_zero": false,
+   "n": 88
+  },
+  "heap_after_gc_MB_per_min_last_half": {
+   "slope": 2.958,
+   "ci95": 3.005,
+   "includes_zero": true,
+   "n": 44
+  },
+  "heap_after_gc_MB_per_min_last_third": {
+   "slope": 5.361,
+   "ci95": 4.74,
+   "includes_zero": false,
+   "n": 30
+  },
+  "heap_after_gc_MB_first_third_mean": 332.1,
+  "heap_after_gc_MB_last_third_mean": 374.6,
+  "heap_after_gc_MB_max": 402.0,
+  "gc_count": 283,
+  "gc_time_fraction": 0.0077,
+  "max_last_gc_pause_ms": 43,
+  "allocation_MB_per_s": 6.19,
+  "loaded_chunks_max": 1369,
+  "loaded_chunks_final": 0,
+  "guard_attempts_final": 146211,
+  "guard_events_retained_final": 0,
+  "perf_samples_retained_final": 584415,
+  "perf_samples_retained_max": 584415
+ }
+]

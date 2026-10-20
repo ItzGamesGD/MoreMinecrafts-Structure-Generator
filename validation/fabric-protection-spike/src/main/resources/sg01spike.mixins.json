@@ -9,7 +9,8 @@
     "WorldGenRegionProbeMixin",
     "ServerChunkCacheProbeMixin",
     "ChunkMapProbeMixin",
-    "GenerationChunkHolderProbeMixin"
+    "GenerationChunkHolderProbeMixin",
+    "DecorationOrderProbeMixin"
   ],
   "injectors": {
     "defaultRequire": 1

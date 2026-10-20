@@ -56,6 +56,10 @@ public final class GuardStats {
         if (events.size() < 400) events.add(line);
     }
 
+    synchronized int eventCount() {
+        return events.size();
+    }
+
     synchronized List<String> events() {
         return new ArrayList<>(events);
     }

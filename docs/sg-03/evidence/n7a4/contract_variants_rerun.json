@@ -1,0 +1,39 @@
+[
+ {
+  "case": "extension_unresolvable_required",
+  "outcome": "failed",
+  "error_tail": "inWorkerThread.java:187)\nCaused by: java.lang.IllegalStateException: Failed to load registries due to errors\n\tat knot//net.minecraft.resources.RegistryDataLoader.createReportWithBriefInfo(RegistryDataLoader.java:313)\n\t... 13 more\n\nBUILD SUCCESSFUL in 19s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [],
+  "codes": [
+   "VANILLA_TAG_LOAD_FAILURE"
+  ],
+  "expected_outcome": "failed",
+  "expected_code": "VANILLA_TAG_LOAD_FAILURE",
+  "pass": true
+ },
+ {
+  "case": "extension_unresolvable_optional",
+  "outcome": "started",
+  "log": [
+   "[09:01:57] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+   "[09:01:57] [Server thread/WARN] (sg01-spike) SG_SPIKE protection contract warning: extension thirdparty:not_installed from file/zz_extopt is not in the structure registry; ignored"
+  ],
+  "codes": [],
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [
+    "extension thirdparty:not_installed from file/zz_extopt is not in the structure registry; ignored"
+   ],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ }
+]

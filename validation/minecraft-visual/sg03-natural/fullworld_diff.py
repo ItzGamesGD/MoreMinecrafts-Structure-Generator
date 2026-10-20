@@ -41,6 +41,16 @@ def intern(key: str) -> int:
     return INTERN[key]
 
 
+def full_chunks(region_dir: Path, coords) -> set[tuple[int, int]]:
+    """Chunks whose saved status is 'full' (generation finished); the others are intermediate stages that differ between runs by construction."""
+    out = set()
+    for cx, cz in coords:
+        nbt = read_chunk(region_dir, cx, cz)
+        if nbt and (nbt.get("Status") or nbt.get("status")) in ("minecraft:full", "full"):
+            out.add((cx, cz))
+    return out
+
+
 def chunk_coords(region_dir: Path) -> list[tuple[int, int]]:
     out = []
     for f in sorted(region_dir.glob("r.*.*.mca")):
@@ -127,6 +137,7 @@ def main() -> None:
     p.add_argument("--other", type=Path, required=True, help="region dir of the compared run")
     p.add_argument("--other-lab", type=Path, required=True, help="lab.json of the compared run (protected boxes, cancellation events)")
     p.add_argument("--out", type=Path, required=True)
+    p.add_argument("--require-full", action="store_true", help="compare only chunks that are status 'full' in every compared run")
     p.add_argument("--noise-pair", nargs=2, type=Path, action="append", default=[], metavar=("A", "B"),
                    help="two vanilla region dirs of the same unit; repeat the option to take the union of their differences")
     a = p.parse_args()
@@ -134,6 +145,10 @@ def main() -> None:
     protected = boxes_from_lab(lab)
     cancel = cancelled_reaches(lab)
     coords = sorted(set(chunk_coords(a.base)) & set(chunk_coords(a.other)))
+    if a.require_full:
+        coords = sorted(full_chunks(a.base, coords) & full_chunks(a.other, coords))
+        for na, nb in a.noise_pair:
+            coords = sorted(set(coords) & full_chunks(na, coords) & full_chunks(nb, coords))
     noise = set()
     for na, nb in a.noise_pair:
         noise_coords = sorted(set(chunk_coords(na)) & set(chunk_coords(nb)) & set(coords))

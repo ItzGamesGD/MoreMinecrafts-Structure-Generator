@@ -1,0 +1,383 @@
+[
+ {
+  "case": "valid",
+  "outcome": "started",
+  "log": [
+   "[08:36:30] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1"
+  ],
+  "codes": [],
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "manifest_missing",
+  "outcome": "failed",
+  "error_tail": "\"format\":0,\"revision\":0,\"required\":0,\"extensions\":0,\"warnings\":[],\"reload_rejections\":0,\"last_rejection\":null}}\n[08:36:57] [Server thread/INFO] (Minecraft) Stopping server\n[08:36:57] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 19s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "no pack provides moreminecrafts:sg_protection/manifest.json (is the SG datapack loaded?)"
+  ],
+  "codes": [
+   "MANIFEST_MISSING"
+  ],
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "MANIFEST_MISSING",
+  "pass": true
+ },
+ {
+  "case": "format_unsupported",
+  "outcome": "failed",
+  "error_tail": "\"format\":0,\"revision\":0,\"required\":0,\"extensions\":0,\"warnings\":[],\"reload_rejections\":0,\"last_rejection\":null}}\n[08:37:18] [Server thread/INFO] (Minecraft) Stopping server\n[08:37:18] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 19s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "manifest from file/sg01 has format 2, this module supports [1]"
+  ],
+  "codes": [
+   "FORMAT_UNSUPPORTED"
+  ],
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "FORMAT_UNSUPPORTED",
+  "pass": true
+ },
+ {
+  "case": "revision_stale",
+  "outcome": "failed",
+  "error_tail": "\"format\":0,\"revision\":0,\"required\":0,\"extensions\":0,\"warnings\":[],\"reload_rejections\":0,\"last_rejection\":null}}\n[08:37:38] [Server thread/INFO] (Minecraft) Stopping server\n[08:37:38] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 18s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "manifest from file/sg01 has revision 0, this module requires at least 1"
+  ],
+  "codes": [
+   "MANIFEST_STALE"
+  ],
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "MANIFEST_STALE",
+  "pass": true
+ },
+ {
+  "case": "required_unresolved",
+  "outcome": "failed",
+  "error_tail": "\"format\":0,\"revision\":0,\"required\":0,\"extensions\":0,\"warnings\":[],\"reload_rejections\":0,\"last_rejection\":null}}\n[08:37:58] [Server thread/INFO] (Minecraft) Stopping server\n[08:37:58] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 19s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "required structure moreminecrafts:forgotten_kingdom/removed (manifest from file/sg01) is not in the structure registry"
+  ],
+  "codes": [
+   "REQUIRED_UNRESOLVED"
+  ],
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "REQUIRED_UNRESOLVED",
+  "pass": true
+ },
+ {
+  "case": "manifest_empty",
+  "outcome": "failed",
+  "error_tail": "\"format\":0,\"revision\":0,\"required\":0,\"extensions\":0,\"warnings\":[],\"reload_rejections\":0,\"last_rejection\":null}}\n[08:38:18] [Server thread/INFO] (Minecraft) Stopping server\n[08:38:18] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 18s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "manifest from file/sg01 lists no required structure"
+  ],
+  "codes": [
+   "MANIFEST_EMPTY"
+  ],
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "MANIFEST_EMPTY",
+  "pass": true
+ },
+ {
+  "case": "manifest_invalid",
+  "outcome": "failed",
+  "error_tail": "\"format\":0,\"revision\":0,\"required\":0,\"extensions\":0,\"warnings\":[],\"reload_rejections\":0,\"last_rejection\":null}}\n[08:38:38] [Server thread/INFO] (Minecraft) Stopping server\n[08:38:38] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 18s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "cannot parse moreminecrafts:sg_protection/manifest.json from file/sg01: com.google.gson.stream.MalformedJsonException: Expected ':' at line 1 column 7 path $.not"
+  ],
+  "codes": [
+   "MANIFEST_INVALID"
+  ],
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "MANIFEST_INVALID",
+  "pass": true
+ },
+ {
+  "case": "owner_pack_format_999",
+  "outcome": "failed",
+  "error_tail": "\"format\":0,\"revision\":0,\"required\":0,\"extensions\":0,\"warnings\":[],\"reload_rejections\":0,\"last_rejection\":null}}\n[08:38:59] [Server thread/INFO] (Minecraft) Stopping server\n[08:38:59] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 19s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "the pack that owns the protection manifest (file/sg01) declares a format that is TOO_NEW for this game version"
+  ],
+  "codes": [
+   "OWNER_PACK_INCOMPATIBLE"
+  ],
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "OWNER_PACK_INCOMPATIBLE",
+  "pass": true
+ },
+ {
+  "case": "conflicting_provider",
+  "outcome": "failed",
+  "error_tail": "\"format\":0,\"revision\":0,\"required\":0,\"extensions\":0,\"warnings\":[],\"reload_rejections\":0,\"last_rejection\":null}}\n[08:39:20] [Server thread/INFO] (Minecraft) Stopping server\n[08:39:20] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 20s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "moreminecrafts:sg_protection/manifest.json is provided by several packs [file/sg01, file/zz_override]; exactly one owner is allowed"
+  ],
+  "codes": [
+   "MANIFEST_CONFLICT"
+  ],
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "MANIFEST_CONFLICT",
+  "pass": true
+ },
+ {
+  "case": "extension_valid",
+  "outcome": "started",
+  "log": [
+   "[08:39:41] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=1 effective=2"
+  ],
+  "codes": [],
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 1,
+   "warnings": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "extension_unresolvable",
+  "outcome": "failed",
+  "error_tail": "inWorkerThread.java:187)\nCaused by: java.lang.IllegalStateException: Failed to load registries due to errors\n\tat knot//net.minecraft.resources.RegistryDataLoader.createReportWithBriefInfo(RegistryDataLoader.java:313)\n\t... 13 more\n\nBUILD SUCCESSFUL in 20s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [],
+  "codes": [],
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": false
+ },
+ {
+  "case": "extension_replace_empty",
+  "outcome": "started",
+  "log": [
+   "[08:40:31] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+   "[08:40:31] [Server thread/WARN] (sg01-spike) SG_SPIKE protection contract warning: extension file from file/zz_extrep sets replace=true; ignored (extensions are additive-only)"
+  ],
+  "codes": [],
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [
+    "extension file from file/zz_extrep sets replace=true; ignored (extensions are additive-only)"
+   ],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "legacy_tag_replaced_to_empty",
+  "outcome": "started",
+  "log": [
+   "[08:40:59] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1"
+  ],
+  "codes": [],
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "unrelated_pack_format_999",
+  "outcome": "started",
+  "log": [
+   "[08:41:24] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1"
+  ],
+  "codes": [],
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "reload_conflict",
+  "outcome": "started",
+  "after": {
+   "command_reply": "Enabling data pack [file/zz_conflict (world)]"
+  },
+  "log": [
+   "[08:41:50] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+   "moreminecrafts:sg_protection/manifest.json is provided by several packs [file/sg01, file/zz_conflict]; exactly one owner is allowed",
+   "moreminecrafts:sg_protection/manifest.json is provided by several packs [file/sg01, file/zz_conflict]; exactly one owner is allowed\"}}"
+  ],
+  "codes": [
+   "MANIFEST_CONFLICT"
+  ],
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 1,
+   "last_rejection": "SG protection contract [MANIFEST_CONFLICT]: moreminecrafts:sg_protection/manifest.json is provided by several packs [file/sg01, file/zz_conflict]; exactly one owner is allowed"
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "reload_stale",
+  "outcome": "started",
+  "after": {
+   "command_reply": "Reloading!"
+  },
+  "log": [
+   "[08:42:19] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+   "manifest from file/sg01 has revision 0, this module requires at least 1",
+   "manifest from file/sg01 has revision 0, this module requires at least 1\"}}"
+  ],
+  "codes": [
+   "MANIFEST_STALE"
+  ],
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "reload_rejections": 1,
+   "last_rejection": "SG protection contract [MANIFEST_STALE]: manifest from file/sg01 has revision 0, this module requires at least 1"
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ }
+]

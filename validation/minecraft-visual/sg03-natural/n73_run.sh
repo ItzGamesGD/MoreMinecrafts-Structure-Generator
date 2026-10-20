@@ -11,8 +11,9 @@ OUT="$1"; CONFIG="$2"; SEED="$3"; CX="$4"; CZ="$5"; ORDER="$6"; REP="$7"; KEEP="
 HERE="$(cd "$(dirname "$0")" && pwd)"
 REPO="$(cd "$HERE/../../.." && pwd)"
 TAG="${CONFIG}_${SEED}_${CX}_${CZ}_${ORDER//:/-}_r${REP}"
-ARGS=(--jar "$SERVER_JAR" --pack "$SG_PACK" --out "$OUT/$TAG" --seed "$SEED" --chunk "$CX" "$CZ" --order "$ORDER" --radius "${RADIUS:-5}" --ticks 0 --port 40950)
+ARGS=(--jar "$SERVER_JAR" --pack "$SG_PACK" --out "$OUT/$TAG" --seed "$SEED" --chunk "$CX" "$CZ" --order "$ORDER" --radius "${RADIUS:-5}" --settle "${SETTLE:-0}" --ticks 0 --port 40950)
 [ "$KEEP" = 1 ] && ARGS+=(--keep-world)
+[ "${FREEZE:-0}" = 1 ] && ARGS+=(--freeze)
 if [ "$CONFIG" = V ]; then
   [ -n "$BG" ] && ARGS+=(--threads "$BG")
 else

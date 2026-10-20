@@ -1,0 +1,121 @@
+{
+ "chunks_compared": 251,
+ "vanilla_replicates": 4,
+ "vanilla_pairs": 6,
+ "noise_ceiling_total_blocks": 22380,
+ "guarded_mean_diff_total_blocks": 17542.0,
+ "chunks_with_footprint": 44,
+ "chunks_above_noise": 26,
+ "classification": {
+  "adjacent_to_footprint": 8,
+  "unexpected": 13,
+  "cancellation_footprint": 5
+ },
+ "unexpected_chunks": [
+  {
+   "chunk": [
+    -25,
+    8
+   ],
+   "guarded_min_diff": 3,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -21,
+    19
+   ],
+   "guarded_min_diff": 95,
+   "noise_ceiling": 7
+  },
+  {
+   "chunk": [
+    -17,
+    7
+   ],
+   "guarded_min_diff": 102,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -17,
+    8
+   ],
+   "guarded_min_diff": 450,
+   "noise_ceiling": 182
+  },
+  {
+   "chunk": [
+    -17,
+    9
+   ],
+   "guarded_min_diff": 776,
+   "noise_ceiling": 150
+  },
+  {
+   "chunk": [
+    -17,
+    10
+   ],
+   "guarded_min_diff": 713,
+   "noise_ceiling": 24
+  },
+  {
+   "chunk": [
+    -16,
+    7
+   ],
+   "guarded_min_diff": 381,
+   "noise_ceiling": 5
+  },
+  {
+   "chunk": [
+    -16,
+    11
+   ],
+   "guarded_min_diff": 57,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -16,
+    12
+   ],
+   "guarded_min_diff": 83,
+   "noise_ceiling": 2
+  },
+  {
+   "chunk": [
+    -16,
+    13
+   ],
+   "guarded_min_diff": 133,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -16,
+    14
+   ],
+   "guarded_min_diff": 155,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -16,
+    20
+   ],
+   "guarded_min_diff": 2,
+   "noise_ceiling": 1
+  },
+  {
+   "chunk": [
+    -13,
+    16
+   ],
+   "guarded_min_diff": 8,
+   "noise_ceiling": 3
+  }
+ ],
+ "caveat": "chunks at or below the noise ceiling are not distinguishable from vanilla variation; this is not proof that they are unaffected"
+}

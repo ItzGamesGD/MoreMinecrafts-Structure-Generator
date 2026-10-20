@@ -1,0 +1,233 @@
+{
+ "chunks_compared": 251,
+ "vanilla_replicates": 4,
+ "vanilla_pairs": 6,
+ "noise_ceiling_total_blocks": 22380,
+ "guarded_mean_diff_total_blocks": 23456.0,
+ "chunks_with_footprint": 44,
+ "chunks_above_noise": 34,
+ "classification": {
+  "adjacent_to_footprint": 3,
+  "cancellation_footprint": 4,
+  "unexpected": 27
+ },
+ "unexpected_chunks": [
+  {
+   "chunk": [
+    -23,
+    18
+   ],
+   "guarded_min_diff": 9,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -21,
+    19
+   ],
+   "guarded_min_diff": 89,
+   "noise_ceiling": 7
+  },
+  {
+   "chunk": [
+    -17,
+    8
+   ],
+   "guarded_min_diff": 488,
+   "noise_ceiling": 182
+  },
+  {
+   "chunk": [
+    -17,
+    9
+   ],
+   "guarded_min_diff": 701,
+   "noise_ceiling": 150
+  },
+  {
+   "chunk": [
+    -17,
+    10
+   ],
+   "guarded_min_diff": 27,
+   "noise_ceiling": 24
+  },
+  {
+   "chunk": [
+    -16,
+    10
+   ],
+   "guarded_min_diff": 301,
+   "noise_ceiling": 30
+  },
+  {
+   "chunk": [
+    -16,
+    11
+   ],
+   "guarded_min_diff": 754,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -16,
+    12
+   ],
+   "guarded_min_diff": 264,
+   "noise_ceiling": 2
+  },
+  {
+   "chunk": [
+    -16,
+    19
+   ],
+   "guarded_min_diff": 13,
+   "noise_ceiling": 2
+  },
+  {
+   "chunk": [
+    -16,
+    20
+   ],
+   "guarded_min_diff": 15,
+   "noise_ceiling": 1
+  },
+  {
+   "chunk": [
+    -15,
+    7
+   ],
+   "guarded_min_diff": 798,
+   "noise_ceiling": 102
+  },
+  {
+   "chunk": [
+    -15,
+    8
+   ],
+   "guarded_min_diff": 706,
+   "noise_ceiling": 299
+  },
+  {
+   "chunk": [
+    -15,
+    9
+   ],
+   "guarded_min_diff": 598,
+   "noise_ceiling": 572
+  },
+  {
+   "chunk": [
+    -15,
+    10
+   ],
+   "guarded_min_diff": 325,
+   "noise_ceiling": 2
+  },
+  {
+   "chunk": [
+    -15,
+    11
+   ],
+   "guarded_min_diff": 643,
+   "noise_ceiling": 3
+  },
+  {
+   "chunk": [
+    -15,
+    12
+   ],
+   "guarded_min_diff": 995,
+   "noise_ceiling": 12
+  },
+  {
+   "chunk": [
+    -15,
+    20
+   ],
+   "guarded_min_diff": 9,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -14,
+    10
+   ],
+   "guarded_min_diff": 756,
+   "noise_ceiling": 71
+  },
+  {
+   "chunk": [
+    -14,
+    11
+   ],
+   "guarded_min_diff": 479,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -14,
+    12
+   ],
+   "guarded_min_diff": 669,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -14,
+    13
+   ],
+   "guarded_min_diff": 194,
+   "noise_ceiling": 3
+  },
+  {
+   "chunk": [
+    -13,
+    9
+   ],
+   "guarded_min_diff": 255,
+   "noise_ceiling": 166
+  },
+  {
+   "chunk": [
+    -13,
+    10
+   ],
+   "guarded_min_diff": 574,
+   "noise_ceiling": 1
+  },
+  {
+   "chunk": [
+    -13,
+    11
+   ],
+   "guarded_min_diff": 530,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -13,
+    12
+   ],
+   "guarded_min_diff": 509,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -12,
+    11
+   ],
+   "guarded_min_diff": 384,
+   "noise_ceiling": 66
+  },
+  {
+   "chunk": [
+    -12,
+    12
+   ],
+   "guarded_min_diff": 42,
+   "noise_ceiling": 0
+  }
+ ],
+ "caveat": "chunks at or below the noise ceiling are not distinguishable from vanilla variation; this is not proof that they are unaffected"
+}

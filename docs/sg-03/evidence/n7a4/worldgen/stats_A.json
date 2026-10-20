@@ -1,0 +1,88 @@
+{
+ "chunks_compared": 251,
+ "vanilla_replicates": 4,
+ "vanilla_pairs": 6,
+ "noise_ceiling_total_blocks": 22380,
+ "guarded_mean_diff_total_blocks": 12191.8,
+ "chunks_with_footprint": 40,
+ "chunks_above_noise": 13,
+ "classification": {
+  "adjacent_to_footprint": 4,
+  "unexpected": 9
+ },
+ "unexpected_chunks": [
+  {
+   "chunk": [
+    -23,
+    18
+   ],
+   "guarded_min_diff": 9,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -23,
+    19
+   ],
+   "guarded_min_diff": 10,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -22,
+    19
+   ],
+   "guarded_min_diff": 54,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -16,
+    19
+   ],
+   "guarded_min_diff": 13,
+   "noise_ceiling": 2
+  },
+  {
+   "chunk": [
+    -16,
+    20
+   ],
+   "guarded_min_diff": 14,
+   "noise_ceiling": 1
+  },
+  {
+   "chunk": [
+    -15,
+    7
+   ],
+   "guarded_min_diff": 873,
+   "noise_ceiling": 102
+  },
+  {
+   "chunk": [
+    -15,
+    20
+   ],
+   "guarded_min_diff": 9,
+   "noise_ceiling": 0
+  },
+  {
+   "chunk": [
+    -14,
+    15
+   ],
+   "guarded_min_diff": 61,
+   "noise_ceiling": 30
+  },
+  {
+   "chunk": [
+    -13,
+    8
+   ],
+   "guarded_min_diff": 156,
+   "noise_ceiling": 21
+  }
+ ],
+ "caveat": "chunks at or below the noise ceiling are not distinguishable from vanilla variation; this is not proof that they are unaffected"
+}
