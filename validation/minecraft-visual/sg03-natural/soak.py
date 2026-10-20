@@ -62,6 +62,19 @@ def main() -> None:
                 # Diagnose before giving up: command replies and a thread dump of the server JVM.
                 diag = {"step": i + 1, "site": [cx, cz], "forceload_reply": reply, "forceload_list": srv.cmd("forceload query"),
                         "loaded_check": srv.cmd(f"execute if loaded {(cx + r) * 16} 0 {(cz + r) * 16}")}
+                loaded = {f"{x},{z}": "Test passed" in srv.cmd(f"execute if loaded {x * 16} 0 {z * 16}")
+                          for x in range(cx - r, cx + r + 1) for z in range(cz - r, cz + r + 1)}
+                diag["loaded_chunks_in_area"] = sum(loaded.values())
+                diag["not_loaded"] = sorted(k for k, v in loaded.items() if not v)
+                # does releasing and re-adding the area recover it?
+                srv.cmd("forceload remove all")
+                time.sleep(3)
+                srv.cmd(f"forceload add {(cx - r) * 16} {(cz - r) * 16} {(cx + r) * 16} {(cz + r) * 16}")
+                try:
+                    wait_loaded(srv, (cx + r) * 16, (cz + r) * 16, seconds=60)
+                    diag["recovered_after_readd"] = True
+                except RuntimeError:
+                    diag["recovered_after_readd"] = False
                 (a.out / "stall.json").write_text(json.dumps(diag, indent=1) + "\n")
                 import subprocess
                 jpid = subprocess.run(["bash", "-c", "ps -eo pid,args | awk '/fabric\\.dli/ {print $1; exit}'"], capture_output=True, text=True).stdout.strip()
