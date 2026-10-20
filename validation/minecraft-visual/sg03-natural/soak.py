@@ -36,10 +36,18 @@ def main() -> None:
     p.add_argument("--release", choices=["all", "area", "none"], default="all", help="how a finished site is released: 'forceload remove all', remove only its area, or keep it")
     p.add_argument("--vanilla", type=Path, help="N7-A4 isolation: run the plain vanilla server jar (no module, no sampler) instead of the Fabric module")
     p.add_argument("--no-sampler", action="store_true", help="N7-A4 isolation: run the module without the JVM sampler")
+    p.add_argument("--min-separation", type=int, default=24, help="minimum Chebyshev distance in chunks between chosen sites (0 = none)")
     p.add_argument("--wait", type=float, default=120.0, help="seconds to wait for a site to load before diagnosing a stall")
     a = p.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
-    sites = sorted((c for c in candidates_in_ring(a.seed, SG01, 6) if not exclusion_suppressed(a.seed, c)), key=lambda c: (c[0] ** 2 + c[1] ** 2, c))[:a.sites]
+    ordered = sorted((c for c in candidates_in_ring(a.seed, SG01, 6) if not exclusion_suppressed(a.seed, c)), key=lambda c: (c[0] ** 2 + c[1] ** 2, c))
+    # Greedy selection with a minimum Chebyshev separation, so that the structure-start dependency zones (8 chunks) of two sites never touch.
+    sites = []
+    for c in ordered:
+        if all(max(abs(c[0] - k[0]), abs(c[1] - k[1])) >= a.min_separation for k in sites):
+            sites.append(c)
+        if len(sites) == a.sites:
+            break
     samples = (a.out / "samples.jsonl").resolve()
     report = (a.out / "spike-report.json").resolve()
     for f in (samples, report):
