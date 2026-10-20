@@ -33,6 +33,7 @@ def main() -> None:
     p.add_argument("--settle", type=float, default=4.0)
     p.add_argument("--idle", type=float, default=90.0, help="seconds of idle sampling after the last site")
     p.add_argument("--port", type=int, default=41010)
+    p.add_argument("--release", choices=["all", "area", "none"], default="all", help="how a finished site is released: 'forceload remove all', remove only its area, or keep it")
     p.add_argument("--vanilla", type=Path, help="N7-A4 isolation: run the plain vanilla server jar (no module, no sampler) instead of the Fabric module")
     p.add_argument("--no-sampler", action="store_true", help="N7-A4 isolation: run the module without the JVM sampler")
     p.add_argument("--wait", type=float, default=120.0, help="seconds to wait for a site to load before diagnosing a stall")
@@ -93,7 +94,10 @@ def main() -> None:
                 shutil.copy2(run_dir / "server.log", a.out / "server.log")
                 raise
             time.sleep(a.settle)
-            srv.cmd("forceload remove all")
+            if a.release == "all":
+                srv.cmd("forceload remove all")
+            elif a.release == "area":
+                srv.cmd(f"forceload remove {(cx - r) * 16} {(cz - r) * 16} {(cx + r) * 16} {(cz + r) * 16}")
             if i % 8 == 7:
                 srv.save()
             time.sleep(a.settle)
