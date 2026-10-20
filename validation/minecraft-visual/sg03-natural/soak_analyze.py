@@ -38,6 +38,12 @@ def analyse(run: Path) -> dict:
         ys = [r[key] / 1048576 for r in use]
         slope, ci = ols(tm, ys)
         out[label] = {"slope": round(slope, 3), "ci95": round(ci, 3), "includes_zero": abs(slope) <= ci, "n": len(ys)}
+    # The post-warm-up window above still contains the load ramp (loaded chunks climb to a plateau); the steady-phase slopes use only the second half
+    # and last third of the usable samples, where the chunk count is at its plateau.
+    for label, frac in (("last_half", 0.5), ("last_third", 1 / 3)):
+        tail = use[int(len(use) * (1 - frac)):]
+        slope, ci = ols([r["uptime_ms"] / 60000.0 for r in tail], [r["heap_after_gc"] / 1048576 for r in tail])
+        out["heap_after_gc_MB_per_min_" + label] = {"slope": round(slope, 3), "ci95": round(ci, 3), "includes_zero": abs(slope) <= ci, "n": len(tail)}
     third = max(1, len(use) // 3)
     out["heap_after_gc_MB_first_third_mean"] = round(st.mean(r["heap_after_gc"] for r in use[:third]) / 1048576, 1)
     out["heap_after_gc_MB_last_third_mean"] = round(st.mean(r["heap_after_gc"] for r in use[-third:]) / 1048576, 1)
@@ -65,6 +71,9 @@ def main() -> None:
         print(f"{r['run']:18} {r['mode']:8} {r['duration_min']:6.1f} min  heap-after-GC slope {h['slope']:+.2f}±{h['ci95']:.2f} MB/min "
               f"({'no detectable trend' if h['includes_zero'] else 'TREND'})  first/last third {r['heap_after_gc_MB_first_third_mean']}/{r['heap_after_gc_MB_last_third_mean']} MB  "
               f"gc {r['gc_time_fraction']:.3f}  alloc {r['allocation_MB_per_s']} MB/s  chunks max {r['loaded_chunks_max']}")
+        for label in ("last_half", "last_third"):
+            t = r["heap_after_gc_MB_per_min_" + label]
+            print(f"{'':18} steady phase ({label}) slope {t['slope']:+.2f}±{t['ci95']:.2f} MB/min ({'no detectable trend' if t['includes_zero'] else 'TREND'}, n={t['n']})")
 
 
 if __name__ == "__main__":
