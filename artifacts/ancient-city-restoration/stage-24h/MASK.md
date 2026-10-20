@@ -10,11 +10,12 @@ Stage 24-H interior clearance masks for the eight approved modules.
 Every cell of a template is put in exactly one class (see MASK.md for the rules):
 
   stored_architecture   the template stores a block here (incl. stored air, water, jigsaws)   never cleared
-  room_interior         enclosed walkable column under a ceiling, floor -> ceiling            CLEARED
+  room_interior         enclosed walkable column under a ceiling, floor -> ceiling, then spread sideways
+                        within the same layer over furniture/corners of the enclosed, roofed room  CLEARED
   walkway               enclosed walkable cell open to the sky: body + one jump-headroom cell  CLEARED
   paved_walkway         walkable cell on the module's own stored floor outside any enclosure: body height only  CLEARED
   step_headroom         the cell above a walkable cell from which the walk climbs a step       CLEARED
-  interaction_space     the cell above a chest (a chest cannot open under a solid block)       CLEARED
+  interaction_space     the cell above a chest (cannot open under a solid block) or a bed half (cannot sleep)  CLEARED
   pool_headroom         the two cells above stored water inside an enclosed space              CLEARED
   decorative_void       unstored cell inside the walls that nobody walks in (roof voids, cavities)  kept
   exterior              unstored cell reachable from the box boundary without passing a wall or a door  kept
@@ -29,11 +30,11 @@ Courtyard rule: an enclosed walkable cell with no ceiling clears its two body ce
 
 | module | size | stored_architecture | room_interior | walkway | paved_walkway | step_headroom | interaction_space | pool_headroom | decorative_void | exterior | cleared |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| large_ruin_1 | 17×14×17 | 1163 | 998 | 75 | 0 | 0 | 0 | 0 | 115 | 1695 | **1073** |
-| medium_ruin_1 | 8×5×13 | 330 | 184 | 0 | 0 | 0 | 0 | 0 | 6 | 0 | **184** |
-| medium_ruin_2 | 16×8×11 | 711 | 551 | 0 | 0 | 0 | 0 | 0 | 14 | 132 | **551** |
-| small_ruin_1 | 7×5×8 | 199 | 75 | 0 | 0 | 0 | 0 | 0 | 6 | 0 | **75** |
-| small_ruin_2 | 8×5×4 | 128 | 28 | 0 | 0 | 0 | 0 | 0 | 4 | 0 | **28** |
+| large_ruin_1 | 17×14×17 | 1163 | 1038 | 75 | 0 | 0 | 0 | 0 | 75 | 1695 | **1113** |
+| medium_ruin_1 | 8×5×13 | 330 | 190 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **190** |
+| medium_ruin_2 | 16×8×11 | 711 | 565 | 0 | 0 | 0 | 0 | 0 | 0 | 132 | **565** |
+| small_ruin_1 | 7×5×8 | 199 | 81 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **81** |
+| small_ruin_2 | 8×5×4 | 128 | 32 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | **32** |
 | sauna_1 | 29×10×37 | 1901 | 1 | 0 | 1542 | 134 | 3 | 86 | 15 | 7048 | **1766** |
 | large_pillar_1 | 6×15×6 | 320 | 0 | 0 | 39 | 1 | 0 | 0 | 0 | 180 | **40** |
 | medium_pillar_1 | 7×11×8 | 286 | 0 | 0 | 7 | 1 | 0 | 0 | 23 | 299 | **8** |
@@ -68,16 +69,16 @@ y = 2
 ```
 #################
 #RRRR#RRRRR#RRRR#
-#R:RR#RRRRR#RRRR#
-#RRRR#RRRRR#:RRR#
-#R:RR#RRRRR#:RRR#
+#RRRR#RRRRR#RRRR#
+#RRRR#RRRRR#RRRR#
+#RRRR#RRRRR#RRRR#
 #RRRR#######RRRR#
 #RRRR#WWWWW#RRRR#
 #RRRRRWWWWWRRRRR#
 #RRRRRWWWWWRRRRR#
 #RRRRRWWWWWRRRRR#
-#RRRR#WWWWW#:RRR#
-#RRRR#######:RRR#
+#RRRR#WWWWW#RRRR#
+#RRRR#######RRRR#
 #RRRR#RRRRR#RRRR#
 #RRRR#RRRRR#RRRR#
 #RRRR#RRRRR#RRRR#
@@ -89,15 +90,15 @@ y = 3
 #################
 #RRRR#RRRRR#RRRR#
 #R#RR#RRRRR#R#RR#
-#RRRR#RRRRR#:RRR#
-#R:RR#RRRRR#:RRR#
+#RRRR#RRRRR#RRRR#
+#RRRR#RRRRR#RRRR#
 #RRRR#######RRRR#
 #RRRR#WWWWW#RRRR#
 #RRRRRWWWWWRRRRR#
 #RRRRRWWWWWRRRRR#
 #RRRRRWWWWWRRRRR#
-#RRRR#WWWWW#:RRR#
-#RRRR#######:RRR#
+#RRRR#WWWWW#RRRR#
+#RRRR#######RRRR#
 #RRRR#RRRRR#RRRR#
 #RRRR#RRRRR#RRRR#
 #R#RR#RRRRR#R#RR#
@@ -109,15 +110,15 @@ y = 4
 #################
 #RRRR#RRRRR#RRRR#
 #R#RR#RRRRR#R#RR#
-#RRRR#RRRRR#:RRR#
-#R:RR#RRRRR#:RRR#
+#RRRR#RRRRR#RRRR#
+#RRRR#RRRRR#RRRR#
 #RRRR#######RRRR#
 #RRRR#:::::#RRRR#
 #RRRRR:::::RRRRR#
 #RRRRR:::::RRRRR#
 #RRRRR:::::RRRRR#
-#RRRR#:::::#:RRR#
-#RRRR#######:RRR#
+#RRRR#:::::#RRRR#
+#RRRR#######RRRR#
 #RRRR#RRRRR#RRRR#
 #RRRR#RRRRR#RRRR#
 #R#RR#RRRRR#R#RR#
@@ -129,15 +130,15 @@ y = 5
 #################
 #RRRR#RRRRR#RRRR#
 #R#RR#RRRRR#R#RR#
-#RRRR#RRRRR#:RRR#
-#R:RR#RRRRR#:RRR#
+#RRRR#RRRRR#RRRR#
+#RRRR#RRRRR#RRRR#
 #RRRR#######RRRR#
 #RRRR#:::::#RRRR#
 #RRRRR:::::RRRRR#
 #RRRRR:::::RRRRR#
 #RRRRR:::::RRRRR#
-#RRRR#:::::#:RRR#
-#RRRR#######:RRR#
+#RRRR#:::::#RRRR#
+#RRRR#######RRRR#
 #RRRR#RRRRR#RRRR#
 #RRRR#RRRRR#RRRR#
 #R#RR#RRRRR#R#RR#
@@ -147,21 +148,21 @@ y = 5
 y = 6
 ```
 #################
-#RRRR:RRRRR:RRRR#
-#R#RR:RRRRR:R#RR#
-######RRRRR::RRR#
-#R:RR#RRRRR::RRR#
+#RRRRRRRRRRRRRRR#
+#R#RRRRRRRRRR#RR#
+######RRRRRRRRRR#
+#RRRR#RRRRRRRRRR#
 #RRRR#######RRRR#
 #RRRR#:::::#RRRR#
 #RRRR#:::::#RRRR#
 #RRRR#:::::#RRRR#
 #RRRR#:::::#RRRR#
-#RRRR#:::::#:RRR#
-############:RRR#
-#RRRR:RRRRR:RRRR#
-#RRRR:RRRRR:RRRR#
-#R#RR:RRRRR:R#RR#
-#RRRR:RRRRR:RRRR#
+#RRRR#:::::#RRRR#
+############RRRR#
+#RRRRRRRRRRRRRRR#
+#RRRRRRRRRRRRRRR#
+#R#RRRRRRRRRR#RR#
+#RRRRRRRRRRRRRRR#
 #################
 ```
 y = 7
@@ -289,7 +290,6 @@ y = 2
 ```
 ########
 #RRRRRR#
-#RRRR::#
 #RRRRRR#
 #RRRRRR#
 #RRRRRR#
@@ -297,7 +297,8 @@ y = 2
 #RRRRRR#
 #RRRRRR#
 #RRRRRR#
-#::RRRR#
+#RRRRRR#
+#RRRRRR#
 #RRRRRR#
 ########
 ```
@@ -305,7 +306,7 @@ y = 3
 ```
 ########
 #RRRRRR#
-#RRRR:##
+#RRRRR##
 #RRRRRR#
 #RRRRRR#
 #RRRRRR#
@@ -313,7 +314,7 @@ y = 3
 #RRRRRR#
 #RRRRRR#
 #RRRRRR#
-##:RRRR#
+##RRRRR#
 #RRRRRR#
 ########
 ```
@@ -329,7 +330,7 @@ y = 1
 #RRRRRRRRRRRRRR#
 #RRRRRRRRRRRRRR#
 #RRRRRRRRRRRRRR#
-#RR###:RRRRRRRR#
+#RR###RRRRRRRRR#
 #RRRRRRRRRRRRRR#
 #RRRRRRRRRR#RRR#
 #RRRRRRRRRR#RRR#
@@ -345,9 +346,9 @@ y = 2
 #RRRRRRRRRRRRRR#
 #RRRR##RRRRRRRR#
 #RRRRRRRRRRRRRR#
-#RRRRRRRRRR:RRR#
-#RRRRRRRRRR:RRR#
-#R::RRRRRRRRRRR#
+#RRRRRRRRRRRRRR#
+#RRRRRRRRRRRRRR#
+#RRRRRRRRRRRRRR#
 ################
 ```
 y = 3
@@ -359,9 +360,9 @@ y = 3
 #R#RRRRRRRRRRRR#
 #RRRRR##RRRRRRR#
 #RRRRRRRRRRRRRR#
-#RRRRRRRRRR:RRR#
-#RRRRRRRRRR:RRR#
-#R::RRRRRRRRRRR#
+#RRRRRRRRRRRRRR#
+#RRRRRRRRRRRRRR#
+#RRRRRRRRRRRRRR#
 ################
 ```
 y = 4
@@ -375,7 +376,7 @@ y = 4
 ##RRRRR#########
 ##RRRRR#########
 ##RRRRR#########
-##::RRR#########
+##RRRRR#########
 ################
 ```
 y = 5
@@ -396,13 +397,13 @@ y = 6
 ```
 ....############
 ....##R#RRRRRRR#
-....##R#RRR:RRR#
-....##R#RRR:RRR#
 ....##R#RRRRRRR#
 ....##R#RRRRRRR#
 ....##R#RRRRRRR#
 ....##R#RRRRRRR#
-....##R#RRRRR:R#
+....##R#RRRRRRR#
+....##R#RRRRRRR#
+....##R#RRRRRRR#
 ....##R#RRRRRRR#
 ....############
 ```
@@ -426,22 +427,22 @@ y = 2
 ```
 #######
 #RRRRR#
-#R::RR#
 #RRRRR#
 #RRRRR#
 #RRRRR#
-#R:RRR#
+#RRRRR#
+#RRRRR#
 #######
 ```
 y = 3
 ```
 #######
 #RRRRR#
-#R::RR#
 #RRRRR#
 #RRRRR#
 #RRRRR#
-#R:RR##
+#RRRRR#
+#RRRR##
 #######
 ```
 
@@ -459,14 +460,14 @@ y = 1
 y = 2
 ```
 ########
-#R::RRR#
+#RRRRRR#
 #RRRRRR#
 ########
 ```
 y = 3
 ```
 ########
-#R::RRR#
+#RRRRRR#
 #RRRRR##
 ########
 ```

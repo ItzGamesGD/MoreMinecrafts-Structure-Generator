@@ -98,10 +98,12 @@ def analyse(world, m, kind, loc, inv, mask, fill_block, after_ticks=False):
                             continue
                         exp = P.rule_output(st, w) or st
                         exp = rotate_state(exp, r) if exp == st else exp
-                    if same(got, exp):
+                    if same(got, exp) or ("[" not in exp and gn == P.name(exp)):
                         c["stored_ok"] += 1
                     elif gn in SCULK:
                         c["stored_later_sculk"] += 1  # sculk-patch children of the sauna's sculk jigsaws (vanilla)
+                    elif after_ticks and P.name(exp) == "minecraft:air" and gn in ("minecraft:lava", "minecraft:water"):
+                        c["stored_air_fluid_after_ticks"] += 1  # stored-air shafts flooded by the surrounding fluid later
                     elif P.name(exp) in ("minecraft:air",) and gn == fill_name:
                         flag("STORED_AIR_NOT_WRITTEN", p, w, exp, got)
                     elif after_ticks and gn in ("minecraft:lava", "minecraft:obsidian", "minecraft:cobblestone", "minecraft:stone"):
@@ -125,6 +127,8 @@ def analyse(world, m, kind, loc, inv, mask, fill_block, after_ticks=False):
                 else:
                     if gn == fill_name:
                         c["outside_mask_untouched"] += 1
+                    elif gn in SCULK:
+                        c["outside_mask_sculk_converted"] += 1  # vanilla sculk patch turned the fill into sculk (not removed)
                     elif after_ticks and gn in ("minecraft:lava", "minecraft:air", "minecraft:obsidian", "minecraft:cobblestone", "minecraft:stone"):
                         c["outside_mask_fluid_flow"] += 1
                     else:
@@ -182,9 +186,30 @@ def main(out_dir: Path, max_attempts=12, lava_per_module=1):
     return report
 
 
+def reanalyse(out_dir: Path):
+    """Re-classify the saved world of the last run (deepslate placements, and lava placements after their ticks)."""
+    rep = json.loads((out_dir / "live-clearance-report.json").read_text())
+    inv = json.loads((D24G / "protection/protected-cells.json").read_text())
+    masks = json.loads((D24H / "mask/interior-masks.json").read_text())
+    w = World(OUT / "_work/s24h-live/server/world/dimensions/minecraft/overworld")
+    for rec in rep["placements"]:
+        m = rec["module"]
+        mask = {tuple(p) for v in masks[m]["cleared"].values() for p in v}
+        if rec["fill"] == "lava":
+            rec["analysis_after_1200_ticks"] = analyse(w, m, rec["kind"], rec, inv, mask, "lava", after_ticks=True)
+        else:
+            rec["analysis"] = analyse(w, m, rec["kind"], rec, inv, mask, rec["fill"])
+    rep["reanalysed"] = "classification re-run on the saved world after the run (no regeneration)"
+    (out_dir / "live-clearance-report.json").write_text(json.dumps(rep, indent=1, default=list))
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(D24H / "live"))
     ap.add_argument("--max", type=int, default=12)
+    ap.add_argument("--reanalyse", action="store_true")
     a = ap.parse_args()
-    main(Path(a.out), a.max)
+    if a.reanalyse:
+        reanalyse(Path(a.out))
+    else:
+        main(Path(a.out), a.max)

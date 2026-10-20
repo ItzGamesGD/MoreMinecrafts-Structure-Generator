@@ -3,11 +3,12 @@
 Every cell of a template is put in exactly one class (see MASK.md for the rules):
 
   stored_architecture   the template stores a block here (incl. stored air, water, jigsaws)   never cleared
-  room_interior         enclosed walkable column under a ceiling, floor -> ceiling            CLEARED
+  room_interior         enclosed walkable column under a ceiling, floor -> ceiling, then spread sideways
+                        within the same layer over furniture/corners of the enclosed, roofed room  CLEARED
   walkway               enclosed walkable cell open to the sky: body + one jump-headroom cell  CLEARED
   paved_walkway         walkable cell on the module's own stored floor outside any enclosure: body height only  CLEARED
   step_headroom         the cell above a walkable cell from which the walk climbs a step       CLEARED
-  interaction_space     the cell above a chest (a chest cannot open under a solid block)       CLEARED
+  interaction_space     the cell above a chest (cannot open under a solid block) or a bed half (cannot sleep)  CLEARED
   pool_headroom         the two cells above stored water inside an enclosed space              CLEARED
   decorative_void       unstored cell inside the walls that nobody walks in (roof voids, cavities)  kept
   exterior              unstored cell reachable from the box boundary without passing a wall or a door  kept
@@ -109,8 +110,22 @@ def build_mask(t: Template):
         for dx, dz in H4:  # a step up needs head room above the cell it is climbed from
             if (x + dx, y + 1, z + dz) in walk:
                 mark((x, y + 2, z), "step_headroom", enclosed_only=False)
+    # a room is its whole enclosed, roofed volume, not only the columns a player walks in: spread each room layer
+    # sideways over furniture (bed tops must be free to sleep), table tops and corners, never outside the enclosure
+    # and never into a column without a ceiling
+    q = deque(p for p, c in cls.items() if c == "room_interior")
+    while q:
+        x, y, z = q.popleft()
+        for dx, dz in H4:
+            nb = (x + dx, y, z + dz)
+            if (0 <= nb[0] < sx and 0 <= nb[2] < sz and nb not in cls and t.at(nb) is None and nb not in ext
+                    and ceiling(t, *nb) is not None):
+                cls[nb] = "room_interior"
+                q.append(nb)
     for p, st in t.state.items():
         n = short(st)
+        if n.endswith("_bed"):
+            mark((p[0], p[1] + 1, p[2]), "interaction_space", enclosed_only=False)  # sleeping needs free cells above both halves
         if n == "chest":
             mark((p[0], p[1] + 1, p[2]), "interaction_space", enclosed_only=False)
         if n == "water" and t.at((p[0], p[1] + 1, p[2])) is None:
