@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """N7-A3 protection-tag and datapack-version variants (Phase 3). Each variant is a disposable copy of the SG datapack; the module is started on it.
+The protection tag ships inside the spike mod; variants override it with a world datapack entry. Removing the mod's own tag would need a
+different jar and is NOT covered here.
 
 Expected: missing, stale-only and unsupported-format variants fail at startup with an explicit diagnostic (no silent deactivation);
 the superset variant starts and resolves both structures.
@@ -26,8 +28,11 @@ def variant(src: Path, dst: Path, name: str) -> Path:
     shutil.rmtree(dst, ignore_errors=True)
     shutil.copytree(src, dst)
     tag = dst / TAG
+    tag.parent.mkdir(parents=True, exist_ok=True)
+    # The protection tag is shipped by the spike mod itself. A world datapack file with the same id overrides the mod's copy,
+    # so each variant is written into the SG datapack copy (loaded later, therefore higher priority).
     if name == "missing_tag":
-        tag.unlink()
+        tag.write_text(json.dumps({"values": []}))
     elif name == "stale_only":
         tag.write_text(json.dumps({"values": [{"id": "moreminecrafts:forgotten_kingdom/removed_in_2_0", "required": False}]}))
     elif name == "superset":
