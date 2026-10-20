@@ -45,7 +45,7 @@ def functional_cells(t: Template):
     return reach, body
 
 
-def classify(t: Template, vanilla_cells, rel, block):
+def classify(t: Template, vanilla_cells, rel, block, vanilla_size=None):
     reach, body = functional_cells(t)
     x, y, z = rel
     near = [(x + dx, y + dy, z + dz) for dx, dy, dz in ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1))]
@@ -55,6 +55,8 @@ def classify(t: Template, vanilla_cells, rel, block):
         return "functional_obstruction", "occupies a walkable body/head cell"
     if block in FLUIDS:
         return "potential_generation_hazard", "fluid inside the piece box (not touching a walkable cell)"
+    if vanilla_size is not None and not all(0 <= rel[i] < vanilla_size[i] for i in range(3)):
+        return "cosmetic_intrusion", "natural terrain inside the owner-approved added height; the vanilla box does not reach this cell"
     if vanilla_cells is not None and rel not in vanilla_cells:
         return "existing_vanilla_behaviour", "cell is also unspecified in the vanilla template; natural terrain"
     return "cosmetic_intrusion", "cell is specified by vanilla but left unspecified by the restoration"
@@ -74,16 +76,17 @@ def run(analysis_path: Path, src: Path, label: str):
                 t = Template(src / m / "restored.nbt")
                 vp = VANILLA / f"{m}.nbt"
                 vcells = set(blocks_of(load_nbt(vp))) if vp.exists() else None
+                vsize = [int(v) for v in load_nbt(vp)["size"]] if vp.exists() else None
                 jig = {p for p, s in t.state.items() if s.startswith("minecraft:jigsaw")}
-                cache[m] = (t, vcells, jig)
-            t, vcells, jig = cache[m]
+                cache[m] = (t, vcells, jig, vsize)
+            t, vcells, jig, vsize = cache[m]
             r = ROT[rec["rotation"]]
             o = rec["pos"]
             for x, y, z, b in cells:
                 rel = inv_rot((x - o[0], y - o[1], z - o[2]), r)
                 if rel in jig:
                     continue  # jigsaw final_state, not terrain
-                cls, why = classify(t, vcells, rel, b)
+                cls, why = classify(t, vcells, rel, b, vsize)
                 rows.append({"variant": label, "seed": city["seed"], "module": m, "rotation": rec["rotation"], "world": [x, y, z],
                              "template_pos": list(rel), "block": b, "class": cls, "reason": why,
                              "in_added_height": rel[1] >= int(load_nbt(Path("artifacts/ancient-city-restoration/stage-24b") / m / "restored.nbt")["size"][1])})

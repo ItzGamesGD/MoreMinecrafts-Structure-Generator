@@ -22,7 +22,8 @@ from tools.stage24g.build import D24G  # noqa: E402
 D24F_WG = Path(__file__).resolve().parents[2] / "artifacts/ancient-city-restoration/stage-24f/worldgen"
 GAL = D24G / "gallery"
 SKIP = ("minecraft:air", "minecraft:cave_air", "minecraft:void_air")
-NOTE = "Real generated world blocks (Minecraft 26.1.2 server, same seed/layout) rendered as 26.1.2 block models — NOT client screenshots"
+NOTE = ("Real generated world blocks (26.1.2 server, same seed and layout) as 26.1.2 block models — NOT client screenshots · "
+        "dark teal = vanilla sculk patches, which spread slightly differently in the two worlds")
 
 
 def manifest(variant, seed):
@@ -84,7 +85,10 @@ def piece(variant, seed, idx):
     return manifest(variant, seed)["cities"][0]["pieces"][idx]
 
 
-def render_pair(name, seed, bb, cells, title, views, y_cut=None, terrain=False, scale=None):
+LEGEND = "left: Stage 24-F world (red boxes = protected cells missing) · right: Stage 24-G world (green = same cells)"
+
+
+def render_pair(name, seed, bb, cells, title, views, y_cut=None, terrain=False, scale=None, closeup=False, legend=LEGEND):
     jobs, sizes = [], {}
     for variant in ("f24", "g24"):
         blocks, o, size = region(variant, seed, bb, y_max=y_cut, terrain=terrain)
@@ -98,6 +102,13 @@ def render_pair(name, seed, bb, cells, title, views, y_cut=None, terrain=False, 
                      target=[size[0] / 2, size[1] / 2, size[2] / 2])
             if scale:
                 j["scale"] = scale
+            if closeup:  # frame the protected cells with 3 blocks of context
+                lo = [min(c[i] for c in cells) - o[i] - 3 for i in range(3)]
+                hi = [max(c[i] for c in cells) - o[i] + 4 for i in range(3)]
+                lo[1], hi[1] = max(lo[1], 0), hi[1] + 1
+                j["bounds"] = [lo, hi]
+                j["target"] = [(lo[i] + hi[i]) / 2 for i in range(3)]
+                j["pad"] = False
             jobs.append(j)
     assert run_jobs(jobs, f"24g-{name}") == 0
     outs = []
@@ -107,7 +118,7 @@ def render_pair(name, seed, bb, cells, title, views, y_cut=None, terrain=False, 
         for i, variant in enumerate(("f24", "g24")):
             im.paste(Image.open(BUILD / "png24g" / name / f"{variant}-{vn}.png").convert("RGB").resize((760, 620)), (i * 760, 58))
         d.text((10, 6), title, fill=(236, 240, 245), font=font(15, True))
-        d.text((10, 26), f"seed {seed} · left: Stage 24-F world (red boxes = protected cells missing) · right: Stage 24-G world (green = same cells)", fill=(200, 208, 218), font=font(12))
+        d.text((10, 26), f"seed {seed} · {legend}", fill=(200, 208, 218), font=font(12))
         d.text((10, 42), NOTE, fill=(160, 170, 182), font=font(11))
         out = GAL / f"{name}-{vn}.jpg"
         out.parent.mkdir(parents=True, exist_ok=True)
@@ -122,11 +133,13 @@ def main():
         p = piece("g24", c["seed"], c["piece_index"])
         assert p == piece("f24", c["seed"], c["piece_index"]) or p["bb"] == piece("f24", c["seed"], c["piece_index"])["bb"]
         bb = p["bb"]
-        ymax = max(cc[1] for cc in c["cells"]) + 2
+        ymax = max(cc[1] for cc in c["cells"]) + 1
         name = f"{c['kind']}-{c['module']}-{c['seed']}"
         title = f"{TITLES[c['module']]} — {c['kind']} ({', '.join(c['roles'])}) · {p['rotation']}"
-        views = [("iso-a", 35, 35), ("iso-b", 215, 35)]
+        views = [("iso-ne", 45, 32), ("iso-se", 135, 32), ("iso-sw", 225, 32), ("iso-nw", 315, 32)]
         outs = render_pair(name, c["seed"], bb, c["cells"], title, views)
+        outs += render_pair(name + "-closeup", c["seed"], bb, c["cells"], title + " · close-up on the protected cells",
+                            [("close-ne", 45, 22), ("close-sw", 225, 22)], closeup=True)
         outs += render_pair(name + "-cutaway", c["seed"], bb, c["cells"], title + " · cutaway above the protected cells",
                             [("cut-iso", 35, 50), ("cut-top", 0, 89)], y_cut=ymax)
         index.append({**c, "rotation": p["rotation"], "bb": bb, "images": outs})
@@ -141,7 +154,8 @@ def main():
             cells = [x["world"] for x in rows if x["piece_index"] == idx]
             outs = render_pair(f"decay-large_ruin_1-{r['seed']}", r["seed"], p["bb"], cells,
                                f"{TITLES['large_ruin_1']} — decorative decay kept (block_rot cells, identical in both worlds)",
-                               [("iso-a", 35, 35), ("iso-b", 215, 35)])
+                               [("iso-a", 35, 35), ("iso-b", 215, 35)],
+                               legend="left: Stage 24-F world · right: Stage 24-G world · boxes = decorative cells removed by block_rot (identical in both)")
             index.append({"kind": "decorative_decay", "module": "large_ruin_1", "seed": r["seed"], "piece_index": idx, "cells": cells,
                           "images": outs})
             break
@@ -151,7 +165,8 @@ def main():
         if p["template"].endswith("/large_ruin_1"):
             outs = render_pair("terrain-large_ruin_1-24004", 24004, p["bb"], [[-249, -40, -1035]],
                                f"{TITLES['large_ruin_1']} — terrain contact (-249,-40,-1035), surrounding cave terrain included",
-                               [("corner", 225, 30), ("corner-high", 225, 60), ("opposite", 45, 30)], terrain=True)
+                               [("corner", 225, 30), ("corner-high", 225, 60), ("opposite", 45, 30)], terrain=True,
+                               legend="left: Stage 24-F world · right: Stage 24-G world · box = the smooth-basalt cell; cave terrain within 1 block of the box shown")
             index.append({"kind": "terrain_contact", "module": "large_ruin_1", "seed": 24004, "piece_index": i,
                           "cells": [[-249, -40, -1035]], "images": outs})
     (GAL / "INDEX.json").write_text(json.dumps(index, indent=1))

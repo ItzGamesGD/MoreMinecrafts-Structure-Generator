@@ -1,0 +1,6675 @@
+[
+ {
+  "seed": 24012,
+  "world": [
+   -1249,
+   -37,
+   82
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "protected_cell_replaced",
+  "roles": [
+   "railing"
+  ],
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:gravel",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate (block is still solid)"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1410,
+   -37,
+   82
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "protected_cell_replaced",
+  "roles": [
+   "railing"
+  ],
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate (block is still solid)"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1410,
+   -37,
+   81
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "protected_cell_replaced",
+  "roles": [
+   "railing"
+  ],
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate (block is still solid)"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1412,
+   -37,
+   80
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "protected_cell_replaced",
+  "roles": [
+   "railing"
+  ],
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate (block is still solid)"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1411,
+   -37,
+   80
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "protected_cell_replaced",
+  "roles": [
+   "railing"
+  ],
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate (block is still solid)"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -226,
+   -51,
+   144
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -226,
+   -51,
+   145
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -227,
+   -51,
+   144
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -227,
+   -51,
+   145
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -229,
+   -51,
+   145
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -230,
+   -51,
+   145
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -231,
+   -51,
+   145
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -227,
+   -49,
+   143
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:gravel",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -230,
+   -49,
+   143
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:gravel",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -227,
+   -39,
+   142
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -228,
+   -39,
+   141
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -227,
+   -38,
+   141
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -227,
+   -38,
+   142
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -228,
+   -38,
+   141
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -226,
+   -37,
+   140
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -226,
+   -37,
+   141
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -226,
+   -37,
+   142
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -227,
+   -37,
+   141
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -227,
+   -37,
+   142
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -228,
+   -37,
+   140
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -228,
+   -37,
+   141
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -338,
+   -50,
+   95
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24001,
+  "world": [
+   -338,
+   -50,
+   94
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -288,
+   -51,
+   943
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "NONE",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -287,
+   -51,
+   943
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "NONE",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -259,
+   -51,
+   950
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -261,
+   -51,
+   950
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -259,
+   -51,
+   949
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -260,
+   -51,
+   949
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -261,
+   -51,
+   949
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -262,
+   -51,
+   949
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -259,
+   -51,
+   948
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -260,
+   -51,
+   948
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -261,
+   -51,
+   948
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -262,
+   -51,
+   948
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -259,
+   -51,
+   947
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -260,
+   -51,
+   947
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -261,
+   -51,
+   947
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -260,
+   -51,
+   946
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -260,
+   -50,
+   949
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -261,
+   -50,
+   949
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -261,
+   -50,
+   947
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -260,
+   -49,
+   949
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -257,
+   -51,
+   818
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -257,
+   -51,
+   819
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -257,
+   -51,
+   820
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -257,
+   -51,
+   821
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -257,
+   -51,
+   822
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -257,
+   -51,
+   823
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -258,
+   -51,
+   820
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -258,
+   -51,
+   821
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -258,
+   -51,
+   822
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -258,
+   -51,
+   823
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -257,
+   -50,
+   819
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -257,
+   -50,
+   821
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -257,
+   -50,
+   822
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -257,
+   -49,
+   819
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -257,
+   -49,
+   822
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24008,
+  "world": [
+   479,
+   -38,
+   1359
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "NONE",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:deepslate_gold_ore",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24008,
+  "world": [
+   430,
+   -49,
+   1230
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24008,
+  "world": [
+   430,
+   -49,
+   1229
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24009,
+  "world": [
+   581,
+   -37,
+   552
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:dripstone_block",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24010,
+  "world": [
+   -3116,
+   -39,
+   2362
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "NONE",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24010,
+  "world": [
+   -3117,
+   -39,
+   2363
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "NONE",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24010,
+  "world": [
+   -3116,
+   -38,
+   2363
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "NONE",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1355,
+   -41,
+   79
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1298,
+   -44,
+   36
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:gravel",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1298,
+   -44,
+   35
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:gravel",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1249,
+   -38,
+   81
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:gravel",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1250,
+   -37,
+   82
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:gravel",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1250,
+   -37,
+   81
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:gravel",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1250,
+   -37,
+   80
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:gravel",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1249,
+   -37,
+   82
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:gravel",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1249,
+   -37,
+   81
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:gravel",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1249,
+   -37,
+   80
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:gravel",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1412,
+   -39,
+   80
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1411,
+   -39,
+   83
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1411,
+   -39,
+   82
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1411,
+   -39,
+   81
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1411,
+   -39,
+   80
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1410,
+   -39,
+   82
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1410,
+   -39,
+   81
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1413,
+   -38,
+   81
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1413,
+   -38,
+   80
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1412,
+   -38,
+   80
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1411,
+   -38,
+   83
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1411,
+   -38,
+   80
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1410,
+   -38,
+   83
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1410,
+   -38,
+   82
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1410,
+   -38,
+   81
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1410,
+   -38,
+   80
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1412,
+   -37,
+   80
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1412,
+   -37,
+   79
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1411,
+   -37,
+   80
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1411,
+   -37,
+   79
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1410,
+   -37,
+   83
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1410,
+   -37,
+   82
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1410,
+   -37,
+   81
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1410,
+   -37,
+   80
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1410,
+   -37,
+   79
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1409,
+   -37,
+   83
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1409,
+   -37,
+   82
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1409,
+   -37,
+   81
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1409,
+   -37,
+   80
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1409,
+   -37,
+   79
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1248,
+   -47,
+   115
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:white_candle[candles=4,lit=true,waterlogged=false]",
+  "got": "minecraft:white_candle[candles=4,lit=false,waterlogged=true]",
+  "root_cause": "candle state changed after placement"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1248,
+   -47,
+   116
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:white_candle[candles=1,lit=true,waterlogged=false]",
+  "got": "minecraft:white_candle[candles=1,lit=false,waterlogged=true]",
+  "root_cause": "candle state changed after placement"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1248,
+   -47,
+   117
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:white_candle[candles=3,lit=true,waterlogged=false]",
+  "got": "minecraft:white_candle[candles=3,lit=false,waterlogged=true]",
+  "root_cause": "candle state changed after placement"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1248,
+   -47,
+   118
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:white_candle[candles=4,lit=true,waterlogged=false]",
+  "got": "minecraft:white_candle[candles=4,lit=false,waterlogged=true]",
+  "root_cause": "candle state changed after placement"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1248,
+   -47,
+   119
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:white_candle[candles=2,lit=true,waterlogged=false]",
+  "got": "minecraft:white_candle[candles=2,lit=false,waterlogged=true]",
+  "root_cause": "candle state changed after placement"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1299,
+   -51,
+   -1011
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1299,
+   -51,
+   -1010
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1299,
+   -51,
+   -1009
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1298,
+   -51,
+   -1013
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1298,
+   -51,
+   -1012
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1298,
+   -51,
+   -1011
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1298,
+   -51,
+   -1010
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1298,
+   -51,
+   -1009
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1297,
+   -51,
+   -1014
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1297,
+   -51,
+   -1013
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1297,
+   -51,
+   -1012
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1297,
+   -51,
+   -1011
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1297,
+   -51,
+   -1010
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1297,
+   -51,
+   -1009
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1296,
+   -51,
+   -1014
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1296,
+   -51,
+   -1013
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1296,
+   -51,
+   -1012
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1296,
+   -51,
+   -1011
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1296,
+   -51,
+   -1010
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1296,
+   -51,
+   -1009
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1295,
+   -51,
+   -1011
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1295,
+   -51,
+   -1010
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1295,
+   -51,
+   -1009
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1295,
+   -51,
+   -1008
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1295,
+   -51,
+   -1006
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1294,
+   -51,
+   -1012
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1294,
+   -51,
+   -1011
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   -33,
+   -51,
+   114
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   -33,
+   -51,
+   115
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   -34,
+   -51,
+   114
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   -34,
+   -51,
+   115
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   -33,
+   -50,
+   114
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   -33,
+   -50,
+   115
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   -34,
+   -50,
+   114
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   -34,
+   -50,
+   115
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   -33,
+   -49,
+   114
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   -33,
+   -49,
+   115
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   -34,
+   -49,
+   114
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   -33,
+   -42,
+   118
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   -34,
+   -42,
+   118
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   -33,
+   -41,
+   118
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   85,
+   -39,
+   79
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   82,
+   -39,
+   79
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   85,
+   -39,
+   78
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   83,
+   -39,
+   78
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   82,
+   -39,
+   78
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   84,
+   -39,
+   77
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   85,
+   -38,
+   79
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   82,
+   -38,
+   79
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   85,
+   -38,
+   78
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   127,
+   -42,
+   63
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   127,
+   -42,
+   62
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   127,
+   -41,
+   63
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   127,
+   -41,
+   62
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   127,
+   -41,
+   61
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   126,
+   -41,
+   61
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24017,
+  "world": [
+   125,
+   -41,
+   61
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24018,
+  "world": [
+   1289,
+   -50,
+   63
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:gravel",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24018,
+  "world": [
+   1289,
+   -49,
+   63
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:gravel",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24019,
+  "world": [
+   -657,
+   -51,
+   -1614
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24019,
+  "world": [
+   -657,
+   -51,
+   -1613
+  ],
+  "structure": "large_pillar_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24021,
+  "world": [
+   -179,
+   -49,
+   205
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24023,
+  "world": [
+   -466,
+   -51,
+   1706
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24023,
+  "world": [
+   -467,
+   -51,
+   1706
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24023,
+  "world": [
+   -466,
+   -50,
+   1707
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24023,
+  "world": [
+   -467,
+   -50,
+   1707
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24023,
+  "world": [
+   -466,
+   -50,
+   1706
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24023,
+  "world": [
+   -467,
+   -50,
+   1706
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24023,
+  "world": [
+   -466,
+   -49,
+   1707
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24023,
+  "world": [
+   -467,
+   -49,
+   1707
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "unexpected_block_change",
+  "expected": "minecraft:deepslate[axis=y]",
+  "got": "minecraft:tuff",
+  "root_cause": "ore/blob feature placed after the piece replaced plain deepslate"
+ },
+ {
+  "seed": 24004,
+  "world": [
+   -249,
+   -40,
+   -1035
+  ],
+  "structure": "large_ruin_1",
+  "rotation": "CLOCKWISE_180",
+  "type": "terrain_cosmetic_intrusion",
+  "block": "smooth_basalt",
+  "template_pos": [
+   16,
+   11,
+   16
+  ],
+  "root_cause": "natural terrain inside the owner-approved added height; the vanilla box does not reach this cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -50,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   1,
+   1
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -50,
+   1025
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   1,
+   2
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -50,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   1,
+   3
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -50,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   1,
+   4
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -50,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   1,
+   5
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -50,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   1,
+   6
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -50,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   1,
+   7
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -50,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   1,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -50,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   1,
+   9
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -50,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   1,
+   11
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -49,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   2,
+   1
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -49,
+   1025
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   2,
+   2
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -49,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   2,
+   3
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -49,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   2,
+   4
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -49,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   2,
+   5
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -49,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   2,
+   6
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -49,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   2,
+   7
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -49,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   2,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -49,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   2,
+   9
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -49,
+   1033
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   2,
+   10
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -49,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   2,
+   11
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -48,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   3,
+   1
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -48,
+   1025
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   3,
+   2
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -48,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   3,
+   3
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -48,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   3,
+   4
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -48,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   3,
+   5
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -48,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   3,
+   6
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -48,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   3,
+   7
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -48,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   3,
+   8
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -48,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   3,
+   9
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1347,
+   -48,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   1,
+   3,
+   11
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -50,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   1,
+   1
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -50,
+   1025
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   1,
+   2
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -50,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   1,
+   3
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -50,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   1,
+   4
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -50,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   1,
+   5
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -50,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   1,
+   6
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -50,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   1,
+   7
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -50,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   1,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -50,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   1,
+   9
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -50,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   1,
+   11
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -49,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   2,
+   1
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -49,
+   1025
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   2,
+   2
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -49,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   2,
+   3
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -49,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   2,
+   4
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -49,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   2,
+   5
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -49,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   2,
+   6
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -49,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   2,
+   7
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -49,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   2,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -49,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   2,
+   9
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -49,
+   1033
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   2,
+   10
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -49,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   2,
+   11
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -48,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   3,
+   1
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -48,
+   1025
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   3,
+   2
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -48,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   3,
+   3
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -48,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   3,
+   4
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -48,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   3,
+   5
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -48,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   3,
+   6
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -48,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   3,
+   7
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -48,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   3,
+   8
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -48,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   3,
+   9
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -48,
+   1033
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   3,
+   10
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1346,
+   -48,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   2,
+   3,
+   11
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -50,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   1,
+   1
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -50,
+   1025
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   1,
+   2
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -50,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   1,
+   3
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -50,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   1,
+   4
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -50,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   1,
+   5
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -50,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   1,
+   6
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -50,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   1,
+   7
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -50,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   1,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -50,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   1,
+   9
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -50,
+   1033
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   1,
+   10
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -50,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   1,
+   11
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -49,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   2,
+   1
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -49,
+   1025
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   2,
+   2
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -49,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   2,
+   3
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -49,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   2,
+   4
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -49,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   2,
+   5
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -49,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   2,
+   6
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -49,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   2,
+   7
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -49,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   2,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -49,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   2,
+   9
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -49,
+   1033
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   2,
+   10
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -49,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   2,
+   11
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -48,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   3,
+   1
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -48,
+   1025
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   3,
+   2
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -48,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   3,
+   3
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -48,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   3,
+   4
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -48,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   3,
+   5
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -48,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   3,
+   6
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -48,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   3,
+   7
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -48,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   3,
+   8
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -48,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   3,
+   9
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -48,
+   1033
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   3,
+   10
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1345,
+   -48,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   3,
+   3,
+   11
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -50,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   1,
+   1
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -50,
+   1025
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   1,
+   2
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -50,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   1,
+   3
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -50,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   1,
+   4
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -50,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   1,
+   5
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -50,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   1,
+   6
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -50,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   1,
+   7
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -50,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   1,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -50,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   1,
+   9
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -50,
+   1033
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   1,
+   10
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -50,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   1,
+   11
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -49,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   2,
+   1
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -49,
+   1025
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   2,
+   2
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -49,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   2,
+   3
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -49,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   2,
+   4
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -49,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   2,
+   5
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -49,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   2,
+   6
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -49,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   2,
+   7
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -49,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   2,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -49,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   2,
+   9
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -49,
+   1033
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   2,
+   10
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -49,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   2,
+   11
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -48,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   3,
+   1
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -48,
+   1025
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   3,
+   2
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -48,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   3,
+   3
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -48,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   3,
+   4
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -48,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   3,
+   5
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -48,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   3,
+   6
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -48,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   3,
+   7
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -48,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   3,
+   8
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -48,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   3,
+   9
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -48,
+   1033
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   3,
+   10
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1344,
+   -48,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   4,
+   3,
+   11
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -50,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   1,
+   1
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -50,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   1,
+   3
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -50,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   1,
+   4
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -50,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   1,
+   5
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -50,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   1,
+   7
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -50,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   1,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -50,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   1,
+   9
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -50,
+   1033
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   1,
+   10
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -50,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   1,
+   11
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -49,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   2,
+   1
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -49,
+   1025
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   2,
+   2
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -49,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   2,
+   3
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -49,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   2,
+   4
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -49,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   2,
+   5
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -49,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   2,
+   6
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -49,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   2,
+   7
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -49,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   2,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -49,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   2,
+   9
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -49,
+   1033
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   2,
+   10
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -49,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   2,
+   11
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -48,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   3,
+   1
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -48,
+   1025
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   3,
+   2
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -48,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   3,
+   3
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -48,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   3,
+   4
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -48,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   3,
+   5
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -48,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   3,
+   6
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -48,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   3,
+   7
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -48,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   3,
+   8
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -48,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   3,
+   9
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -48,
+   1033
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   3,
+   10
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1343,
+   -48,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   5,
+   3,
+   11
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -50,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   1,
+   1
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -50,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   1,
+   3
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -50,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   1,
+   4
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -50,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   1,
+   5
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -50,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   1,
+   7
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -50,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   1,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -50,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   1,
+   9
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -50,
+   1033
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   1,
+   10
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -50,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   1,
+   11
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -49,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   2,
+   1
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -49,
+   1025
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   2,
+   2
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -49,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   2,
+   3
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -49,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   2,
+   4
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -49,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   2,
+   5
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -49,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   2,
+   6
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -49,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   2,
+   7
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -49,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   2,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -49,
+   1032
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   2,
+   9
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -49,
+   1033
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   2,
+   10
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -49,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   2,
+   11
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -48,
+   1024
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   3,
+   1
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -48,
+   1026
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   3,
+   3
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -48,
+   1027
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   3,
+   4
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -48,
+   1028
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   3,
+   5
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -48,
+   1029
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   3,
+   6
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -48,
+   1030
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   3,
+   7
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -48,
+   1031
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   3,
+   8
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -48,
+   1033
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   3,
+   10
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24005,
+  "world": [
+   -1342,
+   -48,
+   1034
+  ],
+  "structure": "medium_ruin_1",
+  "rotation": "NONE",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   3,
+   11
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24008,
+  "world": [
+   596,
+   -50,
+   1280
+  ],
+  "structure": "small_ruin_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "template_pos": [
+   4,
+   1,
+   3
+  ],
+  "root_cause": "fluid touches a walkable/interior cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24008,
+  "world": [
+   596,
+   -50,
+   1281
+  ],
+  "structure": "small_ruin_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "template_pos": [
+   3,
+   1,
+   3
+  ],
+  "root_cause": "fluid touches a walkable/interior cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24008,
+  "world": [
+   597,
+   -50,
+   1280
+  ],
+  "structure": "small_ruin_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "template_pos": [
+   4,
+   1,
+   4
+  ],
+  "root_cause": "fluid touches a walkable/interior cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24008,
+  "world": [
+   597,
+   -50,
+   1281
+  ],
+  "structure": "small_ruin_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "template_pos": [
+   3,
+   1,
+   4
+  ],
+  "root_cause": "fluid touches a walkable/interior cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24008,
+  "world": [
+   597,
+   -49,
+   1280
+  ],
+  "structure": "small_ruin_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "template_pos": [
+   4,
+   2,
+   4
+  ],
+  "root_cause": "fluid touches a walkable/interior cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24008,
+  "world": [
+   597,
+   -48,
+   1280
+  ],
+  "structure": "small_ruin_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "template_pos": [
+   4,
+   3,
+   4
+  ],
+  "root_cause": "fluid touches a walkable/interior cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24009,
+  "world": [
+   595,
+   -50,
+   557
+  ],
+  "structure": "large_ruin_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   1,
+   9
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24009,
+  "world": [
+   595,
+   -50,
+   558
+  ],
+  "structure": "large_ruin_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   7,
+   1,
+   9
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24009,
+  "world": [
+   595,
+   -49,
+   558
+  ],
+  "structure": "large_ruin_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   7,
+   2,
+   9
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24009,
+  "world": [
+   596,
+   -50,
+   557
+  ],
+  "structure": "large_ruin_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   1,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24009,
+  "world": [
+   596,
+   -50,
+   558
+  ],
+  "structure": "large_ruin_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   7,
+   1,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24009,
+  "world": [
+   596,
+   -50,
+   559
+  ],
+  "structure": "large_ruin_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   8,
+   1,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24009,
+  "world": [
+   596,
+   -49,
+   557
+  ],
+  "structure": "large_ruin_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   2,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24009,
+  "world": [
+   596,
+   -49,
+   558
+  ],
+  "structure": "large_ruin_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   7,
+   2,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24009,
+  "world": [
+   596,
+   -49,
+   559
+  ],
+  "structure": "large_ruin_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   8,
+   2,
+   8
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24009,
+  "world": [
+   596,
+   -48,
+   558
+  ],
+  "structure": "large_ruin_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "dripstone_block",
+  "template_pos": [
+   7,
+   3,
+   8
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24009,
+  "world": [
+   597,
+   -50,
+   557
+  ],
+  "structure": "large_ruin_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   6,
+   1,
+   7
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24009,
+  "world": [
+   597,
+   -50,
+   558
+  ],
+  "structure": "large_ruin_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   7,
+   1,
+   7
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24009,
+  "world": [
+   597,
+   -50,
+   559
+  ],
+  "structure": "large_ruin_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_functional_obstruction",
+  "block": "dripstone_block",
+  "template_pos": [
+   8,
+   1,
+   7
+  ],
+  "root_cause": "occupies a walkable body/head cell (template stores no block in this cell)"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1245,
+   -42,
+   112
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "deepslate",
+  "template_pos": [
+   9,
+   9,
+   1
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1276,
+   -41,
+   -932
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "deepslate",
+  "template_pos": [
+   0,
+   10,
+   4
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1279,
+   -43,
+   -932
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "deepslate",
+  "template_pos": [
+   0,
+   8,
+   7
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1279,
+   -42,
+   -932
+  ],
+  "structure": "medium_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "deepslate",
+  "template_pos": [
+   0,
+   9,
+   7
+  ],
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain (template stores no block in this cell)"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1293,
+   -46,
+   -1017
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "template_pos": [
+   4,
+   5,
+   22
+  ],
+  "root_cause": "fluid inside the piece box (not touching a walkable cell) (template stores no block in this cell)"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1293,
+   -45,
+   -1017
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "template_pos": [
+   4,
+   6,
+   22
+  ],
+  "root_cause": "fluid inside the piece box (not touching a walkable cell) (template stores no block in this cell)"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1293,
+   -44,
+   -1017
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "template_pos": [
+   4,
+   7,
+   22
+  ],
+  "root_cause": "fluid inside the piece box (not touching a walkable cell) (template stores no block in this cell)"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1293,
+   -43,
+   -1017
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "template_pos": [
+   4,
+   8,
+   22
+  ],
+  "root_cause": "fluid inside the piece box (not touching a walkable cell) (template stores no block in this cell)"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1293,
+   -42,
+   -1017
+  ],
+  "structure": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "template_pos": [
+   4,
+   9,
+   22
+  ],
+  "root_cause": "fluid inside the piece box (not touching a walkable cell) (template stores no block in this cell)"
+ },
+ {
+  "seed": 24007,
+  "world": [
+   -404,
+   -51,
+   873
+  ],
+  "structure": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "pool": "minecraft:ancient_city/sculk",
+  "root_cause": "vanilla ancient_city/sculk pool resolved to nothing (same as Stage 24-C/24-F)"
+ },
+ {
+  "seed": 24008,
+  "world": [
+   512,
+   -51,
+   1346
+  ],
+  "structure": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "pool": "minecraft:ancient_city/sculk",
+  "root_cause": "vanilla ancient_city/sculk pool resolved to nothing (same as Stage 24-C/24-F)"
+ },
+ {
+  "seed": 24012,
+  "world": [
+   -1270,
+   -51,
+   108
+  ],
+  "structure": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "pool": "minecraft:ancient_city/sculk",
+  "root_cause": "vanilla ancient_city/sculk pool resolved to nothing (same as Stage 24-C/24-F)"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1306,
+   -51,
+   -1000
+  ],
+  "structure": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "pool": "minecraft:ancient_city/sculk",
+  "root_cause": "vanilla ancient_city/sculk pool resolved to nothing (same as Stage 24-C/24-F)"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1303,
+   -51,
+   -1013
+  ],
+  "structure": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "pool": "minecraft:ancient_city/sculk",
+  "root_cause": "vanilla ancient_city/sculk pool resolved to nothing (same as Stage 24-C/24-F)"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1289,
+   -51,
+   -1016
+  ],
+  "structure": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "pool": "minecraft:ancient_city/sculk",
+  "root_cause": "vanilla ancient_city/sculk pool resolved to nothing (same as Stage 24-C/24-F)"
+ },
+ {
+  "seed": 24014,
+  "world": [
+   1282,
+   -51,
+   -1003
+  ],
+  "structure": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "pool": "minecraft:ancient_city/sculk",
+  "root_cause": "vanilla ancient_city/sculk pool resolved to nothing (same as Stage 24-C/24-F)"
+ },
+ {
+  "seed": 24018,
+  "world": [
+   1295,
+   -51,
+   39
+  ],
+  "structure": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "pool": "minecraft:ancient_city/sculk",
+  "root_cause": "vanilla ancient_city/sculk pool resolved to nothing (same as Stage 24-C/24-F)"
+ },
+ {
+  "seed": 24018,
+  "world": [
+   1308,
+   -51,
+   36
+  ],
+  "structure": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "pool": "minecraft:ancient_city/sculk",
+  "root_cause": "vanilla ancient_city/sculk pool resolved to nothing (same as Stage 24-C/24-F)"
+ },
+ {
+  "seed": 24018,
+  "world": [
+   1311,
+   -51,
+   22
+  ],
+  "structure": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "pool": "minecraft:ancient_city/sculk",
+  "root_cause": "vanilla ancient_city/sculk pool resolved to nothing (same as Stage 24-C/24-F)"
+ },
+ {
+  "seed": 24018,
+  "world": [
+   1298,
+   -51,
+   15
+  ],
+  "structure": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "pool": "minecraft:ancient_city/sculk",
+  "root_cause": "vanilla ancient_city/sculk pool resolved to nothing (same as Stage 24-C/24-F)"
+ },
+ {
+  "seed": 24020,
+  "world": [
+   1727,
+   -51,
+   -836
+  ],
+  "structure": "sauna_1",
+  "type": "jigsaw_unconnected",
+  "pool": "minecraft:ancient_city/sculk",
+  "root_cause": "vanilla ancient_city/sculk pool resolved to nothing (same as Stage 24-C/24-F)"
+ }
+]

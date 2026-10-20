@@ -1,0 +1,574 @@
+[
+ {
+  "kind": "entrance",
+  "module": "medium_ruin_1",
+  "seed": 24007,
+  "piece_index": 37,
+  "cells": [
+   [
+    -264,
+    -51,
+    928
+   ],
+   [
+    -264,
+    -50,
+    928
+   ]
+  ],
+  "roles": [
+   "door",
+   "door_support"
+  ],
+  "rotation": "NONE",
+  "bb": [
+   -264,
+   -51,
+   922,
+   -257,
+   -47,
+   934
+  ],
+  "images": [
+   "gallery/entrance-medium_ruin_1-24007-iso-ne.jpg",
+   "gallery/entrance-medium_ruin_1-24007-iso-se.jpg",
+   "gallery/entrance-medium_ruin_1-24007-iso-sw.jpg",
+   "gallery/entrance-medium_ruin_1-24007-iso-nw.jpg",
+   "gallery/entrance-medium_ruin_1-24007-closeup-close-ne.jpg",
+   "gallery/entrance-medium_ruin_1-24007-closeup-close-sw.jpg",
+   "gallery/entrance-medium_ruin_1-24007-cutaway-cut-iso.jpg",
+   "gallery/entrance-medium_ruin_1-24007-cutaway-cut-top.jpg"
+  ]
+ },
+ {
+  "kind": "entrance",
+  "module": "small_ruin_1",
+  "seed": 24003,
+  "piece_index": 49,
+  "cells": [
+   [
+    540,
+    -51,
+    40
+   ]
+  ],
+  "roles": [
+   "door_support"
+  ],
+  "rotation": "CLOCKWISE_90",
+  "bb": [
+   536,
+   -51,
+   40,
+   543,
+   -47,
+   46
+  ],
+  "images": [
+   "gallery/entrance-small_ruin_1-24003-iso-ne.jpg",
+   "gallery/entrance-small_ruin_1-24003-iso-se.jpg",
+   "gallery/entrance-small_ruin_1-24003-iso-sw.jpg",
+   "gallery/entrance-small_ruin_1-24003-iso-nw.jpg",
+   "gallery/entrance-small_ruin_1-24003-closeup-close-ne.jpg",
+   "gallery/entrance-small_ruin_1-24003-closeup-close-sw.jpg",
+   "gallery/entrance-small_ruin_1-24003-cutaway-cut-iso.jpg",
+   "gallery/entrance-small_ruin_1-24003-cutaway-cut-top.jpg"
+  ]
+ },
+ {
+  "kind": "ladder",
+  "module": "medium_pillar_1",
+  "seed": 24018,
+  "piece_index": 78,
+  "cells": [
+   [
+    1296,
+    -47,
+    186
+   ],
+   [
+    1296,
+    -46,
+    186
+   ]
+  ],
+  "roles": [
+   "ladder_attach"
+  ],
+  "rotation": "COUNTERCLOCKWISE_90",
+  "bb": [
+   1293,
+   -51,
+   185,
+   1300,
+   -41,
+   191
+  ],
+  "images": [
+   "gallery/ladder-medium_pillar_1-24018-iso-ne.jpg",
+   "gallery/ladder-medium_pillar_1-24018-iso-se.jpg",
+   "gallery/ladder-medium_pillar_1-24018-iso-sw.jpg",
+   "gallery/ladder-medium_pillar_1-24018-iso-nw.jpg",
+   "gallery/ladder-medium_pillar_1-24018-closeup-close-ne.jpg",
+   "gallery/ladder-medium_pillar_1-24018-closeup-close-sw.jpg",
+   "gallery/ladder-medium_pillar_1-24018-cutaway-cut-iso.jpg",
+   "gallery/ladder-medium_pillar_1-24018-cutaway-cut-top.jpg"
+  ]
+ },
+ {
+  "kind": "ladder",
+  "module": "large_pillar_1",
+  "seed": 24006,
+  "piece_index": 43,
+  "cells": [
+   [
+    -162,
+    -38,
+    -1677
+   ]
+  ],
+  "roles": [
+   "ladder_attach"
+  ],
+  "rotation": "COUNTERCLOCKWISE_90",
+  "bb": [
+   -164,
+   -51,
+   -1679,
+   -159,
+   -37,
+   -1674
+  ],
+  "images": [
+   "gallery/ladder-large_pillar_1-24006-iso-ne.jpg",
+   "gallery/ladder-large_pillar_1-24006-iso-se.jpg",
+   "gallery/ladder-large_pillar_1-24006-iso-sw.jpg",
+   "gallery/ladder-large_pillar_1-24006-iso-nw.jpg",
+   "gallery/ladder-large_pillar_1-24006-closeup-close-ne.jpg",
+   "gallery/ladder-large_pillar_1-24006-closeup-close-sw.jpg",
+   "gallery/ladder-large_pillar_1-24006-cutaway-cut-iso.jpg",
+   "gallery/ladder-large_pillar_1-24006-cutaway-cut-top.jpg"
+  ]
+ },
+ {
+  "kind": "deck",
+  "module": "medium_pillar_1",
+  "seed": 24013,
+  "piece_index": 74,
+  "cells": [
+   [
+    1088,
+    -43,
+    1276
+   ],
+   [
+    1085,
+    -43,
+    1275
+   ]
+  ],
+  "roles": [
+   "walk_floor"
+  ],
+  "rotation": "COUNTERCLOCKWISE_90",
+  "bb": [
+   1083,
+   -51,
+   1273,
+   1090,
+   -41,
+   1279
+  ],
+  "images": [
+   "gallery/deck-medium_pillar_1-24013-iso-ne.jpg",
+   "gallery/deck-medium_pillar_1-24013-iso-se.jpg",
+   "gallery/deck-medium_pillar_1-24013-iso-sw.jpg",
+   "gallery/deck-medium_pillar_1-24013-iso-nw.jpg",
+   "gallery/deck-medium_pillar_1-24013-closeup-close-ne.jpg",
+   "gallery/deck-medium_pillar_1-24013-closeup-close-sw.jpg",
+   "gallery/deck-medium_pillar_1-24013-cutaway-cut-iso.jpg",
+   "gallery/deck-medium_pillar_1-24013-cutaway-cut-top.jpg"
+  ]
+ },
+ {
+  "kind": "deck",
+  "module": "large_pillar_1",
+  "seed": 24003,
+  "piece_index": 47,
+  "cells": [
+   [
+    623,
+    -45,
+    -25
+   ],
+   [
+    621,
+    -37,
+    -25
+   ]
+  ],
+  "roles": [
+   "railing",
+   "walk_floor"
+  ],
+  "rotation": "COUNTERCLOCKWISE_90",
+  "bb": [
+   620,
+   -51,
+   -27,
+   625,
+   -37,
+   -22
+  ],
+  "images": [
+   "gallery/deck-large_pillar_1-24003-iso-ne.jpg",
+   "gallery/deck-large_pillar_1-24003-iso-se.jpg",
+   "gallery/deck-large_pillar_1-24003-iso-sw.jpg",
+   "gallery/deck-large_pillar_1-24003-iso-nw.jpg",
+   "gallery/deck-large_pillar_1-24003-closeup-close-ne.jpg",
+   "gallery/deck-large_pillar_1-24003-closeup-close-sw.jpg",
+   "gallery/deck-large_pillar_1-24003-cutaway-cut-iso.jpg",
+   "gallery/deck-large_pillar_1-24003-cutaway-cut-top.jpg"
+  ]
+ },
+ {
+  "kind": "railing",
+  "module": "medium_ruin_2",
+  "seed": 24011,
+  "piece_index": 89,
+  "cells": [
+   [
+    -140,
+    -46,
+    -625
+   ],
+   [
+    -140,
+    -47,
+    -626
+   ],
+   [
+    -141,
+    -47,
+    -627
+   ],
+   [
+    -139,
+    -47,
+    -627
+   ],
+   [
+    -138,
+    -47,
+    -628
+   ],
+   [
+    -141,
+    -47,
+    -629
+   ],
+   [
+    -138,
+    -47,
+    -629
+   ],
+   [
+    -139,
+    -47,
+    -630
+   ],
+   [
+    -134,
+    -47,
+    -632
+   ],
+   [
+    -134,
+    -46,
+    -633
+   ]
+  ],
+  "roles": [
+   "railing",
+   "walk_floor"
+  ],
+  "rotation": "COUNTERCLOCKWISE_90",
+  "bb": [
+   -142,
+   -51,
+   -633,
+   -132,
+   -44,
+   -618
+  ],
+  "images": [
+   "gallery/railing-medium_ruin_2-24011-iso-ne.jpg",
+   "gallery/railing-medium_ruin_2-24011-iso-se.jpg",
+   "gallery/railing-medium_ruin_2-24011-iso-sw.jpg",
+   "gallery/railing-medium_ruin_2-24011-iso-nw.jpg",
+   "gallery/railing-medium_ruin_2-24011-closeup-close-ne.jpg",
+   "gallery/railing-medium_ruin_2-24011-closeup-close-sw.jpg",
+   "gallery/railing-medium_ruin_2-24011-cutaway-cut-iso.jpg",
+   "gallery/railing-medium_ruin_2-24011-cutaway-cut-top.jpg"
+  ]
+ },
+ {
+  "kind": "railing",
+  "module": "sauna_1",
+  "seed": 24006,
+  "piece_index": 47,
+  "cells": [
+   [
+    -127,
+    -48,
+    -1755
+   ],
+   [
+    -132,
+    -48,
+    -1753
+   ],
+   [
+    -140,
+    -47,
+    -1742
+   ],
+   [
+    -138,
+    -49,
+    -1734
+   ]
+  ],
+  "roles": [
+   "railing",
+   "walk_floor"
+  ],
+  "rotation": "CLOCKWISE_90",
+  "bb": [
+   -143,
+   -51,
+   -1762,
+   -107,
+   -42,
+   -1734
+  ],
+  "images": [
+   "gallery/railing-sauna_1-24006-iso-ne.jpg",
+   "gallery/railing-sauna_1-24006-iso-se.jpg",
+   "gallery/railing-sauna_1-24006-iso-sw.jpg",
+   "gallery/railing-sauna_1-24006-iso-nw.jpg",
+   "gallery/railing-sauna_1-24006-closeup-close-ne.jpg",
+   "gallery/railing-sauna_1-24006-closeup-close-sw.jpg",
+   "gallery/railing-sauna_1-24006-cutaway-cut-iso.jpg",
+   "gallery/railing-sauna_1-24006-cutaway-cut-top.jpg"
+  ]
+ },
+ {
+  "kind": "decorative_decay",
+  "module": "large_ruin_1",
+  "seed": 24001,
+  "piece_index": 21,
+  "cells": [
+   [
+    -287,
+    -51,
+    193
+   ],
+   [
+    -294,
+    -51,
+    193
+   ],
+   [
+    -291,
+    -51,
+    190
+   ],
+   [
+    -285,
+    -51,
+    189
+   ],
+   [
+    -296,
+    -51,
+    189
+   ],
+   [
+    -283,
+    -51,
+    187
+   ],
+   [
+    -283,
+    -51,
+    186
+   ],
+   [
+    -292,
+    -51,
+    186
+   ],
+   [
+    -297,
+    -51,
+    186
+   ],
+   [
+    -293,
+    -51,
+    184
+   ],
+   [
+    -285,
+    -51,
+    181
+   ],
+   [
+    -294,
+    -51,
+    179
+   ],
+   [
+    -287,
+    -50,
+    193
+   ],
+   [
+    -291,
+    -50,
+    184
+   ],
+   [
+    -282,
+    -50,
+    182
+   ],
+   [
+    -284,
+    -50,
+    179
+   ],
+   [
+    -287,
+    -50,
+    179
+   ],
+   [
+    -298,
+    -49,
+    195
+   ],
+   [
+    -298,
+    -49,
+    184
+   ],
+   [
+    -293,
+    -49,
+    181
+   ],
+   [
+    -290,
+    -48,
+    195
+   ],
+   [
+    -287,
+    -48,
+    191
+   ],
+   [
+    -287,
+    -48,
+    190
+   ],
+   [
+    -291,
+    -48,
+    184
+   ],
+   [
+    -293,
+    -48,
+    180
+   ],
+   [
+    -288,
+    -47,
+    190
+   ],
+   [
+    -293,
+    -47,
+    189
+   ],
+   [
+    -288,
+    -47,
+    184
+   ],
+   [
+    -282,
+    -47,
+    183
+   ],
+   [
+    -291,
+    -46,
+    195
+   ],
+   [
+    -293,
+    -46,
+    182
+   ],
+   [
+    -287,
+    -44,
+    190
+   ]
+  ],
+  "images": [
+   "gallery/decay-large_ruin_1-24001-iso-a.jpg",
+   "gallery/decay-large_ruin_1-24001-iso-b.jpg"
+  ]
+ },
+ {
+  "kind": "terrain_contact",
+  "module": "large_ruin_1",
+  "seed": 24004,
+  "piece_index": 58,
+  "cells": [
+   [
+    -249,
+    -40,
+    -1035
+   ]
+  ],
+  "images": [
+   "gallery/terrain-large_ruin_1-24004-corner.jpg",
+   "gallery/terrain-large_ruin_1-24004-corner-high.jpg",
+   "gallery/terrain-large_ruin_1-24004-opposite.jpg"
+  ]
+ },
+ {
+  "kind": "terrain_contact",
+  "module": "large_ruin_1",
+  "seed": 24004,
+  "piece_index": 68,
+  "cells": [
+   [
+    -249,
+    -40,
+    -1035
+   ]
+  ],
+  "images": [
+   "gallery/terrain-large_ruin_1-24004-corner.jpg",
+   "gallery/terrain-large_ruin_1-24004-corner-high.jpg",
+   "gallery/terrain-large_ruin_1-24004-opposite.jpg"
+  ]
+ }
+]

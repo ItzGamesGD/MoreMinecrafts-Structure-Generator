@@ -1,0 +1,575 @@
+{
+ "seeds": [
+  24001,
+  24002,
+  24003,
+  24004,
+  24005,
+  24006,
+  24007,
+  24008,
+  24009,
+  24010,
+  24011,
+  24012,
+  24013,
+  24014,
+  24015,
+  24016,
+  24017,
+  24018,
+  24019,
+  24020,
+  24021,
+  24022,
+  24023,
+  24024
+ ],
+ "cities": 24,
+ "pieces": 2160,
+ "cities_identical_to_stage24f": 24,
+ "cities_identical_to_vanilla_except_owner_approved_heights": 24,
+ "protected_list_pieces": 144,
+ "bounding_box_overlaps": 0,
+ "functional_survival": {
+  "stage24f": {
+   "cells": 5006,
+   "status": {
+    "present": 3422,
+    "present_weathered": 1390,
+    "MISSING": 186,
+    "REPLACED": 8
+   },
+   "by_role": {
+    "door": {
+     "present": 231,
+     "MISSING": 1
+    },
+    "door_support": {
+     "MISSING": 47,
+     "REPLACED": 1
+    },
+    "ladder": {
+     "present": 696
+    },
+    "ladder_attach": {
+     "present": 556,
+     "present_weathered": 128,
+     "MISSING": 11,
+     "REPLACED": 1
+    },
+    "railing": {
+     "present": 1259,
+     "MISSING": 55,
+     "present_weathered": 397,
+     "REPLACED": 6
+    },
+    "walk_floor": {
+     "present_weathered": 868,
+     "present": 716,
+     "MISSING": 74
+    }
+   }
+  },
+  "stage24g": {
+   "cells": 5006,
+   "status": {
+    "present": 3567,
+    "present_weathered": 1434,
+    "REPLACED": 5
+   },
+   "by_role": {
+    "door": {
+     "present": 232
+    },
+    "door_support": {
+     "present_weathered": 28,
+     "present": 20
+    },
+    "ladder": {
+     "present": 696
+    },
+    "ladder_attach": {
+     "present": 571,
+     "present_weathered": 125
+    },
+    "railing": {
+     "present": 1307,
+     "present_weathered": 405,
+     "REPLACED": 5
+    },
+    "walk_floor": {
+     "present_weathered": 877,
+     "present": 781
+    }
+   }
+  }
+ },
+ "decorative_decay": {
+  "stage24f": {
+   "decorative_rottable_cells": 64846,
+   "decorative_rotted": 3271,
+   "decorative_rot_rate": 0.0504,
+   "protected_rottable_cells": 2908,
+   "protected_rotted_and_left_missing": 139,
+   "soul_lanterns": 412,
+   "soul_lanterns_to_air": 25,
+   "bricks_tiles_placed": 55301,
+   "cracked": 17458
+  },
+  "stage24g": {
+   "decorative_rottable_cells": 64846,
+   "decorative_rotted": 3271,
+   "decorative_rot_rate": 0.0504,
+   "protected_rottable_cells": 2908,
+   "protected_rotted_and_left_missing": 0,
+   "soul_lanterns": 412,
+   "soul_lanterns_to_air": 25,
+   "bricks_tiles_placed": 55301,
+   "cracked": 17458
+  }
+ },
+ "processor_replay_stage24g": {
+  "pred_placed__match": 72787,
+  "pred_placed__MISMATCH": 180,
+  "pred_placed__later_sculk_feature": 14879,
+  "pred_rot__world_differs": 3271,
+  "pred_rot__world_equal_by_coincidence": 1
+ },
+ "unexpected_block_changes_stage24g": 180,
+ "terrain_cells_stage24g": {
+  "cosmetic_intrusion": 1,
+  "functional_obstruction": 136,
+  "existing_vanilla_behaviour": 70,
+  "potential_generation_hazard": 11
+ },
+ "terrain_identical_to_stage24f": false,
+ "terrain_difference_vs_stage24f": {
+  "only_stage24g": [
+   [
+    24008,
+    [
+     596,
+     -50,
+     1281
+    ],
+    "lava"
+   ]
+  ],
+  "only_stage24f": []
+ },
+ "navigation_obstruction_cells_stage24g": 136,
+ "placements": [
+  {
+   "seed": 24001,
+   "pieces": 83,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 21,
+     "template": "large_ruin_1",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 7
+  },
+  {
+   "seed": 24002,
+   "pieces": 91,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 78,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 3
+  },
+  {
+   "seed": 24003,
+   "pieces": 92,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 23,
+     "template": "large_ruin_1",
+     "field": "bb"
+    },
+    {
+     "index": 77,
+     "template": "large_ruin_1",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 7
+  },
+  {
+   "seed": 24004,
+   "pieces": 83,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 58,
+     "template": "large_ruin_1",
+     "field": "bb"
+    },
+    {
+     "index": 68,
+     "template": "large_ruin_1",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 1
+  },
+  {
+   "seed": 24005,
+   "pieces": 101,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 77,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    },
+    {
+     "index": 98,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 9
+  },
+  {
+   "seed": 24006,
+   "pieces": 74,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [],
+   "protected_list_pieces": 6
+  },
+  {
+   "seed": 24007,
+   "pieces": 102,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [],
+   "protected_list_pieces": 5
+  },
+  {
+   "seed": 24008,
+   "pieces": 95,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 19,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    },
+    {
+     "index": 31,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 9
+  },
+  {
+   "seed": 24009,
+   "pieces": 100,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 18,
+     "template": "large_ruin_1",
+     "field": "bb"
+    },
+    {
+     "index": 35,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    },
+    {
+     "index": 59,
+     "template": "large_ruin_1",
+     "field": "bb"
+    },
+    {
+     "index": 90,
+     "template": "large_ruin_1",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 8
+  },
+  {
+   "seed": 24010,
+   "pieces": 86,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [],
+   "protected_list_pieces": 4
+  },
+  {
+   "seed": 24011,
+   "pieces": 95,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 62,
+     "template": "large_ruin_1",
+     "field": "bb"
+    },
+    {
+     "index": 89,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 6
+  },
+  {
+   "seed": 24012,
+   "pieces": 85,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 18,
+     "template": "large_ruin_1",
+     "field": "bb"
+    },
+    {
+     "index": 32,
+     "template": "large_ruin_1",
+     "field": "bb"
+    },
+    {
+     "index": 41,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 10
+  },
+  {
+   "seed": 24013,
+   "pieces": 91,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [],
+   "protected_list_pieces": 5
+  },
+  {
+   "seed": 24014,
+   "pieces": 85,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 33,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    },
+    {
+     "index": 38,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 9
+  },
+  {
+   "seed": 24015,
+   "pieces": 85,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 55,
+     "template": "large_ruin_1",
+     "field": "bb"
+    },
+    {
+     "index": 57,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 7
+  },
+  {
+   "seed": 24016,
+   "pieces": 99,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [],
+   "protected_list_pieces": 5
+  },
+  {
+   "seed": 24017,
+   "pieces": 89,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 41,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    },
+    {
+     "index": 54,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    },
+    {
+     "index": 82,
+     "template": "large_ruin_1",
+     "field": "bb"
+    },
+    {
+     "index": 83,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 10
+  },
+  {
+   "seed": 24018,
+   "pieces": 86,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 76,
+     "template": "large_ruin_1",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 6
+  },
+  {
+   "seed": 24019,
+   "pieces": 82,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 27,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 3
+  },
+  {
+   "seed": 24020,
+   "pieces": 95,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 48,
+     "template": "large_ruin_1",
+     "field": "bb"
+    },
+    {
+     "index": 51,
+     "template": "large_ruin_1",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 4
+  },
+  {
+   "seed": 24021,
+   "pieces": 90,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 52,
+     "template": "large_ruin_1",
+     "field": "bb"
+    },
+    {
+     "index": 62,
+     "template": "large_ruin_1",
+     "field": "bb"
+    },
+    {
+     "index": 76,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 6
+  },
+  {
+   "seed": 24022,
+   "pieces": 96,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 46,
+     "template": "large_ruin_1",
+     "field": "bb"
+    },
+    {
+     "index": 52,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    },
+    {
+     "index": 81,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 4
+  },
+  {
+   "seed": 24023,
+   "pieces": 85,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 39,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    },
+    {
+     "index": 58,
+     "template": "medium_ruin_2",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 8
+  },
+  {
+   "seed": 24024,
+   "pieces": 90,
+   "identical_to_stage24f": true,
+   "identical_to_vanilla_except_approved_heights": true,
+   "vanilla_differences": [
+    {
+     "index": 35,
+     "template": "large_ruin_1",
+     "field": "bb"
+    }
+   ],
+   "protected_list_pieces": 2
+  }
+ ]
+}
