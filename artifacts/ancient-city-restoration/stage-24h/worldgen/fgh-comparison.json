@@ -2,121 +2,5736 @@
  {
   "seed": 24001,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 16,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -226,
+     -51,
+     140
+    ],
+    "bb": [
+     -231,
+     -51,
+     140,
+     -226,
+     -37,
+     145
+    ],
+    "counts": {
+     "same_other": 662,
+     "same_stored": 317,
+     "mask_air": 40,
+     "diff_sculk": 3,
+     "diff_natural_terrain_stored_cell": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 21,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -282,
+     -51,
+     195
+    ],
+    "bb": [
+     -298,
+     -51,
+     179,
+     -282,
+     -38,
+     195
+    ],
+    "counts": {
+     "same_other": 3031,
+     "diff_sculk": 259,
+     "same_stored": 1012,
+     "mask_air": 912,
+     "mask_sculk_sculk_vein": 196,
+     "mask_sculk_sculk_sensor": 4,
+     "mask_sculk_sculk_catalyst": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 22,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -322,
+     -51,
+     144
+    ],
+    "bb": [
+     -322,
+     -51,
+     137,
+     -310,
+     -47,
+     144
+    ],
+    "counts": {
+     "same_other": 345,
+     "diff_sculk": 54,
+     "same_stored": 311,
+     "mask_air": 162,
+     "mask_sculk_sculk_vein": 28
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 38,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -330,
+     -51,
+     138
+    ],
+    "bb": [
+     -337,
+     -51,
+     138,
+     -330,
+     -41,
+     144
+    ],
+    "counts": {
+     "diff_sculk": 75,
+     "same_other": 735,
+     "same_stored": 260,
+     "mask_air": 8,
+     "mask_sculk_sculk_vein": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 49,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -246,
+     -51,
+     98
+    ],
+    "bb": [
+     -246,
+     -51,
+     93,
+     -241,
+     -37,
+     98
+    ],
+    "counts": {
+     "same_other": 660,
+     "diff_sculk": 13,
+     "same_stored": 311,
+     "mask_air": 38,
+     "mask_sculk_sculk_vein": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 50,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -246,
+     -51,
+     71
+    ],
+    "bb": [
+     -246,
+     -51,
+     64,
+     -243,
+     -47,
+     71
+    ],
+    "counts": {
+     "same_other": 200,
+     "same_stored": 128,
+     "mask_sculk_sculk_vein": 15,
+     "mask_air": 17
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 59,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -358,
+     -51,
+     144
+    ],
+    "bb": [
+     -358,
+     -51,
+     137,
+     -346,
+     -47,
+     144
+    ],
+    "counts": {
+     "same_other": 307,
+     "diff_sculk": 182,
+     "same_stored": 221,
+     "mask_sculk_sculk_catalyst": 1,
+     "mask_air": 178,
+     "mask_sculk_sculk_vein": 11
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 70,
+    "module": "medium_pillar_1",
+    "rotation": "NONE",
+    "pos": [
+     -288,
+     -51,
+     237
+    ],
+    "bb": [
+     -288,
+     -51,
+     237,
+     -282,
+     -41,
+     244
+    ],
+    "counts": {
+     "same_other": 784,
+     "same_stored": 286,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 78,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -339,
+     -51,
+     98
+    ],
+    "bb": [
+     -339,
+     -51,
+     93,
+     -334,
+     -37,
+     98
+    ],
+    "counts": {
+     "same_other": 659,
+     "diff_sculk": 32,
+     "same_stored": 293,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24002,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 17,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     981,
+     -51,
+     -807
+    ],
+    "bb": [
+     976,
+     -51,
+     -812,
+     981,
+     -37,
+     -807
+    ],
+    "counts": {
+     "same_other": 614,
+     "diff_sculk": 153,
+     "same_stored": 217,
+     "mask_air": 37,
+     "mask_sculk_sculk_vein": 3
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 23,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     980,
+     -51,
+     -705
+    ],
+    "bb": [
+     975,
+     -51,
+     -710,
+     980,
+     -37,
+     -705
+    ],
+    "counts": {
+     "same_other": 664,
+     "same_stored": 320,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 78,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     874,
+     -51,
+     -778
+    ],
+    "bb": [
+     874,
+     -51,
+     -793,
+     884,
+     -44,
+     -778
+    ],
+    "counts": {
+     "same_other": 830,
+     "same_stored": 711,
+     "mask_air": 519,
+     "mask_sculk_sculk_vein": 45,
+     "mask_sculk_sculk_sensor": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24003,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 19,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     536,
+     -51,
+     -22
+    ],
+    "bb": [
+     529,
+     -51,
+     -22,
+     536,
+     -41,
+     -16
+    ],
+    "counts": {
+     "diff_sculk": 123,
+     "same_other": 721,
+     "same_stored": 226,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 23,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     540,
+     -51,
+     -49
+    ],
+    "bb": [
+     540,
+     -51,
+     -65,
+     556,
+     -38,
+     -49
+    ],
+    "counts": {
+     "same_other": 2979,
+     "diff_sculk": 529,
+     "same_stored": 794,
+     "mask_sculk_sculk_vein": 165,
+     "mask_air": 946,
+     "mask_sculk_sculk_sensor": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 32,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     594,
+     -51,
+     52
+    ],
+    "bb": [
+     588,
+     -51,
+     45,
+     594,
+     -41,
+     52
+    ],
+    "counts": {
+     "diff_sculk": 197,
+     "same_other": 692,
+     "same_stored": 181,
+     "mask_air": 8,
+     "mask_sculk_sculk_vein": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 47,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     620,
+     -51,
+     -22
+    ],
+    "bb": [
+     620,
+     -51,
+     -27,
+     625,
+     -37,
+     -22
+    ],
+    "counts": {
+     "same_other": 660,
+     "same_stored": 314,
+     "diff_sculk": 10,
+     "mask_air": 39,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 49,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     543,
+     -51,
+     40
+    ],
+    "bb": [
+     536,
+     -51,
+     40,
+     543,
+     -47,
+     46
+    ],
+    "counts": {
+     "same_other": 260,
+     "same_stored": 199,
+     "mask_sculk_sculk_vein": 27,
+     "mask_air": 54
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     588,
+     -51,
+     65
+    ],
+    "bb": [
+     588,
+     -51,
+     65,
+     595,
+     -47,
+     68
+    ],
+    "counts": {
+     "same_other": 148,
+     "diff_sculk": 118,
+     "same_stored": 62,
+     "mask_sculk_sculk_vein": 5,
+     "mask_air": 27
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 62,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     620,
+     -51,
+     -61
+    ],
+    "bb": [
+     620,
+     -51,
+     -67,
+     627,
+     -41,
+     -61
+    ],
+    "counts": {
+     "same_other": 720,
+     "diff_sculk": 118,
+     "same_stored": 232,
+     "mask_air": 7,
+     "mask_sculk_sculk_vein": 3
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 75,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     484,
+     -51,
+     21
+    ],
+    "bb": [
+     477,
+     -51,
+     9,
+     484,
+     -47,
+     21
+    ],
+    "counts": {
+     "same_other": 380,
+     "same_stored": 330,
+     "mask_air": 161,
+     "mask_sculk_sculk_vein": 26,
+     "mask_sculk_sculk_sensor": 2,
+     "mask_sculk_sculk_catalyst": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 77,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     681,
+     -51,
+     7
+    ],
+    "bb": [
+     665,
+     -51,
+     7,
+     681,
+     -38,
+     23
+    ],
+    "counts": {
+     "same_other": 3002,
+     "diff_sculk": 335,
+     "same_stored": 965,
+     "mask_air": 937,
+     "mask_sculk_sculk_vein": 176
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 78,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     677,
+     -51,
+     -21
+    ],
+    "bb": [
+     670,
+     -51,
+     -21,
+     677,
+     -41,
+     -15
+    ],
+    "counts": {
+     "same_other": 769,
+     "diff_sculk": 18,
+     "same_stored": 283,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24004,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 19,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -241,
+     -51,
+     -944
+    ],
+    "bb": [
+     -241,
+     -51,
+     -951,
+     -229,
+     -47,
+     -944
+    ],
+    "counts": {
+     "same_other": 361,
+     "diff_sculk": 31,
+     "same_stored": 318,
+     "mask_air": 163,
+     "mask_sculk_sculk_shrieker": 1,
+     "mask_sculk_sculk_vein": 26
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 58,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -202,
+     -51,
+     -840
+    ],
+    "bb": [
+     -218,
+     -51,
+     -856,
+     -202,
+     -38,
+     -840
+    ],
+    "counts": {
+     "same_other": 3027,
+     "diff_sculk": 287,
+     "same_stored": 988,
+     "mask_air": 983,
+     "mask_sculk_sculk_sensor": 4,
+     "mask_sculk_sculk_vein": 125,
+     "mask_sculk_sculk_shrieker": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 68,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -233,
+     -51,
+     -1019
+    ],
+    "bb": [
+     -249,
+     -51,
+     -1035,
+     -233,
+     -38,
+     -1019
+    ],
+    "counts": {
+     "same_other": 3139,
+     "same_stored": 1163,
+     "mask_air": 1081,
+     "mask_sculk_sculk_vein": 32
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24005,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 17,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -1318,
+     -51,
+     929
+    ],
+    "bb": [
+     -1318,
+     -51,
+     922,
+     -1315,
+     -47,
+     929
+    ],
+    "counts": {
+     "diff_sculk": 34,
+     "same_other": 179,
+     "same_stored": 115,
+     "mask_air": 29,
+     "mask_sculk_sculk_vein": 3
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 24,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -1409,
+     -51,
+     928
+    ],
+    "bb": [
+     -1409,
+     -51,
+     921,
+     -1397,
+     -47,
+     928
+    ],
+    "counts": {
+     "same_other": 281,
+     "diff_sculk": 203,
+     "same_stored": 226,
+     "mask_air": 146,
+     "mask_sculk_sculk_vein": 44
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 25,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -1330,
+     -51,
+     890
+    ],
+    "bb": [
+     -1335,
+     -51,
+     890,
+     -1330,
+     -37,
+     895
+    ],
+    "counts": {
+     "diff_sculk": 103,
+     "same_other": 623,
+     "same_stored": 258,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 62,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "pos": [
+     -1346,
+     -51,
+     844
+    ],
+    "bb": [
+     -1346,
+     -51,
+     844,
+     -1341,
+     -37,
+     849
+    ],
+    "counts": {
+     "same_other": 630,
+     "diff_sculk": 106,
+     "same_stored": 248,
+     "mask_air": 39,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 63,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     -1319,
+     -51,
+     843
+    ],
+    "bb": [
+     -1319,
+     -51,
+     843,
+     -1313,
+     -47,
+     850
+    ],
+    "counts": {
+     "diff_sculk": 182,
+     "same_other": 205,
+     "same_stored": 72,
+     "mask_air": 81
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 71,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     -1348,
+     -51,
+     1023
+    ],
+    "bb": [
+     -1348,
+     -51,
+     1023,
+     -1341,
+     -47,
+     1035
+    ],
+    "counts": {
+     "same_other": 289,
+     "diff_natural_terrain_outside_mask": 80,
+     "same_stored": 330,
+     "mask_air": 190,
+     "diff_fluid": 11
+    },
+    "mask_terrain_f24": {
+     "minecraft:dripstone_block": 189
+    },
+    "mask_terrain_g24": {
+     "minecraft:dripstone_block": 189
+    },
+    "unexplained": []
+   },
+   {
+    "piece_index": 75,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -1384,
+     -51,
+     998
+    ],
+    "bb": [
+     -1384,
+     -51,
+     991,
+     -1372,
+     -47,
+     998
+    ],
+    "counts": {
+     "same_other": 312,
+     "diff_sculk": 139,
+     "same_stored": 259,
+     "mask_air": 138,
+     "mask_sculk_sculk_vein": 52
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 77,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -1466,
+     -51,
+     928
+    ],
+    "bb": [
+     -1466,
+     -51,
+     913,
+     -1456,
+     -44,
+     928
+    ],
+    "counts": {
+     "same_other": 724,
+     "same_stored": 532,
+     "diff_sculk": 285,
+     "mask_air": 520,
+     "mask_sculk_sculk_vein": 43,
+     "mask_sculk_sculk_sensor": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 86,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -1437,
+     -51,
+     917
+    ],
+    "bb": [
+     -1449,
+     -51,
+     917,
+     -1437,
+     -47,
+     924
+    ],
+    "counts": {
+     "same_other": 278,
+     "diff_sculk": 289,
+     "same_stored": 143,
+     "mask_air": 147,
+     "mask_sculk_sculk_vein": 43
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 98,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     -1430,
+     -51,
+     972
+    ],
+    "bb": [
+     -1430,
+     -51,
+     972,
+     -1415,
+     -44,
+     982
+    ],
+    "counts": {
+     "same_other": 735,
+     "diff_sculk": 265,
+     "same_stored": 541,
+     "mask_sculk_sculk_vein": 60,
+     "mask_air": 502,
+     "mask_sculk_sculk_sensor": 3
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24006,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 25,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -173,
+     -51,
+     -1679
+    ],
+    "bb": [
+     -185,
+     -51,
+     -1679,
+     -173,
+     -47,
+     -1672
+    ],
+    "counts": {
+     "same_other": 380,
+     "same_stored": 330,
+     "mask_air": 190
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 43,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -164,
+     -51,
+     -1674
+    ],
+    "bb": [
+     -164,
+     -51,
+     -1679,
+     -159,
+     -37,
+     -1674
+    ],
+    "counts": {
+     "same_other": 664,
+     "same_stored": 320,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 46,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -220,
+     -51,
+     -1789
+    ],
+    "bb": [
+     -226,
+     -51,
+     -1796,
+     -220,
+     -47,
+     -1789
+    ],
+    "counts": {
+     "same_other": 260,
+     "same_stored": 199,
+     "mask_air": 64,
+     "mask_sculk_sculk_vein": 17
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 47,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -107,
+     -51,
+     -1762
+    ],
+    "bb": [
+     -143,
+     -51,
+     -1762,
+     -107,
+     -42,
+     -1734
+    ],
+    "counts": {
+     "same_other": 9453,
+     "diff_sculk": 496,
+     "same_stored": 1582,
+     "mask_air": 1506,
+     "mask_sculk_sculk_vein": 243,
+     "mask_sculk_sculk_sensor": 10,
+     "mask_sculk_sculk_shrieker": 5,
+     "mask_sculk_sculk_catalyst": 4,
+     "pool_water_kept": 43
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 55,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -249,
+     -51,
+     -1639
+    ],
+    "bb": [
+     -261,
+     -51,
+     -1639,
+     -249,
+     -47,
+     -1632
+    ],
+    "counts": {
+     "same_other": 317,
+     "diff_sculk": 143,
+     "same_stored": 250,
+     "mask_air": 190
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 60,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     -198,
+     -51,
+     -1811
+    ],
+    "bb": [
+     -198,
+     -51,
+     -1811,
+     -191,
+     -47,
+     -1808
+    ],
+    "counts": {
+     "same_other": 200,
+     "same_stored": 128,
+     "mask_air": 31,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 67,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -114,
+     -51,
+     -1706
+    ],
+    "bb": [
+     -114,
+     -51,
+     -1712,
+     -107,
+     -41,
+     -1706
+    ],
+    "counts": {
+     "same_other": 783,
+     "diff_sculk": 1,
+     "same_stored": 286,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24007,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 37,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     -264,
+     -51,
+     922
+    ],
+    "bb": [
+     -264,
+     -51,
+     922,
+     -257,
+     -47,
+     934
+    ],
+    "counts": {
+     "same_other": 278,
+     "diff_sculk": 243,
+     "same_stored": 189,
+     "mask_sculk_sculk_vein": 36,
+     "mask_air": 151,
+     "mask_sculk_sculk_sensor": 1,
+     "mask_sculk_sculk_shrieker": 1,
+     "mask_sculk_sculk_catalyst": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 41,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -378,
+     -51,
+     868
+    ],
+    "bb": [
+     -414,
+     -51,
+     868,
+     -378,
+     -42,
+     896
+    ],
+    "counts": {
+     "same_other": 9492,
+     "diff_sculk": 278,
+     "same_stored": 1761,
+     "mask_sculk_sculk_vein": 125,
+     "mask_air": 1626,
+     "mask_sculk_sculk_sensor": 10,
+     "mask_sculk_sculk_catalyst": 3,
+     "pool_water_kept": 43,
+     "mask_sculk_sculk_shrieker": 4
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 55,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "pos": [
+     -291,
+     -51,
+     943
+    ],
+    "bb": [
+     -291,
+     -51,
+     943,
+     -286,
+     -37,
+     948
+    ],
+    "counts": {
+     "same_other": 658,
+     "same_stored": 313,
+     "mask_air": 40,
+     "diff_sculk": 13
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 56,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -259,
+     -51,
+     950
+    ],
+    "bb": [
+     -264,
+     -51,
+     945,
+     -259,
+     -37,
+     950
+    ],
+    "counts": {
+     "same_other": 644,
+     "diff_sculk": 33,
+     "same_stored": 303,
+     "mask_air": 40,
+     "diff_natural_terrain_outside_mask": 4
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 93,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -254,
+     -51,
+     818
+    ],
+    "bb": [
+     -259,
+     -51,
+     818,
+     -254,
+     -37,
+     823
+    ],
+    "counts": {
+     "diff_sculk": 45,
+     "same_other": 646,
+     "diff_natural_terrain_outside_mask": 2,
+     "same_stored": 291,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 94,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -254,
+     -51,
+     845
+    ],
+    "bb": [
+     -257,
+     -51,
+     845,
+     -254,
+     -47,
+     852
+    ],
+    "counts": {
+     "same_other": 159,
+     "diff_sculk": 90,
+     "same_stored": 79,
+     "mask_air": 22,
+     "mask_sculk_sculk_vein": 9,
+     "mask_sculk_sculk_sensor": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24008,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 13,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     481,
+     -51,
+     1254
+    ],
+    "bb": [
+     474,
+     -51,
+     1251,
+     481,
+     -47,
+     1254
+    ],
+    "counts": {
+     "same_other": 158,
+     "diff_sculk": 75,
+     "same_stored": 95,
+     "mask_air": 25,
+     "mask_sculk_sculk_vein": 7
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 19,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     529,
+     -51,
+     1306
+    ],
+    "bb": [
+     519,
+     -51,
+     1306,
+     529,
+     -44,
+     1321
+    ],
+    "counts": {
+     "same_other": 764,
+     "same_stored": 590,
+     "mask_air": 551,
+     "diff_sculk": 187,
+     "mask_sculk_sculk_vein": 14
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 31,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     447,
+     -51,
+     1329
+    ],
+    "bb": [
+     432,
+     -51,
+     1319,
+     447,
+     -44,
+     1329
+    ],
+    "counts": {
+     "same_other": 759,
+     "diff_sculk": 178,
+     "same_stored": 604,
+     "mask_sculk_sculk_vein": 71,
+     "mask_air": 489,
+     "mask_sculk_sculk_sensor": 2,
+     "mask_sculk_sculk_catalyst": 2,
+     "mask_sculk_sculk_shrieker": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 34,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "pos": [
+     475,
+     -51,
+     1356
+    ],
+    "bb": [
+     475,
+     -51,
+     1356,
+     480,
+     -37,
+     1361
+    ],
+    "counts": {
+     "diff_sculk": 61,
+     "same_other": 653,
+     "same_stored": 270,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 35,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     530,
+     -51,
+     1379
+    ],
+    "bb": [
+     502,
+     -51,
+     1343,
+     530,
+     -42,
+     1379
+    ],
+    "counts": {
+     "same_other": 9506,
+     "diff_sculk": 346,
+     "same_stored": 1679,
+     "mask_sculk_sculk_vein": 194,
+     "mask_air": 1554,
+     "mask_sculk_sculk_shrieker": 3,
+     "mask_sculk_sculk_sensor": 16,
+     "mask_sculk_sculk_catalyst": 1,
+     "pool_water_kept": 43
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 38,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     481,
+     -51,
+     1218
+    ],
+    "bb": [
+     474,
+     -51,
+     1215,
+     481,
+     -47,
+     1218
+    ],
+    "counts": {
+     "same_other": 200,
+     "same_stored": 128,
+     "mask_air": 22,
+     "mask_sculk_sculk_vein": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 45,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     469,
+     -51,
+     1244
+    ],
+    "bb": [
+     469,
+     -51,
+     1244,
+     476,
+     -47,
+     1247
+    ],
+    "counts": {
+     "same_other": 183,
+     "same_stored": 120,
+     "mask_sculk_sculk_vein": 9,
+     "diff_sculk": 25,
+     "mask_air": 23
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 57,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     480,
+     -51,
+     1378
+    ],
+    "bb": [
+     474,
+     -51,
+     1371,
+     480,
+     -47,
+     1378
+    ],
+    "counts": {
+     "same_other": 260,
+     "same_stored": 199,
+     "mask_air": 68,
+     "mask_sculk_sculk_vein": 13
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 60,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     481,
+     -51,
+     1202
+    ],
+    "bb": [
+     475,
+     -51,
+     1195,
+     481,
+     -47,
+     1202
+    ],
+    "counts": {
+     "diff_sculk": 19,
+     "same_other": 247,
+     "same_stored": 193,
+     "mask_air": 80,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 61,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     503,
+     -51,
+     1196
+    ],
+    "bb": [
+     503,
+     -51,
+     1196,
+     509,
+     -47,
+     1203
+    ],
+    "counts": {
+     "same_other": 232,
+     "diff_sculk": 38,
+     "same_stored": 189,
+     "mask_air": 81
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 85,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     434,
+     -51,
+     1233
+    ],
+    "bb": [
+     429,
+     -51,
+     1228,
+     434,
+     -37,
+     1233
+    ],
+    "counts": {
+     "same_other": 664,
+     "same_stored": 320,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 93,
+    "module": "small_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     593,
+     -51,
+     1284
+    ],
+    "bb": [
+     593,
+     -51,
+     1278,
+     600,
+     -47,
+     1284
+    ],
+    "counts": {
+     "same_other": 259,
+     "same_stored": 199,
+     "mask_air": 76,
+     "mask_fluid_lava": 5,
+     "diff_fluid": 1
+    },
+    "mask_terrain_f24": {
+     "minecraft:lava": 5
+    },
+    "mask_terrain_g24": {
+     "minecraft:lava": 6
+    },
+    "unexplained": [],
+    "fluid": {
+     "cells_in_mask": 5,
+     "component_size": 25,
+     "sources": [
+      {
+       "world": [
+        596,
+        -39,
+        1278
+       ],
+       "block": "minecraft:lava[level=0]",
+       "rock_neighbours": 5,
+       "kind": "spring-like source (rock on 4+ sides)"
+      }
+     ],
+     "entries": [
+      {
+       "mask_cell": [
+        597,
+        -48,
+        1280
+       ],
+       "class": "room_interior",
+       "fluid_from": [
+        {
+         "world": [
+          597,
+          -47,
+          1280
+         ],
+         "template_pos": [
+          4,
+          4,
+          4
+         ],
+         "via": "decay_hole (stored deepslate_tiles dropped by block_rot)"
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
  },
  {
   "seed": 24009,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 18,
+    "module": "large_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     508,
+     -51,
+     564
+    ],
+    "bb": [
+     508,
+     -51,
+     564,
+     524,
+     -38,
+     580
+    ],
+    "counts": {
+     "same_other": 2998,
+     "diff_sculk": 452,
+     "same_stored": 852,
+     "mask_air": 973,
+     "mask_sculk_sculk_vein": 138,
+     "mask_sculk_sculk_sensor": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 21,
+    "module": "small_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     450,
+     -51,
+     528
+    ],
+    "bb": [
+     450,
+     -51,
+     522,
+     457,
+     -47,
+     528
+    ],
+    "counts": {
+     "same_other": 254,
+     "same_stored": 195,
+     "diff_sculk": 10,
+     "mask_air": 80,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 27,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     557,
+     -51,
+     562
+    ],
+    "bb": [
+     552,
+     -51,
+     557,
+     557,
+     -37,
+     562
+    ],
+    "counts": {
+     "same_other": 660,
+     "same_stored": 315,
+     "mask_air": 40,
+     "diff_sculk": 9
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 35,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     508,
+     -51,
+     584
+    ],
+    "bb": [
+     508,
+     -51,
+     584,
+     523,
+     -44,
+     594
+    ],
+    "counts": {
+     "same_other": 726,
+     "diff_sculk": 275,
+     "same_stored": 536,
+     "mask_sculk_sculk_vein": 109,
+     "mask_air": 451,
+     "mask_sculk_sculk_catalyst": 1,
+     "mask_sculk_sculk_sensor": 4,
+     "diff_fluid": 4
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 39,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     530,
+     -51,
+     505
+    ],
+    "bb": [
+     524,
+     -51,
+     498,
+     530,
+     -47,
+     505
+    ],
+    "counts": {
+     "same_other": 207,
+     "diff_sculk": 132,
+     "same_stored": 120,
+     "mask_air": 60,
+     "mask_sculk_sculk_vein": 21
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 40,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     576,
+     -51,
+     529
+    ],
+    "bb": [
+     576,
+     -51,
+     522,
+     579,
+     -47,
+     529
+    ],
+    "counts": {
+     "same_other": 200,
+     "same_stored": 128,
+     "mask_air": 32
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 42,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     576,
+     -51,
+     556
+    ],
+    "bb": [
+     576,
+     -51,
+     551,
+     581,
+     -37,
+     556
+    ],
+    "counts": {
+     "same_other": 664,
+     "same_stored": 320,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 56,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     408,
+     -51,
+     528
+    ],
+    "bb": [
+     408,
+     -51,
+     521,
+     420,
+     -47,
+     528
+    ],
+    "counts": {
+     "same_other": 380,
+     "same_stored": 330,
+     "mask_air": 190
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 59,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     604,
+     -51,
+     551
+    ],
+    "bb": [
+     588,
+     -51,
+     551,
+     604,
+     -38,
+     567
+    ],
+    "counts": {
+     "same_other": 3139,
+     "same_stored": 1163,
+     "mask_air": 1113
+    },
+    "mask_terrain_f24": {
+     "minecraft:dripstone_block": 13
+    },
+    "mask_terrain_g24": {
+     "minecraft:dripstone_block": 13
+    },
+    "unexplained": []
+   },
+   {
+    "piece_index": 60,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     562,
+     -51,
+     590
+    ],
+    "bb": [
+     559,
+     -51,
+     590,
+     562,
+     -47,
+     597
+    ],
+    "counts": {
+     "same_other": 191,
+     "diff_sculk": 9,
+     "same_stored": 128,
+     "mask_air": 32
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 63,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     537,
+     -51,
+     455
+    ],
+    "bb": [
+     537,
+     -51,
+     448,
+     549,
+     -47,
+     455
+    ],
+    "counts": {
+     "same_other": 367,
+     "diff_sculk": 21,
+     "same_stored": 322,
+     "mask_air": 162,
+     "mask_sculk_sculk_vein": 28
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 67,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     448,
+     -51,
+     455
+    ],
+    "bb": [
+     448,
+     -51,
+     448,
+     451,
+     -47,
+     455
+    ],
+    "counts": {
+     "same_other": 200,
+     "same_stored": 128,
+     "mask_air": 32
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 90,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     425,
+     -51,
+     455
+    ],
+    "bb": [
+     425,
+     -51,
+     439,
+     441,
+     -38,
+     455
+    ],
+    "counts": {
+     "same_other": 3139,
+     "same_stored": 1163,
+     "mask_air": 1113
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 97,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "pos": [
+     417,
+     -51,
+     593
+    ],
+    "bb": [
+     417,
+     -51,
+     593,
+     422,
+     -37,
+     598
+    ],
+    "counts": {
+     "same_other": 664,
+     "same_stored": 320,
+     "mask_air": 38,
+     "mask_sculk_sculk_vein": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24010,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 13,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -3015,
+     -51,
+     2325
+    ],
+    "bb": [
+     -3015,
+     -51,
+     2320,
+     -3010,
+     -37,
+     2325
+    ],
+    "counts": {
+     "same_other": 639,
+     "diff_sculk": 69,
+     "same_stored": 276,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 16,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -3041,
+     -51,
+     2279
+    ],
+    "bb": [
+     -3046,
+     -51,
+     2274,
+     -3041,
+     -37,
+     2279
+    ],
+    "counts": {
+     "same_other": 664,
+     "same_stored": 320,
+     "mask_air": 38,
+     "mask_sculk_sculk_vein": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 46,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     -3015,
+     -51,
+     2359
+    ],
+    "bb": [
+     -3015,
+     -51,
+     2359,
+     -3009,
+     -47,
+     2366
+    ],
+    "counts": {
+     "same_other": 205,
+     "diff_sculk": 118,
+     "same_stored": 136,
+     "mask_air": 45,
+     "mask_sculk_sculk_vein": 35,
+     "mask_sculk_sculk_sensor": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 57,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -3079,
+     -51,
+     2228
+    ],
+    "bb": [
+     -3079,
+     -51,
+     2221,
+     -3076,
+     -47,
+     2228
+    ],
+    "counts": {
+     "same_other": 200,
+     "same_stored": 128,
+     "mask_air": 32
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 63,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "pos": [
+     -3120,
+     -51,
+     2359
+    ],
+    "bb": [
+     -3120,
+     -51,
+     2359,
+     -3115,
+     -37,
+     2364
+    ],
+    "counts": {
+     "same_other": 664,
+     "same_stored": 320,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 76,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -3126,
+     -51,
+     2371
+    ],
+    "bb": [
+     -3126,
+     -51,
+     2364,
+     -3123,
+     -47,
+     2371
+    ],
+    "counts": {
+     "same_other": 200,
+     "same_stored": 128,
+     "mask_air": 24,
+     "mask_sculk_sculk_vein": 8
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24011,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 13,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -231,
+     -51,
+     -573
+    ],
+    "bb": [
+     -238,
+     -51,
+     -573,
+     -231,
+     -41,
+     -567
+    ],
+    "counts": {
+     "same_other": 784,
+     "same_stored": 286,
+     "mask_air": 9,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 26,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -252,
+     -51,
+     -545
+    ],
+    "bb": [
+     -255,
+     -51,
+     -545,
+     -252,
+     -47,
+     -538
+    ],
+    "counts": {
+     "same_other": 200,
+     "same_stored": 128,
+     "mask_air": 21,
+     "mask_sculk_sculk_vein": 11
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 49,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -169,
+     -51,
+     -493
+    ],
+    "bb": [
+     -169,
+     -51,
+     -500,
+     -157,
+     -47,
+     -493
+    ],
+    "counts": {
+     "same_other": 300,
+     "diff_sculk": 207,
+     "same_stored": 203,
+     "mask_air": 172,
+     "mask_sculk_sculk_vein": 17,
+     "mask_sculk_sculk_sensor": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 51,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -236,
+     -51,
+     -511
+    ],
+    "bb": [
+     -239,
+     -51,
+     -511,
+     -236,
+     -47,
+     -504
+    ],
+    "counts": {
+     "same_other": 200,
+     "same_stored": 128,
+     "mask_sculk_sculk_vein": 9,
+     "mask_air": 23
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     -182,
+     -51,
+     -633
+    ],
+    "bb": [
+     -182,
+     -51,
+     -633,
+     -175,
+     -47,
+     -621
+    ],
+    "counts": {
+     "same_other": 380,
+     "same_stored": 330,
+     "mask_air": 167,
+     "mask_sculk_sculk_sensor": 2,
+     "mask_sculk_sculk_vein": 21
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 62,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -99,
+     -51,
+     -566
+    ],
+    "bb": [
+     -99,
+     -51,
+     -582,
+     -83,
+     -38,
+     -566
+    ],
+    "counts": {
+     "diff_sculk": 450,
+     "same_other": 2954,
+     "same_stored": 898,
+     "mask_sculk_sculk_vein": 197,
+     "mask_air": 914,
+     "mask_sculk_sculk_sensor": 1,
+     "mask_sculk_sculk_shrieker": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 75,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -257,
+     -51,
+     -516
+    ],
+    "bb": [
+     -262,
+     -51,
+     -521,
+     -257,
+     -37,
+     -516
+    ],
+    "counts": {
+     "same_other": 664,
+     "same_stored": 320,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 89,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -142,
+     -51,
+     -618
+    ],
+    "bb": [
+     -142,
+     -51,
+     -633,
+     -132,
+     -44,
+     -618
+    ],
+    "counts": {
+     "same_other": 791,
+     "diff_sculk": 97,
+     "same_stored": 653,
+     "mask_sculk_sculk_vein": 137,
+     "mask_air": 422,
+     "mask_sculk_sculk_sensor": 5,
+     "mask_sculk_sculk_catalyst": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 91,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -245,
+     -51,
+     -624
+    ],
+    "bb": [
+     -252,
+     -51,
+     -624,
+     -245,
+     -41,
+     -618
+    ],
+    "counts": {
+     "same_other": 774,
+     "same_stored": 276,
+     "diff_sculk": 20,
+     "mask_air": 9,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24012,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 17,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -1358,
+     -51,
+     85
+    ],
+    "bb": [
+     -1358,
+     -51,
+     79,
+     -1351,
+     -41,
+     85
+    ],
+    "counts": {
+     "same_other": 784,
+     "same_stored": 286,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 18,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -1324,
+     -51,
+     43
+    ],
+    "bb": [
+     -1340,
+     -51,
+     27,
+     -1324,
+     -38,
+     43
+    ],
+    "counts": {
+     "same_other": 2980,
+     "diff_sculk": 462,
+     "same_stored": 860,
+     "mask_air": 904,
+     "mask_sculk_sculk_vein": 206,
+     "mask_sculk_sculk_sensor": 2,
+     "mask_sculk_sculk_catalyst": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 20,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -1296,
+     -51,
+     39
+    ],
+    "bb": [
+     -1302,
+     -51,
+     32,
+     -1296,
+     -41,
+     39
+    ],
+    "counts": {
+     "diff_sculk": 42,
+     "same_other": 753,
+     "same_stored": 275,
+     "mask_air": 9,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 24,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -1250,
+     -51,
+     85
+    ],
+    "bb": [
+     -1250,
+     -51,
+     80,
+     -1245,
+     -37,
+     85
+    ],
+    "counts": {
+     "same_other": 664,
+     "same_stored": 320,
+     "mask_air": 39,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 26,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     -1256,
+     -51,
+     86
+    ],
+    "bb": [
+     -1256,
+     -51,
+     86,
+     -1250,
+     -47,
+     93
+    ],
+    "counts": {
+     "same_other": 260,
+     "same_stored": 199,
+     "mask_air": 81
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 32,
+    "module": "large_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     -1302,
+     -51,
+     12
+    ],
+    "bb": [
+     -1302,
+     -51,
+     12,
+     -1286,
+     -38,
+     28
+    ],
+    "counts": {
+     "same_other": 3012,
+     "diff_sculk": 334,
+     "same_stored": 956,
+     "mask_sculk_sculk_vein": 92,
+     "mask_air": 1019,
+     "mask_sculk_sculk_sensor": 1,
+     "mask_sculk_sculk_catalyst": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 39,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -1227,
+     -51,
+     52
+    ],
+    "bb": [
+     -1234,
+     -51,
+     52,
+     -1227,
+     -41,
+     58
+    ],
+    "counts": {
+     "same_other": 784,
+     "same_stored": 286,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 41,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -1399,
+     -51,
+     57
+    ],
+    "bb": [
+     -1399,
+     -51,
+     42,
+     -1389,
+     -44,
+     57
+    ],
+    "counts": {
+     "same_other": 830,
+     "same_stored": 711,
+     "mask_air": 497,
+     "mask_sculk_sculk_vein": 64,
+     "mask_sculk_sculk_sensor": 3,
+     "mask_sculk_sculk_shrieker": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 51,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -1281,
+     -51,
+     125
+    ],
+    "bb": [
+     -1288,
+     -51,
+     125,
+     -1281,
+     -41,
+     131
+    ],
+    "counts": {
+     "same_other": 743,
+     "diff_sculk": 75,
+     "same_stored": 252,
+     "mask_air": 9,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 56,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -1414,
+     -51,
+     84
+    ],
+    "bb": [
+     -1414,
+     -51,
+     79,
+     -1409,
+     -37,
+     84
+    ],
+    "counts": {
+     "same_other": 664,
+     "same_stored": 320,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 70,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -1244,
+     -51,
+     103
+    ],
+    "bb": [
+     -1280,
+     -51,
+     103,
+     -1244,
+     -42,
+     131
+    ],
+    "counts": {
+     "same_other": 9526,
+     "diff_sculk": 263,
+     "same_stored": 1730,
+     "mask_air": 1615,
+     "mask_sculk_sculk_vein": 118,
+     "mask_sculk_sculk_catalyst": 3,
+     "mask_sculk_sculk_shrieker": 5,
+     "mask_sculk_sculk_sensor": 9,
+     "diff_fluid": 12,
+     "mask_fluid_water": 18,
+     "pool_water_kept": 43
+    },
+    "mask_terrain_f24": {
+     "minecraft:water": 24
+    },
+    "mask_terrain_g24": {
+     "minecraft:water": 24
+    },
+    "unexplained": [],
+    "fluid": {
+     "cells_in_mask": 18,
+     "component_size": 56,
+     "sources": [],
+     "entries": [
+      {
+       "mask_cell": [
+        -1247,
+        -49,
+        117
+       ],
+       "class": "paved_walkway",
+       "fluid_from": [
+        {
+         "world": [
+          -1247,
+          -48,
+          117
+         ],
+         "template_pos": [
+          14,
+          3,
+          3
+         ],
+         "via": "exterior"
+        }
+       ]
+      },
+      {
+       "mask_cell": [
+        -1245,
+        -50,
+        117
+       ],
+       "class": "paved_walkway",
+       "fluid_from": [
+        {
+         "world": [
+          -1244,
+          -50,
+          117
+         ],
+         "template_pos": [
+          14,
+          1,
+          0
+         ],
+         "via": "decay_hole (stored cracked_deepslate_bricks dropped by block_rot)"
+        }
+       ]
+      },
+      {
+       "mask_cell": [
+        -1247,
+        -50,
+        121
+       ],
+       "class": "paved_walkway",
+       "fluid_from": [
+        {
+         "world": [
+          -1247,
+          -51,
+          121
+         ],
+         "template_pos": [
+          18,
+          0,
+          3
+         ],
+         "via": "decay_hole (stored deepslate_tiles dropped by block_rot)"
+        }
+       ]
+      },
+      {
+       "mask_cell": [
+        -1247,
+        -49,
+        116
+       ],
+       "class": "paved_walkway",
+       "fluid_from": [
+        {
+         "world": [
+          -1247,
+          -48,
+          116
+         ],
+         "template_pos": [
+          13,
+          3,
+          3
+         ],
+         "via": "exterior"
+        }
+       ]
+      },
+      {
+       "mask_cell": [
+        -1247,
+        -49,
+        119
+       ],
+       "class": "paved_walkway",
+       "fluid_from": [
+        {
+         "world": [
+          -1247,
+          -48,
+          119
+         ],
+         "template_pos": [
+          16,
+          3,
+          3
+         ],
+         "via": "exterior"
+        }
+       ]
+      },
+      {
+       "mask_cell": [
+        -1247,
+        -49,
+        118
+       ],
+       "class": "paved_walkway",
+       "fluid_from": [
+        {
+         "world": [
+          -1247,
+          -48,
+          118
+         ],
+         "template_pos": [
+          15,
+          3,
+          3
+         ],
+         "via": "exterior"
+        }
+       ]
+      },
+      {
+       "mask_cell": [
+        -1247,
+        -49,
+        115
+       ],
+       "class": "paved_walkway",
+       "fluid_from": [
+        {
+         "world": [
+          -1247,
+          -48,
+          115
+         ],
+         "template_pos": [
+          12,
+          3,
+          3
+         ],
+         "via": "exterior"
+        }
+       ]
+      }
+     ]
+    }
+   },
+   {
+    "piece_index": 74,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -1386,
+     -51,
+     15
+    ],
+    "bb": [
+     -1393,
+     -51,
+     12,
+     -1386,
+     -47,
+     15
+    ],
+    "counts": {
+     "same_other": 200,
+     "same_stored": 128,
+     "mask_air": 26,
+     "mask_sculk_sculk_vein": 6
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 75,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -1324,
+     -51,
+     -33
+    ],
+    "bb": [
+     -1330,
+     -51,
+     -40,
+     -1324,
+     -47,
+     -33
+    ],
+    "counts": {
+     "same_other": 227,
+     "diff_sculk": 71,
+     "same_stored": 161,
+     "mask_air": 67,
+     "mask_sculk_sculk_vein": 14
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24013,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 41,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1196,
+     -51,
+     1315
+    ],
+    "bb": [
+     1190,
+     -51,
+     1308,
+     1196,
+     -41,
+     1315
+    ],
+    "counts": {
+     "same_other": 696,
+     "diff_sculk": 174,
+     "same_stored": 200,
+     "mask_air": 8,
+     "mask_sculk_sculk_vein": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 48,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1219,
+     -51,
+     1174
+    ],
+    "bb": [
+     1191,
+     -51,
+     1138,
+     1219,
+     -42,
+     1174
+    ],
+    "counts": {
+     "same_other": 9487,
+     "diff_sculk": 592,
+     "same_stored": 1449,
+     "mask_air": 1559,
+     "mask_sculk_sculk_vein": 188,
+     "mask_sculk_sculk_sensor": 15,
+     "mask_sculk_sculk_shrieker": 4,
+     "mask_sculk_sculk_catalyst": 2,
+     "pool_water_kept": 43,
+     "diff_fluid": 3
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 73,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     1117,
+     -51,
+     1181
+    ],
+    "bb": [
+     1117,
+     -51,
+     1181,
+     1124,
+     -47,
+     1184
+    ],
+    "counts": {
+     "diff_sculk": 62,
+     "same_other": 183,
+     "same_stored": 83,
+     "mask_air": 30,
+     "mask_sculk_sculk_vein": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 74,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     1083,
+     -51,
+     1279
+    ],
+    "bb": [
+     1083,
+     -51,
+     1273,
+     1090,
+     -41,
+     1279
+    ],
+    "counts": {
+     "same_other": 784,
+     "same_stored": 286,
+     "mask_air": 9,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 80,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     1278,
+     -51,
+     1220
+    ],
+    "bb": [
+     1278,
+     -51,
+     1213,
+     1290,
+     -47,
+     1220
+    ],
+    "counts": {
+     "same_other": 318,
+     "diff_sculk": 142,
+     "same_stored": 250,
+     "mask_sculk_sculk_vein": 36,
+     "mask_air": 152,
+     "mask_sculk_sculk_catalyst": 1,
+     "mask_sculk_sculk_sensor": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 90,
+    "module": "medium_pillar_1",
+    "rotation": "NONE",
+    "pos": [
+     1089,
+     -51,
+     1296
+    ],
+    "bb": [
+     1089,
+     -51,
+     1296,
+     1095,
+     -41,
+     1303
+    ],
+    "counts": {
+     "diff_sculk": 192,
+     "same_other": 706,
+     "same_stored": 172,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24014,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 20,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1366,
+     -51,
+     -913
+    ],
+    "bb": [
+     1359,
+     -51,
+     -925,
+     1366,
+     -47,
+     -913
+    ],
+    "counts": {
+     "same_other": 342,
+     "diff_sculk": 84,
+     "same_stored": 284,
+     "mask_sculk_sculk_vein": 54,
+     "mask_air": 136
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 31,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     1308,
+     -51,
+     -960
+    ],
+    "bb": [
+     1308,
+     -51,
+     -967,
+     1320,
+     -47,
+     -960
+    ],
+    "counts": {
+     "same_other": 380,
+     "same_stored": 330,
+     "mask_air": 190
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 33,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     1388,
+     -51,
+     -904
+    ],
+    "bb": [
+     1388,
+     -51,
+     -904,
+     1403,
+     -44,
+     -894
+    ],
+    "counts": {
+     "same_other": 702,
+     "diff_sculk": 351,
+     "same_stored": 488,
+     "mask_air": 478,
+     "mask_sculk_sculk_vein": 79,
+     "mask_sculk_sculk_sensor": 4,
+     "mask_sculk_sculk_catalyst": 1,
+     "mask_sculk_sculk_shrieker": 3
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 38,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     1442,
+     -51,
+     -937
+    ],
+    "bb": [
+     1432,
+     -51,
+     -937,
+     1442,
+     -44,
+     -922
+    ],
+    "counts": {
+     "same_other": 754,
+     "diff_sculk": 210,
+     "same_stored": 577,
+     "mask_air": 492,
+     "mask_sculk_sculk_vein": 68,
+     "mask_sculk_sculk_sensor": 5
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 45,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     1400,
+     -51,
+     -1005
+    ],
+    "bb": [
+     1400,
+     -51,
+     -1011,
+     1407,
+     -41,
+     -1005
+    ],
+    "counts": {
+     "same_other": 724,
+     "diff_sculk": 84,
+     "same_stored": 262,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 62,
+    "module": "small_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     1273,
+     -51,
+     -960
+    ],
+    "bb": [
+     1273,
+     -51,
+     -966,
+     1280,
+     -47,
+     -960
+    ],
+    "counts": {
+     "same_other": 260,
+     "same_stored": 199,
+     "mask_air": 81
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 63,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     1272,
+     -51,
+     -932
+    ],
+    "bb": [
+     1272,
+     -51,
+     -938,
+     1279,
+     -41,
+     -932
+    ],
+    "counts": {
+     "same_other": 784,
+     "same_stored": 286,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 66,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1366,
+     -51,
+     -860
+    ],
+    "bb": [
+     1359,
+     -51,
+     -863,
+     1366,
+     -47,
+     -860
+    ],
+    "counts": {
+     "same_other": 200,
+     "same_stored": 128,
+     "mask_air": 32
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 72,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     1296,
+     -51,
+     -971
+    ],
+    "bb": [
+     1293,
+     -51,
+     -971,
+     1296,
+     -47,
+     -964
+    ],
+    "counts": {
+     "same_other": 200,
+     "same_stored": 128,
+     "mask_sculk_sculk_vein": 16,
+     "mask_air": 16
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 73,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     1315,
+     -51,
+     -1021
+    ],
+    "bb": [
+     1279,
+     -51,
+     -1021,
+     1315,
+     -42,
+     -993
+    ],
+    "counts": {
+     "same_other": 9629,
+     "same_stored": 1901,
+     "mask_air": 1639,
+     "mask_sculk_sculk_sensor": 5,
+     "mask_sculk_sculk_vein": 123,
+     "mask_sculk_sculk_shrieker": 1,
+     "diff_fluid": 1,
+     "pool_water_kept": 43
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 76,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     1447,
+     -51,
+     -1011
+    ],
+    "bb": [
+     1440,
+     -51,
+     -1011,
+     1447,
+     -47,
+     -1005
+    ],
+    "counts": {
+     "same_other": 251,
+     "diff_sculk": 10,
+     "same_stored": 198,
+     "mask_air": 81
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24015,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 35,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     -193,
+     -51,
+     -86
+    ],
+    "bb": [
+     -193,
+     -51,
+     -86,
+     -187,
+     -47,
+     -79
+    ],
+    "counts": {
+     "same_other": 260,
+     "same_stored": 199,
+     "mask_sculk_sculk_vein": 16,
+     "mask_air": 65
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 45,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -113,
+     -51,
+     -169
+    ],
+    "bb": [
+     -119,
+     -51,
+     -176,
+     -113,
+     -41,
+     -169
+    ],
+    "counts": {
+     "same_other": 754,
+     "diff_sculk": 48,
+     "same_stored": 268,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 54,
+    "module": "sauna_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -293,
+     -51,
+     -104
+    ],
+    "bb": [
+     -293,
+     -51,
+     -132,
+     -257,
+     -42,
+     -104
+    ],
+    "counts": {
+     "diff_sculk": 593,
+     "same_other": 9429,
+     "same_stored": 1509,
+     "mask_air": 1539,
+     "mask_sculk_sculk_vein": 211,
+     "mask_sculk_sculk_sensor": 12,
+     "mask_sculk_sculk_shrieker": 4,
+     "pool_water_kept": 43,
+     "mask_sculk_sculk_catalyst": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 55,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -279,
+     -51,
+     -154
+    ],
+    "bb": [
+     -279,
+     -51,
+     -170,
+     -263,
+     -38,
+     -154
+    ],
+    "counts": {
+     "same_other": 2969,
+     "diff_sculk": 399,
+     "same_stored": 934,
+     "mask_air": 893,
+     "mask_sculk_sculk_vein": 214,
+     "mask_sculk_sculk_sensor": 5,
+     "mask_sculk_sculk_catalyst": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 57,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -263,
+     -51,
+     -200
+    ],
+    "bb": [
+     -263,
+     -51,
+     -215,
+     -253,
+     -44,
+     -200
+    ],
+    "counts": {
+     "same_other": 830,
+     "same_stored": 711,
+     "mask_air": 458,
+     "mask_sculk_sculk_vein": 99,
+     "mask_sculk_sculk_sensor": 7,
+     "mask_sculk_sculk_catalyst": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 74,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -282,
+     -51,
+     -200
+    ],
+    "bb": [
+     -282,
+     -51,
+     -207,
+     -270,
+     -47,
+     -200
+    ],
+    "counts": {
+     "same_other": 380,
+     "same_stored": 330,
+     "mask_sculk_sculk_vein": 36,
+     "mask_air": 152,
+     "mask_sculk_sculk_sensor": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 76,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -277,
+     -51,
+     -178
+    ],
+    "bb": [
+     -280,
+     -51,
+     -178,
+     -277,
+     -47,
+     -171
+    ],
+    "counts": {
+     "same_other": 176,
+     "same_stored": 112,
+     "mask_air": 22,
+     "mask_sculk_sculk_vein": 10,
+     "diff_sculk": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 81,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -181,
+     -51,
+     -58
+    ],
+    "bb": [
+     -187,
+     -51,
+     -65,
+     -181,
+     -47,
+     -58
+    ],
+    "counts": {
+     "same_other": 260,
+     "same_stored": 199,
+     "mask_air": 79,
+     "mask_sculk_sculk_vein": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 84,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -304,
+     -51,
+     -132
+    ],
+    "bb": [
+     -311,
+     -51,
+     -132,
+     -304,
+     -47,
+     -126
+    ],
+    "counts": {
+     "same_other": 216,
+     "diff_sculk": 70,
+     "same_stored": 173,
+     "mask_air": 79,
+     "mask_sculk_sculk_vein": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24016,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 19,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -1019,
+     -51,
+     -1489
+    ],
+    "bb": [
+     -1025,
+     -51,
+     -1496,
+     -1019,
+     -41,
+     -1489
+    ],
+    "counts": {
+     "same_other": 760,
+     "diff_sculk": 34,
+     "same_stored": 276,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 34,
+    "module": "medium_pillar_1",
+    "rotation": "NONE",
+    "pos": [
+     -1053,
+     -51,
+     -1478
+    ],
+    "bb": [
+     -1053,
+     -51,
+     -1478,
+     -1047,
+     -41,
+     -1471
+    ],
+    "counts": {
+     "same_other": 784,
+     "same_stored": 286,
+     "mask_air": 8,
+     "mask_sculk_sculk_vein": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 39,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     -991,
+     -51,
+     -1566
+    ],
+    "bb": [
+     -991,
+     -51,
+     -1566,
+     -984,
+     -47,
+     -1563
+    ],
+    "counts": {
+     "diff_sculk": 91,
+     "same_other": 160,
+     "same_stored": 77,
+     "mask_air": 17,
+     "mask_sculk_sculk_vein": 15
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 48,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -1018,
+     -51,
+     -1612
+    ],
+    "bb": [
+     -1024,
+     -51,
+     -1619,
+     -1018,
+     -41,
+     -1612
+    ],
+    "counts": {
+     "diff_sculk": 200,
+     "same_other": 686,
+     "same_stored": 183,
+     "diff_natural_terrain_outside_mask": 1,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 51,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -1047,
+     -51,
+     -1455
+    ],
+    "bb": [
+     -1054,
+     -51,
+     -1458,
+     -1047,
+     -47,
+     -1455
+    ],
+    "counts": {
+     "same_other": 200,
+     "same_stored": 128,
+     "mask_air": 26,
+     "mask_sculk_sculk_vein": 6
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 61,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -985,
+     -51,
+     -1490
+    ],
+    "bb": [
+     -985,
+     -51,
+     -1495,
+     -980,
+     -37,
+     -1490
+    ],
+    "counts": {
+     "same_other": 625,
+     "diff_sculk": 182,
+     "same_stored": 177,
+     "mask_air": 38,
+     "mask_sculk_sculk_vein": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 95,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -983,
+     -51,
+     -1568
+    ],
+    "bb": [
+     -983,
+     -51,
+     -1573,
+     -978,
+     -37,
+     -1568
+    ],
+    "counts": {
+     "same_other": 654,
+     "diff_sculk": 15,
+     "same_stored": 315,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24017,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 41,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     81,
+     -51,
+     152
+    ],
+    "bb": [
+     81,
+     -51,
+     152,
+     96,
+     -44,
+     162
+    ],
+    "counts": {
+     "same_other": 707,
+     "diff_sculk": 356,
+     "same_stored": 478,
+     "mask_sculk_sculk_vein": 154,
+     "mask_air": 404,
+     "mask_sculk_sculk_catalyst": 2,
+     "mask_sculk_sculk_sensor": 5
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 45,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -30,
+     -51,
+     112
+    ],
+    "bb": [
+     -37,
+     -51,
+     112,
+     -30,
+     -41,
+     118
+    ],
+    "counts": {
+     "same_other": 784,
+     "same_stored": 286,
+     "mask_air": 7,
+     "mask_sculk_sculk_vein": 3
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 47,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -36,
+     -51,
+     145
+    ],
+    "bb": [
+     -36,
+     -51,
+     140,
+     -31,
+     -37,
+     145
+    ],
+    "counts": {
+     "same_other": 644,
+     "same_stored": 285,
+     "mask_air": 38,
+     "mask_sculk_sculk_vein": 2,
+     "diff_sculk": 55
+    },
+    "mask_terrain_f24": {
+     "minecraft:glow_lichen": 1
+    },
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 54,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     47,
+     -51,
+     202
+    ],
+    "bb": [
+     47,
+     -51,
+     202,
+     62,
+     -44,
+     212
+    ],
+    "counts": {
+     "same_other": 689,
+     "diff_sculk": 388,
+     "same_stored": 464,
+     "mask_sculk_sculk_vein": 117,
+     "mask_air": 438,
+     "mask_sculk_sculk_sensor": 8,
+     "mask_sculk_sculk_shrieker": 1,
+     "mask_sculk_sculk_catalyst": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 60,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     86,
+     -51,
+     81
+    ],
+    "bb": [
+     81,
+     -51,
+     76,
+     86,
+     -37,
+     81
+    ],
+    "counts": {
+     "diff_sculk": 9,
+     "same_other": 658,
+     "same_stored": 317,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 61,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     94,
+     -51,
+     81
+    ],
+    "bb": [
+     87,
+     -51,
+     81,
+     94,
+     -41,
+     87
+    ],
+    "counts": {
+     "same_other": 711,
+     "diff_sculk": 158,
+     "same_stored": 201,
+     "mask_air": 9,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 62,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -14,
+     -51,
+     74
+    ],
+    "bb": [
+     -19,
+     -51,
+     74,
+     -14,
+     -37,
+     79
+    ],
+    "counts": {
+     "same_other": 664,
+     "same_stored": 320,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 82,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     98,
+     -51,
+     187
+    ],
+    "bb": [
+     82,
+     -51,
+     187,
+     98,
+     -38,
+     203
+    ],
+    "counts": {
+     "same_other": 3005,
+     "diff_sculk": 326,
+     "same_stored": 971,
+     "mask_air": 924,
+     "mask_sculk_sculk_vein": 182,
+     "mask_sculk_sculk_sensor": 7
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 83,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     125,
+     -51,
+     165
+    ],
+    "bb": [
+     125,
+     -51,
+     150,
+     135,
+     -44,
+     165
+    ],
+    "counts": {
+     "same_other": 738,
+     "diff_sculk": 294,
+     "same_stored": 509,
+     "mask_air": 458,
+     "mask_sculk_sculk_vein": 101,
+     "mask_sculk_sculk_sensor": 6
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 85,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     121,
+     -51,
+     189
+    ],
+    "bb": [
+     121,
+     -51,
+     189,
+     128,
+     -47,
+     201
+    ],
+    "counts": {
+     "same_other": 352,
+     "same_stored": 324,
+     "mask_sculk_sculk_vein": 12,
+     "mask_air": 178,
+     "diff_sculk": 34
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 88,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     127,
+     -51,
+     68
+    ],
+    "bb": [
+     121,
+     -51,
+     61,
+     127,
+     -41,
+     68
+    ],
+    "counts": {
+     "same_other": 784,
+     "same_stored": 286,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24018,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 32,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     1300,
+     -51,
+     112
+    ],
+    "bb": [
+     1293,
+     -51,
+     112,
+     1300,
+     -47,
+     118
+    ],
+    "counts": {
+     "same_other": 236,
+     "diff_sculk": 45,
+     "same_stored": 178,
+     "mask_air": 77,
+     "mask_sculk_sculk_vein": 4
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 51,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1266,
+     -51,
+     69
+    ],
+    "bb": [
+     1259,
+     -51,
+     57,
+     1266,
+     -47,
+     69
+    ],
+    "counts": {
+     "same_other": 307,
+     "diff_sculk": 142,
+     "same_stored": 261,
+     "mask_air": 160,
+     "mask_sculk_sculk_vein": 30
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1293,
+     -51,
+     65
+    ],
+    "bb": [
+     1288,
+     -51,
+     60,
+     1293,
+     -37,
+     65
+    ],
+    "counts": {
+     "diff_sculk": 3,
+     "same_other": 661,
+     "same_stored": 320,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 70,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "pos": [
+     1261,
+     -51,
+     44
+    ],
+    "bb": [
+     1261,
+     -51,
+     44,
+     1266,
+     -37,
+     49
+    ],
+    "counts": {
+     "diff_sculk": 144,
+     "same_other": 614,
+     "same_stored": 226,
+     "mask_air": 38,
+     "mask_sculk_sculk_vein": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 76,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     1153,
+     -51,
+     145
+    ],
+    "bb": [
+     1137,
+     -51,
+     145,
+     1153,
+     -38,
+     161
+    ],
+    "counts": {
+     "same_other": 3138,
+     "same_stored": 1163,
+     "mask_air": 1013,
+     "mask_sculk_sculk_vein": 96,
+     "mask_sculk_sculk_sensor": 2,
+     "mask_sculk_sculk_shrieker": 1,
+     "mask_sculk_sculk_catalyst": 1,
+     "diff_fluid": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 78,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     1293,
+     -51,
+     191
+    ],
+    "bb": [
+     1293,
+     -51,
+     185,
+     1300,
+     -41,
+     191
+    ],
+    "counts": {
+     "same_other": 784,
+     "same_stored": 286,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 82,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     1242,
+     -51,
+     -3
+    ],
+    "bb": [
+     1242,
+     -51,
+     -3,
+     1249,
+     -47,
+     0
+    ],
+    "counts": {
+     "same_other": 159,
+     "diff_sculk": 88,
+     "same_stored": 81,
+     "mask_air": 30,
+     "mask_sculk_sculk_vein": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 84,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1316,
+     -51,
+     48
+    ],
+    "bb": [
+     1288,
+     -51,
+     12,
+     1316,
+     -42,
+     48
+    ],
+    "counts": {
+     "same_other": 9513,
+     "diff_sculk": 298,
+     "same_stored": 1720,
+     "mask_air": 1731,
+     "mask_sculk_sculk_vein": 35,
+     "pool_water_kept": 43,
+     "mask_sculk_sculk_sensor": 1,
+     "mask_sculk_sculk_catalyst": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24019,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 27,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -747,
+     -51,
+     -1514
+    ],
+    "bb": [
+     -757,
+     -51,
+     -1514,
+     -747,
+     -44,
+     -1499
+    ],
+    "counts": {
+     "same_other": 771,
+     "diff_sculk": 154,
+     "same_stored": 616,
+     "mask_air": 528,
+     "mask_sculk_sculk_vein": 37
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 30,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -626,
+     -51,
+     -1539
+    ],
+    "bb": [
+     -632,
+     -51,
+     -1546,
+     -626,
+     -41,
+     -1539
+    ],
+    "counts": {
+     "same_other": 726,
+     "diff_sculk": 173,
+     "same_stored": 171,
+     "mask_air": 9,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 45,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -657,
+     -51,
+     -1614
+    ],
+    "bb": [
+     -662,
+     -51,
+     -1614,
+     -657,
+     -37,
+     -1609
+    ],
+    "counts": {
+     "same_other": 629,
+     "diff_sculk": 100,
+     "same_stored": 255,
+     "mask_air": 40
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24020,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 35,
+    "module": "sauna_1",
+    "rotation": "NONE",
+    "pos": [
+     1709,
+     -51,
+     -869
+    ],
+    "bb": [
+     1709,
+     -51,
+     -869,
+     1737,
+     -42,
+     -833
+    ],
+    "counts": {
+     "diff_sculk": 648,
+     "same_other": 9404,
+     "same_stored": 1479,
+     "mask_sculk_sculk_vein": 164,
+     "mask_air": 1596,
+     "mask_sculk_sculk_sensor": 4,
+     "mask_sculk_sculk_shrieker": 3,
+     "mask_sculk_sculk_catalyst": 1,
+     "pool_water_kept": 43
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 37,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     1793,
+     -51,
+     -944
+    ],
+    "bb": [
+     1793,
+     -51,
+     -944,
+     1799,
+     -47,
+     -937
+    ],
+    "counts": {
+     "diff_sculk": 80,
+     "same_other": 219,
+     "same_stored": 160,
+     "mask_air": 81
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 48,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1738,
+     -51,
+     -988
+    ],
+    "bb": [
+     1722,
+     -51,
+     -1004,
+     1738,
+     -38,
+     -988
+    ],
+    "counts": {
+     "diff_sculk": 118,
+     "same_other": 3082,
+     "same_stored": 1102,
+     "mask_air": 1008,
+     "mask_sculk_sculk_vein": 102,
+     "mask_sculk_sculk_sensor": 2,
+     "mask_sculk_sculk_shrieker": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 51,
+    "module": "large_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     1759,
+     -51,
+     -836
+    ],
+    "bb": [
+     1759,
+     -51,
+     -836,
+     1775,
+     -38,
+     -820
+    ],
+    "counts": {
+     "same_other": 3013,
+     "diff_sculk": 354,
+     "same_stored": 935,
+     "mask_air": 1005,
+     "mask_sculk_sculk_vein": 107,
+     "mask_sculk_sculk_catalyst": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1737,
+     -51,
+     -827
+    ],
+    "bb": [
+     1730,
+     -51,
+     -830,
+     1737,
+     -47,
+     -827
+    ],
+    "counts": {
+     "same_other": 151,
+     "diff_sculk": 96,
+     "same_stored": 81,
+     "mask_sculk_sculk_vein": 14,
+     "mask_air": 18
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 61,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1811,
+     -51,
+     -934
+    ],
+    "bb": [
+     1804,
+     -51,
+     -946,
+     1811,
+     -47,
+     -934
+    ],
+    "counts": {
+     "same_other": 324,
+     "diff_sculk": 131,
+     "same_stored": 255,
+     "mask_air": 176,
+     "mask_sculk_sculk_vein": 14
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 68,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     1780,
+     -51,
+     -986
+    ],
+    "bb": [
+     1780,
+     -51,
+     -993,
+     1792,
+     -47,
+     -986
+    ],
+    "counts": {
+     "same_other": 317,
+     "diff_sculk": 152,
+     "same_stored": 241,
+     "mask_air": 185,
+     "mask_sculk_sculk_vein": 5
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 91,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1811,
+     -51,
+     -974
+    ],
+    "bb": [
+     1804,
+     -51,
+     -977,
+     1811,
+     -47,
+     -974
+    ],
+    "counts": {
+     "diff_sculk": 63,
+     "same_other": 164,
+     "same_stored": 101,
+     "mask_sculk_sculk_vein": 9,
+     "mask_air": 23
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24021,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 14,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -293,
+     -51,
+     172
+    ],
+    "bb": [
+     -305,
+     -51,
+     172,
+     -293,
+     -47,
+     179
+    ],
+    "counts": {
+     "diff_sculk": 180,
+     "same_other": 295,
+     "same_stored": 235,
+     "mask_air": 178,
+     "mask_sculk_sculk_vein": 12
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 24,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "pos": [
+     -283,
+     -51,
+     115
+    ],
+    "bb": [
+     -283,
+     -51,
+     115,
+     -278,
+     -37,
+     120
+    ],
+    "counts": {
+     "same_other": 660,
+     "same_stored": 317,
+     "mask_air": 40,
+     "diff_sculk": 7
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 26,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -313,
+     -51,
+     144
+    ],
+    "bb": [
+     -320,
+     -51,
+     144,
+     -313,
+     -41,
+     150
+    ],
+    "counts": {
+     "same_other": 702,
+     "diff_sculk": 185,
+     "same_stored": 183,
+     "mask_sculk_sculk_vein": 3,
+     "mask_air": 7
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -221,
+     -51,
+     119
+    ],
+    "bb": [
+     -221,
+     -51,
+     103,
+     -205,
+     -38,
+     119
+    ],
+    "counts": {
+     "same_other": 3028,
+     "diff_sculk": 312,
+     "same_stored": 962,
+     "mask_sculk_sculk_vein": 147,
+     "mask_air": 961,
+     "mask_sculk_sculk_sensor": 4,
+     "mask_sculk_sculk_shrieker": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 54,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -278,
+     -51,
+     79
+    ],
+    "bb": [
+     -285,
+     -51,
+     76,
+     -278,
+     -47,
+     79
+    ],
+    "counts": {
+     "same_other": 172,
+     "diff_sculk": 57,
+     "same_stored": 99,
+     "mask_air": 32
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 55,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     -256,
+     -51,
+     72
+    ],
+    "bb": [
+     -256,
+     -51,
+     72,
+     -249,
+     -47,
+     84
+    ],
+    "counts": {
+     "same_other": 300,
+     "diff_sculk": 254,
+     "same_stored": 156,
+     "mask_air": 178,
+     "mask_sculk_sculk_vein": 12
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 62,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -279,
+     -51,
+     264
+    ],
+    "bb": [
+     -295,
+     -51,
+     248,
+     -279,
+     -38,
+     264
+    ],
+    "counts": {
+     "same_other": 3121,
+     "diff_sculk": 28,
+     "same_stored": 1153,
+     "mask_air": 1109,
+     "mask_sculk_sculk_vein": 4
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 68,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -177,
+     -51,
+     209
+    ],
+    "bb": [
+     -183,
+     -51,
+     202,
+     -177,
+     -41,
+     209
+    ],
+    "counts": {
+     "same_other": 784,
+     "same_stored": 286,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 76,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     -326,
+     -51,
+     118
+    ],
+    "bb": [
+     -326,
+     -51,
+     118,
+     -311,
+     -44,
+     128
+    ],
+    "counts": {
+     "same_other": 739,
+     "same_stored": 562,
+     "mask_air": 422,
+     "mask_sculk_sculk_vein": 139,
+     "diff_sculk": 240,
+     "mask_sculk_sculk_sensor": 4
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24022,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 46,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -1017,
+     -51,
+     -198
+    ],
+    "bb": [
+     -1033,
+     -51,
+     -198,
+     -1017,
+     -38,
+     -182
+    ],
+    "counts": {
+     "same_other": 2962,
+     "diff_sculk": 436,
+     "same_stored": 904,
+     "mask_air": 993,
+     "mask_sculk_sculk_vein": 116,
+     "mask_sculk_sculk_sensor": 4
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 49,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -987,
+     -51,
+     -187
+    ],
+    "bb": [
+     -993,
+     -51,
+     -194,
+     -987,
+     -41,
+     -187
+    ],
+    "counts": {
+     "same_other": 744,
+     "diff_sculk": 76,
+     "same_stored": 250,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -941,
+     -51,
+     -296
+    ],
+    "bb": [
+     -956,
+     -51,
+     -306,
+     -941,
+     -44,
+     -296
+    ],
+    "counts": {
+     "same_other": 830,
+     "same_stored": 711,
+     "mask_air": 565
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 75,
+    "module": "small_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -986,
+     -51,
+     -382
+    ],
+    "bb": [
+     -986,
+     -51,
+     -388,
+     -979,
+     -47,
+     -382
+    ],
+    "counts": {
+     "same_other": 260,
+     "same_stored": 199,
+     "mask_air": 80,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 81,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -1057,
+     -51,
+     -198
+    ],
+    "bb": [
+     -1067,
+     -51,
+     -198,
+     -1057,
+     -44,
+     -183
+    ],
+    "counts": {
+     "diff_sculk": 187,
+     "same_other": 769,
+     "same_stored": 585,
+     "mask_air": 508,
+     "mask_sculk_sculk_vein": 56,
+     "mask_sculk_sculk_sensor": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24023,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 39,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     -595,
+     -51,
+     1767
+    ],
+    "bb": [
+     -595,
+     -51,
+     1767,
+     -580,
+     -44,
+     1777
+    ],
+    "counts": {
+     "same_other": 734,
+     "diff_sculk": 280,
+     "same_stored": 527,
+     "mask_sculk_sculk_vein": 97,
+     "mask_air": 464,
+     "mask_sculk_sculk_sensor": 4
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 42,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -589,
+     -51,
+     1719
+    ],
+    "bb": [
+     -595,
+     -51,
+     1712,
+     -589,
+     -41,
+     1719
+    ],
+    "counts": {
+     "same_other": 784,
+     "same_stored": 286,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 47,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -497,
+     -51,
+     1778
+    ],
+    "bb": [
+     -497,
+     -51,
+     1771,
+     -494,
+     -47,
+     1778
+    ],
+    "counts": {
+     "diff_sculk": 73,
+     "same_other": 158,
+     "same_stored": 97,
+     "mask_sculk_sculk_vein": 12,
+     "mask_air": 20
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 50,
+    "module": "medium_pillar_1",
+    "rotation": "NONE",
+    "pos": [
+     -498,
+     -51,
+     1700
+    ],
+    "bb": [
+     -498,
+     -51,
+     1700,
+     -492,
+     -41,
+     1707
+    ],
+    "counts": {
+     "same_other": 718,
+     "diff_sculk": 158,
+     "same_stored": 194,
+     "mask_sculk_sculk_vein": 7,
+     "mask_air": 3
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -464,
+     -51,
+     1710
+    ],
+    "bb": [
+     -470,
+     -51,
+     1703,
+     -464,
+     -41,
+     1710
+    ],
+    "counts": {
+     "same_other": 726,
+     "diff_sculk": 157,
+     "same_stored": 187,
+     "mask_air": 9,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 56,
+    "module": "medium_pillar_1",
+    "rotation": "NONE",
+    "pos": [
+     -623,
+     -51,
+     1788
+    ],
+    "bb": [
+     -623,
+     -51,
+     1788,
+     -617,
+     -41,
+     1795
+    ],
+    "counts": {
+     "same_other": 784,
+     "same_stored": 286,
+     "mask_air": 9,
+     "mask_sculk_sculk_vein": 1
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 58,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     -595,
+     -51,
+     1786
+    ],
+    "bb": [
+     -595,
+     -51,
+     1786,
+     -580,
+     -44,
+     1796
+    ],
+    "counts": {
+     "same_other": 814,
+     "same_stored": 700,
+     "mask_air": 518,
+     "mask_sculk_sculk_vein": 44,
+     "diff_sculk": 27,
+     "mask_sculk_sculk_catalyst": 1,
+     "mask_sculk_sculk_sensor": 2
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 65,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     -555,
+     -51,
+     1673
+    ],
+    "bb": [
+     -555,
+     -51,
+     1673,
+     -548,
+     -47,
+     1685
+    ],
+    "counts": {
+     "same_other": 380,
+     "same_stored": 330,
+     "mask_air": 190
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 80,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     -555,
+     -51,
+     1659
+    ],
+    "bb": [
+     -555,
+     -51,
+     1659,
+     -548,
+     -47,
+     1662
+    ],
+    "counts": {
+     "same_other": 200,
+     "same_stored": 128,
+     "mask_air": 32
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 83,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -456,
+     -51,
+     1800
+    ],
+    "bb": [
+     -463,
+     -51,
+     1800,
+     -456,
+     -47,
+     1806
+    ],
+    "counts": {
+     "same_other": 197,
+     "diff_sculk": 123,
+     "same_stored": 139,
+     "mask_air": 63,
+     "mask_sculk_sculk_vein": 18
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  },
  {
   "seed": 24024,
   "layout_identical_fgh": true,
-  "pieces": []
+  "pieces": [
+   {
+    "piece_index": 35,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1615,
+     -51,
+     52
+    ],
+    "bb": [
+     1599,
+     -51,
+     36,
+     1615,
+     -38,
+     52
+    ],
+    "counts": {
+     "same_other": 2989,
+     "diff_sculk": 410,
+     "same_stored": 899,
+     "mask_air": 932,
+     "mask_sculk_sculk_vein": 175,
+     "mask_sculk_sculk_catalyst": 1,
+     "mask_sculk_sculk_sensor": 5,
+     "diff_fluid": 4
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 59,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     1620,
+     -51,
+     -30
+    ],
+    "bb": [
+     1620,
+     -51,
+     -36,
+     1627,
+     -41,
+     -30
+    ],
+    "counts": {
+     "same_other": 784,
+     "same_stored": 286,
+     "mask_air": 10
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   },
+   {
+    "piece_index": 85,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1575,
+     -51,
+     83
+    ],
+    "bb": [
+     1569,
+     -51,
+     76,
+     1575,
+     -47,
+     83
+    ],
+    "counts": {
+     "same_other": 260,
+     "same_stored": 199,
+     "mask_air": 81
+    },
+    "mask_terrain_f24": {},
+    "mask_terrain_g24": {},
+    "unexplained": []
+   }
+  ]
  }
 ]

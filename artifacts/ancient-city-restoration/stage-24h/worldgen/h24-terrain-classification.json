@@ -1,0 +1,322 @@
+[
+ {
+  "variant": "h24",
+  "seed": 24004,
+  "module": "large_ruin_1",
+  "rotation": "CLOCKWISE_180",
+  "world": [
+   -249,
+   -40,
+   -1035
+  ],
+  "template_pos": [
+   16,
+   11,
+   16
+  ],
+  "block": "smooth_basalt",
+  "class": "cosmetic_intrusion",
+  "reason": "natural terrain inside the owner-approved added height; the vanilla box does not reach this cell",
+  "in_added_height": true
+ },
+ {
+  "variant": "h24",
+  "seed": 24008,
+  "module": "small_ruin_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "world": [
+   596,
+   -50,
+   1280
+  ],
+  "template_pos": [
+   4,
+   1,
+   3
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid touches a walkable/interior cell",
+  "in_added_height": false
+ },
+ {
+  "variant": "h24",
+  "seed": 24008,
+  "module": "small_ruin_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "world": [
+   597,
+   -50,
+   1280
+  ],
+  "template_pos": [
+   4,
+   1,
+   4
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid touches a walkable/interior cell",
+  "in_added_height": false
+ },
+ {
+  "variant": "h24",
+  "seed": 24008,
+  "module": "small_ruin_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "world": [
+   597,
+   -50,
+   1281
+  ],
+  "template_pos": [
+   3,
+   1,
+   4
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid touches a walkable/interior cell",
+  "in_added_height": false
+ },
+ {
+  "variant": "h24",
+  "seed": 24008,
+  "module": "small_ruin_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "world": [
+   597,
+   -49,
+   1280
+  ],
+  "template_pos": [
+   4,
+   2,
+   4
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid touches a walkable/interior cell",
+  "in_added_height": false
+ },
+ {
+  "variant": "h24",
+  "seed": 24008,
+  "module": "small_ruin_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "world": [
+   597,
+   -48,
+   1280
+  ],
+  "template_pos": [
+   4,
+   3,
+   4
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid touches a walkable/interior cell",
+  "in_added_height": false
+ },
+ {
+  "variant": "h24",
+  "seed": 24012,
+  "module": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "world": [
+   -1245,
+   -42,
+   112
+  ],
+  "template_pos": [
+   9,
+   9,
+   1
+  ],
+  "block": "deepslate",
+  "class": "existing_vanilla_behaviour",
+  "reason": "cell is also unspecified in the vanilla template; natural terrain",
+  "in_added_height": false
+ },
+ {
+  "variant": "h24",
+  "seed": 24014,
+  "module": "medium_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "world": [
+   1276,
+   -41,
+   -932
+  ],
+  "template_pos": [
+   0,
+   10,
+   4
+  ],
+  "block": "deepslate",
+  "class": "existing_vanilla_behaviour",
+  "reason": "cell is also unspecified in the vanilla template; natural terrain",
+  "in_added_height": false
+ },
+ {
+  "variant": "h24",
+  "seed": 24014,
+  "module": "medium_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "world": [
+   1279,
+   -43,
+   -932
+  ],
+  "template_pos": [
+   0,
+   8,
+   7
+  ],
+  "block": "deepslate",
+  "class": "existing_vanilla_behaviour",
+  "reason": "cell is also unspecified in the vanilla template; natural terrain",
+  "in_added_height": false
+ },
+ {
+  "variant": "h24",
+  "seed": 24014,
+  "module": "medium_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "world": [
+   1279,
+   -42,
+   -932
+  ],
+  "template_pos": [
+   0,
+   9,
+   7
+  ],
+  "block": "deepslate",
+  "class": "existing_vanilla_behaviour",
+  "reason": "cell is also unspecified in the vanilla template; natural terrain",
+  "in_added_height": false
+ },
+ {
+  "variant": "h24",
+  "seed": 24014,
+  "module": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "world": [
+   1293,
+   -47,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   4,
+   22
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid inside the piece box (not touching a walkable cell)",
+  "in_added_height": false
+ },
+ {
+  "variant": "h24",
+  "seed": 24014,
+  "module": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "world": [
+   1293,
+   -46,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   5,
+   22
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid inside the piece box (not touching a walkable cell)",
+  "in_added_height": false
+ },
+ {
+  "variant": "h24",
+  "seed": 24014,
+  "module": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "world": [
+   1293,
+   -45,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   6,
+   22
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid inside the piece box (not touching a walkable cell)",
+  "in_added_height": false
+ },
+ {
+  "variant": "h24",
+  "seed": 24014,
+  "module": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "world": [
+   1293,
+   -44,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   7,
+   22
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid inside the piece box (not touching a walkable cell)",
+  "in_added_height": false
+ },
+ {
+  "variant": "h24",
+  "seed": 24014,
+  "module": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "world": [
+   1293,
+   -43,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   8,
+   22
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid inside the piece box (not touching a walkable cell)",
+  "in_added_height": false
+ },
+ {
+  "variant": "h24",
+  "seed": 24014,
+  "module": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "world": [
+   1293,
+   -42,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   9,
+   22
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid inside the piece box (not touching a walkable cell)",
+  "in_added_height": false
+ }
+]

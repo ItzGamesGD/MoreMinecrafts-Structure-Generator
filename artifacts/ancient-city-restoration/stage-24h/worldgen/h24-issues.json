@@ -1,0 +1,1276 @@
+[
+ {
+  "seed": 24004,
+  "structure": "large_ruin_1",
+  "world": [
+   -249,
+   -40,
+   -1035
+  ],
+  "template_pos": [
+   16,
+   11,
+   16
+  ],
+  "type": "terrain_cosmetic_intrusion",
+  "block": "smooth_basalt",
+  "root_cause": "natural terrain inside the owner-approved added height; the vanilla box does not reach this cell"
+ },
+ {
+  "seed": 24008,
+  "structure": "small_ruin_1",
+  "world": [
+   596,
+   -50,
+   1280
+  ],
+  "template_pos": [
+   4,
+   1,
+   3
+  ],
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "root_cause": "fluid touches a walkable/interior cell"
+ },
+ {
+  "seed": 24008,
+  "structure": "small_ruin_1",
+  "world": [
+   597,
+   -50,
+   1280
+  ],
+  "template_pos": [
+   4,
+   1,
+   4
+  ],
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "root_cause": "fluid touches a walkable/interior cell"
+ },
+ {
+  "seed": 24008,
+  "structure": "small_ruin_1",
+  "world": [
+   597,
+   -50,
+   1281
+  ],
+  "template_pos": [
+   3,
+   1,
+   4
+  ],
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "root_cause": "fluid touches a walkable/interior cell"
+ },
+ {
+  "seed": 24008,
+  "structure": "small_ruin_1",
+  "world": [
+   597,
+   -49,
+   1280
+  ],
+  "template_pos": [
+   4,
+   2,
+   4
+  ],
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "root_cause": "fluid touches a walkable/interior cell"
+ },
+ {
+  "seed": 24008,
+  "structure": "small_ruin_1",
+  "world": [
+   597,
+   -48,
+   1280
+  ],
+  "template_pos": [
+   4,
+   3,
+   4
+  ],
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "root_cause": "fluid touches a walkable/interior cell"
+ },
+ {
+  "seed": 24012,
+  "structure": "sauna_1",
+  "world": [
+   -1245,
+   -42,
+   112
+  ],
+  "template_pos": [
+   9,
+   9,
+   1
+  ],
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "deepslate",
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain"
+ },
+ {
+  "seed": 24014,
+  "structure": "medium_pillar_1",
+  "world": [
+   1276,
+   -41,
+   -932
+  ],
+  "template_pos": [
+   0,
+   10,
+   4
+  ],
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "deepslate",
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain"
+ },
+ {
+  "seed": 24014,
+  "structure": "medium_pillar_1",
+  "world": [
+   1279,
+   -43,
+   -932
+  ],
+  "template_pos": [
+   0,
+   8,
+   7
+  ],
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "deepslate",
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain"
+ },
+ {
+  "seed": 24014,
+  "structure": "medium_pillar_1",
+  "world": [
+   1279,
+   -42,
+   -932
+  ],
+  "template_pos": [
+   0,
+   9,
+   7
+  ],
+  "type": "terrain_existing_vanilla_behaviour",
+  "block": "deepslate",
+  "root_cause": "cell is also unspecified in the vanilla template; natural terrain"
+ },
+ {
+  "seed": 24014,
+  "structure": "sauna_1",
+  "world": [
+   1293,
+   -47,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   4,
+   22
+  ],
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "root_cause": "fluid inside the piece box (not touching a walkable cell)"
+ },
+ {
+  "seed": 24014,
+  "structure": "sauna_1",
+  "world": [
+   1293,
+   -46,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   5,
+   22
+  ],
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "root_cause": "fluid inside the piece box (not touching a walkable cell)"
+ },
+ {
+  "seed": 24014,
+  "structure": "sauna_1",
+  "world": [
+   1293,
+   -45,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   6,
+   22
+  ],
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "root_cause": "fluid inside the piece box (not touching a walkable cell)"
+ },
+ {
+  "seed": 24014,
+  "structure": "sauna_1",
+  "world": [
+   1293,
+   -44,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   7,
+   22
+  ],
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "root_cause": "fluid inside the piece box (not touching a walkable cell)"
+ },
+ {
+  "seed": 24014,
+  "structure": "sauna_1",
+  "world": [
+   1293,
+   -43,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   8,
+   22
+  ],
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "root_cause": "fluid inside the piece box (not touching a walkable cell)"
+ },
+ {
+  "seed": 24014,
+  "structure": "sauna_1",
+  "world": [
+   1293,
+   -42,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   9,
+   22
+  ],
+  "type": "terrain_potential_generation_hazard",
+  "block": "lava",
+  "root_cause": "fluid inside the piece box (not touching a walkable cell)"
+ },
+ {
+  "seed": 24001,
+  "structure": "large_pillar_1",
+  "type": "natural_terrain_differs_g24_h24",
+  "cells": 2,
+  "root_cause": "natural features differ between runs; see reproducibility.json for which part is noise and which follows the cleared room"
+ },
+ {
+  "seed": 24001,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 4,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24001,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24001,
+  "structure": "medium_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24002,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24003,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 2,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24003,
+  "structure": "medium_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 2,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24003,
+  "structure": "medium_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24004,
+  "structure": "medium_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24004,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 4,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24004,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24005,
+  "structure": "medium_ruin_1",
+  "type": "natural_terrain_differs_g24_h24",
+  "cells": 80,
+  "root_cause": "natural features differ between runs; see reproducibility.json for which part is noise and which follows the cleared room"
+ },
+ {
+  "seed": 24005,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 2,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24005,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 3,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24006,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 10,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24006,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 5,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24006,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 4,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24007,
+  "structure": "medium_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24007,
+  "structure": "medium_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24007,
+  "structure": "medium_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24007,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 10,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24007,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 4,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24007,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 3,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24007,
+  "structure": "large_pillar_1",
+  "type": "natural_terrain_differs_g24_h24",
+  "cells": 4,
+  "root_cause": "natural features differ between runs; see reproducibility.json for which part is noise and which follows the cleared room"
+ },
+ {
+  "seed": 24007,
+  "structure": "large_pillar_1",
+  "type": "natural_terrain_differs_g24_h24",
+  "cells": 2,
+  "root_cause": "natural features differ between runs; see reproducibility.json for which part is noise and which follows the cleared room"
+ },
+ {
+  "seed": 24007,
+  "structure": "small_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24008,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 2,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24008,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24008,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 2,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24008,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 16,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24008,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 3,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24008,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24008,
+  "structure": "small_ruin_1",
+  "type": "fluid_in_interior_mask",
+  "cells": 5,
+  "sources": [
+   {
+    "world": [
+     596,
+     -39,
+     1278
+    ],
+    "block": "minecraft:lava[level=0]",
+    "rock_neighbours": 5,
+    "kind": "spring-like source (rock on 4+ sides)"
+   }
+  ],
+  "entries": [
+   {
+    "mask_cell": [
+     597,
+     -48,
+     1280
+    ],
+    "class": "room_interior",
+    "fluid_from": [
+     {
+      "world": [
+       597,
+       -47,
+       1280
+      ],
+      "template_pos": [
+       4,
+       4,
+       4
+      ],
+      "via": "decay_hole (stored deepslate_tiles dropped by block_rot)"
+     }
+    ]
+   }
+  ],
+  "root_cause": "fluid placed or flowing after the piece (spring / exterior flow) entering through decay holes or open paving"
+ },
+ {
+  "seed": 24009,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 2,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24009,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 4,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24009,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24010,
+  "structure": "small_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24011,
+  "structure": "medium_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24011,
+  "structure": "medium_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 2,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24011,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24011,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24011,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 5,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24011,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24012,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 2,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24012,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24012,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24012,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24012,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 3,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24012,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24012,
+  "structure": "sauna_1",
+  "type": "fluid_in_interior_mask",
+  "cells": 18,
+  "sources": [],
+  "entries": [
+   {
+    "mask_cell": [
+     -1247,
+     -49,
+     117
+    ],
+    "class": "paved_walkway",
+    "fluid_from": [
+     {
+      "world": [
+       -1247,
+       -48,
+       117
+      ],
+      "template_pos": [
+       14,
+       3,
+       3
+      ],
+      "via": "exterior"
+     }
+    ]
+   },
+   {
+    "mask_cell": [
+     -1245,
+     -50,
+     117
+    ],
+    "class": "paved_walkway",
+    "fluid_from": [
+     {
+      "world": [
+       -1244,
+       -50,
+       117
+      ],
+      "template_pos": [
+       14,
+       1,
+       0
+      ],
+      "via": "decay_hole (stored cracked_deepslate_bricks dropped by block_rot)"
+     }
+    ]
+   },
+   {
+    "mask_cell": [
+     -1247,
+     -50,
+     121
+    ],
+    "class": "paved_walkway",
+    "fluid_from": [
+     {
+      "world": [
+       -1247,
+       -51,
+       121
+      ],
+      "template_pos": [
+       18,
+       0,
+       3
+      ],
+      "via": "decay_hole (stored deepslate_tiles dropped by block_rot)"
+     }
+    ]
+   },
+   {
+    "mask_cell": [
+     -1247,
+     -49,
+     116
+    ],
+    "class": "paved_walkway",
+    "fluid_from": [
+     {
+      "world": [
+       -1247,
+       -48,
+       116
+      ],
+      "template_pos": [
+       13,
+       3,
+       3
+      ],
+      "via": "exterior"
+     }
+    ]
+   },
+   {
+    "mask_cell": [
+     -1247,
+     -49,
+     119
+    ],
+    "class": "paved_walkway",
+    "fluid_from": [
+     {
+      "world": [
+       -1247,
+       -48,
+       119
+      ],
+      "template_pos": [
+       16,
+       3,
+       3
+      ],
+      "via": "exterior"
+     }
+    ]
+   },
+   {
+    "mask_cell": [
+     -1247,
+     -49,
+     118
+    ],
+    "class": "paved_walkway",
+    "fluid_from": [
+     {
+      "world": [
+       -1247,
+       -48,
+       118
+      ],
+      "template_pos": [
+       15,
+       3,
+       3
+      ],
+      "via": "exterior"
+     }
+    ]
+   },
+   {
+    "mask_cell": [
+     -1247,
+     -49,
+     115
+    ],
+    "class": "paved_walkway",
+    "fluid_from": [
+     {
+      "world": [
+       -1247,
+       -48,
+       115
+      ],
+      "template_pos": [
+       12,
+       3,
+       3
+      ],
+      "via": "exterior"
+     }
+    ]
+   }
+  ],
+  "root_cause": "fluid placed or flowing after the piece (spring / exterior flow) entering through decay holes or open paving"
+ },
+ {
+  "seed": 24012,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 9,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24012,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 5,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24012,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 3,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24013,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 15,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24013,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 4,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24013,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 2,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24013,
+  "structure": "medium_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24013,
+  "structure": "medium_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24014,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 4,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24014,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 3,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24014,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24014,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 5,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24014,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 5,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24014,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24015,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 12,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24015,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 4,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24015,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 2,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24015,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 5,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24015,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24015,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 7,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24015,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24015,
+  "structure": "medium_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 2,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24016,
+  "structure": "medium_pillar_1",
+  "type": "natural_terrain_differs_g24_h24",
+  "cells": 1,
+  "root_cause": "natural features differ between runs; see reproducibility.json for which part is noise and which follows the cleared room"
+ },
+ {
+  "seed": 24017,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 5,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24017,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 2,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24017,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 8,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24017,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24017,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24017,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 7,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24017,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 6,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24018,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 2,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24018,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24018,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24018,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24018,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24020,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 4,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24020,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 3,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24020,
+  "structure": "sauna_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24020,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 2,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24020,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24020,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24021,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 4,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24021,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "shrieker",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24021,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 4,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24022,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 4,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24022,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24023,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 4,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24023,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 2,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24023,
+  "structure": "medium_ruin_2",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24024,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "sensor",
+  "cells": 5,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ },
+ {
+  "seed": 24024,
+  "structure": "large_ruin_1",
+  "type": "sculk_block_in_interior_mask",
+  "block": "catalyst",
+  "cells": 1,
+  "root_cause": "vanilla sculk patches (deep dark decoration, after the piece) grow into cleared air"
+ }
+]

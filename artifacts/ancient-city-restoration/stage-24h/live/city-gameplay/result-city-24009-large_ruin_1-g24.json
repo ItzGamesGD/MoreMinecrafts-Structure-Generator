@@ -1,0 +1,489 @@
+{
+ "module": "large_ruin_1",
+ "steps": [
+  {
+   "name": "tp_outside",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    597,
+    -51,
+    548
+   ]
+  },
+  {
+   "name": "walk_to_door_front",
+   "type": "goto",
+   "start": [
+    597,
+    -51,
+    548
+   ],
+   "end": [
+    597.5,
+    -50.5,
+    548.5
+   ],
+   "horizontal_error": 2,
+   "moved": 0,
+   "outcome": "timeout",
+   "seconds": 30.3,
+   "ok": false,
+   "retried_after_zero_movement": true
+  },
+  {
+   "name": "spruce_door",
+   "type": "door",
+   "before": false,
+   "after": true,
+   "ok": true
+  },
+  {
+   "name": "manual_walk_through_open_door",
+   "type": "walk",
+   "start": [
+    597.5,
+    -50.5,
+    548.5
+   ],
+   "end": [
+    597.5,
+    -50.5,
+    548.7
+   ],
+   "dy": 0,
+   "moved": 0.2,
+   "ok": false
+  },
+  {
+   "name": "walk_to_entry_inside",
+   "type": "goto",
+   "start": [
+    597,
+    -51,
+    548
+   ],
+   "end": [
+    0.5,
+    88,
+    -2.5
+   ],
+   "horizontal_error": 815.13,
+   "moved": 812.55,
+   "outcome": "timeout",
+   "seconds": 60.4,
+   "ok": false
+  },
+  {
+   "name": "manual_walk_out_through_door_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    597,
+    -50,
+    552
+   ]
+  },
+  {
+   "name": "manual_walk_out_through_door",
+   "type": "walk",
+   "start": [
+    597.5,
+    -50,
+    552.5
+   ],
+   "end": [
+    597.5,
+    -50,
+    551.3
+   ],
+   "dy": 0,
+   "moved": 1.2,
+   "ok": false
+  },
+  {
+   "name": "door_front_after_exit",
+   "type": "goto",
+   "start": [
+    597,
+    -50,
+    551
+   ],
+   "end": [
+    597.5,
+    -50,
+    551.3
+   ],
+   "horizontal_error": 0.8,
+   "moved": 0,
+   "outcome": "timeout",
+   "seconds": 20.3,
+   "ok": false,
+   "retried_after_zero_movement": true
+  },
+  {
+   "name": "spruce_door",
+   "type": "door",
+   "before": true,
+   "after": false,
+   "ok": true
+  },
+  {
+   "name": "spruce_door",
+   "type": "door",
+   "before": false,
+   "after": true,
+   "ok": true
+  },
+  {
+   "name": "re_enter_manual",
+   "type": "walk",
+   "start": [
+    597.5,
+    -50,
+    551.3
+   ],
+   "end": [
+    597.5,
+    -50,
+    555.61
+   ],
+   "dy": 0,
+   "moved": 4.31,
+   "ok": true
+  },
+  {
+   "name": "re_enter",
+   "type": "goto",
+   "start": [
+    597,
+    -50,
+    555
+   ],
+   "end": [
+    597.5,
+    -50,
+    552.64
+   ],
+   "horizontal_error": 0.14,
+   "moved": 2.98,
+   "outcome": "reached",
+   "seconds": 1.1,
+   "ok": true
+  },
+  {
+   "name": "bed0_[12, 1, 4]_reach",
+   "type": "goto",
+   "start": [
+    597,
+    -50,
+    552
+   ],
+   "end": [
+    600.5,
+    -50,
+    564.52
+   ],
+   "horizontal_error": 0.02,
+   "moved": 12.26,
+   "outcome": "reached",
+   "seconds": 4.5,
+   "ok": true
+  },
+  {
+   "name": "bed0_night",
+   "type": "cmd",
+   "ok": true
+  },
+  {
+   "name": "bed0_sleep",
+   "type": "sleep",
+   "ok": true,
+   "bed": "gray_bed"
+  },
+  {
+   "name": "bed1_[12, 1, 10]_reach",
+   "type": "goto",
+   "start": [
+    600,
+    -50,
+    564
+   ],
+   "end": [
+    594.5,
+    -50,
+    564.5
+   ],
+   "horizontal_error": 0,
+   "moved": 6,
+   "outcome": "reached",
+   "seconds": 7.7,
+   "ok": true
+  },
+  {
+   "name": "bed1_night",
+   "type": "cmd",
+   "ok": true
+  },
+  {
+   "name": "bed1_sleep",
+   "type": "sleep",
+   "ok": true,
+   "bed": "gray_bed"
+  },
+  {
+   "name": "barrel_[2, 1, 2]_reach",
+   "type": "goto",
+   "start": [
+    594,
+    -50,
+    564
+   ],
+   "end": [
+    602.5,
+    -50,
+    554.49
+   ],
+   "horizontal_error": 0.01,
+   "moved": 12.81,
+   "outcome": "reached",
+   "seconds": 9.5,
+   "ok": true
+  },
+  {
+   "name": "barrel_[2, 1, 2]_open",
+   "type": "container",
+   "ok": true,
+   "block": "barrel",
+   "slots": 27,
+   "items": []
+  }
+ ],
+ "events": [
+  "chat: Teleported S24C_large_ru to 597.500000, -50.000000, 548.500000",
+  "trace manual_walk_through_open_door [[597.5,-50.5],[597.5,-50.5],[597.5,-50.5],[597.5,-50.5],[597.5,-50.5],[597.5,-50.5],[597.5,-50.5],[597.5,-50.5]]",
+  "chat: S24C_large_ru suffocated in a wall",
+  "death",
+  "chat: Teleported S24C_large_ru to 597.500000, -50.000000, 552.500000",
+  "trace manual_walk_out_through_door [[597.5,-50],[597.5,-50],[597.5,-50],[597.5,-50],[597.5,-50],[597.5,-50],[597.5,-50],[597.5,-50],[597.5,-50]]",
+  "trace re_enter_manual [[597.5,-50],[597.5,-50],[597.5,-50],[597.5,-50]]",
+  "chat: Set minecraft:overworld to time marker minecraft:night",
+  "chat: Respawn point set",
+  "chat: S24C_large_ru has made the advancement [Sweet Dreams]",
+  "chat: Sleeping through this night",
+  "actionbar: Sleeping through this night",
+  "chat: Set minecraft:overworld to time marker minecraft:night",
+  "chat: Respawn point set",
+  "chat: Sleeping through this night",
+  "actionbar: Sleeping through this night"
+ ],
+ "final_health": 20,
+ "seed": 24009,
+ "variant": "g24",
+ "piece_index": 59,
+ "piece": {
+  "template": "minecraft:ancient_city/structures/large_ruin_1",
+  "element_type": "minecraft:single_pool_element",
+  "rotation": "CLOCKWISE_90",
+  "pos": [
+   604,
+   -51,
+   551
+  ],
+  "bb": [
+   588,
+   -51,
+   551,
+   604,
+   -38,
+   567
+  ],
+  "ground_level_delta": 0,
+  "junction_count": 1
+ },
+ "scenario_steps": [
+  {
+   "name": "tp_outside",
+   "type": "tp",
+   "target": [
+    597.5,
+    -50,
+    548.5
+   ]
+  },
+  {
+   "name": "walk_to_door_front",
+   "type": "goto",
+   "target": [
+    597,
+    -50,
+    550
+   ],
+   "range": 0,
+   "timeout": 30
+  },
+  {
+   "name": "door_open_from_outside",
+   "type": "door",
+   "pos": [
+    597,
+    -50,
+    551
+   ],
+   "expect": "open"
+  },
+  {
+   "name": "manual_walk_through_open_door",
+   "type": "walk",
+   "yaw": -3.141592653589793,
+   "ms": 1800,
+   "min_move": 1.6
+  },
+  {
+   "name": "walk_to_entry_inside",
+   "type": "goto",
+   "target": [
+    597,
+    -50,
+    552
+   ],
+   "range": 0,
+   "timeout": 60
+  },
+  {
+   "name": "manual_walk_out_through_door_recentre",
+   "type": "tp",
+   "target": [
+    597.5,
+    -50,
+    552.5
+   ]
+  },
+  {
+   "name": "manual_walk_out_through_door",
+   "type": "walk",
+   "yaw": 0.0,
+   "ms": 2200,
+   "min_move": 1.8
+  },
+  {
+   "name": "door_front_after_exit",
+   "type": "goto",
+   "target": [
+    597,
+    -50,
+    550
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "door_close_from_outside",
+   "type": "door",
+   "pos": [
+    597,
+    -50,
+    551
+   ],
+   "expect": "closed"
+  },
+  {
+   "name": "door_reopen",
+   "type": "door",
+   "pos": [
+    597,
+    -50,
+    551
+   ],
+   "expect": "open"
+  },
+  {
+   "name": "re_enter_manual",
+   "type": "walk",
+   "yaw": -3.141592653589793,
+   "ms": 900,
+   "min_move": 0.8
+  },
+  {
+   "name": "re_enter",
+   "type": "goto",
+   "target": [
+    597,
+    -50,
+    552
+   ],
+   "range": 0,
+   "timeout": 30
+  },
+  {
+   "name": "bed0_[12, 1, 4]_reach",
+   "type": "goto",
+   "target": [
+    600,
+    -50,
+    564
+   ],
+   "range": 0,
+   "timeout": 60
+  },
+  {
+   "name": "bed0_night",
+   "type": "cmd",
+   "cmd": "time set night"
+  },
+  {
+   "name": "bed0_sleep",
+   "type": "sleep",
+   "pos": [
+    600,
+    -50,
+    563
+   ]
+  },
+  {
+   "name": "bed1_[12, 1, 10]_reach",
+   "type": "goto",
+   "target": [
+    594,
+    -50,
+    564
+   ],
+   "range": 0,
+   "timeout": 60
+  },
+  {
+   "name": "bed1_night",
+   "type": "cmd",
+   "cmd": "time set night"
+  },
+  {
+   "name": "bed1_sleep",
+   "type": "sleep",
+   "pos": [
+    594,
+    -50,
+    563
+   ]
+  },
+  {
+   "name": "barrel_[2, 1, 2]_reach",
+   "type": "goto",
+   "target": [
+    602,
+    -50,
+    554
+   ],
+   "range": 0,
+   "timeout": 60
+  },
+  {
+   "name": "barrel_[2, 1, 2]_open",
+   "type": "container",
+   "pos": [
+    602,
+    -50,
+    553
+   ]
+  }
+ ]
+}

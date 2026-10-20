@@ -1,0 +1,102 @@
+{
+ "masks": [
+  "gallery/mask-large_ruin_1-full.jpg",
+  "gallery/mask-large_ruin_1-cut.jpg",
+  "gallery/mask-medium_ruin_1-full.jpg",
+  "gallery/mask-medium_ruin_1-cut.jpg",
+  "gallery/mask-medium_ruin_2-full.jpg",
+  "gallery/mask-medium_ruin_2-cut.jpg",
+  "gallery/mask-small_ruin_1-full.jpg",
+  "gallery/mask-small_ruin_1-cut.jpg",
+  "gallery/mask-small_ruin_2-full.jpg",
+  "gallery/mask-small_ruin_2-cut.jpg",
+  "gallery/mask-sauna_1-full.jpg",
+  "gallery/mask-sauna_1-cut.jpg",
+  "gallery/mask-large_pillar_1-full.jpg",
+  "gallery/mask-large_pillar_1-cut.jpg",
+  "gallery/mask-medium_pillar_1-full.jpg",
+  "gallery/mask-medium_pillar_1-cut.jpg"
+ ],
+ "cases": [
+  {
+   "case": "buried-medium_ruin_1",
+   "seed": 24005,
+   "module": "medium_ruin_1",
+   "piece_index": 71,
+   "bb": [
+    -1348,
+    -51,
+    1023,
+    -1341,
+    -47,
+    1035
+   ],
+   "images": [
+    "gallery/buried-medium_ruin_1-iso-a.jpg",
+    "gallery/buried-medium_ruin_1-iso-b.jpg",
+    "gallery/buried-medium_ruin_1-cutaway-cut-iso.jpg",
+    "gallery/buried-medium_ruin_1-cutaway-cut-top.jpg"
+   ]
+  },
+  {
+   "case": "dripstone-large_ruin_1",
+   "seed": 24009,
+   "module": "large_ruin_1",
+   "piece_index": 59,
+   "bb": [
+    588,
+    -51,
+    551,
+    604,
+    -38,
+    567
+   ],
+   "images": [
+    "gallery/dripstone-large_ruin_1-iso-a.jpg",
+    "gallery/dripstone-large_ruin_1-iso-b.jpg",
+    "gallery/dripstone-large_ruin_1-cutaway-cut-iso.jpg",
+    "gallery/dripstone-large_ruin_1-cutaway-cut-top.jpg"
+   ]
+  },
+  {
+   "case": "lava-small_ruin_1",
+   "seed": 24008,
+   "module": "small_ruin_1",
+   "piece_index": 93,
+   "bb": [
+    593,
+    -51,
+    1278,
+    600,
+    -47,
+    1284
+   ],
+   "images": [
+    "gallery/lava-small_ruin_1-iso-a.jpg",
+    "gallery/lava-small_ruin_1-iso-b.jpg",
+    "gallery/lava-small_ruin_1-cutaway-cut-iso.jpg",
+    "gallery/lava-small_ruin_1-cutaway-cut-top.jpg"
+   ]
+  },
+  {
+   "case": "lava-sauna_1",
+   "seed": 24014,
+   "module": "sauna_1",
+   "piece_index": 73,
+   "bb": [
+    1279,
+    -51,
+    -1021,
+    1315,
+    -42,
+    -993
+   ],
+   "images": [
+    "gallery/lava-sauna_1-iso-a.jpg",
+    "gallery/lava-sauna_1-iso-b.jpg",
+    "gallery/lava-sauna_1-cutaway-cut-iso.jpg",
+    "gallery/lava-sauna_1-cutaway-cut-top.jpg"
+   ]
+  }
+ ]
+}

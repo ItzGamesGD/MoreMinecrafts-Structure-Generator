@@ -38,6 +38,13 @@ ROCK = {"minecraft:deepslate", "minecraft:stone", "minecraft:tuff", "minecraft:g
 D6 = [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)]
 
 
+def wet(b):
+    return bool(b) and (b.startswith("minecraft:water") or "waterlogged=true" in b)
+
+
+ARCH = set()
+
+
 def world(variant, seed):
     return World(OUT / f"_work/wg-{seed}-{variant}/world/dimensions/minecraft/overworld")
 
@@ -120,19 +127,23 @@ def compare_seed(seed, masks, stored_cache, full):
                     if bg == bh:
                         c["same_" + ("stored" if stored else "other")] += 1
                         if stored and blocks[q].startswith("minecraft:water"):
-                            c["pool_water_kept"] += 1
+                            c["pool_water_kept" if wet(bh) else "POOL_WATER_LOST"] += 1
                         continue
+                    if stored and blocks[q].startswith("minecraft:water"):
+                        c["pool_water_kept" if wet(bh) else "POOL_WATER_LOST"] += 1
                     if ng in SCULK or nh in SCULK:
                         c["diff_sculk"] += 1
                     elif ng in FLUIDS or nh in FLUIDS or ng in FLUID_PRODUCTS or nh in FLUID_PRODUCTS:
                         c["diff_fluid"] += 1
                     elif ng == nh:
                         c["diff_state_only"] += 1  # e.g. sculk-vein faces, stair/wall connections next to a cleared cell
-                    else:
-                        c["diff_UNEXPLAINED"] += 1
+                    elif ng in ARCH or nh in ARCH:
+                        c["diff_architecture_UNEXPLAINED"] += 1
                         unexplained.append({"where": "stored" if stored else "outside_mask", "world": list(w_), "template_pos": list(q), "h24": bh, "g24": bg})
-                    if stored and blocks[q].startswith("minecraft:water") and nh != "minecraft:water":
-                        c["POOL_WATER_LOST"] += 1
+                    else:
+                        # natural blocks only (dripstone, lichen, tuff, gravel, ores, plain deepslate, air): later
+                        # terrain features, which also differ between two runs of the same variant
+                        c["diff_natural_terrain_" + ("stored_cell" if stored else "outside_mask")] += 1
         rec = {"piece_index": idx, "module": m, "rotation": p["rotation"], "pos": o, "bb": p["bb"], "counts": dict(c),
                "mask_terrain_f24": dict(terrain_f), "mask_terrain_g24": dict(terrain_g), "unexplained": unexplained[:50]}
         if fluid_cells:
@@ -156,9 +167,13 @@ def compare_seed(seed, masks, stored_cache, full):
 
 
 def main(seeds):
+    ARCH.clear()
     masks_json = json.loads((D24H / "mask/interior-masks.json").read_text())
     masks = {m: {tuple(p): k for k, v in d["cleared"].items() for p in v} for m, d in masks_json.items()}
     cache, full = {}, {}
+    for m in MODULES:
+        ARCH.update(n(st) for st, _ in blocks_of(load_nbt(D24F / m / "restored.nbt")).values())
+    ARCH.difference_update({"minecraft:deepslate", "minecraft:air", "minecraft:water", "minecraft:cave_air"} | SCULK)
     for m in MODULES:
         full[m] = build_mask(Template(D24F / m / "restored.nbt"))
         nbt = load_nbt(D24F / m / "restored.nbt")

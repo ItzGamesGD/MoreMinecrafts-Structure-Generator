@@ -1,0 +1,84 @@
+{
+ "24005:medium_ruin_1#71:g24": {
+  "ok": 6,
+  "total": 17,
+  "failed": [
+   "walk_to_door_front",
+   "manual_walk_through_open_door",
+   "walk_to_entry_inside",
+   "manual_walk_out_through_door",
+   "door_front_after_exit",
+   "re_enter_manual",
+   "re_enter",
+   "bed0_[2, 1, 10]_reach",
+   "bed0_sleep",
+   "barrel_[6, 1, 2]_reach",
+   "barrel_[6, 1, 2]_open"
+  ]
+ },
+ "24005:medium_ruin_1#71:h24": {
+  "ok": 12,
+  "total": 17,
+  "failed": [
+   "walk_to_door_front",
+   "manual_walk_through_open_door",
+   "walk_to_entry_inside",
+   "manual_walk_out_through_door",
+   "door_front_after_exit"
+  ]
+ },
+ "24009:large_ruin_1#59:g24": {
+  "ok": 15,
+  "total": 20,
+  "failed": [
+   "walk_to_door_front",
+   "manual_walk_through_open_door",
+   "walk_to_entry_inside",
+   "manual_walk_out_through_door",
+   "door_front_after_exit"
+  ]
+ },
+ "24009:large_ruin_1#59:h24": {
+  "ok": 15,
+  "total": 20,
+  "failed": [
+   "walk_to_door_front",
+   "manual_walk_through_open_door",
+   "walk_to_entry_inside",
+   "manual_walk_out_through_door",
+   "door_front_after_exit"
+  ]
+ },
+ "24008:small_ruin_1#93:g24": {
+  "ok": 7,
+  "total": 17,
+  "failed": [
+   "walk_to_door_front",
+   "manual_walk_through_open_door",
+   "walk_to_entry_inside",
+   "manual_walk_out_through_door",
+   "door_front_after_exit",
+   "re_enter_manual",
+   "re_enter",
+   "bed0_[3, 1, 2]_reach",
+   "bed0_sleep",
+   "barrel_[2, 1, 6]_reach"
+  ]
+ },
+ "24008:small_ruin_1#93:h24": {
+  "ok": 7,
+  "total": 17,
+  "failed": [
+   "walk_to_door_front",
+   "manual_walk_through_open_door",
+   "walk_to_entry_inside",
+   "manual_walk_out_through_door",
+   "door_front_after_exit",
+   "re_enter_manual",
+   "re_enter",
+   "bed0_[3, 1, 2]_reach",
+   "bed0_sleep",
+   "barrel_[2, 1, 6]_reach"
+  ]
+ }
+}
