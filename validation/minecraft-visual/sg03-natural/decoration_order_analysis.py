@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """N7-A4 Phase 5: do world differences between two runs of the same configuration follow the decoration order of neighbouring chunks?
-usage: decoration_order_analysis.py OUT.json RUN_A RUN_B   (each run dir holds lab.json with spike_report.decoration_order, and regions/)
-For two runs it finds the pairs of adjacent chunks (8-neighbourhood) whose relative decoration order differs between the runs ('swapped pairs'),
+usage: decoration_order_analysis.py OUT.json RUN_A RUN_B [REACH=2]   (each run dir holds lab.json with spike_report.decoration_order, and regions/)
+For two runs it finds the pairs of adjacent chunks (Chebyshev distance up to REACH, default 2) whose relative decoration order differs between the runs ('swapped pairs'),
 counts block differences per chunk (chunks that are status full in both), and compares the share of chunks with differences among chunks that belong
 to a swapped pair with the share among chunks that do not. A cross-chunk write whose order changed is the mechanism under test."""
 from __future__ import annotations
@@ -28,9 +28,10 @@ def main() -> None:
     swapped_chunks = set()
     swapped_pairs = 0
     pairs = 0
+    reach = int(sys.argv[4]) if len(sys.argv) > 4 else 2  # 2: two chunks that share a neighbour can both write into it, so their order matters too
     for c in common:
-        for dx in (-1, 0, 1):
-            for dz in (-1, 0, 1):
+        for dx in range(-reach, reach + 1):
+            for dz in range(-reach, reach + 1):
                 d = (c[0] + dx, c[1] + dz)
                 if d <= c or d not in oa or d not in ob:
                     continue
