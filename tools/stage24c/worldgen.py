@@ -15,6 +15,7 @@ from tools.stage24c.mcserver import Server, World
 
 TEMPLATE_PREFIX = "minecraft:ancient_city/structures/"
 PROTECTION_PREFIX = "moreminecrafts:ancient_city/protection/"
+OVERLAY_PREFIX = "moreminecrafts:ancient_city/"
 
 
 def make_pack(dest: Path, src_root: Path):
@@ -30,8 +31,9 @@ def piece_record(p):
     if str(el.get("element_type", "")) == "minecraft:list_pool_element":
         subs = [str(e.get("location", "")) for e in el.get("elements", [])]
         extra = {"list_elements": subs}
-        if len(subs) == 2 and subs[1].startswith(PROTECTION_PREFIX):
-            # Stage 24-G: [restored template, protection overlay]; the first element carries the template and jigsaws.
+        if len(subs) >= 2 and all(x.startswith(OVERLAY_PREFIX) for x in subs[1:]):
+            # Stage 24-G/24-H: [restored template, protection and/or clearance overlays]; the first element carries the
+            # template and jigsaws.
             # Other list elements (vanilla camps) keep an empty template, as in every earlier manifest.
             el = {**el, "location": subs[0]}
     return {

@@ -1,0 +1,1133 @@
+[
+ {
+  "seed": 24001,
+  "city_xz": [
+   -272,
+   160
+  ],
+  "pieces_vanilla": 83,
+  "pieces_candidate": 83,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 16,
+  "bounding_box_differences": [
+   {
+    "index": 21,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     -298,
+     -51,
+     179,
+     -282,
+     -47,
+     195
+    ],
+    "candidate_bb": [
+     -298,
+     -51,
+     179,
+     -282,
+     -38,
+     195
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24002,
+  "city_xz": [
+   960,
+   -768
+  ],
+  "pieces_vanilla": 91,
+  "pieces_candidate": 91,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 17,
+  "bounding_box_differences": [
+   {
+    "index": 78,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     874,
+     -51,
+     -793,
+     884,
+     -47,
+     -778
+    ],
+    "candidate_bb": [
+     874,
+     -51,
+     -793,
+     884,
+     -44,
+     -778
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24003,
+  "city_xz": [
+   576,
+   0
+  ],
+  "pieces_vanilla": 92,
+  "pieces_candidate": 92,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 19,
+  "bounding_box_differences": [
+   {
+    "index": 23,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     540,
+     -51,
+     -65,
+     556,
+     -47,
+     -49
+    ],
+    "candidate_bb": [
+     540,
+     -51,
+     -65,
+     556,
+     -38,
+     -49
+    ]
+   },
+   {
+    "index": 77,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     665,
+     -51,
+     7,
+     681,
+     -47,
+     23
+    ],
+    "candidate_bb": [
+     665,
+     -51,
+     7,
+     681,
+     -38,
+     23
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24004,
+  "city_xz": [
+   -192,
+   -928
+  ],
+  "pieces_vanilla": 83,
+  "pieces_candidate": 83,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 19,
+  "bounding_box_differences": [
+   {
+    "index": 58,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     -218,
+     -51,
+     -856,
+     -202,
+     -47,
+     -840
+    ],
+    "candidate_bb": [
+     -218,
+     -51,
+     -856,
+     -202,
+     -38,
+     -840
+    ]
+   },
+   {
+    "index": 68,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     -249,
+     -51,
+     -1035,
+     -233,
+     -47,
+     -1019
+    ],
+    "candidate_bb": [
+     -249,
+     -51,
+     -1035,
+     -233,
+     -38,
+     -1019
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24005,
+  "city_xz": [
+   -1360,
+   944
+  ],
+  "pieces_vanilla": 101,
+  "pieces_candidate": 101,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 17,
+  "bounding_box_differences": [
+   {
+    "index": 77,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     -1466,
+     -51,
+     913,
+     -1456,
+     -47,
+     928
+    ],
+    "candidate_bb": [
+     -1466,
+     -51,
+     913,
+     -1456,
+     -44,
+     928
+    ]
+   },
+   {
+    "index": 98,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     -1430,
+     -51,
+     972,
+     -1415,
+     -47,
+     982
+    ],
+    "candidate_bb": [
+     -1430,
+     -51,
+     972,
+     -1415,
+     -44,
+     982
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24006,
+  "city_xz": [
+   -208,
+   -1728
+  ],
+  "pieces_vanilla": 74,
+  "pieces_candidate": 74,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 25,
+  "bounding_box_differences": [],
+  "modules": []
+ },
+ {
+  "seed": 24007,
+  "city_xz": [
+   -320,
+   912
+  ],
+  "pieces_vanilla": 102,
+  "pieces_candidate": 102,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 37,
+  "bounding_box_differences": [],
+  "modules": []
+ },
+ {
+  "seed": 24008,
+  "city_xz": [
+   496,
+   1296
+  ],
+  "pieces_vanilla": 95,
+  "pieces_candidate": 95,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 13,
+  "bounding_box_differences": [
+   {
+    "index": 19,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     519,
+     -51,
+     1306,
+     529,
+     -47,
+     1321
+    ],
+    "candidate_bb": [
+     519,
+     -51,
+     1306,
+     529,
+     -44,
+     1321
+    ]
+   },
+   {
+    "index": 31,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     432,
+     -51,
+     1319,
+     447,
+     -47,
+     1329
+    ],
+    "candidate_bb": [
+     432,
+     -51,
+     1319,
+     447,
+     -44,
+     1329
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24009,
+  "city_xz": [
+   496,
+   544
+  ],
+  "pieces_vanilla": 100,
+  "pieces_candidate": 100,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 18,
+  "bounding_box_differences": [
+   {
+    "index": 18,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     508,
+     -51,
+     564,
+     524,
+     -47,
+     580
+    ],
+    "candidate_bb": [
+     508,
+     -51,
+     564,
+     524,
+     -38,
+     580
+    ]
+   },
+   {
+    "index": 35,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     508,
+     -51,
+     584,
+     523,
+     -47,
+     594
+    ],
+    "candidate_bb": [
+     508,
+     -51,
+     584,
+     523,
+     -44,
+     594
+    ]
+   },
+   {
+    "index": 59,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     588,
+     -51,
+     551,
+     604,
+     -47,
+     567
+    ],
+    "candidate_bb": [
+     588,
+     -51,
+     551,
+     604,
+     -38,
+     567
+    ]
+   },
+   {
+    "index": 90,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     425,
+     -51,
+     439,
+     441,
+     -47,
+     455
+    ],
+    "candidate_bb": [
+     425,
+     -51,
+     439,
+     441,
+     -38,
+     455
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24010,
+  "city_xz": [
+   -3056,
+   2304
+  ],
+  "pieces_vanilla": 86,
+  "pieces_candidate": 86,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 13,
+  "bounding_box_differences": [],
+  "modules": []
+ },
+ {
+  "seed": 24011,
+  "city_xz": [
+   -192,
+   -560
+  ],
+  "pieces_vanilla": 95,
+  "pieces_candidate": 95,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 13,
+  "bounding_box_differences": [
+   {
+    "index": 62,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     -99,
+     -51,
+     -582,
+     -83,
+     -47,
+     -566
+    ],
+    "candidate_bb": [
+     -99,
+     -51,
+     -582,
+     -83,
+     -38,
+     -566
+    ]
+   },
+   {
+    "index": 89,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     -142,
+     -51,
+     -633,
+     -132,
+     -47,
+     -618
+    ],
+    "candidate_bb": [
+     -142,
+     -51,
+     -633,
+     -132,
+     -44,
+     -618
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24012,
+  "city_xz": [
+   -1312,
+   64
+  ],
+  "pieces_vanilla": 85,
+  "pieces_candidate": 85,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 17,
+  "bounding_box_differences": [
+   {
+    "index": 18,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     -1340,
+     -51,
+     27,
+     -1324,
+     -47,
+     43
+    ],
+    "candidate_bb": [
+     -1340,
+     -51,
+     27,
+     -1324,
+     -38,
+     43
+    ]
+   },
+   {
+    "index": 32,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     -1302,
+     -51,
+     12,
+     -1286,
+     -47,
+     28
+    ],
+    "candidate_bb": [
+     -1302,
+     -51,
+     12,
+     -1286,
+     -38,
+     28
+    ]
+   },
+   {
+    "index": 41,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     -1399,
+     -51,
+     42,
+     -1389,
+     -47,
+     57
+    ],
+    "candidate_bb": [
+     -1399,
+     -51,
+     42,
+     -1389,
+     -44,
+     57
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24013,
+  "city_xz": [
+   1184,
+   1232
+  ],
+  "pieces_vanilla": 91,
+  "pieces_candidate": 91,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 41,
+  "bounding_box_differences": [],
+  "modules": []
+ },
+ {
+  "seed": 24014,
+  "city_xz": [
+   1376,
+   -944
+  ],
+  "pieces_vanilla": 85,
+  "pieces_candidate": 85,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 20,
+  "bounding_box_differences": [
+   {
+    "index": 33,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     1388,
+     -51,
+     -904,
+     1403,
+     -47,
+     -894
+    ],
+    "candidate_bb": [
+     1388,
+     -51,
+     -904,
+     1403,
+     -44,
+     -894
+    ]
+   },
+   {
+    "index": 38,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     1432,
+     -51,
+     -937,
+     1442,
+     -47,
+     -922
+    ],
+    "candidate_bb": [
+     1432,
+     -51,
+     -937,
+     1442,
+     -44,
+     -922
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24015,
+  "city_xz": [
+   -208,
+   -144
+  ],
+  "pieces_vanilla": 85,
+  "pieces_candidate": 85,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 35,
+  "bounding_box_differences": [
+   {
+    "index": 55,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     -279,
+     -51,
+     -170,
+     -263,
+     -47,
+     -154
+    ],
+    "candidate_bb": [
+     -279,
+     -51,
+     -170,
+     -263,
+     -38,
+     -154
+    ]
+   },
+   {
+    "index": 57,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     -263,
+     -51,
+     -215,
+     -253,
+     -47,
+     -200
+    ],
+    "candidate_bb": [
+     -263,
+     -51,
+     -215,
+     -253,
+     -44,
+     -200
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24016,
+  "city_xz": [
+   -1040,
+   -1536
+  ],
+  "pieces_vanilla": 99,
+  "pieces_candidate": 99,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 19,
+  "bounding_box_differences": [],
+  "modules": []
+ },
+ {
+  "seed": 24017,
+  "city_xz": [
+   32,
+   128
+  ],
+  "pieces_vanilla": 89,
+  "pieces_candidate": 89,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 41,
+  "bounding_box_differences": [
+   {
+    "index": 41,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     81,
+     -51,
+     152,
+     96,
+     -47,
+     162
+    ],
+    "candidate_bb": [
+     81,
+     -51,
+     152,
+     96,
+     -44,
+     162
+    ]
+   },
+   {
+    "index": 54,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     47,
+     -51,
+     202,
+     62,
+     -47,
+     212
+    ],
+    "candidate_bb": [
+     47,
+     -51,
+     202,
+     62,
+     -44,
+     212
+    ]
+   },
+   {
+    "index": 82,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     82,
+     -51,
+     187,
+     98,
+     -47,
+     203
+    ],
+    "candidate_bb": [
+     82,
+     -51,
+     187,
+     98,
+     -38,
+     203
+    ]
+   },
+   {
+    "index": 83,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     125,
+     -51,
+     150,
+     135,
+     -47,
+     165
+    ],
+    "candidate_bb": [
+     125,
+     -51,
+     150,
+     135,
+     -44,
+     165
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24018,
+  "city_xz": [
+   1232,
+   96
+  ],
+  "pieces_vanilla": 86,
+  "pieces_candidate": 86,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 32,
+  "bounding_box_differences": [
+   {
+    "index": 76,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     1137,
+     -51,
+     145,
+     1153,
+     -47,
+     161
+    ],
+    "candidate_bb": [
+     1137,
+     -51,
+     145,
+     1153,
+     -38,
+     161
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24019,
+  "city_xz": [
+   -688,
+   -1520
+  ],
+  "pieces_vanilla": 82,
+  "pieces_candidate": 82,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 27,
+  "bounding_box_differences": [
+   {
+    "index": 27,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     -757,
+     -51,
+     -1514,
+     -747,
+     -47,
+     -1499
+    ],
+    "candidate_bb": [
+     -757,
+     -51,
+     -1514,
+     -747,
+     -44,
+     -1499
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24020,
+  "city_xz": [
+   1744,
+   -912
+  ],
+  "pieces_vanilla": 95,
+  "pieces_candidate": 95,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 35,
+  "bounding_box_differences": [
+   {
+    "index": 48,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     1722,
+     -51,
+     -1004,
+     1738,
+     -47,
+     -988
+    ],
+    "candidate_bb": [
+     1722,
+     -51,
+     -1004,
+     1738,
+     -38,
+     -988
+    ]
+   },
+   {
+    "index": 51,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     1759,
+     -51,
+     -836,
+     1775,
+     -47,
+     -820
+    ],
+    "candidate_bb": [
+     1759,
+     -51,
+     -836,
+     1775,
+     -38,
+     -820
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24021,
+  "city_xz": [
+   -272,
+   160
+  ],
+  "pieces_vanilla": 90,
+  "pieces_candidate": 90,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 14,
+  "bounding_box_differences": [
+   {
+    "index": 52,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     -221,
+     -51,
+     103,
+     -205,
+     -47,
+     119
+    ],
+    "candidate_bb": [
+     -221,
+     -51,
+     103,
+     -205,
+     -38,
+     119
+    ]
+   },
+   {
+    "index": 62,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     -295,
+     -51,
+     248,
+     -279,
+     -47,
+     264
+    ],
+    "candidate_bb": [
+     -295,
+     -51,
+     248,
+     -279,
+     -38,
+     264
+    ]
+   },
+   {
+    "index": 76,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     -326,
+     -51,
+     118,
+     -311,
+     -47,
+     128
+    ],
+    "candidate_bb": [
+     -326,
+     -51,
+     118,
+     -311,
+     -44,
+     128
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24022,
+  "city_xz": [
+   -1008,
+   -272
+  ],
+  "pieces_vanilla": 96,
+  "pieces_candidate": 96,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 46,
+  "bounding_box_differences": [
+   {
+    "index": 46,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     -1033,
+     -51,
+     -198,
+     -1017,
+     -47,
+     -182
+    ],
+    "candidate_bb": [
+     -1033,
+     -51,
+     -198,
+     -1017,
+     -38,
+     -182
+    ]
+   },
+   {
+    "index": 52,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     -956,
+     -51,
+     -306,
+     -941,
+     -47,
+     -296
+    ],
+    "candidate_bb": [
+     -956,
+     -51,
+     -306,
+     -941,
+     -44,
+     -296
+    ]
+   },
+   {
+    "index": 81,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     -1067,
+     -51,
+     -198,
+     -1057,
+     -47,
+     -183
+    ],
+    "candidate_bb": [
+     -1067,
+     -51,
+     -198,
+     -1057,
+     -44,
+     -183
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24023,
+  "city_xz": [
+   -528,
+   1744
+  ],
+  "pieces_vanilla": 85,
+  "pieces_candidate": 85,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 39,
+  "bounding_box_differences": [
+   {
+    "index": 39,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     -595,
+     -51,
+     1767,
+     -580,
+     -47,
+     1777
+    ],
+    "candidate_bb": [
+     -595,
+     -51,
+     1767,
+     -580,
+     -44,
+     1777
+    ]
+   },
+   {
+    "index": 58,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     -595,
+     -51,
+     1786,
+     -580,
+     -47,
+     1796
+    ],
+    "candidate_bb": [
+     -595,
+     -51,
+     1786,
+     -580,
+     -44,
+     1796
+    ]
+   }
+  ],
+  "modules": []
+ },
+ {
+  "seed": 24024,
+  "city_xz": [
+   1664,
+   16
+  ],
+  "pieces_vanilla": 90,
+  "pieces_candidate": 90,
+  "placements_identical_to_vanilla": false,
+  "first_placement_diff_index": 35,
+  "bounding_box_differences": [
+   {
+    "index": 35,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     1599,
+     -51,
+     36,
+     1615,
+     -47,
+     52
+    ],
+    "candidate_bb": [
+     1599,
+     -51,
+     36,
+     1615,
+     -38,
+     52
+    ]
+   }
+  ],
+  "modules": []
+ }
+]

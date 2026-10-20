@@ -1,0 +1,4210 @@
+{
+ "datapack_list": "There are 2 data pack(s) enabled: [vanilla (built-in)], [file/pack (world)]There are no more data packs available",
+ "placements": [
+  {
+   "module": "large_ruin_1",
+   "kind": "h24",
+   "fill": "lava",
+   "command_pos": [
+    4000,
+    -60,
+    4000
+   ],
+   "place_output": "Generated jigsaw at 4000, -60, 4000",
+   "rotation": 90,
+   "origin": [
+    4007,
+    -61,
+    4000
+   ],
+   "match": 400,
+   "probe": 400,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 3139,
+     "stored_ok": 1135,
+     "stored_rot_dropped_keeps_fill": 28,
+     "mask_cleared": 1113
+    },
+    "violations": []
+   },
+   "analysis_after_1200_ticks": {
+    "counts": {
+     "outside_mask_untouched": 3139,
+     "stored_ok": 1135,
+     "stored_rot_dropped_keeps_fill": 28,
+     "MASK_FLUID_RETURNED": 593,
+     "mask_cleared": 520
+    },
+    "violations": [
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       1
+      ],
+      "world": [
+       4006,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       2
+      ],
+      "world": [
+       4005,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       3
+      ],
+      "world": [
+       4004,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       4
+      ],
+      "world": [
+       4003,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       5
+      ],
+      "world": [
+       4002,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       6
+      ],
+      "world": [
+       4001,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       7
+      ],
+      "world": [
+       4000,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       11
+      ],
+      "world": [
+       3996,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       12
+      ],
+      "world": [
+       3995,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       13
+      ],
+      "world": [
+       3994,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       14
+      ],
+      "world": [
+       3993,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       15
+      ],
+      "world": [
+       3992,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=6]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       5
+      ],
+      "world": [
+       4002,
+       -59,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       3,
+       5
+      ],
+      "world": [
+       4002,
+       -58,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       4,
+       5
+      ],
+      "world": [
+       4002,
+       -57,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       5,
+       5
+      ],
+      "world": [
+       4002,
+       -56,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       6,
+       5
+      ],
+      "world": [
+       4002,
+       -55,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       7,
+       5
+      ],
+      "world": [
+       4002,
+       -54,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       8,
+       5
+      ],
+      "world": [
+       4002,
+       -53,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       1
+      ],
+      "world": [
+       4006,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       3
+      ],
+      "world": [
+       4004,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       5
+      ],
+      "world": [
+       4002,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       6
+      ],
+      "world": [
+       4001,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       7
+      ],
+      "world": [
+       4000,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       8
+      ],
+      "world": [
+       3999,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=6]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       9
+      ],
+      "world": [
+       3998,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=6]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       11
+      ],
+      "world": [
+       3996,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       12
+      ],
+      "world": [
+       3995,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       13
+      ],
+      "world": [
+       3994,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       14
+      ],
+      "world": [
+       3993,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       15
+      ],
+      "world": [
+       3992,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       2,
+       12
+      ],
+      "world": [
+       3995,
+       -59,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       2,
+       13
+      ],
+      "world": [
+       3994,
+       -59,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       3,
+       12
+      ],
+      "world": [
+       3995,
+       -58,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       3,
+       13
+      ],
+      "world": [
+       3994,
+       -58,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       4,
+       12
+      ],
+      "world": [
+       3995,
+       -57,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       4,
+       13
+      ],
+      "world": [
+       3994,
+       -57,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       5,
+       12
+      ],
+      "world": [
+       3995,
+       -56,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       5,
+       13
+      ],
+      "world": [
+       3994,
+       -56,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       6,
+       12
+      ],
+      "world": [
+       3995,
+       -55,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     }
+    ]
+   }
+  },
+  {
+   "module": "medium_ruin_1",
+   "kind": "h24",
+   "fill": "lava",
+   "command_pos": [
+    4200,
+    -60,
+    4000
+   ],
+   "place_output": "Generated jigsaw at 4200, -60, 4000",
+   "rotation": 0,
+   "origin": [
+    4200,
+    -61,
+    3994
+   ],
+   "match": 44,
+   "probe": 44,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 380,
+     "stored_ok": 312,
+     "stored_rot_dropped_keeps_fill": 18,
+     "mask_cleared": 190
+    },
+    "violations": []
+   },
+   "analysis_after_1200_ticks": {
+    "counts": {
+     "outside_mask_untouched": 380,
+     "stored_ok": 312,
+     "stored_rot_dropped_keeps_fill": 18,
+     "MASK_FLUID_RETURNED": 62,
+     "mask_cleared": 128
+    },
+    "violations": [
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       1
+      ],
+      "world": [
+       4201,
+       -60,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       2
+      ],
+      "world": [
+       4201,
+       -60,
+       3996
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       3
+      ],
+      "world": [
+       4201,
+       -60,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       4
+      ],
+      "world": [
+       4201,
+       -60,
+       3998
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       5
+      ],
+      "world": [
+       4201,
+       -60,
+       3999
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       6
+      ],
+      "world": [
+       4201,
+       -60,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       7
+      ],
+      "world": [
+       4201,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       8
+      ],
+      "world": [
+       4201,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       9
+      ],
+      "world": [
+       4201,
+       -60,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       11
+      ],
+      "world": [
+       4201,
+       -60,
+       4005
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       4
+      ],
+      "world": [
+       4201,
+       -59,
+       3998
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       7
+      ],
+      "world": [
+       4201,
+       -59,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       11
+      ],
+      "world": [
+       4201,
+       -59,
+       4005
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       3,
+       4
+      ],
+      "world": [
+       4201,
+       -58,
+       3998
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       3,
+       7
+      ],
+      "world": [
+       4201,
+       -58,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       3,
+       11
+      ],
+      "world": [
+       4201,
+       -58,
+       4005
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       1
+      ],
+      "world": [
+       4202,
+       -60,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       2
+      ],
+      "world": [
+       4202,
+       -60,
+       3996
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=6]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       5
+      ],
+      "world": [
+       4202,
+       -60,
+       3999
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       6
+      ],
+      "world": [
+       4202,
+       -60,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       7
+      ],
+      "world": [
+       4202,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       8
+      ],
+      "world": [
+       4202,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       9
+      ],
+      "world": [
+       4202,
+       -60,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       11
+      ],
+      "world": [
+       4202,
+       -60,
+       4005
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       1
+      ],
+      "world": [
+       4203,
+       -60,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       2
+      ],
+      "world": [
+       4203,
+       -60,
+       3996
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=6]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       5
+      ],
+      "world": [
+       4203,
+       -60,
+       3999
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       6
+      ],
+      "world": [
+       4203,
+       -60,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       7
+      ],
+      "world": [
+       4203,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       8
+      ],
+      "world": [
+       4203,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       9
+      ],
+      "world": [
+       4203,
+       -60,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       10
+      ],
+      "world": [
+       4203,
+       -60,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       11
+      ],
+      "world": [
+       4203,
+       -60,
+       4005
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       2,
+       5
+      ],
+      "world": [
+       4203,
+       -59,
+       3999
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       3,
+       5
+      ],
+      "world": [
+       4203,
+       -58,
+       3999
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       1
+      ],
+      "world": [
+       4204,
+       -60,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       2
+      ],
+      "world": [
+       4204,
+       -60,
+       3996
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       3
+      ],
+      "world": [
+       4204,
+       -60,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=6]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       6
+      ],
+      "world": [
+       4204,
+       -60,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       7
+      ],
+      "world": [
+       4204,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     }
+    ]
+   }
+  },
+  {
+   "module": "medium_ruin_2",
+   "kind": "h24",
+   "fill": "lava",
+   "command_pos": [
+    4400,
+    -60,
+    4000
+   ],
+   "place_output": "Generated jigsaw at 4400, -60, 4000",
+   "rotation": 180,
+   "origin": [
+    4400,
+    -61,
+    4005
+   ],
+   "match": 106,
+   "probe": 106,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 830,
+     "stored_ok": 684,
+     "stored_rot_dropped_keeps_fill": 27,
+     "mask_cleared": 565
+    },
+    "violations": []
+   },
+   "analysis_after_1200_ticks": {
+    "counts": {
+     "outside_mask_untouched": 830,
+     "stored_ok": 684,
+     "stored_rot_dropped_keeps_fill": 27,
+     "mask_cleared": 441,
+     "MASK_FLUID_RETURNED": 124
+    },
+    "violations": [
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       2
+      ],
+      "world": [
+       4399,
+       -60,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       3
+      ],
+      "world": [
+       4399,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       2
+      ],
+      "world": [
+       4398,
+       -60,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       3
+      ],
+      "world": [
+       4398,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       1
+      ],
+      "world": [
+       4397,
+       -60,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       2
+      ],
+      "world": [
+       4397,
+       -60,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       3
+      ],
+      "world": [
+       4397,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       4
+      ],
+      "world": [
+       4397,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       8
+      ],
+      "world": [
+       4397,
+       -60,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       2,
+       1
+      ],
+      "world": [
+       4397,
+       -59,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       2,
+       4
+      ],
+      "world": [
+       4397,
+       -59,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       2,
+       8
+      ],
+      "world": [
+       4397,
+       -59,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       3,
+       4
+      ],
+      "world": [
+       4397,
+       -58,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       3,
+       8
+      ],
+      "world": [
+       4397,
+       -58,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       4,
+       4
+      ],
+      "world": [
+       4397,
+       -57,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       4,
+       8
+      ],
+      "world": [
+       4397,
+       -57,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       1
+      ],
+      "world": [
+       4396,
+       -60,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       2
+      ],
+      "world": [
+       4396,
+       -60,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       3
+      ],
+      "world": [
+       4396,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       4
+      ],
+      "world": [
+       4396,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       8
+      ],
+      "world": [
+       4396,
+       -60,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       9
+      ],
+      "world": [
+       4396,
+       -60,
+       3996
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       2,
+       4
+      ],
+      "world": [
+       4396,
+       -59,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       2,
+       8
+      ],
+      "world": [
+       4396,
+       -59,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       3,
+       4
+      ],
+      "world": [
+       4396,
+       -58,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       3,
+       8
+      ],
+      "world": [
+       4396,
+       -58,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       4,
+       4
+      ],
+      "world": [
+       4396,
+       -57,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       4,
+       8
+      ],
+      "world": [
+       4396,
+       -57,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       5,
+       4
+      ],
+      "world": [
+       4396,
+       -56,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       5,
+       8
+      ],
+      "world": [
+       4396,
+       -56,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       1,
+       1
+      ],
+      "world": [
+       4395,
+       -60,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       1,
+       2
+      ],
+      "world": [
+       4395,
+       -60,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       1,
+       3
+      ],
+      "world": [
+       4395,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       1,
+       4
+      ],
+      "world": [
+       4395,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       1,
+       8
+      ],
+      "world": [
+       4395,
+       -60,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       1,
+       9
+      ],
+      "world": [
+       4395,
+       -60,
+       3996
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       2,
+       4
+      ],
+      "world": [
+       4395,
+       -59,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       3,
+       4
+      ],
+      "world": [
+       4395,
+       -58,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       4,
+       4
+      ],
+      "world": [
+       4395,
+       -57,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       5,
+       4
+      ],
+      "world": [
+       4395,
+       -56,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     }
+    ]
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "h24",
+   "fill": "lava",
+   "command_pos": [
+    4600,
+    -60,
+    4000
+   ],
+   "place_output": "Generated jigsaw at 4600, -60, 4000",
+   "rotation": 90,
+   "origin": [
+    4603,
+    -61,
+    4000
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 260,
+     "stored_ok": 191,
+     "mask_cleared": 81,
+     "stored_rot_dropped_keeps_fill": 8
+    },
+    "violations": []
+   },
+   "analysis_after_1200_ticks": {
+    "counts": {
+     "outside_mask_untouched": 260,
+     "stored_ok": 191,
+     "MASK_FLUID_RETURNED": 41,
+     "mask_cleared": 40,
+     "stored_rot_dropped_keeps_fill": 8
+    },
+    "violations": [
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       2
+      ],
+      "world": [
+       4601,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       3
+      ],
+      "world": [
+       4600,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       4
+      ],
+      "world": [
+       4599,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       5
+      ],
+      "world": [
+       4598,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       6
+      ],
+      "world": [
+       4597,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       1
+      ],
+      "world": [
+       4602,
+       -59,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       2
+      ],
+      "world": [
+       4601,
+       -59,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       6
+      ],
+      "world": [
+       4597,
+       -59,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       3,
+       6
+      ],
+      "world": [
+       4597,
+       -58,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       3
+      ],
+      "world": [
+       4600,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       5
+      ],
+      "world": [
+       4598,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       2,
+       1
+      ],
+      "world": [
+       4602,
+       -59,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       2,
+       2
+      ],
+      "world": [
+       4601,
+       -59,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       2,
+       3
+      ],
+      "world": [
+       4600,
+       -59,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       3,
+       1
+      ],
+      "world": [
+       4602,
+       -58,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       3
+      ],
+      "world": [
+       4600,
+       -60,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       4
+      ],
+      "world": [
+       4599,
+       -60,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       5
+      ],
+      "world": [
+       4598,
+       -60,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       6
+      ],
+      "world": [
+       4597,
+       -60,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       2,
+       1
+      ],
+      "world": [
+       4602,
+       -59,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       2,
+       2
+      ],
+      "world": [
+       4601,
+       -59,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       2,
+       3
+      ],
+      "world": [
+       4600,
+       -59,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       2,
+       5
+      ],
+      "world": [
+       4598,
+       -59,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       3,
+       1
+      ],
+      "world": [
+       4602,
+       -58,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       3,
+       5
+      ],
+      "world": [
+       4598,
+       -58,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       2
+      ],
+      "world": [
+       4601,
+       -60,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       3
+      ],
+      "world": [
+       4600,
+       -60,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       4
+      ],
+      "world": [
+       4599,
+       -60,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       5
+      ],
+      "world": [
+       4598,
+       -60,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       6
+      ],
+      "world": [
+       4597,
+       -60,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       2,
+       1
+      ],
+      "world": [
+       4602,
+       -59,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       2,
+       2
+      ],
+      "world": [
+       4601,
+       -59,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       1,
+       1
+      ],
+      "world": [
+       4602,
+       -60,
+       4005
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       1,
+       2
+      ],
+      "world": [
+       4601,
+       -60,
+       4005
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       1,
+       3
+      ],
+      "world": [
+       4600,
+       -60,
+       4005
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       1,
+       4
+      ],
+      "world": [
+       4599,
+       -60,
+       4005
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       1,
+       5
+      ],
+      "world": [
+       4598,
+       -60,
+       4005
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       1,
+       6
+      ],
+      "world": [
+       4597,
+       -60,
+       4005
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       2,
+       1
+      ],
+      "world": [
+       4602,
+       -59,
+       4005
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       2,
+       5
+      ],
+      "world": [
+       4598,
+       -59,
+       4005
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     }
+    ]
+   }
+  },
+  {
+   "module": "small_ruin_2",
+   "kind": "h24",
+   "fill": "lava",
+   "command_pos": [
+    4800,
+    -60,
+    4000
+   ],
+   "place_output": "Generated jigsaw at 4800, -60, 4000",
+   "rotation": 90,
+   "origin": [
+    4802,
+    -61,
+    4000
+   ],
+   "match": 19,
+   "probe": 19,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 200,
+     "stored_ok": 122,
+     "stored_rot_dropped_keeps_fill": 6,
+     "mask_cleared": 32
+    },
+    "violations": []
+   },
+   "analysis_after_1200_ticks": {
+    "counts": {
+     "outside_mask_untouched": 200,
+     "stored_ok": 122,
+     "stored_rot_dropped_keeps_fill": 6,
+     "MASK_FLUID_RETURNED": 9,
+     "mask_cleared": 23
+    },
+    "violations": [
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       1
+      ],
+      "world": [
+       4801,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       2
+      ],
+      "world": [
+       4800,
+       -60,
+       4001
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       1,
+       2
+      ],
+      "world": [
+       4800,
+       -60,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       2
+      ],
+      "world": [
+       4800,
+       -60,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=6]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       1
+      ],
+      "world": [
+       4801,
+       -60,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=6]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       1,
+       2
+      ],
+      "world": [
+       4800,
+       -60,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       1,
+       2
+      ],
+      "world": [
+       4800,
+       -60,
+       4005
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=2]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       6,
+       1,
+       1
+      ],
+      "world": [
+       4801,
+       -60,
+       4006
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=6]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       6,
+       1,
+       2
+      ],
+      "world": [
+       4800,
+       -60,
+       4006
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=4]"
+     }
+    ]
+   }
+  },
+  {
+   "module": "sauna_1",
+   "kind": "h24",
+   "fill": "lava",
+   "command_pos": [
+    5000,
+    -60,
+    4000
+   ],
+   "place_output": "Generated jigsaw at 5000, -60, 4000",
+   "rotation": 270,
+   "origin": [
+    4979,
+    -61,
+    4028
+   ],
+   "match": 221,
+   "probe": 221,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 9630,
+     "stored_ok": 1726,
+     "stored_later_sculk": 92,
+     "mask_cleared": 1708,
+     "mask_later_sculk": 60,
+     "stored_rot_dropped_keeps_fill": 82
+    },
+    "violations": []
+   },
+   "analysis_after_1200_ticks": {
+    "counts": {
+     "outside_mask_untouched": 9630,
+     "stored_ok": 1682,
+     "stored_later_sculk": 92,
+     "MASK_FLUID_RETURNED": 1683,
+     "mask_later_sculk": 60,
+     "stored_rot_dropped_keeps_fill": 82,
+     "mask_cleared": 18,
+     "stored_air_fluid_after_ticks": 1,
+     "MASK_NOT_CLEARED": 7,
+     "stored_changed_by_fluid_after_ticks": 43
+    },
+    "violations": [
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       1,
+       0
+      ],
+      "world": [
+       4979,
+       -60,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       1,
+       1
+      ],
+      "world": [
+       4980,
+       -60,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       1,
+       13
+      ],
+      "world": [
+       4992,
+       -60,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       1,
+       20
+      ],
+      "world": [
+       4999,
+       -60,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       1,
+       22
+      ],
+      "world": [
+       5001,
+       -60,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       1,
+       24
+      ],
+      "world": [
+       5003,
+       -60,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       1,
+       25
+      ],
+      "world": [
+       5004,
+       -60,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       2,
+       0
+      ],
+      "world": [
+       4979,
+       -59,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       2,
+       1
+      ],
+      "world": [
+       4980,
+       -59,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       2,
+       13
+      ],
+      "world": [
+       4992,
+       -59,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       2,
+       20
+      ],
+      "world": [
+       4999,
+       -59,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       2,
+       21
+      ],
+      "world": [
+       5000,
+       -59,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       2,
+       22
+      ],
+      "world": [
+       5001,
+       -59,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       2,
+       23
+      ],
+      "world": [
+       5002,
+       -59,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       2,
+       24
+      ],
+      "world": [
+       5003,
+       -59,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       2,
+       25
+      ],
+      "world": [
+       5004,
+       -59,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       3,
+       0
+      ],
+      "world": [
+       4979,
+       -58,
+       4028
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       1
+      ],
+      "world": [
+       4980,
+       -60,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       2
+      ],
+      "world": [
+       4981,
+       -60,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       14
+      ],
+      "world": [
+       4993,
+       -60,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       17
+      ],
+      "world": [
+       4996,
+       -60,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       21
+      ],
+      "world": [
+       5000,
+       -60,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       22
+      ],
+      "world": [
+       5001,
+       -60,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       23
+      ],
+      "world": [
+       5002,
+       -60,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       24
+      ],
+      "world": [
+       5003,
+       -60,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       1,
+       25
+      ],
+      "world": [
+       5004,
+       -60,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       0
+      ],
+      "world": [
+       4979,
+       -59,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       1
+      ],
+      "world": [
+       4980,
+       -59,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       2
+      ],
+      "world": [
+       4981,
+       -59,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       14
+      ],
+      "world": [
+       4993,
+       -59,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       17
+      ],
+      "world": [
+       4996,
+       -59,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       20
+      ],
+      "world": [
+       4999,
+       -59,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       21
+      ],
+      "world": [
+       5000,
+       -59,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       22
+      ],
+      "world": [
+       5001,
+       -59,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       23
+      ],
+      "world": [
+       5002,
+       -59,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       24
+      ],
+      "world": [
+       5003,
+       -59,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       25
+      ],
+      "world": [
+       5004,
+       -59,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       3,
+       0
+      ],
+      "world": [
+       4979,
+       -58,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       3,
+       1
+      ],
+      "world": [
+       4980,
+       -58,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       4,
+       0
+      ],
+      "world": [
+       4979,
+       -57,
+       4027
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     }
+    ]
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "kind": "h24",
+   "fill": "lava",
+   "command_pos": [
+    5200,
+    -60,
+    4000
+   ],
+   "place_output": "Generated jigsaw at 5200, -60, 4000",
+   "rotation": 90,
+   "origin": [
+    5202,
+    -61,
+    3995
+   ],
+   "match": 158,
+   "probe": 158,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 664,
+     "stored_ok": 311,
+     "mask_cleared": 40,
+     "stored_rot_dropped_keeps_fill": 8
+    },
+    "violations": []
+   },
+   "analysis_after_1200_ticks": {
+    "counts": {
+     "outside_mask_untouched": 664,
+     "stored_ok": 305,
+     "stored_air_fluid_after_ticks": 6,
+     "MASK_FLUID_RETURNED": 40,
+     "stored_rot_dropped_keeps_fill": 8
+    },
+    "violations": [
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       2,
+       0
+      ],
+      "world": [
+       5202,
+       -59,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       2,
+       1
+      ],
+      "world": [
+       5201,
+       -59,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       2,
+       2
+      ],
+      "world": [
+       5200,
+       -59,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       2,
+       3
+      ],
+      "world": [
+       5199,
+       -59,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       2,
+       4
+      ],
+      "world": [
+       5198,
+       -59,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       2,
+       5
+      ],
+      "world": [
+       5197,
+       -59,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       3,
+       0
+      ],
+      "world": [
+       5202,
+       -58,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       3,
+       1
+      ],
+      "world": [
+       5201,
+       -58,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       3,
+       2
+      ],
+      "world": [
+       5200,
+       -58,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       3,
+       3
+      ],
+      "world": [
+       5199,
+       -58,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       3,
+       4
+      ],
+      "world": [
+       5198,
+       -58,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       0,
+       3,
+       5
+      ],
+      "world": [
+       5197,
+       -58,
+       3995
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       0
+      ],
+      "world": [
+       5202,
+       -59,
+       3996
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       2,
+       5
+      ],
+      "world": [
+       5197,
+       -59,
+       3996
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       3,
+       0
+      ],
+      "world": [
+       5202,
+       -58,
+       3996
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       1,
+       3,
+       5
+      ],
+      "world": [
+       5197,
+       -58,
+       3996
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       2,
+       0
+      ],
+      "world": [
+       5202,
+       -59,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       2,
+       5
+      ],
+      "world": [
+       5197,
+       -59,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       3,
+       0
+      ],
+      "world": [
+       5202,
+       -58,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       3,
+       5
+      ],
+      "world": [
+       5197,
+       -58,
+       3997
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       2,
+       0
+      ],
+      "world": [
+       5202,
+       -59,
+       3998
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       2,
+       5
+      ],
+      "world": [
+       5197,
+       -59,
+       3998
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       3,
+       0
+      ],
+      "world": [
+       5202,
+       -58,
+       3998
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       3,
+       5
+      ],
+      "world": [
+       5197,
+       -58,
+       3998
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       2,
+       0
+      ],
+      "world": [
+       5202,
+       -59,
+       3999
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       2,
+       5
+      ],
+      "world": [
+       5197,
+       -59,
+       3999
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       3,
+       0
+      ],
+      "world": [
+       5202,
+       -58,
+       3999
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       3,
+       5
+      ],
+      "world": [
+       5197,
+       -58,
+       3999
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       2,
+       0
+      ],
+      "world": [
+       5202,
+       -59,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       2,
+       1
+      ],
+      "world": [
+       5201,
+       -59,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       2,
+       2
+      ],
+      "world": [
+       5200,
+       -59,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       2,
+       3
+      ],
+      "world": [
+       5199,
+       -59,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       2,
+       4
+      ],
+      "world": [
+       5198,
+       -59,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       2,
+       5
+      ],
+      "world": [
+       5197,
+       -59,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       3,
+       0
+      ],
+      "world": [
+       5202,
+       -58,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       3,
+       1
+      ],
+      "world": [
+       5201,
+       -58,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       3,
+       2
+      ],
+      "world": [
+       5200,
+       -58,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       3,
+       3
+      ],
+      "world": [
+       5199,
+       -58,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       3,
+       4
+      ],
+      "world": [
+       5198,
+       -58,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       5,
+       3,
+       5
+      ],
+      "world": [
+       5197,
+       -58,
+       4000
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     }
+    ]
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "kind": "h24",
+   "fill": "lava",
+   "command_pos": [
+    5400,
+    -60,
+    4000
+   ],
+   "place_output": "Generated jigsaw at 5400, -60, 4000",
+   "rotation": 270,
+   "origin": [
+    5397,
+    -61,
+    4006
+   ],
+   "match": 55,
+   "probe": 55,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 784,
+     "stored_ok": 275,
+     "stored_rot_dropped_keeps_fill": 9,
+     "mask_cleared": 10
+    },
+    "violations": []
+   },
+   "analysis_after_1200_ticks": {
+    "counts": {
+     "outside_mask_untouched": 784,
+     "stored_ok": 241,
+     "stored_rot_dropped_keeps_fill": 9,
+     "stored_air_fluid_after_ticks": 33,
+     "MASK_FLUID_RETURNED": 10,
+     "stored_changed_by_fluid_after_ticks": 1
+    },
+    "violations": [
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       2,
+       2
+      ],
+      "world": [
+       5399,
+       -59,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       2,
+       3,
+       2
+      ],
+      "world": [
+       5399,
+       -58,
+       4004
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       0
+      ],
+      "world": [
+       5397,
+       -60,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       1,
+       1
+      ],
+      "world": [
+       5398,
+       -60,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       2,
+       0
+      ],
+      "world": [
+       5397,
+       -59,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       2,
+       1
+      ],
+      "world": [
+       5398,
+       -59,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       2,
+       2
+      ],
+      "world": [
+       5399,
+       -59,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       3,
+       3,
+       2
+      ],
+      "world": [
+       5399,
+       -58,
+       4003
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       2,
+       2
+      ],
+      "world": [
+       5399,
+       -59,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     },
+     {
+      "type": "MASK_FLUID_RETURNED",
+      "template_pos": [
+       4,
+       2,
+       4
+      ],
+      "world": [
+       5401,
+       -59,
+       4002
+      ],
+      "expected": "air",
+      "got": "minecraft:lava[level=8]"
+     }
+    ]
+   }
+  }
+ ]
+}

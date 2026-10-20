@@ -1,21 +1,26 @@
-"""One-off: the first Stage 24-G sweep recorded every list element by its first sub-template, which made vanilla's own
-camp_1..3 list pieces read "camp_1" instead of "" (as in all earlier manifests). Re-derive the template field with the
-corrected rule of tools/stage24c/worldgen.piece_record (only protection lists are unwrapped). Positions, rotations
-and boxes are untouched."""
+"""Re-derive the template field of list-element pieces with the current rule of tools/stage24c/worldgen.piece_record
+(only lists whose extra elements are our overlays are unwrapped; vanilla camps keep ""). Used once for the first
+Stage 24-G sweep (camps were unwrapped) and once for the Stage 24-H sweep (3-element lists were not unwrapped).
+Positions, rotations and boxes are untouched."""
 import json
 import sys
 from pathlib import Path
 
-from tools.stage24c.worldgen import PROTECTION_PREFIX
+from tools.stage24c.worldgen import OVERLAY_PREFIX
 
-for f in sorted(Path(sys.argv[1]).glob("manifest-*-g24.json")):
+variant = sys.argv[2] if len(sys.argv) > 2 else "g24"
+for f in sorted(Path(sys.argv[1]).glob(f"manifest-*-{variant}.json")):
     m = json.loads(f.read_text())
     n = 0
     for c in m.get("cities", []):
         for p in c["pieces"]:
             subs = p.get("list_elements")
-            if subs and not (len(subs) == 2 and subs[1].startswith(PROTECTION_PREFIX)) and p["template"]:
-                p["template"] = ""
+            if not subs:
+                continue
+            ours = len(subs) >= 2 and all(x.startswith(OVERLAY_PREFIX) for x in subs[1:])
+            want = subs[0] if ours else ""
+            if p["template"] != want:
+                p["template"] = want
                 n += 1
     f.write_text(json.dumps(m, indent=1))
-    print(f.name, "camp list pieces reset", n)
+    print(f.name, "list pieces re-derived", n)
