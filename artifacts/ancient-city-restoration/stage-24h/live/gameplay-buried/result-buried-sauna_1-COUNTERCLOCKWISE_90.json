@@ -1,0 +1,515 @@
+{
+ "module": "sauna_1",
+ "steps": [
+  {
+   "name": "tp_outside",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    7019,
+    -60,
+    6375
+   ]
+  },
+  {
+   "name": "walk_to_reception",
+   "type": "goto",
+   "start": [
+    7019,
+    -60,
+    6375
+   ],
+   "end": [
+    7014.5,
+    -60,
+    6375.5
+   ],
+   "horizontal_error": 0,
+   "moved": 5,
+   "outcome": "reached",
+   "seconds": 2.5,
+   "ok": true
+  },
+  {
+   "name": "chest0_[12, 1, 19]_reach",
+   "type": "goto",
+   "start": [
+    7014,
+    -60,
+    6375
+   ],
+   "end": [
+    6998.5,
+    -60,
+    6377.8
+   ],
+   "horizontal_error": 0.3,
+   "moved": 16.16,
+   "outcome": "reached",
+   "seconds": 7.7,
+   "ok": true
+  },
+  {
+   "name": "chest0_[12, 1, 19]_open",
+   "type": "container",
+   "ok": true,
+   "block": "chest",
+   "slots": 27,
+   "items": [
+    {
+     "name": "leather",
+     "count": 1
+    },
+    {
+     "name": "diamond_horse_armor",
+     "count": 1
+    },
+    {
+     "name": "leather",
+     "count": 1
+    },
+    {
+     "name": "diamond_hoe",
+     "count": 1
+    },
+    {
+     "name": "enchanted_golden_apple",
+     "count": 1
+    },
+    {
+     "name": "enchanted_golden_apple",
+     "count": 1
+    },
+    {
+     "name": "compass",
+     "count": 1
+    },
+    {
+     "name": "enchanted_book",
+     "count": 1
+    },
+    {
+     "name": "diamond_hoe",
+     "count": 1
+    },
+    {
+     "name": "iron_leggings",
+     "count": 1
+    },
+    {
+     "name": "enchanted_book",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "name": "chest1_[21, 1, 18]_reach",
+   "type": "goto",
+   "start": [
+    6998,
+    -60,
+    6377
+   ],
+   "end": [
+    6997.5,
+    -60,
+    6368.5
+   ],
+   "horizontal_error": 0,
+   "moved": 9.35,
+   "outcome": "reached",
+   "seconds": 5.3,
+   "ok": true
+  },
+  {
+   "name": "chest1_[21, 1, 18]_open",
+   "type": "container",
+   "ok": true,
+   "block": "chest",
+   "slots": 27,
+   "items": [
+    {
+     "name": "amethyst_shard",
+     "count": 3
+    },
+    {
+     "name": "coal",
+     "count": 1
+    },
+    {
+     "name": "potion",
+     "count": 1
+    },
+    {
+     "name": "bone",
+     "count": 1
+    },
+    {
+     "name": "sculk",
+     "count": 3
+    },
+    {
+     "name": "disc_fragment_5",
+     "count": 1
+    },
+    {
+     "name": "amethyst_shard",
+     "count": 1
+    },
+    {
+     "name": "diamond_horse_armor",
+     "count": 1
+    },
+    {
+     "name": "potion",
+     "count": 1
+    },
+    {
+     "name": "coal",
+     "count": 1
+    },
+    {
+     "name": "coal",
+     "count": 2
+    },
+    {
+     "name": "sculk_sensor",
+     "count": 1
+    },
+    {
+     "name": "bone",
+     "count": 1
+    },
+    {
+     "name": "music_disc_otherside",
+     "count": 1
+    },
+    {
+     "name": "bone",
+     "count": 1
+    },
+    {
+     "name": "sculk",
+     "count": 3
+    },
+    {
+     "name": "experience_bottle",
+     "count": 1
+    },
+    {
+     "name": "amethyst_shard",
+     "count": 1
+    },
+    {
+     "name": "disc_fragment_5",
+     "count": 1
+    },
+    {
+     "name": "coal",
+     "count": 2
+    },
+    {
+     "name": "coal",
+     "count": 1
+    },
+    {
+     "name": "potion",
+     "count": 1
+    },
+    {
+     "name": "coal",
+     "count": 1
+    },
+    {
+     "name": "bone",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "name": "chest2_[25, 1, 10]_reach",
+   "type": "goto",
+   "start": [
+    6997,
+    -60,
+    6368
+   ],
+   "end": [
+    6989.32,
+    -60,
+    6364.49
+   ],
+   "horizontal_error": 0.18,
+   "moved": 9.11,
+   "outcome": "reached",
+   "seconds": 4.9,
+   "ok": true
+  },
+  {
+   "name": "chest2_[25, 1, 10]_open",
+   "type": "container",
+   "ok": true,
+   "block": "chest",
+   "slots": 27,
+   "items": [
+    {
+     "name": "soul_torch",
+     "count": 1
+    },
+    {
+     "name": "bone",
+     "count": 4
+    },
+    {
+     "name": "soul_torch",
+     "count": 1
+    },
+    {
+     "name": "disc_fragment_5",
+     "count": 1
+    },
+    {
+     "name": "disc_fragment_5",
+     "count": 2
+    },
+    {
+     "name": "sculk_sensor",
+     "count": 1
+    },
+    {
+     "name": "sculk_sensor",
+     "count": 1
+    },
+    {
+     "name": "soul_torch",
+     "count": 5
+    },
+    {
+     "name": "bone",
+     "count": 1
+    },
+    {
+     "name": "lead",
+     "count": 1
+    },
+    {
+     "name": "enchanted_book",
+     "count": 1
+    },
+    {
+     "name": "soul_torch",
+     "count": 1
+    },
+    {
+     "name": "soul_torch",
+     "count": 5
+    }
+   ]
+  },
+  {
+   "name": "bath0_40cells_rim_reach",
+   "type": "goto",
+   "start": [
+    6989,
+    -60,
+    6364
+   ],
+   "end": [
+    7003.28,
+    -60,
+    6376.63
+   ],
+   "horizontal_error": 0.25,
+   "moved": 18.51,
+   "outcome": "reached",
+   "seconds": 6.1,
+   "ok": true
+  },
+  {
+   "name": "bath0_40cells_swim",
+   "type": "swim",
+   "ok": true,
+   "isInWater": true,
+   "y": -61
+  },
+  {
+   "name": "bath1_3cells_rim_reach",
+   "type": "goto",
+   "start": [
+    7005,
+    -61,
+    6369
+   ],
+   "end": [
+    6985.5,
+    -57,
+    6377.5
+   ],
+   "horizontal_error": 1,
+   "moved": 21.54,
+   "outcome": "reached",
+   "seconds": 21.5,
+   "ok": true
+  },
+  {
+   "name": "bath1_3cells_swim",
+   "type": "swim",
+   "ok": true,
+   "isInWater": true,
+   "y": -57
+  }
+ ],
+ "events": [
+  "chat: Teleported S24C_sauna_1 to 7019.500000, -60.000000, 6375.500000",
+  "chat: Teleported S24C_sauna_1 to 7005.500000, -61.000000, 6369.500000",
+  "chat: Teleported S24C_sauna_1 to 6985.500000, -57.000000, 6374.500000"
+ ],
+ "final_health": 20,
+ "rotation": "COUNTERCLOCKWISE_90",
+ "placement": {
+  "command_pos": [
+   7000,
+   -60,
+   6360
+  ],
+  "place_output": "Generated jigsaw at 7000, -60, 6360",
+  "box_xz": [
+   6979,
+   6360,
+   7015,
+   6388
+  ],
+  "rotation": 270,
+  "origin": [
+   6979,
+   -61,
+   6388
+  ],
+  "match": 220,
+  "probe": 221
+ },
+ "scenario_steps": [
+  {
+   "name": "tp_outside",
+   "type": "tp",
+   "target": [
+    7019.5,
+    -60,
+    6375.5
+   ]
+  },
+  {
+   "name": "walk_to_reception",
+   "type": "goto",
+   "target": [
+    7014,
+    -60,
+    6375
+   ],
+   "range": 0,
+   "timeout": 40
+  },
+  {
+   "name": "chest0_[12, 1, 19]_reach",
+   "type": "goto",
+   "target": [
+    6998,
+    -60,
+    6377
+   ],
+   "range": 0,
+   "timeout": 90
+  },
+  {
+   "name": "chest0_[12, 1, 19]_open",
+   "type": "container",
+   "pos": [
+    6998,
+    -60,
+    6376
+   ]
+  },
+  {
+   "name": "chest1_[21, 1, 18]_reach",
+   "type": "goto",
+   "target": [
+    6997,
+    -60,
+    6368
+   ],
+   "range": 0,
+   "timeout": 90
+  },
+  {
+   "name": "chest1_[21, 1, 18]_open",
+   "type": "container",
+   "pos": [
+    6997,
+    -60,
+    6367
+   ]
+  },
+  {
+   "name": "chest2_[25, 1, 10]_reach",
+   "type": "goto",
+   "target": [
+    6989,
+    -60,
+    6364
+   ],
+   "range": 0,
+   "timeout": 90
+  },
+  {
+   "name": "chest2_[25, 1, 10]_open",
+   "type": "container",
+   "pos": [
+    6989,
+    -60,
+    6363
+   ]
+  },
+  {
+   "name": "bath0_40cells_rim_reach",
+   "type": "goto",
+   "target": [
+    7003,
+    -60,
+    6376
+   ],
+   "range": 0,
+   "timeout": 90,
+   "xz_tol": 1.2
+  },
+  {
+   "name": "bath0_40cells_swim",
+   "type": "swim",
+   "target": [
+    7005.5,
+    -61,
+    6369.5
+   ]
+  },
+  {
+   "name": "bath1_3cells_rim_reach",
+   "type": "goto",
+   "target": [
+    6985,
+    -57,
+    6376
+   ],
+   "range": 0,
+   "timeout": 90,
+   "xz_tol": 1.2
+  },
+  {
+   "name": "bath1_3cells_swim",
+   "type": "swim",
+   "target": [
+    6985.5,
+    -57,
+    6374.5
+   ]
+  }
+ ]
+}

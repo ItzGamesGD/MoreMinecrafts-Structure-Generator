@@ -136,7 +136,7 @@ def analyse(world, m, kind, loc, inv, mask, fill_block, after_ticks=False):
     return {"counts": dict(c), "violations": bad}
 
 
-def main(out_dir: Path, max_attempts=12, lava_per_module=1, modules=None, report_name="live-clearance-report.json"):
+def main(out_dir: Path, max_attempts=12, lava_per_module=1, modules=None, report_name="live-clearance-report.json", lava_only=False):
     work = OUT / ("_work/s24h-live" + ("-" + "-".join(modules) if modules else ""))
     pack = work / "pack"
     test_pack(pack)
@@ -154,7 +154,7 @@ def main(out_dir: Path, max_attempts=12, lava_per_module=1, modules=None, report
             blocks = blocks_of(root)
             mask = {tuple(p) for v in masks[m]["cleared"].values() for p in v}
             span = max(size[0], size[2]) + 3
-            plan = [("h24", "deepslate")] * max_attempts + [("g24", "deepslate")] + [("h24", "lava")] * lava_per_module
+            plan = ([("h24", "deepslate")] * max_attempts + [("g24", "deepslate")] if not lava_only else []) + [("h24", "lava")] * lava_per_module
             seen = set()
             for k, (kind, fb) in enumerate(plan):
                 if kind == "h24" and fb == "deepslate" and len(seen) == 4:
@@ -162,6 +162,8 @@ def main(out_dir: Path, max_attempts=12, lava_per_module=1, modules=None, report
                 x, z = 4000 + mi * 200, 4000 + k * (2 * span + 30)
                 srv.cmd(f"forceload add {x - span - 2} {z - span - 2} {x + span + 2} {z + span + 2}")
                 time.sleep(0.4)
+                # freeze the game clock so fluids cannot move between filling, placing and the snapshot
+                srv.cmd("tick freeze")
                 fill(srv, x - span, Y0, z - span, x + span, Y0 + size[1] + 1, z + span, fb)
                 outp = srv.cmd(f"place jigsaw s24htest:{kind}/{m} minecraft:connect_structure 1 {x} {Y0 + 1} {z}")
                 srv.flush()
@@ -169,6 +171,7 @@ def main(out_dir: Path, max_attempts=12, lava_per_module=1, modules=None, report
                 loc = locate(w, blocks, (x, Y0 + 1, z), None)
                 rec = {"module": m, "kind": kind, "fill": fb, "command_pos": [x, Y0 + 1, z], "place_output": outp, **loc}
                 rec["analysis"] = analyse(w, m, kind, loc, inv, mask, fb)
+                srv.cmd("tick unfreeze")
                 if fb == "lava":
                     srv.cmd("tick sprint 1200")
                     time.sleep(15)
@@ -212,8 +215,10 @@ if __name__ == "__main__":
     ap.add_argument("--reanalyse", action="store_true")
     ap.add_argument("--modules", nargs="*")
     ap.add_argument("--report-name", default="live-clearance-report.json")
+    ap.add_argument("--lava-only", action="store_true")
     a = ap.parse_args()
     if a.reanalyse:
         reanalyse(Path(a.out))
     else:
-        main(Path(a.out), a.max, modules=a.modules, report_name=a.report_name, lava_per_module=0 if a.modules else 1)
+        main(Path(a.out), a.max, modules=a.modules, report_name=a.report_name,
+             lava_per_module=1 if (a.lava_only or not a.modules) else 0, lava_only=a.lava_only)

@@ -28,7 +28,7 @@ def world_box(loc, size):
     return (o[0] + min(p[0] for p in pts), o[2] + min(p[2] for p in pts), o[0] + max(p[0] for p in pts), o[2] + max(p[2] for p in pts))
 
 
-def main(out_dir: Path, max_attempts=12):
+def main(out_dir: Path, max_attempts=12, modules=None, summary_name="summary-buried.json"):
     work = OUT / "_work/s24h-gameplay"
     pack = work / "pack"
     test_pack(pack)
@@ -43,6 +43,8 @@ def main(out_dir: Path, max_attempts=12):
     out_dir.mkdir(parents=True, exist_ok=True)
     try:
         for mi, m in enumerate(MODULES):
+            if modules and m not in modules:
+                continue
             nbt = load_nbt(D24F / m / "restored.nbt")
             size = [int(v) for v in nbt["size"]]
             blocks = blocks_of(nbt)
@@ -95,12 +97,14 @@ def main(out_dir: Path, max_attempts=12):
                 report["summary"][f"{m}@missing"] = missing
     finally:
         srv.stop()
-    (out_dir / "summary-buried.json").write_text(json.dumps(report, indent=1))
+    (out_dir / summary_name).write_text(json.dumps(report, indent=1))
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(D24H / "live/gameplay-buried"))
     ap.add_argument("--max", type=int, default=16)
+    ap.add_argument("--modules", nargs="*")
+    ap.add_argument("--summary-name", default="summary-buried.json")
     a = ap.parse_args()
-    main(Path(a.out), a.max)
+    main(Path(a.out), a.max, a.modules, a.summary_name)
