@@ -41,8 +41,8 @@ public abstract class MonsterRoomFeatureMixin implements GuardMarker {
         DriftGuard.Level levelBefore = DriftGuard.MONSTER_ROOM.level();
         boolean cancel;
         switch (DriftGuard.monsterRoomRefine(cfg.refine())) {
-            case HYBRID -> cancel = Guard.shouldCancelHybrid(Guard.MONSTER_ROOM, level, origin, broad, () -> refinedBoxes(level, origin));
-            case PRECHECK -> cancel = Guard.shouldCancel(Guard.MONSTER_ROOM, level, origin, refinedBoxes(level, origin));
+            case HYBRID -> cancel = Guard.shouldCancelHybrid(Guard.MONSTER_ROOM, level, origin, broad, () -> sg01spike$refinedBoxes(level, origin));
+            case PRECHECK -> cancel = Guard.shouldCancel(Guard.MONSTER_ROOM, level, origin, sg01spike$refinedBoxes(level, origin));
             case ZONE -> {
                 BoundingBox zone = DriftGuard.zone(level);
                 cancel = Guard.shouldCancel(Guard.MONSTER_ROOM, level, origin, List.of(zone == null ? broad : zone));
@@ -60,7 +60,7 @@ public abstract class MonsterRoomFeatureMixin implements GuardMarker {
             lab.placeDone(false, false);
         } else if (!DriftGuard.isArmed() && DriftGuard.MONSTER_ROOM.shouldSample()) {
             // Differential verification of an attempt that is safe even if the model is wrong (no protected piece within the box, or verified).
-            DriftGuard.arm(DriftGuard.MONSTER_ROOM, level, Guard.inflate(broad, 2), refinedBoxes(level, origin), broad);
+            DriftGuard.arm(DriftGuard.MONSTER_ROOM, level, Guard.inflate(broad, 2), sg01spike$refinedBoxes(level, origin), broad);
         }
     }
 
@@ -75,7 +75,7 @@ public abstract class MonsterRoomFeatureMixin implements GuardMarker {
         lab.placeDone(false, true);
     }
 
-    private static List<BoundingBox> refinedBoxes(WorldGenLevel level, BlockPos origin) {
+    private static List<BoundingBox> sg01spike$refinedBoxes(WorldGenLevel level, BlockPos origin) {
         LabHooks lab = LabHooks.get();
         lab.enter();
         try {
