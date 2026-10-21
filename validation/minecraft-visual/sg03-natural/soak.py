@@ -31,6 +31,8 @@ def main() -> None:
     p.add_argument("--mode", choices=["guarded", "control"], required=True)
     p.add_argument("--seed", type=int, default=173)
     p.add_argument("--sites", type=int, default=36)
+    p.add_argument("--ring", type=int, default=6, help="N8: candidate ring radius (chunks of spacing) for site selection")
+    p.add_argument("--site-file", type=Path, help="N8: JSON list of [cx, cz] sites to use instead of the ring selection (reproduction of damaged sites)")
     p.add_argument("--radius", type=int, default=5)
     p.add_argument("--settle", type=float, default=4.0)
     p.add_argument("--idle", type=float, default=90.0, help="seconds of idle sampling after the last site")
@@ -42,7 +44,7 @@ def main() -> None:
     p.add_argument("--wait", type=float, default=120.0, help="seconds to wait for a site to load before diagnosing a stall")
     a = p.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
-    ordered = sorted((c for c in candidates_in_ring(a.seed, SG01, 6) if not exclusion_suppressed(a.seed, c)), key=lambda c: (c[0] ** 2 + c[1] ** 2, c))
+    ordered = sorted((c for c in candidates_in_ring(a.seed, SG01, a.ring) if not exclusion_suppressed(a.seed, c)), key=lambda c: (c[0] ** 2 + c[1] ** 2, c))
     # Greedy selection with a minimum Chebyshev separation, so that the structure-start dependency zones (8 chunks) of two sites never touch.
     sites = []
     for c in ordered:
@@ -50,6 +52,8 @@ def main() -> None:
             sites.append(c)
         if len(sites) == a.sites:
             break
+    if a.site_file:
+        sites = [tuple(s) for s in json.loads(a.site_file.read_text())]
     samples = (a.out / "samples.jsonl").resolve()
     report = (a.out / "spike-report.json").resolve()
     for f in (samples, report):

@@ -56,6 +56,18 @@ public final class Sampler {
         }
     }
 
+    /** Resident set size of this process in kB (Linux /proc), 0 where unavailable. */
+    private static long rssKb() {
+        try {
+            for (String l : Files.readAllLines(Path.of("/proc/self/status"))) {
+                if (l.startsWith("VmRSS:")) return Long.parseLong(l.replaceAll("[^0-9]", ""));
+            }
+        } catch (IOException | RuntimeException e) {
+            return 0;
+        }
+        return 0;
+    }
+
     private static String line(MinecraftServer server, ThreadMXBean threads) {
         long afterGc = 0;
         for (MemoryPoolMXBean pool : ManagementFactory.getMemoryPoolMXBeans()) {
@@ -79,9 +91,10 @@ public final class Sampler {
         for (ServerLevel level : server.getAllLevels()) loadedChunks += level.getChunkSource().getLoadedChunksCount();
         return String.format(Locale.ROOT,
                 "{\"uptime_ms\":%d,\"heap_used\":%d,\"heap_after_gc\":%d,\"heap_max\":%d,\"non_heap_used\":%d,\"allocated_bytes\":%d,\"gc_count\":%d,\"gc_ms\":%d,"
-                        + "\"last_gc_pause_ms\":%d,\"loaded_chunks\":%d,\"guard_attempts\":%d,\"guard_events_retained\":%d,\"perf_samples_retained\":%d,\"protected_structures\":%d}",
+                        + "\"last_gc_pause_ms\":%d,\"loaded_chunks\":%d,\"chunks_decorated\":%d,\"rss_kb\":%d,\"process_cpu_ms\":%d,\"live_threads\":%d,\"guard_attempts\":%d,\"guard_events_retained\":%d,\"perf_samples_retained\":%d,\"protected_structures\":%d}",
                 ManagementFactory.getRuntimeMXBean().getUptime(), rt.totalMemory() - rt.freeMemory(), afterGc, rt.maxMemory(),
-                ManagementFactory.getMemoryMXBean().getNonHeapMemoryUsage().getUsed(), allocated, gcCount, gcMs, lastPauseMs, loadedChunks,
+                ManagementFactory.getMemoryMXBean().getNonHeapMemoryUsage().getUsed(), allocated, gcCount, gcMs, lastPauseMs, loadedChunks, Probe.DECORATED.get(), rssKb(),
+                ((com.sun.management.OperatingSystemMXBean) ManagementFactory.getOperatingSystemMXBean()).getProcessCpuTime() / 1_000_000L, ManagementFactory.getThreadMXBean().getThreadCount(),
                 Guard.GEODE.attempts.get() + Guard.MONSTER_ROOM.attempts.get(), Guard.GEODE.eventCount() + Guard.MONSTER_ROOM.eventCount(),
                 Perf.retainedSamples(), ProtectionConfig.protectedCountOrZero());
     }
