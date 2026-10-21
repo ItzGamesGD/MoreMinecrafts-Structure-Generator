@@ -51,7 +51,7 @@ Full numbers: `DIMENSIONS-MANIFEST.json`, `static-checks.json`.
 | fall protection | 0 open drops in all options (approved large tower: 30) | `static-checks.json` |
 | block states | all valid against the vanilla 26.1.2 block report (CI regenerates it from the pinned jar) | `static-checks.json`, CI |
 | exact placement, 4 rotations, real 26.1.2 server | 24/24 placements (6 towers × 4 rotations) match the rotated template, 0 mismatching cells | `live/live-report.json` |
-| bot: outside → ladder → deck → every deck edge, 4 rotations | BOT_RESULT | `live/bot-*.json` |
+| bot: outside → ladder → deck → every deck edge, 4 rotations | **all four options: 16/16 runs, every step** (large A and B 37/37, medium A 49/49, medium B 39/39); approved medium tower 31/31; approved large tower: every deck-edge walk **falls 15 blocks** (no railing) — its `step_onto_deck` failure is this generic scenario aiming at the slab surface (the tower's own Stage 24-C scenario reaches it through the hatch pit and passed 32/32 in Stage 24-I) | `live/live-report.json`, `live/bot-*.json`, `tools/stage24j/check_live.py` |
 
 Bot = mineflayer simulated player on a real server — **not Minecraft-client gameplay**. Renders are headless
 block-model renders — **not client screenshots; client visual verification PENDING.**
