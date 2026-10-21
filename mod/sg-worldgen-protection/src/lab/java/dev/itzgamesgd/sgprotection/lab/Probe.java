@@ -70,7 +70,10 @@ public final class Probe {
     }
 
     /** Order in which chunks started their feature-decoration step (bounded). */
+    public static final AtomicLong DECORATED = new AtomicLong();
+
     public static synchronized void recordDecoration(int cx, int cz) {
+        DECORATED.incrementAndGet();
         if (DECORATION.size() < 20000) DECORATION.add(cx + "," + cz);
     }
 
