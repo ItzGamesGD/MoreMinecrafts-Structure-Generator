@@ -1,0 +1,304 @@
+{
+ "large_pillar_1": {
+  "current": {
+   "title": "Current \u2014 Stage 24-F approved",
+   "file": "artifacts/ancient-city-restoration/stage-24f/final-candidates/large_pillar_1/restored.nbt",
+   "sha256": "a17b693c10337724e3c01402cd19a497926c1fa2afe0c81e839e2c9d61bfb9b1",
+   "template_size_xyz": [
+    6,
+    15,
+    6
+   ],
+   "size_change": [
+    0,
+    0,
+    0
+   ],
+   "highest_block_y": 14,
+   "footprint_cells_at_top": 32,
+   "deck_feet_y": 15,
+   "deck_standable_cells": 32,
+   "deck_extent_xz": [
+    0,
+    0,
+    5,
+    5
+   ],
+   "eye_height_above_template_base": 16.62,
+   "headroom_cells_above_template": 32,
+   "ladder": {
+    "column": [
+     2,
+     2
+    ],
+    "rungs": "y1..y13",
+    "continuous_and_backed": true,
+    "above_hatch_clear": true
+   },
+   "fall_protection": {
+    "OPEN_DROP": 30,
+    "ladder_hatch": 2
+   },
+   "blocks_stored": 300,
+   "changed_cells_vs_approved": 0,
+   "decay_eligible_blocks": {
+    "approved": 142,
+    "variant": 142
+   },
+   "bounding_box_and_jigsaws": "unchanged",
+   "notes": []
+  },
+  "A": {
+   "title": "Open lookout \u2014 railed parapet on the corbelled cap",
+   "file": "artifacts/ancient-city-restoration/stage-24j/proposals/large_pillar_1/A/candidate.nbt",
+   "sha256": "e9aa71df4d4dd9580453948f7a7233ae61c470e3109cf7d568b8cf34f5c2955e",
+   "template_size_xyz": [
+    6,
+    15,
+    6
+   ],
+   "size_change": [
+    0,
+    0,
+    0
+   ],
+   "highest_block_y": 14,
+   "footprint_cells_at_top": 36,
+   "deck_feet_y": 14,
+   "deck_standable_cells": 15,
+   "deck_extent_xz": [
+    1,
+    1,
+    4,
+    4
+   ],
+   "eye_height_above_template_base": 15.62,
+   "headroom_cells_above_template": 15,
+   "ladder": {
+    "column": [
+     2,
+     2
+    ],
+    "rungs": "y1..y13",
+    "continuous_and_backed": true,
+    "above_hatch_clear": true
+   },
+   "fall_protection": {
+    "railing_wall": 16,
+    "ladder_hatch": 4
+   },
+   "blocks_stored": 288,
+   "changed_cells_vs_approved": 47,
+   "decay_eligible_blocks": {
+    "approved": 142,
+    "variant": 95
+   },
+   "bounding_box_and_jigsaws": "unchanged",
+   "notes": [
+    "deck feet y14 (was y15); head cell y15 is above the template, as before (one block lower than today)"
+   ]
+  },
+  "B": {
+   "title": "Roofed belvedere \u2014 two-block open viewing band under a low tiled roof",
+   "file": "artifacts/ancient-city-restoration/stage-24j/proposals/large_pillar_1/B/candidate.nbt",
+   "sha256": "2361a8b71a701cd1ae76363a933b107981a4d08cd3cdce70555f759a48f4fc55",
+   "template_size_xyz": [
+    6,
+    15,
+    6
+   ],
+   "size_change": [
+    0,
+    0,
+    0
+   ],
+   "highest_block_y": 14,
+   "footprint_cells_at_top": 36,
+   "deck_feet_y": 11,
+   "deck_standable_cells": 14,
+   "deck_extent_xz": [
+    1,
+    1,
+    4,
+    4
+   ],
+   "eye_height_above_template_base": 12.62,
+   "headroom_cells_above_template": 0,
+   "ladder": {
+    "column": [
+     2,
+     2
+    ],
+    "rungs": "y1..y10",
+    "continuous_and_backed": true,
+    "above_hatch_clear": true
+   },
+   "fall_protection": {
+    "railing_wall": 16,
+    "ladder_hatch": 3,
+    "full_block": 3
+   },
+   "blocks_stored": 291,
+   "changed_cells_vs_approved": 148,
+   "decay_eligible_blocks": {
+    "approved": 142,
+    "variant": 99
+   },
+   "bounding_box_and_jigsaws": "unchanged",
+   "notes": [
+    "deck feet y11, head y12, lanterns y13, roof y14: the deck and its headroom are inside the template",
+    "shaft masonry ends at y9 (was y12); the approved y13 corbel ring is reused under the y10 deck"
+   ]
+  }
+ },
+ "medium_pillar_1": {
+  "current": {
+   "title": "Current \u2014 Stage 24-F approved",
+   "file": "artifacts/ancient-city-restoration/stage-24f/final-candidates/medium_pillar_1/restored.nbt",
+   "sha256": "8705305a7bec348c40b5e7434c651526e0145aac90a9352e315150faf6a7a09d",
+   "template_size_xyz": [
+    7,
+    11,
+    8
+   ],
+   "size_change": [
+    0,
+    0,
+    0
+   ],
+   "highest_block_y": 10,
+   "footprint_cells_at_top": 40,
+   "deck_feet_y": 9,
+   "deck_standable_cells": 11,
+   "deck_extent_xz": [
+    2,
+    2,
+    4,
+    5
+   ],
+   "eye_height_above_template_base": 10.62,
+   "headroom_cells_above_template": 0,
+   "ladder": {
+    "column": [
+     4,
+     3
+    ],
+    "rungs": "y1..y8",
+    "continuous_and_backed": true,
+    "above_hatch_clear": true
+   },
+   "fall_protection": {
+    "railing_wall": 13,
+    "ladder_hatch": 3
+   },
+   "blocks_stored": 251,
+   "changed_cells_vs_approved": 0,
+   "decay_eligible_blocks": {
+    "approved": 196,
+    "variant": 196
+   },
+   "bounding_box_and_jigsaws": "unchanged",
+   "notes": []
+  },
+  "A": {
+   "title": "Corbelled crown \u2014 full-width deck, corner merlons, one broken merlon",
+   "file": "artifacts/ancient-city-restoration/stage-24j/proposals/medium_pillar_1/A/candidate.nbt",
+   "sha256": "bdd92bc073427a9c553a3ae9643259492a0451a4cdbf8f1e89cfe95d454bf6e0",
+   "template_size_xyz": [
+    7,
+    11,
+    8
+   ],
+   "size_change": [
+    0,
+    0,
+    0
+   ],
+   "highest_block_y": 10,
+   "footprint_cells_at_top": 56,
+   "deck_feet_y": 9,
+   "deck_standable_cells": 29,
+   "deck_extent_xz": [
+    1,
+    1,
+    5,
+    6
+   ],
+   "eye_height_above_template_base": 10.62,
+   "headroom_cells_above_template": 0,
+   "ladder": {
+    "column": [
+     4,
+     3
+    ],
+    "rungs": "y1..y8",
+    "continuous_and_backed": true,
+    "above_hatch_clear": true
+   },
+   "fall_protection": {
+    "railing_wall": 22,
+    "ladder_hatch": 4
+   },
+   "blocks_stored": 275,
+   "changed_cells_vs_approved": 79,
+   "decay_eligible_blocks": {
+    "approved": 196,
+    "variant": 184
+   },
+   "bounding_box_and_jigsaws": "unchanged",
+   "notes": [
+    "deck 7x8 outline, 29 standable cells (was 11); parapet on corbels over the free footprint ring"
+   ]
+  },
+  "B": {
+   "title": "South-west gallery \u2014 cantilevered L-shaped deck, corner post",
+   "file": "artifacts/ancient-city-restoration/stage-24j/proposals/medium_pillar_1/B/candidate.nbt",
+   "sha256": "1c41756f6ef956c3239a9274001a426c02a17eed7b986c96d9149deb7dee6f51",
+   "template_size_xyz": [
+    7,
+    11,
+    8
+   ],
+   "size_change": [
+    0,
+    0,
+    0
+   ],
+   "highest_block_y": 10,
+   "footprint_cells_at_top": 42,
+   "deck_feet_y": 9,
+   "deck_standable_cells": 19,
+   "deck_extent_xz": [
+    1,
+    2,
+    4,
+    6
+   ],
+   "eye_height_above_template_base": 10.62,
+   "headroom_cells_above_template": 0,
+   "ladder": {
+    "column": [
+     4,
+     3
+    ],
+    "rungs": "y1..y8",
+    "continuous_and_backed": true,
+    "above_hatch_clear": true
+   },
+   "fall_protection": {
+    "railing_wall": 17,
+    "ladder_hatch": 3
+   },
+   "blocks_stored": 255,
+   "changed_cells_vs_approved": 46,
+   "decay_eligible_blocks": {
+    "approved": 196,
+    "variant": 183
+   },
+   "bounding_box_and_jigsaws": "unchanged",
+   "notes": [
+    "deck 4x5 (19 standable cells, was 11) extended over corbels on the west and south sides only"
+   ]
+  }
+ }
+}

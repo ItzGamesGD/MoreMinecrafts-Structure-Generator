@@ -74,3 +74,9 @@ must stand inside. Mineflayer bot on a real 26.1.2 server — not client gamepla
    * (c) authorise a narrowly targeted structure-adjacent feature/post-process limited to "natural blocks in a
      2-high strip at a door" (not global, but a new system).
 2. **24015 large_ruin_1** — the door opens onto a drop; there is no traversable connection to clear. Report only.
+
+## Owner decision (recorded in Stage 24-J)
+
+24005 medium_ruin_1 and 24009 large_ruin_1: deferred to city connectivity work. 24015 large_ruin_1: deferred to road,
+stair or walkway integration. They remain known accessibility issues, not resolved defects — see
+`../DESIGN-DECISIONS.md`.
