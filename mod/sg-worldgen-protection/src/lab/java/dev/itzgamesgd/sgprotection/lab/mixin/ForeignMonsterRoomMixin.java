@@ -1,4 +1,4 @@
-package dev.itzgamesgd.sg01spike.lab.mixin;
+package dev.itzgamesgd.sgprotection.lab.mixin;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;

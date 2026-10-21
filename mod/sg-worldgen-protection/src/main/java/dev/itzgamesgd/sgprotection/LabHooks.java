@@ -1,4 +1,4 @@
-package dev.itzgamesgd.sg01spike;
+package dev.itzgamesgd.sgprotection;
 
 import java.util.List;
 import net.minecraft.core.BlockPos;
@@ -13,15 +13,15 @@ import net.minecraft.world.level.levelgen.structure.BoundingBox;
  * is the no-op below and {@link #config()} is the production configuration.
  */
 public interface LabHooks {
-    /** Guard configuration. The production values are the defaults in {@link #DEFAULT}. */
+    /** Guard configuration. The production values are the defaults in {@link #DEFAULT}: ENFORCE, the conservative box guard for the monster room (Refine.OFF). */
     record Config(Guard.Mode mode, Guard.Refine refine, String features, Guard.Fixture fixture, Guard.Fault fault, boolean shadow, boolean oracle) {
     }
 
-    Config DEFAULT = new Config(Guard.Mode.ENFORCE, Guard.Refine.HYBRID, "both", Guard.Fixture.NONE, Guard.Fault.NONE, false, false);
+    Config DEFAULT = new Config(Guard.Mode.ENFORCE, Guard.Refine.OFF, "both", Guard.Fixture.NONE, Guard.Fault.NONE, false, false);
     LabHooks NONE = new LabHooks() {
     };
 
-    /** Installed once, from SpikeMod.onInitialize, before any guard decision. */
+    /** Installed once, from SgProtectionMod.onInitialize, before any guard decision. */
     final class Holder {
         static volatile LabHooks current = NONE;
 

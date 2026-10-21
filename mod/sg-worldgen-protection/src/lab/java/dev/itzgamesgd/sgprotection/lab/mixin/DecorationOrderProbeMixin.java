@@ -1,6 +1,6 @@
-package dev.itzgamesgd.sg01spike.lab.mixin;
+package dev.itzgamesgd.sgprotection.lab.mixin;
 
-import dev.itzgamesgd.sg01spike.lab.Probe;
+import dev.itzgamesgd.sgprotection.lab.Probe;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.chunk.ChunkAccess;
 import net.minecraft.world.level.chunk.ChunkGenerator;
@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(ChunkGenerator.class)
 public abstract class DecorationOrderProbeMixin {
     @Inject(method = "applyBiomeDecoration", at = @At("HEAD"), require = 1)
-    private void sg01spike$order(WorldGenLevel level, ChunkAccess chunk, StructureManager structureManager, CallbackInfo ci) {
+    private void sgprotection$order(WorldGenLevel level, ChunkAccess chunk, StructureManager structureManager, CallbackInfo ci) {
         Probe.recordDecoration(chunk.getPos().x(), chunk.getPos().z());
     }
 }

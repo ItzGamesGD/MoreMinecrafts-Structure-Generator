@@ -1,10 +1,10 @@
-package dev.itzgamesgd.sg01spike.lab;
+package dev.itzgamesgd.sgprotection.lab;
 
-import dev.itzgamesgd.sg01spike.Guard;
-import dev.itzgamesgd.sg01spike.GuardStats;
-import dev.itzgamesgd.sg01spike.LabHooks;
-import dev.itzgamesgd.sg01spike.MonsterRoomGeometry;
-import dev.itzgamesgd.sg01spike.SpikeMod;
+import dev.itzgamesgd.sgprotection.Guard;
+import dev.itzgamesgd.sgprotection.GuardStats;
+import dev.itzgamesgd.sgprotection.LabHooks;
+import dev.itzgamesgd.sgprotection.MonsterRoomGeometry;
+import dev.itzgamesgd.sgprotection.SgProtectionMod;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;

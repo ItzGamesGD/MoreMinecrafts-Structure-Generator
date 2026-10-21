@@ -1,4 +1,4 @@
-package dev.itzgamesgd.sg01spike.lab;
+package dev.itzgamesgd.sgprotection.lab;
 
 import java.util.ArrayList;
 import java.util.List;

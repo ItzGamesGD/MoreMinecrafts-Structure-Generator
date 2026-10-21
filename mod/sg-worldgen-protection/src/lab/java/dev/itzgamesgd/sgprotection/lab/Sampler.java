@@ -1,8 +1,8 @@
-package dev.itzgamesgd.sg01spike.lab;
+package dev.itzgamesgd.sgprotection.lab;
 
-import dev.itzgamesgd.sg01spike.Guard;
-import dev.itzgamesgd.sg01spike.SpikeMod;
-import dev.itzgamesgd.sg01spike.ProtectionConfig;
+import dev.itzgamesgd.sgprotection.Guard;
+import dev.itzgamesgd.sgprotection.SgProtectionMod;
+import dev.itzgamesgd.sgprotection.ProtectionConfig;
 import com.sun.management.GarbageCollectorMXBean;
 import com.sun.management.ThreadMXBean;
 import java.io.IOException;
@@ -51,7 +51,7 @@ public final class Sampler {
             } catch (InterruptedException e) {
                 return;
             } catch (IOException | RuntimeException e) {
-                SpikeMod.LOGGER.warn("SG_SPIKE sampler: {}", e.toString());
+                SgProtectionMod.LOGGER.warn("SG_PROTECTION sampler: {}", e.toString());
             }
         }
     }

@@ -13,14 +13,14 @@ import zipfile
 from pathlib import Path
 
 MOD = Path(__file__).resolve().parents[3] / "mod" / "sg-worldgen-protection"
-PKG = "dev/itzgamesgd/sg01spike/"
+PKG = "dev/itzgamesgd/sgprotection/"
 PRODUCTION_CLASSES = {
     "DriftGuard", "DriftGuard$Armed", "DriftGuard$Level", "DriftGuard$State", "Guard", "Guard$Fault", "Guard$Finding", "Guard$Fixture", "Guard$Mode",
     "Guard$Refine", "GuardMarker", "GuardStats", "LabHooks", "LabHooks$1", "LabHooks$Config", "LabHooks$Holder", "MonsterRoomGeometry", "ProtectionConfig",
-    "ProtectionContract", "ProtectionContract$ContractViolation", "ProtectionContract$Result", "SpikeMod", "mixin/GeodeFeatureMixin", "mixin/MonsterRoomFeatureMixin",
+    "ProtectionContract", "ProtectionContract$ContractViolation", "ProtectionContract$Result", "SgProtectionMod", "mixin/GeodeFeatureMixin", "mixin/MonsterRoomFeatureMixin",
     "mixin/MonsterRoomFeatureMixin$1",
 }
-LAB_NAMES = re.compile(rb"(?<![A-Za-z])Probe(?![a-z])|ProbeMixin|(?<![A-Za-z])Perf(?![a-z])|Sampler|MonsterRoomOracle|LabMod|LabMixinPlugin|ForeignMonsterRoom|ForeignGeode|sg_worldgen_protection_lab|dev/itzgamesgd/sg01spike/lab")
+LAB_NAMES = re.compile(rb"(?<![A-Za-z])Probe(?![a-z])|ProbeMixin|(?<![A-Za-z])Perf(?![a-z])|Sampler|MonsterRoomOracle|LabMod|LabMixinPlugin|ForeignMonsterRoom|ForeignGeode|sg_worldgen_protection_lab|dev/itzgamesgd/sgprotection/lab")
 
 
 def main() -> None:
@@ -40,14 +40,14 @@ def main() -> None:
         classes = {n[len(PKG):-6] for n in names if n.startswith(PKG) and n.endswith(".class")}
         others = sorted(n for n in names if not (n.startswith(PKG) and n.endswith(".class")))
         check("production jar: exactly the required classes", classes == PRODUCTION_CLASSES, f"extra={sorted(classes - PRODUCTION_CLASSES)} missing={sorted(PRODUCTION_CLASSES - classes)}")
-        check("production jar: only metadata besides classes", set(others) <= {"META-INF/MANIFEST.MF", "fabric.mod.json", "sg01spike.mixins.json"}, str(others))
+        check("production jar: only metadata besides classes", set(others) <= {"META-INF/MANIFEST.MF", "fabric.mod.json", "sgprotection.mixins.json"}, str(others))
         blob = b"".join(z.read(n) for n in names if n.endswith(".class"))
         check("production jar: no SG01_ lab variable is read", b"SG01_" not in blob)
         check("production jar: no reference to a lab class or lab mod", LAB_NAMES.search(blob) is None, str(LAB_NAMES.findall(blob)[:5]))
-        check("production jar: reads only SG_PROTECTION_REPORT from the environment", set(re.findall(rb"SG_[A-Z_0-9]+", blob)) <= {b"SG_PROTECTION_REPORT", b"SG_SPIKE", b"SG_SPIKE_REPORT"})
+        check("production jar: reads only SG_PROTECTION_REPORT from the environment", set(re.findall(rb"SG_[A-Z_0-9]+", blob)) <= {b"SG_PROTECTION_REPORT", b"SG_PROTECTION", b"SG_PROTECTION_REPORT"})
         mod = json.loads(z.read("fabric.mod.json"))
         check("production jar: mod id and entrypoints", mod["id"] == "sg_worldgen_protection" and list(mod["entrypoints"]) == ["main"], f"{mod['id']} {list(mod['entrypoints'])}")
-        cfg = json.loads(z.read("sg01spike.mixins.json"))
+        cfg = json.loads(z.read("sgprotection.mixins.json"))
         check("production jar: exactly the two protection mixins, no plugin", sorted(cfg["mixins"]) == ["GeodeFeatureMixin", "MonsterRoomFeatureMixin"] and "plugin" not in cfg, str(cfg["mixins"]))
         check("production jar: mixins required and fail-loud", cfg["required"] is True and cfg["injectors"]["defaultRequire"] == 1)
         check("production jar: ships no datapack data", not any(n.startswith("data/") for n in names))

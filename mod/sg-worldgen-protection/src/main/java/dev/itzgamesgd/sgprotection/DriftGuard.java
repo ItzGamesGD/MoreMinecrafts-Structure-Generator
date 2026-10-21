@@ -1,4 +1,4 @@
-package dev.itzgamesgd.sg01spike;
+package dev.itzgamesgd.sgprotection;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,11 +21,11 @@ import net.minecraft.core.BlockPos;
  * footprint and read-only precheck of a monster room). A guard that cannot establish those assumptions must not rely on them, and the fallback must
  * hold WITHOUT them. Per feature this class keeps a {@link Level}:
  *
- * PROVISIONAL (initial): the assumption is not yet verified in this process. The cheapest decision that is correct under the weaker assumption
- *   is used: monster room = the N7-A box (union of all variant footprints; does not use the replicated precheck), geode = ZONE.
- *   Allowed attempts are verified differentially (below) and the level is promoted once enough attempts agreed with the model.
- * VERIFIED: the full decision (hybrid monster room; configured-offset box geode) is used; a sample of allowed attempts, and every attempt that is
- *   allowed although a protected piece lies near, keeps being verified.
+ * PROVISIONAL (initial): the footprint bound is not yet verified in this process, so neither feature relies on it: both use ZONE. Allowed attempts
+ *   (no protected piece anywhere in the zone, hence harmless even if the model is wrong) are verified differentially (below) and the level is promoted
+ *   once enough attempts agreed with the model.
+ * VERIFIED: the box decision (monster room: the N7-A reach, union of all variant footprints, N7-E production decision; geode: the configured-offset box
+ *   grown by one cell) is used; a sample of allowed attempts keeps being verified. The replicated precheck (hybrid) is not part of the production decision.
  * BOX_ONLY (monster room): the replicated precheck was observed to under-estimate vanilla; the box guard stays for the process.
  * ZONE: the footprint bound itself was observed to be wrong, or the vanilla classes differ from the validated ones: every instance whose
  *   3x3-chunk write zone contains a protected piece is cancelled. That holds for ANY behaviour of the vanilla feature, because a feature running in a
@@ -103,7 +103,7 @@ public final class DriftGuard {
             if (to.ordinal() <= level.ordinal()) return;
             level = to;
             reason = why;
-            SpikeMod.LOGGER.error("SG_SPIKE drift guard [{}]: {} -> using the {} guard for the rest of this process. Protection stays ON, with more cancellations than necessary."
+            SgProtectionMod.LOGGER.error("SG_PROTECTION drift guard [{}]: {} -> using the {} guard for the rest of this process. Protection stays ON, with more cancellations than necessary."
                     + " Update the module for this Minecraft version.", name, why, to);
         }
 
@@ -111,7 +111,7 @@ public final class DriftGuard {
             if (level != Level.PROVISIONAL) return;
             level = Level.VERIFIED;
             promotedAtAttempt = (name.equals("geode") ? Guard.GEODE : Guard.MONSTER_ROOM).attempts.get();
-            SpikeMod.LOGGER.info("SG_SPIKE drift guard [{}]: {} allowed attempts agreed with the model ({} with writes); full decision active", name, samples.get(), placements.get());
+            SgProtectionMod.LOGGER.info("SG_PROTECTION drift guard [{}]: {} allowed attempts agreed with the model ({} with writes); full decision active", name, samples.get(), placements.get());
         }
     }
 
@@ -152,7 +152,7 @@ public final class DriftGuard {
             if (broken != null && (broken.equals("both") || broken.equals(s.name))) failure = "[lab] fingerprint break injected";
             s.fingerprint = fp.toString().trim();
             if (failure != null) s.demote(Level.ZONE, failure.startsWith("FOREIGN") ? failure : "FINGERPRINT_MISMATCH: " + failure);
-            else SpikeMod.LOGGER.info("SG_SPIKE drift guard [{}]: vanilla dependency fingerprints validated, no foreign transformer ({}); provisional until verified in-process", s.name, s.fingerprint);
+            else SgProtectionMod.LOGGER.info("SG_PROTECTION drift guard [{}]: vanilla dependency fingerprints validated, no foreign transformer ({}); provisional until verified in-process", s.name, s.fingerprint);
         }
     }
 
@@ -180,12 +180,12 @@ public final class DriftGuard {
     }
 
     /**
-     * Members that are expected on a loaded vanilla class: this module's own Mixin handlers (named sg01spike$..., possibly wrapped as
-     * handler$<id>$<mod>$sg01spike$...) and the members Fabric API itself adds (the platform this module requires; it adds listeners such as
+     * Members that are expected on a loaded vanilla class: this module's own Mixin handlers (named sgprotection$..., possibly wrapped as
+     * handler$<id>$<mod>$sgprotection$...) and the members Fabric API itself adds (the platform this module requires; it adds listeners such as
      * BlockStateBase.callUseItemOnEvent, it does not touch the placement logic). Anything else, including a lab mod's inert stand-in, is foreign.
      */
     private static boolean ownOrPlatform(String name) {
-        return name.startsWith("sg01spike$") || name.contains("$sg01spike$") || name.startsWith("fabric_api$") || name.matches("handler\\$[^$]*\\$fabric-[^$]*\\$.*");
+        return name.startsWith("sgprotection$") || name.contains("$sgprotection$") || name.startsWith("fabric_api$") || name.matches("handler\\$[^$]*\\$fabric-[^$]*\\$.*");
     }
 
     private static byte[] read(String className) {
@@ -204,12 +204,15 @@ public final class DriftGuard {
         }
     }
 
-    /** Monster-room refinement in force: the configured one while VERIFIED, the N7-A box while PROVISIONAL or BOX_ONLY, the zone guard in ZONE. */
+    /**
+     * Monster-room decision in force. ZONE while the footprint bound is unverified (PROVISIONAL) or was observed to be wrong; the configured decision once
+     * VERIFIED (the box guard in production; hybrid/precheck exist for the lab only); the box guard for BOX_ONLY (a lab replica was observed to be wrong).
+     */
     public static Guard.Refine monsterRoomRefine(Guard.Refine configured) {
         return switch (MONSTER_ROOM.level) {
-            case ZONE -> Guard.Refine.ZONE;
+            case ZONE, PROVISIONAL -> Guard.Refine.ZONE;
             case VERIFIED -> configured;
-            default -> configured == Guard.Refine.ZONE ? configured : Guard.Refine.OFF;
+            case BOX_ONLY -> configured == Guard.Refine.ZONE ? configured : Guard.Refine.OFF;
         };
     }
 

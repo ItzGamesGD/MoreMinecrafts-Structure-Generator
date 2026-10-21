@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'dev.itzgamesgd.sg'
-version = '0.2.0-n7d'
+version = '0.3.0-n7e'
 base { archivesName = 'sg-worldgen-protection' }
 
 repositories { mavenCentral() }

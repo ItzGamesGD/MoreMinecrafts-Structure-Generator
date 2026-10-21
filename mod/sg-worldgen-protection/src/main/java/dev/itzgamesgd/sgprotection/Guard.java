@@ -1,4 +1,4 @@
-package dev.itzgamesgd.sg01spike;
+package dev.itzgamesgd.sgprotection;
 
 import it.unimi.dsi.fastutil.longs.LongSet;
 import java.util.ArrayList;
@@ -26,7 +26,7 @@ public final class Guard {
     public enum Mode { OBSERVE, ENFORCE }
 
     /** Lab fault injection (selected by the lab mod, never by production): exercises the "structure data unavailable" paths on demand. */
-    public enum Fault { NONE, OUT_OF_RANGE, STATUS_TOO_HIGH, MISSING_START, PRECHECK_BLIND, GEODE_SHRUNK, ZONE_PROBE, PRECHECK_BLIND_NEAR }
+    public enum Fault { NONE, OUT_OF_RANGE, STATUS_TOO_HIGH, MISSING_START, PRECHECK_BLIND, GEODE_SHRUNK, ZONE_PROBE, PRECHECK_BLIND_NEAR, BOX_SHRUNK }
 
     /**
      * Experiment-only fixture (lab only), used only for causal attribution and never shipped. NO_GEODE cancels every geode placement
@@ -34,7 +34,11 @@ public final class Guard {
      */
     public enum Fixture { NONE, NO_GEODE }
 
-    /** Experiment-only refinement (lab only). PRECHECK replicates vanilla's read-only precheck per room variant. OFF is the N7-A behaviour. */
+    /**
+     * Monster-room decision. OFF = the box guard (N7-A reach: union of all variant footprints) and the production decision since N7-E; PRECHECK/HYBRID use the
+     * replicated read-only precheck and exist for the validation lab only (N7-D showed a replica fault confined to near-miss geometry can pass calibration and
+     * damage a protected piece before it is detected); ZONE = the whole write zone, used when a drift is detected.
+     */
     public enum Refine { OFF, PRECHECK, HYBRID, ZONE }
 
     /** Configuration in force: the production defaults unless the validation lab installed hooks (see {@link LabHooks}). */
@@ -172,7 +176,7 @@ public final class Guard {
         stats.event(String.format("%s origin=%d,%d,%d centre=%d,%d reaches=%s -> %s (%s)%s", stats.feature, origin.getX(), origin.getY(), origin.getZ(),
                 centre.x(), centre.z(), reaches, f.verdict, f.detail, cfg().mode() == Mode.ENFORCE ? " CANCELLED" : " observed"));
         if (f.verdict.equals("unavailable")) {
-            SpikeMod.LOGGER.warn("SG_SPIKE unavailable structure data for {} at {}: {} (instance {})", stats.feature, origin, f.detail,
+            SgProtectionMod.LOGGER.warn("SG_PROTECTION unavailable structure data for {} at {}: {} (instance {})", stats.feature, origin, f.detail,
                     cfg().mode() == Mode.ENFORCE ? "cancelled" : "observed only");
         }
         if (cfg().mode() == Mode.ENFORCE) {

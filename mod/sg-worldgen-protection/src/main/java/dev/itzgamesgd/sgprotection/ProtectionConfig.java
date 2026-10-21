@@ -1,4 +1,4 @@
-package dev.itzgamesgd.sg01spike;
+package dev.itzgamesgd.sgprotection;
 
 import java.util.Set;
 import net.minecraft.server.MinecraftServer;
@@ -23,10 +23,10 @@ public final class ProtectionConfig {
         ProtectionContract.Result result = ProtectionContract.validate(server);
         protectedStructures = result.effective();
         contract = result;
-        SpikeMod.LOGGER.info("SG_SPIKE protection contract OK: owner={} format={} revision={} required={} extensions={} effective={}", result.owner(),
+        SgProtectionMod.LOGGER.info("SG_PROTECTION protection contract OK: owner={} format={} revision={} required={} extensions={} effective={}", result.owner(),
                 result.format(), result.revision(), result.required(), result.extensions(), result.effective().size());
-        result.warnings().forEach(w -> SpikeMod.LOGGER.warn("SG_SPIKE protection contract warning: {}", w));
-        result.rejectedExtensions().forEach(r -> SpikeMod.LOGGER.error("SG_SPIKE protection extension REJECTED (the owner's protection is unaffected, the extension's structures are NOT protected): {}", r));
+        result.warnings().forEach(w -> SgProtectionMod.LOGGER.warn("SG_PROTECTION protection contract warning: {}", w));
+        result.rejectedExtensions().forEach(r -> SgProtectionMod.LOGGER.error("SG_PROTECTION protection extension REJECTED (the owner's protection is unaffected, the extension's structures are NOT protected): {}", r));
     }
 
     /** Datapack reload: a rejected reload keeps the last validated set. */
@@ -36,7 +36,7 @@ public final class ProtectionConfig {
         } catch (RuntimeException e) {
             reloadRejections++;
             lastRejection = e.getMessage();
-            SpikeMod.LOGGER.error("SG_SPIKE protection data rejected on reload, keeping the last validated protection set ({} structures): {}",
+            SgProtectionMod.LOGGER.error("SG_PROTECTION protection data rejected on reload, keeping the last validated protection set ({} structures): {}",
                     protectedCountOrZero(), e.getMessage());
         }
     }

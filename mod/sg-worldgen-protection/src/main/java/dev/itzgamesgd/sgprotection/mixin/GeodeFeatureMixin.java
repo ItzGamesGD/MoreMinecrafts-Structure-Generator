@@ -1,9 +1,9 @@
-package dev.itzgamesgd.sg01spike.mixin;
+package dev.itzgamesgd.sgprotection.mixin;
 
-import dev.itzgamesgd.sg01spike.DriftGuard;
-import dev.itzgamesgd.sg01spike.Guard;
-import dev.itzgamesgd.sg01spike.GuardMarker;
-import dev.itzgamesgd.sg01spike.LabHooks;
+import dev.itzgamesgd.sgprotection.DriftGuard;
+import dev.itzgamesgd.sgprotection.Guard;
+import dev.itzgamesgd.sgprotection.GuardMarker;
+import dev.itzgamesgd.sgprotection.LabHooks;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
@@ -19,7 +19,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(GeodeFeature.class)
 public abstract class GeodeFeatureMixin implements GuardMarker {
     @Inject(method = "place", at = @At("HEAD"), cancellable = true, require = 1)
-    private void sg01spike$guard(WorldGenLevel level, ChunkGenerator generator, RandomSource random, BlockPos origin, CallbackInfoReturnable<Boolean> cir) {
+    private void sgprotection$guard(WorldGenLevel level, ChunkGenerator generator, RandomSource random, BlockPos origin, CallbackInfoReturnable<Boolean> cir) {
         // Lab-only fixture for causal attribution (selected by the lab mod only). Never active in production.
         LabHooks lab = LabHooks.get();
         LabHooks.Config cfg = lab.config();
@@ -66,7 +66,7 @@ public abstract class GeodeFeatureMixin implements GuardMarker {
     }
 
     @Inject(method = "place", at = @At("RETURN"), require = 1)
-    private void sg01spike$return(WorldGenLevel level, ChunkGenerator generator, RandomSource random, BlockPos origin, CallbackInfoReturnable<Boolean> cir) {
+    private void sgprotection$return(WorldGenLevel level, ChunkGenerator generator, RandomSource random, BlockPos origin, CallbackInfoReturnable<Boolean> cir) {
         DriftGuard.end(level, origin);
         LabHooks.get().placeDone(true, true);
     }

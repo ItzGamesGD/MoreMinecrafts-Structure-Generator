@@ -1,4 +1,4 @@
-package dev.itzgamesgd.sg01spike;
+package dev.itzgamesgd.sgprotection;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;

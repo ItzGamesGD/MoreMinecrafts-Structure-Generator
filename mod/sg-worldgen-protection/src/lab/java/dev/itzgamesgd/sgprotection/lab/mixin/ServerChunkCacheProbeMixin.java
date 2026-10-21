@@ -1,6 +1,6 @@
-package dev.itzgamesgd.sg01spike.lab.mixin;
+package dev.itzgamesgd.sgprotection.lab.mixin;
 
-import dev.itzgamesgd.sg01spike.lab.Probe;
+import dev.itzgamesgd.sgprotection.lab.Probe;
 import net.minecraft.server.level.ServerChunkCache;
 import net.minecraft.world.level.chunk.status.ChunkStatus;
 import org.spongepowered.asm.mixin.Mixin;
@@ -13,12 +13,12 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(ServerChunkCache.class)
 public abstract class ServerChunkCacheProbeMixin {
     @Inject(method = "getChunk(IILnet/minecraft/world/level/chunk/status/ChunkStatus;Z)Lnet/minecraft/world/level/chunk/ChunkAccess;", at = @At("HEAD"), require = 1)
-    private void sg01spike$blocking(int x, int z, ChunkStatus targetStatus, boolean loadOrGenerate, CallbackInfoReturnable cir) {
+    private void sgprotection$blocking(int x, int z, ChunkStatus targetStatus, boolean loadOrGenerate, CallbackInfoReturnable cir) {
         if (Probe.inGuard()) Probe.SERVER_GET_BLOCKING.incrementAndGet();
     }
 
     @Inject(method = "getChunkFuture", at = @At("HEAD"), require = 1)
-    private void sg01spike$future(int x, int z, ChunkStatus targetStatus, boolean loadOrGenerate, CallbackInfoReturnable cir) {
+    private void sgprotection$future(int x, int z, ChunkStatus targetStatus, boolean loadOrGenerate, CallbackInfoReturnable cir) {
         if (Probe.inGuard()) Probe.SERVER_GET_FUTURE.incrementAndGet();
     }
 }

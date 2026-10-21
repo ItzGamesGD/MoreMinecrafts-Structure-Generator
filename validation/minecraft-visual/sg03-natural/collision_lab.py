@@ -164,7 +164,7 @@ def main() -> None:
             report["oracle"] = a.oracle
             report["spike_report"] = json.loads(spike_report.read_text()) if spike_report.exists() else None
             log = (a.out / "server.log").read_text(errors="replace")
-            report["mixin_log"] = [ln.split("]: ", 1)[-1] for ln in log.splitlines() if "SG_SPIKE" in ln and "SG_SPIKE_REPORT" not in ln][:40]
+            report["mixin_log"] = [ln.split("]: ", 1)[-1] for ln in log.splitlines() if "SG_PROTECTION" in ln and "SG_PROTECTION_REPORT" not in ln][:40]
         (a.out / "lab.json").write_text(json.dumps(report, indent=1, default=str) + "\n")
         print(json.dumps({k: report.get(k) for k in ("order", "threads", "generated")} | {
             "after": {k: report.get("after_ticks", {}).get(k) for k in ("matched", "expected", "by_feature")}}))

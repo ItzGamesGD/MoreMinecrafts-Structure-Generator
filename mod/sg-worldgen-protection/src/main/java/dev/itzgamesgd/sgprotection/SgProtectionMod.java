@@ -1,4 +1,4 @@
-package dev.itzgamesgd.sg01spike;
+package dev.itzgamesgd.sgprotection;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -14,8 +14,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /** Production entrypoint: hook verification, protection contract, drift guard and shutdown report. */
-public final class SpikeMod implements ModInitializer {
-    public static final Logger LOGGER = LoggerFactory.getLogger("sg01-spike");
+public final class SgProtectionMod implements ModInitializer {
+    public static final Logger LOGGER = LoggerFactory.getLogger("sg-protection");
 
     /** Entrypoint key under which the validation lab mod (never part of the production artifact) registers its {@link LabHooks}. */
     public static final String LAB_ENTRYPOINT = "sg_worldgen_protection:lab";
@@ -26,12 +26,12 @@ public final class SpikeMod implements ModInitializer {
         if (labs.size() > 1) throw new IllegalStateException("SG protection: more than one validation lab mod is installed");
         if (!labs.isEmpty()) {
             LabHooks.install(labs.get(0));
-            LOGGER.warn("SG_SPIKE VALIDATION LAB MOD ACTIVE: lab configuration and instrumentation are enabled; this is not a production configuration");
+            LOGGER.warn("SG_PROTECTION VALIDATION LAB MOD ACTIVE: lab configuration and instrumentation are enabled; this is not a production configuration");
         }
         LabHooks.Config cfg = LabHooks.get().config();
-        LOGGER.info("SG_SPIKE mode={} fixture={} refine={} oracle={} features={}", cfg.mode(), cfg.fixture(), cfg.refine(), cfg.oracle() ? "monster_room" : "off", cfg.features());
+        LOGGER.info("SG_PROTECTION mode={} fixture={} refine={} oracle={} features={}", cfg.mode(), cfg.fixture(), cfg.refine(), cfg.oracle() ? "monster_room" : "off", cfg.features());
         if (cfg.fixture() != Guard.Fixture.NONE) {
-            LOGGER.warn("SG_SPIKE EXPERIMENT FIXTURE {} active: causal attribution only, never ship", cfg.fixture());
+            LOGGER.warn("SG_PROTECTION EXPERIMENT FIXTURE {} active: causal attribution only, never ship", cfg.fixture());
         }
         // Spawn-area chunks are generated before SERVER_STARTED, so the configuration must be resolved at SERVER_STARTING.
         ServerLifecycleEvents.SERVER_STARTING.register(server -> {
@@ -53,9 +53,9 @@ public final class SpikeMod implements ModInitializer {
     private static void verifyHooks() {
         boolean geode = GuardMarker.class.isAssignableFrom(GeodeFeature.class);
         boolean room = GuardMarker.class.isAssignableFrom(MonsterRoomFeature.class);
-        LOGGER.info("SG_SPIKE hook GeodeFeature.place applied={} MonsterRoomFeature.place applied={}", geode, room);
+        LOGGER.info("SG_PROTECTION hook GeodeFeature.place applied={} MonsterRoomFeature.place applied={}", geode, room);
         if (!geode || !room) {
-            throw new IllegalStateException("SG protection spike: Mixin not applied (geode=" + geode + ", monster room=" + room + ")");
+            throw new IllegalStateException("SG protection: Mixin not applied (geode=" + geode + ", monster room=" + room + ")");
         }
     }
 
@@ -96,13 +96,13 @@ public final class SpikeMod implements ModInitializer {
         String json = "{\"mode\":\"" + cfg.mode() + "\",\"fixture\":\"" + cfg.fixture() + "\",\"refine\":\"" + cfg.refine() + "\",\"shadow\":" + cfg.shadow() + ",\"oracle\":\""
                 + (cfg.oracle() ? "monster_room" : "off") + "\"," + stats(Guard.GEODE) + "," + stats(Guard.MONSTER_ROOM) + ",\"contract\":" + contractJson()
                 + ",\"drift_guard\":" + selfCheckJson() + ",\"lab\":" + (LabHooks.get() != LabHooks.NONE) + LabHooks.get().reportExtras() + "}\n";
-        LOGGER.info("SG_SPIKE_REPORT {}", json.replace("\n", ""));
+        LOGGER.info("SG_PROTECTION_REPORT {}", json.replace("\n", ""));
         String path = System.getenv("SG_PROTECTION_REPORT");
         if (path != null && !path.isBlank()) {
             try {
                 Files.writeString(Path.of(path), json);
             } catch (IOException e) {
-                LOGGER.error("SG_SPIKE could not write report", e);
+                LOGGER.error("SG_PROTECTION could not write report", e);
             }
         }
     }

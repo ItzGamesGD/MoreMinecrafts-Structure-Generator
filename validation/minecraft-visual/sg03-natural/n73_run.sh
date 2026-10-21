@@ -33,6 +33,8 @@ else
     X)  ARGS+=(--guard-mode enforce --features both --refine hybrid --lab-foreign ${FOREIGN:-both}) ;;  # N7-D: inert foreign transformer on the vanilla class -> must go to zone
     RN) ARGS+=(--guard-mode enforce --features both --refine hybrid --fault precheck_blind_near) ;;  # N7-D: replica wrong only where a protected piece is near (passes calibration)
     O)  ARGS+=(--guard-mode enforce --features both --refine hybrid --oracle monster_room) ;;  # oracle: vanilla unguarded, replica vs reality
+    RNB) ARGS+=(--guard-mode enforce --features both --refine off --fault precheck_blind_near) ;;  # N7-E: the N7-D damage scenario under the production box decision
+    RB) ARGS+=(--guard-mode enforce --features both --refine off --fault box_shrunk) ;;  # N7-E: module believes a smaller footprint than vanilla has
     RG) ARGS+=(--guard-mode enforce --features both --refine hybrid --fault geode_shrunk) ;;  # N7-C: injected geode bound drift
     *) echo "unknown config $CONFIG" >&2; exit 2 ;;
   esac

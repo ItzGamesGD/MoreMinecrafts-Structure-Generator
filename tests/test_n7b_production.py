@@ -20,7 +20,7 @@ from structure_export.datapack import MINECRAFT_VERSION, DatapackBuilder  # noqa
 
 PACK = ROOT / "exports/sg-03/forgotten-underground-kingdom/datapack"
 MANIFEST = PACK / "data/moreminecrafts/sg_protection/manifest.json"
-JAVA = ROOT / "mod/sg-worldgen-protection/src/main/java/dev/itzgamesgd/sg01spike"
+JAVA = ROOT / "mod/sg-worldgen-protection/src/main/java/dev/itzgamesgd/sgprotection"
 
 
 class ProductionManifestTests(unittest.TestCase):

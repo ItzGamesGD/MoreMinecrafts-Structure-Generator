@@ -1,6 +1,6 @@
-package dev.itzgamesgd.sg01spike.lab.mixin;
+package dev.itzgamesgd.sgprotection.lab.mixin;
 
-import dev.itzgamesgd.sg01spike.lab.Probe;
+import dev.itzgamesgd.sgprotection.lab.Probe;
 import net.minecraft.server.level.ChunkMap;
 import net.minecraft.server.level.GenerationChunkHolder;
 import net.minecraft.world.level.chunk.status.ChunkStatus;
@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(GenerationChunkHolder.class)
 public abstract class GenerationChunkHolderProbeMixin {
     @Inject(method = "scheduleChunkGenerationTask", at = @At("HEAD"), require = 1)
-    private void sg01spike$schedule(ChunkStatus status, ChunkMap scheduler, CallbackInfoReturnable cir) {
+    private void sgprotection$schedule(ChunkStatus status, ChunkMap scheduler, CallbackInfoReturnable cir) {
         if (Probe.inGuard()) {
             Probe.HOLDER_SCHEDULE.incrementAndGet();
             Probe.recordScheduled("GenerationChunkHolder.scheduleChunkGenerationTask", status, null);

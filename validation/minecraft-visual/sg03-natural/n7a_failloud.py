@@ -32,7 +32,7 @@ except RuntimeError as e:
     result["outcome"] = "startup failed"
     result["message_tail"] = str(e)[-600:]
 log = (run / "server.log").read_text(errors="replace") if (run / "server.log").exists() else ""
-result["log_lines"] = [l.split("]: ", 1)[-1][:300] for l in log.splitlines() if "SG protection spike" in l or "SG_SPIKE" in l][:8]
+result["log_lines"] = [l.split("]: ", 1)[-1][:300] for l in log.splitlines() if "SG_PROTECTION" in l][:8]
 result["pass"] = result["outcome"] == "startup failed" and any("resolves to no structure" in l for l in result["log_lines"])
 (a.out / "failloud.json").write_text(json.dumps(result, indent=1) + "\n")
 print(json.dumps(result, indent=1))

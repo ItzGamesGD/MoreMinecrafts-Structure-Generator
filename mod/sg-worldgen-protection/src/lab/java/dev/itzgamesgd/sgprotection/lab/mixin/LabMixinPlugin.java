@@ -1,4 +1,4 @@
-package dev.itzgamesgd.sg01spike.lab.mixin;
+package dev.itzgamesgd.sgprotection.lab.mixin;
 
 import java.util.List;
 import java.util.Set;

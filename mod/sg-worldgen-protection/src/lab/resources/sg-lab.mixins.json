@@ -1,9 +1,9 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "dev.itzgamesgd.sg01spike.lab.mixin",
+  "package": "dev.itzgamesgd.sgprotection.lab.mixin",
   "compatibilityLevel": "JAVA_25",
-  "plugin": "dev.itzgamesgd.sg01spike.lab.mixin.LabMixinPlugin",
+  "plugin": "dev.itzgamesgd.sgprotection.lab.mixin.LabMixinPlugin",
   "mixins": [
     "WorldGenRegionProbeMixin",
     "ServerChunkCacheProbeMixin",
