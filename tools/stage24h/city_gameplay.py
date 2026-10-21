@@ -22,7 +22,9 @@ from tools.stage24g.gameplay_decayed import transform  # noqa: E402
 ROOT = Path(__file__).resolve().parents[2]
 D24F = ROOT / "artifacts/ancient-city-restoration/stage-24f/final-candidates"
 D24H = ROOT / "artifacts/ancient-city-restoration/stage-24h"
-MAN = {"g24": ROOT / "artifacts/ancient-city-restoration/stage-24g/worldgen", "h24": D24H / "worldgen"}
+D24I = ROOT / "artifacts/ancient-city-restoration/stage-24i"
+MAN = {"g24": ROOT / "artifacts/ancient-city-restoration/stage-24g/worldgen", "h24": D24H / "worldgen",
+       "i24": D24I / "worldgen", "i24x": D24I / "experiment-entrance/worldgen"}
 CASES = [(24005, "medium_ruin_1", 71), (24009, "large_ruin_1", 59), (24008, "small_ruin_1", 93)]
 
 
@@ -63,18 +65,22 @@ def run_case(seed, module, idx, variant, out_dir: Path):
         srv.stop()
 
 
-def main(out_dir: Path):
+def main(out_dir: Path, variants=("g24", "h24"), cases=CASES, summary_name="summary-city.json"):
     summary = {}
-    for seed, m, idx in CASES:
-        for v in ("g24", "h24"):
+    for seed, m, idx in cases:
+        for v in variants:
             k = f"{seed}:{m}#{idx}:{v}"
             summary[k] = run_case(seed, m, idx, v, out_dir)
             print(k, summary[k], flush=True)
-    (out_dir / "summary-city.json").write_text(json.dumps(summary, indent=1))
+    (out_dir / summary_name).write_text(json.dumps(summary, indent=1))
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(D24H / "live/city-gameplay"))
+    ap.add_argument("--variants", nargs="*", default=["g24", "h24"])
+    ap.add_argument("--cases", nargs="*", default=None, help="seed:module:piece_index")
+    ap.add_argument("--summary-name", default="summary-city.json")
     a = ap.parse_args()
-    main(Path(a.out))
+    cases = [(int(c.split(":")[0]), c.split(":")[1], int(c.split(":")[2])) for c in a.cases] if a.cases else CASES
+    main(Path(a.out), a.variants, cases, a.summary_name)

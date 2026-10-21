@@ -28,10 +28,16 @@ def world_box(loc, size):
     return (o[0] + min(p[0] for p in pts), o[2] + min(p[2] for p in pts), o[0] + max(p[0] for p in pts), o[2] + max(p[2] for p in pts))
 
 
-def main(out_dir: Path, max_attempts=12, modules=None, summary_name="summary-buried.json"):
+def main(out_dir: Path, max_attempts=12, modules=None, summary_name="summary-buried.json", stage="h24"):
     work = OUT / "_work/s24h-gameplay"
     pack = work / "pack"
-    test_pack(pack)
+    if stage == "i24":
+        from tools.stage24i.live import test_pack as test_pack_i
+        test_pack_i(pack)
+        pool = "s24itest:i24"
+    else:
+        test_pack(pack)
+        pool = "s24htest:h24"
     root = work / "server"
     srv = Server(root, JAR, JAVA, {"level-type": "minecraft\\:flat", "generator-settings": FLAT, "generate-structures": "false",
                                    "server-port": str(PORT), "rcon.port": str(RPORT), "gamemode": "survival",
@@ -59,7 +65,7 @@ def main(out_dir: Path, max_attempts=12, modules=None, summary_name="summary-bur
                 # bury the piece box up to its own top layer; cells above the box are outside every template (in the
                 # 24-seed sweep the space above the tower decks was air in 192/192 cells)
                 fill(srv, x - span, Y0, z - span, x + span, Y0 + size[1] - 1, z + span, "deepslate")
-                outp = srv.cmd(f"place jigsaw s24htest:h24/{m} minecraft:connect_structure 1 {x} {Y0 + 1} {z}")
+                outp = srv.cmd(f"place jigsaw {pool}/{m} minecraft:connect_structure 1 {x} {Y0 + 1} {z}")
                 srv.flush()
                 loc = locate(World(root / "world/dimensions/minecraft/overworld"), blocks, (x, Y0 + 1, z), None)
                 if loc["rotation"] in got:
@@ -106,5 +112,6 @@ if __name__ == "__main__":
     ap.add_argument("--max", type=int, default=16)
     ap.add_argument("--modules", nargs="*")
     ap.add_argument("--summary-name", default="summary-buried.json")
+    ap.add_argument("--stage", default="h24", choices=["h24", "i24"])
     a = ap.parse_args()
-    main(Path(a.out), a.max, a.modules, a.summary_name)
+    main(Path(a.out), a.max, a.modules, a.summary_name, a.stage)

@@ -1,0 +1,40 @@
+{
+ "processors": [
+  {
+   "processor_type": "minecraft:rule",
+   "rules": [
+    {
+     "input_predicate": {
+      "predicate_type": "minecraft:always_true"
+     },
+     "location_predicate": {
+      "predicate_type": "minecraft:tag_match",
+      "tag": "moreminecrafts:entrance_clearable"
+     },
+     "output_state": {
+      "Name": "minecraft:air"
+     }
+    },
+    {
+     "input_predicate": {
+      "predicate_type": "minecraft:always_true"
+     },
+     "location_predicate": {
+      "predicate_type": "minecraft:always_true"
+     },
+     "output_state": {
+      "Name": "minecraft:structure_void"
+     }
+    }
+   ]
+  },
+  {
+   "processor_type": "minecraft:block_ignore",
+   "blocks": [
+    {
+     "Name": "minecraft:structure_void"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+ "stage24h_pack": "artifacts/ancient-city-restoration/stage-24h/datapack",
+ "roofed_modules": [
+  "medium_ruin_1",
+  "medium_ruin_2",
+  "small_ruin_1",
+  "small_ruin_2"
+ ],
+ "modules": {
+  "large_ruin_1": {
+   "rottable_cells": 762,
+   "stage24g_protected_rottable": 0,
+   "decay_eligible_before": 762,
+   "decay_eligible_after": 762,
+   "decay_eligible_share_after": 1.0,
+   "roof_cells": 0
+  },
+  "medium_ruin_1": {
+   "rottable_cells": 285,
+   "stage24g_protected_rottable": 0,
+   "decay_eligible_before": 285,
+   "decay_eligible_after": 221,
+   "decay_eligible_share_after": 0.7754,
+   "roof_cells": 64,
+   "roof_nbt": "datapack/data/moreminecrafts/structure/ancient_city/roof/medium_ruin_1.nbt",
+   "roof_sha256": "a21515c5676d8bcd71378666193ed6b2fd98c22c38404fa9a749d3bff8532587"
+  },
+  "medium_ruin_2": {
+   "rottable_cells": 599,
+   "stage24g_protected_rottable": 90,
+   "decay_eligible_before": 509,
+   "decay_eligible_after": 431,
+   "decay_eligible_share_after": 0.7195,
+   "roof_cells": 78,
+   "roof_nbt": "datapack/data/moreminecrafts/structure/ancient_city/roof/medium_ruin_2.nbt",
+   "roof_sha256": "88404dd664871503a3b66aba0c3c3ee05e6520e512f0c0a5a59971fe355c73ce"
+  },
+  "small_ruin_1": {
+   "rottable_cells": 165,
+   "stage24g_protected_rottable": 0,
+   "decay_eligible_before": 165,
+   "decay_eligible_after": 136,
+   "decay_eligible_share_after": 0.8242,
+   "roof_cells": 29,
+   "roof_nbt": "datapack/data/moreminecrafts/structure/ancient_city/roof/small_ruin_1.nbt",
+   "roof_sha256": "e507673ff16beefcd22935ab6c37f5427e752acdffe21a950402f444b08a82aa"
+  },
+  "small_ruin_2": {
+   "rottable_cells": 108,
+   "stage24g_protected_rottable": 0,
+   "decay_eligible_before": 108,
+   "decay_eligible_after": 97,
+   "decay_eligible_share_after": 0.8981,
+   "roof_cells": 11,
+   "roof_nbt": "datapack/data/moreminecrafts/structure/ancient_city/roof/small_ruin_2.nbt",
+   "roof_sha256": "8393c92ac7eb23286f6e029a2a047c85fcde6c91cba5afa73243960eb539166c"
+  },
+  "sauna_1": {
+   "rottable_cells": 1674,
+   "stage24g_protected_rottable": 25,
+   "decay_eligible_before": 1649,
+   "decay_eligible_after": 1649,
+   "decay_eligible_share_after": 0.9851,
+   "roof_cells": 0
+  },
+  "large_pillar_1": {
+   "rottable_cells": 142,
+   "stage24g_protected_rottable": 9,
+   "decay_eligible_before": 133,
+   "decay_eligible_after": 133,
+   "decay_eligible_share_after": 0.9366,
+   "roof_cells": 0
+  },
+  "medium_pillar_1": {
+   "rottable_cells": 196,
+   "stage24g_protected_rottable": 17,
+   "decay_eligible_before": 179,
+   "decay_eligible_after": 179,
+   "decay_eligible_share_after": 0.9133,
+   "roof_cells": 0
+  }
+ },
+ "pool_sha256": "562882d2906dba8e1fee87bef35ba12cd94b76667bb440779fa3ab5c2b023c4c"
+}
