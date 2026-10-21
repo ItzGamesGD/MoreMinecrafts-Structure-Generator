@@ -1,0 +1,632 @@
+[
+ {
+  "run": "F_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": true,
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "ZONE",
+   "monster_room": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "FINGERPRINT_MISMATCH: [lab] fingerprint break injected",
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 1008,
+    "promoted_at_attempt": -1
+   },
+   "geode": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "FINGERPRINT_MISMATCH: [lab] fingerprint break injected",
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": -1
+   }
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 1008,
+   "cancelled": 1008,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "PE_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": false,
+  "refine": "OFF",
+  "drift_guard": {
+   "configured_refine": "OFF",
+   "effective_refine": "OFF",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 2055,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 280,
+    "promoted_at_attempt": 2190
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": 3
+   }
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 338,
+   "cancelled": 338,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "PJ_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": false,
+  "refine": "OFF",
+  "drift_guard": {
+   "configured_refine": "OFF",
+   "effective_refine": "OFF",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 2035,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 308,
+    "promoted_at_attempt": 2198
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": 3
+   }
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 360,
+   "cancelled": 360,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "RB_173_-19_15_colmajor_r1",
+  "lab_mod_active": true,
+  "refine": "OFF",
+  "drift_guard": {
+   "configured_refine": "OFF",
+   "effective_refine": "ZONE",
+   "monster_room": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "RUNTIME_DEVIATION: monster_room at BlockPos{x=-401, y=30, z=217} changed 194 cell(s) outside its footprint bound",
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 507,
+    "verified_placements": 0,
+    "deviations": 1,
+    "near_misses": 0,
+    "unverified_cancels": 1008,
+    "promoted_at_attempt": -1
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": 6
+   }
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 1008,
+   "cancelled": 1008,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "RB_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": true,
+  "refine": "OFF",
+  "drift_guard": {
+   "configured_refine": "OFF",
+   "effective_refine": "ZONE",
+   "monster_room": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "RUNTIME_DEVIATION: monster_room at BlockPos{x=-214, y=-23, z=232} changed 137 cell(s) outside its footprint bound",
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 1005,
+    "verified_placements": 0,
+    "deviations": 1,
+    "near_misses": 0,
+    "unverified_cancels": 1008,
+    "promoted_at_attempt": -1
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": 3
+   }
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 1008,
+   "cancelled": 1008,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "RB_173_-19_15_spiral_out_r1",
+  "lab_mod_active": true,
+  "refine": "OFF",
+  "drift_guard": {
+   "configured_refine": "OFF",
+   "effective_refine": "ZONE",
+   "monster_room": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "RUNTIME_DEVIATION: monster_room at BlockPos{x=-214, y=-23, z=232} changed 137 cell(s) outside its footprint bound",
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 725,
+    "verified_placements": 0,
+    "deviations": 1,
+    "near_misses": 0,
+    "unverified_cancels": 1008,
+    "promoted_at_attempt": -1
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": 6
+   }
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 1008,
+   "cancelled": 1008,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "RNB_173_-19_15_colmajor_r1",
+  "lab_mod_active": true,
+  "refine": "OFF",
+  "drift_guard": {
+   "configured_refine": "OFF",
+   "effective_refine": "OFF",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 817,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 504,
+    "promoted_at_attempt": 1106
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": 6
+   }
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 533,
+   "cancelled": 533,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "RNB_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": true,
+  "refine": "OFF",
+  "drift_guard": {
+   "configured_refine": "OFF",
+   "effective_refine": "OFF",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 2013,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 224,
+    "promoted_at_attempt": 2086
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": 3
+   }
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 286,
+   "cancelled": 286,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "RNB_173_-19_15_spiral_out_r1",
+  "lab_mod_active": true,
+  "refine": "OFF",
+  "drift_guard": {
+   "configured_refine": "OFF",
+   "effective_refine": "OFF",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 2329,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 1008,
+    "promoted_at_attempt": 3255
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": 6
+   }
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 1008,
+   "cancelled": 1008,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "RN_173_-19_15_colmajor_r1",
+  "lab_mod_active": true,
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "HYBRID",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 850,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 34,
+    "unverified_cancels": 504,
+    "promoted_at_attempt": 1106
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": 6
+   }
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 504,
+   "cancelled": 504,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "RN_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": true,
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "OFF",
+   "monster_room": {
+    "level": "BOX_ONLY",
+    "fallback": true,
+    "reason": "RUNTIME_DEVIATION: monster_room at BlockPos{x=-343, y=-35, z=238} changed 400 cell(s) its precheck model said it would not write",
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 2012,
+    "verified_placements": 3,
+    "deviations": 1,
+    "near_misses": 40,
+    "unverified_cancels": 354,
+    "promoted_at_attempt": 2274
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": 3
+   }
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 354,
+   "cancelled": 354,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "RN_173_-19_15_spiral_out_r1",
+  "lab_mod_active": true,
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "HYBRID",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 1883,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 1008,
+    "promoted_at_attempt": 2779
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": 6
+   }
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 1008,
+   "cancelled": 1008,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "XG_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": true,
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "HYBRID",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 2082,
+    "verified_placements": 4,
+    "deviations": 0,
+    "near_misses": 68,
+    "unverified_cancels": 210,
+    "promoted_at_attempt": 2072
+   },
+   "geode": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "FOREIGN_TRANSFORM: loaded class net.minecraft.world.level.levelgen.feature.GeodeFeature carries members that its file does not: handler$zfh000$sg_worldgen_protection_lab$labforeign$inert",
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": -1
+   }
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 210,
+   "cancelled": 210,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "XM_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": true,
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "ZONE",
+   "monster_room": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "FOREIGN_TRANSFORM: loaded class net.minecraft.world.level.levelgen.feature.MonsterRoomFeature carries members that its file does not: handler$zni000$sg_worldgen_protection_lab$labforeign$inert",
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 1008,
+    "promoted_at_attempt": -1
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": 3
+   }
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 1008,
+   "cancelled": 1008,
+   "unavailable": 0
+  }
+ }
+]
