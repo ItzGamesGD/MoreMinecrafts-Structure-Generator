@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'dev.itzgamesgd.sg'
-version = '0.2.0-n7c'
+version = '0.2.0-n7d'
 base { archivesName = 'sg-worldgen-protection' }
 
 repositories { mavenCentral() }
@@ -14,8 +14,52 @@ dependencies {
     implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 }
 
+// N7-D: production code is the main source set (jar sg-worldgen-protection); the validation lab is a separate mod in the lab source set (jar
+// sg-worldgen-protection-lab, never shipped). The lab depends on main, never the other way round.
+sourceSets {
+    lab {
+        compileClasspath += sourceSets.main.compileClasspath + sourceSets.main.output
+        runtimeClasspath += sourceSets.main.runtimeClasspath + sourceSets.main.output
+    }
+}
+
+// Empty source set: the "jarServer" run loads the BUILT production jar (as a mod from -Dfabric.addMods) instead of the dev class directories.
+sourceSets {
+    jarTest {
+        compileClasspath += sourceSets.main.compileClasspath
+        runtimeClasspath += configurations.runtimeClasspath
+    }
+}
+
+tasks.register('labJar', Jar) {
+    archiveClassifier = 'lab'
+    from sourceSets.lab.output
+}
+
 loom {
+    mods {
+        "sg_worldgen_protection" { sourceSet sourceSets.main }
+        "sg_worldgen_protection_lab" { sourceSet sourceSets.lab }
+    }
     runs {
+        // runServer = production configuration (main only); runLabServer = production + lab mod (what the validation harness uses)
+        labServer {
+            server()
+            source sourceSets.lab
+            runDir = 'run/server'
+            vmArgs '-Xmx3G'
+            def labBg = System.getenv('SG01_BG_THREADS')
+            if (labBg) vmArgs "-Dmax.bg.threads=${labBg}"
+            def labExtra = System.getenv('SG01_EXTRA_MODS')
+            if (labExtra) vmArgs "-Dfabric.addMods=${labExtra}"
+        }
+        jarServer {
+            server()
+            source sourceSets.jarTest
+            runDir = 'run/server'
+            vmArgs '-Xmx3G'
+            vmArgs "-Dfabric.addMods=${layout.buildDirectory.file("libs/sg-worldgen-protection-${project.version}.jar").get().asFile}"
+        }
         server {
             server()
             runDir = 'run/server'

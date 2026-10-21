@@ -52,11 +52,11 @@ public final class GuardStats {
         this.feature = feature;
     }
 
-    synchronized void event(String line) {
+    public synchronized void event(String line) {
         if (events.size() < 400) events.add(line);
     }
 
-    synchronized int eventCount() {
+    public synchronized int eventCount() {
         return events.size();
     }
 

@@ -67,6 +67,9 @@ def main() -> None:
     p.add_argument("--shadow", action="store_true", help="N7-A3: with --refine hybrid, also check the broad phase against the refined decision (SG01_SHADOW=1)")
     p.add_argument("--production", action="store_true", help="N7-B: launch the module exactly as in production (no SG01_* behaviour settings at all; ENFORCE + hybrid + manifest contract)")
     p.add_argument("--lab-fingerprint-break", default="", choices=["", "monster_room", "geode", "both"], help="N7-C lab only: treat the vanilla class fingerprints of this feature as mismatching (simulated vanilla change -> zone guard)")
+    p.add_argument("--lab-foreign", default="", choices=["", "monster_room", "geode", "both"], help="N7-D lab only: apply an inert foreign transformer to the vanilla feature class (must be detected)")
+    p.add_argument("--stale-lab-env", action="store_true", help="N7-D: with --production, also export every SG01_* lab variable (observe, no features, fixture, refine off): the production artifact must ignore all of them")
+    p.add_argument("--production-jar", action="store_true", help="N7-D: with --production, launch the BUILT production jar (gradlew jar runJarServer) instead of the dev classes")
     p.add_argument("--settle", type=float, default=0.0, help="N7-A4: seconds to wait after each chunk loads (controlled-order comparison)")
     p.add_argument("--freeze", action="store_true", help="N7-A4: gamerule random_tick_speed 0 and tick freeze before loading chunks")
     p.add_argument("--keep-world", action="store_true", help="N7-A3: copy the region files of the run into <out>/regions (for full-world comparison)")
@@ -86,13 +89,16 @@ def main() -> None:
         launcher = [*a.launcher_prefix, a.java, "-Xmx3G", *extra, "-jar", str(a.jar.resolve()), "nogui"]
     fabric = {}
     if a.fabric_project:
-        launcher = ["./gradlew", "--no-daemon", "runServer"]
+        launcher = ["./gradlew", "--no-daemon", "jar", "runJarServer"] if a.production_jar else ["./gradlew", "--no-daemon", "runServer" if a.production else "runLabServer"]
         if a.production:
-            env = {"SG01_SPIKE_REPORT": str(spike_report)}
+            env = {"SG_PROTECTION_REPORT": str(spike_report)}
+            if a.stale_lab_env:
+                env.update({"SG01_LAB": "1", "SG01_GUARD_MODE": "observe", "SG01_FEATURES": "none", "SG01_FIXTURE": "no_geode", "SG01_REFINE": "off", "SG01_FAULT": "precheck_blind",
+                            "SG01_ORACLE": "monster_room", "SG01_SHADOW": "1", "SG01_LAB_FINGERPRINT_BREAK": "both", "SG01_LAB_FOREIGN": "both"})
         else:
-            env = {"SG01_LAB": "1", "SG01_GUARD_MODE": a.guard_mode, "SG01_SPIKE_REPORT": str(spike_report), "SG01_FAULT": a.fault, "SG01_FEATURES": a.features,
+            env = {"SG01_GUARD_MODE": a.guard_mode, "SG_PROTECTION_REPORT": str(spike_report), "SG01_FAULT": a.fault, "SG01_FEATURES": a.features,
                    "SG01_REFINE": a.refine, "SG01_SHADOW": "1" if a.shadow else "", "SG01_FIXTURE": a.fixture, "SG01_ORACLE": "" if a.oracle == "off" else a.oracle,
-                   "SG01_LAB_FINGERPRINT_BREAK": a.lab_fingerprint_break}
+                   "SG01_LAB_FINGERPRINT_BREAK": a.lab_fingerprint_break, "SG01_LAB_FOREIGN": a.lab_foreign}
         fabric = dict(launcher_cwd=a.fabric_project.resolve(), start_timeout=600, env=env)
         spike_report.unlink(missing_ok=True)
     server = Server(a.java, a.jar.resolve(), folder, a.seed, a.pack.resolve(), port=a.port, extra_args=extra, launcher=launcher, **fabric,

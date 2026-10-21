@@ -25,71 +25,31 @@ import net.minecraft.world.level.levelgen.structure.StructureStart;
 public final class Guard {
     public enum Mode { OBSERVE, ENFORCE }
 
-    /** Test-only fault injection (SG01_FAULT): exercises the "structure data unavailable" paths on demand. */
-    public enum Fault { NONE, OUT_OF_RANGE, STATUS_TOO_HIGH, MISSING_START, PRECHECK_BLIND, GEODE_SHRUNK }
+    /** Lab fault injection (selected by the lab mod, never by production): exercises the "structure data unavailable" paths on demand. */
+    public enum Fault { NONE, OUT_OF_RANGE, STATUS_TOO_HIGH, MISSING_START, PRECHECK_BLIND, GEODE_SHRUNK, ZONE_PROBE, PRECHECK_BLIND_NEAR }
 
     /**
-     * Experiment-only fixture (SG01_FIXTURE), used only for causal attribution and never shipped. NO_GEODE cancels every geode placement
+     * Experiment-only fixture (lab only), used only for causal attribution and never shipped. NO_GEODE cancels every geode placement
      * without any guard, so the remaining damage can be attributed to monster rooms alone.
      */
     public enum Fixture { NONE, NO_GEODE }
 
-    /** Experiment-only refinement (SG01_REFINE). PRECHECK replicates vanilla's read-only precheck per room variant. OFF is the N7-A behaviour. */
+    /** Experiment-only refinement (lab only). PRECHECK replicates vanilla's read-only precheck per room variant. OFF is the N7-A behaviour. */
     public enum Refine { OFF, PRECHECK, HYBRID, ZONE }
 
-    /**
-     * Lab switch (SG01_LAB=1). Production runs with ENFORCE, the hybrid monster-room decision and no instrumentation. Every behaviour-changing
-     * knob below (mode, fault injection, fixture, refinement, oracle, shadow check, per-hook selection) and the timing instrumentation exist only
-     * for the validation lab: if one is set without SG01_LAB=1 the server refuses to start instead of silently running a non-production guard.
-     */
-    public static final boolean LAB = "1".equals(env("sg01.lab", "SG01_LAB"));
+    /** Configuration in force: the production defaults unless the validation lab installed hooks (see {@link LabHooks}). */
+    public static LabHooks.Config cfg() {
+        return LabHooks.get().config();
+    }
 
-    public static final Mode MODE = parseEnum("sg01.guard.mode", "SG01_GUARD_MODE", Mode.class, Mode.ENFORCE, true);
-    public static final Fault FAULT = parseEnum("sg01.fault", "SG01_FAULT", Fault.class, Fault.NONE, false);
-    public static final Fixture FIXTURE = parseEnum("sg01.fixture", "SG01_FIXTURE", Fixture.class, Fixture.NONE, false);
-    public static final Refine REFINE = parseEnum("sg01.refine", "SG01_REFINE", Refine.class, Refine.HYBRID, false);
-    /** Lab-only oracle (SG01_ORACLE=monster_room): vanilla runs unguarded and the outcome is classified. Never cancels. */
-    public static final boolean ORACLE_MONSTER_ROOM = "monster_room".equalsIgnoreCase(labEnv("sg01.oracle", "SG01_ORACLE"));
-    /** Lab-only (SG01_SHADOW=1, HYBRID only): also checks that the broad phase never rejects an attempt the refined decision would cancel. */
-    public static final boolean SHADOW = "1".equals(labEnv("sg01.shadow", "SG01_SHADOW"));
     public static final GuardStats GEODE = new GuardStats("geode");
     public static final GuardStats MONSTER_ROOM = new GuardStats("monster_room");
-
-    /** Lab-only (SG01_FEATURES = geode | monster_room | both | none): enable the decision for one hook at a time to prove each hook independently. */
-    private static final String FEATURES = labEnv("sg01.features", "SG01_FEATURES") == null ? "both" : labEnv("sg01.features", "SG01_FEATURES");
 
     private Guard() {
     }
 
-    private static String env(String property, String variable) {
-        String value = System.getProperty(property, System.getenv(variable));
-        return value == null || value.isBlank() ? null : value.trim();
-    }
-
-    /** A lab-only setting: its mere presence without SG01_LAB=1 is a configuration error. */
-    private static String labEnv(String property, String variable) {
-        String value = env(property, variable);
-        if (value != null && !LAB) {
-            throw new IllegalStateException("SG protection: " + variable + "=" + value + " is a validation-lab setting and is refused in production."
-                    + " Unset it (the production guard needs no configuration), or set SG01_LAB=1 for lab runs.");
-        }
-        return value;
-    }
-
-    private static <E extends Enum<E>> E parseEnum(String property, String variable, Class<E> type, E fallback, boolean guardModeNames) {
-        String value = labEnv(property, variable);
-        if (value == null) return fallback;
-        if (guardModeNames && value.equalsIgnoreCase("enforce")) return Enum.valueOf(type, "ENFORCE");
-        if (guardModeNames && value.equalsIgnoreCase("observe")) return Enum.valueOf(type, "OBSERVE");
-        try {
-            return Enum.valueOf(type, value.toUpperCase(Locale.ROOT));
-        } catch (IllegalArgumentException e) {
-            throw new IllegalStateException("SG protection spike: unknown value '" + value + "' for " + variable + " (" + type.getSimpleName() + ")", e);
-        }
-    }
-
     private static boolean enabled(String feature) {
-        return FEATURES.equals("both") || FEATURES.equals(feature);
+        return cfg().features().equals("both") || cfg().features().equals(feature);
     }
 
     /** @return true if the feature instance must be cancelled (always false in OBSERVE mode, where the decision is only recorded). */
@@ -112,11 +72,11 @@ public final class Guard {
             stats.notWorldgen.incrementAndGet();
             return false;
         }
-        Probe.enter();
+        LabHooks.get().enter();
         try {
             return decide(stats, region, origin, reaches);
         } finally {
-            Probe.exit();
+            LabHooks.get().exit();
         }
     }
 
@@ -133,12 +93,12 @@ public final class Guard {
             stats.notWorldgen.incrementAndGet();
             return false;
         }
-        Probe.enter();
+        LabHooks.get().enter();
         try {
             boolean broadHit = scan(region, List.of(broad), false).verdict != null;
             if (!broadHit) {
                 stats.hybridSkip.incrementAndGet();
-                if (SHADOW) {
+                if (cfg().shadow()) {
                     stats.shadowChecks.incrementAndGet();
                     if (collides(level, narrow.get())) stats.shadowViolations.incrementAndGet();
                 }
@@ -154,7 +114,7 @@ public final class Guard {
             if (!cancel) nearMiss(region, broad, reaches);
             return cancel;
         } finally {
-            Probe.exit();
+            LabHooks.get().exit();
         }
     }
 
@@ -173,28 +133,28 @@ public final class Guard {
     /** True if a protected piece intersects {@code box} (false if none, or outside world generation). */
     public static boolean piecesNear(WorldGenLevel level, BoundingBox box) {
         if (!(level instanceof WorldGenRegion region)) return false;
-        Probe.enter();
+        LabHooks.get().enter();
         try {
             List<BoundingBox> pieces = pieceBoxes(region, box);
             return pieces != null && !pieces.isEmpty();
         } finally {
-            Probe.exit();
+            LabHooks.get().exit();
         }
     }
 
     /** Side-effect-free decision for the oracle: true if the reaches intersect a protected piece or the structure data is unavailable. */
     public static boolean collides(WorldGenLevel level, List<BoundingBox> reaches) {
         if (reaches.isEmpty() || !(level instanceof WorldGenRegion region)) return false;
-        Probe.enter();
+        LabHooks.get().enter();
         try {
             return scan(region, reaches, false).verdict != null;
         } finally {
-            Probe.exit();
+            LabHooks.get().exit();
         }
     }
 
     /** Protected piece boxes intersecting {@code box} (for the oracle). Returns null if the structure data is unavailable. */
-    static List<BoundingBox> pieceBoxes(WorldGenRegion region, BoundingBox box) {
+    public static List<BoundingBox> pieceBoxes(WorldGenRegion region, BoundingBox box) {
         Finding f = scan(region, List.of(box), true);
         return "unavailable".equals(f.verdict) ? null : f.hits;
     }
@@ -210,12 +170,12 @@ public final class Guard {
         if (f.verdict.equals("collision")) stats.collisions.incrementAndGet();
         else stats.unavailable.incrementAndGet();
         stats.event(String.format("%s origin=%d,%d,%d centre=%d,%d reaches=%s -> %s (%s)%s", stats.feature, origin.getX(), origin.getY(), origin.getZ(),
-                centre.x(), centre.z(), reaches, f.verdict, f.detail, MODE == Mode.ENFORCE ? " CANCELLED" : " observed"));
+                centre.x(), centre.z(), reaches, f.verdict, f.detail, cfg().mode() == Mode.ENFORCE ? " CANCELLED" : " observed"));
         if (f.verdict.equals("unavailable")) {
             SpikeMod.LOGGER.warn("SG_SPIKE unavailable structure data for {} at {}: {} (instance {})", stats.feature, origin, f.detail,
-                    MODE == Mode.ENFORCE ? "cancelled" : "observed only");
+                    cfg().mode() == Mode.ENFORCE ? "cancelled" : "observed only");
         }
-        if (MODE == Mode.ENFORCE) {
+        if (cfg().mode() == Mode.ENFORCE) {
             stats.cancelled.incrementAndGet();
             return true;
         }
@@ -266,10 +226,10 @@ public final class Guard {
                 for (Map.Entry<Structure, LongSet> entry : references.entrySet()) {
                     if (!protectedSet.contains(entry.getKey())) continue;
                     sawReference = true;
-                    if (FAULT == Fault.OUT_OF_RANGE && !region.hasChunk(centre.x() + 9, centre.z())) {
+                    if (cfg().fault() == Fault.OUT_OF_RANGE && !region.hasChunk(centre.x() + 9, centre.z())) {
                         return new Finding("unavailable", "[fault-injection] chunk at distance 9 is outside the step's chunk cache (hasChunk=false)", hits, sawReference);
                     }
-                    if (FAULT == Fault.STATUS_TOO_HIGH) {
+                    if (cfg().fault() == Fault.STATUS_TOO_HIGH) {
                         try {
                             region.getChunk(centre.x() + 2, centre.z(), ChunkStatus.STRUCTURE_REFERENCES);
                         } catch (RuntimeException e) {
@@ -289,9 +249,9 @@ public final class Guard {
                         } catch (RuntimeException e) {
                             return new Finding("unavailable", "start chunk " + startPos.x() + "," + startPos.z() + ": " + e.getClass().getSimpleName(), hits, sawReference);
                         }
-                        if (FAULT == Fault.MISSING_START) start = null;
+                        if (cfg().fault() == Fault.MISSING_START) start = null;
                         if (start == null || !start.isValid()) {
-                            String detail = (FAULT == Fault.MISSING_START ? "[fault-injection] " : "") + "referenced start at " + startPos.x() + "," + startPos.z()
+                            String detail = (cfg().fault() == Fault.MISSING_START ? "[fault-injection] " : "") + "referenced start at " + startPos.x() + "," + startPos.z()
                                     + " is " + (start == null ? "missing" : "invalid");
                             return new Finding("unavailable", detail, hits, sawReference);
                         }

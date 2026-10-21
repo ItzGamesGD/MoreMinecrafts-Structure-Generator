@@ -57,9 +57,9 @@ def main() -> None:
     run_dir = (SPIKE / "run" / "server").resolve()
     shutil.rmtree(run_dir, ignore_errors=True)
     run_dir.mkdir(parents=True)
-    env = {"SG01_SAMPLE_FILE": str(samples), "SG01_SAMPLE_MS": "5000", "SG01_SPIKE_REPORT": str(report)}  # guarded arm: the production configuration
+    env = {"SG01_SAMPLE_FILE": str(samples), "SG01_SAMPLE_MS": "5000", "SG_PROTECTION_REPORT": str(report)}  # guarded arm: the production configuration
     if a.mode == "control":
-        env.update({"SG01_LAB": "1", "SG01_FEATURES": "none"})  # control arm: both hooks disabled (lab setting)
+        env.update({"SG01_FEATURES": "none"})  # control arm: both hooks disabled (lab setting)
     if a.no_sampler:
         env.pop("SG01_SAMPLE_FILE")
     if a.vanilla:
@@ -68,7 +68,7 @@ def main() -> None:
         run_dir.mkdir(parents=True)
         srv = Server("java", a.vanilla.resolve(), run_dir, a.seed, Path(os.environ["SG_PACK"]), port=a.port, xmx="3G", extra_props=NO_PAUSE)
     else:
-        srv = Server("java", None, run_dir, a.seed, Path(os.environ["SG_PACK"]), port=a.port, launcher=["./gradlew", "--no-daemon", "runServer"],
+        srv = Server("java", None, run_dir, a.seed, Path(os.environ["SG_PACK"]), port=a.port, launcher=["./gradlew", "--no-daemon", "runLabServer"],
                      launcher_cwd=SPIKE, start_timeout=600, env=env, extra_props=NO_PAUSE)
     steps = []
     t0 = time.time()

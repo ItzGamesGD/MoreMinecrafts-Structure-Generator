@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sg_worldgen_protection",
-  "version": "0.2.0-n7c",
+  "version": "0.2.0-n7d",
   "name": "SG worldgen protection",
   "description": "Cancels vanilla geode / monster room instances that would write into a protected SG structure piece. Protection data comes from the structure pack manifest (sg_protection/manifest.json).",
   "environment": "server",

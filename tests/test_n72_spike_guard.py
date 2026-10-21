@@ -10,48 +10,55 @@ SPIKE = Path(__file__).resolve().parents[1] / "mod/sg-worldgen-protection"
 RES = SPIKE / "src/main/resources"
 JAVA = SPIKE / "src/main/java/dev/itzgamesgd/sg01spike"
 MIXIN = JAVA / "mixin"
+LABMIXIN = SPIKE / "src/lab/java/dev/itzgamesgd/sg01spike/lab/mixin"
+LABRES = SPIKE / "src/lab/resources"
 PROBES = ["WorldGenRegionProbeMixin", "ServerChunkCacheProbeMixin", "ChunkMapProbeMixin", "GenerationChunkHolderProbeMixin", "DecorationOrderProbeMixin"]
 
 
 class SpikeN72Tests(unittest.TestCase):
-    def test_mixin_config_lists_hooks_and_probes_and_stays_fail_loud(self) -> None:
-        cfg = json.loads((RES / "sg01spike.mixins.json").read_text())
-        self.assertTrue(cfg["required"])
-        self.assertEqual(cfg["injectors"]["defaultRequire"], 1)
-        self.assertEqual(sorted(cfg["mixins"]), sorted(["GeodeFeatureMixin", "MonsterRoomFeatureMixin", *PROBES]))
+    def test_mixin_configs_list_hooks_and_probes_and_stay_fail_loud(self) -> None:
+        # N7-D: production applies exactly the two protection hooks; the lab mod applies the probes (and the foreign-transformer stand-ins)
+        prod = json.loads((RES / "sg01spike.mixins.json").read_text())
+        lab = json.loads((LABRES / "sg-lab.mixins.json").read_text())
+        for cfg in (prod, lab):
+            self.assertTrue(cfg["required"])
+            self.assertEqual(cfg["injectors"]["defaultRequire"], 1)
+        self.assertEqual(sorted(prod["mixins"]), ["GeodeFeatureMixin", "MonsterRoomFeatureMixin"])
+        self.assertEqual(sorted(lab["mixins"]), sorted([*PROBES, "ForeignMonsterRoomMixin", "ForeignGeodeMixin"]))
         for name in PROBES:
-            self.assertTrue((MIXIN / f"{name}.java").exists(), name)
+            self.assertTrue((LABMIXIN / f"{name}.java").exists(), name)
+            self.assertFalse((MIXIN / f"{name}.java").exists(), f"{name} must not be in the production source set")
 
     def test_probes_only_observe(self) -> None:
         for name in PROBES:
-            src = (MIXIN / f"{name}.java").read_text()
+            src = (LABMIXIN / f"{name}.java").read_text()
             for forbidden in ("setReturnValue", "setBlock", "cancel("):
                 self.assertNotIn(forbidden, src, f"{name} must not contain {forbidden}")
             # every injector guards its counter with Probe.inGuard() (or only reads its arguments)
             self.assertIn("Probe.", src)
 
-    def test_production_defaults_and_lab_gating(self) -> None:
+    def test_production_defaults_come_from_the_hooks_and_the_guard_reads_no_environment(self) -> None:
         guard = (JAVA / "Guard.java").read_text()
-        # N7-B: production runs the hybrid decision; every other experiment switch is lab-only and refused without SG01_LAB=1
-        self.assertRegex(guard, r'REFINE = parseEnum\("sg01.refine", "SG01_REFINE", Refine.class, Refine.HYBRID')
-        self.assertRegex(guard, r'FIXTURE = parseEnum\("sg01.fixture", "SG01_FIXTURE", Fixture.class, Fixture.NONE')
-        self.assertRegex(guard, r'MODE = parseEnum\("sg01.guard.mode", "SG01_GUARD_MODE", Mode.class, Mode.ENFORCE')
-        self.assertRegex(guard, r'ORACLE_MONSTER_ROOM = "monster_room".equalsIgnoreCase\(labEnv\(')
-        self.assertRegex(guard, r'SHADOW = "1".equals\(labEnv\(')
-        self.assertIn("is a validation-lab setting and is refused in production", guard)
-        self.assertIn('LAB = "1".equals(env("sg01.lab", "SG01_LAB"))', guard)
-        self.assertLess(guard.index("public static final boolean LAB"), guard.index("public static final Mode MODE"))
+        hooks = (JAVA / "LabHooks.java").read_text()
+        # N7-B/N7-C asserted the defaults on Guard; since N7-D they are LabHooks.DEFAULT and the guard has no environment access at all
+        self.assertIn("new Config(Guard.Mode.ENFORCE, Guard.Refine.HYBRID, \"both\", Guard.Fixture.NONE, Guard.Fault.NONE, false, false)", hooks)
+        self.assertIn("return LabHooks.get().config();", guard)
+        self.assertNotIn("getenv", guard)
+        self.assertNotIn("getProperty", guard)
+        for removed in ("labEnv", "parseEnum", "SG01_"):
+            self.assertNotIn(removed, guard)
 
     def test_fixture_is_only_reachable_when_explicitly_set_and_is_never_default(self) -> None:
         geode = (MIXIN / "GeodeFeatureMixin.java").read_text()
-        self.assertIn("Guard.FIXTURE == Guard.Fixture.NO_GEODE", geode)
+        self.assertIn("cfg.fixture() == Guard.Fixture.NO_GEODE", geode)
         # the fixture branch comes before the guard and can only disable geodes, never enable anything
-        self.assertLess(geode.index("Guard.FIXTURE"), geode.index("Guard.shouldCancel"))
+        self.assertLess(geode.index("cfg.fixture()"), geode.index("Guard.shouldCancel"))
+        self.assertIn("Guard.Fixture.NONE", (JAVA / "LabHooks.java").read_text())
 
     def test_oracle_never_cancels(self) -> None:
         mm = (MIXIN / "MonsterRoomFeatureMixin.java").read_text()
-        # N7-A3 moved the timing mark right after the oracle branch, so the branch ends where the mark begins.
-        oracle_branch = mm[mm.index("if (Guard.ORACLE_MONSTER_ROOM)"):mm.index("Perf.mark();")]
+        # the oracle branch ends where the drift guard / timing mark begins
+        oracle_branch = mm[mm.index("if (cfg.oracle())"):mm.index("DriftGuard.discard();\n        lab.mark();")]
         self.assertIn("return;", oracle_branch)
         self.assertNotIn("setReturnValue", oracle_branch)
 

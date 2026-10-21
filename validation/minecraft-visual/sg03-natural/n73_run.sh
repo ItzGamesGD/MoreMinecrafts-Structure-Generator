@@ -24,9 +24,15 @@ else
     C)  ARGS+=(--guard-mode enforce --features both --refine precheck) ;;
     H)  ARGS+=(--guard-mode enforce --features both --refine hybrid) ;;
     HS) ARGS+=(--guard-mode enforce --features both --refine hybrid --shadow) ;;
-    P)  ARGS+=(--production) ;;          # N7-B: production configuration, no lab settings
+    P)  ARGS+=(--production) ;;
+    PJ) ARGS+=(--production --production-jar) ;;  # N7-D: the built production jar, loaded as a jar
+    PE) ARGS+=(--production --stale-lab-env) ;;  # N7-D: production artifact with every lab variable exported: all must be ignored          # N7-B: production configuration, no lab settings
     R)  ARGS+=(--guard-mode enforce --features both --refine hybrid --fault precheck_blind) ;;  # N7-B: injected drift the startup check cannot see -> runtime watch
     F)  ARGS+=(--guard-mode enforce --features both --refine hybrid --lab-fingerprint-break ${BREAK:-both}) ;;  # N7-C: simulated vanilla change -> zone guard
+    Z)  ARGS+=(--guard-mode enforce --features both --refine hybrid --fault zone_probe) ;;  # N7-D: adversarial probe of the 3x3 write-zone boundary
+    X)  ARGS+=(--guard-mode enforce --features both --refine hybrid --lab-foreign ${FOREIGN:-both}) ;;  # N7-D: inert foreign transformer on the vanilla class -> must go to zone
+    RN) ARGS+=(--guard-mode enforce --features both --refine hybrid --fault precheck_blind_near) ;;  # N7-D: replica wrong only where a protected piece is near (passes calibration)
+    O)  ARGS+=(--guard-mode enforce --features both --refine hybrid --oracle monster_room) ;;  # oracle: vanilla unguarded, replica vs reality
     RG) ARGS+=(--guard-mode enforce --features both --refine hybrid --fault geode_shrunk) ;;  # N7-C: injected geode bound drift
     *) echo "unknown config $CONFIG" >&2; exit 2 ;;
   esac

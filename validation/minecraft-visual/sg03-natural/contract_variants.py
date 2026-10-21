@@ -67,7 +67,7 @@ def run(pack: Path, name: str, out: Path, port: int, extras: list[Path], after=N
         shutil.copytree(e, run_dir / "world" / "datapacks" / e.name)
     report_path = (out / f"{name}.report.json").resolve()
     report_path.unlink(missing_ok=True)
-    env = {"SG01_SPIKE_REPORT": str(report_path)}  # production configuration: no SG01_* behaviour settings
+    env = {"SG_PROTECTION_REPORT": str(report_path)}  # production configuration: no SG01_* behaviour settings
     result: dict = {"case": name}
     try:
         srv = Server("java", None, run_dir, 173, pack, port=port, launcher=["./gradlew", "--no-daemon", "runServer"], launcher_cwd=SPIKE,

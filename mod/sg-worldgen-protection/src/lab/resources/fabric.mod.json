@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "id": "sg_worldgen_protection_lab",
+  "version": "0.2.0-n7d",
+  "name": "SG worldgen protection validation lab (never ship)",
+  "description": "Validation-lab instrumentation, configuration and adversarial probes for sg_worldgen_protection. Not part of the production artifact.",
+  "environment": "server",
+  "entrypoints": { "sg_worldgen_protection:lab": [ "dev.itzgamesgd.sg01spike.lab.LabMod" ] },
+  "mixins": [ { "config": "sg-lab.mixins.json", "environment": "server" } ],
+  "depends": { "fabricloader": ">=0.19.5", "minecraft": "26.3", "java": ">=25", "sg_worldgen_protection": "*" }
+}

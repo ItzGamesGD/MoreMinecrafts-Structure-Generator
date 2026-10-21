@@ -6,22 +6,32 @@ import java.nio.file.Path;
 import java.util.List;
 import java.util.stream.Collectors;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.minecraft.world.level.levelgen.feature.GeodeFeature;
 import net.minecraft.world.level.levelgen.feature.MonsterRoomFeature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/** N7-A experimental spike entrypoint: configuration, hook verification, report. */
+/** Production entrypoint: hook verification, protection contract, drift guard and shutdown report. */
 public final class SpikeMod implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("sg01-spike");
 
+    /** Entrypoint key under which the validation lab mod (never part of the production artifact) registers its {@link LabHooks}. */
+    public static final String LAB_ENTRYPOINT = "sg_worldgen_protection:lab";
+
     @Override
     public void onInitialize() {
-        LOGGER.info("SG_SPIKE mode={} fixture={} refine={} oracle={} features={}", Guard.MODE, Guard.FIXTURE, Guard.REFINE, Guard.ORACLE_MONSTER_ROOM ? "monster_room" : "off",
-                System.getenv().getOrDefault("SG01_FEATURES", "both"));
-        if (Guard.FIXTURE != Guard.Fixture.NONE) {
-            LOGGER.warn("SG_SPIKE EXPERIMENT FIXTURE {} active: causal attribution only, never ship", Guard.FIXTURE);
+        List<LabHooks> labs = FabricLoader.getInstance().getEntrypoints(LAB_ENTRYPOINT, LabHooks.class);
+        if (labs.size() > 1) throw new IllegalStateException("SG protection: more than one validation lab mod is installed");
+        if (!labs.isEmpty()) {
+            LabHooks.install(labs.get(0));
+            LOGGER.warn("SG_SPIKE VALIDATION LAB MOD ACTIVE: lab configuration and instrumentation are enabled; this is not a production configuration");
+        }
+        LabHooks.Config cfg = LabHooks.get().config();
+        LOGGER.info("SG_SPIKE mode={} fixture={} refine={} oracle={} features={}", cfg.mode(), cfg.fixture(), cfg.refine(), cfg.oracle() ? "monster_room" : "off", cfg.features());
+        if (cfg.fixture() != Guard.Fixture.NONE) {
+            LOGGER.warn("SG_SPIKE EXPERIMENT FIXTURE {} active: causal attribution only, never ship", cfg.fixture());
         }
         // Spawn-area chunks are generated before SERVER_STARTED, so the configuration must be resolved at SERVER_STARTING.
         ServerLifecycleEvents.SERVER_STARTING.register(server -> {
@@ -32,9 +42,9 @@ public final class SpikeMod implements ModInitializer {
         ServerLifecycleEvents.END_DATA_PACK_RELOAD.register((server, resources, success) -> {
             if (success) ProtectionConfig.reload(server);
         });
-        ServerLifecycleEvents.SERVER_STARTED.register(Sampler::start);
+        ServerLifecycleEvents.SERVER_STARTED.register(server -> LabHooks.get().serverStarted(server));
         ServerLifecycleEvents.SERVER_STOPPING.register(server -> {
-            Sampler.stop();
+            LabHooks.get().serverStopping();
             writeReport();
         });
     }
@@ -71,22 +81,23 @@ public final class SpikeMod implements ModInitializer {
 
     private static String driftJson(DriftGuard.State s) {
         String reason = s.reason();
-        return String.format("{\"level\":\"%s\",\"fallback\":%b,\"reason\":%s,\"fingerprint\":\"%s\",\"verified_samples\":%d,\"verified_placements\":%d,\"deviations\":%d,\"near_misses\":%d}",
+        return String.format("{\"level\":\"%s\",\"fallback\":%b,\"reason\":%s,\"fingerprint\":\"%s\",\"verified_samples\":%d,\"verified_placements\":%d,\"deviations\":%d,\"near_misses\":%d,\"unverified_cancels\":%d,\"promoted_at_attempt\":%d}",
                 s.level(), s.level() != DriftGuard.Level.VERIFIED && s.level() != DriftGuard.Level.PROVISIONAL, reason == null ? "null" : "\"" + reason.replace("\\", "\\\\").replace("\"", "'") + "\"",
-                s.fingerprint(), s.samples.get(), s.placements.get(), s.deviations.get(), s.nearMisses.get());
+                s.fingerprint(), s.samples.get(), s.placements.get(), s.deviations.get(), s.nearMisses.get(), s.unverifiedCancels.get(), s.promotedAtAttempt);
     }
 
     private static String selfCheckJson() {
-        return "{\"configured_refine\":\"" + Guard.REFINE + "\",\"effective_refine\":\"" + DriftGuard.monsterRoomRefine(Guard.REFINE) + "\",\"monster_room\":"
+        return "{\"configured_refine\":\"" + LabHooks.get().config().refine() + "\",\"effective_refine\":\"" + DriftGuard.monsterRoomRefine(LabHooks.get().config().refine()) + "\",\"monster_room\":"
                 + driftJson(DriftGuard.MONSTER_ROOM) + ",\"geode\":" + driftJson(DriftGuard.GEODE) + "}";
     }
 
     private static void writeReport() {
-        String json = "{\"mode\":\"" + Guard.MODE + "\",\"fixture\":\"" + Guard.FIXTURE + "\",\"refine\":\"" + Guard.REFINE + "\",\"shadow\":" + Guard.SHADOW + ",\"oracle\":\""
-                + (Guard.ORACLE_MONSTER_ROOM ? "monster_room" : "off") + "\"," + stats(Guard.GEODE) + "," + stats(Guard.MONSTER_ROOM) + ",\"probe\":"
-                + Probe.json() + ",\"perf\":" + Perf.json() + ",\"contract\":" + contractJson() + ",\"drift_guard\":" + selfCheckJson() + ",\"decoration_order\":" + Probe.decorationJson() + "}\n";
+        LabHooks.Config cfg = LabHooks.get().config();
+        String json = "{\"mode\":\"" + cfg.mode() + "\",\"fixture\":\"" + cfg.fixture() + "\",\"refine\":\"" + cfg.refine() + "\",\"shadow\":" + cfg.shadow() + ",\"oracle\":\""
+                + (cfg.oracle() ? "monster_room" : "off") + "\"," + stats(Guard.GEODE) + "," + stats(Guard.MONSTER_ROOM) + ",\"contract\":" + contractJson()
+                + ",\"drift_guard\":" + selfCheckJson() + ",\"lab\":" + (LabHooks.get() != LabHooks.NONE) + LabHooks.get().reportExtras() + "}\n";
         LOGGER.info("SG_SPIKE_REPORT {}", json.replace("\n", ""));
-        String path = System.getenv("SG01_SPIKE_REPORT");
+        String path = System.getenv("SG_PROTECTION_REPORT");
         if (path != null && !path.isBlank()) {
             try {
                 Files.writeString(Path.of(path), json);

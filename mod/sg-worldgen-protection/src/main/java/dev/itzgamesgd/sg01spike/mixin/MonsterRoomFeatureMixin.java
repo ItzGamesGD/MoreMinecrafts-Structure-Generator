@@ -4,9 +4,7 @@ import dev.itzgamesgd.sg01spike.DriftGuard;
 import dev.itzgamesgd.sg01spike.Guard;
 import dev.itzgamesgd.sg01spike.GuardMarker;
 import dev.itzgamesgd.sg01spike.MonsterRoomGeometry;
-import dev.itzgamesgd.sg01spike.MonsterRoomOracle;
-import dev.itzgamesgd.sg01spike.Perf;
-import dev.itzgamesgd.sg01spike.Probe;
+import dev.itzgamesgd.sg01spike.LabHooks;
 import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
@@ -23,57 +21,67 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class MonsterRoomFeatureMixin implements GuardMarker {
     @Inject(method = "place", at = @At("HEAD"), cancellable = true, require = 1)
     private void sg01spike$guard(WorldGenLevel level, ChunkGenerator generator, RandomSource random, BlockPos origin, CallbackInfoReturnable<Boolean> cir) {
-        if (Guard.ORACLE_MONSTER_ROOM) {
+        LabHooks lab = LabHooks.get();
+        LabHooks.Config cfg = lab.config();
+        if (cfg.fault() == Guard.Fault.ZONE_PROBE) lab.zoneProbe(level, origin);
+        if (cfg.oracle()) {
             List<BoundingBox> refined;
-            Probe.enter();
+            lab.enter();
             try {
                 refined = MonsterRoomGeometry.passingBoxes(level, origin);
             } finally {
-                Probe.exit();
+                lab.exit();
             }
-            MonsterRoomOracle.begin(Guard.MONSTER_ROOM, level, origin, refined);
+            lab.oracleBegin(Guard.MONSTER_ROOM, level, origin, refined);
             return;
         }
         DriftGuard.discard();
-        Perf.mark();
+        lab.mark();
         BoundingBox broad = MonsterRoomGeometry.maxBox(origin);
+        DriftGuard.Level levelBefore = DriftGuard.MONSTER_ROOM.level();
         boolean cancel;
-        switch (DriftGuard.monsterRoomRefine(Guard.REFINE)) {
-            case HYBRID -> cancel = Guard.shouldCancelHybrid(Guard.MONSTER_ROOM, level, origin, broad, () -> refinedBoxes(level, origin));
-            case PRECHECK -> cancel = Guard.shouldCancel(Guard.MONSTER_ROOM, level, origin, refinedBoxes(level, origin));
+        switch (DriftGuard.monsterRoomRefine(cfg.refine())) {
+            case HYBRID -> cancel = Guard.shouldCancelHybrid(Guard.MONSTER_ROOM, level, origin, broad, () -> sg01spike$refinedBoxes(level, origin));
+            case PRECHECK -> cancel = Guard.shouldCancel(Guard.MONSTER_ROOM, level, origin, sg01spike$refinedBoxes(level, origin));
             case ZONE -> {
                 BoundingBox zone = DriftGuard.zone(level);
                 cancel = Guard.shouldCancel(Guard.MONSTER_ROOM, level, origin, List.of(zone == null ? broad : zone));
             }
             default -> cancel = Guard.shouldCancel(Guard.MONSTER_ROOM, level, origin, List.of(broad));
         }
-        Perf.decisionDone(Perf.MONSTER_DECISION_NS, Perf.MONSTER_DECISION_BYTES);
+        lab.decisionDone(false);
         if (cancel) {
+            if (levelBefore != DriftGuard.Level.VERIFIED) {
+                DriftGuard.MONSTER_ROOM.unverifiedCancels.incrementAndGet();
+                lab.unverifiedCancel(false, level, origin, null);
+            }
             DriftGuard.discard();
             cir.setReturnValue(false);
-            Perf.placeDone(Perf.MONSTER_PLACE_NS, null);
+            lab.placeDone(false, false);
         } else if (!DriftGuard.isArmed() && DriftGuard.MONSTER_ROOM.shouldSample()) {
             // Differential verification of an attempt that is safe even if the model is wrong (no protected piece within the box, or verified).
-            DriftGuard.arm(DriftGuard.MONSTER_ROOM, level, Guard.inflate(broad, 2), refinedBoxes(level, origin), broad);
+            DriftGuard.arm(DriftGuard.MONSTER_ROOM, level, Guard.inflate(broad, 2), sg01spike$refinedBoxes(level, origin), broad);
         }
     }
 
     @Inject(method = "place", at = @At("RETURN"), require = 1)
     private void sg01spike$return(WorldGenLevel level, ChunkGenerator generator, RandomSource random, BlockPos origin, CallbackInfoReturnable<Boolean> cir) {
-        if (Guard.ORACLE_MONSTER_ROOM) {
-            MonsterRoomOracle.end(Guard.MONSTER_ROOM, level, origin);
+        LabHooks lab = LabHooks.get();
+        if (lab.config().oracle()) {
+            lab.oracleEnd(Guard.MONSTER_ROOM, level, origin);
             return;
         }
         DriftGuard.end(level, origin);
-        Perf.placeDone(Perf.MONSTER_PLACE_NS, Perf.MONSTER_VANILLA_NS);
+        lab.placeDone(false, true);
     }
 
-    private static List<BoundingBox> refinedBoxes(WorldGenLevel level, BlockPos origin) {
-        Probe.enter();
+    private static List<BoundingBox> sg01spike$refinedBoxes(WorldGenLevel level, BlockPos origin) {
+        LabHooks lab = LabHooks.get();
+        lab.enter();
         try {
             return MonsterRoomGeometry.passingBoxes(level, origin);
         } finally {
-            Probe.exit();
+            lab.exit();
         }
     }
 }

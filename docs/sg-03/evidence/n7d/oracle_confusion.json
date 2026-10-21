@@ -1,0 +1,17 @@
+{
+ "runs": 8,
+ "sites": 4,
+ "orders": [
+  "rowmajor_rev",
+  "spiral_out"
+ ],
+ "refined_tp": 1,
+ "n7a_tp": 1,
+ "refined_fp": 0,
+ "n7a_fp": 509,
+ "refined_fn": 0,
+ "n7a_fn": 0,
+ "refined_tn": 35027,
+ "n7a_tn": 34518,
+ "attempts": 35028
+}
