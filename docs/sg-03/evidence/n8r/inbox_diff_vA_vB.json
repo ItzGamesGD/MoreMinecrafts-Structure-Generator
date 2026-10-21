@@ -1,0 +1,116 @@
+{
+ "ref": "vA",
+ "other": "vB",
+ "total": 4,
+ "per_site": {
+  "-19,15": 0,
+  "-64,8": 0,
+  "14,-90": 0,
+  "-47,-85": 0,
+  "18,105": 0,
+  "-90,-66": 0,
+  "80,89": 0,
+  "-25,122": 0,
+  "119,-47": 0,
+  "86,-97": 0,
+  "14,136": 0,
+  "73,116": 0,
+  "-130,-47": 0,
+  "139,38": 0,
+  "-131,69": 4,
+  "-58,137": 0,
+  "18,-149": 0,
+  "-65,-136": 0,
+  "42,154": 0,
+  "-84,140": 0,
+  "-122,122": 0,
+  "112,-132": 0,
+  "12,186": 0,
+  "-135,-131": 0
+ },
+ "by_piece": [
+  [
+   "trial_chamber",
+   4
+  ]
+ ],
+ "by_transition": [
+  [
+   [
+    "minecraft:lava",
+    "minecraft:air"
+   ],
+   4
+  ]
+ ],
+ "template_relation": [
+  [
+   [
+    "tmpl_air",
+    "ref_differs",
+    "oth_matches"
+   ],
+   4
+  ]
+ ],
+ "state_only_by_block": [],
+ "critical_ids": [],
+ "samples": [
+  {
+   "trans": [
+    "minecraft:lava",
+    "minecraft:air"
+   ],
+   "ex": [
+    {
+     "site": [
+      -131,
+      69
+     ],
+     "pos": [
+      -2068,
+      -6,
+      1152
+     ],
+     "piece": "trial_chamber",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:lava",
+      "properties": {
+       "level": "8"
+      }
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    },
+    {
+     "site": [
+      -131,
+      69
+     ],
+     "pos": [
+      -2069,
+      -6,
+      1152
+     ],
+     "piece": "trial_chamber",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:lava",
+      "properties": {
+       "level": "8"
+      }
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    }
+   ]
+  }
+ ]
+}

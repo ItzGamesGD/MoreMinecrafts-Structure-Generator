@@ -1,0 +1,38 @@
+{
+ "FW_173_-19_15_rowmajor_rev_r1": {
+  "monster_room_level": "ZONE",
+  "geode_level": "ZONE",
+  "effective_refine": "ZONE",
+  "mr_attempts": 4578,
+  "mr_cancelled": 1008,
+  "geode_cancelled": 3,
+  "write_guard_blocked": 5
+ },
+ "PE_173_-19_15_rowmajor_rev_r1": {
+  "monster_room_level": "PROVISIONAL",
+  "geode_level": "PROVISIONAL",
+  "effective_refine": "ZONE",
+  "mr_attempts": 0,
+  "mr_cancelled": 0,
+  "geode_cancelled": 0,
+  "write_guard_blocked": 1499
+ },
+ "PJ_173_-19_15_rowmajor_rev_r1": {
+  "monster_room_level": "PROVISIONAL",
+  "geode_level": "PROVISIONAL",
+  "effective_refine": "ZONE",
+  "mr_attempts": 0,
+  "mr_cancelled": 0,
+  "geode_cancelled": 0,
+  "write_guard_blocked": 1497
+ },
+ "XM_173_-19_15_rowmajor_rev_r1": {
+  "monster_room_level": "ZONE",
+  "geode_level": "VERIFIED",
+  "effective_refine": "ZONE",
+  "mr_attempts": 4578,
+  "mr_cancelled": 1008,
+  "geode_cancelled": 2,
+  "write_guard_blocked": 5
+ }
+}

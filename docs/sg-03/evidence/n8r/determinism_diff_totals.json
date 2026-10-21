@@ -1,0 +1,46 @@
+{
+ "vA_vB": {
+  "chunks_compared": 2904,
+  "chunks_skipped_not_full": 0,
+  "diff_blocks": 332816,
+  "diff_blocks_in_E": 219322,
+  "diff_blocks_outside_E": 113494,
+  "chunks_differing_outside_E": 379,
+  "diff_blocks_inside_piece_boxes": 4,
+  "sites_with_start_in_both": 24,
+  "sites_without_start": 0
+ },
+ "vA_control": {
+  "chunks_compared": 2904,
+  "chunks_skipped_not_full": 0,
+  "diff_blocks": 308186,
+  "diff_blocks_in_E": 199100,
+  "diff_blocks_outside_E": 109086,
+  "chunks_differing_outside_E": 364,
+  "diff_blocks_inside_piece_boxes": 665,
+  "sites_with_start_in_both": 24,
+  "sites_without_start": 0
+ },
+ "vA_write": {
+  "chunks_compared": 2904,
+  "chunks_skipped_not_full": 0,
+  "diff_blocks": 270069,
+  "diff_blocks_in_E": 185320,
+  "diff_blocks_outside_E": 84749,
+  "chunks_differing_outside_E": 357,
+  "diff_blocks_inside_piece_boxes": 636,
+  "sites_with_start_in_both": 24,
+  "sites_without_start": 0
+ },
+ "control_write": {
+  "chunks_compared": 2904,
+  "chunks_skipped_not_full": 0,
+  "diff_blocks": 336923,
+  "diff_blocks_in_E": 233887,
+  "diff_blocks_outside_E": 103036,
+  "chunks_differing_outside_E": 345,
+  "diff_blocks_inside_piece_boxes": 827,
+  "sites_with_start_in_both": 24,
+  "sites_without_start": 0
+ }
+}

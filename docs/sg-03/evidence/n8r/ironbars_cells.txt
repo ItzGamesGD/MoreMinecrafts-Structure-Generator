@@ -1,0 +1,27 @@
+SITE (188, 52) (2949, -20, 841) guard_room COUNTERCLOCKWISE_90 BB [2949, -24, 833, 2961, -17, 847]
+  expected {"id": "minecraft:iron_bars", "properties": {"east": "false", "north": "true", "south": "true", "waterlogged": "false", "west": "false"}}
+  actual   {"id": "minecraft:iron_bars", "properties": {"east": "false", "waterlogged": "false", "south": "true", "north": "true", "west": "false"}}
+  N (2949, -20, 840) expected=minecraft:deepslate_bricks actual=minecraft:deepslate_bricks 
+  S (2949, -20, 842) expected=minecraft:deepslate_bricks actual=minecraft:deepslate_bricks 
+  W (2948, -20, 841) expected=None actual=minecraft:sulfur   <-- differs
+  E (2950, -20, 841) expected=minecraft:air actual=minecraft:air 
+  U (2949, -19, 841) expected=minecraft:polished_deepslate actual=minecraft:polished_deepslate 
+  D (2949, -21, 841) expected=minecraft:iron_bars actual=minecraft:iron_bars 
+SITE (185, -90) (2901, -35, -1447) guard_room COUNTERCLOCKWISE_90 BB [2901, -38, -1455, 2913, -31, -1441]
+  expected {"id": "minecraft:iron_bars", "properties": {"east": "false", "north": "true", "south": "true", "waterlogged": "false", "west": "false"}}
+  actual   {"id": "minecraft:iron_bars", "properties": {"east": "false", "waterlogged": "false", "south": "true", "north": "true", "west": "true"}}
+  N (2901, -35, -1448) expected=minecraft:deepslate_bricks actual=minecraft:deepslate_bricks 
+  S (2901, -35, -1446) expected=minecraft:deepslate_bricks actual=minecraft:deepslate_bricks 
+  W (2900, -35, -1447) expected=None actual=minecraft:deepslate   <-- differs
+  E (2902, -35, -1447) expected=minecraft:air actual=minecraft:air 
+  U (2901, -34, -1447) expected=minecraft:iron_bars actual=minecraft:iron_bars 
+  D (2901, -36, -1447) expected=minecraft:deepslate_bricks actual=minecraft:deepslate_bricks 
+SITE (522, -285) (8363, -33, -4573) guard_room NONE BB [8353, -37, -4573, 8367, -30, -4561]
+  expected {"id": "minecraft:iron_bars", "properties": {"east": "true", "north": "false", "south": "false", "waterlogged": "false", "west": "true"}}
+  actual   {"id": "minecraft:iron_bars", "properties": {"east": "true", "waterlogged": "false", "south": "false", "north": "true", "west": "true"}}
+  N (8363, -33, -4574) expected=None actual=minecraft:deepslate   <-- differs
+  S (8363, -33, -4572) expected=minecraft:air actual=minecraft:air 
+  W (8362, -33, -4573) expected=minecraft:deepslate_bricks actual=minecraft:deepslate_bricks 
+  E (8364, -33, -4573) expected=minecraft:deepslate_bricks actual=minecraft:deepslate_bricks 
+  U (8363, -32, -4573) expected=minecraft:polished_deepslate actual=minecraft:polished_deepslate 
+  D (8363, -34, -4573) expected=minecraft:iron_bars actual=minecraft:iron_bars 
