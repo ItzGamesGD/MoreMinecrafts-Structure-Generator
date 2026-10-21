@@ -58,7 +58,7 @@ def roof_check(world, m, loc, roofs):
     return {"counts": dict(c), "missing": missing[:20]}
 
 
-def main(out_dir: Path, max_attempts=16):
+def main(out_dir: Path, max_attempts=16, modules=MODULES, name="live-roof-report.json"):
     work = OUT / "_work/s24i-live"
     pack = work / "pack"
     test_pack(pack)
@@ -74,6 +74,8 @@ def main(out_dir: Path, max_attempts=16):
     report = {"datapack_list": srv.cmd("datapack list"), "placements": []}
     try:
         for mi, m in enumerate(MODULES):
+            if m not in modules:
+                continue
             root = load_nbt(D24F / m / "restored.nbt")
             size = [int(v) for v in root["size"]]
             blocks = blocks_of(root)
@@ -106,12 +108,14 @@ def main(out_dir: Path, max_attempts=16):
     finally:
         srv.stop()
     out_dir.mkdir(parents=True, exist_ok=True)
-    (out_dir / "live-roof-report.json").write_text(json.dumps(report, indent=1, default=list))
+    (out_dir / name).write_text(json.dumps(report, indent=1, default=list))
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(D24I / "live"))
     ap.add_argument("--max", type=int, default=16)
+    ap.add_argument("--modules", nargs="*", default=MODULES)
+    ap.add_argument("--report-name", default="live-roof-report.json")
     a = ap.parse_args()
-    main(Path(a.out), a.max)
+    main(Path(a.out), a.max, a.modules, a.report_name)
