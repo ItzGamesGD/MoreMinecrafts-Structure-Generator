@@ -46,6 +46,7 @@ def main() -> None:
         row = {"site": [cx, cz], "generated": bool(start)}
         if not start:
             rows.append(row)
+            world.cache.clear()
             totals["sites_without_start"] += 1
             continue
         res = inspect(world, start, templates)
@@ -81,6 +82,7 @@ def main() -> None:
                             ring["spawner"] += 1
         row.update({"ring_full_chunks": full, "ring": dict(ring), "feature_blocks_inside_pieces": inside_pieces})
         rows.append(row)
+        world.cache.clear()  # N8: the cache holds every parsed chunk; for 270 sites it exceeded 13 GB and the process was OOM-killed
         totals["sites"] += 1
         totals["mismatch"] += row["mismatch"]
         totals["sites_with_mismatch"] += row["mismatch"] > 0
