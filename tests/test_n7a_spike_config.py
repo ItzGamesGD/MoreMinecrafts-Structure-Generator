@@ -8,6 +8,7 @@ from pathlib import Path
 
 SPIKE = Path(__file__).resolve().parents[1] / "mod/sg-worldgen-protection"
 RES = SPIKE / "src/main/resources"
+MOD = SPIKE
 JAVA = SPIKE / "src/main/java/dev/itzgamesgd/sg01spike"
 
 
@@ -24,14 +25,19 @@ class SpikeConfigTests(unittest.TestCase):
             self.assertRegex(src, r'@Inject\(method = "place", at = @At\("HEAD"\), cancellable = true, require = 1\)')
 
     def test_no_global_block_write_interception_or_feature_override(self) -> None:
-        sources = "\n".join(p.read_text() for p in JAVA.rglob("*.java"))
-        # N7-A2: the only WorldGenRegion mixin is the observe-only read probe, which targets hasChunk/getChunk, never setBlock
-        region_mixins = [p for p in JAVA.rglob("*.java") if "WorldGenRegion.class" in p.read_text()]
+        production = "\n".join(p.read_text() for p in JAVA.rglob("*.java"))
+        lab_java = MOD / "src/lab/java"
+        lab = "\n".join(p.read_text() for p in lab_java.rglob("*.java"))
+        # N7-A2: the only WorldGenRegion mixin is the observe-only read probe, which targets hasChunk/getChunk, never setBlock. N7-D: it lives in the lab only.
+        region_mixins = [p for p in list(JAVA.rglob("*.java")) + list(lab_java.rglob("*.java")) if "WorldGenRegion.class" in p.read_text()]
         self.assertEqual([p.name for p in region_mixins], ["WorldGenRegionProbeMixin.java"])
-        self.assertNotIn("@Redirect", sources)
-        self.assertNotIn("@Overwrite", sources)
-        self.assertFalse(re.search(r"\bsetBlock\s*\(", sources))
-        self.assertFalse((RES / "data/minecraft").exists())  # no vanilla datapack override shipped by the spike
+        self.assertIn("src/lab/", str(region_mixins[0]))
+        for sources in (production, lab):
+            self.assertNotIn("@Redirect", sources)
+            self.assertNotIn("@Overwrite", sources)
+        self.assertFalse(re.search(r"\bsetBlock\s*\(", production))  # the production module never writes a block
+        self.assertEqual(len(re.findall(r"\bsetBlock\s*\(", lab)), 2)  # only the lab's write-zone probe (place marker, restore), nowhere else
+        self.assertFalse((RES / "data/minecraft").exists())  # no vanilla datapack override shipped
 
     def test_version_pin_and_server_only(self) -> None:
         mod = json.loads((RES / "fabric.mod.json").read_text())

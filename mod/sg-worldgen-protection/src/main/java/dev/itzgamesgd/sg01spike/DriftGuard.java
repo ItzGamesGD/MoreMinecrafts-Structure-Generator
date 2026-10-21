@@ -131,7 +131,7 @@ public final class DriftGuard {
     /**
      * Startup: fingerprint every dependency class and check that nothing else transformed it. Any unknown or unreadable class, or a loaded class that
      * carries methods or interfaces its file does not (what another mod's Mixin adds), puts the feature straight into ZONE: no assumption is trusted.
-     * Limit: a transformation that adds no member (a Mixin @Overwrite, a bytecode agent) leaves the class shape unchanged and is not detected here.
+     * Limit: a transformation that adds no member (an overwrite-style Mixin, a bytecode agent) leaves the class shape unchanged and is not detected here.
      */
     public static void verifyAtStartup() {
         String broken = LabHooks.get().fingerprintBreak();

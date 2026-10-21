@@ -51,7 +51,7 @@ class DriftGuardTests(unittest.TestCase):
         # GeodeFeature places crystals on pos.relative(direction) of positions inside betweenClosed(origin+min, origin+max)
         self.assertIn("self.minGenOffset() - 1", self.geode)
         self.assertIn("self.maxGenOffset() + 1", self.geode)
-        self.assertRegex(self.geode, r"if \(DriftGuard\.GEODE\.level\(\) == DriftGuard\.Level\.VERIFIED\) \{\s*cancel = Guard\.shouldCancel\(Guard\.GEODE, level, origin, reach\);")
+        self.assertRegex(self.geode, r"if \(levelBefore == DriftGuard\.Level\.VERIFIED\) \{\s*cancel = Guard\.shouldCancel\(Guard\.GEODE, level, origin, reach\);")
         self.assertIn("PROVISIONAL / ZONE", self.geode)
 
     def test_verification_is_differential_and_demotes_on_any_deviation(self) -> None:
@@ -88,7 +88,9 @@ class DriftGuardTests(unittest.TestCase):
     def test_foreign_transformer_detection_is_present_and_fails_to_zone(self) -> None:
         self.assertIn("FOREIGN_TRANSFORM", self.src)
         self.assertIn("foreignMembers(cls, bytes)", self.src)
-        self.assertIn('!m.getName().startsWith("sg01spike$")', self.src)
+        self.assertIn("!ownOrPlatform(m.getName())", self.src)
+        self.assertIn('name.contains("$sg01spike$")', self.src)  # the module's own (possibly wrapped) handlers are not foreign
+        self.assertIn("fabric_api$", self.src)  # Fabric API's own additions are the platform, not foreign
         self.assertIn("adds no member", self.src)
 
 

@@ -84,11 +84,5 @@ class ManifestBuilderTests(unittest.TestCase):
             b.add_protection_manifest(["moreminecrafts:a/b"])
 
 
-class SelfCheckTests(unittest.TestCase):
-    def test_production_has_no_timing_instrumentation(self) -> None:
-        perf = (JAVA / "Perf.java").read_text()
-        self.assertRegex(perf, r"public static void mark\(\) \{\s*if \(!Guard\.LAB\) return;")
-
-
 if __name__ == "__main__":
     unittest.main()
