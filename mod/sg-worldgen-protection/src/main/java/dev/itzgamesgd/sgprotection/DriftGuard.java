@@ -187,7 +187,9 @@ public final class DriftGuard {
      * BlockStateBase.callUseItemOnEvent, it does not touch the placement logic). Anything else, including a lab mod's inert stand-in, is foreign.
      */
     private static boolean ownOrPlatform(String name) {
-        return name.startsWith("sgprotection$") || name.contains("$sgprotection$") || name.startsWith("fabric_api$") || name.matches("handler\\$[^$]*\\$fabric-[^$]*\\$.*");
+        return name.startsWith("sgprotection$") || name.contains("$sgprotection$") || name.startsWith("fabric_api$") || name.matches("handler\\$[^$]*\\$fabric-[^$]*\\$.*")
+                // MixinExtras members generated for this module's own @WrapMethod on StructureStart.placeInChunk
+                || name.matches("(mixinextras\\$bridge\\$)?placeInChunk\\$mixinextras\\$wrapped\\$[0-9$]+");
     }
 
     private static byte[] read(String className) {

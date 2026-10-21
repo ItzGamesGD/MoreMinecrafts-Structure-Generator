@@ -27,9 +27,14 @@ def main() -> None:
     out = Path(sys.argv[1])
     if "--build" in sys.argv:
         subprocess.run(["./gradlew", "--no-daemon", "-q", "jar", "labJar"], cwd=MOD, check=True)
-    jars = sorted((MOD / "build" / "libs").glob("sg-worldgen-protection-*.jar"))
-    prod = next(j for j in jars if not j.name.endswith("-lab.jar"))
-    lab = next(j for j in jars if j.name.endswith("-lab.jar"))
+    # select by the project version, never by sort order (a stale jar of an older version must not be verified)
+    version = re.search(r"^version\s*=\s*'([^']+)'", (MOD / "build.gradle").read_text(), re.M).group(1)
+    libs = MOD / "build" / "libs"
+    prod = libs / f"sg-worldgen-protection-{version}.jar"
+    lab = libs / f"sg-worldgen-protection-{version}-lab.jar"
+    stale = sorted(j.name for j in libs.glob("sg-worldgen-protection-*.jar") if j not in (prod, lab))
+    if stale:
+        print(f"note: ignoring jars of other versions: {stale}", file=sys.stderr)
     checks: list[dict] = []
 
     def check(name: str, ok: bool, detail: str = "") -> None:

@@ -60,6 +60,16 @@ class WriteGuardTests(unittest.TestCase):
         self.assertIn('!"0".equals(env("SG01_WRITE_GUARD"))', (LAB / "LabMod.java").read_text())
         self.assertIn('"write_guard"', (JAVA / "SgProtectionMod.java").read_text().replace('\\"', '"'))
 
+    def test_foreign_check_allows_only_own_mixinextras_members(self) -> None:
+        import re
+        src = (JAVA / "DriftGuard.java").read_text()
+        self.assertIn("placeInChunk\\\\$mixinextras\\\\$wrapped", src)
+        rx = re.compile(r"(mixinextras\$bridge\$)?placeInChunk\$mixinextras\$wrapped\$[0-9$]+")
+        for ok in ("placeInChunk$mixinextras$wrapped$15", "mixinextras$bridge$placeInChunk$mixinextras$wrapped$15$16"):
+            self.assertTrue(rx.fullmatch(ok), ok)
+        for bad in ("mixinextras$bridge$place$mixinextras$wrapped$1", "placeInChunk$evil", "foreignHook"):
+            self.assertFalse(rx.fullmatch(bad), bad)
+
 
 if __name__ == "__main__":
     unittest.main()
