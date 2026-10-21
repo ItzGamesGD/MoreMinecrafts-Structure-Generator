@@ -26,6 +26,7 @@ public final class ProtectionConfig {
         SpikeMod.LOGGER.info("SG_SPIKE protection contract OK: owner={} format={} revision={} required={} extensions={} effective={}", result.owner(),
                 result.format(), result.revision(), result.required(), result.extensions(), result.effective().size());
         result.warnings().forEach(w -> SpikeMod.LOGGER.warn("SG_SPIKE protection contract warning: {}", w));
+        result.rejectedExtensions().forEach(r -> SpikeMod.LOGGER.error("SG_SPIKE protection extension REJECTED (the owner's protection is unaffected, the extension's structures are NOT protected): {}", r));
     }
 
     /** Datapack reload: a rejected reload keeps the last validated set. */

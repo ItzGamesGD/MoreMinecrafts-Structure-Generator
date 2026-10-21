@@ -66,7 +66,7 @@ def main() -> None:
     p.add_argument("--fault", default="none", help="N7-A spike fault injection: none | out_of_range | status_too_high | missing_start")
     p.add_argument("--shadow", action="store_true", help="N7-A3: with --refine hybrid, also check the broad phase against the refined decision (SG01_SHADOW=1)")
     p.add_argument("--production", action="store_true", help="N7-B: launch the module exactly as in production (no SG01_* behaviour settings at all; ENFORCE + hybrid + manifest contract)")
-    p.add_argument("--lab-mr-fingerprint", default="", help="N7-B lab only: accepted MonsterRoomFeature fingerprint override (simulates vanilla drift -> box fallback)")
+    p.add_argument("--lab-fingerprint-break", default="", choices=["", "monster_room", "geode", "both"], help="N7-C lab only: treat the vanilla class fingerprints of this feature as mismatching (simulated vanilla change -> zone guard)")
     p.add_argument("--settle", type=float, default=0.0, help="N7-A4: seconds to wait after each chunk loads (controlled-order comparison)")
     p.add_argument("--freeze", action="store_true", help="N7-A4: gamerule random_tick_speed 0 and tick freeze before loading chunks")
     p.add_argument("--keep-world", action="store_true", help="N7-A3: copy the region files of the run into <out>/regions (for full-world comparison)")
@@ -92,7 +92,7 @@ def main() -> None:
         else:
             env = {"SG01_LAB": "1", "SG01_GUARD_MODE": a.guard_mode, "SG01_SPIKE_REPORT": str(spike_report), "SG01_FAULT": a.fault, "SG01_FEATURES": a.features,
                    "SG01_REFINE": a.refine, "SG01_SHADOW": "1" if a.shadow else "", "SG01_FIXTURE": a.fixture, "SG01_ORACLE": "" if a.oracle == "off" else a.oracle,
-                   "SG01_LAB_MR_FINGERPRINT": a.lab_mr_fingerprint}
+                   "SG01_LAB_FINGERPRINT_BREAK": a.lab_fingerprint_break}
         fabric = dict(launcher_cwd=a.fabric_project.resolve(), start_timeout=600, env=env)
         spike_report.unlink(missing_ok=True)
     server = Server(a.java, a.jar.resolve(), folder, a.seed, a.pack.resolve(), port=a.port, extra_args=extra, launcher=launcher, **fabric,

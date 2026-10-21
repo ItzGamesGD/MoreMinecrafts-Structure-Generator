@@ -21,13 +21,13 @@ sys.path.insert(0, str(HERE))
 from world import Server  # noqa: E402
 
 REPO = HERE.parents[2]
-SPIKE = REPO / "validation" / "fabric-protection-spike"
+SPIKE = REPO / "mod" / "sg-worldgen-protection"
 CAVERN = "moreminecrafts:forgotten_kingdom/central_cavern"
 MANIFEST = Path("data/moreminecrafts/sg_protection/manifest.json")
 EXT_TAG = Path("data/moreminecrafts/tags/worldgen/structure/protected_extensions.json")
 LEGACY_TAG = Path("data/moreminecrafts/tags/worldgen/structure/protected_from_overlays.json")  # N7-A tag: must have no effect in N7-B
 CODES = ("MANIFEST_MISSING", "MANIFEST_CONFLICT", "MANIFEST_INVALID", "FORMAT_UNSUPPORTED", "MANIFEST_STALE", "MANIFEST_EMPTY", "REQUIRED_UNRESOLVED",
-         "OWNER_PACK_INCOMPATIBLE", "GAME_VERSION_MISMATCH", "OWNERSHIP_MISMATCH", "EXTENSION_MALFORMED", "EXTENSION_REPLACE_FORBIDDEN", "EXTENSION_UNRESOLVED")
+         "OWNER_PACK_INCOMPATIBLE", "GAME_VERSION_MISMATCH", "OWNERSHIP_MISMATCH", "EXTENSION_MALFORMED", "EXTENSION_UNRESOLVED")
 
 
 def read_manifest(src: Path) -> dict:
@@ -127,7 +127,11 @@ def reload_extension_added(srv, run_dir: Path) -> dict:
 
 
 def reload_extension_replace(srv, run_dir: Path) -> dict:
-    return {"command_reply": enable(srv, run_dir, "zz_extrep", {str(EXT_TAG): json.dumps({"replace": True, "values": []})})}
+    return {"command_reply": enable(srv, run_dir, "zz_extrep", {str(EXT_TAG): json.dumps({"replace": True, "values": ["minecraft:stronghold"]})})}
+
+
+def reload_extension_malformed(srv, run_dir: Path) -> dict:
+    return {"command_reply": enable(srv, run_dir, "zz_extbad", {str(EXT_TAG): "{oops"})}
 
 
 def reload_extension_removed(srv, run_dir: Path) -> dict:
@@ -141,6 +145,14 @@ def contract_is(**want):
     def check(r: dict) -> bool:
         c = r.get("contract") or {}
         return all(c.get(k) == v for k, v in want.items())
+    return check
+
+
+def rejected(n, code=None):
+    """n extension files were dropped as a whole (N7-C policy), optionally with this code."""
+    def check(r: dict) -> bool:
+        rej = (r.get("contract") or {}).get("rejected_extensions", [])
+        return len(rej) == n and all(code in x for x in rej) if code else len(rej) == n
     return check
 
 
@@ -181,10 +193,14 @@ def main() -> None:
          lambda r: warned("EXTENSION_OPTIONAL_UNRESOLVED")(r) and contract_is(extensions=0)(r)),
         # A required (default) entry for a structure that is not installed is refused by vanilla's own datapack loader before the module runs: loud, not silent.
         ("extension_required_unresolved", ok, [ext("zz_extbad", ["thirdparty:not_installed"])], "failed", "VANILLA_TAG_LOAD_FAILURE", None, None),
-        ("extension_replace_forbidden", ok, [ext("zz_extrep", [], replace=True)], "failed", "EXTENSION_REPLACE_FORBIDDEN", None, None),
-        ("extension_malformed_json", ok, [extra_pack(w / "zz_extjson", {str(EXT_TAG): "{oops"})], "failed", "EXTENSION_MALFORMED", None, None),
-        ("extension_bad_entry", ok, [ext("zz_extnum", [42])], "failed", "EXTENSION_MALFORMED", None, None),
-        ("extension_tag_reference", ok, [ext("zz_exttag", ["#minecraft:village"])], "failed", "EXTENSION_MALFORMED", None, None),
+        # N7-C policy: an extension file that cannot be understood is dropped as a whole, loudly; the owner's protection is untouched.
+        ("extension_replace_ignored", ok, [ext("zz_extrep", ["minecraft:stronghold"], replace=True)], "started", None, None,
+         lambda r: warned("EXTENSION_REPLACE_IGNORED")(r) and contract_is(required=1, extensions=1)(r)),
+        ("extension_malformed_json", ok, [extra_pack(w / "zz_extjson", {str(EXT_TAG): "{oops"})], "started", "EXTENSION_MALFORMED", None, lambda r: rejected(1, "EXTENSION_MALFORMED")(r) and contract_is(required=1, extensions=0)(r)),
+        ("extension_bad_entry", ok, [ext("zz_extnum", ["minecraft:stronghold", 42])], "started", "EXTENSION_MALFORMED", None, lambda r: rejected(1, "EXTENSION_MALFORMED")(r) and contract_is(required=1, extensions=0)(r)),
+        ("extension_tag_reference", ok, [ext("zz_exttag", ["#minecraft:village"])], "started", "EXTENSION_MALFORMED", None, lambda r: rejected(1, "EXTENSION_MALFORMED")(r) and contract_is(required=1, extensions=0)(r)),
+        ("extension_malformed_isolated", ok, [extra_pack(w / "zz_extjson2", {str(EXT_TAG): "{oops"}), ext("zz_extgood", ["minecraft:stronghold"])], "started", "EXTENSION_MALFORMED", None,
+         lambda r: rejected(1, "EXTENSION_MALFORMED")(r) and contract_is(required=1, extensions=1)(r)),
         ("extension_duplicates", ok, [ext("zz_ext1", ["minecraft:stronghold", CAVERN]), ext("zz_ext2", ["minecraft:stronghold"])], "started", None, None,
          lambda r: warned("EXTENSION_DUPLICATE")(r) and contract_is(extensions=1)(r)),
         # The N7-A tag is no longer read: replacing it neither helps nor hurts.
@@ -196,7 +212,10 @@ def main() -> None:
         ("reload_stale", make_pack(src, w / "reloadstale"), [], "started", None, reload_stale, lambda r: (r["contract"] or {}).get("reload_rejections", 0) >= 1 and contract_is(required=1)(r)),
         ("reload_manifest_removed", make_pack(src, w / "reloadrm"), [], "started", None, reload_manifest_removed,
          lambda r: (r["contract"] or {}).get("reload_rejections", 0) >= 1 and contract_is(required=1)(r)),
-        ("reload_extension_replace", ok, [], "started", None, reload_extension_replace, lambda r: (r["contract"] or {}).get("reload_rejections", 0) >= 1 and contract_is(extensions=0)(r)),
+        ("reload_extension_replace", ok, [], "started", None, reload_extension_replace,
+         lambda r: (r["contract"] or {}).get("reload_rejections", 0) == 0 and warned("EXTENSION_REPLACE_IGNORED")(r) and contract_is(extensions=1)(r)),
+        ("reload_extension_malformed", ok, [], "started", "EXTENSION_MALFORMED", reload_extension_malformed,
+         lambda r: (r["contract"] or {}).get("reload_rejections", 0) == 0 and rejected(1, "EXTENSION_MALFORMED")(r) and contract_is(required=1, extensions=0)(r)),
         ("reload_extension_added", ok, [], "started", None, reload_extension_added, lambda r: (r["contract"] or {}).get("reload_rejections", 0) == 0 and contract_is(extensions=1)(r)),
         ("reload_extension_removed", ok, [ext("zz_ext", ["minecraft:stronghold"])], "started", None, reload_extension_removed,
          lambda r: (r["contract"] or {}).get("reload_rejections", 0) == 0 and contract_is(extensions=0, required=1)(r)),

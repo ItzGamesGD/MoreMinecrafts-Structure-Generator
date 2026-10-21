@@ -6,10 +6,10 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SPIKE = ROOT / "validation/fabric-protection-spike/src/main/java/dev/itzgamesgd/sg01spike"
+SPIKE = ROOT / "mod/sg-worldgen-protection/src/main/java/dev/itzgamesgd/sg01spike"
 LAB = ROOT / "validation/minecraft-visual/sg03-natural"
 CODES = ["MANIFEST_MISSING", "MANIFEST_CONFLICT", "MANIFEST_INVALID", "FORMAT_UNSUPPORTED", "MANIFEST_STALE", "MANIFEST_EMPTY", "REQUIRED_UNRESOLVED",
-         "OWNER_PACK_INCOMPATIBLE", "GAME_VERSION_MISMATCH", "OWNERSHIP_MISMATCH", "EXTENSION_MALFORMED", "EXTENSION_REPLACE_FORBIDDEN", "EXTENSION_UNRESOLVED"]
+         "OWNER_PACK_INCOMPATIBLE", "GAME_VERSION_MISMATCH", "OWNERSHIP_MISMATCH", "EXTENSION_MALFORMED", "EXTENSION_UNRESOLVED"]
 
 
 class ProtectionContractTests(unittest.TestCase):
@@ -35,7 +35,7 @@ class ProtectionContractTests(unittest.TestCase):
         self.assertNotIn("getSelectedPacks", self.src)
 
     def test_extensions_are_additive_only(self) -> None:
-        self.assertIn("EXTENSION_REPLACE_FORBIDDEN", self.src)  # N7-B: a replace is rejected loudly, never applied and never silently ignored
+        self.assertIn("EXTENSION_REPLACE_IGNORED", self.src)  # N7-C: replace is ignored with a warning and the entries are still added
         self.assertIn("effective.add(", self.src)
         self.assertNotIn("effective.remove", self.src)
         self.assertNotIn("effective.retainAll", self.src)

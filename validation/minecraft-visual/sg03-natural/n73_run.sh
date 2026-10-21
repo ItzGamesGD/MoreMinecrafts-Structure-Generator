@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # N7-A3 runner: one configuration, one site, one order, one repeat. Experimental; see docs/sg-03/n7a3-performance-compatibility.md.
 # usage: n73_run.sh OUT_DIR CONFIG SEED CX CZ ORDER REPEAT [KEEP_WORLD=0|1] [BG_THREADS]
-# CONFIG: R (N7-B injected precheck drift) | P (N7-B production configuration) | F (N7-B simulated drift, box fallback) | V (vanilla jar, no module) | A (module, observe, no protection) | B (N7-A reach, enforce) |
+# CONFIG: RG (N7-C injected geode drift) | R (injected monster-room precheck drift) | P (N7-B production configuration) | F (N7-B simulated drift, box fallback) | V (vanilla jar, no module) | A (module, observe, no protection) | B (N7-A reach, enforce) |
 #         C (N7-A2 refined precheck, enforce) | H (hybrid broad-phase, enforce) | HS (hybrid + shadow check)
 # RADIUS (default 5) sets the loaded area; SG01_EXTRA_MODS (optional) adds mod jars for compatibility runs.
 # Requires SERVER_JAR (official 26.3 server.jar), SG_PACK (built SG-03 datapack folder), JAVA_HOME (JDK 25) on PATH.
@@ -17,7 +17,7 @@ ARGS=(--jar "$SERVER_JAR" --pack "$SG_PACK" --out "$OUT/$TAG" --seed "$SEED" --c
 if [ "$CONFIG" = V ]; then
   [ -n "$BG" ] && ARGS+=(--threads "$BG")
 else
-  ARGS+=(--fabric-project "$REPO/validation/fabric-protection-spike")
+  ARGS+=(--fabric-project "$REPO/mod/sg-worldgen-protection")
   case "$CONFIG" in
     A)  ARGS+=(--guard-mode observe --features none --refine off) ;;
     B)  ARGS+=(--guard-mode enforce --features both --refine off) ;;
@@ -26,7 +26,8 @@ else
     HS) ARGS+=(--guard-mode enforce --features both --refine hybrid --shadow) ;;
     P)  ARGS+=(--production) ;;          # N7-B: production configuration, no lab settings
     R)  ARGS+=(--guard-mode enforce --features both --refine hybrid --fault precheck_blind) ;;  # N7-B: injected drift the startup check cannot see -> runtime watch
-    F)  ARGS+=(--guard-mode enforce --features both --refine hybrid --lab-mr-fingerprint 0000 ${FAULT_ARGS:-}) ;;  # N7-B: simulated vanilla drift -> fallback
+    F)  ARGS+=(--guard-mode enforce --features both --refine hybrid --lab-fingerprint-break ${BREAK:-both}) ;;  # N7-C: simulated vanilla change -> zone guard
+    RG) ARGS+=(--guard-mode enforce --features both --refine hybrid --fault geode_shrunk) ;;  # N7-C: injected geode bound drift
     *) echo "unknown config $CONFIG" >&2; exit 2 ;;
   esac
   [ -n "$BG" ] && export SG01_BG_THREADS="$BG"

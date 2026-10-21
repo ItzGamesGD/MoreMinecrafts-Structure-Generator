@@ -32,7 +32,7 @@ from run_natural import STRUCT, inspect, wait_loaded  # noqa: E402
 from world import Chunk, Server, World, read_chunk  # noqa: E402
 
 REPO = HERE.parents[2]
-SPIKE = REPO / "validation" / "fabric-protection-spike"
+SPIKE = REPO / "mod" / "sg-worldgen-protection"
 SEED = 173
 DAMAGE_ORDER = "colmajor_rev"
 
