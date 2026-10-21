@@ -37,7 +37,7 @@ class SourceSeparationTests(unittest.TestCase):
 
     def test_lab_hooks_are_the_only_seam_and_default_to_the_production_configuration(self) -> None:
         hooks = (MAIN / "java/dev/itzgamesgd/sgprotection/LabHooks.java").read_text()
-        self.assertIn("new Config(Guard.Mode.ENFORCE, Guard.Refine.OFF, \"both\", Guard.Fixture.NONE, Guard.Fault.NONE, false, false)", hooks)
+        self.assertIn("new Config(Guard.Mode.ENFORCE, Guard.Refine.OFF, \"none\", Guard.Fixture.NONE, Guard.Fault.NONE, false, false, true)", hooks)
         self.assertIn("static volatile LabHooks current = NONE;", hooks)
         mod = (MAIN / "java/dev/itzgamesgd/sgprotection/SgProtectionMod.java").read_text()
         self.assertIn('LAB_ENTRYPOINT = "sg_worldgen_protection:lab"', mod)
@@ -51,7 +51,7 @@ class SourceSeparationTests(unittest.TestCase):
         self.assertEqual(mod["entrypoints"]["main"], ["dev.itzgamesgd.sgprotection.SgProtectionMod"])
         self.assertNotIn("lab", json.dumps(mod).lower())
         cfg = json.loads((MAIN / "resources/sgprotection.mixins.json").read_text())
-        self.assertEqual(sorted(cfg["mixins"]), ["GeodeFeatureMixin", "MonsterRoomFeatureMixin"])
+        self.assertEqual(sorted(cfg["mixins"]), ["GeodeFeatureMixin", "MonsterRoomFeatureMixin", "StructureStartWriteGuardMixin", "WorldGenRegionWriteGuardMixin"])
         self.assertNotIn("plugin", cfg)
         self.assertTrue(cfg["required"])
         self.assertEqual(cfg["injectors"]["defaultRequire"], 1)

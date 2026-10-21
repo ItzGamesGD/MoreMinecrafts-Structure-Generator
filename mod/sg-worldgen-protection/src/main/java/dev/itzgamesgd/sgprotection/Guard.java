@@ -53,7 +53,19 @@ public final class Guard {
     }
 
     private static boolean enabled(String feature) {
-        return cfg().features().equals("both") || cfg().features().equals(feature);
+        return hookActive(feature);
+    }
+
+    /**
+     * The feature-level hook for {@code feature} is active: selected by the lab, or forced because the drift guard demoted it to ZONE (vanilla classes
+     * the write-level guard depends on did not match the validated ones, so the second, independent layer is switched on). Otherwise the write-level guard
+     * alone protects the pieces and the feature runs untouched.
+     */
+    public static boolean hookActive(String feature) {
+        String f = cfg().features();
+        if (f.equals("both") || f.equals(feature)) return true;
+        DriftGuard.State state = feature.equals("geode") ? DriftGuard.GEODE : DriftGuard.MONSTER_ROOM;
+        return state.level() == DriftGuard.Level.ZONE;
     }
 
     /** @return true if the feature instance must be cancelled (always false in OBSERVE mode, where the decision is only recorded). */

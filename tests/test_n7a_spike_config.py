@@ -28,10 +28,14 @@ class SpikeConfigTests(unittest.TestCase):
         production = "\n".join(p.read_text() for p in JAVA.rglob("*.java"))
         lab_java = MOD / "src/lab/java"
         lab = "\n".join(p.read_text() for p in lab_java.rglob("*.java"))
-        # N7-A2: the only WorldGenRegion mixin is the observe-only read probe, which targets hasChunk/getChunk, never setBlock. N7-D: it lives in the lab only.
-        region_mixins = [p for p in list(JAVA.rglob("*.java")) + list(lab_java.rglob("*.java")) if "WorldGenRegion.class" in p.read_text()]
-        self.assertEqual([p.name for p in region_mixins], ["WorldGenRegionProbeMixin.java"])
-        self.assertIn("src/lab/", str(region_mixins[0]))
+        # Region mixins: the lab's observe-only read probe, and (N8-R) the production write guard, which may only REFUSE a write into a protected piece box.
+        region_mixins = sorted(p.name for p in list(JAVA.rglob("*.java")) + list(lab_java.rglob("*.java")) if "WorldGenRegion.class" in p.read_text())
+        self.assertEqual(region_mixins, ["WorldGenRegionProbeMixin.java", "WorldGenRegionWriteGuardMixin.java"])
+        wg = (JAVA / "mixin/WorldGenRegionWriteGuardMixin.java").read_text()
+        self.assertIn('@Inject(method = "setBlock", at = @At("HEAD"), cancellable = true, require = 1)', wg)
+        self.assertEqual(wg.count("setReturnValue"), 1)
+        self.assertIn("setReturnValue(false)", wg)  # a refused write only; the mixin never returns true and never writes a block
+        self.assertIn("WriteGuard.blocked(boxes, pos)", wg)
         for sources in (production, lab):
             self.assertNotIn("@Redirect", sources)
             self.assertNotIn("@Overwrite", sources)

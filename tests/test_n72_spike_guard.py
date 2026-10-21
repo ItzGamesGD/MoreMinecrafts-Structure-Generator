@@ -23,7 +23,7 @@ class SpikeN72Tests(unittest.TestCase):
         for cfg in (prod, lab):
             self.assertTrue(cfg["required"])
             self.assertEqual(cfg["injectors"]["defaultRequire"], 1)
-        self.assertEqual(sorted(prod["mixins"]), ["GeodeFeatureMixin", "MonsterRoomFeatureMixin"])
+        self.assertEqual(sorted(prod["mixins"]), ["GeodeFeatureMixin", "MonsterRoomFeatureMixin", "StructureStartWriteGuardMixin", "WorldGenRegionWriteGuardMixin"])
         self.assertEqual(sorted(lab["mixins"]), sorted([*PROBES, "ForeignMonsterRoomMixin", "ForeignGeodeMixin"]))
         for name in PROBES:
             self.assertTrue((LABMIXIN / f"{name}.java").exists(), name)
@@ -41,7 +41,7 @@ class SpikeN72Tests(unittest.TestCase):
         guard = (JAVA / "Guard.java").read_text()
         hooks = (JAVA / "LabHooks.java").read_text()
         # N7-B/N7-C asserted the defaults on Guard; since N7-D they are LabHooks.DEFAULT and the guard has no environment access at all
-        self.assertIn("new Config(Guard.Mode.ENFORCE, Guard.Refine.OFF, \"both\", Guard.Fixture.NONE, Guard.Fault.NONE, false, false)", hooks)
+        self.assertIn("new Config(Guard.Mode.ENFORCE, Guard.Refine.OFF, \"none\", Guard.Fixture.NONE, Guard.Fault.NONE, false, false, true)", hooks)
         self.assertIn("return LabHooks.get().config();", guard)
         self.assertNotIn("getenv", guard)
         self.assertNotIn("getProperty", guard)

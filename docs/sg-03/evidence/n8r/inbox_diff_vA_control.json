@@ -1,0 +1,3224 @@
+{
+ "ref": "vA",
+ "other": "control",
+ "total": 665,
+ "per_site": {
+  "-19,15": 0,
+  "-64,8": 0,
+  "14,-90": 0,
+  "-47,-85": 0,
+  "18,105": 0,
+  "-90,-66": 0,
+  "80,89": 0,
+  "-25,122": 0,
+  "119,-47": 6,
+  "86,-97": 0,
+  "14,136": 0,
+  "73,116": 237,
+  "-130,-47": 0,
+  "139,38": 0,
+  "-131,69": 0,
+  "-58,137": 0,
+  "18,-149": 0,
+  "-65,-136": 0,
+  "42,154": 0,
+  "-84,140": 0,
+  "-122,122": 422,
+  "112,-132": 0,
+  "12,186": 0,
+  "-135,-131": 0
+ },
+ "by_piece": [
+  [
+   "grand_hall",
+   645
+  ],
+  [
+   "barracks_hall",
+   13
+  ],
+  [
+   "tunnel_west",
+   6
+  ],
+  [
+   "residence_ruin",
+   1
+  ]
+ ],
+ "by_transition": [
+  [
+   [
+    "minecraft:air",
+    "minecraft:calcite"
+   ],
+   88
+  ],
+  [
+   [
+    "minecraft:air",
+    "minecraft:smooth_basalt"
+   ],
+   71
+  ],
+  [
+   [
+    "minecraft:air",
+    "minecraft:amethyst_block"
+   ],
+   67
+  ],
+  [
+   [
+    "minecraft:smooth_basalt",
+    "minecraft:air"
+   ],
+   56
+  ],
+  [
+   [
+    "minecraft:calcite",
+    "minecraft:air"
+   ],
+   55
+  ],
+  [
+   [
+    "minecraft:amethyst_block",
+    "minecraft:air"
+   ],
+   28
+  ],
+  [
+   [
+    "minecraft:deepslate_bricks",
+    "minecraft:calcite"
+   ],
+   25
+  ],
+  [
+   [
+    "minecraft:deepslate_tiles",
+    "minecraft:air"
+   ],
+   24
+  ],
+  [
+   [
+    "minecraft:deepslate_bricks",
+    "minecraft:smooth_basalt"
+   ],
+   21
+  ],
+  [
+   [
+    "minecraft:smooth_basalt",
+    "minecraft:deepslate_bricks"
+   ],
+   20
+  ],
+  [
+   [
+    "minecraft:deepslate_tiles",
+    "minecraft:amethyst_block"
+   ],
+   18
+  ],
+  [
+   [
+    "minecraft:calcite",
+    "minecraft:deepslate_bricks"
+   ],
+   17
+  ],
+  [
+   [
+    "minecraft:deepslate_bricks",
+    "minecraft:amethyst_block"
+   ],
+   14
+  ],
+  [
+   [
+    "minecraft:deepslate_tiles",
+    "minecraft:smooth_basalt"
+   ],
+   13
+  ],
+  [
+   [
+    "minecraft:smooth_basalt",
+    "minecraft:polished_deepslate"
+   ],
+   12
+  ],
+  [
+   [
+    "minecraft:calcite",
+    "minecraft:polished_deepslate"
+   ],
+   12
+  ],
+  [
+   [
+    "minecraft:deepslate_bricks",
+    "minecraft:air"
+   ],
+   9
+  ],
+  [
+   [
+    "minecraft:tuff_bricks",
+    "minecraft:air"
+   ],
+   9
+  ],
+  [
+   [
+    "minecraft:smooth_basalt",
+    "minecraft:deepslate_tiles"
+   ],
+   8
+  ],
+  [
+   [
+    "minecraft:deepslate_tiles",
+    "minecraft:calcite"
+   ],
+   8
+  ],
+  [
+   [
+    "minecraft:calcite",
+    "minecraft:deepslate_tiles"
+   ],
+   6
+  ],
+  [
+   [
+    "minecraft:air",
+    "minecraft:sculk_vein"
+   ],
+   5
+  ],
+  [
+   [
+    "minecraft:cracked_deepslate_bricks",
+    "minecraft:air"
+   ],
+   5
+  ],
+  [
+   [
+    "minecraft:tuff_bricks",
+    "minecraft:smooth_basalt"
+   ],
+   5
+  ],
+  [
+   [
+    "minecraft:cracked_deepslate_bricks",
+    "minecraft:calcite"
+   ],
+   5
+  ]
+ ],
+ "template_relation": [
+  [
+   [
+    "tmpl_air",
+    "ref_matches",
+    "oth_differs"
+   ],
+   235
+  ],
+  [
+   [
+    "tmpl_solid",
+    "ref_matches",
+    "oth_differs"
+   ],
+   193
+  ],
+  [
+   [
+    "tmpl_air",
+    "ref_differs",
+    "oth_matches"
+   ],
+   141
+  ],
+  [
+   [
+    "tmpl_solid",
+    "ref_differs",
+    "oth_matches"
+   ],
+   96
+  ]
+ ],
+ "state_only_by_block": [],
+ "critical_ids": [
+  [
+   [
+    "iron_bars",
+    "id_change",
+    "other_damaged"
+   ],
+   4
+  ],
+  [
+   [
+    "stairs",
+    "id_change",
+    "vanilla_damaged"
+   ],
+   3
+  ]
+ ],
+ "samples": [
+  {
+   "trans": [
+    "PATH",
+    "tunnel_west",
+    "other_damaged"
+   ],
+   "ex": [
+    {
+     "site": [
+      119,
+      -47
+     ],
+     "pos": [
+      1880,
+      -38,
+      -767
+     ],
+     "tmpl": "minecraft:air",
+     "ref": "minecraft:air",
+     "oth": "minecraft:sculk_vein"
+    },
+    {
+     "site": [
+      119,
+      -47
+     ],
+     "pos": [
+      1880,
+      -37,
+      -766
+     ],
+     "tmpl": "minecraft:air",
+     "ref": "minecraft:air",
+     "oth": "minecraft:sculk_vein"
+    },
+    {
+     "site": [
+      119,
+      -47
+     ],
+     "pos": [
+      1879,
+      -37,
+      -767
+     ],
+     "tmpl": "minecraft:deepslate_bricks",
+     "ref": "minecraft:deepslate_bricks",
+     "oth": "minecraft:sculk"
+    },
+    {
+     "site": [
+      119,
+      -47
+     ],
+     "pos": [
+      1880,
+      -36,
+      -767
+     ],
+     "tmpl": "minecraft:air",
+     "ref": "minecraft:air",
+     "oth": "minecraft:sculk_vein"
+    },
+    {
+     "site": [
+      119,
+      -47
+     ],
+     "pos": [
+      1881,
+      -35,
+      -767
+     ],
+     "tmpl": "minecraft:air",
+     "ref": "minecraft:air",
+     "oth": "minecraft:sculk_vein"
+    },
+    {
+     "site": [
+      119,
+      -47
+     ],
+     "pos": [
+      1880,
+      -35,
+      -767
+     ],
+     "tmpl": "minecraft:air",
+     "ref": "minecraft:air",
+     "oth": "minecraft:sculk_vein"
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:air",
+    "minecraft:sculk_vein"
+   ],
+   "ex": [
+    {
+     "site": [
+      119,
+      -47
+     ],
+     "pos": [
+      1880,
+      -38,
+      -767
+     ],
+     "piece": "tunnel_west",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:air"
+     },
+     "oth": {
+      "id": "minecraft:sculk_vein",
+      "properties": {
+       "east": "false",
+       "waterlogged": "false",
+       "south": "false",
+       "north": "false",
+       "west": "true",
+       "up": "false",
+       "down": "true"
+      }
+     }
+    },
+    {
+     "site": [
+      119,
+      -47
+     ],
+     "pos": [
+      1880,
+      -37,
+      -766
+     ],
+     "piece": "tunnel_west",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:air"
+     },
+     "oth": {
+      "id": "minecraft:sculk_vein",
+      "properties": {
+       "east": "false",
+       "waterlogged": "false",
+       "south": "false",
+       "north": "false",
+       "west": "true",
+       "up": "false",
+       "down": "false"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:deepslate_bricks",
+    "minecraft:sculk"
+   ],
+   "ex": [
+    {
+     "site": [
+      119,
+      -47
+     ],
+     "pos": [
+      1879,
+      -37,
+      -767
+     ],
+     "piece": "tunnel_west",
+     "tmpl": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:sculk"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:smooth_basalt",
+    "minecraft:deepslate_tiles"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1196,
+      -22,
+      1788
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:smooth_basalt"
+     },
+     "oth": {
+      "id": "minecraft:deepslate_tiles"
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1194,
+      -22,
+      1789
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:smooth_basalt"
+     },
+     "oth": {
+      "id": "minecraft:deepslate_tiles"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:smooth_basalt",
+    "minecraft:polished_deepslate"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1193,
+      -22,
+      1789
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:polished_deepslate"
+     },
+     "ref": {
+      "id": "minecraft:smooth_basalt"
+     },
+     "oth": {
+      "id": "minecraft:polished_deepslate"
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1199,
+      -21,
+      1789
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:polished_deepslate"
+     },
+     "ref": {
+      "id": "minecraft:smooth_basalt"
+     },
+     "oth": {
+      "id": "minecraft:polished_deepslate"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:smooth_basalt",
+    "minecraft:tuff_bricks"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1198,
+      -22,
+      1789
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:smooth_basalt"
+     },
+     "oth": {
+      "id": "minecraft:tuff_bricks"
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1192,
+      -19,
+      1790
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:smooth_basalt"
+     },
+     "oth": {
+      "id": "minecraft:tuff_bricks"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:calcite",
+    "minecraft:deepslate_tiles"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1194,
+      -22,
+      1790
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:calcite"
+     },
+     "oth": {
+      "id": "minecraft:deepslate_tiles"
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1195,
+      -22,
+      1790
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:calcite"
+     },
+     "oth": {
+      "id": "minecraft:deepslate_tiles"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:calcite",
+    "minecraft:moss_block"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1196,
+      -22,
+      1790
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:moss_block"
+     },
+     "ref": {
+      "id": "minecraft:calcite"
+     },
+     "oth": {
+      "id": "minecraft:moss_block"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:calcite",
+    "minecraft:cracked_deepslate_tiles"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1199,
+      -22,
+      1790
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:calcite"
+     },
+     "oth": {
+      "id": "minecraft:cracked_deepslate_tiles"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:smooth_basalt",
+    "minecraft:cracked_deepslate_tiles"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1192,
+      -22,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:smooth_basalt"
+     },
+     "oth": {
+      "id": "minecraft:cracked_deepslate_tiles"
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1199,
+      -25,
+      1791
+     ],
+     "piece": "residence_ruin",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:smooth_basalt"
+     },
+     "oth": {
+      "id": "minecraft:cracked_deepslate_tiles"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:calcite",
+    "minecraft:polished_deepslate"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1194,
+      -22,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:polished_deepslate"
+     },
+     "ref": {
+      "id": "minecraft:calcite"
+     },
+     "oth": {
+      "id": "minecraft:polished_deepslate"
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1199,
+      -22,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:polished_deepslate"
+     },
+     "ref": {
+      "id": "minecraft:calcite"
+     },
+     "oth": {
+      "id": "minecraft:polished_deepslate"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:amethyst_block",
+    "minecraft:deepslate_tiles"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1196,
+      -22,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:amethyst_block"
+     },
+     "oth": {
+      "id": "minecraft:deepslate_tiles"
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1197,
+      -22,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:amethyst_block"
+     },
+     "oth": {
+      "id": "minecraft:deepslate_tiles"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:amethyst_block",
+    "minecraft:polished_deepslate"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1198,
+      -22,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:polished_deepslate"
+     },
+     "ref": {
+      "id": "minecraft:amethyst_block"
+     },
+     "oth": {
+      "id": "minecraft:polished_deepslate"
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1196,
+      -16,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:polished_deepslate"
+     },
+     "ref": {
+      "id": "minecraft:amethyst_block"
+     },
+     "oth": {
+      "id": "minecraft:polished_deepslate"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:smooth_basalt",
+    "minecraft:air"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1194,
+      -21,
+      1788
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:smooth_basalt"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1195,
+      -21,
+      1788
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:smooth_basalt"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:smooth_basalt",
+    "minecraft:deepslate_bricks"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1192,
+      -21,
+      1789
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:smooth_basalt"
+     },
+     "oth": {
+      "id": "minecraft:deepslate_bricks"
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1192,
+      -21,
+      1790
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:smooth_basalt"
+     },
+     "oth": {
+      "id": "minecraft:deepslate_bricks"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:calcite",
+    "minecraft:air"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1196,
+      -21,
+      1789
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:calcite"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1197,
+      -21,
+      1789
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:calcite"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:calcite",
+    "minecraft:tuff_bricks"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1192,
+      -21,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:calcite"
+     },
+     "oth": {
+      "id": "minecraft:tuff_bricks"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "PATH",
+    "grand_hall",
+    "vanilla_damaged"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1195,
+      -21,
+      1791
+     ],
+     "tmpl": "minecraft:dark_oak_stairs",
+     "ref": "minecraft:amethyst_block",
+     "oth": "minecraft:dark_oak_stairs"
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1198,
+      -14,
+      1791
+     ],
+     "tmpl": "minecraft:deepslate_brick_stairs",
+     "ref": "minecraft:smooth_basalt",
+     "oth": "minecraft:deepslate_brick_stairs"
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1199,
+      -14,
+      1791
+     ],
+     "tmpl": "minecraft:deepslate_brick_stairs",
+     "ref": "minecraft:smooth_basalt",
+     "oth": "minecraft:deepslate_brick_stairs"
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:amethyst_block",
+    "minecraft:dark_oak_stairs"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1195,
+      -21,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:dark_oak_stairs",
+      "properties": {
+       "facing": "west",
+       "half": "bottom",
+       "shape": "straight",
+       "waterlogged": "false"
+      }
+     },
+     "ref": {
+      "id": "minecraft:amethyst_block"
+     },
+     "oth": {
+      "id": "minecraft:dark_oak_stairs",
+      "properties": {
+       "waterlogged": "false",
+       "half": "bottom",
+       "shape": "straight",
+       "facing": "west"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:amethyst_block",
+    "minecraft:air"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1196,
+      -21,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:amethyst_block"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1197,
+      -21,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:amethyst_block"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:calcite",
+    "minecraft:deepslate_bricks"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1198,
+      -20,
+      1789
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:calcite"
+     },
+     "oth": {
+      "id": "minecraft:deepslate_bricks"
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1198,
+      -20,
+      1790
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:calcite"
+     },
+     "oth": {
+      "id": "minecraft:deepslate_bricks"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:calcite",
+    "minecraft:cracked_deepslate_bricks"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1192,
+      -19,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:calcite"
+     },
+     "oth": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1192,
+      -18,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:calcite"
+     },
+     "oth": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:budding_amethyst",
+    "minecraft:air"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1195,
+      -18,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:budding_amethyst"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1195,
+      -17,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:budding_amethyst"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:smooth_basalt",
+    "minecraft:deepslate_brick_wall"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1197,
+      -15,
+      1789
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_brick_wall",
+      "properties": {
+       "east": "low",
+       "north": "low",
+       "south": "low",
+       "up": "true",
+       "waterlogged": "false",
+       "west": "none"
+      }
+     },
+     "ref": {
+      "id": "minecraft:smooth_basalt"
+     },
+     "oth": {
+      "id": "minecraft:deepslate_brick_wall",
+      "properties": {
+       "east": "low",
+       "waterlogged": "false",
+       "south": "low",
+       "north": "low",
+       "west": "none",
+       "up": "true"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:calcite",
+    "minecraft:deepslate_brick_wall"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1197,
+      -15,
+      1790
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_brick_wall",
+      "properties": {
+       "east": "low",
+       "north": "low",
+       "south": "low",
+       "up": "true",
+       "waterlogged": "false",
+       "west": "none"
+      }
+     },
+     "ref": {
+      "id": "minecraft:calcite"
+     },
+     "oth": {
+      "id": "minecraft:deepslate_brick_wall",
+      "properties": {
+       "east": "low",
+       "waterlogged": "false",
+       "south": "low",
+       "north": "low",
+       "west": "none",
+       "up": "true"
+      }
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1197,
+      -15,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_brick_wall",
+      "properties": {
+       "east": "none",
+       "north": "low",
+       "south": "low",
+       "up": "false",
+       "waterlogged": "false",
+       "west": "none"
+      }
+     },
+     "ref": {
+      "id": "minecraft:calcite"
+     },
+     "oth": {
+      "id": "minecraft:deepslate_brick_wall",
+      "properties": {
+       "east": "none",
+       "waterlogged": "false",
+       "south": "low",
+       "north": "low",
+       "west": "none",
+       "up": "false"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:smooth_basalt",
+    "minecraft:deepslate_brick_stairs"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1198,
+      -14,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_brick_stairs",
+      "properties": {
+       "facing": "north",
+       "half": "top",
+       "shape": "straight",
+       "waterlogged": "false"
+      }
+     },
+     "ref": {
+      "id": "minecraft:smooth_basalt"
+     },
+     "oth": {
+      "id": "minecraft:deepslate_brick_stairs",
+      "properties": {
+       "waterlogged": "false",
+       "half": "top",
+       "shape": "straight",
+       "facing": "north"
+      }
+     }
+    },
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1199,
+      -14,
+      1791
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_brick_stairs",
+      "properties": {
+       "facing": "north",
+       "half": "top",
+       "shape": "straight",
+       "waterlogged": "false"
+      }
+     },
+     "ref": {
+      "id": "minecraft:smooth_basalt"
+     },
+     "oth": {
+      "id": "minecraft:deepslate_brick_stairs",
+      "properties": {
+       "waterlogged": "false",
+       "half": "top",
+       "shape": "straight",
+       "facing": "north"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "PATH",
+    "residence_ruin",
+    "vanilla_damaged"
+   ],
+   "ex": [
+    {
+     "site": [
+      73,
+      116
+     ],
+     "pos": [
+      1199,
+      -25,
+      1791
+     ],
+     "tmpl": "minecraft:cracked_deepslate_tiles",
+     "ref": "minecraft:smooth_basalt",
+     "oth": "minecraft:cracked_deepslate_tiles"
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:deepslate_tiles",
+    "minecraft:smooth_basalt"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1927,
+      -15,
+      1925
+     ],
+     "piece": "barracks_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1927,
+      -14,
+      1925
+     ],
+     "piece": "barracks_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:deepslate_bricks",
+    "minecraft:air"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1927,
+      -13,
+      1925
+     ],
+     "piece": "barracks_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1930,
+      -14,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:cracked_deepslate_bricks",
+    "minecraft:air"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1926,
+      -13,
+      1925
+     ],
+     "piece": "barracks_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1930,
+      -13,
+      1924
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:deepslate_bricks",
+    "minecraft:smooth_basalt"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1927,
+      -13,
+      1926
+     ],
+     "piece": "barracks_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1934,
+      -18,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:deepslate_tiles",
+    "minecraft:air"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1927,
+      -12,
+      1925
+     ],
+     "piece": "barracks_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1926,
+      -12,
+      1925
+     ],
+     "piece": "barracks_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:tuff_bricks",
+    "minecraft:air"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1926,
+      -12,
+      1926
+     ],
+     "piece": "barracks_hall",
+     "tmpl": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1930,
+      -14,
+      1923
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:cracked_deepslate_bricks",
+    "minecraft:smooth_basalt"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1931,
+      -18,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1934,
+      -17,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:air",
+    "minecraft:smooth_basalt"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1934,
+      -18,
+      1922
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:air"
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1933,
+      -18,
+      1922
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:air"
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:tuff_bricks",
+    "minecraft:smooth_basalt"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1930,
+      -18,
+      1923
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1935,
+      -17,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:deepslate_bricks",
+    "minecraft:calcite"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1933,
+      -17,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:calcite"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1932,
+      -17,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:calcite"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:tuff_bricks",
+    "minecraft:calcite"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1930,
+      -17,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "oth": {
+      "id": "minecraft:calcite"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1933,
+      -16,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "oth": {
+      "id": "minecraft:calcite"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:air",
+    "minecraft:calcite"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1933,
+      -17,
+      1922
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:air"
+     },
+     "oth": {
+      "id": "minecraft:calcite"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1932,
+      -17,
+      1922
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:air"
+     },
+     "oth": {
+      "id": "minecraft:calcite"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:cracked_deepslate_bricks",
+    "minecraft:calcite"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1932,
+      -16,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:calcite"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1931,
+      -16,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:calcite"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:cobweb",
+    "minecraft:smooth_basalt"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1936,
+      -16,
+      1924
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cobweb"
+     },
+     "ref": {
+      "id": "minecraft:cobweb"
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:deepslate_bricks",
+    "minecraft:budding_amethyst"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1934,
+      -15,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:budding_amethyst"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:tuff_bricks",
+    "minecraft:budding_amethyst"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1933,
+      -15,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "oth": {
+      "id": "minecraft:budding_amethyst"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:deepslate_bricks",
+    "minecraft:amethyst_block"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1932,
+      -15,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:amethyst_block"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1930,
+      -15,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:amethyst_block"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:deepslate_tiles",
+    "minecraft:amethyst_block"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1931,
+      -15,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "oth": {
+      "id": "minecraft:amethyst_block"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1936,
+      -11,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "oth": {
+      "id": "minecraft:amethyst_block"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:air",
+    "minecraft:amethyst_block"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1934,
+      -15,
+      1922
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:air"
+     },
+     "oth": {
+      "id": "minecraft:amethyst_block"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1933,
+      -15,
+      1922
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:air"
+     },
+     "oth": {
+      "id": "minecraft:amethyst_block"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:chiseled_tuff_bricks",
+    "minecraft:calcite"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1936,
+      -15,
+      1925
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:chiseled_tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:chiseled_tuff_bricks"
+     },
+     "oth": {
+      "id": "minecraft:calcite"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1936,
+      -15,
+      1926
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:chiseled_tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:chiseled_tuff_bricks"
+     },
+     "oth": {
+      "id": "minecraft:calcite"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:chiseled_tuff_bricks",
+    "minecraft:smooth_basalt"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1936,
+      -15,
+      1927
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:chiseled_tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:chiseled_tuff_bricks"
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1936,
+      -15,
+      1928
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:chiseled_tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:chiseled_tuff_bricks"
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:iron_chain",
+    "minecraft:smooth_basalt"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1933,
+      -15,
+      1929
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:iron_chain",
+      "properties": {
+       "axis": "y",
+       "waterlogged": "false"
+      }
+     },
+     "ref": {
+      "id": "minecraft:iron_chain"
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1933,
+      -14,
+      1929
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:iron_chain",
+      "properties": {
+       "axis": "y",
+       "waterlogged": "false"
+      }
+     },
+     "ref": {
+      "id": "minecraft:iron_chain"
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:cracked_deepslate_bricks",
+    "minecraft:amethyst_block"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1935,
+      -14,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:amethyst_block"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1934,
+      -14,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "ref": {
+      "id": "minecraft:cracked_deepslate_bricks"
+     },
+     "oth": {
+      "id": "minecraft:amethyst_block"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:air",
+    "minecraft:budding_amethyst"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1931,
+      -14,
+      1924
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:air"
+     },
+     "oth": {
+      "id": "minecraft:budding_amethyst"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1932,
+      -13,
+      1924
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:air"
+     },
+     "ref": {
+      "id": "minecraft:air"
+     },
+     "oth": {
+      "id": "minecraft:budding_amethyst"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "PATH",
+    "grand_hall",
+    "other_damaged"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1936,
+      -14,
+      1928
+     ],
+     "tmpl": "minecraft:iron_bars",
+     "ref": "minecraft:iron_bars",
+     "oth": "minecraft:smooth_basalt"
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1936,
+      -14,
+      1929
+     ],
+     "tmpl": "minecraft:iron_bars",
+     "ref": "minecraft:iron_bars",
+     "oth": "minecraft:smooth_basalt"
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1936,
+      -13,
+      1928
+     ],
+     "tmpl": "minecraft:iron_bars",
+     "ref": "minecraft:iron_bars",
+     "oth": "minecraft:smooth_basalt"
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1936,
+      -13,
+      1929
+     ],
+     "tmpl": "minecraft:iron_bars",
+     "ref": "minecraft:iron_bars",
+     "oth": "minecraft:smooth_basalt"
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:iron_bars",
+    "minecraft:smooth_basalt"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1936,
+      -14,
+      1928
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:iron_bars",
+      "properties": {
+       "east": "false",
+       "north": "true",
+       "south": "true",
+       "waterlogged": "false",
+       "west": "true"
+      }
+     },
+     "ref": {
+      "id": "minecraft:iron_bars",
+      "properties": {
+       "east": "false",
+       "waterlogged": "false",
+       "south": "true",
+       "north": "true",
+       "west": "true"
+      }
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1936,
+      -14,
+      1929
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:iron_bars",
+      "properties": {
+       "east": "false",
+       "north": "true",
+       "south": "true",
+       "waterlogged": "false",
+       "west": "true"
+      }
+     },
+     "ref": {
+      "id": "minecraft:iron_bars",
+      "properties": {
+       "east": "false",
+       "waterlogged": "false",
+       "south": "true",
+       "north": "true",
+       "west": "true"
+      }
+     },
+     "oth": {
+      "id": "minecraft:smooth_basalt"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:deepslate_tiles",
+    "minecraft:budding_amethyst"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1934,
+      -13,
+      1921
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "oth": {
+      "id": "minecraft:budding_amethyst"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1935,
+      -11,
+      1923
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "oth": {
+      "id": "minecraft:budding_amethyst"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:deepslate_tiles",
+    "minecraft:calcite"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1930,
+      -13,
+      1927
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "oth": {
+      "id": "minecraft:calcite"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1936,
+      -11,
+      1926
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "oth": {
+      "id": "minecraft:calcite"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:cobweb",
+    "minecraft:air"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1931,
+      -12,
+      1922
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cobweb"
+     },
+     "ref": {
+      "id": "minecraft:cobweb"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:deepslate_tiles",
+    "minecraft:large_amethyst_bud"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1935,
+      -11,
+      1922
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:deepslate_tiles"
+     },
+     "oth": {
+      "id": "minecraft:large_amethyst_bud",
+      "properties": {
+       "waterlogged": "false",
+       "facing": "north"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:cracked_deepslate_tiles",
+    "minecraft:air"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1931,
+      -11,
+      1923
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:cracked_deepslate_tiles"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1930,
+      -11,
+      1926
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:cracked_deepslate_tiles"
+     },
+     "oth": {
+      "id": "minecraft:air"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:tuff_bricks",
+    "minecraft:amethyst_block"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1931,
+      -11,
+      1926
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "oth": {
+      "id": "minecraft:amethyst_block"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1933,
+      -11,
+      1927
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "ref": {
+      "id": "minecraft:tuff_bricks"
+     },
+     "oth": {
+      "id": "minecraft:amethyst_block"
+     }
+    }
+   ]
+  },
+  {
+   "trans": [
+    "minecraft:cracked_deepslate_tiles",
+    "minecraft:calcite"
+   ],
+   "ex": [
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1936,
+      -11,
+      1927
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:cracked_deepslate_tiles"
+     },
+     "oth": {
+      "id": "minecraft:calcite"
+     }
+    },
+    {
+     "site": [
+      -122,
+      122
+     ],
+     "pos": [
+      -1932,
+      -11,
+      1928
+     ],
+     "piece": "grand_hall",
+     "tmpl": {
+      "id": "minecraft:cracked_deepslate_tiles"
+     },
+     "ref": {
+      "id": "minecraft:cracked_deepslate_tiles"
+     },
+     "oth": {
+      "id": "minecraft:calcite"
+     }
+    }
+   ]
+  }
+ ]
+}

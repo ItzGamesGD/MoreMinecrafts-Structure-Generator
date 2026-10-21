@@ -28,7 +28,7 @@ SPIKE = HERE.parents[2] / "mod" / "sg-worldgen-protection"
 def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--out", type=Path, required=True)
-    p.add_argument("--mode", choices=["guarded", "control"], required=True)
+    p.add_argument("--mode", choices=["guarded", "control", "write"], required=True)
     p.add_argument("--seed", type=int, default=173)
     p.add_argument("--sites", type=int, default=36)
     p.add_argument("--ring", type=int, default=6, help="N8: candidate ring radius (chunks of spacing) for site selection")
@@ -63,7 +63,9 @@ def main() -> None:
     run_dir.mkdir(parents=True)
     env = {"SG01_SAMPLE_FILE": str(samples), "SG01_SAMPLE_MS": "5000", "SG_PROTECTION_REPORT": str(report)}  # guarded arm: the production configuration
     if a.mode == "control":
-        env.update({"SG01_FEATURES": "none"})  # control arm: both hooks disabled (lab setting)
+        env.update({"SG01_FEATURES": "none", "SG01_WRITE_GUARD": "0"})  # control arm: every guard disabled (lab setting)
+    elif a.mode == "write":
+        env.update({"SG01_FEATURES": "none"})  # N8-R: the write-level guard only
     if a.no_sampler:
         env.pop("SG01_SAMPLE_FILE")
     if a.vanilla:

@@ -43,6 +43,7 @@ public final class DriftGuard {
     private static final String FEATURE = P + "levelgen.feature.Feature";
     private static final String STATE_BASE = P + "block.state.BlockBehaviour$BlockStateBase";
     private static final String REGION = "net.minecraft.server.level.WorldGenRegion";
+    private static final String START = P + "levelgen.structure.StructureStart";
     /** SHA-256 of the vanilla class files (Minecraft 26.3) this build was validated against. Dependencies: Feature.safeSetBlock decides which writes
      *  happen; BlockStateBase.isSolid is a precheck predicate; BuddingAmethystBlock decides crystal growth; WorldGenRegion bounds writes. */
     static final Map<String, String> KNOWN = Map.of(
@@ -51,7 +52,8 @@ public final class DriftGuard {
             FEATURE, "b140a544634d1bc33ccf2cacf00fe0b260652ec52f72ca243f259d3335d43665",
             STATE_BASE, "a712b300de9f9e9bc1a48cdf38c7386ce10bd33bc3dc001861884e6d17029ad1",
             P + "block.BuddingAmethystBlock", "ace9a30177300e5eebaa5799b8b9a356e931ccfab0d08e5af524f968e5a5a175",
-            REGION, "f33962d43745ecd21ca163ab713c2af2f8fbcc84b490c285e4b5d8ea0f3b744e");
+            REGION, "f33962d43745ecd21ca163ab713c2af2f8fbcc84b490c285e4b5d8ea0f3b744e",
+            START, "0e298de5bc87838033193833366eaca3aef341002686549e060ab532a40736c2");
 
     public static final class State {
         public final String name;
@@ -116,9 +118,9 @@ public final class DriftGuard {
     }
 
     public static final State MONSTER_ROOM = new State("monster_room",
-            List.of(P + "levelgen.feature.MonsterRoomFeature", FEATURE, STATE_BASE, REGION), 100, 3);
+            List.of(P + "levelgen.feature.MonsterRoomFeature", FEATURE, STATE_BASE, REGION, START), 100, 3);
     public static final State GEODE = new State("geode",
-            List.of(P + "levelgen.feature.GeodeFeature", FEATURE, P + "block.BuddingAmethystBlock", REGION), 3, 3);
+            List.of(P + "levelgen.feature.GeodeFeature", FEATURE, P + "block.BuddingAmethystBlock", REGION, START), 3, 3);
 
     private record Armed(State state, BoundingBox area, BlockState[] before, List<BoundingBox> predicted, BoundingBox hard) {
     }
@@ -185,7 +187,9 @@ public final class DriftGuard {
      * BlockStateBase.callUseItemOnEvent, it does not touch the placement logic). Anything else, including a lab mod's inert stand-in, is foreign.
      */
     private static boolean ownOrPlatform(String name) {
-        return name.startsWith("sgprotection$") || name.contains("$sgprotection$") || name.startsWith("fabric_api$") || name.matches("handler\\$[^$]*\\$fabric-[^$]*\\$.*");
+        return name.startsWith("sgprotection$") || name.contains("$sgprotection$") || name.startsWith("fabric_api$") || name.matches("handler\\$[^$]*\\$fabric-[^$]*\\$.*")
+                // MixinExtras members generated for this module's own @WrapMethod on StructureStart.placeInChunk
+                || name.matches("(mixinextras\\$bridge\\$)?placeInChunk\\$mixinextras\\$wrapped\\$[0-9$]+");
     }
 
     private static byte[] read(String className) {

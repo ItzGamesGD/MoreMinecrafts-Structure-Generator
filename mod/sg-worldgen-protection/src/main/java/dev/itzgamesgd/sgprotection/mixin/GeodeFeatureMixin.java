@@ -27,6 +27,7 @@ public abstract class GeodeFeatureMixin implements GuardMarker {
             cir.setReturnValue(false);
             return;
         }
+        if (!Guard.hookActive("geode")) return; // the write-level guard protects; the feature runs untouched
         DriftGuard.discard();
         lab.mark();
         GeodeFeature self = (GeodeFeature) (Object) this;

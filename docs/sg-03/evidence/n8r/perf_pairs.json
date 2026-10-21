@@ -1,0 +1,80 @@
+{
+ "metric": "gen_window_s, config W (production write guard) vs A (module, observe, no protection)",
+ "pairs": [
+  {
+   "rep": 1,
+   "write_guard_s": 12.609,
+   "observe_s": 8.668,
+   "overhead_pct": 45.5
+  },
+  {
+   "rep": 2,
+   "write_guard_s": 13.562,
+   "observe_s": 15.75,
+   "overhead_pct": -13.9
+  },
+  {
+   "rep": 3,
+   "write_guard_s": 10.725,
+   "observe_s": 11.847,
+   "overhead_pct": -9.5
+  },
+  {
+   "rep": 4,
+   "write_guard_s": 9.557,
+   "observe_s": 11.816,
+   "overhead_pct": -19.1
+  },
+  {
+   "rep": 5,
+   "write_guard_s": 15.655,
+   "observe_s": 10.594,
+   "overhead_pct": 47.8
+  },
+  {
+   "rep": 6,
+   "write_guard_s": 10.302,
+   "observe_s": 9.183,
+   "overhead_pct": 12.2
+  },
+  {
+   "rep": 7,
+   "write_guard_s": 12.835,
+   "observe_s": 11.446,
+   "overhead_pct": 12.1
+  },
+  {
+   "rep": 8,
+   "write_guard_s": 11.978,
+   "observe_s": 11.732,
+   "overhead_pct": 2.1
+  },
+  {
+   "rep": 9,
+   "write_guard_s": 18.657,
+   "observe_s": 12.418,
+   "overhead_pct": 50.2
+  },
+  {
+   "rep": 10,
+   "write_guard_s": 9.73,
+   "observe_s": 13.605,
+   "overhead_pct": -28.5
+  },
+  {
+   "rep": 11,
+   "write_guard_s": 9.688,
+   "observe_s": 17.614,
+   "overhead_pct": -45.0
+  },
+  {
+   "rep": 12,
+   "write_guard_s": 13.312,
+   "observe_s": 10.99,
+   "overhead_pct": 21.1
+  }
+ ],
+ "median_pct": 7.1,
+ "min_pct": -45.0,
+ "max_pct": 50.2
+}
