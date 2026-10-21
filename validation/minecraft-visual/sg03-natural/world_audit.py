@@ -21,6 +21,7 @@ sys.path.insert(0, str(HERE))
 from run_natural import STRUCT, inspect  # noqa: E402
 import assembly_probe as ap  # noqa: E402
 from world import World  # noqa: E402
+from collision_lab import summarize  # noqa: E402
 
 FEATURE_BLOCKS = ("minecraft:smooth_basalt", "minecraft:calcite", "minecraft:amethyst_block", "minecraft:budding_amethyst", "minecraft:mossy_cobblestone")
 SPAWNER_IDS = ("minecraft:spawner", "minecraft:mob_spawner")
@@ -54,6 +55,12 @@ def main() -> None:
         row.update({"pieces": res["piece_count"], "matched": res["matched"], "expected": res["expected"], "mismatch": res["expected"] - res["matched"],
                     "trial_spawner_blocks": res["trial_spawners"], "trial_spawner_entities": res["trial_spawner_entities"], "errors": res["errors"],
                     "interior_intrusions": res["interior_intrusions"] if isinstance(res["interior_intrusions"], int) else len(res["interior_intrusions"])})
+        if res["expected"] != res["matched"]:
+            sm = summarize(res, world, start, templates)
+            row["by_feature"] = sm["by_feature"]
+            row["by_room"] = sm["by_room"]
+            row["transitions"] = sm["transitions"][:8]
+            row["mismatch_cells_sample"] = [list(m[:3]) + [m[3], m[4], m[5]] for m in res["mismatches"][:6]]
         lo = [min(b[i] for b in boxes) for i in range(3)]
         hi = [max(b[i + 3] for b in boxes) for i in range(3)]
         cx0, cx1, cz0, cz1 = (lo[0] >> 4) - 2, (hi[0] >> 4) + 2, (lo[2] >> 4) - 2, (hi[2] >> 4) + 2
