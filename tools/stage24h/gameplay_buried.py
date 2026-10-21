@@ -28,7 +28,7 @@ def world_box(loc, size):
     return (o[0] + min(p[0] for p in pts), o[2] + min(p[2] for p in pts), o[0] + max(p[0] for p in pts), o[2] + max(p[2] for p in pts))
 
 
-def main(out_dir: Path, max_attempts=12, modules=None, summary_name="summary-buried.json", stage="h24"):
+def main(out_dir: Path, max_attempts=12, modules=None, summary_name="summary-buried.json", stage="h24", open_top=None):
     work = OUT / "_work/s24h-gameplay"
     pack = work / "pack"
     if stage == "i24":
@@ -64,7 +64,7 @@ def main(out_dir: Path, max_attempts=12, modules=None, summary_name="summary-bur
                 time.sleep(0.4)
                 # bury the piece box up to its own top layer; cells above the box are outside every template (in the
                 # 24-seed sweep the space above the tower decks was air in 192/192 cells)
-                fill(srv, x - span, Y0, z - span, x + span, Y0 + size[1] - 1, z + span, "deepslate")
+                fill(srv, x - span, Y0, z - span, x + span, Y0 + size[1] - 1 - (open_top or {}).get(m, 0), z + span, "deepslate")
                 outp = srv.cmd(f"place jigsaw {pool}/{m} minecraft:connect_structure 1 {x} {Y0 + 1} {z}")
                 srv.flush()
                 loc = locate(World(root / "world/dimensions/minecraft/overworld"), blocks, (x, Y0 + 1, z), None)

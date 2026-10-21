@@ -1,0 +1,1526 @@
+{
+ "large_ruin_1": {
+  "roof_cells": [],
+  "rottable_cells": 762,
+  "stage24g_protected_rottable": 0,
+  "decay_eligible_before": 762,
+  "decay_eligible_after": 762,
+  "decay_eligible_share_after": 1.0
+ },
+ "medium_ruin_1": {
+  "roof_cells": [
+   {
+    "pos": [
+     1,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     7
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     8
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     9
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     11
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     7
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     8
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     9
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     10
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     11
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     7
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     8
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     9
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     10
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     11
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     7
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     8
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     9
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     10
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     11
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     7
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     8
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     9
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     10
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     11
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     4,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     4,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     4,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     4,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     4,
+     7
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     4,
+     8
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     4,
+     9
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     4,
+     10
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     4,
+     11
+    ],
+    "state": "minecraft:deepslate_tiles"
+   }
+  ],
+  "rottable_cells": 285,
+  "stage24g_protected_rottable": 0,
+  "decay_eligible_before": 285,
+  "decay_eligible_after": 221,
+  "decay_eligible_share_after": 0.7754
+ },
+ "medium_ruin_2": {
+  "roof_cells": [
+   {
+    "pos": [
+     1,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     3
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     4
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     5
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     6
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     7
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     8
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     9
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     3,
+     5,
+     1
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     3,
+     5,
+     2
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     3,
+     5,
+     3
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     3,
+     5,
+     4
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     3,
+     5,
+     5
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     3,
+     5,
+     6
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     3,
+     5,
+     7
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     3,
+     5,
+     8
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     3,
+     5,
+     9
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     5,
+     6,
+     1
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     5,
+     6,
+     2
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     5,
+     6,
+     3
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     5,
+     6,
+     4
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     5,
+     6,
+     5
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     5,
+     6,
+     6
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     5,
+     6,
+     7
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     5,
+     6,
+     8
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     5,
+     6,
+     9
+    ],
+    "state": "minecraft:deepslate_tile_slab[type=top,waterlogged=false]"
+   },
+   {
+    "pos": [
+     6,
+     7,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     7,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     7,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     7,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     7,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     7,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     7,
+     7
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     7,
+     8
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     7,
+     9
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     8,
+     7,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     8,
+     7,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     8,
+     7,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     8,
+     7,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     8,
+     7,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     8,
+     7,
+     7
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     8,
+     7,
+     8
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     9,
+     7,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     9,
+     7,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     9,
+     7,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     9,
+     7,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     9,
+     7,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     9,
+     7,
+     7
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     9,
+     7,
+     8
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     10,
+     7,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     10,
+     7,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     10,
+     7,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     10,
+     7,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     10,
+     7,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     10,
+     7,
+     7
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     10,
+     7,
+     8
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     11,
+     7,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     11,
+     7,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     11,
+     7,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     11,
+     7,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     11,
+     7,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     11,
+     7,
+     7
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     11,
+     7,
+     8
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     12,
+     7,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     12,
+     7,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     12,
+     7,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     12,
+     7,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     12,
+     7,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     12,
+     7,
+     7
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     12,
+     7,
+     8
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     13,
+     7,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     13,
+     7,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     13,
+     7,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     13,
+     7,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     13,
+     7,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     13,
+     7,
+     7
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     13,
+     7,
+     8
+    ],
+    "state": "minecraft:deepslate_tiles"
+   }
+  ],
+  "rottable_cells": 599,
+  "stage24g_protected_rottable": 90,
+  "decay_eligible_before": 509,
+  "decay_eligible_after": 431,
+  "decay_eligible_share_after": 0.7195
+ },
+ "small_ruin_1": {
+  "roof_cells": [
+   {
+    "pos": [
+     1,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     6
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     3
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     4
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     5
+    ],
+    "state": "minecraft:deepslate_tiles"
+   }
+  ],
+  "rottable_cells": 165,
+  "stage24g_protected_rottable": 0,
+  "decay_eligible_before": 165,
+  "decay_eligible_after": 136,
+  "decay_eligible_share_after": 0.8242
+ },
+ "small_ruin_2": {
+  "roof_cells": [
+   {
+    "pos": [
+     1,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     1,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     2,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     3,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     4,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     2
+    ],
+    "state": "minecraft:deepslate_tiles"
+   },
+   {
+    "pos": [
+     6,
+     4,
+     1
+    ],
+    "state": "minecraft:deepslate_tiles"
+   }
+  ],
+  "rottable_cells": 108,
+  "stage24g_protected_rottable": 0,
+  "decay_eligible_before": 108,
+  "decay_eligible_after": 97,
+  "decay_eligible_share_after": 0.8981
+ },
+ "sauna_1": {
+  "roof_cells": [],
+  "rottable_cells": 1674,
+  "stage24g_protected_rottable": 25,
+  "decay_eligible_before": 1649,
+  "decay_eligible_after": 1649,
+  "decay_eligible_share_after": 0.9851
+ },
+ "large_pillar_1": {
+  "roof_cells": [],
+  "rottable_cells": 95,
+  "stage24g_protected_rottable": 2,
+  "decay_eligible_before": 93,
+  "decay_eligible_after": 93,
+  "decay_eligible_share_after": 0.9789
+ },
+ "medium_pillar_1": {
+  "roof_cells": [],
+  "rottable_cells": 184,
+  "stage24g_protected_rottable": 18,
+  "decay_eligible_before": 166,
+  "decay_eligible_after": 166,
+  "decay_eligible_share_after": 0.9022
+ }
+}

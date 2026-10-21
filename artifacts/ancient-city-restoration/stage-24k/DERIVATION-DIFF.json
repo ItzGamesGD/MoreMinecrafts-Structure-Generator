@@ -1,0 +1,251 @@
+{
+ "large_ruin_1": {
+  "protected_cells": {
+   "old": 3,
+   "new": 3,
+   "identical": true,
+   "removed": [],
+   "added": [],
+   "role_changed": []
+  },
+  "mask": {
+   "old": 1113,
+   "new": 1113,
+   "identical": true,
+   "removed": [],
+   "added": []
+  },
+  "roof": {
+   "old": 0,
+   "new": 0,
+   "identical": true
+  }
+ },
+ "medium_ruin_1": {
+  "protected_cells": {
+   "old": 3,
+   "new": 3,
+   "identical": true,
+   "removed": [],
+   "added": [],
+   "role_changed": []
+  },
+  "mask": {
+   "old": 190,
+   "new": 190,
+   "identical": true,
+   "removed": [],
+   "added": []
+  },
+  "roof": {
+   "old": 64,
+   "new": 64,
+   "identical": true
+  }
+ },
+ "medium_ruin_2": {
+  "protected_cells": {
+   "old": 96,
+   "new": 96,
+   "identical": true,
+   "removed": [],
+   "added": [],
+   "role_changed": []
+  },
+  "mask": {
+   "old": 565,
+   "new": 565,
+   "identical": true,
+   "removed": [],
+   "added": []
+  },
+  "roof": {
+   "old": 78,
+   "new": 78,
+   "identical": true
+  }
+ },
+ "small_ruin_1": {
+  "protected_cells": {
+   "old": 3,
+   "new": 3,
+   "identical": true,
+   "removed": [],
+   "added": [],
+   "role_changed": []
+  },
+  "mask": {
+   "old": 81,
+   "new": 81,
+   "identical": true,
+   "removed": [],
+   "added": []
+  },
+  "roof": {
+   "old": 29,
+   "new": 29,
+   "identical": true
+  }
+ },
+ "small_ruin_2": {
+  "protected_cells": {
+   "old": 3,
+   "new": 3,
+   "identical": true,
+   "removed": [],
+   "added": [],
+   "role_changed": []
+  },
+  "mask": {
+   "old": 32,
+   "new": 32,
+   "identical": true,
+   "removed": [],
+   "added": []
+  },
+  "roof": {
+   "old": 11,
+   "new": 11,
+   "identical": true
+  }
+ },
+ "sauna_1": {
+  "protected_cells": {
+   "old": 32,
+   "new": 32,
+   "identical": true,
+   "removed": [],
+   "added": [],
+   "role_changed": []
+  },
+  "mask": {
+   "old": 1768,
+   "new": 1768,
+   "identical": true,
+   "removed": [],
+   "added": []
+  },
+  "roof": {
+   "old": 0,
+   "new": 0,
+   "identical": true
+  }
+ },
+ "large_pillar_1": {
+  "protected_cells": {
+   "old": 39,
+   "new": 53,
+   "identical": false,
+   "removed": [
+    "[1, 14, 3] railing minecraft:deepslate",
+    "[2, 14, 4] railing minecraft:deepslate",
+    "[3, 14, 1] railing minecraft:deepslate",
+    "[3, 14, 4] railing minecraft:deepslate",
+    "[4, 14, 2] railing minecraft:deepslate",
+    "[4, 14, 3] railing minecraft:deepslate"
+   ],
+   "added": [
+    "[0, 14, 1] railing minecraft:polished_deepslate_wall",
+    "[0, 14, 2] railing minecraft:polished_deepslate_wall",
+    "[0, 14, 3] railing minecraft:polished_deepslate_wall",
+    "[0, 14, 4] railing minecraft:polished_deepslate_wall",
+    "[1, 13, 1] walk_floor minecraft:polished_deepslate",
+    "[1, 13, 4] walk_floor minecraft:polished_deepslate",
+    "[1, 14, 0] railing minecraft:polished_deepslate_wall",
+    "[1, 14, 5] railing minecraft:polished_deepslate_wall",
+    "[2, 14, 0] railing minecraft:polished_deepslate_wall",
+    "[2, 14, 5] railing minecraft:polished_deepslate_wall",
+    "[3, 14, 0] railing minecraft:polished_deepslate_wall",
+    "[3, 14, 5] railing minecraft:polished_deepslate_wall",
+    "[4, 13, 1] walk_floor minecraft:polished_deepslate",
+    "[4, 13, 4] walk_floor minecraft:polished_deepslate",
+    "[4, 14, 0] railing minecraft:polished_deepslate_wall",
+    "[4, 14, 5] railing minecraft:polished_deepslate_wall",
+    "[5, 14, 1] railing minecraft:polished_deepslate_wall",
+    "[5, 14, 2] railing minecraft:polished_deepslate_wall",
+    "[5, 14, 3] railing minecraft:polished_deepslate_wall",
+    "[5, 14, 4] railing minecraft:polished_deepslate_wall"
+   ],
+   "role_changed": []
+  },
+  "mask": {
+   "old": 40,
+   "new": 40,
+   "identical": true,
+   "removed": [],
+   "added": []
+  },
+  "roof": {
+   "old": 0,
+   "new": 0,
+   "identical": false
+  }
+ },
+ "medium_pillar_1": {
+  "protected_cells": {
+   "old": 38,
+   "new": 48,
+   "identical": false,
+   "removed": [
+    "[1, 9, 2] railing minecraft:polished_deepslate_wall",
+    "[1, 9, 3] railing minecraft:polished_deepslate_wall",
+    "[1, 9, 4] railing minecraft:polished_deepslate_wall",
+    "[1, 9, 5] railing minecraft:polished_deepslate_wall",
+    "[2, 9, 1] railing minecraft:polished_deepslate_wall",
+    "[2, 9, 6] railing minecraft:polished_deepslate_wall",
+    "[3, 9, 1] railing minecraft:polished_deepslate_wall",
+    "[3, 9, 6] railing minecraft:polished_deepslate_wall",
+    "[4, 9, 1] railing minecraft:polished_deepslate_wall",
+    "[4, 9, 6] railing minecraft:polished_deepslate_wall",
+    "[5, 9, 2] railing minecraft:polished_deepslate_wall",
+    "[5, 9, 4] railing minecraft:polished_deepslate_wall",
+    "[5, 9, 5] railing minecraft:polished_deepslate_wall"
+   ],
+   "added": [
+    "[0, 9, 1] railing minecraft:polished_deepslate_wall",
+    "[0, 9, 2] railing minecraft:polished_deepslate_wall",
+    "[0, 9, 3] railing minecraft:polished_deepslate_wall",
+    "[0, 9, 4] railing minecraft:polished_deepslate_wall",
+    "[0, 9, 5] railing minecraft:polished_deepslate_wall",
+    "[0, 9, 6] railing minecraft:polished_deepslate_wall",
+    "[1, 9, 0] railing minecraft:polished_deepslate_wall",
+    "[1, 9, 7] railing minecraft:polished_deepslate_wall",
+    "[2, 9, 0] railing minecraft:polished_deepslate_wall",
+    "[2, 9, 7] railing minecraft:polished_deepslate_wall",
+    "[3, 8, 1] walk_floor minecraft:deepslate_tiles",
+    "[3, 9, 0] railing minecraft:polished_deepslate_wall",
+    "[3, 9, 7] railing minecraft:polished_deepslate_wall",
+    "[4, 9, 0] railing minecraft:polished_deepslate_wall",
+    "[4, 9, 7] railing minecraft:polished_deepslate_wall",
+    "[5, 9, 0] railing minecraft:polished_deepslate_wall",
+    "[5, 9, 7] railing minecraft:polished_deepslate_wall",
+    "[6, 9, 1] railing minecraft:polished_deepslate_wall",
+    "[6, 9, 2] railing minecraft:polished_deepslate_wall",
+    "[6, 9, 3] railing minecraft:polished_deepslate_wall",
+    "[6, 9, 4] railing minecraft:polished_deepslate_wall",
+    "[6, 9, 5] railing minecraft:polished_deepslate_wall",
+    "[6, 9, 6] railing minecraft:polished_deepslate_wall"
+   ],
+   "role_changed": []
+  },
+  "mask": {
+   "old": 10,
+   "new": 10,
+   "identical": false,
+   "removed": [],
+   "added": []
+  },
+  "roof": {
+   "old": 0,
+   "new": 0,
+   "identical": false
+  }
+ },
+ "_pack_files_vs_stage24i": {
+  "data/minecraft/structure/ancient_city/structures/large_pillar_1.nbt": "differs",
+  "data/minecraft/structure/ancient_city/structures/medium_pillar_1.nbt": "differs",
+  "data/moreminecrafts/structure/ancient_city/protection/large_pillar_1.nbt": "differs",
+  "data/moreminecrafts/structure/ancient_city/protection/medium_pillar_1.nbt": "differs"
+ },
+ "_pack_files_identical": 26
+}
