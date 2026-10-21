@@ -1,0 +1,1889 @@
+[
+ {
+  "seed": 24005,
+  "layout_identical_i24_i24x": true,
+  "placements": [
+   {
+    "piece_index": 24,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1409,
+     -51,
+     921,
+     -1397,
+     -47,
+     928
+    ],
+    "counts": {
+     "same|in_piece_box_chunks": 11,
+     "changed_other|in_piece_box_chunks": 1,
+     "cleared_to_air|in_piece_box_chunks": 2
+    },
+    "is_blocked_entrance": false,
+    "cells": [
+     {
+      "world": [
+       -1403,
+       -50,
+       929
+      ],
+      "template": [
+       -1,
+       1,
+       6
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1402,
+       -50,
+       929
+      ],
+      "template": [
+       -1,
+       1,
+       7
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1401,
+       -50,
+       929
+      ],
+      "template": [
+       -1,
+       1,
+       8
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1400,
+       -50,
+       929
+      ],
+      "template": [
+       -1,
+       1,
+       9
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:sculk_vein[down=false,east=false,north=true,south=false,up=false,waterlogged=false,west=false]",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1399,
+       -50,
+       929
+      ],
+      "template": [
+       -1,
+       1,
+       10
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1398,
+       -50,
+       929
+      ],
+      "template": [
+       -1,
+       1,
+       11
+      ],
+      "i24": "minecraft:sculk_vein[down=false,east=false,north=true,south=false,up=false,waterlogged=false,west=false]",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1397,
+       -50,
+       929
+      ],
+      "template": [
+       -1,
+       1,
+       12
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1403,
+       -49,
+       929
+      ],
+      "template": [
+       -1,
+       2,
+       6
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1402,
+       -49,
+       929
+      ],
+      "template": [
+       -1,
+       2,
+       7
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1401,
+       -49,
+       929
+      ],
+      "template": [
+       -1,
+       2,
+       8
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1400,
+       -49,
+       929
+      ],
+      "template": [
+       -1,
+       2,
+       9
+      ],
+      "i24": "minecraft:sculk_vein[down=false,east=false,north=true,south=false,up=false,waterlogged=false,west=false]",
+      "i24x": "minecraft:sculk_vein[down=false,east=false,north=true,south=false,up=false,waterlogged=false,west=false]",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1399,
+       -49,
+       929
+      ],
+      "template": [
+       -1,
+       2,
+       10
+      ],
+      "i24": "minecraft:sculk_vein[down=false,east=false,north=true,south=false,up=false,waterlogged=false,west=false]",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1398,
+       -49,
+       929
+      ],
+      "template": [
+       -1,
+       2,
+       11
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1397,
+       -49,
+       929
+      ],
+      "template": [
+       -1,
+       2,
+       12
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     }
+    ]
+   },
+   {
+    "piece_index": 71,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -1348,
+     -51,
+     1023,
+     -1341,
+     -47,
+     1035
+    ],
+    "counts": {
+     "cleared_to_air|in_piece_box_chunks": 13,
+     "changed_other|in_piece_box_chunks": 1
+    },
+    "is_blocked_entrance": true,
+    "cells": [
+     {
+      "world": [
+       -1349,
+       -50,
+       1029
+      ],
+      "template": [
+       -1,
+       1,
+       6
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       -1349,
+       -50,
+       1030
+      ],
+      "template": [
+       -1,
+       1,
+       7
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       -1349,
+       -50,
+       1031
+      ],
+      "template": [
+       -1,
+       1,
+       8
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       -1349,
+       -50,
+       1032
+      ],
+      "template": [
+       -1,
+       1,
+       9
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:pointed_dripstone[thickness=tip,vertical_direction=up,waterlogged=false]",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       -1349,
+       -50,
+       1033
+      ],
+      "template": [
+       -1,
+       1,
+       10
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       -1349,
+       -50,
+       1034
+      ],
+      "template": [
+       -1,
+       1,
+       11
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       -1349,
+       -50,
+       1035
+      ],
+      "template": [
+       -1,
+       1,
+       12
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       -1349,
+       -49,
+       1029
+      ],
+      "template": [
+       -1,
+       2,
+       6
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       -1349,
+       -49,
+       1030
+      ],
+      "template": [
+       -1,
+       2,
+       7
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       -1349,
+       -49,
+       1031
+      ],
+      "template": [
+       -1,
+       2,
+       8
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       -1349,
+       -49,
+       1032
+      ],
+      "template": [
+       -1,
+       2,
+       9
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       -1349,
+       -49,
+       1033
+      ],
+      "template": [
+       -1,
+       2,
+       10
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       -1349,
+       -49,
+       1034
+      ],
+      "template": [
+       -1,
+       2,
+       11
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       -1349,
+       -49,
+       1035
+      ],
+      "template": [
+       -1,
+       2,
+       12
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     }
+    ]
+   },
+   {
+    "piece_index": 75,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1384,
+     -51,
+     991,
+     -1372,
+     -47,
+     998
+    ],
+    "counts": {
+     "same|in_piece_box_chunks": 10,
+     "cleared_to_air|in_piece_box_chunks": 3,
+     "changed_other|in_piece_box_chunks": 1
+    },
+    "is_blocked_entrance": false,
+    "cells": [
+     {
+      "world": [
+       -1378,
+       -50,
+       999
+      ],
+      "template": [
+       -1,
+       1,
+       6
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1377,
+       -50,
+       999
+      ],
+      "template": [
+       -1,
+       1,
+       7
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1376,
+       -50,
+       999
+      ],
+      "template": [
+       -1,
+       1,
+       8
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1375,
+       -50,
+       999
+      ],
+      "template": [
+       -1,
+       1,
+       9
+      ],
+      "i24": "minecraft:sculk_vein[down=false,east=false,north=true,south=false,up=false,waterlogged=false,west=false]",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1374,
+       -50,
+       999
+      ],
+      "template": [
+       -1,
+       1,
+       10
+      ],
+      "i24": "minecraft:sculk_vein[down=false,east=false,north=true,south=false,up=false,waterlogged=false,west=false]",
+      "i24x": "minecraft:sculk_vein[down=false,east=false,north=true,south=false,up=false,waterlogged=false,west=false]",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1373,
+       -50,
+       999
+      ],
+      "template": [
+       -1,
+       1,
+       11
+      ],
+      "i24": "minecraft:sculk_vein[down=false,east=false,north=true,south=false,up=false,waterlogged=false,west=false]",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1372,
+       -50,
+       999
+      ],
+      "template": [
+       -1,
+       1,
+       12
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1378,
+       -49,
+       999
+      ],
+      "template": [
+       -1,
+       2,
+       6
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1377,
+       -49,
+       999
+      ],
+      "template": [
+       -1,
+       2,
+       7
+      ],
+      "i24": "minecraft:sculk_vein[down=false,east=false,north=true,south=false,up=false,waterlogged=false,west=false]",
+      "i24x": "minecraft:sculk_vein[down=false,east=false,north=true,south=false,up=false,waterlogged=false,west=false]",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1376,
+       -49,
+       999
+      ],
+      "template": [
+       -1,
+       2,
+       8
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1375,
+       -49,
+       999
+      ],
+      "template": [
+       -1,
+       2,
+       9
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1374,
+       -49,
+       999
+      ],
+      "template": [
+       -1,
+       2,
+       10
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:sculk_vein[down=false,east=false,north=true,south=false,up=false,waterlogged=false,west=false]",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1373,
+       -49,
+       999
+      ],
+      "template": [
+       -1,
+       2,
+       11
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1372,
+       -49,
+       999
+      ],
+      "template": [
+       -1,
+       2,
+       12
+      ],
+      "i24": "minecraft:sculk_vein[down=false,east=false,north=true,south=false,up=false,waterlogged=false,west=false]",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     }
+    ]
+   },
+   {
+    "piece_index": 86,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -1449,
+     -51,
+     917,
+     -1437,
+     -47,
+     924
+    ],
+    "counts": {
+     "same|in_piece_box_chunks": 12,
+     "changed_other|in_piece_box_chunks": 2
+    },
+    "is_blocked_entrance": false,
+    "cells": [
+     {
+      "world": [
+       -1443,
+       -50,
+       916
+      ],
+      "template": [
+       -1,
+       1,
+       6
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1444,
+       -50,
+       916
+      ],
+      "template": [
+       -1,
+       1,
+       7
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1445,
+       -50,
+       916
+      ],
+      "template": [
+       -1,
+       1,
+       8
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1446,
+       -50,
+       916
+      ],
+      "template": [
+       -1,
+       1,
+       9
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1447,
+       -50,
+       916
+      ],
+      "template": [
+       -1,
+       1,
+       10
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:sculk_vein[down=false,east=false,north=false,south=true,up=false,waterlogged=false,west=false]",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1448,
+       -50,
+       916
+      ],
+      "template": [
+       -1,
+       1,
+       11
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1449,
+       -50,
+       916
+      ],
+      "template": [
+       -1,
+       1,
+       12
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1443,
+       -49,
+       916
+      ],
+      "template": [
+       -1,
+       2,
+       6
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1444,
+       -49,
+       916
+      ],
+      "template": [
+       -1,
+       2,
+       7
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1445,
+       -49,
+       916
+      ],
+      "template": [
+       -1,
+       2,
+       8
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1446,
+       -49,
+       916
+      ],
+      "template": [
+       -1,
+       2,
+       9
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1447,
+       -49,
+       916
+      ],
+      "template": [
+       -1,
+       2,
+       10
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:sculk_vein[down=false,east=false,north=false,south=true,up=false,waterlogged=false,west=false]",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1448,
+       -49,
+       916
+      ],
+      "template": [
+       -1,
+       2,
+       11
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       -1449,
+       -49,
+       916
+      ],
+      "template": [
+       -1,
+       2,
+       12
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     }
+    ]
+   }
+  ],
+  "other_differences_near_experiment_pieces": {
+   "minecraft:air -> minecraft:sculk_vein": 304,
+   "minecraft:sculk_vein -> minecraft:air": 254,
+   "minecraft:sculk -> minecraft:deepslate": 159,
+   "minecraft:sculk -> minecraft:deepslate_bricks": 96,
+   "minecraft:deepslate -> minecraft:sculk": 72,
+   "minecraft:deepslate_bricks -> minecraft:sculk": 65,
+   "minecraft:sculk -> minecraft:deepslate_tiles": 48,
+   "minecraft:cracked_deepslate_bricks -> minecraft:sculk": 36,
+   "minecraft:deepslate_tiles -> minecraft:sculk": 36,
+   "minecraft:sculk -> minecraft:cracked_deepslate_bricks": 32,
+   "minecraft:sculk_vein -> minecraft:sculk_vein": 26,
+   "minecraft:sculk -> minecraft:gravel": 22,
+   "minecraft:air -> minecraft:pointed_dripstone": 19,
+   "minecraft:sculk -> minecraft:cracked_deepslate_tiles": 18,
+   "minecraft:pointed_dripstone -> minecraft:air": 16,
+   "minecraft:sculk -> minecraft:cobbled_deepslate": 15,
+   "minecraft:sculk_sensor -> minecraft:air": 15,
+   "minecraft:sculk -> minecraft:polished_deepslate": 14,
+   "minecraft:cracked_deepslate_tiles -> minecraft:sculk": 13,
+   "minecraft:deepslate -> minecraft:dripstone_block": 11,
+   "minecraft:polished_deepslate -> minecraft:sculk": 10,
+   "minecraft:dripstone_block -> minecraft:air": 8,
+   "minecraft:air -> minecraft:sculk_sensor": 7,
+   "minecraft:dripstone_block -> minecraft:deepslate": 6,
+   "minecraft:pointed_dripstone -> minecraft:pointed_dripstone": 5,
+   "minecraft:air -> minecraft:water": 5,
+   "minecraft:air -> minecraft:sculk_shrieker": 4,
+   "minecraft:dripstone_block -> minecraft:pointed_dripstone": 4,
+   "minecraft:tuff -> minecraft:sculk": 4,
+   "minecraft:sculk_catalyst -> minecraft:air": 3
+  },
+  "other_differences_total": 1342
+ },
+ {
+  "seed": 24009,
+  "layout_identical_i24_i24x": true,
+  "placements": [
+   {
+    "piece_index": 18,
+    "module": "large_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     508,
+     -51,
+     564,
+     524,
+     -38,
+     580
+    ],
+    "counts": {
+     "same|in_piece_box_chunks": 6
+    },
+    "is_blocked_entrance": false,
+    "cells": [
+     {
+      "world": [
+       507,
+       -50,
+       571
+      ],
+      "template": [
+       -1,
+       1,
+       7
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       507,
+       -50,
+       572
+      ],
+      "template": [
+       -1,
+       1,
+       8
+      ],
+      "i24": "minecraft:sculk_vein[down=false,east=true,north=false,south=false,up=false,waterlogged=false,west=false]",
+      "i24x": "minecraft:sculk_vein[down=false,east=true,north=false,south=false,up=false,waterlogged=false,west=false]",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       507,
+       -50,
+       573
+      ],
+      "template": [
+       -1,
+       1,
+       9
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       507,
+       -49,
+       571
+      ],
+      "template": [
+       -1,
+       2,
+       7
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       507,
+       -49,
+       572
+      ],
+      "template": [
+       -1,
+       2,
+       8
+      ],
+      "i24": "minecraft:sculk_vein[down=false,east=true,north=false,south=false,up=false,waterlogged=false,west=false]",
+      "i24x": "minecraft:sculk_vein[down=false,east=true,north=false,south=false,up=false,waterlogged=false,west=false]",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       507,
+       -49,
+       573
+      ],
+      "template": [
+       -1,
+       2,
+       9
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     }
+    ]
+   },
+   {
+    "piece_index": 56,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     408,
+     -51,
+     521,
+     420,
+     -47,
+     528
+    ],
+    "counts": {
+     "same|in_piece_box_chunks": 14
+    },
+    "is_blocked_entrance": false,
+    "cells": [
+     {
+      "world": [
+       414,
+       -50,
+       529
+      ],
+      "template": [
+       -1,
+       1,
+       6
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       415,
+       -50,
+       529
+      ],
+      "template": [
+       -1,
+       1,
+       7
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       416,
+       -50,
+       529
+      ],
+      "template": [
+       -1,
+       1,
+       8
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       417,
+       -50,
+       529
+      ],
+      "template": [
+       -1,
+       1,
+       9
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       418,
+       -50,
+       529
+      ],
+      "template": [
+       -1,
+       1,
+       10
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       419,
+       -50,
+       529
+      ],
+      "template": [
+       -1,
+       1,
+       11
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       420,
+       -50,
+       529
+      ],
+      "template": [
+       -1,
+       1,
+       12
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       414,
+       -49,
+       529
+      ],
+      "template": [
+       -1,
+       2,
+       6
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       415,
+       -49,
+       529
+      ],
+      "template": [
+       -1,
+       2,
+       7
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       416,
+       -49,
+       529
+      ],
+      "template": [
+       -1,
+       2,
+       8
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       417,
+       -49,
+       529
+      ],
+      "template": [
+       -1,
+       2,
+       9
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       418,
+       -49,
+       529
+      ],
+      "template": [
+       -1,
+       2,
+       10
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       419,
+       -49,
+       529
+      ],
+      "template": [
+       -1,
+       2,
+       11
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       420,
+       -49,
+       529
+      ],
+      "template": [
+       -1,
+       2,
+       12
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     }
+    ]
+   },
+   {
+    "piece_index": 59,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     588,
+     -51,
+     551,
+     604,
+     -38,
+     567
+    ],
+    "counts": {
+     "cleared_to_air|in_piece_box_chunks": 6
+    },
+    "is_blocked_entrance": true,
+    "cells": [
+     {
+      "world": [
+       597,
+       -50,
+       550
+      ],
+      "template": [
+       -1,
+       1,
+       7
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       596,
+       -50,
+       550
+      ],
+      "template": [
+       -1,
+       1,
+       8
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       595,
+       -50,
+       550
+      ],
+      "template": [
+       -1,
+       1,
+       9
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       597,
+       -49,
+       550
+      ],
+      "template": [
+       -1,
+       2,
+       7
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       596,
+       -49,
+       550
+      ],
+      "template": [
+       -1,
+       2,
+       8
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     },
+     {
+      "world": [
+       595,
+       -49,
+       550
+      ],
+      "template": [
+       -1,
+       2,
+       9
+      ],
+      "i24": "minecraft:dripstone_block",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": true
+     }
+    ]
+   },
+   {
+    "piece_index": 63,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     537,
+     -51,
+     448,
+     549,
+     -47,
+     455
+    ],
+    "counts": {
+     "same|in_piece_box_chunks": 14
+    },
+    "is_blocked_entrance": false,
+    "cells": [
+     {
+      "world": [
+       543,
+       -50,
+       456
+      ],
+      "template": [
+       -1,
+       1,
+       6
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       544,
+       -50,
+       456
+      ],
+      "template": [
+       -1,
+       1,
+       7
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       545,
+       -50,
+       456
+      ],
+      "template": [
+       -1,
+       1,
+       8
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       546,
+       -50,
+       456
+      ],
+      "template": [
+       -1,
+       1,
+       9
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       547,
+       -50,
+       456
+      ],
+      "template": [
+       -1,
+       1,
+       10
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       548,
+       -50,
+       456
+      ],
+      "template": [
+       -1,
+       1,
+       11
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       549,
+       -50,
+       456
+      ],
+      "template": [
+       -1,
+       1,
+       12
+      ],
+      "i24": "minecraft:sculk_vein[down=false,east=false,north=true,south=false,up=false,waterlogged=false,west=false]",
+      "i24x": "minecraft:sculk_vein[down=false,east=false,north=true,south=false,up=false,waterlogged=false,west=false]",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       543,
+       -49,
+       456
+      ],
+      "template": [
+       -1,
+       2,
+       6
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       544,
+       -49,
+       456
+      ],
+      "template": [
+       -1,
+       2,
+       7
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       545,
+       -49,
+       456
+      ],
+      "template": [
+       -1,
+       2,
+       8
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       546,
+       -49,
+       456
+      ],
+      "template": [
+       -1,
+       2,
+       9
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       547,
+       -49,
+       456
+      ],
+      "template": [
+       -1,
+       2,
+       10
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       548,
+       -49,
+       456
+      ],
+      "template": [
+       -1,
+       2,
+       11
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       549,
+       -49,
+       456
+      ],
+      "template": [
+       -1,
+       2,
+       12
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     }
+    ]
+   },
+   {
+    "piece_index": 90,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     425,
+     -51,
+     439,
+     441,
+     -38,
+     455
+    ],
+    "counts": {
+     "same|in_piece_box_chunks": 6
+    },
+    "is_blocked_entrance": false,
+    "cells": [
+     {
+      "world": [
+       432,
+       -50,
+       456
+      ],
+      "template": [
+       -1,
+       1,
+       7
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       433,
+       -50,
+       456
+      ],
+      "template": [
+       -1,
+       1,
+       8
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       434,
+       -50,
+       456
+      ],
+      "template": [
+       -1,
+       1,
+       9
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       432,
+       -49,
+       456
+      ],
+      "template": [
+       -1,
+       2,
+       7
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       433,
+       -49,
+       456
+      ],
+      "template": [
+       -1,
+       2,
+       8
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     },
+     {
+      "world": [
+       434,
+       -49,
+       456
+      ],
+      "template": [
+       -1,
+       2,
+       9
+      ],
+      "i24": "minecraft:air",
+      "i24x": "minecraft:air",
+      "in_piece_box_chunk": true,
+      "survey_target": false
+     }
+    ]
+   }
+  ],
+  "other_differences_near_experiment_pieces": {
+   "minecraft:air -> minecraft:sculk_vein": 286,
+   "minecraft:sculk_vein -> minecraft:air": 252,
+   "minecraft:sculk -> minecraft:deepslate_bricks": 128,
+   "minecraft:deepslate_bricks -> minecraft:sculk": 113,
+   "minecraft:sculk -> minecraft:deepslate": 110,
+   "minecraft:deepslate -> minecraft:sculk": 76,
+   "minecraft:sculk -> minecraft:cracked_deepslate_bricks": 60,
+   "minecraft:deepslate -> minecraft:dripstone_block": 45,
+   "minecraft:cracked_deepslate_bricks -> minecraft:sculk": 43,
+   "minecraft:air -> minecraft:pointed_dripstone": 37,
+   "minecraft:sculk_vein -> minecraft:sculk_vein": 33,
+   "minecraft:pointed_dripstone -> minecraft:air": 25,
+   "minecraft:sculk -> minecraft:polished_deepslate": 24,
+   "minecraft:polished_deepslate -> minecraft:sculk": 22,
+   "minecraft:dripstone_block -> minecraft:deepslate": 16,
+   "minecraft:deepslate_tiles -> minecraft:sculk": 15,
+   "minecraft:air -> minecraft:sculk_sensor": 12,
+   "minecraft:air -> minecraft:lava": 9,
+   "minecraft:cobbled_deepslate -> minecraft:sculk": 8,
+   "minecraft:sculk_sensor -> minecraft:air": 6,
+   "minecraft:sculk -> minecraft:deepslate_tiles": 6,
+   "minecraft:sculk -> minecraft:cobbled_deepslate": 4,
+   "minecraft:gravel -> minecraft:sculk": 4,
+   "minecraft:pointed_dripstone -> minecraft:lava": 4,
+   "minecraft:sculk_sensor -> minecraft:sculk_vein": 3,
+   "minecraft:cracked_deepslate_tiles -> minecraft:sculk": 3,
+   "minecraft:pointed_dripstone -> minecraft:pointed_dripstone": 3,
+   "minecraft:sculk -> minecraft:cracked_deepslate_tiles": 2,
+   "minecraft:sculk -> minecraft:gravel": 2,
+   "minecraft:dripstone_block -> minecraft:gravel": 2
+  },
+  "other_differences_total": 1365
+ }
+]

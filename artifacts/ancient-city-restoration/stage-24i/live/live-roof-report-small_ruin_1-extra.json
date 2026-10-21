@@ -1,0 +1,348 @@
+{
+ "datapack_list": "There are 2 data pack(s) enabled: [vanilla (built-in)], [file/pack (world)]There are no more data packs available",
+ "placements": [
+  {
+   "module": "small_ruin_1",
+   "kind": "i24",
+   "fill": "deepslate",
+   "command_pos": [
+    8600,
+    -60,
+    8000
+   ],
+   "place_output": "Generated jigsaw at 8600, -60, 8000",
+   "rotation": 0,
+   "origin": [
+    8600,
+    -61,
+    7997
+   ],
+   "match": 32,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 260,
+     "stored_ok": 189,
+     "stored_rot_dropped_keeps_fill": 10,
+     "mask_cleared": 81
+    },
+    "violations": []
+   },
+   "roof": {
+    "counts": {
+     "would_rot": 3,
+     "present": 29
+    },
+    "missing": []
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "i24",
+   "fill": "deepslate",
+   "command_pos": [
+    8600,
+    -60,
+    8052
+   ],
+   "place_output": "Generated jigsaw at 8600, -60, 8052",
+   "rotation": 270,
+   "origin": [
+    8597,
+    -61,
+    8052
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 260,
+     "stored_ok": 189,
+     "stored_rot_dropped_keeps_fill": 10,
+     "mask_cleared": 81
+    },
+    "violations": []
+   },
+   "roof": {
+    "counts": {
+     "would_rot": 4,
+     "present": 29
+    },
+    "missing": []
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "i24",
+   "fill": "deepslate",
+   "command_pos": [
+    8600,
+    -60,
+    8104
+   ],
+   "place_output": "Generated jigsaw at 8600, -60, 8104",
+   "rotation": 270,
+   "origin": [
+    8597,
+    -61,
+    8104
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 260,
+     "stored_rot_dropped_keeps_fill": 9,
+     "stored_ok": 190,
+     "mask_cleared": 81
+    },
+    "violations": []
+   },
+   "roof": {
+    "counts": {
+     "would_rot": 2,
+     "present": 29
+    },
+    "missing": []
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "i24",
+   "fill": "deepslate",
+   "command_pos": [
+    8600,
+    -60,
+    8156
+   ],
+   "place_output": "Generated jigsaw at 8600, -60, 8156",
+   "rotation": 270,
+   "origin": [
+    8597,
+    -61,
+    8156
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 260,
+     "stored_ok": 193,
+     "stored_rot_dropped_keeps_fill": 6,
+     "mask_cleared": 81
+    },
+    "violations": []
+   },
+   "roof": {
+    "counts": {
+     "would_rot": 3,
+     "present": 29
+    },
+    "missing": []
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "i24",
+   "fill": "deepslate",
+   "command_pos": [
+    8600,
+    -60,
+    8208
+   ],
+   "place_output": "Generated jigsaw at 8600, -60, 8208",
+   "rotation": 270,
+   "origin": [
+    8597,
+    -61,
+    8208
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 260,
+     "stored_ok": 189,
+     "mask_cleared": 81,
+     "stored_rot_dropped_keeps_fill": 10
+    },
+    "violations": []
+   },
+   "roof": {
+    "counts": {
+     "would_rot": 2,
+     "present": 29
+    },
+    "missing": []
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "i24",
+   "fill": "deepslate",
+   "command_pos": [
+    8600,
+    -60,
+    8260
+   ],
+   "place_output": "Generated jigsaw at 8600, -60, 8260",
+   "rotation": 90,
+   "origin": [
+    8603,
+    -61,
+    8260
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 260,
+     "stored_ok": 189,
+     "stored_rot_dropped_keeps_fill": 10,
+     "mask_cleared": 81
+    },
+    "violations": []
+   },
+   "roof": {
+    "counts": {
+     "would_rot": 1,
+     "present": 29
+    },
+    "missing": []
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "i24",
+   "fill": "deepslate",
+   "command_pos": [
+    8600,
+    -60,
+    8312
+   ],
+   "place_output": "Generated jigsaw at 8600, -60, 8312",
+   "rotation": 270,
+   "origin": [
+    8597,
+    -61,
+    8312
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 260,
+     "stored_ok": 191,
+     "stored_rot_dropped_keeps_fill": 8,
+     "mask_cleared": 81
+    },
+    "violations": []
+   },
+   "roof": {
+    "counts": {
+     "would_rot": 1,
+     "present": 29
+    },
+    "missing": []
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "i24",
+   "fill": "deepslate",
+   "command_pos": [
+    8600,
+    -60,
+    8364
+   ],
+   "place_output": "Generated jigsaw at 8600, -60, 8364",
+   "rotation": 180,
+   "origin": [
+    8600,
+    -61,
+    8367
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 260,
+     "stored_ok": 190,
+     "stored_rot_dropped_keeps_fill": 9,
+     "mask_cleared": 81
+    },
+    "violations": []
+   },
+   "roof": {
+    "counts": {
+     "would_rot": 0,
+     "present": 29
+    },
+    "missing": []
+   }
+  },
+  {
+   "module": "small_ruin_1",
+   "kind": "h24",
+   "fill": "deepslate",
+   "command_pos": [
+    8600,
+    -60,
+    9248
+   ],
+   "place_output": "Generated jigsaw at 8600, -60, 9248",
+   "rotation": 0,
+   "origin": [
+    8600,
+    -61,
+    9245
+   ],
+   "match": 33,
+   "probe": 33,
+   "analysis": {
+    "counts": {
+     "outside_mask_untouched": 260,
+     "stored_ok": 193,
+     "stored_rot_dropped_keeps_fill": 6,
+     "mask_cleared": 81
+    },
+    "violations": []
+   },
+   "roof": {
+    "counts": {
+     "would_rot": 2,
+     "MISSING": 2,
+     "present": 27
+    },
+    "missing": [
+     {
+      "pos": [
+       1,
+       4,
+       1
+      ],
+      "world": [
+       8601,
+       -57,
+       9246
+      ],
+      "got": "minecraft:deepslate"
+     },
+     {
+      "pos": [
+       3,
+       4,
+       3
+      ],
+      "world": [
+       8603,
+       -57,
+       9248
+      ],
+      "got": "minecraft:deepslate"
+     }
+    ]
+   }
+  }
+ ]
+}

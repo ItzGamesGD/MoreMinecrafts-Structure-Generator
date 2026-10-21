@@ -1,0 +1,4252 @@
+[
+ {
+  "seed": 24001,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 16,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -231,
+     -51,
+     140,
+     -226,
+     -37,
+     145
+    ],
+    "counts": {
+     "same": 932,
+     "mask_air": 40,
+     "diff_sculk": 91,
+     "diff_natural_terrain": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 21,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -298,
+     -51,
+     179,
+     -282,
+     -38,
+     195
+    ],
+    "counts": {
+     "same": 5039,
+     "diff_sculk": 376,
+     "mask_air": 975,
+     "mask_sculk": 138
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 22,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -322,
+     -51,
+     137,
+     -310,
+     -47,
+     144
+    ],
+    "counts": {
+     "same": 687,
+     "diff_sculk": 162,
+     "mask_air": 162,
+     "mask_sculk": 28,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 3
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 38,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -337,
+     -51,
+     138,
+     -330,
+     -41,
+     144
+    ],
+    "counts": {
+     "same": 1063,
+     "diff_sculk": 17,
+     "mask_air": 9,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 49,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -246,
+     -51,
+     93,
+     -241,
+     -37,
+     98
+    ],
+    "counts": {
+     "same": 1011,
+     "diff_sculk": 13,
+     "mask_air": 38,
+     "mask_sculk": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 50,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -246,
+     -51,
+     64,
+     -243,
+     -47,
+     71
+    ],
+    "counts": {
+     "same": 349,
+     "mask_sculk": 15,
+     "mask_air": 17,
+     "roof_present": 11
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 59,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -358,
+     -51,
+     137,
+     -346,
+     -47,
+     144
+    ],
+    "counts": {
+     "same": 620,
+     "diff_sculk": 257,
+     "mask_sculk": 52,
+     "mask_air": 138,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 5
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 70,
+    "module": "medium_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -288,
+     -51,
+     237,
+     -282,
+     -41,
+     244
+    ],
+    "counts": {
+     "same": 1069,
+     "mask_air": 10,
+     "diff_sculk": 11
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 78,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -339,
+     -51,
+     93,
+     -334,
+     -37,
+     98
+    ],
+    "counts": {
+     "same": 1002,
+     "diff_sculk": 22,
+     "mask_air": 39,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24002,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 17,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     976,
+     -51,
+     -812,
+     981,
+     -37,
+     -807
+    ],
+    "counts": {
+     "same": 897,
+     "diff_sculk": 127,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 23,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     975,
+     -51,
+     -710,
+     980,
+     -37,
+     -705
+    ],
+    "counts": {
+     "same": 1024,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 78,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     874,
+     -51,
+     -793,
+     884,
+     -44,
+     -778
+    ],
+    "counts": {
+     "diff_sculk": 159,
+     "same": 1878,
+     "mask_air": 517,
+     "roof_present": 78,
+     "mask_sculk": 48,
+     "roof_restored_vs_h24": 4
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24003,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 19,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     529,
+     -51,
+     -22,
+     536,
+     -41,
+     -16
+    ],
+    "counts": {
+     "diff_sculk": 123,
+     "same": 957,
+     "mask_air": 10
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 23,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     540,
+     -51,
+     -65,
+     556,
+     -38,
+     -49
+    ],
+    "counts": {
+     "same": 4639,
+     "diff_sculk": 776,
+     "mask_air": 887,
+     "mask_sculk": 226
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 32,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     588,
+     -51,
+     45,
+     594,
+     -41,
+     52
+    ],
+    "counts": {
+     "diff_sculk": 187,
+     "same": 893,
+     "mask_air": 9,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 47,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     620,
+     -51,
+     -27,
+     625,
+     -37,
+     -22
+    ],
+    "counts": {
+     "same": 1010,
+     "mask_air": 39,
+     "diff_sculk": 14,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 49,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     536,
+     -51,
+     40,
+     543,
+     -47,
+     46
+    ],
+    "counts": {
+     "same": 511,
+     "mask_sculk": 27,
+     "mask_air": 54,
+     "roof_present": 29
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     588,
+     -51,
+     65,
+     595,
+     -47,
+     68
+    ],
+    "counts": {
+     "same": 232,
+     "diff_sculk": 122,
+     "mask_air": 19,
+     "mask_sculk": 13,
+     "roof_present": 11,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 62,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     620,
+     -51,
+     -67,
+     627,
+     -41,
+     -61
+    ],
+    "counts": {
+     "same": 937,
+     "diff_sculk": 143,
+     "mask_sculk": 5,
+     "mask_air": 5
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 75,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     477,
+     -51,
+     9,
+     484,
+     -47,
+     21
+    ],
+    "counts": {
+     "same": 836,
+     "mask_air": 161,
+     "mask_sculk": 29,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 3
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 77,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     665,
+     -51,
+     7,
+     681,
+     -38,
+     23
+    ],
+    "counts": {
+     "same": 5047,
+     "diff_sculk": 368,
+     "mask_sculk": 221,
+     "mask_air": 892
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 78,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     670,
+     -51,
+     -21,
+     677,
+     -41,
+     -15
+    ],
+    "counts": {
+     "diff_sculk": 146,
+     "same": 934,
+     "mask_sculk": 2,
+     "mask_air": 8
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24004,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 19,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -241,
+     -51,
+     -951,
+     -229,
+     -47,
+     -944
+    ],
+    "counts": {
+     "diff_fluid": 2,
+     "diff_sculk": 120,
+     "same": 743,
+     "mask_air": 189,
+     "mask_sculk": 1,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 5
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 58,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -218,
+     -51,
+     -856,
+     -202,
+     -38,
+     -840
+    ],
+    "counts": {
+     "same": 5154,
+     "diff_sculk": 261,
+     "mask_air": 1014,
+     "mask_sculk": 99
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 68,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -249,
+     -51,
+     -1035,
+     -233,
+     -38,
+     -1019
+    ],
+    "counts": {
+     "same": 5415,
+     "mask_air": 1081,
+     "mask_sculk": 32
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24005,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 17,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1318,
+     -51,
+     922,
+     -1315,
+     -47,
+     929
+    ],
+    "counts": {
+     "same": 262,
+     "diff_sculk": 89,
+     "mask_air": 20,
+     "roof_present": 11,
+     "mask_sculk": 12,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 24,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1409,
+     -51,
+     921,
+     -1397,
+     -47,
+     928
+    ],
+    "counts": {
+     "same": 602,
+     "diff_sculk": 264,
+     "mask_air": 135,
+     "mask_sculk": 55,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 6
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 25,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -1335,
+     -51,
+     890,
+     -1330,
+     -37,
+     895
+    ],
+    "counts": {
+     "diff_sculk": 114,
+     "same": 910,
+     "mask_air": 36,
+     "mask_sculk": 4
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 62,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -1346,
+     -51,
+     844,
+     -1341,
+     -37,
+     849
+    ],
+    "counts": {
+     "same": 1024,
+     "mask_air": 39,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 63,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -1319,
+     -51,
+     843,
+     -1313,
+     -47,
+     850
+    ],
+    "counts": {
+     "same": 487,
+     "diff_sculk": 24,
+     "mask_air": 81,
+     "roof_present": 29,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 71,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -1348,
+     -51,
+     1023,
+     -1341,
+     -47,
+     1035
+    ],
+    "counts": {
+     "same": 836,
+     "mask_air": 190,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 3
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 75,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1384,
+     -51,
+     991,
+     -1372,
+     -47,
+     998
+    ],
+    "counts": {
+     "same": 570,
+     "diff_sculk": 291,
+     "mask_sculk": 32,
+     "mask_air": 158,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 5
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 77,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1466,
+     -51,
+     913,
+     -1456,
+     -44,
+     928
+    ],
+    "counts": {
+     "same": 2014,
+     "diff_sculk": 14,
+     "mask_air": 520,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 3,
+     "mask_sculk": 45
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 86,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -1449,
+     -51,
+     917,
+     -1437,
+     -47,
+     924
+    ],
+    "counts": {
+     "same": 710,
+     "diff_sculk": 134,
+     "mask_air": 158,
+     "mask_sculk": 32,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 3
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 98,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     -1430,
+     -51,
+     972,
+     -1415,
+     -44,
+     982
+    ],
+    "counts": {
+     "same": 1724,
+     "diff_sculk": 319,
+     "mask_air": 556,
+     "roof_present": 78,
+     "mask_sculk": 9,
+     "roof_restored_vs_h24": 4
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24006,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 25,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -185,
+     -51,
+     -1679,
+     -173,
+     -47,
+     -1672
+    ],
+    "counts": {
+     "same": 836,
+     "mask_air": 190,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 4
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 43,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -164,
+     -51,
+     -1679,
+     -159,
+     -37,
+     -1674
+    ],
+    "counts": {
+     "same": 1024,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 46,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -226,
+     -51,
+     -1796,
+     -220,
+     -47,
+     -1789
+    ],
+    "counts": {
+     "same": 371,
+     "diff_sculk": 163,
+     "mask_air": 70,
+     "roof_present": 29,
+     "roof_restored_vs_h24": 2,
+     "mask_sculk": 11
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 47,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -143,
+     -51,
+     -1762,
+     -107,
+     -42,
+     -1734
+    ],
+    "counts": {
+     "same": 12481,
+     "diff_sculk": 818,
+     "mask_air": 1527,
+     "mask_sculk": 241,
+     "pool_water_kept": 43
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 55,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -261,
+     -51,
+     -1639,
+     -249,
+     -47,
+     -1632
+    ],
+    "counts": {
+     "diff_sculk": 200,
+     "same": 684,
+     "mask_sculk": 32,
+     "mask_air": 158,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 3
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 60,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     -198,
+     -51,
+     -1811,
+     -191,
+     -47,
+     -1808
+    ],
+    "counts": {
+     "same": 331,
+     "diff_sculk": 18,
+     "mask_air": 31,
+     "roof_present": 11,
+     "mask_sculk": 1,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 67,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -114,
+     -51,
+     -1712,
+     -107,
+     -41,
+     -1706
+    ],
+    "counts": {
+     "same": 1049,
+     "diff_sculk": 31,
+     "mask_air": 9,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24007,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 37,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -264,
+     -51,
+     922,
+     -257,
+     -47,
+     934
+    ],
+    "counts": {
+     "same": 589,
+     "diff_sculk": 285,
+     "mask_air": 169,
+     "mask_sculk": 21,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 5
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 41,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -414,
+     -51,
+     868,
+     -378,
+     -42,
+     896
+    ],
+    "counts": {
+     "same": 13020,
+     "mask_sculk": 129,
+     "mask_air": 1639,
+     "diff_sculk": 279,
+     "pool_water_kept": 43
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 55,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -291,
+     -51,
+     943,
+     -286,
+     -37,
+     948
+    ],
+    "counts": {
+     "same": 1013,
+     "diff_sculk": 11,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 56,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -264,
+     -51,
+     945,
+     -259,
+     -37,
+     950
+    ],
+    "counts": {
+     "diff_sculk": 133,
+     "same": 889,
+     "mask_air": 39,
+     "diff_natural_terrain": 2,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 93,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -259,
+     -51,
+     818,
+     -254,
+     -37,
+     823
+    ],
+    "counts": {
+     "same": 956,
+     "diff_sculk": 68,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 94,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -257,
+     -51,
+     845,
+     -254,
+     -47,
+     852
+    ],
+    "counts": {
+     "same": 285,
+     "mask_air": 25,
+     "roof_present": 11,
+     "diff_sculk": 70,
+     "mask_sculk": 7
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24008,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 13,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     474,
+     -51,
+     1251,
+     481,
+     -47,
+     1254
+    ],
+    "counts": {
+     "same": 232,
+     "diff_sculk": 121,
+     "mask_sculk": 15,
+     "mask_air": 17,
+     "roof_present": 11
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 19,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     519,
+     -51,
+     1306,
+     529,
+     -44,
+     1321
+    ],
+    "counts": {
+     "same": 2028,
+     "mask_air": 551,
+     "roof_present": 78,
+     "mask_sculk": 14,
+     "roof_restored_vs_h24": 3
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 31,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     432,
+     -51,
+     1319,
+     447,
+     -44,
+     1329
+    ],
+    "counts": {
+     "same": 1844,
+     "diff_sculk": 184,
+     "mask_air": 519,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 4,
+     "mask_sculk": 46
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 34,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     475,
+     -51,
+     1356,
+     480,
+     -37,
+     1361
+    ],
+    "counts": {
+     "same": 967,
+     "diff_sculk": 57,
+     "mask_air": 38,
+     "mask_sculk": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 35,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     502,
+     -51,
+     1343,
+     530,
+     -42,
+     1379
+    ],
+    "counts": {
+     "same": 12950,
+     "diff_sculk": 349,
+     "mask_air": 1600,
+     "mask_sculk": 168,
+     "pool_water_kept": 43
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 38,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     474,
+     -51,
+     1215,
+     481,
+     -47,
+     1218
+    ],
+    "counts": {
+     "same": 347,
+     "mask_air": 21,
+     "roof_present": 11,
+     "mask_sculk": 11,
+     "diff_sculk": 2,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 45,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     469,
+     -51,
+     1244,
+     476,
+     -47,
+     1247
+    ],
+    "counts": {
+     "same": 297,
+     "diff_sculk": 52,
+     "mask_air": 31,
+     "mask_sculk": 1,
+     "roof_present": 11,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 57,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     474,
+     -51,
+     1371,
+     480,
+     -47,
+     1378
+    ],
+    "counts": {
+     "same": 455,
+     "diff_sculk": 61,
+     "mask_air": 72,
+     "mask_sculk": 9,
+     "roof_present": 29,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 60,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     475,
+     -51,
+     1195,
+     481,
+     -47,
+     1202
+    ],
+    "counts": {
+     "same": 511,
+     "mask_air": 80,
+     "mask_sculk": 1,
+     "roof_present": 29
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 61,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     503,
+     -51,
+     1196,
+     509,
+     -47,
+     1203
+    ],
+    "counts": {
+     "same": 511,
+     "mask_air": 81,
+     "roof_present": 29,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 85,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     429,
+     -51,
+     1228,
+     434,
+     -37,
+     1233
+    ],
+    "counts": {
+     "same": 1024,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 93,
+    "module": "small_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     593,
+     -51,
+     1278,
+     600,
+     -47,
+     1284
+    ],
+    "counts": {
+     "same": 497,
+     "diff_sculk": 6,
+     "mask_air": 81,
+     "roof_present": 29,
+     "diff_fluid": 8,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24009,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 18,
+    "module": "large_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     508,
+     -51,
+     564,
+     524,
+     -38,
+     580
+    ],
+    "counts": {
+     "same": 4972,
+     "diff_sculk": 443,
+     "mask_air": 939,
+     "mask_sculk": 174
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 21,
+    "module": "small_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     450,
+     -51,
+     522,
+     457,
+     -47,
+     528
+    ],
+    "counts": {
+     "same": 500,
+     "diff_sculk": 11,
+     "mask_air": 81,
+     "roof_present": 29
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 27,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     552,
+     -51,
+     557,
+     557,
+     -37,
+     562
+    ],
+    "counts": {
+     "same": 1024,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 35,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     508,
+     -51,
+     584,
+     523,
+     -44,
+     594
+    ],
+    "counts": {
+     "same": 1873,
+     "mask_sculk": 107,
+     "mask_air": 458,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 6,
+     "diff_sculk": 158,
+     "diff_fluid": 5
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 39,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     524,
+     -51,
+     498,
+     530,
+     -47,
+     505
+    ],
+    "counts": {
+     "same": 377,
+     "diff_sculk": 145,
+     "mask_air": 59,
+     "mask_sculk": 22,
+     "roof_present": 29,
+     "roof_restored_vs_h24": 4
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 40,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     576,
+     -51,
+     522,
+     579,
+     -47,
+     529
+    ],
+    "counts": {
+     "same": 349,
+     "mask_air": 32,
+     "roof_present": 11,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 42,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     576,
+     -51,
+     551,
+     581,
+     -37,
+     556
+    ],
+    "counts": {
+     "same": 1024,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 56,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     408,
+     -51,
+     521,
+     420,
+     -47,
+     528
+    ],
+    "counts": {
+     "same": 836,
+     "mask_air": 190,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 59,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     588,
+     -51,
+     551,
+     604,
+     -38,
+     567
+    ],
+    "counts": {
+     "same": 5415,
+     "mask_air": 1113
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 60,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     559,
+     -51,
+     590,
+     562,
+     -47,
+     597
+    ],
+    "counts": {
+     "same": 348,
+     "mask_air": 32,
+     "roof_present": 11,
+     "diff_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 63,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     537,
+     -51,
+     448,
+     549,
+     -47,
+     455
+    ],
+    "counts": {
+     "same": 836,
+     "mask_air": 162,
+     "mask_sculk": 28,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 3
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 67,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     448,
+     -51,
+     448,
+     451,
+     -47,
+     455
+    ],
+    "counts": {
+     "same": 349,
+     "mask_air": 32,
+     "roof_present": 11
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 90,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     425,
+     -51,
+     439,
+     441,
+     -38,
+     455
+    ],
+    "counts": {
+     "same": 5415,
+     "mask_air": 1113
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 97,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     417,
+     -51,
+     593,
+     422,
+     -37,
+     598
+    ],
+    "counts": {
+     "same": 1024,
+     "mask_air": 38,
+     "mask_sculk": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24010,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 13,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -3015,
+     -51,
+     2320,
+     -3010,
+     -37,
+     2325
+    ],
+    "counts": {
+     "same": 1024,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 16,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -3046,
+     -51,
+     2274,
+     -3041,
+     -37,
+     2279
+    ],
+    "counts": {
+     "same": 1024,
+     "mask_air": 38,
+     "mask_sculk": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 46,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -3015,
+     -51,
+     2359,
+     -3009,
+     -47,
+     2366
+    ],
+    "counts": {
+     "same": 511,
+     "mask_air": 45,
+     "mask_sculk": 36,
+     "roof_present": 29,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 57,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -3079,
+     -51,
+     2221,
+     -3076,
+     -47,
+     2228
+    ],
+    "counts": {
+     "same": 349,
+     "mask_air": 32,
+     "roof_present": 11
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 63,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -3120,
+     -51,
+     2359,
+     -3115,
+     -37,
+     2364
+    ],
+    "counts": {
+     "same": 1010,
+     "diff_sculk": 14,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 76,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -3126,
+     -51,
+     2364,
+     -3123,
+     -47,
+     2371
+    ],
+    "counts": {
+     "same": 286,
+     "diff_sculk": 64,
+     "mask_air": 24,
+     "roof_present": 11,
+     "roof_restored_vs_h24": 2,
+     "mask_sculk": 8
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24011,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 13,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -238,
+     -51,
+     -573,
+     -231,
+     -41,
+     -567
+    ],
+    "counts": {
+     "same": 1080,
+     "mask_air": 9,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 26,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -255,
+     -51,
+     -545,
+     -252,
+     -47,
+     -538
+    ],
+    "counts": {
+     "same": 349,
+     "mask_air": 21,
+     "mask_sculk": 11,
+     "roof_present": 11
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 49,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -169,
+     -51,
+     -500,
+     -157,
+     -47,
+     -493
+    ],
+    "counts": {
+     "same": 568,
+     "diff_sculk": 311,
+     "mask_air": 143,
+     "mask_sculk": 47,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 51,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -239,
+     -51,
+     -511,
+     -236,
+     -47,
+     -504
+    ],
+    "counts": {
+     "same": 349,
+     "mask_sculk": 9,
+     "mask_air": 23,
+     "roof_present": 11
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -182,
+     -51,
+     -633,
+     -175,
+     -47,
+     -621
+    ],
+    "counts": {
+     "same": 603,
+     "diff_sculk": 267,
+     "mask_sculk": 29,
+     "mask_air": 161,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 62,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -99,
+     -51,
+     -582,
+     -83,
+     -38,
+     -566
+    ],
+    "counts": {
+     "diff_sculk": 867,
+     "same": 4548,
+     "mask_air": 863,
+     "mask_sculk": 250
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 75,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -262,
+     -51,
+     -521,
+     -257,
+     -37,
+     -516
+    ],
+    "counts": {
+     "same": 1024,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 89,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -142,
+     -51,
+     -633,
+     -132,
+     -44,
+     -618
+    ],
+    "counts": {
+     "same": 1649,
+     "diff_sculk": 385,
+     "mask_air": 500,
+     "mask_sculk": 65,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 4
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 91,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -252,
+     -51,
+     -624,
+     -245,
+     -41,
+     -618
+    ],
+    "counts": {
+     "same": 1080,
+     "mask_air": 9,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24012,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 17,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1358,
+     -51,
+     79,
+     -1351,
+     -41,
+     85
+    ],
+    "counts": {
+     "same": 944,
+     "diff_sculk": 136,
+     "mask_air": 10
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 18,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -1340,
+     -51,
+     27,
+     -1324,
+     -38,
+     43
+    ],
+    "counts": {
+     "same": 4645,
+     "diff_sculk": 770,
+     "mask_air": 917,
+     "mask_sculk": 196
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 20,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -1302,
+     -51,
+     32,
+     -1296,
+     -41,
+     39
+    ],
+    "counts": {
+     "diff_sculk": 43,
+     "same": 1037,
+     "mask_air": 9,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 24,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1250,
+     -51,
+     80,
+     -1245,
+     -37,
+     85
+    ],
+    "counts": {
+     "same": 1021,
+     "diff_sculk": 3,
+     "mask_air": 39,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 26,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -1256,
+     -51,
+     86,
+     -1250,
+     -47,
+     93
+    ],
+    "counts": {
+     "same": 502,
+     "diff_sculk": 9,
+     "mask_air": 81,
+     "roof_present": 29,
+     "roof_restored_vs_h24": 3
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 32,
+    "module": "large_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -1302,
+     -51,
+     12,
+     -1286,
+     -38,
+     28
+    ],
+    "counts": {
+     "same": 4546,
+     "diff_sculk": 869,
+     "mask_air": 911,
+     "mask_sculk": 202
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 39,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -1234,
+     -51,
+     52,
+     -1227,
+     -41,
+     58
+    ],
+    "counts": {
+     "same": 1072,
+     "diff_sculk": 8,
+     "mask_air": 10
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 41,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1399,
+     -51,
+     42,
+     -1389,
+     -44,
+     57
+    ],
+    "counts": {
+     "same": 1687,
+     "diff_sculk": 348,
+     "mask_air": 492,
+     "mask_sculk": 73,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 51,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -1288,
+     -51,
+     125,
+     -1281,
+     -41,
+     131
+    ],
+    "counts": {
+     "same": 988,
+     "diff_sculk": 92,
+     "mask_air": 10
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 56,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1414,
+     -51,
+     79,
+     -1409,
+     -37,
+     84
+    ],
+    "counts": {
+     "same": 1024,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 70,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -1280,
+     -51,
+     103,
+     -1244,
+     -42,
+     131
+    ],
+    "counts": {
+     "same": 12944,
+     "diff_sculk": 353,
+     "mask_air": 1592,
+     "mask_sculk": 158,
+     "diff_fluid": 2,
+     "mask_fluid_water": 18,
+     "pool_water_kept": 43
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 74,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -1393,
+     -51,
+     12,
+     -1386,
+     -47,
+     15
+    ],
+    "counts": {
+     "same": 349,
+     "mask_air": 26,
+     "mask_sculk": 6,
+     "roof_present": 11,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 75,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -1330,
+     -51,
+     -40,
+     -1324,
+     -47,
+     -33
+    ],
+    "counts": {
+     "same": 406,
+     "diff_sculk": 109,
+     "mask_air": 81,
+     "roof_present": 29
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24013,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 41,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1190,
+     -51,
+     1308,
+     1196,
+     -41,
+     1315
+    ],
+    "counts": {
+     "same": 908,
+     "diff_sculk": 172,
+     "mask_air": 8,
+     "mask_sculk": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 48,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1191,
+     -51,
+     1138,
+     1219,
+     -42,
+     1174
+    ],
+    "counts": {
+     "diff_sculk": 638,
+     "same": 12661,
+     "mask_air": 1590,
+     "mask_sculk": 178,
+     "pool_water_kept": 43
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 73,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     1117,
+     -51,
+     1181,
+     1124,
+     -47,
+     1184
+    ],
+    "counts": {
+     "diff_sculk": 139,
+     "same": 215,
+     "mask_sculk": 15,
+     "roof_present": 11,
+     "mask_air": 17
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 74,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1083,
+     -51,
+     1273,
+     1090,
+     -41,
+     1279
+    ],
+    "counts": {
+     "same": 1032,
+     "diff_sculk": 48,
+     "mask_sculk": 4,
+     "mask_air": 6
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 80,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1278,
+     -51,
+     1213,
+     1290,
+     -47,
+     1220
+    ],
+    "counts": {
+     "same": 836,
+     "mask_sculk": 38,
+     "mask_air": 152,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 90,
+    "module": "medium_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     1089,
+     -51,
+     1296,
+     1095,
+     -41,
+     1303
+    ],
+    "counts": {
+     "diff_sculk": 207,
+     "same": 873,
+     "mask_sculk": 3,
+     "mask_air": 7
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24014,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 20,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1359,
+     -51,
+     -925,
+     1366,
+     -47,
+     -913
+    ],
+    "counts": {
+     "same": 783,
+     "mask_air": 136,
+     "diff_sculk": 56,
+     "mask_sculk": 54,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 3
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 31,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1308,
+     -51,
+     -967,
+     1320,
+     -47,
+     -960
+    ],
+    "counts": {
+     "same": 615,
+     "diff_sculk": 281,
+     "mask_air": 147,
+     "mask_sculk": 43,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 3
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 33,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     1388,
+     -51,
+     -904,
+     1403,
+     -44,
+     -894
+    ],
+    "counts": {
+     "same": 1593,
+     "diff_sculk": 446,
+     "mask_sculk": 126,
+     "mask_air": 439,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 38,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     1432,
+     -51,
+     -937,
+     1442,
+     -44,
+     -922
+    ],
+    "counts": {
+     "same": 1661,
+     "diff_sculk": 403,
+     "mask_air": 496,
+     "mask_sculk": 69,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 4
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 45,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1400,
+     -51,
+     -1011,
+     1407,
+     -41,
+     -1005
+    ],
+    "counts": {
+     "same": 1006,
+     "diff_sculk": 74,
+     "mask_air": 9,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 62,
+    "module": "small_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1273,
+     -51,
+     -966,
+     1280,
+     -47,
+     -960
+    ],
+    "counts": {
+     "same": 511,
+     "mask_air": 81,
+     "roof_present": 29,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 63,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1272,
+     -51,
+     -938,
+     1279,
+     -41,
+     -932
+    ],
+    "counts": {
+     "same": 1080,
+     "mask_air": 10
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 66,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1359,
+     -51,
+     -863,
+     1366,
+     -47,
+     -860
+    ],
+    "counts": {
+     "same": 349,
+     "mask_air": 32,
+     "roof_present": 11,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 72,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     1293,
+     -51,
+     -971,
+     1296,
+     -47,
+     -964
+    ],
+    "counts": {
+     "same": 246,
+     "diff_sculk": 103,
+     "mask_sculk": 10,
+     "mask_air": 22,
+     "roof_present": 11,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 73,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     1279,
+     -51,
+     -1021,
+     1315,
+     -42,
+     -993
+    ],
+    "counts": {
+     "same": 13298,
+     "mask_air": 1639,
+     "mask_sculk": 129,
+     "diff_fluid": 1,
+     "pool_water_kept": 43
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 76,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     1440,
+     -51,
+     -1011,
+     1447,
+     -47,
+     -1005
+    ],
+    "counts": {
+     "same": 429,
+     "diff_sculk": 90,
+     "mask_sculk": 11,
+     "mask_air": 70,
+     "roof_present": 29,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24015,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 35,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -193,
+     -51,
+     -86,
+     -187,
+     -47,
+     -79
+    ],
+    "counts": {
+     "same": 413,
+     "diff_sculk": 99,
+     "mask_air": 75,
+     "roof_present": 29,
+     "mask_sculk": 6,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 45,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -119,
+     -51,
+     -176,
+     -113,
+     -41,
+     -169
+    ],
+    "counts": {
+     "same": 884,
+     "diff_sculk": 196,
+     "mask_sculk": 5,
+     "mask_air": 5
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 54,
+    "module": "sauna_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -293,
+     -51,
+     -132,
+     -257,
+     -42,
+     -104
+    ],
+    "counts": {
+     "same": 12409,
+     "diff_sculk": 890,
+     "mask_air": 1518,
+     "mask_sculk": 250,
+     "pool_water_kept": 43
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 55,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -279,
+     -51,
+     -170,
+     -263,
+     -38,
+     -154
+    ],
+    "counts": {
+     "same": 4652,
+     "diff_sculk": 763,
+     "mask_air": 901,
+     "mask_sculk": 212
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 57,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -263,
+     -51,
+     -215,
+     -253,
+     -44,
+     -200
+    ],
+    "counts": {
+     "same": 2024,
+     "mask_air": 456,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 6,
+     "mask_sculk": 109,
+     "diff_sculk": 4
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 74,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -282,
+     -51,
+     -207,
+     -270,
+     -47,
+     -200
+    ],
+    "counts": {
+     "same": 826,
+     "mask_sculk": 35,
+     "mask_air": 155,
+     "diff_sculk": 12,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 5
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 76,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -280,
+     -51,
+     -178,
+     -277,
+     -47,
+     -171
+    ],
+    "counts": {
+     "same": 283,
+     "diff_sculk": 69,
+     "mask_air": 18,
+     "roof_present": 11,
+     "mask_sculk": 14,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 81,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -187,
+     -51,
+     -65,
+     -181,
+     -47,
+     -58
+    ],
+    "counts": {
+     "same": 504,
+     "mask_air": 79,
+     "mask_sculk": 2,
+     "roof_present": 29,
+     "roof_restored_vs_h24": 1,
+     "diff_sculk": 7
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 84,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -311,
+     -51,
+     -132,
+     -304,
+     -47,
+     -126
+    ],
+    "counts": {
+     "same": 438,
+     "diff_sculk": 73,
+     "mask_air": 76,
+     "mask_sculk": 5,
+     "roof_present": 29,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24016,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 19,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -1025,
+     -51,
+     -1496,
+     -1019,
+     -41,
+     -1489
+    ],
+    "counts": {
+     "same": 1045,
+     "diff_sculk": 35,
+     "mask_air": 9,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 34,
+    "module": "medium_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -1053,
+     -51,
+     -1478,
+     -1047,
+     -41,
+     -1471
+    ],
+    "counts": {
+     "same": 1080,
+     "mask_air": 8,
+     "mask_sculk": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 39,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     -991,
+     -51,
+     -1566,
+     -984,
+     -47,
+     -1563
+    ],
+    "counts": {
+     "same": 250,
+     "diff_sculk": 107,
+     "mask_air": 25,
+     "roof_present": 11,
+     "mask_sculk": 7
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 48,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -1024,
+     -51,
+     -1619,
+     -1018,
+     -41,
+     -1612
+    ],
+    "counts": {
+     "same": 1065,
+     "diff_sculk": 15,
+     "mask_air": 10
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 51,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -1054,
+     -51,
+     -1458,
+     -1047,
+     -47,
+     -1455
+    ],
+    "counts": {
+     "same": 349,
+     "mask_air": 26,
+     "mask_sculk": 6,
+     "roof_present": 11,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 61,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -985,
+     -51,
+     -1495,
+     -980,
+     -37,
+     -1490
+    ],
+    "counts": {
+     "same": 842,
+     "diff_sculk": 182,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 95,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -983,
+     -51,
+     -1573,
+     -978,
+     -37,
+     -1568
+    ],
+    "counts": {
+     "same": 1004,
+     "diff_sculk": 20,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24017,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 41,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     81,
+     -51,
+     152,
+     96,
+     -44,
+     162
+    ],
+    "counts": {
+     "same": 1482,
+     "diff_sculk": 574,
+     "mask_air": 462,
+     "mask_sculk": 103,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 45,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -37,
+     -51,
+     112,
+     -30,
+     -41,
+     118
+    ],
+    "counts": {
+     "same": 900,
+     "diff_sculk": 180,
+     "mask_sculk": 3,
+     "mask_air": 7
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 47,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -36,
+     -51,
+     140,
+     -31,
+     -37,
+     145
+    ],
+    "counts": {
+     "same": 946,
+     "diff_sculk": 78,
+     "mask_air": 38,
+     "mask_sculk": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 54,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     47,
+     -51,
+     202,
+     62,
+     -44,
+     212
+    ],
+    "counts": {
+     "same": 1444,
+     "diff_sculk": 615,
+     "mask_air": 512,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 3,
+     "mask_sculk": 53
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 60,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     81,
+     -51,
+     76,
+     86,
+     -37,
+     81
+    ],
+    "counts": {
+     "same": 975,
+     "diff_sculk": 49,
+     "mask_air": 39,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 61,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     87,
+     -51,
+     81,
+     94,
+     -41,
+     87
+    ],
+    "counts": {
+     "same": 879,
+     "diff_sculk": 201,
+     "mask_sculk": 4,
+     "mask_air": 6
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 62,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -19,
+     -51,
+     74,
+     -14,
+     -37,
+     79
+    ],
+    "counts": {
+     "same": 1024,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 82,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     82,
+     -51,
+     187,
+     98,
+     -38,
+     203
+    ],
+    "counts": {
+     "same": 4810,
+     "diff_sculk": 605,
+     "mask_air": 982,
+     "mask_sculk": 131
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 83,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     125,
+     -51,
+     150,
+     135,
+     -44,
+     165
+    ],
+    "counts": {
+     "diff_sculk": 372,
+     "same": 1659,
+     "mask_air": 490,
+     "mask_sculk": 75,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 4
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 85,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     121,
+     -51,
+     189,
+     128,
+     -47,
+     201
+    ],
+    "counts": {
+     "same": 734,
+     "diff_sculk": 106,
+     "mask_air": 182,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 2,
+     "mask_sculk": 8
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 88,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     121,
+     -51,
+     61,
+     127,
+     -41,
+     68
+    ],
+    "counts": {
+     "same": 1080,
+     "mask_air": 10
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24018,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 32,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     1293,
+     -51,
+     112,
+     1300,
+     -47,
+     118
+    ],
+    "counts": {
+     "same": 480,
+     "diff_sculk": 31,
+     "mask_air": 76,
+     "mask_sculk": 5,
+     "roof_present": 29,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 51,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1259,
+     -51,
+     57,
+     1266,
+     -47,
+     69
+    ],
+    "counts": {
+     "same": 576,
+     "diff_sculk": 303,
+     "mask_air": 146,
+     "mask_sculk": 44,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1288,
+     -51,
+     60,
+     1293,
+     -37,
+     65
+    ],
+    "counts": {
+     "same": 1024,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 70,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     1261,
+     -51,
+     44,
+     1266,
+     -37,
+     49
+    ],
+    "counts": {
+     "same": 875,
+     "diff_sculk": 149,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 76,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     1137,
+     -51,
+     145,
+     1153,
+     -38,
+     161
+    ],
+    "counts": {
+     "same": 5414,
+     "mask_air": 1013,
+     "mask_sculk": 100,
+     "diff_fluid": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 78,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1293,
+     -51,
+     185,
+     1300,
+     -41,
+     191
+    ],
+    "counts": {
+     "same": 1080,
+     "mask_air": 10
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 82,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     1242,
+     -51,
+     -3,
+     1249,
+     -47,
+     0
+    ],
+    "counts": {
+     "same": 270,
+     "diff_sculk": 89,
+     "mask_air": 32,
+     "roof_present": 11
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 84,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1288,
+     -51,
+     12,
+     1316,
+     -42,
+     48
+    ],
+    "counts": {
+     "same": 12883,
+     "diff_sculk": 416,
+     "mask_air": 1652,
+     "mask_sculk": 116,
+     "pool_water_kept": 43
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24019,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 27,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -757,
+     -51,
+     -1514,
+     -747,
+     -44,
+     -1499
+    ],
+    "counts": {
+     "diff_sculk": 425,
+     "same": 1612,
+     "mask_air": 458,
+     "mask_sculk": 107,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 6
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 30,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -632,
+     -51,
+     -1546,
+     -626,
+     -41,
+     -1539
+    ],
+    "counts": {
+     "same": 931,
+     "diff_sculk": 149,
+     "mask_air": 10
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 45,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -662,
+     -51,
+     -1614,
+     -657,
+     -37,
+     -1609
+    ],
+    "counts": {
+     "same": 890,
+     "diff_sculk": 134,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24020,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 35,
+    "module": "sauna_1",
+    "rotation": "NONE",
+    "bb": [
+     1709,
+     -51,
+     -869,
+     1737,
+     -42,
+     -833
+    ],
+    "counts": {
+     "same": 12592,
+     "diff_sculk": 707,
+     "mask_sculk": 148,
+     "mask_air": 1620,
+     "pool_water_kept": 43
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 37,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     1793,
+     -51,
+     -944,
+     1799,
+     -47,
+     -937
+    ],
+    "counts": {
+     "diff_sculk": 63,
+     "same": 450,
+     "mask_air": 69,
+     "roof_present": 29,
+     "mask_sculk": 12
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 48,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1722,
+     -51,
+     -1004,
+     1738,
+     -38,
+     -988
+    ],
+    "counts": {
+     "same": 5415,
+     "mask_air": 1008,
+     "mask_sculk": 105
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 51,
+    "module": "large_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     1759,
+     -51,
+     -836,
+     1775,
+     -38,
+     -820
+    ],
+    "counts": {
+     "same": 4761,
+     "diff_sculk": 654,
+     "mask_air": 968,
+     "mask_sculk": 145
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1730,
+     -51,
+     -830,
+     1737,
+     -47,
+     -827
+    ],
+    "counts": {
+     "diff_sculk": 116,
+     "same": 237,
+     "mask_air": 31,
+     "roof_present": 11,
+     "mask_sculk": 1,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 61,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1804,
+     -51,
+     -946,
+     1811,
+     -47,
+     -934
+    ],
+    "counts": {
+     "same": 654,
+     "diff_sculk": 191,
+     "mask_sculk": 40,
+     "mask_air": 150,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 68,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1780,
+     -51,
+     -993,
+     1792,
+     -47,
+     -986
+    ],
+    "counts": {
+     "same": 836,
+     "mask_air": 185,
+     "mask_sculk": 5,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 3
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 91,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1804,
+     -51,
+     -977,
+     1811,
+     -47,
+     -974
+    ],
+    "counts": {
+     "same": 227,
+     "diff_sculk": 123,
+     "mask_sculk": 11,
+     "mask_air": 21,
+     "roof_present": 11,
+     "roof_restored_vs_h24": 3
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24021,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 14,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -305,
+     -51,
+     172,
+     -293,
+     -47,
+     179
+    ],
+    "counts": {
+     "same": 800,
+     "diff_sculk": 36,
+     "mask_air": 186,
+     "roof_present": 64,
+     "mask_sculk": 4,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 24,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -283,
+     -51,
+     115,
+     -278,
+     -37,
+     120
+    ],
+    "counts": {
+     "same": 1024,
+     "mask_air": 40
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 26,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -320,
+     -51,
+     144,
+     -313,
+     -41,
+     150
+    ],
+    "counts": {
+     "diff_sculk": 13,
+     "same": 1067,
+     "mask_sculk": 3,
+     "mask_air": 7
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -221,
+     -51,
+     103,
+     -205,
+     -38,
+     119
+    ],
+    "counts": {
+     "same": 4834,
+     "diff_sculk": 581,
+     "mask_air": 1023,
+     "mask_sculk": 90
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 54,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -285,
+     -51,
+     76,
+     -278,
+     -47,
+     79
+    ],
+    "counts": {
+     "same": 349,
+     "mask_air": 32,
+     "roof_present": 11
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 55,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -256,
+     -51,
+     72,
+     -249,
+     -47,
+     84
+    ],
+    "counts": {
+     "same": 724,
+     "diff_sculk": 135,
+     "mask_air": 184,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 3,
+     "mask_sculk": 6
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 62,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -295,
+     -51,
+     248,
+     -279,
+     -38,
+     264
+    ],
+    "counts": {
+     "same": 5386,
+     "diff_sculk": 29,
+     "mask_air": 1110,
+     "mask_sculk": 3
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 68,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -183,
+     -51,
+     202,
+     -177,
+     -41,
+     209
+    ],
+    "counts": {
+     "same": 1080,
+     "mask_air": 10
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 76,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     -326,
+     -51,
+     118,
+     -311,
+     -44,
+     128
+    ],
+    "counts": {
+     "same": 1725,
+     "diff_sculk": 320,
+     "mask_air": 429,
+     "mask_sculk": 136,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 6
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24022,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 46,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -1033,
+     -51,
+     -198,
+     -1017,
+     -38,
+     -182
+    ],
+    "counts": {
+     "same": 4780,
+     "diff_sculk": 635,
+     "mask_air": 913,
+     "mask_sculk": 200
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 49,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -993,
+     -51,
+     -194,
+     -987,
+     -41,
+     -187
+    ],
+    "counts": {
+     "same": 1022,
+     "diff_sculk": 58,
+     "mask_air": 9,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -956,
+     -51,
+     -306,
+     -941,
+     -44,
+     -296
+    ],
+    "counts": {
+     "same": 2028,
+     "mask_air": 565,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 5
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 75,
+    "module": "small_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -986,
+     -51,
+     -388,
+     -979,
+     -47,
+     -382
+    ],
+    "counts": {
+     "same": 503,
+     "diff_sculk": 8,
+     "mask_air": 80,
+     "mask_sculk": 1,
+     "roof_present": 29,
+     "roof_restored_vs_h24": 3
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 81,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -1067,
+     -51,
+     -198,
+     -1057,
+     -44,
+     -183
+    ],
+    "counts": {
+     "same": 1833,
+     "diff_sculk": 202,
+     "mask_air": 565,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 5
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24023,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 39,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     -595,
+     -51,
+     1767,
+     -580,
+     -44,
+     1777
+    ],
+    "counts": {
+     "same": 1658,
+     "diff_sculk": 409,
+     "mask_sculk": 109,
+     "mask_air": 456,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 42,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -595,
+     -51,
+     1712,
+     -589,
+     -41,
+     1719
+    ],
+    "counts": {
+     "same": 1080,
+     "mask_air": 10
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 47,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -497,
+     -51,
+     1771,
+     -494,
+     -47,
+     1778
+    ],
+    "counts": {
+     "diff_sculk": 86,
+     "same": 265,
+     "mask_air": 24,
+     "roof_present": 11,
+     "mask_sculk": 8
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 50,
+    "module": "medium_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -498,
+     -51,
+     1700,
+     -492,
+     -41,
+     1707
+    ],
+    "counts": {
+     "same": 1080,
+     "mask_sculk": 7,
+     "mask_air": 3
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -470,
+     -51,
+     1703,
+     -464,
+     -41,
+     1710
+    ],
+    "counts": {
+     "same": 1080,
+     "mask_air": 9,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 56,
+    "module": "medium_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -623,
+     -51,
+     1788,
+     -617,
+     -41,
+     1795
+    ],
+    "counts": {
+     "same": 1080,
+     "mask_air": 9,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 58,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     -595,
+     -51,
+     1786,
+     -580,
+     -44,
+     1796
+    ],
+    "counts": {
+     "same": 1754,
+     "diff_sculk": 279,
+     "mask_air": 455,
+     "mask_sculk": 110,
+     "roof_present": 78,
+     "roof_restored_vs_h24": 2
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 65,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -555,
+     -51,
+     1673,
+     -548,
+     -47,
+     1685
+    ],
+    "counts": {
+     "same": 836,
+     "mask_air": 190,
+     "roof_present": 64,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 80,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     -555,
+     -51,
+     1659,
+     -548,
+     -47,
+     1662
+    ],
+    "counts": {
+     "same": 349,
+     "mask_air": 32,
+     "roof_present": 11
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 83,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -463,
+     -51,
+     1800,
+     -456,
+     -47,
+     1806
+    ],
+    "counts": {
+     "same": 400,
+     "diff_sculk": 119,
+     "mask_air": 80,
+     "roof_present": 29,
+     "mask_sculk": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24024,
+  "layout_identical_h24_i24": true,
+  "pieces": [
+   {
+    "piece_index": 35,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1599,
+     -51,
+     36,
+     1615,
+     -38,
+     52
+    ],
+    "counts": {
+     "same": 5129,
+     "diff_sculk": 286,
+     "mask_air": 939,
+     "mask_sculk": 174
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 59,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1620,
+     -51,
+     -36,
+     1627,
+     -41,
+     -30
+    ],
+    "counts": {
+     "same": 1080,
+     "mask_air": 10
+    },
+    "roof_missing": [],
+    "unexplained": []
+   },
+   {
+    "piece_index": 85,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1569,
+     -51,
+     76,
+     1575,
+     -47,
+     83
+    ],
+    "counts": {
+     "same": 511,
+     "mask_air": 81,
+     "roof_present": 29,
+     "roof_restored_vs_h24": 1
+    },
+    "roof_missing": [],
+    "unexplained": []
+   }
+  ]
+ }
+]

@@ -1,0 +1,145 @@
+{
+ "roofs": [
+  "gallery/roof-medium_ruin_1.jpg",
+  "gallery/roof-medium_ruin_2.jpg",
+  "gallery/roof-small_ruin_1.jpg",
+  "gallery/roof-small_ruin_2.jpg"
+ ],
+ "cases": [
+  {
+   "case": "roof-lava-small_ruin_1",
+   "seed": 24008,
+   "piece_index": 93,
+   "images": [
+    "gallery/roof-lava-small_ruin_1-iso-a.jpg",
+    "gallery/roof-lava-small_ruin_1-top.jpg",
+    "gallery/roof-lava-small_ruin_1-cutaway-cut-iso.jpg",
+    "gallery/roof-lava-small_ruin_1-cutaway-cut-top.jpg"
+   ]
+  },
+  {
+   "case": "entrance-medium_ruin_1",
+   "seed": 24005,
+   "piece_index": 71,
+   "cells": [
+    [
+     -1349,
+     -50,
+     1029
+    ],
+    [
+     -1349,
+     -50,
+     1030
+    ],
+    [
+     -1349,
+     -50,
+     1031
+    ],
+    [
+     -1349,
+     -50,
+     1032
+    ],
+    [
+     -1349,
+     -50,
+     1033
+    ],
+    [
+     -1349,
+     -50,
+     1034
+    ],
+    [
+     -1349,
+     -50,
+     1035
+    ],
+    [
+     -1349,
+     -49,
+     1029
+    ],
+    [
+     -1349,
+     -49,
+     1030
+    ],
+    [
+     -1349,
+     -49,
+     1031
+    ],
+    [
+     -1349,
+     -49,
+     1032
+    ],
+    [
+     -1349,
+     -49,
+     1033
+    ],
+    [
+     -1349,
+     -49,
+     1034
+    ],
+    [
+     -1349,
+     -49,
+     1035
+    ]
+   ],
+   "images": [
+    "gallery/entrance-medium_ruin_1-cut-iso.jpg",
+    "gallery/entrance-medium_ruin_1-cut-iso-b.jpg",
+    "gallery/entrance-medium_ruin_1-cut-top.jpg"
+   ]
+  },
+  {
+   "case": "entrance-large_ruin_1",
+   "seed": 24009,
+   "piece_index": 59,
+   "cells": [
+    [
+     595,
+     -50,
+     550
+    ],
+    [
+     595,
+     -49,
+     550
+    ],
+    [
+     596,
+     -50,
+     550
+    ],
+    [
+     596,
+     -49,
+     550
+    ],
+    [
+     597,
+     -50,
+     550
+    ],
+    [
+     597,
+     -49,
+     550
+    ]
+   ],
+   "images": [
+    "gallery/entrance-large_ruin_1-cut-iso.jpg",
+    "gallery/entrance-large_ruin_1-cut-iso-b.jpg",
+    "gallery/entrance-large_ruin_1-cut-top.jpg"
+   ]
+  }
+ ]
+}
