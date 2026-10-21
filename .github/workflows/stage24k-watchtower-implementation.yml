@@ -51,7 +51,8 @@ jobs:
           $PY tools/stage24i/build.py > /dev/null
           $PY -c "import sys; sys.path.insert(0, '.'); from pathlib import Path; from tools.stage24j.designs import build; build(Path('artifacts/ancient-city-restoration/stage-24j/proposals'))"
           $PY tools/stage24k/build.py > /dev/null
-          git diff --exit-code -- artifacts/ancient-city-restoration/stage-24g artifacts/ancient-city-restoration/stage-24h artifacts/ancient-city-restoration/stage-24i/datapack artifacts/ancient-city-restoration/stage-24i/roof artifacts/ancient-city-restoration/stage-24j/proposals artifacts/ancient-city-restoration/stage-24k/final-candidates artifacts/ancient-city-restoration/stage-24k/derived-24g artifacts/ancient-city-restoration/stage-24k/derived-24h artifacts/ancient-city-restoration/stage-24k/derived-24i artifacts/ancient-city-restoration/stage-24k/DERIVATION-DIFF.json artifacts/ancient-city-restoration/stage-24k/SOURCES.json
+          $PY tools/stage24k/doc.py
+          git diff --exit-code -- artifacts/ancient-city-restoration/stage-24g artifacts/ancient-city-restoration/stage-24h artifacts/ancient-city-restoration/stage-24i/datapack artifacts/ancient-city-restoration/stage-24i/roof artifacts/ancient-city-restoration/stage-24j/proposals artifacts/ancient-city-restoration/stage-24k/final-candidates artifacts/ancient-city-restoration/stage-24k/derived-24g artifacts/ancient-city-restoration/stage-24k/derived-24h artifacts/ancient-city-restoration/stage-24k/derived-24i artifacts/ancient-city-restoration/stage-24k/DERIVATION-DIFF.json artifacts/ancient-city-restoration/stage-24k/DERIVATION.md artifacts/ancient-city-restoration/stage-24k/SOURCES.json
       - name: Exact NBT comparison - six modules identical to Stage 24-F, two towers identical to the approved Option A candidates, production pack equal to the final candidates
         run: |
           A=artifacts/ancient-city-restoration
@@ -76,7 +77,7 @@ jobs:
           git diff --exit-code -- artifacts/ancient-city-restoration/stage-24k/static-checks.json
       - name: Stage 24-K, 24-J, 24-I, 24-H and 24-G tests, plus the earlier suites
         run: |
-          vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24k_towers.py tests/test_stage24j_watchtowers.py tests/test_stage24i_roof.py tests/test_stage24h_clearance.py tests/test_stage24g_protection.py tests/test_stage24b_*.py tests/test_stage24c_regressions.py tests/test_stage24e_proposals.py tests/test_stage24f_final.py -q
+          vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24k_towers.py tests/test_stage24k_sweep.py tests/test_stage24j_watchtowers.py tests/test_stage24i_roof.py tests/test_stage24h_clearance.py tests/test_stage24g_protection.py tests/test_stage24b_*.py tests/test_stage24c_regressions.py tests/test_stage24e_proposals.py tests/test_stage24f_final.py -q
           STAGE24B_DIR=$PWD/artifacts/ancient-city-restoration/stage-24f/final-candidates vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24c_regressions.py -q
       - name: Live tests on a real 26.1.2 server - production pool entries (buried, real processors) and exact tower placement, 4 rotations
         env:

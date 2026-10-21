@@ -49,6 +49,10 @@ def main(seeds):
     arch -= {"minecraft:deepslate", "minecraft:air", "minecraft:water", "minecraft:cave_air"} | SCULK
     design = {m: {p for p in set(tmpl_old[m]) | set(tmpl_new[m]) if tmpl_old[m].get(p) != tmpl_new[m].get(p)} for m in MODULES}
     meta = {m: f().meta for m, f in TOWERS.items()}
+    inv_old = json.loads((AR / "stage-24g/protection/protected-cells.json").read_text())
+    inv_new = json.loads((K / "derived-24g/protection/protected-cells.json").read_text())
+    new_prot = {m: {tuple(e["pos"]): e["state"] for e in inv_new[m]["protected"]
+                    if tuple(e["pos"]) not in {tuple(x["pos"]) for x in inv_old[m]["protected"]}} for m in TOWERS}
     out = []
     for seed in seeds:
         pi = json.loads((D24I / f"worldgen/manifest-{seed}-i24.json").read_text())["cities"][0]["pieces"]
@@ -56,6 +60,21 @@ def main(seeds):
         key = lambda p: (p["pos"], p["rotation"], p["bb"], p["template"])  # noqa: E731
         res = {"seed": seed, "layout_identical_i24_k24": [key(a) for a in pi] == [key(b) for b in pk], "pieces_i24": len(pi), "pieces_k24": len(pk), "pieces": []}
         wi, wk = wld(seed, "i24"), wld(seed, "k24")
+        # world cells that are design cells / newly protected cells of ANY tower in this world (a tower's parapet can lie in
+        # the one-block ring of a neighbouring piece)
+        g_design, g_prot = {}, {}
+        for p in pk:
+            m = TARGET.get(p["template"])
+            if m in TOWERS:
+                r, o = ROT[p["rotation"]], p["pos"]
+                for q in design[m]:
+                    st = tmpl_new[m].get(q)
+                    if st and not st.startswith("minecraft:jigsaw"):
+                        t = rot(q, r)
+                        g_design[(o[0] + t[0], o[1] + t[1], o[2] + t[2])] = st
+                for q, st in new_prot[m].items():
+                    t = rot(q, r)
+                    g_prot[(o[0] + t[0], o[1] + t[1], o[2] + t[2])] = st
         for idx, p in enumerate(pk):
             m = TARGET.get(p["template"])
             if not m:
@@ -91,7 +110,22 @@ def main(seeds):
                             c["same"] += 1
                             continue
                         na, nb = n(a), n(b)
-                        if na in SCULK or nb in SCULK:
+                        if w in g_design:   # design cell of a neighbouring tower, seen from this piece's ring
+                            want = expected(g_design[w], w)
+                            if (want is None and nb in OPEN | SCULK | FLUIDS) or (want is not None and nb == want):
+                                c["design_cell_of_neighbouring_tower_as_predicted"] += 1
+                            elif nb in SCULK or nb in FLUIDS or nb in FLUID_PRODUCTS:
+                                c["design_cell_of_neighbouring_tower_sculk_or_fluid"] += 1
+                            else:
+                                c["DESIGN_CELL_UNEXPLAINED"] += 1
+                                design_other.append({"world": list(w), "template_pos": list(q), "want": want, "k24": b, "i24": a, "neighbour": True})
+                            continue
+                        if w in g_prot and nb == P.name(g_prot[w]):   # newly protected tower cell: the overlay restores it after block_rot
+                            c["newly_protected_cell_restored_by_overlay"] += 1
+                            continue
+                        if na == "minecraft:glow_lichen" or nb == "minecraft:glow_lichen":
+                            c["diff_vegetation_glow_lichen"] += 1
+                        elif na in SCULK or nb in SCULK:
                             c["diff_sculk"] += 1
                         elif na in FLUIDS or nb in FLUIDS or na in FLUID_PRODUCTS or nb in FLUID_PRODUCTS:
                             c["diff_fluid"] += 1
@@ -118,8 +152,22 @@ def main(seeds):
                 ladder_bad = [y for y in range(1, mt["ladder_top"] + 1) if n(wk.block(*wp((mt["ladder"][0], y, mt["ladder"][1])))) != "minecraft:ladder"]
                 rail_cells = [q for q, s in tmpl_new[m].items() if q[1] >= mt["deck_y"] - 1 and P.name(s).endswith("_wall")]
                 rail_bad = [list(q) for q in rail_cells if not n(wk.block(*wp(q))).endswith("_wall")]
-                piece["tower"] = {"deck_cells": len(mt["deck"]), "deck_cells_not_clear": deck_bad, "ladder_cells_missing": ladder_bad,
-                                  "railing_cells": len(rail_cells), "railing_cells_missing": rail_bad}
+                dy = mt["deck_y"]
+                clear = {(x, z) for x, z in mt["deck"] if all(n(wk.block(*wp((x, y, z)))) in OPEN for y in (dy, dy + 1))}
+                lx, lz = mt["ladder"]
+                seen = {c0 for c0 in ((lx + 1, lz), (lx - 1, lz), (lx, lz + 1), (lx, lz - 1)) if c0 in clear}
+                stack = list(seen)
+                while stack:
+                    cx, cz = stack.pop()
+                    for nx, nz in ((cx + 1, cz), (cx - 1, cz), (cx, cz + 1), (cx, cz - 1)):
+                        if (nx, nz) in clear and (nx, nz) not in seen:
+                            seen.add((nx, nz))
+                            stack.append((nx, nz))
+                blockers = Counter(n(wk.block(*wp((x, y, z)))).split(":")[1] for x, z, y in deck_bad)
+                piece["tower"] = {"deck_cells": len(mt["deck"]), "deck_cells_not_clear": deck_bad, "deck_blockers": dict(blockers),
+                                  "deck_cells_clear": len(clear), "deck_cells_reachable_from_ladder": len(seen),
+                                  "ladder_exit_cells_clear": len([c0 for c0 in ((lx + 1, lz), (lx - 1, lz), (lx, lz + 1), (lx, lz - 1)) if c0 in clear]),
+                                  "ladder_cells_missing": ladder_bad, "railing_cells": len(rail_cells), "railing_cells_missing": rail_bad}
             res["pieces"].append(piece)
         out.append(res)
         tot = Counter()

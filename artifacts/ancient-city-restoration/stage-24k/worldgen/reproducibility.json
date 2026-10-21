@@ -1,0 +1,98 @@
+[
+ {
+  "label": "Stage 24-K pack, two generations",
+  "variants": [
+   "k24",
+   "k24rep"
+  ],
+  "seeds": [
+   24006,
+   24007,
+   24012,
+   24017,
+   24018
+  ],
+  "by_module": {
+   "medium_ruin_1": {
+    "sculk": 898
+   },
+   "large_pillar_1": {
+    "sculk": 207,
+    "glow_lichen": 1
+   },
+   "small_ruin_1": {
+    "sculk": 152
+   },
+   "sauna_1": {
+    "sculk": 1840,
+    "fluid": 2
+   },
+   "small_ruin_2": {
+    "sculk": 234
+   },
+   "medium_pillar_1": {
+    "sculk": 395
+   },
+   "large_ruin_1": {
+    "sculk": 2379,
+    "fluid": 2
+   },
+   "medium_ruin_2": {
+    "sculk": 1644
+   }
+  },
+  "sauna_pool_cells": 172,
+  "sauna_pool_not_wet": {
+   "k24": 2,
+   "k24rep": 2
+  }
+ },
+ {
+  "label": "Stage 24-I pack, two generations",
+  "variants": [
+   "i24",
+   "i24rep"
+  ],
+  "seeds": [
+   24006,
+   24007,
+   24012,
+   24017,
+   24018
+  ],
+  "by_module": {
+   "medium_ruin_1": {
+    "sculk": 805
+   },
+   "large_pillar_1": {
+    "sculk": 355,
+    "glow_lichen": 1
+   },
+   "small_ruin_1": {
+    "sculk": 129
+   },
+   "sauna_1": {
+    "sculk": 2198,
+    "fluid": 17
+   },
+   "small_ruin_2": {
+    "sculk": 200
+   },
+   "medium_pillar_1": {
+    "sculk": 739
+   },
+   "large_ruin_1": {
+    "sculk": 2627,
+    "fluid": 1
+   },
+   "medium_ruin_2": {
+    "sculk": 1186
+   }
+  },
+  "sauna_pool_cells": 172,
+  "sauna_pool_not_wet": {
+   "i24": 0,
+   "i24rep": 0
+  }
+ }
+]

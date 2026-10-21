@@ -1,0 +1,6614 @@
+[
+ {
+  "seed": 24006,
+  "city_xz": [
+   -208,
+   -1728
+  ],
+  "pieces_vanilla": 74,
+  "pieces_candidate": 74,
+  "placements_identical_to_vanilla": true,
+  "first_placement_diff_index": null,
+  "bounding_box_differences": [],
+  "modules": [
+   {
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -173,
+     -51,
+     -1679
+    ],
+    "bb": [
+     -185,
+     -51,
+     -1679,
+     -173,
+     -47,
+     -1672
+    ],
+    "bb_size": [
+     13,
+     5,
+     8
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "ruined_horizontal_wall_stairs_3"
+    ],
+    "vanilla_bb": [
+     -185,
+     -51,
+     -1679,
+     -173,
+     -47,
+     -1672
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -185,
+     -173
+    ],
+    "model_bb_z": [
+     -1679,
+     -1672
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 223,
+     "cracked_by_processor": 81,
+     "sculk_feature_overlay": 16,
+     "removed_to_air": 9
+    },
+    "critical_blocks_total_lost": {
+     "container": [
+      1,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "bed": [
+      2,
+      0
+     ],
+     "lantern": [
+      2,
+      0
+     ],
+     "stairs": [
+      12,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 180,
+     "sculk_vein": 10,
+     "deepslate_bricks": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      -179,
+      -51,
+      -1679,
+      "deepslate_bricks"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -179,
+       -51,
+       -1679
+      ],
+      "facing": "north",
+      "target": [
+       -179,
+       -51,
+       -1680
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_3"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 191,
+    "unspecified_air_fraction": 0.942,
+    "unspecified_solid_fraction": 0.005,
+    "shell_top_bottom": {
+     "air": 150,
+     "deepslate": 133,
+     "sculk": 17
+    },
+    "bb_y_range": [
+     -51,
+     -47
+    ]
+   },
+   {
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -164,
+     -51,
+     -1674
+    ],
+    "bb": [
+     -164,
+     -51,
+     -1679,
+     -159,
+     -37,
+     -1674
+    ],
+    "bb_size": [
+     6,
+     15,
+     6
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     -164,
+     -51,
+     -1679,
+     -159,
+     -37,
+     -1674
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -164,
+     -159
+    ],
+    "model_bb_z": [
+     -1679,
+     -1674
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 48,
+     "identical": 258,
+     "removed_to_air": 4,
+     "cracked_by_processor": 9
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      63,
+      0
+     ],
+     "ladder": [
+      13,
+      0
+     ],
+     "lantern": [
+      4,
+      0
+     ],
+     "parapet_wall": [
+      16,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 200,
+     "sculk_vein": 21
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -162,
+       -51,
+       -1679
+      ],
+      "facing": "north",
+      "target": [
+       -162,
+       -51,
+       -1680
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 221,
+    "unspecified_air_fraction": 0.905,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 64,
+     "deepslate": 61,
+     "sculk": 2,
+     "deepslate_iron_ore": 1
+    },
+    "bb_y_range": [
+     -51,
+     -37
+    ]
+   },
+   {
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -220,
+     -51,
+     -1789
+    ],
+    "bb": [
+     -226,
+     -51,
+     -1796,
+     -220,
+     -47,
+     -1789
+    ],
+    "bb_size": [
+     7,
+     5,
+     8
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     -226,
+     -51,
+     -1796,
+     -220,
+     -47,
+     -1789
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -226,
+     -220
+    ],
+    "model_bb_z": [
+     -1796,
+     -1789
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 95,
+     "removed_to_air": 5,
+     "identical": 69,
+     "cracked_by_processor": 29
+    },
+    "critical_blocks_total_lost": {
+     "bed": [
+      2,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ],
+     "stairs": [
+      10,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 53,
+     "sculk_vein": 28,
+     "cracked_deepslate_bricks": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      -220,
+      -51,
+      -1792,
+      "cracked_deepslate_bricks"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -220,
+       -51,
+       -1792
+      ],
+      "facing": "east",
+      "target": [
+       -219,
+       -51,
+       -1792
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 82,
+    "unspecified_air_fraction": 0.646,
+    "unspecified_solid_fraction": 0.012,
+    "shell_top_bottom": {
+     "air": 73,
+     "deepslate": 43,
+     "sculk": 37,
+     "sculk_vein": 15,
+     "gravel": 10,
+     "sculk_shrieker": 1
+    },
+    "bb_y_range": [
+     -51,
+     -47
+    ]
+   },
+   {
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -107,
+     -51,
+     -1762
+    ],
+    "bb": [
+     -143,
+     -51,
+     -1762,
+     -107,
+     -42,
+     -1734
+    ],
+    "bb_size": [
+     37,
+     10,
+     29
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 3,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_2",
+     "ruined_horizontal_wall_stairs_1",
+     "ruined_horizontal_wall_stairs_2"
+    ],
+    "vanilla_bb": [
+     -143,
+     -51,
+     -1762,
+     -107,
+     -42,
+     -1734
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -143,
+     -107
+    ],
+    "model_bb_z": [
+     -1762,
+     -1734
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 541,
+     "identical": 1001,
+     "cracked_by_processor": 310,
+     "removed_to_air": 44
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      86,
+      0
+     ],
+     "container": [
+      3,
+      0
+     ],
+     "lantern": [
+      3,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 8492,
+     "sculk_vein": 302,
+     "sculk_sensor": 25,
+     "sculk_shrieker": 9,
+     "sculk": 4,
+     "sculk_catalyst": 2
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -116,
+       -51,
+       -1741
+      ],
+      "facing": "up",
+      "target": [
+       -116,
+       -50,
+       -1741
+      ],
+      "connected_to": [
+       "feature_pool_element"
+      ],
+      "connected": true,
+      "pool": "minecraft:ancient_city/sculk"
+     },
+     {
+      "jigsaw_world": [
+       -119,
+       -51,
+       -1754
+      ],
+      "facing": "up",
+      "target": [
+       -119,
+       -50,
+       -1754
+      ],
+      "connected_to": [
+       "feature_pool_element"
+      ],
+      "connected": true,
+      "pool": "minecraft:ancient_city/sculk"
+     },
+     {
+      "jigsaw_world": [
+       -128,
+       -51,
+       -1734
+      ],
+      "facing": "south",
+      "target": [
+       -128,
+       -51,
+       -1733
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_2"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     },
+     {
+      "jigsaw_world": [
+       -133,
+       -51,
+       -1757
+      ],
+      "facing": "up",
+      "target": [
+       -133,
+       -50,
+       -1757
+      ],
+      "connected_to": [
+       "feature_pool_element"
+      ],
+      "connected": true,
+      "pool": "minecraft:ancient_city/sculk"
+     },
+     {
+      "jigsaw_world": [
+       -140,
+       -51,
+       -1744
+      ],
+      "facing": "up",
+      "target": [
+       -140,
+       -50,
+       -1744
+      ],
+      "connected_to": [
+       "feature_pool_element"
+      ],
+      "connected": true,
+      "pool": "minecraft:ancient_city/sculk"
+     }
+    ],
+    "unspecified_cells": 8834,
+    "unspecified_air_fraction": 0.961,
+    "unspecified_solid_fraction": 0.005,
+    "shell_top_bottom": {
+     "air": 1209,
+     "deepslate": 687,
+     "sculk": 487,
+     "gravel": 24,
+     "deepslate_redstone_ore": 11
+    },
+    "bb_y_range": [
+     -51,
+     -42
+    ]
+   },
+   {
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -249,
+     -51,
+     -1639
+    ],
+    "bb": [
+     -261,
+     -51,
+     -1639,
+     -249,
+     -47,
+     -1632
+    ],
+    "bb_size": [
+     13,
+     5,
+     8
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "ruined_horizontal_wall_stairs_2"
+    ],
+    "vanilla_bb": [
+     -261,
+     -51,
+     -1639,
+     -249,
+     -47,
+     -1632
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -261,
+     -249
+    ],
+    "model_bb_z": [
+     -1639,
+     -1632
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 154,
+     "sculk_feature_overlay": 113,
+     "cracked_by_processor": 58,
+     "removed_to_air": 4
+    },
+    "critical_blocks_total_lost": {
+     "container": [
+      1,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "bed": [
+      2,
+      0
+     ],
+     "lantern": [
+      2,
+      0
+     ],
+     "stairs": [
+      12,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 158,
+     "sculk_vein": 32,
+     "cracked_deepslate_bricks": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      -255,
+      -51,
+      -1639,
+      "cracked_deepslate_bricks"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -255,
+       -51,
+       -1639
+      ],
+      "facing": "north",
+      "target": [
+       -255,
+       -51,
+       -1640
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_2"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 191,
+    "unspecified_air_fraction": 0.827,
+    "unspecified_solid_fraction": 0.005,
+    "shell_top_bottom": {
+     "air": 130,
+     "deepslate": 100,
+     "tuff": 34,
+     "sculk": 16,
+     "sculk_vein": 13,
+     "sculk_sensor": 4
+    },
+    "bb_y_range": [
+     -51,
+     -47
+    ]
+   },
+   {
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     -198,
+     -51,
+     -1811
+    ],
+    "bb": [
+     -198,
+     -51,
+     -1811,
+     -191,
+     -47,
+     -1808
+    ],
+    "bb_size": [
+     8,
+     5,
+     4
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_passage_1"
+    ],
+    "vanilla_bb": [
+     -198,
+     -51,
+     -1811,
+     -191,
+     -47,
+     -1808
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -198,
+     -191
+    ],
+    "model_bb_z": [
+     -1811,
+     -1808
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 8,
+     "identical": 81,
+     "cracked_by_processor": 36,
+     "removed_to_air": 2
+    },
+    "critical_blocks_total_lost": {
+     "bed": [
+      2,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 31,
+     "cobbled_deepslate": 1,
+     "sculk_vein": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      -198,
+      -51,
+      -1809,
+      "cobbled_deepslate"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -198,
+       -51,
+       -1809
+      ],
+      "facing": "west",
+      "target": [
+       -199,
+       -51,
+       -1809
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_passage_1"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 33,
+    "unspecified_air_fraction": 0.939,
+    "unspecified_solid_fraction": 0.03,
+    "shell_top_bottom": {
+     "air": 60,
+     "deepslate": 30,
+     "sculk": 28,
+     "deepslate_redstone_ore": 2
+    },
+    "bb_y_range": [
+     -51,
+     -47
+    ]
+   },
+   {
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -114,
+     -51,
+     -1706
+    ],
+    "bb": [
+     -114,
+     -51,
+     -1712,
+     -107,
+     -41,
+     -1706
+    ],
+    "bb_size": [
+     8,
+     11,
+     7
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_2"
+    ],
+    "vanilla_bb": [
+     -114,
+     -51,
+     -1712,
+     -107,
+     -41,
+     -1706
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -114,
+     -107
+    ],
+    "model_bb_z": [
+     -1712,
+     -1706
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 7,
+     "cracked_by_processor": 47,
+     "identical": 277,
+     "removed_to_air": 5
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      29,
+      0
+     ],
+     "ladder": [
+      8,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ],
+     "parapet_wall": [
+      22,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 260,
+     "sculk_vein": 20
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -111,
+       -51,
+       -1712
+      ],
+      "facing": "north",
+      "target": [
+       -111,
+       -51,
+       -1713
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_2"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     },
+     {
+      "jigsaw_world": [
+       -110,
+       -51,
+       -1712
+      ],
+      "facing": "north",
+      "target": [
+       -110,
+       -51,
+       -1713
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_2"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 280,
+    "unspecified_air_fraction": 0.929,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 90,
+     "deepslate": 57,
+     "sculk": 32,
+     "deepslate_gold_ore": 1
+    },
+    "bb_y_range": [
+     -51,
+     -41
+    ]
+   }
+  ]
+ },
+ {
+  "seed": 24007,
+  "city_xz": [
+   -320,
+   912
+  ],
+  "pieces_vanilla": 102,
+  "pieces_candidate": 102,
+  "placements_identical_to_vanilla": true,
+  "first_placement_diff_index": null,
+  "bounding_box_differences": [],
+  "modules": [
+   {
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     -264,
+     -51,
+     922
+    ],
+    "bb": [
+     -264,
+     -51,
+     922,
+     -257,
+     -47,
+     934
+    ],
+    "bb_size": [
+     8,
+     5,
+     13
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_2"
+    ],
+    "vanilla_bb": [
+     -264,
+     -51,
+     922,
+     -257,
+     -47,
+     934
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -264,
+     -257
+    ],
+    "model_bb_z": [
+     922,
+     934
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 119,
+     "identical": 158,
+     "cracked_by_processor": 48,
+     "removed_to_air": 4
+    },
+    "critical_blocks_total_lost": {
+     "container": [
+      1,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "bed": [
+      2,
+      0
+     ],
+     "lantern": [
+      2,
+      0
+     ],
+     "stairs": [
+      12,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 150,
+     "sculk_vein": 40,
+     "sculk": 1
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -264,
+       -51,
+       928
+      ],
+      "facing": "west",
+      "target": [
+       -265,
+       -51,
+       928
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_2"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 191,
+    "unspecified_air_fraction": 0.785,
+    "unspecified_solid_fraction": 0.005,
+    "shell_top_bottom": {
+     "air": 127,
+     "deepslate": 107,
+     "sculk": 42,
+     "sculk_vein": 18,
+     "sculk_sensor": 3,
+     "sculk_shrieker": 2
+    },
+    "bb_y_range": [
+     -51,
+     -47
+    ]
+   },
+   {
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -378,
+     -51,
+     868
+    ],
+    "bb": [
+     -414,
+     -51,
+     868,
+     -378,
+     -42,
+     896
+    ],
+    "bb_size": [
+     37,
+     10,
+     29
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 3,
+    "adjacent_templates": [
+     "intact_intersection_wall_1",
+     "ruined_horizontal_wall_stairs_3",
+     "ruined_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     -414,
+     -51,
+     868,
+     -378,
+     -42,
+     896
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -414,
+     -378
+    ],
+    "model_bb_z": [
+     868,
+     896
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 309,
+     "identical": 1188,
+     "cracked_by_processor": 334,
+     "removed_to_air": 65
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      86,
+      0
+     ],
+     "container": [
+      3,
+      0
+     ],
+     "lantern": [
+      3,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 8579,
+     "sculk_vein": 229,
+     "sculk_sensor": 16,
+     "sculk": 3,
+     "sculk_catalyst": 3,
+     "sculk_shrieker": 3,
+     "deepslate": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      -404,
+      -51,
+      873,
+      "deepslate"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -387,
+       -51,
+       889
+      ],
+      "facing": "up",
+      "target": [
+       -387,
+       -50,
+       889
+      ],
+      "connected_to": [
+       "feature_pool_element"
+      ],
+      "connected": true,
+      "pool": "minecraft:ancient_city/sculk"
+     },
+     {
+      "jigsaw_world": [
+       -390,
+       -51,
+       876
+      ],
+      "facing": "up",
+      "target": [
+       -390,
+       -50,
+       876
+      ],
+      "connected_to": [
+       "feature_pool_element"
+      ],
+      "connected": true,
+      "pool": "minecraft:ancient_city/sculk"
+     },
+     {
+      "jigsaw_world": [
+       -399,
+       -51,
+       896
+      ],
+      "facing": "south",
+      "target": [
+       -399,
+       -51,
+       897
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_3"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     },
+     {
+      "jigsaw_world": [
+       -404,
+       -51,
+       873
+      ],
+      "facing": "up",
+      "target": [
+       -404,
+       -50,
+       873
+      ],
+      "connected_to": [],
+      "connected": false,
+      "pool": "minecraft:ancient_city/sculk"
+     },
+     {
+      "jigsaw_world": [
+       -411,
+       -51,
+       886
+      ],
+      "facing": "up",
+      "target": [
+       -411,
+       -50,
+       886
+      ],
+      "connected_to": [
+       "feature_pool_element"
+      ],
+      "connected": true,
+      "pool": "minecraft:ancient_city/sculk"
+     }
+    ],
+    "unspecified_cells": 8834,
+    "unspecified_air_fraction": 0.971,
+    "unspecified_solid_fraction": 0.003,
+    "shell_top_bottom": {
+     "air": 1209,
+     "deepslate": 784,
+     "sculk": 420,
+     "deepslate_redstone_ore": 5
+    },
+    "bb_y_range": [
+     -51,
+     -42
+    ]
+   },
+   {
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "pos": [
+     -291,
+     -51,
+     943
+    ],
+    "bb": [
+     -291,
+     -51,
+     943,
+     -286,
+     -37,
+     948
+    ],
+    "bb_size": [
+     6,
+     15,
+     6
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 2,
+    "adjacent_templates": [
+     "ruined_horizontal_wall_stairs_3",
+     "tall_ruin_3"
+    ],
+    "vanilla_bb": [
+     -291,
+     -51,
+     943,
+     -286,
+     -37,
+     948
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -291,
+     -286
+    ],
+    "model_bb_z": [
+     943,
+     948
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 3,
+     "identical": 297,
+     "replaced_by_other": 2,
+     "removed_to_air": 9,
+     "cracked_by_processor": 8
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      63,
+      0
+     ],
+     "ladder": [
+      13,
+      0
+     ],
+     "lantern": [
+      4,
+      1
+     ],
+     "parapet_wall": [
+      16,
+      0
+     ]
+    },
+    "critical_lost_cells": [
+     {
+      "category": "lantern",
+      "block": "soul_lantern",
+      "world": [
+       -287,
+       -39,
+       947
+      ],
+      "got": "minecraft:air"
+     }
+    ],
+    "block_replacement_samples": [
+     {
+      "rel": [
+       3,
+       0,
+       0
+      ],
+      "world": [
+       -288,
+       -51,
+       943
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       4,
+       0,
+       0
+      ],
+      "world": [
+       -287,
+       -51,
+       943
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     }
+    ],
+    "unspecified_cell_fill": {
+     "air": 221
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -286,
+       -51,
+       945
+      ],
+      "facing": "east",
+      "target": [
+       -285,
+       -51,
+       945
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_3"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 221,
+    "unspecified_air_fraction": 1.0,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 64,
+     "sculk": 36,
+     "tuff": 14,
+     "deepslate": 14
+    },
+    "bb_y_range": [
+     -51,
+     -37
+    ]
+   },
+   {
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -259,
+     -51,
+     950
+    ],
+    "bb": [
+     -264,
+     -51,
+     945,
+     -259,
+     -37,
+     950
+    ],
+    "bb_size": [
+     6,
+     15,
+     6
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "ruined_horizontal_wall_stairs_3"
+    ],
+    "vanilla_bb": [
+     -264,
+     -51,
+     945,
+     -259,
+     -37,
+     950
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -264,
+     -259
+    ],
+    "model_bb_z": [
+     945,
+     950
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "replaced_by_other": 18,
+     "removed_to_air": 6,
+     "identical": 282,
+     "sculk_feature_overlay": 4,
+     "cracked_by_processor": 9
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      63,
+      0
+     ],
+     "ladder": [
+      13,
+      0
+     ],
+     "lantern": [
+      4,
+      0
+     ],
+     "parapet_wall": [
+      16,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [
+     {
+      "rel": [
+       0,
+       0,
+       0
+      ],
+      "world": [
+       -259,
+       -51,
+       950
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       2,
+       0,
+       0
+      ],
+      "world": [
+       -261,
+       -51,
+       950
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       0,
+       0,
+       1
+      ],
+      "world": [
+       -259,
+       -51,
+       949
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       1,
+       0,
+       1
+      ],
+      "world": [
+       -260,
+       -51,
+       949
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       2,
+       0,
+       1
+      ],
+      "world": [
+       -261,
+       -51,
+       949
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       3,
+       0,
+       1
+      ],
+      "world": [
+       -262,
+       -51,
+       949
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     }
+    ],
+    "unspecified_cell_fill": {
+     "air": 221
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -264,
+       -51,
+       948
+      ],
+      "facing": "west",
+      "target": [
+       -265,
+       -51,
+       948
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_3"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 221,
+    "unspecified_air_fraction": 1.0,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 64,
+     "deepslate": 30,
+     "tuff": 22,
+     "sculk": 12
+    },
+    "bb_y_range": [
+     -51,
+     -37
+    ]
+   },
+   {
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -254,
+     -51,
+     818
+    ],
+    "bb": [
+     -259,
+     -51,
+     818,
+     -254,
+     -37,
+     823
+    ],
+    "bb_size": [
+     6,
+     15,
+     6
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "ruined_horizontal_wall_stairs_3"
+    ],
+    "vanilla_bb": [
+     -259,
+     -51,
+     818,
+     -254,
+     -37,
+     823
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -259,
+     -254
+    ],
+    "model_bb_z": [
+     818,
+     823
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 5,
+     "identical": 284,
+     "replaced_by_other": 15,
+     "removed_to_air": 5,
+     "cracked_by_processor": 10
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      63,
+      0
+     ],
+     "ladder": [
+      13,
+      0
+     ],
+     "lantern": [
+      4,
+      1
+     ],
+     "parapet_wall": [
+      16,
+      0
+     ]
+    },
+    "critical_lost_cells": [
+     {
+      "category": "lantern",
+      "block": "soul_lantern",
+      "world": [
+       -255,
+       -39,
+       819
+      ],
+      "got": "minecraft:air"
+     }
+    ],
+    "block_replacement_samples": [
+     {
+      "rel": [
+       0,
+       0,
+       3
+      ],
+      "world": [
+       -257,
+       -51,
+       818
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       1,
+       0,
+       3
+      ],
+      "world": [
+       -257,
+       -51,
+       819
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       2,
+       0,
+       3
+      ],
+      "world": [
+       -257,
+       -51,
+       820
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       3,
+       0,
+       3
+      ],
+      "world": [
+       -257,
+       -51,
+       821
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       4,
+       0,
+       3
+      ],
+      "world": [
+       -257,
+       -51,
+       822
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       5,
+       0,
+       3
+      ],
+      "world": [
+       -257,
+       -51,
+       823
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     }
+    ],
+    "unspecified_cell_fill": {
+     "air": 219,
+     "sculk_vein": 2
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -256,
+       -51,
+       823
+      ],
+      "facing": "south",
+      "target": [
+       -256,
+       -51,
+       824
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_3"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 221,
+    "unspecified_air_fraction": 0.991,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 64,
+     "tuff": 43,
+     "deepslate": 15,
+     "sculk": 6
+    },
+    "bb_y_range": [
+     -51,
+     -37
+    ]
+   },
+   {
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -254,
+     -51,
+     845
+    ],
+    "bb": [
+     -257,
+     -51,
+     845,
+     -254,
+     -47,
+     852
+    ],
+    "bb_size": [
+     4,
+     5,
+     8
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "ruined_horizontal_wall_stairs_3"
+    ],
+    "vanilla_bb": [
+     -257,
+     -51,
+     845,
+     -254,
+     -47,
+     852
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -257,
+     -254
+    ],
+    "model_bb_z": [
+     845,
+     852
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 35,
+     "removed_to_air": 4,
+     "identical": 65,
+     "cracked_by_processor": 23
+    },
+    "critical_blocks_total_lost": {
+     "bed": [
+      2,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 18,
+     "sculk_vein": 14,
+     "sculk": 1
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -256,
+       -51,
+       845
+      ],
+      "facing": "north",
+      "target": [
+       -256,
+       -51,
+       844
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_3"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 33,
+    "unspecified_air_fraction": 0.545,
+    "unspecified_solid_fraction": 0.03,
+    "shell_top_bottom": {
+     "air": 60,
+     "sculk": 32,
+     "deepslate": 28
+    },
+    "bb_y_range": [
+     -51,
+     -47
+    ]
+   }
+  ]
+ },
+ {
+  "seed": 24012,
+  "city_xz": [
+   -1312,
+   64
+  ],
+  "pieces_vanilla": 85,
+  "pieces_candidate": 85,
+  "placements_identical_to_vanilla": true,
+  "first_placement_diff_index": null,
+  "bounding_box_differences": [
+   {
+    "index": 18,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     -1340,
+     -51,
+     27,
+     -1324,
+     -47,
+     43
+    ],
+    "candidate_bb": [
+     -1340,
+     -51,
+     27,
+     -1324,
+     -38,
+     43
+    ]
+   },
+   {
+    "index": 32,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     -1302,
+     -51,
+     12,
+     -1286,
+     -47,
+     28
+    ],
+    "candidate_bb": [
+     -1302,
+     -51,
+     12,
+     -1286,
+     -38,
+     28
+    ]
+   },
+   {
+    "index": 41,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     -1399,
+     -51,
+     42,
+     -1389,
+     -47,
+     57
+    ],
+    "candidate_bb": [
+     -1399,
+     -51,
+     42,
+     -1389,
+     -44,
+     57
+    ]
+   }
+  ],
+  "modules": [
+   {
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -1358,
+     -51,
+     85
+    ],
+    "bb": [
+     -1358,
+     -51,
+     79,
+     -1351,
+     -41,
+     85
+    ],
+    "bb_size": [
+     8,
+     11,
+     7
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     -1358,
+     -51,
+     79,
+     -1351,
+     -41,
+     85
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -1358,
+     -1351
+    ],
+    "model_bb_z": [
+     79,
+     85
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 19,
+     "identical": 257,
+     "cracked_by_processor": 54,
+     "removed_to_air": 6
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      29,
+      0
+     ],
+     "ladder": [
+      8,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ],
+     "parapet_wall": [
+      22,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 250,
+     "sculk_vein": 30
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -1355,
+       -51,
+       79
+      ],
+      "facing": "north",
+      "target": [
+       -1355,
+       -51,
+       78
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     },
+     {
+      "jigsaw_world": [
+       -1354,
+       -51,
+       79
+      ],
+      "facing": "north",
+      "target": [
+       -1354,
+       -51,
+       78
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 280,
+    "unspecified_air_fraction": 0.893,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 90,
+     "sculk": 64,
+     "deepslate": 24,
+     "sculk_catalyst": 1,
+     "deepslate_diamond_ore": 1
+    },
+    "bb_y_range": [
+     -51,
+     -41
+    ]
+   },
+   {
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -1324,
+     -51,
+     43
+    ],
+    "bb": [
+     -1340,
+     -51,
+     27,
+     -1324,
+     -38,
+     43
+    ],
+    "bb_size": [
+     17,
+     14,
+     17
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 2,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4",
+     "ruined_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     -1340,
+     -51,
+     27,
+     -1324,
+     -47,
+     43
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -1340,
+     -1324
+    ],
+    "model_bb_z": [
+     27,
+     43
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 606,
+     "sculk_feature_overlay": 440,
+     "cracked_by_processor": 91,
+     "removed_to_air": 25
+    },
+    "critical_blocks_total_lost": {
+     "container": [
+      1,
+      0
+     ],
+     "bed": [
+      4,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "lantern": [
+      4,
+      0
+     ],
+     "stairs": [
+      258,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 2667,
+     "sculk_vein": 208,
+     "sculk_sensor": 5,
+     "sculk_shrieker": 2,
+     "sculk_catalyst": 1,
+     "cobbled_deepslate": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      -1324,
+      -51,
+      36,
+      "cobbled_deepslate"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -1324,
+       -51,
+       36
+      ],
+      "facing": "east",
+      "target": [
+       -1323,
+       -51,
+       36
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 2884,
+    "unspecified_air_fraction": 0.925,
+    "unspecified_solid_fraction": 0.003,
+    "shell_top_bottom": {
+     "air": 361,
+     "deepslate": 175,
+     "sculk": 162,
+     "tuff": 23,
+     "deepslate_redstone_ore": 1
+    },
+    "expansion_layers": {
+     "from_y": -46,
+     "to_y": -38,
+     "unspecified_fill": {
+      "air": 2018,
+      "sculk_vein": 118,
+      "sculk_sensor": 1
+     },
+     "terrain_cells": [],
+     "solid_terrain_cells": 1
+    },
+    "bb_y_range": [
+     -51,
+     -38
+    ]
+   },
+   {
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -1296,
+     -51,
+     39
+    ],
+    "bb": [
+     -1302,
+     -51,
+     32,
+     -1296,
+     -41,
+     39
+    ],
+    "bb_size": [
+     7,
+     11,
+     8
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     -1302,
+     -51,
+     32,
+     -1296,
+     -41,
+     39
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -1302,
+     -1296
+    ],
+    "model_bb_z": [
+     32,
+     39
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 4,
+     "identical": 269,
+     "cracked_by_processor": 53,
+     "removed_to_air": 8,
+     "replaced_by_other": 2
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      29,
+      0
+     ],
+     "ladder": [
+      8,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ],
+     "parapet_wall": [
+      22,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [
+     {
+      "rel": [
+       2,
+       7,
+       3
+      ],
+      "world": [
+       -1298,
+       -44,
+       36
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:gravel"
+     },
+     {
+      "rel": [
+       2,
+       7,
+       4
+      ],
+      "world": [
+       -1298,
+       -44,
+       35
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:gravel"
+     }
+    ],
+    "unspecified_cell_fill": {
+     "air": 266,
+     "sculk_vein": 14
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -1302,
+       -51,
+       36
+      ],
+      "facing": "west",
+      "target": [
+       -1303,
+       -51,
+       36
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     },
+     {
+      "jigsaw_world": [
+       -1302,
+       -51,
+       35
+      ],
+      "facing": "west",
+      "target": [
+       -1303,
+       -51,
+       35
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 280,
+    "unspecified_air_fraction": 0.95,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 90,
+     "sculk": 56,
+     "deepslate": 34
+    },
+    "bb_y_range": [
+     -51,
+     -41
+    ]
+   },
+   {
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -1250,
+     -51,
+     85
+    ],
+    "bb": [
+     -1250,
+     -51,
+     80,
+     -1245,
+     -37,
+     85
+    ],
+    "bb_size": [
+     6,
+     15,
+     6
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 2,
+    "adjacent_templates": [
+     "intact_horizontal_wall_1",
+     "small_ruin_1"
+    ],
+    "vanilla_bb": [
+     -1250,
+     -51,
+     80,
+     -1245,
+     -37,
+     85
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -1250,
+     -1245
+    ],
+    "model_bb_z": [
+     80,
+     85
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 38,
+     "identical": 271,
+     "removed_to_air": 2,
+     "cracked_by_processor": 8
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      63,
+      0
+     ],
+     "ladder": [
+      13,
+      0
+     ],
+     "lantern": [
+      4,
+      0
+     ],
+     "parapet_wall": [
+      16,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 210,
+     "sculk_vein": 11
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -1248,
+       -51,
+       80
+      ],
+      "facing": "north",
+      "target": [
+       -1248,
+       -51,
+       79
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_1"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 221,
+    "unspecified_air_fraction": 0.95,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 64,
+     "deepslate": 37,
+     "sculk": 27
+    },
+    "bb_y_range": [
+     -51,
+     -37
+    ]
+   },
+   {
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     -1256,
+     -51,
+     86
+    ],
+    "bb": [
+     -1256,
+     -51,
+     86,
+     -1250,
+     -47,
+     93
+    ],
+    "bb_size": [
+     7,
+     5,
+     8
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 2,
+    "adjacent_templates": [
+     "intact_horizontal_wall_bridge",
+     "large_pillar_1"
+    ],
+    "vanilla_bb": [
+     -1256,
+     -51,
+     86,
+     -1250,
+     -47,
+     93
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -1256,
+     -1250
+    ],
+    "model_bb_z": [
+     86,
+     93
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 136,
+     "cracked_by_processor": 53,
+     "sculk_feature_overlay": 5,
+     "removed_to_air": 4
+    },
+    "critical_blocks_total_lost": {
+     "bed": [
+      2,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ],
+     "stairs": [
+      10,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 79,
+     "sculk_vein": 2,
+     "sculk": 1
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -1256,
+       -51,
+       89
+      ],
+      "facing": "west",
+      "target": [
+       -1257,
+       -51,
+       89
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_bridge"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 82,
+    "unspecified_air_fraction": 0.963,
+    "unspecified_solid_fraction": 0.012,
+    "shell_top_bottom": {
+     "air": 89,
+     "deepslate": 81,
+     "sculk": 9,
+     "sculk_vein": 1
+    },
+    "bb_y_range": [
+     -51,
+     -47
+    ]
+   },
+   {
+    "module": "large_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     -1302,
+     -51,
+     12
+    ],
+    "bb": [
+     -1302,
+     -51,
+     12,
+     -1286,
+     -38,
+     28
+    ],
+    "bb_size": [
+     17,
+     14,
+     17
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 2,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4",
+     "ruined_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     -1302,
+     -51,
+     12,
+     -1286,
+     -47,
+     28
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -1302,
+     -1286
+    ],
+    "model_bb_z": [
+     12,
+     28
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 459,
+     "identical": 590,
+     "cracked_by_processor": 96,
+     "removed_to_air": 17
+    },
+    "critical_blocks_total_lost": {
+     "container": [
+      1,
+      0
+     ],
+     "bed": [
+      4,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "lantern": [
+      4,
+      0
+     ],
+     "stairs": [
+      258,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 2591,
+     "sculk_vein": 281,
+     "sculk_sensor": 7,
+     "sculk_catalyst": 2,
+     "sculk_shrieker": 2,
+     "cobbled_deepslate": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      -1302,
+      -51,
+      19,
+      "cobbled_deepslate"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -1302,
+       -51,
+       19
+      ],
+      "facing": "west",
+      "target": [
+       -1303,
+       -51,
+       19
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 2884,
+    "unspecified_air_fraction": 0.898,
+    "unspecified_solid_fraction": 0.004,
+    "shell_top_bottom": {
+     "air": 361,
+     "sculk": 214,
+     "deepslate": 147
+    },
+    "expansion_layers": {
+     "from_y": -46,
+     "to_y": -38,
+     "unspecified_fill": {
+      "air": 2002,
+      "sculk_vein": 134,
+      "sculk_sensor": 1
+     },
+     "terrain_cells": [],
+     "solid_terrain_cells": 1
+    },
+    "bb_y_range": [
+     -51,
+     -38
+    ]
+   },
+   {
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -1227,
+     -51,
+     52
+    ],
+    "bb": [
+     -1234,
+     -51,
+     52,
+     -1227,
+     -41,
+     58
+    ],
+    "bb_size": [
+     8,
+     11,
+     7
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     -1234,
+     -51,
+     52,
+     -1227,
+     -41,
+     58
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -1234,
+     -1227
+    ],
+    "model_bb_z": [
+     52,
+     58
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 272,
+     "cracked_by_processor": 54,
+     "removed_to_air": 10
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      29,
+      0
+     ],
+     "ladder": [
+      8,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ],
+     "parapet_wall": [
+      22,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 279,
+     "sculk_vein": 1
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -1230,
+       -51,
+       58
+      ],
+      "facing": "south",
+      "target": [
+       -1230,
+       -51,
+       59
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     },
+     {
+      "jigsaw_world": [
+       -1231,
+       -51,
+       58
+      ],
+      "facing": "south",
+      "target": [
+       -1231,
+       -51,
+       59
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 280,
+    "unspecified_air_fraction": 0.996,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 90,
+     "deepslate": 79,
+     "gravel": 9,
+     "sculk": 2
+    },
+    "bb_y_range": [
+     -51,
+     -41
+    ]
+   },
+   {
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -1399,
+     -51,
+     57
+    ],
+    "bb": [
+     -1399,
+     -51,
+     42,
+     -1389,
+     -44,
+     57
+    ],
+    "bb_size": [
+     11,
+     8,
+     16
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_1"
+    ],
+    "vanilla_bb": [
+     -1399,
+     -51,
+     42,
+     -1389,
+     -47,
+     57
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -1399,
+     -1389
+    ],
+    "model_bb_z": [
+     42,
+     57
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 420,
+     "cracked_by_processor": 133,
+     "removed_to_air": 17,
+     "sculk_feature_overlay": 140
+    },
+    "critical_blocks_total_lost": {
+     "door": [
+      2,
+      0
+     ],
+     "stairs": [
+      87,
+      0
+     ],
+     "bed": [
+      4,
+      0
+     ],
+     "container": [
+      2,
+      0
+     ],
+     "lantern": [
+      2,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 616,
+     "sculk_vein": 76,
+     "sculk_sensor": 4,
+     "cobbled_deepslate": 1,
+     "sculk_shrieker": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      -1394,
+      -51,
+      57,
+      "cobbled_deepslate"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -1394,
+       -51,
+       57
+      ],
+      "facing": "south",
+      "target": [
+       -1394,
+       -51,
+       58
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_1"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 698,
+    "unspecified_air_fraction": 0.883,
+    "unspecified_solid_fraction": 0.009,
+    "shell_top_bottom": {
+     "air": 244,
+     "deepslate": 190,
+     "sculk": 21,
+     "sculk_vein": 9,
+     "sculk_sensor": 3,
+     "deepslate_iron_ore": 1
+    },
+    "bb_y_range": [
+     -51,
+     -44
+    ]
+   },
+   {
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -1281,
+     -51,
+     125
+    ],
+    "bb": [
+     -1288,
+     -51,
+     125,
+     -1281,
+     -41,
+     131
+    ],
+    "bb_size": [
+     8,
+     11,
+     7
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 2,
+    "adjacent_templates": [
+     "ruined_horizontal_wall_stairs_3",
+     "sauna_1"
+    ],
+    "vanilla_bb": [
+     -1288,
+     -51,
+     125,
+     -1281,
+     -41,
+     131
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -1288,
+     -1281
+    ],
+    "model_bb_z": [
+     125,
+     131
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 126,
+     "identical": 194,
+     "cracked_by_processor": 9,
+     "removed_to_air": 7
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      29,
+      0
+     ],
+     "ladder": [
+      8,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ],
+     "parapet_wall": [
+      22,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 228,
+     "sculk_vein": 50,
+     "sculk_sensor": 2
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -1284,
+       -51,
+       131
+      ],
+      "facing": "south",
+      "target": [
+       -1284,
+       -51,
+       132
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_3"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     },
+     {
+      "jigsaw_world": [
+       -1285,
+       -51,
+       131
+      ],
+      "facing": "south",
+      "target": [
+       -1285,
+       -51,
+       132
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_3"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 280,
+    "unspecified_air_fraction": 0.814,
+    "unspecified_solid_fraction": 0.007,
+    "shell_top_bottom": {
+     "air": 90,
+     "sculk": 70,
+     "deepslate": 20
+    },
+    "bb_y_range": [
+     -51,
+     -41
+    ]
+   },
+   {
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -1414,
+     -51,
+     84
+    ],
+    "bb": [
+     -1414,
+     -51,
+     79,
+     -1409,
+     -37,
+     84
+    ],
+    "bb_size": [
+     6,
+     15,
+     6
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     -1414,
+     -51,
+     79,
+     -1409,
+     -37,
+     84
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -1414,
+     -1409
+    ],
+    "model_bb_z": [
+     79,
+     84
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 7,
+     "identical": 294,
+     "removed_to_air": 4,
+     "cracked_by_processor": 7,
+     "replaced_by_other": 7
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      63,
+      0
+     ],
+     "ladder": [
+      13,
+      0
+     ],
+     "lantern": [
+      4,
+      0
+     ],
+     "parapet_wall": [
+      16,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [
+     {
+      "rel": [
+       4,
+       12,
+       2
+      ],
+      "world": [
+       -1412,
+       -39,
+       80
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       1,
+       12,
+       3
+      ],
+      "world": [
+       -1411,
+       -39,
+       83
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       2,
+       12,
+       3
+      ],
+      "world": [
+       -1411,
+       -39,
+       82
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       3,
+       12,
+       3
+      ],
+      "world": [
+       -1411,
+       -39,
+       81
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       4,
+       12,
+       3
+      ],
+      "world": [
+       -1411,
+       -39,
+       80
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       2,
+       12,
+       4
+      ],
+      "world": [
+       -1410,
+       -39,
+       82
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     }
+    ],
+    "unspecified_cell_fill": {
+     "air": 221
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -1412,
+       -51,
+       79
+      ],
+      "facing": "north",
+      "target": [
+       -1412,
+       -51,
+       78
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 221,
+    "unspecified_air_fraction": 1.0,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 64,
+     "deepslate": 55,
+     "sculk": 9
+    },
+    "bb_y_range": [
+     -51,
+     -37
+    ]
+   },
+   {
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -1244,
+     -51,
+     103
+    ],
+    "bb": [
+     -1280,
+     -51,
+     103,
+     -1244,
+     -42,
+     131
+    ],
+    "bb_size": [
+     37,
+     10,
+     29
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 4,
+    "adjacent_templates": [
+     "intact_corner_wall_1",
+     "medium_pillar_1",
+     "ruined_horizontal_wall_stairs_3",
+     "ruined_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     -1280,
+     -51,
+     103,
+     -1244,
+     -42,
+     131
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -1280,
+     -1244
+    ],
+    "model_bb_z": [
+     103,
+     131
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "cracked_by_processor": 361,
+     "identical": 1140,
+     "replaced_by_other": 4,
+     "sculk_feature_overlay": 336,
+     "removed_to_air": 50,
+     "same_block_other_state": 5
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      86,
+      0
+     ],
+     "container": [
+      3,
+      0
+     ],
+     "lantern": [
+      3,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [
+     {
+      "rel": [
+       14,
+       0,
+       0
+      ],
+      "world": [
+       -1244,
+       -51,
+       117
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:water[level=8]"
+     },
+     {
+      "rel": [
+       18,
+       0,
+       2
+      ],
+      "world": [
+       -1246,
+       -51,
+       121
+      ],
+      "expected": "minecraft:deepslate_bricks",
+      "got": "minecraft:water[level=8]"
+     },
+     {
+      "rel": [
+       21,
+       0,
+       27
+      ],
+      "world": [
+       -1271,
+       -51,
+       124
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:water[level=1]"
+     },
+     {
+      "rel": [
+       14,
+       1,
+       0
+      ],
+      "world": [
+       -1244,
+       -50,
+       117
+      ],
+      "expected": "minecraft:cracked_deepslate_bricks",
+      "got": "minecraft:water[level=3]"
+     }
+    ],
+    "unspecified_cell_fill": {
+     "air": 8576,
+     "sculk_vein": 196,
+     "water": 34,
+     "sculk_sensor": 14,
+     "sculk_shrieker": 5,
+     "sculk": 4,
+     "sculk_catalyst": 4,
+     "deepslate": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      -1245,
+      -42,
+      112,
+      "deepslate"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -1253,
+       -51,
+       124
+      ],
+      "facing": "up",
+      "target": [
+       -1253,
+       -50,
+       124
+      ],
+      "connected_to": [
+       "feature_pool_element"
+      ],
+      "connected": true,
+      "pool": "minecraft:ancient_city/sculk"
+     },
+     {
+      "jigsaw_world": [
+       -1256,
+       -51,
+       111
+      ],
+      "facing": "up",
+      "target": [
+       -1256,
+       -50,
+       111
+      ],
+      "connected_to": [
+       "feature_pool_element"
+      ],
+      "connected": true,
+      "pool": "minecraft:ancient_city/sculk"
+     },
+     {
+      "jigsaw_world": [
+       -1265,
+       -51,
+       131
+      ],
+      "facing": "south",
+      "target": [
+       -1265,
+       -51,
+       132
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     },
+     {
+      "jigsaw_world": [
+       -1270,
+       -51,
+       108
+      ],
+      "facing": "up",
+      "target": [
+       -1270,
+       -50,
+       108
+      ],
+      "connected_to": [],
+      "connected": false,
+      "pool": "minecraft:ancient_city/sculk"
+     },
+     {
+      "jigsaw_world": [
+       -1277,
+       -51,
+       121
+      ],
+      "facing": "up",
+      "target": [
+       -1277,
+       -50,
+       121
+      ],
+      "connected_to": [
+       "feature_pool_element"
+      ],
+      "connected": true,
+      "pool": "minecraft:ancient_city/sculk"
+     }
+    ],
+    "unspecified_cells": 8834,
+    "unspecified_air_fraction": 0.971,
+    "unspecified_solid_fraction": 0.003,
+    "shell_top_bottom": {
+     "air": 1168,
+     "deepslate": 667,
+     "sculk": 501,
+     "tuff": 78,
+     "polished_deepslate": 2,
+     "sculk_catalyst": 1
+    },
+    "bb_y_range": [
+     -51,
+     -42
+    ]
+   },
+   {
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -1386,
+     -51,
+     15
+    ],
+    "bb": [
+     -1393,
+     -51,
+     12,
+     -1386,
+     -47,
+     15
+    ],
+    "bb_size": [
+     8,
+     5,
+     4
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     -1393,
+     -51,
+     12,
+     -1386,
+     -47,
+     15
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -1393,
+     -1386
+    ],
+    "model_bb_z": [
+     12,
+     15
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "cracked_by_processor": 26,
+     "identical": 86,
+     "sculk_feature_overlay": 11,
+     "removed_to_air": 4
+    },
+    "critical_blocks_total_lost": {
+     "bed": [
+      2,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 26,
+     "sculk_vein": 6,
+     "cobbled_deepslate": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      -1386,
+      -51,
+      13,
+      "cobbled_deepslate"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -1386,
+       -51,
+       13
+      ],
+      "facing": "east",
+      "target": [
+       -1385,
+       -51,
+       13
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 33,
+    "unspecified_air_fraction": 0.788,
+    "unspecified_solid_fraction": 0.03,
+    "shell_top_bottom": {
+     "air": 60,
+     "deepslate": 48,
+     "sculk": 12
+    },
+    "bb_y_range": [
+     -51,
+     -47
+    ]
+   },
+   {
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     -1324,
+     -51,
+     -33
+    ],
+    "bb": [
+     -1330,
+     -51,
+     -40,
+     -1324,
+     -47,
+     -33
+    ],
+    "bb_size": [
+     7,
+     5,
+     8
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_2"
+    ],
+    "vanilla_bb": [
+     -1330,
+     -51,
+     -40,
+     -1324,
+     -47,
+     -33
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -1330,
+     -1324
+    ],
+    "model_bb_z": [
+     -40,
+     -33
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 13,
+     "identical": 146,
+     "cracked_by_processor": 32,
+     "removed_to_air": 7
+    },
+    "critical_blocks_total_lost": {
+     "bed": [
+      2,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      1
+     ],
+     "stairs": [
+      10,
+      0
+     ]
+    },
+    "critical_lost_cells": [
+     {
+      "category": "lantern",
+      "block": "soul_lantern",
+      "world": [
+       -1329,
+       -48,
+       -39
+      ],
+      "got": "minecraft:air"
+     }
+    ],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 80,
+     "sculk_vein": 1,
+     "sculk": 1
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -1324,
+       -51,
+       -36
+      ],
+      "facing": "east",
+      "target": [
+       -1323,
+       -51,
+       -36
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_2"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 82,
+    "unspecified_air_fraction": 0.976,
+    "unspecified_solid_fraction": 0.012,
+    "shell_top_bottom": {
+     "air": 90,
+     "deepslate": 71,
+     "sculk": 19
+    },
+    "bb_y_range": [
+     -51,
+     -47
+    ]
+   }
+  ]
+ },
+ {
+  "seed": 24017,
+  "city_xz": [
+   32,
+   128
+  ],
+  "pieces_vanilla": 89,
+  "pieces_candidate": 89,
+  "placements_identical_to_vanilla": true,
+  "first_placement_diff_index": null,
+  "bounding_box_differences": [
+   {
+    "index": 41,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     81,
+     -51,
+     152,
+     96,
+     -47,
+     162
+    ],
+    "candidate_bb": [
+     81,
+     -51,
+     152,
+     96,
+     -44,
+     162
+    ]
+   },
+   {
+    "index": 54,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     47,
+     -51,
+     202,
+     62,
+     -47,
+     212
+    ],
+    "candidate_bb": [
+     47,
+     -51,
+     202,
+     62,
+     -44,
+     212
+    ]
+   },
+   {
+    "index": 82,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     82,
+     -51,
+     187,
+     98,
+     -47,
+     203
+    ],
+    "candidate_bb": [
+     82,
+     -51,
+     187,
+     98,
+     -38,
+     203
+    ]
+   },
+   {
+    "index": 83,
+    "template": "medium_ruin_2",
+    "vanilla_bb": [
+     125,
+     -51,
+     150,
+     135,
+     -47,
+     165
+    ],
+    "candidate_bb": [
+     125,
+     -51,
+     150,
+     135,
+     -44,
+     165
+    ]
+   }
+  ],
+  "modules": [
+   {
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     81,
+     -51,
+     152
+    ],
+    "bb": [
+     81,
+     -51,
+     152,
+     96,
+     -44,
+     162
+    ],
+    "bb_size": [
+     16,
+     8,
+     11
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     81,
+     -51,
+     152,
+     96,
+     -47,
+     162
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     81,
+     96
+    ],
+    "model_bb_z": [
+     152,
+     162
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 368,
+     "cracked_by_processor": 109,
+     "sculk_feature_overlay": 212,
+     "removed_to_air": 21
+    },
+    "critical_blocks_total_lost": {
+     "door": [
+      2,
+      0
+     ],
+     "stairs": [
+      87,
+      0
+     ],
+     "bed": [
+      4,
+      0
+     ],
+     "container": [
+      2,
+      0
+     ],
+     "lantern": [
+      2,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 575,
+     "sculk_vein": 111,
+     "sculk_sensor": 10,
+     "cobbled_deepslate": 1,
+     "sculk_catalyst": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      81,
+      -51,
+      157,
+      "cobbled_deepslate"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       81,
+       -51,
+       157
+      ],
+      "facing": "west",
+      "target": [
+       80,
+       -51,
+       157
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 698,
+    "unspecified_air_fraction": 0.824,
+    "unspecified_solid_fraction": 0.017,
+    "shell_top_bottom": {
+     "air": 212,
+     "deepslate": 103,
+     "sculk": 85,
+     "tuff": 46,
+     "sculk_vein": 18,
+     "sculk_sensor": 4
+    },
+    "bb_y_range": [
+     -51,
+     -44
+    ]
+   },
+   {
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -30,
+     -51,
+     112
+    ],
+    "bb": [
+     -37,
+     -51,
+     112,
+     -30,
+     -41,
+     118
+    ],
+    "bb_size": [
+     8,
+     11,
+     7
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     -37,
+     -51,
+     112,
+     -30,
+     -41,
+     118
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -37,
+     -30
+    ],
+    "model_bb_z": [
+     112,
+     118
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 261,
+     "sculk_feature_overlay": 13,
+     "cracked_by_processor": 46,
+     "replaced_by_other": 11,
+     "removed_to_air": 5
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      29,
+      0
+     ],
+     "ladder": [
+      8,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ],
+     "parapet_wall": [
+      22,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [
+     {
+      "rel": [
+       2,
+       0,
+       3
+      ],
+      "world": [
+       -33,
+       -51,
+       114
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       3,
+       0,
+       3
+      ],
+      "world": [
+       -33,
+       -51,
+       115
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       2,
+       0,
+       4
+      ],
+      "world": [
+       -34,
+       -51,
+       114
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       3,
+       0,
+       4
+      ],
+      "world": [
+       -34,
+       -51,
+       115
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       2,
+       1,
+       3
+      ],
+      "world": [
+       -33,
+       -50,
+       114
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       3,
+       1,
+       3
+      ],
+      "world": [
+       -33,
+       -50,
+       115
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     }
+    ],
+    "unspecified_cell_fill": {
+     "air": 249,
+     "sculk_vein": 30,
+     "sculk_catalyst": 1
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -33,
+       -51,
+       118
+      ],
+      "facing": "south",
+      "target": [
+       -33,
+       -51,
+       119
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     },
+     {
+      "jigsaw_world": [
+       -34,
+       -51,
+       118
+      ],
+      "facing": "south",
+      "target": [
+       -34,
+       -51,
+       119
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 280,
+    "unspecified_air_fraction": 0.889,
+    "unspecified_solid_fraction": 0.004,
+    "shell_top_bottom": {
+     "air": 90,
+     "sculk": 55,
+     "tuff": 18,
+     "deepslate": 17
+    },
+    "bb_y_range": [
+     -51,
+     -41
+    ]
+   },
+   {
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     -36,
+     -51,
+     145
+    ],
+    "bb": [
+     -36,
+     -51,
+     140,
+     -31,
+     -37,
+     145
+    ],
+    "bb_size": [
+     6,
+     15,
+     6
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     -36,
+     -51,
+     140,
+     -31,
+     -37,
+     145
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -36,
+     -31
+    ],
+    "model_bb_z": [
+     140,
+     145
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 79,
+     "identical": 235,
+     "cracked_by_processor": 4,
+     "removed_to_air": 1
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      63,
+      0
+     ],
+     "ladder": [
+      13,
+      0
+     ],
+     "lantern": [
+      4,
+      0
+     ],
+     "parapet_wall": [
+      16,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 196,
+     "sculk_vein": 25
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -34,
+       -51,
+       140
+      ],
+      "facing": "north",
+      "target": [
+       -34,
+       -51,
+       139
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 221,
+    "unspecified_air_fraction": 0.887,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 64,
+     "sculk": 32,
+     "deepslate": 32
+    },
+    "bb_y_range": [
+     -51,
+     -37
+    ]
+   },
+   {
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     47,
+     -51,
+     202
+    ],
+    "bb": [
+     47,
+     -51,
+     202,
+     62,
+     -44,
+     212
+    ],
+    "bb_size": [
+     16,
+     8,
+     11
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "ruined_horizontal_wall_stairs_3"
+    ],
+    "vanilla_bb": [
+     47,
+     -51,
+     202,
+     62,
+     -47,
+     212
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     47,
+     62
+    ],
+    "model_bb_z": [
+     202,
+     212
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 173,
+     "cracked_by_processor": 118,
+     "identical": 406,
+     "removed_to_air": 13
+    },
+    "critical_blocks_total_lost": {
+     "door": [
+      2,
+      0
+     ],
+     "stairs": [
+      87,
+      0
+     ],
+     "bed": [
+      4,
+      0
+     ],
+     "container": [
+      2,
+      0
+     ],
+     "lantern": [
+      2,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 565,
+     "sculk_vein": 127,
+     "sculk_sensor": 3,
+     "sculk_shrieker": 2,
+     "sculk": 1
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       47,
+       -51,
+       207
+      ],
+      "facing": "west",
+      "target": [
+       46,
+       -51,
+       207
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_3"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 698,
+    "unspecified_air_fraction": 0.809,
+    "unspecified_solid_fraction": 0.009,
+    "shell_top_bottom": {
+     "air": 222,
+     "deepslate": 150,
+     "sculk": 84,
+     "sculk_vein": 8,
+     "sculk_sensor": 3,
+     "sculk_catalyst": 1
+    },
+    "bb_y_range": [
+     -51,
+     -44
+    ]
+   },
+   {
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     86,
+     -51,
+     81
+    ],
+    "bb": [
+     81,
+     -51,
+     76,
+     86,
+     -37,
+     81
+    ],
+    "bb_size": [
+     6,
+     15,
+     6
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 2,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4",
+     "medium_pillar_1"
+    ],
+    "vanilla_bb": [
+     81,
+     -51,
+     76,
+     86,
+     -37,
+     81
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     81,
+     86
+    ],
+    "model_bb_z": [
+     76,
+     81
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 239,
+     "removed_to_air": 4,
+     "sculk_feature_overlay": 65,
+     "cracked_by_processor": 5,
+     "replaced_by_other": 6
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      63,
+      0
+     ],
+     "ladder": [
+      13,
+      0
+     ],
+     "lantern": [
+      4,
+      0
+     ],
+     "parapet_wall": [
+      16,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [
+     {
+      "rel": [
+       1,
+       12,
+       2
+      ],
+      "world": [
+       85,
+       -39,
+       79
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       4,
+       12,
+       2
+      ],
+      "world": [
+       82,
+       -39,
+       79
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       1,
+       12,
+       3
+      ],
+      "world": [
+       85,
+       -39,
+       78
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       3,
+       12,
+       3
+      ],
+      "world": [
+       83,
+       -39,
+       78
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       4,
+       12,
+       3
+      ],
+      "world": [
+       82,
+       -39,
+       78
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     },
+     {
+      "rel": [
+       2,
+       12,
+       4
+      ],
+      "world": [
+       84,
+       -39,
+       77
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:tuff"
+     }
+    ],
+    "unspecified_cell_fill": {
+     "air": 201,
+     "sculk_vein": 20
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       81,
+       -51,
+       79
+      ],
+      "facing": "west",
+      "target": [
+       80,
+       -51,
+       79
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 221,
+    "unspecified_air_fraction": 0.91,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 95,
+     "sculk": 18,
+     "deepslate": 8,
+     "sculk_vein": 7
+    },
+    "bb_y_range": [
+     -51,
+     -37
+    ]
+   },
+   {
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     94,
+     -51,
+     81
+    ],
+    "bb": [
+     87,
+     -51,
+     81,
+     94,
+     -41,
+     87
+    ],
+    "bb_size": [
+     8,
+     11,
+     7
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 2,
+    "adjacent_templates": [
+     "intact_horizontal_wall_bridge",
+     "large_pillar_1"
+    ],
+    "vanilla_bb": [
+     87,
+     -51,
+     81,
+     94,
+     -41,
+     87
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     87,
+     94
+    ],
+    "model_bb_z": [
+     81,
+     87
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 104,
+     "cracked_by_processor": 31,
+     "identical": 193,
+     "removed_to_air": 8
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      29,
+      0
+     ],
+     "ladder": [
+      8,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ],
+     "parapet_wall": [
+      22,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 227,
+     "sculk_vein": 51,
+     "sculk_shrieker": 1,
+     "sculk_catalyst": 1
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       91,
+       -51,
+       87
+      ],
+      "facing": "south",
+      "target": [
+       91,
+       -51,
+       88
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_bridge"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     },
+     {
+      "jigsaw_world": [
+       90,
+       -51,
+       87
+      ],
+      "facing": "south",
+      "target": [
+       90,
+       -51,
+       88
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_bridge"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 280,
+    "unspecified_air_fraction": 0.811,
+    "unspecified_solid_fraction": 0.007,
+    "shell_top_bottom": {
+     "air": 90,
+     "sculk": 83,
+     "deepslate": 7
+    },
+    "bb_y_range": [
+     -51,
+     -41
+    ]
+   },
+   {
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     -14,
+     -51,
+     74
+    ],
+    "bb": [
+     -19,
+     -51,
+     74,
+     -14,
+     -37,
+     79
+    ],
+    "bb_size": [
+     6,
+     15,
+     6
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_2"
+    ],
+    "vanilla_bb": [
+     -19,
+     -51,
+     74,
+     -14,
+     -37,
+     79
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     -19,
+     -14
+    ],
+    "model_bb_z": [
+     74,
+     79
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 300,
+     "removed_to_air": 6,
+     "sculk_feature_overlay": 4,
+     "cracked_by_processor": 9
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      63,
+      0
+     ],
+     "ladder": [
+      13,
+      0
+     ],
+     "lantern": [
+      4,
+      0
+     ],
+     "parapet_wall": [
+      16,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 220,
+     "sculk_vein": 1
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       -16,
+       -51,
+       79
+      ],
+      "facing": "south",
+      "target": [
+       -16,
+       -51,
+       80
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_2"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 221,
+    "unspecified_air_fraction": 0.995,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 79,
+     "deepslate": 36,
+     "sculk": 7,
+     "sculk_vein": 4,
+     "glow_lichen": 2
+    },
+    "bb_y_range": [
+     -51,
+     -37
+    ]
+   },
+   {
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     98,
+     -51,
+     187
+    ],
+    "bb": [
+     82,
+     -51,
+     187,
+     98,
+     -38,
+     203
+    ],
+    "bb_size": [
+     17,
+     14,
+     17
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     82,
+     -51,
+     187,
+     98,
+     -47,
+     203
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     82,
+     98
+    ],
+    "model_bb_z": [
+     187,
+     203
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 632,
+     "cracked_by_processor": 117,
+     "sculk_feature_overlay": 393,
+     "removed_to_air": 20
+    },
+    "critical_blocks_total_lost": {
+     "container": [
+      1,
+      0
+     ],
+     "bed": [
+      4,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "lantern": [
+      4,
+      0
+     ],
+     "stairs": [
+      258,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 2610,
+     "sculk_vein": 265,
+     "sculk_sensor": 8,
+     "cobbled_deepslate": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      91,
+      -51,
+      187,
+      "cobbled_deepslate"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       91,
+       -51,
+       187
+      ],
+      "facing": "north",
+      "target": [
+       91,
+       -51,
+       186
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 2884,
+    "unspecified_air_fraction": 0.905,
+    "unspecified_solid_fraction": 0.003,
+    "shell_top_bottom": {
+     "air": 361,
+     "deepslate": 248,
+     "sculk": 113
+    },
+    "expansion_layers": {
+     "from_y": -46,
+     "to_y": -38,
+     "unspecified_fill": {
+      "air": 2001,
+      "sculk_vein": 135,
+      "sculk_sensor": 1
+     },
+     "terrain_cells": [],
+     "solid_terrain_cells": 1
+    },
+    "bb_y_range": [
+     -51,
+     -38
+    ]
+   },
+   {
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     125,
+     -51,
+     165
+    ],
+    "bb": [
+     125,
+     -51,
+     150,
+     135,
+     -44,
+     165
+    ],
+    "bb_size": [
+     11,
+     8,
+     16
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     125,
+     -51,
+     150,
+     135,
+     -47,
+     165
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     125,
+     135
+    ],
+    "model_bb_z": [
+     150,
+     165
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "cracked_by_processor": 141,
+     "identical": 471,
+     "sculk_feature_overlay": 81,
+     "removed_to_air": 17
+    },
+    "critical_blocks_total_lost": {
+     "door": [
+      2,
+      0
+     ],
+     "stairs": [
+      87,
+      0
+     ],
+     "bed": [
+      4,
+      0
+     ],
+     "container": [
+      2,
+      0
+     ],
+     "lantern": [
+      2,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 654,
+     "sculk_vein": 41,
+     "sculk_sensor": 2,
+     "cobbled_deepslate": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      130,
+      -51,
+      165,
+      "cobbled_deepslate"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       130,
+       -51,
+       165
+      ],
+      "facing": "south",
+      "target": [
+       130,
+       -51,
+       166
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 698,
+    "unspecified_air_fraction": 0.937,
+    "unspecified_solid_fraction": 0.004,
+    "shell_top_bottom": {
+     "air": 234,
+     "sculk": 91,
+     "deepslate": 77,
+     "tuff": 66
+    },
+    "bb_y_range": [
+     -51,
+     -44
+    ]
+   },
+   {
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "pos": [
+     121,
+     -51,
+     189
+    ],
+    "bb": [
+     121,
+     -51,
+     189,
+     128,
+     -47,
+     201
+    ],
+    "bb_size": [
+     8,
+     5,
+     13
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_2"
+    ],
+    "vanilla_bb": [
+     121,
+     -51,
+     189,
+     128,
+     -47,
+     201
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     121,
+     128
+    ],
+    "model_bb_z": [
+     189,
+     201
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 38,
+     "identical": 222,
+     "cracked_by_processor": 64,
+     "removed_to_air": 5
+    },
+    "critical_blocks_total_lost": {
+     "container": [
+      1,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "bed": [
+      2,
+      0
+     ],
+     "lantern": [
+      2,
+      0
+     ],
+     "stairs": [
+      12,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 181,
+     "sculk_vein": 9,
+     "cracked_deepslate_bricks": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      121,
+      -51,
+      195,
+      "cracked_deepslate_bricks"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       121,
+       -51,
+       195
+      ],
+      "facing": "west",
+      "target": [
+       120,
+       -51,
+       195
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_2"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 191,
+    "unspecified_air_fraction": 0.948,
+    "unspecified_solid_fraction": 0.005,
+    "shell_top_bottom": {
+     "air": 139,
+     "deepslate": 111,
+     "sculk": 37,
+     "smooth_basalt": 5,
+     "sculk_sensor": 3,
+     "sculk_vein": 3
+    },
+    "bb_y_range": [
+     -51,
+     -47
+    ]
+   },
+   {
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     127,
+     -51,
+     68
+    ],
+    "bb": [
+     121,
+     -51,
+     61,
+     127,
+     -41,
+     68
+    ],
+    "bb_size": [
+     7,
+     11,
+     8
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "ruined_horizontal_wall_stairs_3"
+    ],
+    "vanilla_bb": [
+     121,
+     -51,
+     61,
+     127,
+     -41,
+     68
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     121,
+     127
+    ],
+    "model_bb_z": [
+     61,
+     68
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 273,
+     "cracked_by_processor": 53,
+     "sculk_feature_overlay": 2,
+     "removed_to_air": 8
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      29,
+      0
+     ],
+     "ladder": [
+      8,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ],
+     "parapet_wall": [
+      22,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 275,
+     "sculk_vein": 5
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       121,
+       -51,
+       65
+      ],
+      "facing": "west",
+      "target": [
+       120,
+       -51,
+       65
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_3"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     },
+     {
+      "jigsaw_world": [
+       121,
+       -51,
+       64
+      ],
+      "facing": "west",
+      "target": [
+       120,
+       -51,
+       64
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_3"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 280,
+    "unspecified_air_fraction": 0.982,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 90,
+     "deepslate": 81,
+     "sculk": 7,
+     "tuff": 2
+    },
+    "bb_y_range": [
+     -51,
+     -41
+    ]
+   }
+  ]
+ },
+ {
+  "seed": 24018,
+  "city_xz": [
+   1232,
+   96
+  ],
+  "pieces_vanilla": 86,
+  "pieces_candidate": 86,
+  "placements_identical_to_vanilla": true,
+  "first_placement_diff_index": null,
+  "bounding_box_differences": [
+   {
+    "index": 76,
+    "template": "large_ruin_1",
+    "vanilla_bb": [
+     1137,
+     -51,
+     145,
+     1153,
+     -47,
+     161
+    ],
+    "candidate_bb": [
+     1137,
+     -51,
+     145,
+     1153,
+     -38,
+     161
+    ]
+   }
+  ],
+  "modules": [
+   {
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     1300,
+     -51,
+     112
+    ],
+    "bb": [
+     1293,
+     -51,
+     112,
+     1300,
+     -47,
+     118
+    ],
+    "bb_size": [
+     8,
+     5,
+     7
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_bridge"
+    ],
+    "vanilla_bb": [
+     1293,
+     -51,
+     112,
+     1300,
+     -47,
+     118
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     1293,
+     1300
+    ],
+    "model_bb_z": [
+     112,
+     118
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 114,
+     "removed_to_air": 9,
+     "cracked_by_processor": 26,
+     "sculk_feature_overlay": 49
+    },
+    "critical_blocks_total_lost": {
+     "bed": [
+      2,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ],
+     "stairs": [
+      10,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 71,
+     "sculk_vein": 9,
+     "sculk_sensor": 1,
+     "deepslate_bricks": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      1297,
+      -51,
+      112,
+      "deepslate_bricks"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       1297,
+       -51,
+       112
+      ],
+      "facing": "north",
+      "target": [
+       1297,
+       -51,
+       111
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_bridge"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 82,
+    "unspecified_air_fraction": 0.866,
+    "unspecified_solid_fraction": 0.024,
+    "shell_top_bottom": {
+     "air": 84,
+     "sculk": 69,
+     "deepslate": 21,
+     "sculk_vein": 4,
+     "sculk_sensor": 2
+    },
+    "bb_y_range": [
+     -51,
+     -47
+    ]
+   },
+   {
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1266,
+     -51,
+     69
+    ],
+    "bb": [
+     1259,
+     -51,
+     57,
+     1266,
+     -47,
+     69
+    ],
+    "bb_size": [
+     8,
+     5,
+     13
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     1259,
+     -51,
+     57,
+     1266,
+     -47,
+     69
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     1259,
+     1266
+    ],
+    "model_bb_z": [
+     57,
+     69
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 219,
+     "sculk_feature_overlay": 22,
+     "cracked_by_processor": 80,
+     "removed_to_air": 8
+    },
+    "critical_blocks_total_lost": {
+     "container": [
+      1,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "bed": [
+      2,
+      0
+     ],
+     "lantern": [
+      2,
+      0
+     ],
+     "stairs": [
+      12,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 177,
+     "sculk_vein": 13,
+     "deepslate_bricks": 1
+    },
+    "terrain_cells_in_bb": 1,
+    "terrain_cells_in_bb_list": [
+     [
+      1266,
+      -51,
+      63,
+      "deepslate_bricks"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       1266,
+       -51,
+       63
+      ],
+      "facing": "east",
+      "target": [
+       1267,
+       -51,
+       63
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 191,
+    "unspecified_air_fraction": 0.927,
+    "unspecified_solid_fraction": 0.005,
+    "shell_top_bottom": {
+     "air": 150,
+     "deepslate": 96,
+     "sculk": 54
+    },
+    "bb_y_range": [
+     -51,
+     -47
+    ]
+   },
+   {
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1293,
+     -51,
+     65
+    ],
+    "bb": [
+     1288,
+     -51,
+     60,
+     1293,
+     -37,
+     65
+    ],
+    "bb_size": [
+     6,
+     15,
+     6
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     1288,
+     -51,
+     60,
+     1293,
+     -37,
+     65
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     1288,
+     1293
+    ],
+    "model_bb_z": [
+     60,
+     65
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 250,
+     "sculk_feature_overlay": 64,
+     "removed_to_air": 2,
+     "replaced_by_other": 2,
+     "cracked_by_processor": 1
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      63,
+      0
+     ],
+     "ladder": [
+      13,
+      0
+     ],
+     "lantern": [
+      4,
+      0
+     ],
+     "parapet_wall": [
+      16,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [
+     {
+      "rel": [
+       4,
+       1,
+       2
+      ],
+      "world": [
+       1289,
+       -50,
+       63
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:gravel"
+     },
+     {
+      "rel": [
+       4,
+       2,
+       2
+      ],
+      "world": [
+       1289,
+       -49,
+       63
+      ],
+      "expected": "minecraft:deepslate[axis=y]",
+      "got": "minecraft:gravel"
+     }
+    ],
+    "unspecified_cell_fill": {
+     "air": 201,
+     "sculk_vein": 20
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       1288,
+       -51,
+       63
+      ],
+      "facing": "west",
+      "target": [
+       1287,
+       -51,
+       63
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 221,
+    "unspecified_air_fraction": 0.91,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 64,
+     "deepslate": 51,
+     "sculk": 13
+    },
+    "bb_y_range": [
+     -51,
+     -37
+    ]
+   },
+   {
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "pos": [
+     1261,
+     -51,
+     44
+    ],
+    "bb": [
+     1261,
+     -51,
+     44,
+     1266,
+     -37,
+     49
+    ],
+    "bb_size": [
+     6,
+     15,
+     6
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "ruined_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     1261,
+     -51,
+     44,
+     1266,
+     -37,
+     49
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     1261,
+     1266
+    ],
+    "model_bb_z": [
+     44,
+     49
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 45,
+     "identical": 263,
+     "removed_to_air": 4,
+     "cracked_by_processor": 7
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      63,
+      0
+     ],
+     "ladder": [
+      13,
+      0
+     ],
+     "lantern": [
+      4,
+      1
+     ],
+     "parapet_wall": [
+      16,
+      0
+     ]
+    },
+    "critical_lost_cells": [
+     {
+      "category": "lantern",
+      "block": "soul_lantern",
+      "world": [
+       1265,
+       -39,
+       45
+      ],
+      "got": "minecraft:air"
+     }
+    ],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 220,
+     "sculk_vein": 1
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       1266,
+       -51,
+       46
+      ],
+      "facing": "east",
+      "target": [
+       1267,
+       -51,
+       46
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 221,
+    "unspecified_air_fraction": 0.995,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 64,
+     "sculk": 45,
+     "tuff": 16,
+     "deepslate": 3
+    },
+    "bb_y_range": [
+     -51,
+     -37
+    ]
+   },
+   {
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "pos": [
+     1153,
+     -51,
+     145
+    ],
+    "bb": [
+     1137,
+     -51,
+     145,
+     1153,
+     -38,
+     161
+    ],
+    "bb_size": [
+     17,
+     14,
+     17
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 2,
+    "adjacent_templates": [
+     "intact_horizontal_wall_passage_1",
+     "ruined_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     1137,
+     -51,
+     145,
+     1153,
+     -47,
+     161
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     1137,
+     1153
+    ],
+    "model_bb_z": [
+     145,
+     161
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 221,
+     "identical": 763,
+     "cracked_by_processor": 156,
+     "removed_to_air": 22
+    },
+    "critical_blocks_total_lost": {
+     "container": [
+      1,
+      0
+     ],
+     "bed": [
+      4,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "lantern": [
+      4,
+      0
+     ],
+     "stairs": [
+      258,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 2703,
+     "sculk_vein": 176,
+     "sculk_sensor": 2,
+     "sculk_shrieker": 1,
+     "sculk_catalyst": 1,
+     "sculk": 1
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       1146,
+       -51,
+       145
+      ],
+      "facing": "north",
+      "target": [
+       1146,
+       -51,
+       144
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 2884,
+    "unspecified_air_fraction": 0.937,
+    "unspecified_solid_fraction": 0.002,
+    "shell_top_bottom": {
+     "air": 361,
+     "deepslate": 313,
+     "sculk": 48
+    },
+    "expansion_layers": {
+     "from_y": -46,
+     "to_y": -38,
+     "unspecified_fill": {
+      "air": 2094,
+      "sculk_vein": 43
+     },
+     "terrain_cells": [],
+     "solid_terrain_cells": 0
+    },
+    "bb_y_range": [
+     -51,
+     -38
+    ]
+   },
+   {
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "pos": [
+     1293,
+     -51,
+     191
+    ],
+    "bb": [
+     1293,
+     -51,
+     185,
+     1300,
+     -41,
+     191
+    ],
+    "bb_size": [
+     8,
+     11,
+     7
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     1293,
+     -51,
+     185,
+     1300,
+     -41,
+     191
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     1293,
+     1300
+    ],
+    "model_bb_z": [
+     185,
+     191
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "cracked_by_processor": 55,
+     "identical": 279,
+     "removed_to_air": 2
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      29,
+      0
+     ],
+     "ladder": [
+      8,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ],
+     "parapet_wall": [
+      22,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 280
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       1296,
+       -51,
+       185
+      ],
+      "facing": "north",
+      "target": [
+       1296,
+       -51,
+       184
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     },
+     {
+      "jigsaw_world": [
+       1297,
+       -51,
+       185
+      ],
+      "facing": "north",
+      "target": [
+       1297,
+       -51,
+       184
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_4"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 280,
+    "unspecified_air_fraction": 1.0,
+    "unspecified_solid_fraction": 0.0,
+    "shell_top_bottom": {
+     "air": 90,
+     "deepslate": 81,
+     "gravel": 9
+    },
+    "bb_y_range": [
+     -51,
+     -41
+    ]
+   },
+   {
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "pos": [
+     1242,
+     -51,
+     -3
+    ],
+    "bb": [
+     1242,
+     -51,
+     -3,
+     1249,
+     -47,
+     0
+    ],
+    "bb_size": [
+     8,
+     5,
+     4
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 1,
+    "adjacent_templates": [
+     "ruined_horizontal_wall_stairs_3"
+    ],
+    "vanilla_bb": [
+     1242,
+     -51,
+     -3,
+     1249,
+     -47,
+     0
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     1242,
+     1249
+    ],
+    "model_bb_z": [
+     -3,
+     0
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "sculk_feature_overlay": 62,
+     "removed_to_air": 5,
+     "identical": 43,
+     "cracked_by_processor": 17
+    },
+    "critical_blocks_total_lost": {
+     "bed": [
+      2,
+      0
+     ],
+     "door": [
+      2,
+      0
+     ],
+     "container": [
+      1,
+      0
+     ],
+     "lantern": [
+      1,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [],
+    "unspecified_cell_fill": {
+     "air": 24,
+     "sculk_vein": 8,
+     "sculk": 1
+    },
+    "terrain_cells_in_bb": 0,
+    "terrain_cells_in_bb_list": [],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       1242,
+       -51,
+       -1
+      ],
+      "facing": "west",
+      "target": [
+       1241,
+       -51,
+       -1
+      ],
+      "connected_to": [
+       "ruined_horizontal_wall_stairs_3"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     }
+    ],
+    "unspecified_cells": 33,
+    "unspecified_air_fraction": 0.727,
+    "unspecified_solid_fraction": 0.03,
+    "shell_top_bottom": {
+     "air": 51,
+     "sculk": 42,
+     "deepslate": 18,
+     "sculk_vein": 6,
+     "sculk_sensor": 2,
+     "sculk_shrieker": 1
+    },
+    "bb_y_range": [
+     -51,
+     -47
+    ]
+   },
+   {
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_180",
+    "pos": [
+     1316,
+     -51,
+     48
+    ],
+    "bb": [
+     1288,
+     -51,
+     12,
+     1316,
+     -42,
+     48
+    ],
+    "bb_size": [
+     29,
+     10,
+     37
+    ],
+    "overlapping_pieces": [],
+    "adjacent_piece_count": 3,
+    "adjacent_templates": [
+     "intact_horizontal_wall_stairs_1",
+     "ruined_horizontal_wall_stairs_1",
+     "ruined_horizontal_wall_stairs_4"
+    ],
+    "vanilla_bb": [
+     1288,
+     -51,
+     12,
+     1316,
+     -42,
+     48
+    ],
+    "vertical_clearance_to_piece_above": null,
+    "model_bb_x": [
+     1288,
+     1316
+    ],
+    "model_bb_z": [
+     12,
+     48
+    ],
+    "model_matches_piece_bb": true,
+    "block_replacement": {
+     "identical": 1326,
+     "cracked_by_processor": 365,
+     "removed_to_air": 76,
+     "sculk_feature_overlay": 128,
+     "replaced_by_other": 1
+    },
+    "critical_blocks_total_lost": {
+     "stairs": [
+      86,
+      0
+     ],
+     "container": [
+      3,
+      0
+     ],
+     "lantern": [
+      3,
+      0
+     ]
+    },
+    "critical_lost_cells": [],
+    "block_replacement_samples": [
+     {
+      "rel": [
+       21,
+       0,
+       28
+      ],
+      "world": [
+       1295,
+       -51,
+       20
+      ],
+      "expected": "minecraft:deepslate_tiles",
+      "got": "minecraft:water[level=1]"
+     }
+    ],
+    "unspecified_cell_fill": {
+     "air": 8706,
+     "sculk_vein": 114,
+     "sculk_sensor": 7,
+     "deepslate": 3,
+     "sculk_catalyst": 2,
+     "sculk_shrieker": 1,
+     "gravel": 1
+    },
+    "terrain_cells_in_bb": 4,
+    "terrain_cells_in_bb_list": [
+     [
+      1295,
+      -51,
+      39,
+      "deepslate"
+     ],
+     [
+      1298,
+      -51,
+      15,
+      "deepslate"
+     ],
+     [
+      1308,
+      -51,
+      36,
+      "deepslate"
+     ],
+     [
+      1311,
+      -51,
+      22,
+      "gravel"
+     ]
+    ],
+    "jigsaws": [
+     {
+      "jigsaw_world": [
+       1295,
+       -51,
+       39
+      ],
+      "facing": "up",
+      "target": [
+       1295,
+       -50,
+       39
+      ],
+      "connected_to": [],
+      "connected": false,
+      "pool": "minecraft:ancient_city/sculk"
+     },
+     {
+      "jigsaw_world": [
+       1308,
+       -51,
+       36
+      ],
+      "facing": "up",
+      "target": [
+       1308,
+       -50,
+       36
+      ],
+      "connected_to": [],
+      "connected": false,
+      "pool": "minecraft:ancient_city/sculk"
+     },
+     {
+      "jigsaw_world": [
+       1288,
+       -51,
+       27
+      ],
+      "facing": "west",
+      "target": [
+       1287,
+       -51,
+       27
+      ],
+      "connected_to": [
+       "intact_horizontal_wall_stairs_1"
+      ],
+      "connected": true,
+      "pool": "minecraft:empty"
+     },
+     {
+      "jigsaw_world": [
+       1311,
+       -51,
+       22
+      ],
+      "facing": "up",
+      "target": [
+       1311,
+       -50,
+       22
+      ],
+      "connected_to": [],
+      "connected": false,
+      "pool": "minecraft:ancient_city/sculk"
+     },
+     {
+      "jigsaw_world": [
+       1298,
+       -51,
+       15
+      ],
+      "facing": "up",
+      "target": [
+       1298,
+       -50,
+       15
+      ],
+      "connected_to": [],
+      "connected": false,
+      "pool": "minecraft:ancient_city/sculk"
+     }
+    ],
+    "unspecified_cells": 8834,
+    "unspecified_air_fraction": 0.986,
+    "unspecified_solid_fraction": 0.002,
+    "shell_top_bottom": {
+     "air": 1209,
+     "deepslate": 975,
+     "sculk": 83,
+     "tuff": 82,
+     "gravel": 63,
+     "deepslate_redstone_ore": 4
+    },
+    "bb_y_range": [
+     -51,
+     -42
+    ]
+   }
+  ]
+ }
+]

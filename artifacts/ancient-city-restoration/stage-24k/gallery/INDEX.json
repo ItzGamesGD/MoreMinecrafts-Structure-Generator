@@ -1,0 +1,148 @@
+{
+ "templates": [
+  {
+   "module": "large_pillar_1",
+   "view": "front34",
+   "label": "front three-quarter (entrance side)",
+   "image": "gallery/templates/large_pillar_1/front34.jpg"
+  },
+  {
+   "module": "large_pillar_1",
+   "view": "rear34",
+   "label": "rear three-quarter",
+   "image": "gallery/templates/large_pillar_1/rear34.jpg"
+  },
+  {
+   "module": "large_pillar_1",
+   "view": "side-a",
+   "label": "side silhouette (entrance on the left)",
+   "image": "gallery/templates/large_pillar_1/side-a.jpg"
+  },
+  {
+   "module": "large_pillar_1",
+   "view": "side-b",
+   "label": "side silhouette (rotated 90\u00b0)",
+   "image": "gallery/templates/large_pillar_1/side-b.jpg"
+  },
+  {
+   "module": "large_pillar_1",
+   "view": "elevated",
+   "label": "elevated view",
+   "image": "gallery/templates/large_pillar_1/elevated.jpg"
+  },
+  {
+   "module": "large_pillar_1",
+   "view": "deck",
+   "label": "observation platform close-up",
+   "image": "gallery/templates/large_pillar_1/deck.jpg"
+  },
+  {
+   "module": "large_pillar_1",
+   "view": "cutaway",
+   "label": "interior access cutaway (front of the shaft removed, ladder in view)",
+   "image": "gallery/templates/large_pillar_1/cutaway.jpg"
+  },
+  {
+   "module": "large_pillar_1",
+   "view": "changes",
+   "label": "changed cells outlined (orange = new or different block, red = removed)",
+   "image": "gallery/templates/large_pillar_1/changes.jpg"
+  },
+  {
+   "module": "medium_pillar_1",
+   "view": "front34",
+   "label": "front three-quarter (entrance side)",
+   "image": "gallery/templates/medium_pillar_1/front34.jpg"
+  },
+  {
+   "module": "medium_pillar_1",
+   "view": "rear34",
+   "label": "rear three-quarter",
+   "image": "gallery/templates/medium_pillar_1/rear34.jpg"
+  },
+  {
+   "module": "medium_pillar_1",
+   "view": "side-a",
+   "label": "side silhouette (entrance on the left)",
+   "image": "gallery/templates/medium_pillar_1/side-a.jpg"
+  },
+  {
+   "module": "medium_pillar_1",
+   "view": "side-b",
+   "label": "side silhouette (rotated 90\u00b0)",
+   "image": "gallery/templates/medium_pillar_1/side-b.jpg"
+  },
+  {
+   "module": "medium_pillar_1",
+   "view": "elevated",
+   "label": "elevated view",
+   "image": "gallery/templates/medium_pillar_1/elevated.jpg"
+  },
+  {
+   "module": "medium_pillar_1",
+   "view": "deck",
+   "label": "observation platform close-up",
+   "image": "gallery/templates/medium_pillar_1/deck.jpg"
+  },
+  {
+   "module": "medium_pillar_1",
+   "view": "cutaway",
+   "label": "interior access cutaway (front of the shaft removed, ladder in view)",
+   "image": "gallery/templates/medium_pillar_1/cutaway.jpg"
+  },
+  {
+   "module": "medium_pillar_1",
+   "view": "changes",
+   "label": "changed cells outlined (orange = new or different block, red = removed)",
+   "image": "gallery/templates/medium_pillar_1/changes.jpg"
+  },
+  {
+   "module": "both",
+   "view": "overview-front34",
+   "image": "gallery/templates/overview-front34.jpg"
+  },
+  {
+   "module": "both",
+   "view": "overview-side-a",
+   "image": "gallery/templates/overview-side-a.jpg"
+  }
+ ],
+ "world": [
+  {
+   "module": "large_pillar_1",
+   "seed": 24001,
+   "piece_index": 16,
+   "bb": [
+    -231,
+    -51,
+    140,
+    -226,
+    -37,
+    145
+   ],
+   "images": [
+    "gallery/world/large_pillar_1-generated-iso-a.jpg",
+    "gallery/world/large_pillar_1-generated-iso-b.jpg",
+    "gallery/world/large_pillar_1-generated-top-top.jpg"
+   ]
+  },
+  {
+   "module": "medium_pillar_1",
+   "seed": 24001,
+   "piece_index": 38,
+   "bb": [
+    -337,
+    -51,
+    138,
+    -330,
+    -41,
+    144
+   ],
+   "images": [
+    "gallery/world/medium_pillar_1-generated-iso-a.jpg",
+    "gallery/world/medium_pillar_1-generated-iso-b.jpg",
+    "gallery/world/medium_pillar_1-generated-top-top.jpg"
+   ]
+  }
+ ]
+}

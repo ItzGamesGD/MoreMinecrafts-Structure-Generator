@@ -1,0 +1,262 @@
+[
+ {
+  "variant": "k24",
+  "seed": 24004,
+  "module": "large_ruin_1",
+  "rotation": "CLOCKWISE_180",
+  "world": [
+   -249,
+   -40,
+   -1035
+  ],
+  "template_pos": [
+   16,
+   11,
+   16
+  ],
+  "block": "smooth_basalt",
+  "class": "cosmetic_intrusion",
+  "reason": "natural terrain inside the owner-approved added height; the vanilla box does not reach this cell",
+  "in_added_height": true
+ },
+ {
+  "variant": "k24",
+  "seed": 24012,
+  "module": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "world": [
+   -1245,
+   -42,
+   112
+  ],
+  "template_pos": [
+   9,
+   9,
+   1
+  ],
+  "block": "deepslate",
+  "class": "existing_vanilla_behaviour",
+  "reason": "cell is also unspecified in the vanilla template; natural terrain",
+  "in_added_height": false
+ },
+ {
+  "variant": "k24",
+  "seed": 24014,
+  "module": "medium_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "world": [
+   1276,
+   -41,
+   -932
+  ],
+  "template_pos": [
+   0,
+   10,
+   4
+  ],
+  "block": "deepslate",
+  "class": "existing_vanilla_behaviour",
+  "reason": "cell is also unspecified in the vanilla template; natural terrain",
+  "in_added_height": false
+ },
+ {
+  "variant": "k24",
+  "seed": 24014,
+  "module": "medium_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "world": [
+   1277,
+   -41,
+   -932
+  ],
+  "template_pos": [
+   0,
+   10,
+   5
+  ],
+  "block": "deepslate",
+  "class": "cosmetic_intrusion",
+  "reason": "cell is specified by vanilla but left unspecified by the restoration",
+  "in_added_height": false
+ },
+ {
+  "variant": "k24",
+  "seed": 24014,
+  "module": "medium_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "world": [
+   1278,
+   -41,
+   -932
+  ],
+  "template_pos": [
+   0,
+   10,
+   6
+  ],
+  "block": "deepslate",
+  "class": "cosmetic_intrusion",
+  "reason": "cell is specified by vanilla but left unspecified by the restoration",
+  "in_added_height": false
+ },
+ {
+  "variant": "k24",
+  "seed": 24014,
+  "module": "medium_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "world": [
+   1279,
+   -41,
+   -934
+  ],
+  "template_pos": [
+   2,
+   10,
+   7
+  ],
+  "block": "deepslate",
+  "class": "cosmetic_intrusion",
+  "reason": "cell is specified by vanilla but left unspecified by the restoration",
+  "in_added_height": false
+ },
+ {
+  "variant": "k24",
+  "seed": 24014,
+  "module": "medium_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "world": [
+   1279,
+   -41,
+   -933
+  ],
+  "template_pos": [
+   1,
+   10,
+   7
+  ],
+  "block": "deepslate",
+  "class": "cosmetic_intrusion",
+  "reason": "cell is specified by vanilla but left unspecified by the restoration",
+  "in_added_height": false
+ },
+ {
+  "variant": "k24",
+  "seed": 24014,
+  "module": "medium_pillar_1",
+  "rotation": "COUNTERCLOCKWISE_90",
+  "world": [
+   1279,
+   -41,
+   -932
+  ],
+  "template_pos": [
+   0,
+   10,
+   7
+  ],
+  "block": "deepslate",
+  "class": "cosmetic_intrusion",
+  "reason": "cell is specified by vanilla but left unspecified by the restoration",
+  "in_added_height": false
+ },
+ {
+  "variant": "k24",
+  "seed": 24014,
+  "module": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "world": [
+   1293,
+   -46,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   5,
+   22
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid inside the piece box (not touching a walkable cell)",
+  "in_added_height": false
+ },
+ {
+  "variant": "k24",
+  "seed": 24014,
+  "module": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "world": [
+   1293,
+   -45,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   6,
+   22
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid inside the piece box (not touching a walkable cell)",
+  "in_added_height": false
+ },
+ {
+  "variant": "k24",
+  "seed": 24014,
+  "module": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "world": [
+   1293,
+   -44,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   7,
+   22
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid inside the piece box (not touching a walkable cell)",
+  "in_added_height": false
+ },
+ {
+  "variant": "k24",
+  "seed": 24014,
+  "module": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "world": [
+   1293,
+   -43,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   8,
+   22
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid inside the piece box (not touching a walkable cell)",
+  "in_added_height": false
+ },
+ {
+  "variant": "k24",
+  "seed": 24014,
+  "module": "sauna_1",
+  "rotation": "CLOCKWISE_90",
+  "world": [
+   1293,
+   -42,
+   -1017
+  ],
+  "template_pos": [
+   4,
+   9,
+   22
+  ],
+  "block": "lava",
+  "class": "potential_generation_hazard",
+  "reason": "fluid inside the piece box (not touching a walkable cell)",
+  "in_added_height": false
+ }
+]
