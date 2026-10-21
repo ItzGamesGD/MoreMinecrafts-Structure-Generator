@@ -1,0 +1,22 @@
+{
+ "24008:small_ruin_1#93:h24": {
+  "ok": 10,
+  "total": 17,
+  "failed": [
+   "walk_to_entry_inside",
+   "manual_walk_out_through_door",
+   "re_enter",
+   "bed0_[3, 1, 2]_reach",
+   "bed0_sleep",
+   "barrel_[2, 1, 6]_reach",
+   "barrel_[2, 1, 6]_open"
+  ]
+ },
+ "24008:small_ruin_1#93:i24": {
+  "ok": 16,
+  "total": 17,
+  "failed": [
+   "manual_walk_out_through_door"
+  ]
+ }
+}

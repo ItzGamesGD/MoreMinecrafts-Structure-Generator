@@ -1,0 +1,34 @@
+{
+ "24008:small_ruin_1#93:h24": {
+  "ok": 7,
+  "total": 17,
+  "failed": [
+   "walk_to_door_front",
+   "manual_walk_through_open_door",
+   "walk_to_entry_inside",
+   "manual_walk_out_through_door",
+   "door_front_after_exit",
+   "re_enter_manual",
+   "re_enter",
+   "bed0_[3, 1, 2]_reach",
+   "bed0_sleep",
+   "barrel_[2, 1, 6]_reach"
+  ]
+ },
+ "24008:small_ruin_1#93:i24": {
+  "ok": 7,
+  "total": 17,
+  "failed": [
+   "walk_to_door_front",
+   "manual_walk_through_open_door",
+   "walk_to_entry_inside",
+   "manual_walk_out_through_door",
+   "door_front_after_exit",
+   "re_enter_manual",
+   "re_enter",
+   "bed0_[3, 1, 2]_reach",
+   "bed0_sleep",
+   "barrel_[2, 1, 6]_reach"
+  ]
+ }
+}

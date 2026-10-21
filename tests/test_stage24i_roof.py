@@ -103,3 +103,19 @@ def test_roof_never_covers_sauna_water_or_jigsaws():
     for m in MODULES:
         for p, st in cells(m).items():
             assert not st.startswith(("minecraft:water", "minecraft:jigsaw"))
+
+
+def test_city_approach_lowers_outside_targets_to_the_ground_and_jumps_the_door_step():
+    from tools.stage24h.city_gameplay import city_approach
+
+    class W:
+        def block(self, x, y, z):
+            return "minecraft:deepslate" if y <= -52 else "minecraft:air"
+
+    steps = [{"name": "tp_outside", "type": "tp", "target": [0.5, -50, 3.5]},
+             {"name": "walk_to_door_front", "type": "goto", "target": [0, -50, 1]},
+             {"name": "manual_walk_through_open_door", "type": "walk", "yaw": 0},
+             {"name": "bed0_reach", "type": "goto", "target": [0, -50, -3]}]
+    out = city_approach(steps, W())
+    assert [s["target"][1] for s in out if "target" in s] == [-51, -51, -50]
+    assert out[2]["jump"] is True and "jump" not in out[3]

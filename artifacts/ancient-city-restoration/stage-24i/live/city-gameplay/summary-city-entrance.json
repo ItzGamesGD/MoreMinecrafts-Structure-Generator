@@ -1,0 +1,42 @@
+{
+ "24005:medium_ruin_1#71:h24": {
+  "ok": 12,
+  "total": 17,
+  "failed": [
+   "walk_to_door_front",
+   "manual_walk_through_open_door",
+   "walk_to_entry_inside",
+   "manual_walk_out_through_door",
+   "door_front_after_exit"
+  ]
+ },
+ "24005:medium_ruin_1#71:i24x": {
+  "ok": 14,
+  "total": 17,
+  "failed": [
+   "walk_to_door_front",
+   "manual_walk_through_open_door",
+   "walk_to_entry_inside"
+  ]
+ },
+ "24009:large_ruin_1#59:h24": {
+  "ok": 15,
+  "total": 20,
+  "failed": [
+   "walk_to_door_front",
+   "manual_walk_through_open_door",
+   "walk_to_entry_inside",
+   "manual_walk_out_through_door",
+   "door_front_after_exit"
+  ]
+ },
+ "24009:large_ruin_1#59:i24x": {
+  "ok": 17,
+  "total": 20,
+  "failed": [
+   "walk_to_door_front",
+   "manual_walk_through_open_door",
+   "walk_to_entry_inside"
+  ]
+ }
+}
