@@ -1,14 +1,17 @@
 """Simulated player from the city path to the inside of a house door, in generated sweep worlds.
 
 Start: the open-city cell at the end of the entrance survey path (`tools/stage24i/entrances.py`), i.e. a free walkable
-cell of the city's open space. Goal: the cell just inside the door. The mineflayer pathfinder (doors may be opened,
-1-block steps and jumps allowed, no digging, no block placing) must walk there, then walk back out to the start.
+cell of the city's open space. Steps: the mineflayer pathfinder (no digging, no block placing) walks from there to the cell in front of the door,
+the door is opened, the player jump-walks through it (the city path is often one block below the threshold; the
+pathfinder alone does not step up into a doorway, even at unobstructed doors), must stand in the cell just inside,
+then the pathfinder walks back out to the start.
 Mineflayer bot on a real 26.1.2 server; NOT Minecraft-client gameplay.
 """
 from __future__ import annotations
 
 import argparse
 import json
+import math
 import shutil
 import subprocess
 import sys
@@ -28,14 +31,21 @@ MAN = {"h24": ROOT / "artifacts/ancient-city-restoration/stage-24h/worldgen", "i
        "i24x": D24I / "experiment-entrance/worldgen"}
 
 
+YAW = {(1, 0): -math.pi / 2, (-1, 0): math.pi / 2, (0, -1): 0.0, (0, 1): math.pi}  # mineflayer yaw of a walk direction
+
+
 def steps_for(r):
     door, out = r["door_world"], r["outward"]
-    inside = [door[0] - out[0], door[1], door[2] - out[2]]
-    start = r["path"][-1]
+    inward = (-out[0], -out[2])
+    inside = [door[0] + inward[0], door[1], door[2] + inward[1]]
+    start, front = r["path"][-1], r["path"][1]
     c = lambda p: [p[0] + 0.5, p[1], p[2] + 0.5]  # noqa: E731
     return [{"name": "tp_city_path", "type": "tp", "target": c(start)},
-            {"name": "walk_city_path_to_inside_door", "type": "goto", "target": inside, "range": 0, "timeout": 90},
-            {"name": "walk_inside_door_to_city_path", "type": "goto", "target": start, "range": 0, "timeout": 90}]
+            {"name": "walk_city_path_to_door_front", "type": "goto", "target": front, "range": 0, "timeout": 90},
+            {"name": "door_open", "type": "door", "pos": door, "expect": "open"},
+            {"name": "jump_walk_through_door", "type": "walk", "yaw": YAW[inward], "jump": True, "ms": 1500, "min_move": 0.8},
+            {"name": "inside_door_reached", "type": "goto", "target": inside, "range": 0, "timeout": 20},
+            {"name": "walk_inside_to_city_path", "type": "goto", "target": start, "range": 0, "timeout": 90}]
 
 
 def run(seed, idx, variant, out_dir: Path):

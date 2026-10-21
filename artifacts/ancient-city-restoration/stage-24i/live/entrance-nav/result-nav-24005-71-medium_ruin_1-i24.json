@@ -1,0 +1,309 @@
+{
+ "module": "medium_ruin_1",
+ "steps": [
+  {
+   "name": "tp_city_path",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    -1350,
+    -49,
+    1035
+   ]
+  },
+  {
+   "name": "walk_city_path_to_door_front",
+   "type": "goto",
+   "start": [
+    -1350,
+    -49,
+    1035
+   ],
+   "end": [
+    -1350.54,
+    -50,
+    1035.5
+   ],
+   "horizontal_error": 6.34,
+   "moved": 1.04,
+   "outcome": "timeout",
+   "seconds": 90.3,
+   "ok": false
+  },
+  {
+   "name": "spruce_door",
+   "type": "door",
+   "before": false,
+   "after": false,
+   "ok": false
+  },
+  {
+   "name": "jump_walk_through_door",
+   "type": "walk",
+   "start": [
+    -1350.54,
+    -50,
+    1035.5
+   ],
+   "end": [
+    -1348.3,
+    -48,
+    1035.5
+   ],
+   "dy": 2,
+   "moved": 2.24,
+   "ok": true
+  },
+  {
+   "name": "inside_door_reached",
+   "type": "goto",
+   "start": [
+    -1349,
+    -48,
+    1035
+   ],
+   "end": [
+    -1347.5,
+    -50,
+    1036.55
+   ],
+   "horizontal_error": 7.12,
+   "moved": 1.32,
+   "outcome": "timeout",
+   "seconds": 20.4,
+   "ok": false
+  },
+  {
+   "name": "walk_inside_to_city_path",
+   "type": "goto",
+   "start": [
+    -1348,
+    -50,
+    1036
+   ],
+   "end": [
+    -1349.5,
+    -49,
+    1035.31
+   ],
+   "horizontal_error": 0.19,
+   "moved": 2.35,
+   "outcome": "reached",
+   "seconds": 1.9,
+   "ok": true
+  }
+ ],
+ "events": [
+  "chat: Teleported S24C_medium_r to -1349.500000, -49.000000, 1035.500000",
+  "trace jump_walk_through_door [[-1350.08,-48.75],[-1349.33,-49],[-1349.19,-47.75],[-1348.65,-48],[-1348.3,-46.75],[-1348.3,-47.5]]"
+ ],
+ "final_health": 20,
+ "seed": 24005,
+ "variant": "i24",
+ "piece_index": 71,
+ "survey": {
+  "seed": 24005,
+  "piece_index": 71,
+  "module": "medium_ruin_1",
+  "rotation": "NONE",
+  "door_world": [
+   -1348,
+   -50,
+   1029
+  ],
+  "outward": [
+   -1,
+   0,
+   0
+  ],
+  "status": "ok",
+  "cells_to_clear": [
+   [
+    -1349,
+    -50,
+    1029
+   ],
+   [
+    -1349,
+    -50,
+    1030
+   ],
+   [
+    -1349,
+    -50,
+    1031
+   ],
+   [
+    -1349,
+    -50,
+    1032
+   ],
+   [
+    -1349,
+    -50,
+    1033
+   ],
+   [
+    -1349,
+    -50,
+    1034
+   ],
+   [
+    -1349,
+    -50,
+    1035
+   ],
+   [
+    -1349,
+    -49,
+    1029
+   ],
+   [
+    -1349,
+    -49,
+    1030
+   ],
+   [
+    -1349,
+    -49,
+    1031
+   ],
+   [
+    -1349,
+    -49,
+    1032
+   ],
+   [
+    -1349,
+    -49,
+    1033
+   ],
+   [
+    -1349,
+    -49,
+    1034
+   ],
+   [
+    -1349,
+    -49,
+    1035
+   ]
+  ],
+  "n_cells": 14,
+  "blocks": {
+   "dripstone_block": 14
+  },
+  "owners": {
+   "intact_horizontal_wall_1": 14
+  }
+ },
+ "survey_path": [
+  [
+   -1348,
+   -50,
+   1029
+  ],
+  [
+   -1349,
+   -50,
+   1029
+  ],
+  [
+   -1349,
+   -50,
+   1030
+  ],
+  [
+   -1349,
+   -50,
+   1031
+  ],
+  [
+   -1349,
+   -50,
+   1032
+  ],
+  [
+   -1349,
+   -50,
+   1033
+  ],
+  [
+   -1349,
+   -50,
+   1034
+  ],
+  [
+   -1349,
+   -50,
+   1035
+  ],
+  [
+   -1350,
+   -49,
+   1035
+  ]
+ ],
+ "scenario_steps": [
+  {
+   "name": "tp_city_path",
+   "type": "tp",
+   "target": [
+    -1349.5,
+    -49,
+    1035.5
+   ]
+  },
+  {
+   "name": "walk_city_path_to_door_front",
+   "type": "goto",
+   "target": [
+    -1349,
+    -50,
+    1029
+   ],
+   "range": 0,
+   "timeout": 90
+  },
+  {
+   "name": "door_open",
+   "type": "door",
+   "pos": [
+    -1348,
+    -50,
+    1029
+   ],
+   "expect": "open"
+  },
+  {
+   "name": "jump_walk_through_door",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "jump": true,
+   "ms": 1500,
+   "min_move": 0.8
+  },
+  {
+   "name": "inside_door_reached",
+   "type": "goto",
+   "target": [
+    -1347,
+    -50,
+    1029
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "walk_inside_to_city_path",
+   "type": "goto",
+   "target": [
+    -1350,
+    -49,
+    1035
+   ],
+   "range": 0,
+   "timeout": 90
+  }
+ ]
+}

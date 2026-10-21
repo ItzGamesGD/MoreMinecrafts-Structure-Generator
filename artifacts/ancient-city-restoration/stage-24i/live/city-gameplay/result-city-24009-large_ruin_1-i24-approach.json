@@ -6,30 +6,29 @@
    "type": "tp",
    "ok": true,
    "at": [
-    597,
+    505,
     -51,
-    548
+    571
    ]
   },
   {
    "name": "walk_to_door_front",
    "type": "goto",
    "start": [
-    597,
+    505,
     -51,
-    548
+    571
    ],
    "end": [
-    597.5,
+    507.5,
     -50.5,
-    548.5
+    571.5
    ],
-   "horizontal_error": 2,
-   "moved": 0,
-   "outcome": "timeout",
-   "seconds": 30.3,
-   "ok": false,
-   "retried_after_zero_movement": true
+   "horizontal_error": 0,
+   "moved": 2,
+   "outcome": "reached",
+   "seconds": 0.8,
+   "ok": true
   },
   {
    "name": "spruce_door",
@@ -42,84 +41,83 @@
    "name": "manual_walk_through_open_door",
    "type": "walk",
    "start": [
-    597.5,
+    507.5,
     -50.5,
-    548.5
+    571.5
    ],
    "end": [
-    597.5,
-    -50.5,
-    548.7
+    513.45,
+    -50,
+    571.5
    ],
-   "dy": 0,
-   "moved": 0.2,
-   "ok": false
+   "dy": 0.5,
+   "moved": 5.95,
+   "ok": true
   },
   {
    "name": "walk_to_entry_inside",
    "type": "goto",
    "start": [
-    597,
-    -51,
-    548
+    513,
+    -50,
+    571
    ],
    "end": [
-    -7.5,
-    89,
-    4.5
+    509.5,
+    -50,
+    571.5
    ],
-   "horizontal_error": 816.29,
-   "moved": 813.74,
-   "outcome": "timeout",
-   "seconds": 60.3,
-   "ok": false
+   "horizontal_error": 0,
+   "moved": 3.95,
+   "outcome": "reached",
+   "seconds": 1.3,
+   "ok": true
   },
   {
    "name": "manual_walk_out_through_door_recentre",
    "type": "tp",
    "ok": true,
    "at": [
-    597,
+    509,
     -50,
-    552
+    571
    ]
   },
   {
    "name": "manual_walk_out_through_door",
    "type": "walk",
    "start": [
-    597.5,
+    509.5,
     -50,
-    552.5
+    571.5
    ],
    "end": [
-    597.5,
-    -50,
-    551.3
+    499.81,
+    -51,
+    571.5
    ],
-   "dy": 0,
-   "moved": 1.2,
+   "dy": -1,
+   "moved": 9.69,
    "ok": false
   },
   {
    "name": "door_front_after_exit",
    "type": "goto",
    "start": [
-    597,
-    -50,
-    551
+    499,
+    -51,
+    571
    ],
    "end": [
-    597.5,
-    -50,
-    551.3
+    507.5,
+    -50.5,
+    571.47
    ],
-   "horizontal_error": 0.8,
-   "moved": 0,
-   "outcome": "timeout",
-   "seconds": 20.3,
-   "ok": false,
-   "retried_after_zero_movement": true
+   "horizontal_error": 0.03,
+   "moved": 7.69,
+   "outcome": "reached",
+   "seconds": 2.9,
+   "ok": true
   },
   {
    "name": "spruce_door",
@@ -139,55 +137,55 @@
    "name": "re_enter_manual",
    "type": "walk",
    "start": [
-    597.5,
-    -50,
-    551.3
+    507.5,
+    -50.5,
+    571.47
    ],
    "end": [
-    597.5,
+    509.31,
     -50,
-    555.23
+    571.47
    ],
-   "dy": 0,
-   "moved": 3.93,
+   "dy": 0.5,
+   "moved": 1.81,
    "ok": true
   },
   {
    "name": "re_enter",
    "type": "goto",
    "start": [
-    597,
+    509,
     -50,
-    555
+    571
    ],
    "end": [
-    597.5,
+    509.31,
     -50,
-    552.89
+    571.47
    ],
-   "horizontal_error": 0.39,
-   "moved": 2.34,
+   "horizontal_error": 0.19,
+   "moved": 0,
    "outcome": "reached",
-   "seconds": 0.9,
+   "seconds": 0.5,
    "ok": true
   },
   {
    "name": "bed0_[12, 1, 4]_reach",
    "type": "goto",
    "start": [
-    597,
+    509,
     -50,
-    552
+    571
    ],
    "end": [
-    600.5,
+    521.52,
     -50,
-    564.52
+    568.5
    ],
    "horizontal_error": 0.02,
-   "moved": 12.01,
+   "moved": 12.57,
    "outcome": "reached",
-   "seconds": 3.7,
+   "seconds": 4.5,
    "ok": true
   },
   {
@@ -205,19 +203,19 @@
    "name": "bed1_[12, 1, 10]_reach",
    "type": "goto",
    "start": [
-    600,
+    521,
     -50,
-    564
+    568
    ],
    "end": [
-    594.5,
+    521.5,
     -50,
-    564.5
+    574.5
    ],
    "horizontal_error": 0,
    "moved": 6,
    "outcome": "reached",
-   "seconds": 7.7,
+   "seconds": 7.9,
    "ok": true
   },
   {
@@ -235,19 +233,19 @@
    "name": "barrel_[2, 1, 2]_reach",
    "type": "goto",
    "start": [
-    594,
+    521,
     -50,
-    564
+    574
    ],
    "end": [
-    602.05,
+    511.49,
     -50,
-    554.49
+    566.5
    ],
-   "horizontal_error": 0.45,
-   "moved": 12.54,
+   "horizontal_error": 0.01,
+   "moved": 12.81,
    "outcome": "reached",
-   "seconds": 9.1,
+   "seconds": 9.3,
    "ok": true
   },
   {
@@ -260,13 +258,11 @@
   }
  ],
  "events": [
-  "chat: Teleported S24C_large_ru to 597.500000, -50.000000, 548.500000",
-  "trace manual_walk_through_open_door [[597.5,-50.26],[597.5,-50.5],[597.5,-50.5],[597.5,-50.08],[597.5,-50.5],[597.5,-50.08],[597.5,-50.5],[597.5,-50.08]]",
-  "chat: S24C_large_ru suffocated in a wall",
-  "death",
-  "chat: Teleported S24C_large_ru to 597.500000, -50.000000, 552.500000",
-  "trace manual_walk_out_through_door [[597.5,-50],[597.5,-50],[597.5,-50],[597.5,-50],[597.5,-50],[597.5,-50],[597.5,-50],[597.5,-50],[597.5,-50]]",
-  "trace re_enter_manual [[597.5,-50],[597.5,-50],[597.5,-48.75],[597.5,-49.5]]",
+  "chat: Teleported S24C_large_ru to 505.500000, -51.000000, 571.500000",
+  "trace manual_walk_through_open_door [[507.7,-49.25],[507.7,-50],[508.04,-50],[509.06,-50],[509.98,-49],[510.79,-48.98],[511.79,-49.58],[512.66,-48.75]]",
+  "chat: Teleported S24C_large_ru to 509.500000, -50.000000, 571.500000",
+  "trace manual_walk_out_through_door [[508.67,-50],[507.6,-50],[506.72,-50.5],[505.83,-51],[504.92,-50.5],[503.83,-50.5],[502.54,-50],[501.46,-49],[500.38,-49.08]]",
+  "trace re_enter_manual [[507.7,-49.25],[507.7,-50],[508.04,-50],[509.06,-50]]",
   "chat: Set minecraft:overworld to time marker minecraft:night",
   "chat: Respawn point set",
   "chat: S24C_large_ru has made the advancement [Sweet Dreams]",
@@ -281,7 +277,7 @@
  "seed": 24009,
  "variant": "i24",
  "city_approach": true,
- "piece_index": 59,
+ "piece_index": 18,
  "piece": {
   "list_elements": [
    "minecraft:ancient_city/structures/large_ruin_1",
@@ -289,19 +285,19 @@
   ],
   "template": "minecraft:ancient_city/structures/large_ruin_1",
   "element_type": "minecraft:list_pool_element",
-  "rotation": "CLOCKWISE_90",
+  "rotation": "NONE",
   "pos": [
-   604,
+   508,
    -51,
-   551
+   564
   ],
   "bb": [
-   588,
+   508,
    -51,
-   551,
-   604,
+   564,
+   524,
    -38,
-   567
+   580
   ],
   "ground_level_delta": 0,
   "junction_count": 1
@@ -311,19 +307,19 @@
    "name": "tp_outside",
    "type": "tp",
    "target": [
-    597.5,
-    -50,
-    548.5
+    505.5,
+    -51,
+    571.5
    ],
-   "ground_drop": 0
+   "ground_drop": 1
   },
   {
    "name": "walk_to_door_front",
    "type": "goto",
    "target": [
-    597,
+    507,
     -50,
-    550
+    571
    ],
    "range": 0,
    "timeout": 30,
@@ -333,16 +329,16 @@
    "name": "door_open_from_outside",
    "type": "door",
    "pos": [
-    597,
+    508,
     -50,
-    551
+    571
    ],
    "expect": "open"
   },
   {
    "name": "manual_walk_through_open_door",
    "type": "walk",
-   "yaw": -3.141592653589793,
+   "yaw": -1.5707963267948966,
    "ms": 1800,
    "min_move": 1.6,
    "jump": true
@@ -351,9 +347,9 @@
    "name": "walk_to_entry_inside",
    "type": "goto",
    "target": [
-    597,
+    509,
     -50,
-    552
+    571
    ],
    "range": 0,
    "timeout": 60
@@ -362,15 +358,15 @@
    "name": "manual_walk_out_through_door_recentre",
    "type": "tp",
    "target": [
-    597.5,
+    509.5,
     -50,
-    552.5
+    571.5
    ]
   },
   {
    "name": "manual_walk_out_through_door",
    "type": "walk",
-   "yaw": 0.0,
+   "yaw": 1.5707963267948966,
    "ms": 2200,
    "min_move": 1.8
   },
@@ -378,9 +374,9 @@
    "name": "door_front_after_exit",
    "type": "goto",
    "target": [
-    597,
+    507,
     -50,
-    550
+    571
    ],
    "range": 0,
    "timeout": 20,
@@ -390,9 +386,9 @@
    "name": "door_close_from_outside",
    "type": "door",
    "pos": [
-    597,
+    508,
     -50,
-    551
+    571
    ],
    "expect": "closed"
   },
@@ -400,16 +396,16 @@
    "name": "door_reopen",
    "type": "door",
    "pos": [
-    597,
+    508,
     -50,
-    551
+    571
    ],
    "expect": "open"
   },
   {
    "name": "re_enter_manual",
    "type": "walk",
-   "yaw": -3.141592653589793,
+   "yaw": -1.5707963267948966,
    "ms": 900,
    "min_move": 0.8,
    "jump": true
@@ -418,9 +414,9 @@
    "name": "re_enter",
    "type": "goto",
    "target": [
-    597,
+    509,
     -50,
-    552
+    571
    ],
    "range": 0,
    "timeout": 30
@@ -429,9 +425,9 @@
    "name": "bed0_[12, 1, 4]_reach",
    "type": "goto",
    "target": [
-    600,
+    521,
     -50,
-    564
+    568
    ],
    "range": 0,
    "timeout": 60
@@ -445,18 +441,18 @@
    "name": "bed0_sleep",
    "type": "sleep",
    "pos": [
-    600,
+    520,
     -50,
-    563
+    568
    ]
   },
   {
    "name": "bed1_[12, 1, 10]_reach",
    "type": "goto",
    "target": [
-    594,
+    521,
     -50,
-    564
+    574
    ],
    "range": 0,
    "timeout": 60
@@ -470,18 +466,18 @@
    "name": "bed1_sleep",
    "type": "sleep",
    "pos": [
-    594,
+    520,
     -50,
-    563
+    574
    ]
   },
   {
    "name": "barrel_[2, 1, 2]_reach",
    "type": "goto",
    "target": [
-    602,
+    511,
     -50,
-    554
+    566
    ],
    "range": 0,
    "timeout": 60
@@ -490,9 +486,9 @@
    "name": "barrel_[2, 1, 2]_open",
    "type": "container",
    "pos": [
-    602,
+    510,
     -50,
-    553
+    566
    ]
   }
  ]

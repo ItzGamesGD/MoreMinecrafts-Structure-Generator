@@ -1,0 +1,386 @@
+{
+ "24005:71:i24": {
+  "tp_city_path": {
+   "ok": true,
+   "end": null,
+   "error": null
+  },
+  "walk_city_path_to_door_front": {
+   "ok": false,
+   "end": [
+    -1350.54,
+    -50,
+    1035.5
+   ],
+   "error": 6.34
+  },
+  "spruce_door": {
+   "ok": false,
+   "end": null,
+   "error": null
+  },
+  "jump_walk_through_door": {
+   "ok": true,
+   "end": [
+    -1348.3,
+    -48,
+    1035.5
+   ],
+   "error": null
+  },
+  "inside_door_reached": {
+   "ok": false,
+   "end": [
+    -1347.5,
+    -50,
+    1036.55
+   ],
+   "error": 7.12
+  },
+  "walk_inside_to_city_path": {
+   "ok": true,
+   "end": [
+    -1349.5,
+    -49,
+    1035.31
+   ],
+   "error": 0.19
+  }
+ },
+ "24005:71:i24x": {
+  "tp_city_path": {
+   "ok": true,
+   "end": null,
+   "error": null
+  },
+  "walk_city_path_to_door_front": {
+   "ok": false,
+   "end": [
+    -1348.5,
+    -50,
+    1033.5
+   ],
+   "error": 4
+  },
+  "spruce_door": {
+   "ok": true,
+   "end": null,
+   "error": null
+  },
+  "jump_walk_through_door": {
+   "ok": false,
+   "end": [
+    -1348.3,
+    -50,
+    1033.5
+   ],
+   "error": null
+  },
+  "inside_door_reached": {
+   "ok": false,
+   "end": [
+    -1348.3,
+    -50,
+    1033.5
+   ],
+   "error": 4.39
+  },
+  "walk_inside_to_city_path": {
+   "ok": true,
+   "end": [
+    -1349.22,
+    -49,
+    1035.47
+   ],
+   "error": 0.28
+  }
+ },
+ "24009:59:i24": {
+  "tp_city_path": {
+   "ok": true,
+   "end": null,
+   "error": null
+  },
+  "walk_city_path_to_door_front": {
+   "ok": false,
+   "end": [
+    594.5,
+    -50,
+    550.5
+   ],
+   "error": 3
+  },
+  "spruce_door": {
+   "ok": true,
+   "end": null,
+   "error": null
+  },
+  "jump_walk_through_door": {
+   "ok": false,
+   "end": [
+    594.5,
+    -50,
+    550.7
+   ],
+   "error": null
+  },
+  "inside_door_reached": {
+   "ok": false,
+   "end": [
+    594.5,
+    -50,
+    550.7
+   ],
+   "error": 3.5
+  },
+  "walk_inside_to_city_path": {
+   "ok": true,
+   "end": [
+    594.5,
+    -50,
+    550.5
+   ],
+   "error": 0
+  }
+ },
+ "24009:59:i24x": {
+  "tp_city_path": {
+   "ok": true,
+   "end": null,
+   "error": null
+  },
+  "walk_city_path_to_door_front": {
+   "ok": true,
+   "end": [
+    597.5,
+    -50.5,
+    550.5
+   ],
+   "error": 0
+  },
+  "spruce_door": {
+   "ok": true,
+   "end": null,
+   "error": null
+  },
+  "jump_walk_through_door": {
+   "ok": true,
+   "end": [
+    597.5,
+    -50,
+    556.45
+   ],
+   "error": null
+  },
+  "inside_door_reached": {
+   "ok": true,
+   "end": [
+    597.5,
+    -50,
+    552.64
+   ],
+   "error": 0.14
+  },
+  "walk_inside_to_city_path": {
+   "ok": false,
+   "end": [
+    594.5,
+    -50,
+    552.5
+   ],
+   "error": 2
+  }
+ },
+ "24005:24:i24": {
+  "tp_city_path": {
+   "ok": true,
+   "end": null,
+   "error": null
+  },
+  "walk_city_path_to_door_front": {
+   "ok": true,
+   "end": [
+    -1402.5,
+    -51,
+    929.5
+   ],
+   "error": 0
+  },
+  "spruce_door": {
+   "ok": true,
+   "end": null,
+   "error": null
+  },
+  "jump_walk_through_door": {
+   "ok": true,
+   "end": [
+    -1402.5,
+    -49.5,
+    923.9
+   ],
+   "error": null
+  },
+  "inside_door_reached": {
+   "ok": true,
+   "end": [
+    -1402.5,
+    -50,
+    927.33
+   ],
+   "error": 0.17
+  },
+  "walk_inside_to_city_path": {
+   "ok": false,
+   "end": [
+    -1402.5,
+    -50,
+    927.33
+   ],
+   "error": 2.17
+  }
+ },
+ "24009:18:i24": {
+  "tp_city_path": {
+   "ok": true,
+   "end": null,
+   "error": null
+  },
+  "walk_city_path_to_door_front": {
+   "ok": true,
+   "end": [
+    507.5,
+    -50.5,
+    571.5
+   ],
+   "error": 0
+  },
+  "spruce_door": {
+   "ok": true,
+   "end": null,
+   "error": null
+  },
+  "jump_walk_through_door": {
+   "ok": true,
+   "end": [
+    511.51,
+    -50,
+    571.5
+   ],
+   "error": null
+  },
+  "inside_door_reached": {
+   "ok": true,
+   "end": [
+    509.68,
+    -50,
+    571.5
+   ],
+   "error": 0.18
+  },
+  "walk_inside_to_city_path": {
+   "ok": false,
+   "end": [
+    509.68,
+    -50,
+    571.5
+   ],
+   "error": 2.18
+  }
+ },
+ "24008:93:i24": {
+  "tp_city_path": {
+   "ok": true,
+   "end": null,
+   "error": null
+  },
+  "walk_city_path_to_door_front": {
+   "ok": true,
+   "end": [
+    596.5,
+    -51,
+    1285.5
+   ],
+   "error": 0
+  },
+  "spruce_door": {
+   "ok": true,
+   "end": null,
+   "error": null
+  },
+  "jump_walk_through_door": {
+   "ok": true,
+   "end": [
+    596.5,
+    -50,
+    1281.77
+   ],
+   "error": null
+  },
+  "inside_door_reached": {
+   "ok": true,
+   "end": [
+    596.5,
+    -50,
+    1283.36
+   ],
+   "error": 0.14
+  },
+  "walk_inside_to_city_path": {
+   "ok": false,
+   "end": [
+    596.5,
+    -50,
+    1283.37
+   ],
+   "error": 2.13
+  }
+ },
+ "24008:93:h24": {
+  "tp_city_path": {
+   "ok": true,
+   "end": null,
+   "error": null
+  },
+  "walk_city_path_to_door_front": {
+   "ok": true,
+   "end": [
+    596.5,
+    -51,
+    1285.5
+   ],
+   "error": 0
+  },
+  "spruce_door": {
+   "ok": true,
+   "end": null,
+   "error": null
+  },
+  "jump_walk_through_door": {
+   "ok": true,
+   "end": [
+    596.5,
+    -49.49,
+    1282.42
+   ],
+   "error": null
+  },
+  "inside_door_reached": {
+   "ok": false,
+   "end": [
+    -71.45,
+    68,
+    136.74
+   ],
+   "error": 1327.11
+  },
+  "walk_inside_to_city_path": {
+   "ok": false,
+   "end": [
+    -26.68,
+    60.67,
+    247.3
+   ],
+   "error": 1210.87
+  }
+ }
+}

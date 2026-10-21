@@ -40,6 +40,18 @@ element per affected module with the same declared size and `air` at the 14 / 6 
 | other placements of the same modules (7) | no natural terrain removed in this run (cells were already air) |
 | writable? — over all 46 medium_ruin_1 / large_ruin_1 placements in the 24-seed sweep | **3 placements (24003 #23, 24021 #55, 24024 #35) have every experiment cell in a chunk the piece box does not touch → never written** |
 
+## Navigation test (bot, `live/entrance-nav/`, `tools/stage24i/entrance_nav.py`)
+
+From the open-city cell at the end of the survey path: pathfinder to the door front, open the door, jump-walk through,
+must stand inside. Mineflayer bot on a real 26.1.2 server — not client gameplay.
+
+| case | delivered Stage 24-I | experiment pack |
+|---|---|---|
+| 24005 medium_ruin_1 #71 | **blocked** (stops at the dripstone) | **still blocked** — stops at the regrown pointed-dripstone tip (-1349,-50,1032) |
+| 24009 large_ruin_1 #59 | **blocked** | enters |
+| control 24005 medium_ruin_1 #24 (open door) | enters | – |
+| control 24009 large_ruin_1 #18 (open door) | enters | – |
+
 ## Why it is not delivered
 
 * **Unreliable** (stop condition): writing depends on where the chunk border falls (3/46 placements would get nothing)
@@ -54,8 +66,8 @@ element per affected module with the same declared size and `air` at the 14 / 6 
 ## Owner decisions
 
 1. **24005 medium_ruin_1 (14 cells, 7-long strip) and 24009 large_ruin_1 (6 cells)** — options:
-   * (a) accept as natural variation (113/116 entrances are open; the 24005 house is still reachable through its other
-     openings? — see the city gameplay result in README);
+   * (a) accept as natural variation: 113/116 entrances are open; the two houses stay blocked from the city path
+     (bot test below), their interiors are clear and usable once reached;
    * (b) authorise a mechanism change: e.g. enlarge the house templates' declared size by one block on the door side so
      the clearance cells are inside the box (changes the box and jigsaw collision; requires re-running the full sweep
      and accepting possible layout changes);
