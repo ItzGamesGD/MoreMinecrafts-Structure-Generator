@@ -22,7 +22,7 @@ from world import Server  # noqa: E402
 
 # Minecraft 26.x pauses an empty dedicated server after 60 s, which stops chunk loading; a long soak without players must disable that.
 NO_PAUSE = {"pause-when-empty-seconds": "-1"}
-SPIKE = HERE.parents[2] / "validation" / "fabric-protection-spike"
+SPIKE = HERE.parents[2] / "mod" / "sg-worldgen-protection"
 
 
 def main() -> None:

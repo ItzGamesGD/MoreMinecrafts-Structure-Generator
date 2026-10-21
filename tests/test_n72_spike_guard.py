@@ -6,7 +6,7 @@ import re
 import unittest
 from pathlib import Path
 
-SPIKE = Path(__file__).resolve().parents[1] / "validation/fabric-protection-spike"
+SPIKE = Path(__file__).resolve().parents[1] / "mod/sg-worldgen-protection"
 RES = SPIKE / "src/main/resources"
 JAVA = SPIKE / "src/main/java/dev/itzgamesgd/sg01spike"
 MIXIN = JAVA / "mixin"

@@ -26,7 +26,7 @@ public final class SpikeMod implements ModInitializer {
         // Spawn-area chunks are generated before SERVER_STARTED, so the configuration must be resolved at SERVER_STARTING.
         ServerLifecycleEvents.SERVER_STARTING.register(server -> {
             verifyHooks();
-            MonsterRoomSelfCheck.verifyAtStartup();
+            DriftGuard.verifyAtStartup();
             ProtectionConfig.resolve(server);
         });
         ServerLifecycleEvents.END_DATA_PACK_RELOAD.register((server, resources, success) -> {
@@ -61,25 +61,30 @@ public final class SpikeMod implements ModInitializer {
     private static String contractJson() {
         ProtectionContract.Result c = ProtectionConfig.contract;
         String warnings = c == null ? "" : c.warnings().stream().map(w -> "\"" + w.replace("\\", "\\\\").replace("\"", "'") + "\"").collect(Collectors.joining(","));
+        String rejected = c == null ? "" : c.rejectedExtensions().stream().map(w -> "\"" + w.replace("\\", "\\\\").replace("\"", "'") + "\"").collect(Collectors.joining(","));
         String last = ProtectionConfig.lastRejection == null ? "null" : "\"" + ProtectionConfig.lastRejection.replace("\\", "\\\\").replace("\"", "'") + "\"";
-        return String.format("{\"mode\":\"%s\",\"owner\":%s,\"format\":%d,\"revision\":%d,\"required\":%d,\"extensions\":%d,\"warnings\":[%s],"
+        return String.format("{\"mode\":\"%s\",\"owner\":%s,\"format\":%d,\"revision\":%d,\"required\":%d,\"extensions\":%d,\"warnings\":[%s],\"rejected_extensions\":[%s],"
                         + "\"reload_rejections\":%d,\"last_rejection\":%s}",
                 "manifest", c == null ? "null" : "\"" + c.owner() + "\"", c == null ? 0 : c.format(),
-                c == null ? 0 : c.revision(), c == null ? 0 : c.required(), c == null ? 0 : c.extensions(), warnings, ProtectionConfig.reloadRejections, last);
+                c == null ? 0 : c.revision(), c == null ? 0 : c.required(), c == null ? 0 : c.extensions(), warnings, rejected, ProtectionConfig.reloadRejections, last);
+    }
+
+    private static String driftJson(DriftGuard.State s) {
+        String reason = s.reason();
+        return String.format("{\"level\":\"%s\",\"fallback\":%b,\"reason\":%s,\"fingerprint\":\"%s\",\"verified_samples\":%d,\"verified_placements\":%d,\"deviations\":%d,\"near_misses\":%d}",
+                s.level(), s.level() != DriftGuard.Level.VERIFIED && s.level() != DriftGuard.Level.PROVISIONAL, reason == null ? "null" : "\"" + reason.replace("\\", "\\\\").replace("\"", "'") + "\"",
+                s.fingerprint(), s.samples.get(), s.placements.get(), s.deviations.get(), s.nearMisses.get());
     }
 
     private static String selfCheckJson() {
-        String reason = MonsterRoomSelfCheck.fallbackReason();
-        return String.format("{\"configured\":\"%s\",\"effective\":\"%s\",\"fallback\":%b,\"fallback_reason\":%s,\"fingerprint\":\"%s\",\"near_misses\":%d,\"violations\":%d}",
-                Guard.REFINE, MonsterRoomSelfCheck.effective(Guard.REFINE), MonsterRoomSelfCheck.inFallback(),
-                reason == null ? "null" : "\"" + reason.replace("\\", "\\\\").replace("\"", "'") + "\"", MonsterRoomSelfCheck.fingerprint(),
-                MonsterRoomSelfCheck.NEAR_MISSES.get(), MonsterRoomSelfCheck.VIOLATIONS.get());
+        return "{\"configured_refine\":\"" + Guard.REFINE + "\",\"effective_refine\":\"" + DriftGuard.monsterRoomRefine(Guard.REFINE) + "\",\"monster_room\":"
+                + driftJson(DriftGuard.MONSTER_ROOM) + ",\"geode\":" + driftJson(DriftGuard.GEODE) + "}";
     }
 
     private static void writeReport() {
         String json = "{\"mode\":\"" + Guard.MODE + "\",\"fixture\":\"" + Guard.FIXTURE + "\",\"refine\":\"" + Guard.REFINE + "\",\"shadow\":" + Guard.SHADOW + ",\"oracle\":\""
                 + (Guard.ORACLE_MONSTER_ROOM ? "monster_room" : "off") + "\"," + stats(Guard.GEODE) + "," + stats(Guard.MONSTER_ROOM) + ",\"probe\":"
-                + Probe.json() + ",\"perf\":" + Perf.json() + ",\"contract\":" + contractJson() + ",\"monster_room_guard\":" + selfCheckJson() + ",\"decoration_order\":" + Probe.decorationJson() + "}\n";
+                + Probe.json() + ",\"perf\":" + Perf.json() + ",\"contract\":" + contractJson() + ",\"drift_guard\":" + selfCheckJson() + ",\"decoration_order\":" + Probe.decorationJson() + "}\n";
         LOGGER.info("SG_SPIKE_REPORT {}", json.replace("\n", ""));
         String path = System.getenv("SG01_SPIKE_REPORT");
         if (path != null && !path.isBlank()) {

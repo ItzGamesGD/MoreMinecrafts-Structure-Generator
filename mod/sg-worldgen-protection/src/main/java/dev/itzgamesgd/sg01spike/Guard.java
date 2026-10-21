@@ -26,7 +26,7 @@ public final class Guard {
     public enum Mode { OBSERVE, ENFORCE }
 
     /** Test-only fault injection (SG01_FAULT): exercises the "structure data unavailable" paths on demand. */
-    public enum Fault { NONE, OUT_OF_RANGE, STATUS_TOO_HIGH, MISSING_START, PRECHECK_BLIND }
+    public enum Fault { NONE, OUT_OF_RANGE, STATUS_TOO_HIGH, MISSING_START, PRECHECK_BLIND, GEODE_SHRUNK }
 
     /**
      * Experiment-only fixture (SG01_FIXTURE), used only for causal attribution and never shipped. NO_GEODE cancels every geode placement
@@ -35,7 +35,7 @@ public final class Guard {
     public enum Fixture { NONE, NO_GEODE }
 
     /** Experiment-only refinement (SG01_REFINE). PRECHECK replicates vanilla's read-only precheck per room variant. OFF is the N7-A behaviour. */
-    public enum Refine { OFF, PRECHECK, HYBRID }
+    public enum Refine { OFF, PRECHECK, HYBRID, ZONE }
 
     /**
      * Lab switch (SG01_LAB=1). Production runs with ENFORCE, the hybrid monster-room decision and no instrumentation. Every behaviour-changing
@@ -147,22 +147,39 @@ public final class Guard {
             List<BoundingBox> reaches = narrow.get();
             if (reaches.isEmpty()) {
                 stats.noWrite.incrementAndGet();
-                nearMiss(region, broad, stats);
+                nearMiss(region, broad, reaches);
                 return false;
             }
             boolean cancel = decide(stats, region, origin, reaches);
-            if (!cancel) nearMiss(region, broad, stats);
+            if (!cancel) nearMiss(region, broad, reaches);
             return cancel;
         } finally {
             Probe.exit();
         }
     }
 
-    /** The hybrid decision allows vanilla although a protected piece overlaps the widest footprint: arm the monster-room self-check watch. */
-    private static void nearMiss(WorldGenRegion region, BoundingBox broad, GuardStats stats) {
-        if (!stats.feature.equals("monster_room")) return;
+    /** The hybrid decision allows vanilla although a protected piece overlaps the widest footprint: verify what vanilla does there (after the fact). */
+    private static void nearMiss(WorldGenRegion region, BoundingBox broad, List<BoundingBox> predicted) {
         List<BoundingBox> pieces = pieceBoxes(region, broad);
-        if (pieces != null && !pieces.isEmpty()) MonsterRoomSelfCheck.begin(region, broad, pieces);
+        if (pieces == null || pieces.isEmpty()) return;
+        DriftGuard.MONSTER_ROOM.nearMisses.incrementAndGet();
+        DriftGuard.arm(DriftGuard.MONSTER_ROOM, region, inflate(broad, 2), predicted, broad);
+    }
+
+    public static BoundingBox inflate(BoundingBox b, int n) {
+        return new BoundingBox(b.minX() - n, b.minY() - n, b.minZ() - n, b.maxX() + n, b.maxY() + n, b.maxZ() + n);
+    }
+
+    /** True if a protected piece intersects {@code box} (false if none, or outside world generation). */
+    public static boolean piecesNear(WorldGenLevel level, BoundingBox box) {
+        if (!(level instanceof WorldGenRegion region)) return false;
+        Probe.enter();
+        try {
+            List<BoundingBox> pieces = pieceBoxes(region, box);
+            return pieces != null && !pieces.isEmpty();
+        } finally {
+            Probe.exit();
+        }
     }
 
     /** Side-effect-free decision for the oracle: true if the reaches intersect a protected piece or the structure data is unavailable. */

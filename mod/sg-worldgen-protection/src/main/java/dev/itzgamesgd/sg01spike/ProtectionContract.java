@@ -52,8 +52,10 @@ public final class ProtectionContract {
         }
     }
 
-    /** {@code warnings} entries start with a stable code, e.g. {@code EXTENSION_DUPLICATE: ...}. */
-    public record Result(Set<Structure> effective, String owner, int format, int revision, int required, int extensions, List<String> warnings) {
+    /** {@code warnings} entries start with a stable code, e.g. {@code EXTENSION_DUPLICATE: ...}. {@code rejectedExtensions} lists extension files that were
+     *  dropped as a whole (N7-C policy, see below); the owner manifest and its required structures are never affected by them. */
+    public record Result(Set<Structure> effective, String owner, int format, int revision, int required, int extensions, List<String> warnings,
+                         List<String> rejectedExtensions) {
     }
 
     private ProtectionContract() {
@@ -146,50 +148,30 @@ public final class ProtectionContract {
                         + "; protection applies to the active definition.");
             }
         }
+        // Extension policy (N7-C). The owner manifest above is a mandatory contract: any violation is fatal. An extension file is a third party's OPTIONAL
+        // additive request, so a file that cannot be understood is dropped as a whole (never partially applied, because which entries were meant is unknown),
+        // loudly: ERROR in the log, listed in rejectedExtensions and in the shutdown report. Nothing the owner requires is touched, and protection can only
+        // ever be larger than the owner's set. What stays fatal: a parseable file with a required entry that names an unknown structure (a request that is
+        // understood but cannot be honoured; vanilla's loader refuses such a pack even earlier). "replace" cannot be honoured either and is ignored with a
+        // warning: its entries are still applied additively, so no protection is lost.
+        List<String> rejected = new ArrayList<>();
         int added = 0;
         Set<Identifier> seenExtensions = new HashSet<>();
         for (Resource ext : resources.getResourceStack(EXTENSION_TAG_FILE)) {
             String from = ext.sourcePackId();
-            JsonObject tag;
-            try (Reader reader = ext.openAsReader()) {
-                tag = JsonParser.parseReader(reader).getAsJsonObject();
-            } catch (IOException | RuntimeException e) {
-                throw new ContractViolation("EXTENSION_MALFORMED", "extension file " + EXTENSION_TAG_FILE + " from pack " + from + " cannot be parsed (" + e.getMessage() + ").",
-                        "fix or remove that pack's protected_extensions.json.");
+            List<Identifier> ids = new ArrayList<>();
+            List<Boolean> mandatory = new ArrayList<>();
+            try {
+                parseExtension(ext, from, warnings, ids, mandatory);
+            } catch (ContractViolation e) {
+                rejected.add(e.code + " (pack " + from + "): " + e.getMessage());
+                continue;
             }
-            if (tag.has("replace") && tag.get("replace").isJsonPrimitive() && tag.get("replace").getAsBoolean()) {
-                throw new ContractViolation("EXTENSION_REPLACE_FORBIDDEN", "extension file from pack " + from + " sets replace=true, but extensions are additive-only.",
-                        "remove \"replace\" from that pack's protected_extensions.json; it cannot remove or override the owner's protected structures.");
-            }
-            if (!tag.has("values") || !tag.get("values").isJsonArray()) {
-                throw new ContractViolation("EXTENSION_MALFORMED", "extension file from pack " + from + " has no 'values' array.", "add a 'values' array of structure ids.");
-            }
-            for (JsonElement v : tag.getAsJsonArray("values")) {
-                String raw;
-                boolean mandatory = true;
-                if (v.isJsonPrimitive() && v.getAsJsonPrimitive().isString()) {
-                    raw = v.getAsString();
-                } else if (v.isJsonObject() && v.getAsJsonObject().has("id") && v.getAsJsonObject().get("id").isJsonPrimitive()) {
-                    raw = v.getAsJsonObject().get("id").getAsString();
-                    JsonElement req = v.getAsJsonObject().get("required");
-                    if (req != null) {
-                        if (!req.isJsonPrimitive() || !req.getAsJsonPrimitive().isBoolean()) {
-                            throw new ContractViolation("EXTENSION_MALFORMED", "extension entry " + v + " from pack " + from + " has a non-boolean 'required'.", "use true or false.");
-                        }
-                        mandatory = req.getAsBoolean();
-                    }
-                } else {
-                    throw new ContractViolation("EXTENSION_MALFORMED", "extension entry " + v + " from pack " + from + " is neither an id string nor {\"id\": ...}.",
-                            "use \"namespace:structure\" strings or {\"id\": \"namespace:structure\", \"required\": false} objects.");
-                }
-                Identifier id = raw.startsWith("#") ? null : Identifier.tryParse(raw);
-                if (id == null) {
-                    throw new ContractViolation("EXTENSION_MALFORMED", "extension entry '" + raw + "' from pack " + from + " is not a valid structure id (tag references are not supported).",
-                            "list structure ids only.");
-                }
+            for (int i = 0; i < ids.size(); i++) {
+                Identifier id = ids.get(i);
                 Optional<Holder.Reference<Structure>> holder = registry.get(ResourceKey.create(Registries.STRUCTURE, id));
                 if (holder.isEmpty()) {
-                    if (mandatory) {
+                    if (mandatory.get(i)) {
                         throw new ContractViolation("EXTENSION_UNRESOLVED", "required extension entry " + id + " from pack " + from + " is not in the structure registry.",
                                 "install the pack that defines it, or mark the entry {\"id\": ..., \"required\": false}.");
                     }
@@ -205,7 +187,52 @@ public final class ProtectionContract {
                 }
             }
         }
-        return new Result(effective, owner, format, revision, requiredIds.size(), added, warnings);
+        return new Result(effective, owner, format, revision, requiredIds.size(), added, warnings, rejected);
+    }
+
+    /** Parses one extension file into ids and per-entry "required" flags; throws ContractViolation(EXTENSION_MALFORMED) for anything it cannot understand. */
+    private static void parseExtension(Resource ext, String from, List<String> warnings, List<Identifier> ids, List<Boolean> mandatory) {
+        JsonObject tag;
+        try (Reader reader = ext.openAsReader()) {
+            tag = JsonParser.parseReader(reader).getAsJsonObject();
+        } catch (IOException | RuntimeException e) {
+            throw new ContractViolation("EXTENSION_MALFORMED", "extension file " + EXTENSION_TAG_FILE + " from pack " + from + " cannot be parsed (" + e.getMessage() + ").",
+                    "fix or remove that pack's protected_extensions.json; the file was dropped, its structures are NOT protected.");
+        }
+        if (tag.has("replace") && tag.get("replace").isJsonPrimitive() && tag.get("replace").getAsBoolean()) {
+            warnings.add("EXTENSION_REPLACE_IGNORED: extension file from pack " + from + " sets replace=true; extensions are additive-only, the flag is ignored and its entries are added.");
+        }
+        if (!tag.has("values") || !tag.get("values").isJsonArray()) {
+            throw new ContractViolation("EXTENSION_MALFORMED", "extension file from pack " + from + " has no 'values' array.",
+                    "add a 'values' array of structure ids; the file was dropped, its structures are NOT protected.");
+        }
+        for (JsonElement v : tag.getAsJsonArray("values")) {
+            String raw;
+            boolean required = true;
+            if (v.isJsonPrimitive() && v.getAsJsonPrimitive().isString()) {
+                raw = v.getAsString();
+            } else if (v.isJsonObject() && v.getAsJsonObject().has("id") && v.getAsJsonObject().get("id").isJsonPrimitive()) {
+                raw = v.getAsJsonObject().get("id").getAsString();
+                JsonElement req = v.getAsJsonObject().get("required");
+                if (req != null) {
+                    if (!req.isJsonPrimitive() || !req.getAsJsonPrimitive().isBoolean()) {
+                        throw new ContractViolation("EXTENSION_MALFORMED", "extension entry " + v + " from pack " + from + " has a non-boolean 'required'.",
+                                "use true or false; the file was dropped, its structures are NOT protected.");
+                    }
+                    required = req.getAsBoolean();
+                }
+            } else {
+                throw new ContractViolation("EXTENSION_MALFORMED", "extension entry " + v + " from pack " + from + " is neither an id string nor {\"id\": ...}.",
+                        "use \"namespace:structure\" strings or {\"id\": \"namespace:structure\", \"required\": false} objects; the file was dropped, its structures are NOT protected.");
+            }
+            Identifier id = raw.startsWith("#") ? null : Identifier.tryParse(raw);
+            if (id == null) {
+                throw new ContractViolation("EXTENSION_MALFORMED", "extension entry '" + raw + "' from pack " + from + " is not a valid structure id (tag references are not supported).",
+                        "list structure ids only; the file was dropped, its structures are NOT protected.");
+            }
+            ids.add(id);
+            mandatory.add(required);
+        }
     }
 
     private static int intField(JsonObject json, String name, String owner) {

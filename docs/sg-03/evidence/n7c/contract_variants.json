@@ -1,0 +1,879 @@
+[
+ {
+  "case": "production_valid",
+  "outcome": "started",
+  "log": [
+   "[01:03:09] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1"
+  ],
+  "codes": [],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "manifest_missing",
+  "outcome": "failed",
+  "error_tail": "962d43745\",\"verified_samples\":0,\"verified_placements\":0,\"deviations\":0,\"near_misses\":0}},\"decoration_order\":[]}\n[01:03:28] [Server thread/INFO] (Minecraft) Stopping server\n[01:03:28] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 14s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "no pack provides moreminecrafts:sg_protection/manifest.json. Remedy: enable the structure-owning SG datapack (it ships data/moreminecrafts/sg_protection/manifest.json); the guard refuses to run without it."
+  ],
+  "codes": [
+   "MANIFEST_MISSING"
+  ],
+  "remedy_reported": true,
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "MANIFEST_MISSING",
+  "pass": true
+ },
+ {
+  "case": "format_unsupported",
+  "outcome": "failed",
+  "error_tail": "962d43745\",\"verified_samples\":0,\"verified_placements\":0,\"deviations\":0,\"near_misses\":0}},\"decoration_order\":[]}\n[01:03:43] [Server thread/INFO] (Minecraft) Stopping server\n[01:03:43] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 14s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "manifest from file/sg01 has format 2, this module supports [1]. Remedy: install a version of the SG datapack and of this module that agree on the manifest format."
+  ],
+  "codes": [
+   "FORMAT_UNSUPPORTED"
+  ],
+  "remedy_reported": true,
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "FORMAT_UNSUPPORTED",
+  "pass": true
+ },
+ {
+  "case": "revision_stale",
+  "outcome": "failed",
+  "error_tail": "962d43745\",\"verified_samples\":0,\"verified_placements\":0,\"deviations\":0,\"near_misses\":0}},\"decoration_order\":[]}\n[01:03:58] [Server thread/INFO] (Minecraft) Stopping server\n[01:03:58] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 14s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "manifest from file/sg01 has revision 0, this module requires at least 1. Remedy: update the SG datapack; an older revision may not list every structure that must be protected."
+  ],
+  "codes": [
+   "MANIFEST_STALE"
+  ],
+  "remedy_reported": true,
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "MANIFEST_STALE",
+  "pass": true
+ },
+ {
+  "case": "game_version_mismatch",
+  "outcome": "failed",
+  "error_tail": "962d43745\",\"verified_samples\":0,\"verified_placements\":0,\"deviations\":0,\"near_misses\":0}},\"decoration_order\":[]}\n[01:04:14] [Server thread/INFO] (Minecraft) Stopping server\n[01:04:14] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 15s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "manifest from file/sg01 was written for Minecraft '26.2', this server runs '26.3'. Remedy: use the SG datapack build that targets this Minecraft version."
+  ],
+  "codes": [
+   "GAME_VERSION_MISMATCH"
+  ],
+  "remedy_reported": true,
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "GAME_VERSION_MISMATCH",
+  "pass": true
+ },
+ {
+  "case": "required_unresolved",
+  "outcome": "failed",
+  "error_tail": "962d43745\",\"verified_samples\":0,\"verified_placements\":0,\"deviations\":0,\"near_misses\":0}},\"decoration_order\":[]}\n[01:04:29] [Server thread/INFO] (Minecraft) Stopping server\n[01:04:29] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 14s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "required structure moreminecrafts:forgotten_kingdom/removed (manifest from file/sg01) is not in the structure registry. Remedy: ship the structure definition in the same pack, or remove the entry from the manifest."
+  ],
+  "codes": [
+   "REQUIRED_UNRESOLVED"
+  ],
+  "remedy_reported": true,
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "REQUIRED_UNRESOLVED",
+  "pass": true
+ },
+ {
+  "case": "manifest_empty",
+  "outcome": "failed",
+  "error_tail": "962d43745\",\"verified_samples\":0,\"verified_placements\":0,\"deviations\":0,\"near_misses\":0}},\"decoration_order\":[]}\n[01:04:45] [Server thread/INFO] (Minecraft) Stopping server\n[01:04:45] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 14s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "manifest from file/sg01 lists no required structure. Remedy: list at least the structure the pack owns."
+  ],
+  "codes": [
+   "MANIFEST_EMPTY"
+  ],
+  "remedy_reported": true,
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "MANIFEST_EMPTY",
+  "pass": true
+ },
+ {
+  "case": "manifest_invalid_json",
+  "outcome": "failed",
+  "error_tail": "962d43745\",\"verified_samples\":0,\"verified_placements\":0,\"deviations\":0,\"near_misses\":0}},\"decoration_order\":[]}\n[01:05:00] [Server thread/INFO] (Minecraft) Stopping server\n[01:05:00] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 14s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "cannot parse moreminecrafts:sg_protection/manifest.json from file/sg01 as a JSON object (com.google.gson.stream.MalformedJsonException: Expected ':' at line 1 column 7 path $.not"
+  ],
+  "codes": [
+   "MANIFEST_INVALID"
+  ],
+  "remedy_reported": true,
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "MANIFEST_INVALID",
+  "pass": true
+ },
+ {
+  "case": "manifest_duplicate_entry",
+  "outcome": "failed",
+  "error_tail": "962d43745\",\"verified_samples\":0,\"verified_placements\":0,\"deviations\":0,\"near_misses\":0}},\"decoration_order\":[]}\n[01:05:16] [Server thread/INFO] (Minecraft) Stopping server\n[01:05:16] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 14s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "manifest from file/sg01 lists moreminecrafts:forgotten_kingdom/central_cavern more than once. Remedy: remove the duplicate entry."
+  ],
+  "codes": [
+   "MANIFEST_INVALID"
+  ],
+  "remedy_reported": true,
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "MANIFEST_INVALID",
+  "pass": true
+ },
+ {
+  "case": "manifest_bad_entry",
+  "outcome": "failed",
+  "error_tail": "962d43745\",\"verified_samples\":0,\"verified_placements\":0,\"deviations\":0,\"near_misses\":0}},\"decoration_order\":[]}\n[01:05:32] [Server thread/INFO] (Minecraft) Stopping server\n[01:05:32] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 14s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "manifest from file/sg01 has a 'structures' entry that is not a valid structure id: 7. Remedy: use plain namespaced id strings such as \"moreminecrafts:forgotten_kingdom/central_cavern\"."
+  ],
+  "codes": [
+   "MANIFEST_INVALID"
+  ],
+  "remedy_reported": true,
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "MANIFEST_INVALID",
+  "pass": true
+ },
+ {
+  "case": "manifest_no_structures_field",
+  "outcome": "failed",
+  "error_tail": "962d43745\",\"verified_samples\":0,\"verified_placements\":0,\"deviations\":0,\"near_misses\":0}},\"decoration_order\":[]}\n[01:05:48] [Server thread/INFO] (Minecraft) Stopping server\n[01:05:48] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 15s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "manifest from file/sg01 has no 'structures' array. Remedy: list the structure ids that must be protected."
+  ],
+  "codes": [
+   "MANIFEST_INVALID"
+  ],
+  "remedy_reported": true,
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "MANIFEST_INVALID",
+  "pass": true
+ },
+ {
+  "case": "owner_pack_format_999",
+  "outcome": "failed",
+  "error_tail": "962d43745\",\"verified_samples\":0,\"verified_placements\":0,\"deviations\":0,\"near_misses\":0}},\"decoration_order\":[]}\n[01:06:06] [Server thread/INFO] (Minecraft) Stopping server\n[01:06:06] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 16s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "the pack that owns the protection manifest (file/sg01) declares a format that is TOO_NEW for this game version. Remedy: use the SG datapack build that targets this Minecraft version."
+  ],
+  "codes": [
+   "OWNER_PACK_INCOMPATIBLE"
+  ],
+  "remedy_reported": true,
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "OWNER_PACK_INCOMPATIBLE",
+  "pass": true
+ },
+ {
+  "case": "conflicting_provider",
+  "outcome": "failed",
+  "error_tail": "962d43745\",\"verified_samples\":0,\"verified_placements\":0,\"deviations\":0,\"near_misses\":0}},\"decoration_order\":[]}\n[01:06:23] [Server thread/INFO] (Minecraft) Stopping server\n[01:06:23] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 15s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "moreminecrafts:sg_protection/manifest.json is provided by several packs [file/sg01, file/zz_override]; exactly one owner is allowed. Remedy: remove or disable all but the structure-owning pack's copy of the manifest."
+  ],
+  "codes": [
+   "MANIFEST_CONFLICT"
+  ],
+  "remedy_reported": true,
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "MANIFEST_CONFLICT",
+  "pass": true
+ },
+ {
+  "case": "ownership_mismatch",
+  "outcome": "failed",
+  "error_tail": "962d43745\",\"verified_samples\":0,\"verified_placements\":0,\"deviations\":0,\"near_misses\":0}},\"decoration_order\":[]}\n[01:06:39] [Server thread/INFO] (Minecraft) Stopping server\n[01:06:39] [Server thread/INFO] (Minecraft) Saving worlds\n\nBUILD SUCCESSFUL in 15s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [
+   "manifest owner file/zz_owner does not define required structure moreminecrafts:forgotten_kingdom/central_cavern (defined by [file/sg01]). Remedy: only the pack that defines a structure may declare it required; list it in an extension file instead."
+  ],
+  "codes": [
+   "OWNERSHIP_MISMATCH"
+  ],
+  "remedy_reported": true,
+  "contract": {
+   "mode": "manifest",
+   "owner": null,
+   "format": 0,
+   "revision": 0,
+   "required": 0,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "failed",
+  "expected_code": "OWNERSHIP_MISMATCH",
+  "pass": true
+ },
+ {
+  "case": "extension_valid",
+  "outcome": "started",
+  "log": [
+   "[01:06:55] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=1 effective=2"
+  ],
+  "codes": [],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 1,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "extension_optional_unresolved",
+  "outcome": "started",
+  "log": [
+   "[01:07:16] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+   "[01:07:16] [Server thread/WARN] (sg01-spike) SG_SPIKE protection contract warning: EXTENSION_OPTIONAL_UNRESOLVED: optional extension thirdparty:not_installed from pack file/zz_extopt is not in the structure registry; ignored."
+  ],
+  "codes": [],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [
+    "EXTENSION_OPTIONAL_UNRESOLVED: optional extension thirdparty:not_installed from pack file/zz_extopt is not in the structure registry; ignored."
+   ],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "extension_required_unresolved",
+  "outcome": "failed",
+  "error_tail": "inWorkerThread.java:187)\nCaused by: java.lang.IllegalStateException: Failed to load registries due to errors\n\tat knot//net.minecraft.resources.RegistryDataLoader.createReportWithBriefInfo(RegistryDataLoader.java:313)\n\t... 13 more\n\nBUILD SUCCESSFUL in 14s\n5 actionable tasks: 1 executed, 4 up-to-date\n",
+  "log": [],
+  "codes": [
+   "VANILLA_TAG_LOAD_FAILURE"
+  ],
+  "remedy_reported": null,
+  "expected_outcome": "failed",
+  "expected_code": "VANILLA_TAG_LOAD_FAILURE",
+  "pass": true
+ },
+ {
+  "case": "extension_replace_ignored",
+  "outcome": "started",
+  "log": [
+   "[01:07:51] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=1 effective=2",
+   "[01:07:51] [Server thread/WARN] (sg01-spike) SG_SPIKE protection contract warning: EXTENSION_REPLACE_IGNORED: extension file from pack file/zz_extrep sets replace=true; extensions are additive-only, the flag is ignored and its entries are added."
+  ],
+  "codes": [],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 1,
+   "warnings": [
+    "EXTENSION_REPLACE_IGNORED: extension file from pack file/zz_extrep sets replace=true; extensions are additive-only, the flag is ignored and its entries are added."
+   ],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "extension_malformed_json",
+  "outcome": "started",
+  "log": [
+   "[01:08:11] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+   "extension file moreminecrafts:tags/worldgen/structure/protected_extensions.json from pack file/zz_extjson cannot be parsed (java.io.EOFException: End of input at line 1 column 6 path $.oops). Remedy: fix or remove that pack's protected_extensions.json; the file was dropped, its structures are NOT protected.",
+   "extension file moreminecrafts:tags/worldgen/structure/protected_extensions.json from pack file/zz_extjson cannot be parsed (java.io.EOFException: End of input at line 1 column 6 path $.oops). Remedy: fix or remove that pack's protected_extensions.json; the file was dropped, its structures are NOT protected.\"],\"reload_rejections\":0,\"last_rejection\":null},\"drift_guard\":{\"configured_refine\":\"HYBRID\",\"effective_refine\":\""
+  ],
+  "codes": [
+   "EXTENSION_MALFORMED"
+  ],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [
+    "EXTENSION_MALFORMED (pack file/zz_extjson): SG protection contract [EXTENSION_MALFORMED]: extension file moreminecrafts:tags/worldgen/structure/protected_extensions.json from pack file/zz_extjson cannot be parsed (java.io.EOFException: End of input at line 1 column 6 path $.oops). Remedy: fix or remove that pack's protected_extensions.json; the file was dropped, its structures are NOT protected."
+   ],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": "EXTENSION_MALFORMED",
+  "pass": true
+ },
+ {
+  "case": "extension_bad_entry",
+  "outcome": "started",
+  "log": [
+   "[01:08:31] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+   "extension entry 42 from pack file/zz_extnum is neither an id string nor {\"id\": ...}. Remedy: use \"namespace:structure\" strings or {\"id\": \"namespace:structure\", \"required\": false} objects; the file was dropped, its structures are NOT protected.",
+   "extension entry 42 from pack file/zz_extnum is neither an id string nor {'id': ...}. Remedy: use 'namespace:structure' strings or {'id': 'namespace:structure', 'required': false} objects; the file was dropped, its structures are NOT protected.\"],\"reload_rejections\":0,\"last_rejection\":null},\"drift_guard\":{\"configured_refine\":\"HYBRID\",\"effective_refine\":\"OFF\",\"monster_room\":{\"level\":\"PROVISIONAL\",\"fallback\":false,\"reas"
+  ],
+  "codes": [
+   "EXTENSION_MALFORMED"
+  ],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [
+    "EXTENSION_MALFORMED (pack file/zz_extnum): SG protection contract [EXTENSION_MALFORMED]: extension entry 42 from pack file/zz_extnum is neither an id string nor {'id': ...}. Remedy: use 'namespace:structure' strings or {'id': 'namespace:structure', 'required': false} objects; the file was dropped, its structures are NOT protected."
+   ],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": "EXTENSION_MALFORMED",
+  "pass": true
+ },
+ {
+  "case": "extension_tag_reference",
+  "outcome": "started",
+  "log": [
+   "[01:08:51] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+   "extension entry '#minecraft:village' from pack file/zz_exttag is not a valid structure id (tag references are not supported). Remedy: list structure ids only; the file was dropped, its structures are NOT protected.",
+   "extension entry '#minecraft:village' from pack file/zz_exttag is not a valid structure id (tag references are not supported). Remedy: list structure ids only; the file was dropped, its structures are NOT protected.\"],\"reload_rejections\":0,\"last_rejection\":null},\"drift_guard\":{\"configured_refine\":\"HYBRID\",\"effective_refine\":\"OFF\",\"monster_room\":{\"level\":\"PROVISIONAL\",\"fallback\":false,\"reason\":null,\"fingerprint\":\"Monst"
+  ],
+  "codes": [
+   "EXTENSION_MALFORMED"
+  ],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [
+    "EXTENSION_MALFORMED (pack file/zz_exttag): SG protection contract [EXTENSION_MALFORMED]: extension entry '#minecraft:village' from pack file/zz_exttag is not a valid structure id (tag references are not supported). Remedy: list structure ids only; the file was dropped, its structures are NOT protected."
+   ],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": "EXTENSION_MALFORMED",
+  "pass": true
+ },
+ {
+  "case": "extension_malformed_isolated",
+  "outcome": "started",
+  "log": [
+   "[01:09:12] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=1 effective=2",
+   "extension file moreminecrafts:tags/worldgen/structure/protected_extensions.json from pack file/zz_extjson2 cannot be parsed (java.io.EOFException: End of input at line 1 column 6 path $.oops). Remedy: fix or remove that pack's protected_extensions.json; the file was dropped, its structures are NOT protected.",
+   "extension file moreminecrafts:tags/worldgen/structure/protected_extensions.json from pack file/zz_extjson2 cannot be parsed (java.io.EOFException: End of input at line 1 column 6 path $.oops). Remedy: fix or remove that pack's protected_extensions.json; the file was dropped, its structures are NOT protected.\"],\"reload_rejections\":0,\"last_rejection\":null},\"drift_guard\":{\"configured_refine\":\"HYBRID\",\"effective_refine\":"
+  ],
+  "codes": [
+   "EXTENSION_MALFORMED"
+  ],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 1,
+   "warnings": [],
+   "rejected_extensions": [
+    "EXTENSION_MALFORMED (pack file/zz_extjson2): SG protection contract [EXTENSION_MALFORMED]: extension file moreminecrafts:tags/worldgen/structure/protected_extensions.json from pack file/zz_extjson2 cannot be parsed (java.io.EOFException: End of input at line 1 column 6 path $.oops). Remedy: fix or remove that pack's protected_extensions.json; the file was dropped, its structures are NOT protected."
+   ],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": "EXTENSION_MALFORMED",
+  "pass": true
+ },
+ {
+  "case": "extension_duplicates",
+  "outcome": "started",
+  "log": [
+   "[01:09:32] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=1 effective=2",
+   "[01:09:32] [Server thread/WARN] (sg01-spike) SG_SPIKE protection contract warning: EXTENSION_DUPLICATE: extension moreminecrafts:forgotten_kingdom/central_cavern from pack file/zz_ext1 is already required by the manifest; no effect.",
+   "[01:09:32] [Server thread/WARN] (sg01-spike) SG_SPIKE protection contract warning: EXTENSION_DUPLICATE: extension minecraft:stronghold from pack file/zz_ext2 is already added by another entry; no effect."
+  ],
+  "codes": [],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 1,
+   "warnings": [
+    "EXTENSION_DUPLICATE: extension moreminecrafts:forgotten_kingdom/central_cavern from pack file/zz_ext1 is already required by the manifest; no effect.",
+    "EXTENSION_DUPLICATE: extension minecraft:stronghold from pack file/zz_ext2 is already added by another entry; no effect."
+   ],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "legacy_tag_has_no_effect",
+  "outcome": "started",
+  "log": [
+   "[01:09:52] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1"
+  ],
+  "codes": [],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "unrelated_pack_format_999",
+  "outcome": "started",
+  "log": [
+   "[01:10:13] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1"
+  ],
+  "codes": [],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "reload_conflict",
+  "outcome": "started",
+  "after": {
+   "command_reply": "Enabling data pack [file/zz_conflict (world)]"
+  },
+  "log": [
+   "[01:10:33] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+   "moreminecrafts:sg_protection/manifest.json is provided by several packs [file/sg01, file/zz_conflict]; exactly one owner is allowed. Remedy: remove or disable all but the structure-owning pack's copy of the manifest.",
+   "moreminecrafts:sg_protection/manifest.json is provided by several packs [file/sg01, file/zz_conflict]; exactly one owner is allowed. Remedy: remove or disable all but the structure-owning pack's copy of the manifest.\"},\"drift_guard\":{\"configured_refine\":\"HYBRID\",\"effective_refine\":\"OFF\",\"monster_room\":{\"level\":\"PROVISIONAL\",\"fallback\":false,\"reason\":null,\"fingerprint\":\"MonsterRoomFeature=006a3287a6b0 Feature=b140a544"
+  ],
+  "codes": [
+   "MANIFEST_CONFLICT"
+  ],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 1,
+   "last_rejection": "SG protection contract [MANIFEST_CONFLICT]: moreminecrafts:sg_protection/manifest.json is provided by several packs [file/sg01, file/zz_conflict]; exactly one owner is allowed. Remedy: remove or disable all but the structure-owning pack's copy of the manifest."
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "reload_stale",
+  "outcome": "started",
+  "after": {
+   "command_reply": "Reloading!"
+  },
+  "log": [
+   "[01:10:56] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+   "manifest from file/sg01 has revision 0, this module requires at least 1. Remedy: update the SG datapack; an older revision may not list every structure that must be protected.",
+   "manifest from file/sg01 has revision 0, this module requires at least 1. Remedy: update the SG datapack; an older revision may not list every structure that must be protected.\"},\"drift_guard\":{\"configured_refine\":\"HYBRID\",\"effective_refine\":\"OFF\",\"monster_room\":{\"level\":\"PROVISIONAL\",\"fallback\":false,\"reason\":null,\"fingerprint\":\"MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b3"
+  ],
+  "codes": [
+   "MANIFEST_STALE"
+  ],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 1,
+   "last_rejection": "SG protection contract [MANIFEST_STALE]: manifest from file/sg01 has revision 0, this module requires at least 1. Remedy: update the SG datapack; an older revision may not list every structure that must be protected."
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "reload_manifest_removed",
+  "outcome": "started",
+  "after": {
+   "command_reply": "Reloading!"
+  },
+  "log": [
+   "[01:11:19] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+   "no pack provides moreminecrafts:sg_protection/manifest.json. Remedy: enable the structure-owning SG datapack (it ships data/moreminecrafts/sg_protection/manifest.json); the guard refuses to run without it.",
+   "no pack provides moreminecrafts:sg_protection/manifest.json. Remedy: enable the structure-owning SG datapack (it ships data/moreminecrafts/sg_protection/manifest.json); the guard refuses to run without it.\"},\"drift_guard\":{\"configured_refine\":\"HYBRID\",\"effective_refine\":\"OFF\",\"monster_room\":{\"level\":\"PROVISIONAL\",\"fallback\":false,\"reason\":null,\"fingerprint\":\"MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockB"
+  ],
+  "codes": [
+   "MANIFEST_MISSING"
+  ],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 1,
+   "last_rejection": "SG protection contract [MANIFEST_MISSING]: no pack provides moreminecrafts:sg_protection/manifest.json. Remedy: enable the structure-owning SG datapack (it ships data/moreminecrafts/sg_protection/manifest.json); the guard refuses to run without it."
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "reload_extension_replace",
+  "outcome": "started",
+  "after": {
+   "command_reply": "Enabling data pack [file/zz_extrep (world)]"
+  },
+  "log": [
+   "[01:11:42] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+   "[01:11:46] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=1 effective=2",
+   "[01:11:46] [Server thread/WARN] (sg01-spike) SG_SPIKE protection contract warning: EXTENSION_REPLACE_IGNORED: extension file from pack file/zz_extrep sets replace=true; extensions are additive-only, the flag is ignored and its entries are added."
+  ],
+  "codes": [],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 1,
+   "warnings": [
+    "EXTENSION_REPLACE_IGNORED: extension file from pack file/zz_extrep sets replace=true; extensions are additive-only, the flag is ignored and its entries are added."
+   ],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "reload_extension_malformed",
+  "outcome": "started",
+  "after": {
+   "command_reply": "Enabling data pack [file/zz_extbad (world)]"
+  },
+  "log": [
+   "[01:12:04] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+   "[01:12:08] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+   "extension file moreminecrafts:tags/worldgen/structure/protected_extensions.json from pack file/zz_extbad cannot be parsed (java.io.EOFException: End of input at line 1 column 6 path $.oops). Remedy: fix or remove that pack's protected_extensions.json; the file was dropped, its structures are NOT protected.",
+   "extension file moreminecrafts:tags/worldgen/structure/protected_extensions.json from pack file/zz_extbad cannot be parsed (java.io.EOFException: End of input at line 1 column 6 path $.oops). Remedy: fix or remove that pack's protected_extensions.json; the file was dropped, its structures are NOT protected.\"],\"reload_rejections\":0,\"last_rejection\":null},\"drift_guard\":{\"configured_refine\":\"HYBRID\",\"effective_refine\":\"O"
+  ],
+  "codes": [
+   "EXTENSION_MALFORMED"
+  ],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [
+    "EXTENSION_MALFORMED (pack file/zz_extbad): SG protection contract [EXTENSION_MALFORMED]: extension file moreminecrafts:tags/worldgen/structure/protected_extensions.json from pack file/zz_extbad cannot be parsed (java.io.EOFException: End of input at line 1 column 6 path $.oops). Remedy: fix or remove that pack's protected_extensions.json; the file was dropped, its structures are NOT protected."
+   ],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": "EXTENSION_MALFORMED",
+  "pass": true
+ },
+ {
+  "case": "reload_extension_added",
+  "outcome": "started",
+  "after": {
+   "command_reply": "Enabling data pack [file/zz_extadd (world)]"
+  },
+  "log": [
+   "[01:12:26] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+   "[01:12:30] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=1 effective=2"
+  ],
+  "codes": [],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 1,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ },
+ {
+  "case": "reload_extension_removed",
+  "outcome": "started",
+  "after": {
+   "command_reply": "Disabling data pack [file/zz_ext (world)]"
+  },
+  "log": [
+   "[01:12:49] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=1 effective=2",
+   "[01:12:53] [Server thread/INFO] (sg01-spike) SG_SPIKE protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1"
+  ],
+  "codes": [],
+  "remedy_reported": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "expected_outcome": "started",
+  "expected_code": null,
+  "pass": true
+ }
+]

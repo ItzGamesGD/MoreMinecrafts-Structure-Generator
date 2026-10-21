@@ -38,14 +38,14 @@ for ARM in "$@"; do
           TAG="F_${FAULT}_${NAME}_${T}"
           [ "$NAME" = s173b ] && [ "$T" = spiral_out ] || continue
           python3 "$REPO/validation/minecraft-visual/sg03-natural/collision_lab.py" --jar "$SERVER_JAR" --pack "$SG_PACK" --out "$OUT/$TAG" \
-            --seed "$SEED" --chunk "$CX" "$CZ" --order "$ORD" --radius 5 --fabric-project "$REPO/validation/fabric-protection-spike" \
+            --seed "$SEED" --chunk "$CX" "$CZ" --order "$ORD" --radius 5 --fabric-project "$REPO/mod/sg-worldgen-protection" \
             --guard-mode "$GM" --features "$FE" --fixture "$FX" --refine "$RF" --oracle "$OR" --fault "$FAULT" > "$OUT/$TAG.log" 2>&1
         done
         continue
       fi
       TAG="${ARM}_${NAME}_${T}"
       python3 "$REPO/validation/minecraft-visual/sg03-natural/collision_lab.py" --jar "$SERVER_JAR" --pack "$SG_PACK" --out "$OUT/$TAG" \
-        --seed "$SEED" --chunk "$CX" "$CZ" --order "$ORD" --radius 5 --fabric-project "$REPO/validation/fabric-protection-spike" \
+        --seed "$SEED" --chunk "$CX" "$CZ" --order "$ORD" --radius 5 --fabric-project "$REPO/mod/sg-worldgen-protection" \
         --guard-mode "$GM" --features "$FE" --fixture "$FX" --refine "$RF" --oracle "$OR" > "$OUT/$TAG.log" 2>&1
     done
   done

@@ -2,9 +2,9 @@ plugins {
     id 'net.fabricmc.fabric-loom' version '1.17.21'
 }
 
-group = 'dev.itzgamesgd.spike'
-version = '0.0.1-spike'
-base { archivesName = 'sg01-worldgen-protection-spike' }
+group = 'dev.itzgamesgd.sg'
+version = '0.2.0-n7c'
+base { archivesName = 'sg-worldgen-protection' }
 
 repositories { mavenCentral() }
 

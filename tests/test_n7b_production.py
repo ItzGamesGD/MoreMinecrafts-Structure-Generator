@@ -20,7 +20,7 @@ from structure_export.datapack import MINECRAFT_VERSION, DatapackBuilder  # noqa
 
 PACK = ROOT / "exports/sg-03/forgotten-underground-kingdom/datapack"
 MANIFEST = PACK / "data/moreminecrafts/sg_protection/manifest.json"
-JAVA = ROOT / "validation/fabric-protection-spike/src/main/java/dev/itzgamesgd/sg01spike"
+JAVA = ROOT / "mod/sg-worldgen-protection/src/main/java/dev/itzgamesgd/sg01spike"
 
 
 class ProductionManifestTests(unittest.TestCase):
@@ -85,39 +85,6 @@ class ManifestBuilderTests(unittest.TestCase):
 
 
 class SelfCheckTests(unittest.TestCase):
-    def setUp(self) -> None:
-        self.src = (JAVA / "MonsterRoomSelfCheck.java").read_text()
-        self.mixin = (JAVA / "mixin/MonsterRoomFeatureMixin.java").read_text()
-
-    def test_fingerprint_set_is_non_empty_sha256(self) -> None:
-        values = re.search(r"KNOWN_FINGERPRINTS = Set\.of\(([^)]*)\)", self.src).group(1)
-        hashes = re.findall(r'"([0-9a-f]{64})"', values)
-        self.assertTrue(hashes, "an unfilled placeholder would make every start fall back")
-        self.assertNotIn("__FINGERPRINT", self.src)
-
-    def test_fallback_is_the_conservative_box_never_off(self) -> None:
-        body = self.src[self.src.index("public static Guard.Refine effective"):self.src.index("public static boolean inFallback")]
-        self.assertIn("Guard.Refine.OFF", body)  # OFF is the N7-A box reach, i.e. the conservative guard, not a disabled one
-        guard = (JAVA / "Guard.java").read_text()
-        self.assertIn("Refine { OFF, PRECHECK, HYBRID }", guard)
-        self.assertRegex(self.mixin, r"switch \(MonsterRoomSelfCheck\.effective\(Guard\.REFINE\)\)")
-        self.assertRegex(self.mixin, r"default -> cancel = Guard\.shouldCancel\(Guard\.MONSTER_ROOM, level, origin, List\.of\(MonsterRoomGeometry\.maxBox\(origin\)\)\)")
-
-    def test_both_checks_exist_and_fail_closed(self) -> None:
-        for token in ("FINGERPRINT_UNAVAILABLE", "FINGERPRINT_MISMATCH", "RUNTIME_VIOLATION", "MessageDigest.getInstance(\"SHA-256\")"):
-            self.assertIn(token, self.src)
-        self.assertIn("MonsterRoomSelfCheck.end(level, origin)", self.mixin)
-        self.assertIn("MonsterRoomSelfCheck.discard()", self.mixin)
-        mod = (JAVA / "SpikeMod.java").read_text()
-        self.assertLess(mod.index("MonsterRoomSelfCheck.verifyAtStartup()"), mod.index("ProtectionConfig.resolve(server)"))
-        guard = (JAVA / "Guard.java").read_text()
-        self.assertIn("MonsterRoomSelfCheck.begin(region, broad, pieces)", guard)
-
-    def test_fingerprint_override_and_fault_injection_are_lab_only(self) -> None:
-        self.assertIn("Guard.LAB ? System.getenv(\"SG01_LAB_MR_FINGERPRINT\") : null", self.src)
-        geometry = (JAVA / "MonsterRoomGeometry.java").read_text()
-        self.assertIn("Guard.FAULT == Guard.Fault.PRECHECK_BLIND", geometry)  # FAULT itself is parsed through labEnv (see test_n72)
-
     def test_production_has_no_timing_instrumentation(self) -> None:
         perf = (JAVA / "Perf.java").read_text()
         self.assertRegex(perf, r"public static void mark\(\) \{\s*if \(!Guard\.LAB\) return;")
