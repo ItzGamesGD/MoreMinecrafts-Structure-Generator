@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """N7-D: verify the BUILT jars, not the source layout. usage: verify_artifacts.py OUT.json [--build]
 Production jar (sg-worldgen-protection-<v>.jar) must contain only the required runtime classes and its two metadata files, read no SG01_* lab
-variable, reference no lab class, apply exactly the two protection mixins and register no lab entrypoint. The lab jar (…-lab.jar) must contain
+variable, reference no lab class, apply exactly the four protection mixins and register no lab entrypoint. The lab jar (…-lab.jar) must contain
 only lab classes, depend on the production mod and must not contain a production class."""
 from __future__ import annotations
 
@@ -18,7 +18,7 @@ PRODUCTION_CLASSES = {
     "DriftGuard", "DriftGuard$Armed", "DriftGuard$Level", "DriftGuard$State", "Guard", "Guard$Fault", "Guard$Finding", "Guard$Fixture", "Guard$Mode",
     "Guard$Refine", "GuardMarker", "GuardStats", "LabHooks", "LabHooks$1", "LabHooks$Config", "LabHooks$Holder", "MonsterRoomGeometry", "ProtectionConfig",
     "ProtectionContract", "ProtectionContract$ContractViolation", "ProtectionContract$Result", "SgProtectionMod", "mixin/GeodeFeatureMixin", "mixin/MonsterRoomFeatureMixin",
-    "mixin/MonsterRoomFeatureMixin$1",
+    "mixin/MonsterRoomFeatureMixin$1", "WriteGuard", "mixin/StructureStartWriteGuardMixin", "mixin/WorldGenRegionWriteGuardMixin",
 }
 LAB_NAMES = re.compile(rb"(?<![A-Za-z])Probe(?![a-z])|ProbeMixin|(?<![A-Za-z])Perf(?![a-z])|Sampler|MonsterRoomOracle|LabMod|LabMixinPlugin|ForeignMonsterRoom|ForeignGeode|sg_worldgen_protection_lab|dev/itzgamesgd/sgprotection/lab")
 
@@ -48,7 +48,7 @@ def main() -> None:
         mod = json.loads(z.read("fabric.mod.json"))
         check("production jar: mod id and entrypoints", mod["id"] == "sg_worldgen_protection" and list(mod["entrypoints"]) == ["main"], f"{mod['id']} {list(mod['entrypoints'])}")
         cfg = json.loads(z.read("sgprotection.mixins.json"))
-        check("production jar: exactly the two protection mixins, no plugin", sorted(cfg["mixins"]) == ["GeodeFeatureMixin", "MonsterRoomFeatureMixin"] and "plugin" not in cfg, str(cfg["mixins"]))
+        check("production jar: exactly the four protection mixins, no plugin", sorted(cfg["mixins"]) == ["GeodeFeatureMixin", "MonsterRoomFeatureMixin", "StructureStartWriteGuardMixin", "WorldGenRegionWriteGuardMixin"] and "plugin" not in cfg, str(cfg["mixins"]))
         check("production jar: mixins required and fail-loud", cfg["required"] is True and cfg["injectors"]["defaultRequire"] == 1)
         check("production jar: ships no datapack data", not any(n.startswith("data/") for n in names))
     with zipfile.ZipFile(lab) as z:

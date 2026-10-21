@@ -22,13 +22,13 @@ class DriftGuardTests(unittest.TestCase):
     def test_every_dependency_class_has_a_validated_sha256(self) -> None:
         known = self.src[self.src.index("KNOWN = Map.of("):self.src.index("public static final class State")]
         hashes = re.findall(r'"([0-9a-f]{64})"', known)
-        self.assertEqual(len(hashes), 6)
-        self.assertEqual(len(set(hashes)), 6)
-        for cls in ("MonsterRoomFeature", "GeodeFeature", "levelgen.feature.Feature", "BlockBehaviour$BlockStateBase", "BuddingAmethystBlock", "WorldGenRegion"):
+        self.assertEqual(len(hashes), 7)
+        self.assertEqual(len(set(hashes)), 7)
+        for cls in ("MonsterRoomFeature", "GeodeFeature", "levelgen.feature.Feature", "BlockBehaviour$BlockStateBase", "BuddingAmethystBlock", "WorldGenRegion", "StructureStart"):
             self.assertIn(cls, self.src)
         # each feature depends on its own class plus the shared helpers
-        self.assertRegex(self.src, r'MONSTER_ROOM = new State\("monster_room",\s*List\.of\(P \+ "levelgen\.feature\.MonsterRoomFeature", FEATURE, STATE_BASE, REGION\)')
-        self.assertRegex(self.src, r'GEODE = new State\("geode",\s*List\.of\(P \+ "levelgen\.feature\.GeodeFeature", FEATURE, P \+ "block\.BuddingAmethystBlock", REGION\)')
+        self.assertRegex(self.src, r'MONSTER_ROOM = new State\("monster_room",\s*List\.of\(P \+ "levelgen\.feature\.MonsterRoomFeature", FEATURE, STATE_BASE, REGION, START\)')
+        self.assertRegex(self.src, r'GEODE = new State\("geode",\s*List\.of\(P \+ "levelgen\.feature\.GeodeFeature", FEATURE, P \+ "block\.BuddingAmethystBlock", REGION, START\)')
 
     def test_unknown_or_unreadable_vanilla_goes_to_zone_never_off(self) -> None:
         self.assertIn('"FINGERPRINT_MISMATCH: " + failure', self.src)

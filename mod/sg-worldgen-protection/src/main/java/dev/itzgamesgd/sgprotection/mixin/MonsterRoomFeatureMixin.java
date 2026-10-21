@@ -35,6 +35,7 @@ public abstract class MonsterRoomFeatureMixin implements GuardMarker {
             lab.oracleBegin(Guard.MONSTER_ROOM, level, origin, refined);
             return;
         }
+        if (!Guard.hookActive("monster_room")) return; // the write-level guard protects; the feature runs untouched
         DriftGuard.discard();
         lab.mark();
         BoundingBox broad = MonsterRoomGeometry.maxBox(origin);

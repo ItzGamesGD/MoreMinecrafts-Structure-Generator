@@ -35,6 +35,7 @@ else
     O)  ARGS+=(--guard-mode enforce --features both --refine hybrid --oracle monster_room) ;;  # oracle: vanilla unguarded, replica vs reality
     RNB) ARGS+=(--guard-mode enforce --features both --refine off --fault precheck_blind_near) ;;  # N7-E: the N7-D damage scenario under the production box decision
     RB) ARGS+=(--guard-mode enforce --features both --refine off --fault box_shrunk) ;;  # N7-E: module believes a smaller footprint than vanilla has
+    FW) ARGS+=(--guard-mode enforce --features none --refine off --lab-fingerprint-break both) ;;  # N8-R: production default layers + unverifiable vanilla -> the feature hooks switch on in ZONE
     RG) ARGS+=(--guard-mode enforce --features both --refine hybrid --fault geode_shrunk) ;;  # N7-C: injected geode bound drift
     *) echo "unknown config $CONFIG" >&2; exit 2 ;;
   esac
