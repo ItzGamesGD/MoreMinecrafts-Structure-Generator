@@ -69,6 +69,7 @@ def main() -> None:
     p.add_argument("--lab-fingerprint-break", default="", choices=["", "monster_room", "geode", "both"], help="N7-C lab only: treat the vanilla class fingerprints of this feature as mismatching (simulated vanilla change -> zone guard)")
     p.add_argument("--lab-foreign", default="", choices=["", "monster_room", "geode", "both"], help="N7-D lab only: apply an inert foreign transformer to the vanilla feature class (must be detected)")
     p.add_argument("--stale-lab-env", action="store_true", help="N7-D: with --production, also export every SG01_* lab variable (observe, no features, fixture, refine off): the production artifact must ignore all of them")
+    p.add_argument("--production-jar", action="store_true", help="N7-D: with --production, launch the BUILT production jar (gradlew jar runJarServer) instead of the dev classes")
     p.add_argument("--settle", type=float, default=0.0, help="N7-A4: seconds to wait after each chunk loads (controlled-order comparison)")
     p.add_argument("--freeze", action="store_true", help="N7-A4: gamerule random_tick_speed 0 and tick freeze before loading chunks")
     p.add_argument("--keep-world", action="store_true", help="N7-A3: copy the region files of the run into <out>/regions (for full-world comparison)")
@@ -88,7 +89,7 @@ def main() -> None:
         launcher = [*a.launcher_prefix, a.java, "-Xmx3G", *extra, "-jar", str(a.jar.resolve()), "nogui"]
     fabric = {}
     if a.fabric_project:
-        launcher = ["./gradlew", "--no-daemon", "runServer" if a.production else "runLabServer"]
+        launcher = ["./gradlew", "--no-daemon", "jar", "runJarServer"] if a.production_jar else ["./gradlew", "--no-daemon", "runServer" if a.production else "runLabServer"]
         if a.production:
             env = {"SG_PROTECTION_REPORT": str(spike_report)}
             if a.stale_lab_env:

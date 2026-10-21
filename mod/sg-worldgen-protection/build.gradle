@@ -23,6 +23,14 @@ sourceSets {
     }
 }
 
+// Empty source set: the "jarServer" run loads the BUILT production jar (as a mod from -Dfabric.addMods) instead of the dev class directories.
+sourceSets {
+    jarTest {
+        compileClasspath += sourceSets.main.compileClasspath
+        runtimeClasspath += configurations.runtimeClasspath
+    }
+}
+
 tasks.register('labJar', Jar) {
     archiveClassifier = 'lab'
     from sourceSets.lab.output
@@ -44,6 +52,13 @@ loom {
             if (labBg) vmArgs "-Dmax.bg.threads=${labBg}"
             def labExtra = System.getenv('SG01_EXTRA_MODS')
             if (labExtra) vmArgs "-Dfabric.addMods=${labExtra}"
+        }
+        jarServer {
+            server()
+            source sourceSets.jarTest
+            runDir = 'run/server'
+            vmArgs '-Xmx3G'
+            vmArgs "-Dfabric.addMods=${layout.buildDirectory.file("libs/sg-worldgen-protection-${project.version}.jar").get().asFile}"
         }
         server {
             server()

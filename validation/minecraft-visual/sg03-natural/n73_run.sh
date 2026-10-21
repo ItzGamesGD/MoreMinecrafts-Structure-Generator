@@ -25,6 +25,7 @@ else
     H)  ARGS+=(--guard-mode enforce --features both --refine hybrid) ;;
     HS) ARGS+=(--guard-mode enforce --features both --refine hybrid --shadow) ;;
     P)  ARGS+=(--production) ;;
+    PJ) ARGS+=(--production --production-jar) ;;  # N7-D: the built production jar, loaded as a jar
     PE) ARGS+=(--production --stale-lab-env) ;;  # N7-D: production artifact with every lab variable exported: all must be ignored          # N7-B: production configuration, no lab settings
     R)  ARGS+=(--guard-mode enforce --features both --refine hybrid --fault precheck_blind) ;;  # N7-B: injected drift the startup check cannot see -> runtime watch
     F)  ARGS+=(--guard-mode enforce --features both --refine hybrid --lab-fingerprint-break ${BREAK:-both}) ;;  # N7-C: simulated vanilla change -> zone guard

@@ -20,7 +20,7 @@ PRODUCTION_CLASSES = {
     "ProtectionContract", "ProtectionContract$ContractViolation", "ProtectionContract$Result", "SpikeMod", "mixin/GeodeFeatureMixin", "mixin/MonsterRoomFeatureMixin",
     "mixin/MonsterRoomFeatureMixin$1",
 }
-LAB_NAMES = re.compile(rb"Probe|Perf\b|Sampler|MonsterRoomOracle|LabMod|LabMixinPlugin|ForeignMonsterRoom|ForeignGeode|sg_worldgen_protection_lab|dev/itzgamesgd/sg01spike/lab")
+LAB_NAMES = re.compile(rb"(?<![A-Za-z])Probe(?![a-z])|ProbeMixin|(?<![A-Za-z])Perf(?![a-z])|Sampler|MonsterRoomOracle|LabMod|LabMixinPlugin|ForeignMonsterRoom|ForeignGeode|sg_worldgen_protection_lab|dev/itzgamesgd/sg01spike/lab")
 
 
 def main() -> None:
