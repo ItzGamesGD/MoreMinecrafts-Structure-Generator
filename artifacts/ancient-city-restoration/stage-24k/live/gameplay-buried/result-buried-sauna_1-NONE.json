@@ -1,0 +1,499 @@
+{
+ "module": "sauna_1",
+ "steps": [
+  {
+   "name": "tp_outside",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    6985,
+    -60,
+    6139
+   ]
+  },
+  {
+   "name": "walk_to_reception",
+   "type": "goto",
+   "start": [
+    6985,
+    -60,
+    6139
+   ],
+   "end": [
+    6985.5,
+    -60,
+    6134.5
+   ],
+   "horizontal_error": 0,
+   "moved": 5,
+   "outcome": "reached",
+   "seconds": 2.5,
+   "ok": true
+  },
+  {
+   "name": "chest0_[12, 1, 19]_reach",
+   "type": "goto",
+   "start": [
+    6985,
+    -60,
+    6134
+   ],
+   "end": [
+    6983.37,
+    -60,
+    6118.5
+   ],
+   "horizontal_error": 0.13,
+   "moved": 16.14,
+   "outcome": "reached",
+   "seconds": 7.1,
+   "ok": true
+  },
+  {
+   "name": "chest0_[12, 1, 19]_open",
+   "type": "container",
+   "ok": true,
+   "block": "chest",
+   "slots": 27,
+   "items": [
+    {
+     "name": "sculk_sensor",
+     "count": 1
+    },
+    {
+     "name": "soul_torch",
+     "count": 1
+    },
+    {
+     "name": "enchanted_book",
+     "count": 1
+    },
+    {
+     "name": "soul_torch",
+     "count": 1
+    },
+    {
+     "name": "enchanted_book",
+     "count": 1
+    },
+    {
+     "name": "soul_torch",
+     "count": 1
+    },
+    {
+     "name": "sculk_sensor",
+     "count": 2
+    },
+    {
+     "name": "potion",
+     "count": 1
+    },
+    {
+     "name": "potion",
+     "count": 1
+    },
+    {
+     "name": "diamond_leggings",
+     "count": 1
+    },
+    {
+     "name": "soul_torch",
+     "count": 10
+    },
+    {
+     "name": "potion",
+     "count": 1
+    },
+    {
+     "name": "potion",
+     "count": 1
+    },
+    {
+     "name": "soul_torch",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "name": "chest1_[21, 1, 18]_reach",
+   "type": "goto",
+   "start": [
+    6983,
+    -60,
+    6118
+   ],
+   "end": [
+    6992.5,
+    -60,
+    6117.5
+   ],
+   "horizontal_error": 0,
+   "moved": 9.19,
+   "outcome": "reached",
+   "seconds": 5.3,
+   "ok": true
+  },
+  {
+   "name": "chest1_[21, 1, 18]_open",
+   "type": "container",
+   "ok": true,
+   "block": "chest",
+   "slots": 27,
+   "items": [
+    {
+     "name": "echo_shard",
+     "count": 1
+    },
+    {
+     "name": "enchanted_book",
+     "count": 1
+    },
+    {
+     "name": "sculk",
+     "count": 2
+    },
+    {
+     "name": "sculk",
+     "count": 5
+    },
+    {
+     "name": "bone",
+     "count": 1
+    },
+    {
+     "name": "coal",
+     "count": 3
+    },
+    {
+     "name": "enchanted_book",
+     "count": 1
+    },
+    {
+     "name": "bone",
+     "count": 2
+    },
+    {
+     "name": "music_disc_cat",
+     "count": 1
+    },
+    {
+     "name": "bone",
+     "count": 1
+    },
+    {
+     "name": "sculk",
+     "count": 1
+    },
+    {
+     "name": "sculk",
+     "count": 1
+    },
+    {
+     "name": "echo_shard",
+     "count": 1
+    },
+    {
+     "name": "coal",
+     "count": 5
+    },
+    {
+     "name": "book",
+     "count": 3
+    },
+    {
+     "name": "coal",
+     "count": 3
+    },
+    {
+     "name": "book",
+     "count": 2
+    },
+    {
+     "name": "sculk",
+     "count": 1
+    },
+    {
+     "name": "book",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "name": "chest2_[25, 1, 10]_reach",
+   "type": "goto",
+   "start": [
+    6992,
+    -60,
+    6117
+   ],
+   "end": [
+    6996.5,
+    -60,
+    6109.31
+   ],
+   "horizontal_error": 0.19,
+   "moved": 9.12,
+   "outcome": "reached",
+   "seconds": 4.9,
+   "ok": true
+  },
+  {
+   "name": "chest2_[25, 1, 10]_open",
+   "type": "container",
+   "ok": true,
+   "block": "chest",
+   "slots": 27,
+   "items": [
+    {
+     "name": "iron_leggings",
+     "count": 1
+    },
+    {
+     "name": "diamond_leggings",
+     "count": 1
+    },
+    {
+     "name": "disc_fragment_5",
+     "count": 1
+    },
+    {
+     "name": "amethyst_shard",
+     "count": 5
+    },
+    {
+     "name": "enchanted_book",
+     "count": 1
+    },
+    {
+     "name": "sculk_sensor",
+     "count": 2
+    },
+    {
+     "name": "echo_shard",
+     "count": 1
+    },
+    {
+     "name": "lead",
+     "count": 1
+    },
+    {
+     "name": "disc_fragment_5",
+     "count": 2
+    },
+    {
+     "name": "amethyst_shard",
+     "count": 2
+    },
+    {
+     "name": "sculk_sensor",
+     "count": 1
+    }
+   ]
+  },
+  {
+   "name": "bath0_40cells_rim_reach",
+   "type": "goto",
+   "start": [
+    6996,
+    -60,
+    6109
+   ],
+   "end": [
+    6984.47,
+    -60,
+    6122.65
+   ],
+   "horizontal_error": 0.85,
+   "moved": 17.96,
+   "outcome": "reached",
+   "seconds": 6.1,
+   "ok": true
+  },
+  {
+   "name": "bath0_40cells_swim",
+   "type": "swim",
+   "ok": true,
+   "isInWater": true,
+   "y": -61
+  },
+  {
+   "name": "bath1_3cells_rim_reach",
+   "type": "goto",
+   "start": [
+    6991,
+    -61,
+    6125
+   ],
+   "end": [
+    6983.37,
+    -57,
+    6105.5
+   ],
+   "horizontal_error": 1.13,
+   "moved": 21.59,
+   "outcome": "reached",
+   "seconds": 20.7,
+   "ok": true
+  },
+  {
+   "name": "bath1_3cells_swim",
+   "type": "swim",
+   "ok": true,
+   "isInWater": true,
+   "y": -57
+  }
+ ],
+ "events": [
+  "chat: Teleported S24C_sauna_1 to 6985.500000, -60.000000, 6139.500000",
+  "chat: Teleported S24C_sauna_1 to 6991.500000, -61.000000, 6125.500000",
+  "chat: Teleported S24C_sauna_1 to 6986.500000, -57.000000, 6105.500000"
+ ],
+ "final_health": 20,
+ "rotation": "NONE",
+ "placement": {
+  "command_pos": [
+   7000,
+   -60,
+   6120
+  ],
+  "place_output": "Generated jigsaw at 7000, -60, 6120",
+  "box_xz": [
+   6972,
+   6099,
+   7000,
+   6135
+  ],
+  "rotation": 0,
+  "origin": [
+   6972,
+   -61,
+   6099
+  ],
+  "match": 221,
+  "probe": 221
+ },
+ "scenario_steps": [
+  {
+   "name": "tp_outside",
+   "type": "tp",
+   "target": [
+    6985.5,
+    -60,
+    6139.5
+   ]
+  },
+  {
+   "name": "walk_to_reception",
+   "type": "goto",
+   "target": [
+    6985,
+    -60,
+    6134
+   ],
+   "range": 0,
+   "timeout": 40
+  },
+  {
+   "name": "chest0_[12, 1, 19]_reach",
+   "type": "goto",
+   "target": [
+    6983,
+    -60,
+    6118
+   ],
+   "range": 0,
+   "timeout": 90
+  },
+  {
+   "name": "chest0_[12, 1, 19]_open",
+   "type": "container",
+   "pos": [
+    6984,
+    -60,
+    6118
+   ]
+  },
+  {
+   "name": "chest1_[21, 1, 18]_reach",
+   "type": "goto",
+   "target": [
+    6992,
+    -60,
+    6117
+   ],
+   "range": 0,
+   "timeout": 90
+  },
+  {
+   "name": "chest1_[21, 1, 18]_open",
+   "type": "container",
+   "pos": [
+    6993,
+    -60,
+    6117
+   ]
+  },
+  {
+   "name": "chest2_[25, 1, 10]_reach",
+   "type": "goto",
+   "target": [
+    6996,
+    -60,
+    6109
+   ],
+   "range": 0,
+   "timeout": 90
+  },
+  {
+   "name": "chest2_[25, 1, 10]_open",
+   "type": "container",
+   "pos": [
+    6997,
+    -60,
+    6109
+   ]
+  },
+  {
+   "name": "bath0_40cells_rim_reach",
+   "type": "goto",
+   "target": [
+    6984,
+    -60,
+    6123
+   ],
+   "range": 0,
+   "timeout": 90,
+   "xz_tol": 1.2
+  },
+  {
+   "name": "bath0_40cells_swim",
+   "type": "swim",
+   "target": [
+    6991.5,
+    -61,
+    6125.5
+   ]
+  },
+  {
+   "name": "bath1_3cells_rim_reach",
+   "type": "goto",
+   "target": [
+    6984,
+    -57,
+    6105
+   ],
+   "range": 0,
+   "timeout": 90,
+   "xz_tol": 1.2
+  },
+  {
+   "name": "bath1_3cells_swim",
+   "type": "swim",
+   "target": [
+    6986.5,
+    -57,
+    6105.5
+   ]
+  }
+ ]
+}
