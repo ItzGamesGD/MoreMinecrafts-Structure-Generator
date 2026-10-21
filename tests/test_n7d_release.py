@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MOD = ROOT / "mod/sg-worldgen-protection"
 MAIN = MOD / "src/main"
 LAB = MOD / "src/lab"
-LABJAVA = "dev.itzgamesgd.sg01spike.lab"
+LABJAVA = "dev.itzgamesgd.sgprotection.lab"
 LAB_SYMBOLS = ("Probe", "Perf", "Sampler", "MonsterRoomOracle", "LabMod", "LabMixinPlugin", "ForeignMonsterRoom", "ForeignGeode")
 
 
@@ -36,10 +36,10 @@ class SourceSeparationTests(unittest.TestCase):
         self.assertEqual(names, {"SG_PROTECTION_REPORT"})
 
     def test_lab_hooks_are_the_only_seam_and_default_to_the_production_configuration(self) -> None:
-        hooks = (MAIN / "java/dev/itzgamesgd/sg01spike/LabHooks.java").read_text()
-        self.assertIn("new Config(Guard.Mode.ENFORCE, Guard.Refine.HYBRID, \"both\", Guard.Fixture.NONE, Guard.Fault.NONE, false, false)", hooks)
+        hooks = (MAIN / "java/dev/itzgamesgd/sgprotection/LabHooks.java").read_text()
+        self.assertIn("new Config(Guard.Mode.ENFORCE, Guard.Refine.OFF, \"both\", Guard.Fixture.NONE, Guard.Fault.NONE, false, false)", hooks)
         self.assertIn("static volatile LabHooks current = NONE;", hooks)
-        mod = (MAIN / "java/dev/itzgamesgd/sg01spike/SpikeMod.java").read_text()
+        mod = (MAIN / "java/dev/itzgamesgd/sgprotection/SgProtectionMod.java").read_text()
         self.assertIn('LAB_ENTRYPOINT = "sg_worldgen_protection:lab"', mod)
         self.assertIn("more than one validation lab mod is installed", mod)
 
@@ -47,8 +47,10 @@ class SourceSeparationTests(unittest.TestCase):
         mod = json.loads((MAIN / "resources/fabric.mod.json").read_text())
         self.assertEqual(mod["id"], "sg_worldgen_protection")
         self.assertEqual(set(mod["entrypoints"]), {"main"})
+        self.assertIn("fabric-api", mod["depends"])  # the module uses Fabric API lifecycle events, so the dependency must be declared
+        self.assertEqual(mod["entrypoints"]["main"], ["dev.itzgamesgd.sgprotection.SgProtectionMod"])
         self.assertNotIn("lab", json.dumps(mod).lower())
-        cfg = json.loads((MAIN / "resources/sg01spike.mixins.json").read_text())
+        cfg = json.loads((MAIN / "resources/sgprotection.mixins.json").read_text())
         self.assertEqual(sorted(cfg["mixins"]), ["GeodeFeatureMixin", "MonsterRoomFeatureMixin"])
         self.assertNotIn("plugin", cfg)
         self.assertTrue(cfg["required"])
@@ -81,6 +83,22 @@ class SourceSeparationTests(unittest.TestCase):
         self.assertNotIn("runLabServer", (lab / "contract_variants.py").read_text())
         for name in ("soak.py", "existing_world.py"):
             self.assertIn("runLabServer", (lab / name).read_text(), name)
+
+
+class NamingTests(unittest.TestCase):
+    def test_production_naming_has_no_spike_leftovers_but_the_mod_id_is_unchanged(self) -> None:
+        # N7-E: package dev.itzgamesgd.sgprotection, logger prefix SG_PROTECTION; the public mod id stays sg_worldgen_protection (no migration needed)
+        files = [p for p in list(MAIN.rglob("*")) + list(LAB.rglob("*")) if p.is_file()]
+        for p in files:
+            text = p.read_text()
+            for old in ("sg01spike", "SG_SPIKE", "sg01-spike", "SpikeMod"):
+                self.assertNotIn(old, text, f"{p.name} still mentions {old}")
+        self.assertTrue((MAIN / "java/dev/itzgamesgd/sgprotection/SgProtectionMod.java").is_file())
+        self.assertFalse((MAIN / "java/dev/itzgamesgd/sg01spike").exists())
+        self.assertTrue((MAIN / "resources/sgprotection.mixins.json").is_file())
+        mod = json.loads((MAIN / "resources/fabric.mod.json").read_text())
+        self.assertEqual(mod["id"], "sg_worldgen_protection")
+        self.assertIn("SG_PROTECTION", (MAIN / "java/dev/itzgamesgd/sgprotection/SgProtectionMod.java").read_text())
 
 
 class HygieneTests(unittest.TestCase):

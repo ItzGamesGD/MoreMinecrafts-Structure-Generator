@@ -83,7 +83,7 @@ def run(pack: Path, name: str, out: Path, port: int, extras: list[Path], after=N
     if (run_dir / "server.log").exists():
         shutil.copy2(run_dir / "server.log", out / f"{name}.log")
     result["log"] = [ln.split("]: ", 1)[-1][:420] for ln in log.splitlines()
-                     if "protection contract" in ln or "SG protection" in ln or "rejected on reload" in ln or "SG_SPIKE protected" in ln][:8]
+                     if "protection contract" in ln or "SG protection" in ln or "rejected on reload" in ln or "SG_PROTECTION protected" in ln][:8]
     result["codes"] = sorted({c for c in CODES if f"[{c}]" in log})
     if "Unbound values in registry" in log:
         result["codes"].append("VANILLA_TAG_LOAD_FAILURE")

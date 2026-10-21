@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MOD = ROOT / "mod/sg-worldgen-protection"
-JAVA = MOD / "src/main/java/dev/itzgamesgd/sg01spike"
+JAVA = MOD / "src/main/java/dev/itzgamesgd/sgprotection"
 RES = MOD / "src/main/resources"
 
 
@@ -41,11 +41,18 @@ class DriftGuardTests(unittest.TestCase):
         self.assertIn("(c.x() - 1) * 16, -4096, (c.z() - 1) * 16, (c.x() + 1) * 16 + 15, 4096, (c.z() + 1) * 16 + 15", self.src)
         self.assertRegex(self.mr, r"case ZONE -> \{\s*BoundingBox zone = DriftGuard\.zone\(level\);")
 
-    def test_provisional_monster_room_does_not_use_the_replicated_precheck_for_its_decision(self) -> None:
+    def test_monster_room_decision_by_level_never_trusts_an_unverified_bound(self) -> None:
         body = self.src[self.src.index("public static Guard.Refine monsterRoomRefine"):self.src.index("/** The 3x3-chunk write zone")]
+        self.assertIn("case ZONE, PROVISIONAL -> Guard.Refine.ZONE;", body)  # N7-E: unverified footprint bound -> zone, not the box
         self.assertIn("case VERIFIED -> configured;", body)
-        self.assertIn("default -> configured == Guard.Refine.ZONE ? configured : Guard.Refine.OFF;", body)  # provisional / box-only -> N7-A box
-        self.assertIn("case ZONE -> Guard.Refine.ZONE;", body)
+        self.assertIn("case BOX_ONLY -> configured == Guard.Refine.ZONE ? configured : Guard.Refine.OFF;", body)
+
+    def test_production_monster_room_decision_is_the_box_not_the_replica(self) -> None:
+        hooks = (JAVA / "LabHooks.java").read_text()
+        self.assertIn("Guard.Refine.OFF", hooks[hooks.index("Config DEFAULT"):hooks.index("LabHooks NONE")])
+        self.assertRegex(self.mr, r"default -> cancel = Guard\.shouldCancel\(Guard\.MONSTER_ROOM, level, origin, List\.of\(broad\)\)")
+        # the replicated precheck is evaluated only for lab configurations that use it
+        self.assertIn("boolean replica = cfg.refine() == Guard.Refine.HYBRID || cfg.refine() == Guard.Refine.PRECHECK;", self.mr)
 
     def test_geode_bound_is_the_configured_box_grown_by_one_cell(self) -> None:
         # GeodeFeature places crystals on pos.relative(direction) of positions inside betweenClosed(origin+min, origin+max)
@@ -78,7 +85,7 @@ class DriftGuardTests(unittest.TestCase):
         self.assertIn('MessageDigest.getInstance("SHA-256")', self.src)  # fingerprints are SHA-256 of the class file
         self.assertIn("cannot read vanilla class", self.src)  # unreadable class fails closed (was FINGERPRINT_UNAVAILABLE)
         self.assertIn("RUNTIME_DEVIATION", self.src)  # was RUNTIME_VIOLATION
-        mod = (JAVA / "SpikeMod.java").read_text()
+        mod = (JAVA / "SgProtectionMod.java").read_text()
         self.assertLess(mod.index("DriftGuard.verifyAtStartup()"), mod.index("ProtectionConfig.resolve(server)"))
         guard = (JAVA / "Guard.java").read_text()
         self.assertIn("DriftGuard.arm(DriftGuard.MONSTER_ROOM, region, inflate(broad, 2), predicted, broad)", guard)
@@ -89,7 +96,7 @@ class DriftGuardTests(unittest.TestCase):
         self.assertIn("FOREIGN_TRANSFORM", self.src)
         self.assertIn("foreignMembers(cls, bytes)", self.src)
         self.assertIn("!ownOrPlatform(m.getName())", self.src)
-        self.assertIn('name.contains("$sg01spike$")', self.src)  # the module's own (possibly wrapped) handlers are not foreign
+        self.assertIn('name.contains("$sgprotection$")', self.src)  # the module's own (possibly wrapped) handlers are not foreign
         self.assertIn("fabric_api$", self.src)  # Fabric API's own additions are the platform, not foreign
         self.assertIn("adds no member", self.src)
 
@@ -107,7 +114,7 @@ class ExtensionPolicyTests(unittest.TestCase):
         self.assertIn("List<String> rejected", self.src)
         self.assertIn("the file was dropped, its structures are NOT protected", self.src)
         cfg = (JAVA / "ProtectionConfig.java").read_text()
-        self.assertIn("SG_SPIKE protection extension REJECTED", cfg)
+        self.assertIn("SG_PROTECTION protection extension REJECTED", cfg)
         self.assertIn("LOGGER.error", cfg[cfg.index("rejectedExtensions"):])
 
     def test_a_required_extension_entry_is_never_dropped_silently(self) -> None:
@@ -120,7 +127,7 @@ class ExtensionPolicyTests(unittest.TestCase):
 class PackagingTests(unittest.TestCase):
     def test_module_has_a_production_identity_and_location(self) -> None:
         mod = json.loads((RES / "fabric.mod.json").read_text())
-        self.assertEqual(mod["id"], "sg_worldgen_protection")
+        self.assertEqual(mod["id"], "sg_worldgen_protection")  # N7-E: the public mod id is unchanged, only the package and logger prefix were renamed
         self.assertNotIn("spike", mod["version"].lower())
         self.assertNotIn("spike", mod["name"].lower())
         self.assertFalse((ROOT / "validation/fabric-protection-spike/build.gradle").exists())

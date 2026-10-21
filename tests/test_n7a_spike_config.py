@@ -9,12 +9,12 @@ from pathlib import Path
 SPIKE = Path(__file__).resolve().parents[1] / "mod/sg-worldgen-protection"
 RES = SPIKE / "src/main/resources"
 MOD = SPIKE
-JAVA = SPIKE / "src/main/java/dev/itzgamesgd/sg01spike"
+JAVA = SPIKE / "src/main/java/dev/itzgamesgd/sgprotection"
 
 
 class SpikeConfigTests(unittest.TestCase):
     def test_mixin_config_is_fail_loud_and_targets_only_the_two_features(self) -> None:
-        cfg = json.loads((RES / "sg01spike.mixins.json").read_text())
+        cfg = json.loads((RES / "sgprotection.mixins.json").read_text())
         self.assertTrue(cfg["required"])
         self.assertEqual(cfg["injectors"]["defaultRequire"], 1)
         # N7-A2 added observe-only probe mixins (tests/test_n72_spike_guard.py); the two protection hooks are unchanged.

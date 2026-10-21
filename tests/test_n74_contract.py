@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SPIKE = ROOT / "mod/sg-worldgen-protection/src/main/java/dev/itzgamesgd/sg01spike"
+SPIKE = ROOT / "mod/sg-worldgen-protection/src/main/java/dev/itzgamesgd/sgprotection"
 LAB = ROOT / "validation/minecraft-visual/sg03-natural"
 CODES = ["MANIFEST_MISSING", "MANIFEST_CONFLICT", "MANIFEST_INVALID", "FORMAT_UNSUPPORTED", "MANIFEST_STALE", "MANIFEST_EMPTY", "REQUIRED_UNRESOLVED",
          "OWNER_PACK_INCOMPATIBLE", "GAME_VERSION_MISMATCH", "OWNERSHIP_MISMATCH", "EXTENSION_MALFORMED", "EXTENSION_UNRESOLVED"]

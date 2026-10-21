@@ -8,9 +8,9 @@ from pathlib import Path
 
 SPIKE = Path(__file__).resolve().parents[1] / "mod/sg-worldgen-protection"
 RES = SPIKE / "src/main/resources"
-JAVA = SPIKE / "src/main/java/dev/itzgamesgd/sg01spike"
+JAVA = SPIKE / "src/main/java/dev/itzgamesgd/sgprotection"
 MIXIN = JAVA / "mixin"
-LABMIXIN = SPIKE / "src/lab/java/dev/itzgamesgd/sg01spike/lab/mixin"
+LABMIXIN = SPIKE / "src/lab/java/dev/itzgamesgd/sgprotection/lab/mixin"
 LABRES = SPIKE / "src/lab/resources"
 PROBES = ["WorldGenRegionProbeMixin", "ServerChunkCacheProbeMixin", "ChunkMapProbeMixin", "GenerationChunkHolderProbeMixin", "DecorationOrderProbeMixin"]
 
@@ -18,7 +18,7 @@ PROBES = ["WorldGenRegionProbeMixin", "ServerChunkCacheProbeMixin", "ChunkMapPro
 class SpikeN72Tests(unittest.TestCase):
     def test_mixin_configs_list_hooks_and_probes_and_stay_fail_loud(self) -> None:
         # N7-D: production applies exactly the two protection hooks; the lab mod applies the probes (and the foreign-transformer stand-ins)
-        prod = json.loads((RES / "sg01spike.mixins.json").read_text())
+        prod = json.loads((RES / "sgprotection.mixins.json").read_text())
         lab = json.loads((LABRES / "sg-lab.mixins.json").read_text())
         for cfg in (prod, lab):
             self.assertTrue(cfg["required"])
@@ -41,7 +41,7 @@ class SpikeN72Tests(unittest.TestCase):
         guard = (JAVA / "Guard.java").read_text()
         hooks = (JAVA / "LabHooks.java").read_text()
         # N7-B/N7-C asserted the defaults on Guard; since N7-D they are LabHooks.DEFAULT and the guard has no environment access at all
-        self.assertIn("new Config(Guard.Mode.ENFORCE, Guard.Refine.HYBRID, \"both\", Guard.Fixture.NONE, Guard.Fault.NONE, false, false)", hooks)
+        self.assertIn("new Config(Guard.Mode.ENFORCE, Guard.Refine.OFF, \"both\", Guard.Fixture.NONE, Guard.Fault.NONE, false, false)", hooks)
         self.assertIn("return LabHooks.get().config();", guard)
         self.assertNotIn("getenv", guard)
         self.assertNotIn("getProperty", guard)
