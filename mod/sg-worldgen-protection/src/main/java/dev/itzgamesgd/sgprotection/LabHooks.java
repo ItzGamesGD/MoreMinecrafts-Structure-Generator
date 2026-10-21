@@ -14,10 +14,10 @@ import net.minecraft.world.level.levelgen.structure.BoundingBox;
  */
 public interface LabHooks {
     /** Guard configuration. The production values are the defaults in {@link #DEFAULT}: ENFORCE, the conservative box guard for the monster room (Refine.OFF). */
-    record Config(Guard.Mode mode, Guard.Refine refine, String features, Guard.Fixture fixture, Guard.Fault fault, boolean shadow, boolean oracle) {
+    record Config(Guard.Mode mode, Guard.Refine refine, String features, Guard.Fixture fixture, Guard.Fault fault, boolean shadow, boolean oracle, boolean writeGuard) {
     }
 
-    Config DEFAULT = new Config(Guard.Mode.ENFORCE, Guard.Refine.OFF, "both", Guard.Fixture.NONE, Guard.Fault.NONE, false, false);
+    Config DEFAULT = new Config(Guard.Mode.ENFORCE, Guard.Refine.OFF, "both", Guard.Fixture.NONE, Guard.Fault.NONE, false, false, true);
     LabHooks NONE = new LabHooks() {
     };
 

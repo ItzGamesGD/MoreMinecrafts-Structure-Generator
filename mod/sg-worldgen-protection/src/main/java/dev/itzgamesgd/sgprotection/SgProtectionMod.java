@@ -95,7 +95,7 @@ public final class SgProtectionMod implements ModInitializer {
         LabHooks.Config cfg = LabHooks.get().config();
         String json = "{\"mode\":\"" + cfg.mode() + "\",\"fixture\":\"" + cfg.fixture() + "\",\"refine\":\"" + cfg.refine() + "\",\"shadow\":" + cfg.shadow() + ",\"oracle\":\""
                 + (cfg.oracle() ? "monster_room" : "off") + "\"," + stats(Guard.GEODE) + "," + stats(Guard.MONSTER_ROOM) + ",\"contract\":" + contractJson()
-                + ",\"drift_guard\":" + selfCheckJson() + ",\"lab\":" + (LabHooks.get() != LabHooks.NONE) + LabHooks.get().reportExtras() + "}\n";
+                + ",\"drift_guard\":" + selfCheckJson() + ",\"write_guard\":" + WriteGuard.json() + ",\"lab\":" + (LabHooks.get() != LabHooks.NONE) + LabHooks.get().reportExtras() + "}\n";
         LOGGER.info("SG_PROTECTION_REPORT {}", json.replace("\n", ""));
         String path = System.getenv("SG_PROTECTION_REPORT");
         if (path != null && !path.isBlank()) {

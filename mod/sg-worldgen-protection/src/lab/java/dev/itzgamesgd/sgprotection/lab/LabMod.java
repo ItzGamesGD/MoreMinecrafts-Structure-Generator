@@ -47,7 +47,7 @@ public final class LabMod implements LabHooks {
         String features = env("SG01_FEATURES");
         return new Config(enumOf("SG01_GUARD_MODE", Guard.Mode.class, Guard.Mode.ENFORCE), enumOf("SG01_REFINE", Guard.Refine.class, Guard.Refine.HYBRID),
                 features == null ? "both" : features, enumOf("SG01_FIXTURE", Guard.Fixture.class, Guard.Fixture.NONE), enumOf("SG01_FAULT", Guard.Fault.class, Guard.Fault.NONE),
-                "1".equals(env("SG01_SHADOW")), "monster_room".equalsIgnoreCase(env("SG01_ORACLE")));
+                "1".equals(env("SG01_SHADOW")), "monster_room".equalsIgnoreCase(env("SG01_ORACLE")), !"0".equals(env("SG01_WRITE_GUARD")));
     }
 
     @Override

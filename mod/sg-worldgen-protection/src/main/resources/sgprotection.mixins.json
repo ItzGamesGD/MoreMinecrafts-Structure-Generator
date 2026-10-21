@@ -5,7 +5,9 @@
   "compatibilityLevel": "JAVA_25",
   "mixins": [
     "GeodeFeatureMixin",
-    "MonsterRoomFeatureMixin"
+    "MonsterRoomFeatureMixin",
+    "StructureStartWriteGuardMixin",
+    "WorldGenRegionWriteGuardMixin"
   ],
   "injectors": {
     "defaultRequire": 1
