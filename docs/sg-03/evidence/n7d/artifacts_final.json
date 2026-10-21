@@ -1,0 +1,69 @@
+{
+ "production_jar": "sg-worldgen-protection-0.2.0-n7d.jar",
+ "production_bytes": 56972,
+ "lab_jar": "sg-worldgen-protection-0.2.0-n7d-lab.jar",
+ "lab_bytes": 29414,
+ "checks": [
+  {
+   "check": "production jar: exactly the required classes",
+   "pass": true,
+   "detail": "extra=[] missing=[]"
+  },
+  {
+   "check": "production jar: only metadata besides classes",
+   "pass": true,
+   "detail": "['META-INF/MANIFEST.MF', 'fabric.mod.json', 'sg01spike.mixins.json']"
+  },
+  {
+   "check": "production jar: no SG01_ lab variable is read",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "production jar: no reference to a lab class or lab mod",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "production jar: reads only SG_PROTECTION_REPORT from the environment",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "production jar: mod id and entrypoints",
+   "pass": true,
+   "detail": "sg_worldgen_protection ['main']"
+  },
+  {
+   "check": "production jar: exactly the two protection mixins, no plugin",
+   "pass": true,
+   "detail": "['GeodeFeatureMixin', 'MonsterRoomFeatureMixin']"
+  },
+  {
+   "check": "production jar: mixins required and fail-loud",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "production jar: ships no datapack data",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "lab jar: only lab classes",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "lab jar: contains no production class",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "lab jar: separate mod id that depends on production",
+   "pass": true,
+   "detail": ""
+  }
+ ],
+ "all_pass": true
+}

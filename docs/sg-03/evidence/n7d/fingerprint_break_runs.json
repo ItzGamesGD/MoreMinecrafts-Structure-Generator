@@ -1,0 +1,126 @@
+[
+ {
+  "run": "F_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": true,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "ZONE",
+   "monster_room": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "FINGERPRINT_MISMATCH: [lab] fingerprint break injected",
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 1008,
+    "promoted_at_attempt": -1
+   },
+   "geode": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "FINGERPRINT_MISMATCH: [lab] fingerprint break injected",
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": -1
+   }
+  },
+  "avoidable_unverified_cancels": {
+   "monster_room": 1007,
+   "geode": 1
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 1008,
+   "cancelled": 1008,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "F_42_6_-19_rowmajor_rev_r1",
+  "lab_mod_active": true,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "ZONE",
+   "monster_room": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "FINGERPRINT_MISMATCH: [lab] fingerprint break injected",
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 910,
+    "promoted_at_attempt": -1
+   },
+   "geode": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "FINGERPRINT_MISMATCH: [lab] fingerprint break injected",
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 5,
+    "promoted_at_attempt": -1
+   }
+  },
+  "avoidable_unverified_cancels": {
+   "monster_room": 910,
+   "geode": 2
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 15,
+   "collisions": 5,
+   "cancelled": 5,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4172,
+   "collisions": 910,
+   "cancelled": 910,
+   "unavailable": 0
+  }
+ }
+]

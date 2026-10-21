@@ -1,0 +1,864 @@
+[
+ {
+  "run": "PE_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": false,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "HYBRID",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 2107,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 71,
+    "unverified_cancels": 2,
+    "promoted_at_attempt": 1874
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": 3
+   }
+  },
+  "avoidable_unverified_cancels": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "P_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": false,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "HYBRID",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 2157,
+    "verified_placements": 4,
+    "deviations": 0,
+    "near_misses": 69,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": 1930
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": 3
+   }
+  },
+  "avoidable_unverified_cancels": null,
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 5,
+   "cancelled": 5,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "RG_173_-19_15_colmajor_r1",
+  "lab_mod_active": true,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "HYBRID",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 1290,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 35,
+    "unverified_cancels": 39,
+    "promoted_at_attempt": 1078
+   },
+   "geode": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "RUNTIME_DEVIATION: geode at BlockPos{x=-167, y=19, z=226} changed 1069 cell(s) outside its footprint bound",
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 1,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": -1
+   }
+  },
+  "avoidable_unverified_cancels": {
+   "monster_room": 38,
+   "geode": 1
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 39,
+   "cancelled": 39,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "RG_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": true,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "HYBRID",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 2143,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 69,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": 1916
+   },
+   "geode": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "RUNTIME_DEVIATION: geode at BlockPos{x=-212, y=15, z=304} changed 507 cell(s) outside its footprint bound",
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 1,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": -1
+   }
+  },
+  "avoidable_unverified_cancels": {
+   "monster_room": 3,
+   "geode": 1
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 5,
+   "cancelled": 5,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "RG_173_-19_15_spiral_out_r1",
+  "lab_mod_active": true,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "HYBRID",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 1819,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 70,
+    "promoted_at_attempt": 1710
+   },
+   "geode": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "RUNTIME_DEVIATION: geode at BlockPos{x=-248, y=-34, z=263} changed 406 cell(s) outside its footprint bound",
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 1,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": -1
+   }
+  },
+  "avoidable_unverified_cancels": {
+   "monster_room": 69,
+   "geode": 1
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 70,
+   "cancelled": 70,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "RN_173_-19_15_colmajor_r1",
+  "lab_mod_active": true,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "HYBRID",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 1313,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 34,
+    "unverified_cancels": 41,
+    "promoted_at_attempt": 1106
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": 6
+   }
+  },
+  "avoidable_unverified_cancels": {
+   "monster_room": 41,
+   "geode": 1
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 41,
+   "cancelled": 41,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "RN_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": true,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "OFF",
+   "monster_room": {
+    "level": "BOX_ONLY",
+    "fallback": true,
+    "reason": "RUNTIME_DEVIATION: monster_room at BlockPos{x=-319, y=-34, z=194} changed 243 cell(s) its precheck model said it would not write",
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 1889,
+    "verified_placements": 3,
+    "deviations": 1,
+    "near_misses": 29,
+    "unverified_cancels": 44,
+    "promoted_at_attempt": 1832
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": 3
+   }
+  },
+  "avoidable_unverified_cancels": {
+   "monster_room": 44,
+   "geode": 0
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 44,
+   "cancelled": 44,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "RN_173_-19_15_spiral_out_r1",
+  "lab_mod_active": true,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "HYBRID",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 1690,
+    "verified_placements": 4,
+    "deviations": 0,
+    "near_misses": 1,
+    "unverified_cancels": 68,
+    "promoted_at_attempt": 1570
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": 6
+   }
+  },
+  "avoidable_unverified_cancels": {
+   "monster_room": 68,
+   "geode": 1
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 68,
+   "cancelled": 68,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "R_173_-19_15_colmajor_r1",
+  "lab_mod_active": true,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "OFF",
+   "monster_room": {
+    "level": "BOX_ONLY",
+    "fallback": true,
+    "reason": "RUNTIME_DEVIATION: monster_room at BlockPos{x=-289, y=90, z=126} changed 306 cell(s) its precheck model said it would not write",
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 993,
+    "verified_placements": 0,
+    "deviations": 1,
+    "near_misses": 0,
+    "unverified_cancels": 70,
+    "promoted_at_attempt": -1
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": 6
+   }
+  },
+  "avoidable_unverified_cancels": {
+   "monster_room": 70,
+   "geode": 1
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 70,
+   "cancelled": 70,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "R_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": true,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "OFF",
+   "monster_room": {
+    "level": "BOX_ONLY",
+    "fallback": true,
+    "reason": "RUNTIME_DEVIATION: monster_room at BlockPos{x=-214, y=-23, z=232} changed 237 cell(s) its precheck model said it would not write",
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 1005,
+    "verified_placements": 0,
+    "deviations": 1,
+    "near_misses": 0,
+    "unverified_cancels": 70,
+    "promoted_at_attempt": -1
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": 3
+   }
+  },
+  "avoidable_unverified_cancels": {
+   "monster_room": 70,
+   "geode": 0
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 70,
+   "cancelled": 70,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "R_173_-19_15_spiral_out_r1",
+  "lab_mod_active": true,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "OFF",
+   "monster_room": {
+    "level": "BOX_ONLY",
+    "fallback": true,
+    "reason": "RUNTIME_DEVIATION: monster_room at BlockPos{x=-284, y=-16, z=248} changed 404 cell(s) its precheck model said it would not write",
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 223,
+    "verified_placements": 0,
+    "deviations": 1,
+    "near_misses": 0,
+    "unverified_cancels": 70,
+    "promoted_at_attempt": -1
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": 6
+   }
+  },
+  "avoidable_unverified_cancels": {
+   "monster_room": 70,
+   "geode": 1
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 70,
+   "cancelled": 70,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "XG_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": true,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "HYBRID",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 2145,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 70,
+    "unverified_cancels": 2,
+    "promoted_at_attempt": 1916
+   },
+   "geode": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "FOREIGN_TRANSFORM: loaded class net.minecraft.world.level.levelgen.feature.GeodeFeature carries members that its file does not: handler$zmk000$sg_worldgen_protection_lab$labforeign$inert",
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 3,
+    "promoted_at_attempt": -1
+   }
+  },
+  "avoidable_unverified_cancels": {
+   "monster_room": 2,
+   "geode": 1
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 3,
+   "cancelled": 3,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 4,
+   "cancelled": 4,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "XM_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": true,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "ZONE",
+   "monster_room": {
+    "level": "ZONE",
+    "fallback": true,
+    "reason": "FOREIGN_TRANSFORM: loaded class net.minecraft.world.level.levelgen.feature.MonsterRoomFeature carries members that its file does not: handler$zim000$sg_worldgen_protection_lab$labforeign$inert",
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 1008,
+    "promoted_at_attempt": -1
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": 3
+   }
+  },
+  "avoidable_unverified_cancels": {
+   "monster_room": 1007,
+   "geode": 0
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 1008,
+   "cancelled": 1008,
+   "unavailable": 0
+  }
+ },
+ {
+  "run": "Z_173_-19_15_rowmajor_rev_r1",
+  "lab_mod_active": true,
+  "mode": "ENFORCE",
+  "refine": "HYBRID",
+  "drift_guard": {
+   "configured_refine": "HYBRID",
+   "effective_refine": "HYBRID",
+   "monster_room": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745",
+    "verified_samples": 2147,
+    "verified_placements": 4,
+    "deviations": 0,
+    "near_misses": 72,
+    "unverified_cancels": 2,
+    "promoted_at_attempt": 1916
+   },
+   "geode": {
+    "level": "VERIFIED",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745",
+    "verified_samples": 3,
+    "verified_placements": 3,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": 3
+   }
+  },
+  "avoidable_unverified_cancels": {
+   "monster_room": 2,
+   "geode": 0
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "geode": {
+   "attempts": 10,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  },
+  "monster_room": {
+   "attempts": 4578,
+   "collisions": 2,
+   "cancelled": 2,
+   "unavailable": 0
+  }
+ }
+]
