@@ -1,0 +1,1312 @@
+{
+ "module": "large_pillar_1",
+ "steps": [
+  {
+   "name": "tp_outside",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9002,
+    -60,
+    9183
+   ]
+  },
+  {
+   "name": "walk_to_entry",
+   "type": "goto",
+   "start": [
+    9002,
+    -60,
+    9183
+   ],
+   "end": [
+    9002.5,
+    -59,
+    9179.78
+   ],
+   "horizontal_error": 0.28,
+   "moved": 3.72,
+   "outcome": "reached",
+   "seconds": 1.3,
+   "ok": true
+  },
+  {
+   "name": "enter_ladder_base",
+   "type": "goto",
+   "start": [
+    9002,
+    -59,
+    9179
+   ],
+   "end": [
+    9002.5,
+    -58.85,
+    9178.49
+   ],
+   "horizontal_error": 0.01,
+   "moved": 1.29,
+   "outcome": "reached",
+   "seconds": 0.7,
+   "ok": true
+  },
+  {
+   "name": "climb_ground_to_deck",
+   "type": "climb",
+   "start_y": -59,
+   "max_y": -46,
+   "end": [
+    9002.5,
+    -46,
+    9178.78
+   ],
+   "seconds": 5.7,
+   "onGround": true,
+   "ok": true
+  },
+  {
+   "name": "step_onto_deck",
+   "type": "goto",
+   "start": [
+    9002,
+    -46,
+    9178
+   ],
+   "end": [
+    9003.11,
+    -46,
+    9178.61
+   ],
+   "horizontal_error": 0.4,
+   "moved": 0.64,
+   "outcome": "reached",
+   "seconds": 0.5,
+   "ok": true
+  },
+  {
+   "name": "observe_cell_1_1",
+   "type": "goto",
+   "start": [
+    9003,
+    -46,
+    9178
+   ],
+   "end": [
+    9001.68,
+    -46,
+    9179.54
+   ],
+   "horizontal_error": 0.18,
+   "moved": 1.71,
+   "outcome": "reached",
+   "seconds": 0.9,
+   "ok": true
+  },
+  {
+   "name": "observe_cell_1_2",
+   "type": "goto",
+   "start": [
+    9001,
+    -46,
+    9179
+   ],
+   "end": [
+    9002.32,
+    -46,
+    9179.52
+   ],
+   "horizontal_error": 0.18,
+   "moved": 0.64,
+   "outcome": "reached",
+   "seconds": 0.5,
+   "ok": true
+  },
+  {
+   "name": "observe_cell_1_3",
+   "type": "goto",
+   "start": [
+    9002,
+    -46,
+    9179
+   ],
+   "end": [
+    9003.5,
+    -46,
+    9179.51
+   ],
+   "horizontal_error": 0.01,
+   "moved": 1.18,
+   "outcome": "reached",
+   "seconds": 0.7,
+   "ok": true
+  },
+  {
+   "name": "observe_cell_1_4",
+   "type": "goto",
+   "start": [
+    9003,
+    -46,
+    9179
+   ],
+   "end": [
+    9004.14,
+    -46,
+    9179.51
+   ],
+   "horizontal_error": 0.36,
+   "moved": 0.64,
+   "outcome": "reached",
+   "seconds": 0.5,
+   "ok": true
+  },
+  {
+   "name": "observe_cell_2_1",
+   "type": "goto",
+   "start": [
+    9004,
+    -46,
+    9179
+   ],
+   "end": [
+    9001.7,
+    -46,
+    9178.5
+   ],
+   "horizontal_error": 0.2,
+   "moved": 2.64,
+   "outcome": "reached",
+   "seconds": 1.1,
+   "ok": true
+  },
+  {
+   "name": "observe_cell_2_3",
+   "type": "goto",
+   "start": [
+    9001,
+    -46,
+    9178
+   ],
+   "end": [
+    9003.16,
+    -46,
+    9178.39
+   ],
+   "horizontal_error": 0.36,
+   "moved": 1.47,
+   "outcome": "reached",
+   "seconds": 0.7,
+   "ok": true
+  },
+  {
+   "name": "observe_cell_2_4",
+   "type": "goto",
+   "start": [
+    9003,
+    -46,
+    9178
+   ],
+   "end": [
+    9004.5,
+    -46,
+    9178.48
+   ],
+   "horizontal_error": 0.02,
+   "moved": 1.34,
+   "outcome": "reached",
+   "seconds": 0.7,
+   "ok": true
+  },
+  {
+   "name": "observe_cell_3_1",
+   "type": "goto",
+   "start": [
+    9004,
+    -46,
+    9178
+   ],
+   "end": [
+    9001.65,
+    -46,
+    9177.48
+   ],
+   "horizontal_error": 0.15,
+   "moved": 3.02,
+   "outcome": "reached",
+   "seconds": 1.1,
+   "ok": true
+  },
+  {
+   "name": "observe_cell_3_2",
+   "type": "goto",
+   "start": [
+    9001,
+    -46,
+    9177
+   ],
+   "end": [
+    9002.27,
+    -46,
+    9177.49
+   ],
+   "horizontal_error": 0.23,
+   "moved": 0.62,
+   "outcome": "reached",
+   "seconds": 0.5,
+   "ok": true
+  },
+  {
+   "name": "observe_cell_3_3",
+   "type": "goto",
+   "start": [
+    9002,
+    -46,
+    9177
+   ],
+   "end": [
+    9003.32,
+    -46,
+    9177.5
+   ],
+   "horizontal_error": 0.18,
+   "moved": 1.05,
+   "outcome": "reached",
+   "seconds": 0.7,
+   "ok": true
+  },
+  {
+   "name": "observe_cell_3_4",
+   "type": "goto",
+   "start": [
+    9003,
+    -46,
+    9177
+   ],
+   "end": [
+    9004.5,
+    -46,
+    9177.5
+   ],
+   "horizontal_error": 0,
+   "moved": 1.18,
+   "outcome": "reached",
+   "seconds": 0.7,
+   "ok": true
+  },
+  {
+   "name": "observe_cell_4_1",
+   "type": "goto",
+   "start": [
+    9004,
+    -46,
+    9177
+   ],
+   "end": [
+    9001.66,
+    -46,
+    9176.48
+   ],
+   "horizontal_error": 0.16,
+   "moved": 3.01,
+   "outcome": "reached",
+   "seconds": 1.1,
+   "ok": true
+  },
+  {
+   "name": "observe_cell_4_2",
+   "type": "goto",
+   "start": [
+    9001,
+    -46,
+    9176
+   ],
+   "end": [
+    9002.29,
+    -46,
+    9176.49
+   ],
+   "horizontal_error": 0.21,
+   "moved": 0.62,
+   "outcome": "reached",
+   "seconds": 0.5,
+   "ok": true
+  },
+  {
+   "name": "observe_cell_4_3",
+   "type": "goto",
+   "start": [
+    9002,
+    -46,
+    9176
+   ],
+   "end": [
+    9003.33,
+    -46,
+    9176.5
+   ],
+   "horizontal_error": 0.17,
+   "moved": 1.05,
+   "outcome": "reached",
+   "seconds": 0.7,
+   "ok": true
+  },
+  {
+   "name": "observe_cell_4_4",
+   "type": "goto",
+   "start": [
+    9003,
+    -46,
+    9176
+   ],
+   "end": [
+    9004.5,
+    -46,
+    9176.5
+   ],
+   "horizontal_error": 0,
+   "moved": 1.17,
+   "outcome": "reached",
+   "seconds": 0.7,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_north_line1_from1_1_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9001,
+    -46,
+    9179
+   ]
+  },
+  {
+   "name": "deck_edge_north_line1",
+   "type": "walk",
+   "start": [
+    9001.5,
+    -46,
+    9179.5
+   ],
+   "end": [
+    9000.99,
+    -46,
+    9179.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_north_line2_from2_1_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9001,
+    -46,
+    9178
+   ]
+  },
+  {
+   "name": "deck_edge_north_line2",
+   "type": "walk",
+   "start": [
+    9001.5,
+    -46,
+    9178.5
+   ],
+   "end": [
+    9000.99,
+    -46,
+    9178.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_north_line3_from3_1_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9001,
+    -46,
+    9177
+   ]
+  },
+  {
+   "name": "deck_edge_north_line3",
+   "type": "walk",
+   "start": [
+    9001.5,
+    -46,
+    9177.5
+   ],
+   "end": [
+    9000.99,
+    -46,
+    9177.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_north_line4_from4_1_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9001,
+    -46,
+    9176
+   ]
+  },
+  {
+   "name": "deck_edge_north_line4",
+   "type": "walk",
+   "start": [
+    9001.5,
+    -46,
+    9176.5
+   ],
+   "end": [
+    9000.99,
+    -46,
+    9176.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_south_line1_from1_4_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9004,
+    -46,
+    9179
+   ]
+  },
+  {
+   "name": "deck_edge_south_line1",
+   "type": "walk",
+   "start": [
+    9004.5,
+    -46,
+    9179.5
+   ],
+   "end": [
+    9005.01,
+    -46,
+    9179.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_south_line2_from2_4_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9004,
+    -46,
+    9178
+   ]
+  },
+  {
+   "name": "deck_edge_south_line2",
+   "type": "walk",
+   "start": [
+    9004.5,
+    -46,
+    9178.5
+   ],
+   "end": [
+    9005.01,
+    -46,
+    9178.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_south_line3_from3_4_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9004,
+    -46,
+    9177
+   ]
+  },
+  {
+   "name": "deck_edge_south_line3",
+   "type": "walk",
+   "start": [
+    9004.5,
+    -46,
+    9177.5
+   ],
+   "end": [
+    9005.01,
+    -46,
+    9177.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_south_line4_from4_4_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9004,
+    -46,
+    9176
+   ]
+  },
+  {
+   "name": "deck_edge_south_line4",
+   "type": "walk",
+   "start": [
+    9004.5,
+    -46,
+    9176.5
+   ],
+   "end": [
+    9005.01,
+    -46,
+    9176.5
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_east_line1_from4_1_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9001,
+    -46,
+    9176
+   ]
+  },
+  {
+   "name": "deck_edge_east_line1",
+   "type": "walk",
+   "start": [
+    9001.5,
+    -46,
+    9176.5
+   ],
+   "end": [
+    9001.5,
+    -46,
+    9175.99
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_east_line2_from4_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9002,
+    -46,
+    9176
+   ]
+  },
+  {
+   "name": "deck_edge_east_line2",
+   "type": "walk",
+   "start": [
+    9002.5,
+    -46,
+    9176.5
+   ],
+   "end": [
+    9002.5,
+    -46,
+    9175.99
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_east_line3_from4_3_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9003,
+    -46,
+    9176
+   ]
+  },
+  {
+   "name": "deck_edge_east_line3",
+   "type": "walk",
+   "start": [
+    9003.5,
+    -46,
+    9176.5
+   ],
+   "end": [
+    9003.5,
+    -46,
+    9175.99
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_east_line4_from4_4_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9004,
+    -46,
+    9176
+   ]
+  },
+  {
+   "name": "deck_edge_east_line4",
+   "type": "walk",
+   "start": [
+    9004.5,
+    -46,
+    9176.5
+   ],
+   "end": [
+    9004.5,
+    -46,
+    9175.99
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line1_from1_1_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9001,
+    -46,
+    9179
+   ]
+  },
+  {
+   "name": "deck_edge_west_line1",
+   "type": "walk",
+   "start": [
+    9001.5,
+    -46,
+    9179.5
+   ],
+   "end": [
+    9001.5,
+    -46,
+    9180.01
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line2_from1_2_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9002,
+    -46,
+    9179
+   ]
+  },
+  {
+   "name": "deck_edge_west_line2",
+   "type": "walk",
+   "start": [
+    9002.5,
+    -46,
+    9179.5
+   ],
+   "end": [
+    9002.5,
+    -46,
+    9180.01
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line3_from1_3_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9003,
+    -46,
+    9179
+   ]
+  },
+  {
+   "name": "deck_edge_west_line3",
+   "type": "walk",
+   "start": [
+    9003.5,
+    -46,
+    9179.5
+   ],
+   "end": [
+    9003.5,
+    -46,
+    9180.01
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  },
+  {
+   "name": "deck_edge_west_line4_from1_4_recentre",
+   "type": "tp",
+   "ok": true,
+   "at": [
+    9004,
+    -46,
+    9179
+   ]
+  },
+  {
+   "name": "deck_edge_west_line4",
+   "type": "walk",
+   "start": [
+    9004.5,
+    -46,
+    9179.5
+   ],
+   "end": [
+    9004.5,
+    -46,
+    9180.01
+   ],
+   "dy": 0,
+   "moved": 0.51,
+   "ok": true
+  }
+ ],
+ "events": [
+  "chat: Teleported S24C_large_pi to 9002.500000, -59.000000, 9183.500000",
+  "chat: Teleported S24C_large_pi to 9002.500000, -59.000000, 9178.500000",
+  "chat: Teleported S24C_large_pi to 9001.500000, -46.000000, 9179.500000",
+  "trace deck_edge_north_line1 [[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46]]",
+  "chat: Teleported S24C_large_pi to 9001.500000, -46.000000, 9178.500000",
+  "trace deck_edge_north_line2 [[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46]]",
+  "chat: Teleported S24C_large_pi to 9001.500000, -46.000000, 9177.500000",
+  "trace deck_edge_north_line3 [[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46]]",
+  "chat: Teleported S24C_large_pi to 9001.500000, -46.000000, 9176.500000",
+  "trace deck_edge_north_line4 [[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46],[9000.99,-46]]",
+  "chat: Teleported S24C_large_pi to 9004.500000, -46.000000, 9179.500000",
+  "trace deck_edge_south_line1 [[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46]]",
+  "chat: Teleported S24C_large_pi to 9004.500000, -46.000000, 9178.500000",
+  "trace deck_edge_south_line2 [[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46]]",
+  "chat: Teleported S24C_large_pi to 9004.500000, -46.000000, 9177.500000",
+  "trace deck_edge_south_line3 [[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46]]",
+  "chat: Teleported S24C_large_pi to 9004.500000, -46.000000, 9176.500000",
+  "trace deck_edge_south_line4 [[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46],[9005.01,-46]]",
+  "chat: Teleported S24C_large_pi to 9001.500000, -46.000000, 9176.500000",
+  "trace deck_edge_east_line1 [[9001.5,-46],[9001.5,-46],[9001.5,-46],[9001.5,-46],[9001.5,-46],[9001.5,-46],[9001.5,-46],[9001.5,-46],[9001.5,-46],[9001.5,-46]]",
+  "chat: Teleported S24C_large_pi to 9002.500000, -46.000000, 9176.500000",
+  "trace deck_edge_east_line2 [[9002.5,-46],[9002.5,-46],[9002.5,-46],[9002.5,-46],[9002.5,-46],[9002.5,-46],[9002.5,-46],[9002.5,-46],[9002.5,-46],[9002.5,-46]]",
+  "chat: Teleported S24C_large_pi to 9003.500000, -46.000000, 9176.500000",
+  "trace deck_edge_east_line3 [[9003.5,-46],[9003.5,-46],[9003.5,-46],[9003.5,-46],[9003.5,-46],[9003.5,-46],[9003.5,-46],[9003.5,-46],[9003.5,-46],[9003.5,-46]]",
+  "chat: Teleported S24C_large_pi to 9004.500000, -46.000000, 9176.500000",
+  "trace deck_edge_east_line4 [[9004.5,-46],[9004.5,-46],[9004.5,-46],[9004.5,-46],[9004.5,-46],[9004.5,-46],[9004.5,-46],[9004.5,-46],[9004.5,-46],[9004.5,-46]]",
+  "chat: Teleported S24C_large_pi to 9001.500000, -46.000000, 9179.500000",
+  "trace deck_edge_west_line1 [[9001.5,-46],[9001.5,-46],[9001.5,-46],[9001.5,-46],[9001.5,-46],[9001.5,-46],[9001.5,-46],[9001.5,-46],[9001.5,-46],[9001.5,-46]]",
+  "chat: Teleported S24C_large_pi to 9002.500000, -46.000000, 9179.500000",
+  "trace deck_edge_west_line2 [[9002.5,-46],[9002.5,-46],[9002.5,-46],[9002.5,-46],[9002.5,-46],[9002.5,-46],[9002.5,-46],[9002.5,-46],[9002.5,-46],[9002.5,-46]]",
+  "chat: Teleported S24C_large_pi to 9003.500000, -46.000000, 9179.500000",
+  "trace deck_edge_west_line3 [[9003.5,-46],[9003.5,-46],[9003.5,-46],[9003.5,-46],[9003.5,-46],[9003.5,-46],[9003.5,-46],[9003.5,-46],[9003.5,-46],[9003.5,-46]]",
+  "chat: Teleported S24C_large_pi to 9004.500000, -46.000000, 9179.500000",
+  "trace deck_edge_west_line4 [[9004.5,-46],[9004.5,-46],[9004.5,-46],[9004.5,-46],[9004.5,-46],[9004.5,-46],[9004.5,-46],[9004.5,-46],[9004.5,-46],[9004.5,-46]]"
+ ],
+ "final_health": 20,
+ "variant": "A",
+ "rotation": "COUNTERCLOCKWISE_90",
+ "origin": [
+  9000,
+  -60,
+  9180
+ ],
+ "scenario_steps": [
+  {
+   "name": "tp_outside",
+   "type": "tp",
+   "target": [
+    9002.5,
+    -59,
+    9183.5
+   ]
+  },
+  {
+   "name": "walk_to_entry",
+   "type": "goto",
+   "target": [
+    9002,
+    -59,
+    9179
+   ],
+   "range": 0,
+   "timeout": 30
+  },
+  {
+   "name": "enter_ladder_base",
+   "type": "goto",
+   "target": [
+    9002,
+    -59,
+    9178
+   ],
+   "range": 0,
+   "timeout": 30
+  },
+  {
+   "name": "climb_ground_to_deck",
+   "type": "climb",
+   "base": [
+    9002,
+    -59,
+    9178
+   ],
+   "top": [
+    9002,
+    -46,
+    9178
+   ],
+   "yaw": -3.141592653589793,
+   "timeout": 60
+  },
+  {
+   "name": "step_onto_deck",
+   "type": "goto",
+   "target": [
+    9003,
+    -46,
+    9178
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "observe_cell_1_1",
+   "type": "goto",
+   "target": [
+    9001,
+    -46,
+    9179
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "observe_cell_1_2",
+   "type": "goto",
+   "target": [
+    9002,
+    -46,
+    9179
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "observe_cell_1_3",
+   "type": "goto",
+   "target": [
+    9003,
+    -46,
+    9179
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "observe_cell_1_4",
+   "type": "goto",
+   "target": [
+    9004,
+    -46,
+    9179
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "observe_cell_2_1",
+   "type": "goto",
+   "target": [
+    9001,
+    -46,
+    9178
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "observe_cell_2_3",
+   "type": "goto",
+   "target": [
+    9003,
+    -46,
+    9178
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "observe_cell_2_4",
+   "type": "goto",
+   "target": [
+    9004,
+    -46,
+    9178
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "observe_cell_3_1",
+   "type": "goto",
+   "target": [
+    9001,
+    -46,
+    9177
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "observe_cell_3_2",
+   "type": "goto",
+   "target": [
+    9002,
+    -46,
+    9177
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "observe_cell_3_3",
+   "type": "goto",
+   "target": [
+    9003,
+    -46,
+    9177
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "observe_cell_3_4",
+   "type": "goto",
+   "target": [
+    9004,
+    -46,
+    9177
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "observe_cell_4_1",
+   "type": "goto",
+   "target": [
+    9001,
+    -46,
+    9176
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "observe_cell_4_2",
+   "type": "goto",
+   "target": [
+    9002,
+    -46,
+    9176
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "observe_cell_4_3",
+   "type": "goto",
+   "target": [
+    9003,
+    -46,
+    9176
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "observe_cell_4_4",
+   "type": "goto",
+   "target": [
+    9004,
+    -46,
+    9176
+   ],
+   "range": 0,
+   "timeout": 20
+  },
+  {
+   "name": "deck_edge_north_line1_from1_1_recentre",
+   "type": "tp",
+   "target": [
+    9001.5,
+    -46,
+    9179.5
+   ]
+  },
+  {
+   "name": "deck_edge_north_line1",
+   "type": "walk",
+   "yaw": -4.71238898038469,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_north_line2_from2_1_recentre",
+   "type": "tp",
+   "target": [
+    9001.5,
+    -46,
+    9178.5
+   ]
+  },
+  {
+   "name": "deck_edge_north_line2",
+   "type": "walk",
+   "yaw": -4.71238898038469,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_north_line3_from3_1_recentre",
+   "type": "tp",
+   "target": [
+    9001.5,
+    -46,
+    9177.5
+   ]
+  },
+  {
+   "name": "deck_edge_north_line3",
+   "type": "walk",
+   "yaw": -4.71238898038469,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_north_line4_from4_1_recentre",
+   "type": "tp",
+   "target": [
+    9001.5,
+    -46,
+    9176.5
+   ]
+  },
+  {
+   "name": "deck_edge_north_line4",
+   "type": "walk",
+   "yaw": -4.71238898038469,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_south_line1_from1_4_recentre",
+   "type": "tp",
+   "target": [
+    9004.5,
+    -46,
+    9179.5
+   ]
+  },
+  {
+   "name": "deck_edge_south_line1",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_south_line2_from2_4_recentre",
+   "type": "tp",
+   "target": [
+    9004.5,
+    -46,
+    9178.5
+   ]
+  },
+  {
+   "name": "deck_edge_south_line2",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_south_line3_from3_4_recentre",
+   "type": "tp",
+   "target": [
+    9004.5,
+    -46,
+    9177.5
+   ]
+  },
+  {
+   "name": "deck_edge_south_line3",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_south_line4_from4_4_recentre",
+   "type": "tp",
+   "target": [
+    9004.5,
+    -46,
+    9176.5
+   ]
+  },
+  {
+   "name": "deck_edge_south_line4",
+   "type": "walk",
+   "yaw": -1.5707963267948966,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_east_line1_from4_1_recentre",
+   "type": "tp",
+   "target": [
+    9001.5,
+    -46,
+    9176.5
+   ]
+  },
+  {
+   "name": "deck_edge_east_line1",
+   "type": "walk",
+   "yaw": -6.283185307179586,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_east_line2_from4_2_recentre",
+   "type": "tp",
+   "target": [
+    9002.5,
+    -46,
+    9176.5
+   ]
+  },
+  {
+   "name": "deck_edge_east_line2",
+   "type": "walk",
+   "yaw": -6.283185307179586,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_east_line3_from4_3_recentre",
+   "type": "tp",
+   "target": [
+    9003.5,
+    -46,
+    9176.5
+   ]
+  },
+  {
+   "name": "deck_edge_east_line3",
+   "type": "walk",
+   "yaw": -6.283185307179586,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_east_line4_from4_4_recentre",
+   "type": "tp",
+   "target": [
+    9004.5,
+    -46,
+    9176.5
+   ]
+  },
+  {
+   "name": "deck_edge_east_line4",
+   "type": "walk",
+   "yaw": -6.283185307179586,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line1_from1_1_recentre",
+   "type": "tp",
+   "target": [
+    9001.5,
+    -46,
+    9179.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line1",
+   "type": "walk",
+   "yaw": -3.141592653589793,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line2_from1_2_recentre",
+   "type": "tp",
+   "target": [
+    9002.5,
+    -46,
+    9179.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line2",
+   "type": "walk",
+   "yaw": -3.141592653589793,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line3_from1_3_recentre",
+   "type": "tp",
+   "target": [
+    9003.5,
+    -46,
+    9179.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line3",
+   "type": "walk",
+   "yaw": -3.141592653589793,
+   "ms": 2500
+  },
+  {
+   "name": "deck_edge_west_line4_from1_4_recentre",
+   "type": "tp",
+   "target": [
+    9004.5,
+    -46,
+    9179.5
+   ]
+  },
+  {
+   "name": "deck_edge_west_line4",
+   "type": "walk",
+   "yaw": -3.141592653589793,
+   "ms": 2500
+  }
+ ]
+}

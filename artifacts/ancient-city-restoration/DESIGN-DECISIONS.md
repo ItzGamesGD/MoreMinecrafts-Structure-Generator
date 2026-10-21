@@ -23,5 +23,7 @@ The Stage 24-I out-of-box overlay experiment remains evidence only (`stage-24i/e
 * Stage 24-G — functional protection of doors, ladders, beds, containers, railings and supports from vanilla decay.
 * Stage 24-H — owner Option A: interior terrain clearance inside the piece box.
 * Stage 24-I — roof cells over enclosed rooms protected from `block_rot`; exterior entrance clearance not delivered.
-* Stage 24-J — watchtower appearance: alternatives prepared for review (`stage-24j/`); **no design chosen**, the approved
-  tower NBTs are unchanged until the owner approves an option.
+* Stage 24-J — watchtower appearance: alternatives prepared for review (`stage-24j/`).
+* Stage 24-K — **owner decision (final): large_pillar_1 Option A (open lookout) and medium_pillar_1 Option A (corbelled
+  crown).** Option B of either tower is not to be substituted and neither tower is to be redesigned. Implemented in
+  `stage-24k/` (production templates and derived data); the blocked-entrance deferrals above are retained.
