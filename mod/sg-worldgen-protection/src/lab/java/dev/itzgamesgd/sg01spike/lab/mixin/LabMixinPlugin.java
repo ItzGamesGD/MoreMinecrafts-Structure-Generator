@@ -1,4 +1,4 @@
-package dev.itzgamesgd.sg01spike.mixin;
+package dev.itzgamesgd.sg01spike.lab.mixin;
 
 import java.util.List;
 import java.util.Set;
@@ -6,13 +6,8 @@ import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 
-/**
- * Keeps the observe-only measurement mixins (the "*ProbeMixin" classes) out of production: they are applied only when the validation lab sets
- * SG01_LAB=1. The two protection hooks (GeodeFeatureMixin, MonsterRoomFeatureMixin) are always applied and stay fail-loud.
- */
-public final class SgMixinPlugin implements IMixinConfigPlugin {
-    private static final boolean LAB = "1".equals(System.getenv("SG01_LAB")) || "1".equals(System.getProperty("sg01.lab"));
-
+/** Lab only: applies the "foreign transformer" stand-in mixins when SG01_LAB_FOREIGN names their target (monster_room, geode or both). */
+public final class LabMixinPlugin implements IMixinConfigPlugin {
     @Override
     public void onLoad(String mixinPackage) {
     }
@@ -24,7 +19,10 @@ public final class SgMixinPlugin implements IMixinConfigPlugin {
 
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
-        return LAB || !mixinClassName.endsWith("ProbeMixin");
+        String which = System.getenv("SG01_LAB_FOREIGN");
+        if (mixinClassName.endsWith("ForeignMonsterRoomMixin")) return "monster_room".equals(which) || "both".equals(which);
+        if (mixinClassName.endsWith("ForeignGeodeMixin")) return "geode".equals(which) || "both".equals(which);
+        return true;
     }
 
     @Override

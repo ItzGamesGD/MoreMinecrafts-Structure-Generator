@@ -5,15 +5,9 @@
   "compatibilityLevel": "JAVA_25",
   "mixins": [
     "GeodeFeatureMixin",
-    "MonsterRoomFeatureMixin",
-    "WorldGenRegionProbeMixin",
-    "ServerChunkCacheProbeMixin",
-    "ChunkMapProbeMixin",
-    "GenerationChunkHolderProbeMixin",
-    "DecorationOrderProbeMixin"
+    "MonsterRoomFeatureMixin"
   ],
   "injectors": {
     "defaultRequire": 1
-  },
-  "plugin": "dev.itzgamesgd.sg01spike.mixin.SgMixinPlugin"
+  }
 }

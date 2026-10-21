@@ -1,5 +1,8 @@
-package dev.itzgamesgd.sg01spike;
+package dev.itzgamesgd.sg01spike.lab;
 
+import dev.itzgamesgd.sg01spike.Guard;
+import dev.itzgamesgd.sg01spike.GuardStats;
+import dev.itzgamesgd.sg01spike.MonsterRoomGeometry;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

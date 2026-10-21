@@ -1,6 +1,6 @@
-package dev.itzgamesgd.sg01spike.mixin;
+package dev.itzgamesgd.sg01spike.lab.mixin;
 
-import dev.itzgamesgd.sg01spike.Probe;
+import dev.itzgamesgd.sg01spike.lab.Probe;
 import net.minecraft.server.level.ChunkMap;
 import net.minecraft.server.level.GenerationChunkHolder;
 import net.minecraft.world.level.chunk.status.ChunkStatus;

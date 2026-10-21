@@ -1,5 +1,8 @@
-package dev.itzgamesgd.sg01spike;
+package dev.itzgamesgd.sg01spike.lab;
 
+import dev.itzgamesgd.sg01spike.Guard;
+import dev.itzgamesgd.sg01spike.SpikeMod;
+import dev.itzgamesgd.sg01spike.ProtectionConfig;
 import com.sun.management.GarbageCollectorMXBean;
 import com.sun.management.ThreadMXBean;
 import java.io.IOException;

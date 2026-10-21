@@ -31,7 +31,8 @@ class DriftGuardTests(unittest.TestCase):
         self.assertRegex(self.src, r'GEODE = new State\("geode",\s*List\.of\(P \+ "levelgen\.feature\.GeodeFeature", FEATURE, P \+ "block\.BuddingAmethystBlock", REGION\)')
 
     def test_unknown_or_unreadable_vanilla_goes_to_zone_never_off(self) -> None:
-        self.assertIn('s.demote(Level.ZONE, "FINGERPRINT_MISMATCH', self.src)
+        self.assertIn('"FINGERPRINT_MISMATCH: " + failure', self.src)
+        self.assertIn('s.demote(Level.ZONE, failure.startsWith("FOREIGN")', self.src)
         self.assertIn("cannot read vanilla class", self.src)
         self.assertNotIn("Level.OFF", self.src)
         self.assertIn("if (to.ordinal() <= level.ordinal()) return;", self.src)  # levels only ever become more conservative
@@ -65,12 +66,30 @@ class DriftGuardTests(unittest.TestCase):
         self.assertIn("can be detected after the fact", self.src)
         self.assertIn("not claimed as prevented", self.src)
 
-    def test_lab_faults_and_fingerprint_break_are_lab_only(self) -> None:
-        self.assertIn('Guard.LAB ? System.getenv("SG01_LAB_FINGERPRINT_BREAK") : null', self.src)
+    def test_lab_faults_and_fingerprint_break_come_only_from_the_lab_hooks(self) -> None:
+        self.assertIn("LabHooks.get().fingerprintBreak()", self.src)
+        self.assertNotIn("getenv", self.src)
         guard = (JAVA / "Guard.java").read_text()
-        self.assertIn("GEODE_SHRUNK", guard)
-        self.assertIn("PRECHECK_BLIND", guard)
-        self.assertRegex(guard, r'FAULT = parseEnum\("sg01.fault", "SG01_FAULT", Fault.class, Fault.NONE, false\)')  # parseEnum -> labEnv
+        for fault in ("GEODE_SHRUNK", "PRECHECK_BLIND", "ZONE_PROBE"):
+            self.assertIn(fault, guard)
+
+    def test_restored_n7b_guarantees(self) -> None:
+        # N7-B asserted these on MonsterRoomSelfCheck; they now apply to DriftGuard
+        self.assertIn('MessageDigest.getInstance("SHA-256")', self.src)  # fingerprints are SHA-256 of the class file
+        self.assertIn("cannot read vanilla class", self.src)  # unreadable class fails closed (was FINGERPRINT_UNAVAILABLE)
+        self.assertIn("RUNTIME_DEVIATION", self.src)  # was RUNTIME_VIOLATION
+        mod = (JAVA / "SpikeMod.java").read_text()
+        self.assertLess(mod.index("DriftGuard.verifyAtStartup()"), mod.index("ProtectionConfig.resolve(server)"))
+        guard = (JAVA / "Guard.java").read_text()
+        self.assertIn("DriftGuard.arm(DriftGuard.MONSTER_ROOM, region, inflate(broad, 2), predicted, broad)", guard)
+        self.assertRegex(self.mr, r"default -> cancel = Guard\.shouldCancel\(Guard\.MONSTER_ROOM, level, origin, List\.of\(broad\)\)")  # box guard
+        self.assertIn("DriftGuard.discard()", self.mr)
+
+    def test_foreign_transformer_detection_is_present_and_fails_to_zone(self) -> None:
+        self.assertIn("FOREIGN_TRANSFORM", self.src)
+        self.assertIn("foreignMembers(cls, bytes)", self.src)
+        self.assertIn('!m.getName().startsWith("sg01spike$")', self.src)
+        self.assertIn("adds no member", self.src)
 
 
 class ExtensionPolicyTests(unittest.TestCase):
@@ -106,15 +125,6 @@ class PackagingTests(unittest.TestCase):
         build = (MOD / "build.gradle").read_text()
         self.assertIn("archivesName = 'sg-worldgen-protection'", build)
         self.assertNotIn("spike", build)
-
-    def test_probe_mixins_are_inert_in_production(self) -> None:
-        cfg = json.loads((RES / "sg01spike.mixins.json").read_text())
-        self.assertEqual(cfg["plugin"], "dev.itzgamesgd.sg01spike.mixin.SgMixinPlugin")
-        plugin = (JAVA / "mixin/SgMixinPlugin.java").read_text()
-        self.assertIn('return LAB || !mixinClassName.endsWith("ProbeMixin");', plugin)
-        probes = [p.stem for p in (JAVA / "mixin").glob("*ProbeMixin.java")]
-        self.assertTrue(probes)
-        self.assertTrue({"GeodeFeatureMixin", "MonsterRoomFeatureMixin"} <= set(cfg["mixins"]))  # protection hooks are never gated
 
     def test_lab_harness_points_at_the_new_location(self) -> None:
         lab = ROOT / "validation/minecraft-visual/sg03-natural"

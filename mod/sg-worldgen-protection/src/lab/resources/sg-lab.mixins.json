@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.itzgamesgd.sg01spike.lab.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "plugin": "dev.itzgamesgd.sg01spike.lab.mixin.LabMixinPlugin",
+  "mixins": [
+    "WorldGenRegionProbeMixin",
+    "ServerChunkCacheProbeMixin",
+    "ChunkMapProbeMixin",
+    "GenerationChunkHolderProbeMixin",
+    "DecorationOrderProbeMixin",
+    "ForeignMonsterRoomMixin",
+    "ForeignGeodeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

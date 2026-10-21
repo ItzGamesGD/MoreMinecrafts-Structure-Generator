@@ -65,6 +65,9 @@ public final class DriftGuard {
         public final AtomicInteger placements = new AtomicInteger();
         public final AtomicInteger deviations = new AtomicInteger();
         public final AtomicInteger nearMisses = new AtomicInteger();
+        /** Cancellations taken while not VERIFIED (the cost of not trusting the model yet). */
+        public final AtomicInteger unverifiedCancels = new AtomicInteger();
+        public volatile long promotedAtAttempt = -1;
         private final AtomicInteger sampleTick = new AtomicInteger();
 
         State(String name, List<String> classes, int needSamples, int needPlacements) {
@@ -107,6 +110,7 @@ public final class DriftGuard {
         synchronized void promote() {
             if (level != Level.PROVISIONAL) return;
             level = Level.VERIFIED;
+            promotedAtAttempt = (name.equals("geode") ? Guard.GEODE : Guard.MONSTER_ROOM).attempts.get();
             SpikeMod.LOGGER.info("SG_SPIKE drift guard [{}]: {} allowed attempts agreed with the model ({} with writes); full decision active", name, samples.get(), placements.get());
         }
     }
@@ -124,30 +128,78 @@ public final class DriftGuard {
     private DriftGuard() {
     }
 
-    /** Startup: fingerprint every dependency class; any unknown or unreadable class puts the feature straight into ZONE (no assumption is trusted). */
+    /**
+     * Startup: fingerprint every dependency class and check that nothing else transformed it. Any unknown or unreadable class, or a loaded class that
+     * carries methods or interfaces its file does not (what another mod's Mixin adds), puts the feature straight into ZONE: no assumption is trusted.
+     * Limit: a transformation that adds no member (a Mixin @Overwrite, a bytecode agent) leaves the class shape unchanged and is not detected here.
+     */
     public static void verifyAtStartup() {
-        String broken = Guard.LAB ? System.getenv("SG01_LAB_FINGERPRINT_BREAK") : null;
+        String broken = LabHooks.get().fingerprintBreak();
         for (State s : List.of(MONSTER_ROOM, GEODE)) {
             StringBuilder fp = new StringBuilder();
             String failure = null;
             for (String cls : s.classes) {
-                String actual = hash(cls);
+                byte[] bytes = read(cls);
+                String actual = bytes == null ? null : sha256(bytes);
                 fp.append(cls.substring(cls.lastIndexOf('.') + 1)).append('=').append(actual == null ? "unavailable" : actual.substring(0, 12)).append(' ');
                 if (actual == null) failure = "cannot read vanilla class " + cls;
                 else if (!actual.equals(KNOWN.get(cls))) failure = "vanilla class " + cls + " has fingerprint " + actual + ", validated " + KNOWN.get(cls);
+                else {
+                    String foreign = foreignMembers(cls, bytes);
+                    if (foreign != null) failure = "FOREIGN_TRANSFORM: loaded class " + cls + " carries members that its file does not: " + foreign;
+                }
             }
             if (broken != null && (broken.equals("both") || broken.equals(s.name))) failure = "[lab] fingerprint break injected";
             s.fingerprint = fp.toString().trim();
-            if (failure != null) s.demote(Level.ZONE, "FINGERPRINT_MISMATCH: " + failure);
-            else SpikeMod.LOGGER.info("SG_SPIKE drift guard [{}]: vanilla dependency fingerprints validated ({}); provisional until verified in-process", s.name, s.fingerprint);
+            if (failure != null) s.demote(Level.ZONE, failure.startsWith("FOREIGN") ? failure : "FINGERPRINT_MISMATCH: " + failure);
+            else SpikeMod.LOGGER.info("SG_SPIKE drift guard [{}]: vanilla dependency fingerprints validated, no foreign transformer ({}); provisional until verified in-process", s.name, s.fingerprint);
         }
     }
 
-    private static String hash(String className) {
+    /** Names of methods or interfaces on the loaded class that the class file does not declare and that are not this module's own; null if none. */
+    private static String foreignMembers(String className, byte[] fileBytes) {
+        try {
+            org.objectweb.asm.tree.ClassNode node = new org.objectweb.asm.tree.ClassNode();
+            new org.objectweb.asm.ClassReader(fileBytes).accept(node, org.objectweb.asm.ClassReader.SKIP_CODE);
+            java.util.Set<String> fileMethods = new java.util.HashSet<>();
+            node.methods.forEach(m -> fileMethods.add(m.name));
+            java.util.Set<String> fileInterfaces = new java.util.HashSet<>();
+            node.interfaces.forEach(i -> fileInterfaces.add(i.replace('/', '.')));
+            Class<?> loaded = Class.forName(className, false, DriftGuard.class.getClassLoader());
+            List<String> extra = new ArrayList<>();
+            for (java.lang.reflect.Method m : loaded.getDeclaredMethods()) {
+                if (!fileMethods.contains(m.getName()) && !ownOrPlatform(m.getName())) extra.add(m.getName());
+            }
+            for (Class<?> i : loaded.getInterfaces()) {
+                if (!fileInterfaces.contains(i.getName()) && !i.equals(GuardMarker.class) && !i.getName().startsWith("net.fabricmc.fabric.")) extra.add("interface " + i.getName());
+            }
+            return extra.isEmpty() ? null : String.join(", ", extra);
+        } catch (ReflectiveOperationException | LinkageError | RuntimeException e) {
+            return "(cannot inspect: " + e + ")";
+        }
+    }
+
+    /**
+     * Members that are expected on a loaded vanilla class: this module's own Mixin handlers (named sg01spike$..., possibly wrapped as
+     * handler$<id>$<mod>$sg01spike$...) and the members Fabric API itself adds (the platform this module requires; it adds listeners such as
+     * BlockStateBase.callUseItemOnEvent, it does not touch the placement logic). Anything else, including a lab mod's inert stand-in, is foreign.
+     */
+    private static boolean ownOrPlatform(String name) {
+        return name.startsWith("sg01spike$") || name.contains("$sg01spike$") || name.startsWith("fabric_api$") || name.matches("handler\\$[^$]*\\$fabric-[^$]*\\$.*");
+    }
+
+    private static byte[] read(String className) {
         try (InputStream in = DriftGuard.class.getResourceAsStream("/" + className.replace('.', '/') + ".class")) {
-            if (in == null) return null;
-            return HexFormat.of().formatHex(MessageDigest.getInstance("SHA-256").digest(in.readAllBytes()));
-        } catch (IOException | NoSuchAlgorithmException e) {
+            return in == null ? null : in.readAllBytes();
+        } catch (IOException e) {
+            return null;
+        }
+    }
+
+    private static String sha256(byte[] bytes) {
+        try {
+            return HexFormat.of().formatHex(MessageDigest.getInstance("SHA-256").digest(bytes));
+        } catch (NoSuchAlgorithmException e) {
             return null;
         }
     }
