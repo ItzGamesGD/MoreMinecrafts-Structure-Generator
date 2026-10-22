@@ -18,6 +18,8 @@ def main():
     p.add_argument("--control", type=Path, help="same seed, structure step vegetal_decoration (pre-fix ordering)")
     p.add_argument("--require-clay-outside", action="store_true", help="seed 42 site (4,13) must show natural clay beside the structure")
     p.add_argument("--out", type=Path, required=True)
+    p.add_argument("--clay-only", action="store_true", help="N10: the vanilla baseline cannot load the protection module, so only the N4 claim (no clay-family overwrites, "
+                   "placement unchanged) decides pass/fail; every other overwrite is reported under 'diagnostics' and is judged by the production-module check instead")
     a = p.parse_args()
     prod = json.loads(a.production.read_text())
     problems, notes = [], []
@@ -59,7 +61,13 @@ def main():
         verdict_control = f"clay-family overwrites in control: {clay_cells}; other overwrites: {other}"
         if a.require_clay_outside and clay_cells == 0:
             notes.append("CONTROL INCONCLUSIVE: the pre-fix ordering did not reproduce the overwrite in this run (cross-chunk race)")
-    report = {"production_sites": [list(c) for c in ps], "clay_outside_structure": outside, "control": verdict_control,
+    diagnostics = []
+    if a.clay_only:
+        # vanilla damage that the module exists to prevent is expected here; clay and structural sanity stay blocking
+        keep = [x for x in problems if "clay" in x or "no generated" in x or "start signatures" in x or "pieces" in x or "spawners" in x]
+        diagnostics = [x for x in problems if x not in keep]
+        problems = keep
+    report = {"mode": "clay-only" if a.clay_only else "strict", "diagnostics": diagnostics, "production_sites": [list(c) for c in ps], "clay_outside_structure": outside, "control": verdict_control,
               "notes": notes, "problems": problems, "pass": not problems}
     a.out.write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps(report, indent=1))

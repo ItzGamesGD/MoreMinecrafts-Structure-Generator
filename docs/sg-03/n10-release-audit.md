@@ -117,3 +117,7 @@ Rollback:
 - Code rollback is a revert of the merge commits in reverse order; no history rewrite is needed.
 
 Not started and not authorized by this audit: any merge, Ready status, or release declaration.
+
+
+## Erratum (N10 follow-up)
+The C2 overhead recorded above (+7.1%, "PASS") compared two builds that both had the write guard enabled; it is withdrawn. The corrected pairs (baseline with the write guard off) give a median of +11.9%, a literal FAIL of the +10% rule, with a spread of -37.8% to +91.6%. See `docs/sg-03/n10-merge-readiness.md`, section 7. All other classifications in this record are unchanged.

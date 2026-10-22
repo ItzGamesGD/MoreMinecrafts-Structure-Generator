@@ -1,0 +1,28 @@
+{
+ "generated": true,
+ "before_ticks": {
+  "pass": true,
+  "matched": 55305,
+  "expected": 55305,
+  "pieces": 21,
+  "errors": []
+ },
+ "spike_report": {
+  "lab": false,
+  "mode": "ENFORCE",
+  "write_guard": {
+   "enabled": true,
+   "regions": 327,
+   "regions_with_pieces": 72,
+   "unavailable": 0,
+   "blocked_writes": 1103
+  }
+ },
+ "mixin_log": [
+  "[12:49:57] [main/INFO] (sg-protection) SG_PROTECTION mode=ENFORCE fixture=NONE refine=OFF oracle=off features=none",
+  "[12:49:59] [Server thread/INFO] (sg-protection) SG_PROTECTION hook GeodeFeature.place applied=true MonsterRoomFeature.place applied=true",
+  "vanilla dependency fingerprints validated, no foreign transformer (MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745 StructureStart=0e298de5bc87); provisional until verified in-process",
+  "vanilla dependency fingerprints validated, no foreign transformer (GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745 StructureStart=0e298de5bc87); provisional until verified in-process",
+  "[12:49:59] [Server thread/INFO] (sg-protection) SG_PROTECTION protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1"
+ ]
+}

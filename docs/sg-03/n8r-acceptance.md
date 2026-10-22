@@ -104,3 +104,7 @@ Dependencies, checked just now: Xvfb, xdotool, xvfb-run, Mesa lavapipe (`lvp_icd
 Proposed scope: run the built production jar on a fresh seed-173 world with the real client under Xvfb; L1 join and render; L2 natural structure via `/locate`; L3–L4 approach and traversal with real xdotool input; L6 combat by real clicks; L7 trial spawner; L8–L9 screenshots and saved cells; L10 stability. L5 stays server-only and is reported as such. Anything that cannot be driven by real input is LIVE PENDING or BLOCKED, never PASS. Separate Draft PR. Expect the first run to debug `live_acceptance.py`.
 
 Waiting for explicit authorization to implement N9.
+
+
+## Erratum (N10 follow-up)
+The C2 overhead recorded above (+7.1%, "PASS") compared two builds that both had the write guard enabled; it is withdrawn. The corrected pairs (baseline with the write guard off) give a median of +11.9%, a literal FAIL of the +10% rule, with a spread of -37.8% to +91.6%. See `docs/sg-03/n10-merge-readiness.md`, section 7. All other classifications in this record are unchanged.
