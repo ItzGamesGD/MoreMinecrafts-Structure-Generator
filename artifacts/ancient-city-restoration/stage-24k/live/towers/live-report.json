@@ -1,0 +1,157 @@
+{
+ "datapack_list": "There are 2 data pack(s) enabled: [vanilla (built-in)], [file/pack (world)]There are no more data packs available",
+ "placements": [
+  {
+   "module": "large_pillar_1",
+   "variant": "A",
+   "rotation": "NONE",
+   "origin": [
+    9000,
+    -60,
+    9000
+   ],
+   "place_output": "Loaded template \"s24j:large_pillar_1/a\" at 9000, -60, 9000",
+   "cells": 320,
+   "mismatches": 0,
+   "mismatch_sample": [],
+   "bot": {
+    "ok": 52,
+    "total": 52,
+    "failed": []
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "variant": "A",
+   "rotation": "CLOCKWISE_90",
+   "origin": [
+    9000,
+    -60,
+    9060
+   ],
+   "place_output": "Loaded template \"s24j:large_pillar_1/a\" at 9000, -60, 9060",
+   "cells": 320,
+   "mismatches": 0,
+   "mismatch_sample": [],
+   "bot": {
+    "ok": 52,
+    "total": 52,
+    "failed": []
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "variant": "A",
+   "rotation": "CLOCKWISE_180",
+   "origin": [
+    9000,
+    -60,
+    9120
+   ],
+   "place_output": "Loaded template \"s24j:large_pillar_1/a\" at 9000, -60, 9120",
+   "cells": 320,
+   "mismatches": 0,
+   "mismatch_sample": [],
+   "bot": {
+    "ok": 52,
+    "total": 52,
+    "failed": []
+   }
+  },
+  {
+   "module": "large_pillar_1",
+   "variant": "A",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "origin": [
+    9000,
+    -60,
+    9180
+   ],
+   "place_output": "Loaded template \"s24j:large_pillar_1/a\" at 9000, -60, 9180",
+   "cells": 320,
+   "mismatches": 0,
+   "mismatch_sample": [],
+   "bot": {
+    "ok": 52,
+    "total": 52,
+    "failed": []
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "variant": "A",
+   "rotation": "NONE",
+   "origin": [
+    9060,
+    -60,
+    9000
+   ],
+   "place_output": "Loaded template \"s24j:medium_pillar_1/a\" at 9060, -60, 9000",
+   "cells": 338,
+   "mismatches": 0,
+   "mismatch_sample": [],
+   "bot": {
+    "ok": 78,
+    "total": 78,
+    "failed": []
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "variant": "A",
+   "rotation": "CLOCKWISE_90",
+   "origin": [
+    9060,
+    -60,
+    9060
+   ],
+   "place_output": "Loaded template \"s24j:medium_pillar_1/a\" at 9060, -60, 9060",
+   "cells": 338,
+   "mismatches": 0,
+   "mismatch_sample": [],
+   "bot": {
+    "ok": 78,
+    "total": 78,
+    "failed": []
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "variant": "A",
+   "rotation": "CLOCKWISE_180",
+   "origin": [
+    9060,
+    -60,
+    9120
+   ],
+   "place_output": "Loaded template \"s24j:medium_pillar_1/a\" at 9060, -60, 9120",
+   "cells": 338,
+   "mismatches": 0,
+   "mismatch_sample": [],
+   "bot": {
+    "ok": 78,
+    "total": 78,
+    "failed": []
+   }
+  },
+  {
+   "module": "medium_pillar_1",
+   "variant": "A",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "origin": [
+    9060,
+    -60,
+    9180
+   ],
+   "place_output": "Loaded template \"s24j:medium_pillar_1/a\" at 9060, -60, 9180",
+   "cells": 338,
+   "mismatches": 0,
+   "mismatch_sample": [],
+   "bot": {
+    "ok": 78,
+    "total": 78,
+    "failed": []
+   }
+  }
+ ]
+}

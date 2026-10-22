@@ -1,0 +1,152 @@
+{
+ "large_pillar_1": {
+  "variant": "A",
+  "title": "Open lookout \u2014 railed parapet on the corbelled cap",
+  "dimensions": [
+   6,
+   15,
+   6
+  ],
+  "approved_dimensions": [
+   6,
+   15,
+   6
+  ],
+  "size_unchanged": true,
+  "jigsaws_and_block_entities_identical": true,
+  "block_entities": [
+   "[5, 0, 2] jigsaw"
+  ],
+  "ladder": {
+   "column": [
+    2,
+    2
+   ],
+   "rungs": "y1..y13",
+   "continuous_and_backed": true,
+   "above_hatch_clear": true
+  },
+  "deck": {
+   "feet_y": 14,
+   "standable_cells": 15,
+   "reachable_from_ladder": 15,
+   "expected": 15,
+   "all_expected_reachable": true,
+   "unexpected_reachable": [],
+   "headroom_cells_above_template": 15
+  },
+  "fall_protection": {
+   "sides": {
+    "railing_wall": 16,
+    "ladder_hatch": 4
+   },
+   "open_drops": [],
+   "climbable_full_block_sides": []
+  },
+  "invalid_states": [],
+  "changed_cells": 47,
+  "stage24g_protected_cells_changed": [
+   "[1, 14, 3] railing deepslate->air",
+   "[2, 14, 4] railing deepslate->air",
+   "[3, 13, 2] ladder_attach deepslate_tiles->polished_deepslate",
+   "[3, 14, 1] railing deepslate->air",
+   "[3, 14, 4] railing deepslate->air",
+   "[4, 14, 2] railing deepslate->air",
+   "[4, 14, 3] railing deepslate->air"
+  ],
+  "stage24h_mask_cells_changed": 0,
+  "stage24i_roof_cells_changed": 0,
+  "decay_eligible_blocks": {
+   "approved": 142,
+   "variant": 95
+  },
+  "block_mix_changed": {
+   "polished_deepslate_wall": 16,
+   "polished_deepslate": 15,
+   "air": 12,
+   "chiseled_deepslate": 4
+  },
+  "static_pass": true,
+  "identical_to_stage24j_option_a": true
+ },
+ "medium_pillar_1": {
+  "variant": "A",
+  "title": "Corbelled crown \u2014 full-width deck, corner merlons, one broken merlon",
+  "dimensions": [
+   7,
+   11,
+   8
+  ],
+  "approved_dimensions": [
+   7,
+   11,
+   8
+  ],
+  "size_unchanged": true,
+  "jigsaws_and_block_entities_identical": true,
+  "block_entities": [
+   "[4, 1, 4] skeleton_skull",
+   "[6, 0, 3] jigsaw",
+   "[6, 0, 4] jigsaw"
+  ],
+  "ladder": {
+   "column": [
+    4,
+    3
+   ],
+   "rungs": "y1..y8",
+   "continuous_and_backed": true,
+   "above_hatch_clear": true
+  },
+  "deck": {
+   "feet_y": 9,
+   "standable_cells": 29,
+   "reachable_from_ladder": 29,
+   "expected": 29,
+   "all_expected_reachable": true,
+   "unexpected_reachable": [],
+   "headroom_cells_above_template": 0
+  },
+  "fall_protection": {
+   "sides": {
+    "railing_wall": 22,
+    "ladder_hatch": 4
+   },
+   "open_drops": [],
+   "climbable_full_block_sides": []
+  },
+  "invalid_states": [],
+  "changed_cells": 79,
+  "stage24g_protected_cells_changed": [
+   "[1, 9, 2] railing polished_deepslate_wall->air",
+   "[1, 9, 3] railing polished_deepslate_wall->air",
+   "[1, 9, 4] railing polished_deepslate_wall->air",
+   "[1, 9, 5] railing polished_deepslate_wall->air",
+   "[2, 9, 1] railing polished_deepslate_wall->air",
+   "[2, 9, 6] railing polished_deepslate_wall->air",
+   "[3, 9, 1] railing polished_deepslate_wall->air",
+   "[3, 9, 6] railing polished_deepslate_wall->air",
+   "[4, 9, 1] railing polished_deepslate_wall->air",
+   "[4, 9, 6] railing polished_deepslate_wall->air",
+   "[5, 9, 2] railing polished_deepslate_wall->air",
+   "[5, 9, 4] railing polished_deepslate_wall->air",
+   "[5, 9, 5] railing polished_deepslate_wall->air"
+  ],
+  "stage24h_mask_cells_changed": 0,
+  "stage24i_roof_cells_changed": 0,
+  "decay_eligible_blocks": {
+   "approved": 196,
+   "variant": 184
+  },
+  "block_mix_changed": {
+   "deepslate_tile_stairs": 26,
+   "air": 24,
+   "polished_deepslate_wall": 22,
+   "chiseled_deepslate": 3,
+   "polished_deepslate": 3,
+   "cracked_deepslate_bricks": 1
+  },
+  "static_pass": true,
+  "identical_to_stage24j_option_a": true
+ }
+}

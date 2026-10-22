@@ -1,0 +1,4768 @@
+[
+ {
+  "seed": 24001,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 83,
+  "pieces_k24": 83,
+  "pieces": [
+   {
+    "piece_index": 16,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -231,
+     -51,
+     140,
+     -226,
+     -37,
+     145
+    ],
+    "counts": {
+     "same": 885,
+     "diff_sculk": 92,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 21,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -298,
+     -51,
+     179,
+     -282,
+     -38,
+     195
+    ],
+    "counts": {
+     "same": 4863,
+     "diff_sculk": 552
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 22,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -322,
+     -51,
+     137,
+     -310,
+     -47,
+     144
+    ],
+    "counts": {
+     "same": 793,
+     "diff_sculk": 107
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 38,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -337,
+     -51,
+     138,
+     -330,
+     -41,
+     144
+    ],
+    "counts": {
+     "same": 967,
+     "diff_sculk": 24,
+     "design_cell_as_predicted": 82,
+     "design_cell_sculk_or_fluid": 1,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 49,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -246,
+     -51,
+     93,
+     -241,
+     -37,
+     98
+    ],
+    "counts": {
+     "same": 936,
+     "diff_sculk": 39,
+     "diff_natural_terrain": 1,
+     "design_cell_as_predicted": 47,
+     "diff_vegetation_glow_lichen": 1
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 50,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -246,
+     -51,
+     64,
+     -243,
+     -47,
+     71
+    ],
+    "counts": {
+     "diff_sculk": 164,
+     "same": 196
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 59,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -358,
+     -51,
+     137,
+     -346,
+     -47,
+     144
+    ],
+    "counts": {
+     "same": 666,
+     "diff_sculk": 234
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 70,
+    "module": "medium_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -288,
+     -51,
+     237,
+     -282,
+     -41,
+     244
+    ],
+    "counts": {
+     "diff_sculk": 26,
+     "same": 965,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 78,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -339,
+     -51,
+     93,
+     -334,
+     -37,
+     98
+    ],
+    "counts": {
+     "same": 955,
+     "diff_sculk": 22,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   }
+  ]
+ },
+ {
+  "seed": 24002,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 91,
+  "pieces_k24": 91,
+  "pieces": [
+   {
+    "piece_index": 17,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     976,
+     -51,
+     -812,
+     981,
+     -37,
+     -807
+    ],
+    "counts": {
+     "same": 870,
+     "diff_sculk": 107,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 23,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     975,
+     -51,
+     -710,
+     980,
+     -37,
+     -705
+    ],
+    "counts": {
+     "same": 977,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 78,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     874,
+     -51,
+     -793,
+     884,
+     -44,
+     -778
+    ],
+    "counts": {
+     "same": 2106
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24003,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 92,
+  "pieces_k24": 92,
+  "pieces": [
+   {
+    "piece_index": 19,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     529,
+     -51,
+     -22,
+     536,
+     -41,
+     -16
+    ],
+    "counts": {
+     "same": 991,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 23,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     540,
+     -51,
+     -65,
+     556,
+     -38,
+     -49
+    ],
+    "counts": {
+     "same": 5415
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 32,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     588,
+     -51,
+     45,
+     594,
+     -41,
+     52
+    ],
+    "counts": {
+     "same": 813,
+     "diff_sculk": 178,
+     "design_cell_as_predicted": 80,
+     "design_cell_removed_from_template": 6,
+     "design_cell_sculk_or_fluid": 3
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 47,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     620,
+     -51,
+     -27,
+     625,
+     -37,
+     -22
+    ],
+    "counts": {
+     "same": 961,
+     "diff_sculk": 16,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 49,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     536,
+     -51,
+     40,
+     543,
+     -47,
+     46
+    ],
+    "counts": {
+     "same": 540
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     588,
+     -51,
+     65,
+     595,
+     -47,
+     68
+    ],
+    "counts": {
+     "same": 266,
+     "diff_sculk": 94
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 62,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     620,
+     -51,
+     -67,
+     627,
+     -41,
+     -61
+    ],
+    "counts": {
+     "same": 838,
+     "diff_sculk": 153,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 75,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     477,
+     -51,
+     9,
+     484,
+     -47,
+     21
+    ],
+    "counts": {
+     "same": 900
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 77,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     665,
+     -51,
+     7,
+     681,
+     -38,
+     23
+    ],
+    "counts": {
+     "same": 4850,
+     "diff_sculk": 565
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 78,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     670,
+     -51,
+     -21,
+     677,
+     -41,
+     -15
+    ],
+    "counts": {
+     "diff_sculk": 124,
+     "same": 867,
+     "design_cell_as_predicted": 78,
+     "design_cell_removed_from_template": 6,
+     "design_cell_sculk_or_fluid": 5
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [
+      [
+       2,
+       3,
+       9
+      ],
+      [
+       2,
+       4,
+       9
+      ],
+      [
+       2,
+       5,
+       9
+      ]
+     ],
+     "deck_blockers": {
+      "sculk_sensor": 2,
+      "sculk_catalyst": 1
+     },
+     "deck_cells_clear": 26,
+     "deck_cells_reachable_from_ladder": 26,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   }
+  ]
+ },
+ {
+  "seed": 24004,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 83,
+  "pieces_k24": 83,
+  "pieces": [
+   {
+    "piece_index": 19,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -241,
+     -51,
+     -951,
+     -229,
+     -47,
+     -944
+    ],
+    "counts": {
+     "diff_fluid": 2,
+     "diff_sculk": 167,
+     "same": 731
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 58,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -218,
+     -51,
+     -856,
+     -202,
+     -38,
+     -840
+    ],
+    "counts": {
+     "same": 4954,
+     "diff_sculk": 461
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 68,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -249,
+     -51,
+     -1035,
+     -233,
+     -38,
+     -1019
+    ],
+    "counts": {
+     "same": 5415
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24005,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 101,
+  "pieces_k24": 101,
+  "pieces": [
+   {
+    "piece_index": 17,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1318,
+     -51,
+     922,
+     -1315,
+     -47,
+     929
+    ],
+    "counts": {
+     "diff_sculk": 81,
+     "same": 279
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 24,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1409,
+     -51,
+     921,
+     -1397,
+     -47,
+     928
+    ],
+    "counts": {
+     "same": 607,
+     "diff_sculk": 293
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 25,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -1335,
+     -51,
+     890,
+     -1330,
+     -37,
+     895
+    ],
+    "counts": {
+     "same": 857,
+     "diff_sculk": 120,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 62,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -1346,
+     -51,
+     844,
+     -1341,
+     -37,
+     849
+    ],
+    "counts": {
+     "same": 862,
+     "diff_sculk": 115,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 63,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -1319,
+     -51,
+     843,
+     -1313,
+     -47,
+     850
+    ],
+    "counts": {
+     "same": 519,
+     "diff_sculk": 21
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 71,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -1348,
+     -51,
+     1023,
+     -1341,
+     -47,
+     1035
+    ],
+    "counts": {
+     "same": 900
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 75,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1384,
+     -51,
+     991,
+     -1372,
+     -47,
+     998
+    ],
+    "counts": {
+     "same": 714,
+     "diff_sculk": 186
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 77,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1466,
+     -51,
+     913,
+     -1456,
+     -44,
+     928
+    ],
+    "counts": {
+     "same": 1700,
+     "diff_sculk": 406
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 86,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -1449,
+     -51,
+     917,
+     -1437,
+     -47,
+     924
+    ],
+    "counts": {
+     "same": 643,
+     "diff_sculk": 257
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 98,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     -1430,
+     -51,
+     972,
+     -1415,
+     -44,
+     982
+    ],
+    "counts": {
+     "same": 1767,
+     "diff_sculk": 339
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24006,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 74,
+  "pieces_k24": 74,
+  "pieces": [
+   {
+    "piece_index": 25,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -185,
+     -51,
+     -1679,
+     -173,
+     -47,
+     -1672
+    ],
+    "counts": {
+     "same": 758,
+     "diff_sculk": 142
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 43,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -164,
+     -51,
+     -1679,
+     -159,
+     -37,
+     -1674
+    ],
+    "counts": {
+     "diff_sculk": 86,
+     "same": 891,
+     "design_cell_as_predicted": 30,
+     "design_cell_sculk_or_fluid": 17
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [
+      [
+       1,
+       1,
+       14
+      ],
+      [
+       3,
+       2,
+       14
+      ],
+      [
+       3,
+       3,
+       14
+      ],
+      [
+       4,
+       1,
+       14
+      ]
+     ],
+     "deck_blockers": {
+      "sculk_sensor": 3,
+      "sculk_catalyst": 1
+     },
+     "deck_cells_clear": 11,
+     "deck_cells_reachable_from_ladder": 11,
+     "ladder_exit_cells_clear": 3,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 46,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -226,
+     -51,
+     -1796,
+     -220,
+     -47,
+     -1789
+    ],
+    "counts": {
+     "same": 437,
+     "diff_sculk": 103
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 47,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -143,
+     -51,
+     -1762,
+     -107,
+     -42,
+     -1734
+    ],
+    "counts": {
+     "same": 12479,
+     "diff_sculk": 820,
+     "POOL_WATER_LOST": 1
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "pool_water_cells": 43,
+    "pool_water_lost": 1
+   },
+   {
+    "piece_index": 55,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -261,
+     -51,
+     -1639,
+     -249,
+     -47,
+     -1632
+    ],
+    "counts": {
+     "diff_sculk": 276,
+     "same": 624
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 60,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     -198,
+     -51,
+     -1811,
+     -191,
+     -47,
+     -1808
+    ],
+    "counts": {
+     "same": 342,
+     "diff_sculk": 18
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 67,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -114,
+     -51,
+     -1712,
+     -107,
+     -41,
+     -1706
+    ],
+    "counts": {
+     "same": 958,
+     "diff_vegetation_glow_lichen": 2,
+     "diff_sculk": 31,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   }
+  ]
+ },
+ {
+  "seed": 24007,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 102,
+  "pieces_k24": 102,
+  "pieces": [
+   {
+    "piece_index": 37,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -264,
+     -51,
+     922,
+     -257,
+     -47,
+     934
+    ],
+    "counts": {
+     "same": 794,
+     "diff_sculk": 106
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 41,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -414,
+     -51,
+     868,
+     -378,
+     -42,
+     896
+    ],
+    "counts": {
+     "same": 12769,
+     "diff_sculk": 530,
+     "POOL_WATER_LOST": 1
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "pool_water_cells": 43,
+    "pool_water_lost": 1
+   },
+   {
+    "piece_index": 55,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -291,
+     -51,
+     943,
+     -286,
+     -37,
+     948
+    ],
+    "counts": {
+     "same": 955,
+     "diff_sculk": 21,
+     "design_cell_as_predicted": 47,
+     "diff_vegetation_glow_lichen": 1
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 56,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -264,
+     -51,
+     945,
+     -259,
+     -37,
+     950
+    ],
+    "counts": {
+     "diff_sculk": 118,
+     "same": 857,
+     "design_cell_as_predicted": 47,
+     "diff_vegetation_glow_lichen": 2
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 93,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -259,
+     -51,
+     818,
+     -254,
+     -37,
+     823
+    ],
+    "counts": {
+     "diff_sculk": 41,
+     "same": 934,
+     "diff_vegetation_glow_lichen": 2,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 94,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -257,
+     -51,
+     845,
+     -254,
+     -47,
+     852
+    ],
+    "counts": {
+     "same": 245,
+     "diff_sculk": 115
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24008,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 95,
+  "pieces_k24": 95,
+  "pieces": [
+   {
+    "piece_index": 13,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     474,
+     -51,
+     1251,
+     481,
+     -47,
+     1254
+    ],
+    "counts": {
+     "same": 240,
+     "diff_sculk": 120
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 19,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     519,
+     -51,
+     1306,
+     529,
+     -44,
+     1321
+    ],
+    "counts": {
+     "same": 2106
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 31,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     432,
+     -51,
+     1319,
+     447,
+     -44,
+     1329
+    ],
+    "counts": {
+     "same": 2106
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 34,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     475,
+     -51,
+     1356,
+     480,
+     -37,
+     1361
+    ],
+    "counts": {
+     "same": 970,
+     "diff_sculk": 7,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 35,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     502,
+     -51,
+     1343,
+     530,
+     -42,
+     1379
+    ],
+    "counts": {
+     "same": 12950,
+     "diff_sculk": 349
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "pool_water_cells": 43,
+    "pool_water_lost": 0
+   },
+   {
+    "piece_index": 38,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     474,
+     -51,
+     1215,
+     481,
+     -47,
+     1218
+    ],
+    "counts": {
+     "same": 360
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 45,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     469,
+     -51,
+     1244,
+     476,
+     -47,
+     1247
+    ],
+    "counts": {
+     "same": 299,
+     "diff_sculk": 61
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 57,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     474,
+     -51,
+     1371,
+     480,
+     -47,
+     1378
+    ],
+    "counts": {
+     "same": 487,
+     "diff_sculk": 53
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 60,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     475,
+     -51,
+     1195,
+     481,
+     -47,
+     1202
+    ],
+    "counts": {
+     "diff_sculk": 20,
+     "same": 520
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 61,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     503,
+     -51,
+     1196,
+     509,
+     -47,
+     1203
+    ],
+    "counts": {
+     "same": 502,
+     "diff_sculk": 38
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 85,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     429,
+     -51,
+     1228,
+     434,
+     -37,
+     1233
+    ],
+    "counts": {
+     "same": 977,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 93,
+    "module": "small_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     593,
+     -51,
+     1278,
+     600,
+     -47,
+     1284
+    ],
+    "counts": {
+     "same": 534,
+     "diff_sculk": 6
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24009,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 100,
+  "pieces_k24": 100,
+  "pieces": [
+   {
+    "piece_index": 18,
+    "module": "large_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     508,
+     -51,
+     564,
+     524,
+     -38,
+     580
+    ],
+    "counts": {
+     "same": 4517,
+     "diff_sculk": 898
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 21,
+    "module": "small_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     450,
+     -51,
+     522,
+     457,
+     -47,
+     528
+    ],
+    "counts": {
+     "same": 540
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 27,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     552,
+     -51,
+     557,
+     557,
+     -37,
+     562
+    ],
+    "counts": {
+     "same": 977,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 35,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     508,
+     -51,
+     584,
+     523,
+     -44,
+     594
+    ],
+    "counts": {
+     "same": 1613,
+     "diff_sculk": 489,
+     "diff_fluid": 4
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 39,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     524,
+     -51,
+     498,
+     530,
+     -47,
+     505
+    ],
+    "counts": {
+     "diff_sculk": 155,
+     "same": 385
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 40,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     576,
+     -51,
+     522,
+     579,
+     -47,
+     529
+    ],
+    "counts": {
+     "same": 360
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 42,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     576,
+     -51,
+     551,
+     581,
+     -37,
+     556
+    ],
+    "counts": {
+     "same": 975,
+     "diff_vegetation_glow_lichen": 2,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 56,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     408,
+     -51,
+     521,
+     420,
+     -47,
+     528
+    ],
+    "counts": {
+     "same": 900
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 59,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     588,
+     -51,
+     551,
+     604,
+     -38,
+     567
+    ],
+    "counts": {
+     "same": 5415
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 60,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     559,
+     -51,
+     590,
+     562,
+     -47,
+     597
+    ],
+    "counts": {
+     "same": 360
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 63,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     537,
+     -51,
+     448,
+     549,
+     -47,
+     455
+    ],
+    "counts": {
+     "same": 900
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 67,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     448,
+     -51,
+     448,
+     451,
+     -47,
+     455
+    ],
+    "counts": {
+     "same": 360
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 90,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     425,
+     -51,
+     439,
+     441,
+     -38,
+     455
+    ],
+    "counts": {
+     "same": 5415
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 97,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     417,
+     -51,
+     593,
+     422,
+     -37,
+     598
+    ],
+    "counts": {
+     "same": 977,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   }
+  ]
+ },
+ {
+  "seed": 24010,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 86,
+  "pieces_k24": 86,
+  "pieces": [
+   {
+    "piece_index": 13,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -3015,
+     -51,
+     2320,
+     -3010,
+     -37,
+     2325
+    ],
+    "counts": {
+     "same": 845,
+     "diff_sculk": 132,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 16,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -3046,
+     -51,
+     2274,
+     -3041,
+     -37,
+     2279
+    ],
+    "counts": {
+     "same": 887,
+     "diff_sculk": 90,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 46,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -3015,
+     -51,
+     2359,
+     -3009,
+     -47,
+     2366
+    ],
+    "counts": {
+     "same": 338,
+     "diff_sculk": 202
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 57,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -3079,
+     -51,
+     2221,
+     -3076,
+     -47,
+     2228
+    ],
+    "counts": {
+     "same": 360
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 63,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -3120,
+     -51,
+     2359,
+     -3115,
+     -37,
+     2364
+    ],
+    "counts": {
+     "same": 977,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 76,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -3126,
+     -51,
+     2364,
+     -3123,
+     -47,
+     2371
+    ],
+    "counts": {
+     "same": 360
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24011,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 95,
+  "pieces_k24": 95,
+  "pieces": [
+   {
+    "piece_index": 13,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -238,
+     -51,
+     -573,
+     -231,
+     -41,
+     -567
+    ],
+    "counts": {
+     "same": 989,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6,
+     "diff_vegetation_glow_lichen": 2
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 26,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -255,
+     -51,
+     -545,
+     -252,
+     -47,
+     -538
+    ],
+    "counts": {
+     "same": 360
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 49,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -169,
+     -51,
+     -500,
+     -157,
+     -47,
+     -493
+    ],
+    "counts": {
+     "same": 617,
+     "diff_sculk": 283
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 51,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -239,
+     -51,
+     -511,
+     -236,
+     -47,
+     -504
+    ],
+    "counts": {
+     "diff_sculk": 132,
+     "same": 228
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -182,
+     -51,
+     -633,
+     -175,
+     -47,
+     -621
+    ],
+    "counts": {
+     "same": 688,
+     "diff_sculk": 212
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 62,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -99,
+     -51,
+     -582,
+     -83,
+     -38,
+     -566
+    ],
+    "counts": {
+     "same": 4683,
+     "diff_sculk": 732
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 75,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -262,
+     -51,
+     -521,
+     -257,
+     -37,
+     -516
+    ],
+    "counts": {
+     "same": 977,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 89,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -142,
+     -51,
+     -633,
+     -132,
+     -44,
+     -618
+    ],
+    "counts": {
+     "same": 1677,
+     "diff_sculk": 429
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 91,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -252,
+     -51,
+     -624,
+     -245,
+     -41,
+     -618
+    ],
+    "counts": {
+     "same": 804,
+     "diff_sculk": 187,
+     "design_cell_as_predicted": 73,
+     "design_cell_rot_dropped_as_predicted": 1,
+     "design_cell_removed_from_template": 6,
+     "design_cell_sculk_or_fluid": 9
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [
+      [
+       3,
+       3,
+       9
+      ],
+      [
+       3,
+       5,
+       9
+      ]
+     ],
+     "deck_blockers": {
+      "sculk_sensor": 2
+     },
+     "deck_cells_clear": 27,
+     "deck_cells_reachable_from_ladder": 27,
+     "ladder_exit_cells_clear": 3,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   }
+  ]
+ },
+ {
+  "seed": 24012,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 85,
+  "pieces_k24": 85,
+  "pieces": [
+   {
+    "piece_index": 17,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1358,
+     -51,
+     79,
+     -1351,
+     -41,
+     85
+    ],
+    "counts": {
+     "same": 855,
+     "diff_sculk": 136,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 18,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -1340,
+     -51,
+     27,
+     -1324,
+     -38,
+     43
+    ],
+    "counts": {
+     "same": 4687,
+     "diff_sculk": 728
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 20,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -1302,
+     -51,
+     32,
+     -1296,
+     -41,
+     39
+    ],
+    "counts": {
+     "same": 929,
+     "diff_sculk": 62,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 24,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1250,
+     -51,
+     80,
+     -1245,
+     -37,
+     85
+    ],
+    "counts": {
+     "same": 967,
+     "diff_sculk": 10,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 26,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -1256,
+     -51,
+     86,
+     -1250,
+     -47,
+     93
+    ],
+    "counts": {
+     "same": 530,
+     "diff_sculk": 10
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 32,
+    "module": "large_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -1302,
+     -51,
+     12,
+     -1286,
+     -38,
+     28
+    ],
+    "counts": {
+     "diff_sculk": 749,
+     "same": 4666
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 39,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -1234,
+     -51,
+     52,
+     -1227,
+     -41,
+     58
+    ],
+    "counts": {
+     "same": 983,
+     "diff_sculk": 8,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 41,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1399,
+     -51,
+     42,
+     -1389,
+     -44,
+     57
+    ],
+    "counts": {
+     "same": 1901,
+     "diff_sculk": 205
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 51,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -1288,
+     -51,
+     125,
+     -1281,
+     -41,
+     131
+    ],
+    "counts": {
+     "same": 844,
+     "diff_sculk": 147,
+     "design_cell_as_predicted": 77,
+     "design_cell_removed_from_template": 6,
+     "design_cell_sculk_or_fluid": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [
+      [
+       1,
+       1,
+       9
+      ]
+     ],
+     "deck_blockers": {
+      "sculk_sensor": 1
+     },
+     "deck_cells_clear": 28,
+     "deck_cells_reachable_from_ladder": 28,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 56,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -1414,
+     -51,
+     79,
+     -1409,
+     -37,
+     84
+    ],
+    "counts": {
+     "same": 977,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 70,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -1280,
+     -51,
+     103,
+     -1244,
+     -42,
+     131
+    ],
+    "counts": {
+     "same": 12917,
+     "diff_sculk": 350,
+     "diff_fluid": 16,
+     "POOL_WATER_LOST": 0,
+     "design_cell_of_neighbouring_tower_as_predicted": 16
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "pool_water_cells": 43,
+    "pool_water_lost": 0
+   },
+   {
+    "piece_index": 74,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -1393,
+     -51,
+     12,
+     -1386,
+     -47,
+     15
+    ],
+    "counts": {
+     "same": 360
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 75,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -1330,
+     -51,
+     -40,
+     -1324,
+     -47,
+     -33
+    ],
+    "counts": {
+     "same": 469,
+     "diff_sculk": 71
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24013,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 91,
+  "pieces_k24": 91,
+  "pieces": [
+   {
+    "piece_index": 41,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1190,
+     -51,
+     1308,
+     1196,
+     -41,
+     1315
+    ],
+    "counts": {
+     "same": 833,
+     "diff_sculk": 158,
+     "design_cell_as_predicted": 75,
+     "design_cell_removed_from_template": 6,
+     "design_cell_sculk_or_fluid": 8
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 48,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1191,
+     -51,
+     1138,
+     1219,
+     -42,
+     1174
+    ],
+    "counts": {
+     "diff_sculk": 467,
+     "same": 12832,
+     "POOL_WATER_LOST": 0
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "pool_water_cells": 43,
+    "pool_water_lost": 0
+   },
+   {
+    "piece_index": 73,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     1117,
+     -51,
+     1181,
+     1124,
+     -47,
+     1184
+    ],
+    "counts": {
+     "diff_sculk": 125,
+     "same": 235
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 74,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1083,
+     -51,
+     1273,
+     1090,
+     -41,
+     1279
+    ],
+    "counts": {
+     "same": 943,
+     "diff_sculk": 48,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 80,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1278,
+     -51,
+     1213,
+     1290,
+     -47,
+     1220
+    ],
+    "counts": {
+     "same": 724,
+     "diff_sculk": 176
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 90,
+    "module": "medium_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     1089,
+     -51,
+     1296,
+     1095,
+     -41,
+     1303
+    ],
+    "counts": {
+     "same": 821,
+     "diff_sculk": 170,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   }
+  ]
+ },
+ {
+  "seed": 24014,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 85,
+  "pieces_k24": 85,
+  "pieces": [
+   {
+    "piece_index": 20,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1359,
+     -51,
+     -925,
+     1366,
+     -47,
+     -913
+    ],
+    "counts": {
+     "same": 819,
+     "diff_sculk": 81
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 31,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1308,
+     -51,
+     -967,
+     1320,
+     -47,
+     -960
+    ],
+    "counts": {
+     "same": 645,
+     "diff_sculk": 255
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 33,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     1388,
+     -51,
+     -904,
+     1403,
+     -44,
+     -894
+    ],
+    "counts": {
+     "same": 1660,
+     "diff_sculk": 446
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 38,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     1432,
+     -51,
+     -937,
+     1442,
+     -44,
+     -922
+    ],
+    "counts": {
+     "same": 1724,
+     "diff_sculk": 382
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 45,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1400,
+     -51,
+     -1011,
+     1407,
+     -41,
+     -1005
+    ],
+    "counts": {
+     "same": 991,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 62,
+    "module": "small_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1273,
+     -51,
+     -966,
+     1280,
+     -47,
+     -960
+    ],
+    "counts": {
+     "same": 540
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 63,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1272,
+     -51,
+     -938,
+     1279,
+     -41,
+     -932
+    ],
+    "counts": {
+     "same": 991,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 66,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1359,
+     -51,
+     -863,
+     1366,
+     -47,
+     -860
+    ],
+    "counts": {
+     "same": 360
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 72,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     1293,
+     -51,
+     -971,
+     1296,
+     -47,
+     -964
+    ],
+    "counts": {
+     "same": 357,
+     "diff_sculk": 3
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 73,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     1279,
+     -51,
+     -1021,
+     1315,
+     -42,
+     -993
+    ],
+    "counts": {
+     "same": 13299
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "pool_water_cells": 43,
+    "pool_water_lost": 0
+   },
+   {
+    "piece_index": 76,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     1440,
+     -51,
+     -1011,
+     1447,
+     -47,
+     -1005
+    ],
+    "counts": {
+     "same": 459,
+     "diff_sculk": 81
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24015,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 85,
+  "pieces_k24": 85,
+  "pieces": [
+   {
+    "piece_index": 35,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -193,
+     -51,
+     -86,
+     -187,
+     -47,
+     -79
+    ],
+    "counts": {
+     "same": 441,
+     "diff_sculk": 99
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 45,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -119,
+     -51,
+     -176,
+     -113,
+     -41,
+     -169
+    ],
+    "counts": {
+     "same": 783,
+     "diff_sculk": 208,
+     "design_cell_as_predicted": 82,
+     "design_cell_removed_from_template": 6,
+     "design_cell_sculk_or_fluid": 1
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 54,
+    "module": "sauna_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -293,
+     -51,
+     -132,
+     -257,
+     -42,
+     -104
+    ],
+    "counts": {
+     "same": 12429,
+     "diff_sculk": 870,
+     "POOL_WATER_LOST": 0
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "pool_water_cells": 43,
+    "pool_water_lost": 0
+   },
+   {
+    "piece_index": 55,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -279,
+     -51,
+     -170,
+     -263,
+     -38,
+     -154
+    ],
+    "counts": {
+     "same": 4687,
+     "diff_sculk": 728
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 57,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -263,
+     -51,
+     -215,
+     -253,
+     -44,
+     -200
+    ],
+    "counts": {
+     "same": 2106
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 74,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -282,
+     -51,
+     -207,
+     -270,
+     -47,
+     -200
+    ],
+    "counts": {
+     "same": 856,
+     "diff_sculk": 44
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 76,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -280,
+     -51,
+     -178,
+     -277,
+     -47,
+     -171
+    ],
+    "counts": {
+     "same": 275,
+     "diff_sculk": 85
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 81,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -187,
+     -51,
+     -65,
+     -181,
+     -47,
+     -58
+    ],
+    "counts": {
+     "same": 533,
+     "diff_sculk": 7
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 84,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -311,
+     -51,
+     -132,
+     -304,
+     -47,
+     -126
+    ],
+    "counts": {
+     "same": 426,
+     "diff_sculk": 114
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24016,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 99,
+  "pieces_k24": 99,
+  "pieces": [
+   {
+    "piece_index": 19,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -1025,
+     -51,
+     -1496,
+     -1019,
+     -41,
+     -1489
+    ],
+    "counts": {
+     "same": 956,
+     "diff_sculk": 35,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 34,
+    "module": "medium_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -1053,
+     -51,
+     -1478,
+     -1047,
+     -41,
+     -1471
+    ],
+    "counts": {
+     "same": 990,
+     "diff_vegetation_glow_lichen": 1,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 39,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     -991,
+     -51,
+     -1566,
+     -984,
+     -47,
+     -1563
+    ],
+    "counts": {
+     "same": 305,
+     "diff_sculk": 55
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 48,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -1024,
+     -51,
+     -1619,
+     -1018,
+     -41,
+     -1612
+    ],
+    "counts": {
+     "same": 971,
+     "diff_sculk": 18,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6,
+     "diff_vegetation_glow_lichen": 2
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 51,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -1054,
+     -51,
+     -1458,
+     -1047,
+     -47,
+     -1455
+    ],
+    "counts": {
+     "same": 360
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 61,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -985,
+     -51,
+     -1495,
+     -980,
+     -37,
+     -1490
+    ],
+    "counts": {
+     "same": 939,
+     "diff_sculk": 38,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 95,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -983,
+     -51,
+     -1573,
+     -978,
+     -37,
+     -1568
+    ],
+    "counts": {
+     "same": 936,
+     "diff_sculk": 41,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   }
+  ]
+ },
+ {
+  "seed": 24017,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 89,
+  "pieces_k24": 89,
+  "pieces": [
+   {
+    "piece_index": 41,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     81,
+     -51,
+     152,
+     96,
+     -44,
+     162
+    ],
+    "counts": {
+     "same": 1808,
+     "diff_sculk": 298
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 45,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -37,
+     -51,
+     112,
+     -30,
+     -41,
+     118
+    ],
+    "counts": {
+     "diff_sculk": 147,
+     "same": 843,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6,
+     "newly_protected_cell_restored_by_overlay": 1
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 47,
+    "module": "large_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -36,
+     -51,
+     140,
+     -31,
+     -37,
+     145
+    ],
+    "counts": {
+     "same": 945,
+     "diff_sculk": 31,
+     "design_cell_as_predicted": 47,
+     "diff_vegetation_glow_lichen": 1
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 54,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     47,
+     -51,
+     202,
+     62,
+     -44,
+     212
+    ],
+    "counts": {
+     "diff_sculk": 116,
+     "same": 1990
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 60,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     81,
+     -51,
+     76,
+     86,
+     -37,
+     81
+    ],
+    "counts": {
+     "same": 940,
+     "diff_sculk": 31,
+     "design_cell_of_neighbouring_tower_as_predicted": 4,
+     "diff_natural_terrain": 2,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 61,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     87,
+     -51,
+     81,
+     94,
+     -41,
+     87
+    ],
+    "counts": {
+     "same": 847,
+     "diff_sculk": 144,
+     "design_cell_as_predicted": 81,
+     "design_cell_removed_from_template": 6,
+     "design_cell_sculk_or_fluid": 2
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 62,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -19,
+     -51,
+     74,
+     -14,
+     -37,
+     79
+    ],
+    "counts": {
+     "same": 975,
+     "diff_sculk": 2,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 82,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     82,
+     -51,
+     187,
+     98,
+     -38,
+     203
+    ],
+    "counts": {
+     "same": 4837,
+     "diff_sculk": 578
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 83,
+    "module": "medium_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     125,
+     -51,
+     150,
+     135,
+     -44,
+     165
+    ],
+    "counts": {
+     "diff_sculk": 474,
+     "same": 1632
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 85,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     121,
+     -51,
+     189,
+     128,
+     -47,
+     201
+    ],
+    "counts": {
+     "same": 716,
+     "diff_sculk": 184
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 88,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     121,
+     -51,
+     61,
+     127,
+     -41,
+     68
+    ],
+    "counts": {
+     "same": 991,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   }
+  ]
+ },
+ {
+  "seed": 24018,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 86,
+  "pieces_k24": 86,
+  "pieces": [
+   {
+    "piece_index": 32,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     1293,
+     -51,
+     112,
+     1300,
+     -47,
+     118
+    ],
+    "counts": {
+     "same": 517,
+     "diff_sculk": 23
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 51,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1259,
+     -51,
+     57,
+     1266,
+     -47,
+     69
+    ],
+    "counts": {
+     "same": 650,
+     "diff_sculk": 250
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1288,
+     -51,
+     60,
+     1293,
+     -37,
+     65
+    ],
+    "counts": {
+     "diff_sculk": 32,
+     "same": 942,
+     "design_cell_as_predicted": 47,
+     "diff_vegetation_glow_lichen": 3
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 70,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     1261,
+     -51,
+     44,
+     1266,
+     -37,
+     49
+    ],
+    "counts": {
+     "diff_sculk": 92,
+     "same": 885,
+     "design_cell_as_predicted": 47
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 76,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     1137,
+     -51,
+     145,
+     1153,
+     -38,
+     161
+    ],
+    "counts": {
+     "same": 5397,
+     "diff_sculk": 18
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 78,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1293,
+     -51,
+     185,
+     1300,
+     -41,
+     191
+    ],
+    "counts": {
+     "same": 991,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 82,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     1242,
+     -51,
+     -3,
+     1249,
+     -47,
+     0
+    ],
+    "counts": {
+     "same": 331,
+     "diff_sculk": 29
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 84,
+    "module": "sauna_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1288,
+     -51,
+     12,
+     1316,
+     -42,
+     48
+    ],
+    "counts": {
+     "same": 12699,
+     "diff_sculk": 600
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "pool_water_cells": 43,
+    "pool_water_lost": 0
+   }
+  ]
+ },
+ {
+  "seed": 24019,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 82,
+  "pieces_k24": 82,
+  "pieces": [
+   {
+    "piece_index": 27,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -757,
+     -51,
+     -1514,
+     -747,
+     -44,
+     -1499
+    ],
+    "counts": {
+     "same": 1592,
+     "diff_sculk": 514
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 30,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -632,
+     -51,
+     -1546,
+     -626,
+     -41,
+     -1539
+    ],
+    "counts": {
+     "same": 849,
+     "diff_sculk": 142,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 45,
+    "module": "large_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -662,
+     -51,
+     -1614,
+     -657,
+     -37,
+     -1609
+    ],
+    "counts": {
+     "same": 847,
+     "diff_sculk": 129,
+     "design_cell_as_predicted": 47,
+     "diff_vegetation_glow_lichen": 1
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   }
+  ]
+ },
+ {
+  "seed": 24020,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 95,
+  "pieces_k24": 95,
+  "pieces": [
+   {
+    "piece_index": 35,
+    "module": "sauna_1",
+    "rotation": "NONE",
+    "bb": [
+     1709,
+     -51,
+     -869,
+     1737,
+     -42,
+     -833
+    ],
+    "counts": {
+     "diff_sculk": 971,
+     "same": 12328,
+     "POOL_WATER_LOST": 0
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "pool_water_cells": 43,
+    "pool_water_lost": 0
+   },
+   {
+    "piece_index": 37,
+    "module": "small_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     1793,
+     -51,
+     -944,
+     1799,
+     -47,
+     -937
+    ],
+    "counts": {
+     "same": 366,
+     "diff_sculk": 174
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 48,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1722,
+     -51,
+     -1004,
+     1738,
+     -38,
+     -988
+    ],
+    "counts": {
+     "diff_sculk": 282,
+     "same": 5133
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 51,
+    "module": "large_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     1759,
+     -51,
+     -836,
+     1775,
+     -38,
+     -820
+    ],
+    "counts": {
+     "diff_sculk": 694,
+     "same": 4721
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 52,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1730,
+     -51,
+     -830,
+     1737,
+     -47,
+     -827
+    ],
+    "counts": {
+     "diff_sculk": 139,
+     "same": 221
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 61,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1804,
+     -51,
+     -946,
+     1811,
+     -47,
+     -934
+    ],
+    "counts": {
+     "diff_sculk": 166,
+     "same": 734
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 68,
+    "module": "medium_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1780,
+     -51,
+     -993,
+     1792,
+     -47,
+     -986
+    ],
+    "counts": {
+     "same": 819,
+     "diff_sculk": 81
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 91,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1804,
+     -51,
+     -977,
+     1811,
+     -47,
+     -974
+    ],
+    "counts": {
+     "diff_sculk": 115,
+     "same": 245
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24021,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 90,
+  "pieces_k24": 90,
+  "pieces": [
+   {
+    "piece_index": 14,
+    "module": "medium_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -305,
+     -51,
+     172,
+     -293,
+     -47,
+     179
+    ],
+    "counts": {
+     "same": 900
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 24,
+    "module": "large_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -283,
+     -51,
+     115,
+     -278,
+     -37,
+     120
+    ],
+    "counts": {
+     "same": 969,
+     "design_cell_as_predicted": 47,
+     "diff_sculk": 8
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 15,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 15,
+     "deck_cells_reachable_from_ladder": 15,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 16,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 26,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -320,
+     -51,
+     144,
+     -313,
+     -41,
+     150
+    ],
+    "counts": {
+     "same": 978,
+     "diff_sculk": 13,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 52,
+    "module": "large_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -221,
+     -51,
+     103,
+     -205,
+     -38,
+     119
+    ],
+    "counts": {
+     "same": 4858,
+     "diff_sculk": 557
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 54,
+    "module": "small_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -285,
+     -51,
+     76,
+     -278,
+     -47,
+     79
+    ],
+    "counts": {
+     "same": 297,
+     "diff_sculk": 63
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 55,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -256,
+     -51,
+     72,
+     -249,
+     -47,
+     84
+    ],
+    "counts": {
+     "same": 687,
+     "diff_sculk": 213
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 62,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -295,
+     -51,
+     248,
+     -279,
+     -38,
+     264
+    ],
+    "counts": {
+     "same": 5415
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 68,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -183,
+     -51,
+     202,
+     -177,
+     -41,
+     209
+    ],
+    "counts": {
+     "diff_sculk": 8,
+     "same": 983,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 76,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     -326,
+     -51,
+     118,
+     -311,
+     -44,
+     128
+    ],
+    "counts": {
+     "same": 1772,
+     "diff_sculk": 334
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24022,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 96,
+  "pieces_k24": 96,
+  "pieces": [
+   {
+    "piece_index": 46,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -1033,
+     -51,
+     -198,
+     -1017,
+     -38,
+     -182
+    ],
+    "counts": {
+     "same": 5415
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 49,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -993,
+     -51,
+     -194,
+     -987,
+     -41,
+     -187
+    ],
+    "counts": {
+     "same": 917,
+     "diff_sculk": 73,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6,
+     "newly_protected_cell_restored_by_overlay": 1
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 52,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -956,
+     -51,
+     -306,
+     -941,
+     -44,
+     -296
+    ],
+    "counts": {
+     "same": 2106
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 75,
+    "module": "small_ruin_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -986,
+     -51,
+     -388,
+     -979,
+     -47,
+     -382
+    ],
+    "counts": {
+     "same": 532,
+     "diff_sculk": 8
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 81,
+    "module": "medium_ruin_2",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -1067,
+     -51,
+     -198,
+     -1057,
+     -44,
+     -183
+    ],
+    "counts": {
+     "same": 2106
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24023,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 85,
+  "pieces_k24": 85,
+  "pieces": [
+   {
+    "piece_index": 39,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     -595,
+     -51,
+     1767,
+     -580,
+     -44,
+     1777
+    ],
+    "counts": {
+     "same": 2046,
+     "diff_sculk": 60
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 42,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -595,
+     -51,
+     1712,
+     -589,
+     -41,
+     1719
+    ],
+    "counts": {
+     "same": 991,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 47,
+    "module": "small_ruin_2",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     -497,
+     -51,
+     1771,
+     -494,
+     -47,
+     1778
+    ],
+    "counts": {
+     "same": 360
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 50,
+    "module": "medium_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -498,
+     -51,
+     1700,
+     -492,
+     -41,
+     1707
+    ],
+    "counts": {
+     "same": 854,
+     "diff_sculk": 137,
+     "design_cell_as_predicted": 80,
+     "design_cell_rot_dropped_as_predicted": 1,
+     "design_cell_removed_from_template": 6,
+     "design_cell_sculk_or_fluid": 2
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [
+      [
+       4,
+       2,
+       9
+      ]
+     ],
+     "deck_blockers": {
+      "sculk_sensor": 1
+     },
+     "deck_cells_clear": 28,
+     "deck_cells_reachable_from_ladder": 28,
+     "ladder_exit_cells_clear": 3,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 52,
+    "module": "medium_pillar_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     -470,
+     -51,
+     1703,
+     -464,
+     -41,
+     1710
+    ],
+    "counts": {
+     "diff_sculk": 32,
+     "same": 959,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 56,
+    "module": "medium_pillar_1",
+    "rotation": "NONE",
+    "bb": [
+     -623,
+     -51,
+     1788,
+     -617,
+     -41,
+     1795
+    ],
+    "counts": {
+     "same": 884,
+     "diff_sculk": 107,
+     "design_cell_as_predicted": 79,
+     "design_cell_removed_from_template": 6,
+     "design_cell_sculk_or_fluid": 4
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [
+      [
+       3,
+       2,
+       9
+      ]
+     ],
+     "deck_blockers": {
+      "sculk_shrieker": 1
+     },
+     "deck_cells_clear": 28,
+     "deck_cells_reachable_from_ladder": 28,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 58,
+    "module": "medium_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     -595,
+     -51,
+     1786,
+     -580,
+     -44,
+     1796
+    ],
+    "counts": {
+     "same": 1819,
+     "diff_sculk": 287
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 65,
+    "module": "medium_ruin_1",
+    "rotation": "NONE",
+    "bb": [
+     -555,
+     -51,
+     1673,
+     -548,
+     -47,
+     1685
+    ],
+    "counts": {
+     "same": 900
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 80,
+    "module": "small_ruin_2",
+    "rotation": "NONE",
+    "bb": [
+     -555,
+     -51,
+     1659,
+     -548,
+     -47,
+     1662
+    ],
+    "counts": {
+     "same": 360
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 83,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_90",
+    "bb": [
+     -463,
+     -51,
+     1800,
+     -456,
+     -47,
+     1806
+    ],
+    "counts": {
+     "same": 520,
+     "diff_sculk": 20
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   }
+  ]
+ },
+ {
+  "seed": 24024,
+  "layout_identical_i24_k24": true,
+  "pieces_i24": 90,
+  "pieces_k24": 90,
+  "pieces": [
+   {
+    "piece_index": 35,
+    "module": "large_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1599,
+     -51,
+     36,
+     1615,
+     -38,
+     52
+    ],
+    "counts": {
+     "same": 5356,
+     "diff_sculk": 55,
+     "diff_fluid": 4
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   },
+   {
+    "piece_index": 59,
+    "module": "medium_pillar_1",
+    "rotation": "COUNTERCLOCKWISE_90",
+    "bb": [
+     1620,
+     -51,
+     -36,
+     1627,
+     -41,
+     -30
+    ],
+    "counts": {
+     "same": 991,
+     "design_cell_as_predicted": 83,
+     "design_cell_removed_from_template": 6
+    },
+    "unexplained": [],
+    "design_unexplained": [],
+    "tower": {
+     "deck_cells": 29,
+     "deck_cells_not_clear": [],
+     "deck_blockers": {},
+     "deck_cells_clear": 29,
+     "deck_cells_reachable_from_ladder": 29,
+     "ladder_exit_cells_clear": 4,
+     "ladder_cells_missing": [],
+     "railing_cells": 22,
+     "railing_cells_missing": []
+    }
+   },
+   {
+    "piece_index": 85,
+    "module": "small_ruin_1",
+    "rotation": "CLOCKWISE_180",
+    "bb": [
+     1569,
+     -51,
+     76,
+     1575,
+     -47,
+     83
+    ],
+    "counts": {
+     "same": 540
+    },
+    "unexplained": [],
+    "design_unexplained": []
+   }
+  ]
+ }
+]

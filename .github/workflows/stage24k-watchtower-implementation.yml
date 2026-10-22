@@ -1,0 +1,101 @@
+name: Stage 24-K watchtower implementation
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - stage-24k-watchtower-implementation
+    paths:
+      - "tools/stage24k/**"
+      - "tools/stage24j/**"
+      - "tools/stage24i/**"
+      - "tools/stage24h/**"
+      - "tools/stage24g/**"
+      - "tests/test_stage24k_towers.py"
+      - "artifacts/ancient-city-restoration/stage-24k/**"
+      - "artifacts/ancient-city-restoration/DESIGN-DECISIONS.md"
+      - ".github/workflows/stage24k-watchtower-implementation.yml"
+
+permissions:
+  contents: read
+
+env:
+  MC_SERVER_URL: "https://piston-data.mojang.com/v1/objects/97ccd4c0ed3f81bbb7bfacddd1090b0c56f9bc51/server.jar"
+  MC_SERVER_SHA1: "97ccd4c0ed3f81bbb7bfacddd1090b0c56f9bc51"
+
+jobs:
+  watchtower-implementation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # the Stage 24-B/24-E/24-F suites read pinned commits with git show
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "25"
+      - name: Install pinned mcbuild environment
+        working-directory: vendor/mcbuild
+        run: uv sync --frozen --extra dev
+      - name: Earlier packs and the Stage 24-J proposals rebuild unchanged; Stage 24-K rebuilds byte-identical
+        run: |
+          PY=vendor/mcbuild/.venv/bin/python
+          $PY tools/stage24g/build.py > /dev/null
+          $PY tools/stage24h/build.py > /dev/null
+          $PY tools/stage24h/mask_doc.py
+          $PY tools/stage24i/build.py > /dev/null
+          $PY -c "import sys; sys.path.insert(0, '.'); from pathlib import Path; from tools.stage24j.designs import build; build(Path('artifacts/ancient-city-restoration/stage-24j/proposals'))"
+          $PY tools/stage24k/build.py > /dev/null
+          $PY tools/stage24k/doc.py
+          git diff --exit-code -- artifacts/ancient-city-restoration/stage-24g artifacts/ancient-city-restoration/stage-24h artifacts/ancient-city-restoration/stage-24i/datapack artifacts/ancient-city-restoration/stage-24i/roof artifacts/ancient-city-restoration/stage-24j/proposals artifacts/ancient-city-restoration/stage-24k/final-candidates artifacts/ancient-city-restoration/stage-24k/derived-24g artifacts/ancient-city-restoration/stage-24k/derived-24h artifacts/ancient-city-restoration/stage-24k/derived-24i artifacts/ancient-city-restoration/stage-24k/DERIVATION-DIFF.json artifacts/ancient-city-restoration/stage-24k/DERIVATION.md artifacts/ancient-city-restoration/stage-24k/SOURCES.json
+      - name: Exact NBT comparison - six modules identical to Stage 24-F, two towers identical to the approved Option A candidates, production pack equal to the final candidates
+        run: |
+          A=artifacts/ancient-city-restoration
+          (cd $A/stage-24k/final-candidates && sha256sum -c SHA256SUMS)
+          for m in large_ruin_1 medium_ruin_1 medium_ruin_2 small_ruin_1 small_ruin_2 sauna_1; do
+            cmp $A/stage-24f/final-candidates/$m/restored.nbt $A/stage-24k/final-candidates/$m/restored.nbt
+          done
+          for m in large_pillar_1 medium_pillar_1; do
+            cmp $A/stage-24j/proposals/$m/A/candidate.nbt $A/stage-24k/final-candidates/$m/restored.nbt
+          done
+          for m in large_ruin_1 medium_ruin_1 medium_ruin_2 small_ruin_1 small_ruin_2 sauna_1 large_pillar_1 medium_pillar_1; do
+            cmp $A/stage-24k/final-candidates/$m/restored.nbt $A/stage-24k/derived-24i/datapack/data/minecraft/structure/ancient_city/structures/$m.nbt
+          done
+      - name: Download and verify the Minecraft 26.1.2 server
+        run: |
+          mkdir -p .mc && curl -fsSL "$MC_SERVER_URL" -o .mc/server.jar
+          echo "$MC_SERVER_SHA1  .mc/server.jar" | sha1sum -c -
+      - name: Tower static checks against the vanilla block report from the pinned jar
+        run: |
+          (cd .mc && java -DbundlerMainClass=net.minecraft.data.Main -jar server.jar --reports --output "$RUNNER_TEMP/reports" > /dev/null)
+          vendor/mcbuild/.venv/bin/python tools/stage24k/check.py --reports "$RUNNER_TEMP/reports/reports/blocks.json" > /dev/null
+          git diff --exit-code -- artifacts/ancient-city-restoration/stage-24k/static-checks.json
+      - name: Stage 24-K, 24-J, 24-I, 24-H and 24-G tests, plus the earlier suites
+        run: |
+          vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24k_towers.py tests/test_stage24k_sweep.py tests/test_stage24j_watchtowers.py tests/test_stage24i_roof.py tests/test_stage24h_clearance.py tests/test_stage24g_protection.py tests/test_stage24b_*.py tests/test_stage24c_regressions.py tests/test_stage24e_proposals.py tests/test_stage24f_final.py -q
+          STAGE24B_DIR=$PWD/artifacts/ancient-city-restoration/stage-24f/final-candidates vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24c_regressions.py -q
+      - name: Live tests on a real 26.1.2 server - production pool entries (buried, real processors) and exact tower placement, 4 rotations
+        env:
+          MC_JAR: ${{ github.workspace }}/.mc/server.jar
+          MC_JAVA: java
+        run: |
+          vendor/mcbuild/.venv/bin/python tools/stage24k/live_pool.py --max 4 --out "$RUNNER_TEMP/s24k-live"
+          vendor/mcbuild/.venv/bin/python tools/stage24i/check_live.py "$RUNNER_TEMP/s24k-live/live-pool-report.json" 1
+          vendor/mcbuild/.venv/bin/python tools/stage24k/live_towers.py --no-bot --out "$RUNNER_TEMP/s24k-live/towers"
+          vendor/mcbuild/.venv/bin/python tools/stage24j/check_live.py "$RUNNER_TEMP/s24k-live/towers/live-report.json"
+      - name: Earlier-stage artifacts are untouched
+        run: git diff --exit-code -- artifacts/ancient-city-restoration/stage-24b artifacts/ancient-city-restoration/stage-24e/proposals artifacts/ancient-city-restoration/stage-24f artifacts/ancient-city-restoration/stage-24g artifacts/ancient-city-restoration/stage-24h artifacts/ancient-city-restoration/stage-24i artifacts/ancient-city-restoration/stage-24j
+      - name: Upload Stage 24-K evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage-24k-watchtower-implementation
+          path: |
+            artifacts/ancient-city-restoration/stage-24k
+            ${{ runner.temp }}/s24k-live
+          if-no-files-found: error

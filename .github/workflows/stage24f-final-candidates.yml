@@ -1,0 +1,65 @@
+name: Stage 24-F final candidate set
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - stage-24f-selected-residential-designs
+    paths:
+      - "tools/stage24f/**"
+      - "tools/stage24d/**"
+      - "tests/test_stage24f_final.py"
+      - "artifacts/ancient-city-restoration/stage-24f/final-candidates/**"
+      - "artifacts/ancient-city-restoration/stage-24f/FINAL-CANDIDATES-MANIFEST.json"
+      - ".github/workflows/stage24f-final-candidates.yml"
+
+permissions:
+  contents: read
+
+env:
+  MC_CLIENT_URL: "https://piston-data.mojang.com/v1/objects/4e618f09a0c649dde3fdf829df443ce0b8831e65/client.jar"
+  MC_CLIENT_SHA1: "4e618f09a0c649dde3fdf829df443ce0b8831e65"
+  MC_ASSETS: ${{ github.workspace }}/.mc/x/assets
+  S24F_BUILD: ${{ github.workspace }}/.s24f-build
+
+jobs:
+  final-candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install pinned mcbuild environment
+        working-directory: vendor/mcbuild
+        run: uv sync --frozen --extra dev
+      - name: Re-derive the final set from the pinned Stage 24-C / 24-E commits and compare with the committed one
+        run: |
+          vendor/mcbuild/.venv/bin/python tools/stage24f/assemble.py
+          git diff --exit-code -- artifacts/ancient-city-restoration/stage-24f/final-candidates artifacts/ancient-city-restoration/stage-24f/FINAL-CANDIDATES-MANIFEST.json
+          cd artifacts/ancient-city-restoration/stage-24f/final-candidates && sha256sum -c SHA256SUMS
+      - name: Stage 24-B / 24-C / 24-E / 24-F tests (24-C regressions also run on the final set)
+        run: |
+          vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24b_*.py tests/test_stage24c_regressions.py tests/test_stage24e_proposals.py tests/test_stage24f_final.py -q
+          STAGE24B_DIR=$PWD/artifacts/ancient-city-restoration/stage-24f/final-candidates vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24c_regressions.py -q
+      - name: Verify earlier-stage candidates and proposals are untouched
+        run: git diff --exit-code -- artifacts/ancient-city-restoration/stage-24b artifacts/ancient-city-restoration/stage-24e/proposals
+      - name: Upload final-candidate evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: stage-24f-final-candidates
+          path: |
+            artifacts/ancient-city-restoration/stage-24f/final-candidates
+            artifacts/ancient-city-restoration/stage-24f/FINAL-CANDIDATES-MANIFEST.json
+            artifacts/ancient-city-restoration/stage-24f/VALIDATION-MATRIX.md
+            artifacts/ancient-city-restoration/stage-24f/gallery
+            artifacts/ancient-city-restoration/stage-24f/stage-24f-final-gallery.zip
+            artifacts/ancient-city-restoration/stage-24f/worldgen
+          if-no-files-found: error

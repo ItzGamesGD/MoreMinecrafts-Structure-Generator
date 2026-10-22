@@ -1,0 +1,31 @@
+{
+ "DESIGN": {
+  "large_ruin_1": [
+   "Owner-selected Stage 24-E option C, the lancet gatehouse (17\u00d714\u00d717; the +9 height is explicitly authorised).",
+   "Courtyard house with 5-high walls and a low double-pitched ring roof around the open court.",
+   "A steep pointed gable over the entrance range carries a tall lancet window above a polished-basalt portal."
+  ],
+  "medium_ruin_2": [
+   "Owner-selected Stage 24-E option A, the saltbox (16\u00d78\u00d711, unchanged bounds).",
+   "The hall roof climbs in a long 1:2 slope into a two-step hipped upper storey, so the two masses read as one form.",
+   "The upper floor and its stair run are unchanged and remain reachable."
+  ]
+ },
+ "LIMITS": {
+  "large_ruin_1": [
+   "Taller NBT (+9) changes the structure bounding box; see the Stage 24-F generation evidence.",
+   "Interior lanterns hang on iron chains from the new roof; vanilla decay still removes ~5 % of lanterns."
+  ],
+  "medium_ruin_2": [
+   "The stair-run headroom and upper floor were re-verified with the final roof."
+  ]
+ },
+ "STATUS": [
+  "CODE VERIFIED",
+  "GEOMETRY VERIFIED",
+  "VISUAL PENDING (model renders only)",
+  "LIVE PASS (server + simulated player; real client PENDING)",
+  "WORLDGEN \u2014 see Stage 24-F evidence",
+  "OWNER REVIEW PENDING"
+ ]
+}
