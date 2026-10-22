@@ -74,6 +74,8 @@ jobs:
             ${{ runner.temp }}/iso/**/lab.json
             ${{ runner.temp }}/fault/**/lab.json
             ${{ runner.temp }}/fault/*.log
+            mod/sg-worldgen-protection/run/server/server.log
+            mod/sg-worldgen-protection/run/server/logs/latest.log
             ${{ runner.temp }}/pmc/*.log
             ${{ runner.temp }}/pmc/**/*.log
             ${{ runner.temp }}/artifacts.json
