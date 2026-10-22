@@ -1,0 +1,296 @@
+{
+ "source": "Minecraft 26.1.2 server --reports blocks.json (server jar sha1 97ccd4c0ed3f81bbb7bfacddd1090b0c56f9bc51), subset for blocks used by the Stage 24-F final set",
+ "blocks": {
+  "minecraft:air": {},
+  "minecraft:barrel": {
+   "facing": [
+    "north",
+    "east",
+    "south",
+    "west",
+    "up",
+    "down"
+   ],
+   "open": [
+    "true",
+    "false"
+   ]
+  },
+  "minecraft:chest": {
+   "type": [
+    "single",
+    "left",
+    "right"
+   ],
+   "facing": [
+    "north",
+    "south",
+    "west",
+    "east"
+   ],
+   "waterlogged": [
+    "true",
+    "false"
+   ]
+  },
+  "minecraft:chiseled_deepslate": {},
+  "minecraft:cobbled_deepslate": {},
+  "minecraft:cracked_deepslate_bricks": {},
+  "minecraft:cracked_deepslate_tiles": {},
+  "minecraft:crafting_table": {},
+  "minecraft:cyan_stained_glass": {},
+  "minecraft:deepslate": {
+   "axis": [
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  "minecraft:deepslate_brick_slab": {
+   "type": [
+    "top",
+    "bottom",
+    "double"
+   ],
+   "waterlogged": [
+    "true",
+    "false"
+   ]
+  },
+  "minecraft:deepslate_bricks": {},
+  "minecraft:deepslate_tile_slab": {
+   "type": [
+    "top",
+    "bottom",
+    "double"
+   ],
+   "waterlogged": [
+    "true",
+    "false"
+   ]
+  },
+  "minecraft:deepslate_tile_stairs": {
+   "facing": [
+    "north",
+    "south",
+    "west",
+    "east"
+   ],
+   "half": [
+    "top",
+    "bottom"
+   ],
+   "shape": [
+    "straight",
+    "inner_left",
+    "inner_right",
+    "outer_left",
+    "outer_right"
+   ],
+   "waterlogged": [
+    "true",
+    "false"
+   ]
+  },
+  "minecraft:deepslate_tiles": {},
+  "minecraft:gray_bed": {
+   "facing": [
+    "north",
+    "south",
+    "west",
+    "east"
+   ],
+   "occupied": [
+    "true",
+    "false"
+   ],
+   "part": [
+    "head",
+    "foot"
+   ]
+  },
+  "minecraft:iron_chain": {
+   "axis": [
+    "x",
+    "y",
+    "z"
+   ],
+   "waterlogged": [
+    "true",
+    "false"
+   ]
+  },
+  "minecraft:jigsaw": {
+   "orientation": [
+    "down_east",
+    "down_north",
+    "down_south",
+    "down_west",
+    "up_east",
+    "up_north",
+    "up_south",
+    "up_west",
+    "west_up",
+    "east_up",
+    "north_up",
+    "south_up"
+   ]
+  },
+  "minecraft:ladder": {
+   "facing": [
+    "north",
+    "south",
+    "west",
+    "east"
+   ],
+   "waterlogged": [
+    "true",
+    "false"
+   ]
+  },
+  "minecraft:polished_basalt": {
+   "axis": [
+    "x",
+    "y",
+    "z"
+   ]
+  },
+  "minecraft:polished_deepslate": {},
+  "minecraft:polished_deepslate_slab": {
+   "type": [
+    "top",
+    "bottom",
+    "double"
+   ],
+   "waterlogged": [
+    "true",
+    "false"
+   ]
+  },
+  "minecraft:polished_deepslate_wall": {
+   "east": [
+    "none",
+    "low",
+    "tall"
+   ],
+   "north": [
+    "none",
+    "low",
+    "tall"
+   ],
+   "south": [
+    "none",
+    "low",
+    "tall"
+   ],
+   "up": [
+    "true",
+    "false"
+   ],
+   "waterlogged": [
+    "true",
+    "false"
+   ],
+   "west": [
+    "none",
+    "low",
+    "tall"
+   ]
+  },
+  "minecraft:skeleton_skull": {
+   "powered": [
+    "true",
+    "false"
+   ],
+   "rotation": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15"
+   ]
+  },
+  "minecraft:soul_lantern": {
+   "hanging": [
+    "true",
+    "false"
+   ],
+   "waterlogged": [
+    "true",
+    "false"
+   ]
+  },
+  "minecraft:spruce_door": {
+   "facing": [
+    "north",
+    "south",
+    "west",
+    "east"
+   ],
+   "half": [
+    "upper",
+    "lower"
+   ],
+   "hinge": [
+    "left",
+    "right"
+   ],
+   "open": [
+    "true",
+    "false"
+   ],
+   "powered": [
+    "true",
+    "false"
+   ]
+  },
+  "minecraft:water": {
+   "level": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15"
+   ]
+  },
+  "minecraft:white_candle": {
+   "candles": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "lit": [
+    "true",
+    "false"
+   ],
+   "waterlogged": [
+    "true",
+    "false"
+   ]
+  }
+ },
+ "unknown": []
+}

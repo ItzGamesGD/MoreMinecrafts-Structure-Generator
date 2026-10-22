@@ -1,0 +1,86 @@
+{
+ "source_final_candidates": "artifacts/ancient-city-restoration/stage-24f/final-candidates",
+ "modules": {
+  "large_ruin_1": {
+   "structure_nbt": "datapack/data/minecraft/structure/ancient_city/structures/large_ruin_1.nbt",
+   "structure_sha256": "92827808edb9f8f623515e983cddcc0f5aa59fcfc4a5cc95d9dafd1b3597b229",
+   "stage24f_sha256": "92827808edb9f8f623515e983cddcc0f5aa59fcfc4a5cc95d9dafd1b3597b229",
+   "overlay_nbt": null,
+   "overlay_cells": 0,
+   "pool_entry": "unchanged single_pool_element (no protected cell can be dropped)"
+  },
+  "medium_ruin_1": {
+   "structure_nbt": "datapack/data/minecraft/structure/ancient_city/structures/medium_ruin_1.nbt",
+   "structure_sha256": "89f58c3f982dcb992e585f2e3324fe89660e6492d25fc0a6724b0231afa968af",
+   "stage24f_sha256": "89f58c3f982dcb992e585f2e3324fe89660e6492d25fc0a6724b0231afa968af",
+   "overlay_nbt": "protection/overlays/medium_ruin_1.nbt",
+   "overlay_sha256": "9a79d75f5dff8a1ad2b508291b5e2213ee080a7df517995a8021d7a5eb47959a",
+   "overlay_cells": 1,
+   "pool_entry": "list_pool_element [restored template, protection overlay]"
+  },
+  "medium_ruin_2": {
+   "structure_nbt": "datapack/data/minecraft/structure/ancient_city/structures/medium_ruin_2.nbt",
+   "structure_sha256": "d1e239c42bda2b7c0551f5b910fcc87ec10ef7ad640cf9a1bc7b4f78e7838404",
+   "stage24f_sha256": "d1e239c42bda2b7c0551f5b910fcc87ec10ef7ad640cf9a1bc7b4f78e7838404",
+   "overlay_nbt": "protection/overlays/medium_ruin_2.nbt",
+   "overlay_sha256": "9f6071ce63c0ac2a9dcdfe9ebebd3dc8ddb9e4a7f2dd5a25b0fe4b3355d0f6e3",
+   "overlay_cells": 90,
+   "pool_entry": "list_pool_element [restored template, protection overlay]"
+  },
+  "small_ruin_1": {
+   "structure_nbt": "datapack/data/minecraft/structure/ancient_city/structures/small_ruin_1.nbt",
+   "structure_sha256": "647fa12a5210756f509e45a9b77f4bb2f57c732b1d1d74f3a9cb0be3dc838ec1",
+   "stage24f_sha256": "647fa12a5210756f509e45a9b77f4bb2f57c732b1d1d74f3a9cb0be3dc838ec1",
+   "overlay_nbt": "protection/overlays/small_ruin_1.nbt",
+   "overlay_sha256": "395735fab1952a88a789647cc5fb196b6114afe26f3097efe8bf4205a738264c",
+   "overlay_cells": 1,
+   "pool_entry": "list_pool_element [restored template, protection overlay]"
+  },
+  "small_ruin_2": {
+   "structure_nbt": "datapack/data/minecraft/structure/ancient_city/structures/small_ruin_2.nbt",
+   "structure_sha256": "0135f1df50b93d6953daa1da658fd3f137bd15468265cf484a7452a1516bad6d",
+   "stage24f_sha256": "0135f1df50b93d6953daa1da658fd3f137bd15468265cf484a7452a1516bad6d",
+   "overlay_nbt": null,
+   "overlay_cells": 0,
+   "pool_entry": "unchanged single_pool_element (no protected cell can be dropped)"
+  },
+  "sauna_1": {
+   "structure_nbt": "datapack/data/minecraft/structure/ancient_city/structures/sauna_1.nbt",
+   "structure_sha256": "879e21a0a4daf1b5d4fe547fe78aaa9fad5cf55ede913112d2e8a32f5697288f",
+   "stage24f_sha256": "879e21a0a4daf1b5d4fe547fe78aaa9fad5cf55ede913112d2e8a32f5697288f",
+   "overlay_nbt": "protection/overlays/sauna_1.nbt",
+   "overlay_sha256": "5446dbe007e3f80346aae443ae452765fe6da0dcc0c9ce6c2f8a988ca91f4316",
+   "overlay_cells": 25,
+   "pool_entry": "list_pool_element [restored template, protection overlay]"
+  },
+  "large_pillar_1": {
+   "structure_nbt": "datapack/data/minecraft/structure/ancient_city/structures/large_pillar_1.nbt",
+   "structure_sha256": "a17b693c10337724e3c01402cd19a497926c1fa2afe0c81e839e2c9d61bfb9b1",
+   "stage24f_sha256": "a17b693c10337724e3c01402cd19a497926c1fa2afe0c81e839e2c9d61bfb9b1",
+   "overlay_nbt": "protection/overlays/large_pillar_1.nbt",
+   "overlay_sha256": "38db2aeb15fe5529867b3faebdb2138be31b60ed8f4fa0d307ee5a0b1f7efa20",
+   "overlay_cells": 9,
+   "pool_entry": "list_pool_element [restored template, protection overlay]"
+  },
+  "medium_pillar_1": {
+   "structure_nbt": "datapack/data/minecraft/structure/ancient_city/structures/medium_pillar_1.nbt",
+   "structure_sha256": "8705305a7bec348c40b5e7434c651526e0145aac90a9352e315150faf6a7a09d",
+   "stage24f_sha256": "8705305a7bec348c40b5e7434c651526e0145aac90a9352e315150faf6a7a09d",
+   "overlay_nbt": "protection/overlays/medium_pillar_1.nbt",
+   "overlay_sha256": "1227189196e736df5705538f3d020562da2b5892bf43fdb185f5810335d63743",
+   "overlay_cells": 17,
+   "pool_entry": "list_pool_element [restored template, protection overlay]"
+  }
+ },
+ "wrapped_modules": [
+  "medium_ruin_1",
+  "medium_ruin_2",
+  "small_ruin_1",
+  "sauna_1",
+  "large_pillar_1",
+  "medium_pillar_1"
+ ],
+ "processor_list_sha256": "5615833a7b55497f1b65feeb0709033c037ec9675975a0d3b1b1270ba7a31087",
+ "pool_override_sha256": "60f134e6cc4daf705d1c97f294bdacebcbde1d87f49312a2473065391bd9e8db",
+ "vanilla_pool_sha256": "5a9db8f5e606a281aca7dd475094ffba6e17183d5a23df5c6bbc23ea18a9aa67"
+}

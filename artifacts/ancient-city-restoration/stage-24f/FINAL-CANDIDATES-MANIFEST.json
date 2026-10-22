@@ -1,0 +1,190 @@
+{
+ "stage": "24-F",
+ "stage_24c_head": "b92a4be1e9e1b901a08f1629c4f19b63dab43dce",
+ "stage_24e_head": "5a3a57186762a2e0fcb1489b60531e328c2457b2",
+ "selection_authority": "Owner selection in the Stage 24-F instruction; large_ruin_1 +9 height explicitly authorised; no other expansion",
+ "baseline_stage24c_sha256": {
+  "large_ruin_1": "1eae09e6865481cae06f994a7938a6f460ec44586d325887b827109c7f844752",
+  "medium_ruin_1": "89f58c3f982dcb992e585f2e3324fe89660e6492d25fc0a6724b0231afa968af",
+  "medium_ruin_2": "f897372f2917e9f189f01f7d54365a4da0414f36e198a09231ff4518abd1ec48",
+  "small_ruin_1": "647fa12a5210756f509e45a9b77f4bb2f57c732b1d1d74f3a9cb0be3dc838ec1",
+  "small_ruin_2": "0135f1df50b93d6953daa1da658fd3f137bd15468265cf484a7452a1516bad6d",
+  "sauna_1": "879e21a0a4daf1b5d4fe547fe78aaa9fad5cf55ede913112d2e8a32f5697288f",
+  "large_pillar_1": "a17b693c10337724e3c01402cd19a497926c1fa2afe0c81e839e2c9d61bfb9b1",
+  "medium_pillar_1": "8705305a7bec348c40b5e7434c651526e0145aac90a9352e315150faf6a7a09d"
+ },
+ "modules": {
+  "large_ruin_1": {
+   "source": "Stage 24-E proposal",
+   "commit": "5a3a57186762a2e0fcb1489b60531e328c2457b2",
+   "path": "artifacts/ancient-city-restoration/stage-24e/proposals/large_ruin_1/C/candidate.nbt",
+   "option": "C",
+   "reviewed_sha256": "92827808edb9f8f623515e983cddcc0f5aa59fcfc4a5cc95d9dafd1b3597b229",
+   "reviewed_title": "Lancet gatehouse \u2014 raised walls, a low ring roof and one steep pointed gable over the entrance range (17\u00d714\u00d717, needs authorisation)",
+   "reviewed_live": {
+    "ok": 20,
+    "total": 20,
+    "failed": [],
+    "placement_mismatches": 0,
+    "rotations": 4
+   },
+   "final_path": "artifacts/ancient-city-restoration/stage-24f/final-candidates/large_ruin_1/restored.nbt",
+   "final_sha256": "92827808edb9f8f623515e983cddcc0f5aa59fcfc4a5cc95d9dafd1b3597b229",
+   "byte_identical_to_stage24c": false,
+   "dimensions": [
+    17,
+    14,
+    17
+   ],
+   "stage24c_dimensions": [
+    17,
+    5,
+    17
+   ],
+   "height_change": 9
+  },
+  "medium_ruin_1": {
+   "source": "Stage 24-C validated baseline",
+   "commit": "b92a4be1e9e1b901a08f1629c4f19b63dab43dce",
+   "path": "artifacts/ancient-city-restoration/stage-24b/medium_ruin_1/restored.nbt",
+   "final_path": "artifacts/ancient-city-restoration/stage-24f/final-candidates/medium_ruin_1/restored.nbt",
+   "final_sha256": "89f58c3f982dcb992e585f2e3324fe89660e6492d25fc0a6724b0231afa968af",
+   "byte_identical_to_stage24c": true,
+   "dimensions": [
+    8,
+    5,
+    13
+   ],
+   "stage24c_dimensions": [
+    8,
+    5,
+    13
+   ],
+   "height_change": 0
+  },
+  "medium_ruin_2": {
+   "source": "Stage 24-E proposal",
+   "commit": "5a3a57186762a2e0fcb1489b60531e328c2457b2",
+   "path": "artifacts/ancient-city-restoration/stage-24e/proposals/medium_ruin_2/A/candidate.nbt",
+   "option": "A",
+   "reviewed_sha256": "d1e239c42bda2b7c0551f5b910fcc87ec10ef7ad640cf9a1bc7b4f78e7838404",
+   "reviewed_title": "Saltbox \u2014 the hall roof climbs in a long 1:2 slope into a hipped upper storey (in bounds)",
+   "reviewed_live": {
+    "ok": 28,
+    "total": 28,
+    "failed": [],
+    "placement_mismatches": 0,
+    "rotations": 4
+   },
+   "final_path": "artifacts/ancient-city-restoration/stage-24f/final-candidates/medium_ruin_2/restored.nbt",
+   "final_sha256": "d1e239c42bda2b7c0551f5b910fcc87ec10ef7ad640cf9a1bc7b4f78e7838404",
+   "byte_identical_to_stage24c": false,
+   "dimensions": [
+    16,
+    8,
+    11
+   ],
+   "stage24c_dimensions": [
+    16,
+    8,
+    11
+   ],
+   "height_change": 0
+  },
+  "small_ruin_1": {
+   "source": "Stage 24-C validated baseline",
+   "commit": "b92a4be1e9e1b901a08f1629c4f19b63dab43dce",
+   "path": "artifacts/ancient-city-restoration/stage-24b/small_ruin_1/restored.nbt",
+   "final_path": "artifacts/ancient-city-restoration/stage-24f/final-candidates/small_ruin_1/restored.nbt",
+   "final_sha256": "647fa12a5210756f509e45a9b77f4bb2f57c732b1d1d74f3a9cb0be3dc838ec1",
+   "byte_identical_to_stage24c": true,
+   "dimensions": [
+    7,
+    5,
+    8
+   ],
+   "stage24c_dimensions": [
+    7,
+    5,
+    8
+   ],
+   "height_change": 0
+  },
+  "small_ruin_2": {
+   "source": "Stage 24-C validated baseline",
+   "commit": "b92a4be1e9e1b901a08f1629c4f19b63dab43dce",
+   "path": "artifacts/ancient-city-restoration/stage-24b/small_ruin_2/restored.nbt",
+   "final_path": "artifacts/ancient-city-restoration/stage-24f/final-candidates/small_ruin_2/restored.nbt",
+   "final_sha256": "0135f1df50b93d6953daa1da658fd3f137bd15468265cf484a7452a1516bad6d",
+   "byte_identical_to_stage24c": true,
+   "dimensions": [
+    8,
+    5,
+    4
+   ],
+   "stage24c_dimensions": [
+    8,
+    5,
+    4
+   ],
+   "height_change": 0
+  },
+  "sauna_1": {
+   "source": "Stage 24-C validated baseline",
+   "commit": "b92a4be1e9e1b901a08f1629c4f19b63dab43dce",
+   "path": "artifacts/ancient-city-restoration/stage-24b/sauna_1/restored.nbt",
+   "final_path": "artifacts/ancient-city-restoration/stage-24f/final-candidates/sauna_1/restored.nbt",
+   "final_sha256": "879e21a0a4daf1b5d4fe547fe78aaa9fad5cf55ede913112d2e8a32f5697288f",
+   "byte_identical_to_stage24c": true,
+   "dimensions": [
+    29,
+    10,
+    37
+   ],
+   "stage24c_dimensions": [
+    29,
+    10,
+    37
+   ],
+   "height_change": 0
+  },
+  "large_pillar_1": {
+   "source": "Stage 24-C validated baseline",
+   "commit": "b92a4be1e9e1b901a08f1629c4f19b63dab43dce",
+   "path": "artifacts/ancient-city-restoration/stage-24b/large_pillar_1/restored.nbt",
+   "final_path": "artifacts/ancient-city-restoration/stage-24f/final-candidates/large_pillar_1/restored.nbt",
+   "final_sha256": "a17b693c10337724e3c01402cd19a497926c1fa2afe0c81e839e2c9d61bfb9b1",
+   "byte_identical_to_stage24c": true,
+   "dimensions": [
+    6,
+    15,
+    6
+   ],
+   "stage24c_dimensions": [
+    6,
+    15,
+    6
+   ],
+   "height_change": 0
+  },
+  "medium_pillar_1": {
+   "source": "Stage 24-C validated baseline",
+   "commit": "b92a4be1e9e1b901a08f1629c4f19b63dab43dce",
+   "path": "artifacts/ancient-city-restoration/stage-24b/medium_pillar_1/restored.nbt",
+   "final_path": "artifacts/ancient-city-restoration/stage-24f/final-candidates/medium_pillar_1/restored.nbt",
+   "final_sha256": "8705305a7bec348c40b5e7434c651526e0145aac90a9352e315150faf6a7a09d",
+   "byte_identical_to_stage24c": true,
+   "dimensions": [
+    7,
+    11,
+    8
+   ],
+   "stage24c_dimensions": [
+    7,
+    11,
+    8
+   ],
+   "height_change": 0
+  }
+ }
+}
