@@ -126,6 +126,14 @@ class SourceRuleTest(unittest.TestCase):
         gradle = (ROOT / "mod/sg-worldgen-protection/build.gradle").read_text()
         self.assertEqual(gradle.count("-Dsg_worldgen_protection.lab=true"), 1)  # only the lab run configuration opts in
 
+    def test_lab_hooks_cannot_be_installed_by_other_mods(self) -> None:
+        hooks = (SRC / "LabHooks.java").read_text()
+        self.assertNotIn("static void install", hooks)  # a public static method on an interface in the production jar was a bypass
+        holder = (SRC / "LabHolder.java").read_text()
+        self.assertIn("final class LabHolder", holder)
+        self.assertNotIn("public", holder.replace("/** ", "").split("final class LabHolder")[1].split("{")[0])
+        self.assertIn("static void install", holder)
+
     def test_mod_loads_on_integrated_and_dedicated_servers(self) -> None:
         meta = (ROOT / "mod/sg-worldgen-protection/src/main/resources/fabric.mod.json").read_text()
         self.assertIn('"environment": "*"', meta)

@@ -16,7 +16,7 @@ MOD = Path(__file__).resolve().parents[3] / "mod" / "sg-worldgen-protection"
 PKG = "dev/itzgamesgd/sgprotection/"
 PRODUCTION_CLASSES = {
     "DriftGuard", "DriftGuard$Armed", "DriftGuard$Level", "DriftGuard$State", "Guard", "Guard$Fault", "Guard$Finding", "Guard$Fixture", "Guard$Mode",
-    "Guard$Refine", "GuardMarker", "GuardStats", "LabHooks", "LabHooks$1", "LabHooks$Config", "LabHooks$Holder", "MonsterRoomGeometry", "ProtectionConfig",
+    "Guard$Refine", "GuardMarker", "GuardStats", "LabHooks", "LabHooks$1", "LabHooks$Config", "LabHolder", "MonsterRoomGeometry", "ProtectionConfig",
     "ProtectionContract", "ProtectionContract$ContractViolation", "ProtectionContract$Result", "SgProtectionMod", "mixin/GeodeFeatureMixin", "mixin/MonsterRoomFeatureMixin",
     "mixin/MonsterRoomFeatureMixin$1", "WriteGuard", "mixin/StructureStartWriteGuardMixin", "mixin/WorldGenRegionWriteGuardMixin",
     "ExemptionScope", "UncertainFootprint", "WriteGuard$Zone", "Guard$Uncertainty",

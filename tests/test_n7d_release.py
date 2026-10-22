@@ -39,7 +39,8 @@ class SourceSeparationTests(unittest.TestCase):
     def test_lab_hooks_are_the_only_seam_and_default_to_the_production_configuration(self) -> None:
         hooks = (MAIN / "java/dev/itzgamesgd/sgprotection/LabHooks.java").read_text()
         self.assertIn("new Config(Guard.Mode.ENFORCE, Guard.Refine.OFF, \"none\", Guard.Fixture.NONE, Guard.Fault.NONE, false, false, true)", hooks)
-        self.assertIn("static volatile LabHooks current = NONE;", hooks)
+        holder = (MAIN / "java/dev/itzgamesgd/sgprotection/LabHolder.java").read_text()  # N10-R: the holder is package-private
+        self.assertIn("static volatile LabHooks current = LabHooks.NONE;", holder)
         mod = (MAIN / "java/dev/itzgamesgd/sgprotection/SgProtectionMod.java").read_text()
         self.assertIn('LAB_ENTRYPOINT = "sg_worldgen_protection:lab"', mod)
         self.assertIn("more than one validation lab mod is installed", mod)

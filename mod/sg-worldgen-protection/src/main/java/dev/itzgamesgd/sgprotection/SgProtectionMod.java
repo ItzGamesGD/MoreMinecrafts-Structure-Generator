@@ -70,7 +70,7 @@ public final class SgProtectionMod implements ModInitializer {
         }
         if (accepted.size() > 1) throw new IllegalStateException("SG protection: more than one validation lab mod is installed");
         if (!accepted.isEmpty()) {
-            LabHooks.install(accepted.get(0));
+            LabHolder.install(accepted.get(0));
             LOGGER.warn("SG_PROTECTION VALIDATION LAB MOD ACTIVE: lab configuration and instrumentation are enabled; this is not a production configuration");
         }
     }
