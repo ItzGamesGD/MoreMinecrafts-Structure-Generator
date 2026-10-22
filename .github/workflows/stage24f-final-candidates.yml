@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
+      - ci-probe/stage24-b2
       - stage-24f-selected-residential-designs
     paths:
       - "tools/stage24f/**"

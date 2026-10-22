@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
+      - ci-probe/stage24-b2
       - stage-24j-watchtower-review
     paths:
       - "tools/stage24j/**"

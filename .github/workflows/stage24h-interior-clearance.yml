@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
+      - ci-probe/stage24-b2
       - stage-24h-interior-clearance
     paths:
       - "tools/stage24h/**"
