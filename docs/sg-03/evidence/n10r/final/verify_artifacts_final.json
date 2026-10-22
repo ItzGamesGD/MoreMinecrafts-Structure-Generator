@@ -1,0 +1,79 @@
+{
+ "production_jar": "sg-worldgen-protection-0.3.1-n10r.jar",
+ "production_bytes": 70385,
+ "lab_jar": "sg-worldgen-protection-0.3.1-n10r-lab.jar",
+ "lab_bytes": 30064,
+ "checks": [
+  {
+   "check": "production jar: exactly the required classes",
+   "pass": true,
+   "detail": "extra=[] missing=[]"
+  },
+  {
+   "check": "production jar: only metadata besides classes",
+   "pass": true,
+   "detail": "['META-INF/MANIFEST.MF', 'fabric.mod.json', 'sgprotection.mixins.json']"
+  },
+  {
+   "check": "production jar: no SG01_ lab variable is read",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "production jar: no reference to a lab class or lab mod",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "production jar: lab entrypoint needs the opt-in property and the lab mod id (once, in the entrypoint class)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "production jar: references no client class (loads on dedicated and integrated servers)",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "production jar: reads only SG_PROTECTION_REPORT from the environment",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "production jar: mod id and entrypoints",
+   "pass": true,
+   "detail": "sg_worldgen_protection ['main']"
+  },
+  {
+   "check": "production jar: exactly the four protection mixins, no plugin",
+   "pass": true,
+   "detail": "['GeodeFeatureMixin', 'MonsterRoomFeatureMixin', 'StructureStartWriteGuardMixin', 'WorldGenRegionWriteGuardMixin']"
+  },
+  {
+   "check": "production jar: mixins required and fail-loud",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "production jar: ships no datapack data",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "lab jar: only lab classes",
+   "pass": true,
+   "detail": "[]"
+  },
+  {
+   "check": "lab jar: contains no production class",
+   "pass": true,
+   "detail": ""
+  },
+  {
+   "check": "lab jar: separate mod id that depends on production",
+   "pass": true,
+   "detail": ""
+  }
+ ],
+ "all_pass": true
+}
