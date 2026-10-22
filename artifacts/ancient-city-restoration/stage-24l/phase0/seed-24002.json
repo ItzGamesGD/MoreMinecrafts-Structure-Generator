@@ -1,0 +1,218 @@
+{
+ "seed": 24002,
+ "variant": "k24",
+ "region_box": [
+  839,
+  -60,
+  -885,
+  1076,
+  -18,
+  -651
+ ],
+ "unknown_columns": 0,
+ "walkable_cells": 47398,
+ "components": [
+  {
+   "component": 255,
+   "walkable_cells": 30511,
+   "is_main": true,
+   "house_doors_in_front_comp": {
+    "medium_ruin_2": 1
+   },
+   "y_range": [
+    -54,
+    -37
+   ],
+   "sampled_piece_boxes": {
+    "wall_stairs": 472,
+    "natural_terrain": 398,
+    "chamber": 144,
+    "city_center_wall": 125,
+    "entrance_path": 124
+   },
+   "drops_to_main": false,
+   "main_drops_to_it": false
+  },
+  {
+   "component": 0,
+   "walkable_cells": 1281,
+   "is_main": false,
+   "house_doors_in_front_comp": {},
+   "y_range": [
+    -40,
+    -19
+   ],
+   "sampled_piece_boxes": {
+    "natural_terrain": 1281
+   },
+   "drops_to_main": false,
+   "main_drops_to_it": false
+  },
+  {
+   "component": 790,
+   "walkable_cells": 886,
+   "is_main": false,
+   "house_doors_in_front_comp": {},
+   "y_range": [
+    -46,
+    -43
+   ],
+   "sampled_piece_boxes": {
+    "wall_stairs": 449,
+    "wall": 280,
+    "wall_passage": 157
+   },
+   "drops_to_main": true,
+   "main_drops_to_it": false
+  },
+  {
+   "component": 127,
+   "walkable_cells": 730,
+   "is_main": false,
+   "house_doors_in_front_comp": {},
+   "y_range": [
+    -52,
+    -34
+   ],
+   "sampled_piece_boxes": {
+    "natural_terrain": 730
+   },
+   "drops_to_main": false,
+   "main_drops_to_it": false
+  },
+  {
+   "component": 37993,
+   "walkable_cells": 588,
+   "is_main": false,
+   "house_doors_in_front_comp": {},
+   "y_range": [
+    -30,
+    -19
+   ],
+   "sampled_piece_boxes": {
+    "natural_terrain": 588
+   },
+   "drops_to_main": false,
+   "main_drops_to_it": false
+  },
+  {
+   "component": 32925,
+   "walkable_cells": 565,
+   "is_main": false,
+   "house_doors_in_front_comp": {},
+   "y_range": [
+    -47,
+    -43
+   ],
+   "sampled_piece_boxes": {
+    "wall_stairs": 339,
+    "wall": 226
+   },
+   "drops_to_main": true,
+   "main_drops_to_it": false
+  }
+ ],
+ "n_components": 831,
+ "main_component": 255,
+ "main_cells": 30511,
+ "main_share": 0.6437,
+ "doors": [
+  {
+   "front_cell_chunk_touched_by_house_box": true,
+   "front_cell_owner": "wall_passage",
+   "front_cell_owner_piece": 59,
+   "seed": 24002,
+   "piece_index": 78,
+   "module": "medium_ruin_2",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    879,
+    -50,
+    -778
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "doorway_walkable": true,
+   "door_front": [
+    879,
+    -51,
+    -777
+   ],
+   "front_dy": -1,
+   "comp_front": 255,
+   "comp_doorway": 255,
+   "comp_interior": 255,
+   "main": 255,
+   "status": "open_to_main"
+  }
+ ],
+ "buildings_other": [
+  {
+   "piece_index": 17,
+   "module": "large_pillar_1",
+   "rotation": "CLOCKWISE_180",
+   "walkable_cells_in_box": 41,
+   "components": {
+    "255": 21,
+    "25607": 16,
+    "26091": 2,
+    "26137": 2
+   },
+   "touches_main": true
+  },
+  {
+   "piece_index": 23,
+   "module": "large_pillar_1",
+   "rotation": "CLOCKWISE_180",
+   "walkable_cells_in_box": 41,
+   "components": {
+    "255": 21,
+    "25328": 16,
+    "25778": 2,
+    "25852": 2
+   },
+   "touches_main": true
+  }
+ ],
+ "routes": [
+  {
+   "from_piece": 78,
+   "to_piece": "entrance_path",
+   "kind": "building_to_city_entrance",
+   "steps": 149,
+   "up": 2,
+   "down": 2,
+   "net_dy": 0,
+   "path_height_range": 2,
+   "on": {
+    "wall_passage": 8,
+    "wall_stairs": 69,
+    "city_center_wall": 71,
+    "entrance_path": 1
+   },
+   "floor_top": {
+    "deepslate": 74,
+    "sculk": 57,
+    "tuff": 9,
+    "polished_deepslate_stairs": 4
+   }
+  }
+ ],
+ "piece_categories": {
+  "city_center": 1,
+  "city_center_wall": 8,
+  "wall_stairs": 23,
+  "entrance_path": 2,
+  "chamber": 16,
+  "monument": 9,
+  "tower": 2,
+  "feature": 23,
+  "wall_passage": 2,
+  "other": 1,
+  "wall": 3,
+  "house": 1
+ }
+}

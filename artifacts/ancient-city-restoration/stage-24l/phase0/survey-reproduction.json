@@ -1,0 +1,3987 @@
+{
+ "summary": {
+  "observations": 116,
+  "baseline_observations": 116,
+  "identical": 116,
+  "differences": []
+ },
+ "rows": [
+  {
+   "seed": 24001,
+   "piece_index": 21,
+   "module": "large_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    -282,
+    -50,
+    188
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -282,
+     -50,
+     188
+    ],
+    [
+     -281,
+     -50,
+     188
+    ]
+   ]
+  },
+  {
+   "seed": 24001,
+   "piece_index": 22,
+   "module": "medium_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -316,
+    -50,
+    144
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -316,
+     -50,
+     144
+    ],
+    [
+     -316,
+     -51,
+     145
+    ]
+   ]
+  },
+  {
+   "seed": 24001,
+   "piece_index": 50,
+   "module": "small_ruin_2",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -244,
+    -50,
+    71
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -244,
+     -50,
+     71
+    ],
+    [
+     -244,
+     -51,
+     72
+    ]
+   ]
+  },
+  {
+   "seed": 24001,
+   "piece_index": 59,
+   "module": "medium_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -352,
+    -50,
+    144
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -352,
+     -50,
+     144
+    ],
+    [
+     -352,
+     -50,
+     145
+    ]
+   ]
+  },
+  {
+   "seed": 24002,
+   "piece_index": 78,
+   "module": "medium_ruin_2",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    879,
+    -50,
+    -778
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     879,
+     -50,
+     -778
+    ],
+    [
+     879,
+     -51,
+     -777
+    ]
+   ]
+  },
+  {
+   "seed": 24003,
+   "piece_index": 23,
+   "module": "large_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    547,
+    -50,
+    -49
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     547,
+     -50,
+     -49
+    ],
+    [
+     547,
+     -50,
+     -48
+    ]
+   ]
+  },
+  {
+   "seed": 24003,
+   "piece_index": 49,
+   "module": "small_ruin_1",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    540,
+    -50,
+    40
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     540,
+     -50,
+     40
+    ],
+    [
+     540,
+     -51,
+     39
+    ]
+   ]
+  },
+  {
+   "seed": 24003,
+   "piece_index": 52,
+   "module": "small_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    588,
+    -50,
+    67
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     588,
+     -50,
+     67
+    ],
+    [
+     587,
+     -51,
+     67
+    ]
+   ]
+  },
+  {
+   "seed": 24003,
+   "piece_index": 75,
+   "module": "medium_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    484,
+    -50,
+    15
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     484,
+     -50,
+     15
+    ],
+    [
+     485,
+     -50,
+     15
+    ]
+   ]
+  },
+  {
+   "seed": 24003,
+   "piece_index": 77,
+   "module": "large_ruin_1",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    674,
+    -50,
+    7
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     674,
+     -50,
+     7
+    ],
+    [
+     674,
+     -51,
+     6
+    ]
+   ]
+  },
+  {
+   "seed": 24004,
+   "piece_index": 19,
+   "module": "medium_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -235,
+    -50,
+    -944
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -235,
+     -50,
+     -944
+    ],
+    [
+     -235,
+     -51,
+     -943
+    ]
+   ]
+  },
+  {
+   "seed": 24004,
+   "piece_index": 58,
+   "module": "large_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    -202,
+    -50,
+    -847
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -202,
+     -50,
+     -847
+    ],
+    [
+     -201,
+     -51,
+     -847
+    ]
+   ]
+  },
+  {
+   "seed": 24004,
+   "piece_index": 68,
+   "module": "large_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    -233,
+    -50,
+    -1026
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -233,
+     -50,
+     -1026
+    ],
+    [
+     -232,
+     -51,
+     -1026
+    ]
+   ]
+  },
+  {
+   "seed": 24005,
+   "piece_index": 17,
+   "module": "small_ruin_2",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -1316,
+    -50,
+    929
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1316,
+     -50,
+     929
+    ],
+    [
+     -1316,
+     -51,
+     930
+    ]
+   ]
+  },
+  {
+   "seed": 24005,
+   "piece_index": 24,
+   "module": "medium_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -1403,
+    -50,
+    928
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1403,
+     -50,
+     928
+    ],
+    [
+     -1403,
+     -51,
+     929
+    ]
+   ]
+  },
+  {
+   "seed": 24005,
+   "piece_index": 63,
+   "module": "small_ruin_1",
+   "rotation": "NONE",
+   "door_world": [
+    -1319,
+    -50,
+    846
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1319,
+     -50,
+     846
+    ],
+    [
+     -1320,
+     -51,
+     846
+    ]
+   ]
+  },
+  {
+   "seed": 24005,
+   "piece_index": 71,
+   "module": "medium_ruin_1",
+   "rotation": "NONE",
+   "door_world": [
+    -1348,
+    -50,
+    1029
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [
+    [
+     -1349,
+     -50,
+     1029
+    ],
+    [
+     -1349,
+     -50,
+     1030
+    ],
+    [
+     -1349,
+     -50,
+     1031
+    ],
+    [
+     -1349,
+     -50,
+     1032
+    ],
+    [
+     -1349,
+     -50,
+     1033
+    ],
+    [
+     -1349,
+     -50,
+     1034
+    ],
+    [
+     -1349,
+     -50,
+     1035
+    ],
+    [
+     -1349,
+     -49,
+     1029
+    ],
+    [
+     -1349,
+     -49,
+     1030
+    ],
+    [
+     -1349,
+     -49,
+     1031
+    ],
+    [
+     -1349,
+     -49,
+     1032
+    ],
+    [
+     -1349,
+     -49,
+     1033
+    ],
+    [
+     -1349,
+     -49,
+     1034
+    ],
+    [
+     -1349,
+     -49,
+     1035
+    ]
+   ],
+   "n_cells": 14,
+   "blocks": {
+    "dripstone_block": 14
+   },
+   "owners": {
+    "intact_horizontal_wall_1": 14
+   },
+   "path": [
+    [
+     -1348,
+     -50,
+     1029
+    ],
+    [
+     -1349,
+     -50,
+     1029
+    ],
+    [
+     -1349,
+     -50,
+     1030
+    ],
+    [
+     -1349,
+     -50,
+     1031
+    ],
+    [
+     -1349,
+     -50,
+     1032
+    ],
+    [
+     -1349,
+     -50,
+     1033
+    ],
+    [
+     -1349,
+     -50,
+     1034
+    ],
+    [
+     -1349,
+     -50,
+     1035
+    ],
+    [
+     -1350,
+     -49,
+     1035
+    ]
+   ]
+  },
+  {
+   "seed": 24005,
+   "piece_index": 75,
+   "module": "medium_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -1378,
+    -50,
+    998
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1378,
+     -50,
+     998
+    ],
+    [
+     -1378,
+     -51,
+     999
+    ]
+   ]
+  },
+  {
+   "seed": 24005,
+   "piece_index": 77,
+   "module": "medium_ruin_2",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -1461,
+    -50,
+    928
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1461,
+     -50,
+     928
+    ],
+    [
+     -1461,
+     -50,
+     929
+    ]
+   ]
+  },
+  {
+   "seed": 24005,
+   "piece_index": 86,
+   "module": "medium_ruin_1",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    -1443,
+    -50,
+    917
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1443,
+     -50,
+     917
+    ],
+    [
+     -1443,
+     -51,
+     916
+    ]
+   ]
+  },
+  {
+   "seed": 24005,
+   "piece_index": 98,
+   "module": "medium_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    -1430,
+    -50,
+    977
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1430,
+     -50,
+     977
+    ],
+    [
+     -1431,
+     -51,
+     977
+    ]
+   ]
+  },
+  {
+   "seed": 24006,
+   "piece_index": 25,
+   "module": "medium_ruin_1",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    -179,
+    -50,
+    -1679
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -179,
+     -50,
+     -1679
+    ],
+    [
+     -179,
+     -51,
+     -1680
+    ]
+   ]
+  },
+  {
+   "seed": 24006,
+   "piece_index": 46,
+   "module": "small_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    -220,
+    -50,
+    -1792
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -220,
+     -50,
+     -1792
+    ],
+    [
+     -219,
+     -51,
+     -1792
+    ]
+   ]
+  },
+  {
+   "seed": 24006,
+   "piece_index": 55,
+   "module": "medium_ruin_1",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    -255,
+    -50,
+    -1639
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -255,
+     -50,
+     -1639
+    ],
+    [
+     -255,
+     -51,
+     -1640
+    ]
+   ]
+  },
+  {
+   "seed": 24006,
+   "piece_index": 60,
+   "module": "small_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    -198,
+    -50,
+    -1809
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -198,
+     -50,
+     -1809
+    ],
+    [
+     -199,
+     -51,
+     -1809
+    ]
+   ]
+  },
+  {
+   "seed": 24007,
+   "piece_index": 37,
+   "module": "medium_ruin_1",
+   "rotation": "NONE",
+   "door_world": [
+    -264,
+    -50,
+    928
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -264,
+     -50,
+     928
+    ],
+    [
+     -265,
+     -51,
+     928
+    ]
+   ]
+  },
+  {
+   "seed": 24007,
+   "piece_index": 94,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    -256,
+    -50,
+    845
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -256,
+     -50,
+     845
+    ],
+    [
+     -256,
+     -51,
+     844
+    ]
+   ]
+  },
+  {
+   "seed": 24008,
+   "piece_index": 13,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    481,
+    -50,
+    1252
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     481,
+     -50,
+     1252
+    ],
+    [
+     482,
+     -51,
+     1252
+    ]
+   ]
+  },
+  {
+   "seed": 24008,
+   "piece_index": 19,
+   "module": "medium_ruin_2",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    524,
+    -50,
+    1306
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     524,
+     -50,
+     1306
+    ],
+    [
+     524,
+     -51,
+     1305
+    ]
+   ]
+  },
+  {
+   "seed": 24008,
+   "piece_index": 31,
+   "module": "medium_ruin_2",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    447,
+    -50,
+    1324
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     447,
+     -50,
+     1324
+    ],
+    [
+     448,
+     -51,
+     1324
+    ]
+   ]
+  },
+  {
+   "seed": 24008,
+   "piece_index": 38,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    481,
+    -50,
+    1216
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     481,
+     -50,
+     1216
+    ],
+    [
+     482,
+     -51,
+     1216
+    ]
+   ]
+  },
+  {
+   "seed": 24008,
+   "piece_index": 45,
+   "module": "small_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    469,
+    -50,
+    1246
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     469,
+     -50,
+     1246
+    ],
+    [
+     468,
+     -50,
+     1246
+    ]
+   ]
+  },
+  {
+   "seed": 24008,
+   "piece_index": 57,
+   "module": "small_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    480,
+    -50,
+    1375
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     480,
+     -50,
+     1375
+    ],
+    [
+     481,
+     -51,
+     1375
+    ]
+   ]
+  },
+  {
+   "seed": 24008,
+   "piece_index": 60,
+   "module": "small_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    481,
+    -50,
+    1199
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     481,
+     -50,
+     1199
+    ],
+    [
+     482,
+     -51,
+     1199
+    ]
+   ]
+  },
+  {
+   "seed": 24008,
+   "piece_index": 61,
+   "module": "small_ruin_1",
+   "rotation": "NONE",
+   "door_world": [
+    503,
+    -50,
+    1199
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     503,
+     -50,
+     1199
+    ],
+    [
+     502,
+     -51,
+     1199
+    ]
+   ]
+  },
+  {
+   "seed": 24008,
+   "piece_index": 93,
+   "module": "small_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    596,
+    -50,
+    1284
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     596,
+     -50,
+     1284
+    ],
+    [
+     596,
+     -51,
+     1285
+    ]
+   ]
+  },
+  {
+   "seed": 24009,
+   "piece_index": 18,
+   "module": "large_ruin_1",
+   "rotation": "NONE",
+   "door_world": [
+    508,
+    -50,
+    571
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     508,
+     -50,
+     571
+    ],
+    [
+     507,
+     -50,
+     571
+    ]
+   ]
+  },
+  {
+   "seed": 24009,
+   "piece_index": 21,
+   "module": "small_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    453,
+    -50,
+    528
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     453,
+     -50,
+     528
+    ],
+    [
+     453,
+     -51,
+     529
+    ]
+   ]
+  },
+  {
+   "seed": 24009,
+   "piece_index": 35,
+   "module": "medium_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    508,
+    -50,
+    589
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     508,
+     -50,
+     589
+    ],
+    [
+     507,
+     -51,
+     589
+    ]
+   ]
+  },
+  {
+   "seed": 24009,
+   "piece_index": 39,
+   "module": "small_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    530,
+    -50,
+    502
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     530,
+     -50,
+     502
+    ],
+    [
+     531,
+     -51,
+     502
+    ]
+   ]
+  },
+  {
+   "seed": 24009,
+   "piece_index": 40,
+   "module": "small_ruin_2",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    578,
+    -50,
+    529
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     578,
+     -50,
+     529
+    ],
+    [
+     578,
+     -50,
+     530
+    ]
+   ]
+  },
+  {
+   "seed": 24009,
+   "piece_index": 56,
+   "module": "medium_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    414,
+    -50,
+    528
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     414,
+     -50,
+     528
+    ],
+    [
+     414,
+     -51,
+     529
+    ]
+   ]
+  },
+  {
+   "seed": 24009,
+   "piece_index": 59,
+   "module": "large_ruin_1",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    597,
+    -50,
+    551
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [
+    [
+     595,
+     -50,
+     550
+    ],
+    [
+     595,
+     -49,
+     550
+    ],
+    [
+     596,
+     -50,
+     550
+    ],
+    [
+     596,
+     -49,
+     550
+    ],
+    [
+     597,
+     -50,
+     550
+    ],
+    [
+     597,
+     -49,
+     550
+    ]
+   ],
+   "n_cells": 6,
+   "blocks": {
+    "dripstone_block": 6
+   },
+   "owners": {
+    "ruined_horizontal_wall_stairs_4": 6
+   },
+   "path": [
+    [
+     597,
+     -50,
+     551
+    ],
+    [
+     597,
+     -50,
+     550
+    ],
+    [
+     596,
+     -50,
+     550
+    ],
+    [
+     595,
+     -50,
+     550
+    ],
+    [
+     594,
+     -50,
+     550
+    ]
+   ]
+  },
+  {
+   "seed": 24009,
+   "piece_index": 60,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    560,
+    -50,
+    590
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     560,
+     -50,
+     590
+    ],
+    [
+     560,
+     -51,
+     589
+    ]
+   ]
+  },
+  {
+   "seed": 24009,
+   "piece_index": 63,
+   "module": "medium_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    543,
+    -50,
+    455
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     543,
+     -50,
+     455
+    ],
+    [
+     543,
+     -51,
+     456
+    ]
+   ]
+  },
+  {
+   "seed": 24009,
+   "piece_index": 67,
+   "module": "small_ruin_2",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    450,
+    -50,
+    455
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     450,
+     -50,
+     455
+    ],
+    [
+     450,
+     -51,
+     456
+    ]
+   ]
+  },
+  {
+   "seed": 24009,
+   "piece_index": 90,
+   "module": "large_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    432,
+    -50,
+    455
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     432,
+     -50,
+     455
+    ],
+    [
+     432,
+     -51,
+     456
+    ]
+   ]
+  },
+  {
+   "seed": 24010,
+   "piece_index": 46,
+   "module": "small_ruin_1",
+   "rotation": "NONE",
+   "door_world": [
+    -3015,
+    -50,
+    2362
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -3015,
+     -50,
+     2362
+    ],
+    [
+     -3016,
+     -51,
+     2362
+    ]
+   ]
+  },
+  {
+   "seed": 24010,
+   "piece_index": 57,
+   "module": "small_ruin_2",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -3077,
+    -50,
+    2228
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -3077,
+     -50,
+     2228
+    ],
+    [
+     -3077,
+     -51,
+     2229
+    ]
+   ]
+  },
+  {
+   "seed": 24010,
+   "piece_index": 76,
+   "module": "small_ruin_2",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -3124,
+    -50,
+    2371
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -3124,
+     -50,
+     2371
+    ],
+    [
+     -3124,
+     -51,
+     2372
+    ]
+   ]
+  },
+  {
+   "seed": 24011,
+   "piece_index": 26,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    -254,
+    -50,
+    -545
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -254,
+     -50,
+     -545
+    ],
+    [
+     -254,
+     -51,
+     -546
+    ]
+   ]
+  },
+  {
+   "seed": 24011,
+   "piece_index": 49,
+   "module": "medium_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -163,
+    -50,
+    -493
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -163,
+     -50,
+     -493
+    ],
+    [
+     -163,
+     -51,
+     -492
+    ]
+   ]
+  },
+  {
+   "seed": 24011,
+   "piece_index": 51,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    -238,
+    -50,
+    -511
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -238,
+     -50,
+     -511
+    ],
+    [
+     -238,
+     -51,
+     -512
+    ]
+   ]
+  },
+  {
+   "seed": 24011,
+   "piece_index": 52,
+   "module": "medium_ruin_1",
+   "rotation": "NONE",
+   "door_world": [
+    -182,
+    -50,
+    -627
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -182,
+     -50,
+     -627
+    ],
+    [
+     -183,
+     -50,
+     -627
+    ]
+   ]
+  },
+  {
+   "seed": 24011,
+   "piece_index": 62,
+   "module": "large_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -92,
+    -50,
+    -566
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -92,
+     -50,
+     -566
+    ],
+    [
+     -92,
+     -51,
+     -565
+    ]
+   ]
+  },
+  {
+   "seed": 24011,
+   "piece_index": 89,
+   "module": "medium_ruin_2",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -137,
+    -50,
+    -618
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -137,
+     -50,
+     -618
+    ],
+    [
+     -137,
+     -51,
+     -617
+    ]
+   ]
+  },
+  {
+   "seed": 24012,
+   "piece_index": 18,
+   "module": "large_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    -1324,
+    -50,
+    36
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1324,
+     -50,
+     36
+    ],
+    [
+     -1323,
+     -51,
+     36
+    ]
+   ]
+  },
+  {
+   "seed": 24012,
+   "piece_index": 26,
+   "module": "small_ruin_1",
+   "rotation": "NONE",
+   "door_world": [
+    -1256,
+    -50,
+    89
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1256,
+     -50,
+     89
+    ],
+    [
+     -1257,
+     -51,
+     89
+    ]
+   ]
+  },
+  {
+   "seed": 24012,
+   "piece_index": 32,
+   "module": "large_ruin_1",
+   "rotation": "NONE",
+   "door_world": [
+    -1302,
+    -50,
+    19
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1302,
+     -50,
+     19
+    ],
+    [
+     -1303,
+     -51,
+     19
+    ]
+   ]
+  },
+  {
+   "seed": 24012,
+   "piece_index": 41,
+   "module": "medium_ruin_2",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -1394,
+    -50,
+    57
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1394,
+     -50,
+     57
+    ],
+    [
+     -1394,
+     -51,
+     58
+    ]
+   ]
+  },
+  {
+   "seed": 24012,
+   "piece_index": 74,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    -1386,
+    -50,
+    13
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1386,
+     -50,
+     13
+    ],
+    [
+     -1385,
+     -50,
+     13
+    ]
+   ]
+  },
+  {
+   "seed": 24012,
+   "piece_index": 75,
+   "module": "small_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    -1324,
+    -50,
+    -36
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1324,
+     -50,
+     -36
+    ],
+    [
+     -1323,
+     -51,
+     -36
+    ]
+   ]
+  },
+  {
+   "seed": 24013,
+   "piece_index": 73,
+   "module": "small_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    1117,
+    -50,
+    1183
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1117,
+     -50,
+     1183
+    ],
+    [
+     1116,
+     -51,
+     1183
+    ]
+   ]
+  },
+  {
+   "seed": 24013,
+   "piece_index": 80,
+   "module": "medium_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    1284,
+    -50,
+    1220
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1284,
+     -50,
+     1220
+    ],
+    [
+     1284,
+     -51,
+     1221
+    ]
+   ]
+  },
+  {
+   "seed": 24014,
+   "piece_index": 20,
+   "module": "medium_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    1366,
+    -50,
+    -919
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1366,
+     -50,
+     -919
+    ],
+    [
+     1367,
+     -51,
+     -919
+    ]
+   ]
+  },
+  {
+   "seed": 24014,
+   "piece_index": 31,
+   "module": "medium_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    1314,
+    -50,
+    -960
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1314,
+     -50,
+     -960
+    ],
+    [
+     1314,
+     -51,
+     -959
+    ]
+   ]
+  },
+  {
+   "seed": 24014,
+   "piece_index": 33,
+   "module": "medium_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    1388,
+    -50,
+    -899
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1388,
+     -50,
+     -899
+    ],
+    [
+     1387,
+     -51,
+     -899
+    ]
+   ]
+  },
+  {
+   "seed": 24014,
+   "piece_index": 38,
+   "module": "medium_ruin_2",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    1437,
+    -50,
+    -937
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1437,
+     -50,
+     -937
+    ],
+    [
+     1437,
+     -51,
+     -938
+    ]
+   ]
+  },
+  {
+   "seed": 24014,
+   "piece_index": 62,
+   "module": "small_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    1276,
+    -50,
+    -960
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1276,
+     -50,
+     -960
+    ],
+    [
+     1276,
+     -51,
+     -959
+    ]
+   ]
+  },
+  {
+   "seed": 24014,
+   "piece_index": 66,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    1366,
+    -50,
+    -862
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1366,
+     -50,
+     -862
+    ],
+    [
+     1367,
+     -51,
+     -862
+    ]
+   ]
+  },
+  {
+   "seed": 24014,
+   "piece_index": 72,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    1294,
+    -50,
+    -971
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1294,
+     -50,
+     -971
+    ],
+    [
+     1294,
+     -50,
+     -972
+    ]
+   ]
+  },
+  {
+   "seed": 24014,
+   "piece_index": 76,
+   "module": "small_ruin_1",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    1444,
+    -50,
+    -1011
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1444,
+     -50,
+     -1011
+    ],
+    [
+     1444,
+     -51,
+     -1012
+    ]
+   ]
+  },
+  {
+   "seed": 24015,
+   "piece_index": 35,
+   "module": "small_ruin_1",
+   "rotation": "NONE",
+   "door_world": [
+    -193,
+    -50,
+    -83
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -193,
+     -50,
+     -83
+    ],
+    [
+     -194,
+     -51,
+     -83
+    ]
+   ]
+  },
+  {
+   "seed": 24015,
+   "piece_index": 55,
+   "module": "large_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -272,
+    -50,
+    -154
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "no_connection_within_radius",
+   "cells_to_clear": [],
+   "n_cells": null,
+   "blocks": {},
+   "owners": {},
+   "path": []
+  },
+  {
+   "seed": 24015,
+   "piece_index": 57,
+   "module": "medium_ruin_2",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -258,
+    -50,
+    -200
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -258,
+     -50,
+     -200
+    ],
+    [
+     -258,
+     -51,
+     -199
+    ]
+   ]
+  },
+  {
+   "seed": 24015,
+   "piece_index": 74,
+   "module": "medium_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -276,
+    -50,
+    -200
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -276,
+     -50,
+     -200
+    ],
+    [
+     -276,
+     -51,
+     -199
+    ]
+   ]
+  },
+  {
+   "seed": 24015,
+   "piece_index": 76,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    -279,
+    -50,
+    -178
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -279,
+     -50,
+     -178
+    ],
+    [
+     -279,
+     -51,
+     -179
+    ]
+   ]
+  },
+  {
+   "seed": 24015,
+   "piece_index": 81,
+   "module": "small_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    -181,
+    -50,
+    -61
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -181,
+     -50,
+     -61
+    ],
+    [
+     -180,
+     -51,
+     -61
+    ]
+   ]
+  },
+  {
+   "seed": 24015,
+   "piece_index": 84,
+   "module": "small_ruin_1",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    -307,
+    -50,
+    -132
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -307,
+     -50,
+     -132
+    ],
+    [
+     -307,
+     -51,
+     -133
+    ]
+   ]
+  },
+  {
+   "seed": 24016,
+   "piece_index": 39,
+   "module": "small_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    -991,
+    -50,
+    -1564
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -991,
+     -50,
+     -1564
+    ],
+    [
+     -992,
+     -51,
+     -1564
+    ]
+   ]
+  },
+  {
+   "seed": 24016,
+   "piece_index": 51,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    -1047,
+    -50,
+    -1457
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1047,
+     -50,
+     -1457
+    ],
+    [
+     -1046,
+     -51,
+     -1457
+    ]
+   ]
+  },
+  {
+   "seed": 24017,
+   "piece_index": 41,
+   "module": "medium_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    81,
+    -50,
+    157
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     81,
+     -50,
+     157
+    ],
+    [
+     80,
+     -51,
+     157
+    ]
+   ]
+  },
+  {
+   "seed": 24017,
+   "piece_index": 54,
+   "module": "medium_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    47,
+    -50,
+    207
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     47,
+     -50,
+     207
+    ],
+    [
+     46,
+     -51,
+     207
+    ]
+   ]
+  },
+  {
+   "seed": 24017,
+   "piece_index": 82,
+   "module": "large_ruin_1",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    91,
+    -50,
+    187
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     91,
+     -50,
+     187
+    ],
+    [
+     91,
+     -50,
+     186
+    ]
+   ]
+  },
+  {
+   "seed": 24017,
+   "piece_index": 83,
+   "module": "medium_ruin_2",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    130,
+    -50,
+    165
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     130,
+     -50,
+     165
+    ],
+    [
+     130,
+     -51,
+     166
+    ]
+   ]
+  },
+  {
+   "seed": 24017,
+   "piece_index": 85,
+   "module": "medium_ruin_1",
+   "rotation": "NONE",
+   "door_world": [
+    121,
+    -50,
+    195
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     121,
+     -50,
+     195
+    ],
+    [
+     120,
+     -50,
+     195
+    ]
+   ]
+  },
+  {
+   "seed": 24018,
+   "piece_index": 32,
+   "module": "small_ruin_1",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    1297,
+    -50,
+    112
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1297,
+     -50,
+     112
+    ],
+    [
+     1297,
+     -51,
+     111
+    ]
+   ]
+  },
+  {
+   "seed": 24018,
+   "piece_index": 51,
+   "module": "medium_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    1266,
+    -50,
+    63
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1266,
+     -50,
+     63
+    ],
+    [
+     1267,
+     -51,
+     63
+    ]
+   ]
+  },
+  {
+   "seed": 24018,
+   "piece_index": 76,
+   "module": "large_ruin_1",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    1146,
+    -50,
+    145
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1146,
+     -50,
+     145
+    ],
+    [
+     1146,
+     -51,
+     144
+    ]
+   ]
+  },
+  {
+   "seed": 24018,
+   "piece_index": 82,
+   "module": "small_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    1242,
+    -50,
+    -1
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1242,
+     -50,
+     -1
+    ],
+    [
+     1241,
+     -51,
+     -1
+    ]
+   ]
+  },
+  {
+   "seed": 24019,
+   "piece_index": 27,
+   "module": "medium_ruin_2",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    -752,
+    -50,
+    -1514
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -752,
+     -50,
+     -1514
+    ],
+    [
+     -752,
+     -51,
+     -1515
+    ]
+   ]
+  },
+  {
+   "seed": 24020,
+   "piece_index": 37,
+   "module": "small_ruin_1",
+   "rotation": "NONE",
+   "door_world": [
+    1793,
+    -50,
+    -941
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1793,
+     -50,
+     -941
+    ],
+    [
+     1792,
+     -51,
+     -941
+    ]
+   ]
+  },
+  {
+   "seed": 24020,
+   "piece_index": 48,
+   "module": "large_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    1738,
+    -50,
+    -995
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1738,
+     -50,
+     -995
+    ],
+    [
+     1739,
+     -51,
+     -995
+    ]
+   ]
+  },
+  {
+   "seed": 24020,
+   "piece_index": 51,
+   "module": "large_ruin_1",
+   "rotation": "NONE",
+   "door_world": [
+    1759,
+    -50,
+    -829
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1759,
+     -50,
+     -829
+    ],
+    [
+     1758,
+     -51,
+     -829
+    ]
+   ]
+  },
+  {
+   "seed": 24020,
+   "piece_index": 52,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    1737,
+    -50,
+    -829
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1737,
+     -50,
+     -829
+    ],
+    [
+     1738,
+     -51,
+     -829
+    ]
+   ]
+  },
+  {
+   "seed": 24020,
+   "piece_index": 61,
+   "module": "medium_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    1811,
+    -50,
+    -940
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1811,
+     -50,
+     -940
+    ],
+    [
+     1812,
+     -51,
+     -940
+    ]
+   ]
+  },
+  {
+   "seed": 24020,
+   "piece_index": 68,
+   "module": "medium_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    1786,
+    -50,
+    -986
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1786,
+     -50,
+     -986
+    ],
+    [
+     1786,
+     -50,
+     -985
+    ]
+   ]
+  },
+  {
+   "seed": 24020,
+   "piece_index": 91,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    1811,
+    -50,
+    -976
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1811,
+     -50,
+     -976
+    ],
+    [
+     1812,
+     -51,
+     -976
+    ]
+   ]
+  },
+  {
+   "seed": 24021,
+   "piece_index": 14,
+   "module": "medium_ruin_1",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    -299,
+    -50,
+    172
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -299,
+     -50,
+     172
+    ],
+    [
+     -299,
+     -51,
+     171
+    ]
+   ]
+  },
+  {
+   "seed": 24021,
+   "piece_index": 52,
+   "module": "large_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -214,
+    -50,
+    119
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -214,
+     -50,
+     119
+    ],
+    [
+     -214,
+     -51,
+     120
+    ]
+   ]
+  },
+  {
+   "seed": 24021,
+   "piece_index": 54,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    -278,
+    -50,
+    77
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -278,
+     -50,
+     77
+    ],
+    [
+     -277,
+     -51,
+     77
+    ]
+   ]
+  },
+  {
+   "seed": 24021,
+   "piece_index": 55,
+   "module": "medium_ruin_1",
+   "rotation": "NONE",
+   "door_world": [
+    -256,
+    -50,
+    78
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -256,
+     -50,
+     78
+    ],
+    [
+     -257,
+     -51,
+     78
+    ]
+   ]
+  },
+  {
+   "seed": 24021,
+   "piece_index": 62,
+   "module": "large_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    -279,
+    -50,
+    257
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -279,
+     -50,
+     257
+    ],
+    [
+     -278,
+     -51,
+     257
+    ]
+   ]
+  },
+  {
+   "seed": 24021,
+   "piece_index": 76,
+   "module": "medium_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    -326,
+    -50,
+    123
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -326,
+     -50,
+     123
+    ],
+    [
+     -327,
+     -50,
+     123
+    ]
+   ]
+  },
+  {
+   "seed": 24022,
+   "piece_index": 46,
+   "module": "large_ruin_1",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    -1024,
+    -50,
+    -198
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1024,
+     -50,
+     -198
+    ],
+    [
+     -1024,
+     -51,
+     -199
+    ]
+   ]
+  },
+  {
+   "seed": 24022,
+   "piece_index": 52,
+   "module": "medium_ruin_2",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    -941,
+    -50,
+    -301
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -941,
+     -50,
+     -301
+    ],
+    [
+     -940,
+     -51,
+     -301
+    ]
+   ]
+  },
+  {
+   "seed": 24022,
+   "piece_index": 75,
+   "module": "small_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -983,
+    -50,
+    -382
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -983,
+     -50,
+     -382
+    ],
+    [
+     -983,
+     -51,
+     -381
+    ]
+   ]
+  },
+  {
+   "seed": 24022,
+   "piece_index": 81,
+   "module": "medium_ruin_2",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    -1062,
+    -50,
+    -198
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -1062,
+     -50,
+     -198
+    ],
+    [
+     -1062,
+     -51,
+     -199
+    ]
+   ]
+  },
+  {
+   "seed": 24023,
+   "piece_index": 39,
+   "module": "medium_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    -595,
+    -50,
+    1772
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -595,
+     -50,
+     1772
+    ],
+    [
+     -596,
+     -51,
+     1772
+    ]
+   ]
+  },
+  {
+   "seed": 24023,
+   "piece_index": 47,
+   "module": "small_ruin_2",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    -495,
+    -50,
+    1778
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -495,
+     -50,
+     1778
+    ],
+    [
+     -495,
+     -51,
+     1779
+    ]
+   ]
+  },
+  {
+   "seed": 24023,
+   "piece_index": 58,
+   "module": "medium_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    -595,
+    -50,
+    1791
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -595,
+     -50,
+     1791
+    ],
+    [
+     -596,
+     -51,
+     1791
+    ]
+   ]
+  },
+  {
+   "seed": 24023,
+   "piece_index": 65,
+   "module": "medium_ruin_1",
+   "rotation": "NONE",
+   "door_world": [
+    -555,
+    -50,
+    1679
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -555,
+     -50,
+     1679
+    ],
+    [
+     -556,
+     -50,
+     1679
+    ]
+   ]
+  },
+  {
+   "seed": 24023,
+   "piece_index": 80,
+   "module": "small_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    -555,
+    -50,
+    1661
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -555,
+     -50,
+     1661
+    ],
+    [
+     -556,
+     -51,
+     1661
+    ]
+   ]
+  },
+  {
+   "seed": 24023,
+   "piece_index": 83,
+   "module": "small_ruin_1",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    -459,
+    -50,
+    1800
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     -459,
+     -50,
+     1800
+    ],
+    [
+     -459,
+     -50,
+     1799
+    ]
+   ]
+  },
+  {
+   "seed": 24024,
+   "piece_index": 35,
+   "module": "large_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    1615,
+    -50,
+    45
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1615,
+     -50,
+     45
+    ],
+    [
+     1616,
+     -51,
+     45
+    ]
+   ]
+  },
+  {
+   "seed": 24024,
+   "piece_index": 85,
+   "module": "small_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    1575,
+    -50,
+    80
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "status": "ok",
+   "cells_to_clear": [],
+   "n_cells": 0,
+   "blocks": {},
+   "owners": {},
+   "path": [
+    [
+     1575,
+     -50,
+     80
+    ],
+    [
+     1576,
+     -51,
+     80
+    ]
+   ]
+  }
+ ]
+}
