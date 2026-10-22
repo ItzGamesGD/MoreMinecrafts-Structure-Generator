@@ -36,8 +36,22 @@ OUT = ROOT / "artifacts/ancient-city-restoration/stage-24f"
 FINAL = OUT / "final-candidates"
 
 
+PROVENANCE = OUT / "provenance" / "stage-24e-5a3a571"
+
+
 def git_show(ref, path) -> bytes:
-    return subprocess.run(["git", "show", f"{ref}:{path}"], cwd=ROOT, capture_output=True, check=True).stdout
+    """Read `path` at the pinned commit `ref`. The Stage 24-E head is not an ancestor of main, so when its git object is not
+    available the byte-identical vendored copy under stage-24f/provenance/ is used, after verifying its SHA-256."""
+    try:
+        return subprocess.run(["git", "show", f"{ref}:{path}"], cwd=ROOT, capture_output=True, check=True).stdout
+    except subprocess.CalledProcessError:
+        if ref != STAGE24E_HEAD or not (PROVENANCE / path).is_file():
+            raise
+        data = (PROVENANCE / path).read_bytes()
+        pins = {p: h for h, p in (line.split("  ", 1) for line in (PROVENANCE / "SHA256SUMS").read_text().splitlines())}
+        if pins.get(path) != hashlib.sha256(data).hexdigest():
+            raise ValueError(f"vendored Stage 24-E object {path} does not match its pinned SHA-256")
+        return data
 
 
 def sha256(b: bytes) -> str:

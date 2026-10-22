@@ -8,7 +8,7 @@ on:
     paths:
       - "tools/stage24f/**"
       - "tools/stage24d/**"
-      - "tests/test_stage24f_final.py"
+      - "tests/test_stage24f_final.py tests/test_stage24f_provenance.py"
       - "artifacts/ancient-city-restoration/stage-24f/final-candidates/**"
       - "artifacts/ancient-city-restoration/stage-24f/FINAL-CANDIDATES-MANIFEST.json"
       - ".github/workflows/stage24f-final-candidates.yml"
@@ -47,7 +47,7 @@ jobs:
           cd artifacts/ancient-city-restoration/stage-24f/final-candidates && sha256sum -c SHA256SUMS
       - name: Stage 24-B / 24-C / 24-E / 24-F tests (24-C regressions also run on the final set)
         run: |
-          vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24b_*.py tests/test_stage24c_regressions.py tests/test_stage24e_proposals.py tests/test_stage24f_final.py -q
+          vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24b_*.py tests/test_stage24c_regressions.py tests/test_stage24e_proposals.py tests/test_stage24f_final.py tests/test_stage24f_provenance.py -q
           STAGE24B_DIR=$PWD/artifacts/ancient-city-restoration/stage-24f/final-candidates vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24c_regressions.py -q
       - name: Verify earlier-stage candidates and proposals are untouched
         run: git diff --exit-code -- artifacts/ancient-city-restoration/stage-24b artifacts/ancient-city-restoration/stage-24e/proposals
@@ -59,7 +59,5 @@ jobs:
             artifacts/ancient-city-restoration/stage-24f/final-candidates
             artifacts/ancient-city-restoration/stage-24f/FINAL-CANDIDATES-MANIFEST.json
             artifacts/ancient-city-restoration/stage-24f/VALIDATION-MATRIX.md
-            artifacts/ancient-city-restoration/stage-24f/gallery
-            artifacts/ancient-city-restoration/stage-24f/stage-24f-final-gallery.zip
-            artifacts/ancient-city-restoration/stage-24f/worldgen
+            artifacts/ancient-city-restoration/stage-24f/provenance
           if-no-files-found: error

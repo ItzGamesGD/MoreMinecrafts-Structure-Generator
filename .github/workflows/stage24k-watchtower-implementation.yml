@@ -77,7 +77,7 @@ jobs:
           git diff --exit-code -- artifacts/ancient-city-restoration/stage-24k/static-checks.json
       - name: Stage 24-K, 24-J, 24-I, 24-H and 24-G tests, plus the earlier suites
         run: |
-          vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24k_towers.py tests/test_stage24k_sweep.py tests/test_stage24j_watchtowers.py tests/test_stage24i_roof.py tests/test_stage24h_clearance.py tests/test_stage24g_protection.py tests/test_stage24b_*.py tests/test_stage24c_regressions.py tests/test_stage24e_proposals.py tests/test_stage24f_final.py -q
+          vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24k_towers.py tests/test_stage24k_sweep.py tests/test_stage24j_watchtowers.py tests/test_stage24i_roof.py tests/test_stage24h_clearance.py tests/test_stage24g_protection.py tests/test_stage24b_*.py tests/test_stage24c_regressions.py tests/test_stage24e_proposals.py tests/test_stage24f_final.py tests/test_stage24f_provenance.py -q
           STAGE24B_DIR=$PWD/artifacts/ancient-city-restoration/stage-24f/final-candidates vendor/mcbuild/.venv/bin/python -m pytest tests/test_stage24c_regressions.py -q
       - name: Live tests on a real 26.1.2 server - production pool entries (buried, real processors) and exact tower placement, 4 rotations
         env:
