@@ -1,0 +1,608 @@
+{
+ "steps": {
+  "server_start": {
+   "level": "SERVER",
+   "pass": true,
+   "detail": "production jar, fresh world, seed 173"
+  },
+  "L1_join": {
+   "level": "LIVE",
+   "pass": true,
+   "detail": {
+    "renderer_started": true,
+    "server_lists_player": true,
+    "screenshot": {
+     "name": "L1-spawn",
+     "ok": true,
+     "colours": 35371,
+     "size": 1051959,
+     "latency_s": 5.1
+    }
+   }
+  },
+  "L2_locate": {
+   "level": "SAVED-DATA",
+   "pass": true,
+   "detail": {
+    "locate_reply": "The nearest moreminecrafts:forgotten_kingdom/central_cavern is at [-304, ~, 240] (387 blocks away)",
+    "position": [
+     -304,
+     240
+    ],
+    "start_in_saved_world": true,
+    "pieces": 21,
+    "placed_with_command": false
+   }
+  },
+  "L5_connections": {
+   "level": "SERVER-ONLY (saved data)",
+   "pass": true,
+   "detail": {
+    "junction_entries": 40,
+    "blocked": [],
+    "pieces": 21
+   }
+  },
+  "integrity_audit": {
+   "level": "SAVED-DATA",
+   "pass": true,
+   "detail": {
+    "pieces": 21,
+    "expected": 55305,
+    "matched": 55305,
+    "mismatch": 0,
+    "trial_spawner_blocks": 3,
+    "trial_spawner_entities": 3,
+    "errors": [],
+    "mismatch_sample": []
+   }
+  },
+  "L3_approach": {
+   "level": "LIVE (surface approach); entry into the piece boxes is SERVER-ONLY",
+   "pass": true,
+   "detail": {
+    "attempts": [
+     {
+      "attempt": 1,
+      "start": [
+       -236.5,
+       109.0,
+       216.5
+      ],
+      "end": [
+       -265.4663540799597,
+       102.0,
+       222.3252911614797
+      ],
+      "moved_blocks": 29.5,
+      "closer_by": 28.7,
+      "held_s": 21.5,
+      "aim_modes": {
+       "real_mouse": 7
+      },
+      "strafes": 3,
+      "screenshots": [
+       {
+        "name": "L3-approach-1-start",
+        "ok": true,
+        "colours": 25048,
+        "size": 623140,
+        "latency_s": 3.1
+       },
+       {
+        "name": "L3-approach-1-end",
+        "ok": true,
+        "colours": 81731,
+        "size": 1324673,
+        "latency_s": 3.2
+       }
+      ]
+     }
+    ],
+    "note": "the structure lies 100+ blocks below the surface with no surface entrance; the final entry below is the L4 route (teleport setup)"
+   }
+  },
+  "L8_saved_columns": {
+   "level": "SAVED-DATA",
+   "pass": true,
+   "detail": {
+    "columns_sampled": 3025,
+    "open_air_columns_30_plus_above_pieces": [],
+    "longest_open_run_above_pieces": 12,
+    "note": "checked up to 60 blocks above the highest piece; natural caves can produce air, so a nonzero count needs a look"
+   }
+  },
+  "L4_traverse": {
+   "level": "LIVE",
+   "pass": true,
+   "detail": {
+    "routes": [
+     {
+      "route": "tunnel_east->main_chamber->tunnel_west",
+      "pieces_in_order_entered": 3,
+      "live_entries": 2,
+      "legs": [
+       {
+        "piece": "tunnel_east",
+        "screenshot": {
+         "name": "L4-tunnel_east-1-tunnel_east",
+         "ok": true,
+         "colours": 3733,
+         "size": 585837,
+         "latency_s": 2.1
+        }
+       },
+       {
+        "piece": "main_chamber",
+        "entered_by_live_keys": true,
+        "from": [
+         -363.5,
+         -35.0,
+         217.5
+        ],
+        "to": [
+         -347.7460433468283,
+         -35.0,
+         217.5
+        ],
+        "held_s": 4.7,
+        "aim_modes": {
+         "real_mouse": 2
+        },
+        "strafes": 0,
+        "screenshot": {
+         "name": "L4-tunnel_east-2-main_chamber",
+         "ok": true,
+         "colours": 7865,
+         "size": 881774,
+         "latency_s": 2.1
+        }
+       },
+       {
+        "piece": "tunnel_west",
+        "entered_by_live_keys": true,
+        "from": [
+         -347.7460433468283,
+         -35.0,
+         217.5
+        ],
+        "to": [
+         -300.907812554484,
+         -35.0,
+         216.98715589349962
+        ],
+        "held_s": 22.7,
+        "aim_modes": {
+         "real_mouse": 7
+        },
+        "strafes": 1,
+        "screenshot": {
+         "name": "L4-tunnel_east-3-tunnel_west",
+         "ok": true,
+         "colours": 8717,
+         "size": 700256,
+         "latency_s": 2.1
+        }
+       }
+      ]
+     },
+     {
+      "route": "tunnel_south->main_chamber->tunnel_north",
+      "pieces_in_order_entered": 3,
+      "live_entries": 2,
+      "legs": [
+       {
+        "piece": "tunnel_south",
+        "screenshot": {
+         "name": "L4-tunnel_south-1-tunnel_south",
+         "ok": true,
+         "colours": 3335,
+         "size": 540546,
+         "latency_s": 2.1
+        }
+       },
+       {
+        "piece": "main_chamber",
+        "entered_by_live_keys": true,
+        "from": [
+         -326.5,
+         -35.0,
+         180.5
+        ],
+        "to": [
+         -326.5,
+         -35.0,
+         196.46981566350485
+        ],
+        "held_s": 4.7,
+        "aim_modes": {
+         "real_mouse": 2
+        },
+        "strafes": 0,
+        "screenshot": {
+         "name": "L4-tunnel_south-2-main_chamber",
+         "ok": true,
+         "colours": 7775,
+         "size": 1012668,
+         "latency_s": 2.1
+        }
+       },
+       {
+        "piece": "tunnel_north",
+        "entered_by_live_keys": true,
+        "from": [
+         -325.68329028859506,
+         -35.0,
+         196.1761845042835
+        ],
+        "to": [
+         -325.64319224471814,
+         -35.0,
+         242.48630204102798
+        ],
+        "held_s": 18.2,
+        "aim_modes": {
+         "real_mouse": 6
+        },
+        "strafes": 0,
+        "screenshot": {
+         "name": "L4-tunnel_south-3-tunnel_north",
+         "ok": true,
+         "colours": 3153,
+         "size": 532662,
+         "latency_s": 2.1
+        }
+       }
+      ]
+     }
+    ],
+    "note": "pass = 3 successive connected pieces: the first by teleport setup, the next two entered by live W-key walking (server-side position inside the next piece box)"
+   }
+  },
+  "L6_combat": {
+   "level": "LIVE",
+   "pass": true,
+   "detail": {
+    "position": [
+     -328,
+     -35,
+     216,
+     1,
+     0
+    ],
+    "player_rotation": [
+     -90.0,
+     0.0
+    ],
+    "player_pos": [
+     -327.5,
+     -35.0,
+     216.5
+    ],
+    "zombie_pos": "bie has the following entity data: [-325.0d, -35.0d, 216.5d]",
+    "screenshot_before": {
+     "name": "L6-combat-before",
+     "ok": true,
+     "colours": 6416,
+     "size": 977580,
+     "latency_s": 2.1
+    },
+    "rounds": [
+     {
+      "round": 1,
+      "distance_before": 2.5,
+      "aim": "real_mouse",
+      "player": [
+       -327.5,
+       -35.0,
+       216.5
+      ],
+      "rotation": [
+       -90.0,
+       0.0
+      ]
+     }
+    ],
+    "health_history": [
+     "bie has the following entity data: 20.0f",
+     "No entity was found"
+    ],
+    "zombie_dead_after_clicks": true,
+    "clicks": 4,
+    "weapon": "iron_sword (given by command)",
+    "target": "NoAI zombie summoned 2.5 blocks ahead (SERVER-ONLY setup); aim and attacks are real input",
+    "screenshot_after": {
+     "name": "L6-combat-after",
+     "ok": true,
+     "colours": 6566,
+     "size": 974566,
+     "latency_s": 2.1
+    }
+   }
+  },
+  "L7_trial_spawner": {
+   "level": "SERVER-ONLY (the live client's player is present; state read with commands)",
+   "pass": true,
+   "detail": {
+    "spawner": [
+     -345,
+     -24,
+     167
+    ],
+    "player_spot": [
+     -348,
+     -24,
+     166
+    ],
+    "line_of_sight": true,
+    "state_timeline": [
+     {
+      "t_s": 0,
+      "state": "active"
+     }
+    ],
+    "block_entity": "-345, -24, 167 has the following block data: {next_mob_spawns_at: 6476L, components: {}, current_mobs: [[I; -1449967886, -1928704488, -1371675758, 112066720], [I; -211079270, -64533758, -2091176402, -1180461326], [I; -1361090119, 391005266, -2016286029, -401607054]], registered_players: [[I; 388613739, -1276887481, -1800987108, 1608150706]], total_mobs_spawned: 6, normal_config: \"minecraft:trial_chamber/melee/spider/normal\", x: -345, y: -24, spawn_data: {entity: {id: \"minecraft:spider\"}}, z: 167, id: \"minecraft:trial_spawner\", ominous_config: \"minecraft:trial_chamber/melee/spider/ominous\"}",
+    "nearby_mob_probe": "",
+    "screenshot": {
+     "name": "L7-trial-spawner",
+     "ok": true,
+     "colours": 19279,
+     "size": 943807,
+     "latency_s": 2.1
+    },
+    "left_inactive": true,
+    "mobs_spawned_per_block_entity": true
+   }
+  },
+  "L9_features": {
+   "level": "LIVE (screenshots) + SAVED-DATA",
+   "pass": true,
+   "detail": {
+    "geode_budding_cells_found": 1,
+    "monster_room_spawners": [
+     {
+      "pos": [
+       -495,
+       -47,
+       341
+      ],
+      "distance_to_nearest_piece_box": 153.6
+     },
+     {
+      "pos": [
+       -475,
+       19,
+       332
+      ],
+      "distance_to_nearest_piece_box": 134.9
+     },
+     {
+      "pos": [
+       -464,
+       2,
+       376
+      ],
+      "distance_to_nearest_piece_box": 155.5
+     },
+     {
+      "pos": [
+       -415,
+       14,
+       367
+      ],
+      "distance_to_nearest_piece_box": 118.6
+     },
+     {
+      "pos": [
+       -374,
+       29,
+       316
+      ],
+      "distance_to_nearest_piece_box": 64.8
+     },
+     {
+      "pos": [
+       -364,
+       83,
+       260
+      ],
+      "distance_to_nearest_piece_box": 95.0
+     }
+    ],
+    "geode_camera_cell": [
+     -420,
+     -16,
+     93
+    ],
+    "geode_distance_to_nearest_piece_box": 102.5,
+    "geode_position": [
+     -423,
+     -18,
+     93
+    ],
+    "monster_room_camera_cell": [
+     -464,
+     2,
+     374
+    ],
+    "monster_room_position": [
+     -464,
+     2,
+     376
+    ],
+    "screenshots": [
+     {
+      "name": "L9-natural-geode",
+      "ok": true,
+      "colours": 29850,
+      "size": 1433485,
+      "latency_s": 3.2
+     },
+     {
+      "name": "L9-natural-monster-room",
+      "ok": true,
+      "colours": 3400,
+      "size": 713506,
+      "latency_s": 3.1
+     }
+    ]
+   }
+  },
+  "L10_stability": {
+   "level": "LIVE",
+   "pass": false,
+   "detail": {
+    "server_cant_keep_up": [
+     "[01:00:13] [Server thread/WARN] (Minecraft) Can't keep up! Is the server overloaded? Running 3500ms or 70 ticks behind"
+    ],
+    "server_cant_keep_up_after_L2_setup": [],
+    "client_render_thread_exception": false,
+    "client_alive": true,
+    "tick_query": "The game is running normallyTarget tick rate: 20.0 per second.\nAverage time per tick: 3.7ms (Target: 50.0ms)Percentiles: P50: 3.4ms P95: 6.6ms P99: 10.1ms. Sample: 100",
+    "client_stall_over_5s": "NOT MEASURED (the client log has no per-frame markers; screenshot latencies are recorded per step)",
+    "scenario_duration_s": 345
+   }
+  }
+ },
+ "tick_query": "The game is running normallyTarget tick rate: 20.0 per second.\nAverage time per tick: 3.7ms (Target: 50.0ms)Percentiles: P50: 3.4ms P95: 6.6ms P99: 10.1ms. Sample: 100",
+ "aim_counts": {
+  "real_mouse": 25,
+  "tp_facing_fallback": 0
+ },
+ "protection_report": {
+  "write_guard": {
+   "enabled": true,
+   "regions": 1313,
+   "regions_with_pieces": 74,
+   "unavailable": 0,
+   "blocked_writes": 1102,
+   "first_blocked": [
+    "-368,-14,199",
+    "-340,-26,201",
+    "-339,-26,201",
+    "-338,-26,201",
+    "-340,-25,201",
+    "-339,-25,201",
+    "-338,-25,201",
+    "-337,-25,201",
+    "-340,-24,201",
+    "-339,-24,201",
+    "-338,-24,201",
+    "-339,-23,201",
+    "-340,-28,202",
+    "-339,-28,202",
+    "-338,-28,202",
+    "-337,-28,202",
+    "-341,-27,202",
+    "-340,-27,202",
+    "-339,-27,202",
+    "-338,-27,202"
+   ]
+  },
+  "drift_guard": {
+   "configured_refine": "OFF",
+   "effective_refine": "ZONE",
+   "monster_room": {
+    "level": "PROVISIONAL",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745 StructureStart=0e298de5bc87",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": -1
+   },
+   "geode": {
+    "level": "PROVISIONAL",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745 StructureStart=0e298de5bc87",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": -1
+   }
+  },
+  "geode": {
+   "attempts": 0,
+   "fast_path": 0,
+   "collisions": 0,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 0,
+   "not_worldgen": 0,
+   "clear": 0,
+   "hybrid_skip": 0,
+   "shadow_checks": 0,
+   "shadow_violations": 0,
+   "no_write": 0,
+   "oracle_non_air_write": 0,
+   "oracle_no_write": 0,
+   "oracle_unknown": 0,
+   "confusion": {
+    "refined": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "tn": 0
+    },
+    "n7a": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "tn": 0
+    }
+   },
+   "events": []
+  },
+  "monster_room": {
+   "attempts": 0,
+   "fast_path": 0,
+   "collisions": 0,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 0,
+   "not_worldgen": 0,
+   "clear": 0,
+   "hybrid_skip": 0,
+   "shadow_checks": 0,
+   "shadow_violations": 0,
+   "no_write": 0,
+   "oracle_non_air_write": 0,
+   "oracle_no_write": 0,
+   "oracle_unknown": 0,
+   "confusion": {
+    "refined": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "tn": 0
+    },
+    "n7a": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "tn": 0
+    }
+   },
+   "events": []
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "lab": false
+ }
+}

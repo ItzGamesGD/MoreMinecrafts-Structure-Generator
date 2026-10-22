@@ -1,0 +1,50 @@
+{
+ "variant": "vanilla",
+ "cant_keep_up": [
+  "[00:52:49] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2942ms or 58 ticks behind"
+ ],
+ "events": [
+  {
+   "cmd": "locate",
+   "t_s": 0.1,
+   "reply": "The nearest moreminecrafts:forgotten_kingdom/central_cavern is at [-304, ~, 240] (387 blocks away)"
+  },
+  {
+   "cmd": "forceload row -4",
+   "t_s": 2.9
+  },
+  {
+   "cmd": "forceload row -3",
+   "t_s": 0.0
+  },
+  {
+   "cmd": "forceload row -2",
+   "t_s": 0.0
+  },
+  {
+   "cmd": "forceload row -1",
+   "t_s": 0.01
+  },
+  {
+   "cmd": "forceload row 0",
+   "t_s": 0.0
+  },
+  {
+   "cmd": "forceload row 1",
+   "t_s": 0.0
+  },
+  {
+   "cmd": "forceload row 2",
+   "t_s": 0.0
+  },
+  {
+   "cmd": "forceload row 3",
+   "t_s": 0.0
+  },
+  {
+   "cmd": "forceload row 4",
+   "t_s": 0.0
+  }
+ ],
+ "tick_query": "The game is running normallyTarget tick rate: 20.0 per second.\nAverage time per tick: 1.6ms (Target: 50.0ms)Percentiles: P50: 1.4ms P95: 2.5ms P99: 9.5ms. Sample: 100"
+}
