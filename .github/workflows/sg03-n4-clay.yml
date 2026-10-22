@@ -1,4 +1,4 @@
-name: SG-03-N4 clay resolution
+name: SG-03-N4 clay resolution (vanilla baseline)
 
 on:
   pull_request:
@@ -57,14 +57,30 @@ jobs:
             --out "$RUNNER_TEMP/control" --seed ${{ matrix.seed }} --sites 2 --ticks 200 --port 25610
           echo "control exit $?"
           exit 0
-      - name: Assert acceptance
+      # N10: this workflow runs the plain vanilla server and never loads the protection module. Its blocking claim is the N4 one
+      # (no lush-cave clay overwrites, placement unchanged). Other vanilla damage (geodes, monster rooms, sculk, ...) is what the module
+      # prevents; it is reported here as a diagnostic and judged by the "SG-03 production module" workflow, which loads the module.
+      - name: Assert N4 claim (blocking, clay-only)
         run: |
           extra=""
           if [ "${{ matrix.seed }}" = "42" ]; then extra="--require-clay-outside"; fi
           for rep in 1 2; do
-            python3 validation/minecraft-visual/sg03-natural/assert_n4.py --production "$RUNNER_TEMP/prod-$rep/natural-${{ matrix.seed }}.json" \
+            python3 validation/minecraft-visual/sg03-natural/assert_n4.py --clay-only --production "$RUNNER_TEMP/prod-$rep/natural-${{ matrix.seed }}.json" \
               --control "$RUNNER_TEMP/control/natural-${{ matrix.seed }}.json" $extra --out "$RUNNER_TEMP/assert-$rep.json"
           done
+      - name: Vanilla baseline diagnostic (strict, non-blocking)
+        continue-on-error: true
+        run: |
+          extra=""
+          if [ "${{ matrix.seed }}" = "42" ]; then extra="--require-clay-outside"; fi
+          rc=0
+          for rep in 1 2; do
+            python3 validation/minecraft-visual/sg03-natural/assert_n4.py --production "$RUNNER_TEMP/prod-$rep/natural-${{ matrix.seed }}.json" \
+              --control "$RUNNER_TEMP/control/natural-${{ matrix.seed }}.json" $extra --out "$RUNNER_TEMP/strict-$rep.json" || rc=1
+          done
+          echo "### Vanilla baseline (seed ${{ matrix.seed }}): strict integrity exit $rc" >> "$GITHUB_STEP_SUMMARY"
+          echo "Non-zero means vanilla damaged the structure without the module (expected); the protected build is judged by the production-module workflow." >> "$GITHUB_STEP_SUMMARY"
+          exit $rc
       - name: Upload evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -76,5 +92,6 @@ jobs:
             ${{ runner.temp }}/control/natural-*.json
             ${{ runner.temp }}/control/server-*.log
             ${{ runner.temp }}/assert-*.json
+            ${{ runner.temp }}/strict-*.json
           if-no-files-found: warn
           retention-days: 30

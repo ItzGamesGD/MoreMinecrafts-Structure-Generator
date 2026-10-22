@@ -1,0 +1,491 @@
+{
+ "seed": 173,
+ "chunk": [
+  -19,
+  15
+ ],
+ "order": "rowmajor_rev",
+ "threads": 0,
+ "prefix": [],
+ "gen_window_s": 16.205,
+ "generated": true,
+ "start_signature": [
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+   "CLOCKWISE_180",
+   [
+    -350,
+    -36,
+    194,
+    -304,
+    -20,
+    240
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/residence_ruin",
+   "CLOCKWISE_90",
+   [
+    -303,
+    -36,
+    195,
+    -285,
+    -30,
+    209
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/guard_room",
+   "CLOCKWISE_90",
+   [
+    -303,
+    -36,
+    225,
+    -291,
+    -29,
+    239
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north",
+   "CLOCKWISE_180",
+   [
+    -329,
+    -36,
+    241,
+    -325,
+    -28,
+    255
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_east",
+   "CLOCKWISE_180",
+   [
+    -365,
+    -36,
+    215,
+    -351,
+    -28,
+    219
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/guard_room",
+   "CLOCKWISE_180",
+   [
+    -349,
+    -36,
+    241,
+    -335,
+    -29,
+    253
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/residence_ruin",
+   "COUNTERCLOCKWISE_90",
+   [
+    -369,
+    -36,
+    195,
+    -351,
+    -30,
+    209
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/grand_hall",
+   "CLOCKWISE_90",
+   [
+    -303,
+    -27,
+    218,
+    -273,
+    -11,
+    240
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/trial_chamber",
+   "NONE",
+   [
+    -350,
+    -27,
+    165,
+    -328,
+    -13,
+    193
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/grand_hall",
+   "CLOCKWISE_180",
+   [
+    -326,
+    -27,
+    241,
+    -304,
+    -11,
+    271
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/residence_ruin",
+   "CLOCKWISE_180",
+   [
+    -319,
+    -36,
+    241,
+    -305,
+    -30,
+    259
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/guard_room",
+   "NONE",
+   [
+    -319,
+    -36,
+    181,
+    -305,
+    -29,
+    193
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/grand_hall",
+   "CLOCKWISE_90",
+   [
+    -303,
+    -27,
+    194,
+    -273,
+    -11,
+    216
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/guard_room",
+   "NONE",
+   [
+    -349,
+    -36,
+    181,
+    -335,
+    -29,
+    193
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/grand_hall",
+   "COUNTERCLOCKWISE_90",
+   [
+    -381,
+    -27,
+    218,
+    -351,
+    -11,
+    240
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/residence_ruin",
+   "COUNTERCLOCKWISE_90",
+   [
+    -369,
+    -36,
+    225,
+    -351,
+    -30,
+    239
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/grand_hall",
+   "NONE",
+   [
+    -326,
+    -27,
+    163,
+    -304,
+    -11,
+    193
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_south",
+   "CLOCKWISE_180",
+   [
+    -329,
+    -36,
+    179,
+    -325,
+    -28,
+    193
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_west",
+   "CLOCKWISE_180",
+   [
+    -303,
+    -36,
+    215,
+    -289,
+    -28,
+    219
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/barracks_hall",
+   "COUNTERCLOCKWISE_90",
+   [
+    -377,
+    -27,
+    195,
+    -351,
+    -12,
+    215
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/grand_hall",
+   "CLOCKWISE_180",
+   [
+    -350,
+    -27,
+    241,
+    -328,
+    -11,
+    271
+   ]
+  ]
+ ],
+ "bbox": [
+  -381,
+  -36,
+  163,
+  -273,
+  -11,
+  271
+ ],
+ "before_ticks": {
+  "pass": true,
+  "matched": 55305,
+  "expected": 55305,
+  "pieces": 21,
+  "trial_spawners": [
+   3,
+   3
+  ],
+  "errors": [],
+  "by_feature": {},
+  "interior_intrusions": {},
+  "transitions": [],
+  "by_chunk": {},
+  "by_room": {},
+  "mismatches": []
+ },
+ "audit": {
+  "block_entities_inside_piece_boxes": {
+   "minecraft:lectern": 5,
+   "minecraft:barrel": 57,
+   "minecraft:chest": 18,
+   "minecraft:campfire": 4,
+   "minecraft:trial_spawner": 3,
+   "minecraft:blast_furnace": 4
+  },
+  "block_entities_in_bbox_but_outside_all_pieces": {
+   "minecraft:chest": 1,
+   "minecraft:mob_spawner": 1
+  },
+  "natural_spawners_in_bbox_gaps": [
+   [
+    -284,
+    -16,
+    248
+   ]
+  ],
+  "block_entities_inside_bbox": {
+   "minecraft:lectern": 5,
+   "minecraft:barrel": 57,
+   "minecraft:chest": 19,
+   "minecraft:campfire": 4,
+   "minecraft:trial_spawner": 3,
+   "minecraft:blast_furnace": 4,
+   "minecraft:mob_spawner": 1
+  },
+  "block_entities_outside_bbox": {
+   "minecraft:mob_spawner": 12,
+   "minecraft:sculk_catalyst": 13,
+   "minecraft:sculk_shrieker": 8,
+   "minecraft:beehive": 2,
+   "minecraft:chest": 8,
+   "minecraft:sculk_sensor": 47
+  },
+  "amethyst_blocks": {
+   "far_from_structure_amethyst_block": 1767,
+   "far_from_structure_budding_amethyst": 161,
+   "near_structure_budding_amethyst": 13,
+   "near_structure_amethyst_block": 121
+  },
+  "note": "spawner = minecraft:spawner/mob_spawner (SG templates contain none; trial_spawner is separate)"
+ },
+ "elapsed_s": 19.1,
+ "guard_mode": "enforce",
+ "fault": "none",
+ "features": "both",
+ "refine": "off",
+ "fixture": "none",
+ "oracle": "off",
+ "spike_report": {
+  "mode": "ENFORCE",
+  "fixture": "NONE",
+  "refine": "OFF",
+  "shadow": false,
+  "oracle": "off",
+  "geode": {
+   "attempts": 0,
+   "fast_path": 0,
+   "collisions": 0,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 0,
+   "not_worldgen": 0,
+   "clear": 0,
+   "hybrid_skip": 0,
+   "shadow_checks": 0,
+   "shadow_violations": 0,
+   "no_write": 0,
+   "oracle_non_air_write": 0,
+   "oracle_no_write": 0,
+   "oracle_unknown": 0,
+   "confusion": {
+    "refined": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "tn": 0
+    },
+    "n7a": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "tn": 0
+    }
+   },
+   "events": []
+  },
+  "monster_room": {
+   "attempts": 0,
+   "fast_path": 0,
+   "collisions": 0,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 0,
+   "not_worldgen": 0,
+   "clear": 0,
+   "hybrid_skip": 0,
+   "shadow_checks": 0,
+   "shadow_violations": 0,
+   "no_write": 0,
+   "oracle_non_air_write": 0,
+   "oracle_no_write": 0,
+   "oracle_unknown": 0,
+   "confusion": {
+    "refined": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "tn": 0
+    },
+    "n7a": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "tn": 0
+    }
+   },
+   "events": []
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "drift_guard": {
+   "configured_refine": "OFF",
+   "effective_refine": "ZONE",
+   "monster_room": {
+    "level": "PROVISIONAL",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745 StructureStart=0e298de5bc87",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": -1
+   },
+   "geode": {
+    "level": "PROVISIONAL",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745 StructureStart=0e298de5bc87",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": -1
+   }
+  },
+  "write_guard": {
+   "enabled": true,
+   "regions": 327,
+   "regions_with_pieces": 72,
+   "unavailable": 0,
+   "blocked_writes": 1095,
+   "first_blocked": [
+    "-312,-19,255",
+    "-321,-26,228",
+    "-340,-26,201",
+    "-339,-26,201",
+    "-338,-26,201",
+    "-340,-25,201",
+    "-339,-25,201",
+    "-338,-25,201",
+    "-337,-25,201",
+    "-340,-24,201",
+    "-339,-24,201",
+    "-338,-24,201",
+    "-339,-23,201",
+    "-340,-28,202",
+    "-339,-28,202",
+    "-338,-28,202",
+    "-337,-28,202",
+    "-341,-27,202",
+    "-340,-27,202",
+    "-339,-27,202"
+   ]
+  },
+  "lab": false
+ },
+ "mixin_log": [
+  "[02:37:20] [main/INFO] (sg-protection) SG_PROTECTION mode=ENFORCE fixture=NONE refine=OFF oracle=off features=none",
+  "[02:37:22] [Server thread/INFO] (sg-protection) SG_PROTECTION hook GeodeFeature.place applied=true MonsterRoomFeature.place applied=true",
+  "vanilla dependency fingerprints validated, no foreign transformer (MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745 StructureStart=0e298de5bc87); provisional until verified in-process",
+  "vanilla dependency fingerprints validated, no foreign transformer (GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745 StructureStart=0e298de5bc87); provisional until verified in-process",
+  "[02:37:22] [Server thread/INFO] (sg-protection) SG_PROTECTION protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1"
+ ]
+}
