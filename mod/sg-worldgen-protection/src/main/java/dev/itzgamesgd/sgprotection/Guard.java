@@ -276,14 +276,11 @@ public final class Guard {
                         continue;
                     }
                     if (cfg().fault() == Fault.STATUS_TOO_HIGH) {
-                        try {
-                            region.getChunk(centre.x() + 2, centre.z(), ChunkStatus.STRUCTURE_REFERENCES);
-                        } catch (RuntimeException e) {
-                            if (u == null) return new Finding("unavailable", "[fault-injection] getChunk(distance 2, STRUCTURE_REFERENCES) threw " + e.getClass().getSimpleName()
-                                    + " instead of generating", hits, sawReference);
-                            for (long key : entry.getValue()) u.add("start_failed", UncertainFootprint.ofStart(ChunkPos.unpack(key).x(), ChunkPos.unpack(key).z(), u.zone));
-                            continue;
-                        }
+                        // Simulated failed read of a start chunk. It deliberately makes no engine call: a real getChunk() for a chunk beyond the cache can block on a
+                        // worker that is itself running this code (found on a one-worker CI runner, N10-R), which would be a test-only deadlock.
+                        if (u == null) return new Finding("unavailable", "[fault-injection] simulated failed read of a start chunk", hits, sawReference);
+                        for (long key : entry.getValue()) u.add("start_failed", UncertainFootprint.ofStart(ChunkPos.unpack(key).x(), ChunkPos.unpack(key).z(), u.zone));
+                        continue;
                     }
                     for (long key : entry.getValue()) {
                         if (!seenStarts.add(key)) continue;
