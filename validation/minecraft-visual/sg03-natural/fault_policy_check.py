@@ -44,7 +44,9 @@ def main() -> int:
     a = ap.parse_args()
     failed = 0
     for cfg, cause in CASES:
-        subprocess.run(["bash", str(HERE / "n73_run.sh"), str(a.out), cfg, "173", "-19", "15", "rowmajor_rev", "1", "0"], check=False, env=os.environ)
+        a.out.mkdir(parents=True, exist_ok=True)
+        with (a.out / f"{cfg}.run.log").open("w") as log:  # kept as an artifact: a run that aborts must be diagnosable
+            subprocess.run(["bash", str(HERE / "n73_run.sh"), str(a.out), cfg, "173", "-19", "15", "rowmajor_rev", "1", "0"], check=False, env=os.environ, stdout=log, stderr=subprocess.STDOUT)
         path = a.out / f"{cfg}_173_-19_15_rowmajor_rev_r1" / "lab.json"
         why = problems(json.loads(path.read_text()), cause) if path.exists() else ["no lab.json"]
         print(f"FAULT_POLICY {cfg} {cause} {'PASS' if not why else 'FAIL'} {why}", flush=True)

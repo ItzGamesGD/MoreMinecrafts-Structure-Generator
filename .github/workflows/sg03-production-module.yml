@@ -73,6 +73,8 @@ jobs:
             ${{ runner.temp }}/iso/lab_isolation.json
             ${{ runner.temp }}/iso/**/lab.json
             ${{ runner.temp }}/fault/**/lab.json
+            ${{ runner.temp }}/fault/*.log
+            ${{ runner.temp }}/pmc/*.log
             ${{ runner.temp }}/pmc/**/*.log
             ${{ runner.temp }}/artifacts.json
             ${{ runner.temp }}/jar.sha256
