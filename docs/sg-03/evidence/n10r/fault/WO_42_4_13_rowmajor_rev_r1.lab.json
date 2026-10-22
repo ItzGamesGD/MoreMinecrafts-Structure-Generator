@@ -1,0 +1,888 @@
+{
+ "seed": 42,
+ "chunk": [
+  4,
+  13
+ ],
+ "order": "rowmajor_rev",
+ "threads": 0,
+ "prefix": [],
+ "gen_window_s": 11.827,
+ "generated": true,
+ "start_signature": [
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/main_chamber",
+   "CLOCKWISE_90",
+   [
+    18,
+    -27,
+    208,
+    64,
+    -11,
+    254
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/residence_ruin",
+   "NONE",
+   [
+    19,
+    -27,
+    189,
+    33,
+    -21,
+    207
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/barracks_hall",
+   "CLOCKWISE_180",
+   [
+    19,
+    -18,
+    255,
+    39,
+    -3,
+    281
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/residence_ruin",
+   "CLOCKWISE_180",
+   [
+    49,
+    -27,
+    255,
+    63,
+    -21,
+    273
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/grand_hall",
+   "CLOCKWISE_180",
+   [
+    42,
+    -18,
+    255,
+    64,
+    -2,
+    285
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/storage_room",
+   "CLOCKWISE_90",
+   [
+    65,
+    -27,
+    240,
+    81,
+    -19,
+    252
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_north",
+   "CLOCKWISE_90",
+   [
+    65,
+    -27,
+    229,
+    79,
+    -19,
+    233
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/grand_hall",
+   "COUNTERCLOCKWISE_90",
+   [
+    -13,
+    -18,
+    208,
+    17,
+    -2,
+    230
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_south",
+   "CLOCKWISE_90",
+   [
+    3,
+    -27,
+    229,
+    17,
+    -19,
+    233
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/barracks_hall",
+   "COUNTERCLOCKWISE_90",
+   [
+    -9,
+    -18,
+    233,
+    17,
+    -3,
+    253
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/grand_hall",
+   "NONE",
+   [
+    18,
+    -18,
+    177,
+    40,
+    -2,
+    207
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_west",
+   "CLOCKWISE_90",
+   [
+    39,
+    -27,
+    193,
+    43,
+    -19,
+    207
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/residence_ruin",
+   "COUNTERCLOCKWISE_90",
+   [
+    -1,
+    -27,
+    239,
+    17,
+    -21,
+    253
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/storage_room",
+   "CLOCKWISE_180",
+   [
+    20,
+    -27,
+    255,
+    32,
+    -19,
+    271
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/barracks_hall",
+   "NONE",
+   [
+    43,
+    -18,
+    181,
+    63,
+    -3,
+    207
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/tunnel_east",
+   "CLOCKWISE_90",
+   [
+    39,
+    -27,
+    255,
+    43,
+    -19,
+    269
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/trial_chamber",
+   "CLOCKWISE_90",
+   [
+    65,
+    -18,
+    232,
+    93,
+    -4,
+    254
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/residence_ruin",
+   "NONE",
+   [
+    49,
+    -27,
+    189,
+    63,
+    -21,
+    207
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/storage_room",
+   "CLOCKWISE_90",
+   [
+    65,
+    -27,
+    210,
+    81,
+    -19,
+    222
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/lower/residence_ruin",
+   "COUNTERCLOCKWISE_90",
+   [
+    -1,
+    -27,
+    209,
+    17,
+    -21,
+    223
+   ]
+  ],
+  [
+   "moreminecrafts:forgotten_kingdom/central_cavern/rooms/upper/barracks_hall",
+   "CLOCKWISE_90",
+   [
+    65,
+    -18,
+    209,
+    91,
+    -3,
+    229
+   ]
+  ]
+ ],
+ "bbox": [
+  -13,
+  -27,
+  177,
+  93,
+  -2,
+  285
+ ],
+ "before_ticks": {
+  "pass": true,
+  "matched": 52443,
+  "expected": 52443,
+  "pieces": 21,
+  "trial_spawners": [
+   3,
+   3
+  ],
+  "errors": [],
+  "by_feature": {},
+  "interior_intrusions": {},
+  "transitions": [],
+  "by_chunk": {},
+  "by_room": {},
+  "mismatches": []
+ },
+ "audit": {
+  "block_entities_inside_piece_boxes": {
+   "minecraft:barrel": 200,
+   "minecraft:chest": 30,
+   "minecraft:lectern": 12,
+   "minecraft:campfire": 5,
+   "minecraft:decorated_pot": 24,
+   "minecraft:trial_spawner": 3
+  },
+  "block_entities_in_bbox_but_outside_all_pieces": {},
+  "natural_spawners_in_bbox_gaps": [],
+  "block_entities_inside_bbox": {
+   "minecraft:barrel": 200,
+   "minecraft:chest": 30,
+   "minecraft:lectern": 12,
+   "minecraft:campfire": 5,
+   "minecraft:decorated_pot": 24,
+   "minecraft:trial_spawner": 3
+  },
+  "block_entities_outside_bbox": {
+   "minecraft:chest": 4,
+   "minecraft:mob_spawner": 2,
+   "minecraft:potent_sulfur": 6
+  },
+  "amethyst_blocks": {
+   "far_from_structure_budding_amethyst": 330,
+   "far_from_structure_amethyst_block": 3610
+  },
+  "note": "spawner = minecraft:spawner/mob_spawner (SG templates contain none; trial_spawner is separate)"
+ },
+ "elapsed_s": 14.0,
+ "guard_mode": "enforce",
+ "fault": "out_of_range",
+ "features": "none",
+ "refine": "off",
+ "fixture": "none",
+ "oracle": "off",
+ "spike_report": {
+  "mode": "ENFORCE",
+  "fixture": "NONE",
+  "refine": "OFF",
+  "shadow": false,
+  "oracle": "off",
+  "geode": {
+   "attempts": 0,
+   "fast_path": 0,
+   "collisions": 0,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 0,
+   "not_worldgen": 0,
+   "clear": 0,
+   "hybrid_skip": 0,
+   "shadow_checks": 0,
+   "shadow_violations": 0,
+   "no_write": 0,
+   "oracle_non_air_write": 0,
+   "oracle_no_write": 0,
+   "oracle_unknown": 0,
+   "confusion": {
+    "refined": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "tn": 0
+    },
+    "n7a": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "tn": 0
+    }
+   },
+   "events": []
+  },
+  "monster_room": {
+   "attempts": 0,
+   "fast_path": 0,
+   "collisions": 0,
+   "unavailable": 0,
+   "cancelled": 0,
+   "would_cancel": 0,
+   "not_worldgen": 0,
+   "clear": 0,
+   "hybrid_skip": 0,
+   "shadow_checks": 0,
+   "shadow_violations": 0,
+   "no_write": 0,
+   "oracle_non_air_write": 0,
+   "oracle_no_write": 0,
+   "oracle_unknown": 0,
+   "confusion": {
+    "refined": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "tn": 0
+    },
+    "n7a": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 0,
+     "tn": 0
+    }
+   },
+   "events": []
+  },
+  "contract": {
+   "mode": "manifest",
+   "owner": "file/sg01",
+   "format": 1,
+   "revision": 1,
+   "required": 1,
+   "extensions": 0,
+   "warnings": [],
+   "rejected_extensions": [],
+   "reload_rejections": 0,
+   "last_rejection": null
+  },
+  "drift_guard": {
+   "configured_refine": "OFF",
+   "effective_refine": "ZONE",
+   "monster_room": {
+    "level": "PROVISIONAL",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745 StructureStart=0e298de5bc87",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": -1
+   },
+   "geode": {
+    "level": "PROVISIONAL",
+    "fallback": false,
+    "reason": null,
+    "fingerprint": "GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745 StructureStart=0e298de5bc87",
+    "verified_samples": 0,
+    "verified_placements": 0,
+    "deviations": 0,
+    "near_misses": 0,
+    "unverified_cancels": 0,
+    "promoted_at_attempt": -1
+   }
+  },
+  "write_guard": {
+   "enabled": true,
+   "regions": 313,
+   "regions_with_pieces": 0,
+   "unavailable": 121,
+   "unavailable_causes": {
+    "start_out_of_range": 729
+   },
+   "uncertain_refused_writes": 120418,
+   "blocked_writes": 0,
+   "first_blocked": []
+  },
+  "lab": true,
+  "probe": {
+   "has_chunk_true": 0,
+   "has_chunk_false": 0,
+   "region_get_calls": 0,
+   "region_get_served": 0,
+   "region_get_status_below": 0,
+   "region_get_null": 0,
+   "server_get_blocking": 0,
+   "server_get_future": 0,
+   "chunkmap_schedule": 0,
+   "holder_schedule": 0,
+   "scheduled_events": []
+  },
+  "perf": {
+   "gc_count": 50,
+   "gc_ms": 574,
+   "process_cpu_ms": 72830,
+   "heap_used_bytes": 297364312,
+   "heap_max_bytes": 3221225472,
+   "geode_decision_ns": {
+    "all": {
+     "count": 0
+    },
+    "cold": {
+     "count": 0
+    },
+    "steady": {
+     "count": 0
+    }
+   },
+   "geode_place_ns": {
+    "all": {
+     "count": 0
+    },
+    "cold": {
+     "count": 0
+    },
+    "steady": {
+     "count": 0
+    }
+   },
+   "geode_vanilla_ns": {
+    "all": {
+     "count": 0
+    },
+    "cold": {
+     "count": 0
+    },
+    "steady": {
+     "count": 0
+    }
+   },
+   "monster_decision_ns": {
+    "all": {
+     "count": 0
+    },
+    "cold": {
+     "count": 0
+    },
+    "steady": {
+     "count": 0
+    }
+   },
+   "monster_decision_bytes": {
+    "all": {
+     "count": 0
+    },
+    "cold": {
+     "count": 0
+    },
+    "steady": {
+     "count": 0
+    }
+   },
+   "monster_place_ns": {
+    "all": {
+     "count": 0
+    },
+    "cold": {
+     "count": 0
+    },
+    "steady": {
+     "count": 0
+    }
+   },
+   "monster_vanilla_ns": {
+    "all": {
+     "count": 0
+    },
+    "cold": {
+     "count": 0
+    },
+    "steady": {
+     "count": 0
+    }
+   }
+  },
+  "decoration_order": [
+   "-3,1",
+   "-3,-1",
+   "-3,0",
+   "-2,-1",
+   "-2,0",
+   "-2,1",
+   "-1,-1",
+   "-1,0",
+   "-1,1",
+   "8,17",
+   "8,18",
+   "8,19",
+   "9,17",
+   "9,18",
+   "9,19",
+   "10,17",
+   "10,18",
+   "10,19",
+   "11,17",
+   "11,18",
+   "11,19",
+   "7,17",
+   "7,18",
+   "7,19",
+   "7,16",
+   "8,16",
+   "9,16",
+   "10,16",
+   "8,20",
+   "9,20",
+   "10,20",
+   "7,20",
+   "11,20",
+   "11,16",
+   "7,15",
+   "8,15",
+   "9,15",
+   "6,17",
+   "6,18",
+   "6,19",
+   "6,16",
+   "6,20",
+   "6,15",
+   "10,15",
+   "12,17",
+   "12,18",
+   "12,19",
+   "12,20",
+   "12,16",
+   "11,15",
+   "6,21",
+   "7,21",
+   "8,21",
+   "9,21",
+   "12,15",
+   "10,21",
+   "11,21",
+   "12,21",
+   "8,14",
+   "9,14",
+   "10,14",
+   "7,14",
+   "11,14",
+   "9,13",
+   "10,13",
+   "11,13",
+   "8,13",
+   "7,13",
+   "12,13",
+   "12,14",
+   "6,13",
+   "6,14",
+   "6,12",
+   "7,12",
+   "8,12",
+   "9,12",
+   "10,12",
+   "11,12",
+   "12,12",
+   "8,11",
+   "9,11",
+   "10,11",
+   "9,10",
+   "10,10",
+   "11,10",
+   "11,11",
+   "7,11",
+   "7,10",
+   "8,10",
+   "6,11",
+   "12,11",
+   "6,10",
+   "12,10",
+   "7,9",
+   "8,9",
+   "9,9",
+   "6,9",
+   "10,9",
+   "11,9",
+   "12,9",
+   "7,8",
+   "8,8",
+   "9,8",
+   "10,8",
+   "11,8",
+   "8,7",
+   "9,7",
+   "10,7",
+   "7,7",
+   "11,7",
+   "6,8",
+   "6,7",
+   "12,8",
+   "12,7",
+   "6,6",
+   "7,6",
+   "8,6",
+   "9,6",
+   "10,6",
+   "11,6",
+   "12,6",
+   "5,17",
+   "5,18",
+   "5,19",
+   "5,15",
+   "5,16",
+   "5,20",
+   "5,8",
+   "5,9",
+   "5,10",
+   "5,13",
+   "5,14",
+   "5,11",
+   "5,12",
+   "5,7",
+   "4,16",
+   "4,17",
+   "4,18",
+   "4,19",
+   "4,20",
+   "5,6",
+   "7,5",
+   "8,5",
+   "9,5",
+   "6,5",
+   "10,5",
+   "11,5",
+   "12,5",
+   "5,21",
+   "5,5",
+   "4,21",
+   "4,15",
+   "4,9",
+   "4,10",
+   "4,11",
+   "4,7",
+   "4,8",
+   "4,14",
+   "4,13",
+   "4,12",
+   "3,15",
+   "3,16",
+   "3,17",
+   "3,18",
+   "3,19",
+   "3,20",
+   "3,21",
+   "4,6",
+   "4,5",
+   "3,12",
+   "3,13",
+   "3,14",
+   "3,11",
+   "3,9",
+   "3,10",
+   "3,6",
+   "3,7",
+   "3,8",
+   "2,15",
+   "2,16",
+   "2,17",
+   "2,14",
+   "2,18",
+   "2,13",
+   "2,19",
+   "2,20",
+   "3,5",
+   "2,12",
+   "2,10",
+   "2,11",
+   "2,8",
+   "2,9",
+   "2,5",
+   "2,6",
+   "2,7",
+   "1,15",
+   "1,16",
+   "1,17",
+   "1,13",
+   "1,14",
+   "1,18",
+   "1,19",
+   "1,20",
+   "2,21",
+   "1,12",
+   "1,21",
+   "1,11",
+   "1,10",
+   "1,9",
+   "1,8",
+   "0,18",
+   "0,19",
+   "0,20",
+   "1,7",
+   "1,6",
+   "0,14",
+   "0,15",
+   "0,16",
+   "0,17",
+   "0,13",
+   "0,12",
+   "0,11",
+   "0,10",
+   "1,5",
+   "0,9",
+   "0,21",
+   "-1,12",
+   "-1,13",
+   "-1,14",
+   "-1,15",
+   "-1,16",
+   "-1,17",
+   "-1,18",
+   "0,8",
+   "0,7",
+   "0,6",
+   "-1,11",
+   "-1,19",
+   "-1,10",
+   "0,5",
+   "-1,20",
+   "-1,9",
+   "-1,21",
+   "-1,7",
+   "-1,8",
+   "-1,6",
+   "-2,16",
+   "-2,17",
+   "-2,18",
+   "-2,15",
+   "-2,13",
+   "-2,14",
+   "-2,19",
+   "-2,20",
+   "-2,10",
+   "-2,11",
+   "-2,12",
+   "-2,9",
+   "-1,5",
+   "-2,8",
+   "-2,21",
+   "-2,6",
+   "-2,7",
+   "-2,5",
+   "-3,15",
+   "-3,16",
+   "-3,17",
+   "-3,18",
+   "-3,19",
+   "-3,20",
+   "-3,13",
+   "-3,14",
+   "-3,21",
+   "-3,9",
+   "-3,10",
+   "-3,11",
+   "-3,12",
+   "-3,8",
+   "-3,7",
+   "-3,6",
+   "-3,5",
+   "-4,16",
+   "-4,17",
+   "-4,18",
+   "-4,14",
+   "-4,15",
+   "-4,19",
+   "-4,20",
+   "-4,21",
+   "-4,13",
+   "-4,12",
+   "-4,11",
+   "-4,8",
+   "-4,9",
+   "-4,10",
+   "-4,6",
+   "-4,7",
+   "-4,5",
+   "-5,11",
+   "-5,12",
+   "-5,13",
+   "-5,10",
+   "-5,9",
+   "-5,8",
+   "-5,7",
+   "-5,14",
+   "-5,15",
+   "-5,16",
+   "-5,17",
+   "-5,18",
+   "-5,19",
+   "-5,20",
+   "-5,21"
+  ],
+  "avoidable_unverified_cancels": {
+   "monster_room": 0,
+   "geode": 0
+  },
+  "zone_probe": []
+ },
+ "mixin_log": [
+  "[03:01:32] [main/WARN] (sg-protection) SG_PROTECTION VALIDATION LAB MOD ACTIVE: lab configuration and instrumentation are enabled; this is not a production configuration",
+  "[03:01:32] [main/INFO] (sg-protection) SG_PROTECTION mode=ENFORCE fixture=NONE refine=OFF oracle=off features=none",
+  "[03:01:34] [Server thread/INFO] (sg-protection) SG_PROTECTION hook GeodeFeature.place applied=true MonsterRoomFeature.place applied=true",
+  "vanilla dependency fingerprints validated, no foreign transformer (MonsterRoomFeature=006a3287a6b0 Feature=b140a544634d BlockBehaviour$BlockStateBase=a712b300de9f WorldGenRegion=f33962d43745 StructureStart=0e298de5bc87); provisional until verified in-process",
+  "vanilla dependency fingerprints validated, no foreign transformer (GeodeFeature=c1b20c22b95d Feature=b140a544634d BuddingAmethystBlock=ace9a3017730 WorldGenRegion=f33962d43745 StructureStart=0e298de5bc87); provisional until verified in-process",
+  "[03:01:34] [Server thread/INFO] (sg-protection) SG_PROTECTION protection contract OK: owner=file/sg01 format=1 revision=1 required=1 extensions=0 effective=1",
+  "[03:01:39] [Worker-Main-3/ERROR] (sg-protection) SG_PROTECTION write guard: structure data unavailable in region [7, 17] (incident 1, causes {start_out_of_range=3}); writes in chunk columns [[6, 16, 8, 18], [6, 16, 8, 18], [6, 16, 8, 18]] are refused, known piece boxes stay protected",
+  "[03:01:39] [Worker-Main-3/ERROR] (sg-protection) SG_PROTECTION write guard: structure data unavailable in region [7, 18] (incident 2, causes {start_out_of_range=2}); writes in chunk columns [[6, 17, 8, 19], [6, 17, 8, 19]] are refused, known piece boxes stay protected",
+  "[03:01:40] [Worker-Main-3/ERROR] (sg-protection) SG_PROTECTION write guard: structure data unavailable in region [7, 19] (incident 3, causes {start_out_of_range=1}); writes in chunk columns [[6, 18, 8, 20]] are refused, known piece boxes stay protected",
+  "[03:01:40] [Worker-Main-1/ERROR] (sg-protection) SG_PROTECTION write guard: structure data unavailable in region [7, 16] (incident 4, causes {start_out_of_range=3}); writes in chunk columns [[6, 15, 8, 17], [6, 15, 8, 17], [6, 15, 8, 17]] are refused, known piece boxes stay protected",
+  "[03:01:40] [Worker-Main-1/ERROR] (sg-protection) SG_PROTECTION write guard: structure data unavailable in region [7, 15] (incident 5, causes {start_out_of_range=3}); writes in chunk columns [[6, 14, 8, 16], [6, 14, 8, 16], [6, 14, 8, 16]] are refused, known piece boxes stay protected",
+  "[03:01:40] [Worker-Main-3/ERROR] (sg-protection) SG_PROTECTION write guard: structure data unavailable in region [6, 17] (incident 6, causes {start_out_of_range=6}); writes in chunk columns [[5, 16, 7, 18], [5, 16, 7, 18], [5, 16, 7, 18], [5, 16, 7, 18], [5, 16, 7, 18], [5, 16, 7, 18]] are refused, known piece boxes stay protected",
+  "[03:01:40] [Worker-Main-3/ERROR] (sg-protection) SG_PROTECTION write guard: structure data unavailable in region [6, 18] (incident 7, causes {start_out_of_range=4}); writes in chunk columns [[5, 17, 7, 19], [5, 17, 7, 19], [5, 17, 7, 19], [5, 17, 7, 19]] are refused, known piece boxes stay protected",
+  "[03:01:40] [Worker-Main-3/ERROR] (sg-protection) SG_PROTECTION write guard: structure data unavailable in region [6, 19] (incident 8, causes {start_out_of_range=2}); writes in chunk columns [[5, 18, 7, 20], [5, 18, 7, 20]] are refused, known piece boxes stay protected",
+  "[03:01:40] [Worker-Main-1/ERROR] (sg-protection) SG_PROTECTION write guard: structure data unavailable in region [6, 16] (incident 9, causes {start_out_of_range=6}); writes in chunk columns [[5, 15, 7, 17], [5, 15, 7, 17], [5, 15, 7, 17], [5, 15, 7, 17], [5, 15, 7, 17], [5, 15, 7, 17]] are refused, known piece boxes stay protected",
+  "[03:01:40] [Worker-Main-1/ERROR] (sg-protection) SG_PROTECTION write guard: structure data unavailable in region [6, 15] (incident 10, causes {start_out_of_range=6}); writes in chunk columns [[5, 14, 7, 16], [5, 14, 7, 16], [5, 14, 7, 16], [5, 14, 7, 16], [5, 14, 7, 16], [5, 14, 7, 16]] are refused, known piece boxes stay protected",
+  "[03:01:48] [Worker-Main-2/ERROR] (sg-protection) SG_PROTECTION write guard: structure data unavailable in region [-2, 16] (incident 100, causes {start_out_of_range=6}); writes in chunk columns [[-3, 15, -1, 17], [-3, 15, -1, 17], [-3, 15, -1, 17], [-3, 15, -1, 17], [-3, 15, -1, 17], [-3, 15, -1, 17]] are refused, known piece boxes stay protected"
+ ]
+}

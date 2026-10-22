@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "id": "sg_worldgen_protection",
-  "version": "0.3.0-n7e",
+  "version": "0.3.1-n10r",
   "name": "SG worldgen protection",
-  "description": "Cancels vanilla geode / monster room instances that would write into a protected SG structure piece. Protection data comes from the structure pack manifest (sg_protection/manifest.json).",
-  "environment": "server",
+  "description": "Protects the pieces of owner-approved SG structures from vanilla world generation: refuses block writes into their piece boxes (write-level guard) with a feature-level fallback for geodes and monster rooms. Protection data comes from the structure pack manifest (sg_protection/manifest.json). Works on dedicated and integrated servers.",
+  "environment": "*",
   "entrypoints": {
     "main": [
       "dev.itzgamesgd.sgprotection.SgProtectionMod"
@@ -13,7 +13,7 @@
   "mixins": [
     {
       "config": "sgprotection.mixins.json",
-      "environment": "server"
+      "environment": "*"
     }
   ],
   "depends": {

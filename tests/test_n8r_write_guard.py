@@ -34,10 +34,10 @@ class WriteGuardTests(unittest.TestCase):
 
     def test_boxes_are_computed_once_per_region_and_unavailable_data_is_loud(self) -> None:
         self.assertIn("@Unique", self.region)
-        self.assertIn("if (boxes == null)", self.region)
+        self.assertIn("if (zone == null)", self.region)
         self.assertIn("UNAVAILABLE.incrementAndGet()", self.guard)
         self.assertIn("SgProtectionMod.LOGGER.error", self.guard)
-        self.assertIn("Guard.pieceBoxes(region, zone)", self.guard)
+        self.assertIn("Guard.scanZone(region, zoneBox, u)", self.guard)
 
     def test_only_the_protected_structure_itself_is_exempt_and_exception_safe(self) -> None:
         self.assertIn("ProtectionConfig.protectedStructures().contains(structure)", self.guard)

@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
+import net.fabricmc.loader.api.entrypoint.EntrypointContainer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.minecraft.world.level.levelgen.feature.GeodeFeature;
 import net.minecraft.world.level.levelgen.feature.MonsterRoomFeature;
@@ -22,12 +23,7 @@ public final class SgProtectionMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        List<LabHooks> labs = FabricLoader.getInstance().getEntrypoints(LAB_ENTRYPOINT, LabHooks.class);
-        if (labs.size() > 1) throw new IllegalStateException("SG protection: more than one validation lab mod is installed");
-        if (!labs.isEmpty()) {
-            LabHooks.install(labs.get(0));
-            LOGGER.warn("SG_PROTECTION VALIDATION LAB MOD ACTIVE: lab configuration and instrumentation are enabled; this is not a production configuration");
-        }
+        installLab();
         LabHooks.Config cfg = LabHooks.get().config();
         LOGGER.info("SG_PROTECTION mode={} fixture={} refine={} oracle={} features={}", cfg.mode(), cfg.fixture(), cfg.refine(), cfg.oracle() ? "monster_room" : "off", cfg.features());
         if (cfg.fixture() != Guard.Fixture.NONE) {
@@ -47,6 +43,36 @@ public final class SgProtectionMod implements ModInitializer {
             LabHooks.get().serverStopping();
             writeReport();
         });
+    }
+
+    /** System property that must be set by the operator (the validation harness sets it for the lab run configuration) before a lab entrypoint is honoured. */
+    public static final String LAB_OPT_IN_PROPERTY = "sg_worldgen_protection.lab";
+
+    /** The only mod id whose lab entrypoint is honoured, and only with {@link #LAB_OPT_IN_PROPERTY}. */
+    public static final String LAB_MOD_ID = "sg_worldgen_protection_lab";
+
+    /**
+     * N10-R: a lab entrypoint can change the guard configuration (including switching the write guard off), so it is honoured only if the operator opted in
+     * with the system property AND the entrypoint belongs to the validation lab mod itself. Any other mod that registers the entrypoint is ignored with a warning,
+     * so an ordinary mod cannot weaken protection; a legitimate lab run is unchanged.
+     */
+    private static void installLab() {
+        boolean optIn = Boolean.getBoolean(LAB_OPT_IN_PROPERTY);
+        List<LabHooks> accepted = new java.util.ArrayList<>();
+        for (EntrypointContainer<LabHooks> container : FabricLoader.getInstance().getEntrypointContainers(LAB_ENTRYPOINT, LabHooks.class)) {
+            String id = container.getProvider().getMetadata().getId();
+            if (optIn && LAB_MOD_ID.equals(id)) {
+                accepted.add(container.getEntrypoint());
+            } else {
+                LOGGER.warn("SG_PROTECTION ignored the lab entrypoint of mod '{}' ({}): a lab configuration is honoured only for mod '{}' with -D{}=true; protection is unchanged",
+                        id, optIn ? "not the validation lab mod" : "no operator opt-in", LAB_MOD_ID, LAB_OPT_IN_PROPERTY);
+            }
+        }
+        if (accepted.size() > 1) throw new IllegalStateException("SG protection: more than one validation lab mod is installed");
+        if (!accepted.isEmpty()) {
+            LabHooks.install(accepted.get(0));
+            LOGGER.warn("SG_PROTECTION VALIDATION LAB MOD ACTIVE: lab configuration and instrumentation are enabled; this is not a production configuration");
+        }
     }
 
     /** The marker interface is only present on the target records if both Mixins were applied. */

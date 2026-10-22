@@ -15,7 +15,7 @@ from kingdom_common import (
     REPO_ROOT, SIDES, SIZE, TUNNEL_DOOR, UPPER_DOOR, UPPER_POOL, to_26_3,
 )
 from build_cavern import _tunnel
-from worldgen_steps import STRUCTURE_STEP
+from worldgen_steps import SG02_STEP, STRUCTURE_STEP
 from sg02_cavern import build_chamber, side_xz
 from sg02_stubs import lower_stub, upper_stub
 from structure_export.datapack import DatapackBuilder
@@ -114,6 +114,7 @@ def write_pack(
     upper: list[str],
     description: str = "MoreMinecrafts Forgotten Underground Kingdom — SG-02 cavern expansion",
     protection_manifest: bool = False,
+    structure_step: str = STRUCTURE_STEP,
 ) -> Path:
     pack = DatapackBuilder(output, namespace=NAMESPACE, pack_format=PACK_FORMAT, description=description)
     for identifier, template in templates.items():
@@ -129,7 +130,7 @@ def write_pack(
         structure_id,
         start_pool=start_pool,
         size=1,
-        step=STRUCTURE_STEP,
+        step=structure_step,
         terrain_adaptation="encapsulate",
         max_distance_from_center=112,
         start_height={
@@ -158,7 +159,7 @@ def write_pack(
 def build_pack(output: Path | str) -> Path:
     templates = build_templates()
     validate_connections(templates, LOWER_STUB_ID, UPPER_STUB_ID)
-    return write_pack(output, templates, lower_pool_members(), upper_pool_members())
+    return write_pack(output, templates, lower_pool_members(), upper_pool_members(), structure_step=SG02_STEP)
 
 
 def main() -> None:

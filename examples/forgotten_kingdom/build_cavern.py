@@ -15,7 +15,7 @@ sys.path.insert(0, str(REPO_ROOT / "vendor/mcbuild/src"))
 from mcbuild.palette import get_block
 from mcbuild.voxel import VoxelGrid
 from structure_export.datapack import DatapackBuilder
-from worldgen_steps import STRUCTURE_STEP
+from worldgen_steps import SG01_STEP
 from structure_export.jigsaw import connect_templates
 from structure_export.structure import grid_to_structure
 
@@ -304,7 +304,7 @@ def build_pack(output: Path | str) -> Path:
         structure_id,
         start_pool=start_pool,
         size=1,
-        step=STRUCTURE_STEP,  # after every vanilla feature step (SG-01-C F-2 sculk, SG-03-N4 lush-cave clay)
+        step=SG01_STEP,  # SG-01-C F-2: after deep-dark sculk (underground_decoration); restored by N10-R (PR #19 had moved it to step 10)
         terrain_adaptation="encapsulate",
         max_distance_from_center=64,
         start_height={

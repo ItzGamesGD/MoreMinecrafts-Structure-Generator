@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'dev.itzgamesgd.sg'
-version = '0.3.0-n7e'
+version = '0.3.1-n10r'
 base { archivesName = 'sg-worldgen-protection' }
 
 repositories { mavenCentral() }
@@ -48,6 +48,7 @@ loom {
             source sourceSets.lab
             runDir = 'run/server'
             vmArgs '-Xmx3G'
+            vmArgs '-Dsg_worldgen_protection.lab=true'   // N10-R: operator opt-in for the lab entrypoint (never set for jarServer or server)
             def labBg = System.getenv('SG01_BG_THREADS')
             if (labBg) vmArgs "-Dmax.bg.threads=${labBg}"
             def labExtra = System.getenv('SG01_EXTRA_MODS')
@@ -58,7 +59,10 @@ loom {
             source sourceSets.jarTest
             runDir = 'run/server'
             vmArgs '-Xmx3G'
-            vmArgs "-Dfabric.addMods=${layout.buildDirectory.file("libs/sg-worldgen-protection-${project.version}.jar").get().asFile}"
+            // SG01_EXTRA_MODS (validation only): extra jars, e.g. a lab jar, to test that the production artifact ignores them (N10-R)
+            def jarExtra = System.getenv('SG01_EXTRA_MODS')
+            def jarMods = layout.buildDirectory.file("libs/sg-worldgen-protection-${project.version}.jar").get().asFile.toString() + (jarExtra ? File.pathSeparator + jarExtra : '')
+            vmArgs "-Dfabric.addMods=${jarMods}"
         }
         server {
             server()

@@ -25,7 +25,8 @@ class SourceSeparationTests(unittest.TestCase):
             for symbol in LAB_SYMBOLS:
                 self.assertIsNone(re.search(rf"\b{symbol}\w*\b", text), f"{path.name} mentions {symbol}")
             self.assertNotIn(LABJAVA, text, path.name)
-            self.assertNotIn("sg_worldgen_protection_lab", text, path.name)
+            # N10-R: the lab entrypoint is honoured only for the lab mod's own id; that id appears once, in the production entrypoint class, as the allow-list.
+            self.assertEqual(text.count("sg_worldgen_protection_lab"), 1 if path.name == "SgProtectionMod.java" else 0, path.name)
 
     def test_production_reads_one_environment_variable_only_and_no_lab_setting(self) -> None:
         names = set()

@@ -111,7 +111,7 @@ public final class Guard {
         }
         LabHooks.get().enter();
         try {
-            boolean broadHit = scan(region, List.of(broad), false).verdict != null;
+            boolean broadHit = scan(region, List.of(broad), false, null).verdict != null;
             if (!broadHit) {
                 stats.hybridSkip.incrementAndGet();
                 if (cfg().shadow()) {
@@ -163,7 +163,7 @@ public final class Guard {
         if (reaches.isEmpty() || !(level instanceof WorldGenRegion region)) return false;
         LabHooks.get().enter();
         try {
-            return scan(region, reaches, false).verdict != null;
+            return scan(region, reaches, false, null).verdict != null;
         } finally {
             LabHooks.get().exit();
         }
@@ -171,12 +171,36 @@ public final class Guard {
 
     /** Protected piece boxes intersecting {@code box} (for the oracle). Returns null if the structure data is unavailable. */
     public static List<BoundingBox> pieceBoxes(WorldGenRegion region, BoundingBox box) {
-        Finding f = scan(region, List.of(box), true);
+        Finding f = scan(region, List.of(box), true, null);
         return "unavailable".equals(f.verdict) ? null : f.hits;
     }
 
+    /** Collects what a write-zone scan could not establish (N10-R): footprints in chunk coordinates and the causes, counted by name. */
+    public static final class Uncertainty {
+        public final List<int[]> rects = new ArrayList<>();
+        public final java.util.Map<String, Integer> causes = new java.util.LinkedHashMap<>();
+        final int[] zone;
+
+        public Uncertainty(int[] zone) {
+            this.zone = zone;
+        }
+
+        void add(String cause, int[] rect) {
+            causes.merge(cause, 1, Integer::sum);
+            if (rect != null) rects.add(rect);
+        }
+    }
+
+    /**
+     * Write-zone scan: every protected piece box intersecting {@code zoneBox}, <em>including those found before or around unreadable data</em>, plus the
+     * bounded footprint (never larger than the 3x3 write zone) of whatever could not be read. Reads only chunks already in the region's cache.
+     */
+    public static List<BoundingBox> scanZone(WorldGenRegion region, BoundingBox zoneBox, Uncertainty uncertain) {
+        return scan(region, List.of(zoneBox), true, uncertain).hits;
+    }
+
     private static boolean decide(GuardStats stats, WorldGenRegion region, BlockPos origin, List<BoundingBox> reaches) {
-        Finding f = scan(region, reaches, false);
+        Finding f = scan(region, reaches, false, null);
         ChunkPos centre = region.getCenter();
         if (f.verdict == null) {
             if (f.sawReference) stats.clear.incrementAndGet();
@@ -206,7 +230,7 @@ public final class Guard {
      * Walks the references of the chunks overlapped by the reach boxes and checks every referenced start's pieces.
      * With {@code collectAll} false it stops at the first collision; with true it returns every piece box that intersects a reach.
      */
-    private static Finding scan(WorldGenRegion region, List<BoundingBox> reaches, boolean collectAll) {
+    private static Finding scan(WorldGenRegion region, List<BoundingBox> reaches, boolean collectAll, Uncertainty u) {
         int minX = Integer.MAX_VALUE;
         int maxX = Integer.MIN_VALUE;
         int minZ = Integer.MAX_VALUE;
@@ -229,7 +253,9 @@ public final class Guard {
         for (int cx = minCx; cx <= maxCx; cx++) {
             for (int cz = minCz; cz <= maxCz; cz++) {
                 if (!region.hasChunk(cx, cz)) {
-                    return new Finding("unavailable", "chunk " + cx + "," + cz + " outside the step's cache", hits, sawReference);
+                    if (u == null) return new Finding("unavailable", "chunk " + cx + "," + cz + " outside the step's cache", hits, sawReference);
+                    u.add("chunk_missing", UncertainFootprint.ofChunk(cx, cz, u.zone));
+                    continue;
                 }
                 ChunkAccess chunk;
                 Map<Structure, LongSet> references;
@@ -237,39 +263,51 @@ public final class Guard {
                     chunk = region.getChunk(cx, cz, ChunkStatus.STRUCTURE_REFERENCES);
                     references = chunk.getAllReferences();
                 } catch (RuntimeException e) {
-                    return new Finding("unavailable", "references of chunk " + cx + "," + cz + ": " + e.getClass().getSimpleName(), hits, sawReference);
+                    if (u == null) return new Finding("unavailable", "references of chunk " + cx + "," + cz + ": " + e.getClass().getSimpleName(), hits, sawReference);
+                    u.add("references_failed", UncertainFootprint.ofChunk(cx, cz, u.zone));
+                    continue;
                 }
                 for (Map.Entry<Structure, LongSet> entry : references.entrySet()) {
                     if (!protectedSet.contains(entry.getKey())) continue;
                     sawReference = true;
                     if (cfg().fault() == Fault.OUT_OF_RANGE && !region.hasChunk(centre.x() + 9, centre.z())) {
-                        return new Finding("unavailable", "[fault-injection] chunk at distance 9 is outside the step's chunk cache (hasChunk=false)", hits, sawReference);
+                        if (u == null) return new Finding("unavailable", "[fault-injection] chunk at distance 9 is outside the step's chunk cache (hasChunk=false)", hits, sawReference);
+                        for (long key : entry.getValue()) u.add("start_out_of_range", UncertainFootprint.ofStart(ChunkPos.unpack(key).x(), ChunkPos.unpack(key).z(), u.zone));
+                        continue;
                     }
                     if (cfg().fault() == Fault.STATUS_TOO_HIGH) {
                         try {
                             region.getChunk(centre.x() + 2, centre.z(), ChunkStatus.STRUCTURE_REFERENCES);
                         } catch (RuntimeException e) {
-                            return new Finding("unavailable", "[fault-injection] getChunk(distance 2, STRUCTURE_REFERENCES) threw " + e.getClass().getSimpleName()
+                            if (u == null) return new Finding("unavailable", "[fault-injection] getChunk(distance 2, STRUCTURE_REFERENCES) threw " + e.getClass().getSimpleName()
                                     + " instead of generating", hits, sawReference);
+                            for (long key : entry.getValue()) u.add("start_failed", UncertainFootprint.ofStart(ChunkPos.unpack(key).x(), ChunkPos.unpack(key).z(), u.zone));
+                            continue;
                         }
                     }
                     for (long key : entry.getValue()) {
                         if (!seenStarts.add(key)) continue;
                         ChunkPos startPos = ChunkPos.unpack(key);
                         if (centre.getChessboardDistance(startPos) > ChunkStatus.MAX_STRUCTURE_DISTANCE || !region.hasChunk(startPos.x(), startPos.z())) {
-                            return new Finding("unavailable", "start chunk " + startPos.x() + "," + startPos.z() + " beyond readable distance", hits, sawReference);
+                            if (u == null) return new Finding("unavailable", "start chunk " + startPos.x() + "," + startPos.z() + " beyond readable distance", hits, sawReference);
+                            u.add("start_out_of_range", UncertainFootprint.ofStart(startPos.x(), startPos.z(), u.zone));
+                            continue;
                         }
                         StructureStart start;
                         try {
                             start = region.getChunk(startPos.x(), startPos.z(), ChunkStatus.STRUCTURE_STARTS).getStartForStructure(entry.getKey());
                         } catch (RuntimeException e) {
-                            return new Finding("unavailable", "start chunk " + startPos.x() + "," + startPos.z() + ": " + e.getClass().getSimpleName(), hits, sawReference);
+                            if (u == null) return new Finding("unavailable", "start chunk " + startPos.x() + "," + startPos.z() + ": " + e.getClass().getSimpleName(), hits, sawReference);
+                            u.add("start_failed", UncertainFootprint.ofStart(startPos.x(), startPos.z(), u.zone));
+                            continue;
                         }
                         if (cfg().fault() == Fault.MISSING_START) start = null;
                         if (start == null || !start.isValid()) {
                             String detail = (cfg().fault() == Fault.MISSING_START ? "[fault-injection] " : "") + "referenced start at " + startPos.x() + "," + startPos.z()
                                     + " is " + (start == null ? "missing" : "invalid");
-                            return new Finding("unavailable", detail, hits, sawReference);
+                            if (u == null) return new Finding("unavailable", detail, hits, sawReference);
+                            u.add("start_missing_or_invalid", UncertainFootprint.ofStart(startPos.x(), startPos.z(), u.zone));
+                            continue;
                         }
                         int index = 0;
                         for (StructurePiece piece : start.getPieces()) {

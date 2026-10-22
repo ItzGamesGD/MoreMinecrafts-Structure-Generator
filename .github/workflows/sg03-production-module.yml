@@ -20,7 +20,7 @@ permissions:
 jobs:
   production-module:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -51,6 +51,18 @@ jobs:
           SERVER_JAR: ${{ runner.temp }}/server.jar
           SG_PACK: ${{ github.workspace }}/exports/sg-03/forgotten-underground-kingdom/datapack
         run: python3 validation/minecraft-visual/sg03-natural/production_module_check.py --out "$RUNNER_TEMP/pmc"
+      - name: "Lab isolation on the packaged jar (a lab entrypoint without the operator opt-in must be ignored)"
+        timeout-minutes: 20
+        env:
+          SERVER_JAR: ${{ runner.temp }}/server.jar
+          SG_PACK: ${{ github.workspace }}/exports/sg-03/forgotten-underground-kingdom/datapack
+        run: python3 validation/minecraft-visual/sg03-natural/lab_isolation_check.py --out "$RUNNER_TEMP/iso"
+      - name: "Unavailable-data policy (injected faults: structure stays intact, incident counted, footprint bounded)"
+        timeout-minutes: 20
+        env:
+          SERVER_JAR: ${{ runner.temp }}/server.jar
+          SG_PACK: ${{ github.workspace }}/exports/sg-03/forgotten-underground-kingdom/datapack
+        run: python3 validation/minecraft-visual/sg03-natural/fault_policy_check.py --out "$RUNNER_TEMP/fault"
       - name: Upload evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -58,6 +70,9 @@ jobs:
           name: sg03-production-module-${{ github.run_id }}
           path: |
             ${{ runner.temp }}/pmc/**/lab.json
+            ${{ runner.temp }}/iso/lab_isolation.json
+            ${{ runner.temp }}/iso/**/lab.json
+            ${{ runner.temp }}/fault/**/lab.json
             ${{ runner.temp }}/pmc/**/*.log
             ${{ runner.temp }}/artifacts.json
             ${{ runner.temp }}/jar.sha256

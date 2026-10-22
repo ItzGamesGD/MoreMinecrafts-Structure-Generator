@@ -19,11 +19,11 @@ public abstract class StructureStartWriteGuardMixin {
     private void sgprotection$wrapPlace(WorldGenLevel level, StructureManager structures, ChunkGenerator generator, RandomSource random, BoundingBox box, ChunkPos chunk,
                                         Operation<Void> original) {
         StructureStart self = (StructureStart) (Object) this;
-        WriteGuard.enterPlacement(self.getStructure());
+        boolean own = WriteGuard.enterPlacement(self.getStructure());
         try {
             original.call(level, structures, generator, random, box, chunk);
         } finally {
-            WriteGuard.exitPlacement(self.getStructure());
+            WriteGuard.exitPlacement(own);
         }
     }
 }
