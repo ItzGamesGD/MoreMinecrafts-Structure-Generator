@@ -8,7 +8,8 @@ on:
     paths:
       - "tools/stage24f/**"
       - "tools/stage24d/**"
-      - "tests/test_stage24f_final.py tests/test_stage24f_provenance.py"
+      - "tests/test_stage24f_final.py"
+      - "tests/test_stage24f_provenance.py"
       - "artifacts/ancient-city-restoration/stage-24f/final-candidates/**"
       - "artifacts/ancient-city-restoration/stage-24f/FINAL-CANDIDATES-MANIFEST.json"
       - ".github/workflows/stage24f-final-candidates.yml"
