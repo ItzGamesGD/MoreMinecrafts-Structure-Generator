@@ -25,7 +25,8 @@ class SourceSeparationTests(unittest.TestCase):
             for symbol in LAB_SYMBOLS:
                 self.assertIsNone(re.search(rf"\b{symbol}\w*\b", text), f"{path.name} mentions {symbol}")
             self.assertNotIn(LABJAVA, text, path.name)
-            self.assertNotIn("sg_worldgen_protection_lab", text, path.name)
+            # N10-R: the lab entrypoint is honoured only for the lab mod's own id; that id appears once, in the production entrypoint class, as the allow-list.
+            self.assertEqual(text.count("sg_worldgen_protection_lab"), 1 if path.name == "SgProtectionMod.java" else 0, path.name)
 
     def test_production_reads_one_environment_variable_only_and_no_lab_setting(self) -> None:
         names = set()
@@ -38,7 +39,8 @@ class SourceSeparationTests(unittest.TestCase):
     def test_lab_hooks_are_the_only_seam_and_default_to_the_production_configuration(self) -> None:
         hooks = (MAIN / "java/dev/itzgamesgd/sgprotection/LabHooks.java").read_text()
         self.assertIn("new Config(Guard.Mode.ENFORCE, Guard.Refine.OFF, \"none\", Guard.Fixture.NONE, Guard.Fault.NONE, false, false, true)", hooks)
-        self.assertIn("static volatile LabHooks current = NONE;", hooks)
+        holder = (MAIN / "java/dev/itzgamesgd/sgprotection/LabHolder.java").read_text()  # N10-R: the holder is package-private
+        self.assertIn("static volatile LabHooks current = LabHooks.NONE;", holder)
         mod = (MAIN / "java/dev/itzgamesgd/sgprotection/SgProtectionMod.java").read_text()
         self.assertIn('LAB_ENTRYPOINT = "sg_worldgen_protection:lab"', mod)
         self.assertIn("more than one validation lab mod is installed", mod)

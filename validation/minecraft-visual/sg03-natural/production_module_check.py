@@ -62,7 +62,8 @@ def main() -> int:
     failed = 0
     for seed, cx, cz in SITES:
         tag = f"PJ_{seed}_{cx}_{cz}_rowmajor_rev_r1"
-        subprocess.run(["bash", str(HERE / "n73_run.sh"), str(a.out), "PJ", str(seed), str(cx), str(cz), "rowmajor_rev", "1", "0"], check=False, env=os.environ)
+        with (a.out / f"PJ_{seed}_{cx}_{cz}.run.log").open("w") as log:
+            subprocess.run(["bash", str(HERE / "n73_run.sh"), str(a.out), "PJ", str(seed), str(cx), str(cz), "rowmajor_rev", "1", "0"], check=False, env=os.environ, stdout=log, stderr=subprocess.STDOUT)
         path = a.out / tag / "lab.json"
         lab = json.loads(path.read_text()) if path.exists() else {}
         why = problems(lab) if lab else ["no lab.json: the run did not complete"]

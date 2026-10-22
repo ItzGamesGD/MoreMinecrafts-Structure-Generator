@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "examples/forgotten_kingdom"))
-from worldgen_steps import STRUCTURE_STEP  # noqa: E402
+from worldgen_steps import SG01_STEP, SG02_STEP, STRUCTURE_STEP  # noqa: E402
 
 STEPS = ["raw_generation", "lakes", "local_modifications", "underground_structures", "surface_structures", "strongholds",
          "underground_ores", "underground_decoration", "fluid_springs", "vegetal_decoration", "top_layer_modification"]
@@ -19,12 +19,23 @@ STRUCTURE = "data/moreminecrafts/worldgen/structure/forgotten_kingdom/central_ca
 
 
 class ClayResolutionTests(unittest.TestCase):
-    def test_every_shipped_pack_generates_after_all_known_overlay_features(self) -> None:
-        for n, pack in PACKS.items():
-            step = json.loads((pack / STRUCTURE).read_text())["step"]
-            self.assertEqual(step, STRUCTURE_STEP, f"SG-0{n}")
-            for feature, index in OVERLAY_FEATURE_STEP.items():
-                self.assertGreater(STEPS.index(step), index, f"SG-0{n} must follow {feature} (step {index})")
+    def test_sg03_generates_after_all_known_overlay_features(self) -> None:
+        step = json.loads((PACKS[3] / STRUCTURE).read_text())["step"]
+        self.assertEqual(step, STRUCTURE_STEP, "SG-03")
+        for feature, index in OVERLAY_FEATURE_STEP.items():
+            self.assertGreater(STEPS.index(step), index, f"SG-03 must follow {feature} (step {index})")
+
+    def test_sg01_and_sg02_keep_the_steps_they_had_before_pr19(self) -> None:
+        """N10-R: PR #19 moved all three packs, but the clay overwrite was demonstrated for SG-03 only; SG-01 and SG-02 are restored to their original steps."""
+        self.assertEqual(SG01_STEP, "vegetal_decoration")
+        self.assertEqual(SG02_STEP, "strongholds")
+        self.assertEqual(json.loads((PACKS[1] / STRUCTURE).read_text())["step"], SG01_STEP)
+        self.assertEqual(json.loads((PACKS[2] / STRUCTURE).read_text())["step"], SG02_STEP)
+
+    def test_sg03_step_does_not_depend_on_the_other_packs(self) -> None:
+        # SG-03 is written through SG-02's write_pack; its step is the function default, so changing SG-02's step cannot move SG-03.
+        self.assertNotEqual(SG02_STEP, STRUCTURE_STEP)
+        self.assertEqual(json.loads((PACKS[3] / STRUCTURE).read_text())["step"], STRUCTURE_STEP)
 
     def test_no_pack_overrides_or_disables_any_vanilla_feature(self) -> None:
         """Clay stays enabled: production packs must not ship any minecraft-namespace worldgen, tag or feature file."""

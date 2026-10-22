@@ -36,6 +36,9 @@ else
     RNB) ARGS+=(--guard-mode enforce --features both --refine off --fault precheck_blind_near) ;;  # N7-E: the N7-D damage scenario under the production box decision
     RB) ARGS+=(--guard-mode enforce --features both --refine off --fault box_shrunk) ;;  # N7-E: module believes a smaller footprint than vanilla has
     W)  ARGS+=(--guard-mode enforce --features none --refine off) ;;  # N8-R: production decisions (write guard only) with the lab instrumentation
+    WM) ARGS+=(--guard-mode enforce --features none --refine off --fault missing_start) ;;     # N10-R: every referenced start is missing -> bounded fail-closed footprint
+    WO) ARGS+=(--guard-mode enforce --features none --refine off --fault out_of_range) ;;      # N10-R: starts beyond the chunk cache
+    WS) ARGS+=(--guard-mode enforce --features none --refine off --fault status_too_high) ;;   # N10-R: delayed/failed read of a start chunk (getChunk throws)
     FW) ARGS+=(--guard-mode enforce --features none --refine off --lab-fingerprint-break both) ;;  # N8-R: production default layers + unverifiable vanilla -> the feature hooks switch on in ZONE
     RG) ARGS+=(--guard-mode enforce --features both --refine hybrid --fault geode_shrunk) ;;  # N7-C: injected geode bound drift
     *) echo "unknown config $CONFIG" >&2; exit 2 ;;

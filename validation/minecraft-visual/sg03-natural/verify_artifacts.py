@@ -16,11 +16,12 @@ MOD = Path(__file__).resolve().parents[3] / "mod" / "sg-worldgen-protection"
 PKG = "dev/itzgamesgd/sgprotection/"
 PRODUCTION_CLASSES = {
     "DriftGuard", "DriftGuard$Armed", "DriftGuard$Level", "DriftGuard$State", "Guard", "Guard$Fault", "Guard$Finding", "Guard$Fixture", "Guard$Mode",
-    "Guard$Refine", "GuardMarker", "GuardStats", "LabHooks", "LabHooks$1", "LabHooks$Config", "LabHooks$Holder", "MonsterRoomGeometry", "ProtectionConfig",
+    "Guard$Refine", "GuardMarker", "GuardStats", "LabHooks", "LabHooks$1", "LabHooks$Config", "LabHolder", "MonsterRoomGeometry", "ProtectionConfig",
     "ProtectionContract", "ProtectionContract$ContractViolation", "ProtectionContract$Result", "SgProtectionMod", "mixin/GeodeFeatureMixin", "mixin/MonsterRoomFeatureMixin",
     "mixin/MonsterRoomFeatureMixin$1", "WriteGuard", "mixin/StructureStartWriteGuardMixin", "mixin/WorldGenRegionWriteGuardMixin",
+    "ExemptionScope", "UncertainFootprint", "WriteGuard$Zone", "Guard$Uncertainty",
 }
-LAB_NAMES = re.compile(rb"(?<![A-Za-z])Probe(?![a-z])|ProbeMixin|(?<![A-Za-z])Perf(?![a-z])|Sampler|MonsterRoomOracle|LabMod|LabMixinPlugin|ForeignMonsterRoom|ForeignGeode|sg_worldgen_protection_lab|dev/itzgamesgd/sgprotection/lab")
+LAB_NAMES = re.compile(rb"(?<![A-Za-z])Probe(?![a-z])|ProbeMixin|(?<![A-Za-z])Perf(?![a-z])|Sampler|MonsterRoomOracle|LabMod|LabMixinPlugin|ForeignMonsterRoom|ForeignGeode|dev/itzgamesgd/sgprotection/lab")
 
 
 def main() -> None:
@@ -49,6 +50,11 @@ def main() -> None:
         blob = b"".join(z.read(n) for n in names if n.endswith(".class"))
         check("production jar: no SG01_ lab variable is read", b"SG01_" not in blob)
         check("production jar: no reference to a lab class or lab mod", LAB_NAMES.search(blob) is None, str(LAB_NAMES.findall(blob)[:5]))
+        # N10-R: the lab entrypoint is honoured only for the lab mod's own id and only with the operator opt-in property; the id is the only lab reference allowed
+        sm = z.read(PKG + "SgProtectionMod.class")
+        check("production jar: lab entrypoint needs the opt-in property and the lab mod id (once, in the entrypoint class)",
+              blob.count(b"sg_worldgen_protection_lab") == 1 and sm.count(b"sg_worldgen_protection_lab") == 1 and b"sg_worldgen_protection.lab" in sm)
+        check("production jar: references no client class (loads on dedicated and integrated servers)", b"net/minecraft/client" not in blob and b"net.minecraft.client" not in blob)
         check("production jar: reads only SG_PROTECTION_REPORT from the environment", set(re.findall(rb"SG_[A-Z_0-9]+", blob)) <= {b"SG_PROTECTION_REPORT", b"SG_PROTECTION", b"SG_PROTECTION_REPORT"})
         mod = json.loads(z.read("fabric.mod.json"))
         check("production jar: mod id and entrypoints", mod["id"] == "sg_worldgen_protection" and list(mod["entrypoints"]) == ["main"], f"{mod['id']} {list(mod['entrypoints'])}")

@@ -6,7 +6,8 @@
   "environment": "*",
   "entrypoints": {
     "client": [
-      "dev.itzgamesgd.sg01visual.ScreenshotCaptureHarness"
+      "dev.itzgamesgd.sg01visual.ScreenshotCaptureHarness",
+      "dev.itzgamesgd.sg01visual.IntegratedServerDriver"
     ],
     "main": [
       "dev.itzgamesgd.sg01visual.TraversalProbe"

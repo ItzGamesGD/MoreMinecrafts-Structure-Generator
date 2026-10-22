@@ -35,7 +35,7 @@ class SpikeConfigTests(unittest.TestCase):
         self.assertIn('@Inject(method = "setBlock", at = @At("HEAD"), cancellable = true, require = 1)', wg)
         self.assertEqual(wg.count("setReturnValue"), 1)
         self.assertIn("setReturnValue(false)", wg)  # a refused write only; the mixin never returns true and never writes a block
-        self.assertIn("WriteGuard.blocked(boxes, pos)", wg)
+        self.assertIn("WriteGuard.blocked(zone, pos)", wg)
         for sources in (production, lab):
             self.assertNotIn("@Redirect", sources)
             self.assertNotIn("@Overwrite", sources)
@@ -43,11 +43,12 @@ class SpikeConfigTests(unittest.TestCase):
         self.assertEqual(len(re.findall(r"\bsetBlock\s*\(", lab)), 2)  # only the lab's write-zone probe (place marker, restore), nowhere else
         self.assertFalse((RES / "data/minecraft").exists())  # no vanilla datapack override shipped
 
-    def test_version_pin_and_server_only(self) -> None:
+    def test_version_pin_and_loads_on_dedicated_and_integrated_servers(self) -> None:
         mod = json.loads((RES / "fabric.mod.json").read_text())
         self.assertEqual(mod["depends"]["minecraft"], "26.3")
-        self.assertEqual(mod["environment"], "server")
-        self.assertEqual(mod["mixins"][0]["environment"], "server")
+        # N10-R: "*" so that the module also loads on the integrated server (single-player and LAN); it still touches no client class (test_n10r_repairs)
+        self.assertEqual(mod["environment"], "*")
+        self.assertEqual(mod["mixins"][0]["environment"], "*")
 
     def test_legacy_tag_mode_is_gone(self) -> None:
         # N7-B: the manifest contract is the only protection source; the N7-A merged-tag mode and its bundled tag no longer exist

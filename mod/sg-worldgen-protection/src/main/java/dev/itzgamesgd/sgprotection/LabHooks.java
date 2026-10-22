@@ -21,20 +21,8 @@ public interface LabHooks {
     LabHooks NONE = new LabHooks() {
     };
 
-    /** Installed once, from SgProtectionMod.onInitialize, before any guard decision. */
-    final class Holder {
-        static volatile LabHooks current = NONE;
-
-        private Holder() {
-        }
-    }
-
     static LabHooks get() {
-        return Holder.current;
-    }
-
-    static void install(LabHooks hooks) {
-        Holder.current = hooks;
+        return LabHolder.current;
     }
 
     default Config config() {

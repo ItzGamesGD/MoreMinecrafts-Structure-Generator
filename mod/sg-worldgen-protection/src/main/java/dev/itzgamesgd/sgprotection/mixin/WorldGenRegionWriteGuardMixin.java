@@ -1,11 +1,9 @@
 package dev.itzgamesgd.sgprotection.mixin;
 
 import dev.itzgamesgd.sgprotection.WriteGuard;
-import java.util.List;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.WorldGenRegion;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.levelgen.structure.BoundingBox;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
@@ -16,16 +14,16 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(WorldGenRegion.class)
 public abstract class WorldGenRegionWriteGuardMixin {
     @Unique
-    private List<BoundingBox> sgprotection$boxes;
+    private WriteGuard.Zone sgprotection$zone;
 
     @Inject(method = "setBlock", at = @At("HEAD"), cancellable = true, require = 1)
     private void sgprotection$guardWrite(BlockPos pos, BlockState state, int flags, int recursionLeft, CallbackInfoReturnable<Boolean> cir) {
         if (!WriteGuard.enabled()) return;
-        List<BoundingBox> boxes = sgprotection$boxes;
-        if (boxes == null) {
-            boxes = WriteGuard.boxesFor((WorldGenRegion) (Object) this);
-            sgprotection$boxes = boxes;
+        WriteGuard.Zone zone = sgprotection$zone;
+        if (zone == null) {
+            zone = WriteGuard.zoneFor((WorldGenRegion) (Object) this);
+            sgprotection$zone = zone;
         }
-        if (!boxes.isEmpty() && WriteGuard.blocked(boxes, pos)) cir.setReturnValue(false);
+        if (!zone.isEmpty() && WriteGuard.blocked(zone, pos)) cir.setReturnValue(false);
     }
 }

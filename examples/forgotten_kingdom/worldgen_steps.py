@@ -12,3 +12,8 @@ neighbouring chunk's feature from writing into this chunk after it was decorated
 """
 
 STRUCTURE_STEP = "top_layer_modification"
+
+# N10-R: PR #19 moved all three packs to STRUCTURE_STEP, but the lush-cave clay overwrite it fixes was demonstrated for SG-03 only (docs/sg-03/clay-resolution-n4.md).
+# SG-01 and SG-02 are restored to the generation steps they had before PR #19 (values read from the integration baseline 282b74d); SG-03 keeps STRUCTURE_STEP.
+SG01_STEP = "vegetal_decoration"
+SG02_STEP = "strongholds"

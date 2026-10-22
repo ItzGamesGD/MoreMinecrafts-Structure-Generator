@@ -1,0 +1,118 @@
+{
+ "jar": "/home/user/MoreMinecrafts-Structure-Generator/mod/sg-worldgen-protection/build/libs/sg-worldgen-protection-0.3.1-n10r.jar",
+ "info_lines": [
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=false port=-1",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585",
+  "singleplayer=true published=true port=25585"
+ ],
+ "lan_ping": {
+  "description": "SG01Int - world",
+  "players": {
+   "max": 8,
+   "online": 1,
+   "sample": [
+    {
+     "id": "0ccf42bf-c7b8-3797-87e2-0b7ba1d48268",
+     "name": "SG01Int"
+    }
+   ]
+  },
+  "version": {
+   "name": "26.3",
+   "protocol": 777
+  }
+ },
+ "write_guard": {
+  "enabled": true,
+  "regions": 970,
+  "regions_with_pieces": 141,
+  "unavailable": 0,
+  "unavailable_causes": {},
+  "uncertain_refused_writes": 0,
+  "blocked_writes": 23,
+  "first_blocked": [
+   "-368,-14,199",
+   "-352,-32,203",
+   "-336,-25,171",
+   "-359,-18,208",
+   "-305,-14,176",
+   "-320,-35,220",
+   "-299,-17,240",
+   "-333,-23,256",
+   "-336,-25,257",
+   "-320,-24,257",
+   "-270,-30,512",
+   "-257,-38,544",
+   "-256,-30,558",
+   "-256,-26,555",
+   "-256,-31,561",
+   "-231,-21,576",
+   "-216,-29,576",
+   "-272,-27,595",
+   "-271,-16,603",
+   "-270,-16,602"
+  ]
+ },
+ "lab": false,
+ "sites": {
+  "A_singleplayer": {
+   "pieces": 21,
+   "matched": 55305,
+   "expected": 55305,
+   "errors": []
+  },
+  "B_lan": {
+   "pieces": 21,
+   "matched": 53252,
+   "expected": 53252,
+   "errors": []
+  }
+ },
+ "problems": []
+}

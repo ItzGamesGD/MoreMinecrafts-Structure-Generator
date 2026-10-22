@@ -1,0 +1,23 @@
+{
+ "A_genuine_lab_no_opt_in": {
+  "expect": "ignored",
+  "problems": [],
+  "lab": false,
+  "write_guard_enabled": true,
+  "blocked_writes": 1095
+ },
+ "B_foreign_id_with_opt_in": {
+  "expect": "ignored",
+  "problems": [],
+  "lab": false,
+  "write_guard_enabled": true,
+  "blocked_writes": 1095
+ },
+ "C_genuine_lab_with_opt_in": {
+  "expect": "honoured",
+  "problems": [],
+  "lab": true,
+  "write_guard_enabled": false,
+  "blocked_writes": 0
+ }
+}
