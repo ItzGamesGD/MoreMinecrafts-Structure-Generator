@@ -1,0 +1,99 @@
+{
+ "guarded": [
+  {
+   "run": "soak_write",
+   "samples": 714,
+   "duration_min": 59.7,
+   "chunks_decorated": 78042,
+   "windows_5min": 11,
+   "windows_with_generation": 11,
+   "heap_after_gc_MB": {
+    "slope_per_min": 4.889,
+    "ci95": 0.154,
+    "includes_zero": false
+   },
+   "rss_MB": {
+    "slope_per_min": 5.782,
+    "ci95": 0.166,
+    "includes_zero": false
+   },
+   "non_heap_MB": {
+    "slope_per_min": 0.138,
+    "ci95": 0.004,
+    "includes_zero": false
+   },
+   "heap_after_gc_max_fraction_of_max": 0.207,
+   "guard_events_retained_max": 0,
+   "guard_events_retained_last_third_growth": 0,
+   "gc_time_fraction": 0.0074,
+   "max_gc_pause_ms": 130,
+   "cpu_ms_per_decorated_chunk": 48.2,
+   "cant_keep_up_messages": 135,
+   "oom": false,
+   "crash": false
+  }
+ ],
+ "control": [
+  {
+   "run": "soak_control",
+   "samples": 719,
+   "duration_min": 60.1,
+   "chunks_decorated": 78045,
+   "windows_5min": 12,
+   "windows_with_generation": 12,
+   "heap_after_gc_MB": {
+    "slope_per_min": 4.79,
+    "ci95": 0.148,
+    "includes_zero": false
+   },
+   "rss_MB": {
+    "slope_per_min": 3.288,
+    "ci95": 0.087,
+    "includes_zero": false
+   },
+   "non_heap_MB": {
+    "slope_per_min": 0.148,
+    "ci95": 0.004,
+    "includes_zero": false
+   },
+   "heap_after_gc_max_fraction_of_max": 0.204,
+   "guard_events_retained_max": 0,
+   "guard_events_retained_last_third_growth": 0,
+   "gc_time_fraction": 0.0079,
+   "max_gc_pause_ms": 107,
+   "cpu_ms_per_decorated_chunk": 49.1,
+   "cant_keep_up_messages": 135,
+   "oom": false,
+   "crash": false
+  }
+ ],
+ "verdicts": [
+  {
+   "run": "soak_write",
+   "A1_activity": true,
+   "A2_heap": false,
+   "A2_detail": {
+    "guarded_slope": {
+     "slope_per_min": 4.889,
+     "ci95": 0.154,
+     "includes_zero": false
+    },
+    "control_slope": {
+     "slope_per_min": 4.79,
+     "ci95": 0.148,
+     "includes_zero": false
+    },
+    "difference": 0.099
+   },
+   "A3_retained": true,
+   "A4_gc": true,
+   "A5_rss_cpu": true,
+   "A5_detail": {
+    "rss_slope_difference": 2.494,
+    "cpu_ratio": 0.982
+   },
+   "A6_stability": true,
+   "repeat_required": true
+  }
+ ]
+}

@@ -1,0 +1,253 @@
+[
+ {
+  "pr": 18,
+  "head": "integration/sg01c-sg02-sg03-20261019",
+  "head_sha": "282b74d2478639e28d1e571bf878676a1b0796c2",
+  "base": "main",
+  "draft": true,
+  "base_head_is_ancestor_of_head": true,
+  "merge_into_base_clean": true,
+  "ci": {
+   "success": 8,
+   "skipped": 3
+  },
+  "ci_failures": []
+ },
+ {
+  "pr": 19,
+  "head": "experiment/sg03-n4-clay-resolution",
+  "head_sha": "02657242da414fa05b3ea3108b8781327467ab18",
+  "base": "integration/sg01c-sg02-sg03-20261019",
+  "draft": true,
+  "base_head_is_ancestor_of_head": true,
+  "merge_into_base_clean": true,
+  "ci": {
+   "failure": 2,
+   "success": 9,
+   "skipped": 3
+  },
+  "ci_failures": [
+   "natural-world (173) [SG-03-N4 clay resolution]",
+   "natural-world (173) [SG-03 natural-world integration]"
+  ]
+ },
+ {
+  "pr": 20,
+  "head": "experiment/sg03-n5-collision",
+  "head_sha": "7e213802335a76af4689d9dc5cd49f806ad149b4",
+  "base": "experiment/sg03-n4-clay-resolution",
+  "draft": true,
+  "base_head_is_ancestor_of_head": true,
+  "merge_into_base_clean": true,
+  "ci": {
+   "success": 9,
+   "failure": 2,
+   "skipped": 3
+  },
+  "ci_failures": [
+   "natural-world (173) [SG-03-N4 clay resolution]",
+   "natural-world (42) [SG-03-N4 clay resolution]"
+  ]
+ },
+ {
+  "pr": 21,
+  "head": "experiment/sg03-n6-fabric-hook-study",
+  "head_sha": "da7c3dba886c8d738c24465df88971703680e199",
+  "base": "experiment/sg03-n5-collision",
+  "draft": true,
+  "base_head_is_ancestor_of_head": true,
+  "merge_into_base_clean": true,
+  "ci": {
+   "success": 6,
+   "skipped": 3
+  },
+  "ci_failures": []
+ },
+ {
+  "pr": 23,
+  "head": "experiment/sg03-n7a-fabric-spike",
+  "head_sha": "2813d76d25dde1397f2dbdd803cf5a5926b61225",
+  "base": "experiment/sg03-n6-fabric-hook-study",
+  "draft": true,
+  "base_head_is_ancestor_of_head": true,
+  "merge_into_base_clean": true,
+  "ci": {
+   "success": 11,
+   "skipped": 3
+  },
+  "ci_failures": []
+ },
+ {
+  "pr": 25,
+  "head": "experiment/sg03-n7a2-guard-validation",
+  "head_sha": "51a48b910c5f7737c37586b2ec83e628d9390ef2",
+  "base": "experiment/sg03-n7a-fabric-spike",
+  "draft": true,
+  "base_head_is_ancestor_of_head": true,
+  "merge_into_base_clean": true,
+  "ci": {
+   "success": 10,
+   "failure": 1,
+   "skipped": 3
+  },
+  "ci_failures": [
+   "natural-world (173) [SG-03-N4 clay resolution]"
+  ]
+ },
+ {
+  "pr": 27,
+  "head": "experiment/sg03-n7a3-performance-validation",
+  "head_sha": "5660b44014a5eadfaca920b5085c1b8886f46bef",
+  "base": "experiment/sg03-n7a2-guard-validation",
+  "draft": true,
+  "base_head_is_ancestor_of_head": false,
+  "merge_into_base_clean": true,
+  "ci": {
+   "success": 10,
+   "failure": 1,
+   "skipped": 3
+  },
+  "ci_failures": [
+   "natural-world (42) [SG-03-N4 clay resolution]"
+  ]
+ },
+ {
+  "pr": 29,
+  "head": "experiment/sg03-n7a4-readiness",
+  "head_sha": "6b642339fe600c4c0ad05de8c64f57172468bc41",
+  "base": "experiment/sg03-n7a3-performance-validation",
+  "draft": true,
+  "base_head_is_ancestor_of_head": true,
+  "merge_into_base_clean": true,
+  "ci": {
+   "success": 8,
+   "failure": 3,
+   "skipped": 3
+  },
+  "ci_failures": [
+   "natural-world (173) [SG-03-N4 clay resolution]",
+   "minecraft-26-3-visual [Validate structure exports]",
+   "natural-world (173) [SG-03 natural-world integration]"
+  ]
+ },
+ {
+  "pr": 30,
+  "head": "experiment/sg03-n7b-production-guard",
+  "head_sha": "3b72a1cf6d11ecb3fb386e5fb4f18c251e64b689",
+  "base": "experiment/sg03-n7a4-readiness",
+  "draft": true,
+  "base_head_is_ancestor_of_head": true,
+  "merge_into_base_clean": true,
+  "ci": {
+   "success": 10,
+   "failure": 1,
+   "skipped": 3
+  },
+  "ci_failures": [
+   "natural-world (42) [SG-03-N4 clay resolution]"
+  ]
+ },
+ {
+  "pr": 32,
+  "head": "experiment/sg03-n7c-hardening",
+  "head_sha": "3bc118f444a035418c64cf06cdf6ff58b5522ebd",
+  "base": "experiment/sg03-n7b-production-guard",
+  "draft": true,
+  "base_head_is_ancestor_of_head": true,
+  "merge_into_base_clean": true,
+  "ci": {
+   "success": 10,
+   "failure": 1,
+   "skipped": 3
+  },
+  "ci_failures": [
+   "natural-world (42) [SG-03-N4 clay resolution]"
+  ]
+ },
+ {
+  "pr": 34,
+  "head": "experiment/sg03-n7d-release",
+  "head_sha": "c756c20284b8dc318d1a762ac8138b2391cd8724",
+  "base": "experiment/sg03-n7c-hardening",
+  "draft": true,
+  "base_head_is_ancestor_of_head": true,
+  "merge_into_base_clean": true,
+  "ci": {
+   "success": 10,
+   "failure": 1,
+   "skipped": 3
+  },
+  "ci_failures": [
+   "natural-world (173) [SG-03-N4 clay resolution]"
+  ]
+ },
+ {
+  "pr": 36,
+  "head": "experiment/sg03-n7e-final-hardening",
+  "head_sha": "2837cb0dcc9fa8102e89d242456995dfcdcdafcf",
+  "base": "experiment/sg03-n7d-release",
+  "draft": true,
+  "base_head_is_ancestor_of_head": true,
+  "merge_into_base_clean": true,
+  "ci": {
+   "success": 10,
+   "failure": 1,
+   "skipped": 3
+  },
+  "ci_failures": [
+   "natural-world (42) [SG-03-N4 clay resolution]"
+  ]
+ },
+ {
+  "pr": 38,
+  "head": "experiment/sg03-n8-integration-audit",
+  "head_sha": "60be9d0583b5ccb25cc77efacd7cc2235ed02a25",
+  "base": "experiment/sg03-n7e-final-hardening",
+  "draft": true,
+  "base_head_is_ancestor_of_head": true,
+  "merge_into_base_clean": true,
+  "ci": {
+   "success": 11,
+   "skipped": 3
+  },
+  "ci_failures": []
+ },
+ {
+  "pr": 39,
+  "head": "experiment/sg03-n8r-write-guard",
+  "head_sha": "5f8223421ba23f2aa18d2e3bdecceb2269c89292",
+  "base": "experiment/sg03-n8-integration-audit",
+  "draft": true,
+  "base_head_is_ancestor_of_head": true,
+  "merge_into_base_clean": true,
+  "ci": {
+   "success": 9,
+   "failure": 2,
+   "skipped": 3
+  },
+  "ci_failures": [
+   "natural-world (42) [SG-03-N4 clay resolution]",
+   "natural-world (173) [SG-03-N4 clay resolution]"
+  ]
+ },
+ {
+  "pr": 40,
+  "head": "experiment/sg03-n9-live-acceptance",
+  "head_sha": "31f93f9413454d3d4a44b34d910738082dca18b1",
+  "base": "experiment/sg03-n8r-write-guard",
+  "draft": true,
+  "base_head_is_ancestor_of_head": true,
+  "merge_into_base_clean": true,
+  "ci": {
+   "failure": 2,
+   "success": 8,
+   "in_progress": 1,
+   "skipped": 3
+  },
+  "ci_failures": [
+   "natural-world (42) [SG-03-N4 clay resolution]",
+   "natural-world (173) [SG-03-N4 clay resolution]",
+   "sg01-environment-stress [Validate structure exports]"
+  ]
+ }
+]

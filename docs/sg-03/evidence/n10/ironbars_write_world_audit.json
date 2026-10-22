@@ -1,0 +1,161 @@
+{
+ "region": "/tmp/claude-0/-home-user-MoreMinecrafts-Structure-Generator/9b0fb163-9813-5d94-a639-ebb8df5b2921/scratchpad/n10/ib/region",
+ "totals": {
+  "sites": 3,
+  "mismatch": 3,
+  "sites_with_mismatch": 3,
+  "bad_piece_count": 0,
+  "trial_spawner_mismatch": 0,
+  "errors": 0,
+  "ring_full_chunks": 363,
+  "ring_mossy_cobblestone": 161,
+  "ring_smooth_basalt": 4207,
+  "ring_calcite": 3665,
+  "ring_spawner": 6,
+  "ring_amethyst_block": 3078,
+  "ring_budding_amethyst": 301
+ },
+ "sites": [
+  {
+   "site": [
+    188,
+    52
+   ],
+   "generated": true,
+   "pieces": 21,
+   "matched": 49835,
+   "expected": 49836,
+   "mismatch": 1,
+   "trial_spawner_blocks": 6,
+   "trial_spawner_entities": 6,
+   "errors": [],
+   "interior_intrusions": 0,
+   "by_feature": {
+    "other:minecraft:iron_bars": 1
+   },
+   "by_room": {
+    "guard_room": 1
+   },
+   "transitions": [
+    {
+     "expected": "minecraft:iron_bars",
+     "actual": "minecraft:iron_bars",
+     "count": 1
+    }
+   ],
+   "mismatch_cells_sample": [
+    [
+     2949,
+     -20,
+     841,
+     "guard_room",
+     "minecraft:iron_bars",
+     "minecraft:iron_bars"
+    ]
+   ],
+   "ring_full_chunks": 121,
+   "ring": {
+    "mossy_cobblestone": 34,
+    "smooth_basalt": 214,
+    "calcite": 101
+   },
+   "feature_blocks_inside_pieces": 0
+  },
+  {
+   "site": [
+    185,
+    -90
+   ],
+   "generated": true,
+   "pieces": 21,
+   "matched": 51020,
+   "expected": 51021,
+   "mismatch": 1,
+   "trial_spawner_blocks": 6,
+   "trial_spawner_entities": 6,
+   "errors": [],
+   "interior_intrusions": 0,
+   "by_feature": {
+    "other:minecraft:iron_bars": 1
+   },
+   "by_room": {
+    "guard_room": 1
+   },
+   "transitions": [
+    {
+     "expected": "minecraft:iron_bars",
+     "actual": "minecraft:iron_bars",
+     "count": 1
+    }
+   ],
+   "mismatch_cells_sample": [
+    [
+     2901,
+     -35,
+     -1447,
+     "guard_room",
+     "minecraft:iron_bars",
+     "minecraft:iron_bars"
+    ]
+   ],
+   "ring_full_chunks": 121,
+   "ring": {
+    "spawner": 4,
+    "smooth_basalt": 2098,
+    "mossy_cobblestone": 92,
+    "calcite": 1874,
+    "amethyst_block": 1617,
+    "budding_amethyst": 160
+   },
+   "feature_blocks_inside_pieces": 0
+  },
+  {
+   "site": [
+    522,
+    -285
+   ],
+   "generated": true,
+   "pieces": 21,
+   "matched": 51993,
+   "expected": 51994,
+   "mismatch": 1,
+   "trial_spawner_blocks": 3,
+   "trial_spawner_entities": 3,
+   "errors": [],
+   "interior_intrusions": 0,
+   "by_feature": {
+    "other:minecraft:iron_bars": 1
+   },
+   "by_room": {
+    "guard_room": 1
+   },
+   "transitions": [
+    {
+     "expected": "minecraft:iron_bars",
+     "actual": "minecraft:iron_bars",
+     "count": 1
+    }
+   ],
+   "mismatch_cells_sample": [
+    [
+     8363,
+     -33,
+     -4573,
+     "guard_room",
+     "minecraft:iron_bars",
+     "minecraft:iron_bars"
+    ]
+   ],
+   "ring_full_chunks": 121,
+   "ring": {
+    "smooth_basalt": 1895,
+    "mossy_cobblestone": 35,
+    "spawner": 2,
+    "calcite": 1690,
+    "amethyst_block": 1461,
+    "budding_amethyst": 141
+   },
+   "feature_blocks_inside_pieces": 0
+  }
+ ]
+}

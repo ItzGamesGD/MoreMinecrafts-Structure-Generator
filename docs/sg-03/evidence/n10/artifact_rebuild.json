@@ -1,0 +1,92 @@
+{
+ "source": "detached worktree of origin/experiment/sg03-n9-live-acceptance @ 31f93f9413454d3d4a44b34d910738082dca18b1; gradlew --no-daemon -q clean jar labJar, run twice",
+ "jars": {
+  "sg-worldgen-protection-0.3.0-n7e.jar": {
+   "build1_sha256": "d64030ed2d46e4ededd944547a4170081bdba963f4a86aedb926744f47f77038",
+   "build2_sha256": "d64030ed2d46e4ededd944547a4170081bdba963f4a86aedb926744f47f77038",
+   "byte_identical": true,
+   "size": 63842
+  },
+  "sg-worldgen-protection-0.3.0-n7e-lab.jar": {
+   "build1_sha256": "f58401e92c3642040f8ae7fde8d321de7a5dee5c688ab7b418aff0b84f3f5f0b",
+   "build2_sha256": "f58401e92c3642040f8ae7fde8d321de7a5dee5c688ab7b418aff0b84f3f5f0b",
+   "byte_identical": true,
+   "size": 30063
+  }
+ },
+ "n9_runs_jar_sha256_equal": true,
+ "contains_write_guard_classes": [
+  "dev/itzgamesgd/sgprotection/WriteGuard.class",
+  "dev/itzgamesgd/sgprotection/mixin/StructureStartWriteGuardMixin.class",
+  "dev/itzgamesgd/sgprotection/mixin/WorldGenRegionWriteGuardMixin.class"
+ ],
+ "verify_artifacts": {
+  "production_jar": "sg-worldgen-protection-0.3.0-n7e.jar",
+  "production_bytes": 63842,
+  "lab_jar": "sg-worldgen-protection-0.3.0-n7e-lab.jar",
+  "lab_bytes": 30063,
+  "checks": [
+   {
+    "check": "production jar: exactly the required classes",
+    "pass": true,
+    "detail": "extra=[] missing=[]"
+   },
+   {
+    "check": "production jar: only metadata besides classes",
+    "pass": true,
+    "detail": "['META-INF/MANIFEST.MF', 'fabric.mod.json', 'sgprotection.mixins.json']"
+   },
+   {
+    "check": "production jar: no SG01_ lab variable is read",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "check": "production jar: no reference to a lab class or lab mod",
+    "pass": true,
+    "detail": "[]"
+   },
+   {
+    "check": "production jar: reads only SG_PROTECTION_REPORT from the environment",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "check": "production jar: mod id and entrypoints",
+    "pass": true,
+    "detail": "sg_worldgen_protection ['main']"
+   },
+   {
+    "check": "production jar: exactly the four protection mixins, no plugin",
+    "pass": true,
+    "detail": "['GeodeFeatureMixin', 'MonsterRoomFeatureMixin', 'StructureStartWriteGuardMixin', 'WorldGenRegionWriteGuardMixin']"
+   },
+   {
+    "check": "production jar: mixins required and fail-loud",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "check": "production jar: ships no datapack data",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "check": "lab jar: only lab classes",
+    "pass": true,
+    "detail": "[]"
+   },
+   {
+    "check": "lab jar: contains no production class",
+    "pass": true,
+    "detail": ""
+   },
+   {
+    "check": "lab jar: separate mod id that depends on production",
+    "pass": true,
+    "detail": ""
+   }
+  ],
+  "all_pass": true
+ }
+}
