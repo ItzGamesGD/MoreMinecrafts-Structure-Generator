@@ -1,0 +1,1094 @@
+{
+ "seed": 24014,
+ "variant": "k24",
+ "region_box": [
+  1257,
+  -60,
+  -1060,
+  1495,
+  -18,
+  -826
+ ],
+ "unknown_columns": 0,
+ "walkable_cells": 56614,
+ "components": [
+  {
+   "component": 2,
+   "walkable_cells": 36481,
+   "is_main": true,
+   "house_doors_in_front_comp": {
+    "medium_ruin_1": 2,
+    "medium_ruin_2": 2,
+    "small_ruin_1": 2,
+    "small_ruin_2": 2
+   },
+   "y_range": [
+    -54,
+    -32
+   ],
+   "sampled_piece_boxes": {
+    "natural_terrain": 515,
+    "wall_stairs": 323,
+    "wall": 161,
+    "entrance_path": 102,
+    "wall_passage": 99
+   },
+   "drops_to_main": false,
+   "main_drops_to_it": false
+  },
+  {
+   "component": 20454,
+   "walkable_cells": 1815,
+   "is_main": false,
+   "house_doors_in_front_comp": {},
+   "y_range": [
+    -43,
+    -25
+   ],
+   "sampled_piece_boxes": {
+    "natural_terrain": 1235,
+    "monument": 326,
+    "wall_stairs": 254
+   },
+   "drops_to_main": false,
+   "main_drops_to_it": false
+  },
+  {
+   "component": 4137,
+   "walkable_cells": 1355,
+   "is_main": false,
+   "house_doors_in_front_comp": {},
+   "y_range": [
+    -45,
+    -29
+   ],
+   "sampled_piece_boxes": {
+    "natural_terrain": 498,
+    "wall_stairs": 330,
+    "wall": 295,
+    "monument": 232
+   },
+   "drops_to_main": false,
+   "main_drops_to_it": false
+  },
+  {
+   "component": 20622,
+   "walkable_cells": 1110,
+   "is_main": false,
+   "house_doors_in_front_comp": {},
+   "y_range": [
+    -48,
+    -41
+   ],
+   "sampled_piece_boxes": {
+    "city_center": 584,
+    "city_center_wall": 526
+   },
+   "drops_to_main": true,
+   "main_drops_to_it": false
+  },
+  {
+   "component": 7904,
+   "walkable_cells": 1062,
+   "is_main": false,
+   "house_doors_in_front_comp": {},
+   "y_range": [
+    -48,
+    -37
+   ],
+   "sampled_piece_boxes": {
+    "natural_terrain": 1062
+   },
+   "drops_to_main": true,
+   "main_drops_to_it": false
+  },
+  {
+   "component": 33,
+   "walkable_cells": 822,
+   "is_main": false,
+   "house_doors_in_front_comp": {},
+   "y_range": [
+    -42,
+    -21
+   ],
+   "sampled_piece_boxes": {
+    "natural_terrain": 822
+   },
+   "drops_to_main": false,
+   "main_drops_to_it": false
+  }
+ ],
+ "n_components": 1256,
+ "main_component": 2,
+ "main_cells": 36481,
+ "main_share": 0.6444,
+ "doors": [
+  {
+   "front_cell_chunk_touched_by_house_box": true,
+   "front_cell_owner": "wall_stairs",
+   "front_cell_owner_piece": 9,
+   "seed": 24014,
+   "piece_index": 20,
+   "module": "medium_ruin_1",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    1366,
+    -50,
+    -919
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "doorway_walkable": true,
+   "door_front": [
+    1367,
+    -51,
+    -919
+   ],
+   "front_dy": -1,
+   "comp_front": 2,
+   "comp_doorway": 2,
+   "comp_interior": 2,
+   "main": 2,
+   "status": "open_to_main"
+  },
+  {
+   "front_cell_chunk_touched_by_house_box": true,
+   "front_cell_owner": "wall_stairs",
+   "front_cell_owner_piece": 17,
+   "seed": 24014,
+   "piece_index": 31,
+   "module": "medium_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    1314,
+    -50,
+    -960
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "doorway_walkable": true,
+   "door_front": [
+    1314,
+    -51,
+    -959
+   ],
+   "front_dy": -1,
+   "comp_front": 2,
+   "comp_doorway": 2,
+   "comp_interior": 2,
+   "main": 2,
+   "status": "open_to_main"
+  },
+  {
+   "front_cell_chunk_touched_by_house_box": true,
+   "front_cell_owner": "wall_passage",
+   "front_cell_owner_piece": 19,
+   "seed": 24014,
+   "piece_index": 33,
+   "module": "medium_ruin_2",
+   "rotation": "NONE",
+   "door_world": [
+    1388,
+    -50,
+    -899
+   ],
+   "outward": [
+    -1,
+    0,
+    0
+   ],
+   "doorway_walkable": true,
+   "door_front": [
+    1387,
+    -51,
+    -899
+   ],
+   "front_dy": -1,
+   "comp_front": 2,
+   "comp_doorway": 2,
+   "comp_interior": 2,
+   "main": 2,
+   "status": "open_to_main"
+  },
+  {
+   "front_cell_chunk_touched_by_house_box": true,
+   "front_cell_owner": "wall_stairs",
+   "front_cell_owner_piece": 23,
+   "seed": 24014,
+   "piece_index": 38,
+   "module": "medium_ruin_2",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    1437,
+    -50,
+    -937
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "doorway_walkable": true,
+   "door_front": [
+    1437,
+    -51,
+    -938
+   ],
+   "front_dy": -1,
+   "comp_front": 2,
+   "comp_doorway": 2,
+   "comp_interior": 2,
+   "main": 2,
+   "status": "open_to_main"
+  },
+  {
+   "front_cell_chunk_touched_by_house_box": true,
+   "front_cell_owner": "wall",
+   "front_cell_owner_piece": 49,
+   "seed": 24014,
+   "piece_index": 62,
+   "module": "small_ruin_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "door_world": [
+    1276,
+    -50,
+    -960
+   ],
+   "outward": [
+    0,
+    0,
+    1
+   ],
+   "doorway_walkable": true,
+   "door_front": [
+    1276,
+    -51,
+    -959
+   ],
+   "front_dy": -1,
+   "comp_front": 2,
+   "comp_doorway": 2,
+   "comp_interior": 2,
+   "main": 2,
+   "status": "open_to_main"
+  },
+  {
+   "front_cell_chunk_touched_by_house_box": true,
+   "front_cell_owner": "wall_stairs",
+   "front_cell_owner_piece": 52,
+   "seed": 24014,
+   "piece_index": 66,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_180",
+   "door_world": [
+    1366,
+    -50,
+    -862
+   ],
+   "outward": [
+    1,
+    0,
+    0
+   ],
+   "doorway_walkable": true,
+   "door_front": [
+    1367,
+    -51,
+    -862
+   ],
+   "front_dy": -1,
+   "comp_front": 2,
+   "comp_doorway": 2,
+   "comp_interior": 2,
+   "main": 2,
+   "status": "open_to_main"
+  },
+  {
+   "front_cell_chunk_touched_by_house_box": true,
+   "front_cell_owner": "wall_stairs",
+   "front_cell_owner_piece": 56,
+   "seed": 24014,
+   "piece_index": 72,
+   "module": "small_ruin_2",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    1294,
+    -50,
+    -971
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "doorway_walkable": true,
+   "door_front": [
+    1294,
+    -50,
+    -972
+   ],
+   "front_dy": 0,
+   "comp_front": 2,
+   "comp_doorway": 2,
+   "comp_interior": 2,
+   "main": 2,
+   "status": "open_to_main"
+  },
+  {
+   "front_cell_chunk_touched_by_house_box": true,
+   "front_cell_owner": "wall_stairs",
+   "front_cell_owner_piece": 59,
+   "seed": 24014,
+   "piece_index": 76,
+   "module": "small_ruin_1",
+   "rotation": "CLOCKWISE_90",
+   "door_world": [
+    1444,
+    -50,
+    -1011
+   ],
+   "outward": [
+    0,
+    0,
+    -1
+   ],
+   "doorway_walkable": true,
+   "door_front": [
+    1444,
+    -51,
+    -1012
+   ],
+   "front_dy": -1,
+   "comp_front": 2,
+   "comp_doorway": 2,
+   "comp_interior": 2,
+   "main": 2,
+   "status": "open_to_main"
+  }
+ ],
+ "buildings_other": [
+  {
+   "piece_index": 45,
+   "module": "medium_pillar_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "walkable_cells_in_box": 87,
+   "components": {
+    "35653": 53,
+    "2": 30,
+    "36963": 4
+   },
+   "touches_main": true
+  },
+  {
+   "piece_index": 63,
+   "module": "medium_pillar_1",
+   "rotation": "COUNTERCLOCKWISE_90",
+   "walkable_cells_in_box": 80,
+   "components": {
+    "3213": 46,
+    "2": 30,
+    "4079": 4
+   },
+   "touches_main": true
+  },
+  {
+   "piece_index": 73,
+   "module": "sauna_1",
+   "rotation": "CLOCKWISE_90",
+   "walkable_cells_in_box": 1181,
+   "components": {
+    "2": 1012,
+    "4777": 44,
+    "6853": 20,
+    "12783": 12
+   },
+   "touches_main": true
+  }
+ ],
+ "routes": [
+  {
+   "from_piece": 20,
+   "to_piece": 33,
+   "kind": "building_to_building",
+   "steps": 40,
+   "up": 2,
+   "down": 2,
+   "net_dy": 0,
+   "path_height_range": 1,
+   "on": {
+    "wall_stairs": 31,
+    "wall_passage": 9
+   },
+   "floor_top": {
+    "deepslate": 19,
+    "sculk": 17,
+    "gray_wool": 2,
+    "chiseled_deepslate": 1
+   }
+  },
+  {
+   "from_piece": 20,
+   "to_piece": 66,
+   "kind": "building_to_building",
+   "steps": 57,
+   "up": 1,
+   "down": 1,
+   "net_dy": 0,
+   "path_height_range": 1,
+   "on": {
+    "wall_stairs": 39,
+    "wall_passage": 18
+   },
+   "floor_top": {
+    "deepslate": 29,
+    "sculk": 27,
+    "deepslate_tile_slab": 1
+   }
+  },
+  {
+   "from_piece": 20,
+   "to_piece": 38,
+   "kind": "building_to_building",
+   "steps": 89,
+   "up": 3,
+   "down": 3,
+   "net_dy": 0,
+   "path_height_range": 1,
+   "on": {
+    "wall_stairs": 31,
+    "chamber": 15,
+    "natural_terrain": 43
+   },
+   "floor_top": {
+    "sculk": 50,
+    "deepslate": 35,
+    "gray_wool": 2,
+    "chiseled_deepslate": 1
+   }
+  },
+  {
+   "from_piece": 20,
+   "to_piece": "entrance_path",
+   "kind": "building_to_city_entrance",
+   "steps": 93,
+   "up": 2,
+   "down": 2,
+   "net_dy": 0,
+   "path_height_range": 2,
+   "on": {
+    "wall_stairs": 6,
+    "city_center_wall": 86,
+    "entrance_path": 1
+   },
+   "floor_top": {
+    "deepslate": 41,
+    "sculk": 32,
+    "tuff": 9,
+    "polished_deepslate_stairs": 4
+   }
+  },
+  {
+   "from_piece": 31,
+   "to_piece": 72,
+   "kind": "building_to_building",
+   "steps": 33,
+   "up": 2,
+   "down": 1,
+   "net_dy": 1,
+   "path_height_range": 1,
+   "on": {
+    "wall_stairs": 12,
+    "wall": 7,
+    "natural_terrain": 14
+   },
+   "floor_top": {
+    "sculk": 28,
+    "deepslate": 3,
+    "sculk_catalyst": 1,
+    "deepslate_tile_slab": 1
+   }
+  },
+  {
+   "from_piece": 31,
+   "to_piece": 62,
+   "kind": "building_to_building",
+   "steps": 40,
+   "up": 1,
+   "down": 1,
+   "net_dy": 0,
+   "path_height_range": 1,
+   "on": {
+    "wall_stairs": 8,
+    "wall": 23,
+    "natural_terrain": 9
+   },
+   "floor_top": {
+    "sculk": 31,
+    "deepslate": 8,
+    "sculk_catalyst": 1
+   }
+  },
+  {
+   "from_piece": 31,
+   "to_piece": 20,
+   "kind": "building_to_building",
+   "steps": 93,
+   "up": 2,
+   "down": 2,
+   "net_dy": 0,
+   "path_height_range": 2,
+   "on": {
+    "wall_stairs": 34,
+    "city_center_wall": 59
+   },
+   "floor_top": {
+    "deepslate": 46,
+    "sculk": 33,
+    "tuff": 7,
+    "polished_deepslate_stairs": 4
+   }
+  },
+  {
+   "from_piece": 31,
+   "to_piece": "entrance_path",
+   "kind": "building_to_city_entrance",
+   "steps": 56,
+   "up": 0,
+   "down": 0,
+   "net_dy": 0,
+   "path_height_range": 0,
+   "on": {
+    "wall_stairs": 27,
+    "city_center_wall": 28,
+    "entrance_path": 1
+   },
+   "floor_top": {
+    "deepslate": 38,
+    "tuff": 14,
+    "gravel": 4
+   }
+  },
+  {
+   "from_piece": 33,
+   "to_piece": 20,
+   "kind": "building_to_building",
+   "steps": 40,
+   "up": 0,
+   "down": 0,
+   "net_dy": 0,
+   "path_height_range": 0,
+   "on": {
+    "wall_passage": 28,
+    "wall_stairs": 12
+   },
+   "floor_top": {
+    "deepslate": 20,
+    "sculk": 20
+   }
+  },
+  {
+   "from_piece": 33,
+   "to_piece": 66,
+   "kind": "building_to_building",
+   "steps": 57,
+   "up": 4,
+   "down": 4,
+   "net_dy": 0,
+   "path_height_range": 2,
+   "on": {
+    "wall_passage": 9,
+    "wall_stairs": 48
+   },
+   "floor_top": {
+    "deepslate": 22,
+    "gray_wool": 14,
+    "tuff": 8,
+    "sculk": 5
+   }
+  },
+  {
+   "from_piece": 33,
+   "to_piece": 38,
+   "kind": "building_to_building",
+   "steps": 89,
+   "up": 6,
+   "down": 6,
+   "net_dy": 0,
+   "path_height_range": 4,
+   "on": {
+    "wall_passage": 6,
+    "natural_terrain": 76,
+    "wall_stairs": 7
+   },
+   "floor_top": {
+    "deepslate": 42,
+    "sculk": 38,
+    "tuff": 9
+   }
+  },
+  {
+   "from_piece": 33,
+   "to_piece": "entrance_path",
+   "kind": "building_to_city_entrance",
+   "steps": 111,
+   "up": 4,
+   "down": 4,
+   "net_dy": 0,
+   "path_height_range": 3,
+   "on": {
+    "wall_passage": 6,
+    "natural_terrain": 43,
+    "city_center_wall": 61,
+    "entrance_path": 1
+   },
+   "floor_top": {
+    "deepslate": 62,
+    "sculk": 34,
+    "tuff": 8,
+    "polished_deepslate_stairs": 4
+   }
+  },
+  {
+   "from_piece": 38,
+   "to_piece": 33,
+   "kind": "building_to_building",
+   "steps": 89,
+   "up": 6,
+   "down": 6,
+   "net_dy": 0,
+   "path_height_range": 4,
+   "on": {
+    "wall_stairs": 6,
+    "natural_terrain": 76,
+    "wall_passage": 7
+   },
+   "floor_top": {
+    "deepslate": 43,
+    "sculk": 37,
+    "tuff": 9
+   }
+  },
+  {
+   "from_piece": 38,
+   "to_piece": 20,
+   "kind": "building_to_building",
+   "steps": 89,
+   "up": 3,
+   "down": 3,
+   "net_dy": 0,
+   "path_height_range": 1,
+   "on": {
+    "wall_stairs": 31,
+    "natural_terrain": 43,
+    "chamber": 15
+   },
+   "floor_top": {
+    "sculk": 50,
+    "deepslate": 35,
+    "gray_wool": 2,
+    "deepslate_tiles": 1
+   }
+  },
+  {
+   "from_piece": 38,
+   "to_piece": 76,
+   "kind": "building_to_building",
+   "steps": 91,
+   "up": 3,
+   "down": 3,
+   "net_dy": 0,
+   "path_height_range": 2,
+   "on": {
+    "wall_stairs": 43,
+    "natural_terrain": 22,
+    "chamber": 5,
+    "wall": 21
+   },
+   "floor_top": {
+    "sculk": 36,
+    "deepslate": 36,
+    "tuff": 9,
+    "gray_wool": 8
+   }
+  },
+  {
+   "from_piece": 38,
+   "to_piece": "entrance_path",
+   "kind": "building_to_city_entrance",
+   "steps": 76,
+   "up": 3,
+   "down": 3,
+   "net_dy": 0,
+   "path_height_range": 2,
+   "on": {
+    "wall_stairs": 26,
+    "city_center_wall": 49,
+    "entrance_path": 1
+   },
+   "floor_top": {
+    "sculk": 46,
+    "deepslate": 23,
+    "polished_deepslate_stairs": 4,
+    "gray_wool": 2
+   }
+  },
+  {
+   "from_piece": 62,
+   "to_piece": 72,
+   "kind": "building_to_building",
+   "steps": 31,
+   "up": 2,
+   "down": 1,
+   "net_dy": 1,
+   "path_height_range": 1,
+   "on": {
+    "wall": 15,
+    "natural_terrain": 13,
+    "wall_stairs": 3
+   },
+   "floor_top": {
+    "sculk": 25,
+    "deepslate": 4,
+    "sculk_catalyst": 1,
+    "deepslate_tile_slab": 1
+   }
+  },
+  {
+   "from_piece": 62,
+   "to_piece": 31,
+   "kind": "building_to_building",
+   "steps": 40,
+   "up": 1,
+   "down": 1,
+   "net_dy": 0,
+   "path_height_range": 1,
+   "on": {
+    "wall": 15,
+    "natural_terrain": 17,
+    "wall_stairs": 8
+   },
+   "floor_top": {
+    "sculk": 30,
+    "deepslate": 9,
+    "sculk_catalyst": 1
+   }
+  },
+  {
+   "from_piece": 62,
+   "to_piece": 20,
+   "kind": "building_to_building",
+   "steps": 131,
+   "up": 7,
+   "down": 7,
+   "net_dy": 0,
+   "path_height_range": 2,
+   "on": {
+    "wall": 37,
+    "wall_stairs": 43,
+    "city_center_wall": 51
+   },
+   "floor_top": {
+    "gray_wool": 53,
+    "sculk": 47,
+    "deepslate": 26,
+    "polished_deepslate_stairs": 3
+   }
+  },
+  {
+   "from_piece": 62,
+   "to_piece": "entrance_path",
+   "kind": "building_to_city_entrance",
+   "steps": 94,
+   "up": 1,
+   "down": 1,
+   "net_dy": 0,
+   "path_height_range": 1,
+   "on": {
+    "wall": 15,
+    "natural_terrain": 60,
+    "chamber": 1,
+    "city_center_wall": 17,
+    "entrance_path": 1
+   },
+   "floor_top": {
+    "deepslate": 42,
+    "sculk": 41,
+    "gravel": 7,
+    "tuff": 2
+   }
+  },
+  {
+   "from_piece": 66,
+   "to_piece": 33,
+   "kind": "building_to_building",
+   "steps": 57,
+   "up": 4,
+   "down": 4,
+   "net_dy": 0,
+   "path_height_range": 2,
+   "on": {
+    "wall_stairs": 47,
+    "wall_passage": 10
+   },
+   "floor_top": {
+    "deepslate": 22,
+    "gray_wool": 14,
+    "tuff": 8,
+    "sculk": 5
+   }
+  },
+  {
+   "from_piece": 66,
+   "to_piece": 20,
+   "kind": "building_to_building",
+   "steps": 57,
+   "up": 1,
+   "down": 1,
+   "net_dy": 0,
+   "path_height_range": 1,
+   "on": {
+    "wall_stairs": 39,
+    "wall_passage": 18
+   },
+   "floor_top": {
+    "deepslate": 28,
+    "sculk": 28,
+    "deepslate_tile_slab": 1
+   }
+  },
+  {
+   "from_piece": 66,
+   "to_piece": 38,
+   "kind": "building_to_building",
+   "steps": 146,
+   "up": 15,
+   "down": 15,
+   "net_dy": 0,
+   "path_height_range": 4,
+   "on": {
+    "wall_stairs": 37,
+    "natural_terrain": 109
+   },
+   "floor_top": {
+    "sculk": 62,
+    "deepslate": 47,
+    "tuff": 15,
+    "gray_wool": 14
+   }
+  },
+  {
+   "from_piece": 66,
+   "to_piece": "entrance_path",
+   "kind": "building_to_city_entrance",
+   "steps": 150,
+   "up": 15,
+   "down": 15,
+   "net_dy": 0,
+   "path_height_range": 5,
+   "on": {
+    "wall_stairs": 25,
+    "chamber": 6,
+    "natural_terrain": 57,
+    "city_center_wall": 61,
+    "entrance_path": 1
+   },
+   "floor_top": {
+    "deepslate": 75,
+    "sculk": 49,
+    "gravel": 10,
+    "tuff": 8
+   }
+  },
+  {
+   "from_piece": 72,
+   "to_piece": 62,
+   "kind": "building_to_building",
+   "steps": 31,
+   "up": 1,
+   "down": 2,
+   "net_dy": -1,
+   "path_height_range": 1,
+   "on": {
+    "wall_stairs": 2,
+    "natural_terrain": 13,
+    "wall": 16
+   },
+   "floor_top": {
+    "sculk": 25,
+    "deepslate": 5,
+    "sculk_catalyst": 1
+   }
+  },
+  {
+   "from_piece": 72,
+   "to_piece": 31,
+   "kind": "building_to_building",
+   "steps": 33,
+   "up": 0,
+   "down": 1,
+   "net_dy": -1,
+   "path_height_range": 1,
+   "on": {
+    "wall_stairs": 21,
+    "natural_terrain": 12
+   },
+   "floor_top": {
+    "sculk": 24,
+    "deepslate": 9
+   }
+  },
+  {
+   "from_piece": 72,
+   "to_piece": 20,
+   "kind": "building_to_building",
+   "steps": 126,
+   "up": 2,
+   "down": 3,
+   "net_dy": -1,
+   "path_height_range": 2,
+   "on": {
+    "wall_stairs": 33,
+    "wall_passage": 22,
+    "city_center_wall": 71
+   },
+   "floor_top": {
+    "sculk": 51,
+    "deepslate": 42,
+    "gravel": 16,
+    "tuff": 9
+   }
+  },
+  {
+   "from_piece": 72,
+   "to_piece": "entrance_path",
+   "kind": "building_to_city_entrance",
+   "steps": 63,
+   "up": 0,
+   "down": 1,
+   "net_dy": -1,
+   "path_height_range": 1,
+   "on": {
+    "wall_stairs": 26,
+    "wall_passage": 36,
+    "entrance_path": 1
+   },
+   "floor_top": {
+    "deepslate": 27,
+    "sculk": 18,
+    "gravel": 12,
+    "tuff": 5
+   }
+  },
+  {
+   "from_piece": 76,
+   "to_piece": 38,
+   "kind": "building_to_building",
+   "steps": 91,
+   "up": 2,
+   "down": 2,
+   "net_dy": 0,
+   "path_height_range": 1,
+   "on": {
+    "wall_stairs": 42,
+    "natural_terrain": 22,
+    "wall": 21,
+    "chamber": 6
+   },
+   "floor_top": {
+    "sculk": 43,
+    "deepslate": 31,
+    "tuff": 9,
+    "gray_wool": 4
+   }
+  },
+  {
+   "from_piece": 76,
+   "to_piece": 33,
+   "kind": "building_to_building",
+   "steps": 170,
+   "up": 11,
+   "down": 11,
+   "net_dy": 0,
+   "path_height_range": 5,
+   "on": {
+    "wall_stairs": 48,
+    "natural_terrain": 78,
+    "wall": 21,
+    "chamber": 5,
+    "monument": 11,
+    "wall_passage": 7
+   },
+   "floor_top": {
+    "deepslate": 76,
+    "sculk": 57,
+    "tuff": 18,
+    "gray_wool": 14
+   }
+  },
+  {
+   "from_piece": 76,
+   "to_piece": 20,
+   "kind": "building_to_building",
+   "steps": 170,
+   "up": 9,
+   "down": 9,
+   "net_dy": 0,
+   "path_height_range": 3,
+   "on": {
+    "wall_stairs": 73,
+    "natural_terrain": 45,
+    "wall": 21,
+    "chamber": 20,
+    "monument": 11
+   },
+   "floor_top": {
+    "sculk": 71,
+    "deepslate": 67,
+    "gray_wool": 16,
+    "tuff": 9
+   }
+  },
+  {
+   "from_piece": 76,
+   "to_piece": "entrance_path",
+   "kind": "building_to_city_entrance",
+   "steps": 54,
+   "up": 1,
+   "down": 0,
+   "net_dy": 1,
+   "path_height_range": 1,
+   "on": {
+    "wall_stairs": 5,
+    "natural_terrain": 36,
+    "tower": 12,
+    "entrance_path": 1
+   },
+   "floor_top": {
+    "sculk": 47,
+    "deepslate": 6,
+    "polished_basalt": 1
+   }
+  }
+ ],
+ "piece_categories": {
+  "city_center": 1,
+  "city_center_wall": 8,
+  "entrance_path": 2,
+  "wall_stairs": 17,
+  "wall_passage": 5,
+  "monument": 8,
+  "chamber": 13,
+  "house": 8,
+  "wall": 8,
+  "feature": 10,
+  "tower": 2,
+  "wall_bridge": 2,
+  "sauna": 1
+ }
+}

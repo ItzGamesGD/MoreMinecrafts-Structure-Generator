@@ -1,0 +1,611 @@
+{
+ "seed": 24009,
+ "piece_index": 59,
+ "module": "large_ruin_1",
+ "rotation": "CLOCKWISE_90",
+ "door_world": [
+  597,
+  -50,
+  551
+ ],
+ "outward": [
+  0,
+  0,
+  -1
+ ],
+ "survey_status": "ok",
+ "survey_cells_to_clear": [
+  [
+   595,
+   -50,
+   550
+  ],
+  [
+   595,
+   -49,
+   550
+  ],
+  [
+   596,
+   -50,
+   550
+  ],
+  [
+   596,
+   -49,
+   550
+  ],
+  [
+   597,
+   -50,
+   550
+  ],
+  [
+   597,
+   -49,
+   550
+  ]
+ ],
+ "survey_blocks": {
+  "dripstone_block": 6
+ },
+ "survey_owners": {
+  "ruined_horizontal_wall_stairs_4": 6
+ },
+ "obstruction_cells": [
+  {
+   "cell": [
+    595,
+    -50,
+    550
+   ],
+   "block": "dripstone_block",
+   "class": "natural",
+   "owner_piece": 41,
+   "owner_template": "ruined_horizontal_wall_stairs_4",
+   "inside_house_box": false
+  },
+  {
+   "cell": [
+    595,
+    -49,
+    550
+   ],
+   "block": "dripstone_block",
+   "class": "natural",
+   "owner_piece": 41,
+   "owner_template": "ruined_horizontal_wall_stairs_4",
+   "inside_house_box": false
+  },
+  {
+   "cell": [
+    596,
+    -50,
+    550
+   ],
+   "block": "dripstone_block",
+   "class": "natural",
+   "owner_piece": 41,
+   "owner_template": "ruined_horizontal_wall_stairs_4",
+   "inside_house_box": false
+  },
+  {
+   "cell": [
+    596,
+    -49,
+    550
+   ],
+   "block": "dripstone_block",
+   "class": "natural",
+   "owner_piece": 41,
+   "owner_template": "ruined_horizontal_wall_stairs_4",
+   "inside_house_box": false
+  },
+  {
+   "cell": [
+    597,
+    -50,
+    550
+   ],
+   "block": "dripstone_block",
+   "class": "natural",
+   "owner_piece": 41,
+   "owner_template": "ruined_horizontal_wall_stairs_4",
+   "inside_house_box": false
+  },
+  {
+   "cell": [
+    597,
+    -49,
+    550
+   ],
+   "block": "dripstone_block",
+   "class": "natural",
+   "owner_piece": 41,
+   "owner_template": "ruined_horizontal_wall_stairs_4",
+   "inside_house_box": false
+  }
+ ],
+ "obstruction_summary": {
+  "n": 6,
+  "natural": 6,
+  "architecture": 0,
+  "owner_templates": {
+   "ruined_horizontal_wall_stairs_4": 6
+  },
+  "inside_house_box": 0
+ },
+ "obstruction_extent": {
+  "x": [
+   595,
+   597
+  ],
+  "y": [
+   -50,
+   -49
+  ],
+  "z": [
+   550,
+   550
+  ]
+ },
+ "profiles": {
+  "out+1": [
+   [
+    -47,
+    "dripstone_block"
+   ],
+   [
+    -48,
+    "dripstone_block"
+   ],
+   [
+    -49,
+    "dripstone_block"
+   ],
+   [
+    -50,
+    "dripstone_block"
+   ],
+   [
+    -51,
+    "deepslate_tile_slab"
+   ],
+   [
+    -52,
+    "deepslate"
+   ],
+   [
+    -53,
+    "deepslate"
+   ],
+   [
+    -54,
+    "deepslate"
+   ],
+   [
+    -55,
+    "deepslate"
+   ],
+   [
+    -56,
+    "deepslate"
+   ],
+   [
+    -57,
+    "deepslate"
+   ],
+   [
+    -58,
+    "deepslate"
+   ],
+   [
+    -59,
+    "deepslate"
+   ],
+   [
+    -60,
+    "deepslate"
+   ]
+  ],
+  "out+2": [
+   [
+    -47,
+    "dripstone_block"
+   ],
+   [
+    -48,
+    "dripstone_block"
+   ],
+   [
+    -49,
+    "dripstone_block"
+   ],
+   [
+    -50,
+    "dripstone_block"
+   ],
+   [
+    -51,
+    "dripstone_block"
+   ],
+   [
+    -52,
+    "gravel"
+   ],
+   [
+    -53,
+    "deepslate"
+   ],
+   [
+    -54,
+    "deepslate"
+   ],
+   [
+    -55,
+    "deepslate"
+   ],
+   [
+    -56,
+    "deepslate"
+   ],
+   [
+    -57,
+    "deepslate"
+   ],
+   [
+    -58,
+    "deepslate"
+   ],
+   [
+    -59,
+    "deepslate"
+   ],
+   [
+    -60,
+    "deepslate"
+   ]
+  ],
+  "out+3": [
+   [
+    -47,
+    "dripstone_block"
+   ],
+   [
+    -48,
+    "dripstone_block"
+   ],
+   [
+    -49,
+    "dripstone_block"
+   ],
+   [
+    -50,
+    "dripstone_block"
+   ],
+   [
+    -51,
+    "deepslate_tile_slab"
+   ],
+   [
+    -52,
+    "gravel"
+   ],
+   [
+    -53,
+    "deepslate"
+   ],
+   [
+    -54,
+    "deepslate"
+   ],
+   [
+    -55,
+    "deepslate"
+   ],
+   [
+    -56,
+    "deepslate"
+   ],
+   [
+    -57,
+    "deepslate"
+   ],
+   [
+    -58,
+    "deepslate"
+   ],
+   [
+    -59,
+    "deepslate"
+   ],
+   [
+    -60,
+    "deepslate"
+   ]
+  ],
+  "out+4": [
+   [
+    -47,
+    "dripstone_block"
+   ],
+   [
+    -48,
+    "dripstone_block"
+   ],
+   [
+    -49,
+    "dripstone_block"
+   ],
+   [
+    -50,
+    "dripstone_block"
+   ],
+   [
+    -51,
+    "deepslate_brick_slab"
+   ],
+   [
+    -52,
+    "gravel"
+   ],
+   [
+    -53,
+    "deepslate"
+   ],
+   [
+    -54,
+    "deepslate"
+   ],
+   [
+    -55,
+    "deepslate"
+   ],
+   [
+    -56,
+    "deepslate"
+   ],
+   [
+    -57,
+    "deepslate"
+   ],
+   [
+    -58,
+    "deepslate"
+   ],
+   [
+    -59,
+    "deepslate"
+   ],
+   [
+    -60,
+    "bedrock"
+   ]
+  ],
+  "out+5": [
+   [
+    -47,
+    "dripstone_block"
+   ],
+   [
+    -48,
+    "dripstone_block"
+   ],
+   [
+    -49,
+    "dripstone_block"
+   ],
+   [
+    -50,
+    "dripstone_block"
+   ],
+   [
+    -51,
+    "deepslate_brick_slab"
+   ],
+   [
+    -52,
+    "gravel"
+   ],
+   [
+    -53,
+    "deepslate"
+   ],
+   [
+    -54,
+    "deepslate"
+   ],
+   [
+    -55,
+    "deepslate"
+   ],
+   [
+    -56,
+    "deepslate"
+   ],
+   [
+    -57,
+    "deepslate"
+   ],
+   [
+    -58,
+    "deepslate"
+   ],
+   [
+    -59,
+    "deepslate"
+   ],
+   [
+    -60,
+    "deepslate"
+   ]
+  ]
+ },
+ "map_dy_rel_to_door": [
+  "  0 +1 +1 -1 +1  0 -1 -1 -1 -1  0 -1  0 -1 +1 +3  .  .  . +3 +3 +1 -1 +1 +2",
+  "  .  .  .  .  .  . +3  0 -1 -1 -1 -1  0 -1 -1 +1 +2 +1 +2 +1  0 -1  0 +1 +2",
+  " +1 +1 +1 +1 +1 +1 +1 -1 -1 -1 -1 -1 -1 -1  0 -1  0  0 -1 +2 -1 -1 -1  0 +2",
+  " +1 +1 +1  0 +1 +1  0 -1 -1 -1 -1 -1 -1 -2 -1 -1  0 -1  0  .  0 -1  0  0 +2",
+  " +1  . +1 +1  . +1 +2 +1 +2  0  0 -1 -1 -1 -1 -1 -1 -1 +2 +1 +2  . +1 +1 +2",
+  " -1 -1 -1  0  0 -1  0  0  0  0  0 -1 +1  0 -1 -1 -1 +1 +1 -1  0 -1 +2  0 +2",
+  " -1 -1 -1  0  0  0  0  0  0  0  0 +1 +2 +1  0 -1  0  0  0  0  0 -1  0 +1 +3",
+  " -1 -1 -1  0 -1 -1  0 -1  0  0 +2  .  .  . +3  0  0  0  0  0 +3 -1  0 +1 +2",
+  " -1 -1 -1  0  0  0  0  0  0 +1  .  .  .  .  . +2  0 -1  0  0  0 -1 +3  0 +2",
+  " -1 -1 -1 -1  0 -1  0  0  0 +1  .  .  .  .  . +3  . -1  0  0 -2  0 -1 +1 +1",
+  " -1 -1 -1 -1 -1 -1 -1 -1 -1 +1  .  .  .  .  . +1 -1 -1 -1 -1  0 +1 +3 +1 +1",
+  " -1 -1 -1 -1 -1 -1 -1 -1 -1  0 +3  .  .  . +2 +1 -1 -1 +1  0 -1 -1  0  0 +2",
+  " -1 -1 -1  .  .  .  .  .  .  .  .  .  0  .  .  .  .  .  .  . -1 -1 -1 +1 +2",
+  " -1 -1 -1  .  0  0  0  0  0  0  0  0  0  0  0  0 -1  0  0  . -1 -1  0  0 +2",
+  " -1 -1 -1  .  0  0  0  0  0  0  0  0  0  0  0 +1  0 +1  0  . -1 -1  0  0 +3",
+  "  0 -1 -1  .  0  0  0  0  0 +1  0  0  0  0  0  0  0  0  0  . -1 -1  0 +1  .",
+  "  0 -1 -1  .  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  . -1  0  0 +2  .",
+  "  0 -1 -1  .  .  .  .  . +3  .  0  0  0  .  .  .  .  .  .  . -1  0  0 +2  .",
+  "  0 -1 -1  .  0  0  0  0  .  0  0  0  0  0  .  0  0  0  0  . -1  0  0 +3  .",
+  "  0 -1 -1  .  0  0  0  0  .  0  0  0  0  0  .  0  0  0  0  . -1  0  0 +3  .",
+  " -1 -1 -1  .  0  0  0  0  .  0  0  0  0  0  .  0  0  0  0  . -1  0  0 +3  .",
+  " -1 -1 -1  .  0  0  0  0  .  0  0  0  0  0  .  0  0  0  0  . -1  0  0 +3  .",
+  " -1 -1 -1  .  0  0  0  0  .  0  0  0  0  0  .  0  0 -1  0  . -1  0  0 +3  .",
+  " -1 -1 -1  .  .  .  .  .  .  .  0  0  0  .  .  .  .  .  .  . -1  0  0 +3  .",
+  " -1 -1 -1  .  0 -1  0  0 +1 +1  0 +1  0  0  0 +1 +1  0  0  . -1  0  0 +2  ."
+ ],
+ "map_component": [
+  "MMMoMMMMMMMMMMMo...ooMMMM",
+  "......MMMMMMMMMMMMMMMMMMM",
+  "MMMMMMMMMMMMMMMMMMMMMMMMM",
+  "MMMMMMMMMMMMMMMMMMM.MMMMM",
+  "M.MM.MMMMMMMMMMMMMMMM.MMM",
+  "MMMMMMMMMMMMMMMMMMMMMMMMM",
+  "MMMMMMMMMMMMMMMMMMMMMMMMM",
+  "MMMMMMMMMMo...oMMMMMoMMMM",
+  "MMMMMMMMMM.....oMMMMMMoMM",
+  "MMMMMMMMMM.....o.MMMoMMMM",
+  "MMMMMMMMMM.....oMMMMMMoMM",
+  "MMMMMMMMMMo...ooMMMMMMMMM",
+  "MMM.........D.......MMMMM",
+  "MMM.ooooooooooooooo.MMMMM",
+  "MMM.ooooooooooooooo.MMMMM",
+  "MMM.ooooooooooooooo.MMMM.",
+  "MMM.ooooooooooooooo.MMMM.",
+  "MMM.....o.ooo.......MMMM.",
+  "MMM.oooo.ooooo.oooo.MMMM.",
+  "MMM.oooo.ooooo.oooo.MMMM.",
+  "MMM.oooo.ooooo.oooo.MMMM.",
+  "MMM.oooo.ooooo.oooo.MMMM.",
+  "MMM.oooo.ooooo.oooo.MMMM.",
+  "MMM.......ooo.......MMMM.",
+  "MMM.ooooooooooooooo.MMMM."
+ ],
+ "map_legend": "rows = z from door.z-12..+12, columns = x from door.x-12..+12; M main component, F component in front of the door, o other, . no walkable cell within -12..+3 of the door height, D the door column",
+ "door_front": {
+  "cell": null,
+  "front_dy": null,
+  "front_component": null,
+  "front_component_cells": null,
+  "main_component_cells": 36670
+ },
+ "nearest_main_cell": {
+  "cell": [
+   594,
+   -50,
+   550
+  ],
+  "horizontal_manhattan": 4,
+  "dy": 0
+ },
+ "minimum_change": {
+  "clear_only": {
+   "cost": 6,
+   "clear": [
+    [
+     595,
+     -50,
+     550
+    ],
+    [
+     595,
+     -49,
+     550
+    ],
+    [
+     596,
+     -50,
+     550
+    ],
+    [
+     596,
+     -49,
+     550
+    ],
+    [
+     597,
+     -50,
+     550
+    ],
+    [
+     597,
+     -49,
+     550
+    ]
+   ],
+   "place": [],
+   "reached": [
+    594,
+    -50,
+    550
+   ],
+   "place_cell_owners": []
+  },
+  "place_only": null,
+  "clear_and_place": {
+   "cost": 6,
+   "clear": [
+    [
+     595,
+     -50,
+     550
+    ],
+    [
+     595,
+     -49,
+     550
+    ],
+    [
+     596,
+     -50,
+     550
+    ],
+    [
+     596,
+     -49,
+     550
+    ],
+    [
+     597,
+     -50,
+     550
+    ],
+    [
+     597,
+     -49,
+     550
+    ]
+   ],
+   "place": [],
+   "reached": [
+    594,
+    -50,
+    550
+   ],
+   "place_cell_owners": []
+  }
+ },
+ "nearest_main_cell_within_1_block_height": {
+  "cell": [
+   594,
+   -50,
+   550
+  ],
+  "horizontal_manhattan": 4,
+  "dy": 0
+ }
+}
