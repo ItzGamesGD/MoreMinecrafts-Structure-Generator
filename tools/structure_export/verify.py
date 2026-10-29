@@ -1,0 +1,211 @@
+"""Independent validation of an exported structure template against its source .schem.
+
+Deliberately shares no code with the writer: it decodes both gzipped NBT files with its own
+minimal reader (no nbtlib), re-decodes the Sponge varints itself, and only reuses the pinned
+block reference JSON. It checks the template schema, every palette state against the target
+version, bounds/duplicates/palette indexes, and cell-by-cell equivalence with the source.
+"""
+
+from __future__ import annotations
+
+import gzip
+import json
+import struct
+from pathlib import Path
+
+END, BYTE, SHORT, INT, LONG, FLOAT, DOUBLE, BYTE_ARRAY, STRING, LIST, COMPOUND, INT_ARRAY, LONG_ARRAY = range(13)
+
+
+class VerificationError(Exception):
+    """The exported template is invalid or differs from its source."""
+
+
+def _check(condition, message) -> None:
+    if not condition:
+        raise VerificationError(message)
+
+
+class Tagged:
+    """A decoded value together with its NBT tag type (and list element type)."""
+
+    __slots__ = ("type", "value", "element")
+
+    def __init__(self, tag_type: int, value, element: int | None = None):
+        self.type, self.value, self.element = tag_type, value, element
+
+
+class _Reader:
+    def __init__(self, data: bytes):
+        self.data, self.at = data, 0
+
+    def take(self, fmt: str):
+        size = struct.calcsize(fmt)
+        values = struct.unpack_from(">" + fmt, self.data, self.at)
+        self.at += size
+        return values[0] if len(values) == 1 else values
+
+    def string(self) -> str:
+        length = self.take("H")
+        text = self.data[self.at : self.at + length].decode("utf-8")
+        self.at += length
+        return text
+
+    def payload(self, tag_type: int) -> Tagged:
+        simple = {BYTE: "b", SHORT: "h", INT: "i", LONG: "q", FLOAT: "f", DOUBLE: "d"}
+        if tag_type in simple:
+            return Tagged(tag_type, self.take(simple[tag_type]))
+        if tag_type == STRING:
+            return Tagged(tag_type, self.string())
+        if tag_type in (BYTE_ARRAY, INT_ARRAY, LONG_ARRAY):
+            n = self.take("i")
+            fmt = {BYTE_ARRAY: "b", INT_ARRAY: "i", LONG_ARRAY: "q"}[tag_type]
+            values = struct.unpack_from(f">{n}{fmt}", self.data, self.at)
+            self.at += struct.calcsize(f">{n}{fmt}")
+            return Tagged(tag_type, list(values))
+        if tag_type == LIST:
+            element, n = self.take("b"), self.take("i")
+            return Tagged(LIST, [self.payload(element) for _ in range(n)], element)
+        if tag_type == COMPOUND:
+            out = {}
+            while True:
+                child = self.take("b")
+                if child == END:
+                    return Tagged(COMPOUND, out)
+                name = self.string()
+                if name in out:
+                    raise ValueError(f"duplicate compound key {name!r}")
+                out[name] = self.payload(child)
+        raise ValueError(f"unknown tag type {tag_type}")
+
+
+def read_nbt(path: Path) -> tuple[str, Tagged]:
+    raw = Path(path).read_bytes()
+    if raw[:2] != b"\x1f\x8b":
+        raise ValueError(f"{path}: not gzip-compressed")
+    reader = _Reader(gzip.decompress(raw))
+    if reader.take("b") != COMPOUND:
+        raise ValueError(f"{path}: root is not a compound")
+    name = reader.string()
+    root = reader.payload(COMPOUND)
+    if reader.at != len(reader.data):
+        raise ValueError(f"{path}: {len(reader.data) - reader.at} trailing bytes")
+    return name, root
+
+
+def plain(tag: Tagged):
+    if tag.type == COMPOUND:
+        return {k: plain(v) for k, v in tag.value.items()}
+    if tag.type == LIST:
+        return [plain(v) for v in tag.value]
+    return tag.value
+
+
+def _source_cells(schem_path: Path) -> tuple[tuple[int, int, int], dict[tuple[int, int, int], str]]:
+    _, root = read_nbt(schem_path)
+    s = root.value["Schematic"].value
+    w, h, length = (s[k].value & 0xFFFF for k in ("Width", "Height", "Length"))
+    palette = {v.value: k for k, v in s["Blocks"].value["Palette"].value.items()}
+    data = bytes(b & 0xFF for b in s["Blocks"].value["Data"].value)
+    values, value, shift = [], 0, 0
+    for byte in data:
+        value |= (byte & 0x7F) << shift
+        if byte & 0x80:
+            shift += 7
+        else:
+            values.append(value)
+            value, shift = 0, 0
+    _check(len(values) == w * h * length, "source block count mismatch")
+    cells = {}
+    for i, v in enumerate(values):
+        y, rest = divmod(i, w * length)
+        z, x = divmod(rest, w)
+        cells[(x, y, z)] = palette[v]
+    return (w, h, length), cells
+
+
+def _complete(text: str, reference: dict) -> tuple[str, dict[str, str]]:
+    block_id, _, rest = text.partition("[")
+    props = dict(p.split("=", 1) for p in rest.rstrip("]").split(",")) if rest else {}
+    full = dict(reference["blocks"][block_id]["default"])
+    full.update(props)
+    return block_id, full
+
+
+def verify(nbt_path: Path, schem_path: Path, reference: dict, air: str) -> dict:
+    """Return a summary dict; raise VerificationError on the first violation."""
+    name, root = read_nbt(nbt_path)
+    _check(name == "", f"root name {name!r} (vanilla templates use an empty name)")
+    r = root.value
+    _check(set(r) == {"DataVersion", "size", "palette", "blocks", "entities"}, f"root keys {sorted(r)}")
+    _check(r["DataVersion"].type == INT and r["DataVersion"].value == reference["data_version"], "DataVersion")
+    _check(r["size"].type == LIST and r["size"].element == INT and len(r["size"].value) == 3, "size must be 3 ints")
+    size = tuple(v.value for v in r["size"].value)
+    _check(r["entities"].type == LIST and not r["entities"].value, "entities must be empty")
+    _check(r["palette"].type == LIST and r["palette"].element == COMPOUND, "palette must be a compound list")
+    palette = []
+    for entry in r["palette"].value:
+        e = entry.value
+        _check(set(e) <= {"id", "properties"} and "id" in e, f"palette entry keys {sorted(e)}")
+        _check(e["id"].type == STRING, "palette id must be a string")
+        block_id = e["id"].value
+        ref = reference["blocks"].get(block_id)
+        _check(ref is not None, f"{block_id} unknown in Minecraft {reference['minecraft_version']}")
+        props = {}
+        if "properties" in e:
+            _check(e["properties"].type == COMPOUND, f"{block_id}: properties must be a compound")
+            for k, v in e["properties"].value.items():
+                _check(v.type == STRING, f"{block_id}.{k} must be a string")
+                props[k] = v.value
+        _check(set(props) == set(ref["properties"]), f"{block_id}: incomplete state {props}")
+        for k, v in props.items():
+            _check(v in ref["properties"][k], f"{block_id}[{k}={v}] invalid")
+        _check(
+            not ref["block_entity"] and block_id not in ("minecraft:jigsaw", "minecraft:structure_void"),
+            f"{block_id} needs feature handling that the MVP does not provide",
+        )
+        palette.append((block_id, props))
+    _check(len({(b, tuple(sorted(p.items()))) for b, p in palette}) == len(palette), "duplicate palette states")
+    _check(r["blocks"].type == LIST and r["blocks"].element == COMPOUND, "blocks must be a compound list")
+    placed, used = {}, set()
+    for entry in r["blocks"].value:
+        e = entry.value
+        _check(set(e) == {"pos", "state"}, f"block entry keys {sorted(e)} (no block entities expected)")
+        _check(e["pos"].element == INT and e["state"].type == INT, "pos must be an int list and state an int")
+        pos = tuple(v.value for v in e["pos"].value)
+        _check(len(pos) == 3 and all(0 <= pos[i] < size[i] for i in range(3)), f"{pos} outside {size}")
+        _check(pos not in placed, f"duplicate block at {pos}")
+        state = e["state"].value
+        _check(0 <= state < len(palette), f"state index {state} out of range")
+        placed[pos] = palette[state]
+        used.add(state)
+    _check(used == set(range(len(palette))), "unused palette entries")
+
+    source_size, source = _source_cells(schem_path)
+    _check(size == source_size, f"size {size} != source {source_size}")
+    expected = {}
+    for pos, text in source.items():
+        block_id, props = _complete(text, reference)
+        if air == "omit" and block_id == "minecraft:air":
+            continue
+        expected[pos] = (block_id, props)
+    missing = sorted(set(expected) - set(placed))
+    extra = sorted(set(placed) - set(expected))
+    _check(not missing and not extra, f"missing {missing[:5]} extra {extra[:5]}")
+    wrong = [p for p in expected if expected[p] != placed[p]]
+    if wrong:
+        first = wrong[0]
+        raise VerificationError(f"{len(wrong)} cells differ, first {first}: {expected[first]} != {placed[first]}")
+    non_air = sum(1 for b, _ in placed.values() if b != "minecraft:air")
+    return {
+        "size": list(size),
+        "blocks": len(placed),
+        "non_air_blocks": non_air,
+        "palette": len(palette),
+        "source_cells": len(source),
+        "cells_compared": len(expected),
+        "mismatches": 0,
+    }
+
+
+def load_reference_json(path: Path) -> dict:
+    return json.loads(Path(path).read_text())

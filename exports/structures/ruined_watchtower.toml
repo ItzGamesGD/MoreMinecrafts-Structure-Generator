@@ -1,0 +1,24 @@
+# MVP sample: the Phase 3 ruined watchtower (mcbuild output) as a MoreMinecrafts structure template.
+# Sample/validation export only; it is not registered in MoreMinecrafts-Beta world generation.
+format = 1
+target = "26.3"  # pinned reference: tools/structure_export/reference/minecraft-26.3.json
+
+[source]
+path = "artifacts/phase-3/final/final.schem"
+sha256 = "38b5ed08fc34ed16bf1756735c87dc6ae06a493ccddab5041d3e80563dff01fd"
+data_version = 3953  # what the file declares (mcbuild writes 1.21.1); states are re-validated against the target
+
+[output]
+id = "moreminecrafts:mmst_samples/ruined_watchtower"
+datapack = "exports/datapack"  # writes exports/datapack/data/moreminecrafts/structure/mmst_samples/ruined_watchtower.nbt
+reports = "exports/reports"
+
+[expect]
+size = [11, 17, 11]
+offset = [0, 0, 0]
+
+[options]
+# mcbuild fills every unbuilt cell of the bounding box with air, so the schem cannot tell
+# authored air from filler. "include" keeps all of it (the template clears its box, like a
+# WorldEdit paste with air); "omit" leaves terrain in place wherever the schem has air.
+air = "include"
