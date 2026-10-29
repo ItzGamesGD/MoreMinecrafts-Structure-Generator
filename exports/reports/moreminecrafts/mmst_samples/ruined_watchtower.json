@@ -1,0 +1,78 @@
+{
+  "air": "include",
+  "blocks": 2057,
+  "cells": 2057,
+  "config": "exports/structures/ruined_watchtower.toml",
+  "converter_version": 1,
+  "defaulted_properties": {
+    "minecraft:spruce_stairs[facing=east,half=bottom,shape=straight]": [
+      "waterlogged"
+    ],
+    "minecraft:spruce_stairs[facing=west,half=bottom,shape=straight]": [
+      "waterlogged"
+    ],
+    "minecraft:stone_brick_stairs[facing=east,half=bottom,shape=straight]": [
+      "waterlogged"
+    ],
+    "minecraft:stone_brick_stairs[facing=north,half=bottom,shape=straight]": [
+      "waterlogged"
+    ],
+    "minecraft:stone_brick_wall": [
+      "east",
+      "north",
+      "south",
+      "up",
+      "waterlogged",
+      "west"
+    ]
+  },
+  "output": "exports/datapack/data/moreminecrafts/structure/mmst_samples/ruined_watchtower.nbt",
+  "output_sha256": "195f7acbf6e0fd84547ae6ade97fdbcee6b60d0afa497aa35dcf66a075fdfa60",
+  "palette": 12,
+  "size": [
+    11,
+    17,
+    11
+  ],
+  "source": {
+    "data_version": 3953,
+    "metadata_keys_ignored": [],
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "palette_entries": 12,
+    "path": "artifacts/phase-3/final/final.schem",
+    "sha256": "38b5ed08fc34ed16bf1756735c87dc6ae06a493ccddab5041d3e80563dff01fd",
+    "size": [
+      11,
+      17,
+      11
+    ],
+    "unused_palette_entries": []
+  },
+  "state_counts": {
+    "minecraft:air": 1409,
+    "minecraft:cobblestone": 50,
+    "minecraft:cracked_stone_bricks": 7,
+    "minecraft:mossy_stone_bricks": 18,
+    "minecraft:spruce_log[axis=z]": 25,
+    "minecraft:spruce_planks": 7,
+    "minecraft:spruce_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 17,
+    "minecraft:spruce_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 26,
+    "minecraft:stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 6,
+    "minecraft:stone_brick_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 1,
+    "minecraft:stone_brick_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=none]": 12,
+    "minecraft:stone_bricks": 479
+  },
+  "structure_id": "moreminecrafts:mmst_samples/ruined_watchtower",
+  "target": {
+    "data_version": 5023,
+    "minecraft_version": "26.3",
+    "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c"
+  },
+  "warnings": [
+    "minecraft:stone_brick_wall: connection properties ['east', 'north', 'south', 'up', 'west'] defaulted; jigsaw worldgen places templates without neighbour shape updates, so these stay unconnected"
+  ]
+}
