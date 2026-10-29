@@ -26,8 +26,13 @@ resolving from the top layer down sees every neighbour in its final state in one
 A neighbour outside the template box, or an air cell dropped by `air = "omit"`, is world terrain
 that is unknown at conversion time; it is treated as air (no connection, nothing above) and every
 block whose result depended on it is listed in the report. A neighbour whose relevant shape depends
-on its position or block entity (offset or dynamic-shape blocks) makes the block unresolved: it
-keeps the default state and is listed with the reason.
+on its position or block entity (offset or dynamic-shape blocks) makes only the property that
+depends on it unresolved, never the whole block: that property keeps its default and the block is
+listed with the reason, while every property that does not depend on it is still computed. In
+particular a wall whose block above has a position-dependent shape still connects to its wall
+neighbours (a connection never depends on the block above); only the height of those connections
+(tall/low, assumed `low`) and the post (`up`, kept at the default) are unresolved. This keeps the
+result symmetric: a neighbour that connects to this block is connected back (verify.py checks it).
 """
 
 from __future__ import annotations
@@ -167,11 +172,13 @@ class Connector:
             return None, "omitted_air"
         return self.cells[npos], None
 
-    def compute(self, pos: Pos, kind: str, keep: set[str]) -> tuple[dict[str, str], dict[str, str]]:
-        """Vanilla values for the computed properties not in `keep`, and the unknown neighbours used."""
+    def compute(self, pos: Pos, kind: str, keep: set[str]) -> tuple[dict[str, str], dict[str, str], list[str]]:
+        """Vanilla values for the computed properties not in `keep`, the unknown neighbours used, and the
+        reasons for every property that could not be resolved (those are absent from the values)."""
         block_id, props = self.cells[pos]
         own = self.rules.facts(self.cells[pos])
         unknown: dict[str, str] = {}
+        reasons: list[str] = []
 
         def look(direction: str) -> tuple[Cell | None, Facts]:
             cell, why = self.neighbour(pos, direction)
@@ -185,7 +192,7 @@ class Connector:
                 # FenceGateBlock.updateShape: on the facing.getClockWise() axis, in_wall = either side is(WALLS)
                 sides = [s for s in SIDES if AXIS[s] == AXIS[CLOCKWISE[props["facing"]]]]
                 out["in_wall"] = str(any("walls" in look(s)[1].tags for s in sides)).lower()
-            return out, unknown
+            return out, unknown, reasons
         if kind == "wall":
             above_cell, above = look("up")
             conn = {}
@@ -193,26 +200,48 @@ class Connector:
                 if side in keep:
                     continue
                 nb, f = look(side)
-                conn[side] = _wall_connects(nb, f, OPPOSITE[side])
-            covers = _covers(above) if conn and any(conn.values()) else None
+                try:
+                    conn[side] = _wall_connects(nb, f, OPPOSITE[side])
+                except Unresolved as reason:  # this side only: it keeps the default
+                    reasons.append(str(reason))
+            covers = None
+            if any(conn.values()):
+                try:
+                    covers = _covers(above)
+                except Unresolved as reason:  # connections are known, only their height is not (assume low)
+                    reasons.append(str(reason))
             sides = {}
             for side in SIDES:
                 if side in keep:
                     sides[side] = props[side]
-                else:  # WallBlock.makeWallState
-                    sides[side] = ("tall" if covers[side] else "low") if conn[side] else "none"
+                elif side in conn:  # WallBlock.makeWallState
+                    sides[side] = ("tall" if covers and covers[side] else "low") if conn[side] else "none"
                     out[side] = sides[side]
+                else:
+                    sides[side] = props[side]
             if "up" not in keep:
-                out["up"] = str(self._raise_post(sides, above_cell, above)).lower()
-            return out, unknown
+                try:
+                    if any(side not in conn and side not in keep for side in SIDES) or (
+                        covers is None and any(conn.values())
+                    ):  # the post reads every side's final state, including the assumed height
+                        raise Unresolved("the post depends on a side or a height that cannot be resolved")
+                    out["up"] = str(self._raise_post(sides, above_cell, above)).lower()
+                except Unresolved as reason:
+                    if str(reason) not in reasons:
+                        reasons.append(str(reason))
+            return out, unknown, reasons
         for side in SIDES:
             if side in keep:
                 continue
             nb, f = look(side)
             face = OPPOSITE[side]
-            connected = _fence_connects(own, nb, f, face) if kind == "fence" else _bars_connects(f, face)
+            try:
+                connected = _fence_connects(own, nb, f, face) if kind == "fence" else _bars_connects(f, face)
+            except Unresolved as reason:
+                reasons.append(str(reason))
+                continue
             out[side] = str(connected).lower()
-        return out, unknown
+        return out, unknown, reasons
 
     @staticmethod
     def _raise_post(sides: dict[str, str], above_cell: Cell | None, above: Facts) -> bool:
@@ -250,11 +279,8 @@ def connect(
             continue
         keep = set(explicit.get(pos, ())) & set(COMPUTED[kind])
         if keep:  # stated values are kept; note where vanilla would have computed something else
-            try:
-                vanilla, _ = connector.compute(pos, kind, set())
-            except Unresolved:
-                vanilla = {k: props[k] for k in keep}
-            for key in sorted(k for k in keep if props[k] != vanilla[k]):
+            vanilla, _, _ = connector.compute(pos, kind, set())
+            for key in sorted(k for k in keep if k in vanilla and props[k] != vanilla[k]):
                 differs.append(
                     {
                         "pos": list(pos),
@@ -267,11 +293,11 @@ def connect(
         if len(keep) == len(COMPUTED[kind]):
             continue
         computed += 1
-        try:
-            values, unknown = connector.compute(pos, kind, keep)
-        except Unresolved as reason:
-            unresolved.append({"pos": list(pos), "state": _state_text(cells[pos]), "reason": str(reason)})
-            continue
+        values, unknown, reasons = connector.compute(pos, kind, keep)
+        if reasons:
+            unresolved.append(
+                {"pos": list(pos), "state": _state_text(cells[pos]), "reason": "; ".join(dict.fromkeys(reasons))}
+            )
         if unknown:
             boundary.append({"pos": list(pos), "block": block_id, "unknown_neighbours": dict(sorted(unknown.items()))})
         diff = sorted(k for k, v in values.items() if props[k] != v)

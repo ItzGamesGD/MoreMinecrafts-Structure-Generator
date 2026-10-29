@@ -244,19 +244,36 @@ def test_fully_stated_connections_are_untouched(tmp_path):
     assert len(result.report["connectivity"]["explicit_differs_from_vanilla"]) == 2
 
 
-@pytest.mark.parametrize(
-    "blocks, reason",
-    [
-        ({(0, 0, 0): "minecraft:oak_fence", (1, 0, 0): "minecraft:scaffolding"}, "dynamic shape"),
-        ({(0, 0, 0): WALL, (1, 0, 0): WALL, (0, 1, 0): "minecraft:bamboo"}, "position-dependent"),
-    ],
-)
-def test_position_dependent_neighbours_are_unresolved(tmp_path, blocks, reason):
+def test_dynamic_neighbour_leaves_only_that_side_at_the_default(tmp_path):
+    result, out = build(tmp_path, {(0, 0, 0): "minecraft:oak_fence", (1, 0, 0): "minecraft:scaffolding"}, (2, 2, 1))
+    unresolved = result.report["connectivity"]["unresolved"]
+    assert len(unresolved) == 1 and "dynamic shape" in unresolved[0]["reason"]
+    assert out[0, 0, 0][1]["east"] == "false"  # kept at the default
+    assert any("kept default connections" in w for w in result.report["warnings"])
+
+
+def test_position_dependent_block_above_keeps_wall_connections_and_verifies(tmp_path):
+    # Regression (PR #47 audit): wall at (0,0,0) with bamboo above used to stay entirely at the default (east=none)
+    # while its east neighbour computed west=low, so connectivity.py and verify.py disagreed.
+    blocks = {(0, 0, 0): WALL, (1, 0, 0): WALL, (0, 1, 0): "minecraft:bamboo"}
     result, out = build(tmp_path, blocks, (2, 2, 1))
     unresolved = result.report["connectivity"]["unresolved"]
-    assert len(unresolved) == 1 and reason in unresolved[0]["reason"]
-    assert out[0, 0, 0][1]["east"] in ("none", "false")  # kept at the default
+    assert len(unresolved) == 1 and unresolved[0]["pos"] == [0, 0, 0]
+    assert "position-dependent" in unresolved[0]["reason"]
+    assert out[0, 0, 0][1]["east"] == "low" and out[1, 0, 0][1]["west"] == "low"  # symmetric, height assumed low
+    assert out[0, 0, 0][1]["up"] == "true"  # the post could not be resolved: default kept
     assert any("kept default connections" in w for w in result.report["warnings"])
+    reference, connectivity = C.load_reference("26.3"), C.load_connectivity("26.3")
+    verify(result.config.nbt_path, result.config.source, reference, "include", connectivity)
+
+
+def test_unresolved_neighbour_side_does_not_break_the_other_sides(tmp_path):
+    # wall between a wall (resolved) and scaffolding (dynamic): the wall side connects, the other side stays default
+    blocks = {(0, 0, 0): WALL, (1, 0, 0): WALL, (2, 0, 0): "minecraft:scaffolding"}
+    result, out = build(tmp_path, blocks, (3, 1, 1))
+    assert out[0, 0, 0][1]["east"] == "low" and out[1, 0, 0][1]["west"] == "low" and out[1, 0, 0][1]["east"] == "none"
+    reference, connectivity = C.load_reference("26.3"), C.load_connectivity("26.3")
+    verify(result.config.nbt_path, result.config.source, reference, "include", connectivity)
 
 
 def test_other_connection_properties_still_warn(tmp_path):
