@@ -62,5 +62,10 @@ $PY -m tools.structure_export live exports/structures/ruined_watchtower.toml --s
   `/place template ... strict` (knownShape, as in jigsaw worldgen), tests every cell with `execute if block`,
   and compares against a DataFixer probe (the source states in legacy layout at DataVersion 3953, upgraded by
   the game itself) with `execute if blocks ... all`.
-- MMB runtime (Fabric + MoreMinecrafts mod) is not run by this tool. MMB world generation registration
-  (template pool / structure / structure set) is out of scope until approved.
+- `mmb_probe/run_mmb_probe.sh <config> <mmb repo> <commit> <work dir>`: MMB runtime (Fabric gametest server
+  with the MoreMinecrafts mod). Clones MMB into the work dir (the source checkout is never touched), adds the
+  template to the clone's resources plus a throw-away gametest, loads it through
+  `StructureTemplateManager`, places it like `SinglePoolElement` (knownShape, flags 18) and compares every cell.
+  Needs `JAVA_HOME` = Java 25 JDK and network access for Gradle/Loom. Not run in CI.
+- Neither check registers the template in MMB world generation (template pool / structure / structure set);
+  that, and natural-generation behaviour, are out of scope until approved.
