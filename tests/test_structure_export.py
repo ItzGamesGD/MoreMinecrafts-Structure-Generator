@@ -96,10 +96,13 @@ def test_sample_is_reproducible_and_matches_committed_outputs():
 
 def test_sample_verifies_cell_for_cell_against_source():
     config = C.load_config(SAMPLE)
-    summary = verify(config.nbt_path, config.source, C.load_reference(config.target), config.air)
+    summary = verify(
+        config.nbt_path, config.source, C.load_reference(config.target), config.air, C.load_connectivity(config.target)
+    )
     assert summary["size"] == [11, 17, 11]
     assert summary["blocks"] == summary["source_cells"] == summary["cells_compared"] == 11 * 17 * 11
     assert summary["mismatches"] == 0
+    assert summary["connection_cells_computed"] == 12
 
 
 def test_sample_uses_the_vanilla_26_3_template_schema():
@@ -111,8 +114,9 @@ def test_sample_uses_the_vanilla_26_3_template_schema():
         assert set(entry.value) <= {"id", "properties"}  # 26.3 layout, not legacy Name/Properties
 
 
-def test_sample_report_flags_unconnected_walls():
+def test_sample_walls_get_their_connections():
     report = C.convert(C.load_config(SAMPLE)).report
+    # the source still omits them (defaulted_properties keeps its meaning) ...
     assert report["defaulted_properties"]["minecraft:stone_brick_wall"] == [
         "east",
         "north",
@@ -121,7 +125,14 @@ def test_sample_report_flags_unconnected_walls():
         "waterlogged",
         "west",
     ]
-    assert any("stone_brick_wall" in w for w in report["warnings"])
+    # ... but all 12 walls are now connected instead of standing as lone posts
+    connectivity = report["connectivity"]
+    assert connectivity["computed_blocks"] == connectivity["corrected_blocks"] == 12
+    assert connectivity["corrected_properties"] == {"east": 8, "up": 8, "west": 12}
+    lone_post = "minecraft:stone_brick_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=none]"
+    assert lone_post not in report["state_counts"]
+    assert [b["unknown_neighbours"] for b in connectivity["boundary_unresolved"]] == [{"east": "outside_template"}] * 3
+    assert not any("stay unconnected" in w for w in report["warnings"])
 
 
 def test_reference_is_pinned_to_the_26_3_server_jar():

@@ -10,6 +10,9 @@ reference generated from the real server jar (reference/minecraft-<target>.json)
 that does not exist in the target version is an error; nothing is renamed or relabelled.
 Properties the source leaves out are filled with the target's default state, which is what the
 game itself does when it reads a partial state, and every such fill is listed in the report.
+Left-out connection properties of walls, fences, panes/bars and fence gates are then computed from
+the neighbouring cells by the vanilla rules (connectivity.py), because jigsaw world generation does
+not recompute them.
 """
 
 from __future__ import annotations
@@ -28,12 +31,13 @@ from pathlib import Path
 import nbtlib
 from nbtlib.tag import Compound, Int, List, String
 
+from .connectivity import Rules, connect, load_connectivity
 from .errors import BlockStateError, ConfigError, UnsupportedFeature
 from .schem import Schematic, parse_state, read_schematic
 
 ROOT = Path(__file__).resolve().parents[2]
 REFERENCE_DIR = Path(__file__).resolve().parent / "reference"
-CONVERTER_VERSION = 1
+CONVERTER_VERSION = 2
 _ID_RE = re.compile(r"^([a-z0-9_.-]+):([a-z0-9_-]+(?:/[a-z0-9_.-]+)*)$")
 
 # Extension point. Blocks whose correct conversion needs more than an id and properties are
@@ -42,9 +46,10 @@ _ID_RE = re.compile(r"^([a-z0-9_.-]+):([a-z0-9_-]+(?:/[a-z0-9_.-]+)*)$")
 # attach (or raise). Planned: "jigsaw" (connector data), "block_entity" (chests, spawners, ...),
 # "structure_void" (omit the cell instead of placing a block). Entities and multi-piece
 # structures are rejected earlier, in the schem reader and the config loader.
-# Neighbour-dependent properties (walls, fences, panes, bars, ...). Jigsaw pool elements are placed
-# with StructurePlaceSettings.knownShape = true (SinglePoolElement in the 26.3 jar), so the game does
-# not recompute them; a default here is what generates in the world.
+# Neighbour-dependent properties. Jigsaw pool elements are placed with StructurePlaceSettings.knownShape
+# = true (SinglePoolElement in the 26.3 jar), so the game does not recompute them. connectivity.py
+# computes them for walls, fences, panes/bars and fence gates; on any other block (vines, chorus,
+# redstone wire, ...) a default here is what generates in the world, and the report warns.
 CONNECTION_PROPERTIES = {"north", "east", "south", "west", "up", "down"}
 
 FEATURE_HANDLERS: dict[str, Callable[[str, dict[str, str], tuple[int, int, int]], Compound]] = {}
@@ -215,7 +220,9 @@ def convert(config: Config) -> Result:
     _check_source(config, raw, schem)
 
     used = sorted(set(schem.cells))
+    rules = Rules(load_connectivity(config.target))
     resolved: dict[int, tuple[str, tuple[tuple[str, str], ...]] | None] = {}
+    explicit: dict[int, set[str]] = {}
     defaulted: dict[str, list[str]] = {}
     warnings: list[str] = []
     for index in used:
@@ -230,20 +237,36 @@ def convert(config: Config) -> Result:
         if filled:
             defaulted[text] = filled
             unconnected = sorted(set(filled) & CONNECTION_PROPERTIES)
-            if unconnected:
+            if unconnected and rules.kind(block_id) is None:
                 warnings.append(
-                    f"{text}: connection properties {unconnected} defaulted; jigsaw worldgen places "
-                    "templates without neighbour shape updates, so these stay unconnected"
+                    f"{text}: connection properties {unconnected} defaulted and not computed for this block; "
+                    "jigsaw worldgen places templates without neighbour shape updates, so these stay unconnected"
                 )
+        explicit[index] = set(props)
         resolved[index] = None if (config.air == "omit" and block_id == "minecraft:air") else (block_id, state)
 
-    cells = {}
+    found, stated = {}, {}
     for index, palette_index in enumerate(schem.cells):
         state = resolved[palette_index]
         if state is not None:
-            cells[schem.position(index)] = state
-    if not cells:
+            pos = schem.position(index)
+            found[pos] = (state[0], dict(state[1]))
+            stated[pos] = explicit[palette_index]
+    if not found:
         raise ConfigError(f"{config.source.name}: no blocks left to export")
+    found, connectivity = connect(found, stated, schem.size, load_connectivity(config.target))
+    cells = {pos: (block_id, tuple(sorted(props.items()))) for pos, (block_id, props) in found.items()}
+    if connectivity["boundary_unresolved"]:
+        warnings.append(
+            f"{len(connectivity['boundary_unresolved'])} connecting blocks border the template box or omitted air; "
+            "their connections toward that unknown terrain were computed as if it were air "
+            "(connectivity.boundary_unresolved)"
+        )
+    if connectivity["unresolved"]:
+        warnings.append(
+            f"{len(connectivity['unresolved'])} connecting blocks kept default connections because a neighbour's "
+            "shape depends on its position or block entity (connectivity.unresolved)"
+        )
 
     palette: list[tuple[str, tuple[tuple[str, str], ...]]] = []
     lookup: dict = {}
@@ -305,6 +328,7 @@ def convert(config: Config) -> Result:
         "blocks": len(blocks),
         "palette": len(palette),
         "defaulted_properties": defaulted,
+        "connectivity": connectivity,
         "warnings": warnings,
         "state_counts": dict(sorted(counts.items())),
     }
