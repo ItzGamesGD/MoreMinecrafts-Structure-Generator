@@ -1,0 +1,3274 @@
+{
+ "0": [
+  {
+   "placement": "GROUND-NE",
+   "module": "MQ-NE",
+   "file": "st03_ground_ne.nbt",
+   "order": 1,
+   "rotation": "none",
+   "origin": [
+    56,
+    0,
+    5
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    56,
+    5,
+    106,
+    55
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "GROUND-NW",
+   "module": "MQ-NW",
+   "file": "st03_ground_nw.nbt",
+   "order": 1,
+   "rotation": "none",
+   "origin": [
+    5,
+    0,
+    5
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    5,
+    5,
+    55,
+    55
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "GROUND-SE",
+   "module": "MQ-SE",
+   "file": "st03_ground_se.nbt",
+   "order": 1,
+   "rotation": "none",
+   "origin": [
+    56,
+    0,
+    56
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    56,
+    56,
+    106,
+    106
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "GROUND-SW",
+   "module": "MQ-SW",
+   "file": "st03_ground_sw.nbt",
+   "order": 1,
+   "rotation": "none",
+   "origin": [
+    5,
+    0,
+    56
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    5,
+    56,
+    55,
+    106
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-NE",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "clockwise_90",
+   "origin": [
+    111,
+    0,
+    0
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    99,
+    0,
+    111,
+    12
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-NW",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "none",
+   "origin": [
+    0,
+    0,
+    0
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    0,
+    0,
+    12,
+    12
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-SE",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "180",
+   "origin": [
+    111,
+    0,
+    111
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    99,
+    99,
+    111,
+    111
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-SW",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    0,
+    0,
+    111
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    0,
+    99,
+    12,
+    111
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "W-E",
+   "module": "MW86",
+   "file": "st03_wall_86.nbt",
+   "order": 3,
+   "rotation": "clockwise_90",
+   "origin": [
+    111,
+    0,
+    13
+   ],
+   "size": [
+    86,
+    13,
+    5
+   ],
+   "footprint": [
+    107,
+    13,
+    111,
+    98
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-N",
+   "module": "MW86",
+   "file": "st03_wall_86.nbt",
+   "order": 3,
+   "rotation": "none",
+   "origin": [
+    13,
+    0,
+    0
+   ],
+   "size": [
+    86,
+    13,
+    5
+   ],
+   "footprint": [
+    13,
+    0,
+    98,
+    4
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-SE",
+   "module": "MW31",
+   "file": "st03_wall_31.nbt",
+   "order": 3,
+   "rotation": "180",
+   "origin": [
+    98,
+    0,
+    111
+   ],
+   "size": [
+    31,
+    13,
+    5
+   ],
+   "footprint": [
+    68,
+    107,
+    98,
+    111
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-SW",
+   "module": "MW31",
+   "file": "st03_wall_31.nbt",
+   "order": 3,
+   "rotation": "180",
+   "origin": [
+    43,
+    0,
+    111
+   ],
+   "size": [
+    31,
+    13,
+    5
+   ],
+   "footprint": [
+    13,
+    107,
+    43,
+    111
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-W",
+   "module": "MW86",
+   "file": "st03_wall_86.nbt",
+   "order": 3,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    0,
+    0,
+    98
+   ],
+   "size": [
+    86,
+    13,
+    5
+   ],
+   "footprint": [
+    0,
+    13,
+    4,
+    98
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "GATE",
+   "module": "MG",
+   "file": "st03_gatehouse.nbt",
+   "order": 4,
+   "rotation": "none",
+   "origin": [
+    44,
+    0,
+    100
+   ],
+   "size": [
+    24,
+    20,
+    12
+   ],
+   "footprint": [
+    44,
+    100,
+    67,
+    111
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F01",
+   "module": "M-manor",
+   "file": "st03_manor.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    48,
+    0,
+    11
+   ],
+   "size": [
+    17,
+    23,
+    15
+   ],
+   "footprint": [
+    48,
+    11,
+    64,
+    25
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F02",
+   "module": "M-barracks_a",
+   "file": "st03_barracks_a.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    24,
+    0,
+    24
+   ],
+   "size": [
+    13,
+    12,
+    11
+   ],
+   "footprint": [
+    24,
+    24,
+    36,
+    34
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F03",
+   "module": "M-barracks_b",
+   "file": "st03_barracks_b.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    75,
+    0,
+    24
+   ],
+   "size": [
+    13,
+    12,
+    11
+   ],
+   "footprint": [
+    75,
+    24,
+    87,
+    34
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F04",
+   "module": "M-barracks_c",
+   "file": "st03_barracks_c.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    75,
+    0,
+    39
+   ],
+   "size": [
+    13,
+    12,
+    11
+   ],
+   "footprint": [
+    75,
+    39,
+    87,
+    49
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F05",
+   "module": "M-armory",
+   "file": "st03_armory.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    12,
+    0,
+    39
+   ],
+   "size": [
+    17,
+    12,
+    13
+   ],
+   "footprint": [
+    12,
+    39,
+    28,
+    51
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F06",
+   "module": "M-yard",
+   "file": "st03_yard.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    12,
+    0,
+    52
+   ],
+   "size": [
+    25,
+    5,
+    21
+   ],
+   "footprint": [
+    12,
+    52,
+    36,
+    72
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F07",
+   "module": "M-warehouse_a",
+   "file": "st03_warehouse_a.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    10,
+    0,
+    79
+   ],
+   "size": [
+    15,
+    12,
+    13
+   ],
+   "footprint": [
+    10,
+    79,
+    24,
+    91
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F08",
+   "module": "M-warehouse_b",
+   "file": "st03_warehouse_b.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    75,
+    0,
+    53
+   ],
+   "size": [
+    13,
+    12,
+    15
+   ],
+   "footprint": [
+    75,
+    53,
+    87,
+    67
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F09",
+   "module": "M-prison",
+   "file": "st03_prison.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    92,
+    0,
+    62
+   ],
+   "size": [
+    11,
+    10,
+    13
+   ],
+   "footprint": [
+    92,
+    62,
+    102,
+    74
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F10",
+   "module": "M-stable",
+   "file": "st03_stable.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    77,
+    0,
+    79
+   ],
+   "size": [
+    17,
+    13,
+    13
+   ],
+   "footprint": [
+    77,
+    79,
+    93,
+    91
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F11",
+   "module": "M-house_a",
+   "file": "st03_house_a.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    14,
+    0,
+    11
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    14,
+    11,
+    22,
+    17
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F12",
+   "module": "M-house_b",
+   "file": "st03_house_b.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    26,
+    0,
+    11
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    26,
+    11,
+    34,
+    17
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F13",
+   "module": "M-house_c",
+   "file": "st03_house_c.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    14,
+    0,
+    22
+   ],
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "footprint": [
+    14,
+    22,
+    20,
+    28
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F14",
+   "module": "M-house_a",
+   "file": "st03_house_a.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    89,
+    0,
+    11
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    89,
+    11,
+    97,
+    17
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F15",
+   "module": "M-house_b",
+   "file": "st03_house_b.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    76,
+    0,
+    11
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    76,
+    11,
+    84,
+    17
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F16",
+   "module": "M-house_c",
+   "file": "st03_house_c.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    92,
+    0,
+    22
+   ],
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "footprint": [
+    92,
+    22,
+    98,
+    28
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F17",
+   "module": "M-house_d",
+   "file": "st03_house_d.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    92,
+    0,
+    40
+   ],
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "footprint": [
+    92,
+    40,
+    98,
+    46
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F18",
+   "module": "M-kitchen",
+   "file": "st03_kitchen.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    92,
+    0,
+    50
+   ],
+   "size": [
+    9,
+    11,
+    9
+   ],
+   "footprint": [
+    92,
+    50,
+    100,
+    58
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F19",
+   "module": "M-smithy",
+   "file": "st03_smithy.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    28,
+    0,
+    79
+   ],
+   "size": [
+    9,
+    11,
+    9
+   ],
+   "footprint": [
+    28,
+    79,
+    36,
+    87
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F20",
+   "module": "M-cart_shed",
+   "file": "st03_cart_shed.nbt",
+   "order": 5,
+   "rotation": "none",
+   "origin": [
+    44,
+    0,
+    82
+   ],
+   "size": [
+    8,
+    9,
+    7
+   ],
+   "footprint": [
+    44,
+    82,
+    51,
+    88
+   ],
+   "air": "include"
+  }
+ ],
+ "1": [
+  {
+   "placement": "GROUND-NE",
+   "module": "MQ-NE",
+   "file": "st03_ground_ne.nbt",
+   "order": 1,
+   "rotation": "clockwise_90",
+   "origin": [
+    106,
+    0,
+    56
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    56,
+    56,
+    106,
+    106
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "GROUND-NW",
+   "module": "MQ-NW",
+   "file": "st03_ground_nw.nbt",
+   "order": 1,
+   "rotation": "clockwise_90",
+   "origin": [
+    106,
+    0,
+    5
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    56,
+    5,
+    106,
+    55
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "GROUND-SE",
+   "module": "MQ-SE",
+   "file": "st03_ground_se.nbt",
+   "order": 1,
+   "rotation": "clockwise_90",
+   "origin": [
+    55,
+    0,
+    56
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    5,
+    56,
+    55,
+    106
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "GROUND-SW",
+   "module": "MQ-SW",
+   "file": "st03_ground_sw.nbt",
+   "order": 1,
+   "rotation": "clockwise_90",
+   "origin": [
+    55,
+    0,
+    5
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    5,
+    5,
+    55,
+    55
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-NE",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "180",
+   "origin": [
+    111,
+    0,
+    111
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    99,
+    99,
+    111,
+    111
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-NW",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "clockwise_90",
+   "origin": [
+    111,
+    0,
+    0
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    99,
+    0,
+    111,
+    12
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-SE",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    0,
+    0,
+    111
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    0,
+    99,
+    12,
+    111
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-SW",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "none",
+   "origin": [
+    0,
+    0,
+    0
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    0,
+    0,
+    12,
+    12
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "W-E",
+   "module": "MW86",
+   "file": "st03_wall_86.nbt",
+   "order": 3,
+   "rotation": "180",
+   "origin": [
+    98,
+    0,
+    111
+   ],
+   "size": [
+    86,
+    13,
+    5
+   ],
+   "footprint": [
+    13,
+    107,
+    98,
+    111
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-N",
+   "module": "MW86",
+   "file": "st03_wall_86.nbt",
+   "order": 3,
+   "rotation": "clockwise_90",
+   "origin": [
+    111,
+    0,
+    13
+   ],
+   "size": [
+    86,
+    13,
+    5
+   ],
+   "footprint": [
+    107,
+    13,
+    111,
+    98
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-SE",
+   "module": "MW31",
+   "file": "st03_wall_31.nbt",
+   "order": 3,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    0,
+    0,
+    98
+   ],
+   "size": [
+    31,
+    13,
+    5
+   ],
+   "footprint": [
+    0,
+    68,
+    4,
+    98
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-SW",
+   "module": "MW31",
+   "file": "st03_wall_31.nbt",
+   "order": 3,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    0,
+    0,
+    43
+   ],
+   "size": [
+    31,
+    13,
+    5
+   ],
+   "footprint": [
+    0,
+    13,
+    4,
+    43
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-W",
+   "module": "MW86",
+   "file": "st03_wall_86.nbt",
+   "order": 3,
+   "rotation": "none",
+   "origin": [
+    13,
+    0,
+    0
+   ],
+   "size": [
+    86,
+    13,
+    5
+   ],
+   "footprint": [
+    13,
+    0,
+    98,
+    4
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "GATE",
+   "module": "MG",
+   "file": "st03_gatehouse.nbt",
+   "order": 4,
+   "rotation": "clockwise_90",
+   "origin": [
+    11,
+    0,
+    44
+   ],
+   "size": [
+    24,
+    20,
+    12
+   ],
+   "footprint": [
+    0,
+    44,
+    11,
+    67
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F01",
+   "module": "M-manor",
+   "file": "st03_manor.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    100,
+    0,
+    48
+   ],
+   "size": [
+    17,
+    23,
+    15
+   ],
+   "footprint": [
+    86,
+    48,
+    100,
+    64
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F02",
+   "module": "M-barracks_a",
+   "file": "st03_barracks_a.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    87,
+    0,
+    24
+   ],
+   "size": [
+    13,
+    12,
+    11
+   ],
+   "footprint": [
+    77,
+    24,
+    87,
+    36
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F03",
+   "module": "M-barracks_b",
+   "file": "st03_barracks_b.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    87,
+    0,
+    75
+   ],
+   "size": [
+    13,
+    12,
+    11
+   ],
+   "footprint": [
+    77,
+    75,
+    87,
+    87
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F04",
+   "module": "M-barracks_c",
+   "file": "st03_barracks_c.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    72,
+    0,
+    75
+   ],
+   "size": [
+    13,
+    12,
+    11
+   ],
+   "footprint": [
+    62,
+    75,
+    72,
+    87
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F05",
+   "module": "M-armory",
+   "file": "st03_armory.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    72,
+    0,
+    12
+   ],
+   "size": [
+    17,
+    12,
+    13
+   ],
+   "footprint": [
+    60,
+    12,
+    72,
+    28
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F06",
+   "module": "M-yard",
+   "file": "st03_yard.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    59,
+    0,
+    12
+   ],
+   "size": [
+    25,
+    5,
+    21
+   ],
+   "footprint": [
+    39,
+    12,
+    59,
+    36
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F07",
+   "module": "M-warehouse_a",
+   "file": "st03_warehouse_a.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    32,
+    0,
+    10
+   ],
+   "size": [
+    15,
+    12,
+    13
+   ],
+   "footprint": [
+    20,
+    10,
+    32,
+    24
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F08",
+   "module": "M-warehouse_b",
+   "file": "st03_warehouse_b.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    58,
+    0,
+    75
+   ],
+   "size": [
+    13,
+    12,
+    15
+   ],
+   "footprint": [
+    44,
+    75,
+    58,
+    87
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F09",
+   "module": "M-prison",
+   "file": "st03_prison.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    49,
+    0,
+    92
+   ],
+   "size": [
+    11,
+    10,
+    13
+   ],
+   "footprint": [
+    37,
+    92,
+    49,
+    102
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F10",
+   "module": "M-stable",
+   "file": "st03_stable.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    32,
+    0,
+    77
+   ],
+   "size": [
+    17,
+    13,
+    13
+   ],
+   "footprint": [
+    20,
+    77,
+    32,
+    93
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F11",
+   "module": "M-house_a",
+   "file": "st03_house_a.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    100,
+    0,
+    14
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    94,
+    14,
+    100,
+    22
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F12",
+   "module": "M-house_b",
+   "file": "st03_house_b.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    100,
+    0,
+    26
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    94,
+    26,
+    100,
+    34
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F13",
+   "module": "M-house_c",
+   "file": "st03_house_c.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    89,
+    0,
+    14
+   ],
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "footprint": [
+    83,
+    14,
+    89,
+    20
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F14",
+   "module": "M-house_a",
+   "file": "st03_house_a.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    100,
+    0,
+    89
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    94,
+    89,
+    100,
+    97
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F15",
+   "module": "M-house_b",
+   "file": "st03_house_b.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    100,
+    0,
+    76
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    94,
+    76,
+    100,
+    84
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F16",
+   "module": "M-house_c",
+   "file": "st03_house_c.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    89,
+    0,
+    92
+   ],
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "footprint": [
+    83,
+    92,
+    89,
+    98
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F17",
+   "module": "M-house_d",
+   "file": "st03_house_d.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    71,
+    0,
+    92
+   ],
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "footprint": [
+    65,
+    92,
+    71,
+    98
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F18",
+   "module": "M-kitchen",
+   "file": "st03_kitchen.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    61,
+    0,
+    92
+   ],
+   "size": [
+    9,
+    11,
+    9
+   ],
+   "footprint": [
+    53,
+    92,
+    61,
+    100
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F19",
+   "module": "M-smithy",
+   "file": "st03_smithy.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    32,
+    0,
+    28
+   ],
+   "size": [
+    9,
+    11,
+    9
+   ],
+   "footprint": [
+    24,
+    28,
+    32,
+    36
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F20",
+   "module": "M-cart_shed",
+   "file": "st03_cart_shed.nbt",
+   "order": 5,
+   "rotation": "clockwise_90",
+   "origin": [
+    29,
+    0,
+    44
+   ],
+   "size": [
+    8,
+    9,
+    7
+   ],
+   "footprint": [
+    23,
+    44,
+    29,
+    51
+   ],
+   "air": "include"
+  }
+ ],
+ "2": [
+  {
+   "placement": "GROUND-NE",
+   "module": "MQ-NE",
+   "file": "st03_ground_ne.nbt",
+   "order": 1,
+   "rotation": "180",
+   "origin": [
+    55,
+    0,
+    106
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    5,
+    56,
+    55,
+    106
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "GROUND-NW",
+   "module": "MQ-NW",
+   "file": "st03_ground_nw.nbt",
+   "order": 1,
+   "rotation": "180",
+   "origin": [
+    106,
+    0,
+    106
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    56,
+    56,
+    106,
+    106
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "GROUND-SE",
+   "module": "MQ-SE",
+   "file": "st03_ground_se.nbt",
+   "order": 1,
+   "rotation": "180",
+   "origin": [
+    55,
+    0,
+    55
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    5,
+    5,
+    55,
+    55
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "GROUND-SW",
+   "module": "MQ-SW",
+   "file": "st03_ground_sw.nbt",
+   "order": 1,
+   "rotation": "180",
+   "origin": [
+    106,
+    0,
+    55
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    56,
+    5,
+    106,
+    55
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-NE",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    0,
+    0,
+    111
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    0,
+    99,
+    12,
+    111
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-NW",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "180",
+   "origin": [
+    111,
+    0,
+    111
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    99,
+    99,
+    111,
+    111
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-SE",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "none",
+   "origin": [
+    0,
+    0,
+    0
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    0,
+    0,
+    12,
+    12
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-SW",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "clockwise_90",
+   "origin": [
+    111,
+    0,
+    0
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    99,
+    0,
+    111,
+    12
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "W-E",
+   "module": "MW86",
+   "file": "st03_wall_86.nbt",
+   "order": 3,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    0,
+    0,
+    98
+   ],
+   "size": [
+    86,
+    13,
+    5
+   ],
+   "footprint": [
+    0,
+    13,
+    4,
+    98
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-N",
+   "module": "MW86",
+   "file": "st03_wall_86.nbt",
+   "order": 3,
+   "rotation": "180",
+   "origin": [
+    98,
+    0,
+    111
+   ],
+   "size": [
+    86,
+    13,
+    5
+   ],
+   "footprint": [
+    13,
+    107,
+    98,
+    111
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-SE",
+   "module": "MW31",
+   "file": "st03_wall_31.nbt",
+   "order": 3,
+   "rotation": "none",
+   "origin": [
+    13,
+    0,
+    0
+   ],
+   "size": [
+    31,
+    13,
+    5
+   ],
+   "footprint": [
+    13,
+    0,
+    43,
+    4
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-SW",
+   "module": "MW31",
+   "file": "st03_wall_31.nbt",
+   "order": 3,
+   "rotation": "none",
+   "origin": [
+    68,
+    0,
+    0
+   ],
+   "size": [
+    31,
+    13,
+    5
+   ],
+   "footprint": [
+    68,
+    0,
+    98,
+    4
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-W",
+   "module": "MW86",
+   "file": "st03_wall_86.nbt",
+   "order": 3,
+   "rotation": "clockwise_90",
+   "origin": [
+    111,
+    0,
+    13
+   ],
+   "size": [
+    86,
+    13,
+    5
+   ],
+   "footprint": [
+    107,
+    13,
+    111,
+    98
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "GATE",
+   "module": "MG",
+   "file": "st03_gatehouse.nbt",
+   "order": 4,
+   "rotation": "180",
+   "origin": [
+    67,
+    0,
+    11
+   ],
+   "size": [
+    24,
+    20,
+    12
+   ],
+   "footprint": [
+    44,
+    0,
+    67,
+    11
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F01",
+   "module": "M-manor",
+   "file": "st03_manor.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    63,
+    0,
+    100
+   ],
+   "size": [
+    17,
+    23,
+    15
+   ],
+   "footprint": [
+    47,
+    86,
+    63,
+    100
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F02",
+   "module": "M-barracks_a",
+   "file": "st03_barracks_a.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    87,
+    0,
+    87
+   ],
+   "size": [
+    13,
+    12,
+    11
+   ],
+   "footprint": [
+    75,
+    77,
+    87,
+    87
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F03",
+   "module": "M-barracks_b",
+   "file": "st03_barracks_b.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    36,
+    0,
+    87
+   ],
+   "size": [
+    13,
+    12,
+    11
+   ],
+   "footprint": [
+    24,
+    77,
+    36,
+    87
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F04",
+   "module": "M-barracks_c",
+   "file": "st03_barracks_c.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    36,
+    0,
+    72
+   ],
+   "size": [
+    13,
+    12,
+    11
+   ],
+   "footprint": [
+    24,
+    62,
+    36,
+    72
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F05",
+   "module": "M-armory",
+   "file": "st03_armory.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    99,
+    0,
+    72
+   ],
+   "size": [
+    17,
+    12,
+    13
+   ],
+   "footprint": [
+    83,
+    60,
+    99,
+    72
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F06",
+   "module": "M-yard",
+   "file": "st03_yard.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    99,
+    0,
+    59
+   ],
+   "size": [
+    25,
+    5,
+    21
+   ],
+   "footprint": [
+    75,
+    39,
+    99,
+    59
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F07",
+   "module": "M-warehouse_a",
+   "file": "st03_warehouse_a.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    101,
+    0,
+    32
+   ],
+   "size": [
+    15,
+    12,
+    13
+   ],
+   "footprint": [
+    87,
+    20,
+    101,
+    32
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F08",
+   "module": "M-warehouse_b",
+   "file": "st03_warehouse_b.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    36,
+    0,
+    58
+   ],
+   "size": [
+    13,
+    12,
+    15
+   ],
+   "footprint": [
+    24,
+    44,
+    36,
+    58
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F09",
+   "module": "M-prison",
+   "file": "st03_prison.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    19,
+    0,
+    49
+   ],
+   "size": [
+    11,
+    10,
+    13
+   ],
+   "footprint": [
+    9,
+    37,
+    19,
+    49
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F10",
+   "module": "M-stable",
+   "file": "st03_stable.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    34,
+    0,
+    32
+   ],
+   "size": [
+    17,
+    13,
+    13
+   ],
+   "footprint": [
+    18,
+    20,
+    34,
+    32
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F11",
+   "module": "M-house_a",
+   "file": "st03_house_a.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    97,
+    0,
+    100
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    89,
+    94,
+    97,
+    100
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F12",
+   "module": "M-house_b",
+   "file": "st03_house_b.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    85,
+    0,
+    100
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    77,
+    94,
+    85,
+    100
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F13",
+   "module": "M-house_c",
+   "file": "st03_house_c.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    97,
+    0,
+    89
+   ],
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "footprint": [
+    91,
+    83,
+    97,
+    89
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F14",
+   "module": "M-house_a",
+   "file": "st03_house_a.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    22,
+    0,
+    100
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    14,
+    94,
+    22,
+    100
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F15",
+   "module": "M-house_b",
+   "file": "st03_house_b.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    35,
+    0,
+    100
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    27,
+    94,
+    35,
+    100
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F16",
+   "module": "M-house_c",
+   "file": "st03_house_c.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    19,
+    0,
+    89
+   ],
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "footprint": [
+    13,
+    83,
+    19,
+    89
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F17",
+   "module": "M-house_d",
+   "file": "st03_house_d.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    19,
+    0,
+    71
+   ],
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "footprint": [
+    13,
+    65,
+    19,
+    71
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F18",
+   "module": "M-kitchen",
+   "file": "st03_kitchen.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    19,
+    0,
+    61
+   ],
+   "size": [
+    9,
+    11,
+    9
+   ],
+   "footprint": [
+    11,
+    53,
+    19,
+    61
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F19",
+   "module": "M-smithy",
+   "file": "st03_smithy.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    83,
+    0,
+    32
+   ],
+   "size": [
+    9,
+    11,
+    9
+   ],
+   "footprint": [
+    75,
+    24,
+    83,
+    32
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F20",
+   "module": "M-cart_shed",
+   "file": "st03_cart_shed.nbt",
+   "order": 5,
+   "rotation": "180",
+   "origin": [
+    67,
+    0,
+    29
+   ],
+   "size": [
+    8,
+    9,
+    7
+   ],
+   "footprint": [
+    60,
+    23,
+    67,
+    29
+   ],
+   "air": "include"
+  }
+ ],
+ "3": [
+  {
+   "placement": "GROUND-NE",
+   "module": "MQ-NE",
+   "file": "st03_ground_ne.nbt",
+   "order": 1,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    5,
+    0,
+    55
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    5,
+    5,
+    55,
+    55
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "GROUND-NW",
+   "module": "MQ-NW",
+   "file": "st03_ground_nw.nbt",
+   "order": 1,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    5,
+    0,
+    106
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    5,
+    56,
+    55,
+    106
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "GROUND-SE",
+   "module": "MQ-SE",
+   "file": "st03_ground_se.nbt",
+   "order": 1,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    56,
+    0,
+    55
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    56,
+    5,
+    106,
+    55
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "GROUND-SW",
+   "module": "MQ-SW",
+   "file": "st03_ground_sw.nbt",
+   "order": 1,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    56,
+    0,
+    106
+   ],
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "footprint": [
+    56,
+    56,
+    106,
+    106
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-NE",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "none",
+   "origin": [
+    0,
+    0,
+    0
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    0,
+    0,
+    12,
+    12
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-NW",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    0,
+    0,
+    111
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    0,
+    99,
+    12,
+    111
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-SE",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "clockwise_90",
+   "origin": [
+    111,
+    0,
+    0
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    99,
+    0,
+    111,
+    12
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "T-SW",
+   "module": "MT",
+   "file": "st03_tower.nbt",
+   "order": 2,
+   "rotation": "180",
+   "origin": [
+    111,
+    0,
+    111
+   ],
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "footprint": [
+    99,
+    99,
+    111,
+    111
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "W-E",
+   "module": "MW86",
+   "file": "st03_wall_86.nbt",
+   "order": 3,
+   "rotation": "none",
+   "origin": [
+    13,
+    0,
+    0
+   ],
+   "size": [
+    86,
+    13,
+    5
+   ],
+   "footprint": [
+    13,
+    0,
+    98,
+    4
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-N",
+   "module": "MW86",
+   "file": "st03_wall_86.nbt",
+   "order": 3,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    0,
+    0,
+    98
+   ],
+   "size": [
+    86,
+    13,
+    5
+   ],
+   "footprint": [
+    0,
+    13,
+    4,
+    98
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-SE",
+   "module": "MW31",
+   "file": "st03_wall_31.nbt",
+   "order": 3,
+   "rotation": "clockwise_90",
+   "origin": [
+    111,
+    0,
+    13
+   ],
+   "size": [
+    31,
+    13,
+    5
+   ],
+   "footprint": [
+    107,
+    13,
+    111,
+    43
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-SW",
+   "module": "MW31",
+   "file": "st03_wall_31.nbt",
+   "order": 3,
+   "rotation": "clockwise_90",
+   "origin": [
+    111,
+    0,
+    68
+   ],
+   "size": [
+    31,
+    13,
+    5
+   ],
+   "footprint": [
+    107,
+    68,
+    111,
+    98
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "W-W",
+   "module": "MW86",
+   "file": "st03_wall_86.nbt",
+   "order": 3,
+   "rotation": "180",
+   "origin": [
+    98,
+    0,
+    111
+   ],
+   "size": [
+    86,
+    13,
+    5
+   ],
+   "footprint": [
+    13,
+    107,
+    98,
+    111
+   ],
+   "air": "omit"
+  },
+  {
+   "placement": "GATE",
+   "module": "MG",
+   "file": "st03_gatehouse.nbt",
+   "order": 4,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    100,
+    0,
+    67
+   ],
+   "size": [
+    24,
+    20,
+    12
+   ],
+   "footprint": [
+    100,
+    44,
+    111,
+    67
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F01",
+   "module": "M-manor",
+   "file": "st03_manor.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    11,
+    0,
+    63
+   ],
+   "size": [
+    17,
+    23,
+    15
+   ],
+   "footprint": [
+    11,
+    47,
+    25,
+    63
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F02",
+   "module": "M-barracks_a",
+   "file": "st03_barracks_a.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    24,
+    0,
+    87
+   ],
+   "size": [
+    13,
+    12,
+    11
+   ],
+   "footprint": [
+    24,
+    75,
+    34,
+    87
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F03",
+   "module": "M-barracks_b",
+   "file": "st03_barracks_b.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    24,
+    0,
+    36
+   ],
+   "size": [
+    13,
+    12,
+    11
+   ],
+   "footprint": [
+    24,
+    24,
+    34,
+    36
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F04",
+   "module": "M-barracks_c",
+   "file": "st03_barracks_c.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    39,
+    0,
+    36
+   ],
+   "size": [
+    13,
+    12,
+    11
+   ],
+   "footprint": [
+    39,
+    24,
+    49,
+    36
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F05",
+   "module": "M-armory",
+   "file": "st03_armory.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    39,
+    0,
+    99
+   ],
+   "size": [
+    17,
+    12,
+    13
+   ],
+   "footprint": [
+    39,
+    83,
+    51,
+    99
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F06",
+   "module": "M-yard",
+   "file": "st03_yard.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    52,
+    0,
+    99
+   ],
+   "size": [
+    25,
+    5,
+    21
+   ],
+   "footprint": [
+    52,
+    75,
+    72,
+    99
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F07",
+   "module": "M-warehouse_a",
+   "file": "st03_warehouse_a.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    79,
+    0,
+    101
+   ],
+   "size": [
+    15,
+    12,
+    13
+   ],
+   "footprint": [
+    79,
+    87,
+    91,
+    101
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F08",
+   "module": "M-warehouse_b",
+   "file": "st03_warehouse_b.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    53,
+    0,
+    36
+   ],
+   "size": [
+    13,
+    12,
+    15
+   ],
+   "footprint": [
+    53,
+    24,
+    67,
+    36
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F09",
+   "module": "M-prison",
+   "file": "st03_prison.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    62,
+    0,
+    19
+   ],
+   "size": [
+    11,
+    10,
+    13
+   ],
+   "footprint": [
+    62,
+    9,
+    74,
+    19
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F10",
+   "module": "M-stable",
+   "file": "st03_stable.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    79,
+    0,
+    34
+   ],
+   "size": [
+    17,
+    13,
+    13
+   ],
+   "footprint": [
+    79,
+    18,
+    91,
+    34
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F11",
+   "module": "M-house_a",
+   "file": "st03_house_a.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    11,
+    0,
+    97
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    11,
+    89,
+    17,
+    97
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F12",
+   "module": "M-house_b",
+   "file": "st03_house_b.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    11,
+    0,
+    85
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    11,
+    77,
+    17,
+    85
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F13",
+   "module": "M-house_c",
+   "file": "st03_house_c.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    22,
+    0,
+    97
+   ],
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "footprint": [
+    22,
+    91,
+    28,
+    97
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F14",
+   "module": "M-house_a",
+   "file": "st03_house_a.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    11,
+    0,
+    22
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    11,
+    14,
+    17,
+    22
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F15",
+   "module": "M-house_b",
+   "file": "st03_house_b.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    11,
+    0,
+    35
+   ],
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "footprint": [
+    11,
+    27,
+    17,
+    35
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F16",
+   "module": "M-house_c",
+   "file": "st03_house_c.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    22,
+    0,
+    19
+   ],
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "footprint": [
+    22,
+    13,
+    28,
+    19
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F17",
+   "module": "M-house_d",
+   "file": "st03_house_d.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    40,
+    0,
+    19
+   ],
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "footprint": [
+    40,
+    13,
+    46,
+    19
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F18",
+   "module": "M-kitchen",
+   "file": "st03_kitchen.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    50,
+    0,
+    19
+   ],
+   "size": [
+    9,
+    11,
+    9
+   ],
+   "footprint": [
+    50,
+    11,
+    58,
+    19
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F19",
+   "module": "M-smithy",
+   "file": "st03_smithy.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    79,
+    0,
+    83
+   ],
+   "size": [
+    9,
+    11,
+    9
+   ],
+   "footprint": [
+    79,
+    75,
+    87,
+    83
+   ],
+   "air": "include"
+  },
+  {
+   "placement": "F20",
+   "module": "M-cart_shed",
+   "file": "st03_cart_shed.nbt",
+   "order": 5,
+   "rotation": "counterclockwise_90",
+   "origin": [
+    82,
+    0,
+    67
+   ],
+   "size": [
+    8,
+    9,
+    7
+   ],
+   "footprint": [
+    82,
+    60,
+    88,
+    67
+   ],
+   "air": "include"
+  }
+ ]
+}

@@ -1,0 +1,657 @@
+{
+ "frame": "ST-03 design package v2 (SHA256 0b025a52...), q=0 masterplan; box NxN",
+ "box": 112,
+ "modules": [
+  {
+   "id": "MT",
+   "file": "st03_tower",
+   "size": [
+    13,
+    24,
+    13
+   ],
+   "air": "include",
+   "order": 2
+  },
+  {
+   "id": "MW86",
+   "file": "st03_wall_86",
+   "size": [
+    86,
+    13,
+    5
+   ],
+   "air": "omit",
+   "order": 3
+  },
+  {
+   "id": "MW31",
+   "file": "st03_wall_31",
+   "size": [
+    31,
+    13,
+    5
+   ],
+   "air": "omit",
+   "order": 3
+  },
+  {
+   "id": "MG",
+   "file": "st03_gatehouse",
+   "size": [
+    24,
+    20,
+    12
+   ],
+   "air": "include",
+   "order": 4
+  },
+  {
+   "id": "MQ-NW",
+   "file": "st03_ground_nw",
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "air": "include",
+   "order": 1
+  },
+  {
+   "id": "MQ-NE",
+   "file": "st03_ground_ne",
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "air": "include",
+   "order": 1
+  },
+  {
+   "id": "MQ-SW",
+   "file": "st03_ground_sw",
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "air": "include",
+   "order": 1
+  },
+  {
+   "id": "MQ-SE",
+   "file": "st03_ground_se",
+   "size": [
+    51,
+    8,
+    51
+   ],
+   "air": "include",
+   "order": 1
+  },
+  {
+   "id": "M-manor",
+   "file": "st03_manor",
+   "size": [
+    17,
+    23,
+    15
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-barracks_a",
+   "file": "st03_barracks_a",
+   "size": [
+    13,
+    12,
+    11
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-barracks_b",
+   "file": "st03_barracks_b",
+   "size": [
+    13,
+    12,
+    11
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-barracks_c",
+   "file": "st03_barracks_c",
+   "size": [
+    13,
+    12,
+    11
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-armory",
+   "file": "st03_armory",
+   "size": [
+    17,
+    12,
+    13
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-yard",
+   "file": "st03_yard",
+   "size": [
+    25,
+    5,
+    21
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-warehouse_a",
+   "file": "st03_warehouse_a",
+   "size": [
+    15,
+    12,
+    13
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-warehouse_b",
+   "file": "st03_warehouse_b",
+   "size": [
+    13,
+    12,
+    15
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-prison",
+   "file": "st03_prison",
+   "size": [
+    11,
+    10,
+    13
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-stable",
+   "file": "st03_stable",
+   "size": [
+    17,
+    13,
+    13
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-house_a",
+   "file": "st03_house_a",
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-house_b",
+   "file": "st03_house_b",
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-house_c",
+   "file": "st03_house_c",
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-house_d",
+   "file": "st03_house_d",
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-kitchen",
+   "file": "st03_kitchen",
+   "size": [
+    9,
+    11,
+    9
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-smithy",
+   "file": "st03_smithy",
+   "size": [
+    9,
+    11,
+    9
+   ],
+   "air": "include",
+   "order": 5
+  },
+  {
+   "id": "M-cart_shed",
+   "file": "st03_cart_shed",
+   "size": [
+    8,
+    9,
+    7
+   ],
+   "air": "include",
+   "order": 5
+  }
+ ],
+ "placements": [
+  {
+   "placement": "T-NW",
+   "module": "MT",
+   "rect": [
+    0,
+    0,
+    12,
+    12
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "T-NE",
+   "module": "MT",
+   "rect": [
+    99,
+    0,
+    111,
+    12
+   ],
+   "local_turns": 1
+  },
+  {
+   "placement": "T-SE",
+   "module": "MT",
+   "rect": [
+    99,
+    99,
+    111,
+    111
+   ],
+   "local_turns": 2
+  },
+  {
+   "placement": "T-SW",
+   "module": "MT",
+   "rect": [
+    0,
+    99,
+    12,
+    111
+   ],
+   "local_turns": 3
+  },
+  {
+   "placement": "W-N",
+   "module": "MW86",
+   "rect": [
+    13,
+    0,
+    98,
+    4
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "W-E",
+   "module": "MW86",
+   "rect": [
+    107,
+    13,
+    111,
+    98
+   ],
+   "local_turns": 1
+  },
+  {
+   "placement": "W-W",
+   "module": "MW86",
+   "rect": [
+    0,
+    13,
+    4,
+    98
+   ],
+   "local_turns": 3
+  },
+  {
+   "placement": "W-SW",
+   "module": "MW31",
+   "rect": [
+    13,
+    107,
+    43,
+    111
+   ],
+   "local_turns": 2
+  },
+  {
+   "placement": "W-SE",
+   "module": "MW31",
+   "rect": [
+    68,
+    107,
+    98,
+    111
+   ],
+   "local_turns": 2
+  },
+  {
+   "placement": "GATE",
+   "module": "MG",
+   "rect": [
+    44,
+    100,
+    67,
+    111
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "GROUND-NW",
+   "module": "MQ-NW",
+   "rect": [
+    5,
+    5,
+    55,
+    55
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "GROUND-NE",
+   "module": "MQ-NE",
+   "rect": [
+    56,
+    5,
+    106,
+    55
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "GROUND-SW",
+   "module": "MQ-SW",
+   "rect": [
+    5,
+    56,
+    55,
+    106
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "GROUND-SE",
+   "module": "MQ-SE",
+   "rect": [
+    56,
+    56,
+    106,
+    106
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F01",
+   "module": "M-manor",
+   "rect": [
+    48,
+    11,
+    64,
+    25
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F02",
+   "module": "M-barracks_a",
+   "rect": [
+    24,
+    24,
+    36,
+    34
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F03",
+   "module": "M-barracks_b",
+   "rect": [
+    75,
+    24,
+    87,
+    34
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F04",
+   "module": "M-barracks_c",
+   "rect": [
+    75,
+    39,
+    87,
+    49
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F05",
+   "module": "M-armory",
+   "rect": [
+    12,
+    39,
+    28,
+    51
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F06",
+   "module": "M-yard",
+   "rect": [
+    12,
+    52,
+    36,
+    72
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F07",
+   "module": "M-warehouse_a",
+   "rect": [
+    10,
+    79,
+    24,
+    91
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F08",
+   "module": "M-warehouse_b",
+   "rect": [
+    75,
+    53,
+    87,
+    67
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F09",
+   "module": "M-prison",
+   "rect": [
+    92,
+    62,
+    102,
+    74
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F10",
+   "module": "M-stable",
+   "rect": [
+    77,
+    79,
+    93,
+    91
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F11",
+   "module": "M-house_a",
+   "rect": [
+    14,
+    11,
+    22,
+    17
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F14",
+   "module": "M-house_a",
+   "rect": [
+    89,
+    11,
+    97,
+    17
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F12",
+   "module": "M-house_b",
+   "rect": [
+    26,
+    11,
+    34,
+    17
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F15",
+   "module": "M-house_b",
+   "rect": [
+    76,
+    11,
+    84,
+    17
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F13",
+   "module": "M-house_c",
+   "rect": [
+    14,
+    22,
+    20,
+    28
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F16",
+   "module": "M-house_c",
+   "rect": [
+    92,
+    22,
+    98,
+    28
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F17",
+   "module": "M-house_d",
+   "rect": [
+    92,
+    40,
+    98,
+    46
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F18",
+   "module": "M-kitchen",
+   "rect": [
+    92,
+    50,
+    100,
+    58
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F19",
+   "module": "M-smithy",
+   "rect": [
+    28,
+    79,
+    36,
+    87
+   ],
+   "local_turns": 0
+  },
+  {
+   "placement": "F20",
+   "module": "M-cart_shed",
+   "rect": [
+    44,
+    82,
+    51,
+    88
+   ],
+   "local_turns": 0
+  }
+ ]
+}

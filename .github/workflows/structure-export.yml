@@ -8,6 +8,8 @@ on:
       - "exports/**"
       - "tests/test_structure_export.py"
       - "tests/test_structure_connectivity.py"
+      - "tests/test_seam01.py"
+      - "tools/seam01/**"
       - "artifacts/phase-3/final/final.schem"
       - "artifacts/mmst-connectivity/**"
       - ".github/workflows/structure-export.yml"
@@ -31,7 +33,7 @@ jobs:
         working-directory: vendor/mcbuild
         run: uv sync --frozen --extra dev
       - name: Unit tests
-        run: uv run --project vendor/mcbuild python -m pytest -q tests/test_structure_export.py tests/test_structure_connectivity.py
+        run: uv run --project vendor/mcbuild python -m pytest -q tests/test_structure_export.py tests/test_structure_connectivity.py tests/test_seam01.py
       - name: Committed exports are reproducible and verify against their sources
         run: uv run --project vendor/mcbuild python -m tools.structure_export check exports/structures/*.toml
 
@@ -62,3 +64,7 @@ jobs:
         run: |
           uv run --project vendor/mcbuild python -m tools.structure_export.stair_live \
             --server-jar .mc/server.jar --java java --work .mc/stair-live --out .mc/stair-live-result.json
+      - name: SEAM-01 assemble 34 placements at four rotations on a real 26.3 server and apply the seam patches
+        run: |
+          uv run --project vendor/mcbuild python -m tools.seam01 live \
+            --server-jar .mc/server.jar --java java --work .mc/seam-live --out .mc/seam-live-result.json
