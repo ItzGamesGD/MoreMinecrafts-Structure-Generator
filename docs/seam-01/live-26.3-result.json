@@ -1,0 +1,429 @@
+{
+  "datapacks": "There are 2 data pack(s) enabled: [vanilla (built-in)], [file/mmst_seam01 (world)]",
+  "log_problems": [],
+  "minecraft_version": "26.3",
+  "result": "PASS",
+  "rotations": {
+    "180": {
+      "connecting_blocks": 2129,
+      "connections_that_depend_on_a_seam_stair_shape": [
+        [
+          4,
+          1,
+          59
+        ],
+        [
+          4,
+          1,
+          66
+        ],
+        [
+          4,
+          1,
+          80
+        ],
+        [
+          4,
+          1,
+          87
+        ],
+        [
+          5,
+          1,
+          70
+        ],
+        [
+          5,
+          1,
+          77
+        ],
+        [
+          5,
+          1,
+          91
+        ],
+        [
+          5,
+          1,
+          98
+        ],
+        [
+          43,
+          1,
+          0
+        ],
+        [
+          44,
+          1,
+          4
+        ],
+        [
+          74,
+          1,
+          4
+        ],
+        [
+          77,
+          1,
+          5
+        ],
+        [
+          81,
+          1,
+          4
+        ],
+        [
+          84,
+          1,
+          5
+        ],
+        [
+          91,
+          1,
+          5
+        ]
+      ],
+      "game_recompute_changed_patched": 0,
+      "game_recompute_changed_unpatched_first_pass": 189,
+      "game_recompute_changing_passes_unpatched": 1,
+      "pass": true,
+      "patch_cells_wrong_before_patching": 338,
+      "patched_cells_wrong": 0,
+      "patched_layers_differing_from_reference": 0,
+      "patched_reverse_order_layers_differing": 0,
+      "patches": 338,
+      "patches_equal_direct_generation": true,
+      "patchset_sha256": "61d6e46a154303ac580e41e0d5c8df43847ea8aa4aa0b84b8d09f337ff4efa80",
+      "q": 2,
+      "seconds": 7.0,
+      "stair_rule_vs_game_mismatch_count": 0,
+      "stair_rule_vs_game_mismatches": [],
+      "stair_seam_dependent_in_report": 18,
+      "stair_seam_not_in_pr49_review": [],
+      "stairs": 593,
+      "stairs_reshaped_by_game_first_pass": 4,
+      "stairs_whose_game_shape_differs_from_authored": 18,
+      "unpatched_after_recompute_connecting_wrong_vs_vanilla_stairs": 0,
+      "unpatched_after_recompute_examples": [],
+      "unpatched_layers_differing_from_reference": 2,
+      "validate_problems": [],
+      "whole_cells": 2928
+    },
+    "clockwise_90": {
+      "connecting_blocks": 2129,
+      "connections_that_depend_on_a_seam_stair_shape": [
+        [
+          0,
+          1,
+          68
+        ],
+        [
+          4,
+          1,
+          30
+        ],
+        [
+          4,
+          1,
+          37
+        ],
+        [
+          4,
+          1,
+          67
+        ],
+        [
+          5,
+          1,
+          20
+        ],
+        [
+          5,
+          1,
+          27
+        ],
+        [
+          5,
+          1,
+          34
+        ],
+        [
+          59,
+          1,
+          107
+        ],
+        [
+          66,
+          1,
+          107
+        ],
+        [
+          70,
+          1,
+          106
+        ],
+        [
+          77,
+          1,
+          106
+        ],
+        [
+          80,
+          1,
+          107
+        ],
+        [
+          87,
+          1,
+          107
+        ],
+        [
+          91,
+          1,
+          106
+        ],
+        [
+          98,
+          1,
+          106
+        ]
+      ],
+      "game_recompute_changed_patched": 0,
+      "game_recompute_changed_unpatched_first_pass": 191,
+      "game_recompute_changing_passes_unpatched": 1,
+      "pass": true,
+      "patch_cells_wrong_before_patching": 338,
+      "patched_cells_wrong": 0,
+      "patched_layers_differing_from_reference": 0,
+      "patched_reverse_order_layers_differing": 0,
+      "patches": 338,
+      "patches_equal_direct_generation": true,
+      "patchset_sha256": "a7a4acd75c5cdf66caa8a1a4c1b1ba41bab34c518de689b7d0c5a273be345f43",
+      "q": 1,
+      "seconds": 7.2,
+      "stair_rule_vs_game_mismatch_count": 0,
+      "stair_rule_vs_game_mismatches": [],
+      "stair_seam_dependent_in_report": 18,
+      "stair_seam_not_in_pr49_review": [],
+      "stairs": 593,
+      "stairs_reshaped_by_game_first_pass": 4,
+      "stairs_whose_game_shape_differs_from_authored": 18,
+      "unpatched_after_recompute_connecting_wrong_vs_vanilla_stairs": 0,
+      "unpatched_after_recompute_examples": [],
+      "unpatched_layers_differing_from_reference": 2,
+      "validate_problems": [],
+      "whole_cells": 2928
+    },
+    "counterclockwise_90": {
+      "connecting_blocks": 2129,
+      "connections_that_depend_on_a_seam_stair_shape": [
+        [
+          13,
+          1,
+          5
+        ],
+        [
+          20,
+          1,
+          5
+        ],
+        [
+          24,
+          1,
+          4
+        ],
+        [
+          31,
+          1,
+          4
+        ],
+        [
+          34,
+          1,
+          5
+        ],
+        [
+          41,
+          1,
+          5
+        ],
+        [
+          45,
+          1,
+          4
+        ],
+        [
+          52,
+          1,
+          4
+        ],
+        [
+          106,
+          1,
+          77
+        ],
+        [
+          106,
+          1,
+          84
+        ],
+        [
+          106,
+          1,
+          91
+        ],
+        [
+          107,
+          1,
+          44
+        ],
+        [
+          107,
+          1,
+          74
+        ],
+        [
+          107,
+          1,
+          81
+        ],
+        [
+          111,
+          1,
+          43
+        ]
+      ],
+      "game_recompute_changed_patched": 0,
+      "game_recompute_changed_unpatched_first_pass": 186,
+      "game_recompute_changing_passes_unpatched": 1,
+      "pass": true,
+      "patch_cells_wrong_before_patching": 338,
+      "patched_cells_wrong": 0,
+      "patched_layers_differing_from_reference": 0,
+      "patched_reverse_order_layers_differing": 0,
+      "patches": 338,
+      "patches_equal_direct_generation": true,
+      "patchset_sha256": "4396ef231e3ff5a9130c46145582864c9b946d7811b5dfd00c2bf8e4918e8f21",
+      "q": 3,
+      "seconds": 7.2,
+      "stair_rule_vs_game_mismatch_count": 0,
+      "stair_rule_vs_game_mismatches": [],
+      "stair_seam_dependent_in_report": 18,
+      "stair_seam_not_in_pr49_review": [],
+      "stairs": 593,
+      "stairs_reshaped_by_game_first_pass": 4,
+      "stairs_whose_game_shape_differs_from_authored": 18,
+      "unpatched_after_recompute_connecting_wrong_vs_vanilla_stairs": 0,
+      "unpatched_after_recompute_examples": [],
+      "unpatched_layers_differing_from_reference": 2,
+      "validate_problems": [],
+      "whole_cells": 2928
+    },
+    "none": {
+      "connecting_blocks": 2129,
+      "connections_that_depend_on_a_seam_stair_shape": [
+        [
+          20,
+          1,
+          106
+        ],
+        [
+          27,
+          1,
+          106
+        ],
+        [
+          30,
+          1,
+          107
+        ],
+        [
+          34,
+          1,
+          106
+        ],
+        [
+          37,
+          1,
+          107
+        ],
+        [
+          67,
+          1,
+          107
+        ],
+        [
+          68,
+          1,
+          111
+        ],
+        [
+          106,
+          1,
+          13
+        ],
+        [
+          106,
+          1,
+          20
+        ],
+        [
+          106,
+          1,
+          34
+        ],
+        [
+          106,
+          1,
+          41
+        ],
+        [
+          107,
+          1,
+          24
+        ],
+        [
+          107,
+          1,
+          31
+        ],
+        [
+          107,
+          1,
+          45
+        ],
+        [
+          107,
+          1,
+          52
+        ]
+      ],
+      "game_recompute_changed_patched": 0,
+      "game_recompute_changed_unpatched_first_pass": 190,
+      "game_recompute_changing_passes_unpatched": 1,
+      "pass": true,
+      "patch_cells_wrong_before_patching": 338,
+      "patched_cells_wrong": 0,
+      "patched_layers_differing_from_reference": 0,
+      "patched_reverse_order_layers_differing": 0,
+      "patches": 338,
+      "patches_equal_direct_generation": true,
+      "patchset_sha256": "46951ec68d2893275ec2437c8cfbe3bd6d518be561a2ed95d12c9ad2411cced5",
+      "q": 0,
+      "seconds": 8.6,
+      "stair_rule_vs_game_mismatch_count": 0,
+      "stair_rule_vs_game_mismatches": [],
+      "stair_seam_dependent_in_report": 18,
+      "stair_seam_not_in_pr49_review": [],
+      "stairs": 593,
+      "stairs_reshaped_by_game_first_pass": 4,
+      "stairs_whose_game_shape_differs_from_authored": 18,
+      "unpatched_after_recompute_connecting_wrong_vs_vanilla_stairs": 0,
+      "unpatched_after_recompute_examples": [],
+      "unpatched_layers_differing_from_reference": 2,
+      "validate_problems": [],
+      "whole_cells": 2928
+    }
+  },
+  "synthetic_modules": true
+}
