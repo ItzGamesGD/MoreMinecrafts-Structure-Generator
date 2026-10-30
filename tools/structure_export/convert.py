@@ -90,6 +90,10 @@ def resolve_state(
             )
         if value not in valid[key]:
             raise BlockStateError(f"{block_id}[{key}={value}] is not valid (allowed: {valid[key]})")
+    if block_id.endswith("_stairs") and {"facing", "half", "shape"} <= set(valid):
+        missing = sorted({"facing", "half", "shape"} - set(props))
+        if missing:
+            raise BlockStateError(f"{block_id}: stairs require explicit {missing}; no neighbour shape inference")
     defaulted = sorted(set(valid) - set(props))
     complete = dict(entry["default"])
     complete.update(props)
@@ -340,6 +344,22 @@ def convert(config: Config) -> Result:
         "warnings": warnings,
         "state_counts": dict(sorted(counts.items())),
     }
+    stair_boundaries = []
+    for pos, (block_id, _) in sorted(cells.items()):
+        if not block_id.endswith("_stairs"):
+            continue
+        for side, delta in (("north", (0, 0, -1)), ("east", (1, 0, 0)), ("south", (0, 0, 1)), ("west", (-1, 0, 0))):
+            neighbour = tuple(pos[i] + delta[i] for i in range(3))
+            if neighbour not in cells:
+                outside = any(neighbour[i] < 0 or neighbour[i] >= schem.size[i] for i in range(3))
+                stair_boundaries.append(
+                    {"pos": list(pos), "side": side, "reason": "outside_template" if outside else "omitted_air"}
+                )
+    if stair_boundaries:
+        report["stair_boundary_review"] = stair_boundaries
+        report["warnings"].append(
+            "Explicit stair states retained; unknown horizontal neighbours require SEAM-01 review"
+        )
     return Result(config=config, nbt=nbt, report=report, block_entities=nbts)
 
 

@@ -1,0 +1,15 @@
+# STAIR-01: explicit stair state contract (Minecraft 26.3)
+
+Base: 61a09eebafa9beee0944eba266e7f05a9543eec5 (PR #47 and #48 integrated).
+
+The converter and independent verifier require authors to supply `facing`, `half`, and `shape` on every stair state. Valid values are checked against the pinned 26.3 block reference: four horizontal facings, top/bottom, and straight/inner_left/inner_right/outer_left/outer_right. Invalid or omitted values fail. `waterlogged` remains eligible for the pinned default fill.
+
+The pinned oak_stairs default is north/bottom/straight/waterlogged=false. That registry default is not proof of the correct shape in a layout. Vanilla neighbour-derived corner shape depends on nearby stairs' facing and matching half; strict template placement does not repair authored shapes. This change deliberately chooses explicit errors rather than implementing that solver. Explicit shapes are preserved even when an author intentionally chooses a shape different from normal neighbour updates. It validates state fidelity, not geometric plausibility or walkability.
+
+Positions and facing rotate together. A pure horizontal rotation preserves half and shape, including left/right; it is not a mirror. Exported template states remain in the template frame; Minecraft performs placement rotation. Existing live.rotate_props already implements this and remains unchanged. Unit tests exercise all 40 facing/half/shape combinations at all four rotations, inverted corners and a rising spiral-shaped run. These are offline expectations; actual 26.3 server comparison is NOT RUN for this change. No mirror support is added.
+
+`stair_boundary_review` is emitted only when a stair has a horizontal neighbour outside the template or omitted by air=omit. Each entry records template position, side and reason. It is a conservative SEAM-01 review candidate, not a proven shape defect. Explicit state is never overwritten; internal adjacent blocks are known but do not trigger inference either. Complete boundary context, combined-module shape validation, patch application and terrain neighbours belong to SEAM-01. Reports for exports without these stair candidates remain unchanged.
+
+Design provenance: ST03_PHASE_B2_V2_AUDIT_20261029.zip SHA256 0b025a524fbbf8ffd3ad590babebe108327c79f90f603765a86d1e0d4b17ea5b; DESIGN_PACKAGE_V2.md sections 4.4, 17, 18, 19 identify explicit stair shapes and unproven tower spiral geometry. The package contains design data, not production NBT. ST-03 construction, actual traversal and full 34-placement assembly are outside this change.
+
+Validation: targeted stair tests plus exporter/connectivity/block-entity regression tests. Existing export reproduction tests compare committed bytes; no committed NBT or report was regenerated. The previous 369-test and game evidence on 7fdb8e8 is historical and is not evidence of new stair runtime validation. Broader vendor/phase tooling and real-server stair placement remain NOT RUN. CONDITIONAL GO pending real-server four-rotation state comparison and SEAM-01 review of reported candidates.
