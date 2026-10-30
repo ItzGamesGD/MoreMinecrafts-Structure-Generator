@@ -31,16 +31,22 @@ def _sha1(path: Path) -> str:
     return hashlib.sha1(path.read_bytes()).hexdigest()
 
 
-def _probe(java: str, jar: Path, work: Path) -> tuple[int, list[str]]:
+def run_probe(java: str, jar: Path, work: Path, probe: Path) -> str:
+    """Run a single-file Java probe with the server jar's classes and bundled libraries."""
     lib_dir = work / "classpath"
-    with zipfile.ZipFile(jar) as outer:
-        members = [m for m in outer.namelist() if m.startswith("META-INF/") and m.endswith(".jar")]
-        for member in members:
-            outer.extract(member, lib_dir)
+    if not lib_dir.is_dir():
+        with zipfile.ZipFile(jar) as outer:
+            members = [m for m in outer.namelist() if m.startswith("META-INF/") and m.endswith(".jar")]
+            for member in members:
+                outer.extract(member, lib_dir)
     classpath = ":".join(str(p) for p in sorted(lib_dir.rglob("*.jar")))
-    out = subprocess.run(
-        [java, "-cp", classpath, str(PROBE)], cwd=work, capture_output=True, text=True, check=True
+    return subprocess.run(
+        [java, "-cp", classpath, str(probe)], cwd=work, capture_output=True, text=True, check=True
     ).stdout
+
+
+def _probe(java: str, jar: Path, work: Path) -> tuple[int, list[str]]:
+    out = run_probe(java, jar, work, PROBE)
     version = re.search(r"MMST_DATA_VERSION (\d+)", out)
     blocks = re.search(r"MMST_BLOCK_ENTITY_BLOCKS (\S+)", out)
     if not version or not blocks:

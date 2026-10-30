@@ -13,22 +13,23 @@ cd "$ROOT"
 uv run --project vendor/mcbuild python - "$CONFIG" "$CLONE" <<'PY'
 import json, shutil, sys
 from pathlib import Path
-from tools.structure_export.convert import load_config, load_reference, resolve_state
-from tools.structure_export.schem import parse_state, read_schematic
+from tools.structure_export.convert import load_config
+from tools.structure_export.verify import plain, read_nbt
 config, clone = load_config(Path(sys.argv[1])), Path(sys.argv[2])
 namespace, name = config.structure_id.split(":", 1)
 target = clone / "src/main/resources/data" / namespace / "structure" / f"{name}.nbt"
 target.parent.mkdir(parents=True, exist_ok=True)
 shutil.copy(config.nbt_path, target)
-reference, schem = load_reference(config.target), read_schematic(config.source)
-lines = [f"{config.structure_id} {' '.join(map(str, schem.size))}"]
-for index, palette_index in enumerate(schem.cells):
-    block_id, props = parse_state(schem.palette[palette_index])
-    if config.air == "omit" and block_id == "minecraft:air":
-        continue
-    full, _ = resolve_state(block_id, props, reference)
-    state = block_id + ("[" + ",".join(f"{k}={v}" for k, v in full) + "]" if full else "")
-    lines.append(" ".join(map(str, schem.position(index))) + " " + state)
+# expected = the exported states (computed connections included; `verify` and `live` check those
+# against the source and the vanilla game); this probe checks that MMB loads and places them as written
+template = plain(read_nbt(config.nbt_path)[1])
+palette = [
+    e["id"] + ("[" + ",".join(f"{k}={v}" for k, v in sorted(e.get("properties", {}).items())) + "]" if e.get("properties") else "")
+    for e in template["palette"]
+]
+lines = [f"{config.structure_id} {' '.join(map(str, template['size']))}"]
+for block in template["blocks"]:
+    lines.append(" ".join(map(str, block["pos"])) + " " + palette[block["state"]])
 (clone / "src/gametest/resources/mmst").mkdir(parents=True, exist_ok=True)
 (clone / "src/gametest/resources/mmst/expected.txt").write_text("\n".join(lines) + "\n")
 mod = clone / "src/gametest/resources/fabric.mod.json"

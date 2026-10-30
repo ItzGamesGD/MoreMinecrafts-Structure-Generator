@@ -32,9 +32,11 @@ $PY -m tools.structure_export live exports/structures/ruined_watchtower.toml --s
   `BlockEntityProbe.java` (blocks implementing `EntityBlock`). Every source state must exist in it. For
   example 1.21.1's `minecraft:chain` (26.3: `iron_chain`) is rejected, not renamed.
 - **Properties the source omits are filled with the 26.3 default state**, which is what the game does with a
-  partial state. Each fill is listed in the report (`defaulted_properties`). Defaulted connection properties
-  (`north/east/south/west/up/down`, e.g. on walls) also produce a `warnings` entry: jigsaw world generation
-  places pool elements with `knownShape = true` (`SinglePoolElement` in the 26.3 jar), so they stay unconnected.
+  partial state. Each fill is listed in the report (`defaulted_properties`, unchanged meaning: what the source
+  left out). For walls, fences, panes/bars and fence gates the left-out connection properties are then
+  **computed from the neighbouring cells** (next section). Left-out connection properties
+  (`north/east/south/west/up/down`) on any other block (vines, chorus plants, redstone wire, ...) keep the
+  default and produce a `warnings` entry, because they stay that way in world generation.
 - **Size and origin**: `expect.size` and `expect.offset` in the config must equal the schematic's
   `Width/Height/Length` and `Offset`; the template's origin is the schematic's minimum corner.
 - **Air**: mcbuild writes every unbuilt cell as `minecraft:air`, so authored and filler air cannot be told
@@ -44,6 +46,60 @@ $PY -m tools.structure_export live exports/structures/ruined_watchtower.toml --s
   bytes.
 - **Independent verification**: `verify.py` re-reads the `.nbt` and the `.schem` with its own NBT/varint decoder
   (no nbtlib, no converter code) and compares every cell.
+
+## Connection states (walls, fences, panes/bars, fence gates)
+
+Jigsaw world generation places pool elements with `knownShape = true` and update flags 18
+(`SinglePoolElement` in the 26.3 jar; `WorldGenRegion` then skips post-processing), and
+`/place template ... strict` uses flags 2|816: the game writes template states as they are and never runs the
+neighbour shape update. A bare `stone_brick_wall` from mcbuild therefore generates as a lone post. The
+converter computes what the game would (`connectivity.py`):
+
+| Block (26.3 class) | Computed | Rule (26.3 source) |
+|---|---|---|
+| walls (`WallBlock`) | `north/east/south/west` = `none/low/tall`, `up` | `connectsTo`: `#walls`, a sturdy face unless `isExceptionForConnection`, `IronBarsBlock`, a fence gate on the right axis; `tall` if the block above covers that side (`makeWallState`); `up` per `shouldRaisePost` (wall-with-post above, corner/end, `#wall_post_override`, covered post) |
+| fences (`FenceBlock`) | `north/east/south/west` | sturdy face unless exception, `#fences` of the same woodenness (`#wooden_fences`), fence gate on the right axis |
+| glass panes, stained panes, iron/copper bars (`IronBarsBlock`) | `north/east/south/west` | sturdy face unless exception, `IronBarsBlock`, `#walls` |
+| fence gates (`FenceGateBlock`) | `in_wall` | a `#walls` block on either side of the gate's span |
+
+- **Evidence, not heuristics.** The rule code is transcribed from the 26.3 classes (unobfuscated, read with a
+  decompiler). Every fact it reads about a neighbour (side sturdiness, the collision shape's bottom face tested
+  with `WallBlock`'s own test shapes, `instanceof` checks, `isExceptionForConnection`, block tags) comes from
+  `reference/connectivity-26.3.json`, generated from the pinned server jar by `reference/build_connectivity.py`
+  (`ConnectivityProbe.java` runs the game's own code; tags are read from `data/minecraft/tags/block/` in the
+  jar). The generator also checks that a connecting block's side sturdiness never depends on the computed
+  properties, which is what lets one top-down pass reach the state the game settles on.
+- **Stated properties are kept.** Only properties the source leaves out are computed. Where a stated value
+  differs from what vanilla would compute, the report lists it (`explicit_differs_from_vanilla`).
+- **Rotation**: states are computed in the template frame; placement rotates positions and states together
+  (`StructureTemplate.transform`, `BlockState.rotate`), so any rotation keeps the connections (checked live).
+- **Template boundary and omitted air.** A neighbour outside the template box, or an air cell dropped by
+  `air = "omit"`, is terrain unknown at conversion time. It is treated as air (no connection, nothing above),
+  so a wall at the edge does not connect to the terrain it is later placed against. Every block whose result
+  depended on such a neighbour is listed (`boundary_unresolved`, per direction, `outside_template` or
+  `omitted_air`) and summarised in `warnings`. Design pieces so connecting blocks do not rely on terrain.
+- **Unresolved.** If a needed neighbour fact depends on that neighbour's position or block entity (dynamic-shape
+  blocks such as scaffolding or shulker boxes for side support; those and offset blocks such as bamboo for the
+  shape above a wall), the block keeps the default state and is listed in `unresolved` with the reason.
+- **Not computed** (out of scope; defaults stay and are reported): stairs `shape`, redstone wire, tripwire,
+  vines/lichen, chorus plants, `snowy`, door/bed halves, chest `type`, and other neighbour-dependent states.
+  Vanilla block tags are used; a datapack that changes `#walls`/`#fences`/... is not taken into account.
+
+Report section `connectivity`: `computed_blocks` (connecting blocks with at least one left-out connection
+property), `corrected_blocks` (whose computed state differs from the plain default fill),
+`corrected_properties` (count per property), `boundary_unresolved`, `unresolved`,
+`explicit_differs_from_vanilla`. `verify.py` accepts a cell that differs from its default-completed source
+only in left-out connection properties of these blocks, and checks rule invariants that need no shape data
+(a connected side faces a block, neighbouring walls/bars/same-material fences connect to each other,
+`in_wall` matches the flanking walls).
+
+Testbed: `exports/structures/connectivity_testbed.toml` (and `_air_omit`) converts
+`artifacts/mmst-connectivity/connectivity_testbed.schem`, built with mcbuild's exporter by
+`testbed/build_connectivity_testbed.py`: straight/corner/T/cross runs, what stands on a wall, two-high runs,
+connecting and non-connecting neighbours, fences of mixed material, gates, panes/bars, boundary cells and one
+stated `up`. `testbed/render_states.py` draws states from a template or a saved live-check world with
+mcbuild's offline renderer (`artifacts/mmst-connectivity/renders/`); that is an illustration, not a game
+client screenshot, and the renderer does not draw pane/bar arms.
 
 ## Not supported yet (rejected with `UnsupportedFeature`, never dropped)
 
@@ -58,10 +114,20 @@ $PY -m tools.structure_export live exports/structures/ruined_watchtower.toml --s
 
 ## Live validation levels
 
-- `live`: vanilla 26.3 dedicated server. Loads the template from a datapack, places it with
-  `/place template ... strict` (knownShape, as in jigsaw worldgen), tests every cell with `execute if block`,
-  and compares against a DataFixer probe (the source states in legacy layout at DataVersion 3953, upgraded by
-  the game itself) with `execute if blocks ... all`.
+- `live`: vanilla 26.3 dedicated server. Loads the template from a datapack and
+  1. places it with `/place template ... strict` (knownShape, as in jigsaw worldgen) and tests every cell
+     against the exported state with `execute if block`;
+  2. places a DataFixer probe (the source states in legacy layout at DataVersion 3953, upgraded by the game
+     itself) strict and tests every cell against source + 26.3 defaults: the version-handling cross-check and
+     the "before" picture (what PR #46 output generated);
+  3. **connection oracle**, in all four rotations: on a strict copy, re-sets every connecting block with a
+     non-strict `/setblock <pos> <source state>` (the game runs `Block.updateFromNeighbourShapes`, then
+     re-applies the stated properties: `BlockInput.place`) and requires the copy to still equal an untouched
+     strict copy. Negative control: the same oracle on the uncorrected probe must change it into exactly the
+     export;
+  4. **normal vs strict**: the export placed without `strict` (the game updates every placed block's shape)
+     must equal the strict placement except at `explicit_differs_from_vanilla` cells;
+  5. fails on any server-log WARN/ERROR other than the offline-mode banner and the tick-lag notice.
 - `mmb_probe/run_mmb_probe.sh <config> <mmb repo> <commit> <work dir>`: MMB runtime (Fabric gametest server
   with the MoreMinecrafts mod). Clones MMB into the work dir (the source checkout is never touched), adds the
   template to the clone's resources plus a throw-away gametest, loads it through

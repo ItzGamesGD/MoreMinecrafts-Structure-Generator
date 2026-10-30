@@ -1,0 +1,22 @@
+# Connection-state testbed (walls, fences, gates, panes/bars, template boundary), air = "omit".
+# Built with mcbuild's exporter by tools/structure_export/testbed/build_connectivity_testbed.py.
+# Sample/validation export only; it is not registered in MoreMinecrafts-Beta world generation.
+format = 1
+target = "26.3"
+
+[source]
+path = "artifacts/mmst-connectivity/connectivity_testbed.schem"
+sha256 = "9c626d13eb11cb584390a295f1a7e8758d48532e841ec3905f395eddfb6f76e8"
+data_version = 3953
+
+[output]
+id = "moreminecrafts:mmst_samples/connectivity_testbed_air_omit"
+datapack = "exports/datapack"
+reports = "exports/reports"
+
+[expect]
+size = [24, 3, 24]
+offset = [0, 0, 0]
+
+[options]
+air = "omit"

@@ -4,6 +4,14 @@ Deliberately shares no code with the writer: it decodes both gzipped NBT files w
 minimal reader (no nbtlib), re-decodes the Sponge varints itself, and only reuses the pinned
 block reference JSON. It checks the template schema, every palette state against the target
 version, bounds/duplicates/palette indexes, and cell-by-cell equivalence with the source.
+
+Computed connection properties (connectivity.py) are the one allowed difference, and only when the
+connectivity reference is passed: a cell may differ from its default-completed source state only in
+connection properties of a wall/fence/pane/bars/fence-gate that the source left out. Those cells are
+then checked against invariants of the vanilla rules that need no shape data: a connected side faces
+a block inside the template, two neighbouring walls (or bars, or same-material fences) whose shared
+sides were both computed connect to each other, and in_wall is true exactly when a wall flanks the gate.
+The game itself is the full oracle for these values (live.py).
 """
 
 from __future__ import annotations
@@ -131,7 +139,73 @@ def _complete(text: str, reference: dict) -> tuple[str, dict[str, str]]:
     return block_id, full
 
 
-def verify(nbt_path: Path, schem_path: Path, reference: dict, air: str) -> dict:
+_SIDES = {"north": (0, 0, -1), "east": (1, 0, 0), "south": (0, 0, 1), "west": (-1, 0, 0)}
+_OPPOSITE = {"north": "south", "south": "north", "east": "west", "west": "east"}
+_COMPUTED = {
+    "wall": {"north", "east", "south", "west", "up"},
+    "fence": {"north", "east", "south", "west"},
+    "bars": {"north", "east", "south", "west"},
+    "fence_gate": {"in_wall"},
+}
+
+
+def _check_connections(placed: dict, expected: dict, source: dict, changed: set, connectivity: dict) -> None:
+    blocks = connectivity["blocks"]
+    tags = {name: set(members) for name, members in connectivity["tags"].items()}
+
+    def kind(block_id):
+        found = set(blocks[block_id]["kinds"]) & set(_COMPUTED)
+        return found.pop() if found else None
+
+    def stated(pos):
+        text = source[pos]
+        rest = text.partition("[")[2]
+        return {p.split("=", 1)[0] for p in rest.rstrip("]").split(",")} if rest else set()
+
+    def computed(pos):
+        block_id = placed[pos][0]
+        k = kind(block_id)
+        return (_COMPUTED[k] - stated(pos)) if k else set()
+
+    def neighbour(pos, side):
+        npos = tuple(pos[i] + _SIDES[side][i] for i in range(3))
+        return placed.get(npos), npos
+
+    def family(block_id):
+        k = kind(block_id)
+        if k == "fence":
+            return ("fence", block_id in tags["wooden_fences"])
+        return k if k in ("wall", "bars") else None
+
+    for pos in changed:
+        block_id, props = placed[pos]
+        diff = {key for key in props if props[key] != expected[pos][1][key]}
+        _check(diff <= computed(pos), f"{pos} {block_id}: properties {sorted(diff)} changed")
+    for pos, (block_id, props) in placed.items():
+        k = kind(block_id)
+        if k is None:
+            continue
+        mine = computed(pos)
+        for side in _SIDES:
+            if side not in mine:
+                continue
+            nb, npos = neighbour(pos, side)
+            connected = props[side] not in ("none", "false")
+            if connected:
+                _check(
+                    nb is not None and nb[0] not in ("minecraft:air", "minecraft:cave_air", "minecraft:void_air"),
+                    f"{pos} {block_id}: {side} connects to nothing",
+                )
+            pair = nb is not None and family(block_id) is not None and family(nb[0]) == family(block_id)
+            if pair and _OPPOSITE[side] in computed(npos):
+                _check(connected, f"{pos} {block_id}: does not connect {side} to {nb[0]} at {npos}")
+        if "in_wall" in mine:
+            axis = ("east", "west") if props["facing"] in ("north", "south") else ("north", "south")
+            flanked = any((neighbour(pos, side)[0] or ("",))[0] in tags["walls"] for side in axis)
+            _check(props["in_wall"] == str(flanked).lower(), f"{pos} {block_id}: in_wall={props['in_wall']}")
+
+
+def verify(nbt_path: Path, schem_path: Path, reference: dict, air: str, connectivity: dict | None = None) -> dict:
     """Return a summary dict; raise VerificationError on the first violation."""
     name, root = read_nbt(nbt_path)
     _check(name == "", f"root name {name!r} (vanilla templates use an empty name)")
@@ -192,9 +266,15 @@ def verify(nbt_path: Path, schem_path: Path, reference: dict, air: str) -> dict:
     extra = sorted(set(placed) - set(expected))
     _check(not missing and not extra, f"missing {missing[:5]} extra {extra[:5]}")
     wrong = [p for p in expected if expected[p] != placed[p]]
+    changed = set()
+    if connectivity is not None:
+        changed = {p for p in wrong if expected[p][0] == placed[p][0]}
+        wrong = [p for p in wrong if p not in changed]
     if wrong:
         first = wrong[0]
         raise VerificationError(f"{len(wrong)} cells differ, first {first}: {expected[first]} != {placed[first]}")
+    if connectivity is not None:
+        _check_connections(placed, expected, source, changed, connectivity)
     non_air = sum(1 for b, _ in placed.values() if b != "minecraft:air")
     return {
         "size": list(size),
@@ -204,6 +284,7 @@ def verify(nbt_path: Path, schem_path: Path, reference: dict, air: str) -> dict:
         "source_cells": len(source),
         "cells_compared": len(expected),
         "mismatches": 0,
+        "connection_cells_computed": len(changed),
     }
 
 

@@ -19,7 +19,13 @@ from .verify import VerificationError, verify
 
 
 def _verify(config: C.Config) -> dict:
-    return verify(config.nbt_path, config.source, C.load_reference(config.target), config.air)
+    return verify(
+        config.nbt_path,
+        config.source,
+        C.load_reference(config.target),
+        config.air,
+        C.load_connectivity(config.target),
+    )
 
 
 def main(argv: list[str] | None = None) -> int:
