@@ -193,7 +193,7 @@ def test_states_missing_from_the_target_version_are_rejected(tmp_path, state, me
 @pytest.mark.parametrize(
     "state, feature",
     [
-        ("minecraft:chest[facing=north]", "block_entity"),
+        ("minecraft:spawner", "block_entity"),  # chests etc. are allow-listed (test_structure_block_entities.py)
         ("minecraft:jigsaw", "jigsaw"),
         ("minecraft:structure_void", "structure_void"),
     ],
