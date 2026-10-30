@@ -25,9 +25,11 @@ Per rotation (none, clockwise_90, 180, counterclockwise_90): 34 placements place
 - Python stair rule vs game: 0 mismatches over 593 stairs per rotation; 18 stairs per rotation take a different shape in the game than authored, all 18 are named by the PR #49 review.
 - Patch sets are deterministic (sha256 identical across runs and between q computed directly and q rotated from q=0).
 
-## Open boundary cases (need a design decision, not made here)
+## Boundary cases and ST-03-STAIR-Q01 decision C
 
-- 18 stairs per rotation would be reshaped by a normal (non-strict) neighbour update because of a stair in the next module. SEAM-01 keeps the authored shape.
-- 15 connecting blocks per rotation have a connection that depends on that choice (a wall/bar/pane touching a seam stair: a corner-shaped stair is sturdier on the side face). Their patch states assume the authored stair shape (`connections_that_depend_on_a_seam_stair_shape` in the result). If the design later prefers vanilla seam stair shapes, those stairs and cells must be patched together.
+- **Decision C:** preserve authored `facing`, `half`, and `shape` as authoritative. Rotation changes facing only as required by whole-structure rotation; neighbour updates must not add changes. The 18 synthetic seam stairs per rotation retain their authored states, even when normal updates would reshape them.
+- 15 connecting blocks per rotation have a connection that depends on that choice (a wall/bar/pane touching a seam stair: a corner-shaped stair is sturdier on the side face). Their patch states assume the authored stair shape (`connections_that_depend_on_a_seam_stair_shape` in the result). These connections are computed against the preserved authored stair states; vanilla recomputation is diagnostic only, not a new design.
 - Cells next to the 112 x 112 box edge or to air=omit modules (walls) border unknown terrain; the generator treats it as air, as the converter does (`boundary_unresolved` of the whole structure: ~1900 blocks). Terrain adaptation is out of scope.
 - Real module content will have stair/wall layouts this synthetic fixture does not; the generator is content-agnostic but its coverage on real NBT is not yet shown.
+
+The contract requires strict module placement and strict, independent connecting-block writes after assembly, followed by verification of final authored stair states. Any consumer that triggers later neighbour updates must preserve or restore the authored states and verify the final result; a normal-update fixpoint is not an acceptable substitute. No guarantee is made for arbitrary later player or terrain updates. Actual ST-03 content and its application path still require validation; the figures above describe synthetic fixtures only.

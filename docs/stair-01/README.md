@@ -23,3 +23,9 @@ Validation (offline): targeted stair tests plus exporter/connectivity/block-enti
 - Strict vs normal: non-strict placement recomputes shapes. The isolated matrix therefore changes 32 of 40 cells (every non-straight shape reverts); fixtures whose authored shapes were game-derived do not change. Authored states are only guaranteed by strict placement.
 - Module seam: 2 of 48 stairs have a different game shape when their module is placed alone (x=7 and x=8, z=10: inner_* alone, straight assembled). Both are listed by `stair_boundary_review` of their module. No stair outside the report depends on the other module. This supports SEAM-01 using that list as its candidate set.
 - Not a result: no mismatch was found, so nothing was changed in the converter. Fixtures use a fixed set of block ids (oak, stone brick, dark oak); traversal of the spiral and walkability are not tested.
+
+## ST-03-STAIR-Q01 — owner decision C (2026-10-30)
+
+For ST-03, the authored `facing`, `half`, and `shape` are authoritative. Never infer or change these from neighbours. A whole-structure rotation rotates `facing` normally; `half` and `shape` remain unchanged, and no subsequent neighbour-driven direction or shape change is permitted. Adjacent walls, bars and other connecting blocks may be corrected only against the preserved stair states.
+
+Use a placement and patch application path that preserves those explicit states through final assembly (the tested strict template and strict setblock path). A normal neighbour-update result is diagnostic evidence, never a replacement design. Strict placement does not establish immunity to later non-strict world updates: the consuming runtime must ensure the final state after its complete application path, and any subsequent updates that it causes, satisfies this contract.

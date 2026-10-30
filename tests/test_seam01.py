@@ -139,3 +139,27 @@ def test_a_state_the_author_stated_is_never_patched(world):
     src[module][pos] = ("minecraft:iron_bars", dict.fromkeys(("north", "east", "south", "west"), "false"))
     with pytest.raises(P.SeamError, match="author-stated|not computed"):
         P.generate(0, src, templates)
+
+@pytest.mark.parametrize("q", range(4))
+def test_owner_stair_policy_and_dependent_connections(world, q):
+    from tools.structure_export.live import ROTATIONS, rotate_props
+
+    sources, templates, results, base = world
+    placed = P.module_result(q, templates)
+    whole, _, _ = P.whole_structure(q, sources)
+    vanilla, _, _ = P.whole_structure(q, sources, vanilla_stairs=True)
+    patches = P.generate(q, sources, templates)
+    after = P.apply(placed, patches)
+    seam = P.stair_report(q, sources, templates)["seam_dependent"]
+    affected = [p for p in whole if whole[p] != vanilla[p] and not whole[p][0].endswith("_stairs")]
+    assert len(seam) == 18 and len(affected) == 15
+    assert not P.reconcile_stairs(q, {"seam_dependent": seam}, results)["not_in_stair_boundary_review"]
+    assert all(after[tuple(s["pos"])] == whole[tuple(s["pos"])] == placed[tuple(s["pos"])] for s in seam)
+    assert all(after[p] == whole[p] for p in affected)
+    for (x, y, z), (block, props) in P.module_result(0, templates).items():
+        if block.endswith("_stairs"):
+            rx, rz = A.rot_cell(x, z, q)
+            assert placed[(rx, y, rz)] == (block, rotate_props(props, ROTATIONS[q]))
+    assert patches == P.rotate(base, q)
+    assert P.apply(placed, patches) == P.apply(placed, list(reversed(patches)))
+    assert P.validate(patches, placed, whole) == []
