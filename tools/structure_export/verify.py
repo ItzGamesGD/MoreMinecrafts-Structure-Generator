@@ -205,8 +205,19 @@ def _check_connections(placed: dict, expected: dict, source: dict, changed: set,
             _check(props["in_wall"] == str(flanked).lower(), f"{pos} {block_id}: in_wall={props['in_wall']}")
 
 
-def verify(nbt_path: Path, schem_path: Path, reference: dict, air: str, connectivity: dict | None = None) -> dict:
-    """Return a summary dict; raise VerificationError on the first violation."""
+def verify(
+    nbt_path: Path,
+    schem_path: Path,
+    reference: dict,
+    air: str,
+    connectivity: dict | None = None,
+    block_entities: dict | None = None,
+) -> dict:
+    """Return a summary dict; raise VerificationError on the first violation.
+
+    `block_entities` is the pinned block-entity allow-list (reference/block_entities-26.3.json). Without it no
+    block entity is accepted, so a template with block entities cannot pass a check that did not name the policy.
+    """
     name, root = read_nbt(nbt_path)
     _check(name == "", f"root name {name!r} (vanilla templates use an empty name)")
     r = root.value
@@ -233,17 +244,21 @@ def verify(nbt_path: Path, schem_path: Path, reference: dict, air: str, connecti
         _check(set(props) == set(ref["properties"]), f"{block_id}: incomplete state {props}")
         for k, v in props.items():
             _check(v in ref["properties"][k], f"{block_id}[{k}={v}] invalid")
+        allowed = block_entities is not None and block_id in block_entities["allow"]
         _check(
-            not ref["block_entity"] and block_id not in ("minecraft:jigsaw", "minecraft:structure_void"),
-            f"{block_id} needs feature handling that the MVP does not provide",
+            allowed or (not ref["block_entity"] and block_id not in ("minecraft:jigsaw", "minecraft:structure_void")),
+            f"{block_id} needs feature handling outside the block-entity allow-list",
         )
+        if allowed:
+            for k, values in block_entities["allow"][block_id]["states"].items():
+                _check(props.get(k) in values, f"{block_id}[{k}={props.get(k)}] is not an allowed block-entity state")
         palette.append((block_id, props))
     _check(len({(b, tuple(sorted(p.items()))) for b, p in palette}) == len(palette), "duplicate palette states")
     _check(r["blocks"].type == LIST and r["blocks"].element == COMPOUND, "blocks must be a compound list")
-    placed, used = {}, set()
+    placed, used, placed_nbt = {}, set(), {}
     for entry in r["blocks"].value:
         e = entry.value
-        _check(set(e) == {"pos", "state"}, f"block entry keys {sorted(e)} (no block entities expected)")
+        _check(set(e) <= {"pos", "state", "nbt"} and {"pos", "state"} <= set(e), f"block entry keys {sorted(e)}")
         _check(e["pos"].element == INT and e["state"].type == INT, "pos must be an int list and state an int")
         pos = tuple(v.value for v in e["pos"].value)
         _check(len(pos) == 3 and all(0 <= pos[i] < size[i] for i in range(3)), f"{pos} outside {size}")
@@ -252,6 +267,9 @@ def verify(nbt_path: Path, schem_path: Path, reference: dict, air: str, connecti
         _check(0 <= state < len(palette), f"state index {state} out of range")
         placed[pos] = palette[state]
         used.add(state)
+        if "nbt" in e:
+            _check(e["nbt"].type == COMPOUND, f"{pos}: nbt must be a compound")
+            placed_nbt[pos] = plain(e["nbt"])
     _check(used == set(range(len(palette))), "unused palette entries")
 
     source_size, source = _source_cells(schem_path)
@@ -265,6 +283,12 @@ def verify(nbt_path: Path, schem_path: Path, reference: dict, air: str, connecti
     missing = sorted(set(expected) - set(placed))
     extra = sorted(set(placed) - set(expected))
     _check(not missing and not extra, f"missing {missing[:5]} extra {extra[:5]}")
+    for pos, (block_id, _) in expected.items():
+        want = (
+            block_entities["allow"][block_id]["nbt"] if block_entities and block_id in block_entities["allow"] else None
+        )
+        have = placed_nbt.get(pos)
+        _check(have == want, f"{pos} {block_id}: block-entity data {have} != {want}")
     wrong = [p for p in expected if expected[p] != placed[p]]
     changed = set()
     if connectivity is not None:

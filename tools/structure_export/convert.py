@@ -24,13 +24,14 @@ import json
 import re
 import tomllib
 from collections.abc import Callable
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from functools import cache
 from pathlib import Path
 
 import nbtlib
 from nbtlib.tag import Compound, Int, List, String
 
+from . import block_entities
 from .connectivity import Rules, connect, load_connectivity
 from .errors import BlockStateError, ConfigError, UnsupportedFeature
 from .schem import Schematic, parse_state, read_schematic
@@ -42,17 +43,17 @@ _ID_RE = re.compile(r"^([a-z0-9_.-]+):([a-z0-9_-]+(?:/[a-z0-9_.-]+)*)$")
 
 # Extension point. Blocks whose correct conversion needs more than an id and properties are
 # classified into a feature; a feature without a registered handler is rejected. A handler
-# will receive (block_id, properties, position) and return the block-entity `nbt` compound to
-# attach (or raise). Planned: "jigsaw" (connector data), "block_entity" (chests, spawners, ...),
-# "structure_void" (omit the cell instead of placing a block). Entities and multi-piece
-# structures are rejected earlier, in the schem reader and the config loader.
+# will receive (block_id, resolved state, target) and return the block-entity `nbt` compound to
+# attach (or raise). "block_entity" is registered (block_entities.py: allow-listed chests, barrels, furnaces,
+# banners). Planned: "jigsaw" (connector data), "structure_void" (omit the cell instead of placing a block).
+# Entities and multi-piece structures are rejected earlier, in the schem reader and the config loader.
 # Neighbour-dependent properties. Jigsaw pool elements are placed with StructurePlaceSettings.knownShape
 # = true (SinglePoolElement in the 26.3 jar), so the game does not recompute them. connectivity.py
 # computes them for walls, fences, panes/bars and fence gates; on any other block (vines, chorus,
 # redstone wire, ...) a default here is what generates in the world, and the report warns.
 CONNECTION_PROPERTIES = {"north", "east", "south", "west", "up", "down"}
 
-FEATURE_HANDLERS: dict[str, Callable[[str, dict[str, str], tuple[int, int, int]], Compound]] = {}
+FEATURE_HANDLERS: dict[str, Callable[[str, dict[str, str], str], Compound]] = {"block_entity": block_entities.handler}
 
 
 @cache
@@ -211,6 +212,7 @@ class Result:
     config: Config
     nbt: bytes
     report: dict
+    block_entities: dict[tuple[int, int, int], Compound] = field(default_factory=dict)
 
 
 def convert(config: Config) -> Result:
@@ -222,6 +224,7 @@ def convert(config: Config) -> Result:
     used = sorted(set(schem.cells))
     rules = Rules(load_connectivity(config.target))
     resolved: dict[int, tuple[str, tuple[tuple[str, str], ...]] | None] = {}
+    block_nbt: dict[int, Compound] = {}
     explicit: dict[int, set[str]] = {}
     defaulted: dict[str, list[str]] = {}
     warnings: list[str] = []
@@ -233,7 +236,7 @@ def convert(config: Config) -> Result:
         if feature is not None:
             if feature not in FEATURE_HANDLERS:
                 raise UnsupportedFeature(feature, f"{text} (palette index {index}) needs '{feature}' handling")
-            raise NotImplementedError("feature handlers are an extension point; none are registered in the MVP")
+            block_nbt[index] = FEATURE_HANDLERS[feature](block_id, dict(state), config.target)
         if filled:
             defaulted[text] = filled
             unconnected = sorted(set(filled) & CONNECTION_PROPERTIES)
@@ -245,13 +248,15 @@ def convert(config: Config) -> Result:
         explicit[index] = set(props)
         resolved[index] = None if (config.air == "omit" and block_id == "minecraft:air") else (block_id, state)
 
-    found, stated = {}, {}
+    found, stated, nbts = {}, {}, {}
     for index, palette_index in enumerate(schem.cells):
         state = resolved[palette_index]
         if state is not None:
             pos = schem.position(index)
             found[pos] = (state[0], dict(state[1]))
             stated[pos] = explicit[palette_index]
+            if palette_index in block_nbt:
+                nbts[pos] = block_nbt[palette_index]
     if not found:
         raise ConfigError(f"{config.source.name}: no blocks left to export")
     found, connectivity = connect(found, stated, schem.size, load_connectivity(config.target))
@@ -276,7 +281,10 @@ def convert(config: Config) -> Result:
         if key not in lookup:
             lookup[key] = len(palette)
             palette.append(key)
-        blocks.append(Compound({"pos": List[Int](pos), "state": Int(lookup[key])}))
+        entry = Compound({"pos": List[Int](pos), "state": Int(lookup[key])})
+        if pos in nbts:
+            entry["nbt"] = nbts[pos]
+        blocks.append(entry)
     palette_nbt = []
     for block_id, state in palette:
         entry = Compound({"id": String(block_id)})
@@ -332,7 +340,7 @@ def convert(config: Config) -> Result:
         "warnings": warnings,
         "state_counts": dict(sorted(counts.items())),
     }
-    return Result(config=config, nbt=nbt, report=report)
+    return Result(config=config, nbt=nbt, report=report, block_entities=nbts)
 
 
 def report_text(report: dict) -> str:

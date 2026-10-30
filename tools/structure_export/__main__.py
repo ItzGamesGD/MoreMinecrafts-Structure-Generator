@@ -13,6 +13,7 @@ import json
 import sys
 from pathlib import Path
 
+from . import block_entities
 from . import convert as C
 from .errors import ExportError
 from .verify import VerificationError, verify
@@ -25,6 +26,7 @@ def _verify(config: C.Config) -> dict:
         C.load_reference(config.target),
         config.air,
         C.load_connectivity(config.target),
+        block_entities.load(config.target),
     )
 
 

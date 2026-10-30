@@ -1,0 +1,154 @@
+{
+ "allow": {
+  "minecraft:barrel": {
+   "be": "minecraft:barrel",
+   "family": "barrel",
+   "nbt": {
+    "id": "minecraft:barrel"
+   },
+   "states": {
+    "open": [
+     "false"
+    ]
+   }
+  },
+  "minecraft:blast_furnace": {
+   "be": "minecraft:blast_furnace",
+   "family": "blast_furnace",
+   "nbt": {
+    "id": "minecraft:blast_furnace"
+   },
+   "states": {
+    "lit": [
+     "false"
+    ]
+   }
+  },
+  "minecraft:chest": {
+   "be": "minecraft:chest",
+   "family": "chest",
+   "nbt": {
+    "id": "minecraft:chest"
+   },
+   "states": {
+    "type": [
+     "single"
+    ]
+   }
+  },
+  "minecraft:furnace": {
+   "be": "minecraft:furnace",
+   "family": "furnace",
+   "nbt": {
+    "id": "minecraft:furnace"
+   },
+   "states": {
+    "lit": [
+     "false"
+    ]
+   }
+  },
+  "minecraft:white_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner",
+    "patterns": [
+     {
+      "color": "cyan",
+      "pattern": "minecraft:rhombus"
+     },
+     {
+      "color": "light_gray",
+      "pattern": "minecraft:stripe_bottom"
+     },
+     {
+      "color": "gray",
+      "pattern": "minecraft:stripe_center"
+     },
+     {
+      "color": "light_gray",
+      "pattern": "minecraft:border"
+     },
+     {
+      "color": "black",
+      "pattern": "minecraft:stripe_middle"
+     },
+     {
+      "color": "light_gray",
+      "pattern": "minecraft:half_horizontal"
+     },
+     {
+      "color": "light_gray",
+      "pattern": "minecraft:circle"
+     },
+     {
+      "color": "black",
+      "pattern": "minecraft:border"
+     }
+    ]
+   },
+   "states": {}
+  }
+ },
+ "evidence": {
+  "barrel": {
+   "keys": {
+    "Items": 128,
+    "LootTable": 207,
+    "components": 204,
+    "id": 226
+   },
+   "occurrences": 226
+  },
+  "blast_furnace": {
+   "keys": {
+    "Items": 11,
+    "RecipesUsed": 11,
+    "cooking_time_spent": 11,
+    "cooking_total_time": 11,
+    "id": 11,
+    "lit_time_remaining": 11,
+    "lit_total_time": 11
+   },
+   "occurrences": 11
+  },
+  "chest": {
+   "keys": {
+    "Items": 197,
+    "LootTable": 301,
+    "components": 161,
+    "id": 424
+   },
+   "occurrences": 424
+  },
+  "furnace": {
+   "keys": {
+    "Items": 28,
+    "RecipesUsed": 28,
+    "cooking_time_spent": 28,
+    "cooking_total_time": 28,
+    "id": 28,
+    "lit_time_remaining": 28,
+    "lit_total_time": 28
+   },
+   "occurrences": 28
+  },
+  "wall_banner": {
+   "keys": {
+    "components": 16,
+    "id": 107,
+    "patterns": 107
+   },
+   "occurrences": 107
+  }
+ },
+ "game_jar_sha1": "cc3964451a3b32a0488110d5e3e6ad8d75fe6a66",
+ "minecraft_version": "26.3",
+ "rejected": {
+  "every other block entity": "no design need; rejected by the allow-list",
+  "standing banners (*_banner)": "no vanilla template evidence for their NBT"
+ },
+ "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+ "templates_scanned": 1511
+}

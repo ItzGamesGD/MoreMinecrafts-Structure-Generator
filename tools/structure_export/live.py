@@ -107,7 +107,42 @@ def _text(block_id: str, props: dict[str, str]) -> str:
     return block_id + ("[" + ",".join(f"{k}={v}" for k, v in sorted(props.items())) + "]" if props else "")
 
 
-def _legacy_probe(config: Config) -> bytes:
+def _snbt(value) -> str:
+    """An NBT value in command syntax (for data predicates)."""
+    if isinstance(value, nbtlib.Compound):
+        return "{" + ",".join(f"{k}:{_snbt(v)}" for k, v in value.items()) + "}"
+    if isinstance(value, nbtlib.List):
+        return "[" + ",".join(_snbt(v) for v in value) + "]"
+    if isinstance(value, nbtlib.String):
+        return '"' + str(value) + '"'
+    return str(int(value))
+
+
+def block_entity_failures(server, origin, rotation: str, expected: dict) -> list:
+    """Cells whose block entity in the game differs from the template's NBT: the state must match (id and every
+    stated key), no contents may have been created (Items, LootTable), and banner patterns must be exactly
+    the expected count. Positions are template positions, placed with `origin` and `rotation`."""
+    failures = []
+    for pos, nbt in sorted(expected.items()):
+        at = " ".join(str(v) for v in _at(origin, pos, rotation))
+        want = _snbt(nbt)
+        reply = server.cmd(f"execute if data block {at} {want}")
+        if "passed" not in reply:
+            failures.append({"pos": list(pos), "expected": want, "reply": reply})
+            continue
+        for path in ("Items[0]", "LootTable"):
+            if "passed" in server.cmd(f"execute if data block {at} {path}"):
+                failures.append({"pos": list(pos), "unexpected": path})
+        count = len(nbt.get("patterns", []))
+        if count and (
+            "passed" not in server.cmd(f"execute if data block {at} patterns[{count - 1}]")
+            or "passed" in server.cmd(f"execute if data block {at} patterns[{count}]")
+        ):
+            failures.append({"pos": list(pos), "unexpected": f"patterns count != {count}"})
+    return failures
+
+
+def _legacy_probe(config: Config, block_entities: dict) -> bytes:
     """The source states as an old-layout template at the source DataVersion (game upgrades it)."""
     schem = read_schematic(config.source)
     palette, lookup, blocks = [], {}, []
@@ -122,7 +157,11 @@ def _legacy_probe(config: Config) -> bytes:
             if props:
                 entry["Properties"] = Compound({k: String(v) for k, v in props.items()})
             palette.append(entry)
-        blocks.append(Compound({"pos": List[Int](schem.position(index)), "state": Int(lookup[text])}))
+        pos = schem.position(index)
+        entry = Compound({"pos": List[Int](pos), "state": Int(lookup[text])})
+        if pos in block_entities:
+            entry["nbt"] = block_entities[pos]
+        blocks.append(entry)
     root = nbtlib.File(
         {
             "DataVersion": Int(schem.data_version),
@@ -209,7 +248,7 @@ def run(config: Config, server_jar: Path, java: str, work: Path | None = None) -
     target = pack / "data" / namespace / "structure" / f"{name}.nbt"
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy(config.nbt_path, target)
-    (target.parent / f"{Path(name).name}__dfu_probe.nbt").write_bytes(_legacy_probe(config))
+    (target.parent / f"{Path(name).name}__dfu_probe.nbt").write_bytes(_legacy_probe(config, exported.block_entities))
 
     schem = read_schematic(config.source)
     template = _template_cells(config.nbt_path)
@@ -300,6 +339,10 @@ def run(config: Config, server_jar: Path, java: str, work: Path | None = None) -
         result["load"] = {"cells_tested": len(template), "failure_count": len(failures), "failures": failures[:20]}
         failures = cell_test(probe_at, {p: s[2] for p, s in source.items()})
         result["dfu_probe"] = {"cells_tested": len(source), "failure_count": len(failures), "failures": failures[:20]}
+        result["dfu_probe"]["block_entity_failures"] = block_entity_failures(
+            server, probe_at, "none", exported.block_entities
+        )
+        result["block_entities"] = {"cells": len(exported.block_entities)}
         result["before_after"] = {
             "cells_changed_by_correction": len(same(export_at, probe_at, "none")),
             "corrected_blocks_in_report": exported.report["connectivity"]["corrected_blocks"],
@@ -323,6 +366,7 @@ def run(config: Config, server_jar: Path, java: str, work: Path | None = None) -
             place(config.structure_id, pristine, rotation, True)
             place(config.structure_id, normal, rotation, False)
             place(probe_id, probe_normal, rotation, False)
+            be_failures = block_entity_failures(server, oracle, rotation, exported.block_entities)
             changed_by_game = recompute(oracle, rotation)
             oracle_diff = same(oracle, pristine, rotation)
             normal_diff = same(normal, pristine, rotation)
@@ -335,7 +379,8 @@ def run(config: Config, server_jar: Path, java: str, work: Path | None = None) -
                 "normal_vs_strict_diff": normal_diff,
                 "normal_vs_strict_unexpected": unexpected,
                 "uncorrected_normal_vs_corrected_strict_diff": probe_normal_diff,
-                "pass": not changed_by_game and not oracle_diff and not unexpected,
+                "block_entity_failures": be_failures,
+                "pass": not changed_by_game and not oracle_diff and not unexpected and not be_failures,
             }
     finally:
         server.stop()
@@ -348,6 +393,7 @@ def run(config: Config, server_jar: Path, java: str, work: Path | None = None) -
         result["pack_loaded"]
         and result.get("load", {}).get("failure_count") == 0
         and result.get("dfu_probe", {}).get("failure_count") == 0
+        and not result.get("dfu_probe", {}).get("block_entity_failures")
         and result.get("before_after", {}).get("cells_changed_by_correction")
         == result.get("before_after", {}).get("corrected_blocks_in_report")
         and bool(result.get("oracle_negative_control", {}).get("setblock_changed_on_uncorrected"))
