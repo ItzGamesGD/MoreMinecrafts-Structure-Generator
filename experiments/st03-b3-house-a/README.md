@@ -1,0 +1,33 @@
+# B3-01 representative module: house A — PROPOSED / experimental
+
+**Status:** owner approval required; not a production ST-03 asset. `experimental_house_a.nbt` is a reversible trial, not one of the final 25 NBTs. Source package SHA-256 `0b025a524fbbf8ffd3ad590babebe108327c79f90f603765a86d1e0d4b17ea5b`. Based on PR #49 `6011df46` and PR #50 `1d0e20d9`.
+
+House A is a small residence with stone base, dark oak upper story, gable and porch. It exercises a shell, stairs as roof, panes, entrance, interior decor and two block entity families, and is reused twice. Its selection does not test the tower's spiral, a separate work item. The package specifies the module as 9×7×10 (x,z,y), air=include, F11 at (14,0,11) and F14 at (89,0,11), rotation none and order 5; local +x east, +z south, y=0 floor, x=0..8, z=0..6, y=0..9. Door at (4,6) is south; the room is x1..7,z1..5. Exact geometric choices below are proposals, not owner decisions.
+
+| Existing design | This experiment — PROPOSED unless specifically stated |
+|---|---|
+| Stone base, dark oak upper, gable, porch | Cobblestone perimeter at y=0..1; dark oak planks and vertical corner logs above; gable roof. **Porch remains unresolved:** the trial has a flush entrance and no projecting porch; allocating space or recessing a porch needs designer approval. |
+| One room; package `decor.py` fixes cells | Bed foot (1,1,1) and head (2,1,1), facing east; crafting table (7,1,1), furnace (7,1,3) facing west, barrel (1,1,5) facing east. Furnace/barrel empty; loot assignment is separate. |
+| Windows, exact wall texture, door shape and lighting not block-defined | Panes at x=0/8,z=2/4 and z=0/6,x=2/6, y=2..3; door (4,1..2,6), facing south, left hinge, closed; one hanging lantern at (4,4,3). |
+| Stair states are authored, never inferred | 56 roof stairs: x=0..3 facing east and x=5..8 facing west; y=5+min(x,8−x), z=0..6; all bottom/straight. Ridge x=4,y=9 is planks. Rotations rotate facing only; no neighbour-directed changes. |
+| Foundation/terrain and module joins are separate | Air=include clears all 630 cells including air. No below-y0 foundation is in the template. The roof, glass and door touch the bounding box; surrounding terrain/other modules and updates remain untested. |
+
+The machine-readable `proposed-cells.json` enumerates every non-air cell and authored state. Every other coordinate in the 9×10×7 box is air. Floor: cobblestone perimeter and planks inside at y=0. External walls span y=1..4; no internal wall; planks cover interior at y=5 as ceiling/attic floor. Gable infill is at z=0/6, roof is as in the table, no separate chimney. Glass-pane connections are computed by the converter; 16 perimeter pane cells have unresolved exterior neighbours in `export-report.json`. There is no wall or bars in this trial, so those block families are not proven here. The barrel and furnace carry their allowed `{id}` entity NBT with no contents or coordinates; beds and door have explicit paired states. The lantern, roof slope and window placement are proposals for review.
+
+## Verification
+
+- Fresh offline independent verifier: 630 source cells compared, 311 non-air, 16 palette states, zero mismatches, 16 computed pane cells. This validates the source/NBT relationship, not its architectural quality.
+- Fresh 26.3 vanilla server (jar SHA-1 `33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c`): `live-result.json` reports successful load of 630 cells, 16 pane corrections, two block entities, four rotations, zero game-connection or entity failures and clean relevant server log. `rotation-cell-result.json` independently checks all 630 expected rotated block states per rotation after strict placement, zero mismatches (2,520 checks). Only final strict isolated placements are covered. Normal world updates or other modules can still affect the boundary.
+- Actual adjoining ground/terrain and module assembly **NOT RUN**; no neighbouring ST-03 NBT exists. This prevents a full B3-01 TECH PASS even though isolated checks pass. Test the real 34-placement application including boundary updates when neighbouring assets exist, preserving authored stair states.
+- **VISUAL NOT RUN:** no actual client screenshot. This environment lacks Xvfb/xvfb-run and an available 26.3 client jar; no synthetic image is presented as client evidence. Use the package D9 client gametest recipe in an isolated MMB copy and capture exterior, roof, room, door, roof stairs and adjoining ground at 26.3. Record version, commit, camera and time of day; inspect style, repeated pattern, room movement and connections. Gameplay traversal is not proven by this test.
+
+## Owner review and next steps
+
+1. Resolve the required porch and footprint: show whether it is recessed or may project into the adjacent ground module. The existing trial has no actual porch and should not be accepted as a completed house.
+2. Review proposed wall material, plain gable, eaves, windows, door, lantern and their repetitive pattern in a real client; decide chimney and interior treatment. The trial has no chimney. Confirm the 56 roof stair orientations and the facade silhouette.
+3. Determine the actual adjacent ground cells, any clearing/overlap and pane connections after all placement and terrain updates. Verify both F11 and F14 and all whole-structure rotations. Do not turn game-recomputed stairs into design authority.
+4. For each remaining module: distinguish authority from proposed cells, author a complete bounded cell map including air and block entities, validate palette and geometry, export experimental template, compare all cells under four strict rotations, test actual neighbours and capture client views for owner review. Roof-only stairs do not validate tower spiral geometry or walking; design and verify that separately.
+
+Rebuild from repo root using `PYTHONPATH=. python experiments/st03-b3-house-a/build.py` with `nbtlib` installed. The JSON and generated assets are experimental. For strict rotated cell verification run `check_rotations.py --server-jar <pinned.jar> --java <java25> --work <empty-work-dir>` with repository root on PYTHONPATH. Server network sockets must be allowed. Existing historical validation is not a substitute for verification of newly authored modules.
+
+Rebuild note: the experimental NBT and JSON were byte-identical across two builds, but the intermediate `.schem` gzip bytes changed because its gzip metadata is timestamped. The independent verifier compares its decoded cells; do not use the `.schem` byte hash as a stable build identity. The export report records the source hash from its own run and temporary paths, so paths are provenance of that run, not portable locations.
