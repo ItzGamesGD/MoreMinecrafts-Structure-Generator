@@ -134,6 +134,8 @@ def _source_cells(schem_path: Path) -> tuple[tuple[int, int, int], dict[tuple[in
 def _complete(text: str, reference: dict) -> tuple[str, dict[str, str]]:
     block_id, _, rest = text.partition("[")
     props = dict(p.split("=", 1) for p in rest.rstrip("]").split(",")) if rest else {}
+    if block_id.endswith("_stairs"):
+        _check({"facing", "half", "shape"} <= set(props), f"{block_id}: stairs require explicit facing, half, shape")
     full = dict(reference["blocks"][block_id]["default"])
     full.update(props)
     return block_id, full

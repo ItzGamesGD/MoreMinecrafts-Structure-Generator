@@ -153,8 +153,8 @@ def test_layout_and_state_completion(tmp_path):
         tmp_path,
         [
             "minecraft:stone",
-            "minecraft:oak_stairs[facing=east]",
-            "minecraft:oak_stairs[facing=east,half=bottom]",
+            "minecraft:oak_stairs[facing=east,half=bottom,shape=straight]",
+            "minecraft:oak_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]",
             "minecraft:air",
         ],
         [0, 1, 2, 3],
