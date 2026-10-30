@@ -1,0 +1,557 @@
+{
+  "datapacks": "There are 2 data pack(s) enabled: [vanilla (built-in)], [file/mmst_stair_live (world)]",
+  "fixtures": {
+    "corbel": {
+      "game_shapes": {
+        "inner_left": 0,
+        "inner_right": 0,
+        "outer_left": 2,
+        "outer_right": 2,
+        "straight": 16
+      },
+      "pass": true,
+      "rotations": {
+        "180": {
+          "cells": 20,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "clockwise_90": {
+          "cells": 20,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "counterclockwise_90": {
+          "cells": 20,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "none": {
+          "cells": 20,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        }
+      },
+      "stairs": 20
+    },
+    "corners": {
+      "game_shapes": {
+        "inner_left": 0,
+        "inner_right": 0,
+        "outer_left": 8,
+        "outer_right": 8,
+        "straight": 112
+      },
+      "pass": true,
+      "rotations": {
+        "180": {
+          "cells": 128,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "clockwise_90": {
+          "cells": 128,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "counterclockwise_90": {
+          "cells": 128,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "none": {
+          "cells": 128,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        }
+      },
+      "stairs": 128
+    },
+    "matrix": {
+      "pass": true,
+      "rotations": {
+        "180": {
+          "cells": 40,
+          "normal_placement_changed_count": 32,
+          "normal_placement_changed_examples": [
+            {
+              "expected": "minecraft:oak_stairs[facing=north,half=bottom,shape=inner_left]",
+              "pos": [
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=south,half=top,shape=inner_right]",
+              "pos": [
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=north,half=top,shape=outer_left]",
+              "pos": [
+                0,
+                0,
+                6
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=east,half=bottom,shape=inner_left]",
+              "pos": [
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=west,half=top,shape=inner_right]",
+              "pos": [
+                2,
+                0,
+                4
+              ]
+            }
+          ],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "clockwise_90": {
+          "cells": 40,
+          "normal_placement_changed_count": 32,
+          "normal_placement_changed_examples": [
+            {
+              "expected": "minecraft:oak_stairs[facing=west,half=bottom,shape=inner_left]",
+              "pos": [
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=east,half=top,shape=inner_right]",
+              "pos": [
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=west,half=top,shape=outer_left]",
+              "pos": [
+                0,
+                0,
+                6
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=north,half=bottom,shape=inner_left]",
+              "pos": [
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=south,half=top,shape=inner_right]",
+              "pos": [
+                2,
+                0,
+                4
+              ]
+            }
+          ],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "counterclockwise_90": {
+          "cells": 40,
+          "normal_placement_changed_count": 32,
+          "normal_placement_changed_examples": [
+            {
+              "expected": "minecraft:oak_stairs[facing=east,half=bottom,shape=inner_left]",
+              "pos": [
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=west,half=top,shape=inner_right]",
+              "pos": [
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=east,half=top,shape=outer_left]",
+              "pos": [
+                0,
+                0,
+                6
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=south,half=bottom,shape=inner_left]",
+              "pos": [
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=north,half=top,shape=inner_right]",
+              "pos": [
+                2,
+                0,
+                4
+              ]
+            }
+          ],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "none": {
+          "cells": 40,
+          "normal_placement_changed_count": 32,
+          "normal_placement_changed_examples": [
+            {
+              "expected": "minecraft:oak_stairs[facing=south,half=bottom,shape=inner_left]",
+              "pos": [
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=north,half=top,shape=inner_right]",
+              "pos": [
+                0,
+                0,
+                4
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=south,half=top,shape=outer_left]",
+              "pos": [
+                0,
+                0,
+                6
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=west,half=bottom,shape=inner_left]",
+              "pos": [
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "expected": "minecraft:oak_stairs[facing=east,half=top,shape=inner_right]",
+              "pos": [
+                2,
+                0,
+                4
+              ]
+            }
+          ],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        }
+      },
+      "stairs": 40
+    },
+    "pairs": {
+      "game_shapes": {
+        "inner_left": 16,
+        "inner_right": 16,
+        "outer_left": 16,
+        "outer_right": 16,
+        "straight": 192
+      },
+      "pass": true,
+      "rotations": {
+        "180": {
+          "cells": 256,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "clockwise_90": {
+          "cells": 256,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "counterclockwise_90": {
+          "cells": 256,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "none": {
+          "cells": 256,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        }
+      },
+      "stairs": 256
+    },
+    "roof": {
+      "game_shapes": {
+        "inner_left": 0,
+        "inner_right": 0,
+        "outer_left": 6,
+        "outer_right": 6,
+        "straight": 70
+      },
+      "pass": true,
+      "rotations": {
+        "180": {
+          "cells": 82,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "clockwise_90": {
+          "cells": 82,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "counterclockwise_90": {
+          "cells": 82,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "none": {
+          "cells": 82,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        }
+      },
+      "stairs": 82
+    },
+    "seam_a": {
+      "game_shapes": {
+        "inner_left": 0,
+        "inner_right": 1,
+        "outer_left": 0,
+        "outer_right": 0,
+        "straight": 23
+      },
+      "pass": true,
+      "rotations": {
+        "180": {
+          "cells": 24,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "clockwise_90": {
+          "cells": 24,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "counterclockwise_90": {
+          "cells": 24,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "none": {
+          "cells": 24,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        }
+      },
+      "stairs": 24
+    },
+    "seam_b": {
+      "game_shapes": {
+        "inner_left": 1,
+        "inner_right": 0,
+        "outer_left": 0,
+        "outer_right": 0,
+        "straight": 23
+      },
+      "pass": true,
+      "rotations": {
+        "180": {
+          "cells": 24,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "clockwise_90": {
+          "cells": 24,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "counterclockwise_90": {
+          "cells": 24,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "none": {
+          "cells": 24,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        }
+      },
+      "stairs": 24
+    },
+    "seam_whole": {
+      "game_shapes": {
+        "inner_left": 0,
+        "inner_right": 0,
+        "outer_left": 0,
+        "outer_right": 0,
+        "straight": 48
+      },
+      "pass": true,
+      "rotations": {
+        "180": {
+          "cells": 48,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "clockwise_90": {
+          "cells": 48,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "counterclockwise_90": {
+          "cells": 48,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "none": {
+          "cells": 48,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        }
+      },
+      "stairs": 48
+    },
+    "spiral": {
+      "game_shapes": {
+        "inner_left": 0,
+        "inner_right": 0,
+        "outer_left": 0,
+        "outer_right": 7,
+        "straight": 25
+      },
+      "pass": true,
+      "rotations": {
+        "180": {
+          "cells": 32,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "clockwise_90": {
+          "cells": 32,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "counterclockwise_90": {
+          "cells": 32,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        },
+        "none": {
+          "cells": 32,
+          "normal_placement_changed_count": 0,
+          "normal_placement_changed_examples": [],
+          "strict_mismatch_count": 0,
+          "strict_mismatches": []
+        }
+      },
+      "stairs": 32
+    }
+  },
+  "log_problems": [],
+  "result": "PASS",
+  "seam": {
+    "boundary_dependent_stairs": [
+      {
+        "alone": "inner_right",
+        "assembled": "straight",
+        "pos": [
+          7,
+          0,
+          10
+        ]
+      },
+      {
+        "alone": "inner_left",
+        "assembled": "straight",
+        "pos": [
+          8,
+          0,
+          10
+        ]
+      }
+    ],
+    "not_covered_by_stair_boundary_review": [],
+    "stairs_whole": 48
+  }
+}

@@ -11,7 +11,6 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from test_structure_export import convert_file
-
 from tools.structure_export import convert as C
 from tools.structure_export.errors import BlockStateError
 from tools.structure_export.live import ROTATIONS, rotate_props, transform
@@ -99,3 +98,23 @@ def test_spiral_rising_run_preserves_each_authored_step(tmp_path):
         cells[x + z * 3 + y * 9] = y % 4 + 1
     result = convert_file(tmp_path, palette, cells, size=(3, 8, 3))
     verify(result.config.nbt_path, result.config.source, REF, "include")
+
+
+def test_live_fixtures_are_inside_their_box_and_cover_every_shape_family():
+    from tools.structure_export import stair_live as S
+
+    for name, cells in {
+        "pairs": S.fx_pairs(),
+        "corners": S.fx_corners(),
+        "spiral": S.fx_spiral(),
+        "corbel": S.fx_corbel(),
+        "roof": S.fx_roof(),
+        "seam": S.fx_seam_whole(),
+    }.items():
+        assert cells and all(min(p) >= 0 for p in cells), name
+        for _, facing, half in cells.values():
+            assert facing in FACING and half in ("top", "bottom")
+    matrix = S.fx_matrix_slots()
+    assert len(matrix) == 40 and {(f, h, s) for _, f, h, s in matrix.values()} == set(
+        itertools.product(FACING, ("bottom", "top"), SHAPES)
+    )

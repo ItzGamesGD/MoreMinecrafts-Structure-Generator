@@ -58,3 +58,7 @@ jobs:
             uv run --project vendor/mcbuild python -m tools.structure_export live "$config" \
               --server-jar .mc/server.jar --java java --work ".mc/live-$(basename "$config" .toml)"
           done
+      - name: STAIR-01 stair states on a real 26.3 server (strict placement at four rotations vs the exported states)
+        run: |
+          uv run --project vendor/mcbuild python -m tools.structure_export.stair_live \
+            --server-jar .mc/server.jar --java java --work .mc/stair-live --out .mc/stair-live-result.json
