@@ -1,0 +1,83 @@
+{
+  "minecraft_version": "26.3",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "pack_format": [
+    121,
+    0
+  ],
+  "datapacks": "There are 2 data pack(s) enabled: [vanilla (built-in)], [file/mmst_export_check (world)]",
+  "forceload": "Marked 42 chunks in minecraft:overworld from [0, 0] to [6, 5] to be force loaded",
+  "load": {
+    "cells_tested": 630,
+    "failure_count": 0,
+    "failures": []
+  },
+  "dfu_probe": {
+    "cells_tested": 630,
+    "failure_count": 0,
+    "failures": [],
+    "block_entity_failures": []
+  },
+  "block_entities": {
+    "cells": 2
+  },
+  "before_after": {
+    "cells_changed_by_correction": 16,
+    "corrected_blocks_in_report": 16
+  },
+  "oracle_negative_control": {
+    "setblock_changed_on_uncorrected": 16,
+    "uncorrected_after_game_recompute_vs_export_diff": []
+  },
+  "rotations": {
+    "none": {
+      "connecting_blocks_reset_by_setblock": 16,
+      "setblock_changed": [],
+      "oracle_vs_strict_diff": [],
+      "normal_vs_strict_diff": [],
+      "normal_vs_strict_unexpected": [],
+      "uncorrected_normal_vs_corrected_strict_diff": [],
+      "block_entity_failures": [],
+      "pass": true
+    },
+    "clockwise_90": {
+      "connecting_blocks_reset_by_setblock": 16,
+      "setblock_changed": [],
+      "oracle_vs_strict_diff": [],
+      "normal_vs_strict_diff": [],
+      "normal_vs_strict_unexpected": [],
+      "uncorrected_normal_vs_corrected_strict_diff": [],
+      "block_entity_failures": [],
+      "pass": true
+    },
+    "180": {
+      "connecting_blocks_reset_by_setblock": 16,
+      "setblock_changed": [],
+      "oracle_vs_strict_diff": [],
+      "normal_vs_strict_diff": [],
+      "normal_vs_strict_unexpected": [],
+      "uncorrected_normal_vs_corrected_strict_diff": [],
+      "block_entity_failures": [],
+      "pass": true
+    },
+    "counterclockwise_90": {
+      "connecting_blocks_reset_by_setblock": 16,
+      "setblock_changed": [],
+      "oracle_vs_strict_diff": [],
+      "normal_vs_strict_diff": [],
+      "normal_vs_strict_unexpected": [],
+      "uncorrected_normal_vs_corrected_strict_diff": [],
+      "block_entity_failures": [],
+      "pass": true
+    }
+  },
+  "log_expected": [
+    "[09:10:29] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!",
+    "[09:10:29] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.",
+    "[09:10:29] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.",
+    "[09:10:29] [Server thread/WARN]: To change this, set \"online-mode\" to \"true\" in the server.properties file."
+  ],
+  "log_problems": [],
+  "pack_loaded": true,
+  "result": "PASS"
+}
