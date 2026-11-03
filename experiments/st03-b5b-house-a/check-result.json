@@ -1,0 +1,108 @@
+{
+ "nbt_sha256": "f89033ead2911dd093b495d3229155761dee3858c11b33a20be9fbb4cecc2482",
+ "verify": {
+  "size": [
+   9,
+   10,
+   7
+  ],
+  "blocks": 630,
+  "non_air_blocks": 348,
+  "palette": 47,
+  "cells_compared": 630,
+  "mismatches": 0
+ },
+ "states": {
+  "authored_cells_checked": 348,
+  "mismatches": 0,
+  "stairs": 69,
+  "door": "minecraft:dark_oak_door at [4, 1, 5] facing south, lower+upper"
+ },
+ "access": {
+  "door_reachable_from_outside": true,
+  "interior_walkable_columns": [
+   [
+    2,
+    2
+   ],
+   [
+    2,
+    3
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    3,
+    3
+   ],
+   [
+    3,
+    4
+   ],
+   [
+    4,
+    2
+   ],
+   [
+    4,
+    3
+   ],
+   [
+    4,
+    4
+   ],
+   [
+    4,
+    5
+   ],
+   [
+    4,
+    6
+   ],
+   [
+    5,
+    3
+   ],
+   [
+    5,
+    4
+   ],
+   [
+    6,
+    1
+   ],
+   [
+    6,
+    2
+   ],
+   [
+    6,
+    3
+   ],
+   [
+    6,
+    4
+   ]
+  ],
+  "interactive_reachable": [
+   "anvil",
+   "barrel_stores",
+   "barrel_west",
+   "bed_east",
+   "bed_west",
+   "crafting_table",
+   "fletching_table",
+   "footlocker_chest",
+   "furnace",
+   "grindstone"
+  ]
+ },
+ "server_strict_placement": {
+  "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "rotation": "none",
+  "cells": 630,
+  "failures": []
+ }
+}
