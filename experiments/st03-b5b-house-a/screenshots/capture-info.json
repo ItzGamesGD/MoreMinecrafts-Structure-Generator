@@ -1,0 +1,131 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": "f89033ead2911dd093b495d3229155761dee3858c11b33a20be9fbb4cecc2482",
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear; night_vision effect applied from the first interior view on",
+  "placement": "place template experimental:house_a 0 -61 0 none (floor y=0 flush with grass; no porch, no terrain correction)",
+  "shots": [
+    {
+      "view": "01_front",
+      "tp": [
+        4.5,
+        -57,
+        18.5,
+        180,
+        2
+      ],
+      "file": "01_front.png",
+      "sha256": "1d3e4885ad3a88c8692643a7548110fb3effd22b82009fd8c64d58bd1a8f2791"
+    },
+    {
+      "view": "02_back",
+      "tp": [
+        4.5,
+        -57,
+        -12.5,
+        0,
+        2
+      ],
+      "file": "02_back.png",
+      "sha256": "d8e5b07a8758cdfc16e710856f9ceef54972b250b425205ff1aa773f7bbc3b82"
+    },
+    {
+      "view": "03_left_west",
+      "tp": [
+        -11.5,
+        -57,
+        3.5,
+        -90,
+        2
+      ],
+      "file": "03_left_west.png",
+      "sha256": "8b3321f881686f9bd796cf53135655a28a1e8eddeae59b2e0efb3536a5976502"
+    },
+    {
+      "view": "04_right_east",
+      "tp": [
+        20.5,
+        -57,
+        3.5,
+        90,
+        2
+      ],
+      "file": "04_right_east.png",
+      "sha256": "4ae39093427a3dfef5b673ce7348b31cca9729202567c6c5b228f47ed2f87110"
+    },
+    {
+      "view": "05_diagonal_southeast",
+      "tp": [
+        14.5,
+        -56,
+        16.5,
+        135,
+        4
+      ],
+      "file": "05_diagonal_southeast.png",
+      "sha256": "ad34246a399ac8aff25911ba1b889e744ce049142e64cc7a49eec94ed7c180f4"
+    },
+    {
+      "view": "06_diagonal_southwest",
+      "tp": [
+        -5.5,
+        -56,
+        16.5,
+        -135,
+        4
+      ],
+      "file": "06_diagonal_southwest.png",
+      "sha256": "5d0febfa96764f27588575e1813e872e82a453a706f14c2de02376e11909fa4e"
+    },
+    {
+      "view": "07_diagonal_northwest",
+      "tp": [
+        -6.5,
+        -56,
+        -10.5,
+        -45,
+        4
+      ],
+      "file": "07_diagonal_northwest.png",
+      "sha256": "a5def50cb47e92a8e973daa3776b7b662569d281144f4a55694535bc3aacdce2"
+    },
+    {
+      "view": "08_entrance_closeup",
+      "tp": [
+        4.5,
+        -59.5,
+        11.5,
+        180,
+        4
+      ],
+      "file": "08_entrance_closeup.png",
+      "sha256": "dd0670d527bd2b7b7b3e70949de683caffcd3bdb73d999a13bf37ec90f164ff6"
+    },
+    {
+      "view": "09_interior_beds",
+      "tp": [
+        4.5,
+        -60,
+        4.4,
+        180,
+        25
+      ],
+      "file": "09_interior_beds.png",
+      "sha256": "3d783915eb460fa2389e1b7f79b11c23355783213e58c38578dfe11a0518d697"
+    },
+    {
+      "view": "10_interior_work_corner",
+      "tp": [
+        2.5,
+        -60,
+        4.4,
+        -125,
+        22
+      ],
+      "file": "10_interior_work_corner.png",
+      "sha256": "b758e16bedbb1e6fa84db020a74c9385aba51fa5ab91bec0b2f5fe90f1165c3b"
+    }
+  ]
+}
