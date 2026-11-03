@@ -1,0 +1,95 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": "1aa410ae72a93649a755f1ddea06b6d44eb3c3b4a710ed85e9b8606bf8add5ab",
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear; night_vision effect only for the interior views (05, 06)",
+  "placement": "place template experimental:house_a 0 -61 0 none (floor y=0 flush with grass; no porch, no terrain correction)",
+  "shots": [
+    {
+      "view": "01_front",
+      "tp": [
+        4.5,
+        -57,
+        27.5,
+        180,
+        14
+      ],
+      "file": "01_front.png",
+      "sha256": "314d4bc99470caac3f9b76e04cb4446acdbb536527b69e0208b99041f120afd8"
+    },
+    {
+      "view": "02_back",
+      "tp": [
+        4.5,
+        -57,
+        -21.5,
+        0,
+        14
+      ],
+      "file": "02_back.png",
+      "sha256": "67629e9d61ef9e5770029a7e181a81fd7355f55c3ffb2531c8d494f1dff89bb9"
+    },
+    {
+      "view": "03_side_west",
+      "tp": [
+        -22.5,
+        -57,
+        3.5,
+        -90,
+        14
+      ],
+      "file": "03_side_west.png",
+      "sha256": "a3722d9e2105964fa24889d726658c9bdc60eafff4aa013c135df6be69084ac5"
+    },
+    {
+      "view": "04_side_east",
+      "tp": [
+        30.5,
+        -57,
+        3.5,
+        90,
+        14
+      ],
+      "file": "04_side_east.png",
+      "sha256": "1fbd3dfda657bc0852cae15f7481c427f1a41993f1318751fa73c31588c74045"
+    },
+    {
+      "view": "05_interior",
+      "tp": [
+        5.5,
+        -60,
+        5.0,
+        140,
+        22
+      ],
+      "file": "05_interior.png",
+      "sha256": "f088115b91458aefc5fb841badef5c84f3cc6b98d5c0c8a0ff27663a9aa0435d"
+    },
+    {
+      "view": "06_interior_door",
+      "tp": [
+        4.5,
+        -60,
+        1.8,
+        0,
+        8
+      ],
+      "file": "06_interior_door.png",
+      "sha256": "1fbe20df9a736c7c125c50193c1e76b5f7a36b5b8032f4ce81a9db5044f28ffd"
+    },
+    {
+      "view": "07_door_closeup",
+      "tp": [
+        4.5,
+        -60,
+        10.5,
+        180,
+        8
+      ],
+      "file": "07_door_closeup.png",
+      "sha256": "224f1626f4a1edec287ec5a12f661e7ad24d53ae714b0004cbe917ab70582ef6"
+    }
+  ]
+}
