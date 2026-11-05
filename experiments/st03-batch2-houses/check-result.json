@@ -1,0 +1,126 @@
+{
+ "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+ "buildings": {
+  "house_b": {
+   "nbt_sha256": "ef2dd204f17362334ffddcd52c6401b75df0e5a606e3443246a4612329fcec84",
+   "verify": {
+    "size": [
+     9,
+     10,
+     7
+    ],
+    "blocks": 630,
+    "non_air_blocks": 305,
+    "palette": 38,
+    "cells_compared": 630,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 305,
+    "mismatches": 0
+   },
+   "access": {
+    "entrance_reachable_from_outside": true,
+    "interior_walkable_columns": 26,
+    "interactive_reachable": [
+     "barrel_n",
+     "barrel_w",
+     "bed_e",
+     "bed_w",
+     "chest",
+     "crafting_table",
+     "furnace"
+    ],
+    "containers": [
+     "barrel_n",
+     "barrel_w",
+     "chest"
+    ]
+   },
+   "entrance_clearance_ok": true,
+   "server_strict_placement": {
+    "rotation": "none",
+    "cells": 630,
+    "failures": []
+   }
+  },
+  "house_c": {
+   "nbt_sha256": "9babb42ad85e5baee16c42856e4764805309853993d8c4bae3562f5c6b180d55",
+   "verify": {
+    "size": [
+     7,
+     9,
+     7
+    ],
+    "blocks": 441,
+    "non_air_blocks": 231,
+    "palette": 29,
+    "cells_compared": 441,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 231,
+    "mismatches": 0
+   },
+   "access": {
+    "entrance_reachable_from_outside": true,
+    "interior_walkable_columns": 18,
+    "interactive_reachable": [
+     "barrel",
+     "bed",
+     "chest"
+    ],
+    "containers": [
+     "barrel",
+     "chest"
+    ]
+   },
+   "entrance_clearance_ok": true,
+   "server_strict_placement": {
+    "rotation": "none",
+    "cells": 441,
+    "failures": []
+   }
+  },
+  "house_d": {
+   "nbt_sha256": "3798d471e3f54e4fb58a30c1117288a01077f6cf9a691382f44c2bbcd4c70fb1",
+   "verify": {
+    "size": [
+     7,
+     9,
+     7
+    ],
+    "blocks": 441,
+    "non_air_blocks": 207,
+    "palette": 34,
+    "cells_compared": 441,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 207,
+    "mismatches": 0
+   },
+   "access": {
+    "entrance_reachable_from_outside": true,
+    "interior_walkable_columns": 20,
+    "interactive_reachable": [
+     "barrel",
+     "bed",
+     "chest",
+     "fletching_table",
+     "grindstone"
+    ],
+    "containers": [
+     "barrel",
+     "chest"
+    ]
+   },
+   "entrance_clearance_ok": true,
+   "server_strict_placement": {
+    "rotation": "none",
+    "cells": 441,
+    "failures": []
+   }
+  }
+ }
+}

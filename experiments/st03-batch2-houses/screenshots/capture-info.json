@@ -1,0 +1,303 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": {
+    "st03_house_b": "ef2dd204f17362334ffddcd52c6401b75df0e5a606e3443246a4612329fcec84",
+    "st03_house_c": "9babb42ad85e5baee16c42856e4764805309853993d8c4bae3562f5c6b180d55",
+    "st03_house_d": "3798d471e3f54e4fb58a30c1117288a01077f6cf9a691382f44c2bbcd4c70fb1"
+  },
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear; night_vision effect applied from the first interior view on",
+  "placement": "place template experimental:<key> x={'house_b': 0, 'house_c': 80, 'house_d': 160} y=-61 z=0 rotation none (floor y=0 flush with grass; no terrain correction, no roads)",
+  "shots": [
+    {
+      "view": "house_b_01_front",
+      "tp": [
+        4.5,
+        -57,
+        18.5,
+        180,
+        4
+      ],
+      "file": "house_b_01_front.png",
+      "sha256": "63cb1c57ee0c7dddeedd8cfa59aa2de11fbe57762e489054a85a1ddad0466fd5"
+    },
+    {
+      "view": "house_b_02_back",
+      "tp": [
+        4.5,
+        -57,
+        -11.5,
+        0,
+        6
+      ],
+      "file": "house_b_02_back.png",
+      "sha256": "8cda39550c74c6cf3d57677824f624b1090cc2bd64dbc9c5b2a37982ba2de93f"
+    },
+    {
+      "view": "house_b_03_west",
+      "tp": [
+        -11.5,
+        -57,
+        3.5,
+        -90,
+        4
+      ],
+      "file": "house_b_03_west.png",
+      "sha256": "3bb6c953697d8b0939b7fce0dee1177b42e255fbabbe9042b2c0ae34a4e8b412"
+    },
+    {
+      "view": "house_b_04_east",
+      "tp": [
+        20.5,
+        -57,
+        3.5,
+        90,
+        4
+      ],
+      "file": "house_b_04_east.png",
+      "sha256": "b555c9072b52bc0ed3a882805640ae9c73a85b8bc9f50084c21543f61f3261e1"
+    },
+    {
+      "view": "house_b_05_diag_se",
+      "tp": [
+        16.5,
+        -55,
+        16.5,
+        135,
+        8
+      ],
+      "file": "house_b_05_diag_se.png",
+      "sha256": "b4c177941b2121174a8e753b90cfb2f110c7ba28aa7ec7431b018f6bf288e44a"
+    },
+    {
+      "view": "house_b_06_diag_nw",
+      "tp": [
+        -7.5,
+        -55,
+        -8.5,
+        -45,
+        8
+      ],
+      "file": "house_b_06_diag_nw.png",
+      "sha256": "8d7c7b8cf7af621e669c150bc1e1f68e7571de69f4927d84fd10f678712f72c3"
+    },
+    {
+      "view": "house_c_01_front",
+      "tp": [
+        83.5,
+        -57,
+        18.5,
+        180,
+        4
+      ],
+      "file": "house_c_01_front.png",
+      "sha256": "dafee11b6020376ea2b7bd26af79a88b4c8cca407fbfef7e412891de4c622ff7"
+    },
+    {
+      "view": "house_c_02_back",
+      "tp": [
+        83.5,
+        -57,
+        -11.5,
+        0,
+        6
+      ],
+      "file": "house_c_02_back.png",
+      "sha256": "619f6b32a6d190bdf7489d9a20a22a55ca47c4e90e5bab9ae2d232de9a654e28"
+    },
+    {
+      "view": "house_c_03_west",
+      "tp": [
+        68.5,
+        -57,
+        3.5,
+        -90,
+        4
+      ],
+      "file": "house_c_03_west.png",
+      "sha256": "f4b0058814234678ee1aabfaf0b1d77bd3c021bc79e673c00c6a33036870e955"
+    },
+    {
+      "view": "house_c_04_east",
+      "tp": [
+        98.5,
+        -57,
+        3.5,
+        90,
+        4
+      ],
+      "file": "house_c_04_east.png",
+      "sha256": "5dee657057c027933ea9d81d05aad61275fa2a3d15a2118fbae9b308458c56bf"
+    },
+    {
+      "view": "house_c_05_diag_se",
+      "tp": [
+        94.5,
+        -55,
+        16.5,
+        135,
+        8
+      ],
+      "file": "house_c_05_diag_se.png",
+      "sha256": "4096fda5183ceb5fb3b1b8dd9072e1d3116b11d49fe1a712fa38d81df19cc0e6"
+    },
+    {
+      "view": "house_c_06_diag_nw",
+      "tp": [
+        72.5,
+        -55,
+        -8.5,
+        -45,
+        8
+      ],
+      "file": "house_c_06_diag_nw.png",
+      "sha256": "b833ae47051bff35307d24025dbfd2b8b8c49a307c42282ac7bf7080526e6f1d"
+    },
+    {
+      "view": "house_d_01_front",
+      "tp": [
+        163.5,
+        -57,
+        18.5,
+        180,
+        4
+      ],
+      "file": "house_d_01_front.png",
+      "sha256": "970ea3aefa4fec0aeb9bcba3221a7a97f4d81f35b55ed33f8efb67eb3279d764"
+    },
+    {
+      "view": "house_d_02_back",
+      "tp": [
+        163.5,
+        -57,
+        -11.5,
+        0,
+        6
+      ],
+      "file": "house_d_02_back.png",
+      "sha256": "8bf1006ca95fb553bc1a13a9c934a444b6dc172e8d97182ce8f06e0fd5a99ff9"
+    },
+    {
+      "view": "house_d_03_west",
+      "tp": [
+        148.5,
+        -57,
+        3.5,
+        -90,
+        4
+      ],
+      "file": "house_d_03_west.png",
+      "sha256": "4b58cc93dc5d720a87d548c9c06f9ee1567878ed1e2ccd20b48d01468390a28b"
+    },
+    {
+      "view": "house_d_04_east",
+      "tp": [
+        178.5,
+        -57,
+        3.5,
+        90,
+        4
+      ],
+      "file": "house_d_04_east.png",
+      "sha256": "8ade5c139682769ea874915b2941b1c6baeae2db79949d6a8de2b103d1ee4738"
+    },
+    {
+      "view": "house_d_05_diag_se",
+      "tp": [
+        174.5,
+        -55,
+        16.5,
+        135,
+        8
+      ],
+      "file": "house_d_05_diag_se.png",
+      "sha256": "d3c555c876dd9b52c82cb866c719b4504c62bebf08f61aefd18a2bd50a36dcab"
+    },
+    {
+      "view": "house_d_06_diag_nw",
+      "tp": [
+        152.5,
+        -55,
+        -8.5,
+        -45,
+        8
+      ],
+      "file": "house_d_06_diag_nw.png",
+      "sha256": "84a55c513d9c5d1ad43e3e4a2bf1686b6c162c80f630d765ad27a93b2031dca2"
+    },
+    {
+      "view": "house_b_07_interior_a",
+      "tp": [
+        4.5,
+        -60,
+        4.4,
+        180,
+        14
+      ],
+      "file": "house_b_07_interior_a.png",
+      "sha256": "f67beca8f24f5f9c9d152afe749adba03e08877ca8a6d5f517788d0d173a88c0"
+    },
+    {
+      "view": "house_b_08_interior_b",
+      "tp": [
+        6.5,
+        -60,
+        4.4,
+        150,
+        18
+      ],
+      "file": "house_b_08_interior_b.png",
+      "sha256": "c7234c15022e23e8e42422dac362098c38e52c6d79bdc6d487d1fe7518697424"
+    },
+    {
+      "view": "house_c_07_interior_a",
+      "tp": [
+        83.5,
+        -60,
+        4.4,
+        180,
+        14
+      ],
+      "file": "house_c_07_interior_a.png",
+      "sha256": "7c1e1bb3ce3e47631677743c52f957fd429c973b6e4d46153d89cb7b06139a50"
+    },
+    {
+      "view": "house_c_08_interior_b",
+      "tp": [
+        85.5,
+        -60,
+        4.4,
+        135,
+        18
+      ],
+      "file": "house_c_08_interior_b.png",
+      "sha256": "69f4d3517c9e60c342d66e2a6ecf86de9c1b587bff61a97f446581282b2ce411"
+    },
+    {
+      "view": "house_d_07_interior_a",
+      "tp": [
+        163.5,
+        -60,
+        5.6,
+        180,
+        14
+      ],
+      "file": "house_d_07_interior_a.png",
+      "sha256": "e4daea18530a44cb78a035026b3787ef660686d7ce61df80f0135f06941b83ff"
+    },
+    {
+      "view": "house_d_08_interior_b",
+      "tp": [
+        165.5,
+        -60,
+        5.5,
+        140,
+        18
+      ],
+      "file": "house_d_08_interior_b.png",
+      "sha256": "8734e8c783dc90a70b31bd616fa420e80fb26cf73c87bb41dbf9829ace31c268"
+    }
+  ]
+}
