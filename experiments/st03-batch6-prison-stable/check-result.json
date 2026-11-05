@@ -1,0 +1,1014 @@
+{
+ "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+ "ravager_ai_probe": {
+  "method": "vanilla 26.3 AI: one ravager per trial, made to chase a NoAI villager (Resistance V) with `damage <ravager> 0.5 minecraft:mob_attack by <villager>`; Pos sampled every 0.25 s; pass = within 2.5 blocks of the target, and the track crosses the portal line z=11.5 within x 6.5..10.5",
+  "placement_origin": [
+   200,
+   -61,
+   16
+  ],
+  "trials": [
+   {
+    "pen": "west_pen",
+    "direction": "pen_to_outside",
+    "ravager_start_local": [
+     4.0,
+     1,
+     7.0
+    ],
+    "target_local": [
+     8.5,
+     1,
+     22.5
+    ],
+    "damage_reply": "Applied 0.5 damage to Ravager",
+    "closest_distance": 1.63,
+    "reached_target": true,
+    "passed_through_portal": true,
+    "seconds": 4.8,
+    "health_after": "Ravager has the following entity data: 99.5f",
+    "track": [
+     [
+      0.0,
+      4.0,
+      0.0,
+      7.0
+     ],
+     [
+      0.3,
+      3.92,
+      0.0,
+      6.72
+     ],
+     [
+      0.5,
+      3.92,
+      0.0,
+      6.71
+     ],
+     [
+      0.8,
+      3.92,
+      0.0,
+      6.71
+     ],
+     [
+      1.0,
+      4.21,
+      0.0,
+      6.77
+     ],
+     [
+      1.3,
+      5.42,
+      0.0,
+      6.91
+     ],
+     [
+      1.5,
+      6.74,
+      0.0,
+      6.97
+     ],
+     [
+      1.8,
+      7.46,
+      1.17,
+      7.02
+     ],
+     [
+      2.0,
+      7.82,
+      0.8,
+      7.02
+     ],
+     [
+      2.3,
+      8.05,
+      0.0,
+      7.35
+     ],
+     [
+      2.5,
+      8.05,
+      0.0,
+      8.61
+     ],
+     [
+      2.8,
+      8.03,
+      0.0,
+      9.95
+     ],
+     [
+      3.0,
+      8.02,
+      0.0,
+      11.3
+     ],
+     [
+      3.3,
+      8.02,
+      0.0,
+      12.65
+     ],
+     [
+      3.5,
+      8.01,
+      0.0,
+      14.0
+     ],
+     [
+      3.8,
+      8.01,
+      0.0,
+      15.62
+     ],
+     [
+      4.1,
+      8.01,
+      0.0,
+      16.97
+     ],
+     [
+      4.3,
+      8.0,
+      0.0,
+      18.31
+     ],
+     [
+      4.6,
+      8.0,
+      0.0,
+      19.66
+     ],
+     [
+      4.8,
+      8.4,
+      0.0,
+      20.87
+     ]
+    ]
+   },
+   {
+    "pen": "west_pen",
+    "direction": "outside_to_pen",
+    "ravager_start_local": [
+     8.5,
+     1,
+     22.5
+    ],
+    "target_local": [
+     4.0,
+     1,
+     7.0
+    ],
+    "damage_reply": "Applied 0.5 damage to Ravager",
+    "closest_distance": 1.58,
+    "reached_target": true,
+    "passed_through_portal": true,
+    "seconds": 4.3,
+    "health_after": "Ravager has the following entity data: 99.5f",
+    "track": [
+     [
+      0.0,
+      8.5,
+      0.0,
+      22.5
+     ],
+     [
+      0.3,
+      8.92,
+      0.0,
+      22.49
+     ],
+     [
+      0.5,
+      9.03,
+      0.0,
+      21.45
+     ],
+     [
+      0.8,
+      8.43,
+      0.0,
+      20.45
+     ],
+     [
+      1.0,
+      8.03,
+      0.0,
+      19.26
+     ],
+     [
+      1.3,
+      7.98,
+      0.0,
+      17.97
+     ],
+     [
+      1.5,
+      7.99,
+      0.0,
+      16.65
+     ],
+     [
+      1.8,
+      8.0,
+      0.0,
+      15.31
+     ],
+     [
+      2.0,
+      8.0,
+      0.0,
+      13.7
+     ],
+     [
+      2.3,
+      8.0,
+      0.0,
+      12.36
+     ],
+     [
+      2.5,
+      8.0,
+      0.0,
+      11.01
+     ],
+     [
+      2.8,
+      8.0,
+      0.0,
+      9.67
+     ],
+     [
+      3.0,
+      8.0,
+      0.0,
+      8.32
+     ],
+     [
+      3.3,
+      7.98,
+      0.0,
+      7.06
+     ],
+     [
+      3.6,
+      7.91,
+      1.25,
+      6.77
+     ],
+     [
+      3.8,
+      7.73,
+      0.5,
+      6.65
+     ],
+     [
+      4.1,
+      7.08,
+      0.0,
+      6.85
+     ],
+     [
+      4.3,
+      5.58,
+      0.0,
+      7.02
+     ]
+    ]
+   },
+   {
+    "pen": "east_pen",
+    "direction": "pen_to_outside",
+    "ravager_start_local": [
+     13.0,
+     1,
+     7.0
+    ],
+    "target_local": [
+     8.5,
+     1,
+     22.5
+    ],
+    "damage_reply": "Applied 0.5 damage to Ravager",
+    "closest_distance": 1.65,
+    "reached_target": true,
+    "passed_through_portal": true,
+    "seconds": 5.1,
+    "health_after": "Ravager has the following entity data: 99.5f",
+    "track": [
+     [
+      0.0,
+      13.03,
+      0.06,
+      6.9
+     ],
+     [
+      0.3,
+      13.08,
+      0.0,
+      6.72
+     ],
+     [
+      0.5,
+      13.08,
+      0.0,
+      6.71
+     ],
+     [
+      0.8,
+      13.04,
+      0.0,
+      6.6
+     ],
+     [
+      1.0,
+      13.02,
+      0.0,
+      6.41
+     ],
+     [
+      1.3,
+      12.2,
+      0.0,
+      6.9
+     ],
+     [
+      1.5,
+      10.91,
+      0.0,
+      7.02
+     ],
+     [
+      1.8,
+      9.58,
+      0.0,
+      7.01
+     ],
+     [
+      2.0,
+      8.91,
+      1.0,
+      7.05
+     ],
+     [
+      2.3,
+      8.71,
+      1.02,
+      7.19
+     ],
+     [
+      2.5,
+      8.64,
+      0.0,
+      7.53
+     ],
+     [
+      2.8,
+      8.81,
+      0.0,
+      8.75
+     ],
+     [
+      3.1,
+      8.93,
+      0.0,
+      10.09
+     ],
+     [
+      3.3,
+      8.98,
+      0.0,
+      11.7
+     ],
+     [
+      3.6,
+      8.99,
+      0.0,
+      13.05
+     ],
+     [
+      3.8,
+      8.99,
+      0.0,
+      14.4
+     ],
+     [
+      4.1,
+      8.99,
+      0.0,
+      15.75
+     ],
+     [
+      4.3,
+      9.0,
+      0.0,
+      17.1
+     ],
+     [
+      4.6,
+      9.0,
+      0.0,
+      18.45
+     ],
+     [
+      4.8,
+      9.0,
+      0.0,
+      19.8
+     ],
+     [
+      5.1,
+      9.0,
+      0.0,
+      20.93
+     ]
+    ]
+   },
+   {
+    "pen": "east_pen",
+    "direction": "outside_to_pen",
+    "ravager_start_local": [
+     8.5,
+     1,
+     22.5
+    ],
+    "target_local": [
+     13.0,
+     1,
+     7.0
+    ],
+    "damage_reply": "Applied 0.5 damage to Ravager",
+    "closest_distance": 2.05,
+    "reached_target": true,
+    "passed_through_portal": true,
+    "seconds": 5.1,
+    "health_after": "Ravager has the following entity data: 99.5f",
+    "track": [
+     [
+      0.0,
+      8.5,
+      0.0,
+      22.5
+     ],
+     [
+      0.3,
+      8.93,
+      0.0,
+      22.63
+     ],
+     [
+      0.5,
+      9.66,
+      0.0,
+      21.93
+     ],
+     [
+      0.8,
+      10.19,
+      0.0,
+      20.85
+     ],
+     [
+      1.0,
+      10.83,
+      0.0,
+      19.79
+     ],
+     [
+      1.3,
+      11.03,
+      0.0,
+      18.51
+     ],
+     [
+      1.5,
+      11.01,
+      0.0,
+      17.19
+     ],
+     [
+      1.8,
+      10.82,
+      0.0,
+      15.92
+     ],
+     [
+      2.0,
+      9.97,
+      0.0,
+      14.92
+     ],
+     [
+      2.3,
+      9.15,
+      0.0,
+      13.98
+     ],
+     [
+      2.5,
+      8.93,
+      1.25,
+      13.94
+     ],
+     [
+      2.8,
+      8.82,
+      0.5,
+      13.77
+     ],
+     [
+      3.0,
+      8.84,
+      0.0,
+      13.07
+     ],
+     [
+      3.3,
+      8.99,
+      0.0,
+      11.76
+     ],
+     [
+      3.5,
+      9.01,
+      0.0,
+      10.42
+     ],
+     [
+      3.8,
+      9.0,
+      0.0,
+      9.07
+     ],
+     [
+      4.0,
+      9.0,
+      0.0,
+      7.72
+     ],
+     [
+      4.3,
+      9.05,
+      1.17,
+      6.94
+     ],
+     [
+      4.6,
+      9.19,
+      0.8,
+      6.74
+     ],
+     [
+      4.8,
+      9.69,
+      0.0,
+      6.69
+     ],
+     [
+      5.1,
+      10.95,
+      0.0,
+      6.9
+     ]
+    ]
+   }
+  ],
+  "pass": true
+ },
+ "buildings": {
+  "prison": {
+   "placement": "F09",
+   "module": "M-prison",
+   "nbt_sha256": "e3b9eb9f18add02f0293cb92ca62946849dda48128756e00843e38ec0a205803",
+   "verify": {
+    "size": [
+     11,
+     10,
+     13
+    ],
+    "blocks": 1430,
+    "non_air_blocks": 759,
+    "palette": 49,
+    "cells_compared": 1430,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 759,
+    "mismatches": 0
+   },
+   "access": {
+    "entrance": "front_door_south",
+    "outside_cell": [
+     5,
+     13
+    ],
+    "interior_feet_cells": 50,
+    "usable_blocks_inside": 2,
+    "usable_unreached": [],
+    "key_points": {
+     "vestibule": true,
+     "corridor_far_end": true,
+     "cell_nw": true,
+     "cell_ne": true,
+     "cell_sw": true,
+     "cell_se": true
+    },
+    "beds_reached": {
+     "[2, 1, 1]": true,
+     "[8, 1, 1]": true,
+     "[8, 1, 5]": true
+    },
+    "exterior_supplies": {
+     "usable_on_apron": 0,
+     "unreached_from_open_ground": []
+    },
+    "iron_doors": [
+     [
+      4,
+      2
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      5,
+      11
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      6,
+      7
+     ]
+    ],
+    "buttons": {
+     "[4, 2, 12]": {
+      "attached_to": [
+       4,
+       2,
+       11
+      ],
+      "opens": [
+       [
+        5,
+        11
+       ]
+      ]
+     },
+     "[5, 3, 2]": {
+      "attached_to": [
+       4,
+       3,
+       2
+      ],
+      "opens": [
+       [
+        4,
+        2
+       ]
+      ]
+     },
+     "[5, 3, 3]": {
+      "attached_to": [
+       6,
+       3,
+       3
+      ],
+      "opens": [
+       [
+        6,
+        3
+       ]
+      ]
+     },
+     "[5, 3, 6]": {
+      "attached_to": [
+       4,
+       3,
+       6
+      ],
+      "opens": [
+       [
+        4,
+        6
+       ]
+      ]
+     },
+     "[5, 3, 7]": {
+      "attached_to": [
+       6,
+       3,
+       7
+      ],
+      "opens": [
+       [
+        6,
+        7
+       ]
+      ]
+     },
+     "[6, 2, 10]": {
+      "attached_to": [
+       6,
+       2,
+       11
+      ],
+      "opens": [
+       [
+        5,
+        11
+       ]
+      ]
+     }
+    },
+    "doors_opened_from_the_street": [
+     [
+      4,
+      2
+     ],
+     [
+      4,
+      6
+     ],
+     [
+      5,
+      11
+     ],
+     [
+      6,
+      3
+     ],
+     [
+      6,
+      7
+     ]
+    ],
+    "buttons_used": [
+     [
+      4,
+      2,
+      12
+     ],
+     [
+      5,
+      3,
+      2
+     ],
+     [
+      5,
+      3,
+      3
+     ],
+     [
+      5,
+      3,
+      6
+     ],
+     [
+      5,
+      3,
+      7
+     ]
+    ],
+    "exit_from_vestibule": true,
+    "from_inside_a_closed_cell": {
+     "cell_nw": {
+      "can_leave_cell_without_help": false,
+      "doors_it_can_open": []
+     },
+     "cell_ne": {
+      "can_leave_cell_without_help": false,
+      "doors_it_can_open": []
+     },
+     "cell_sw": {
+      "can_leave_cell_without_help": false,
+      "doors_it_can_open": []
+     },
+     "cell_se": {
+      "can_leave_cell_without_help": false,
+      "doors_it_can_open": []
+     }
+    }
+   },
+   "counts": {
+    "barrel": 1,
+    "hay_block": 3,
+    "cauldron": 1,
+    "lantern": 4,
+    "iron_door": 10,
+    "iron_bars": 37,
+    "stone_button": 6,
+    "beds": 3
+   },
+   "server_strict_placement": {
+    "rotation": "none",
+    "cells": 1430,
+    "failures": []
+   }
+  },
+  "stable": {
+   "placement": "F10",
+   "module": "M-stable",
+   "nbt_sha256": "14255f69671efa17ec5b2a23446c18f632e3bb864af89ac7094cca7736e1d192",
+   "verify": {
+    "size": [
+     17,
+     13,
+     13
+    ],
+    "blocks": 2873,
+    "non_air_blocks": 956,
+    "palette": 48,
+    "cells_compared": 2873,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 956,
+    "mismatches": 0
+   },
+   "access": {
+    "entrance": "portal_south",
+    "outside_cell": [
+     8,
+     13
+    ],
+    "interior_feet_cells": 96,
+    "usable_blocks_inside": 12,
+    "usable_unreached": [],
+    "key_points": {
+     "aisle_mid": true,
+     "west_pen": true,
+     "east_pen": true,
+     "aisle_head_store": true
+    },
+    "beds_reached": {},
+    "exterior_supplies": {
+     "usable_on_apron": 3,
+     "unreached_from_open_ground": []
+    }
+   },
+   "counts": {
+    "chest": 1,
+    "barrel": 10,
+    "hay_block": 46,
+    "composter": 2,
+    "water_cauldron": 2,
+    "lantern": 7
+   },
+   "ravager_space": {
+    "west_pen": {
+     "spawn_centre_local": [
+      4.0,
+      1.0,
+      7.0
+     ],
+     "spawn_fits": true,
+     "box_min_corner": [
+      3,
+      6
+     ],
+     "reaches_outside": true,
+     "path_box_positions": 12,
+     "path": [
+      [
+       3,
+       6
+      ],
+      [
+       4,
+       6
+      ],
+      [
+       5,
+       6
+      ],
+      [
+       6,
+       6
+      ],
+      [
+       7,
+       6
+      ],
+      [
+       7,
+       7
+      ],
+      [
+       7,
+       8
+      ],
+      [
+       7,
+       9
+      ],
+      [
+       7,
+       10
+      ],
+      [
+       7,
+       11
+      ],
+      [
+       7,
+       12
+      ],
+      [
+       7,
+       13
+      ]
+     ],
+     "box_positions_reachable_inside": 60
+    },
+    "east_pen": {
+     "spawn_centre_local": [
+      13.0,
+      1.0,
+      7.0
+     ],
+     "spawn_fits": true,
+     "box_min_corner": [
+      12,
+      6
+     ],
+     "reaches_outside": true,
+     "path_box_positions": 12,
+     "path": [
+      [
+       12,
+       6
+      ],
+      [
+       11,
+       6
+      ],
+      [
+       10,
+       6
+      ],
+      [
+       9,
+       6
+      ],
+      [
+       8,
+       6
+      ],
+      [
+       8,
+       7
+      ],
+      [
+       8,
+       8
+      ],
+      [
+       8,
+       9
+      ],
+      [
+       8,
+       10
+      ],
+      [
+       8,
+       11
+      ],
+      [
+       8,
+       12
+      ],
+      [
+       8,
+       13
+      ]
+     ],
+     "box_positions_reachable_inside": 60
+    },
+    "portal_clear_3_wide_4_high": {
+     "cells": "x7..9, y1..4, z11..12",
+     "blocked": []
+    },
+    "pen_entries_open_3_wide": {
+     "cells": "x=6 / x=10, y1..3, z5..7",
+     "blocked": []
+    },
+    "doors_gates_inside": []
+   },
+   "server_strict_placement": {
+    "rotation": "none",
+    "cells": 2873,
+    "failures": []
+   }
+  }
+ },
+ "problems": []
+}

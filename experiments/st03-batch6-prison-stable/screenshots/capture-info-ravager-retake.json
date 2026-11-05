@@ -1,0 +1,253 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": {
+    "st03_prison": "e3b9eb9f18add02f0293cb92ca62946849dda48128756e00843e38ec0a205803",
+    "st03_stable": "14255f69671efa17ec5b2a23446c18f632e3bb864af89ac7094cca7736e1d192"
+  },
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear; night_vision only for interior views; difficulty easy with natural mob spawning off only for the two NoAI test-ravager views; raised camera positions stand on an invisible barrier block set only into air cells after placement",
+  "placed": [
+    {
+      "what": "prison",
+      "origin": [
+        0,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "stable",
+      "origin": [
+        40,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F02",
+      "module": "M-barracks_a",
+      "origin": [
+        24,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F03",
+      "module": "M-barracks_b",
+      "origin": [
+        75,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F04",
+      "module": "M-barracks_c",
+      "origin": [
+        75,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F05",
+      "module": "M-armory",
+      "origin": [
+        12,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F06",
+      "module": "M-yard",
+      "origin": [
+        12,
+        -61,
+        52
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F07",
+      "module": "M-warehouse_a",
+      "origin": [
+        10,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F08",
+      "module": "M-warehouse_b",
+      "origin": [
+        75,
+        -61,
+        53
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F09",
+      "module": "M-prison",
+      "origin": [
+        92,
+        -61,
+        62
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F10",
+      "module": "M-stable",
+      "origin": [
+        77,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F11",
+      "module": "M-house_a",
+      "origin": [
+        14,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F12",
+      "module": "M-house_b",
+      "origin": [
+        26,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F13",
+      "module": "M-house_c",
+      "origin": [
+        14,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F14",
+      "module": "M-house_a",
+      "origin": [
+        89,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F15",
+      "module": "M-house_b",
+      "origin": [
+        76,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F16",
+      "module": "M-house_c",
+      "origin": [
+        92,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F17",
+      "module": "M-house_d",
+      "origin": [
+        92,
+        -61,
+        40
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F18",
+      "module": "M-kitchen",
+      "origin": [
+        92,
+        -61,
+        50
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F19",
+      "module": "M-smithy",
+      "origin": [
+        28,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F20",
+      "module": "M-cart_shed",
+      "origin": [
+        44,
+        -61,
+        82
+      ],
+      "rotation": "none"
+    }
+  ],
+  "shots": [
+    {
+      "view": "f10_14_interior_west_pen_test_ravager",
+      "tp": [
+        49.3,
+        -58.4,
+        206.5,
+        85.5,
+        5.4
+      ],
+      "file": "f10_14_interior_west_pen_test_ravager.png",
+      "sha256": "e81afeb8202d4d1c0e1f32a5489e1c8e54b85f263e26dff89709c910109e01fc"
+    },
+    {
+      "view": "f10_15_interior_east_pen_test_ravager",
+      "tp": [
+        47.7,
+        -58.4,
+        206.5,
+        -85.5,
+        5.4
+      ],
+      "file": "f10_15_interior_east_pen_test_ravager.png",
+      "sha256": "3e6638602f60e51560a650ced7756626c89269036b7b0143c85fa1693b3b1b65"
+    }
+  ],
+  "f09_button_test": {
+    "skipped": true,
+    "method": "player right-click (xdotool mouse button 3) in the real client on each stone button; iron door state read back with execute if block",
+    "results": [],
+    "pass": false
+  }
+}
