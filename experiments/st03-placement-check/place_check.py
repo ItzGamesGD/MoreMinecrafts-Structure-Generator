@@ -113,7 +113,9 @@ def main():
     ap.add_argument("--java", required=True)
     ap.add_argument("--work", type=Path, required=True)
     ap.add_argument("--out", type=Path, default=Path(__file__).resolve().parent / "place-check-result.json")
+    ap.add_argument("--only", default="", help="comma-separated module ids for live A and C (default: all built)")
     a = ap.parse_args()
+    only = set(filter(None, a.only.split(",")))
     sha = hashlib.sha1(a.server_jar.read_bytes()).hexdigest()
     assert sha == "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c", sha
     built = built_modules()
@@ -155,7 +157,7 @@ def main():
             ax = 150 * q
             rows = {}
             for e in A.manifest(q):
-                if e["module"] in built and e["module"] != "M-house_a":
+                if e["module"] in built and e["module"] != "M-house_a" and (not only or e["module"] in only):
                     place(e, ax)
                     n, fails = compare(e, ax)
                     rows[e["placement"]] = {"rotation": e["rotation"], "cells": n, "failures": fails[:10], "failure_count": len(fails)}
@@ -174,6 +176,8 @@ def main():
         ax = 800
         rows = {}
         for e in man:
+            if only and e["module"] not in only:
+                continue
             x0, z0, x1, z1 = e["footprint"]
             tmpl = templates[e["module"]]
             heights = {}

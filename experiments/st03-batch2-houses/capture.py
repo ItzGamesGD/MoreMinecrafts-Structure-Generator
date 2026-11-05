@@ -24,6 +24,9 @@ from tools.structure_export.stair_live import forceload, make_server
 HERE = Path(__file__).resolve().parent
 OUT_DIR = HERE / "out"
 ORIGIN_X = {"house_b": 0, "house_c": 80, "house_d": 160}
+_ONLY = os.environ.get("ST03_ONLY")  # e.g. "house_c,house_d": capture only these (others are left out of the world)
+if _ONLY:
+    ORIGIN_X = {k: v for k, v in ORIGIN_X.items() if k in _ONLY.split(",")}
 GROUND = -61  # flat world grass layer; template y=0 floor replaces it
 FEET = GROUND + 1  # player standing on the floor/ground top
 
@@ -35,6 +38,8 @@ def views():
     spec.loader.exec_module(mod)
     out = {}
     for key, b in mod.BUILDINGS.items():
+        if key not in ORIGIN_X:
+            continue
         for k, (x, dy, z, yaw, pitch) in b["views"].items():
             out[f"{key}_{k}"] = (x + ORIGIN_X[key], FEET + dy, z, yaw, pitch)
     return dict(sorted(out.items(), key=lambda kv: "interior" in kv[0]))  # exteriors first
@@ -53,6 +58,7 @@ def main():
     a.out.mkdir(parents=True, exist_ok=True)
     pack = a.work / "pack"
     files = {"house_b": "st03_house_b", "house_c": "st03_house_c", "house_d": "st03_house_d"}
+    files = {k: v for k, v in files.items() if k in ORIGIN_X}
     for key, f in files.items():
         dest = pack / f"data/experimental/structure/{key}.nbt"
         dest.parent.mkdir(parents=True, exist_ok=True)

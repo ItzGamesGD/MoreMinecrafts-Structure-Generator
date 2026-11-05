@@ -45,7 +45,7 @@
    }
   },
   "house_c": {
-   "nbt_sha256": "9babb42ad85e5baee16c42856e4764805309853993d8c4bae3562f5c6b180d55",
+   "nbt_sha256": "ca3f18be62206164df5a3cba0ab5fe415c721c8cb1b0b63da6274f71934e0594",
    "verify": {
     "size": [
      7,
@@ -53,22 +53,24 @@
      7
     ],
     "blocks": 441,
-    "non_air_blocks": 231,
-    "palette": 29,
+    "non_air_blocks": 221,
+    "palette": 39,
     "cells_compared": 441,
     "mismatches": 0
    },
    "states": {
-    "authored_cells_checked": 231,
+    "authored_cells_checked": 221,
     "mismatches": 0
    },
    "access": {
     "entrance_reachable_from_outside": true,
-    "interior_walkable_columns": 18,
+    "interior_walkable_columns": 19,
     "interactive_reachable": [
      "barrel",
      "bed",
-     "chest"
+     "chest",
+     "crafting_table",
+     "furnace"
     ],
     "containers": [
      "barrel",
@@ -83,7 +85,7 @@
    }
   },
   "house_d": {
-   "nbt_sha256": "3798d471e3f54e4fb58a30c1117288a01077f6cf9a691382f44c2bbcd4c70fb1",
+   "nbt_sha256": "dd40b688144a642fd5bd89f70908c6a1bfa60b46171765941fbd6efa7bdf8ea1",
    "verify": {
     "size": [
      7,
@@ -91,24 +93,22 @@
      7
     ],
     "blocks": 441,
-    "non_air_blocks": 207,
-    "palette": 34,
+    "non_air_blocks": 222,
+    "palette": 43,
     "cells_compared": 441,
     "mismatches": 0
    },
    "states": {
-    "authored_cells_checked": 207,
+    "authored_cells_checked": 222,
     "mismatches": 0
    },
    "access": {
     "entrance_reachable_from_outside": true,
-    "interior_walkable_columns": 20,
+    "interior_walkable_columns": 7,
     "interactive_reachable": [
      "barrel",
      "bed",
-     "chest",
-     "fletching_table",
-     "grindstone"
+     "chest"
     ],
     "containers": [
      "barrel",

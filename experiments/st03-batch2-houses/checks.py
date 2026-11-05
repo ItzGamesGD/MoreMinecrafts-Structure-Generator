@@ -6,6 +6,7 @@ interactive block, and a strict `place template` on the pinned 26.3 server (rota
 """
 
 import argparse
+import os
 import hashlib
 import importlib.util
 import json
@@ -85,7 +86,10 @@ def main():
     )
     per = {}
     template_cells = {}
+    only = os.environ.get("ST03_ONLY")
     for key, bd in b.BUILDINGS.items():
+        if only and key not in only.split(","):
+            continue
         module = mods[bd["module"]]
         nbt, schem = OUT / f"{module['file']}.nbt", OUT / f"{module['file']}.schem"
         r = {"nbt_sha256": hashlib.sha256(nbt.read_bytes()).hexdigest()}
@@ -132,8 +136,13 @@ def main():
             per[key]["server_strict_placement"] = {"rotation": "none", "cells": len(cells), "failures": fails}
     finally:
         server.stop()
+    out = HERE / "check-result.json"
+    if only and out.exists():  # keep the earlier entries of buildings that were not re-checked
+        prev = json.loads(out.read_text())
+        prev["buildings"].update(per)
+        per = prev["buildings"]
     result["buildings"] = per
-    (HERE / "check-result.json").write_text(json.dumps(result, indent=1) + "\n")
+    out.write_text(json.dumps(result, indent=1) + "\n")
     bad = {k: len(v["server_strict_placement"]["failures"]) for k, v in per.items()}
     print("PASS" if not any(bad.values()) else f"FAIL {bad}")
     raise SystemExit(1 if any(bad.values()) else 0)

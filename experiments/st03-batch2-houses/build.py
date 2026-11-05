@@ -129,108 +129,159 @@ def house_b():
     return c
 
 
-# ---------------------------------------------------------------------------------------------- house C
+# ---------------------------------------------------------------------------------------------- house C (v2)
+# Eave-front stone-and-timber cottage: ridge runs east-west so the street sees the long eave, front and back eaves
+# overhang the walls by one block, the gable triangles are set back one block behind a dark-oak barge so the roof
+# reads as a separate overhanging mass, a small open cross-gable hood shelters the door, and a stone chimney climbs the
+# east gable end through the roof edge.
 def house_c():
     c = Cells((7, 9, 7))
     W, D = 7, 7
+
+    def st(x, y, z, mat, facing, half="bottom", shape="straight"):
+        c.put(x, y, z, mat, facing=facing, half=half, shape=shape)
+
+    # ground: cobble apron under the eaves, stone path to the door, spruce floor inside
     for x in range(W):
         for z in range(D):
-            c.put(x, 0, z, "cobblestone" if x in (0, W - 1) or z in (0, 5, 6) else "spruce_planks")
-    c.put(3, 0, 6, "stone_bricks"); c.put(2, 0, 6, "cobblestone"); c.put(4, 0, 6, "cobblestone")
-    # body z=0..5; piers at z=6 (x 0..1, 5..6) frame a recessed door (door plane z=5)
+            inside = 1 <= x <= 5 and 2 <= z <= 4
+            c.put(x, 0, z, "spruce_planks" if inside else cobble(x, z))
+    for z in (5, 6):
+        c.put(3, 0, z, "stone_bricks")
+    c.put(2, 0, 6, "andesite"); c.put(4, 0, 6, "andesite")
+    # walls: front z=5, back z=1, gable-end lower walls x=0/x=6; stone lower story, spruce upper, dark-oak posts
+    posts = {(0, 1), (6, 1), (0, 5), (6, 5), (2, 5), (4, 5), (3, 1), (0, 3)}
     for x in range(W):
-        for z in range(6):
-            if x not in (0, W - 1) and z not in (0, 5):
+        for z in (1, 2, 3, 4, 5):
+            if not (z in (1, 5) or x in (0, W - 1)):
                 continue
-            corner = x in (0, W - 1) and z in (0, 5)
-            west_stone = x == 0 and z <= 2  # partial stone: west wall back half
-            c.put(x, 1, z, "dark_oak_log" if corner else stone(x, 1, z), **({"axis": "y"} if corner else {}))
-            for y in (2, 3):
-                if corner:
+            for y in (1, 2):
+                c.put(x, y, z, stone(x, y, z))
+            for y in (3,):
+                if (x, z) in posts:
                     c.put(x, y, z, "dark_oak_log", axis="y")
                 else:
-                    c.put(x, y, z, stone(x, y, z) if west_stone else "spruce_planks")
-            c.put(x, 4, z, "dark_oak_log" if corner else "stripped_dark_oak_log",
-                  **({"axis": "y"} if corner else {"axis": "z" if x in (0, W - 1) else "x"}))
-    for x in (0, 1, 5, 6):  # piers of the recess
-        for y in (1, 2):
-            c.put(x, y, 6, stone(x, y, 6))
-        c.put(x, 3, 6, "spruce_planks"); c.put(x, 4, 6, "stripped_dark_oak_log", axis="x")
-    for x in (2, 3, 4):
-        c.put(x, 4, 6, "stripped_dark_oak_log", axis="x")
-    # recessed door at z=5
-    for y in (1, 2, 3):
-        c.put(2, y, 5, "dark_oak_log", axis="y"); c.put(4, y, 5, "dark_oak_log", axis="y")
-    c.put(3, 3, 5, "stripped_dark_oak_log", axis="x")
+                    c.put(x, y, z, "spruce_planks")
+            c.put(x, 4, z, "stripped_dark_oak_log", axis="x" if z in (1, 5) else "z")
+    for x, z in ((0, 1), (6, 1), (0, 5), (6, 5)):  # corner posts start on a one-block stone plinth
+        c.put(x, 2, z, "dark_oak_log", axis="y")
+    # windows: front pair either side of the door, one in the back wall, one small one in the west lower wall
+    for x in (1, 5):
+        c.put(x, 2, 5, "glass_pane"); c.put(x, 3, 5, "glass_pane")
+        c.put(x, 1, 6, "spruce_trapdoor", facing="south", half="top", open=False, powered=False,
+              waterlogged=False)  # window ledge
+    c.put(1, 2, 6, "potted_dead_bush")
+    c.put(3, 2, 1, "glass_pane"); c.put(3, 3, 1, "glass_pane")
+    c.put(0, 2, 3, "glass_pane")
+    # door
     c.put(3, 1, 5, "spruce_door", facing="south", half="lower", hinge="left", open=False, powered=False)
     c.put(3, 2, 5, "spruce_door", facing="south", half="upper", hinge="left", open=False, powered=False)
+    c.put(3, 3, 5, "stripped_dark_oak_log", axis="x")
+    # main roof: ridge along x at z=3 (y=7), eaves at z=0 / z=6 (y=4); dark oak, spruce barge on the gable ends
+    for x in range(W):
+        barge = x in (0, W - 1)
+        mat = "spruce_stairs" if barge else "dark_oak_stairs"
+        for z in range(D):
+            y = 4 + min(z, D - 1 - z)
+            if z == 3:
+                c.put(x, y, z, "stripped_spruce_log" if barge else "dark_oak_planks", **({"axis": "x"} if barge else {}))
+            else:
+                st(x, y, z, mat, "south" if z < 3 else "north")
+    # gable triangles set back to x=1 / x=5 (the x=0 / x=6 roof row overhangs them)
+    for xg in (1, 5):
+        for z, ys in ((2, (5,)), (3, (5, 6)), (4, (5,))):
+            for y in ys:
+                c.put(xg, y, z, "spruce_planks")
+        c.put(xg, 5, 3, "dark_oak_log", axis="y")
+        c.put(xg, 6, 3, "dark_oak_log", axis="y")
+    # open cross-gable hood over the door (z=5..6, x=2..4), two posts and a tie beam
+    for x in (2, 4):
+        for y in (1, 2, 3):
+            c.put(x, y, 6, "dark_oak_fence", north=True, east=False, south=False, west=False, waterlogged=False)
+    for x in (2, 3, 4):
+        c.put(x, 4, 6, "stripped_dark_oak_log", axis="x")
+    for z in (5, 6):
+        st(2, 5, z, "spruce_stairs", "east")
+        st(4, 5, z, "spruce_stairs", "west")
+    c.put(3, 6, 6, "spruce_slab", type="bottom")
+    c.put(3, 6, 5, "dark_oak_planks")
+    c.put(3, 5, 5, "spruce_planks")
+    c.put(3, 5, 6, "spruce_planks")
     c.put(3, 3, 6, "lantern", hanging=True)
-    # 3 small asymmetric windows
-    c.put(0, 2, 2, "glass_pane"); c.put(6, 3, 3, "glass_pane"); c.put(2, 3, 0, "glass_pane")
-    # asymmetric gable: ridge x=2; left steep, right long low slope ending in a slab ledge
-    ry = {0: 5, 1: 6, 2: 7, 3: 6, 4: 5, 5: 5, 6: 5}
-    for z in range(D):
-        end = z in (0, 6)
-        stairs = "dark_oak_stairs" if end else "spruce_stairs"
-        c.put(0, 5, z, stairs, facing="east", half="bottom", shape="straight")
-        c.put(1, 6, z, stairs, facing="east", half="bottom", shape="straight")
-        c.put(2, 7, z, "dark_oak_log" if end else "spruce_planks", **({"axis": "z"} if end else {}))
-        c.put(3, 6, z, stairs, facing="west", half="bottom", shape="straight")
-        c.put(4, 5, z, stairs, facing="west", half="bottom", shape="straight")
-        c.put(5, 5, z, "dark_oak_slab" if end else "spruce_slab", type="bottom")
-        c.put(6, 5, z, "dark_oak_slab" if end else "spruce_slab", type="bottom")
-    for zg in (1, 5):
-        for x in range(1, 5):
-            c.put(x, 4, zg, "stripped_dark_oak_log", axis="x")
-            for y in range(5, 7):
-                if ry[x] > y:
-                    c.put(x, y, zg, "spruce_planks")
-    # interior: one bed, shelves, storage (empty containers)
-    c.put(1, 1, 1, "red_bed", facing="east", occupied=False, part="foot")
-    c.put(2, 1, 1, "red_bed", facing="east", occupied=False, part="head")
-    for y in (1, 2):
-        c.put(5, y, 1, "bookshelf")
-    c.put(5, 1, 2, "bookshelf")
-    c.put(5, 1, 3, "chest", facing="west", type="single")
+    # chimney: stone column in the east gable wall, through the roof edge, one block above the ridge
+    for y in range(1, 9):
+        c.put(6, y, 3, "stone_bricks" if y not in (2, 5) else "cobblestone")
+    c.put(6, 8, 3, "cobblestone_wall", up=True, north="none", east="none", south="none", west="none",
+          waterlogged=False)
+    # interior (x1..5, z2..4): bed, hearth, storage, small table (containers empty)
+    c.put(1, 1, 2, "red_bed", facing="east", occupied=False, part="foot")
+    c.put(2, 1, 2, "red_bed", facing="east", occupied=False, part="head")
+    c.put(5, 1, 3, "furnace", facing="west", lit=False)
+    c.put(4, 1, 2, "chest", facing="south", type="single")
+    c.put(5, 1, 4, "crafting_table")
     c.put(1, 1, 4, "barrel", facing="east", open=False)
-    c.put(3, 1, 2, "gray_carpet")
-    c.put(3, 4, 3, "lantern", hanging=True)
+    c.put(1, 2, 4, "lantern", hanging=False)
+    c.put(5, 1, 2, "bookshelf")
+    c.put(5, 2, 2, "bookshelf")
+    c.put(3, 1, 3, "gray_carpet")
     for x in range(1, 6):
         c.put(x, 4, 3, "stripped_spruce_log", axis="x")
+    c.put(3, 3, 3, "lantern", hanging=True)
+    c.put(3, 3, 2, "white_wall_banner", facing="south")
     return c
 
 
-# ---------------------------------------------------------------------------------------------- house D
+# ---------------------------------------------------------------------------------------------- house D (v2)
+# Fortified guard house: a tall 5x5 stone body set one block inside the plot so a deepslate hip roof overhangs it on
+# all four sides; full-height stone-brick corner piers, a timber upper band, a stone arch over the door, slit windows
+# with stone sills, banners and hanging lanterns under the front eave.
 def house_d():
     c = Cells((7, 9, 7))
     W, D = 7, 7
+
+    def st(x, y, z, mat, facing, half="bottom", shape="straight"):
+        c.put(x, y, z, mat, facing=facing, half=half, shape=shape)
+
     for x in range(W):
         for z in range(D):
-            edge = x in (0, W - 1) or z in (0, D - 1)
-            c.put(x, 0, z, stone(x, 0, z) if edge else "dark_oak_planks")
-    c.put(3, 0, 6, "stone_bricks")
-    for x in range(W):
-        for z in range(D):
-            if x not in (0, W - 1) and z not in (0, D - 1):
+            inside = 2 <= x <= 4 and 2 <= z <= 4
+            c.put(x, 0, z, "dark_oak_planks" if inside else stone(x, 0, z) if (x + z) % 3 else "cobblestone")
+    c.put(3, 0, 6, "stone_bricks"); c.put(3, 0, 5, "stone_bricks")
+    # body x1..5 / z1..5: piers at the corners, stone lower walls y1..3, dark-oak timber band y4, plate y5
+    for x in range(1, 6):
+        for z in range(1, 6):
+            if x not in (1, 5) and z not in (1, 5):
                 continue
-            corner = x in (0, W - 1) and z in (0, D - 1)
-            for y in (1, 2):
-                c.put(x, y, z, "stone_bricks" if corner else stone(x, y, z))
-            for y in (3,):
-                c.put(x, y, z, "dark_oak_log" if corner else "spruce_planks", **({"axis": "y"} if corner else {}))
-            c.put(x, 4, z, "dark_oak_log" if corner else "stripped_dark_oak_log",
-                  **({"axis": "y"} if corner else {"axis": "z" if x in (0, W - 1) else "x"}))
-    # stone-framed defensive doorway
-    for y in (1, 2, 3):
-        c.put(2, y, 6, "stone_bricks"); c.put(4, y, 6, "stone_bricks")
-    c.put(3, 3, 6, "stone_bricks")
-    c.put(3, 1, 6, "dark_oak_door", facing="south", half="lower", hinge="left", open=False, powered=False)
-    c.put(3, 2, 6, "dark_oak_door", facing="south", half="upper", hinge="left", open=False, powered=False)
-    # narrow barred windows
-    for x, z in ((0, 2), (0, 4), (6, 2), (6, 4), (3, 0), (1, 6), (5, 6)):
-        c.put(x, 3, z, "iron_bars")
-    # small hip roof (spruce), 7x7 rings, lantern finial
-    def ring(y, lo, hi):
+            pier = x in (1, 5) and z in (1, 5)
+            for y in range(1, 6):
+                if pier:
+                    c.put(x, y, z, "stone_bricks" if y < 5 else "chiseled_stone_bricks")
+                elif y <= 3:
+                    c.put(x, y, z, stone(x, y, z))
+                elif y == 4:
+                    c.put(x, y, z, "dark_oak_planks")
+                else:
+                    c.put(x, y, z, "stripped_dark_oak_log", axis="x" if z in (1, 5) else "z")
+    # slit windows with stone sills (side walls and back)
+    for x, z in ((1, 3), (5, 3), (3, 1)):
+        c.put(x, 2, z, "glass_pane"); c.put(x, 3, z, "glass_pane")
+    # arched door in the front wall
+    c.put(3, 1, 5, "dark_oak_door", facing="south", half="lower", hinge="left", open=False, powered=False)
+    c.put(3, 2, 5, "dark_oak_door", facing="south", half="upper", hinge="left", open=False, powered=False)
+    c.put(3, 3, 5, "stone_bricks")
+    st(2, 3, 5, "stone_brick_stairs", "east", half="top")
+    st(4, 3, 5, "stone_brick_stairs", "west", half="top")
+    c.put(2, 1, 5, "stone_bricks"); c.put(2, 2, 5, "stone_bricks")
+    c.put(4, 1, 5, "stone_bricks"); c.put(4, 2, 5, "stone_bricks")
+    c.put(3, 4, 5, "chiseled_stone_bricks")
+    # banners on the front piers, lanterns under the front eave
+    c.put(1, 3, 6, "white_wall_banner", facing="south")
+    c.put(5, 3, 6, "white_wall_banner", facing="south")
+    c.put(2, 4, 6, "lantern", hanging=True)
+    c.put(4, 4, 6, "lantern", hanging=True)
+
+    # deepslate hip roof: eave ring at y5 (box edge), rings at y6 and y7, tile cap and a lantern finial
+    def ring(y, lo, hi, mat):
         for x in range(lo, hi + 1):
             for z in range(lo, hi + 1):
                 if lo < x < hi and lo < z < hi:
@@ -249,22 +300,43 @@ def house_d():
                     facing, shape = "east", "straight"
                 else:
                     facing, shape = "west", "straight"
-                c.put(x, y, z, "spruce_stairs", facing=facing, half="bottom", shape=shape)
-    ring(5, 0, 6); ring(6, 1, 5); ring(7, 2, 4)
-    c.put(3, 7, 3, "spruce_planks")
+                st(x, y, z, mat, facing, shape=shape)
+
+    ring(1, 0, 6, "stone_brick_stairs")  # sloped plinth (battered base) around the body
+    c.pop((3, 1, 6))
+    for x in (2, 4):  # keep the door approach clear
+        st(x, 1, 6, "stone_brick_stairs", "north")
+    ring(5, 0, 6, "deepslate_tile_stairs")
+    ring(6, 1, 5, "deepslate_tile_stairs")
+    ring(7, 2, 4, "deepslate_tile_stairs")
+    c.put(3, 7, 3, "deepslate_tiles")
     c.put(3, 8, 3, "lantern", hanging=False)
-    # interior: one guard bed, weapon decor, storage
-    c.put(1, 1, 1, "red_bed", facing="east", occupied=False, part="foot")
-    c.put(2, 1, 1, "red_bed", facing="east", occupied=False, part="head")
-    c.put(5, 1, 1, "grindstone", face="floor", facing="south")
-    c.put(5, 1, 2, "fletching_table")
-    c.put(1, 1, 4, "chest", facing="east", type="single")
-    c.put(1, 1, 5, "barrel", facing="east", open=False)
-    c.put(3, 3, 1, "white_wall_banner", facing="south")
-    c.put(5, 3, 1, "wall_torch", facing="south")
-    c.put(5, 3, 5, "wall_torch", facing="north")
-    c.put(2, 1, 5, "gray_carpet"); c.put(3, 1, 5, "gray_carpet"); c.put(4, 1, 5, "gray_carpet")
+    # ceiling over the 3x3 room, hanging lantern
+    for x in (2, 3, 4):
+        for z in (2, 3, 4):
+            c.put(x, 5, z, "spruce_planks")
+    c.put(3, 4, 3, "lantern", hanging=True)
+    # interior (x2..4, z2..4): guard bed, chest and barrel, weapon banner, grindstone
+    c.put(2, 1, 3, "red_bed", facing="north", occupied=False, part="foot")
+    c.put(2, 1, 2, "red_bed", facing="north", occupied=False, part="head")
+    c.put(4, 1, 2, "chest", facing="west", type="single")
+    c.put(4, 1, 3, "barrel", facing="west", open=False)
+    c.put(4, 2, 3, "barrel", facing="up", open=False)
+    c.put(3, 3, 2, "white_wall_banner", facing="south")
     return c
+
+
+def _views_v2(ia, ib):
+    return {
+        "01_front": (3.5, 2, 17.5, 180, 5),
+        "02_front_left_diag": (-6.5, 4, 15.5, -135, 10),
+        "03_front_right_diag": (13.5, 4, 15.5, 135, 10),
+        "04_back": (3.5, 3, -10.5, 0, 6),
+        "05_back_diag": (-6.5, 4, -8.5, -45, 10),
+        "06_entrance": (3.5, 1, 11.5, 180, 8),
+        "07_interior_a": ia,
+        "08_interior_b": ib,
+    }
 
 
 def _views(w, d, tall=3, ia=None, ib=None):
@@ -287,12 +359,12 @@ BUILDINGS = {
                                  "furnace": (2, 1, 4), "barrel_n": (7, 1, 4), "barrel_w": (7, 1, 3)},
                     views=_views(9, 7, ia=(4.5, 0, 4.4, 180, 14), ib=(6.5, 0, 4.4, 150, 18))),
     "house_c": dict(module="M-house_c", design=house_c, door=(3, 6), size=(7, 9, 7),
-                    interactive={"bed": (2, 1, 1), "chest": (5, 1, 3), "barrel": (1, 1, 4)},
-                    views=_views(7, 7, ia=(3.5, 0, 4.4, 180, 14), ib=(5.5, 0, 4.4, 135, 18))),
+                    interactive={"bed": (2, 1, 2), "chest": (4, 1, 2), "furnace": (5, 1, 3), "crafting_table": (5, 1, 4),
+                                 "barrel": (1, 1, 4)},
+                    views=_views_v2((5.4, 1, 4.6, 118, 34), (1.6, 1, 4.6, -118, 34))),
     "house_d": dict(module="M-house_d", design=house_d, door=(3, 6), size=(7, 9, 7),
-                    interactive={"bed": (2, 1, 1), "grindstone": (5, 1, 1), "fletching_table": (5, 1, 2),
-                                 "chest": (1, 1, 4), "barrel": (1, 1, 5)},
-                    views=_views(7, 7)),
+                    interactive={"bed": (2, 1, 2), "chest": (4, 1, 2), "barrel": (4, 1, 3)},
+                    views=_views_v2((3.5, 1, 4.9, 180, 40), (2.5, 1, 4.85, -158, 34))),
 }
 
 
