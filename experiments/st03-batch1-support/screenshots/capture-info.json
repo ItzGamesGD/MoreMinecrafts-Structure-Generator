@@ -1,0 +1,303 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": {
+    "st03_kitchen": "c97b622d4b0d7ceedd1f40bb764e06e1394d63108ae319a0d68d2940853da231",
+    "st03_smithy": "5f19af5ecc64bbe37d50f8d6059864e5b3a184027563e081d3c60a249e86f629",
+    "st03_cart_shed": "076d14251dabf904fe0d099e4576ac0f31f69589025c10bf9e6c130dd601c88f"
+  },
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear; night_vision effect applied from the first interior view on",
+  "placement": "place template experimental:<key> x={'kitchen': 0, 'smithy': 80, 'cart_shed': 160} y=-61 z=0 rotation none (floor y=0 flush with grass; no terrain correction, no roads)",
+  "shots": [
+    {
+      "view": "kitchen_01_front",
+      "tp": [
+        4.5,
+        -57,
+        20.5,
+        180,
+        4
+      ],
+      "file": "kitchen_01_front.png",
+      "sha256": "6e84c5d44d3753e7f35c317e05c3e6c078fef8a5e2d0dce2a0e593b2fc59247a"
+    },
+    {
+      "view": "kitchen_02_back",
+      "tp": [
+        4.5,
+        -57,
+        -12.5,
+        0,
+        6
+      ],
+      "file": "kitchen_02_back.png",
+      "sha256": "670a714f411042e034cd9d8ece052892ee3ddc11bc250525796562364725d2f2"
+    },
+    {
+      "view": "kitchen_03_west",
+      "tp": [
+        -12.5,
+        -57,
+        4.5,
+        -90,
+        4
+      ],
+      "file": "kitchen_03_west.png",
+      "sha256": "6d8213f382c3e06d511b0afabb2c0dd7dd24f6768d300a41496136254607b2ec"
+    },
+    {
+      "view": "kitchen_04_east",
+      "tp": [
+        21.5,
+        -57,
+        4.5,
+        90,
+        4
+      ],
+      "file": "kitchen_04_east.png",
+      "sha256": "97d18f6fbc428f49a508cca60504b3248cae2dc4870d3c12339c2eb197f4f002"
+    },
+    {
+      "view": "kitchen_05_diag_se",
+      "tp": [
+        16.5,
+        -55,
+        18.5,
+        135,
+        8
+      ],
+      "file": "kitchen_05_diag_se.png",
+      "sha256": "e7436a8f206b3585e83ad614723bb4f8a7e6c416f0d071f84ef9dce8d08e0130"
+    },
+    {
+      "view": "kitchen_06_diag_nw",
+      "tp": [
+        -8.5,
+        -55,
+        -10.5,
+        -45,
+        8
+      ],
+      "file": "kitchen_06_diag_nw.png",
+      "sha256": "14612c7e2f06d1ca7e46aa381750a9aca8314b941545de9bf8f5e72370e28542"
+    },
+    {
+      "view": "smithy_01_front",
+      "tp": [
+        84.5,
+        -57,
+        20.5,
+        180,
+        4
+      ],
+      "file": "smithy_01_front.png",
+      "sha256": "d45f411de944a5137c3275b08f1886f957a368ecbfe1ee129845c2642c08efc2"
+    },
+    {
+      "view": "smithy_02_back",
+      "tp": [
+        84.5,
+        -57,
+        -12.5,
+        0,
+        6
+      ],
+      "file": "smithy_02_back.png",
+      "sha256": "287aac35700966b9e1bbea410f7e6e7a7ad23c6b18e74d25e472da14715c469e"
+    },
+    {
+      "view": "smithy_03_west",
+      "tp": [
+        67.5,
+        -57,
+        4.5,
+        -90,
+        4
+      ],
+      "file": "smithy_03_west.png",
+      "sha256": "84455c1be4858454d2d205d436b5901706f788c80100921556059df27943db68"
+    },
+    {
+      "view": "smithy_04_east",
+      "tp": [
+        101.5,
+        -57,
+        4.5,
+        90,
+        4
+      ],
+      "file": "smithy_04_east.png",
+      "sha256": "01a03351ba9fc5a74e5cf2b7492a362121902410b4e2f0a904018e73ab2df281"
+    },
+    {
+      "view": "smithy_05_diag_se",
+      "tp": [
+        96.5,
+        -55,
+        18.5,
+        135,
+        8
+      ],
+      "file": "smithy_05_diag_se.png",
+      "sha256": "d98b7ca963b7de6b1d69c3bbb15393fd4cf660fbb53262f860e399f451f01187"
+    },
+    {
+      "view": "smithy_06_diag_nw",
+      "tp": [
+        71.5,
+        -55,
+        -10.5,
+        -45,
+        8
+      ],
+      "file": "smithy_06_diag_nw.png",
+      "sha256": "99ed29cb1c00ab64434c72862a217f3d79a61590e8114e803aa962b89d391694"
+    },
+    {
+      "view": "cart_shed_01_front",
+      "tp": [
+        163.5,
+        -57,
+        18.5,
+        180,
+        4
+      ],
+      "file": "cart_shed_01_front.png",
+      "sha256": "3ac80e8c8440d4cde5a89d51aaa70e92ed7572ec46ebbce84e9fb4c26e6fdb58"
+    },
+    {
+      "view": "cart_shed_02_back",
+      "tp": [
+        163.5,
+        -57,
+        -12.5,
+        0,
+        6
+      ],
+      "file": "cart_shed_02_back.png",
+      "sha256": "aa9f64638cb2a77d51ae45dcaa34ecd5b803b0ae9dc35715e064f8946faa8eb8"
+    },
+    {
+      "view": "cart_shed_03_west",
+      "tp": [
+        147.5,
+        -57,
+        3.5,
+        -90,
+        4
+      ],
+      "file": "cart_shed_03_west.png",
+      "sha256": "e52ab7936654ba423cd8364fc42ad40d45a4f7deef7db73a5bbe09f28c1e692e"
+    },
+    {
+      "view": "cart_shed_04_east",
+      "tp": [
+        179.5,
+        -57,
+        3.5,
+        90,
+        4
+      ],
+      "file": "cart_shed_04_east.png",
+      "sha256": "f64d436458badf2588bd1e24658d5a53b06873e41d9aac38951bca128f4e6618"
+    },
+    {
+      "view": "cart_shed_05_diag_se",
+      "tp": [
+        174.5,
+        -55,
+        16.5,
+        135,
+        8
+      ],
+      "file": "cart_shed_05_diag_se.png",
+      "sha256": "65ae4a9ed2f21b1557efa0f737b3d218ba12230a99cd7dd6cc7e5ba5c8bdd808"
+    },
+    {
+      "view": "cart_shed_06_diag_nw",
+      "tp": [
+        151.5,
+        -55,
+        -9.5,
+        -45,
+        8
+      ],
+      "file": "cart_shed_06_diag_nw.png",
+      "sha256": "301d9a8937a4d117279134e778391a79f65bab547c2ab7c696517625678d00b6"
+    },
+    {
+      "view": "kitchen_07_interior_fireplace",
+      "tp": [
+        4.5,
+        -60,
+        7.0,
+        180,
+        12
+      ],
+      "file": "kitchen_07_interior_fireplace.png",
+      "sha256": "30cad1c899c4a4da7b0f49ae1bc96cb668723ba99c8e8d5259898501d1d4430d"
+    },
+    {
+      "view": "kitchen_08_interior_counter",
+      "tp": [
+        6.5,
+        -60,
+        7.0,
+        112,
+        20
+      ],
+      "file": "kitchen_08_interior_counter.png",
+      "sha256": "14601800957926291adfe0a9c432a5e510a96f0e4b13cb698a39ff9cceea2ce4"
+    },
+    {
+      "view": "smithy_07_interior_forge",
+      "tp": [
+        84.5,
+        -60,
+        7.0,
+        180,
+        12
+      ],
+      "file": "smithy_07_interior_forge.png",
+      "sha256": "47f76d6edd6a5363bf944c826e90233ff27feafef1ad4fbb981fd48b4a399059"
+    },
+    {
+      "view": "smithy_08_interior_side",
+      "tp": [
+        86.5,
+        -60,
+        7.0,
+        125,
+        18
+      ],
+      "file": "smithy_08_interior_side.png",
+      "sha256": "ee95a471a775d48ba50b666f14a470cdb5ffd2ab49008af758a15404e7273480"
+    },
+    {
+      "view": "cart_shed_07_interior_cart",
+      "tp": [
+        163.5,
+        -60,
+        9.5,
+        180,
+        10
+      ],
+      "file": "cart_shed_07_interior_cart.png",
+      "sha256": "154b8b90223ba5a412450025edea5ccdb25df49f0b9900fd38d99c0bdbc01369"
+    },
+    {
+      "view": "cart_shed_08_interior_storage",
+      "tp": [
+        166.5,
+        -60,
+        4.5,
+        128,
+        15
+      ],
+      "file": "cart_shed_08_interior_storage.png",
+      "sha256": "51d607de8b0c0ec55bb085a0a69d0b190b1aa0bd2fa240b345abe3927e7b1d9d"
+    }
+  ]
+}
