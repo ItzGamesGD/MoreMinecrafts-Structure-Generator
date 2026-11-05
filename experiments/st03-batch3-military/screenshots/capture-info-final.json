@@ -1,0 +1,278 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": {
+    "st03_armory": "b597abcc9bfd339ea5ec63c4897a364710895cae7df2cfee648d18483d17e1cc",
+    "st03_yard": "4ccd7a6250fb49676ce5156e2f54a7c9829cbd476cedba75a5750f2e467db6cc"
+  },
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear; night_vision effect applied from the first interior view on; raised camera positions stand on an invisible barrier block set only into air cells after placement (never replaces a template block)",
+  "placement": "place template experimental:<key> at {'armory': ('st03_armory', 0, 0), 'yard': ('st03_yard', 0, 13)} y=-61 rotation none (real F05/F06 relative offset; floor y=0 flush with grass; no terrain correction, no roads)",
+  "shots": [
+    {
+      "view": "f05_01_front_east",
+      "tp": [
+        27.5,
+        -57,
+        6.5,
+        90,
+        -4
+      ],
+      "file": "f05_01_front_east.png",
+      "sha256": "b6cb4f53a0bf06166ef9e1d3550a4111d56472939497888771f39b73d3785812"
+    },
+    {
+      "view": "f05_02_front_left_diag_ne",
+      "tp": [
+        26.5,
+        -56,
+        -8.5,
+        51,
+        2
+      ],
+      "file": "f05_02_front_left_diag_ne.png",
+      "sha256": "caf49340c13417b3ce0ecfe0ac6094c758a84a67fb5d2130cb072d68ffc9cb3c"
+    },
+    {
+      "view": "f05_03_front_right_diag_se",
+      "tp": [
+        27.5,
+        -55,
+        19.5,
+        128,
+        6
+      ],
+      "file": "f05_03_front_right_diag_se.png",
+      "sha256": "4da1b18027c3649795dc3df0a0d40356c69642b8d6dcb898839581d656f961f3"
+    },
+    {
+      "view": "f05_04_side_south_yard",
+      "tp": [
+        8.5,
+        -56,
+        22.5,
+        180,
+        12
+      ],
+      "file": "f05_04_side_south_yard.png",
+      "sha256": "c7f5ccca017aa67035acd792a1350cb8e985f8cc77b7421518f16db0b5087871"
+    },
+    {
+      "view": "f05_05_back_diag_nw",
+      "tp": [
+        -9.5,
+        -55,
+        -9.5,
+        -45,
+        6
+      ],
+      "file": "f05_05_back_diag_nw.png",
+      "sha256": "dce82533d43b712bb112e7107fa62e0605eceb896294009a4c096b80d4e5cf79"
+    },
+    {
+      "view": "f05_06_back_west",
+      "tp": [
+        -12.5,
+        -57,
+        6.5,
+        -90,
+        -2
+      ],
+      "file": "f05_06_back_west.png",
+      "sha256": "ecc12ce76c5d40df5bcd3e78c7f74d9f763f634503576cb7860d5191d880e275"
+    },
+    {
+      "view": "f06_01_aerial_se",
+      "tp": [
+        30.5,
+        -47,
+        40.5,
+        136,
+        30
+      ],
+      "file": "f06_01_aerial_se.png",
+      "sha256": "d0b3b7d6cfdafec76d235968de7af247068a364d0df820a973acbe94d7887566"
+    },
+    {
+      "view": "f06_02_aerial_south",
+      "tp": [
+        12.5,
+        -43,
+        46.5,
+        180,
+        40
+      ],
+      "file": "f06_02_aerial_south.png",
+      "sha256": "0586e636a228cde8f8f1caa8bde1ab6ffd8f0f2d25811f5d16b1a214789fdb11"
+    },
+    {
+      "view": "f06_03_front_gate_east",
+      "tp": [
+        33.5,
+        -58,
+        23.5,
+        90,
+        2
+      ],
+      "file": "f06_03_front_gate_east.png",
+      "sha256": "afb36d69e14f60a36da0c226fd980fa2163f6112e0a9e4a9c2f1d56db59cb850"
+    },
+    {
+      "view": "f06_04_left_diag_ne",
+      "tp": [
+        31.5,
+        -54,
+        9.5,
+        55,
+        12
+      ],
+      "file": "f06_04_left_diag_ne.png",
+      "sha256": "72aacf81fbe7d331c0dc34fe9ec37f88710b8eeaa39ad8650a2342e9915978e5"
+    },
+    {
+      "view": "f06_05_right_diag_se",
+      "tp": [
+        31.5,
+        -54,
+        39.5,
+        130,
+        12
+      ],
+      "file": "f06_05_right_diag_se.png",
+      "sha256": "21717c1797cbdfee32c7791e55a86fad402a5930a8b23509b6eebc443c8213d2"
+    },
+    {
+      "view": "f06_06_side_south",
+      "tp": [
+        12.5,
+        -55,
+        41.5,
+        180,
+        12
+      ],
+      "file": "f06_06_side_south.png",
+      "sha256": "326b7b12989606694a6e2b1e52caebb77082070dcfd50b4c2b31f9d5802b9d8f"
+    },
+    {
+      "view": "f06_07_archery_range",
+      "tp": [
+        3.5,
+        -59,
+        29.5,
+        -90,
+        4
+      ],
+      "file": "f06_07_archery_range.png",
+      "sha256": "86198f91583927c5ea3ca92660dc86c351b3f0c373445ab6ff02def634d04daa"
+    },
+    {
+      "view": "f06_08_targets_close",
+      "tp": [
+        14.5,
+        -58,
+        31.5,
+        -115,
+        6
+      ],
+      "file": "f06_08_targets_close.png",
+      "sha256": "74ebb30fb322d5f4f029b8e5acbd5a8e0a91827bda9da115e7ed638a410f9cbc"
+    },
+    {
+      "view": "f06_09_sparring_ring",
+      "tp": [
+        16.5,
+        -57,
+        25.5,
+        180,
+        22
+      ],
+      "file": "f06_09_sparring_ring.png",
+      "sha256": "ebf0ed4dd9a7179a75f015952fdd17e3230674b6b0f7a48d937654833b451a7d"
+    },
+    {
+      "view": "f06_10_command_dais",
+      "tp": [
+        10.5,
+        -59,
+        23.5,
+        90,
+        0
+      ],
+      "file": "f06_10_command_dais.png",
+      "sha256": "4ca2489b29592208f5fc2498842bedd6f57aab420aef0ceeddccacb639c27e78"
+    },
+    {
+      "view": "f06_11_equipment_shelter",
+      "tp": [
+        8.5,
+        -59,
+        18.5,
+        115,
+        12
+      ],
+      "file": "f06_11_equipment_shelter.png",
+      "sha256": "8eca2e1f2252985d6426f6507ea5f60062446816f8849b2fdf311597d658f696"
+    },
+    {
+      "view": "f05_07_interior_hall_axis",
+      "tp": [
+        11.6,
+        -58.8,
+        4.5,
+        90,
+        16
+      ],
+      "file": "f05_07_interior_hall_axis.png",
+      "sha256": "67bfabfa5874e0b1455c328655161b82231118ea6884229328c8675514485ae0"
+    },
+    {
+      "view": "f05_08_interior_weapon_wall",
+      "tp": [
+        10.5,
+        -60,
+        6.6,
+        135,
+        14
+      ],
+      "file": "f05_08_interior_weapon_wall.png",
+      "sha256": "f4057adfaf6f1c49b7463853f63080bba2cee33b18e04df48d8fcd7f9b2b2938"
+    },
+    {
+      "view": "f05_09_interior_strongroom",
+      "tp": [
+        7.5,
+        -60,
+        4.5,
+        90,
+        12
+      ],
+      "file": "f05_09_interior_strongroom.png",
+      "sha256": "29b4a9473dce1144b90d02af3cc2ea9f8f5b3fc1b86d422082c7bf0ec0156719"
+    },
+    {
+      "view": "f05_10_interior_loggia",
+      "tp": [
+        14.6,
+        -60,
+        10.0,
+        90,
+        10
+      ],
+      "file": "f05_10_interior_loggia.png",
+      "sha256": "48d4bba1b2962a8af60187c9417ef6d51abb6626e78313f73133de4a2e462724"
+    },
+    {
+      "view": "f05_11_loggia_bay_from_yard",
+      "tp": [
+        8.5,
+        -60,
+        16.5,
+        180,
+        2
+      ],
+      "file": "f05_11_loggia_bay_from_yard.png",
+      "sha256": "2c0f147e2b1fac89402a780f922b4f55112d6f677ef2c423af65560fbe6bab22"
+    }
+  ]
+}

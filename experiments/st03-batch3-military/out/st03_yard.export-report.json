@@ -1,0 +1,967 @@
+{
+  "air": "include",
+  "blocks": 2625,
+  "cells": 2625,
+  "config": "exports/structures/ruined_watchtower.toml",
+  "connectivity": {
+    "boundary_unresolved": [
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          2,
+          0
+        ],
+        "unknown_neighbours": {
+          "north": "outside_template",
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          2,
+          0
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template",
+          "north": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          2,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template",
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          2,
+          20
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template",
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          0
+        ],
+        "unknown_neighbours": {
+          "north": "outside_template",
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          17,
+          1,
+          0
+        ],
+        "unknown_neighbours": {
+          "north": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          18,
+          1,
+          0
+        ],
+        "unknown_neighbours": {
+          "north": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          19,
+          1,
+          0
+        ],
+        "unknown_neighbours": {
+          "north": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          20,
+          1,
+          0
+        ],
+        "unknown_neighbours": {
+          "north": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          21,
+          1,
+          0
+        ],
+        "unknown_neighbours": {
+          "north": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          22,
+          1,
+          0
+        ],
+        "unknown_neighbours": {
+          "north": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          23,
+          1,
+          0
+        ],
+        "unknown_neighbours": {
+          "north": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          0
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template",
+          "north": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          1
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          1
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          2
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          2
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          3
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          3
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          4
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          4
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          5
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          5
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          6
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          6
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          7
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          7
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          8
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          8
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          9
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          10
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          11
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          12
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          12
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          13
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          13
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          14
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          14
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          15
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          15
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          16
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          16
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          17
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          17
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          18
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          18
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          19
+        ],
+        "unknown_neighbours": {
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          19
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          0,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template",
+          "west": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          1,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          2,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          3,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          4,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          5,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          6,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          7,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          8,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          9,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          10,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          11,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          12,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          13,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          14,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          15,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          16,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          17,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          18,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          19,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          20,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          22,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          23,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "south": "outside_template"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          24,
+          1,
+          20
+        ],
+        "unknown_neighbours": {
+          "east": "outside_template",
+          "south": "outside_template"
+        }
+      }
+    ],
+    "computed_blocks": 114,
+    "corrected_blocks": 96,
+    "corrected_properties": {
+      "east": 64,
+      "north": 39,
+      "south": 38,
+      "west": 55
+    },
+    "explicit_differs_from_vanilla": [],
+    "reference": "tools/structure_export/reference/connectivity-26.3.json",
+    "unresolved": []
+  },
+  "converter_version": 2,
+  "defaulted_properties": {
+    "minecraft:chest[facing=east,type=single]": [
+      "waterlogged"
+    ],
+    "minecraft:chest[facing=west,type=single]": [
+      "waterlogged"
+    ],
+    "minecraft:dark_oak_fence": [
+      "east",
+      "north",
+      "south",
+      "waterlogged",
+      "west"
+    ],
+    "minecraft:dark_oak_slab[type=bottom]": [
+      "waterlogged"
+    ],
+    "minecraft:dark_oak_stairs[facing=west,half=bottom,shape=straight]": [
+      "waterlogged"
+    ],
+    "minecraft:exposed_lightning_rod[facing=up]": [
+      "powered",
+      "waterlogged"
+    ],
+    "minecraft:grass_block": [
+      "snowy"
+    ],
+    "minecraft:lantern[hanging=false]": [
+      "waterlogged"
+    ],
+    "minecraft:lantern[hanging=true]": [
+      "waterlogged"
+    ],
+    "minecraft:spruce_slab[type=bottom]": [
+      "waterlogged"
+    ],
+    "minecraft:spruce_stairs[facing=east,half=bottom,shape=straight]": [
+      "waterlogged"
+    ],
+    "minecraft:spruce_stairs[facing=west,half=bottom,shape=straight]": [
+      "waterlogged"
+    ],
+    "minecraft:stone_brick_stairs[facing=west,half=bottom,shape=straight]": [
+      "waterlogged"
+    ],
+    "minecraft:target": [
+      "power"
+    ]
+  },
+  "output": "/tmp/tmpy61o03ij/pack/data/moreminecrafts/structure/seam01/st03_yard.nbt",
+  "output_sha256": "4ccd7a6250fb49676ce5156e2f54a7c9829cbd476cedba75a5750f2e467db6cc",
+  "palette": 59,
+  "size": [
+    25,
+    5,
+    21
+  ],
+  "source": {
+    "data_version": 3953,
+    "metadata_keys_ignored": [],
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "palette_entries": 46,
+    "path": "/tmp/tmpy61o03ij/st03_yard.schem",
+    "sha256": "0bc04ed5096295f278b579b4a63ec65bb23c23f7061299fd3c295a190a6e196f",
+    "size": [
+      25,
+      5,
+      21
+    ],
+    "unused_palette_entries": []
+  },
+  "state_counts": {
+    "minecraft:air": 1756,
+    "minecraft:andesite": 14,
+    "minecraft:barrel[facing=east,open=false]": 2,
+    "minecraft:barrel[facing=up,open=false]": 4,
+    "minecraft:cartography_table": 1,
+    "minecraft:carved_pumpkin[facing=south]": 3,
+    "minecraft:chest[facing=east,type=single,waterlogged=false]": 1,
+    "minecraft:chest[facing=west,type=single,waterlogged=false]": 1,
+    "minecraft:coarse_dirt": 106,
+    "minecraft:cobblestone": 20,
+    "minecraft:cracked_stone_bricks": 15,
+    "minecraft:dark_oak_fence[east=false,north=false,south=false,waterlogged=false,west=false]": 18,
+    "minecraft:dark_oak_fence[east=false,north=false,south=false,waterlogged=false,west=true]": 6,
+    "minecraft:dark_oak_fence[east=false,north=false,south=true,waterlogged=false,west=false]": 2,
+    "minecraft:dark_oak_fence[east=false,north=false,south=true,waterlogged=false,west=true]": 2,
+    "minecraft:dark_oak_fence[east=false,north=true,south=false,waterlogged=false,west=false]": 1,
+    "minecraft:dark_oak_fence[east=false,north=true,south=false,waterlogged=false,west=true]": 2,
+    "minecraft:dark_oak_fence[east=false,north=true,south=true,waterlogged=false,west=false]": 18,
+    "minecraft:dark_oak_fence[east=false,north=true,south=true,waterlogged=false,west=true]": 1,
+    "minecraft:dark_oak_fence[east=true,north=false,south=false,waterlogged=false,west=false]": 5,
+    "minecraft:dark_oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]": 41,
+    "minecraft:dark_oak_fence[east=true,north=false,south=true,waterlogged=false,west=true]": 1,
+    "minecraft:dark_oak_fence[east=true,north=true,south=false,waterlogged=false,west=false]": 1,
+    "minecraft:dark_oak_fence[east=true,north=true,south=false,waterlogged=false,west=true]": 2,
+    "minecraft:dark_oak_fence[east=true,north=true,south=true,waterlogged=false,west=false]": 14,
+    "minecraft:dark_oak_log[axis=y]": 31,
+    "minecraft:dark_oak_planks": 6,
+    "minecraft:dark_oak_slab[type=bottom,waterlogged=false]": 25,
+    "minecraft:dark_oak_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 1,
+    "minecraft:dirt_path": 16,
+    "minecraft:exposed_lightning_rod[facing=up,powered=false,waterlogged=false]": 4,
+    "minecraft:fern": 2,
+    "minecraft:fletching_table": 1,
+    "minecraft:grass_block[snowy=false]": 134,
+    "minecraft:gravel": 72,
+    "minecraft:grindstone[face=floor,facing=south]": 1,
+    "minecraft:grindstone[face=floor,facing=west]": 1,
+    "minecraft:grindstone[face=wall,facing=east]": 2,
+    "minecraft:hay_block[axis=x]": 2,
+    "minecraft:hay_block[axis=y]": 5,
+    "minecraft:hay_block[axis=z]": 12,
+    "minecraft:lantern[hanging=false,waterlogged=false]": 11,
+    "minecraft:lantern[hanging=true,waterlogged=false]": 2,
+    "minecraft:mossy_cobblestone": 2,
+    "minecraft:packed_mud": 55,
+    "minecraft:polished_andesite": 33,
+    "minecraft:rooted_dirt": 20,
+    "minecraft:spruce_planks": 41,
+    "minecraft:spruce_slab[type=bottom,waterlogged=false]": 14,
+    "minecraft:spruce_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 7,
+    "minecraft:spruce_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 12,
+    "minecraft:stone_brick_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 3,
+    "minecraft:stone_bricks": 54,
+    "minecraft:stripped_dark_oak_log[axis=z]": 5,
+    "minecraft:stripped_spruce_log[axis=z]": 3,
+    "minecraft:target[power=0]": 3,
+    "minecraft:white_wall_banner[facing=east]": 6,
+    "minecraft:white_wall_banner[facing=north]": 1,
+    "minecraft:white_wall_banner[facing=south]": 1
+  },
+  "structure_id": "moreminecrafts:seam01/st03_yard",
+  "target": {
+    "data_version": 5023,
+    "minecraft_version": "26.3",
+    "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c"
+  },
+  "warnings": [
+    "72 connecting blocks border the template box or omitted air; their connections toward that unknown terrain were computed as if it were air (connectivity.boundary_unresolved)"
+  ]
+}

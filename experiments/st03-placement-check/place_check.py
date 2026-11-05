@@ -1,6 +1,7 @@
 """ST-03 placement check of the BUILT facilities at their real positions from tools/seam01/data/st03_placements.json.
 
-Scope: only facilities that have a built NBT today (House A F11/F14, houses B/C/D, kitchen, smithy, cart shed).
+Scope: only facilities that have a built NBT today (House A F11/F14, houses B/C/D, kitchen, smithy, cart shed, and
+batch 3: F05 armory, F06 training yard).
 Roads are NOT part of the placement table (the road masterplan and ground modules MQ-* are not in this repository and
 not built), so a road connection cannot be asserted here; the check reports the free corridor in front of each entrance.
 
@@ -43,11 +44,13 @@ def built_modules():
     out = {}
     b1 = _load(EXP / "st03-batch1-support" / "build.py", "b1")
     b2 = _load(EXP / "st03-batch2-houses" / "build.py", "b2")
-    for mod in (b1, b2):
-        d = EXP / ("st03-batch1-support" if mod is b1 else "st03-batch2-houses") / "out"
+    b3 = _load(EXP / "st03-batch3-military" / "build.py", "b3")
+    for mod, folder in ((b1, "st03-batch1-support"), (b2, "st03-batch2-houses"), (b3, "st03-batch3-military")):
+        d = EXP / folder / "out"
         for b in mod.BUILDINGS.values():
             m = A.modules()[b["module"]]
-            out[b["module"]] = {"nbt": d / f"{m['file']}.nbt", "door": b["door"], "size": b["size"]}
+            out[b["module"]] = {"nbt": d / f"{m['file']}.nbt", "door": b["door"], "size": b["size"],
+                                "entrances": b.get("entrances")}
     ha = _load(EXP / "st03-b5a-house-a" / "build.py", "ha")
     out["M-house_a"] = {"nbt": EXP / "st03-b5a-house-a" / "st03_house_a.nbt", "door": ha.DOOR, "size": (ha.W, ha.H, ha.D)}
     return out
@@ -99,10 +102,25 @@ def offline(built):
                     break
                 clear += 1
             nearest = min(((gap(e["footprint"], s["footprint"]), s["placement"]) for s in solid if s is not e))
+            ents = {}
+            for name, (lx, lz) in (built[e["module"]].get("entrances") or {}).items():
+                dx, dz = (1, 0) if lx == w else (-1, 0) if lx == -1 else (0, 1) if lz == d else (0, -1)
+                wx, _, wz = A.place_cell(e, (lx, 0, lz))
+                ox, oz = A.ROT[turns](dx, dz)
+                run, hit = 0, None
+                while 0 <= wx + ox * run < 112 and 0 <= wz + oz * run < 112:
+                    cx, cz = wx + ox * run, wz + oz * run
+                    hit = next((s["placement"] for s in solid if s is not e and s["footprint"][0] <= cx <= s["footprint"][2]
+                                and s["footprint"][1] <= cz <= s["footprint"][3]), None)
+                    if hit:
+                        break
+                    run += 1
+                ents[name] = {"outside_cell": [wx, wz], "outward": [ox, oz], "free_blocks": run, "runs_into": hit}
             res["facilities"].setdefault(str(q), {})[e["placement"]] = {
                 "module": e["module"], "rotation": e["rotation"], "footprint": e["footprint"],
                 "entrance_outside_cell": [ex, ez], "front_direction": [fx, fz],
                 "front_free_blocks": clear, "nearest_neighbour_gap": nearest[0], "nearest": nearest[1],
+                **({"entrances": ents} if ents else {}),
             }
     return res
 
