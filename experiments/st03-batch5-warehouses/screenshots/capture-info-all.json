@@ -1,0 +1,563 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": {
+    "st03_warehouse_a": "8bb4ea0061284596d6595dfc1f96e0bad1405c6ce4033fcb46ac36180401c296",
+    "st03_warehouse_b": "503151fff5beb5de3389d133e780a1bec06addbb70d10b7d92d8443a4e3f261c"
+  },
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear; night_vision only for interior views; raised camera positions stand on an invisible barrier block set only into air cells after placement",
+  "placed": [
+    {
+      "what": "warehouse_a",
+      "origin": [
+        0,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "warehouse_b",
+      "origin": [
+        60,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F02",
+      "module": "M-barracks_a",
+      "origin": [
+        24,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F03",
+      "module": "M-barracks_b",
+      "origin": [
+        75,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F04",
+      "module": "M-barracks_c",
+      "origin": [
+        75,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F05",
+      "module": "M-armory",
+      "origin": [
+        12,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F06",
+      "module": "M-yard",
+      "origin": [
+        12,
+        -61,
+        52
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F07",
+      "module": "M-warehouse_a",
+      "origin": [
+        10,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F08",
+      "module": "M-warehouse_b",
+      "origin": [
+        75,
+        -61,
+        53
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F11",
+      "module": "M-house_a",
+      "origin": [
+        14,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F12",
+      "module": "M-house_b",
+      "origin": [
+        26,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F13",
+      "module": "M-house_c",
+      "origin": [
+        14,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F14",
+      "module": "M-house_a",
+      "origin": [
+        89,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F15",
+      "module": "M-house_b",
+      "origin": [
+        76,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F16",
+      "module": "M-house_c",
+      "origin": [
+        92,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F17",
+      "module": "M-house_d",
+      "origin": [
+        92,
+        -61,
+        40
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F18",
+      "module": "M-kitchen",
+      "origin": [
+        92,
+        -61,
+        50
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F19",
+      "module": "M-smithy",
+      "origin": [
+        28,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F20",
+      "module": "M-cart_shed",
+      "origin": [
+        44,
+        -61,
+        82
+      ],
+      "rotation": "none"
+    }
+  ],
+  "shots": [
+    {
+      "view": "f07_01_front",
+      "tp": [
+        7.5,
+        -56.5,
+        225.5,
+        -180.0,
+        -5.1
+      ],
+      "file": "f07_01_front.png",
+      "sha256": "c66fa7998895a684cac665cc6c01dbb70a55bf5a22e550c1b72ae214b45637a9"
+    },
+    {
+      "view": "f07_02_front_left",
+      "tp": [
+        21.5,
+        -54,
+        220.5,
+        135.0,
+        2.9
+      ],
+      "file": "f07_02_front_left.png",
+      "sha256": "21e612e632ef847ea8d497387efacfb6bd242a646c3aa94ce0b32ef92f38d354"
+    },
+    {
+      "view": "f07_03_front_right",
+      "tp": [
+        -6.5,
+        -54,
+        220.5,
+        -135.0,
+        2.9
+      ],
+      "file": "f07_03_front_right.png",
+      "sha256": "b552a4ad70701eac38ec1ac23e59649f70588aeb494c4da7b9f1ebdd19717068"
+    },
+    {
+      "view": "f07_04_side_left",
+      "tp": [
+        26.5,
+        -56,
+        206.5,
+        90.0,
+        -3.0
+      ],
+      "file": "f07_04_side_left.png",
+      "sha256": "d51e954c64f24f162e9c79f2fb29b4f17cbde8c5e3dfcc827c7ec039c4096573"
+    },
+    {
+      "view": "f07_05_side_right",
+      "tp": [
+        -11.5,
+        -56,
+        206.5,
+        -90.0,
+        -3.0
+      ],
+      "file": "f07_05_side_right.png",
+      "sha256": "720b80d5a20005b5e8edb11e1d0c8f8600bbdbd367fb2f1ea69403ded11ead59"
+    },
+    {
+      "view": "f07_06_rear",
+      "tp": [
+        7.5,
+        -56.5,
+        187.5,
+        -0.0,
+        -5.1
+      ],
+      "file": "f07_06_rear.png",
+      "sha256": "1e115c930e3b331b626ec7741b1eec7c058d3002714d323c3fa6b8a165a58766"
+    },
+    {
+      "view": "f07_07_rear_diag",
+      "tp": [
+        21.5,
+        -53,
+        192.5,
+        45.0,
+        5.8
+      ],
+      "file": "f07_07_rear_diag.png",
+      "sha256": "057fedbdb0a5248a661c33cb7943a7730a25db87b5172a39e200ba4e4787a584"
+    },
+    {
+      "view": "f08_01_front",
+      "tp": [
+        47.5,
+        -56.5,
+        207.5,
+        -90.0,
+        -5.1
+      ],
+      "file": "f08_01_front.png",
+      "sha256": "3085961496c382330671674ff64195888419ae3d62228fd0fead0e2d12c363a6"
+    },
+    {
+      "view": "f08_02_front_left",
+      "tp": [
+        52.5,
+        -54,
+        221.5,
+        -135.0,
+        2.9
+      ],
+      "file": "f08_02_front_left.png",
+      "sha256": "fef2f31911b1496287b9a9a7c3a117282bc194cee045b42b3dbc6badc62e79de"
+    },
+    {
+      "view": "f08_03_front_right",
+      "tp": [
+        52.5,
+        -54,
+        193.5,
+        -45.0,
+        2.9
+      ],
+      "file": "f08_03_front_right.png",
+      "sha256": "1ea39958789a11e8acc2dbe3f686b12461fa089f5e26ebaf5a2f0e80419f5200"
+    },
+    {
+      "view": "f08_04_side_left",
+      "tp": [
+        66.5,
+        -56,
+        226.5,
+        -180.0,
+        -3.0
+      ],
+      "file": "f08_04_side_left.png",
+      "sha256": "e47a7f755e36f50cb61bf8cb7880ddec5f494c7098b014c7e564f1199eca9687"
+    },
+    {
+      "view": "f08_05_side_right",
+      "tp": [
+        66.5,
+        -56,
+        188.5,
+        -0.0,
+        -3.0
+      ],
+      "file": "f08_05_side_right.png",
+      "sha256": "b49cacaf42b2f0e1c6e5f9d1c871d5b3c718d6bd1a8000511394c9a2e9db9d63"
+    },
+    {
+      "view": "f08_06_rear",
+      "tp": [
+        85.5,
+        -56.5,
+        207.5,
+        90.0,
+        -5.1
+      ],
+      "file": "f08_06_rear.png",
+      "sha256": "1e76fc2b6f6b80c462c98edef6677b35cca003169a664cfe607f4b173dabbe70"
+    },
+    {
+      "view": "f08_07_rear_diag",
+      "tp": [
+        80.5,
+        -53,
+        221.5,
+        135.0,
+        5.8
+      ],
+      "file": "f08_07_rear_diag.png",
+      "sha256": "b22f60acf2805ee6551f6c9fce5cd967f6d4586e9d3cef56e1244526c4df65ae"
+    },
+    {
+      "view": "f07_08_interior_aisle_from_porch",
+      "tp": [
+        7.0,
+        -59.7,
+        210.5,
+        -180.0,
+        -10.7
+      ],
+      "file": "f07_08_interior_aisle_from_porch.png",
+      "sha256": "4a54d6f44850ca2f9e424b374979c1ccdcb05f7d73036919f3d68931887c89a4"
+    },
+    {
+      "view": "f07_09_interior_west_bay_loft",
+      "tp": [
+        9.5,
+        -59.7,
+        204.5,
+        90.0,
+        -15.6
+      ],
+      "file": "f07_09_interior_west_bay_loft.png",
+      "sha256": "112fdf69af0de679b5655d8d005331dfccd4843e9d3c58b91ccd674e2ff71f89"
+    },
+    {
+      "view": "f07_10_interior_east_bay_racks",
+      "tp": [
+        4.5,
+        -59.7,
+        205.5,
+        -97.6,
+        -14.8
+      ],
+      "file": "f07_10_interior_east_bay_racks.png",
+      "sha256": "957f6b421ed89defdea5a673aed2e5749897f11998454e3e7fc26fa4a63b520b"
+    },
+    {
+      "view": "f07_11_interior_from_loft",
+      "tp": [
+        2.5,
+        -56.0,
+        204.5,
+        -90.0,
+        21.8
+      ],
+      "file": "f07_11_interior_from_loft.png",
+      "sha256": "4bb8e074686cb8386dc39636c811768c16e8d52b7f6ee3f961578180be262055"
+    },
+    {
+      "view": "f08_08_interior_from_unloading_door",
+      "tp": [
+        61.6,
+        -59.7,
+        207.5,
+        -90.0,
+        -10.8
+      ],
+      "file": "f08_08_interior_from_unloading_door.png",
+      "sha256": "3569635a45ba9f1f9e9b4da6e97df14232c5b1e6710948f360f1cafd40e145a1"
+    },
+    {
+      "view": "f08_09_interior_bay_and_gallery",
+      "tp": [
+        62.6,
+        -59.7,
+        207.5,
+        -94.1,
+        -36.9
+      ],
+      "file": "f08_09_interior_bay_and_gallery.png",
+      "sha256": "c7dc86d6a979b01dbb7436ab306f0a1fc98bdbe6ec03dca5807b025b267921f2"
+    },
+    {
+      "view": "f08_10_interior_north_stores",
+      "tp": [
+        65.5,
+        -59.7,
+        208.6,
+        -180.0,
+        -7.8
+      ],
+      "file": "f08_10_interior_north_stores.png",
+      "sha256": "e67511c2ebb3a73a3473d4b069017ec79ba55f95200a5cab42ca45c5626a2d6c"
+    },
+    {
+      "view": "f08_11_interior_gallery",
+      "tp": [
+        69.5,
+        -54.8,
+        210.6,
+        139.8,
+        7.4
+      ],
+      "file": "f08_11_interior_gallery.png",
+      "sha256": "34f5e9989fa012b76323fa9ccc80d7cf6e180fab6bc44609430f63e7d804104d"
+    },
+    {
+      "view": "f08_12_south_loft_stair",
+      "tp": [
+        54.0,
+        -56.5,
+        221.0,
+        -126.9,
+        -2.3
+      ],
+      "file": "f08_12_south_loft_stair.png",
+      "sha256": "90cd0f9b33dba83379637e0a578bf0fb8bf622270cbb2c12c83af4b087ba1da9"
+    },
+    {
+      "view": "ctx_01_f07_from_south_lane",
+      "tp": [
+        17.5,
+        -56.5,
+        106.5,
+        -180.0,
+        -4.0
+      ],
+      "file": "ctx_01_f07_from_south_lane.png",
+      "sha256": "9ec93f5dc328e6a9cf8b351d9c4c4e991317ae7499ca6151f382044d06154e30"
+    },
+    {
+      "view": "ctx_02_f07_with_f19_smithy",
+      "tp": [
+        34.5,
+        -51,
+        103.5,
+        144.9,
+        12.5
+      ],
+      "file": "ctx_02_f07_with_f19_smithy.png",
+      "sha256": "231fa782ba7dabba550a2157b3ed853bebf8f30e5cea6e066ab59b6807a7dda4"
+    },
+    {
+      "view": "ctx_03_f07_neighbours_aerial",
+      "tp": [
+        38.5,
+        -43,
+        102.5,
+        135.7,
+        28.9
+      ],
+      "file": "ctx_03_f07_neighbours_aerial.png",
+      "sha256": "88f29785c4eb4537a44e3fc897c40456b267ab2dfb35873b239e5e71227853da"
+    },
+    {
+      "view": "ctx_04_f08_from_street",
+      "tp": [
+        61.5,
+        -56,
+        60.5,
+        -91.5,
+        -2.9
+      ],
+      "file": "ctx_04_f08_from_street.png",
+      "sha256": "8d78d3aa82d5b8a6cab18db427e4b7983d52f9f9d62396ab95c5c4ab40ce72ee"
+    },
+    {
+      "view": "ctx_05_f04_f08_street_nw",
+      "tp": [
+        63.5,
+        -52,
+        41.5,
+        -50.4,
+        10.0
+      ],
+      "file": "ctx_05_f04_f08_street_nw.png",
+      "sha256": "1063624ba71033642c04ed48de2a9944892710c178963c5490d42590f1ed6537"
+    },
+    {
+      "view": "ctx_06_f04_f08_gap_passage",
+      "tp": [
+        68.5,
+        -57.8,
+        51.5,
+        -90.0,
+        0.5
+      ],
+      "file": "ctx_06_f04_f08_gap_passage.png",
+      "sha256": "ea49ab4dd85a1797c0d677fb4353e13d718d740fb06ebe947e506979809abc6e"
+    },
+    {
+      "view": "ctx_07_f08_neighbours_aerial",
+      "tp": [
+        66.5,
+        -44,
+        75.5,
+        -138.5,
+        30.9
+      ],
+      "file": "ctx_07_f08_neighbours_aerial.png",
+      "sha256": "e1cbbcd543237fb16280b86bcd0ec5803a6d124544be04c93364b4414c97eaad"
+    }
+  ]
+}
