@@ -1,0 +1,178 @@
+{
+ "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+ "buildings": {
+  "barracks_a": {
+   "placement": "F02",
+   "module": "M-barracks_a",
+   "nbt_sha256": "3702b103ff9a19fb51283b7ff3df461d396c866a1cce5e2da0d2f7a88613af85",
+   "verify": {
+    "size": [
+     13,
+     12,
+     11
+    ],
+    "blocks": 1716,
+    "non_air_blocks": 742,
+    "palette": 79,
+    "cells_compared": 1716,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 742,
+    "mismatches": 0
+   },
+   "exterior_supplies": {
+    "usable_on_apron": 1,
+    "unreached_from_open_ground": []
+   },
+   "access": {
+    "front_door_east": {
+     "outside_cell": [
+      13,
+      5
+     ],
+     "interior_feet_cells": 68,
+     "loft_feet_cells": 15,
+     "usable_blocks_inside": 9,
+     "usable_unreached": [],
+     "beds_reachable": 5,
+     "beds_unreached": [],
+     "key_points": {
+      "loft": true,
+      "mess_under_loft": true,
+      "aisle_mid": true
+     }
+    }
+   },
+   "counts": {
+    "beds_total": 9,
+    "beds_floor_or_loft": 5,
+    "upper_bunk_beds": 4,
+    "chests": 1,
+    "barrels": 7,
+    "ladders": 4
+   },
+   "server_strict_placement": {
+    "rotation": "none",
+    "cells": 1716,
+    "failures": []
+   }
+  },
+  "barracks_b": {
+   "placement": "F03",
+   "module": "M-barracks_b",
+   "nbt_sha256": "0faa0ea8be5dd19bce15fd9e4d1a8425398aa1a27ff18b2b86c38b091eebd3b0",
+   "verify": {
+    "size": [
+     13,
+     12,
+     11
+    ],
+    "blocks": 1716,
+    "non_air_blocks": 713,
+    "palette": 72,
+    "cells_compared": 1716,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 715,
+    "mismatches": 0
+   },
+   "exterior_supplies": {
+    "usable_on_apron": 2,
+    "unreached_from_open_ground": []
+   },
+   "access": {
+    "gate_west": {
+     "outside_cell": [
+      -1,
+      5
+     ],
+     "interior_feet_cells": 74,
+     "loft_feet_cells": 12,
+     "usable_blocks_inside": 14,
+     "usable_unreached": [],
+     "beds_reachable": 4,
+     "beds_unreached": [],
+     "key_points": {
+      "loft": true,
+      "armoury_under_loft": true,
+      "gate": true,
+      "aisle_mid": true
+     }
+    }
+   },
+   "counts": {
+    "beds_total": 8,
+    "beds_floor_or_loft": 4,
+    "upper_bunk_beds": 4,
+    "chests": 2,
+    "barrels": 8,
+    "ladders": 4
+   },
+   "server_strict_placement": {
+    "rotation": "none",
+    "cells": 1716,
+    "failures": []
+   }
+  },
+  "barracks_c": {
+   "placement": "F04",
+   "module": "M-barracks_c",
+   "nbt_sha256": "536352915e6581b90f90081c70fb824a2eecbf35a2d115788f5af743419f4ae9",
+   "verify": {
+    "size": [
+     13,
+     12,
+     11
+    ],
+    "blocks": 1716,
+    "non_air_blocks": 728,
+    "palette": 81,
+    "cells_compared": 1716,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 730,
+    "mismatches": 0
+   },
+   "exterior_supplies": {
+    "usable_on_apron": 3,
+    "unreached_from_open_ground": []
+   },
+   "access": {
+    "front_door_west": {
+     "outside_cell": [
+      -1,
+      5
+     ],
+     "interior_feet_cells": 81,
+     "loft_feet_cells": 18,
+     "usable_blocks_inside": 11,
+     "usable_unreached": [],
+     "beds_reachable": 6,
+     "beds_unreached": [],
+     "key_points": {
+      "loft": true,
+      "beds_under_loft": true,
+      "stair_top": true,
+      "aisle_mid": true
+     }
+    }
+   },
+   "counts": {
+    "beds_total": 6,
+    "beds_floor_or_loft": 6,
+    "upper_bunk_beds": 0,
+    "chests": 1,
+    "barrels": 11,
+    "ladders": 0
+   },
+   "server_strict_placement": {
+    "rotation": "none",
+    "cells": 1716,
+    "failures": []
+   }
+  }
+ }
+}

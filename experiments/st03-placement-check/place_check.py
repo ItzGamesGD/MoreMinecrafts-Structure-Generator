@@ -1,7 +1,7 @@
 """ST-03 placement check of the BUILT facilities at their real positions from tools/seam01/data/st03_placements.json.
 
-Scope: only facilities that have a built NBT today (House A F11/F14, houses B/C/D, kitchen, smithy, cart shed, and
-batch 3: F05 armory, F06 training yard).
+Scope: only facilities that have a built NBT today (House A F11/F14, houses B/C/D, kitchen, smithy, cart shed,
+batch 3: F05 armory, F06 training yard, and batch 4: F02/F03/F04 barracks).
 Roads are NOT part of the placement table (the road masterplan and ground modules MQ-* are not in this repository and
 not built), so a road connection cannot be asserted here; the check reports the free corridor in front of each entrance.
 
@@ -45,7 +45,9 @@ def built_modules():
     b1 = _load(EXP / "st03-batch1-support" / "build.py", "b1")
     b2 = _load(EXP / "st03-batch2-houses" / "build.py", "b2")
     b3 = _load(EXP / "st03-batch3-military" / "build.py", "b3")
-    for mod, folder in ((b1, "st03-batch1-support"), (b2, "st03-batch2-houses"), (b3, "st03-batch3-military")):
+    b4 = _load(EXP / "st03-batch4-barracks" / "build.py", "b4")
+    for mod, folder in ((b1, "st03-batch1-support"), (b2, "st03-batch2-houses"), (b3, "st03-batch3-military"),
+                        (b4, "st03-batch4-barracks")):
         d = EXP / folder / "out"
         for b in mod.BUILDINGS.values():
             m = A.modules()[b["module"]]
