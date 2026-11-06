@@ -68,6 +68,8 @@ def views(d):
         "mw86_07_detail_exterior": look(p8(15, 4, -8), p8(9, 7, 0)),
         "mw86_08_detail_interior": look(p8(13, 3.5, 11), p8(7, 6, 4)),
         "mw86_09_detail_wall_top": look(p8(20, 13.5, 6.5), p8(36, 9.5, 0.5)),
+        "mw86_10_joint_close": look(p8(9, 3.5, -7), p8(9, 8.5, 0)),
+        "mw86_11_walk_along_top": look(p8(7, 11, 2.5), p8(45, 10, 1)),
         "mw31_01_front": look(p3(15.5, 6, -22), p3(15.5, 6, 0)),
         "mw31_02_oblique_exterior": look(p3(-8, 7, -14), p3(16, 5, 0)),
         "mw31_03_oblique_interior": look(p3(27, 7, 16), p3(12, 5, 4)),
@@ -75,6 +77,8 @@ def views(d):
         "ctx_02_gate_south": look((56, 6, 135), (56, 5, 108)),
         "ctx_03_corner_NW_outside": look((-14, 10, -14), (10, 5, 10)),
         "ctx_04_W-E_inside": look((88, 14, 66), (109, 6, 40)),
+        "ctx_05_gate_end_outside": look((50, 6, 124), (44, 8, 109)),
+        "ctx_06_gate_end_inside": look((52, 7, 96), (45, 8, 109)),
         "sl_01_S1_footing_close": look(ps(36, -2, -9), ps(43, 0, 0)),
     })
     return {f"{d}_{k}": val for k, val in v.items()}

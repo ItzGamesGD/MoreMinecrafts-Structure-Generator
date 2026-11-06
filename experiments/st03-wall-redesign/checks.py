@@ -142,6 +142,7 @@ def main():
     ap.add_argument("--work", type=Path, required=True)
     ap.add_argument("--offline", action="store_true")
     ap.add_argument("--designs", default="a,b,c")
+    ap.add_argument("--out", type=Path, default=HERE / "check-result.json")
     a = ap.parse_args()
     sha = hashlib.sha1(a.server_jar.read_bytes()).hexdigest()
     assert sha == "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c", sha
@@ -219,7 +220,7 @@ def main():
     finally:
         server.stop()
     r["problems"] = problems
-    (HERE / "check-result.json").write_text(json.dumps(r, indent=1, default=list) + "\n")
+    a.out.write_text(json.dumps(r, indent=1, default=list) + "\n")
     print("PROBLEMS", json.dumps(problems, default=list) if problems else "none")
     print("PASS" if not problems else "FAIL")
     raise SystemExit(0 if not problems else 1)
