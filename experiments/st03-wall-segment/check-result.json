@@ -1,0 +1,128 @@
+{
+ "st03_wall_segment": {
+  "nbt": "experiments/st03-wall-segment/out/st03_wall_segment.nbt",
+  "sha256": "1473f7fbf8fc613a155f7815d67451fbd7d0d8a2bf3fa3145d6d2363544adb0a",
+  "nbt_check": {
+   "size": [
+    15,
+    13,
+    5
+   ],
+   "blocks": 677,
+   "palette": 33,
+   "verify_mismatches": 0,
+   "state_mismatches": 0,
+   "extra_cells": 0,
+   "air_cells": 0
+  },
+  "contract": {
+   "height": 13,
+   "depth": 5,
+   "footing_missing": [],
+   "above_y12": [],
+   "end_columns_not_solid": [
+    [
+     0,
+     7,
+     0
+    ],
+    [
+     0,
+     8,
+     0
+    ],
+    [
+     14,
+     7,
+     0
+    ],
+    [
+     14,
+     8,
+     0
+    ]
+   ],
+   "note": "end columns are informational here: a segment ends on the centre of a buttress shared with the next repeat (see repeat). A full MW86 / MW31 needs a full-section abutment pier at its two module ends toward the towers and gate."
+  },
+  "support": [],
+  "barrier": {
+   "passage_found": false,
+   "path": []
+  },
+  "walk": {
+   "problems": []
+  },
+  "composition": {
+   "timber_blocks": 51,
+   "stairs_slabs": 63,
+   "walls_fences_trapdoors": 19
+  },
+  "problems": []
+ },
+ "st03_wall_segment_run5": {
+  "nbt": "experiments/st03-wall-segment/out/st03_wall_segment_run5.nbt",
+  "sha256": "3a7b25b95517581f40abdc7be47c4329d162a73e34129c9f53601c4ed8af6294",
+  "nbt_check": {
+   "size": [
+    63,
+    13,
+    5
+   ],
+   "blocks": 2721,
+   "palette": 35,
+   "verify_mismatches": 0,
+   "state_mismatches": 0,
+   "extra_cells": 0,
+   "air_cells": 0
+  },
+  "contract": {
+   "height": 13,
+   "depth": 5,
+   "footing_missing": [],
+   "above_y12": [],
+   "end_columns_not_solid": [
+    [
+     0,
+     7,
+     0
+    ],
+    [
+     0,
+     8,
+     0
+    ],
+    [
+     62,
+     7,
+     0
+    ],
+    [
+     62,
+     8,
+     0
+    ]
+   ],
+   "note": "end columns are informational here: a segment ends on the centre of a buttress shared with the next repeat (see repeat). A full MW86 / MW31 needs a full-section abutment pier at its two module ends toward the towers and gate."
+  },
+  "support": [],
+  "barrier": {
+   "passage_found": false,
+   "path": []
+  },
+  "walk": {
+   "problems": []
+  },
+  "composition": {
+   "timber_blocks": 255,
+   "stairs_slabs": 275,
+   "walls_fences_trapdoors": 83
+  },
+  "problems": []
+ },
+ "repeat": {
+  "period": 12,
+  "structural_difference_count": 0,
+  "first": []
+ },
+ "problems": []
+}
