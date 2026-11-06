@@ -1,8 +1,8 @@
 """ST-03 placement check of the BUILT facilities at their real positions from tools/seam01/data/st03_placements.json.
 
 Scope: only facilities that have a built NBT today (House A F11/F14, houses B/C/D, kitchen, smithy, cart shed,
-batch 3: F05 armory, F06 training yard, batch 4: F02/F03/F04 barracks, batch 5: F07/F08 warehouses, and batch 6:
-F09 prison / F10 ravager stable).
+batch 3: F05 armory, F06 training yard, batch 4: F02/F03/F04 barracks, batch 5: F07/F08 warehouses, batch 6:
+F09 prison / F10 ravager stable, and batch 7: F01 commander manor at the Q63 size 17x27x15).
 Roads are NOT part of the placement table (the road masterplan and ground modules MQ-* are not in this repository and
 not built), so a road connection cannot be asserted here; the check reports the free corridor in front of each entrance.
 
@@ -49,9 +49,10 @@ def built_modules():
     b4 = _load(EXP / "st03-batch4-barracks" / "build.py", "b4")
     b5 = _load(EXP / "st03-batch5-warehouses" / "build.py", "b5")
     b6 = _load(EXP / "st03-batch6-prison-stable" / "build.py", "b6")
+    b7 = _load(EXP / "st03-batch7-commander-manor" / "build.py", "b7")
     for mod, folder in ((b1, "st03-batch1-support"), (b2, "st03-batch2-houses"), (b3, "st03-batch3-military"),
                         (b4, "st03-batch4-barracks"), (b5, "st03-batch5-warehouses"),
-                        (b6, "st03-batch6-prison-stable")):
+                        (b6, "st03-batch6-prison-stable"), (b7, "st03-batch7-commander-manor")):
         d = EXP / folder / "out"
         for b in mod.BUILDINGS.values():
             m = A.modules()[b["module"]]

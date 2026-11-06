@@ -1,0 +1,236 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": {
+    "st03_manor": "f0e21133f6baab46ef20f0ed2b4a5ffef78a256fd1b8c573bbaeff20eb6da5ba"
+  },
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear; night_vision only for interior views; difficulty easy with natural mob spawning off only for the two test-entity views; raised camera positions stand on an invisible barrier block set only into air cells after placement",
+  "placed": [
+    {
+      "what": "manor",
+      "origin": [
+        0,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F01",
+      "module": "M-manor",
+      "origin": [
+        48,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F02",
+      "module": "M-barracks_a",
+      "origin": [
+        24,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F03",
+      "module": "M-barracks_b",
+      "origin": [
+        75,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F04",
+      "module": "M-barracks_c",
+      "origin": [
+        75,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F05",
+      "module": "M-armory",
+      "origin": [
+        12,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F06",
+      "module": "M-yard",
+      "origin": [
+        12,
+        -61,
+        52
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F07",
+      "module": "M-warehouse_a",
+      "origin": [
+        10,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F08",
+      "module": "M-warehouse_b",
+      "origin": [
+        75,
+        -61,
+        53
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F09",
+      "module": "M-prison",
+      "origin": [
+        92,
+        -61,
+        62
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F10",
+      "module": "M-stable",
+      "origin": [
+        77,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F11",
+      "module": "M-house_a",
+      "origin": [
+        14,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F12",
+      "module": "M-house_b",
+      "origin": [
+        26,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F13",
+      "module": "M-house_c",
+      "origin": [
+        14,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F14",
+      "module": "M-house_a",
+      "origin": [
+        89,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F15",
+      "module": "M-house_b",
+      "origin": [
+        76,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F16",
+      "module": "M-house_c",
+      "origin": [
+        92,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F17",
+      "module": "M-house_d",
+      "origin": [
+        92,
+        -61,
+        40
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F18",
+      "module": "M-kitchen",
+      "origin": [
+        92,
+        -61,
+        50
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F19",
+      "module": "M-smithy",
+      "origin": [
+        28,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F20",
+      "module": "M-cart_shed",
+      "origin": [
+        44,
+        -61,
+        82
+      ],
+      "rotation": "none"
+    }
+  ],
+  "shots": [
+    {
+      "view": "f01_18_interior_attic_to_lookout",
+      "tp": [
+        11.4,
+        -41.8,
+        203.6,
+        24.9,
+        -20.2
+      ],
+      "file": "f01_18_interior_attic_to_lookout.png",
+      "sha256": "6dcb5a9471bec637088b5fe84274d08b2cd239ae3b8b35980d53a9fed8a9f5cf"
+    }
+  ],
+  "test_entities": "two views only (f01_20, f01_21): NoAI pillager with 40 HP at the commander position, armor stand at the recorded 3F position"
+}
