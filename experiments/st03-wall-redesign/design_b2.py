@@ -69,12 +69,11 @@ def build(L):
         elif kind == "pier":
             pier(c, a, b)
         else:
-            bay(c, a, b)
+            bay(c, a, b, kind == "bayH")
             if kind == "bayH":
-                boxes |= set(range(a + 1, b))
-                cheeks |= {a, b}
+                boxes |= set(range(a, b + 1))
     ends = {x for k, a, b in parts if k == "end" for x in range(a, b + 1)}
-    parapet(c, L, ends | boxes | cheeks)
+    parapet(c, L, parts, ends | boxes)
     for kind, a, b in parts:
         if kind == "bayH":
             hoarding(c, a, b)
@@ -101,55 +100,56 @@ def pier(c, a, b):
 
 
 # -------------------------------------------------------------------------------------------------------- bays
-def bay(c, a, b):
-    """Recessed field a+1..b-1 (y4..6, z1 removed) under a chamfered lintel, two arrow loops."""
-    for x in range(a + 1, b):
-        for y in (4, 5, 6):
-            del c[(x, y, 1)]
-        stairs(c, x, 7, 1, ashlar_stair(x, 7, 1), "south", half="top")
-    for x in (a + 2, b - 2):  # 2 high on the outside (z2), 1 high through the core (z3)
+def bay(c, a, b, hoard):
+    """Two recessed niches outside (a+1..a+2, b-2..b-1; y4..6, z1 removed) with an arrow loop each, a plain pilaster
+    between them, and a matching recess on the inside face behind the pilaster (the core stays at least 1 thick)."""
+    for lo in (a + 1, b - 2):
+        for x in (lo, lo + 1):
+            for y in (4, 5, 6):
+                del c[(x, y, 1)]
+            if not hoard:
+                stairs(c, x, 7, 1, ashlar_stair(x, 7, 1), "south", half="top")  # chamfered lintel
+    for x in (a + 2, b - 2):  # loops: 2 high on the outside (z2), 1 high through the core (z3)
         del c[(x, 5, 2)]
         del c[(x, 6, 2)]
         del c[(x, 5, 3)]
+    for x in (a + 3, b - 3):  # inside recess behind the outside pilaster, timber lintel
+        for y in (4, 5, 6):
+            del c[(x, y, 3)]
+        stairs(c, x, 7, 3, "dark_oak", "north", half="top")
 
 
 def hoarding(c, a, b):
-    """Six-wide, two-deep hoarding between stone cheek walls at cols a and b, on stone pilasters and a corbel course."""
-    h = list(range(a + 1, b))
-    h0, h1, h2, h3, h4, h5 = h
-    joists = (h0, h2, h3, h5)
-    for x in (a, b):  # pilasters under the cheeks, then the cheeks
-        for y in range(3, 8):
-            c.put(x, y, 0, ashlar(x, y, 0))
-        stairs(c, x, 8, 0, "stone_brick", "south", half="top")
-        for z in (0, 1):
-            for y in (9, 10, 11):
-                c.put(x, y, z, ashlar(x, y, z))
-            stairs(c, x, 12, z, "stone_brick", "south")
-    for x in h:
-        stairs(c, x, 7, 0, "stone_brick", "south", half="top")  # corbel course under the box
-        if x in joists:  # floor: joists with log ends at the front, planks behind
-            log(c, x, 8, 0, "z")
-            log(c, x, 8, 1, "z")
+    """Eight-wide, two-deep hoarding filling the bay. Its floor is y7 (a step below the wall-walk), carried by a stone
+    corbel course (y6), the stone ribs of the adjacent piers and dark-oak joists with their log ends at the front."""
+    h = list(range(a, b + 1))
+    posts = (a, a + 3, a + 4, b)
+    for i, x in enumerate(h):
+        stairs(c, x, 6, 0, "stone_brick", "south", half="top")  # corbel course
+        del c[(x, 8, 1)]  # the box interior replaces the deck at z1
+        if x in posts:  # joists
+            log(c, x, 7, 0, "z")
+            log(c, x, 7, 1, "z")
         else:
-            slab(c, x, 8, 0, "spruce", "top")
-            c.put(x, 8, 1, "spruce_planks")
-        if x in (h0, h5):  # front posts
-            log(c, x, 9, 0, "y")
-            log(c, x, 10, 0, "y")
+            if x in (a + 2, b - 2):
+                trap(c, x, 7, 0, "spruce", "north", False, half="top")  # murder-hole hatch
+            else:
+                slab(c, x, 7, 0, "spruce", "top")
+            c.put(x, 7, 1, "spruce_planks")
+        if x in posts:  # front posts
+            for y in (8, 9, 10):
+                log(c, x, y, 0, "y")
         else:
-            c.put(x, 9, 0, "spruce_planks")
+            c.put(x, 8, 0, "spruce_planks")
+            if x not in (a + 1, a + 2, b - 2, b - 1):
+                c.put(x, 9, 0, "spruce_planks")  # loophole row stays open in the two panels
             c.put(x, 10, 0, "spruce_planks")
         stairs(c, x, 11, 0, "dark_oak", "south")  # pent roof falling to the outside
         stairs(c, x, 12, 1, "dark_oak", "south")
         log(c, x, 11, 1, "x")  # beam under the high edge
-    for x in (h0, h5):  # rear posts: the open portal onto the wall-walk
-        log(c, x, 9, 1, "y")
-        log(c, x, 10, 1, "y")
-    for x in (h2, h3):  # loopholes
-        del c[(x, 10, 0)]
-    for x in (h1, h4):  # murder-hole hatches in the floor
-        trap(c, x, 8, 0, "spruce", "north", False, half="top")
+    for x in (a, b):  # rear posts of the portal onto the wall-walk
+        for y in (8, 9, 10):
+            log(c, x, y, 1, "y")
 
 
 # ---------------------------------------------------------------------------------------------- end masses
@@ -178,19 +178,23 @@ def end_mass(c, a, b):
 
 
 # --------------------------------------------------------------------------------------------------- parapet
-def parapet(c, L, skip):
-    """Stone parapet over every column outside the end masses and the hoardings: corbel y8 (stairs, upside down),
-    sill y9, merlon pairs y10..11 with caps y12, one crenel every third column. Symmetric about the module centre."""
+def parapet(c, L, parts, skip):
+    """Stone parapet set back to z1 (the hoardings project in front of it at z0): a moulding of upside-down stairs at
+    z0 y8, sill y9, merlons y10..11 and caps y12. Piers are solid 3-wide merlons; each open bay is M M C M M C M M."""
+    crenel = set()
+    for kind, a, b in parts:
+        if kind == "bayS":
+            crenel |= {a + 2, a + 5}
     for x in range(L):
         if x in skip:
             continue
         stairs(c, x, 8, 0, "stone_brick", "south", half="top")
-        c.put(x, 9, 0, sb(x, 9, 0))
-        if (x - E) % 3 == 2:
+        c.put(x, 9, 1, sb(x, 9, 1))
+        if x in crenel:
             continue
-        c.put(x, 10, 0, ashlar(x, 10, 0))
-        c.put(x, 11, 0, ashlar(x, 11, 0))
-        stairs(c, x, 12, 0, "stone_brick", "south")
+        c.put(x, 10, 1, ashlar(x, 10, 1))
+        c.put(x, 11, 1, ashlar(x, 11, 1))
+        stairs(c, x, 12, 1, "stone_brick", "south")
 
 
 # ---------------------------------------------------------------------------------------------- decoration
