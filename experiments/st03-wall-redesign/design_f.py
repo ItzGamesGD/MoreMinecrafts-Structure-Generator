@@ -21,7 +21,10 @@ y11 merlons; y12 pier and end merlons.
 
 from common import D, H, Cells, ashlar, banner, footing, lantern, log, noise, rubble, rubble_stair, slab, stairs
 
-LAYOUT = {86: dict(end=8, bay=7, piers=[2] * 7), 31: dict(end=7, bay=7, piers=[3])}
+# piers between bays: ("pier", w) is a stone pier rising above the parapet, ("post", w) a timber post that pairs the
+# two bays beside it into one wide timber frame
+LAYOUT = {86: dict(end=8, bay=7, piers=[("post", 2), ("pier", 2)] * 3 + [("post", 2)]),
+          31: dict(end=7, bay=7, piers=[("post", 3)])}
 
 
 def layout(L):
@@ -31,8 +34,8 @@ def layout(L):
         out.append(("bay", x, x + spec["bay"] - 1))
         x += spec["bay"]
         if p:
-            out.append(("pier", x, x + p - 1))
-            x += p
+            out.append((p[0], x, x + p[1] - 1))
+            x += p[1]
     out.append(("end", x, x + spec["end"] - 1))
     assert x + spec["end"] == L, (L, x)
     return out
@@ -71,7 +74,7 @@ def build(L):
         stairs(c, x, 1, 4, rubble_stair(x, 1, 4), "north")
     bays = [p for p in parts if p[0] == "bay"]
     for kind, a, b in parts:
-        {"end": end_mass, "pier": pier, "bay": bay}[kind](c, a, b, L)
+        {"end": end_mass, "pier": pier, "post": post, "bay": bay}[kind](c, a, b, L)
     dress(c, parts, bays, L)
     return c
 
@@ -125,21 +128,42 @@ def pier(c, a, b, L):
         c.put(x, 10, 4, "stone_brick_wall")
 
 
+def post(c, a, b, L):
+    """Timber post pairing two bays into one wide frame: the stone frame (plinth, corbel, parapet) runs through, the
+    dark-oak post stands at z1 on the plinth under the continuous beam, and a twin post carries the inside walk beam."""
+    for x in range(a, b + 1):
+        c.put(x, 1, 0, edge(x, 1, 0))
+        c.put(x, 2, 0, edge(x, 2, 0))
+        stairs(c, x, 3, 0, "stone_brick", "south")
+        stairs(c, x, 9, 0, "stone_brick", "south", half="top")
+        c.put(x, 10, 0, edge(x, 10, 0))
+        c.put(x, 11, 0, edge(x, 11, 0))
+        for y in range(4, 8):
+            log(c, x, y, 1, "y")
+            c.put(x, y, 2, infill(x, y, 2))
+        log(c, x, 8, 1, "x")
+        for y in range(2, 8):
+            log(c, x, y, 4, "y")
+        log(c, x, 8, 4, "x")
+        c.put(x, 9, 4, "spruce_planks")
+        c.put(x, 10, 4, "dark_oak_fence")
+
+
 # ------------------------------------------------------------------------------------------------------ end mass
 def end_mass(c, a, b, L):
-    """Solid abutment toward the tower / gate: stone to y12 at the front, the pier capital band (chiseled, y8) carried
-    across it, a crenel pair in its parapet. The abutting column (x=0 or x=L-1) is clean stone brick."""
+    """Solid abutment toward the tower / gate: plain stone to y12 at the front with a crenel pair in its parapet. The
+    abutting column (x=0 or x=L-1) is clean stone brick over the full section."""
     for x in range(a, b + 1):
         for y in range(1, 13):
-            c.put(x, y, 0, "chiseled_stone_bricks" if y == 8 else edge(x, y, 0))
+            c.put(x, y, 0, edge(x, y, 0))
         for y in range(2, 9):
-            c.put(x, y, 4, "chiseled_stone_bricks" if y == 8 else edge(x, y, 4))
+            c.put(x, y, 4, edge(x, y, 4))
         c.put(x, 9, 4, "stone_bricks")
         c.put(x, 10, 4, "stone_brick_wall")
     abut = 0 if a == 0 else b
     for z in range(4):
         for y in range(1, 10):
-            c.put(abut, y, z, "chiseled_stone_bricks" if (y == 8 and z == 0) else "stone_bricks")
+            c.put(abut, y, z, "stone_bricks")
     mid = (a + b) / 2
     for x in range(a + 1, b):
         if abs(x - mid) < 1:
@@ -148,20 +172,17 @@ def end_mass(c, a, b, L):
 
 # ---------------------------------------------------------------------------------------------------- dressing
 def dress(c, parts, bays, L):
-    """Lanterns hang from the beam in alternate bays (always the end bays). Banners hang inside a few timber frames. Barrels
-    and a log pile sit at the inner foot near the ends."""
+    """Lanterns hang from the beam in the end bays only (toward the towers / gate), outside and inside. A banner hangs
+    on the central post of each end frame. Barrels and a log pile sit at the inner foot near the ends."""
     n = len(bays)
-    lit = {0, n - 1} | ({2, n - 3} if n > 4 else set())
-    for i, (_, a, b) in enumerate(bays):
-        m = (a + b) // 2
-        if i in lit:
-            lantern(c, m, 7, 1)
-        if i in (0, n - 1):
-            lantern(c, m, 7, 4)
-    flags = {0: "a", n - 1: "b"} if n == 2 else {1: "a", 4: "a", n - 2: "b"}
-    for i, side in flags.items():  # banners hang inside the timber frame, against the infill
+    for i in (0, n - 1):
         _, a, b = bays[i]
-        banner(c, a + 2 if side == "a" else b - 2, 7, 1, "north")
+        lantern(c, (a + b) // 2, 7, 1)
+        lantern(c, (a + b) // 2, 7, 4)
+    posts = [(a, b) for k, a, b in parts if k == "post"]
+    for j, (a, b) in enumerate((posts[0], posts[-1]) if len(posts) > 1 else posts):
+        x = (a + b) // 2 if (b - a) % 2 == 0 else (a if j == 0 else b)
+        banner(c, x, 7, 0, "north")
     E = LAYOUT[L]["end"]
     for side in (0, 1):
         X = (lambda i: i) if side == 0 else (lambda i: L - 1 - i)
