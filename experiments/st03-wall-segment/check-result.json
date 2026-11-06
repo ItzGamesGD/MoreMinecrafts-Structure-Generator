@@ -57,7 +57,13 @@
    "stairs_slabs": 73,
    "walls_fences_trapdoors": 22
   },
-  "problems": []
+  "problems": [],
+  "server_strict": {
+   "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+   "cells": 678,
+   "failures": 0,
+   "first": []
+  }
  },
  "st03_wall_segment_run5": {
   "nbt": "experiments/st03-wall-segment/out/st03_wall_segment_run5.nbt",
@@ -117,7 +123,13 @@
    "stairs_slabs": 325,
    "walls_fences_trapdoors": 98
   },
-  "problems": []
+  "problems": [],
+  "server_strict": {
+   "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+   "cells": 2726,
+   "failures": 0,
+   "first": []
+  }
  },
  "repeat": {
   "period": 12,
