@@ -1,6 +1,6 @@
 {
   "air": "omit",
-  "blocks": 671,
+  "blocks": 678,
   "cells": 975,
   "config": "exports/structures/ruined_watchtower.toml",
   "connectivity": {
@@ -192,14 +192,98 @@
           "south": "outside_template",
           "up": "omitted_air"
         }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          3,
+          7,
+          1
+        ],
+        "unknown_neighbours": {
+          "north": "omitted_air",
+          "south": "omitted_air"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          4,
+          7,
+          1
+        ],
+        "unknown_neighbours": {
+          "north": "omitted_air",
+          "south": "omitted_air"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          6,
+          7,
+          1
+        ],
+        "unknown_neighbours": {
+          "north": "omitted_air",
+          "south": "omitted_air"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          7,
+          7,
+          1
+        ],
+        "unknown_neighbours": {
+          "north": "omitted_air",
+          "south": "omitted_air"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          8,
+          7,
+          1
+        ],
+        "unknown_neighbours": {
+          "north": "omitted_air",
+          "south": "omitted_air"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          10,
+          7,
+          1
+        ],
+        "unknown_neighbours": {
+          "north": "omitted_air",
+          "south": "omitted_air"
+        }
+      },
+      {
+        "block": "minecraft:dark_oak_fence",
+        "pos": [
+          11,
+          7,
+          1
+        ],
+        "unknown_neighbours": {
+          "north": "omitted_air",
+          "south": "omitted_air"
+        }
       }
     ],
-    "computed_blocks": 15,
-    "corrected_blocks": 15,
+    "computed_blocks": 22,
+    "corrected_blocks": 22,
     "corrected_properties": {
-      "east": 12,
+      "east": 19,
       "up": 2,
-      "west": 12
+      "west": 19
     },
     "explicit_differs_from_vanilla": [],
     "reference": "tools/structure_export/reference/connectivity-26.3.json",
@@ -223,8 +307,8 @@
       "west"
     ]
   },
-  "output": "/tmp/tmp2odssd2p/pack/data/moreminecrafts/structure/seam01/st03_wall_segment.nbt",
-  "output_sha256": "aeaaae1a72744637276b975ead0f3b0c6a5dabc6c1a77a42d31776015c7a592f",
+  "output": "/tmp/tmpzk47x_cb/pack/data/moreminecrafts/structure/seam01/st03_wall_segment.nbt",
+  "output_sha256": "82c6fb76a6853cbd4f7219dee812e26d7bff48aceeb7ec2b21e0108dc8b9fed4",
   "palette": 31,
   "size": [
     15,
@@ -240,8 +324,8 @@
       0
     ],
     "palette_entries": 28,
-    "path": "/tmp/tmp2odssd2p/st03_wall_segment.schem",
-    "sha256": "ae4ba485e3a2def84b0263b6033d638d5cabea0108768a428c9591de45a35522",
+    "path": "/tmp/tmpzk47x_cb/st03_wall_segment.schem",
+    "sha256": "72216706c2fc31571e815dfca2c955b3f2216cf33b0e0d4fd5b599f1ae9cf4f0",
     "size": [
       15,
       13,
@@ -1125,15 +1209,15 @@
     }
   ],
   "state_counts": {
-    "minecraft:andesite": 39,
+    "minecraft:andesite": 29,
     "minecraft:andesite_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 3,
-    "minecraft:cobblestone": 82,
+    "minecraft:cobblestone": 64,
     "minecraft:cobblestone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 2,
     "minecraft:cobblestone_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 4,
-    "minecraft:cracked_stone_bricks": 33,
+    "minecraft:cracked_stone_bricks": 38,
     "minecraft:dark_oak_fence[east=false,north=false,south=false,waterlogged=false,west=true]": 1,
     "minecraft:dark_oak_fence[east=true,north=false,south=false,waterlogged=false,west=false]": 1,
-    "minecraft:dark_oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]": 7,
+    "minecraft:dark_oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]": 14,
     "minecraft:dark_oak_log[axis=x]": 18,
     "minecraft:dark_oak_log[axis=y]": 16,
     "minecraft:dark_oak_stairs[facing=east,half=top,shape=straight,waterlogged=false]": 5,
@@ -1143,9 +1227,9 @@
     "minecraft:mossy_cobblestone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 2,
     "minecraft:mossy_cobblestone_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 2,
     "minecraft:mossy_stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 1,
-    "minecraft:mossy_stone_bricks": 10,
+    "minecraft:mossy_stone_bricks": 14,
     "minecraft:spruce_planks": 9,
-    "minecraft:stone": 38,
+    "minecraft:stone": 28,
     "minecraft:stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 4,
     "minecraft:stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 14,
     "minecraft:stone_brick_stairs[facing=south,half=top,shape=straight,waterlogged=false]": 24,
@@ -1153,7 +1237,7 @@
     "minecraft:stone_brick_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]": 2,
     "minecraft:stone_brick_wall[east=low,north=none,south=none,up=true,waterlogged=false,west=none]": 2,
     "minecraft:stone_brick_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=low]": 2,
-    "minecraft:stone_bricks": 327,
+    "minecraft:stone_bricks": 356,
     "minecraft:stone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 3,
     "minecraft:white_wall_banner[facing=east]": 1
   },
@@ -1164,7 +1248,7 @@
     "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c"
   },
   "warnings": [
-    "15 connecting blocks border the template box or omitted air; their connections toward that unknown terrain were computed as if it were air (connectivity.boundary_unresolved)",
+    "22 connecting blocks border the template box or omitted air; their connections toward that unknown terrain were computed as if it were air (connectivity.boundary_unresolved)",
     "Explicit stair states retained; unknown horizontal neighbours require SEAM-01 review"
   ]
 }

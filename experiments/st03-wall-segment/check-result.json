@@ -1,14 +1,14 @@
 {
  "st03_wall_segment": {
   "nbt": "experiments/st03-wall-segment/out/st03_wall_segment.nbt",
-  "sha256": "aeaaae1a72744637276b975ead0f3b0c6a5dabc6c1a77a42d31776015c7a592f",
+  "sha256": "82c6fb76a6853cbd4f7219dee812e26d7bff48aceeb7ec2b21e0108dc8b9fed4",
   "nbt_check": {
    "size": [
     15,
     13,
     5
    ],
-   "blocks": 671,
+   "blocks": 678,
    "palette": 31,
    "verify_mismatches": 0,
    "state_mismatches": 0,
@@ -53,22 +53,22 @@
    "problems": []
   },
   "composition": {
-   "timber_blocks": 62,
+   "timber_blocks": 69,
    "stairs_slabs": 73,
-   "walls_fences_trapdoors": 15
+   "walls_fences_trapdoors": 22
   },
   "problems": []
  },
  "st03_wall_segment_run5": {
   "nbt": "experiments/st03-wall-segment/out/st03_wall_segment_run5.nbt",
-  "sha256": "bd2d9869ed269d4dfff3d2f945a2f8495daad4f2048374eda9133c67834b6e5a",
+  "sha256": "cf5a1a993c06758f053de2eecd33082c8040220b52c12a1bd145e4a06639e6fe",
   "nbt_check": {
    "size": [
     63,
     13,
     5
    ],
-   "blocks": 2691,
+   "blocks": 2726,
    "palette": 33,
    "verify_mismatches": 0,
    "state_mismatches": 0,
@@ -113,9 +113,9 @@
    "problems": []
   },
   "composition": {
-   "timber_blocks": 310,
+   "timber_blocks": 345,
    "stairs_slabs": 325,
-   "walls_fences_trapdoors": 63
+   "walls_fences_trapdoors": 98
   },
   "problems": []
  },

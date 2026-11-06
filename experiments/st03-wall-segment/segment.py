@@ -14,8 +14,8 @@ design is "a corbelled gallery wall":
 - buttresses: set back by a sloped weathering at mid height, then carried up on a corbel into a head that stands one
   course above the battlement;
 - under the corbelled stone parapet, a fighting gallery is cut two blocks deep into the wall head (y7-8) between
-  the buttresses. A dark-oak frame stands in it, set back behind the stone line: Y-posts on a corbelled stone sill
-  and a beam whose ends rest on knee braces against the buttresses. The frame carries the wall-walk and the parapet.
+  the buttresses. A dark-oak frame stands in it, set back behind the stone line: Y-posts on a corbelled stone sill,
+  a breastwork rail between them, and a beam whose ends rest on knee braces against the buttresses. The frame carries the wall-walk and the parapet.
 - below the gallery the wall is solid: a two-step talus and a plain curtain;
 - inside, stone pilasters answer the buttresses. Between them two Y-shaped dark-oak posts and a beam carry a plank
   widening of the wall-walk behind a fence.
@@ -50,10 +50,7 @@ def edge(x, y, z):
 
 
 def curtain(x, y, z):
-    """Curtain face: dressed stone brick with patches of older rubble repair (andesite / stone / cobble)."""
-    patch = noise((x + y // 2) // 3, y // 2, 7, 19 + z)
-    if patch == 0 and y <= 6:
-        return ("andesite", "stone", "cobblestone")[noise(x, y, 3, 5)]
+    """Curtain face: dressed stone brick, weathered in small patches (cracked; mossy low down)."""
     return ashlar(x, y, z)
 
 
@@ -120,6 +117,9 @@ def bay(c, a):
             log(c, p, y, 4, "y")
         stairs(c, p - 1, 7, 4, "dark_oak", "east", half="top")
         stairs(c, p + 1, 7, 4, "dark_oak", "west", half="top")
+    for x in range(a, b + 1):  # breastwork rail of the gallery between the posts
+        if x not in posts:
+            c.put(x, 7, 1, "dark_oak_fence")
     for x in (a, b):  # the beam's ends rest on the buttresses: knee braces against the stone
         stairs(c, x, 8, 1, "dark_oak", "west" if x == a else "east", half="top")
     lantern(c, m, 8, 2)  # hangs deep in the gallery, from the walk
