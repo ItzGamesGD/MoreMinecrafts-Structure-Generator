@@ -41,9 +41,10 @@ def _load(path, name):
     return mod
 
 
-def built_modules(perimeter=False):
+def built_modules(perimeter=False, perimeter_dir=None):
     """module id -> dict(nbt, door (x, z) boundary column, front = +z). perimeter=True adds the batch-8 walls (door None);
-    the earlier capture scripts call it without, so their layouts stay what they photographed."""
+    the earlier capture scripts call it without, so their layouts stay what they photographed. perimeter_dir swaps in
+    wall NBTs of the same modules from another directory (design prototypes); every check stays the same."""
     out = {}
     b1 = _load(EXP / "st03-batch1-support" / "build.py", "b1")
     b2 = _load(EXP / "st03-batch2-houses" / "build.py", "b2")
@@ -64,7 +65,8 @@ def built_modules(perimeter=False):
         b8 = _load(EXP / "st03-batch8-perimeter-walls" / "build.py", "b8")
         for b in b8.BUILDINGS.values():
             m = A.modules()[b["module"]]
-            out[b["module"]] = {"nbt": EXP / "st03-batch8-perimeter-walls" / "out" / f"{m['file']}.nbt", "door": None,
+            d = Path(perimeter_dir).resolve() if perimeter_dir else EXP / "st03-batch8-perimeter-walls" / "out"
+            out[b["module"]] = {"nbt": d / f"{m['file']}.nbt", "door": None,
                                 "size": b["size"], "entrances": None}
     ha = _load(EXP / "st03-b5a-house-a" / "build.py", "ha")
     out["M-house_a"] = {"nbt": EXP / "st03-b5a-house-a" / "st03_house_a.nbt", "door": ha.DOOR, "size": (ha.W, ha.H, ha.D)}
@@ -149,12 +151,16 @@ def main():
     ap.add_argument("--work", type=Path, required=True)
     ap.add_argument("--out", type=Path, default=Path(__file__).resolve().parent / "place-check-result.json")
     ap.add_argument("--only", default="", help="comma-separated module ids for live A and C (default: all built)")
+    ap.add_argument("--perimeter-dir", default=None, help="directory with st03_wall_86.nbt / st03_wall_31.nbt to use "
+                    "instead of the batch-8 walls (design prototypes)")
     a = ap.parse_args()
     only = set(filter(None, a.only.split(",")))
     sha = hashlib.sha1(a.server_jar.read_bytes()).hexdigest()
     assert sha == "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c", sha
-    built = built_modules(perimeter=True)
-    result = {"server_sha1": sha, "offline": offline(built)}
+    built = built_modules(perimeter=True, perimeter_dir=a.perimeter_dir)
+    result_extra = {"perimeter_nbts": {m: [str(v["nbt"].relative_to(REPO)), hashlib.sha256(v["nbt"].read_bytes()).hexdigest()]
+                                       for m, v in built.items() if m in ("MW86", "MW31")}}
+    result = {"server_sha1": sha, **result_extra, "offline": offline(built)}
     templates = {m: _template_cells(v["nbt"]) for m, v in built.items()}
     pack = a.work / "pack"
     (pack / "data/experimental/structure").mkdir(parents=True, exist_ok=True)

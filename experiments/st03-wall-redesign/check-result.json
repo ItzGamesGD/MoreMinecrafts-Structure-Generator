@@ -1,0 +1,2031 @@
+{
+ "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+ "designs": {
+  "a": {
+   "MW86": {
+    "nbt": "experiments/st03-wall-redesign/out/a/st03_wall_86.nbt",
+    "nbt_sha256": "ddbef28fbb23554e9edf8940ab3f39f0ac8c6c03382357a2f29b51ed5084029d",
+    "verify": {
+     "size": [
+      86,
+      13,
+      5
+     ],
+     "blocks": 3453,
+     "non_air_blocks": 3453,
+     "palette": 34,
+     "cells_compared": 3453,
+     "mismatches": 0
+    },
+    "states": {
+     "authored_cells_checked": 3453,
+     "mismatches": 0,
+     "cells_not_authored": 0,
+     "air_cells_in_nbt": 0
+    },
+    "support": {
+     "unsupported": []
+    },
+    "footing": {
+     "columns": 430,
+     "missing": []
+    },
+    "ends": {
+     "not_solid": []
+    },
+    "top": {
+     "min_column_top": 10,
+     "max": 12,
+     "end_tops": [
+      12,
+      12
+     ],
+     "profile_counts": {
+      "10": 20,
+      "12": 66
+     }
+    },
+    "barrier": {
+     "passage_found": false,
+     "path": []
+    },
+    "counts": {
+     "lantern": 4,
+     "white_wall_banner": 5,
+     "barrel": 4,
+     "hay_block": 0
+    },
+    "composition": {
+     "blocks": 3453,
+     "timber_blocks": 214,
+     "timber_share": 0.062,
+     "stairs_and_slabs": 370,
+     "fences_walls_trapdoors": 86,
+     "distinct_states": 34
+    },
+    "problems": []
+   },
+   "MW31": {
+    "nbt": "experiments/st03-wall-redesign/out/a/st03_wall_31.nbt",
+    "nbt_sha256": "315bc119dc55e2e6ae2326a1daf4d6941d39a41543a66645de47f91c806b8393",
+    "verify": {
+     "size": [
+      31,
+      13,
+      5
+     ],
+     "blocks": 1297,
+     "non_air_blocks": 1297,
+     "palette": 34,
+     "cells_compared": 1297,
+     "mismatches": 0
+    },
+    "states": {
+     "authored_cells_checked": 1297,
+     "mismatches": 0,
+     "cells_not_authored": 0,
+     "air_cells_in_nbt": 0
+    },
+    "support": {
+     "unsupported": []
+    },
+    "footing": {
+     "columns": 155,
+     "missing": []
+    },
+    "ends": {
+     "not_solid": []
+    },
+    "top": {
+     "min_column_top": 10,
+     "max": 12,
+     "end_tops": [
+      12,
+      12
+     ],
+     "profile_counts": {
+      "10": 6,
+      "12": 25
+     }
+    },
+    "barrier": {
+     "passage_found": false,
+     "path": []
+    },
+    "counts": {
+     "lantern": 4,
+     "white_wall_banner": 4,
+     "barrel": 4,
+     "hay_block": 0
+    },
+    "composition": {
+     "blocks": 1297,
+     "timber_blocks": 76,
+     "timber_share": 0.059,
+     "stairs_and_slabs": 110,
+     "fences_walls_trapdoors": 31,
+     "distinct_states": 34
+    },
+    "problems": []
+   },
+   "server": {
+    "strict_MW86": {
+     "cells": 3453,
+     "failure_count": 0,
+     "failures": []
+    },
+    "strict_MW31": {
+     "cells": 1297,
+     "failure_count": 0,
+     "failures": []
+    },
+    "S1_long_valley": {
+     "module": "MW86",
+     "origin": [
+      0,
+      -55,
+      300
+     ],
+     "footing_columns_filled": 400,
+     "max_fill_depth": 5,
+     "template_failures": 0,
+     "failures": [],
+     "hollow_count": 0,
+     "hollow": [],
+     "outside_changed_count": 0
+    },
+    "S2_cross_slope": {
+     "module": "MW31",
+     "origin": [
+      0,
+      -55,
+      370
+     ],
+     "footing_columns_filled": 124,
+     "max_fill_depth": 4,
+     "template_failures": 0,
+     "failures": [],
+     "hollow_count": 0,
+     "hollow": [],
+     "outside_changed_count": 0
+    },
+    "S3_undulating": {
+     "module": "MW31",
+     "origin": [
+      70,
+      -55,
+      370
+     ],
+     "footing_columns_filled": 64,
+     "max_fill_depth": 4,
+     "template_failures": 0,
+     "failures": [],
+     "hollow_count": 0,
+     "hollow": [],
+     "outside_changed_count": 0
+    }
+   }
+  },
+  "b": {
+   "MW86": {
+    "nbt": "experiments/st03-wall-redesign/out/b/st03_wall_86.nbt",
+    "nbt_sha256": "08837f86695d0111f3dbcc022966d342fa7fd8185689b78331627d9cf0d3b120",
+    "verify": {
+     "size": [
+      86,
+      13,
+      5
+     ],
+     "blocks": 3655,
+     "non_air_blocks": 3655,
+     "palette": 37,
+     "cells_compared": 3655,
+     "mismatches": 0
+    },
+    "states": {
+     "authored_cells_checked": 3655,
+     "mismatches": 0,
+     "cells_not_authored": 0,
+     "air_cells_in_nbt": 0
+    },
+    "support": {
+     "unsupported": []
+    },
+    "footing": {
+     "columns": 430,
+     "missing": []
+    },
+    "ends": {
+     "not_solid": []
+    },
+    "top": {
+     "min_column_top": 9,
+     "max": 12,
+     "end_tops": [
+      12,
+      12
+     ],
+     "profile_counts": {
+      "9": 4,
+      "12": 82
+     }
+    },
+    "barrier": {
+     "passage_found": false,
+     "path": []
+    },
+    "counts": {
+     "lantern": 7,
+     "white_wall_banner": 4,
+     "barrel": 6,
+     "hay_block": 0
+    },
+    "composition": {
+     "blocks": 3655,
+     "timber_blocks": 676,
+     "timber_share": 0.185,
+     "stairs_and_slabs": 530,
+     "fences_walls_trapdoors": 70,
+     "distinct_states": 37
+    },
+    "problems": []
+   },
+   "MW31": {
+    "nbt": "experiments/st03-wall-redesign/out/b/st03_wall_31.nbt",
+    "nbt_sha256": "57fa37d536d592ae719a7502d00e71cb90739bc5b87c67dcfb7ac4c52c1639b8",
+    "verify": {
+     "size": [
+      31,
+      13,
+      5
+     ],
+     "blocks": 1342,
+     "non_air_blocks": 1342,
+     "palette": 37,
+     "cells_compared": 1342,
+     "mismatches": 0
+    },
+    "states": {
+     "authored_cells_checked": 1342,
+     "mismatches": 0,
+     "cells_not_authored": 0,
+     "air_cells_in_nbt": 0
+    },
+    "support": {
+     "unsupported": []
+    },
+    "footing": {
+     "columns": 155,
+     "missing": []
+    },
+    "ends": {
+     "not_solid": []
+    },
+    "top": {
+     "min_column_top": 9,
+     "max": 12,
+     "end_tops": [
+      12,
+      12
+     ],
+     "profile_counts": {
+      "9": 1,
+      "12": 30
+     }
+    },
+    "barrier": {
+     "passage_found": false,
+     "path": []
+    },
+    "counts": {
+     "lantern": 4,
+     "white_wall_banner": 2,
+     "barrel": 6,
+     "hay_block": 0
+    },
+    "composition": {
+     "blocks": 1342,
+     "timber_blocks": 230,
+     "timber_share": 0.171,
+     "stairs_and_slabs": 170,
+     "fences_walls_trapdoors": 24,
+     "distinct_states": 37
+    },
+    "problems": []
+   },
+   "server": {
+    "strict_MW86": {
+     "cells": 3655,
+     "failure_count": 0,
+     "failures": []
+    },
+    "strict_MW31": {
+     "cells": 1342,
+     "failure_count": 0,
+     "failures": []
+    },
+    "S1_long_valley": {
+     "module": "MW86",
+     "origin": [
+      160,
+      -55,
+      300
+     ],
+     "footing_columns_filled": 400,
+     "max_fill_depth": 5,
+     "template_failures": 0,
+     "failures": [],
+     "hollow_count": 0,
+     "hollow": [],
+     "outside_changed_count": 0
+    },
+    "S2_cross_slope": {
+     "module": "MW31",
+     "origin": [
+      160,
+      -55,
+      370
+     ],
+     "footing_columns_filled": 124,
+     "max_fill_depth": 4,
+     "template_failures": 0,
+     "failures": [],
+     "hollow_count": 0,
+     "hollow": [],
+     "outside_changed_count": 0
+    },
+    "S3_undulating": {
+     "module": "MW31",
+     "origin": [
+      230,
+      -55,
+      370
+     ],
+     "footing_columns_filled": 64,
+     "max_fill_depth": 4,
+     "template_failures": 0,
+     "failures": [],
+     "hollow_count": 0,
+     "hollow": [],
+     "outside_changed_count": 0
+    }
+   }
+  },
+  "c": {
+   "MW86": {
+    "nbt": "experiments/st03-wall-redesign/out/c/st03_wall_86.nbt",
+    "nbt_sha256": "f0d16f9445bfbc093c2377da0beb8ec261b55c8217ee5c01f346a603b6d7e2b7",
+    "verify": {
+     "size": [
+      86,
+      13,
+      5
+     ],
+     "blocks": 3414,
+     "non_air_blocks": 3414,
+     "palette": 27,
+     "cells_compared": 3414,
+     "mismatches": 0
+    },
+    "states": {
+     "authored_cells_checked": 3414,
+     "mismatches": 0,
+     "cells_not_authored": 0,
+     "air_cells_in_nbt": 0
+    },
+    "support": {
+     "unsupported": []
+    },
+    "footing": {
+     "columns": 430,
+     "missing": []
+    },
+    "ends": {
+     "not_solid": []
+    },
+    "top": {
+     "min_column_top": 9,
+     "max": 12,
+     "end_tops": [
+      12,
+      12
+     ],
+     "profile_counts": {
+      "9": 20,
+      "12": 66
+     }
+    },
+    "barrier": {
+     "passage_found": false,
+     "path": []
+    },
+    "counts": {
+     "lantern": 4,
+     "white_wall_banner": 3,
+     "barrel": 12,
+     "hay_block": 6
+    },
+    "composition": {
+     "blocks": 3414,
+     "timber_blocks": 101,
+     "timber_share": 0.03,
+     "stairs_and_slabs": 334,
+     "fences_walls_trapdoors": 106,
+     "distinct_states": 27
+    },
+    "problems": []
+   },
+   "MW31": {
+    "nbt": "experiments/st03-wall-redesign/out/c/st03_wall_31.nbt",
+    "nbt_sha256": "a92aa243187b44b0cde75e99e4212469321280d2b6471924de5d1048cd0f1a3c",
+    "verify": {
+     "size": [
+      31,
+      13,
+      5
+     ],
+     "blocks": 1286,
+     "non_air_blocks": 1286,
+     "palette": 27,
+     "cells_compared": 1286,
+     "mismatches": 0
+    },
+    "states": {
+     "authored_cells_checked": 1286,
+     "mismatches": 0,
+     "cells_not_authored": 0,
+     "air_cells_in_nbt": 0
+    },
+    "support": {
+     "unsupported": []
+    },
+    "footing": {
+     "columns": 155,
+     "missing": []
+    },
+    "ends": {
+     "not_solid": []
+    },
+    "top": {
+     "min_column_top": 9,
+     "max": 12,
+     "end_tops": [
+      12,
+      12
+     ],
+     "profile_counts": {
+      "9": 6,
+      "12": 25
+     }
+    },
+    "barrier": {
+     "passage_found": false,
+     "path": []
+    },
+    "counts": {
+     "lantern": 4,
+     "white_wall_banner": 2,
+     "barrel": 3,
+     "hay_block": 3
+    },
+    "composition": {
+     "blocks": 1286,
+     "timber_blocks": 33,
+     "timber_share": 0.026,
+     "stairs_and_slabs": 98,
+     "fences_walls_trapdoors": 37,
+     "distinct_states": 27
+    },
+    "problems": []
+   },
+   "server": {
+    "strict_MW86": {
+     "cells": 3414,
+     "failure_count": 0,
+     "failures": []
+    },
+    "strict_MW31": {
+     "cells": 1286,
+     "failure_count": 0,
+     "failures": []
+    },
+    "S1_long_valley": {
+     "module": "MW86",
+     "origin": [
+      320,
+      -55,
+      300
+     ],
+     "footing_columns_filled": 400,
+     "max_fill_depth": 5,
+     "template_failures": 0,
+     "failures": [],
+     "hollow_count": 0,
+     "hollow": [],
+     "outside_changed_count": 0
+    },
+    "S2_cross_slope": {
+     "module": "MW31",
+     "origin": [
+      320,
+      -55,
+      370
+     ],
+     "footing_columns_filled": 124,
+     "max_fill_depth": 4,
+     "template_failures": 0,
+     "failures": [],
+     "hollow_count": 0,
+     "hollow": [],
+     "outside_changed_count": 0
+    },
+    "S3_undulating": {
+     "module": "MW31",
+     "origin": [
+      390,
+      -55,
+      370
+     ],
+     "footing_columns_filled": 64,
+     "max_fill_depth": 4,
+     "template_failures": 0,
+     "failures": [],
+     "hollow_count": 0,
+     "hollow": [],
+     "outside_changed_count": 0
+    }
+   }
+  }
+ },
+ "boundaries": {
+  "0": {
+   "W-N": {
+    "rotation": "none",
+    "footprint": [
+     13,
+     0,
+     98,
+     4
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        13,
+        0
+       ],
+       [
+        13,
+        1
+       ],
+       [
+        13,
+        2
+       ],
+       [
+        13,
+        3
+       ],
+       [
+        13,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        98,
+        0
+       ],
+       [
+        98,
+        1
+       ],
+       [
+        98,
+        2
+       ],
+       [
+        98,
+        3
+       ],
+       [
+        98,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-NW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-E": {
+    "rotation": "clockwise_90",
+    "footprint": [
+     107,
+     13,
+     111,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        111,
+        13
+       ],
+       [
+        110,
+        13
+       ],
+       [
+        109,
+        13
+       ],
+       [
+        108,
+        13
+       ],
+       [
+        107,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        111,
+        98
+       ],
+       [
+        110,
+        98
+       ],
+       [
+        109,
+        98
+       ],
+       [
+        108,
+        98
+       ],
+       [
+        107,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-W": {
+    "rotation": "counterclockwise_90",
+    "footprint": [
+     0,
+     13,
+     4,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        0,
+        98
+       ],
+       [
+        1,
+        98
+       ],
+       [
+        2,
+        98
+       ],
+       [
+        3,
+        98
+       ],
+       [
+        4,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        0,
+        13
+       ],
+       [
+        1,
+        13
+       ],
+       [
+        2,
+        13
+       ],
+       [
+        3,
+        13
+       ],
+       [
+        4,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NW",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SW": {
+    "rotation": "180",
+    "footprint": [
+     13,
+     107,
+     43,
+     111
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        43,
+        111
+       ],
+       [
+        43,
+        110
+       ],
+       [
+        43,
+        109
+       ],
+       [
+        43,
+        108
+       ],
+       [
+        43,
+        107
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        13,
+        111
+       ],
+       [
+        13,
+        110
+       ],
+       [
+        13,
+        109
+       ],
+       [
+        13,
+        108
+       ],
+       [
+        13,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SE": {
+    "rotation": "180",
+    "footprint": [
+     68,
+     107,
+     98,
+     111
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        98,
+        111
+       ],
+       [
+        98,
+        110
+       ],
+       [
+        98,
+        109
+       ],
+       [
+        98,
+        108
+       ],
+       [
+        98,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        68,
+        111
+       ],
+       [
+        68,
+        110
+       ],
+       [
+        68,
+        109
+       ],
+       [
+        68,
+        108
+       ],
+       [
+        68,
+        107
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   }
+  },
+  "1": {
+   "W-N": {
+    "rotation": "clockwise_90",
+    "footprint": [
+     107,
+     13,
+     111,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        111,
+        13
+       ],
+       [
+        110,
+        13
+       ],
+       [
+        109,
+        13
+       ],
+       [
+        108,
+        13
+       ],
+       [
+        107,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        111,
+        98
+       ],
+       [
+        110,
+        98
+       ],
+       [
+        109,
+        98
+       ],
+       [
+        108,
+        98
+       ],
+       [
+        107,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-NW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-E": {
+    "rotation": "180",
+    "footprint": [
+     13,
+     107,
+     98,
+     111
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        98,
+        111
+       ],
+       [
+        98,
+        110
+       ],
+       [
+        98,
+        109
+       ],
+       [
+        98,
+        108
+       ],
+       [
+        98,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        13,
+        111
+       ],
+       [
+        13,
+        110
+       ],
+       [
+        13,
+        109
+       ],
+       [
+        13,
+        108
+       ],
+       [
+        13,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-W": {
+    "rotation": "none",
+    "footprint": [
+     13,
+     0,
+     98,
+     4
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        13,
+        0
+       ],
+       [
+        13,
+        1
+       ],
+       [
+        13,
+        2
+       ],
+       [
+        13,
+        3
+       ],
+       [
+        13,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        98,
+        0
+       ],
+       [
+        98,
+        1
+       ],
+       [
+        98,
+        2
+       ],
+       [
+        98,
+        3
+       ],
+       [
+        98,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NW",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SW": {
+    "rotation": "counterclockwise_90",
+    "footprint": [
+     0,
+     13,
+     4,
+     43
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        0,
+        43
+       ],
+       [
+        1,
+        43
+       ],
+       [
+        2,
+        43
+       ],
+       [
+        3,
+        43
+       ],
+       [
+        4,
+        43
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        0,
+        13
+       ],
+       [
+        1,
+        13
+       ],
+       [
+        2,
+        13
+       ],
+       [
+        3,
+        13
+       ],
+       [
+        4,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SE": {
+    "rotation": "counterclockwise_90",
+    "footprint": [
+     0,
+     68,
+     4,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        0,
+        98
+       ],
+       [
+        1,
+        98
+       ],
+       [
+        2,
+        98
+       ],
+       [
+        3,
+        98
+       ],
+       [
+        4,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        0,
+        68
+       ],
+       [
+        1,
+        68
+       ],
+       [
+        2,
+        68
+       ],
+       [
+        3,
+        68
+       ],
+       [
+        4,
+        68
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   }
+  },
+  "2": {
+   "W-N": {
+    "rotation": "180",
+    "footprint": [
+     13,
+     107,
+     98,
+     111
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        98,
+        111
+       ],
+       [
+        98,
+        110
+       ],
+       [
+        98,
+        109
+       ],
+       [
+        98,
+        108
+       ],
+       [
+        98,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        13,
+        111
+       ],
+       [
+        13,
+        110
+       ],
+       [
+        13,
+        109
+       ],
+       [
+        13,
+        108
+       ],
+       [
+        13,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-NW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-E": {
+    "rotation": "counterclockwise_90",
+    "footprint": [
+     0,
+     13,
+     4,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        0,
+        98
+       ],
+       [
+        1,
+        98
+       ],
+       [
+        2,
+        98
+       ],
+       [
+        3,
+        98
+       ],
+       [
+        4,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        0,
+        13
+       ],
+       [
+        1,
+        13
+       ],
+       [
+        2,
+        13
+       ],
+       [
+        3,
+        13
+       ],
+       [
+        4,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-W": {
+    "rotation": "clockwise_90",
+    "footprint": [
+     107,
+     13,
+     111,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        111,
+        13
+       ],
+       [
+        110,
+        13
+       ],
+       [
+        109,
+        13
+       ],
+       [
+        108,
+        13
+       ],
+       [
+        107,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        111,
+        98
+       ],
+       [
+        110,
+        98
+       ],
+       [
+        109,
+        98
+       ],
+       [
+        108,
+        98
+       ],
+       [
+        107,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NW",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SW": {
+    "rotation": "none",
+    "footprint": [
+     68,
+     0,
+     98,
+     4
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        68,
+        0
+       ],
+       [
+        68,
+        1
+       ],
+       [
+        68,
+        2
+       ],
+       [
+        68,
+        3
+       ],
+       [
+        68,
+        4
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        98,
+        0
+       ],
+       [
+        98,
+        1
+       ],
+       [
+        98,
+        2
+       ],
+       [
+        98,
+        3
+       ],
+       [
+        98,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SE": {
+    "rotation": "none",
+    "footprint": [
+     13,
+     0,
+     43,
+     4
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        13,
+        0
+       ],
+       [
+        13,
+        1
+       ],
+       [
+        13,
+        2
+       ],
+       [
+        13,
+        3
+       ],
+       [
+        13,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        43,
+        0
+       ],
+       [
+        43,
+        1
+       ],
+       [
+        43,
+        2
+       ],
+       [
+        43,
+        3
+       ],
+       [
+        43,
+        4
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   }
+  },
+  "3": {
+   "W-N": {
+    "rotation": "counterclockwise_90",
+    "footprint": [
+     0,
+     13,
+     4,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        0,
+        98
+       ],
+       [
+        1,
+        98
+       ],
+       [
+        2,
+        98
+       ],
+       [
+        3,
+        98
+       ],
+       [
+        4,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        0,
+        13
+       ],
+       [
+        1,
+        13
+       ],
+       [
+        2,
+        13
+       ],
+       [
+        3,
+        13
+       ],
+       [
+        4,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-NW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-E": {
+    "rotation": "none",
+    "footprint": [
+     13,
+     0,
+     98,
+     4
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        13,
+        0
+       ],
+       [
+        13,
+        1
+       ],
+       [
+        13,
+        2
+       ],
+       [
+        13,
+        3
+       ],
+       [
+        13,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        98,
+        0
+       ],
+       [
+        98,
+        1
+       ],
+       [
+        98,
+        2
+       ],
+       [
+        98,
+        3
+       ],
+       [
+        98,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-W": {
+    "rotation": "180",
+    "footprint": [
+     13,
+     107,
+     98,
+     111
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        98,
+        111
+       ],
+       [
+        98,
+        110
+       ],
+       [
+        98,
+        109
+       ],
+       [
+        98,
+        108
+       ],
+       [
+        98,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        13,
+        111
+       ],
+       [
+        13,
+        110
+       ],
+       [
+        13,
+        109
+       ],
+       [
+        13,
+        108
+       ],
+       [
+        13,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NW",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SW": {
+    "rotation": "clockwise_90",
+    "footprint": [
+     107,
+     68,
+     111,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        111,
+        68
+       ],
+       [
+        110,
+        68
+       ],
+       [
+        109,
+        68
+       ],
+       [
+        108,
+        68
+       ],
+       [
+        107,
+        68
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        111,
+        98
+       ],
+       [
+        110,
+        98
+       ],
+       [
+        109,
+        98
+       ],
+       [
+        108,
+        98
+       ],
+       [
+        107,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SE": {
+    "rotation": "clockwise_90",
+    "footprint": [
+     107,
+     13,
+     111,
+     43
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        111,
+        13
+       ],
+       [
+        110,
+        13
+       ],
+       [
+        109,
+        13
+       ],
+       [
+        108,
+        13
+       ],
+       [
+        107,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        111,
+        43
+       ],
+       [
+        110,
+        43
+       ],
+       [
+        109,
+        43
+       ],
+       [
+        108,
+        43
+       ],
+       [
+        107,
+        43
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   }
+  }
+ },
+ "problems": []
+}
