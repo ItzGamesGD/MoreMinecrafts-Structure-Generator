@@ -2,7 +2,8 @@
 
 Scope: only facilities that have a built NBT today (House A F11/F14, houses B/C/D, kitchen, smithy, cart shed,
 batch 3: F05 armory, F06 training yard, batch 4: F02/F03/F04 barracks, batch 5: F07/F08 warehouses, batch 6:
-F09 prison / F10 ravager stable, and batch 7: F01 commander manor at the Q63 size 17x27x15).
+F09 prison / F10 ravager stable, batch 7: F01 commander manor at the Q63 size 17x27x15, and batch 8: the perimeter
+walls MW86 (W-N, W-E, W-W) and MW31 (W-SW, W-SE), air=omit, no entrance of their own).
 Roads are NOT part of the placement table (the road masterplan and ground modules MQ-* are not in this repository and
 not built), so a road connection cannot be asserted here; the check reports the free corridor in front of each entrance.
 
@@ -40,8 +41,9 @@ def _load(path, name):
     return mod
 
 
-def built_modules():
-    """module id -> dict(nbt, door (x, z) boundary column, front = +z)."""
+def built_modules(perimeter=False):
+    """module id -> dict(nbt, door (x, z) boundary column, front = +z). perimeter=True adds the batch-8 walls (door None);
+    the earlier capture scripts call it without, so their layouts stay what they photographed."""
     out = {}
     b1 = _load(EXP / "st03-batch1-support" / "build.py", "b1")
     b2 = _load(EXP / "st03-batch2-houses" / "build.py", "b2")
@@ -58,6 +60,12 @@ def built_modules():
             m = A.modules()[b["module"]]
             out[b["module"]] = {"nbt": d / f"{m['file']}.nbt", "door": b["door"], "size": b["size"],
                                 "entrances": b.get("entrances")}
+    if perimeter:
+        b8 = _load(EXP / "st03-batch8-perimeter-walls" / "build.py", "b8")
+        for b in b8.BUILDINGS.values():
+            m = A.modules()[b["module"]]
+            out[b["module"]] = {"nbt": EXP / "st03-batch8-perimeter-walls" / "out" / f"{m['file']}.nbt", "door": None,
+                                "size": b["size"], "entrances": None}
     ha = _load(EXP / "st03-b5a-house-a" / "build.py", "ha")
     out["M-house_a"] = {"nbt": EXP / "st03-b5a-house-a" / "st03_house_a.nbt", "door": ha.DOOR, "size": (ha.W, ha.H, ha.D)}
     return out
@@ -93,8 +101,10 @@ def offline(built):
         for e in solid:
             if e["module"] not in built:
                 continue
-            turns = {v: k for k, v in A.ROT_NAME.items()}[e["rotation"]]
             door = built[e["module"]]["door"]
+            if door is None:  # perimeter walls: no entrance; their joints are checked in batch 8 checks.py
+                continue
+            turns = {v: k for k, v in A.ROT_NAME.items()}[e["rotation"]]
             w, _, d = e["size"]
             fx, fz = A.ROT[turns](0, 1)  # outward direction of the module's +z face after rotation
             # entrance cell just outside the front, in the structure frame
@@ -143,7 +153,7 @@ def main():
     only = set(filter(None, a.only.split(",")))
     sha = hashlib.sha1(a.server_jar.read_bytes()).hexdigest()
     assert sha == "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c", sha
-    built = built_modules()
+    built = built_modules(perimeter=True)
     result = {"server_sha1": sha, "offline": offline(built)}
     templates = {m: _template_cells(v["nbt"]) for m, v in built.items()}
     pack = a.work / "pack"

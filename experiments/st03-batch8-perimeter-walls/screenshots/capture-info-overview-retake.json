@@ -1,0 +1,353 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": {
+    "st03_wall_86": "4ceac2ae748c0afc21a0ae9b7210f3087ee63c8e0961c83fd91600ac8a130d7f",
+    "st03_wall_31": "4bb7ff4dbe4c1fb2623acc610dfacec727dffda53d99f96f978bdf9f8d8e453f"
+  },
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear; slope sites are dirt/grass mounds built by slope.py (test terrain, not natural worldgen); raised camera positions stand on an invisible barrier block set only into air cells after placement",
+  "placed": [
+    {
+      "what": "MW86",
+      "origin": [
+        0,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "MW31",
+      "origin": [
+        100,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "S1_long_valley",
+      "module": "MW86",
+      "origin": [
+        0,
+        -55,
+        300
+      ],
+      "rotation": "none",
+      "terrain": "slope.py site + capture apron/ramp, Q89 footing fill"
+    },
+    {
+      "what": "S2_cross_slope",
+      "module": "MW31",
+      "origin": [
+        0,
+        -55,
+        370
+      ],
+      "rotation": "none",
+      "terrain": "slope.py site + capture apron/ramp, Q89 footing fill"
+    },
+    {
+      "what": "S3_undulating",
+      "module": "MW31",
+      "origin": [
+        70,
+        -55,
+        370
+      ],
+      "rotation": "none",
+      "terrain": "slope.py site + capture apron/ramp, Q89 footing fill"
+    },
+    {
+      "what": "W-E",
+      "module": "MW86",
+      "origin": [
+        111,
+        -61,
+        13
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "what": "W-N",
+      "module": "MW86",
+      "origin": [
+        13,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "W-SE",
+      "module": "MW31",
+      "origin": [
+        98,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "what": "W-SW",
+      "module": "MW31",
+      "origin": [
+        43,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "what": "W-W",
+      "module": "MW86",
+      "origin": [
+        0,
+        -61,
+        98
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "what": "F01",
+      "module": "M-manor",
+      "origin": [
+        48,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F02",
+      "module": "M-barracks_a",
+      "origin": [
+        24,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F03",
+      "module": "M-barracks_b",
+      "origin": [
+        75,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F04",
+      "module": "M-barracks_c",
+      "origin": [
+        75,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F05",
+      "module": "M-armory",
+      "origin": [
+        12,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F06",
+      "module": "M-yard",
+      "origin": [
+        12,
+        -61,
+        52
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F07",
+      "module": "M-warehouse_a",
+      "origin": [
+        10,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F08",
+      "module": "M-warehouse_b",
+      "origin": [
+        75,
+        -61,
+        53
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F09",
+      "module": "M-prison",
+      "origin": [
+        92,
+        -61,
+        62
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F10",
+      "module": "M-stable",
+      "origin": [
+        77,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F11",
+      "module": "M-house_a",
+      "origin": [
+        14,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F12",
+      "module": "M-house_b",
+      "origin": [
+        26,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F13",
+      "module": "M-house_c",
+      "origin": [
+        14,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F14",
+      "module": "M-house_a",
+      "origin": [
+        89,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F15",
+      "module": "M-house_b",
+      "origin": [
+        76,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F16",
+      "module": "M-house_c",
+      "origin": [
+        92,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F17",
+      "module": "M-house_d",
+      "origin": [
+        92,
+        -61,
+        40
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F18",
+      "module": "M-kitchen",
+      "origin": [
+        92,
+        -61,
+        50
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F19",
+      "module": "M-smithy",
+      "origin": [
+        28,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F20",
+      "module": "M-cart_shed",
+      "origin": [
+        44,
+        -61,
+        82
+      ],
+      "rotation": "none"
+    }
+  ],
+  "shots": [
+    {
+      "view": "ov_01_whole_hq_aerial_south",
+      "tp": [
+        56,
+        2,
+        150,
+        180.0,
+        31.8
+      ],
+      "file": "ov_01_whole_hq_aerial_south.png",
+      "sha256": "3a3ea7e58b17c5efd8de540053ba195e57456cfc9ffba56b5e0da047f95e7b18"
+    },
+    {
+      "view": "ov_02_whole_hq_aerial_north_west",
+      "tp": [
+        -28,
+        -5,
+        -28,
+        -45.0,
+        23.8
+      ],
+      "file": "ov_02_whole_hq_aerial_north_west.png",
+      "sha256": "8a08fbf45a4d1d332736b4d7042e2fb40692ab427663f0b15cc8ac9abc291281"
+    },
+    {
+      "view": "ov_03_whole_hq_aerial_south_east",
+      "tp": [
+        140,
+        -5,
+        140,
+        135.0,
+        23.8
+      ],
+      "file": "ov_03_whole_hq_aerial_south_east.png",
+      "sha256": "36ad965d9b3f8610385e11ac7de1d335a3c47ce810a0cb11fbec14cb89343316"
+    }
+  ],
+  "not_built": "towers T-NW/T-NE/T-SE/T-SW and the gatehouse GATE: reserved areas left empty, no stand-in"
+}
