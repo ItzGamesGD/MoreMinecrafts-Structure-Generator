@@ -1,6 +1,6 @@
 {
   "air": "omit",
-  "blocks": 1412,
+  "blocks": 1468,
   "cells": 2015,
   "config": "exports/structures/ruined_watchtower.toml",
   "connectivity": {
@@ -426,9 +426,9 @@
       "west"
     ]
   },
-  "output": "/tmp/tmp08744aep/pack/data/moreminecrafts/structure/seam01/st03_wall_31.nbt",
-  "output_sha256": "2735b3f24bb8d4f56af83f09c83d7b7247327ff3e0b491d2f0f8ec4f758857bc",
-  "palette": 31,
+  "output": "/tmp/tmpb36kxpvd/pack/data/moreminecrafts/structure/seam01/st03_wall_31.nbt",
+  "output_sha256": "01e7097f3d745193d1f95f7dc4ce48e34bf44d850eea5b38420401d113cd3e5b",
+  "palette": 29,
   "size": [
     31,
     13,
@@ -442,9 +442,9 @@
       0,
       0
     ],
-    "palette_entries": 28,
-    "path": "/tmp/tmp08744aep/st03_wall_31.schem",
-    "sha256": "1031ee6cb38a704e6fc96015284f7acfb0b24af2cf7330247e387b1aedb137da",
+    "palette_entries": 26,
+    "path": "/tmp/tmpb36kxpvd/st03_wall_31.schem",
+    "sha256": "e1f896ec726c2696f0605131aef09d6012bf568236fb047af355316072391450",
     "size": [
       31,
       13,
@@ -491,15 +491,6 @@
     },
     {
       "pos": [
-        2,
-        2,
-        0
-      ],
-      "reason": "outside_template",
-      "side": "north"
-    },
-    {
-      "pos": [
         3,
         1,
         4
@@ -509,30 +500,12 @@
     },
     {
       "pos": [
-        3,
-        2,
-        0
-      ],
-      "reason": "outside_template",
-      "side": "north"
-    },
-    {
-      "pos": [
         4,
         1,
         4
       ],
       "reason": "outside_template",
       "side": "south"
-    },
-    {
-      "pos": [
-        4,
-        2,
-        0
-      ],
-      "reason": "outside_template",
-      "side": "north"
     },
     {
       "pos": [
@@ -564,7 +537,7 @@
     {
       "pos": [
         7,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -600,7 +573,7 @@
     {
       "pos": [
         8,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -618,15 +591,6 @@
     {
       "pos": [
         8,
-        7,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "east"
-    },
-    {
-      "pos": [
-        8,
         9,
         0
       ],
@@ -636,7 +600,7 @@
     {
       "pos": [
         9,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -663,7 +627,7 @@
     {
       "pos": [
         10,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -681,7 +645,7 @@
     {
       "pos": [
         11,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -699,7 +663,7 @@
     {
       "pos": [
         12,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -744,7 +708,7 @@
     {
       "pos": [
         13,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -816,7 +780,7 @@
     {
       "pos": [
         17,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -852,7 +816,7 @@
     {
       "pos": [
         18,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -888,7 +852,7 @@
     {
       "pos": [
         19,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -915,7 +879,7 @@
     {
       "pos": [
         20,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -933,7 +897,7 @@
     {
       "pos": [
         21,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -951,7 +915,7 @@
     {
       "pos": [
         22,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -965,15 +929,6 @@
       ],
       "reason": "omitted_air",
       "side": "north"
-    },
-    {
-      "pos": [
-        22,
-        7,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "west"
     },
     {
       "pos": [
@@ -996,7 +951,7 @@
     {
       "pos": [
         23,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1058,15 +1013,6 @@
     },
     {
       "pos": [
-        26,
-        2,
-        0
-      ],
-      "reason": "outside_template",
-      "side": "north"
-    },
-    {
-      "pos": [
         27,
         1,
         4
@@ -1076,30 +1022,12 @@
     },
     {
       "pos": [
-        27,
-        2,
-        0
-      ],
-      "reason": "outside_template",
-      "side": "north"
-    },
-    {
-      "pos": [
         28,
         1,
         4
       ],
       "reason": "outside_template",
       "side": "south"
-    },
-    {
-      "pos": [
-        28,
-        2,
-        0
-      ],
-      "reason": "outside_template",
-      "side": "north"
     },
     {
       "pos": [
@@ -1130,35 +1058,33 @@
     }
   ],
   "state_counts": {
-    "minecraft:andesite": 67,
+    "minecraft:andesite": 68,
     "minecraft:andesite_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 5,
     "minecraft:barrel[facing=up,open=false]": 6,
-    "minecraft:chiseled_stone_bricks": 6,
-    "minecraft:cobblestone": 162,
+    "minecraft:chiseled_stone_bricks": 34,
+    "minecraft:cobblestone": 155,
     "minecraft:cobblestone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 9,
-    "minecraft:cracked_stone_bricks": 51,
+    "minecraft:cracked_stone_bricks": 56,
     "minecraft:dark_oak_fence[east=false,north=false,south=false,waterlogged=false,west=true]": 2,
     "minecraft:dark_oak_fence[east=true,north=false,south=false,waterlogged=false,west=false]": 2,
     "minecraft:dark_oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]": 10,
-    "minecraft:dark_oak_log[axis=x]": 34,
-    "minecraft:dark_oak_log[axis=y]": 20,
+    "minecraft:dark_oak_log[axis=x]": 28,
+    "minecraft:dark_oak_log[axis=y]": 16,
     "minecraft:dark_oak_stairs[facing=east,half=top,shape=straight,waterlogged=false]": 4,
     "minecraft:dark_oak_stairs[facing=west,half=top,shape=straight,waterlogged=false]": 4,
     "minecraft:lantern[hanging=true,waterlogged=false]": 4,
     "minecraft:mossy_cobblestone": 26,
     "minecraft:mossy_cobblestone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 4,
-    "minecraft:mossy_stone_bricks": 25,
+    "minecraft:mossy_stone_bricks": 27,
     "minecraft:spruce_log[axis=x]": 4,
     "minecraft:spruce_planks": 14,
-    "minecraft:stone": 72,
-    "minecraft:stone_brick_slab[type=bottom,waterlogged=false]": 2,
-    "minecraft:stone_brick_slab[type=top,waterlogged=false]": 2,
-    "minecraft:stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 20,
+    "minecraft:stone": 71,
+    "minecraft:stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 14,
     "minecraft:stone_brick_stairs[facing=south,half=top,shape=straight,waterlogged=false]": 14,
     "minecraft:stone_brick_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]": 11,
     "minecraft:stone_brick_wall[east=low,north=none,south=none,up=true,waterlogged=false,west=none]": 3,
     "minecraft:stone_brick_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=low]": 3,
-    "minecraft:stone_bricks": 819,
+    "minecraft:stone_bricks": 867,
     "minecraft:stone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 5,
     "minecraft:white_wall_banner[facing=north]": 2
   },

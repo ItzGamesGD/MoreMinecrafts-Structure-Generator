@@ -1,6 +1,6 @@
 {
   "air": "omit",
-  "blocks": 3660,
+  "blocks": 3803,
   "cells": 5590,
   "config": "exports/structures/ruined_watchtower.toml",
   "connectivity": {
@@ -1099,9 +1099,9 @@
       "west"
     ]
   },
-  "output": "/tmp/tmp8wg4t5pq/pack/data/moreminecrafts/structure/seam01/st03_wall_86.nbt",
-  "output_sha256": "279a2db411cf245f11bfe03a85fb5f25a9f400c21a73269e87504086667ef4d8",
-  "palette": 31,
+  "output": "/tmp/tmpy6wrlmkl/pack/data/moreminecrafts/structure/seam01/st03_wall_86.nbt",
+  "output_sha256": "117dee77c1c4565d4f2b4625da1d56e0b79f6f9f00abddbb52fe076746902214",
+  "palette": 29,
   "size": [
     86,
     13,
@@ -1115,9 +1115,9 @@
       0,
       0
     ],
-    "palette_entries": 28,
-    "path": "/tmp/tmp8wg4t5pq/st03_wall_86.schem",
-    "sha256": "2543bc767c7bfeea2faecbf737c4faaadccde0cb0309058edd8d466103dcc1bc",
+    "palette_entries": 26,
+    "path": "/tmp/tmpy6wrlmkl/st03_wall_86.schem",
+    "sha256": "c7b33e3c1b39676adea451d5dbb7ce880512ec9bf0e1c5818be02629c542a5db",
     "size": [
       86,
       13,
@@ -1164,30 +1164,12 @@
     },
     {
       "pos": [
-        2,
-        2,
-        0
-      ],
-      "reason": "outside_template",
-      "side": "north"
-    },
-    {
-      "pos": [
         3,
         1,
         4
       ],
       "reason": "outside_template",
       "side": "south"
-    },
-    {
-      "pos": [
-        3,
-        2,
-        0
-      ],
-      "reason": "outside_template",
-      "side": "north"
     },
     {
       "pos": [
@@ -1200,30 +1182,12 @@
     },
     {
       "pos": [
-        4,
-        2,
-        0
-      ],
-      "reason": "outside_template",
-      "side": "north"
-    },
-    {
-      "pos": [
         5,
         1,
         4
       ],
       "reason": "outside_template",
       "side": "south"
-    },
-    {
-      "pos": [
-        5,
-        2,
-        0
-      ],
-      "reason": "outside_template",
-      "side": "north"
     },
     {
       "pos": [
@@ -1255,7 +1219,7 @@
     {
       "pos": [
         8,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1291,7 +1255,7 @@
     {
       "pos": [
         9,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1327,7 +1291,7 @@
     {
       "pos": [
         10,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1354,7 +1318,7 @@
     {
       "pos": [
         11,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1372,7 +1336,7 @@
     {
       "pos": [
         12,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1390,7 +1354,7 @@
     {
       "pos": [
         13,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1435,7 +1399,7 @@
     {
       "pos": [
         14,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1498,7 +1462,7 @@
     {
       "pos": [
         17,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1543,7 +1507,7 @@
     {
       "pos": [
         18,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1557,15 +1521,6 @@
       ],
       "reason": "omitted_air",
       "side": "north"
-    },
-    {
-      "pos": [
-        18,
-        7,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "east"
     },
     {
       "pos": [
@@ -1588,7 +1543,7 @@
     {
       "pos": [
         19,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1615,7 +1570,7 @@
     {
       "pos": [
         20,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1642,7 +1597,7 @@
     {
       "pos": [
         21,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1669,7 +1624,7 @@
     {
       "pos": [
         22,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1714,7 +1669,7 @@
     {
       "pos": [
         23,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1777,7 +1732,7 @@
     {
       "pos": [
         26,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1822,7 +1777,7 @@
     {
       "pos": [
         27,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1867,7 +1822,7 @@
     {
       "pos": [
         28,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1894,7 +1849,7 @@
     {
       "pos": [
         29,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1921,7 +1876,7 @@
     {
       "pos": [
         30,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1948,7 +1903,7 @@
     {
       "pos": [
         31,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -1993,7 +1948,7 @@
     {
       "pos": [
         32,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2056,7 +2011,7 @@
     {
       "pos": [
         35,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2101,7 +2056,7 @@
     {
       "pos": [
         36,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2146,7 +2101,7 @@
     {
       "pos": [
         37,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2173,7 +2128,7 @@
     {
       "pos": [
         38,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2200,7 +2155,7 @@
     {
       "pos": [
         39,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2227,7 +2182,7 @@
     {
       "pos": [
         40,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2272,7 +2227,7 @@
     {
       "pos": [
         41,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2335,7 +2290,7 @@
     {
       "pos": [
         44,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2380,7 +2335,7 @@
     {
       "pos": [
         45,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2394,15 +2349,6 @@
       ],
       "reason": "omitted_air",
       "side": "north"
-    },
-    {
-      "pos": [
-        45,
-        7,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "east"
     },
     {
       "pos": [
@@ -2425,7 +2371,7 @@
     {
       "pos": [
         46,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2452,7 +2398,7 @@
     {
       "pos": [
         47,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2479,7 +2425,7 @@
     {
       "pos": [
         48,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2506,7 +2452,7 @@
     {
       "pos": [
         49,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2551,7 +2497,7 @@
     {
       "pos": [
         50,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2614,7 +2560,7 @@
     {
       "pos": [
         53,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2659,7 +2605,7 @@
     {
       "pos": [
         54,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2704,7 +2650,7 @@
     {
       "pos": [
         55,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2731,7 +2677,7 @@
     {
       "pos": [
         56,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2758,7 +2704,7 @@
     {
       "pos": [
         57,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2785,7 +2731,7 @@
     {
       "pos": [
         58,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2830,7 +2776,7 @@
     {
       "pos": [
         59,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2893,7 +2839,7 @@
     {
       "pos": [
         62,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2938,7 +2884,7 @@
     {
       "pos": [
         63,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -2983,7 +2929,7 @@
     {
       "pos": [
         64,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -3010,7 +2956,7 @@
     {
       "pos": [
         65,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -3037,7 +2983,7 @@
     {
       "pos": [
         66,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -3064,7 +3010,7 @@
     {
       "pos": [
         67,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -3078,15 +3024,6 @@
       ],
       "reason": "omitted_air",
       "side": "north"
-    },
-    {
-      "pos": [
-        67,
-        7,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "west"
     },
     {
       "pos": [
@@ -3109,7 +3046,7 @@
     {
       "pos": [
         68,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -3172,7 +3109,7 @@
     {
       "pos": [
         71,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -3208,7 +3145,7 @@
     {
       "pos": [
         72,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -3244,7 +3181,7 @@
     {
       "pos": [
         73,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -3271,7 +3208,7 @@
     {
       "pos": [
         74,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -3289,7 +3226,7 @@
     {
       "pos": [
         75,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -3307,7 +3244,7 @@
     {
       "pos": [
         76,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -3352,7 +3289,7 @@
     {
       "pos": [
         77,
-        2,
+        3,
         0
       ],
       "reason": "outside_template",
@@ -3414,30 +3351,12 @@
     },
     {
       "pos": [
-        80,
-        2,
-        0
-      ],
-      "reason": "outside_template",
-      "side": "north"
-    },
-    {
-      "pos": [
         81,
         1,
         4
       ],
       "reason": "outside_template",
       "side": "south"
-    },
-    {
-      "pos": [
-        81,
-        2,
-        0
-      ],
-      "reason": "outside_template",
-      "side": "north"
     },
     {
       "pos": [
@@ -3450,30 +3369,12 @@
     },
     {
       "pos": [
-        82,
-        2,
-        0
-      ],
-      "reason": "outside_template",
-      "side": "north"
-    },
-    {
-      "pos": [
         83,
         1,
         4
       ],
       "reason": "outside_template",
       "side": "south"
-    },
-    {
-      "pos": [
-        83,
-        2,
-        0
-      ],
-      "reason": "outside_template",
-      "side": "north"
     },
     {
       "pos": [
@@ -3507,34 +3408,32 @@
     "minecraft:andesite": 194,
     "minecraft:andesite_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 15,
     "minecraft:barrel[facing=up,open=false]": 6,
-    "minecraft:chiseled_stone_bricks": 28,
-    "minecraft:cobblestone": 553,
+    "minecraft:chiseled_stone_bricks": 60,
+    "minecraft:cobblestone": 537,
     "minecraft:cobblestone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 31,
-    "minecraft:cracked_stone_bricks": 153,
+    "minecraft:cracked_stone_bricks": 161,
     "minecraft:dark_oak_fence[east=false,north=false,south=false,waterlogged=false,west=true]": 8,
     "minecraft:dark_oak_fence[east=true,north=false,south=false,waterlogged=false,west=false]": 8,
     "minecraft:dark_oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]": 40,
-    "minecraft:dark_oak_log[axis=x]": 120,
-    "minecraft:dark_oak_log[axis=y]": 80,
+    "minecraft:dark_oak_log[axis=x]": 112,
+    "minecraft:dark_oak_log[axis=y]": 64,
     "minecraft:dark_oak_stairs[facing=east,half=top,shape=straight,waterlogged=false]": 16,
     "minecraft:dark_oak_stairs[facing=west,half=top,shape=straight,waterlogged=false]": 16,
     "minecraft:lantern[hanging=true,waterlogged=false]": 6,
-    "minecraft:mossy_cobblestone": 80,
+    "minecraft:mossy_cobblestone": 78,
     "minecraft:mossy_cobblestone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 14,
-    "minecraft:mossy_stone_bricks": 49,
+    "minecraft:mossy_stone_bricks": 56,
     "minecraft:spruce_log[axis=x]": 4,
     "minecraft:spruce_planks": 56,
-    "minecraft:stone": 194,
-    "minecraft:stone_brick_slab[type=bottom,waterlogged=false]": 8,
-    "minecraft:stone_brick_slab[type=top,waterlogged=false]": 8,
-    "minecraft:stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 64,
+    "minecraft:stone": 183,
+    "minecraft:stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 56,
     "minecraft:stone_brick_stairs[facing=south,half=top,shape=straight,waterlogged=false]": 56,
     "minecraft:stone_brick_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]": 12,
     "minecraft:stone_brick_wall[east=low,north=none,south=none,up=true,waterlogged=false,west=none]": 9,
     "minecraft:stone_brick_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=low]": 9,
-    "minecraft:stone_bricks": 1801,
+    "minecraft:stone_bricks": 1975,
     "minecraft:stone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 18,
-    "minecraft:white_wall_banner[facing=north]": 4
+    "minecraft:white_wall_banner[facing=north]": 3
   },
   "structure_id": "moreminecrafts:seam01/st03_wall_86",
   "target": {
