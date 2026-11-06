@@ -88,7 +88,7 @@ def main():
     ap.add_argument("--work", type=Path, required=True)
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--wait-join", type=int, default=420)
-    ap.add_argument("--design", required=True, choices=["a", "b", "c"])
+    ap.add_argument("--design", required=True, choices=["a", "b", "c", "b2"])
     a = ap.parse_args()
     a.work.mkdir(parents=True, exist_ok=True)
     a.out.mkdir(parents=True, exist_ok=True)

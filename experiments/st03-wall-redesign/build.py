@@ -11,7 +11,7 @@ from pathlib import Path
 from common import export
 
 ROOT = Path(__file__).resolve().parent
-DESIGNS = {"a": "design_a", "b": "design_b", "c": "design_c"}
+DESIGNS = {"a": "design_a", "b": "design_b", "c": "design_c", "b2": "design_b2"}
 
 
 def design(key):
@@ -19,7 +19,7 @@ def design(key):
 
 
 def main():
-    for key in sys.argv[1:] or DESIGNS:
+    for key in sys.argv[1:] or ("a", "b", "c"):
         m = design(key)
         export(key.upper(), {"MW86": m.mw86(), "MW31": m.mw31()}, ROOT / "out" / key)
 
