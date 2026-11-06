@@ -1,0 +1,387 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": {
+    "st03_wall_segment": "1473f7fbf8fc613a155f7815d67451fbd7d0d8a2bf3fa3145d6d2363544adb0a",
+    "st03_wall_segment_run5": "3a7b25b95517581f40abdc7be47c4329d162a73e34129c9f53601c4ed8af6294"
+  },
+  "renderer": "Mesa lavapipe (Vulkan) under Xvfb 1280x720, in-game F2, HUD hidden",
+  "world": "flat, plains, noon, clear; raised cameras stand on a barrier block placed only into air",
+  "placed": [
+    {
+      "what": "st03_wall_segment",
+      "origin": [
+        0,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "st03_wall_segment_run5",
+      "origin": [
+        40,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "st03_wall_segment_run5",
+      "origin": [
+        25,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F01",
+      "module": "M-manor",
+      "origin": [
+        48,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F02",
+      "module": "M-barracks_a",
+      "origin": [
+        24,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F03",
+      "module": "M-barracks_b",
+      "origin": [
+        75,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F04",
+      "module": "M-barracks_c",
+      "origin": [
+        75,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F05",
+      "module": "M-armory",
+      "origin": [
+        12,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F06",
+      "module": "M-yard",
+      "origin": [
+        12,
+        -61,
+        52
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F07",
+      "module": "M-warehouse_a",
+      "origin": [
+        10,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F08",
+      "module": "M-warehouse_b",
+      "origin": [
+        75,
+        -61,
+        53
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F09",
+      "module": "M-prison",
+      "origin": [
+        92,
+        -61,
+        62
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F10",
+      "module": "M-stable",
+      "origin": [
+        77,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F11",
+      "module": "M-house_a",
+      "origin": [
+        14,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F12",
+      "module": "M-house_b",
+      "origin": [
+        26,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F13",
+      "module": "M-house_c",
+      "origin": [
+        14,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F14",
+      "module": "M-house_a",
+      "origin": [
+        89,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F15",
+      "module": "M-house_b",
+      "origin": [
+        76,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F16",
+      "module": "M-house_c",
+      "origin": [
+        92,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F17",
+      "module": "M-house_d",
+      "origin": [
+        92,
+        -61,
+        40
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F18",
+      "module": "M-kitchen",
+      "origin": [
+        92,
+        -61,
+        50
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F19",
+      "module": "M-smithy",
+      "origin": [
+        28,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F20",
+      "module": "M-cart_shed",
+      "origin": [
+        44,
+        -61,
+        82
+      ],
+      "rotation": "none"
+    }
+  ],
+  "shots": [
+    {
+      "view": "01_front",
+      "tp": [
+        7.5,
+        -53.5,
+        179,
+        -0.0,
+        0.5
+      ],
+      "file": "01_front.png",
+      "sha256": "ca65aacad478785d388c842c33f40fae092511f395058ed912bffd48bc59fd9e"
+    },
+    {
+      "view": "02_oblique_45",
+      "tp": [
+        -9.5,
+        -53,
+        184.5,
+        -44.2,
+        2.3
+      ],
+      "file": "02_oblique_45.png",
+      "sha256": "bc070a032bffd9a1ee7c23991924fbfd7a56dd171eeb922a25b207c00e956980"
+    },
+    {
+      "view": "03_side_depth_close",
+      "tp": [
+        -3.5,
+        -55.5,
+        196.5,
+        -70.2,
+        -12.7
+      ],
+      "file": "03_side_depth_close.png",
+      "sha256": "728bba2873d5da271be4e19b09d3a5e2b24cd27f212ff5c8645f9a403ee308f7"
+    },
+    {
+      "view": "04_stone_timber_joint",
+      "tp": [
+        5.5,
+        -56,
+        195.5,
+        -0.0,
+        -39.8
+      ],
+      "file": "04_stone_timber_joint.png",
+      "sha256": "deb36aa97af59acbd36b43caca92c6c158aec978374907dad4603aa7dfa4db53"
+    },
+    {
+      "view": "05_inside_oblique",
+      "tp": [
+        17,
+        -52,
+        213,
+        129.3,
+        11.9
+      ],
+      "file": "05_inside_oblique.png",
+      "sha256": "1b7d27c724f49e3fb4c50a92bf32db50fda21d0596711b710bc6f983a1882ac9"
+    },
+    {
+      "view": "06_inside_close",
+      "tp": [
+        10.5,
+        -56,
+        208.5,
+        135.0,
+        -21.4
+      ],
+      "file": "06_inside_close.png",
+      "sha256": "69b43c9e09a0baa6075012689aedf03bd357d6b387be8e8b83d977cfebb17d25"
+    },
+    {
+      "view": "07_top_parapet",
+      "tp": [
+        17,
+        -45,
+        208,
+        118.3,
+        18.7
+      ],
+      "file": "07_top_parapet.png",
+      "sha256": "edc45a20f5deb5121c438520637a59cf5636121f1f4398e760f47d0ef33502d5"
+    },
+    {
+      "view": "08_walk_along",
+      "tp": [
+        -0.5,
+        -48.8,
+        203,
+        -93.9,
+        2.8
+      ],
+      "file": "08_walk_along.png",
+      "sha256": "e458c0417974362c52810d01168d92d6df24ba34dce77efb525789dc9ee4b2db"
+    },
+    {
+      "view": "09_run5_front_far",
+      "tp": [
+        71.5,
+        -52,
+        142,
+        -0.0,
+        2.0
+      ],
+      "file": "09_run5_front_far.png",
+      "sha256": "a958a0121366e92e53ae7c303fb2dc302f381ac23d07eb5ab3658c2783648056"
+    },
+    {
+      "view": "10_run5_oblique",
+      "tp": [
+        29,
+        -51,
+        176,
+        -58.4,
+        5.0
+      ],
+      "file": "10_run5_oblique.png",
+      "sha256": "a259e842bfebba5cafee1d49d2257e8d0e46396753054f2f64fb761d6ce641ab"
+    },
+    {
+      "view": "11_context_outside",
+      "tp": [
+        10,
+        -50,
+        -32,
+        -53.5,
+        4.0
+      ],
+      "file": "11_context_outside.png",
+      "sha256": "e868c40cc8f38e5535a481aa211fa2b488d2b9b1676f88ca0488a9887c23f066"
+    },
+    {
+      "view": "12_context_aerial_inside",
+      "tp": [
+        56,
+        -26,
+        66,
+        180.0,
+        24.3
+      ],
+      "file": "12_context_aerial_inside.png",
+      "sha256": "fb73323494a3379fb941d34a5f9aff5193f16adaa80490a0847df8ebd9fe08b9"
+    }
+  ],
+  "note": "perimeter wall NBTs are not placed; the run on the W-N line is a preview only"
+}

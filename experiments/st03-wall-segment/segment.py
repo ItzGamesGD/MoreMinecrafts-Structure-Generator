@@ -13,11 +13,10 @@ design is "a corbelled gallery wall":
   - z2: the curtain;
 - buttresses: set back by a sloped weathering at mid height, then carried up on a corbel into a head that stands one
   course above the battlement;
-- the parapet is corbelled out two stages over the curtain. In the shadow under it, a gallery of brackets carries
-  it: stone corbels at the ends and the centre, dark-oak joists on dark-oak brackets between them. The slots between
-  the brackets are machicolations closed by spruce hatches. The timber is set back inside the stone line and does
-  the work of carrying the parapet;
-- a cross-shaped crossbow loop in the curtain;
+- under the corbelled stone parapet, a fighting gallery is cut two blocks deep into the wall head (y7-8) between
+  the buttresses. A dark-oak frame stands in it, set back behind the stone line: Y-posts on a corbelled stone sill
+  and a beam whose ends rest on knee braces against the buttresses. The frame carries the wall-walk and the parapet.
+- below the gallery the wall is solid: a two-step talus and a plain curtain;
 - inside, stone pilasters answer the buttresses. Between them two Y-shaped dark-oak posts and a beam carry a plank
   widening of the wall-walk behind a fence.
 """
@@ -32,7 +31,7 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 sys.path[:0] = [str(ROOT), str(ROOT / "experiments" / "st03-wall-redesign")]
 
-from common import Cells, ashlar, ashlar_stair, banner, lantern, log, noise, rubble, rubble_stair, stairs, trap  # noqa: E402
+from common import Cells, ashlar, ashlar_stair, banner, lantern, log, noise, rubble, rubble_stair, stairs  # noqa: E402
 
 H, D = 13, 5
 BUTTRESS, BAY = 3, 9
@@ -86,44 +85,44 @@ def buttress(c, a):
 def bay(c, a):
     b = a + BAY - 1
     m = a + BAY // 2
-    stone_brackets = {a, m, b}
-    timber_brackets = {a + 2, b - 2}
+    posts = (a + 2, b - 2)
     for x in range(a, b + 1):
         # two-step talus
         c.put(x, 1, 0, rubble(x, 1, 0))
         stairs(c, x, 2, 0, rubble_stair(x, 2, 0), "south")
-        for y in (1, 2, 3):
-            c.put(x, y, 1, rubble(x, y, 1) if y <= 2 else ashlar(x, y, 1))
-        stairs(c, x, 4, 1, ashlar_stair(x, 4, 1), "south")
-        # gallery under the corbelled parapet (z1, y8..9)
-        if x in stone_brackets:
-            stairs(c, x, 8, 1, "stone_brick", "south", half="top")
-            c.put(x, 9, 1, "stone_bricks")
-        elif x in timber_brackets:
-            stairs(c, x, 8, 1, "dark_oak", "south", half="top")
-            log(c, x, 9, 1, "z")  # joist, its end grain under the parapet
-        else:
-            trap(c, x, 9, 1, "spruce", "north", False, half="top")  # machicolation hatch
-        # parapet corbelled out to z0
+        for y in (1, 2):
+            c.put(x, y, 1, rubble(x, y, 1))
+        stairs(c, x, 3, 1, ashlar_stair(x, 3, 1), "south")
+        # fighting gallery in the wall head (z1..z2, y7..8): stone sill corbelled out at y6, back wall z3
+        stairs(c, x, 6, 1, "stone_brick", "south", half="top")
+        for y in (7, 8):
+            del c[(x, y, 2)]
+        # timber frame of the gallery: beam under the wall-walk, Y-posts on the sill
+        log(c, x, 9, 1, "x")
+        c.put(x, 9, 2, "stone_bricks")
+        # parapet corbelled out to z0 in front of the beam
         stairs(c, x, 9, 0, "stone_brick", "south", half="top")
         c.put(x, 10, 0, edge(x, 10, 0))
         if (x - a) % 4:
-            c.put(x, 11, 0, edge(x, 11, 0))  # 3-wide merlons; crenels over the bay ends and the loop
+            c.put(x, 11, 0, edge(x, 11, 0))  # 3-wide merlons; crenels over the bay ends and centre
         # inside: beam, plank widening, fence
         log(c, x, 8, 4, "x")
         c.put(x, 9, 4, "spruce_planks")
         c.put(x, 10, 4, "dark_oak_fence")
-    # cross loop: a cross in the face (z2), only its centre goes through the core (z3) - not a passage
-    for x, y in ((m, 5), (m, 6), (m, 7), (m - 1, 6), (m + 1, 6)):
-        del c[(x, y, 2)]
-    del c[(m, 6, 3)]
-    # inside: two Y-shaped dark-oak posts on stone pads, clear of the loop
-    for p in (a + 2, b - 2):
+    for p in posts:
+        for y in (7, 8):
+            log(c, p, y, 1, "y")
+        stairs(c, p - 1, 8, 1, "dark_oak", "east", half="top")
+        stairs(c, p + 1, 8, 1, "dark_oak", "west", half="top")
+        # inside twin: Y-post on a stone pad under the inner beam
         c.put(p, 1, 4, "stone_bricks")
         for y in range(2, 8):
             log(c, p, y, 4, "y")
         stairs(c, p - 1, 7, 4, "dark_oak", "east", half="top")
         stairs(c, p + 1, 7, 4, "dark_oak", "west", half="top")
+    for x in (a, b):  # the beam's ends rest on the buttresses: knee braces against the stone
+        stairs(c, x, 8, 1, "dark_oak", "west" if x == a else "east", half="top")
+    lantern(c, m, 8, 2)  # hangs deep in the gallery, from the walk
     lantern(c, m, 7, 4)
 
 
