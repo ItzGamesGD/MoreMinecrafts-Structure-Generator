@@ -1,0 +1,548 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "design": "F",
+  "nbt_sha256": {
+    "st03_wall_86": "dcad38a64c4eafa33d391e85fe6b7f217e718f91eb78189feacda1af4d934c1f",
+    "st03_wall_31": "6d4172a144ec1843375b57004f897b3beade622d14e21c3771c907431601aef6"
+  },
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear; slope sites are dirt/grass mounds built by slope.py (test terrain, not natural worldgen); raised camera positions stand on an invisible barrier block set only into air cells after placement",
+  "placed": [
+    {
+      "what": "MW86",
+      "origin": [
+        0,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "MW31",
+      "origin": [
+        100,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "S1_long_valley",
+      "module": "MW86",
+      "origin": [
+        0,
+        -55,
+        300
+      ],
+      "rotation": "none",
+      "terrain": "slope.py site + capture apron/ramp, Q89 footing fill"
+    },
+    {
+      "what": "W-E",
+      "module": "MW86",
+      "origin": [
+        111,
+        -61,
+        13
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "what": "W-N",
+      "module": "MW86",
+      "origin": [
+        13,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "W-SE",
+      "module": "MW31",
+      "origin": [
+        98,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "what": "W-SW",
+      "module": "MW31",
+      "origin": [
+        43,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "what": "W-W",
+      "module": "MW86",
+      "origin": [
+        0,
+        -61,
+        98
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "what": "F01",
+      "module": "M-manor",
+      "origin": [
+        48,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F02",
+      "module": "M-barracks_a",
+      "origin": [
+        24,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F03",
+      "module": "M-barracks_b",
+      "origin": [
+        75,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F04",
+      "module": "M-barracks_c",
+      "origin": [
+        75,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F05",
+      "module": "M-armory",
+      "origin": [
+        12,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F06",
+      "module": "M-yard",
+      "origin": [
+        12,
+        -61,
+        52
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F07",
+      "module": "M-warehouse_a",
+      "origin": [
+        10,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F08",
+      "module": "M-warehouse_b",
+      "origin": [
+        75,
+        -61,
+        53
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F09",
+      "module": "M-prison",
+      "origin": [
+        92,
+        -61,
+        62
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F10",
+      "module": "M-stable",
+      "origin": [
+        77,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F11",
+      "module": "M-house_a",
+      "origin": [
+        14,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F12",
+      "module": "M-house_b",
+      "origin": [
+        26,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F13",
+      "module": "M-house_c",
+      "origin": [
+        14,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F14",
+      "module": "M-house_a",
+      "origin": [
+        89,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F15",
+      "module": "M-house_b",
+      "origin": [
+        76,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F16",
+      "module": "M-house_c",
+      "origin": [
+        92,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F17",
+      "module": "M-house_d",
+      "origin": [
+        92,
+        -61,
+        40
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F18",
+      "module": "M-kitchen",
+      "origin": [
+        92,
+        -61,
+        50
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F19",
+      "module": "M-smithy",
+      "origin": [
+        28,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F20",
+      "module": "M-cart_shed",
+      "origin": [
+        44,
+        -61,
+        82
+      ],
+      "rotation": "none"
+    }
+  ],
+  "shots": [
+    {
+      "view": "f_mw86_01_front",
+      "tp": [
+        43,
+        -53,
+        160,
+        0.0,
+        1.4
+      ],
+      "file": "f_mw86_01_front.png",
+      "sha256": "d85ce4d06ea132a1c2fc4278631fc45f02ae95b91add973de39196023d3d2903"
+    },
+    {
+      "view": "f_mw86_02_oblique_exterior",
+      "tp": [
+        -12,
+        -51,
+        174,
+        -58.2,
+        4.6
+      ],
+      "file": "f_mw86_02_oblique_exterior.png",
+      "sha256": "878417d00e15cc3a96bc4e50554d8b397f188243383f6bb76ef790de7039d46d"
+    },
+    {
+      "view": "f_mw86_03_raking_exterior",
+      "tp": [
+        -5,
+        -55.5,
+        193.5,
+        -78.9,
+        -3.4
+      ],
+      "file": "f_mw86_03_raking_exterior.png",
+      "sha256": "09f9c4d05a026f819a9310918af67bf8b3cbd1fee383ce0a708110b8577eec93"
+    },
+    {
+      "view": "f_mw86_04_side_end",
+      "tp": [
+        -10,
+        -53,
+        191,
+        -43.7,
+        3.6
+      ],
+      "file": "f_mw86_04_side_end.png",
+      "sha256": "c64eabe6904ea7408b39c5b1839a41bf7b5ed64998ab54d3b4602b8679550589"
+    },
+    {
+      "view": "f_mw86_05_top_aerial",
+      "tp": [
+        43,
+        -30,
+        226,
+        180.0,
+        42.5
+      ],
+      "file": "f_mw86_05_top_aerial.png",
+      "sha256": "74a0b3bcada652c3c543b085468f8824cd6e349af0b2f567d0c560653e73850f"
+    },
+    {
+      "view": "f_mw86_06_oblique_interior",
+      "tp": [
+        70,
+        -51,
+        224,
+        132.3,
+        7.7
+      ],
+      "file": "f_mw86_06_oblique_interior.png",
+      "sha256": "684f0480a35aa36b3c0a60fae08c7d978fc549e130d444e2b1aaa2f86cc9f014"
+    },
+    {
+      "view": "f_mw86_07_detail_exterior",
+      "tp": [
+        15,
+        -56,
+        192,
+        36.9,
+        -16.7
+      ],
+      "file": "f_mw86_07_detail_exterior.png",
+      "sha256": "3069e4f71b068576544daac2ca74de47ddbd36ba229be8710a83822cba8c2f47"
+    },
+    {
+      "view": "f_mw86_08_detail_interior",
+      "tp": [
+        13,
+        -56.5,
+        211,
+        139.4,
+        -15.2
+      ],
+      "file": "f_mw86_08_detail_interior.png",
+      "sha256": "fc2afbef1a9065284d440eb113b7d4e451e21be0561f6c14524e6d038c314cbe"
+    },
+    {
+      "view": "f_mw86_09_detail_wall_top",
+      "tp": [
+        20,
+        -46.5,
+        206.5,
+        -110.6,
+        13.2
+      ],
+      "file": "f_mw86_09_detail_wall_top.png",
+      "sha256": "c44cb0575f99ee584139ea585d83cb88063e659395e7bbb66b8d9aaca31b1dc4"
+    },
+    {
+      "view": "f_mw86_10_joint_close",
+      "tp": [
+        9,
+        -56.5,
+        193,
+        0.0,
+        -35.5
+      ],
+      "file": "f_mw86_10_joint_close.png",
+      "sha256": "e12631aeb58da1359781ea6071aedfbe822c559d12614f338d8be80aa1df4192"
+    },
+    {
+      "view": "f_mw86_11_walk_along_top",
+      "tp": [
+        7,
+        -49,
+        202.5,
+        -92.3,
+        1.5
+      ],
+      "file": "f_mw86_11_walk_along_top.png",
+      "sha256": "8be86dccae0fc09d9616d048140c0b5f9229019cf94933f0fb2a1b7efe01f9ef"
+    },
+    {
+      "view": "f_mw31_01_front",
+      "tp": [
+        115.5,
+        -54,
+        178,
+        -0.0,
+        -0.0
+      ],
+      "file": "f_mw31_01_front.png",
+      "sha256": "756ea30eaad9c65a8545f9cfc50ef1c56ba33361502a8bac5d63ead4ce9e457a"
+    },
+    {
+      "view": "f_mw31_02_oblique_exterior",
+      "tp": [
+        92,
+        -53,
+        186,
+        -59.7,
+        4.1
+      ],
+      "file": "f_mw31_02_oblique_exterior.png",
+      "sha256": "792c556dabdd6dda440c131131516d4dcda60a58ee0894b09297d8e2121598bb"
+    },
+    {
+      "view": "f_mw31_03_oblique_interior",
+      "tp": [
+        127,
+        -53,
+        216,
+        128.7,
+        5.9
+      ],
+      "file": "f_mw31_03_oblique_interior.png",
+      "sha256": "28af5aa735ec8046f7da9095a4482827c279cfeb5c4e29203779d75116ae571a"
+    },
+    {
+      "view": "f_ctx_01_hq_aerial",
+      "tp": [
+        56,
+        2,
+        150,
+        180.0,
+        31.8
+      ],
+      "file": "f_ctx_01_hq_aerial.png",
+      "sha256": "ccd853c6e69c79ab096d28b7d23f830cd94829afa801a1fa047e869483473594"
+    },
+    {
+      "view": "f_ctx_02_gate_south",
+      "tp": [
+        56,
+        -54,
+        135,
+        180.0,
+        2.1
+      ],
+      "file": "f_ctx_02_gate_south.png",
+      "sha256": "a4d4e6774d30ffa5d43941256b32c6b6ce8cee3073d91757be34f9ce6f23bf25"
+    },
+    {
+      "view": "f_ctx_03_corner_NW_outside",
+      "tp": [
+        -14,
+        -50,
+        -14,
+        -45.0,
+        8.4
+      ],
+      "file": "f_ctx_03_corner_NW_outside.png",
+      "sha256": "b1a35f205e0009f5dfea2fa9bb3508318791402eabdc839dbdb93a702fed2454"
+    },
+    {
+      "view": "f_ctx_04_W-E_inside",
+      "tp": [
+        88,
+        -46,
+        66,
+        -141.1,
+        13.5
+      ],
+      "file": "f_ctx_04_W-E_inside.png",
+      "sha256": "54dde7464ebe942e181cd4da6dd1c6111309b4293a25119bc86d6ee6f33ddf6b"
+    },
+    {
+      "view": "f_ctx_05_gate_end_outside",
+      "tp": [
+        50,
+        -54,
+        124,
+        158.2,
+        -7.1
+      ],
+      "file": "f_ctx_05_gate_end_outside.png",
+      "sha256": "a227b6098ab2484e7481133d5418fa7104d6f427d6f68dd701c0da89e22b2e99"
+    },
+    {
+      "view": "f_ctx_06_gate_end_inside",
+      "tp": [
+        52,
+        -53,
+        96,
+        28.3,
+        -3.9
+      ],
+      "file": "f_ctx_06_gate_end_inside.png",
+      "sha256": "bd1d5365a014eb7097516364a0dea3fe545e04fe0090d1ffdc3514978f207797"
+    },
+    {
+      "view": "f_sl_01_S1_footing_close",
+      "tp": [
+        36,
+        -57,
+        291,
+        -37.9,
+        -9.9
+      ],
+      "file": "f_sl_01_S1_footing_close.png",
+      "sha256": "7620c60aa7004f2c1a8bcc5c2f4c7de7be55347220afbdc29afbb16d51946953"
+    }
+  ],
+  "not_built": "towers T-NW/T-NE/T-SE/T-SW and the gatehouse GATE: reserved areas left empty, no stand-in"
+}
