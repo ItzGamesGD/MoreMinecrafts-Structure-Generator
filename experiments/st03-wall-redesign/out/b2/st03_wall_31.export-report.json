@@ -1,6 +1,6 @@
 {
   "air": "omit",
-  "blocks": 1347,
+  "blocks": 1383,
   "cells": 2015,
   "config": "exports/structures/ruined_watchtower.toml",
   "connectivity": {
@@ -266,9 +266,9 @@
       "west"
     ]
   },
-  "output": "/tmp/tmpb3al_rs_/pack/data/moreminecrafts/structure/seam01/st03_wall_31.nbt",
-  "output_sha256": "ba2b5561d2cf7bcd320b4fc8536c6be7e08e45f53e427b84202b23c28ca64a27",
-  "palette": 39,
+  "output": "/tmp/tmper03h_xz/pack/data/moreminecrafts/structure/seam01/st03_wall_31.nbt",
+  "output_sha256": "0ea7f31663c1493df4e754888cb2b9dd0cef3433475d1d15ad61b6b7c717012d",
+  "palette": 40,
   "size": [
     31,
     13,
@@ -282,9 +282,9 @@
       0,
       0
     ],
-    "palette_entries": 36,
-    "path": "/tmp/tmpb3al_rs_/st03_wall_31.schem",
-    "sha256": "31ef8ad9945d72afc1f21900d02b6816d73c17d442f74b64e6ee682b3fb1138b",
+    "palette_entries": 37,
+    "path": "/tmp/tmper03h_xz/st03_wall_31.schem",
+    "sha256": "97e7ee5cf4f64d86ee9a8216f6c0592807c50be61ea6062aa69cad17e9fef067",
     "size": [
       31,
       13,
@@ -828,10 +828,19 @@
       "pos": [
         9,
         7,
-        3
+        4
+      ],
+      "reason": "outside_template",
+      "side": "south"
+    },
+    {
+      "pos": [
+        9,
+        7,
+        4
       ],
       "reason": "omitted_air",
-      "side": "south"
+      "side": "west"
     },
     {
       "pos": [
@@ -891,9 +900,18 @@
       "pos": [
         10,
         7,
-        3
+        4
       ],
       "reason": "omitted_air",
+      "side": "east"
+    },
+    {
+      "pos": [
+        10,
+        7,
+        4
+      ],
+      "reason": "outside_template",
       "side": "south"
     },
     {
@@ -1494,10 +1512,19 @@
       "pos": [
         20,
         7,
-        3
+        4
+      ],
+      "reason": "outside_template",
+      "side": "south"
+    },
+    {
+      "pos": [
+        20,
+        7,
+        4
       ],
       "reason": "omitted_air",
-      "side": "south"
+      "side": "west"
     },
     {
       "pos": [
@@ -1557,9 +1584,18 @@
       "pos": [
         21,
         7,
-        3
+        4
       ],
       "reason": "omitted_air",
+      "side": "east"
+    },
+    {
+      "pos": [
+        21,
+        7,
+        4
+      ],
+      "reason": "outside_template",
       "side": "south"
     },
     {
@@ -2099,10 +2135,10 @@
     "minecraft:andesite_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 4,
     "minecraft:andesite_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 2,
     "minecraft:barrel[facing=up,open=false]": 6,
-    "minecraft:cobblestone": 153,
+    "minecraft:cobblestone": 156,
     "minecraft:cobblestone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 11,
     "minecraft:cobblestone_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 8,
-    "minecraft:cracked_stone_bricks": 35,
+    "minecraft:cracked_stone_bricks": 40,
     "minecraft:dark_oak_fence[east=false,north=false,south=false,waterlogged=false,west=true]": 1,
     "minecraft:dark_oak_fence[east=true,north=false,south=false,waterlogged=false,west=false]": 1,
     "minecraft:dark_oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]": 14,
@@ -2111,6 +2147,7 @@
     "minecraft:dark_oak_log[axis=z]": 16,
     "minecraft:dark_oak_stairs[facing=north,half=top,shape=straight,waterlogged=false]": 4,
     "minecraft:dark_oak_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 32,
+    "minecraft:dark_oak_stairs[facing=south,half=top,shape=straight,waterlogged=false]": 8,
     "minecraft:lantern[hanging=true,waterlogged=false]": 2,
     "minecraft:mossy_cobblestone": 31,
     "minecraft:mossy_cobblestone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 4,
@@ -2121,16 +2158,16 @@
     "minecraft:spruce_planks": 24,
     "minecraft:spruce_slab[type=top,waterlogged=false]": 4,
     "minecraft:spruce_trapdoor[facing=north,half=top,open=false,powered=false,waterlogged=false]": 4,
-    "minecraft:stone": 69,
+    "minecraft:stone": 70,
     "minecraft:stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 6,
     "minecraft:stone_brick_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 12,
     "minecraft:stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 23,
-    "minecraft:stone_brick_stairs[facing=south,half=top,shape=straight,waterlogged=false]": 29,
+    "minecraft:stone_brick_stairs[facing=south,half=top,shape=straight,waterlogged=false]": 21,
     "minecraft:stone_brick_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 6,
     "minecraft:stone_brick_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]": 1,
     "minecraft:stone_brick_wall[east=low,north=none,south=none,up=true,waterlogged=false,west=none]": 1,
     "minecraft:stone_brick_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=low]": 1,
-    "minecraft:stone_bricks": 678,
+    "minecraft:stone_bricks": 705,
     "minecraft:stone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 4,
     "minecraft:stone_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 3,
     "minecraft:white_wall_banner[facing=north]": 4

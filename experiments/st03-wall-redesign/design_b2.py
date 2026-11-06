@@ -102,7 +102,7 @@ def pier(c, a, b):
 # -------------------------------------------------------------------------------------------------------- bays
 def bay(c, a, b, hoard):
     """Two recessed niches outside (a+1..a+2, b-2..b-1; y4..6, z1 removed) with an arrow loop each, a plain pilaster
-    between them, and a matching recess on the inside face behind the pilaster (the core stays at least 1 thick)."""
+    between them, and an inside pilaster at z4 behind it."""
     for lo in (a + 1, b - 2):
         for x in (lo, lo + 1):
             for y in (4, 5, 6):
@@ -113,10 +113,10 @@ def bay(c, a, b, hoard):
         del c[(x, 5, 2)]
         del c[(x, 6, 2)]
         del c[(x, 5, 3)]
-    for x in (a + 3, b - 3):  # inside recess behind the outside pilaster, timber lintel
-        for y in (4, 5, 6):
-            del c[(x, y, 3)]
-        stairs(c, x, 7, 3, "dark_oak", "north", half="top")
+    for x in (a + 3, b - 3):  # inside pilaster answering the outside pilaster, with a dark-oak capital
+        for y in (2, 3, 4, 5, 6):
+            c.put(x, y, 4, rubble(x, y, 4) if y <= 2 else ashlar(x, y, 4))
+        stairs(c, x, 7, 4, "dark_oak", "north", half="top")
 
 
 def hoarding(c, a, b):
@@ -125,7 +125,10 @@ def hoarding(c, a, b):
     h = list(range(a, b + 1))
     posts = (a, a + 3, a + 4, b)
     for i, x in enumerate(h):
-        stairs(c, x, 6, 0, "stone_brick", "south", half="top")  # corbel course
+        if x in posts:  # dark-oak bracket under each joist, stone corbel stairs between
+            stairs(c, x, 6, 0, "dark_oak", "south", half="top")
+        else:
+            stairs(c, x, 6, 0, "stone_brick", "south", half="top")
         del c[(x, 8, 1)]  # the box interior replaces the deck at z1
         if x in posts:  # joists
             log(c, x, 7, 0, "z")
@@ -180,11 +183,13 @@ def end_mass(c, a, b):
 # --------------------------------------------------------------------------------------------------- parapet
 def parapet(c, L, parts, skip):
     """Stone parapet set back to z1 (the hoardings project in front of it at z0): a moulding of upside-down stairs at
-    z0 y8, sill y9, merlons y10..11 and caps y12. Piers are solid 3-wide merlons; each open bay is M M C M M C M M."""
+    z0 y8, sill y9, merlons y10..11 and caps y12. Each open bay together with its two piers (14 columns) reads
+    M M C M M C M M C M M C M M, symmetric; the piers are no taller than the bay."""
     crenel = set()
-    for kind, a, b in parts:
+    for i, (kind, a, b) in enumerate(parts):
         if kind == "bayS":
-            crenel |= {a + 2, a + 5}
+            lo = a - P  # the pier before the bay
+            crenel |= {lo + 2, lo + 5, lo + 8, lo + 11}
     for x in range(L):
         if x in skip:
             continue

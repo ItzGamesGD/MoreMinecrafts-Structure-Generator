@@ -1,6 +1,6 @@
 {
   "air": "omit",
-  "blocks": 3442,
+  "blocks": 3550,
   "cells": 5590,
   "config": "exports/structures/ruined_watchtower.toml",
   "connectivity": {
@@ -965,9 +965,9 @@
       "west"
     ]
   },
-  "output": "/tmp/tmpwdew8zd1/pack/data/moreminecrafts/structure/seam01/st03_wall_86.nbt",
-  "output_sha256": "26534a037944439cebd4c4d1d212f7922a04d198b31c59b4dbfdffa61bc81715",
-  "palette": 41,
+  "output": "/tmp/tmp1v1l4lnt/pack/data/moreminecrafts/structure/seam01/st03_wall_86.nbt",
+  "output_sha256": "6b60753225bafa068b5c391b48453436ab2e132339c91f357d017fd0765c018c",
+  "palette": 42,
   "size": [
     86,
     13,
@@ -981,9 +981,9 @@
       0,
       0
     ],
-    "palette_entries": 38,
-    "path": "/tmp/tmpwdew8zd1/st03_wall_86.schem",
-    "sha256": "9ee967c69940178e0d71b51f8c09db1bb1bd6b257d6ec68921a536054927f5ce",
+    "palette_entries": 39,
+    "path": "/tmp/tmp1v1l4lnt/st03_wall_86.schem",
+    "sha256": "eb64242788bebaf47b6559898969d5bf2fe1d6e07ccea6bce9180a3106b39d76",
     "size": [
       86,
       13,
@@ -1527,10 +1527,19 @@
       "pos": [
         9,
         7,
-        3
+        4
+      ],
+      "reason": "outside_template",
+      "side": "south"
+    },
+    {
+      "pos": [
+        9,
+        7,
+        4
       ],
       "reason": "omitted_air",
-      "side": "south"
+      "side": "west"
     },
     {
       "pos": [
@@ -1590,9 +1599,18 @@
       "pos": [
         10,
         7,
-        3
+        4
       ],
       "reason": "omitted_air",
+      "side": "east"
+    },
+    {
+      "pos": [
+        10,
+        7,
+        4
+      ],
+      "reason": "outside_template",
       "side": "south"
     },
     {
@@ -1908,6 +1926,15 @@
         1
       ],
       "reason": "omitted_air",
+      "side": "east"
+    },
+    {
+      "pos": [
+        15,
+        12,
+        1
+      ],
+      "reason": "omitted_air",
       "side": "south"
     },
     {
@@ -1963,24 +1990,6 @@
       ],
       "reason": "outside_template",
       "side": "north"
-    },
-    {
-      "pos": [
-        16,
-        12,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "north"
-    },
-    {
-      "pos": [
-        16,
-        12,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "south"
     },
     {
       "pos": [
@@ -2026,6 +2035,15 @@
       ],
       "reason": "omitted_air",
       "side": "south"
+    },
+    {
+      "pos": [
+        17,
+        12,
+        1
+      ],
+      "reason": "omitted_air",
+      "side": "west"
     },
     {
       "pos": [
@@ -2148,10 +2166,19 @@
       "pos": [
         20,
         7,
-        3
+        4
+      ],
+      "reason": "outside_template",
+      "side": "south"
+    },
+    {
+      "pos": [
+        20,
+        7,
+        4
       ],
       "reason": "omitted_air",
-      "side": "south"
+      "side": "west"
     },
     {
       "pos": [
@@ -2211,9 +2238,18 @@
       "pos": [
         21,
         7,
-        3
+        4
       ],
       "reason": "omitted_air",
+      "side": "east"
+    },
+    {
+      "pos": [
+        21,
+        7,
+        4
+      ],
+      "reason": "outside_template",
       "side": "south"
     },
     {
@@ -2394,6 +2430,15 @@
         1
       ],
       "reason": "omitted_air",
+      "side": "east"
+    },
+    {
+      "pos": [
+        24,
+        12,
+        1
+      ],
+      "reason": "omitted_air",
       "side": "south"
     },
     {
@@ -2452,24 +2497,6 @@
     },
     {
       "pos": [
-        25,
-        12,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "north"
-    },
-    {
-      "pos": [
-        25,
-        12,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "south"
-    },
-    {
-      "pos": [
         26,
         1,
         4
@@ -2503,6 +2530,15 @@
       ],
       "reason": "omitted_air",
       "side": "south"
+    },
+    {
+      "pos": [
+        26,
+        12,
+        1
+      ],
+      "reason": "omitted_air",
+      "side": "west"
     },
     {
       "pos": [
@@ -2805,10 +2841,19 @@
       "pos": [
         31,
         7,
-        3
+        4
+      ],
+      "reason": "outside_template",
+      "side": "south"
+    },
+    {
+      "pos": [
+        31,
+        7,
+        4
       ],
       "reason": "omitted_air",
-      "side": "south"
+      "side": "west"
     },
     {
       "pos": [
@@ -2868,9 +2913,18 @@
       "pos": [
         32,
         7,
-        3
+        4
       ],
       "reason": "omitted_air",
+      "side": "east"
+    },
+    {
+      "pos": [
+        32,
+        7,
+        4
+      ],
+      "reason": "outside_template",
       "side": "south"
     },
     {
@@ -3204,6 +3258,15 @@
         1
       ],
       "reason": "omitted_air",
+      "side": "east"
+    },
+    {
+      "pos": [
+        37,
+        12,
+        1
+      ],
+      "reason": "omitted_air",
       "side": "south"
     },
     {
@@ -3259,24 +3322,6 @@
       ],
       "reason": "outside_template",
       "side": "north"
-    },
-    {
-      "pos": [
-        38,
-        12,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "north"
-    },
-    {
-      "pos": [
-        38,
-        12,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "south"
     },
     {
       "pos": [
@@ -3322,6 +3367,15 @@
       ],
       "reason": "omitted_air",
       "side": "south"
+    },
+    {
+      "pos": [
+        39,
+        12,
+        1
+      ],
+      "reason": "omitted_air",
+      "side": "west"
     },
     {
       "pos": [
@@ -3444,10 +3498,19 @@
       "pos": [
         42,
         7,
-        3
+        4
+      ],
+      "reason": "outside_template",
+      "side": "south"
+    },
+    {
+      "pos": [
+        42,
+        7,
+        4
       ],
       "reason": "omitted_air",
-      "side": "south"
+      "side": "west"
     },
     {
       "pos": [
@@ -3507,9 +3570,18 @@
       "pos": [
         43,
         7,
-        3
+        4
       ],
       "reason": "omitted_air",
+      "side": "east"
+    },
+    {
+      "pos": [
+        43,
+        7,
+        4
+      ],
+      "reason": "outside_template",
       "side": "south"
     },
     {
@@ -3690,6 +3762,15 @@
         1
       ],
       "reason": "omitted_air",
+      "side": "east"
+    },
+    {
+      "pos": [
+        46,
+        12,
+        1
+      ],
+      "reason": "omitted_air",
       "side": "south"
     },
     {
@@ -3748,24 +3829,6 @@
     },
     {
       "pos": [
-        47,
-        12,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "north"
-    },
-    {
-      "pos": [
-        47,
-        12,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "south"
-    },
-    {
-      "pos": [
         48,
         1,
         4
@@ -3799,6 +3862,15 @@
       ],
       "reason": "omitted_air",
       "side": "south"
+    },
+    {
+      "pos": [
+        48,
+        12,
+        1
+      ],
+      "reason": "omitted_air",
+      "side": "west"
     },
     {
       "pos": [
@@ -4101,10 +4173,19 @@
       "pos": [
         53,
         7,
-        3
+        4
+      ],
+      "reason": "outside_template",
+      "side": "south"
+    },
+    {
+      "pos": [
+        53,
+        7,
+        4
       ],
       "reason": "omitted_air",
-      "side": "south"
+      "side": "west"
     },
     {
       "pos": [
@@ -4164,9 +4245,18 @@
       "pos": [
         54,
         7,
-        3
+        4
       ],
       "reason": "omitted_air",
+      "side": "east"
+    },
+    {
+      "pos": [
+        54,
+        7,
+        4
+      ],
+      "reason": "outside_template",
       "side": "south"
     },
     {
@@ -4500,6 +4590,15 @@
         1
       ],
       "reason": "omitted_air",
+      "side": "east"
+    },
+    {
+      "pos": [
+        59,
+        12,
+        1
+      ],
+      "reason": "omitted_air",
       "side": "south"
     },
     {
@@ -4555,24 +4654,6 @@
       ],
       "reason": "outside_template",
       "side": "north"
-    },
-    {
-      "pos": [
-        60,
-        12,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "north"
-    },
-    {
-      "pos": [
-        60,
-        12,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "south"
     },
     {
       "pos": [
@@ -4618,6 +4699,15 @@
       ],
       "reason": "omitted_air",
       "side": "south"
+    },
+    {
+      "pos": [
+        61,
+        12,
+        1
+      ],
+      "reason": "omitted_air",
+      "side": "west"
     },
     {
       "pos": [
@@ -4740,10 +4830,19 @@
       "pos": [
         64,
         7,
-        3
+        4
+      ],
+      "reason": "outside_template",
+      "side": "south"
+    },
+    {
+      "pos": [
+        64,
+        7,
+        4
       ],
       "reason": "omitted_air",
-      "side": "south"
+      "side": "west"
     },
     {
       "pos": [
@@ -4803,9 +4902,18 @@
       "pos": [
         65,
         7,
-        3
+        4
       ],
       "reason": "omitted_air",
+      "side": "east"
+    },
+    {
+      "pos": [
+        65,
+        7,
+        4
+      ],
+      "reason": "outside_template",
       "side": "south"
     },
     {
@@ -4986,6 +5094,15 @@
         1
       ],
       "reason": "omitted_air",
+      "side": "east"
+    },
+    {
+      "pos": [
+        68,
+        12,
+        1
+      ],
+      "reason": "omitted_air",
       "side": "south"
     },
     {
@@ -5044,24 +5161,6 @@
     },
     {
       "pos": [
-        69,
-        12,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "north"
-    },
-    {
-      "pos": [
-        69,
-        12,
-        1
-      ],
-      "reason": "omitted_air",
-      "side": "south"
-    },
-    {
-      "pos": [
         70,
         1,
         4
@@ -5095,6 +5194,15 @@
       ],
       "reason": "omitted_air",
       "side": "south"
+    },
+    {
+      "pos": [
+        70,
+        12,
+        1
+      ],
+      "reason": "omitted_air",
+      "side": "west"
     },
     {
       "pos": [
@@ -5379,10 +5487,19 @@
       "pos": [
         75,
         7,
-        3
+        4
+      ],
+      "reason": "outside_template",
+      "side": "south"
+    },
+    {
+      "pos": [
+        75,
+        7,
+        4
       ],
       "reason": "omitted_air",
-      "side": "south"
+      "side": "west"
     },
     {
       "pos": [
@@ -5442,9 +5559,18 @@
       "pos": [
         76,
         7,
-        3
+        4
       ],
       "reason": "omitted_air",
+      "side": "east"
+    },
+    {
+      "pos": [
+        76,
+        7,
+        4
+      ],
+      "reason": "outside_template",
       "side": "south"
     },
     {
@@ -5984,10 +6110,10 @@
     "minecraft:andesite_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 15,
     "minecraft:andesite_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 10,
     "minecraft:barrel[facing=up,open=false]": 6,
-    "minecraft:cobblestone": 466,
+    "minecraft:cobblestone": 475,
     "minecraft:cobblestone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 30,
     "minecraft:cobblestone_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 24,
-    "minecraft:cracked_stone_bricks": 120,
+    "minecraft:cracked_stone_bricks": 130,
     "minecraft:dark_oak_fence[east=false,north=false,south=false,waterlogged=false,west=true]": 3,
     "minecraft:dark_oak_fence[east=true,north=false,south=false,waterlogged=false,west=false]": 3,
     "minecraft:dark_oak_fence[east=true,north=false,south=false,waterlogged=false,west=true]": 26,
@@ -5996,26 +6122,27 @@
     "minecraft:dark_oak_log[axis=z]": 32,
     "minecraft:dark_oak_stairs[facing=north,half=top,shape=straight,waterlogged=false]": 14,
     "minecraft:dark_oak_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 64,
+    "minecraft:dark_oak_stairs[facing=south,half=top,shape=straight,waterlogged=false]": 16,
     "minecraft:lantern[hanging=true,waterlogged=false]": 2,
     "minecraft:mossy_cobblestone": 93,
     "minecraft:mossy_cobblestone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 16,
     "minecraft:mossy_cobblestone_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 12,
     "minecraft:mossy_stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 1,
-    "minecraft:mossy_stone_bricks": 54,
+    "minecraft:mossy_stone_bricks": 66,
     "minecraft:spruce_log[axis=x]": 6,
     "minecraft:spruce_planks": 48,
     "minecraft:spruce_slab[type=top,waterlogged=false]": 8,
     "minecraft:spruce_trapdoor[facing=north,half=top,open=false,powered=false,waterlogged=false]": 8,
-    "minecraft:stone": 176,
+    "minecraft:stone": 178,
     "minecraft:stone_brick_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 16,
     "minecraft:stone_brick_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 12,
-    "minecraft:stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 57,
-    "minecraft:stone_brick_stairs[facing=south,half=top,shape=straight,waterlogged=false]": 96,
+    "minecraft:stone_brick_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 51,
+    "minecraft:stone_brick_stairs[facing=south,half=top,shape=straight,waterlogged=false]": 80,
     "minecraft:stone_brick_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 16,
     "minecraft:stone_brick_wall[east=low,north=none,south=none,up=false,waterlogged=false,west=low]": 36,
     "minecraft:stone_brick_wall[east=low,north=none,south=none,up=true,waterlogged=false,west=none]": 3,
     "minecraft:stone_brick_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=low]": 3,
-    "minecraft:stone_bricks": 1661,
+    "minecraft:stone_bricks": 1742,
     "minecraft:stone_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 17,
     "minecraft:stone_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 10,
     "minecraft:white_wall_banner[facing=east]": 1,
