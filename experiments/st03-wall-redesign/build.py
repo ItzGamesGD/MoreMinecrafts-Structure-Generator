@@ -11,7 +11,7 @@ from pathlib import Path
 from common import export
 
 ROOT = Path(__file__).resolve().parent
-DESIGNS = {"a": "design_a", "b": "design_b", "c": "design_c", "b2": "design_b2"}
+DESIGNS = {"a": "design_a", "b": "design_b", "c": "design_c", "b2": "design_b2", "f": "design_f"}
 
 
 def design(key):
