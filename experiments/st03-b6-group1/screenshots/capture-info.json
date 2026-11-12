@@ -1,0 +1,679 @@
+{
+ "minecraft": "26.3",
+ "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+ "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+ "nbt_sha256": {
+  "house_b": "35dc4b727c87bbb839212c9eab0b44344f4eaf385df9113b930285374ceeb5a1",
+  "house_c": "fb970d7e2cd5f0cf8e38247462c9d7032008f5abde6eef5286b758b5a83b42a9",
+  "house_d": "22c58fd1d3bdf9dd63b596a92926a55c0c85a8707c0a8996c202025fcb9f1291",
+  "kitchen": "90fec8a3d25e3770566888318fc53d494fe8d54580564def01fa692eafe20653",
+  "smithy": "ff3599412f190b648bb91c2797cb57932b4c8824f55c31c054fd889cabb22801",
+  "cart_shed": "dd481cb62ae89b7b35fc324d528db0ae5bda56a740ecc3e83bb81bc5a174aa8a"
+ },
+ "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+ "world": "flat, plains, noon, clear; night_vision applied for the interior views only",
+ "placement": "place template experimental:<name> <30*i> -61 0 none (floor y=0 flush with grass; no terrain correction)",
+ "shots": [
+  {
+   "view": "house_b_front",
+   "tp": [
+    4.5,
+    -57,
+    17.5,
+    180,
+    6
+   ],
+   "file": "house_b_front.png",
+   "sha256": "77979ed05327619c02d92bcaaaa79eda16ed543276f53064d60050c147a64fdd"
+  },
+  {
+   "view": "house_b_back",
+   "tp": [
+    4.5,
+    -57,
+    -10.5,
+    0,
+    6
+   ],
+   "file": "house_b_back.png",
+   "sha256": "a46046ff2a27b1e1799e9c692b04adcfc544f30109c914647db60c92e88ba67a"
+  },
+  {
+   "view": "house_b_west",
+   "tp": [
+    -10.5,
+    -57,
+    3.5,
+    -90,
+    6
+   ],
+   "file": "house_b_west.png",
+   "sha256": "59774365b23e9c3a57a89d56dc2f2bd174090aeac50c35c4201e9c1508722abb"
+  },
+  {
+   "view": "house_b_east",
+   "tp": [
+    18.5,
+    -57,
+    3.5,
+    90,
+    6
+   ],
+   "file": "house_b_east.png",
+   "sha256": "1566d3361483f970490a2b15b34cdc6f05539f9ccbb464c910423ee9452e2ce3"
+  },
+  {
+   "view": "house_b_diag_se",
+   "tp": [
+    15.5,
+    -56,
+    14.5,
+    135,
+    10
+   ],
+   "file": "house_b_diag_se.png",
+   "sha256": "8f3a52a03c9ed2ecfaefbd3710460c1b4880fbf35ffe1eb58a2eacacf239e699"
+  },
+  {
+   "view": "house_b_diag_nw",
+   "tp": [
+    -7.5,
+    -56,
+    -7.5,
+    -45,
+    10
+   ],
+   "file": "house_b_diag_nw.png",
+   "sha256": "6d6687f6df73863d0bc46ab618d4d290a5cc7bf967a2b774765610433aa2b7aa"
+  },
+  {
+   "view": "house_b_entrance",
+   "tp": [
+    4.5,
+    -59.5,
+    12.0,
+    180,
+    4
+   ],
+   "file": "house_b_entrance.png",
+   "sha256": "040221fd5fede7c695fd24eb2227c7b96176d3fe824c87f4ba00d26a71e5fb11"
+  },
+  {
+   "view": "house_b_interior_beds",
+   "tp": [
+    6.5,
+    -60,
+    4.5,
+    135,
+    20
+   ],
+   "file": "house_b_interior_beds.png",
+   "sha256": "0b68cfe56d80d27e4284cd6435927456eff50bdb6042ac2841b5047f4673769c"
+  },
+  {
+   "view": "house_b_interior_work",
+   "tp": [
+    1.5,
+    -60,
+    4.5,
+    -135,
+    20
+   ],
+   "file": "house_b_interior_work.png",
+   "sha256": "94a474b5ee1be099e317b7ea5aac9f84491f8d4677cbe52940071f28940e59e4"
+  },
+  {
+   "view": "house_c_front",
+   "tp": [
+    33.5,
+    -57,
+    17.5,
+    180,
+    6
+   ],
+   "file": "house_c_front.png",
+   "sha256": "d3671394ff236d16fea98207f2756352f3b9ad795cfa35ddf09eb58b7a8601e8"
+  },
+  {
+   "view": "house_c_back",
+   "tp": [
+    33.5,
+    -57,
+    -10.5,
+    0,
+    6
+   ],
+   "file": "house_c_back.png",
+   "sha256": "8530f38a46e65a689e61b4929d01f46af73f26d83f8f95c61bf04746b0c5edd6"
+  },
+  {
+   "view": "house_c_west",
+   "tp": [
+    19.5,
+    -57,
+    3.5,
+    -90,
+    6
+   ],
+   "file": "house_c_west.png",
+   "sha256": "1b24cde157eb0af89df9db623cc056536d8fc98e220dc0f13cd7728fc7ee0478"
+  },
+  {
+   "view": "house_c_east",
+   "tp": [
+    46.5,
+    -57,
+    3.5,
+    90,
+    6
+   ],
+   "file": "house_c_east.png",
+   "sha256": "7b58cdd00723d148549dc0ed7a0a2533ddcef4ba2c9c3dac2494e6bdcc0d7a38"
+  },
+  {
+   "view": "house_c_diag_se",
+   "tp": [
+    43.5,
+    -56,
+    14.5,
+    135,
+    10
+   ],
+   "file": "house_c_diag_se.png",
+   "sha256": "cb04f779c4cb783f9bdf466d86f06620a9fd02dce296c43d4c09898ec6d3e18b"
+  },
+  {
+   "view": "house_c_diag_nw",
+   "tp": [
+    22.5,
+    -56,
+    -7.5,
+    -45,
+    10
+   ],
+   "file": "house_c_diag_nw.png",
+   "sha256": "5eadb8c32762c9e66d6c0fb4094bf37f96eab5bf300bc2236ff61cd12209efd2"
+  },
+  {
+   "view": "house_c_entrance",
+   "tp": [
+    33.5,
+    -59.5,
+    12.0,
+    180,
+    4
+   ],
+   "file": "house_c_entrance.png",
+   "sha256": "e8b5a313935068015c38244ff1fe000541480e3f18a71e846cce1802d3cec776"
+  },
+  {
+   "view": "house_c_interior_bed",
+   "tp": [
+    35.5,
+    -60,
+    4.5,
+    135,
+    20
+   ],
+   "file": "house_c_interior_bed.png",
+   "sha256": "bfeee6949e9890e3f0fbf5ed102c0d386b1af47ed3e49b7da90965bf605e92d7"
+  },
+  {
+   "view": "house_c_interior_hearth",
+   "tp": [
+    31.5,
+    -60,
+    4.5,
+    -120,
+    15
+   ],
+   "file": "house_c_interior_hearth.png",
+   "sha256": "6f5c267fcffcf4c2e9b29a66052fb32bce7f096cd05c9a1b351cea2193ee8d96"
+  },
+  {
+   "view": "house_d_front",
+   "tp": [
+    63.5,
+    -57,
+    17.5,
+    180,
+    6
+   ],
+   "file": "house_d_front.png",
+   "sha256": "54cdecaf8772bdde9454a78777992acee2c0106cf2539e47bad682c30fb345e7"
+  },
+  {
+   "view": "house_d_back",
+   "tp": [
+    63.5,
+    -57,
+    -10.5,
+    0,
+    6
+   ],
+   "file": "house_d_back.png",
+   "sha256": "1e3f89df020acbeea54ec57e87a02453882d10a7efd9c994a77cc7b8375330cd"
+  },
+  {
+   "view": "house_d_west",
+   "tp": [
+    49.5,
+    -57,
+    3.5,
+    -90,
+    6
+   ],
+   "file": "house_d_west.png",
+   "sha256": "a02a63e0fe3d7855f89776b64c7f34138e3bc0e701f057ca58d625a4dbaa8f0f"
+  },
+  {
+   "view": "house_d_east",
+   "tp": [
+    76.5,
+    -57,
+    3.5,
+    90,
+    6
+   ],
+   "file": "house_d_east.png",
+   "sha256": "6a0af5a595340b081279d9fe5f945a86b178bb1e07c5ae7444cc0ed4d1d2515f"
+  },
+  {
+   "view": "house_d_diag_se",
+   "tp": [
+    73.5,
+    -56,
+    14.5,
+    135,
+    10
+   ],
+   "file": "house_d_diag_se.png",
+   "sha256": "509a8e58795a166b9eb21a5c3e4ecefc03d34681728abf3bbc466926155977c9"
+  },
+  {
+   "view": "house_d_diag_nw",
+   "tp": [
+    52.5,
+    -56,
+    -7.5,
+    -45,
+    10
+   ],
+   "file": "house_d_diag_nw.png",
+   "sha256": "b722b24a772f8de60a22fbed2a11ee0478c379b6bbd75ad5e02e8f98197f9f37"
+  },
+  {
+   "view": "house_d_entrance",
+   "tp": [
+    63.5,
+    -59.5,
+    12.0,
+    180,
+    4
+   ],
+   "file": "house_d_entrance.png",
+   "sha256": "9a91f1c8461ca593ef9329e32b209a47d5837c1d0b044fad5266d14ac259a270"
+  },
+  {
+   "view": "house_d_interior_guard",
+   "tp": [
+    65.5,
+    -60,
+    4.5,
+    135,
+    20
+   ],
+   "file": "house_d_interior_guard.png",
+   "sha256": "21e02f8cfa3a41ceaa710128a332bb0e7e5d4f69382c42639db800a300d6f8b2"
+  },
+  {
+   "view": "house_d_interior_door",
+   "tp": [
+    61.5,
+    -60,
+    1.5,
+    -45,
+    10
+   ],
+   "file": "house_d_interior_door.png",
+   "sha256": "22bb22a26ff08b32ecd2ea766d0d8ac6f05c912dbfa2fc50fb82b962919669ed"
+  },
+  {
+   "view": "kitchen_front",
+   "tp": [
+    94.5,
+    -57,
+    19.5,
+    180,
+    6
+   ],
+   "file": "kitchen_front.png",
+   "sha256": "ebdeac26cd7d330df71b3eb042911151dac5ccd13718f811a94dc041d2c09708"
+  },
+  {
+   "view": "kitchen_back",
+   "tp": [
+    94.5,
+    -57,
+    -10.5,
+    0,
+    6
+   ],
+   "file": "kitchen_back.png",
+   "sha256": "749496e0058f13dae530c57576a38c9521e807860ea5eaf6d9d58546cc77b7dd"
+  },
+  {
+   "view": "kitchen_west",
+   "tp": [
+    79.5,
+    -57,
+    4.5,
+    -90,
+    6
+   ],
+   "file": "kitchen_west.png",
+   "sha256": "01cefb87e7af41a39211f4700d4d05f88f0d8ec861d93002fb935da3db741b2a"
+  },
+  {
+   "view": "kitchen_east",
+   "tp": [
+    108.5,
+    -57,
+    4.5,
+    90,
+    6
+   ],
+   "file": "kitchen_east.png",
+   "sha256": "a7b17accd6325e7acde2f7b9fe746799196fd8082ca51cc31d38e883cbe84c3f"
+  },
+  {
+   "view": "kitchen_diag_se",
+   "tp": [
+    105.5,
+    -56,
+    16.5,
+    135,
+    10
+   ],
+   "file": "kitchen_diag_se.png",
+   "sha256": "cd564bde30278d66d65fa36f5de05de40350093db89dd8420664e5441d3c567a"
+  },
+  {
+   "view": "kitchen_diag_nw",
+   "tp": [
+    82.5,
+    -56,
+    -7.5,
+    -45,
+    10
+   ],
+   "file": "kitchen_diag_nw.png",
+   "sha256": "849641b9e277182843bdcea346edfd82befb0d8607176194ebf470cba9aa0ef5"
+  },
+  {
+   "view": "kitchen_entrance",
+   "tp": [
+    94.5,
+    -59.5,
+    14.0,
+    180,
+    4
+   ],
+   "file": "kitchen_entrance.png",
+   "sha256": "17a7030671d1337574c9bbcdb80460281db7341e6ca20d72fa017b2d38b8ef8b"
+  },
+  {
+   "view": "kitchen_interior_hearth",
+   "tp": [
+    94.5,
+    -60,
+    6.5,
+    180,
+    12
+   ],
+   "file": "kitchen_interior_hearth.png",
+   "sha256": "ab16583b94230b9418fcd1faa55501122bddab51093ebae0e5b95bf81c765813"
+  },
+  {
+   "view": "kitchen_interior_storage",
+   "tp": [
+    93.0,
+    -60,
+    4.5,
+    -90,
+    12
+   ],
+   "file": "kitchen_interior_storage.png",
+   "sha256": "19450efe7b2a23c5bb140bb5553324a97f9bed259dad1f29d64d654a99b6d288"
+  },
+  {
+   "view": "kitchen_interior_counter",
+   "tp": [
+    96.0,
+    -60,
+    4.5,
+    90,
+    12
+   ],
+   "file": "kitchen_interior_counter.png",
+   "sha256": "85e4770d5feeba62ff0a52b735bb723d71b387c51c68373e0a4ce2c1d6ee4f99"
+  },
+  {
+   "view": "smithy_front",
+   "tp": [
+    124.5,
+    -57,
+    19.5,
+    180,
+    6
+   ],
+   "file": "smithy_front.png",
+   "sha256": "f250b4fc0ec7dd16a6fe396df9cced0986c23ee44f0d42ed4be8295c51e7713f"
+  },
+  {
+   "view": "smithy_back",
+   "tp": [
+    124.5,
+    -57,
+    -10.5,
+    0,
+    6
+   ],
+   "file": "smithy_back.png",
+   "sha256": "1bd2003896e9ec0bd2afb8e25ce0911e2c70c81c8acb7bf2b701aa8debb3832f"
+  },
+  {
+   "view": "smithy_west",
+   "tp": [
+    109.5,
+    -57,
+    4.5,
+    -90,
+    6
+   ],
+   "file": "smithy_west.png",
+   "sha256": "feec8f16ec652e96e693d152deeedecfa2e68ec68f4b86f95a5de6637dde54ca"
+  },
+  {
+   "view": "smithy_east",
+   "tp": [
+    138.5,
+    -57,
+    4.5,
+    90,
+    6
+   ],
+   "file": "smithy_east.png",
+   "sha256": "04f328d57662905aaee022cd362399f2f9cf51b14f5a63e4b15c4256d9073d5f"
+  },
+  {
+   "view": "smithy_diag_se",
+   "tp": [
+    135.5,
+    -56,
+    16.5,
+    135,
+    10
+   ],
+   "file": "smithy_diag_se.png",
+   "sha256": "b4de6425b0f008afc25f12b596d09d5f44ffbeb22f62867035489918f3a5723e"
+  },
+  {
+   "view": "smithy_diag_nw",
+   "tp": [
+    112.5,
+    -56,
+    -7.5,
+    -45,
+    10
+   ],
+   "file": "smithy_diag_nw.png",
+   "sha256": "7f8bf115d605242cde18fc5e69f9a00249a80a96d2cacd077a5a3a8e2fd4c648"
+  },
+  {
+   "view": "smithy_entrance",
+   "tp": [
+    124.5,
+    -59.5,
+    14.0,
+    180,
+    4
+   ],
+   "file": "smithy_entrance.png",
+   "sha256": "4ea67fa608cd6a10248d7311d7ff564b1d7ac43e2592a14d945cc1a376115a62"
+  },
+  {
+   "view": "smithy_interior_forge",
+   "tp": [
+    124.5,
+    -60,
+    6.5,
+    180,
+    12
+   ],
+   "file": "smithy_interior_forge.png",
+   "sha256": "1069aeaa1c2ce0ec8e47f1456d21396076b3c1defa9686d664226aea035bea4b"
+  },
+  {
+   "view": "smithy_interior_side",
+   "tp": [
+    126.5,
+    -60,
+    5.5,
+    90,
+    12
+   ],
+   "file": "smithy_interior_side.png",
+   "sha256": "a3db9c4c927dfeaf2be6b042993090d527bb8260f4a1b399c4f89d9ee604a297"
+  },
+  {
+   "view": "cart_shed_front",
+   "tp": [
+    154.0,
+    -57,
+    17.5,
+    180,
+    6
+   ],
+   "file": "cart_shed_front.png",
+   "sha256": "e796e99cb31f4e4832eb03c3919e781418d12ac1436366f8e92353306902c208"
+  },
+  {
+   "view": "cart_shed_back",
+   "tp": [
+    154.0,
+    -57,
+    -10.5,
+    0,
+    6
+   ],
+   "file": "cart_shed_back.png",
+   "sha256": "8a305d6f813f96eece49c255d6d018ebd92ade3416f21fc0f3742353e45977d6"
+  },
+  {
+   "view": "cart_shed_west",
+   "tp": [
+    139.5,
+    -57,
+    3.5,
+    -90,
+    6
+   ],
+   "file": "cart_shed_west.png",
+   "sha256": "7df6ae0c971326e4e9f07fa876e562704dc02cbce11657e2a94079ff56ad6c1e"
+  },
+  {
+   "view": "cart_shed_east",
+   "tp": [
+    167.5,
+    -57,
+    3.5,
+    90,
+    6
+   ],
+   "file": "cart_shed_east.png",
+   "sha256": "b030979dab0a5e52684e0a68c61ff1857684fbb4e635a94506ace0dd5a7c265f"
+  },
+  {
+   "view": "cart_shed_diag_se",
+   "tp": [
+    164.5,
+    -56,
+    14.5,
+    135,
+    10
+   ],
+   "file": "cart_shed_diag_se.png",
+   "sha256": "002f041dcd4dba36e9faef850dd8d9d6dbe24d9012108b35eb004ff60edca1c4"
+  },
+  {
+   "view": "cart_shed_diag_nw",
+   "tp": [
+    142.5,
+    -56,
+    -7.5,
+    -45,
+    10
+   ],
+   "file": "cart_shed_diag_nw.png",
+   "sha256": "f0e2dd16db50a329dba9ca7298994d4b48ec6fbea23df62f6efc57d8a5414387"
+  },
+  {
+   "view": "cart_shed_entrance",
+   "tp": [
+    154.0,
+    -59.5,
+    12.0,
+    180,
+    4
+   ],
+   "file": "cart_shed_entrance.png",
+   "sha256": "e50c1cc2e7fb6ad3e7ec10af569add74bac8e081f1d139ec3b2688a3c9f36ad2"
+  },
+  {
+   "view": "cart_shed_interior_cart",
+   "tp": [
+    152.5,
+    -60,
+    5.5,
+    -135,
+    15
+   ],
+   "file": "cart_shed_interior_cart.png",
+   "sha256": "6de5a1d39828a41ee74cca3dd5fc2c13dd7ef157fbaf2b69e7c650efb31d8117"
+  },
+  {
+   "view": "cart_shed_interior_storage",
+   "tp": [
+    155.5,
+    -60,
+    5.5,
+    135,
+    15
+   ],
+   "file": "cart_shed_interior_storage.png",
+   "sha256": "77a0239bf405f52ebb3b76d1a10c776b34b7e94114bbb1acee7b707d5bd479d5"
+  }
+ ],
+ "note": "smithy_interior_side re-captured in a second run (camera moved: the first run's view faced a wall); same NBT hashes, same setup."
+}
