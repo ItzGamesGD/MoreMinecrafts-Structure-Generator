@@ -27,8 +27,8 @@ Newly run on these NBT hashes (`check-result.json`, `screenshots/capture-info.js
 | Strict `place template` on the pinned 26.3 server, all four rotations, every cell compared | PASS | 6 modules × 4 rotations, 0 failures |
 | Appearance vs approved Q01–Q07 / Q11–Q14 (family, roofs, doorways, windows, bases, rooms) | PASS with notes | real 26.3 screenshots, 55 views (`screenshots/`); owner visual review still pending |
 | Real 26.3 screenshots (exterior ×7 and interior ×2–3 per building) | PASS | unmodified vanilla client; one view (`smithy_interior_side`) re-shot after a bad camera angle |
-| Entrance and circulation: walk-in from outside, every workstation / bed / container has a reachable neighbour column | PASS | BFS on the template cells (`access.unreachable` empty); this found and fixed 5 blocked items (see below) |
-| Containers are real block entities and accept items (chest, barrel, furnace, blast furnace) | PASS | `item replace … container.0`, read back with `data get block`: 28 containers, all OK |
+| Entrance and circulation: walk-in from outside, every workstation / bed / container has a reachable neighbour column | PASS | BFS on the template cells (`access.unreachable` empty); this found and fixed 3 blocked items (see below) |
+| Containers are real block entities and accept items (chest, barrel, furnace, blast furnace) | PASS | `item replace … container.0`, read back with `data get block`: 26 containers, all OK |
 | Workstations present as real blocks | PASS | crafting table ×3, furnace ×5, blast furnace, anvil, grindstone ×3, smithing table, cauldron, water cauldron |
 | Fire (kitchen hearth) and water cauldron placed correctly | PASS | present right after placement; fire seen burning in the client screenshot |
 | Facing toward existing roads | UNTESTED | the repository has no road data (ground modules are unbuilt); all doors face south like House A (F11/F14) |
@@ -36,7 +36,7 @@ Newly run on these NBT hashes (`check-result.json`, `screenshots/capture-info.js
 | Collision with a walking player / real entity pathing | UNTESTED | only geometric BFS was run; no entity was walked through |
 | Loot tables | not in scope | all containers are empty (runtime decision) |
 
-Fixes made after the first run (blocking defects only): House B/C/D and the cart shed each had a container or workstation with no reachable neighbour cell (re-laid out); the hip roof corners were turned the wrong way (raised quarter at the outside corner), fixed in `lib.py`; `checks.py` uses its own rotation expectation because `live.rotate_props` handles neither log `axis` nor `facing=up`.
+Fixes made after the first run (blocking defects only): House C (crafting table), House D (chest) and the cart shed (barrel) each had an item with no reachable neighbour cell (re-laid out); the hip roof corners were turned the wrong way (raised quarter at the outside corner), fixed in `lib.py`; `checks.py` uses its own rotation expectation because `live.rotate_props` handles neither log `axis` nor `facing=up`.
 
 ## Approved items not fully delivered (reported, not changed)
 
