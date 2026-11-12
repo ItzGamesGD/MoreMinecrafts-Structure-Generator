@@ -18,23 +18,25 @@ def state_text(bid: str, props: dict[str, str]) -> str:
     return bid + ("[" + ",".join(f"{k}={v}" for k, v in sorted(props.items())) + "]" if props else "")
 
 
-def export_module(module: dict, source: dict, pack: Path) -> C.Result:
+def export_module(module: dict, source: dict, pack: Path, loot_table: str | None = None, file: str | None = None) -> C.Result:
     size = tuple(module["size"])
     assert tuple(box_size(source)) <= size, module["id"]
     states = {pos: state_text(b, pr) for pos, (b, pr) in source.items()}
-    schem = write_schem(pack.parent / f"{module['file']}.schem", states, size)
+    file = file or module["file"]
+    schem = write_schem(pack.parent / f"{file}.schem", states, size)
     config = C.Config(
         path=SAMPLE,
         source=schem,
         source_sha256=hashlib.sha256(schem.read_bytes()).hexdigest(),
         source_data_version=3953,
         target="26.3",
-        structure_id=f"moreminecrafts:seam01/{module['file']}",
+        structure_id=f"moreminecrafts:seam01/{file}",
         datapack=pack,
         reports=pack.parent / "reports",
         size=size,
         offset=(0, 0, 0),
         air=module["air"],
+        loot_table=loot_table,
     )
     result = C.convert(config)
     C.write(result)

@@ -46,7 +46,21 @@ ALLOW = {
     "minecraft:furnace": ("furnace", "minecraft:furnace", {}, {"lit": ["false"]}),  # lit needs burn time in the BE
     "minecraft:blast_furnace": ("blast_furnace", "minecraft:blast_furnace", {}, {"lit": ["false"]}),
     "minecraft:white_wall_banner": ("wall_banner", "minecraft:banner", {"patterns": OMINOUS_PATTERNS}, {}),
+    # Owner-approved additions (ST-03 group 1). Workstations: the game creates the empty block entity from the block.
+    "minecraft:smoker": ("smoker", "minecraft:smoker", {}, {"lit": ["false"]}),  # lit needs burn time in the BE
+    "minecraft:campfire": ("campfire", "minecraft:campfire", {}, {}),  # lit / signal_fire / waterlogged need no BE data
+    "minecraft:lectern": ("lectern", "minecraft:lectern", {}, {"has_book": ["false"]}),  # a book lives in the BE
 }
+# Coloured wall banners: the colour is the block, so the block entity is a plain `{id}` (no patterns). White keeps the
+# ominous pattern list above. Standing banners still have no vanilla template evidence and stay rejected.
+for _colour in (
+    "orange", "magenta", "light_blue", "yellow", "lime", "pink", "gray", "light_gray",
+    "cyan", "purple", "blue", "brown", "green", "red", "black",
+):  # fmt: skip
+    ALLOW[f"minecraft:{_colour}_wall_banner"] = ("wall_banner", "minecraft:banner", {}, {})
+# Blocks whose block entity may carry a loot table. The table id is not part of this policy: the converter writes it only
+# when the template config names one (`[options] loot_table`), once per container, never the contents.
+LOOT_TABLE_BLOCKS = {"minecraft:chest", "minecraft:barrel"}
 # Vanilla family of each block (what the jar evidence counts). Standing banners have no evidence and are not allowed.
 FAMILY_OF = {
     "chest": "chest",
@@ -54,6 +68,9 @@ FAMILY_OF = {
     "furnace": "furnace",
     "blast_furnace": "blast_furnace",
     "wall_banner": "wall_banner",
+    "smoker": "smoker",
+    "campfire": "campfire",
+    "lectern": "lectern",
 }
 
 
@@ -97,7 +114,15 @@ def _family(block_id: str) -> str | None:
     name = block_id.split(":", 1)[1]
     if name.endswith("_wall_banner"):
         return "wall_banner"
-    return {"chest": "chest", "barrel": "barrel", "furnace": "furnace", "blast_furnace": "blast_furnace"}.get(name)
+    return {
+        "chest": "chest",
+        "barrel": "barrel",
+        "furnace": "furnace",
+        "blast_furnace": "blast_furnace",
+        "smoker": "smoker",
+        "campfire": "campfire",
+        "lectern": "lectern",
+    }.get(name)
 
 
 def _inner_sha1(jar: Path) -> str:
@@ -119,6 +144,10 @@ def build(jar: Path, sha1: str) -> dict:
         if unknown:
             raise SystemExit(f"{block_id}: keys {unknown} never occur in vanilla {family} templates")
         allow[block_id] = {"family": family, "be": be_id, "nbt": nbt, "states": states}
+        if block_id in LOOT_TABLE_BLOCKS:
+            if "LootTable" not in seen:
+                raise SystemExit(f"{block_id}: LootTable never occurs in vanilla {family} templates")
+            allow[block_id]["loot_table"] = True
     return {
         "minecraft_version": "26.3",
         "server_jar_sha1": sha1,

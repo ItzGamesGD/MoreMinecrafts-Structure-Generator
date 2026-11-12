@@ -2,20 +2,12 @@
  "minecraft": "26.3",
  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
- "nbt_sha256": {
-  "house_b": "35dc4b727c87bbb839212c9eab0b44344f4eaf385df9113b930285374ceeb5a1",
-  "house_c": "fb970d7e2cd5f0cf8e38247462c9d7032008f5abde6eef5286b758b5a83b42a9",
-  "house_d": "22c58fd1d3bdf9dd63b596a92926a55c0c85a8707c0a8996c202025fcb9f1291",
-  "kitchen": "90fec8a3d25e3770566888318fc53d494fe8d54580564def01fa692eafe20653",
-  "smithy": "ff3599412f190b648bb91c2797cb57932b4c8824f55c31c054fd889cabb22801",
-  "cart_shed": "dd481cb62ae89b7b35fc324d528db0ae5bda56a740ecc3e83bb81bc5a174aa8a"
- },
  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
  "world": "flat, plains, noon, clear; night_vision applied for the interior views only",
  "placement": "place template experimental:<name> <30*i> -61 0 none (floor y=0 flush with grass; no terrain correction)",
  "shots": [
   {
-   "view": "house_b_front",
+   "view": "house_b_f12_front",
    "tp": [
     4.5,
     -57,
@@ -23,11 +15,11 @@
     180,
     6
    ],
-   "file": "house_b_front.png",
+   "file": "house_b_f12_front.png",
    "sha256": "77979ed05327619c02d92bcaaaa79eda16ed543276f53064d60050c147a64fdd"
   },
   {
-   "view": "house_b_back",
+   "view": "house_b_f12_back",
    "tp": [
     4.5,
     -57,
@@ -35,11 +27,11 @@
     0,
     6
    ],
-   "file": "house_b_back.png",
+   "file": "house_b_f12_back.png",
    "sha256": "a46046ff2a27b1e1799e9c692b04adcfc544f30109c914647db60c92e88ba67a"
   },
   {
-   "view": "house_b_west",
+   "view": "house_b_f12_west",
    "tp": [
     -10.5,
     -57,
@@ -47,11 +39,11 @@
     -90,
     6
    ],
-   "file": "house_b_west.png",
+   "file": "house_b_f12_west.png",
    "sha256": "59774365b23e9c3a57a89d56dc2f2bd174090aeac50c35c4201e9c1508722abb"
   },
   {
-   "view": "house_b_east",
+   "view": "house_b_f12_east",
    "tp": [
     18.5,
     -57,
@@ -59,11 +51,11 @@
     90,
     6
    ],
-   "file": "house_b_east.png",
+   "file": "house_b_f12_east.png",
    "sha256": "1566d3361483f970490a2b15b34cdc6f05539f9ccbb464c910423ee9452e2ce3"
   },
   {
-   "view": "house_b_diag_se",
+   "view": "house_b_f12_diag_se",
    "tp": [
     15.5,
     -56,
@@ -71,11 +63,11 @@
     135,
     10
    ],
-   "file": "house_b_diag_se.png",
+   "file": "house_b_f12_diag_se.png",
    "sha256": "8f3a52a03c9ed2ecfaefbd3710460c1b4880fbf35ffe1eb58a2eacacf239e699"
   },
   {
-   "view": "house_b_diag_nw",
+   "view": "house_b_f12_diag_nw",
    "tp": [
     -7.5,
     -56,
@@ -83,11 +75,11 @@
     -45,
     10
    ],
-   "file": "house_b_diag_nw.png",
+   "file": "house_b_f12_diag_nw.png",
    "sha256": "6d6687f6df73863d0bc46ab618d4d290a5cc7bf967a2b774765610433aa2b7aa"
   },
   {
-   "view": "house_b_entrance",
+   "view": "house_b_f12_entrance",
    "tp": [
     4.5,
     -59.5,
@@ -95,11 +87,11 @@
     180,
     4
    ],
-   "file": "house_b_entrance.png",
+   "file": "house_b_f12_entrance.png",
    "sha256": "040221fd5fede7c695fd24eb2227c7b96176d3fe824c87f4ba00d26a71e5fb11"
   },
   {
-   "view": "house_b_interior_beds",
+   "view": "house_b_f12_interior_beds",
    "tp": [
     6.5,
     -60,
@@ -107,11 +99,11 @@
     135,
     20
    ],
-   "file": "house_b_interior_beds.png",
+   "file": "house_b_f12_interior_beds.png",
    "sha256": "0b68cfe56d80d27e4284cd6435927456eff50bdb6042ac2841b5047f4673769c"
   },
   {
-   "view": "house_b_interior_work",
+   "view": "house_b_f12_interior_work",
    "tp": [
     1.5,
     -60,
@@ -119,11 +111,11 @@
     -135,
     20
    ],
-   "file": "house_b_interior_work.png",
+   "file": "house_b_f12_interior_work.png",
    "sha256": "94a474b5ee1be099e317b7ea5aac9f84491f8d4677cbe52940071f28940e59e4"
   },
   {
-   "view": "house_c_front",
+   "view": "house_c_f13_front",
    "tp": [
     33.5,
     -57,
@@ -131,11 +123,11 @@
     180,
     6
    ],
-   "file": "house_c_front.png",
+   "file": "house_c_f13_front.png",
    "sha256": "d3671394ff236d16fea98207f2756352f3b9ad795cfa35ddf09eb58b7a8601e8"
   },
   {
-   "view": "house_c_back",
+   "view": "house_c_f13_back",
    "tp": [
     33.5,
     -57,
@@ -143,11 +135,11 @@
     0,
     6
    ],
-   "file": "house_c_back.png",
+   "file": "house_c_f13_back.png",
    "sha256": "8530f38a46e65a689e61b4929d01f46af73f26d83f8f95c61bf04746b0c5edd6"
   },
   {
-   "view": "house_c_west",
+   "view": "house_c_f13_west",
    "tp": [
     19.5,
     -57,
@@ -155,11 +147,11 @@
     -90,
     6
    ],
-   "file": "house_c_west.png",
+   "file": "house_c_f13_west.png",
    "sha256": "1b24cde157eb0af89df9db623cc056536d8fc98e220dc0f13cd7728fc7ee0478"
   },
   {
-   "view": "house_c_east",
+   "view": "house_c_f13_east",
    "tp": [
     46.5,
     -57,
@@ -167,11 +159,11 @@
     90,
     6
    ],
-   "file": "house_c_east.png",
+   "file": "house_c_f13_east.png",
    "sha256": "7b58cdd00723d148549dc0ed7a0a2533ddcef4ba2c9c3dac2494e6bdcc0d7a38"
   },
   {
-   "view": "house_c_diag_se",
+   "view": "house_c_f13_diag_se",
    "tp": [
     43.5,
     -56,
@@ -179,11 +171,11 @@
     135,
     10
    ],
-   "file": "house_c_diag_se.png",
+   "file": "house_c_f13_diag_se.png",
    "sha256": "cb04f779c4cb783f9bdf466d86f06620a9fd02dce296c43d4c09898ec6d3e18b"
   },
   {
-   "view": "house_c_diag_nw",
+   "view": "house_c_f13_diag_nw",
    "tp": [
     22.5,
     -56,
@@ -191,11 +183,11 @@
     -45,
     10
    ],
-   "file": "house_c_diag_nw.png",
+   "file": "house_c_f13_diag_nw.png",
    "sha256": "5eadb8c32762c9e66d6c0fb4094bf37f96eab5bf300bc2236ff61cd12209efd2"
   },
   {
-   "view": "house_c_entrance",
+   "view": "house_c_f13_entrance",
    "tp": [
     33.5,
     -59.5,
@@ -203,11 +195,11 @@
     180,
     4
    ],
-   "file": "house_c_entrance.png",
+   "file": "house_c_f13_entrance.png",
    "sha256": "e8b5a313935068015c38244ff1fe000541480e3f18a71e846cce1802d3cec776"
   },
   {
-   "view": "house_c_interior_bed",
+   "view": "house_c_f13_interior_bed",
    "tp": [
     35.5,
     -60,
@@ -215,11 +207,11 @@
     135,
     20
    ],
-   "file": "house_c_interior_bed.png",
+   "file": "house_c_f13_interior_bed.png",
    "sha256": "bfeee6949e9890e3f0fbf5ed102c0d386b1af47ed3e49b7da90965bf605e92d7"
   },
   {
-   "view": "house_c_interior_hearth",
+   "view": "house_c_f13_interior_hearth",
    "tp": [
     31.5,
     -60,
@@ -227,7 +219,7 @@
     -120,
     15
    ],
-   "file": "house_c_interior_hearth.png",
+   "file": "house_c_f13_interior_hearth.png",
    "sha256": "6f5c267fcffcf4c2e9b29a66052fb32bce7f096cd05c9a1b351cea2193ee8d96"
   },
   {
@@ -337,126 +329,6 @@
    ],
    "file": "house_d_interior_door.png",
    "sha256": "22bb22a26ff08b32ecd2ea766d0d8ac6f05c912dbfa2fc50fb82b962919669ed"
-  },
-  {
-   "view": "kitchen_front",
-   "tp": [
-    94.5,
-    -57,
-    19.5,
-    180,
-    6
-   ],
-   "file": "kitchen_front.png",
-   "sha256": "ebdeac26cd7d330df71b3eb042911151dac5ccd13718f811a94dc041d2c09708"
-  },
-  {
-   "view": "kitchen_back",
-   "tp": [
-    94.5,
-    -57,
-    -10.5,
-    0,
-    6
-   ],
-   "file": "kitchen_back.png",
-   "sha256": "749496e0058f13dae530c57576a38c9521e807860ea5eaf6d9d58546cc77b7dd"
-  },
-  {
-   "view": "kitchen_west",
-   "tp": [
-    79.5,
-    -57,
-    4.5,
-    -90,
-    6
-   ],
-   "file": "kitchen_west.png",
-   "sha256": "01cefb87e7af41a39211f4700d4d05f88f0d8ec861d93002fb935da3db741b2a"
-  },
-  {
-   "view": "kitchen_east",
-   "tp": [
-    108.5,
-    -57,
-    4.5,
-    90,
-    6
-   ],
-   "file": "kitchen_east.png",
-   "sha256": "a7b17accd6325e7acde2f7b9fe746799196fd8082ca51cc31d38e883cbe84c3f"
-  },
-  {
-   "view": "kitchen_diag_se",
-   "tp": [
-    105.5,
-    -56,
-    16.5,
-    135,
-    10
-   ],
-   "file": "kitchen_diag_se.png",
-   "sha256": "cd564bde30278d66d65fa36f5de05de40350093db89dd8420664e5441d3c567a"
-  },
-  {
-   "view": "kitchen_diag_nw",
-   "tp": [
-    82.5,
-    -56,
-    -7.5,
-    -45,
-    10
-   ],
-   "file": "kitchen_diag_nw.png",
-   "sha256": "849641b9e277182843bdcea346edfd82befb0d8607176194ebf470cba9aa0ef5"
-  },
-  {
-   "view": "kitchen_entrance",
-   "tp": [
-    94.5,
-    -59.5,
-    14.0,
-    180,
-    4
-   ],
-   "file": "kitchen_entrance.png",
-   "sha256": "17a7030671d1337574c9bbcdb80460281db7341e6ca20d72fa017b2d38b8ef8b"
-  },
-  {
-   "view": "kitchen_interior_hearth",
-   "tp": [
-    94.5,
-    -60,
-    6.5,
-    180,
-    12
-   ],
-   "file": "kitchen_interior_hearth.png",
-   "sha256": "ab16583b94230b9418fcd1faa55501122bddab51093ebae0e5b95bf81c765813"
-  },
-  {
-   "view": "kitchen_interior_storage",
-   "tp": [
-    93.0,
-    -60,
-    4.5,
-    -90,
-    12
-   ],
-   "file": "kitchen_interior_storage.png",
-   "sha256": "19450efe7b2a23c5bb140bb5553324a97f9bed259dad1f29d64d654a99b6d288"
-  },
-  {
-   "view": "kitchen_interior_counter",
-   "tp": [
-    96.0,
-    -60,
-    4.5,
-    90,
-    12
-   ],
-   "file": "kitchen_interior_counter.png",
-   "sha256": "85e4770d5feeba62ff0a52b735bb723d71b387c51c68373e0a4ce2c1d6ee4f99"
   },
   {
    "view": "smithy_front",
@@ -673,7 +545,362 @@
    ],
    "file": "cart_shed_interior_storage.png",
    "sha256": "77a0239bf405f52ebb3b76d1a10c776b34b7e94114bbb1acee7b707d5bd479d5"
+  },
+  {
+   "view": "house_b_f15_front",
+   "tp": [
+    34.5,
+    -57,
+    17.5,
+    180,
+    6
+   ],
+   "file": "house_b_f15_front.png",
+   "sha256": "0eb290b5c74e4a883dcb58ec3b8df2198c8a8a3be24f0831381073c7284549f4"
+  },
+  {
+   "view": "house_b_f15_back",
+   "tp": [
+    34.5,
+    -57,
+    -10.5,
+    0,
+    6
+   ],
+   "file": "house_b_f15_back.png",
+   "sha256": "6369461e00ed0bc68a967ba7fa0cb4f518201b2ffeca111e1ef509621ee096f0"
+  },
+  {
+   "view": "house_b_f15_west",
+   "tp": [
+    19.5,
+    -57,
+    3.5,
+    -90,
+    6
+   ],
+   "file": "house_b_f15_west.png",
+   "sha256": "22c187ebed8670318ec87c02485cde5ed76f76334fd18d136226bbb0b76c93a3"
+  },
+  {
+   "view": "house_b_f15_east",
+   "tp": [
+    48.5,
+    -57,
+    3.5,
+    90,
+    6
+   ],
+   "file": "house_b_f15_east.png",
+   "sha256": "dbddd97e5fa446bc4b22afcc08165d674bcd49b4847dad71bfc91918f7dbdea9"
+  },
+  {
+   "view": "house_b_f15_diag_se",
+   "tp": [
+    45.5,
+    -56,
+    14.5,
+    135,
+    10
+   ],
+   "file": "house_b_f15_diag_se.png",
+   "sha256": "c4488dfd9892ada7da35e81aa6f483505c2cd76ce399f51ff37529df00229a15"
+  },
+  {
+   "view": "house_b_f15_diag_nw",
+   "tp": [
+    22.5,
+    -56,
+    -7.5,
+    -45,
+    10
+   ],
+   "file": "house_b_f15_diag_nw.png",
+   "sha256": "5d8cf65592a90c8444998bfabc33e6d28d302a572e24e40600b057c71655eb2a"
+  },
+  {
+   "view": "house_b_f15_entrance",
+   "tp": [
+    34.5,
+    -59.5,
+    12.0,
+    180,
+    4
+   ],
+   "file": "house_b_f15_entrance.png",
+   "sha256": "9757ee58ced17674e9a2a8b1e712e042dc012bec9fc04ef71b430639d49036cc"
+  },
+  {
+   "view": "house_b_f15_interior_beds",
+   "tp": [
+    36.5,
+    -60,
+    4.5,
+    135,
+    20
+   ],
+   "file": "house_b_f15_interior_beds.png",
+   "sha256": "e2be4db78b4ffb6cb7def2447f99d14df38d35ebf820f666eae0c9a0ba50f01a"
+  },
+  {
+   "view": "house_b_f15_interior_work",
+   "tp": [
+    31.5,
+    -60,
+    4.5,
+    -135,
+    20
+   ],
+   "file": "house_b_f15_interior_work.png",
+   "sha256": "6b8fde773866daed19bfb8152b51de6a34538ffd4aedf12035321cf12e1fc626"
+  },
+  {
+   "view": "house_c_f16_front",
+   "tp": [
+    93.5,
+    -57,
+    17.5,
+    180,
+    6
+   ],
+   "file": "house_c_f16_front.png",
+   "sha256": "5653039b32df4304f226314fb1cf157df18788ab7bceaba4b17fd9e485b53487"
+  },
+  {
+   "view": "house_c_f16_back",
+   "tp": [
+    93.5,
+    -57,
+    -10.5,
+    0,
+    6
+   ],
+   "file": "house_c_f16_back.png",
+   "sha256": "45ea1e86a901dce119413b43bae371f303b613c2ce65d9174ebda2080d83fe2a"
+  },
+  {
+   "view": "house_c_f16_west",
+   "tp": [
+    79.5,
+    -57,
+    3.5,
+    -90,
+    6
+   ],
+   "file": "house_c_f16_west.png",
+   "sha256": "2b39b1d23b8dcb6b4ea293747d696ffde0858cf024f2fe4d76b52a8ac0c26c8a"
+  },
+  {
+   "view": "house_c_f16_east",
+   "tp": [
+    106.5,
+    -57,
+    3.5,
+    90,
+    6
+   ],
+   "file": "house_c_f16_east.png",
+   "sha256": "09a5f4f4d26c08e88077d7f07febedfc9fabe1489d39aa0cfd4365e299d18242"
+  },
+  {
+   "view": "house_c_f16_diag_se",
+   "tp": [
+    103.5,
+    -56,
+    14.5,
+    135,
+    10
+   ],
+   "file": "house_c_f16_diag_se.png",
+   "sha256": "a5cc71c5f1ae58756ea5dd458ca185a5aadefa68f29b32f8c8d6cf2cc4224fd9"
+  },
+  {
+   "view": "house_c_f16_diag_nw",
+   "tp": [
+    82.5,
+    -56,
+    -7.5,
+    -45,
+    10
+   ],
+   "file": "house_c_f16_diag_nw.png",
+   "sha256": "0a36735a6f46285cf6ecb1c423c13ffbd12a0f7c380c02add30d544e67e35fb5"
+  },
+  {
+   "view": "house_c_f16_entrance",
+   "tp": [
+    93.5,
+    -59.5,
+    12.0,
+    180,
+    4
+   ],
+   "file": "house_c_f16_entrance.png",
+   "sha256": "a005b60ad3f1f4d0e10020ec29b3130c4167539b25956a73961cc750608fdcc2"
+  },
+  {
+   "view": "house_c_f16_interior_bed",
+   "tp": [
+    95.5,
+    -60,
+    4.5,
+    135,
+    20
+   ],
+   "file": "house_c_f16_interior_bed.png",
+   "sha256": "669c95a27cd5cf6ec066f5a9e5868a1af5ac59c796d572126a2cb984dcc0122e"
+  },
+  {
+   "view": "house_c_f16_interior_hearth",
+   "tp": [
+    91.5,
+    -60,
+    4.5,
+    -120,
+    15
+   ],
+   "file": "house_c_f16_interior_hearth.png",
+   "sha256": "14f305abab5a8da882ffd757b2e40ff5ff9f741529948bd93e0adae53557aff1"
+  },
+  {
+   "view": "kitchen_front",
+   "tp": [
+    154.5,
+    -57,
+    19.5,
+    180,
+    6
+   ],
+   "file": "kitchen_front.png",
+   "sha256": "5b75fd38b2aaaa5c7da0c4dbf42b6739fd74708056f0881adb97e7f2e758e389"
+  },
+  {
+   "view": "kitchen_back",
+   "tp": [
+    154.5,
+    -57,
+    -10.5,
+    0,
+    6
+   ],
+   "file": "kitchen_back.png",
+   "sha256": "9ca8b1bcd70a52da2046a12215836c2dab5eb3a48f2a87fa3237365b15abc497"
+  },
+  {
+   "view": "kitchen_west",
+   "tp": [
+    139.5,
+    -57,
+    4.5,
+    -90,
+    6
+   ],
+   "file": "kitchen_west.png",
+   "sha256": "65c00b62523343844d5ac938b9688192aaac7dd09b264b914000c215af6ef2a1"
+  },
+  {
+   "view": "kitchen_east",
+   "tp": [
+    168.5,
+    -57,
+    4.5,
+    90,
+    6
+   ],
+   "file": "kitchen_east.png",
+   "sha256": "f2c060e0cfc99efb727bdb3434541c20cbeab61f980bec434407c5ca129a7af9"
+  },
+  {
+   "view": "kitchen_diag_se",
+   "tp": [
+    165.5,
+    -56,
+    16.5,
+    135,
+    10
+   ],
+   "file": "kitchen_diag_se.png",
+   "sha256": "93d9f4d00642a57cfccdac71a37acf8edc153a6ff3b2471f8117998f37483085"
+  },
+  {
+   "view": "kitchen_diag_nw",
+   "tp": [
+    142.5,
+    -56,
+    -7.5,
+    -45,
+    10
+   ],
+   "file": "kitchen_diag_nw.png",
+   "sha256": "0c8f8eacfbd68a059c898607b0b488cc2ee4390c06173cc5a2cdc11a609b2c68"
+  },
+  {
+   "view": "kitchen_entrance",
+   "tp": [
+    154.5,
+    -59.5,
+    14.0,
+    180,
+    4
+   ],
+   "file": "kitchen_entrance.png",
+   "sha256": "ce59db0248fa8d3766bb08dabb28b2552aa8b39b65e463152f7c89bbd25309b9"
+  },
+  {
+   "view": "kitchen_interior_hearth",
+   "tp": [
+    154.5,
+    -60,
+    6.5,
+    180,
+    12
+   ],
+   "file": "kitchen_interior_hearth.png",
+   "sha256": "c82da73d5e8ab37bad7f4d35e1ac9fa82ed95e36c10117605098ef28b3d489e1"
+  },
+  {
+   "view": "kitchen_interior_storage",
+   "tp": [
+    153.0,
+    -60,
+    4.5,
+    -90,
+    12
+   ],
+   "file": "kitchen_interior_storage.png",
+   "sha256": "3cbd0a2f64d9e37838f1a31d958bd7d3bdacc164a65398e3013dafd6287d1a56"
+  },
+  {
+   "view": "kitchen_interior_counter",
+   "tp": [
+    156.0,
+    -60,
+    4.5,
+    90,
+    12
+   ],
+   "file": "kitchen_interior_counter.png",
+   "sha256": "7a0fa4f069ca08671b9dc1df81eefc7d231fa513d204f419f44770936de678ee"
   }
  ],
- "note": "smithy_interior_side re-captured in a second run (camera moved: the first run's view faced a wall); same NBT hashes, same setup."
+ "captured_nbt_sha256": {
+  "house_d": "22c58fd1d3bdf9dd63b596a92926a55c0c85a8707c0a8996c202025fcb9f1291",
+  "kitchen": "5f3b191652a6ac267cd41e66cac4e32b48b062783d55a20b01dd38a42bef90c9",
+  "smithy": "ff3599412f190b648bb91c2797cb57932b4c8824f55c31c054fd889cabb22801",
+  "cart_shed": "dd481cb62ae89b7b35fc324d528db0ae5bda56a740ecc3e83bb81bc5a174aa8a",
+  "house_b_f12": "35dc4b727c87bbb839212c9eab0b44344f4eaf385df9113b930285374ceeb5a1",
+  "house_c_f13": "fb970d7e2cd5f0cf8e38247462c9d7032008f5abde6eef5286b758b5a83b42a9",
+  "house_b_f15": "f1e10865d15b9156ceea3f971ab48a6e79d60a1a35281c73fd36fcd6d3a8e147",
+  "house_c_f16": "d3d49bb428ccbe902b0cad8dabbc7df34d7384f1b48327d1540e06dc82636d60"
+ },
+ "current_nbt_sha256": {
+  "house_b_f12": "ef64dace7fdf015461a6e5a7f21d763d32ff8c98bfcde59108ff3a4ae89c5aac",
+  "house_b_f15": "f1e10865d15b9156ceea3f971ab48a6e79d60a1a35281c73fd36fcd6d3a8e147",
+  "house_c_f13": "77f3f7a2e9d6467c6755f449f6e9f62f63011f59f55ebb388744751301922541",
+  "house_c_f16": "d3d49bb428ccbe902b0cad8dabbc7df34d7384f1b48327d1540e06dc82636d60",
+  "house_d": "b8b511c930ceac018d174850e016d186004f217008c2cc4e7bc5a74eb53865a0",
+  "kitchen": "5f3b191652a6ac267cd41e66cac4e32b48b062783d55a20b01dd38a42bef90c9",
+  "smithy": "1d957dbd54028c588a759514a30a71f8631603a2bfe38a99dbd81ffbe2ba238e",
+  "cart_shed": "1af87082d3b4f75cc9b630b49ae8b200cdd39dc78bc878759e11454fc456d796"
+ }
 }

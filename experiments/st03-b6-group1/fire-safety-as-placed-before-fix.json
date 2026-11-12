@@ -1,0 +1,116 @@
+{
+ "nbt": "st03_kitchen.nbt",
+ "nbt_sha256": "90fec8a3d25e3770566888318fc53d494fe8d54580564def01fa692eafe20653",
+ "fire_blocks": [
+  [
+   4,
+   1,
+   1
+  ]
+ ],
+ "flammable_within_spread_reach": [
+  {
+   "fire": [
+    4,
+    1,
+    1
+   ],
+   "flammable": [
+    2,
+    5,
+    0
+   ],
+   "block": "minecraft:stripped_dark_oak_log"
+  },
+  {
+   "fire": [
+    4,
+    1,
+    1
+   ],
+   "flammable": [
+    2,
+    6,
+    0
+   ],
+   "block": "minecraft:dark_oak_stairs"
+  },
+  {
+   "fire": [
+    4,
+    1,
+    1
+   ],
+   "flammable": [
+    3,
+    5,
+    0
+   ],
+   "block": "minecraft:stripped_dark_oak_log"
+  },
+  {
+   "fire": [
+    4,
+    1,
+    1
+   ],
+   "flammable": [
+    4,
+    5,
+    0
+   ],
+   "block": "minecraft:stripped_dark_oak_log"
+  },
+  {
+   "fire": [
+    4,
+    1,
+    1
+   ],
+   "flammable": [
+    5,
+    5,
+    0
+   ],
+   "block": "minecraft:stripped_dark_oak_log"
+  },
+  {
+   "fire": [
+    4,
+    1,
+    1
+   ],
+   "flammable": [
+    6,
+    5,
+    0
+   ],
+   "block": "minecraft:stripped_dark_oak_log"
+  },
+  {
+   "fire": [
+    4,
+    1,
+    1
+   ],
+   "flammable": [
+    6,
+    6,
+    0
+   ],
+   "block": "minecraft:dark_oak_stairs"
+  }
+ ],
+ "gamerule_default": "Game rule fire_spread_radius_around_player is currently set to 128",
+ "gamerule_set": "Game rule fire_spread_radius_around_player is now set to -1",
+ "gamerule_now": "Game rule fire_spread_radius_around_player is currently set to -1",
+ "tick_sprint": "The game is sprinting",
+ "tick_query_after": "The game is running normallyTarget tick rate: 20.0 per second.\nAverage time per tick: 0.0ms (Target: 50.0ms)Percentiles: P50: 0.0ms P95: 0.2ms P99: 0.3ms. Sample: 100",
+ "fire_still_burning": [
+  true
+ ],
+ "cells_checked": 891,
+ "changed_cells": [],
+ "extra_fire_outside_template_fire": [],
+ "result": "PASS"
+}

@@ -79,8 +79,8 @@
     "waterlogged"
    ]
   },
-  "output": "/tmp/tmpkfmliyly/pack/data/moreminecrafts/structure/seam01/st03_cart_shed.nbt",
-  "output_sha256": "dd481cb62ae89b7b35fc324d528db0ae5bda56a740ecc3e83bb81bc5a174aa8a",
+  "output": "/tmp/tmpibwx_iz8/pack/data/moreminecrafts/structure/seam01/st03_cart_shed.nbt",
+  "output_sha256": "1af87082d3b4f75cc9b630b49ae8b200cdd39dc78bc878759e11454fc456d796",
   "palette": 27,
   "size": [
    8,
@@ -96,8 +96,8 @@
     0
    ],
    "palette_entries": 24,
-   "path": "/tmp/tmpkfmliyly/st03_cart_shed.schem",
-   "sha256": "85ffc8cf939ee94984d7307b2b1f6fa4561f6616e3e515ad4b50badf2fc5794b",
+   "path": "/tmp/tmpibwx_iz8/st03_cart_shed.schem",
+   "sha256": "9f85609ee3cecb3fb87d34d711bc9546b7780c3cb34363e5fa0206d97d47be00",
    "size": [
     8,
     9,
@@ -902,6 +902,1016 @@
    "Explicit stair states retained; unknown horizontal neighbours require SEAM-01 review"
   ]
  },
+ "st03_house_b_f12": {
+  "air": "include",
+  "blocks": 630,
+  "cells": 630,
+  "config": "exports/structures/ruined_watchtower.toml",
+  "connectivity": {
+   "boundary_unresolved": [
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      2,
+      3,
+      0
+     ],
+     "unknown_neighbours": {
+      "north": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      6,
+      3,
+      0
+     ],
+     "unknown_neighbours": {
+      "north": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      0,
+      3,
+      2
+     ],
+     "unknown_neighbours": {
+      "west": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      8,
+      3,
+      2
+     ],
+     "unknown_neighbours": {
+      "east": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      2,
+      2,
+      0
+     ],
+     "unknown_neighbours": {
+      "north": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      6,
+      2,
+      0
+     ],
+     "unknown_neighbours": {
+      "north": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      0,
+      2,
+      2
+     ],
+     "unknown_neighbours": {
+      "west": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      8,
+      2,
+      2
+     ],
+     "unknown_neighbours": {
+      "east": "outside_template"
+     }
+    }
+   ],
+   "computed_blocks": 13,
+   "corrected_blocks": 5,
+   "corrected_properties": {
+    "east": 2,
+    "north": 1,
+    "west": 3
+   },
+   "explicit_differs_from_vanilla": [],
+   "reference": "tools/structure_export/reference/connectivity-26.3.json",
+   "unresolved": []
+  },
+  "converter_version": 2,
+  "defaulted_properties": {
+   "minecraft:chest[facing=west,type=single]": [
+    "waterlogged"
+   ],
+   "minecraft:dark_oak_stairs[facing=north,half=bottom,shape=straight]": [
+    "waterlogged"
+   ],
+   "minecraft:dark_oak_stairs[facing=south,half=bottom,shape=straight]": [
+    "waterlogged"
+   ],
+   "minecraft:glass_pane": [
+    "east",
+    "north",
+    "south",
+    "waterlogged",
+    "west"
+   ],
+   "minecraft:lantern[hanging=true]": [
+    "waterlogged"
+   ],
+   "minecraft:spruce_fence": [
+    "east",
+    "north",
+    "south",
+    "waterlogged",
+    "west"
+   ],
+   "minecraft:spruce_pressure_plate": [
+    "powered"
+   ],
+   "minecraft:spruce_stairs[facing=east,half=bottom,shape=straight]": [
+    "waterlogged"
+   ],
+   "minecraft:spruce_trapdoor[facing=east,half=bottom,open=true,powered=false]": [
+    "waterlogged"
+   ],
+   "minecraft:spruce_trapdoor[facing=north,half=bottom,open=true,powered=false]": [
+    "waterlogged"
+   ],
+   "minecraft:spruce_trapdoor[facing=south,half=bottom,open=true,powered=false]": [
+    "waterlogged"
+   ],
+   "minecraft:spruce_trapdoor[facing=west,half=bottom,open=true,powered=false]": [
+    "waterlogged"
+   ]
+  },
+  "output": "/tmp/tmp_ri7lgzo/pack/data/moreminecrafts/structure/seam01/st03_house_b_f12.nbt",
+  "output_sha256": "ef64dace7fdf015461a6e5a7f21d763d32ff8c98bfcde59108ff3a4ae89c5aac",
+  "palette": 38,
+  "size": [
+   9,
+   10,
+   7
+  ],
+  "source": {
+   "data_version": 3953,
+   "metadata_keys_ignored": [],
+   "offset": [
+    0,
+    0,
+    0
+   ],
+   "palette_entries": 36,
+   "path": "/tmp/tmp_ri7lgzo/st03_house_b_f12.schem",
+   "sha256": "81b3fc962f89b435ee51be7b48e7cfdb89f140a144059b82efa438a1cfc8386b",
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "unused_palette_entries": []
+  },
+  "stair_boundary_review": [
+   {
+    "pos": [
+     0,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     6,
+     1
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     6,
+     5
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     7,
+     2
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     7,
+     4
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     1,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     1,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     2,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     2,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     3,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     3,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     4,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     4,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     5,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     5,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     6,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     6,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     7,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     7,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     8,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     8,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     8,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     8,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     8,
+     6,
+     1
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     8,
+     6,
+     5
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     8,
+     7,
+     2
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     8,
+     7,
+     4
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   }
+  ],
+  "state_counts": {
+   "minecraft:air": 298,
+   "minecraft:barrel[facing=east,open=false]": 1,
+   "minecraft:barrel[facing=west,open=false]": 1,
+   "minecraft:blue_bed[facing=north,occupied=false,part=foot]": 1,
+   "minecraft:blue_bed[facing=north,occupied=false,part=head]": 1,
+   "minecraft:bookshelf": 4,
+   "minecraft:brown_carpet": 6,
+   "minecraft:chest[facing=west,type=single,waterlogged=false]": 1,
+   "minecraft:cobblestone": 40,
+   "minecraft:crafting_table": 1,
+   "minecraft:dark_oak_door[facing=south,half=lower,hinge=left,open=false,powered=false]": 1,
+   "minecraft:dark_oak_door[facing=south,half=upper,hinge=left,open=false,powered=false]": 1,
+   "minecraft:dark_oak_log[axis=x]": 9,
+   "minecraft:dark_oak_log[axis=y]": 50,
+   "minecraft:dark_oak_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 27,
+   "minecraft:dark_oak_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 27,
+   "minecraft:furnace[facing=west,lit=false]": 1,
+   "minecraft:glass_pane[east=false,north=false,south=false,waterlogged=false,west=false]": 8,
+   "minecraft:glass_pane[east=false,north=false,south=false,waterlogged=false,west=true]": 2,
+   "minecraft:glass_pane[east=true,north=false,south=false,waterlogged=false,west=false]": 2,
+   "minecraft:lantern[hanging=true,waterlogged=false]": 3,
+   "minecraft:mossy_cobblestone": 6,
+   "minecraft:mossy_stone_bricks": 1,
+   "minecraft:red_bed[facing=north,occupied=false,part=foot]": 1,
+   "minecraft:red_bed[facing=north,occupied=false,part=head]": 1,
+   "minecraft:spruce_fence[east=false,north=true,south=false,waterlogged=false,west=true]": 1,
+   "minecraft:spruce_planks": 79,
+   "minecraft:spruce_pressure_plate[powered=false]": 1,
+   "minecraft:spruce_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 1,
+   "minecraft:spruce_trapdoor[facing=east,half=bottom,open=true,powered=false,waterlogged=false]": 4,
+   "minecraft:spruce_trapdoor[facing=north,half=bottom,open=true,powered=false,waterlogged=false]": 4,
+   "minecraft:spruce_trapdoor[facing=south,half=bottom,open=true,powered=false,waterlogged=false]": 8,
+   "minecraft:spruce_trapdoor[facing=west,half=bottom,open=true,powered=false,waterlogged=false]": 4,
+   "minecraft:stone_bricks": 6,
+   "minecraft:stripped_dark_oak_log[axis=x]": 17,
+   "minecraft:stripped_dark_oak_log[axis=z]": 8,
+   "minecraft:wall_torch[facing=north]": 2,
+   "minecraft:white_wall_banner[facing=south]": 1
+  },
+  "structure_id": "moreminecrafts:seam01/st03_house_b_f12",
+  "target": {
+   "data_version": 5023,
+   "minecraft_version": "26.3",
+   "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c"
+  },
+  "warnings": [
+   "8 connecting blocks border the template box or omitted air; their connections toward that unknown terrain were computed as if it were air (connectivity.boundary_unresolved)",
+   "Explicit stair states retained; unknown horizontal neighbours require SEAM-01 review"
+  ]
+ },
+ "st03_house_b_f15": {
+  "air": "include",
+  "blocks": 630,
+  "cells": 630,
+  "config": "exports/structures/ruined_watchtower.toml",
+  "connectivity": {
+   "boundary_unresolved": [
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      2,
+      3,
+      0
+     ],
+     "unknown_neighbours": {
+      "north": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      6,
+      3,
+      0
+     ],
+     "unknown_neighbours": {
+      "north": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      0,
+      3,
+      2
+     ],
+     "unknown_neighbours": {
+      "west": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      8,
+      3,
+      2
+     ],
+     "unknown_neighbours": {
+      "east": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      2,
+      2,
+      0
+     ],
+     "unknown_neighbours": {
+      "north": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      6,
+      2,
+      0
+     ],
+     "unknown_neighbours": {
+      "north": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      0,
+      2,
+      2
+     ],
+     "unknown_neighbours": {
+      "west": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      8,
+      2,
+      2
+     ],
+     "unknown_neighbours": {
+      "east": "outside_template"
+     }
+    }
+   ],
+   "computed_blocks": 13,
+   "corrected_blocks": 5,
+   "corrected_properties": {
+    "east": 2,
+    "north": 1,
+    "south": 1,
+    "west": 2
+   },
+   "explicit_differs_from_vanilla": [],
+   "reference": "tools/structure_export/reference/connectivity-26.3.json",
+   "unresolved": []
+  },
+  "converter_version": 2,
+  "defaulted_properties": {
+   "minecraft:chest[facing=west,type=single]": [
+    "waterlogged"
+   ],
+   "minecraft:dark_oak_stairs[facing=north,half=bottom,shape=straight]": [
+    "waterlogged"
+   ],
+   "minecraft:dark_oak_stairs[facing=south,half=bottom,shape=straight]": [
+    "waterlogged"
+   ],
+   "minecraft:glass_pane": [
+    "east",
+    "north",
+    "south",
+    "waterlogged",
+    "west"
+   ],
+   "minecraft:lantern[hanging=true]": [
+    "waterlogged"
+   ],
+   "minecraft:spruce_fence": [
+    "east",
+    "north",
+    "south",
+    "waterlogged",
+    "west"
+   ],
+   "minecraft:spruce_pressure_plate": [
+    "powered"
+   ],
+   "minecraft:spruce_stairs[facing=north,half=bottom,shape=straight]": [
+    "waterlogged"
+   ],
+   "minecraft:spruce_trapdoor[facing=east,half=bottom,open=true,powered=false]": [
+    "waterlogged"
+   ],
+   "minecraft:spruce_trapdoor[facing=north,half=bottom,open=true,powered=false]": [
+    "waterlogged"
+   ],
+   "minecraft:spruce_trapdoor[facing=south,half=bottom,open=true,powered=false]": [
+    "waterlogged"
+   ],
+   "minecraft:spruce_trapdoor[facing=west,half=bottom,open=true,powered=false]": [
+    "waterlogged"
+   ]
+  },
+  "output": "/tmp/tmppoqzwqsr/pack/data/moreminecrafts/structure/seam01/st03_house_b_f15.nbt",
+  "output_sha256": "f1e10865d15b9156ceea3f971ab48a6e79d60a1a35281c73fd36fcd6d3a8e147",
+  "palette": 41,
+  "size": [
+   9,
+   10,
+   7
+  ],
+  "source": {
+   "data_version": 3953,
+   "metadata_keys_ignored": [],
+   "offset": [
+    0,
+    0,
+    0
+   ],
+   "palette_entries": 39,
+   "path": "/tmp/tmppoqzwqsr/st03_house_b_f15.schem",
+   "sha256": "7c90ed045f0c0effa1ed99b8534d3a905b8219b36bc160893c9e086766c8c4a1",
+   "size": [
+    9,
+    10,
+    7
+   ],
+   "unused_palette_entries": []
+  },
+  "stair_boundary_review": [
+   {
+    "pos": [
+     0,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     6,
+     1
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     6,
+     5
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     7,
+     2
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     7,
+     4
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     1,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     1,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     2,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     2,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     3,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     3,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     4,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     4,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     5,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     5,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     6,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     6,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     7,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     7,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     8,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     8,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     8,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     8,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     8,
+     6,
+     1
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     8,
+     6,
+     5
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     8,
+     7,
+     2
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     8,
+     7,
+     4
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   }
+  ],
+  "state_counts": {
+   "minecraft:air": 297,
+   "minecraft:barrel[facing=east,open=false]": 1,
+   "minecraft:barrel[facing=west,open=false]": 1,
+   "minecraft:black_wall_banner[facing=south]": 1,
+   "minecraft:blue_bed[facing=north,occupied=false,part=foot]": 1,
+   "minecraft:blue_bed[facing=north,occupied=false,part=head]": 1,
+   "minecraft:blue_carpet": 6,
+   "minecraft:bookshelf": 2,
+   "minecraft:chest[facing=west,type=single,waterlogged=false]": 1,
+   "minecraft:cobblestone": 40,
+   "minecraft:crafting_table": 1,
+   "minecraft:dark_oak_door[facing=south,half=lower,hinge=left,open=false,powered=false]": 1,
+   "minecraft:dark_oak_door[facing=south,half=upper,hinge=left,open=false,powered=false]": 1,
+   "minecraft:dark_oak_log[axis=x]": 9,
+   "minecraft:dark_oak_log[axis=y]": 50,
+   "minecraft:dark_oak_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 27,
+   "minecraft:dark_oak_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 27,
+   "minecraft:furnace[facing=west,lit=false]": 1,
+   "minecraft:glass_pane[east=false,north=false,south=false,waterlogged=false,west=false]": 8,
+   "minecraft:glass_pane[east=false,north=false,south=false,waterlogged=false,west=true]": 2,
+   "minecraft:glass_pane[east=true,north=false,south=false,waterlogged=false,west=false]": 2,
+   "minecraft:hay_block[axis=y]": 1,
+   "minecraft:lantern[hanging=true,waterlogged=false]": 4,
+   "minecraft:lectern[facing=south,has_book=false,powered=false]": 1,
+   "minecraft:mossy_cobblestone": 6,
+   "minecraft:mossy_stone_bricks": 1,
+   "minecraft:potted_dark_oak_sapling": 1,
+   "minecraft:potted_fern": 1,
+   "minecraft:red_bed[facing=north,occupied=false,part=foot]": 1,
+   "minecraft:red_bed[facing=north,occupied=false,part=head]": 1,
+   "minecraft:spruce_fence[east=false,north=true,south=true,waterlogged=false,west=false]": 1,
+   "minecraft:spruce_planks": 79,
+   "minecraft:spruce_pressure_plate[powered=false]": 1,
+   "minecraft:spruce_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 1,
+   "minecraft:spruce_trapdoor[facing=east,half=bottom,open=true,powered=false,waterlogged=false]": 4,
+   "minecraft:spruce_trapdoor[facing=north,half=bottom,open=true,powered=false,waterlogged=false]": 4,
+   "minecraft:spruce_trapdoor[facing=south,half=bottom,open=true,powered=false,waterlogged=false]": 8,
+   "minecraft:spruce_trapdoor[facing=west,half=bottom,open=true,powered=false,waterlogged=false]": 4,
+   "minecraft:stone_bricks": 6,
+   "minecraft:stripped_dark_oak_log[axis=x]": 17,
+   "minecraft:stripped_dark_oak_log[axis=z]": 8
+  },
+  "structure_id": "moreminecrafts:seam01/st03_house_b_f15",
+  "target": {
+   "data_version": 5023,
+   "minecraft_version": "26.3",
+   "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c"
+  },
+  "warnings": [
+   "8 connecting blocks border the template box or omitted air; their connections toward that unknown terrain were computed as if it were air (connectivity.boundary_unresolved)",
+   "Explicit stair states retained; unknown horizontal neighbours require SEAM-01 review"
+  ]
+ },
  "st03_house_c": {
   "air": "include",
   "blocks": 441,
@@ -1300,6 +2310,784 @@
    "Explicit stair states retained; unknown horizontal neighbours require SEAM-01 review"
   ]
  },
+ "st03_house_c_f13": {
+  "air": "include",
+  "blocks": 441,
+  "cells": 441,
+  "config": "exports/structures/ruined_watchtower.toml",
+  "connectivity": {
+   "boundary_unresolved": [
+    {
+     "block": "minecraft:cobblestone_wall",
+     "pos": [
+      6,
+      8,
+      3
+     ],
+     "unknown_neighbours": {
+      "east": "outside_template",
+      "up": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      0,
+      3,
+      4
+     ],
+     "unknown_neighbours": {
+      "west": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      1,
+      3,
+      6
+     ],
+     "unknown_neighbours": {
+      "south": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      4,
+      2,
+      0
+     ],
+     "unknown_neighbours": {
+      "north": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      1,
+      2,
+      6
+     ],
+     "unknown_neighbours": {
+      "south": "outside_template"
+     }
+    }
+   ],
+   "computed_blocks": 5,
+   "corrected_blocks": 4,
+   "corrected_properties": {
+    "east": 3,
+    "north": 1,
+    "south": 1,
+    "west": 3
+   },
+   "explicit_differs_from_vanilla": [],
+   "reference": "tools/structure_export/reference/connectivity-26.3.json",
+   "unresolved": []
+  },
+  "converter_version": 2,
+  "defaulted_properties": {
+   "minecraft:chest[facing=east,type=single]": [
+    "waterlogged"
+   ],
+   "minecraft:cobblestone_wall": [
+    "east",
+    "north",
+    "south",
+    "up",
+    "waterlogged",
+    "west"
+   ],
+   "minecraft:glass_pane": [
+    "east",
+    "north",
+    "south",
+    "waterlogged",
+    "west"
+   ],
+   "minecraft:lantern[hanging=true]": [
+    "waterlogged"
+   ],
+   "minecraft:spruce_stairs[facing=east,half=bottom,shape=straight]": [
+    "waterlogged"
+   ],
+   "minecraft:spruce_stairs[facing=west,half=bottom,shape=straight]": [
+    "waterlogged"
+   ]
+  },
+  "output": "/tmp/tmpy9fdq_e2/pack/data/moreminecrafts/structure/seam01/st03_house_c_f13.nbt",
+  "output_sha256": "77f3f7a2e9d6467c6755f449f6e9f62f63011f59f55ebb388744751301922541",
+  "palette": 26,
+  "size": [
+   7,
+   9,
+   7
+  ],
+  "source": {
+   "data_version": 3953,
+   "metadata_keys_ignored": [],
+   "offset": [
+    0,
+    0,
+    0
+   ],
+   "palette_entries": 25,
+   "path": "/tmp/tmpy9fdq_e2/st03_house_c_f13.schem",
+   "sha256": "07201e48f61ca33209c8eaff5051245cb5c1bb3be04a770b63e967a11e0540d9",
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "unused_palette_entries": []
+  },
+  "stair_boundary_review": [
+   {
+    "pos": [
+     0,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     1
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     2
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     3
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     4
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     5
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     1,
+     6,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     1,
+     6,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     3,
+     6,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     3,
+     6,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     4,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     4,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     1
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     2
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     4
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     5
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   }
+  ],
+  "state_counts": {
+   "minecraft:air": 235,
+   "minecraft:barrel[facing=south,open=false]": 1,
+   "minecraft:bookshelf": 4,
+   "minecraft:brown_carpet": 2,
+   "minecraft:chest[facing=east,type=single,waterlogged=false]": 1,
+   "minecraft:cobblestone": 21,
+   "minecraft:cobblestone_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=none]": 1,
+   "minecraft:cracked_stone_bricks": 2,
+   "minecraft:crafting_table": 1,
+   "minecraft:dark_oak_door[facing=south,half=lower,hinge=left,open=false,powered=false]": 1,
+   "minecraft:dark_oak_door[facing=south,half=upper,hinge=left,open=false,powered=false]": 1,
+   "minecraft:dark_oak_log[axis=y]": 20,
+   "minecraft:dark_oak_log[axis=z]": 7,
+   "minecraft:furnace[facing=west,lit=false]": 1,
+   "minecraft:glass_pane[east=false,north=true,south=true,waterlogged=false,west=false]": 1,
+   "minecraft:glass_pane[east=true,north=false,south=false,waterlogged=false,west=true]": 3,
+   "minecraft:lantern[hanging=true,waterlogged=false]": 2,
+   "minecraft:mossy_cobblestone": 2,
+   "minecraft:mossy_stone_bricks": 1,
+   "minecraft:red_bed[facing=north,occupied=false,part=foot]": 1,
+   "minecraft:red_bed[facing=north,occupied=false,part=head]": 1,
+   "minecraft:spruce_planks": 65,
+   "minecraft:spruce_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 14,
+   "minecraft:spruce_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 27,
+   "minecraft:stone_bricks": 25,
+   "minecraft:stripped_dark_oak_log[axis=x]": 1
+  },
+  "structure_id": "moreminecrafts:seam01/st03_house_c_f13",
+  "target": {
+   "data_version": 5023,
+   "minecraft_version": "26.3",
+   "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c"
+  },
+  "warnings": [
+   "5 connecting blocks border the template box or omitted air; their connections toward that unknown terrain were computed as if it were air (connectivity.boundary_unresolved)",
+   "Explicit stair states retained; unknown horizontal neighbours require SEAM-01 review"
+  ]
+ },
+ "st03_house_c_f16": {
+  "air": "include",
+  "blocks": 441,
+  "cells": 441,
+  "config": "exports/structures/ruined_watchtower.toml",
+  "connectivity": {
+   "boundary_unresolved": [
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      0,
+      3,
+      4
+     ],
+     "unknown_neighbours": {
+      "west": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      1,
+      3,
+      6
+     ],
+     "unknown_neighbours": {
+      "south": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      4,
+      2,
+      0
+     ],
+     "unknown_neighbours": {
+      "north": "outside_template"
+     }
+    },
+    {
+     "block": "minecraft:glass_pane",
+     "pos": [
+      1,
+      2,
+      6
+     ],
+     "unknown_neighbours": {
+      "south": "outside_template"
+     }
+    }
+   ],
+   "computed_blocks": 4,
+   "corrected_blocks": 4,
+   "corrected_properties": {
+    "east": 3,
+    "north": 1,
+    "south": 1,
+    "west": 3
+   },
+   "explicit_differs_from_vanilla": [],
+   "reference": "tools/structure_export/reference/connectivity-26.3.json",
+   "unresolved": []
+  },
+  "converter_version": 2,
+  "defaulted_properties": {
+   "minecraft:chest[facing=east,type=single]": [
+    "waterlogged"
+   ],
+   "minecraft:glass_pane": [
+    "east",
+    "north",
+    "south",
+    "waterlogged",
+    "west"
+   ],
+   "minecraft:lantern[hanging=true]": [
+    "waterlogged"
+   ],
+   "minecraft:spruce_stairs[facing=east,half=bottom,shape=straight]": [
+    "waterlogged"
+   ],
+   "minecraft:spruce_stairs[facing=west,half=bottom,shape=straight]": [
+    "waterlogged"
+   ]
+  },
+  "output": "/tmp/tmp2cn6dlb4/pack/data/moreminecrafts/structure/seam01/st03_house_c_f16.nbt",
+  "output_sha256": "d3d49bb428ccbe902b0cad8dabbc7df34d7384f1b48327d1540e06dc82636d60",
+  "palette": 28,
+  "size": [
+   7,
+   9,
+   7
+  ],
+  "source": {
+   "data_version": 3953,
+   "metadata_keys_ignored": [],
+   "offset": [
+    0,
+    0,
+    0
+   ],
+   "palette_entries": 27,
+   "path": "/tmp/tmp2cn6dlb4/st03_house_c_f16.schem",
+   "sha256": "b44a9878b1edb260db058a386e0f91b375051366c5374ce77393537563a32006",
+   "size": [
+    7,
+    9,
+    7
+   ],
+   "unused_palette_entries": []
+  },
+  "stair_boundary_review": [
+   {
+    "pos": [
+     0,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     1
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     2
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     3
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     4
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     5
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     0,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "west"
+   },
+   {
+    "pos": [
+     1,
+     6,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     1,
+     6,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     3,
+     6,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     3,
+     6,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     4,
+     5,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     4,
+     5,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     5,
+     4,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "north"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     0
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     1
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     2
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     4
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     5
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "east"
+   },
+   {
+    "pos": [
+     6,
+     3,
+     6
+    ],
+    "reason": "outside_template",
+    "side": "south"
+   }
+  ],
+  "state_counts": {
+   "minecraft:air": 235,
+   "minecraft:barrel[facing=south,open=false]": 1,
+   "minecraft:blue_bed[facing=north,occupied=false,part=foot]": 1,
+   "minecraft:blue_bed[facing=north,occupied=false,part=head]": 1,
+   "minecraft:bookshelf": 2,
+   "minecraft:campfire[facing=north,lit=true,signal_fire=false,waterlogged=false]": 1,
+   "minecraft:chest[facing=east,type=single,waterlogged=false]": 1,
+   "minecraft:cobblestone": 21,
+   "minecraft:cracked_stone_bricks": 2,
+   "minecraft:crafting_table": 1,
+   "minecraft:dark_oak_door[facing=south,half=lower,hinge=left,open=false,powered=false]": 1,
+   "minecraft:dark_oak_door[facing=south,half=upper,hinge=left,open=false,powered=false]": 1,
+   "minecraft:dark_oak_log[axis=y]": 20,
+   "minecraft:dark_oak_log[axis=z]": 7,
+   "minecraft:furnace[facing=west,lit=false]": 1,
+   "minecraft:glass_pane[east=false,north=true,south=true,waterlogged=false,west=false]": 1,
+   "minecraft:glass_pane[east=true,north=false,south=false,waterlogged=false,west=true]": 3,
+   "minecraft:gray_carpet": 2,
+   "minecraft:lantern[hanging=true,waterlogged=false]": 2,
+   "minecraft:lectern[facing=south,has_book=false,powered=false]": 1,
+   "minecraft:mossy_cobblestone": 2,
+   "minecraft:mossy_stone_bricks": 1,
+   "minecraft:red_wall_banner[facing=south]": 1,
+   "minecraft:spruce_planks": 65,
+   "minecraft:spruce_stairs[facing=east,half=bottom,shape=straight,waterlogged=false]": 14,
+   "minecraft:spruce_stairs[facing=west,half=bottom,shape=straight,waterlogged=false]": 27,
+   "minecraft:stone_bricks": 25,
+   "minecraft:stripped_dark_oak_log[axis=x]": 1
+  },
+  "structure_id": "moreminecrafts:seam01/st03_house_c_f16",
+  "target": {
+   "data_version": 5023,
+   "minecraft_version": "26.3",
+   "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c"
+  },
+  "warnings": [
+   "4 connecting blocks border the template box or omitted air; their connections toward that unknown terrain were computed as if it were air (connectivity.boundary_unresolved)",
+   "Explicit stair states retained; unknown horizontal neighbours require SEAM-01 review"
+  ]
+ },
  "st03_house_d": {
   "air": "include",
   "blocks": 441,
@@ -1469,8 +3257,8 @@
     "waterlogged"
    ]
   },
-  "output": "/tmp/tmpch4max3f/pack/data/moreminecrafts/structure/seam01/st03_house_d.nbt",
-  "output_sha256": "22c58fd1d3bdf9dd63b596a92926a55c0c85a8707c0a8996c202025fcb9f1291",
+  "output": "/tmp/tmpa8sayaoi/pack/data/moreminecrafts/structure/seam01/st03_house_d.nbt",
+  "output_sha256": "b8b511c930ceac018d174850e016d186004f217008c2cc4e7bc5a74eb53865a0",
   "palette": 35,
   "size": [
    7,
@@ -1486,8 +3274,8 @@
     0
    ],
    "palette_entries": 32,
-   "path": "/tmp/tmpch4max3f/st03_house_d.schem",
-   "sha256": "ce0aeeade41ee3269a6af8d5b9929b65d605bc5577cc78a5d9bd8524e9d2479d",
+   "path": "/tmp/tmpa8sayaoi/st03_house_d.schem",
+   "sha256": "1503ca30353a7f0567b1c887eb4beab16a7f67a28b7219778f0bc9ded650fe4c",
    "size": [
     7,
     9,
@@ -1937,9 +3725,9 @@
     "waterlogged"
    ]
   },
-  "output": "/tmp/tmpemeszg6i/pack/data/moreminecrafts/structure/seam01/st03_kitchen.nbt",
-  "output_sha256": "90fec8a3d25e3770566888318fc53d494fe8d54580564def01fa692eafe20653",
-  "palette": 29,
+  "output": "/tmp/tmpzv2du8hs/pack/data/moreminecrafts/structure/seam01/st03_kitchen.nbt",
+  "output_sha256": "5f3b191652a6ac267cd41e66cac4e32b48b062783d55a20b01dd38a42bef90c9",
+  "palette": 28,
   "size": [
    9,
    11,
@@ -1953,9 +3741,9 @@
     0,
     0
    ],
-   "palette_entries": 27,
-   "path": "/tmp/tmpemeszg6i/st03_kitchen.schem",
-   "sha256": "7087b7f55ebc08bc4c13dc8e4e67819d9824934b701d592037d0cfcb16c1d640",
+   "palette_entries": 26,
+   "path": "/tmp/tmpzv2du8hs/st03_kitchen.schem",
+   "sha256": "1154827cb3dc7f48d9c9a368e030c127bd207b5a9a4edc7fb3d2c221c1f193fc",
    "size": [
     9,
     11,
@@ -2245,22 +4033,21 @@
    }
   ],
   "state_counts": {
-   "minecraft:air": 443,
+   "minecraft:air": 444,
    "minecraft:barrel[facing=up,open=false]": 1,
    "minecraft:barrel[facing=west,open=false]": 2,
    "minecraft:cake[bites=0]": 1,
+   "minecraft:campfire[facing=south,lit=true,signal_fire=false,waterlogged=false]": 1,
    "minecraft:cauldron": 1,
    "minecraft:chest[facing=west,type=single,waterlogged=false]": 2,
-   "minecraft:cracked_stone_bricks": 23,
+   "minecraft:cracked_stone_bricks": 24,
    "minecraft:crafting_table": 1,
    "minecraft:dark_oak_door[facing=south,half=lower,hinge=left,open=false,powered=false]": 1,
    "minecraft:dark_oak_door[facing=south,half=upper,hinge=left,open=false,powered=false]": 1,
    "minecraft:dark_oak_log[axis=x]": 18,
    "minecraft:dark_oak_log[axis=y]": 20,
    "minecraft:dark_oak_stairs[facing=north,half=bottom,shape=straight,waterlogged=false]": 36,
-   "minecraft:dark_oak_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 28,
-   "minecraft:fire[age=0,east=false,north=false,south=false,up=false,west=false]": 1,
-   "minecraft:furnace[facing=east,lit=false]": 1,
+   "minecraft:dark_oak_stairs[facing=south,half=bottom,shape=straight,waterlogged=false]": 27,
    "minecraft:glass_pane[east=false,north=true,south=true,waterlogged=false,west=false]": 2,
    "minecraft:glass_pane[east=true,north=false,south=false,waterlogged=false,west=true]": 2,
    "minecraft:glass_pane[east=true,north=false,south=true,waterlogged=false,west=true]": 2,
@@ -2269,10 +4056,10 @@
    "minecraft:lantern[hanging=false,waterlogged=false]": 1,
    "minecraft:lantern[hanging=true,waterlogged=false]": 2,
    "minecraft:mossy_stone_bricks": 28,
-   "minecraft:netherrack": 1,
+   "minecraft:smoker[facing=east,lit=false]": 1,
    "minecraft:spruce_planks": 3,
-   "minecraft:stone_bricks": 237,
-   "minecraft:stripped_dark_oak_log[axis=x]": 15,
+   "minecraft:stone_bricks": 240,
+   "minecraft:stripped_dark_oak_log[axis=x]": 12,
    "minecraft:stripped_dark_oak_log[axis=z]": 14
   },
   "structure_id": "moreminecrafts:seam01/st03_kitchen",
@@ -2394,8 +4181,8 @@
     "waterlogged"
    ]
   },
-  "output": "/tmp/tmp3cirumt1/pack/data/moreminecrafts/structure/seam01/st03_smithy.nbt",
-  "output_sha256": "ff3599412f190b648bb91c2797cb57932b4c8824f55c31c054fd889cabb22801",
+  "output": "/tmp/tmp4pafp5z_/pack/data/moreminecrafts/structure/seam01/st03_smithy.nbt",
+  "output_sha256": "1d957dbd54028c588a759514a30a71f8631603a2bfe38a99dbd81ffbe2ba238e",
   "palette": 24,
   "size": [
    9,
@@ -2411,8 +4198,8 @@
     0
    ],
    "palette_entries": 22,
-   "path": "/tmp/tmp3cirumt1/st03_smithy.schem",
-   "sha256": "ff5d0f20592b93a0343f0220ba1a2ea5d8a853a12dccbab09c35ecaa682ea000",
+   "path": "/tmp/tmp4pafp5z_/st03_smithy.schem",
+   "sha256": "b1c24d45734d0085eac22adf5163f84b5e1913ac5fd1aac7ccfbdad521ba72b6",
    "size": [
     9,
     11,

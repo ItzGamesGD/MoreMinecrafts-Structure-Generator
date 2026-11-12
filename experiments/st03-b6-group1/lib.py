@@ -25,6 +25,12 @@ def corner_stair(quarter, prefer):
 class G:
     def __init__(s, w, h, d):
         s.W, s.H, s.D, s.c = w, h, d, {}
+        s.decor = set()  # cells that are decoration/detail only (placement variants may differ there, nowhere else)
+
+    def d(s, x, y, z, block, **p):
+        """put() for a decoration cell: recorded so the variant check can prove variants differ only in decoration."""
+        s.put(x, y, z, block, **p)
+        s.decor.add((x, y, z))
 
     def put(s, x, y, z, block, **p):
         assert 0 <= x < s.W and 0 <= y < s.H and 0 <= z < s.D, (x, y, z, block)

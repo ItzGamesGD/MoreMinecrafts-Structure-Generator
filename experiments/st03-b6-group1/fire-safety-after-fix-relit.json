@@ -1,0 +1,83 @@
+{
+ "nbt": "st03_kitchen.nbt",
+ "nbt_sha256": "215f6806af27d911c6303d3521d46f79dad0f6dc2c9fd01afbc3b678e7dc4292",
+ "fire_blocks": [
+  [
+   4,
+   1,
+   1
+  ]
+ ],
+ "flammable_within_spread_reach": [
+  {
+   "fire": [
+    4,
+    1,
+    1
+   ],
+   "flammable": [
+    2,
+    5,
+    0
+   ],
+   "block": "minecraft:stripped_dark_oak_log"
+  },
+  {
+   "fire": [
+    4,
+    1,
+    1
+   ],
+   "flammable": [
+    2,
+    6,
+    0
+   ],
+   "block": "minecraft:dark_oak_stairs"
+  },
+  {
+   "fire": [
+    4,
+    1,
+    1
+   ],
+   "flammable": [
+    6,
+    5,
+    0
+   ],
+   "block": "minecraft:stripped_dark_oak_log"
+  },
+  {
+   "fire": [
+    4,
+    1,
+    1
+   ],
+   "flammable": [
+    6,
+    6,
+    0
+   ],
+   "block": "minecraft:dark_oak_stairs"
+  }
+ ],
+ "gamerule_default": "Game rule fire_spread_radius_around_player is currently set to 128",
+ "gamerule_set": "Game rule fire_spread_radius_around_player is now set to -1",
+ "gamerule_now": "Game rule fire_spread_radius_around_player is currently set to -1",
+ "relight": true,
+ "tick_sprint": "The game is sprinting",
+ "tick_query_after": "The game is running normallyTarget tick rate: 20.0 per second.\nAverage time per tick: 0.0ms (Target: 50.0ms)Percentiles: P50: 0.0ms P95: 0.0ms P99: 0.3ms. Sample: 100",
+ "fire_still_burning": [
+  true
+ ],
+ "control_planks_remaining": 0,
+ "control2_plank_survived": false,
+ "fire_age15": true,
+ "fire_age0": false,
+ "control2_fire_age15": true,
+ "cells_checked": 891,
+ "changed_cells": [],
+ "extra_fire_outside_template_fire": [],
+ "result": "PASS"
+}

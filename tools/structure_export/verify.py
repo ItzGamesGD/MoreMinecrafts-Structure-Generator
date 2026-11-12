@@ -214,11 +214,14 @@ def verify(
     air: str,
     connectivity: dict | None = None,
     block_entities: dict | None = None,
+    loot_table: str | None = None,
 ) -> dict:
     """Return a summary dict; raise VerificationError on the first violation.
 
     `block_entities` is the pinned block-entity allow-list (reference/block_entities-26.3.json). Without it no
     block entity is accepted, so a template with block entities cannot pass a check that did not name the policy.
+    `loot_table` is the id the template's config binds to chests and barrels; without it a `LootTable` in the template
+    is a violation, with it every chest / barrel must carry exactly that one id (and nothing else).
     """
     name, root = read_nbt(nbt_path)
     _check(name == "", f"root name {name!r} (vanilla templates use an empty name)")
@@ -286,9 +289,12 @@ def verify(
     extra = sorted(set(placed) - set(expected))
     _check(not missing and not extra, f"missing {missing[:5]} extra {extra[:5]}")
     for pos, (block_id, _) in expected.items():
-        want = (
-            block_entities["allow"][block_id]["nbt"] if block_entities and block_id in block_entities["allow"] else None
-        )
+        want = None
+        if block_entities and block_id in block_entities["allow"]:
+            spec = block_entities["allow"][block_id]
+            want = dict(spec["nbt"])
+            if loot_table is not None and spec.get("loot_table"):
+                want["LootTable"] = loot_table
         have = placed_nbt.get(pos)
         _check(have == want, f"{pos} {block_id}: block-entity data {have} != {want}")
     wrong = [p for p in expected if expected[p] != placed[p]]

@@ -3,6 +3,7 @@
   "minecraft:barrel": {
    "be": "minecraft:barrel",
    "family": "barrel",
+   "loot_table": true,
    "nbt": {
     "id": "minecraft:barrel"
    },
@@ -11,6 +12,14 @@
      "false"
     ]
    }
+  },
+  "minecraft:black_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner"
+   },
+   "states": {}
   },
   "minecraft:blast_furnace": {
    "be": "minecraft:blast_furnace",
@@ -24,9 +33,34 @@
     ]
    }
   },
+  "minecraft:blue_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner"
+   },
+   "states": {}
+  },
+  "minecraft:brown_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner"
+   },
+   "states": {}
+  },
+  "minecraft:campfire": {
+   "be": "minecraft:campfire",
+   "family": "campfire",
+   "nbt": {
+    "id": "minecraft:campfire"
+   },
+   "states": {}
+  },
   "minecraft:chest": {
    "be": "minecraft:chest",
    "family": "chest",
+   "loot_table": true,
    "nbt": {
     "id": "minecraft:chest"
    },
@@ -36,11 +70,123 @@
     ]
    }
   },
+  "minecraft:cyan_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner"
+   },
+   "states": {}
+  },
   "minecraft:furnace": {
    "be": "minecraft:furnace",
    "family": "furnace",
    "nbt": {
     "id": "minecraft:furnace"
+   },
+   "states": {
+    "lit": [
+     "false"
+    ]
+   }
+  },
+  "minecraft:gray_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner"
+   },
+   "states": {}
+  },
+  "minecraft:green_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner"
+   },
+   "states": {}
+  },
+  "minecraft:lectern": {
+   "be": "minecraft:lectern",
+   "family": "lectern",
+   "nbt": {
+    "id": "minecraft:lectern"
+   },
+   "states": {
+    "has_book": [
+     "false"
+    ]
+   }
+  },
+  "minecraft:light_blue_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner"
+   },
+   "states": {}
+  },
+  "minecraft:light_gray_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner"
+   },
+   "states": {}
+  },
+  "minecraft:lime_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner"
+   },
+   "states": {}
+  },
+  "minecraft:magenta_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner"
+   },
+   "states": {}
+  },
+  "minecraft:orange_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner"
+   },
+   "states": {}
+  },
+  "minecraft:pink_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner"
+   },
+   "states": {}
+  },
+  "minecraft:purple_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner"
+   },
+   "states": {}
+  },
+  "minecraft:red_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner"
+   },
+   "states": {}
+  },
+  "minecraft:smoker": {
+   "be": "minecraft:smoker",
+   "family": "smoker",
+   "nbt": {
+    "id": "minecraft:smoker"
    },
    "states": {
     "lit": [
@@ -89,6 +235,14 @@
     ]
    },
    "states": {}
+  },
+  "minecraft:yellow_wall_banner": {
+   "be": "minecraft:banner",
+   "family": "wall_banner",
+   "nbt": {
+    "id": "minecraft:banner"
+   },
+   "states": {}
   }
  },
  "evidence": {
@@ -113,6 +267,16 @@
    },
    "occurrences": 11
   },
+  "campfire": {
+   "keys": {
+    "CookingTimes": 128,
+    "CookingTotalTimes": 128,
+    "Items": 128,
+    "components": 117,
+    "id": 128
+   },
+   "occurrences": 128
+  },
   "chest": {
    "keys": {
     "Items": 197,
@@ -133,6 +297,24 @@
     "lit_total_time": 28
    },
    "occurrences": 28
+  },
+  "lectern": {
+   "keys": {
+    "id": 11
+   },
+   "occurrences": 11
+  },
+  "smoker": {
+   "keys": {
+    "Items": 9,
+    "RecipesUsed": 9,
+    "cooking_time_spent": 9,
+    "cooking_total_time": 9,
+    "id": 9,
+    "lit_time_remaining": 9,
+    "lit_total_time": 9
+   },
+   "occurrences": 9
   },
   "wall_banner": {
    "keys": {

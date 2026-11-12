@@ -1,61 +1,98 @@
 # ST-03 group 1 (living + support) — B3-06
 
-Houses B / C / D (Q01–Q10) and the three support buildings, kitchen F18, smithy F19, cart shed F20 (Q11–Q17).
-Base: `experiment/st03-b5a-house-a-formal` @ `62cec3eb5a503469ee940e798a68060070a0ff36`. **Experimental assets, owner visual review pending; not a merge candidate.**
-`tools/seam01/data/st03_placements.json` is untouched (module ids, sizes, `air=include`, coordinates); `build.py` asserts every size against it.
+Houses B / C / D (Q01–Q10, Q08 variants) and the three support buildings, kitchen F18, smithy F19, cart shed F20 (Q11–Q17).
+Base of the first build: `experiment/st03-b5a-house-a-formal` @ `62cec3eb5a503469ee940e798a68060070a0ff36`; this follow-up continues
+`claude/moreminecrafts-setup-review-1ictwo` from `b0c8644`. **Experimental assets, owner visual review pending; not a merge candidate.**
+`tools/seam01/data/st03_placements.json` is untouched (module ids, sizes, `air=include`, coordinates); `build.py` asserts every size.
 
-Rebuild: `PYTHONPATH=. python experiments/st03-b6-group1/build.py`. Checks: `checks.py` (pinned 26.3 server, no client). Screenshots: `capture.py` (unmodified 26.3 client, Xvfb + Mesa lavapipe, F2).
-Local frame as House A: +x east, +z south, y=0 floor; every door / open front faces south.
+Rebuild: `PYTHONPATH=. python experiments/st03-b6-group1/build.py`. Checks: `checks.py` (pinned 26.3 server, no client). Fire test: `fire_safety.py`.
+Screenshots: `capture.py` (unmodified 26.3 client, Xvfb + Mesa lavapipe, F2). Local frame: +x east, +z south, y=0 floor; every door / open front faces south.
 
-| Module | Size (x,y,z) | NBT | Cells | Design summary |
-|---|---|---|---|---|
-| `M-house_b` (F12/F15) | 9×10×7 | `st03_house_b.nbt` | 332 | cobblestone base, spruce panels, dark-oak frame; regular gable (dark-oak stairs, ridge along x); 1-deep covered porch inside the box (z=6) with 4 posts, 2 lanterns and an illager banner; shuttered windows (open trapdoors beside glass panes); two beds, bookshelves, table, crafting table, furnace, 2 barrels, chest |
-| `M-house_c` (F13/F16) | 7×9×7 | `st03_house_c.nbt` | 206 | spruce timber on a stone-brick base, whole east wall stone + stone chimney; asymmetric (saltbox) gable: ridge x=2, short west slope, long low east slope; door recessed 1 block (alcove with lantern); 3 small windows at uneven positions; one bed, bookshelves, crafting table, furnace, barrel, chest |
-| `M-house_d` (F17) | 7×9×7 | `st03_house_d.nbt` | 232 | stone-brick lower walls (mossy/cracked mix), spruce upper, dark-oak frame; small hip roof; stone-framed doorway with chiselled keystone; 9 single iron-bar slit windows; one guard bed, weapon rack (boards + bars), grindstone, chest, barrel |
-| `M-kitchen` (F18) | 9×11×9 | `st03_kitchen.nbt` | 448 | closed stone-brick hall, dark-oak roof, tie beams + lanterns; back-wall fireplace (netherrack + fire, cauldron) with a chimney stack through the roof; west preparation counter (crafting table, furnace, planks counter, cake, lantern); east storage (3 barrels, 2 chests, hay); aisle x=3..5 |
-| `M-smithy` (F19) | 9×11×9 | `st03_smithy.nbt` | 402 | open south front (two dark-oak posts + beam), stone back and sides, dark-oak roof; stone forge with furnace / blast furnace / furnace and chimney; anvil, smithing table, grindstone, water cauldron, coal; 2 chests + 2 barrels |
-| `M-cart_shed` (F20) | 8×9×7 | `st03_cart_shed.nbt` | 234 | timber shed, open south front and open east side, spruce roof; back and west walls on a stone-brick course; small block cart (slab bed, rails, hay, 4 wheels, shafts); 3 barrels, chest, grindstone, tool rack |
+## Template ↔ facility (Q08) and loot table (Q16)
 
-## Result (PASS / FAIL / UNTESTED)
+| Template | Module (size x,y,z) | Placement | Loot table id (chests + barrels) |
+|---|---|---|---|
+| `st03_house_b_f12.nbt` | `M-house_b` 9×10×7 | **F12** | `moreminecrafts:chests/pillager_headquarters/house_b` |
+| `st03_house_b_f15.nbt` | `M-house_b` 9×10×7 | **F15** | same (one id per house type) |
+| `st03_house_c_f13.nbt` | `M-house_c` 7×9×7 | **F13** | `moreminecrafts:chests/pillager_headquarters/house_c` |
+| `st03_house_c_f16.nbt` | `M-house_c` 7×9×7 | **F16** | same |
+| `st03_house_d.nbt` | `M-house_d` 7×9×7 | F17 | `…/house_d` |
+| `st03_kitchen.nbt` | `M-kitchen` 9×11×9 | F18 | `…/kitchen` |
+| `st03_smithy.nbt` | `M-smithy` 9×11×9 | F19 | `…/smithy` |
+| `st03_cart_shed.nbt` | `M-cart_shed` 8×9×7 | F20 | `…/cart_shed` |
 
-Newly run on these NBT hashes (`check-result.json`, `screenshots/capture-info.json`).
+`st03_house_b.nbt` and `st03_house_c.nbt` are byte-identical copies of the F12 / F13 templates. The unchanged placement table still names one
+file per module (`st03_house_b`, `st03_house_c`); using the F15 / F16 templates needs a per-placement file mapping there (not changed here).
+
+Loot tables: `datapack/data/moreminecrafts/loot_table/chests/pillager_headquarters/{house_b,house_c,house_d,kitchen,smithy,cart_shed}.json`
+— type `minecraft:chest`, `random_sequence` = own id, **`pools: []`** (weights and quantities are not approved; an opened container yields nothing).
+Namespace/path follow the mod's `moreminecrafts:chests/<area>/<name>` convention. The files live here because the Beta repo is out of scope;
+the runtime task copies them into the mod's resources.
+
+Only `chest` and `barrel` carry a table (the two loot-capable containers): 25 containers across the 8 templates, each with exactly one `LootTable`
+tag and no `Items`. Furnaces, blast furnace, smoker, campfire, lectern, banners and all cosmetic blocks (hay, coal blocks, boards, bars, planters, potted
+plants) carry none.
+
+## Changes in this follow-up
+
+1. **Loot binding** — exporter option `[options] loot_table` (below); every template is exported with its facility's id.
+2. **Kitchen fire safety** — found a real hazard and fixed it (see the test table). Final design has no fire block at all.
+3. **Exporter allow-list** — smoker, campfire, lectern and the 15 coloured `*_wall_banner` blocks. Kitchen restored: smoker on the counter,
+   lit campfire hearth (stone floor, flue open up through the roof) instead of netherrack + fire. Standing banners stay refused (no vanilla evidence).
+4. **Q08 variants** — F15 (house B) and F16 (house C) as separate templates; same shell, bounds, footprint, door, windows, roof and room program
+   (beds, crafting table, furnace, barrels, chest in the same cells). Differences are decoration only:
+   - **F12 / F13** (unchanged look): F12 has window lanterns, an illager banner over the door, bookshelf wall, brown rug, red + blue beds. F13 has a
+     wall-capped chimney, brown rug, bookshelves, a ridge lantern.
+   - **F15**: black banner, lanterns at the porch ends, two planters and a hay bale on the porch, study corner (lectern + short shelf), blue rug, two
+     hanging lanterns, blue + red beds. **F16**: campfire smoking on the chimney top, lectern + one-bay shelf, grey rug, red wall banner, blue bed, lantern by the bed.
+
+## Exporter change (tools/structure_export) and what it affects
+
+- `reference/build_block_entities.py`: new allow-list entries (all evidence-checked against the 1511 vanilla templates: campfire 128, lectern 11, smoker 9
+  occurrences) and a `loot_table` flag on `chest` / `barrel` (vanilla templates carry `LootTable` on 301 of 424 chests and 207 of 226 barrels).
+  `reference/block_entities-26.3.json` regenerated; the previous 5 entries are unchanged.
+- `Config.loot_table` (optional, default `None`) read from `[options] loot_table`, validated as a resource id; `block_entities.handler/expected_nbt`
+  write one `LootTable` string on chests and barrels only; `verify(..., loot_table=…)` accepts exactly that id and still rejects any other contents;
+  `live.block_entity_failures` accepts the bound `LootTable` (matched exactly) and still fails on any `Items[0]`.
+- `tools/seam01/export.py::export_module` gained optional `loot_table` and `file` arguments (defaults keep the old behaviour).
+- Tests: `tests/test_structure_block_entities.py` +40 cases (new blocks, state restrictions, coloured banners, loot only on chest/barrel, verifier needs the
+  declared id exactly, option validation, no-loot default). 58 pass.
+- **Other behaviour affected:** (a) the five blocks above, previously `UnsupportedFeature`, now convert; (b) the verifier and live check are stricter
+  about a `LootTable` only when a template declares one, otherwise unchanged; (c) no other tool in the repository reads the allow-list
+  (stage24* tools only read block entities from sources). Pre-existing, unrelated: `test_sample_is_reproducible_and_matches_committed_outputs` and
+  `test_committed_testbed_exports_are_reproducible` fail on the base commit as well (gzip header OS byte differs in this environment);
+  `tests/test_phase3_watchtower.py` needs the `mcbuild` module (not installed here).
+
+## Result (PASS / FAIL / UNTESTED) — newly run on the current NBT hashes
 
 | Item | Result | Evidence |
 |---|---|---|
-| Actual size = approved module size, `air=include`, in-bounds | PASS | independent decoder: size and all cells equal the source (0 mismatches, 6 modules) |
-| Every authored block state is in the template (stairs, doors, beds, trapdoors, …) | PASS | 1,854 cells checked, 0 mismatches |
-| Strict `place template` on the pinned 26.3 server, all four rotations, every cell compared | PASS | 6 modules × 4 rotations, 0 failures |
-| Appearance vs approved Q01–Q07 / Q11–Q14 (family, roofs, doorways, windows, bases, rooms) | PASS with notes | real 26.3 screenshots, 55 views (`screenshots/`); owner visual review still pending |
-| Real 26.3 screenshots (exterior ×7 and interior ×2–3 per building) | PASS | unmodified vanilla client; one view (`smithy_interior_side`) re-shot after a bad camera angle |
-| Entrance and circulation: walk-in from outside, every workstation / bed / container has a reachable neighbour column | PASS | BFS on the template cells (`access.unreachable` empty); this found and fixed 3 blocked items (see below) |
-| Containers are real block entities and accept items (chest, barrel, furnace, blast furnace) | PASS | `item replace … container.0`, read back with `data get block`: 26 containers, all OK |
-| Workstations present as real blocks | PASS | crafting table ×3, furnace ×5, blast furnace, anvil, grindstone ×3, smithing table, cauldron, water cauldron |
-| Fire (kitchen hearth) and water cauldron placed correctly | PASS | present right after placement; fire seen burning in the client screenshot |
-| Facing toward existing roads | UNTESTED | the repository has no road data (ground modules are unbuilt); all doors face south like House A (F11/F14) |
-| Neighbour / terrain compatibility, collisions with other modules | UNTESTED | buildings were placed alone on a flat world; no other ST-03 NBT exists yet |
-| Collision with a walking player / real entity pathing | UNTESTED | only geometric BFS was run; no entity was walked through |
-| Loot tables | not in scope | all containers are empty (runtime decision) |
+| Size = approved module size, `air=include`, every cell vs source, block-entity data incl. LootTable | PASS | independent verifier, 8 templates, 0 mismatches (`check-result.json`) |
+| Every authored block state in the template | PASS | 2,392 cells, 0 mismatches |
+| Strict placement on the pinned 26.3 server, all four rotations, every cell compared | PASS | 8 templates × 4 rotations = 32 placements, 0 failures |
+| Walk-in access; every workstation / bed / container has a reachable neighbour column | PASS | BFS; 1 blocked item found and fixed (F15 stool/lectern layout) |
+| **Q16:** every chest / barrel carries its facility's `LootTable` in the game; exactly one tag; no `Items` | PASS | `data get block` on all 25 loot containers + `block_entity_failures` on all 40 block entities in all four rotations, 0 failures |
+| **Q16:** the six tables load on the server and give nothing | PASS | `loot replace block … loot <id>` → "Dropped 0 items" for all 25 containers |
+| **Q16:** no duplicated rolls; one id per facility; cosmetic blocks loot-free | PASS | table files have empty pools and unique `random_sequence`; each id used by one facility; BE data checked on the template |
+| Containers / smoker / furnaces take items | PASS | 33 containers accept `item replace`, read back |
+| **Fire safety, kitchen before the fix** | FAIL (fixed) | as placed the template's fire never ticks (age stays 0) → no spread (80,000-tick sprint). But when relit (a player re-lights it) the hearth fire ignited the roof stair left inside the flue at (4,7,1) within 60,000 ticks (`fire-safety-before-fix-relit.json`). Positive controls (fire next to planks; plank 4 above and 1 beside the fire) burned |
+| **Fire safety, after the fix** | PASS | flue column cleared of the roof stair, plate behind the flue (3..5,5,0) made stone; relit fire for 80,000 ticks changes no cell (`fire-safety-after-fix-relit.json`) |
+| **Fire safety, final kitchen** | PASS | no `fire` block in the template (campfire hearth; a campfire does not spread fire); 40,000-tick sprint with game fire rules on changes no cell (`fire-safety-final-kitchen.json`) |
+| Q08: variants have identical size, door, beds, container/workstation cells, shell | PASS | F12↔F15: 27 differing cells (4 = bed colour); F13↔F16: 11 (2 = bed colour); all decoration |
+| Appearance vs approved Q07 (orderly, lived-in, house-specific) | PASS with notes | real 26.3 screenshots; owner visual review pending |
+| Look of unchanged modules vs `b0c8644` | PASS | block states identical (F12, F13, house D, smithy, cart shed); only the LootTable tags are new → no recapture |
+| Screenshots of changed modules (kitchen, F15, F16) | PASS | 27 new in-game F2 views, unmodified client |
+| Facing toward existing roads; neighbours / terrain; entity pathing | UNTESTED | no road data, no neighbouring NBT; all doors south as before |
+| Loot contents, weights, quantities, premium pool | not in scope | tables are empty by design |
 
-Fixes made after the first run (blocking defects only): House C (crafting table), House D (chest) and the cart shed (barrel) each had an item with no reachable neighbour cell (re-laid out); the hip roof corners were turned the wrong way (raised quarter at the outside corner), fixed in `lib.py`; `checks.py` uses its own rotation expectation because `live.rotate_props` handles neither log `axis` nor `facing=up`.
+Screenshots: `screenshots/` + `capture-info.json` (`captured_nbt_sha256` vs `current_nbt_sha256`). F12, F13, house D, smithy and cart shed images are from
+the previous run (block states proven identical above; the only later change is the invisible LootTable tag). Kitchen, F15 and F16 were recaptured.
 
-## Approved items not fully delivered (reported, not changed)
+## Not done / reported
 
-- **Q08 placement-specific cosmetic variants (F12/F15, F13/F16):** not built. The placement table maps both placements to one module (one NBT each); variants would need new modules, which changes the table. Needs an owner decision.
-- **Q05 "lanterns" outside:** window and door lanterns hang inside the box only (the box has no cells outside the walls).
-- **Q09 stone footings down to natural terrain:** not applicable inside the module (floor is y=0); this belongs to terrain adaptation / worldgen (excluded).
-- **Q06 D "weapon decor", Q14 "tools":** block-only decor (boards, bars, hay). Item frames and armor stands are entities and cannot be exported.
-- **Block-entity allow-list limits the design:** smoker, campfire, lectern and coloured banners are rejected by the exporter. The kitchen therefore uses a furnace as its workstation and a netherrack + fire hearth instead of a campfire; the only banner is the allow-listed illager `white_wall_banner` (House B).
-- **House A** (F11/F14) is unchanged.
-
-## Container inventory (for the later loot task)
-
-| Module | chests | barrels | furnaces | blast furnaces |
-|---|---|---|---|---|
-| house_b | 1 | 2 | 1 | 0 |
-| house_c | 1 | 1 | 1 | 0 |
-| house_d | 1 | 1 | 0 | 0 |
-| kitchen | 2 | 3 | 1 | 0 |
-| smithy | 2 | 2 | 2 | 1 |
-| cart_shed | 1 | 3 | 0 | 0 |
-
-Cosmetic crates / racks (hay, coal blocks, boards, bars) are non-container blocks and create no loot rolls.
+- Standing banners remain refused by the allow-list (no vanilla template evidence); only coloured **wall** banners were added.
+- The placement table (`st03_placements.json`) maps both houses' placements to one file per module; per-placement file names are an integration step.
+- The loot-table JSON files must be copied into the mod's data (Beta repo, out of scope).
+- Lecterns are placed without a book (`has_book=false` is the only allowed state).
+- The fire test needed `fire_spread_radius_around_player = -1` (26.3's replacement for `doFireTick`; default 128 blocks around a player) because the headless
+  server has no player; this equals a player standing next to the kitchen.

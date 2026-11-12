@@ -31,7 +31,20 @@ def load(target: str = "26.3") -> dict:
     return json.loads(REFERENCE.read_text())
 
 
-def handler(block_id: str, state: dict[str, str], target: str) -> Compound:
+def expected_nbt(block_id: str, loot_table: str | None = None, target: str = "26.3") -> dict | None:
+    """The block-entity NBT (plain dict) the policy allows for `block_id`, or None when it has none. `loot_table` is
+    written only on blocks whose allow-list entry says `loot_table` (chests and barrels): one `LootTable` string per
+    container, never `Items`, `LootTableSeed` or a position. Furnaces, banners etc. ignore it."""
+    spec = load(target)["allow"].get(block_id)
+    if spec is None:
+        return None
+    nbt = dict(spec["nbt"])
+    if loot_table is not None and spec.get("loot_table"):
+        nbt["LootTable"] = loot_table
+    return nbt
+
+
+def handler(block_id: str, state: dict[str, str], target: str, loot_table: str | None = None) -> Compound:
     """The template `nbt` for a block entity, or UnsupportedFeature naming why it is refused."""
     allow = load(target)["allow"]
     if block_id not in allow:
@@ -43,7 +56,7 @@ def handler(block_id: str, state: dict[str, str], target: str) -> Compound:
                 "block_entity",
                 f"{block_id}[{key}={state.get(key)}] is not allowed (the block entity needs {key} in {values})",
             )
-    return to_nbt(spec["nbt"])
+    return to_nbt(expected_nbt(block_id, loot_table, target))
 
 
 def to_nbt(value):

@@ -1,8 +1,13 @@
 {
  "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
- "buildings": {
-  "M-house_b": {
-   "nbt_sha256": "35dc4b727c87bbb839212c9eab0b44344f4eaf385df9113b930285374ceeb5a1",
+ "templates": {
+  "st03_house_b_f12": {
+   "module": "M-house_b",
+   "placements": [
+    "F12"
+   ],
+   "loot_table": "moreminecrafts:chests/pillager_headquarters/house_b",
+   "nbt_sha256": "ef64dace7fdf015461a6e5a7f21d763d32ff8c98bfcde59108ff3a4ae89c5aac",
    "verify": {
     "size": [
      9,
@@ -27,10 +32,11 @@
     "unreachable": []
    },
    "containers": {
-    "minecraft:barrel": 2,
-    "minecraft:blast_furnace": 0,
-    "minecraft:chest": 1,
-    "minecraft:furnace": 1
+    "barrel": 2,
+    "blast_furnace": 0,
+    "chest": 1,
+    "furnace": 1,
+    "smoker": 0
    },
    "workstations": {
     "crafting_table": 1,
@@ -39,8 +45,19 @@
     "smithing_table": 0,
     "blast_furnace": 0,
     "furnace": 1,
+    "smoker": 0,
+    "campfire": 0,
+    "lectern": 0,
     "water_cauldron": 0,
     "cauldron": 0
+   },
+   "loot_binding": {
+    "containers_bound": 3,
+    "table_ids": [
+     "moreminecrafts:chests/pillager_headquarters/house_b"
+    ],
+    "tags_per_container": 1,
+    "non_loot_block_entities_without_table": 2
    },
    "rotations": {
     "none": {
@@ -60,16 +77,155 @@
      "failures": []
     }
    },
+   "block_entities_in_game": {
+    "none": {
+     "block_entities": 5,
+     "failures": []
+    },
+    "clockwise_90": {
+     "block_entities": 5,
+     "failures": []
+    },
+    "180": {
+     "block_entities": 5,
+     "failures": []
+    },
+    "counterclockwise_90": {
+     "block_entities": 5,
+     "failures": []
+    }
+   },
    "container_function": {
     "barrel@[1, 1, 4]": "OK",
     "furnace@[7, 1, 2]": "OK",
     "barrel@[7, 1, 3]": "OK",
     "chest@[7, 1, 4]": "OK"
    },
-   "persistent_blocks": {}
+   "loot_tag_in_game": {
+    "barrel@[1, 1, 4]": "OK",
+    "barrel@[1, 1, 4] loot replace": "Dropped 0 items",
+    "barrel@[7, 1, 3]": "OK",
+    "barrel@[7, 1, 3] loot replace": "Dropped 0 items",
+    "chest@[7, 1, 4]": "OK",
+    "chest@[7, 1, 4] loot replace": "Dropped 0 items"
+   }
   },
-  "M-house_c": {
-   "nbt_sha256": "fb970d7e2cd5f0cf8e38247462c9d7032008f5abde6eef5286b758b5a83b42a9",
+  "st03_house_b_f15": {
+   "module": "M-house_b",
+   "placements": [
+    "F15"
+   ],
+   "loot_table": "moreminecrafts:chests/pillager_headquarters/house_b",
+   "nbt_sha256": "f1e10865d15b9156ceea3f971ab48a6e79d60a1a35281c73fd36fcd6d3a8e147",
+   "verify": {
+    "size": [
+     9,
+     10,
+     7
+    ],
+    "blocks": 630,
+    "non_air_blocks": 333,
+    "palette": 41,
+    "cells_compared": 630,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 333,
+    "mismatches": 0,
+    "stairs": 55
+   },
+   "access": {
+    "entrance": "door at x=4 (south)",
+    "interior_columns": 18,
+    "interactive_blocks": 8,
+    "unreachable": []
+   },
+   "containers": {
+    "barrel": 2,
+    "blast_furnace": 0,
+    "chest": 1,
+    "furnace": 1,
+    "smoker": 0
+   },
+   "workstations": {
+    "crafting_table": 1,
+    "anvil": 0,
+    "grindstone": 0,
+    "smithing_table": 0,
+    "blast_furnace": 0,
+    "furnace": 1,
+    "smoker": 0,
+    "campfire": 0,
+    "lectern": 1,
+    "water_cauldron": 0,
+    "cauldron": 0
+   },
+   "loot_binding": {
+    "containers_bound": 3,
+    "table_ids": [
+     "moreminecrafts:chests/pillager_headquarters/house_b"
+    ],
+    "tags_per_container": 1,
+    "non_loot_block_entities_without_table": 3
+   },
+   "rotations": {
+    "none": {
+     "cells": 630,
+     "failures": []
+    },
+    "clockwise_90": {
+     "cells": 630,
+     "failures": []
+    },
+    "180": {
+     "cells": 630,
+     "failures": []
+    },
+    "counterclockwise_90": {
+     "cells": 630,
+     "failures": []
+    }
+   },
+   "block_entities_in_game": {
+    "none": {
+     "block_entities": 6,
+     "failures": []
+    },
+    "clockwise_90": {
+     "block_entities": 6,
+     "failures": []
+    },
+    "180": {
+     "block_entities": 6,
+     "failures": []
+    },
+    "counterclockwise_90": {
+     "block_entities": 6,
+     "failures": []
+    }
+   },
+   "container_function": {
+    "barrel@[1, 1, 4]": "OK",
+    "furnace@[7, 1, 2]": "OK",
+    "barrel@[7, 1, 3]": "OK",
+    "chest@[7, 1, 4]": "OK"
+   },
+   "loot_tag_in_game": {
+    "barrel@[1, 1, 4]": "OK",
+    "barrel@[1, 1, 4] loot replace": "Dropped 0 items",
+    "barrel@[7, 1, 3]": "OK",
+    "barrel@[7, 1, 3] loot replace": "Dropped 0 items",
+    "chest@[7, 1, 4]": "OK",
+    "chest@[7, 1, 4] loot replace": "Dropped 0 items"
+   }
+  },
+  "st03_house_c_f13": {
+   "module": "M-house_c",
+   "placements": [
+    "F13"
+   ],
+   "loot_table": "moreminecrafts:chests/pillager_headquarters/house_c",
+   "nbt_sha256": "77f3f7a2e9d6467c6755f449f6e9f62f63011f59f55ebb388744751301922541",
    "verify": {
     "size": [
      7,
@@ -94,10 +250,11 @@
     "unreachable": []
    },
    "containers": {
-    "minecraft:barrel": 1,
-    "minecraft:blast_furnace": 0,
-    "minecraft:chest": 1,
-    "minecraft:furnace": 1
+    "barrel": 1,
+    "blast_furnace": 0,
+    "chest": 1,
+    "furnace": 1,
+    "smoker": 0
    },
    "workstations": {
     "crafting_table": 1,
@@ -106,8 +263,19 @@
     "smithing_table": 0,
     "blast_furnace": 0,
     "furnace": 1,
+    "smoker": 0,
+    "campfire": 0,
+    "lectern": 0,
     "water_cauldron": 0,
     "cauldron": 0
+   },
+   "loot_binding": {
+    "containers_bound": 2,
+    "table_ids": [
+     "moreminecrafts:chests/pillager_headquarters/house_c"
+    ],
+    "tags_per_container": 1,
+    "non_loot_block_entities_without_table": 1
    },
    "rotations": {
     "none": {
@@ -127,15 +295,149 @@
      "failures": []
     }
    },
+   "block_entities_in_game": {
+    "none": {
+     "block_entities": 3,
+     "failures": []
+    },
+    "clockwise_90": {
+     "block_entities": 3,
+     "failures": []
+    },
+    "180": {
+     "block_entities": 3,
+     "failures": []
+    },
+    "counterclockwise_90": {
+     "block_entities": 3,
+     "failures": []
+    }
+   },
    "container_function": {
     "chest@[1, 1, 4]": "OK",
     "barrel@[5, 1, 1]": "OK",
     "furnace@[5, 1, 3]": "OK"
    },
-   "persistent_blocks": {}
+   "loot_tag_in_game": {
+    "chest@[1, 1, 4]": "OK",
+    "chest@[1, 1, 4] loot replace": "Dropped 0 items",
+    "barrel@[5, 1, 1]": "OK",
+    "barrel@[5, 1, 1] loot replace": "Dropped 0 items"
+   }
   },
-  "M-house_d": {
-   "nbt_sha256": "22c58fd1d3bdf9dd63b596a92926a55c0c85a8707c0a8996c202025fcb9f1291",
+  "st03_house_c_f16": {
+   "module": "M-house_c",
+   "placements": [
+    "F16"
+   ],
+   "loot_table": "moreminecrafts:chests/pillager_headquarters/house_c",
+   "nbt_sha256": "d3d49bb428ccbe902b0cad8dabbc7df34d7384f1b48327d1540e06dc82636d60",
+   "verify": {
+    "size": [
+     7,
+     9,
+     7
+    ],
+    "blocks": 441,
+    "non_air_blocks": 206,
+    "palette": 28,
+    "cells_compared": 441,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 206,
+    "mismatches": 0,
+    "stairs": 41
+   },
+   "access": {
+    "entrance": "door at x=3 (south)",
+    "interior_columns": 18,
+    "interactive_blocks": 6,
+    "unreachable": []
+   },
+   "containers": {
+    "barrel": 1,
+    "blast_furnace": 0,
+    "chest": 1,
+    "furnace": 1,
+    "smoker": 0
+   },
+   "workstations": {
+    "crafting_table": 1,
+    "anvil": 0,
+    "grindstone": 0,
+    "smithing_table": 0,
+    "blast_furnace": 0,
+    "furnace": 1,
+    "smoker": 0,
+    "campfire": 1,
+    "lectern": 1,
+    "water_cauldron": 0,
+    "cauldron": 0
+   },
+   "loot_binding": {
+    "containers_bound": 2,
+    "table_ids": [
+     "moreminecrafts:chests/pillager_headquarters/house_c"
+    ],
+    "tags_per_container": 1,
+    "non_loot_block_entities_without_table": 4
+   },
+   "rotations": {
+    "none": {
+     "cells": 441,
+     "failures": []
+    },
+    "clockwise_90": {
+     "cells": 441,
+     "failures": []
+    },
+    "180": {
+     "cells": 441,
+     "failures": []
+    },
+    "counterclockwise_90": {
+     "cells": 441,
+     "failures": []
+    }
+   },
+   "block_entities_in_game": {
+    "none": {
+     "block_entities": 6,
+     "failures": []
+    },
+    "clockwise_90": {
+     "block_entities": 6,
+     "failures": []
+    },
+    "180": {
+     "block_entities": 6,
+     "failures": []
+    },
+    "counterclockwise_90": {
+     "block_entities": 6,
+     "failures": []
+    }
+   },
+   "container_function": {
+    "chest@[1, 1, 4]": "OK",
+    "barrel@[5, 1, 1]": "OK",
+    "furnace@[5, 1, 3]": "OK"
+   },
+   "loot_tag_in_game": {
+    "chest@[1, 1, 4]": "OK",
+    "chest@[1, 1, 4] loot replace": "Dropped 0 items",
+    "barrel@[5, 1, 1]": "OK",
+    "barrel@[5, 1, 1] loot replace": "Dropped 0 items"
+   }
+  },
+  "st03_house_d": {
+   "module": "M-house_d",
+   "placements": [
+    "F17"
+   ],
+   "loot_table": "moreminecrafts:chests/pillager_headquarters/house_d",
+   "nbt_sha256": "b8b511c930ceac018d174850e016d186004f217008c2cc4e7bc5a74eb53865a0",
    "verify": {
     "size": [
      7,
@@ -160,10 +462,11 @@
     "unreachable": []
    },
    "containers": {
-    "minecraft:barrel": 1,
-    "minecraft:blast_furnace": 0,
-    "minecraft:chest": 1,
-    "minecraft:furnace": 0
+    "barrel": 1,
+    "blast_furnace": 0,
+    "chest": 1,
+    "furnace": 0,
+    "smoker": 0
    },
    "workstations": {
     "crafting_table": 0,
@@ -172,8 +475,19 @@
     "smithing_table": 0,
     "blast_furnace": 0,
     "furnace": 0,
+    "smoker": 0,
+    "campfire": 0,
+    "lectern": 0,
     "water_cauldron": 0,
     "cauldron": 0
+   },
+   "loot_binding": {
+    "containers_bound": 2,
+    "table_ids": [
+     "moreminecrafts:chests/pillager_headquarters/house_d"
+    ],
+    "tags_per_container": 1,
+    "non_loot_block_entities_without_table": 0
    },
    "rotations": {
     "none": {
@@ -190,6 +504,24 @@
     },
     "counterclockwise_90": {
      "cells": 441,
+     "failures": []
+    }
+   },
+   "block_entities_in_game": {
+    "none": {
+     "block_entities": 2,
+     "failures": []
+    },
+    "clockwise_90": {
+     "block_entities": 2,
+     "failures": []
+    },
+    "180": {
+     "block_entities": 2,
+     "failures": []
+    },
+    "counterclockwise_90": {
+     "block_entities": 2,
      "failures": []
     }
    },
@@ -197,10 +529,20 @@
     "chest@[5, 1, 1]": "OK",
     "barrel@[5, 1, 3]": "OK"
    },
-   "persistent_blocks": {}
+   "loot_tag_in_game": {
+    "chest@[5, 1, 1]": "OK",
+    "chest@[5, 1, 1] loot replace": "Dropped 0 items",
+    "barrel@[5, 1, 3]": "OK",
+    "barrel@[5, 1, 3] loot replace": "Dropped 0 items"
+   }
   },
-  "M-kitchen": {
-   "nbt_sha256": "90fec8a3d25e3770566888318fc53d494fe8d54580564def01fa692eafe20653",
+  "st03_kitchen": {
+   "module": "M-kitchen",
+   "placements": [
+    "F18"
+   ],
+   "loot_table": "moreminecrafts:chests/pillager_headquarters/kitchen",
+   "nbt_sha256": "5f3b191652a6ac267cd41e66cac4e32b48b062783d55a20b01dd38a42bef90c9",
    "verify": {
     "size": [
      9,
@@ -208,27 +550,28 @@
      9
     ],
     "blocks": 891,
-    "non_air_blocks": 448,
-    "palette": 29,
+    "non_air_blocks": 447,
+    "palette": 28,
     "cells_compared": 891,
     "mismatches": 0
    },
    "states": {
-    "authored_cells_checked": 448,
+    "authored_cells_checked": 447,
     "mismatches": 0,
-    "stairs": 64
+    "stairs": 63
    },
    "access": {
     "entrance": "door at x=4 (south)",
-    "interior_columns": 31,
-    "interactive_blocks": 7,
+    "interior_columns": 30,
+    "interactive_blocks": 8,
     "unreachable": []
    },
    "containers": {
-    "minecraft:barrel": 3,
-    "minecraft:blast_furnace": 0,
-    "minecraft:chest": 2,
-    "minecraft:furnace": 1
+    "barrel": 3,
+    "blast_furnace": 0,
+    "chest": 2,
+    "furnace": 0,
+    "smoker": 1
    },
    "workstations": {
     "crafting_table": 1,
@@ -236,9 +579,20 @@
     "grindstone": 0,
     "smithing_table": 0,
     "blast_furnace": 0,
-    "furnace": 1,
+    "furnace": 0,
+    "smoker": 1,
+    "campfire": 1,
+    "lectern": 0,
     "water_cauldron": 0,
     "cauldron": 1
+   },
+   "loot_binding": {
+    "containers_bound": 5,
+    "table_ids": [
+     "moreminecrafts:chests/pillager_headquarters/kitchen"
+    ],
+    "tags_per_container": 1,
+    "non_loot_block_entities_without_table": 2
    },
    "rotations": {
     "none": {
@@ -258,20 +612,52 @@
      "failures": []
     }
    },
+   "block_entities_in_game": {
+    "none": {
+     "block_entities": 7,
+     "failures": []
+    },
+    "clockwise_90": {
+     "block_entities": 7,
+     "failures": []
+    },
+    "180": {
+     "block_entities": 7,
+     "failures": []
+    },
+    "counterclockwise_90": {
+     "block_entities": 7,
+     "failures": []
+    }
+   },
    "container_function": {
-    "furnace@[1, 1, 7]": "OK",
+    "smoker@[1, 1, 7]": "OK",
     "barrel@[7, 1, 3]": "OK",
     "barrel@[7, 1, 4]": "OK",
     "chest@[7, 1, 5]": "OK",
     "chest@[7, 1, 6]": "OK",
     "barrel@[7, 2, 3]": "OK"
    },
-   "persistent_blocks": {
-    "minecraft:fire": "Test passed"
+   "loot_tag_in_game": {
+    "barrel@[7, 1, 3]": "OK",
+    "barrel@[7, 1, 3] loot replace": "Dropped 0 items",
+    "barrel@[7, 1, 4]": "OK",
+    "barrel@[7, 1, 4] loot replace": "Dropped 0 items",
+    "chest@[7, 1, 5]": "OK",
+    "chest@[7, 1, 5] loot replace": "Dropped 0 items",
+    "chest@[7, 1, 6]": "OK",
+    "chest@[7, 1, 6] loot replace": "Dropped 0 items",
+    "barrel@[7, 2, 3]": "OK",
+    "barrel@[7, 2, 3] loot replace": "Dropped 0 items"
    }
   },
-  "M-smithy": {
-   "nbt_sha256": "ff3599412f190b648bb91c2797cb57932b4c8824f55c31c054fd889cabb22801",
+  "st03_smithy": {
+   "module": "M-smithy",
+   "placements": [
+    "F19"
+   ],
+   "loot_table": "moreminecrafts:chests/pillager_headquarters/smithy",
+   "nbt_sha256": "1d957dbd54028c588a759514a30a71f8631603a2bfe38a99dbd81ffbe2ba238e",
    "verify": {
     "size": [
      9,
@@ -296,10 +682,11 @@
     "unreachable": []
    },
    "containers": {
-    "minecraft:barrel": 2,
-    "minecraft:blast_furnace": 1,
-    "minecraft:chest": 2,
-    "minecraft:furnace": 2
+    "barrel": 2,
+    "blast_furnace": 1,
+    "chest": 2,
+    "furnace": 2,
+    "smoker": 0
    },
    "workstations": {
     "crafting_table": 0,
@@ -308,8 +695,19 @@
     "smithing_table": 1,
     "blast_furnace": 1,
     "furnace": 2,
+    "smoker": 0,
+    "campfire": 0,
+    "lectern": 0,
     "water_cauldron": 1,
     "cauldron": 0
+   },
+   "loot_binding": {
+    "containers_bound": 4,
+    "table_ids": [
+     "moreminecrafts:chests/pillager_headquarters/smithy"
+    ],
+    "tags_per_container": 1,
+    "non_loot_block_entities_without_table": 3
    },
    "rotations": {
     "none": {
@@ -329,6 +727,24 @@
      "failures": []
     }
    },
+   "block_entities_in_game": {
+    "none": {
+     "block_entities": 7,
+     "failures": []
+    },
+    "clockwise_90": {
+     "block_entities": 7,
+     "failures": []
+    },
+    "180": {
+     "block_entities": 7,
+     "failures": []
+    },
+    "counterclockwise_90": {
+     "block_entities": 7,
+     "failures": []
+    }
+   },
    "container_function": {
     "chest@[1, 1, 3]": "OK",
     "chest@[1, 1, 4]": "OK",
@@ -338,12 +754,24 @@
     "barrel@[7, 1, 6]": "OK",
     "barrel@[7, 1, 7]": "OK"
    },
-   "persistent_blocks": {
-    "minecraft:water_cauldron": "Test passed"
+   "loot_tag_in_game": {
+    "chest@[1, 1, 3]": "OK",
+    "chest@[1, 1, 3] loot replace": "Dropped 0 items",
+    "chest@[1, 1, 4]": "OK",
+    "chest@[1, 1, 4] loot replace": "Dropped 0 items",
+    "barrel@[7, 1, 6]": "OK",
+    "barrel@[7, 1, 6] loot replace": "Dropped 0 items",
+    "barrel@[7, 1, 7]": "OK",
+    "barrel@[7, 1, 7] loot replace": "Dropped 0 items"
    }
   },
-  "M-cart_shed": {
-   "nbt_sha256": "dd481cb62ae89b7b35fc324d528db0ae5bda56a740ecc3e83bb81bc5a174aa8a",
+  "st03_cart_shed": {
+   "module": "M-cart_shed",
+   "placements": [
+    "F20"
+   ],
+   "loot_table": "moreminecrafts:chests/pillager_headquarters/cart_shed",
+   "nbt_sha256": "1af87082d3b4f75cc9b630b49ae8b200cdd39dc78bc878759e11454fc456d796",
    "verify": {
     "size": [
      8,
@@ -368,10 +796,11 @@
     "unreachable": []
    },
    "containers": {
-    "minecraft:barrel": 3,
-    "minecraft:blast_furnace": 0,
-    "minecraft:chest": 1,
-    "minecraft:furnace": 0
+    "barrel": 3,
+    "blast_furnace": 0,
+    "chest": 1,
+    "furnace": 0,
+    "smoker": 0
    },
    "workstations": {
     "crafting_table": 0,
@@ -380,8 +809,19 @@
     "smithing_table": 0,
     "blast_furnace": 0,
     "furnace": 0,
+    "smoker": 0,
+    "campfire": 0,
+    "lectern": 0,
     "water_cauldron": 0,
     "cauldron": 0
+   },
+   "loot_binding": {
+    "containers_bound": 4,
+    "table_ids": [
+     "moreminecrafts:chests/pillager_headquarters/cart_shed"
+    ],
+    "tags_per_container": 1,
+    "non_loot_block_entities_without_table": 0
    },
    "rotations": {
     "none": {
@@ -401,13 +841,147 @@
      "failures": []
     }
    },
+   "block_entities_in_game": {
+    "none": {
+     "block_entities": 4,
+     "failures": []
+    },
+    "clockwise_90": {
+     "block_entities": 4,
+     "failures": []
+    },
+    "180": {
+     "block_entities": 4,
+     "failures": []
+    },
+    "counterclockwise_90": {
+     "block_entities": 4,
+     "failures": []
+    }
+   },
    "container_function": {
     "barrel@[1, 1, 1]": "OK",
     "barrel@[1, 2, 1]": "OK",
     "barrel@[2, 1, 1]": "OK",
     "chest@[3, 1, 1]": "OK"
    },
-   "persistent_blocks": {}
+   "loot_tag_in_game": {
+    "barrel@[1, 1, 1]": "OK",
+    "barrel@[1, 1, 1] loot replace": "Dropped 0 items",
+    "barrel@[1, 2, 1]": "OK",
+    "barrel@[1, 2, 1] loot replace": "Dropped 0 items",
+    "barrel@[2, 1, 1]": "OK",
+    "barrel@[2, 1, 1] loot replace": "Dropped 0 items",
+    "chest@[3, 1, 1]": "OK",
+    "chest@[3, 1, 1] loot replace": "Dropped 0 items"
+   }
   }
- }
+ },
+ "module_default_copies": {
+  "st03_house_b": {
+   "identical_to": "st03_house_b_f12",
+   "bytes_identical": true
+  },
+  "st03_house_c": {
+   "identical_to": "st03_house_c_f13",
+   "bytes_identical": true
+  }
+ },
+ "loot_tables": {
+  "files": {
+   "house_b": {
+    "id": "moreminecrafts:chests/pillager_headquarters/house_b",
+    "pools": 0,
+    "random_sequence": "moreminecrafts:chests/pillager_headquarters/house_b"
+   },
+   "house_c": {
+    "id": "moreminecrafts:chests/pillager_headquarters/house_c",
+    "pools": 0,
+    "random_sequence": "moreminecrafts:chests/pillager_headquarters/house_c"
+   },
+   "house_d": {
+    "id": "moreminecrafts:chests/pillager_headquarters/house_d",
+    "pools": 0,
+    "random_sequence": "moreminecrafts:chests/pillager_headquarters/house_d"
+   },
+   "kitchen": {
+    "id": "moreminecrafts:chests/pillager_headquarters/kitchen",
+    "pools": 0,
+    "random_sequence": "moreminecrafts:chests/pillager_headquarters/kitchen"
+   },
+   "smithy": {
+    "id": "moreminecrafts:chests/pillager_headquarters/smithy",
+    "pools": 0,
+    "random_sequence": "moreminecrafts:chests/pillager_headquarters/smithy"
+   },
+   "cart_shed": {
+    "id": "moreminecrafts:chests/pillager_headquarters/cart_shed",
+    "pools": 0,
+    "random_sequence": "moreminecrafts:chests/pillager_headquarters/cart_shed"
+   }
+  },
+  "ids_per_facility": {
+   "moreminecrafts:chests/pillager_headquarters/house_b": [
+    "house_b"
+   ],
+   "moreminecrafts:chests/pillager_headquarters/house_c": [
+    "house_c"
+   ],
+   "moreminecrafts:chests/pillager_headquarters/house_d": [
+    "house_d"
+   ],
+   "moreminecrafts:chests/pillager_headquarters/kitchen": [
+    "kitchen"
+   ],
+   "moreminecrafts:chests/pillager_headquarters/smithy": [
+    "smithy"
+   ],
+   "moreminecrafts:chests/pillager_headquarters/cart_shed": [
+    "cart_shed"
+   ]
+  }
+ },
+ "variants": {
+  "st03_house_b_f12 vs st03_house_b_f15": {
+   "size_equal": true,
+   "door_cells_equal": true,
+   "bed_cells_equal": true,
+   "container_and_workstation_cells_equal": true,
+   "differing_cells": 27,
+   "of_which_bed_colour_only": 4,
+   "all_differing_cells_are_decoration": true
+  },
+  "st03_house_c_f13 vs st03_house_c_f16": {
+   "size_equal": true,
+   "door_cells_equal": true,
+   "bed_cells_equal": true,
+   "container_and_workstation_cells_equal": true,
+   "differing_cells": 11,
+   "of_which_bed_colour_only": 2,
+   "all_differing_cells_are_decoration": true
+  }
+ },
+ "unchanged_look_vs_b0c8644": {
+  "st03_house_b_f12": {
+   "cells": 630,
+   "block_state_differences": 0
+  },
+  "st03_house_c_f13": {
+   "cells": 441,
+   "block_state_differences": 0
+  },
+  "st03_house_d": {
+   "cells": 441,
+   "block_state_differences": 0
+  },
+  "st03_smithy": {
+   "cells": 891,
+   "block_state_differences": 0
+  },
+  "st03_cart_shed": {
+   "cells": 504,
+   "block_state_differences": 0
+  }
+ },
+ "datapack_loaded": "There are 2 data pack(s) enabled: [vanilla (built-in)], [file/pack (world)]"
 }

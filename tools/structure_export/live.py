@@ -120,7 +120,7 @@ def _snbt(value) -> str:
 
 def block_entity_failures(server, origin, rotation: str, expected: dict) -> list:
     """Cells whose block entity in the game differs from the template's NBT: the state must match (id and every
-    stated key), no contents may have been created (Items, LootTable), and banner patterns must be exactly
+    stated key), no contents may have been created (Items, and LootTable unless the template binds one), and banner patterns must be exactly
     the expected count. Positions are template positions, placed with `origin` and `rotation`."""
     failures = []
     for pos, nbt in sorted(expected.items()):
@@ -131,6 +131,8 @@ def block_entity_failures(server, origin, rotation: str, expected: dict) -> list
             failures.append({"pos": list(pos), "expected": want, "reply": reply})
             continue
         for path in ("Items[0]", "LootTable"):
+            if path == "LootTable" and "LootTable" in nbt:
+                continue  # bound by the template's config: `want` above already matched the exact id
             if "passed" in server.cmd(f"execute if data block {at} {path}"):
                 failures.append({"pos": list(pos), "unexpected": path})
         count = len(nbt.get("patterns", []))

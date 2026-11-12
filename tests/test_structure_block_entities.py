@@ -253,3 +253,118 @@ def test_live_snbt_matches_the_policy_syntax(tmp_path):
     result = convert_file(tmp_path, [STONE, "minecraft:white_wall_banner[facing=north]"], [1, 1], size=(2, 1, 1))
     text = live._snbt(result.block_entities[(0, 0, 0)])
     assert text.startswith('{id:"minecraft:banner",patterns:[{color:"cyan",pattern:"minecraft:rhombus"}')
+
+
+# ---- ST-03 group 1 additions: smoker, campfire, lectern, coloured wall banners, loot-table binding -----------------
+
+COLOURS = (
+    "orange magenta light_blue yellow lime pink gray light_gray cyan purple blue brown green red black".split()
+)
+
+
+@pytest.mark.parametrize(
+    "state, be",
+    [
+        ("minecraft:smoker[facing=south,lit=false]", "minecraft:smoker"),
+        ("minecraft:campfire[facing=north,lit=true,signal_fire=false,waterlogged=false]", "minecraft:campfire"),
+        ("minecraft:campfire[facing=east,lit=false,signal_fire=false,waterlogged=false]", "minecraft:campfire"),
+        ("minecraft:lectern[facing=west,has_book=false,powered=false]", "minecraft:lectern"),
+    ]
+    + [(f"minecraft:{c}_wall_banner[facing=south]", "minecraft:banner") for c in COLOURS],
+)
+def test_new_allow_list_blocks_get_exactly_their_policy_nbt(tmp_path, state, be):
+    result = convert_file(tmp_path, [STONE, state], [1, 1], size=(2, 1, 1))
+    (block, nbt) = _template(result)[(0, 0, 0)]
+    assert block[0] == state.split("[")[0] and nbt is not None
+    assert {k: str(v) for k, v in nbt.items()} == {"id": be}  # plain: no Items, patterns, LootTable
+    _verify(result)
+
+
+def test_coloured_banners_are_plain_and_white_keeps_the_ominous_pattern(tmp_path):
+    allow = _allow()["allow"]
+    assert allow["minecraft:white_wall_banner"]["nbt"]["patterns"]
+    assert all(set(allow[f"minecraft:{c}_wall_banner"]["nbt"]) == {"id"} for c in COLOURS)
+    assert len(allow) == 5 + 3 + len(COLOURS)  # the five original blocks + smoker, campfire, lectern + 15 colours
+    assert "minecraft:red_banner" not in allow and "minecraft:smoker" in allow  # standing banners stay refused
+
+
+@pytest.mark.parametrize(
+    "state, reason",
+    [
+        ("minecraft:smoker[facing=north,lit=true]", "lit"),
+        ("minecraft:lectern[facing=north,has_book=true,powered=false]", "has_book"),
+        ("minecraft:red_banner[rotation=4]", "allow-list"),
+        ("minecraft:brewing_stand[has_bottle_0=false,has_bottle_1=false,has_bottle_2=false]", "allow-list"),
+    ],
+)
+def test_new_blocks_keep_their_state_restrictions(tmp_path, state, reason):
+    with pytest.raises(UnsupportedFeature) as error:
+        convert_file(tmp_path, [STONE, state], [0, 1])
+    assert error.value.feature == "block_entity" and reason in str(error.value)
+
+
+def _with_loot(tmp_path, palette, cells, loot, size=(2, 1, 1)):
+    import dataclasses
+
+    from test_structure_export import config_for, write_schem
+
+    schem = write_schem(tmp_path / "in.schem", palette, cells, size)
+    result = C.convert(dataclasses.replace(config_for(schem, tmp_path, size), loot_table=loot))
+    C.write(result)
+    return result
+
+
+LOOT = "moreminecrafts:chests/pillager_headquarters/kitchen"
+
+
+def test_loot_table_is_written_on_chests_and_barrels_only(tmp_path):
+    palette = [
+        "minecraft:chest[facing=north]",
+        "minecraft:barrel[facing=up,open=false]",
+        "minecraft:furnace[facing=north,lit=false]",
+        "minecraft:smoker[facing=north,lit=false]",
+        "minecraft:white_wall_banner[facing=north]",
+        "minecraft:crafting_table",
+    ]
+    result = _with_loot(tmp_path, palette, list(range(6)), LOOT, size=(6, 1, 1))
+    t = _template(result)
+    for x in (0, 1):  # chest, barrel
+        assert {k: str(v) for k, v in t[(x, 0, 0)][1].items()} == {"id": palette[x].split("[")[0], "LootTable": LOOT}
+    for x in (2, 3, 4):  # furnace, smoker, banner: not loot containers, the table is ignored
+        assert "LootTable" not in t[(x, 0, 0)][1]
+    assert t[(5, 0, 0)][1] is None
+    summary = verify(
+        result.config.nbt_path, result.config.source, C.load_reference("26.3"), "include",
+        C.load_connectivity("26.3"), BE.load("26.3"), loot_table=LOOT,
+    )  # fmt: skip
+    assert summary["mismatches"] == 0
+
+
+def test_verifier_requires_the_declared_loot_table_exactly(tmp_path):
+    result = _with_loot(tmp_path, ["minecraft:chest[facing=north]", STONE], [0, 1], LOOT)
+    with pytest.raises(VerificationError, match="block-entity data"):
+        _verify(result)  # template carries a LootTable but the check declares none
+    for wrong in ("moreminecrafts:chests/pillager_headquarters/smithy", None):
+        with pytest.raises(VerificationError, match="block-entity data"):
+            verify(
+                result.config.nbt_path, result.config.source, C.load_reference("26.3"), "include",
+                C.load_connectivity("26.3"), BE.load("26.3"), loot_table=wrong,
+            )  # fmt: skip
+
+
+def test_no_loot_table_is_the_default(tmp_path):
+    result = convert_file(tmp_path, [STONE, "minecraft:chest[facing=north]"], [1, 1], size=(2, 1, 1))
+    assert "LootTable" not in _template(result)[(0, 0, 0)][1]
+
+
+def test_config_loot_table_option_is_validated(tmp_path):
+    text = (ROOT / "exports/structures/ruined_watchtower.toml").read_text()
+    assert "[options]" in text
+    good = tmp_path / "good.toml"
+    good.write_text(text.replace("[options]", f'[options]\nloot_table = "{LOOT}"'))
+    assert C.load_config(good).loot_table == LOOT
+    bad = tmp_path / "bad.toml"
+    bad.write_text(text.replace("[options]", '[options]\nloot_table = "Not A Table"'))
+    with pytest.raises(C.ConfigError, match="loot_table"):
+        C.load_config(bad)
+    assert C.load_config(ROOT / "exports/structures/ruined_watchtower.toml").loot_table is None

@@ -53,7 +53,7 @@ _ID_RE = re.compile(r"^([a-z0-9_.-]+):([a-z0-9_-]+(?:/[a-z0-9_.-]+)*)$")
 # redstone wire, ...) a default here is what generates in the world, and the report warns.
 CONNECTION_PROPERTIES = {"north", "east", "south", "west", "up", "down"}
 
-FEATURE_HANDLERS: dict[str, Callable[[str, dict[str, str], str], Compound]] = {"block_entity": block_entities.handler}
+FEATURE_HANDLERS: dict[str, Callable[..., Compound]] = {"block_entity": block_entities.handler}
 
 
 @cache
@@ -113,6 +113,7 @@ class Config:
     size: tuple[int, int, int]
     offset: tuple[int, int, int]
     air: str
+    loot_table: str | None = None  # optional `[options] loot_table`: bound to every chest / barrel of the template
 
     @property
     def nbt_path(self) -> Path:
@@ -125,11 +126,11 @@ class Config:
         return self.reports / namespace / f"{name}.json"
 
 
-def _table(data: dict, key: str, allowed: set[str], where: str) -> dict:
+def _table(data: dict, key: str, allowed: set[str], where: str, optional: frozenset = frozenset()) -> dict:
     table = data.get(key)
     if not isinstance(table, dict):
         raise ConfigError(f"{where}: missing [{key}] table")
-    unknown = set(table) - allowed
+    unknown = set(table) - allowed - optional
     if unknown:
         raise ConfigError(f"{where}: unknown keys in [{key}]: {sorted(unknown)}")
     missing = allowed - set(table)
@@ -173,7 +174,10 @@ def load_config(path: Path) -> Config:
     source = _table(data, "source", {"path", "sha256", "data_version"}, where)
     output = _table(data, "output", {"id", "datapack", "reports"}, where)
     expect = _table(data, "expect", {"size", "offset"}, where)
-    options = _table(data, "options", {"air"}, where)
+    options = _table(data, "options", {"air"}, where, optional=frozenset({"loot_table"}))
+    loot_table = options.get("loot_table")
+    if loot_table is not None and not (isinstance(loot_table, str) and _ID_RE.match(loot_table)):
+        raise ConfigError(f"{where}: options.loot_table {loot_table!r} is not a valid namespace:path resource id")
     match = _ID_RE.match(str(output["id"]))
     if not match or ".." in output["id"]:
         raise ConfigError(f"{where}: output id {output['id']!r} is not a valid namespace:path resource id")
@@ -194,6 +198,7 @@ def load_config(path: Path) -> Config:
         size=size,
         offset=_triple(expect["offset"], "expect.offset", where),
         air=options["air"],
+        loot_table=loot_table,
     )
 
 
@@ -240,7 +245,9 @@ def convert(config: Config) -> Result:
         if feature is not None:
             if feature not in FEATURE_HANDLERS:
                 raise UnsupportedFeature(feature, f"{text} (palette index {index}) needs '{feature}' handling")
-            block_nbt[index] = FEATURE_HANDLERS[feature](block_id, dict(state), config.target)
+            block_nbt[index] = FEATURE_HANDLERS[feature](
+                block_id, dict(state), config.target, loot_table=config.loot_table
+            )
         if filled:
             defaulted[text] = filled
             unconnected = sorted(set(filled) & CONNECTION_PROPERTIES)

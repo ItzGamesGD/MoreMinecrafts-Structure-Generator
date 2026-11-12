@@ -38,7 +38,8 @@ def edge(g, x, z, x0=0, x1=None, z0=0, z1=None):
 
 
 # ---------------------------------------------------------------- House B (9x10x7): regular gable, covered porch
-def house_b():
+def house_b(variant="f12"):
+    """variant f12 (F12) / f15 (F15): same shell, room program and door; only the g.d() decoration differs."""
     g = G(9, 10, 7)
     # floor: cobblestone rim, spruce room, stone-brick porch
     for x in range(9):
@@ -81,9 +82,17 @@ def house_b():
         g.fill(x, x, 1, 4, 6, 6, "dark_oak_log", axis="y")
     for x in (1, 2, 4, 6, 7):
         g.put(x, 4, 6, "stripped_dark_oak_log", axis="x")
-    for x in (2, 6):
-        g.put(x, 3, 6, "lantern", hanging=True)
-    g.put(4, 3, 6, "white_wall_banner", facing="south")
+    if variant == "f12":  # lanterns over the front windows, illager banner over the door
+        for x in (2, 6):
+            g.d(x, 3, 6, "lantern", hanging=True)
+        g.d(4, 3, 6, "white_wall_banner", facing="south")
+    else:  # f15: lanterns by the porch posts, plain black banner, planters and a hay bale on the porch floor
+        for x in (1, 7):
+            g.d(x, 3, 6, "lantern", hanging=True)
+        g.d(4, 3, 6, "black_wall_banner", facing="south")
+        g.d(1, 1, 6, "potted_fern")
+        g.d(7, 1, 6, "hay_block", axis="y")
+        g.d(2, 1, 6, "potted_dark_oak_sapling")
     # frieze above the front wall, ceiling
     for x in range(9):
         g.put(x, 5, 5, "spruce_planks")
@@ -99,29 +108,49 @@ def house_b():
                     g.put(x, y, z, "dark_oak_log", axis="y")
                 else:
                     g.put(x, y, z, "spruce_planks")
-    # interior: two-bed communal room
-    g.bed(1, 2, "red", "north")
-    g.bed(2, 2, "blue", "north")
-    g.fill(3, 4, 1, 2, 1, 1, "bookshelf")
-    g.put(5, 1, 1, "spruce_fence")
-    g.put(5, 2, 1, "spruce_pressure_plate")
-    g.put(4, 1, 2, "spruce_stairs", facing="east", half="bottom", shape="straight")
+    # interior: two-bed communal room (room program: beds, crafting table, furnace, barrels, chest)
+    if variant == "f12":
+        g.bed(1, 2, "red", "north")
+        g.bed(2, 2, "blue", "north")
+    else:
+        g.bed(1, 2, "blue", "north")
+        g.bed(2, 2, "red", "north")
     g.put(7, 1, 1, "crafting_table")
     g.put(7, 1, 2, "furnace", facing="west", lit=False)
     g.put(7, 1, 3, "barrel", facing="west", open=False)
     g.put(7, 1, 4, "chest", facing="west", type="single")
     g.put(1, 1, 4, "barrel", facing="east", open=False)
-    for x in (3, 4, 5):
-        for z in (3, 4):
-            g.put(x, 1, z, "brown_carpet")
-    g.put(4, 4, 2, "lantern", hanging=True)
-    g.put(3, 3, 4, "wall_torch", facing="north")
-    g.put(5, 3, 4, "wall_torch", facing="north")
+    if variant == "f12":  # bookshelf wall, table with a stool, brown rug, hanging lantern, two wall torches
+        for x in (3, 4):
+            for y in (1, 2):
+                g.d(x, y, 1, "bookshelf")
+        g.d(5, 1, 1, "spruce_fence")
+        g.d(5, 2, 1, "spruce_pressure_plate")
+        g.d(4, 1, 2, "spruce_stairs", facing="east", half="bottom", shape="straight")
+        for x in (3, 4, 5):
+            for z in (3, 4):
+                g.d(x, 1, z, "brown_carpet")
+        g.d(4, 4, 2, "lantern", hanging=True)
+        g.d(3, 3, 4, "wall_torch", facing="north")
+        g.d(5, 3, 4, "wall_torch", facing="north")
+    else:  # f15: a study corner (lectern + short shelf), table with a stool, blue rug, two hanging lanterns
+        g.d(3, 1, 1, "bookshelf")
+        g.d(3, 2, 1, "bookshelf")
+        g.d(4, 1, 1, "lectern", facing="south", has_book=False, powered=False)
+        g.d(5, 1, 1, "spruce_fence")
+        g.d(5, 2, 1, "spruce_pressure_plate")
+        g.d(5, 1, 2, "spruce_stairs", facing="north", half="bottom", shape="straight")
+        for x in (3, 4, 5):
+            for z in (3, 4):
+                g.d(x, 1, z, "blue_carpet")
+        g.d(3, 4, 2, "lantern", hanging=True)
+        g.d(5, 4, 2, "lantern", hanging=True)
     return g
 
 
 # ---------------------------------------------------------------- House C (7x9x7): asymmetric gable, recessed door
-def house_c():
+def house_c(variant="f13"):
+    """variant f13 (F13) / f16 (F16): same shell, room program and door; only the g.d() decoration differs."""
     g = G(7, 9, 7)
     wtop = {0: 4, 1: 5, 2: 6, 3: 5, 4: 4, 5: 3, 6: 2}  # last wall row under the saltbox roof, by x
     # floor
@@ -182,21 +211,34 @@ def house_c():
                 g.put(x, y, z, "spruce_planks")
     # the front gable above the recess
     g.fill(3, 3, 4, 5, 6, 6, "spruce_planks")
-    g.put(3, 3, 6, "lantern", hanging=True)
+    g.d(3, 3, 6, "lantern", hanging=True)
     # stone chimney on the east wall, with a real furnace behind the room
     g.put(5, 1, 3, "furnace", facing="west", lit=False)
     for y in range(1, 9):
         stone(g, 6, y, 3)
-    g.put(6, 8, 3, "cobblestone_wall")
-    # interior: one bed + shelves
-    g.bed(1, 2, "red", "north")
-    g.fill(2, 3, 1, 2, 1, 1, "bookshelf")
+    g.d(6, 8, 3, *(("cobblestone_wall",) if variant == "f13" else ("campfire",)),
+        **({} if variant == "f13" else {"facing": "north", "lit": True, "signal_fire": False, "waterlogged": False}))  # fmt: skip
+    # interior: one bed + shelves (room program: bed, crafting table, barrel, chest)
     g.put(4, 1, 1, "crafting_table")
     g.put(5, 1, 1, "barrel", facing="south", open=False)
     g.put(1, 1, 4, "chest", facing="east", type="single")
-    g.put(3, 1, 3, "brown_carpet")
-    g.put(2, 1, 3, "brown_carpet")
-    g.put(2, 6, 3, "lantern", hanging=True)
+    if variant == "f13":
+        g.bed(1, 2, "red", "north")
+        for x in (2, 3):
+            for y in (1, 2):
+                g.d(x, y, 1, "bookshelf")
+        g.d(3, 1, 3, "brown_carpet")
+        g.d(2, 1, 3, "brown_carpet")
+        g.d(2, 6, 3, "lantern", hanging=True)
+    else:  # f16: blue bed, a lectern and a one-bay shelf, grey rug, red banner on the back wall, lantern by the bed
+        g.bed(1, 2, "blue", "north")
+        g.d(2, 1, 1, "bookshelf")
+        g.d(2, 2, 1, "bookshelf")
+        g.d(3, 1, 1, "lectern", facing="south", has_book=False, powered=False)
+        g.d(4, 3, 1, "red_wall_banner", facing="south")
+        g.d(3, 1, 3, "gray_carpet")
+        g.d(4, 1, 3, "gray_carpet")
+        g.d(2, 6, 4, "lantern", hanging=True)
     return g
 
 
@@ -311,17 +353,21 @@ def kitchen():
             for y in range(6, 11):
                 if (x, z) != (4, 1):
                     stone(g, x, y, z)
-    g.put(4, 0, 1, "netherrack")
-    g.put(4, 1, 1, "fire", age=0, north=False, east=False, south=False, west=False, up=False)
+    for y in range(6, 11):  # the flue column is open air all the way up (no roof stair left inside it)
+        g.clear(4, y, 1)
+    for x in range(3, 6):  # fire safety: non-flammable plate behind the flue (it touches the flue air at (4,5,1))
+        stone(g, x, 5, 0)
+    # hearth: a lit campfire on the stone floor (it never spreads fire; its smoke rises through the flue)
+    g.put(4, 1, 1, "campfire", facing="south", lit=True, signal_fire=False, waterlogged=False)
     g.put(3, 1, 1, "cauldron")
     for x in (3, 4, 5):  # stone hearth lip
         stone(g, x, 0, 2)
-    # preparation counter (west wall), real furnace + crafting table
+    # preparation counter (west wall), smoker + crafting table
     g.put(1, 1, 3, "crafting_table")
     for z in (4, 5, 6):
         g.put(1, 1, z, "spruce_planks")
     g.put(1, 2, 5, "lantern", hanging=False)
-    g.put(1, 1, 7, "furnace", facing="east", lit=False)
+    g.put(1, 1, 7, "smoker", facing="east", lit=False)
     g.put(1, 2, 4, "cake", bites=0)
     # storage (east wall): real barrels and chests, cosmetic hay
     g.put(7, 1, 3, "barrel", facing="west", open=False)
@@ -439,36 +485,67 @@ def cart_shed():
     return g
 
 
-BUILDINGS = {
-    "M-house_b": ("st03_house_b", house_b),
-    "M-house_c": ("st03_house_c", house_c),
-    "M-house_d": ("st03_house_d", house_d),
-    "M-kitchen": ("st03_kitchen", kitchen),
-    "M-smithy": ("st03_smithy", smithy),
-    "M-cart_shed": ("st03_cart_shed", cart_shed),
+# loot-table binding (Q16): one id per facility / house type; the five-or-so loot containers (chest, barrel) of a module
+# all carry that single id. Namespace and path follow the mod's existing convention (moreminecrafts:chests/<area>/<name>).
+LOOT_AREA = "moreminecrafts:chests/pillager_headquarters"
+LOOT_KEYS = ("house_b", "house_c", "house_d", "kitchen", "smithy", "cart_shed")
+loot_id = lambda key: f"{LOOT_AREA}/{key}"  # noqa: E731
+
+# file -> (module id, builder, loot key, placement(s)). Houses B / C have one template per placement (Q08).
+TEMPLATES = {
+    "st03_house_b_f12": ("M-house_b", lambda: house_b("f12"), "house_b", ["F12"]),
+    "st03_house_b_f15": ("M-house_b", lambda: house_b("f15"), "house_b", ["F15"]),
+    "st03_house_c_f13": ("M-house_c", lambda: house_c("f13"), "house_c", ["F13"]),
+    "st03_house_c_f16": ("M-house_c", lambda: house_c("f16"), "house_c", ["F16"]),
+    "st03_house_d": ("M-house_d", house_d, "house_d", ["F17"]),
+    "st03_kitchen": ("M-kitchen", kitchen, "kitchen", ["F18"]),
+    "st03_smithy": ("M-smithy", smithy, "smithy", ["F19"]),
+    "st03_cart_shed": ("M-cart_shed", cart_shed, "cart_shed", ["F20"]),
 }
+# the placement table still names one file per module; these copies (identical bytes to the first variant) keep it valid
+MODULE_DEFAULT_COPY = {"st03_house_b": "st03_house_b_f12", "st03_house_c": "st03_house_c_f13"}
 DOORS = {  # (x, z) of the door column on the south face, or None for an open front
     "M-house_b": (4, 5), "M-house_c": (3, 5), "M-house_d": (3, 6),
     "M-kitchen": (4, 8), "M-smithy": None, "M-cart_shed": None,
 }  # fmt: skip
+LOOT_DIR = HERE / "datapack/data/moreminecrafts/loot_table/chests/pillager_headquarters"
+
+
+def write_loot_tables():
+    """Empty-pool chest tables (weights and quantities are NOT approved): an opened container yields nothing."""
+    LOOT_DIR.mkdir(parents=True, exist_ok=True)
+    (HERE / "datapack/pack.mcmeta").write_text(
+        json.dumps({"pack": {"description": "ST-03 group 1 loot tables (empty)", "min_format": [121, 0], "max_format": [121, 0]}}, indent=1) + "\n"
+    )  # fmt: skip
+    for key in LOOT_KEYS:
+        table = {"type": "minecraft:chest", "random_sequence": loot_id(key), "pools": []}
+        (LOOT_DIR / f"{key}.json").write_text(json.dumps(table, indent=2) + "\n")
 
 
 def main(only=None):
     mods = A.modules()
     rep = {}
-    for mid, (fname, fn) in BUILDINGS.items():
-        if only and mid not in only:
+    write_loot_tables()
+    for fname, (mid, fn, key, placements) in TEMPLATES.items():
+        if only and fname not in only and mid not in only:
             continue
         m = mods[mid]
         g = fn()
-        assert [g.W, g.H, g.D] == m["size"] and m["air"] == "include" and m["file"] == fname, (mid, m)
+        assert [g.W, g.H, g.D] == m["size"] and m["air"] == "include", (mid, m)
         with tempfile.TemporaryDirectory() as d:
-            r = export_module(m, g.c, Path(d) / "pack")
+            r = export_module(m, g.c, Path(d) / "pack", loot_table=loot_id(key), file=fname)
             shutil.copyfile(r.config.nbt_path, HERE / f"{fname}.nbt")
             shutil.copyfile(r.config.source, HERE / f"{fname}.schem")
             rep[fname] = r.report
-        print(f"{fname}.nbt: {len(g.c)} authored cells, size {m['size']}")
-    (HERE / "export-report.json").write_text(json.dumps(rep, indent=1, sort_keys=True, default=str) + "\n")
+        print(f"{fname}.nbt: {len(g.c)} authored cells, size {m['size']}, loot {loot_id(key)}")
+    for copy, src in MODULE_DEFAULT_COPY.items():
+        if not only or src in only or any(TEMPLATES[src][0] == o for o in only):
+            for ext in ("nbt", "schem"):
+                shutil.copyfile(HERE / f"{src}.{ext}", HERE / f"{copy}.{ext}")
+    rp = HERE / "export-report.json"
+    old = json.loads(rp.read_text()) if rp.exists() else {}
+    old.update(rep)
+    rp.write_text(json.dumps(old, indent=1, sort_keys=True, default=str) + "\n")
 
 
 if __name__ == "__main__":
