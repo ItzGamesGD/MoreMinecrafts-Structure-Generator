@@ -55,7 +55,7 @@ plants) carry none.
   write one `LootTable` string on chests and barrels only; `verify(..., loot_table=…)` accepts exactly that id and still rejects any other contents;
   `live.block_entity_failures` accepts the bound `LootTable` (matched exactly) and still fails on any `Items[0]`.
 - `tools/seam01/export.py::export_module` gained optional `loot_table` and `file` arguments (defaults keep the old behaviour).
-- Tests: `tests/test_structure_block_entities.py` +40 cases (new blocks, state restrictions, coloured banners, loot only on chest/barrel, verifier needs the
+- Tests: `tests/test_structure_block_entities.py` +28 cases (30 → 58; new blocks, state restrictions, coloured banners, loot only on chest/barrel, verifier needs the
   declared id exactly, option validation, no-loot default). 58 pass.
 - **Other behaviour affected:** (a) the five blocks above, previously `UnsupportedFeature`, now convert; (b) the verifier and live check are stricter
   about a `LootTable` only when a template declares one, otherwise unchanged; (c) no other tool in the repository reads the allow-list
