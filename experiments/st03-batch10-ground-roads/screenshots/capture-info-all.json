@@ -1,0 +1,1920 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": {
+    "st03_ground_nw": "96d2d26601239bd15b24f5e87c01cc4ced4dd854b36d525aa8b480366c415338",
+    "st03_ground_ne": "40e20d59af27b4c6bf09ca44510a74f638828a615d3daaa402b3abb4a1b8b107",
+    "st03_ground_sw": "70185e7eed178e965cd097f6e90b1c7732c7a92f2cd5ebaff86de9b9d831c6c7",
+    "st03_ground_se": "92ed5615105317b84f3f078f37d5d71d3ad3f8ed166240e8cf57cfa9bf49e00f"
+  },
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear, random ticks off (grass under blocks is not converted during the session); raised cameras stand on a barrier block set only into air cells",
+  "walls": "batch-8 MW86 / MW31 (the owner-adopted wall F is not swapped in by this batch)",
+  "placed": [
+    {
+      "q": 0,
+      "placement": "GROUND-NE",
+      "module": "MQ-NE",
+      "origin": [
+        56,
+        -61,
+        5
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "GROUND-NW",
+      "module": "MQ-NW",
+      "origin": [
+        5,
+        -61,
+        5
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "GROUND-SE",
+      "module": "MQ-SE",
+      "origin": [
+        56,
+        -61,
+        56
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "GROUND-SW",
+      "module": "MQ-SW",
+      "origin": [
+        5,
+        -61,
+        56
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "T-NE",
+      "module": "MT",
+      "origin": [
+        111,
+        -61,
+        0
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 0,
+      "placement": "T-NW",
+      "module": "MT",
+      "origin": [
+        0,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "T-SE",
+      "module": "MT",
+      "origin": [
+        111,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 0,
+      "placement": "T-SW",
+      "module": "MT",
+      "origin": [
+        0,
+        -61,
+        111
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 0,
+      "placement": "W-E",
+      "module": "MW86",
+      "origin": [
+        111,
+        -61,
+        13
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 0,
+      "placement": "W-N",
+      "module": "MW86",
+      "origin": [
+        13,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "W-SE",
+      "module": "MW31",
+      "origin": [
+        98,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 0,
+      "placement": "W-SW",
+      "module": "MW31",
+      "origin": [
+        43,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 0,
+      "placement": "W-W",
+      "module": "MW86",
+      "origin": [
+        0,
+        -61,
+        98
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 0,
+      "placement": "GATE",
+      "module": "MG",
+      "origin": [
+        44,
+        -61,
+        100
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F01",
+      "module": "M-manor",
+      "origin": [
+        48,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F02",
+      "module": "M-barracks_a",
+      "origin": [
+        24,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F03",
+      "module": "M-barracks_b",
+      "origin": [
+        75,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F04",
+      "module": "M-barracks_c",
+      "origin": [
+        75,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F05",
+      "module": "M-armory",
+      "origin": [
+        12,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F06",
+      "module": "M-yard",
+      "origin": [
+        12,
+        -61,
+        52
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F07",
+      "module": "M-warehouse_a",
+      "origin": [
+        10,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F08",
+      "module": "M-warehouse_b",
+      "origin": [
+        75,
+        -61,
+        53
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F09",
+      "module": "M-prison",
+      "origin": [
+        92,
+        -61,
+        62
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F10",
+      "module": "M-stable",
+      "origin": [
+        77,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F11",
+      "module": "M-house_a",
+      "origin": [
+        14,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F12",
+      "module": "M-house_b",
+      "origin": [
+        26,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F13",
+      "module": "M-house_c",
+      "origin": [
+        14,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F14",
+      "module": "M-house_a",
+      "origin": [
+        89,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F15",
+      "module": "M-house_b",
+      "origin": [
+        76,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F16",
+      "module": "M-house_c",
+      "origin": [
+        92,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F17",
+      "module": "M-house_d",
+      "origin": [
+        92,
+        -61,
+        40
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F18",
+      "module": "M-kitchen",
+      "origin": [
+        92,
+        -61,
+        50
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F19",
+      "module": "M-smithy",
+      "origin": [
+        28,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 0,
+      "placement": "F20",
+      "module": "M-cart_shed",
+      "origin": [
+        44,
+        -61,
+        82
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 1,
+      "placement": "GROUND-NE",
+      "module": "MQ-NE",
+      "origin": [
+        266,
+        -61,
+        56
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "GROUND-NW",
+      "module": "MQ-NW",
+      "origin": [
+        266,
+        -61,
+        5
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "GROUND-SE",
+      "module": "MQ-SE",
+      "origin": [
+        215,
+        -61,
+        56
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "GROUND-SW",
+      "module": "MQ-SW",
+      "origin": [
+        215,
+        -61,
+        5
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "T-NE",
+      "module": "MT",
+      "origin": [
+        271,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 1,
+      "placement": "T-NW",
+      "module": "MT",
+      "origin": [
+        271,
+        -61,
+        0
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "T-SE",
+      "module": "MT",
+      "origin": [
+        160,
+        -61,
+        111
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "T-SW",
+      "module": "MT",
+      "origin": [
+        160,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 1,
+      "placement": "W-E",
+      "module": "MW86",
+      "origin": [
+        258,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 1,
+      "placement": "W-N",
+      "module": "MW86",
+      "origin": [
+        271,
+        -61,
+        13
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "W-SE",
+      "module": "MW31",
+      "origin": [
+        160,
+        -61,
+        98
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "W-SW",
+      "module": "MW31",
+      "origin": [
+        160,
+        -61,
+        43
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "W-W",
+      "module": "MW86",
+      "origin": [
+        173,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 1,
+      "placement": "GATE",
+      "module": "MG",
+      "origin": [
+        171,
+        -61,
+        44
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F01",
+      "module": "M-manor",
+      "origin": [
+        260,
+        -61,
+        48
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F02",
+      "module": "M-barracks_a",
+      "origin": [
+        247,
+        -61,
+        24
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F03",
+      "module": "M-barracks_b",
+      "origin": [
+        247,
+        -61,
+        75
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F04",
+      "module": "M-barracks_c",
+      "origin": [
+        232,
+        -61,
+        75
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F05",
+      "module": "M-armory",
+      "origin": [
+        232,
+        -61,
+        12
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F06",
+      "module": "M-yard",
+      "origin": [
+        219,
+        -61,
+        12
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F07",
+      "module": "M-warehouse_a",
+      "origin": [
+        192,
+        -61,
+        10
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F08",
+      "module": "M-warehouse_b",
+      "origin": [
+        218,
+        -61,
+        75
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F09",
+      "module": "M-prison",
+      "origin": [
+        209,
+        -61,
+        92
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F10",
+      "module": "M-stable",
+      "origin": [
+        192,
+        -61,
+        77
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F11",
+      "module": "M-house_a",
+      "origin": [
+        260,
+        -61,
+        14
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F12",
+      "module": "M-house_b",
+      "origin": [
+        260,
+        -61,
+        26
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F13",
+      "module": "M-house_c",
+      "origin": [
+        249,
+        -61,
+        14
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F14",
+      "module": "M-house_a",
+      "origin": [
+        260,
+        -61,
+        89
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F15",
+      "module": "M-house_b",
+      "origin": [
+        260,
+        -61,
+        76
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F16",
+      "module": "M-house_c",
+      "origin": [
+        249,
+        -61,
+        92
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F17",
+      "module": "M-house_d",
+      "origin": [
+        231,
+        -61,
+        92
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F18",
+      "module": "M-kitchen",
+      "origin": [
+        221,
+        -61,
+        92
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F19",
+      "module": "M-smithy",
+      "origin": [
+        192,
+        -61,
+        28
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 1,
+      "placement": "F20",
+      "module": "M-cart_shed",
+      "origin": [
+        189,
+        -61,
+        44
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 2,
+      "placement": "GROUND-NE",
+      "module": "MQ-NE",
+      "origin": [
+        375,
+        -61,
+        106
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "GROUND-NW",
+      "module": "MQ-NW",
+      "origin": [
+        426,
+        -61,
+        106
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "GROUND-SE",
+      "module": "MQ-SE",
+      "origin": [
+        375,
+        -61,
+        55
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "GROUND-SW",
+      "module": "MQ-SW",
+      "origin": [
+        426,
+        -61,
+        55
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "T-NE",
+      "module": "MT",
+      "origin": [
+        320,
+        -61,
+        111
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 2,
+      "placement": "T-NW",
+      "module": "MT",
+      "origin": [
+        431,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "T-SE",
+      "module": "MT",
+      "origin": [
+        320,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 2,
+      "placement": "T-SW",
+      "module": "MT",
+      "origin": [
+        431,
+        -61,
+        0
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 2,
+      "placement": "W-E",
+      "module": "MW86",
+      "origin": [
+        320,
+        -61,
+        98
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 2,
+      "placement": "W-N",
+      "module": "MW86",
+      "origin": [
+        418,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "W-SE",
+      "module": "MW31",
+      "origin": [
+        333,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 2,
+      "placement": "W-SW",
+      "module": "MW31",
+      "origin": [
+        388,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 2,
+      "placement": "W-W",
+      "module": "MW86",
+      "origin": [
+        431,
+        -61,
+        13
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 2,
+      "placement": "GATE",
+      "module": "MG",
+      "origin": [
+        387,
+        -61,
+        11
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F01",
+      "module": "M-manor",
+      "origin": [
+        383,
+        -61,
+        100
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F02",
+      "module": "M-barracks_a",
+      "origin": [
+        407,
+        -61,
+        87
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F03",
+      "module": "M-barracks_b",
+      "origin": [
+        356,
+        -61,
+        87
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F04",
+      "module": "M-barracks_c",
+      "origin": [
+        356,
+        -61,
+        72
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F05",
+      "module": "M-armory",
+      "origin": [
+        419,
+        -61,
+        72
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F06",
+      "module": "M-yard",
+      "origin": [
+        419,
+        -61,
+        59
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F07",
+      "module": "M-warehouse_a",
+      "origin": [
+        421,
+        -61,
+        32
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F08",
+      "module": "M-warehouse_b",
+      "origin": [
+        356,
+        -61,
+        58
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F09",
+      "module": "M-prison",
+      "origin": [
+        339,
+        -61,
+        49
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F10",
+      "module": "M-stable",
+      "origin": [
+        354,
+        -61,
+        32
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F11",
+      "module": "M-house_a",
+      "origin": [
+        417,
+        -61,
+        100
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F12",
+      "module": "M-house_b",
+      "origin": [
+        405,
+        -61,
+        100
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F13",
+      "module": "M-house_c",
+      "origin": [
+        417,
+        -61,
+        89
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F14",
+      "module": "M-house_a",
+      "origin": [
+        342,
+        -61,
+        100
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F15",
+      "module": "M-house_b",
+      "origin": [
+        355,
+        -61,
+        100
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F16",
+      "module": "M-house_c",
+      "origin": [
+        339,
+        -61,
+        89
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F17",
+      "module": "M-house_d",
+      "origin": [
+        339,
+        -61,
+        71
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F18",
+      "module": "M-kitchen",
+      "origin": [
+        339,
+        -61,
+        61
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F19",
+      "module": "M-smithy",
+      "origin": [
+        403,
+        -61,
+        32
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 2,
+      "placement": "F20",
+      "module": "M-cart_shed",
+      "origin": [
+        387,
+        -61,
+        29
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 3,
+      "placement": "GROUND-NE",
+      "module": "MQ-NE",
+      "origin": [
+        485,
+        -61,
+        55
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "GROUND-NW",
+      "module": "MQ-NW",
+      "origin": [
+        485,
+        -61,
+        106
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "GROUND-SE",
+      "module": "MQ-SE",
+      "origin": [
+        536,
+        -61,
+        55
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "GROUND-SW",
+      "module": "MQ-SW",
+      "origin": [
+        536,
+        -61,
+        106
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "T-NE",
+      "module": "MT",
+      "origin": [
+        480,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 3,
+      "placement": "T-NW",
+      "module": "MT",
+      "origin": [
+        480,
+        -61,
+        111
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "T-SE",
+      "module": "MT",
+      "origin": [
+        591,
+        -61,
+        0
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "T-SW",
+      "module": "MT",
+      "origin": [
+        591,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 3,
+      "placement": "W-E",
+      "module": "MW86",
+      "origin": [
+        493,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "q": 3,
+      "placement": "W-N",
+      "module": "MW86",
+      "origin": [
+        480,
+        -61,
+        98
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "W-SE",
+      "module": "MW31",
+      "origin": [
+        591,
+        -61,
+        13
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "W-SW",
+      "module": "MW31",
+      "origin": [
+        591,
+        -61,
+        68
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "W-W",
+      "module": "MW86",
+      "origin": [
+        578,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "q": 3,
+      "placement": "GATE",
+      "module": "MG",
+      "origin": [
+        580,
+        -61,
+        67
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F01",
+      "module": "M-manor",
+      "origin": [
+        491,
+        -61,
+        63
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F02",
+      "module": "M-barracks_a",
+      "origin": [
+        504,
+        -61,
+        87
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F03",
+      "module": "M-barracks_b",
+      "origin": [
+        504,
+        -61,
+        36
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F04",
+      "module": "M-barracks_c",
+      "origin": [
+        519,
+        -61,
+        36
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F05",
+      "module": "M-armory",
+      "origin": [
+        519,
+        -61,
+        99
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F06",
+      "module": "M-yard",
+      "origin": [
+        532,
+        -61,
+        99
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F07",
+      "module": "M-warehouse_a",
+      "origin": [
+        559,
+        -61,
+        101
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F08",
+      "module": "M-warehouse_b",
+      "origin": [
+        533,
+        -61,
+        36
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F09",
+      "module": "M-prison",
+      "origin": [
+        542,
+        -61,
+        19
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F10",
+      "module": "M-stable",
+      "origin": [
+        559,
+        -61,
+        34
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F11",
+      "module": "M-house_a",
+      "origin": [
+        491,
+        -61,
+        97
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F12",
+      "module": "M-house_b",
+      "origin": [
+        491,
+        -61,
+        85
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F13",
+      "module": "M-house_c",
+      "origin": [
+        502,
+        -61,
+        97
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F14",
+      "module": "M-house_a",
+      "origin": [
+        491,
+        -61,
+        22
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F15",
+      "module": "M-house_b",
+      "origin": [
+        491,
+        -61,
+        35
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F16",
+      "module": "M-house_c",
+      "origin": [
+        502,
+        -61,
+        19
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F17",
+      "module": "M-house_d",
+      "origin": [
+        520,
+        -61,
+        19
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F18",
+      "module": "M-kitchen",
+      "origin": [
+        530,
+        -61,
+        19
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F19",
+      "module": "M-smithy",
+      "origin": [
+        559,
+        -61,
+        83
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "q": 3,
+      "placement": "F20",
+      "module": "M-cart_shed",
+      "origin": [
+        562,
+        -61,
+        67
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "what": "slope site",
+      "module": "MQ-SE",
+      "origin": [
+        0,
+        -55,
+        250
+      ],
+      "terrain": "checks.py SITE profile + capture apron/ramp, footing fill below grade"
+    }
+  ],
+  "shots": [
+    {
+      "view": "ov_01_aerial_from_south_over_gate",
+      "tp": [
+        56,
+        15,
+        165,
+        180.0,
+        33.6
+      ],
+      "file": "ov_01_aerial_from_south_over_gate.png",
+      "sha256": "a0f26cb8a2b091dd130286b4e12341efe4c40bd7369e1d6a271d7501440c9422"
+    },
+    {
+      "view": "ov_02_aerial_from_north_west",
+      "tp": [
+        -35,
+        2,
+        -35,
+        -45.0,
+        25.2
+      ],
+      "file": "ov_02_aerial_from_north_west.png",
+      "sha256": "1236423277101955a7a148f93dc8e8c155816c5806cf051f5bf04b9d73a25513"
+    },
+    {
+      "view": "ov_03_aerial_from_south_east",
+      "tp": [
+        147,
+        2,
+        147,
+        135.0,
+        25.2
+      ],
+      "file": "ov_03_aerial_from_south_east.png",
+      "sha256": "6d5446fbef0680dc051f4aa12b41a567c0ecc77bb01cb2a03f7fd27021a24ce6"
+    },
+    {
+      "view": "ov_04_high_plan_view",
+      "tp": [
+        56,
+        90,
+        70,
+        180.0,
+        84.7
+      ],
+      "file": "ov_04_high_plan_view.png",
+      "sha256": "89507e00766bc6535a884b7819fc8a11a8a405700f88e27d20a1f5d0f0bd2a57"
+    },
+    {
+      "view": "rd_01_avenue_from_gate_north",
+      "tp": [
+        56,
+        -56.5,
+        96,
+        180.0,
+        0.5
+      ],
+      "file": "rd_01_avenue_from_gate_north.png",
+      "sha256": "b7fd88eb74f46e8fc67d567dfda1b91c0da7d64a82c059cb9ef7c378cf3d7c15"
+    },
+    {
+      "view": "rd_02_avenue_to_plaza_and_manor",
+      "tp": [
+        56,
+        -54,
+        60,
+        180.0,
+        -0.0
+      ],
+      "file": "rd_02_avenue_to_plaza_and_manor.png",
+      "sha256": "ef0decfb03861bb98f5d9ccf2d20aba835c95979dc85891a349665da33a30af2"
+    },
+    {
+      "view": "rd_03_plaza_from_south_west",
+      "tp": [
+        42,
+        -53,
+        42,
+        -131.2,
+        10.7
+      ],
+      "file": "rd_03_plaza_from_south_west.png",
+      "sha256": "6fd0b58cecc35ad873150a42a4ee08830f8b29b6ac3533f3dd3165ec2260b0e7"
+    },
+    {
+      "view": "rd_04_barracks_street_west",
+      "tp": [
+        70,
+        -56,
+        29,
+        90.0,
+        1.7
+      ],
+      "file": "rd_04_barracks_street_west.png",
+      "sha256": "9f440e3709d38531ab3b45f9623fac254e1d4cd75f34a19937b7d6c59ead2afa"
+    },
+    {
+      "view": "rd_05_middle_road_east",
+      "tp": [
+        40,
+        -56,
+        75,
+        -90.0,
+        2.1
+      ],
+      "file": "rd_05_middle_road_east.png",
+      "sha256": "80d5b529bf19c8590ffee879a6d55e19db39505636b69ebb089b041a21a86fb5"
+    },
+    {
+      "view": "rd_06_south_road_west",
+      "tp": [
+        60,
+        -56,
+        95,
+        90.0,
+        2.2
+      ],
+      "file": "rd_06_south_road_west.png",
+      "sha256": "6f5444acd906b6cdd172cf473b76092d586a434d153c888f0860d9666af170cc"
+    },
+    {
+      "view": "rd_07_south_road_east",
+      "tp": [
+        52,
+        -56,
+        95,
+        -90.0,
+        2.4
+      ],
+      "file": "rd_07_south_road_east.png",
+      "sha256": "ac8f63bf0646da05a219bdacd3910f6975b6132df53fef0393c216a5b2cce515"
+    },
+    {
+      "view": "rd_08_east_service_lane",
+      "tp": [
+        90,
+        -56,
+        76,
+        180.0,
+        1.1
+      ],
+      "file": "rd_08_east_service_lane.png",
+      "sha256": "0bb53771c63ec8eb8641d258de9a48955629bf500bdc90f1a27892701a805cce"
+    },
+    {
+      "view": "rd_09_north_west_houses_lane",
+      "tp": [
+        48,
+        -55,
+        19,
+        90.0,
+        3.2
+      ],
+      "file": "rd_09_north_west_houses_lane.png",
+      "sha256": "9ac6b9b97d9521cdd9246e2854a1f261a60fbb145de2096b51164a91f76ac502"
+    },
+    {
+      "view": "rd_10_north_east_houses_lane",
+      "tp": [
+        64,
+        -55,
+        19,
+        -90.0,
+        2.9
+      ],
+      "file": "rd_10_north_east_houses_lane.png",
+      "sha256": "fef9087c204fb5d9c0097a5d82345c914948f177fc31aaa13e430cd75efbe8ff"
+    },
+    {
+      "view": "rd_11_yard_lane_and_F05",
+      "tp": [
+        38,
+        -55,
+        70,
+        168.7,
+        3.7
+      ],
+      "file": "rd_11_yard_lane_and_F05.png",
+      "sha256": "8640bb5a41a47d5ab03d45f55cd7e6ff6efdefbdeed7ca930bff6641ce3eebc0"
+    },
+    {
+      "view": "rd_12_depot_lane_F04_F08",
+      "tp": [
+        73,
+        -55,
+        72,
+        180.0,
+        3.0
+      ],
+      "file": "rd_12_depot_lane_F04_F08.png",
+      "sha256": "bf29277a547f96dd85cf0c9c7d4c75a6a36d48adb2e933a9355b74452bafaf15"
+    },
+    {
+      "view": "en_01_F01_porch_on_plaza",
+      "tp": [
+        56,
+        -57,
+        34,
+        176.8,
+        6.3
+      ],
+      "file": "en_01_F01_porch_on_plaza.png",
+      "sha256": "9e1a2ad24c70e5e3b5fdc064a2b1eaf94916f8fe06f4ff96c6fd31f3e02f7df1"
+    },
+    {
+      "view": "en_02_F07_porch_south_road",
+      "tp": [
+        20,
+        -57,
+        99,
+        158.7,
+        5.9
+      ],
+      "file": "en_02_F07_porch_south_road.png",
+      "sha256": "68be27f8164f130522c10969872ea0302d4e52d430b73e31ecfd432d5397741f"
+    },
+    {
+      "view": "en_03_F19_F20_fronts",
+      "tp": [
+        40,
+        -56,
+        100,
+        180.0,
+        8.7
+      ],
+      "file": "en_03_F19_F20_fronts.png",
+      "sha256": "5cd4629e839f7ac4a31e71a0df9c3ff0c3e4e2415764e5625d9a60cd82085013"
+    },
+    {
+      "view": "en_04_F10_stable_portal",
+      "tp": [
+        80,
+        -57,
+        99,
+        -150.9,
+        5.5
+      ],
+      "file": "en_04_F10_stable_portal.png",
+      "sha256": "af9dc1649706e292d58754a59c3f1d7ff1de0d9a29939d732def8aec98aca97b"
+    },
+    {
+      "view": "en_05_F13_and_F11_lanes",
+      "tp": [
+        26,
+        -56,
+        36,
+        150.3,
+        7.1
+      ],
+      "file": "en_05_F13_and_F11_lanes.png",
+      "sha256": "54eb45d48154770451f5d3b8460f77f9e976113ca50393d968ab6a06990b54cc"
+    },
+    {
+      "view": "en_06_F17_F18_fronts",
+      "tp": [
+        88,
+        -56,
+        64,
+        -156.4,
+        6.5
+      ],
+      "file": "en_06_F17_F18_fronts.png",
+      "sha256": "745afbd7bb5b1bacc383f5c5d3be8f09fa7c29517030527a056f92f0b5f60fa2"
+    },
+    {
+      "view": "en_07_T-NW_door_lane",
+      "tp": [
+        24,
+        -56,
+        13,
+        114.4,
+        9.4
+      ],
+      "file": "en_07_T-NW_door_lane.png",
+      "sha256": "92cf88f779061f52032fb1f0122ec839f5e5aecc8acf4b3f3065bc730056d63c"
+    },
+    {
+      "view": "en_08_T-SE_door_lane",
+      "tp": [
+        92,
+        -56,
+        92,
+        -28.6,
+        9.1
+      ],
+      "file": "en_08_T-SE_door_lane.png",
+      "sha256": "1a2636054cdc46f423b62a22e1567a8529a329898f8ca4ff56ec3e6d8da33a79"
+    },
+    {
+      "view": "en_09_F09_front",
+      "tp": [
+        90,
+        -57,
+        82,
+        -135.0,
+        5.8
+      ],
+      "file": "en_09_F09_front.png",
+      "sha256": "ae6566293c0f890537b614464fc8483b5f9b7dc239075710c428c142686f8b27"
+    },
+    {
+      "view": "dc_01_roadside_decor_south",
+      "tp": [
+        30,
+        -57,
+        101,
+        180.0,
+        15.9
+      ],
+      "file": "dc_01_roadside_decor_south.png",
+      "sha256": "d49ba94fb1a38ca4bbf3baca01b5cda02a99d6673d56325295bf94b28134bd46"
+    },
+    {
+      "view": "dc_02_roadside_decor_middle",
+      "tp": [
+        60,
+        -57,
+        82,
+        -135.0,
+        13.3
+      ],
+      "file": "dc_02_roadside_decor_middle.png",
+      "sha256": "8e1a97d9cd22c8210edfcdb374e28bd5286d9e6a0b0e69b7487707e391e84951"
+    },
+    {
+      "view": "dc_03_mounds_and_weeds",
+      "tp": [
+        50,
+        -56,
+        48,
+        45.0,
+        15.8
+      ],
+      "file": "dc_03_mounds_and_weeds.png",
+      "sha256": "1c0990eb28edcd765b0142d33a2e0db0b6e3b83808355c020b9aae0a3000a8d9"
+    },
+    {
+      "view": "rot_q1_aerial",
+      "tp": [
+        216,
+        20,
+        170,
+        180.0,
+        34.1
+      ],
+      "file": "rot_q1_aerial.png",
+      "sha256": "7b31b7729f40fae3e00e1942a56ba7fa4b4cd226d54a3a7a727cf466716df5ef"
+    },
+    {
+      "view": "rot_q2_aerial",
+      "tp": [
+        376,
+        20,
+        170,
+        180.0,
+        34.1
+      ],
+      "file": "rot_q2_aerial.png",
+      "sha256": "5703fb8a2275013431e64fa2d5aab8c2f609c825150ce42375d64c6bbaba5937"
+    },
+    {
+      "view": "rot_q3_aerial",
+      "tp": [
+        536,
+        20,
+        170,
+        180.0,
+        34.1
+      ],
+      "file": "rot_q3_aerial.png",
+      "sha256": "3278fb135801caffab8cd72fc62c490268122ad6eb3ca9609411b3f053e14f2b"
+    },
+    {
+      "view": "sl_01_MQ-SE_slope_site_oblique",
+      "tp": [
+        -14,
+        -41,
+        236,
+        -45.0,
+        14.2
+      ],
+      "file": "sl_01_MQ-SE_slope_site_oblique.png",
+      "sha256": "fd7d9f2e2af031a0e850f05b2544b7bc8567f248ff0b8522182098d92142eac4"
+    },
+    {
+      "view": "sl_02_MQ-SE_slope_site_low",
+      "tp": [
+        60,
+        -51,
+        275,
+        90.0,
+        4.9
+      ],
+      "file": "sl_02_MQ-SE_slope_site_low.png",
+      "sha256": "c553ca02d60e599f51ee6459600e8b02c06094adfc47872d52af496ea888af34"
+    }
+  ]
+}

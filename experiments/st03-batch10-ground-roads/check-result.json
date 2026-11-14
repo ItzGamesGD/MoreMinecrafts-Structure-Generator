@@ -1,0 +1,1165 @@
+{
+ "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+ "modules": {
+  "MQ-NW": {
+   "placement": "GROUND-NW",
+   "nbt": "st03_ground_nw.nbt",
+   "nbt_sha256": "96d2d26601239bd15b24f5e87c01cc4ced4dd854b36d525aa8b480366c415338",
+   "verify": {
+    "size": [
+     51,
+     8,
+     51
+    ],
+    "blocks": 20808,
+    "non_air_blocks": 2868,
+    "palette": 29,
+    "cells_compared": 20808,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 2868,
+    "mismatches": [],
+    "non_air_not_authored": []
+   },
+   "ground": {
+    "y0_holes": [],
+    "hole_count": 0,
+    "grass_or_path_under_block": []
+   },
+   "support": {
+    "unsupported": []
+   },
+   "palette_counts": {
+    "coarse_dirt": 1085,
+    "grass_block": 897,
+    "dirt_path": 227,
+    "gravel": 137,
+    "short_grass": 103,
+    "stone_bricks": 87,
+    "dirt": 80,
+    "rooted_dirt": 58,
+    "fern": 38,
+    "cobblestone": 35,
+    "polished_andesite": 33,
+    "andesite": 24,
+    "cracked_stone_bricks": 18,
+    "stone": 10,
+    "spruce_log": 8,
+    "spruce_fence": 7,
+    "packed_mud": 5,
+    "barrel": 5,
+    "mossy_stone_bricks": 4,
+    "torch": 3,
+    "moss_block": 2,
+    "stripped_spruce_log": 2
+   }
+  },
+  "MQ-NE": {
+   "placement": "GROUND-NE",
+   "nbt": "st03_ground_ne.nbt",
+   "nbt_sha256": "40e20d59af27b4c6bf09ca44510a74f638828a615d3daaa402b3abb4a1b8b107",
+   "verify": {
+    "size": [
+     51,
+     8,
+     51
+    ],
+    "blocks": 20808,
+    "non_air_blocks": 2812,
+    "palette": 26,
+    "cells_compared": 20808,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 2812,
+    "mismatches": [],
+    "non_air_not_authored": []
+   },
+   "ground": {
+    "y0_holes": [],
+    "hole_count": 0,
+    "grass_or_path_under_block": []
+   },
+   "support": {
+    "unsupported": []
+   },
+   "palette_counts": {
+    "grass_block": 1056,
+    "coarse_dirt": 1022,
+    "gravel": 146,
+    "dirt_path": 123,
+    "short_grass": 122,
+    "stone_bricks": 90,
+    "cobblestone": 43,
+    "fern": 39,
+    "rooted_dirt": 37,
+    "polished_andesite": 34,
+    "dirt": 30,
+    "andesite": 17,
+    "cracked_stone_bricks": 16,
+    "mossy_stone_bricks": 7,
+    "packed_mud": 6,
+    "spruce_log": 4,
+    "hay_block": 4,
+    "stone": 3,
+    "mossy_cobblestone": 3,
+    "barrel": 3,
+    "moss_block": 3,
+    "spruce_fence": 2,
+    "torch": 2
+   }
+  },
+  "MQ-SW": {
+   "placement": "GROUND-SW",
+   "nbt": "st03_ground_sw.nbt",
+   "nbt_sha256": "70185e7eed178e965cd097f6e90b1c7732c7a92f2cd5ebaff86de9b9d831c6c7",
+   "verify": {
+    "size": [
+     51,
+     8,
+     51
+    ],
+    "blocks": 20808,
+    "non_air_blocks": 2847,
+    "palette": 30,
+    "cells_compared": 20808,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 2847,
+    "mismatches": [],
+    "non_air_not_authored": []
+   },
+   "ground": {
+    "y0_holes": [],
+    "hole_count": 0,
+    "grass_or_path_under_block": []
+   },
+   "support": {
+    "unsupported": []
+   },
+   "palette_counts": {
+    "coarse_dirt": 1054,
+    "grass_block": 993,
+    "dirt_path": 201,
+    "gravel": 136,
+    "short_grass": 123,
+    "cobblestone": 73,
+    "rooted_dirt": 52,
+    "dirt": 46,
+    "fern": 43,
+    "andesite": 39,
+    "stone": 23,
+    "stone_bricks": 16,
+    "mossy_cobblestone": 15,
+    "moss_block": 7,
+    "barrel": 7,
+    "spruce_fence": 6,
+    "polished_andesite": 3,
+    "hay_block": 2,
+    "torch": 2,
+    "mossy_stone_bricks": 2,
+    "cracked_stone_bricks": 2,
+    "packed_mud": 1,
+    "stripped_spruce_log": 1
+   }
+  },
+  "MQ-SE": {
+   "placement": "GROUND-SE",
+   "nbt": "st03_ground_se.nbt",
+   "nbt_sha256": "92ed5615105317b84f3f078f37d5d71d3ad3f8ed166240e8cf57cfa9bf49e00f",
+   "verify": {
+    "size": [
+     51,
+     8,
+     51
+    ],
+    "blocks": 20808,
+    "non_air_blocks": 2801,
+    "palette": 23,
+    "cells_compared": 20808,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 2801,
+    "mismatches": [],
+    "non_air_not_authored": []
+   },
+   "ground": {
+    "y0_holes": [],
+    "hole_count": 0,
+    "grass_or_path_under_block": []
+   },
+   "support": {
+    "unsupported": []
+   },
+   "palette_counts": {
+    "grass_block": 1067,
+    "coarse_dirt": 837,
+    "gravel": 231,
+    "dirt_path": 230,
+    "short_grass": 124,
+    "cobblestone": 105,
+    "rooted_dirt": 49,
+    "fern": 40,
+    "andesite": 22,
+    "dirt": 20,
+    "stone_bricks": 19,
+    "mossy_cobblestone": 19,
+    "stone": 14,
+    "polished_andesite": 5,
+    "cracked_stone_bricks": 4,
+    "hay_block": 4,
+    "barrel": 3,
+    "moss_block": 3,
+    "spruce_fence": 2,
+    "torch": 2,
+    "packed_mud": 1
+   }
+  }
+ },
+ "boundary": {
+  "mq_tiling_5_106_exact": true,
+  "road_cells_in_other_footprints": [],
+  "road_clash_count": 0
+ },
+ "network": {
+  "road_cells": 2455,
+  "connected_from_gate": 2455,
+  "unreached_road_cells": [],
+  "entrances": 27,
+  "entrance_cells_not_on_road": {},
+  "entrance_cells_not_connected": {}
+ },
+ "widths": {
+  "avenue: gate -> plaza": {
+   "kind": "main",
+   "rect": [
+    53,
+    38,
+    58,
+    99
+   ],
+   "nominal_width": 6,
+   "length": 62
+  },
+  "plaza before the manor": {
+   "kind": "plaza",
+   "rect": [
+    44,
+    26,
+    67,
+    37
+   ],
+   "nominal_width": 12,
+   "length": 24
+  },
+  "barracks street F02 <-> F03": {
+   "kind": "main",
+   "rect": [
+    37,
+    27,
+    74,
+    31
+   ],
+   "nominal_width": 5,
+   "length": 38
+  },
+  "middle road (yard / depots / prison)": {
+   "kind": "main",
+   "rect": [
+    37,
+    73,
+    91,
+    77
+   ],
+   "nominal_width": 5,
+   "length": 55
+  },
+  "south road (gate side: F07, smithy, cart shed, stable)": {
+   "kind": "main",
+   "rect": [
+    7,
+    93,
+    99,
+    97
+   ],
+   "nominal_width": 5,
+   "length": 93
+  },
+  "west manor lane": {
+   "kind": "lane",
+   "rect": [
+    45,
+    7,
+    47,
+    25
+   ],
+   "nominal_width": 3,
+   "length": 19
+  },
+  "east manor lane": {
+   "kind": "lane",
+   "rect": [
+    65,
+    18,
+    67,
+    25
+   ],
+   "nominal_width": 3,
+   "length": 8
+  },
+  "north wall lane to T-NW": {
+   "kind": "lane",
+   "rect": [
+    13,
+    7,
+    47,
+    9
+   ],
+   "nominal_width": 3,
+   "length": 35
+  },
+  "north-west houses lane (F11, F12)": {
+   "kind": "lane",
+   "rect": [
+    13,
+    18,
+    47,
+    20
+   ],
+   "nominal_width": 3,
+   "length": 35
+  },
+  "F13 lane": {
+   "kind": "lane",
+   "rect": [
+    21,
+    21,
+    23,
+    31
+   ],
+   "nominal_width": 3,
+   "length": 11
+  },
+  "F13 front": {
+   "kind": "lane",
+   "rect": [
+    15,
+    29,
+    20,
+    31
+   ],
+   "nominal_width": 3,
+   "length": 6
+  },
+  "north-east houses lane (F15, F14)": {
+   "kind": "lane",
+   "rect": [
+    68,
+    18,
+    104,
+    20
+   ],
+   "nominal_width": 3,
+   "length": 37
+  },
+  "T-NE lane": {
+   "kind": "lane",
+   "rect": [
+    102,
+    13,
+    104,
+    17
+   ],
+   "nominal_width": 3,
+   "length": 5
+  },
+  "east service lane (F16, F17, F18)": {
+   "kind": "lane",
+   "rect": [
+    89,
+    21,
+    91,
+    72
+   ],
+   "nominal_width": 3,
+   "length": 52
+  },
+  "F16 front": {
+   "kind": "lane",
+   "rect": [
+    92,
+    29,
+    98,
+    31
+   ],
+   "nominal_width": 3,
+   "length": 7
+  },
+  "F17 front": {
+   "kind": "lane",
+   "rect": [
+    92,
+    47,
+    97,
+    49
+   ],
+   "nominal_width": 3,
+   "length": 6
+  },
+  "F18 front": {
+   "kind": "lane",
+   "rect": [
+    92,
+    59,
+    97,
+    61
+   ],
+   "nominal_width": 3,
+   "length": 6
+  },
+  "depot lane (F04, F08)": {
+   "kind": "lane",
+   "rect": [
+    72,
+    32,
+    74,
+    72
+   ],
+   "nominal_width": 3,
+   "length": 41
+  },
+  "F08 loft stair apron": {
+   "kind": "apron",
+   "rect": [
+    75,
+    68,
+    77,
+    70
+   ],
+   "nominal_width": 3,
+   "length": 3
+  },
+  "yard lane (F05, F06)": {
+   "kind": "lane",
+   "rect": [
+    37,
+    32,
+    39,
+    72
+   ],
+   "nominal_width": 3,
+   "length": 41
+  },
+  "F05 tower portal": {
+   "kind": "lane",
+   "rect": [
+    29,
+    42,
+    36,
+    44
+   ],
+   "nominal_width": 3,
+   "length": 8
+  },
+  "F05 service door": {
+   "kind": "lane",
+   "rect": [
+    29,
+    48,
+    36,
+    50
+   ],
+   "nominal_width": 3,
+   "length": 8
+  },
+  "F09 front": {
+   "kind": "lane",
+   "rect": [
+    92,
+    75,
+    99,
+    77
+   ],
+   "nominal_width": 3,
+   "length": 8
+  },
+  "F19 front": {
+   "kind": "lane",
+   "rect": [
+    31,
+    88,
+    33,
+    92
+   ],
+   "nominal_width": 3,
+   "length": 5
+  },
+  "F20 front": {
+   "kind": "lane",
+   "rect": [
+    46,
+    89,
+    48,
+    92
+   ],
+   "nominal_width": 3,
+   "length": 4
+  },
+  "F07 porch apron": {
+   "kind": "apron",
+   "rect": [
+    15,
+    92,
+    18,
+    92
+   ],
+   "nominal_width": 1,
+   "length": 4
+  },
+  "F10 portal apron": {
+   "kind": "apron",
+   "rect": [
+    84,
+    92,
+    86,
+    92
+   ],
+   "nominal_width": 1,
+   "length": 3
+  },
+  "T-SW door apron": {
+   "kind": "apron",
+   "rect": [
+    7,
+    98,
+    9,
+    98
+   ],
+   "nominal_width": 1,
+   "length": 3
+  },
+  "T-SE lane": {
+   "kind": "lane",
+   "rect": [
+    96,
+    98,
+    98,
+    103
+   ],
+   "nominal_width": 3,
+   "length": 6
+  }
+ },
+ "road_obstructions": [],
+ "width_rule_violations": {},
+ "decor": {
+  "clusters": 25,
+  "by_kind": {
+   "fence rail + torch": 4,
+   "log pile": 3,
+   "barrel + chopping block": 3,
+   "hay": 5,
+   "barrels": 5,
+   "torch post": 5
+  },
+  "problems": []
+ },
+ "steps": {
+  "max_neighbour_difference_ok": true,
+  "violations": [],
+  "mound_cells": 213,
+  "two_high_cells": 10
+ },
+ "walk": {
+  "from": [
+   56,
+   1,
+   113
+  ],
+  "entrances": {
+   "F01 porch": [
+    {
+     "cell": [
+      55,
+      26
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       55,
+       25
+      ]
+     ],
+     "one_step_inside_reached": true
+    },
+    {
+     "cell": [
+      56,
+      26
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       56,
+       25
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F02 front": [
+    {
+     "cell": [
+      37,
+      29
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       36,
+       29
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F03 gate": [
+    {
+     "cell": [
+      74,
+      29
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       75,
+       29
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F04 front": [
+    {
+     "cell": [
+      74,
+      44
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       75,
+       44
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F05 tower portal": [
+    {
+     "cell": [
+      29,
+      43
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       28,
+       43
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F05 service door": [
+    {
+     "cell": [
+      29,
+      49
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       28,
+       49
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F06 road gate": [
+    {
+     "cell": [
+      37,
+      62
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       36,
+       62
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F07 porch": [
+    {
+     "cell": [
+      16,
+      92
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       16,
+       91
+      ]
+     ],
+     "one_step_inside_reached": true
+    },
+    {
+     "cell": [
+      17,
+      92
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       17,
+       91
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F08 unloading bay": [
+    {
+     "cell": [
+      74,
+      60
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       75,
+       60
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F08 loft stair": [
+    {
+     "cell": [
+      75,
+      68
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       75,
+       67
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F09 front": [
+    {
+     "cell": [
+      97,
+      75
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       97,
+       74
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F10 portal": [
+    {
+     "cell": [
+      85,
+      92
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       85,
+       91
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F11": [
+    {
+     "cell": [
+      18,
+      18
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       18,
+       17
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F12": [
+    {
+     "cell": [
+      30,
+      18
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       30,
+       17
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F13": [
+    {
+     "cell": [
+      17,
+      29
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       17,
+       28
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F14": [
+    {
+     "cell": [
+      93,
+      18
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       93,
+       17
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F15": [
+    {
+     "cell": [
+      80,
+      18
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       80,
+       17
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F16": [
+    {
+     "cell": [
+      95,
+      29
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       95,
+       28
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F17": [
+    {
+     "cell": [
+      95,
+      47
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       95,
+       46
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F18": [
+    {
+     "cell": [
+      96,
+      59
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       96,
+       58
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F19": [
+    {
+     "cell": [
+      32,
+      88
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       32,
+       87
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "F20": [
+    {
+     "cell": [
+      47,
+      89
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       47,
+       88
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "T-NW door": [
+    {
+     "cell": [
+      13,
+      8
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       12,
+       8
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "T-NE door": [
+    {
+     "cell": [
+      103,
+      13
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       103,
+       12
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "T-SE door": [
+    {
+     "cell": [
+      98,
+      103
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       99,
+       103
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "T-SW door": [
+    {
+     "cell": [
+      8,
+      98
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       8,
+       99
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ],
+   "GATE passage": [
+    {
+     "cell": [
+      53,
+      99
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       53,
+       100
+      ]
+     ],
+     "one_step_inside_reached": true
+    },
+    {
+     "cell": [
+      54,
+      99
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       54,
+       100
+      ]
+     ],
+     "one_step_inside_reached": true
+    },
+    {
+     "cell": [
+      55,
+      99
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       55,
+       100
+      ]
+     ],
+     "one_step_inside_reached": true
+    },
+    {
+     "cell": [
+      56,
+      99
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       56,
+       100
+      ]
+     ],
+     "one_step_inside_reached": true
+    },
+    {
+     "cell": [
+      57,
+      99
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       57,
+       100
+      ]
+     ],
+     "one_step_inside_reached": true
+    },
+    {
+     "cell": [
+      58,
+      99
+     ],
+     "outside_reached": true,
+     "inside_cell": [
+      [
+       58,
+       100
+      ]
+     ],
+     "one_step_inside_reached": true
+    }
+   ]
+  },
+  "failures": []
+ },
+ "server_strict_placement": {
+  "MQ-NW": {
+   "rotation": "none",
+   "cells_including_air": 20808,
+   "failures": [],
+   "failure_count": 0
+  },
+  "MQ-NE": {
+   "rotation": "none",
+   "cells_including_air": 20808,
+   "failures": [],
+   "failure_count": 0
+  },
+  "MQ-SW": {
+   "rotation": "none",
+   "cells_including_air": 20808,
+   "failures": [],
+   "failure_count": 0
+  },
+  "MQ-SE": {
+   "rotation": "none",
+   "cells_including_air": 20808,
+   "failures": [],
+   "failure_count": 0
+  }
+ },
+ "slope_site": {
+  "module": "MQ-SE",
+  "origin": [
+   0,
+   -55,
+   600
+  ],
+  "ground_relative_to_grade_min_max": [
+   -4,
+   3
+  ],
+  "footing_columns_filled": 1236,
+  "max_fill_depth": 4,
+  "template_cells": 20808,
+  "template_failures": 0,
+  "failures": [],
+  "hollow_count": 0,
+  "hollow_cells": [],
+  "outside_changed_count": 0,
+  "outside_changed": [],
+  "terrain_cells_above_grade_inside_box_replaced_by_air_include": 1679
+ },
+ "problems": []
+}
