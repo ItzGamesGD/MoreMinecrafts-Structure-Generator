@@ -522,7 +522,22 @@ def yard():
     c.put(1, 1, 19, "spruce_stairs", facing="west", half="bottom", shape="straight")
     c.put(3, 1, 19, fence)
     c.put(3, 2, 19, "lantern", hanging=False)
+    # D-9 (owner, 2026-11-14), minimal fix: the 33 grass_block ground cells that have a block standing on them
+    # become dirt. A covered grass block turns to dirt on a random tick, which made the integrated placement check
+    # fail intermittently. Plants on grass (fern, short grass) do not count as covering.
+    covered = [(x, z) for x in range(YW) for z in range(YD)
+               if c.get((x, 0, z), ("",))[0] == "minecraft:grass_block" and (x, 1, z) in c
+               and c[(x, 1, z)][0] not in ("minecraft:fern", "minecraft:short_grass", "minecraft:tall_grass")
+               and not c[(x, 1, z)][0].endswith(D9_NOT_COVERING)]
+    assert len(covered) == 33, len(covered)
+    for x, z in covered:
+        c.put(x, 0, z, "dirt")
     return c
+
+
+# blocks that leave the grass underneath alive (not counted as covering for D-9)
+D9_NOT_COVERING = ("glass_pane", "iron_bars", "_fence", "_wall", "lantern", "iron_chain", "_carpet", "_button", "ladder",
+                   "_banner", "_door", "_trapdoor", "air")
 
 
 # -------------------------------------------------------------------------------------------- registry

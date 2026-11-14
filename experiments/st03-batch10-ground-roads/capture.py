@@ -207,7 +207,7 @@ def main():
             "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
             "world": "flat (bedrock/2 dirt/grass), plains, noon, clear, random ticks off (grass under blocks is not "
                      "converted during the session); raised cameras stand on a barrier block set only into air cells",
-            "walls": "batch-8 MW86 / MW31 (the owner-adopted wall F is not swapped in by this batch)",
+            "walls": "MW86 / MW31 NBTs from " + str(pc.WALLS.relative_to(EXP.parent)) + " (place_check.WALLS)",
             "placed": placed, "shots": shots,
         }, indent=2) + "\n")
     finally:

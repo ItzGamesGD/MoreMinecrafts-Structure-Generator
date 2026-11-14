@@ -304,9 +304,11 @@ def main():
     r["boundaries"], bp = boundaries(b)
     problems += bp
     walls = _load("b8build", EXP / "st03-batch8-perimeter-walls" / "build.py")
+    wall_dir = _load("place_check", EXP / "st03-placement-check" / "place_check.py").WALLS  # adopted walls (D-1)
+    r["walls"] = str(wall_dir.relative_to(EXP.parent))
     for wb in walls.BUILDINGS.values():
         f = A.modules()[wb["module"]]["file"]
-        tmpl.setdefault(wb["module"], _template_cells(EXP / "st03-batch8-perimeter-walls" / "out" / f"{f}.nbt"))
+        tmpl.setdefault(wb["module"], _template_cells(wall_dir / f"{f}.nbt"))
     r["joints"], open_cells = joints(tmpl)
     r["joint_open_cells"] = open_cells[:20]
     if open_cells:

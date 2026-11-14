@@ -1,7 +1,9 @@
 # ST-03 perimeter wall: batch 8 candidate vs wall F (2026-11-14)
 
-Status: **comparison for an owner decision. Nothing is adopted here.** Until the owner chooses, every later batch
-(towers, gatehouse, placement checks) is built and checked against the **batch-8** wall NBTs.
+Status: **DECIDED — owner decision D-1 (2026-11-14): wall F adopted.** The integration tools now load the F NBTs
+(`experiments/st03-wall-redesign/out/f/`, copied byte-identically from `exp/st03-wall-final-20261106` @ `a57768c`).
+The batch-8 candidate stays in `experiments/st03-batch8-perimeter-walls/` as history. Adoption evidence:
+`experiments/st03-integration-d1-d9/README.md`. The comparison below is kept as it was written before the decision.
 
 ## Lineage (checked with `git merge-base`)
 

@@ -3,7 +3,7 @@
 Scope: only facilities that have a built NBT today (House A F11/F14, houses B/C/D, kitchen, smithy, cart shed,
 batch 3: F05 armory, F06 training yard, batch 4: F02/F03/F04 barracks, batch 5: F07/F08 warehouses, batch 6:
 F09 prison / F10 ravager stable, batch 7: F01 commander manor at the Q63 size 17x27x15, batch 8: the perimeter
-walls MW86 (W-N, W-E, W-W) and MW31 (W-SW, W-SE), air=omit, no entrance of their own, and batch 9: the corner tower MT
+walls MW86 (W-N, W-E, W-W) and MW31 (W-SW, W-SE), air=omit, no entrance of their own (since D-1 the wall F NBTs), and batch 9: the corner tower MT
 (T-NW, T-NE, T-SE, T-SW) and the gatehouse MG (GATE), air=include, and batch 10: the ground / road modules MQ-NW/NE/SW/SE, air=include,
 placed first (order 1)).
 Roads are not part of the placement table. The road network is the batch-10 MQ design; its connection to every entrance
@@ -37,6 +37,9 @@ from tools.structure_export.stair_live import forceload, make_server
 REPO = Path(__file__).resolve().parents[2]
 EXP = REPO / "experiments"
 G = -61  # flat world grass layer; structure y=0 floor is placed flush with it
+# Perimeter walls MW86 / MW31: owner decision D-1 (2026-11-14) adopted wall F (exp/st03-wall-final-20261106 @ a57768c).
+# The batch-8 candidate NBTs stay in experiments/st03-batch8-perimeter-walls/out as history.
+WALLS = EXP / "st03-wall-redesign" / "out" / "f"
 
 
 def _load(path, name):
@@ -47,7 +50,7 @@ def _load(path, name):
 
 
 def built_modules(perimeter=False, towers=False, ground=False):
-    """module id -> dict(nbt, door (x, z) boundary column, front = +z). perimeter=True adds the batch-8 walls (door None);
+    """module id -> dict(nbt, door (x, z) boundary column, front = +z). perimeter=True adds the perimeter walls (door None; the adopted wall F NBTs since D-1);
     towers=True adds the batch-9 corner tower MT and gatehouse MG (door None: their entrances are checked in batch-9
     checks.py); ground=True adds the batch-10 ground / road modules MQ-NW/NE/SW/SE. The earlier capture scripts call it
     without, so their layouts stay what they photographed."""
@@ -69,10 +72,9 @@ def built_modules(perimeter=False, towers=False, ground=False):
                                 "entrances": b.get("entrances")}
     if perimeter:
         b8 = _load(EXP / "st03-batch8-perimeter-walls" / "build.py", "b8")
-        for b in b8.BUILDINGS.values():
+        for b in b8.BUILDINGS.values():  # module ids and sizes; the NBTs are the adopted wall F (D-1)
             m = A.modules()[b["module"]]
-            out[b["module"]] = {"nbt": EXP / "st03-batch8-perimeter-walls" / "out" / f"{m['file']}.nbt", "door": None,
-                                "size": b["size"], "entrances": None}
+            out[b["module"]] = {"nbt": WALLS / f"{m['file']}.nbt", "door": None, "size": b["size"], "entrances": None}
     if towers:
         b9 = _load(EXP / "st03-batch9-towers-gate" / "build.py", "b9")
         for b in b9.BUILDINGS.values():
