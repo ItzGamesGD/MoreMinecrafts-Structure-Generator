@@ -1,0 +1,907 @@
+{
+ "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+ "modules": {
+  "MT": {
+   "placements": [
+    "T-NW",
+    "T-NE",
+    "T-SE",
+    "T-SW"
+   ],
+   "nbt": "st03_tower.nbt",
+   "nbt_sha256": "990bdd2336b603f8285a191a220a9d5a09aba3d7f881bcd16a04e6cda825a50c",
+   "verify": {
+    "size": [
+     13,
+     24,
+     13
+    ],
+    "blocks": 4056,
+    "non_air_blocks": 2003,
+    "palette": 43,
+    "cells_compared": 4056,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 2003,
+    "mismatches": [],
+    "non_air_cells_not_authored": [],
+    "air_cells_in_nbt": 2053
+   },
+   "support": {
+    "unsupported": []
+   },
+   "traversal": {
+    "start": [
+     14,
+     1,
+     8
+    ],
+    "lookout_cells_reached": 129,
+    "lookout_reached": true,
+    "ladder": [
+     [
+      3,
+      5
+     ],
+     1,
+     14
+    ],
+    "headroom_lookout": true
+   },
+   "observation_gaps": 48,
+   "roof_cover_problems": [],
+   "counts": {
+    "lantern": 13,
+    "white_wall_banner": 4,
+    "barrel": 2,
+    "chest": 0,
+    "ladder": 14,
+    "dark_oak_door": 2
+   }
+  },
+  "MG": {
+   "placements": [
+    "GATE"
+   ],
+   "nbt": "st03_gatehouse.nbt",
+   "nbt_sha256": "da9750f241e59167e7d36e27275d4ad2a856fc37c2795c3d3d0226f6e2692a5a",
+   "verify": {
+    "size": [
+     24,
+     20,
+     12
+    ],
+    "blocks": 5760,
+    "non_air_blocks": 2206,
+    "palette": 41,
+    "cells_compared": 5760,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 2206,
+    "mismatches": [],
+    "non_air_cells_not_authored": [],
+    "air_cells_in_nbt": 3554
+   },
+   "support": {
+    "unsupported": []
+   },
+   "static": {
+    "functional_blocks_other_than_shaft_door": [],
+    "shaft_door": 2,
+    "passage_clear_width": 6,
+    "passage_clear_height": 6,
+    "passage_blocked_cells": [],
+    "passage_floor_gaps": []
+   },
+   "traversal": {
+    "room_cells_reached": 84,
+    "room_reached": true,
+    "passage_through": true,
+    "checkpoint_to_passage": true
+   },
+   "counts": {
+    "lantern": 11,
+    "white_wall_banner": 6,
+    "barrel": 7,
+    "chest": 1,
+    "ladder": 9,
+    "dark_oak_door": 2
+   }
+  }
+ },
+ "boundaries": {
+  "0": {
+   "T-NW": {
+    "rotation": "none",
+    "footprint": [
+     0,
+     0,
+     12,
+     12
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-N",
+     "W-W"
+    ],
+    "expected": [
+     "W-N",
+     "W-W"
+    ],
+    "entrance_outside_cells": [
+     [
+      13,
+      8
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "T-NE": {
+    "rotation": "clockwise_90",
+    "footprint": [
+     99,
+     0,
+     111,
+     12
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-E",
+     "W-N"
+    ],
+    "expected": [
+     "W-E",
+     "W-N"
+    ],
+    "entrance_outside_cells": [
+     [
+      103,
+      13
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "T-SE": {
+    "rotation": "180",
+    "footprint": [
+     99,
+     99,
+     111,
+     111
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-E",
+     "W-SE"
+    ],
+    "expected": [
+     "W-E",
+     "W-SE"
+    ],
+    "entrance_outside_cells": [
+     [
+      98,
+      103
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "T-SW": {
+    "rotation": "counterclockwise_90",
+    "footprint": [
+     0,
+     99,
+     12,
+     111
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-SW",
+     "W-W"
+    ],
+    "expected": [
+     "W-SW",
+     "W-W"
+    ],
+    "entrance_outside_cells": [
+     [
+      8,
+      98
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "GATE": {
+    "rotation": "none",
+    "footprint": [
+     44,
+     100,
+     67,
+     111
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-SE",
+     "W-SW"
+    ],
+    "expected": [
+     "W-SE",
+     "W-SW"
+    ],
+    "entrance_outside_cells": [
+     [
+      53,
+      99
+     ],
+     [
+      54,
+      99
+     ],
+     [
+      55,
+      99
+     ],
+     [
+      56,
+      99
+     ],
+     [
+      57,
+      99
+     ],
+     [
+      58,
+      99
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   }
+  },
+  "1": {
+   "T-NW": {
+    "rotation": "clockwise_90",
+    "footprint": [
+     99,
+     0,
+     111,
+     12
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-N",
+     "W-W"
+    ],
+    "expected": [
+     "W-N",
+     "W-W"
+    ],
+    "entrance_outside_cells": [
+     [
+      103,
+      13
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "T-NE": {
+    "rotation": "180",
+    "footprint": [
+     99,
+     99,
+     111,
+     111
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-E",
+     "W-N"
+    ],
+    "expected": [
+     "W-E",
+     "W-N"
+    ],
+    "entrance_outside_cells": [
+     [
+      98,
+      103
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "T-SE": {
+    "rotation": "counterclockwise_90",
+    "footprint": [
+     0,
+     99,
+     12,
+     111
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-E",
+     "W-SE"
+    ],
+    "expected": [
+     "W-E",
+     "W-SE"
+    ],
+    "entrance_outside_cells": [
+     [
+      8,
+      98
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "T-SW": {
+    "rotation": "none",
+    "footprint": [
+     0,
+     0,
+     12,
+     12
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-SW",
+     "W-W"
+    ],
+    "expected": [
+     "W-SW",
+     "W-W"
+    ],
+    "entrance_outside_cells": [
+     [
+      13,
+      8
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "GATE": {
+    "rotation": "clockwise_90",
+    "footprint": [
+     0,
+     44,
+     11,
+     67
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-SE",
+     "W-SW"
+    ],
+    "expected": [
+     "W-SE",
+     "W-SW"
+    ],
+    "entrance_outside_cells": [
+     [
+      12,
+      53
+     ],
+     [
+      12,
+      54
+     ],
+     [
+      12,
+      55
+     ],
+     [
+      12,
+      56
+     ],
+     [
+      12,
+      57
+     ],
+     [
+      12,
+      58
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   }
+  },
+  "2": {
+   "T-NW": {
+    "rotation": "180",
+    "footprint": [
+     99,
+     99,
+     111,
+     111
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-N",
+     "W-W"
+    ],
+    "expected": [
+     "W-N",
+     "W-W"
+    ],
+    "entrance_outside_cells": [
+     [
+      98,
+      103
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "T-NE": {
+    "rotation": "counterclockwise_90",
+    "footprint": [
+     0,
+     99,
+     12,
+     111
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-E",
+     "W-N"
+    ],
+    "expected": [
+     "W-E",
+     "W-N"
+    ],
+    "entrance_outside_cells": [
+     [
+      8,
+      98
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "T-SE": {
+    "rotation": "none",
+    "footprint": [
+     0,
+     0,
+     12,
+     12
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-E",
+     "W-SE"
+    ],
+    "expected": [
+     "W-E",
+     "W-SE"
+    ],
+    "entrance_outside_cells": [
+     [
+      13,
+      8
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "T-SW": {
+    "rotation": "clockwise_90",
+    "footprint": [
+     99,
+     0,
+     111,
+     12
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-SW",
+     "W-W"
+    ],
+    "expected": [
+     "W-SW",
+     "W-W"
+    ],
+    "entrance_outside_cells": [
+     [
+      103,
+      13
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "GATE": {
+    "rotation": "180",
+    "footprint": [
+     44,
+     0,
+     67,
+     11
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-SE",
+     "W-SW"
+    ],
+    "expected": [
+     "W-SE",
+     "W-SW"
+    ],
+    "entrance_outside_cells": [
+     [
+      58,
+      12
+     ],
+     [
+      57,
+      12
+     ],
+     [
+      56,
+      12
+     ],
+     [
+      55,
+      12
+     ],
+     [
+      54,
+      12
+     ],
+     [
+      53,
+      12
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   }
+  },
+  "3": {
+   "T-NW": {
+    "rotation": "counterclockwise_90",
+    "footprint": [
+     0,
+     99,
+     12,
+     111
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-N",
+     "W-W"
+    ],
+    "expected": [
+     "W-N",
+     "W-W"
+    ],
+    "entrance_outside_cells": [
+     [
+      8,
+      98
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "T-NE": {
+    "rotation": "none",
+    "footprint": [
+     0,
+     0,
+     12,
+     12
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-E",
+     "W-N"
+    ],
+    "expected": [
+     "W-E",
+     "W-N"
+    ],
+    "entrance_outside_cells": [
+     [
+      13,
+      8
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "T-SE": {
+    "rotation": "clockwise_90",
+    "footprint": [
+     99,
+     0,
+     111,
+     12
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-E",
+     "W-SE"
+    ],
+    "expected": [
+     "W-E",
+     "W-SE"
+    ],
+    "entrance_outside_cells": [
+     [
+      103,
+      13
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "T-SW": {
+    "rotation": "180",
+    "footprint": [
+     99,
+     99,
+     111,
+     111
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-SW",
+     "W-W"
+    ],
+    "expected": [
+     "W-SW",
+     "W-W"
+    ],
+    "entrance_outside_cells": [
+     [
+      98,
+      103
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   },
+   "GATE": {
+    "rotation": "counterclockwise_90",
+    "footprint": [
+     100,
+     44,
+     111,
+     67
+    ],
+    "overlaps": [],
+    "abuts": [
+     "W-SE",
+     "W-SW"
+    ],
+    "expected": [
+     "W-SE",
+     "W-SW"
+    ],
+    "entrance_outside_cells": [
+     [
+      99,
+      58
+     ],
+     [
+      99,
+      57
+     ],
+     [
+      99,
+      56
+     ],
+     [
+      99,
+      55
+     ],
+     [
+      99,
+      54
+     ],
+     [
+      99,
+      53
+     ]
+    ],
+    "entrance_on_free_compound_ground": true,
+    "exterior_faces_outside_box": true,
+    "ok": true
+   }
+  }
+ },
+ "walls": "experiments/st03-wall-redesign/out/f",
+ "joints": {
+  "W-N x0": {
+   "wall_end_cells": 53,
+   "backed_by_solid": 53,
+   "neighbour": "T-NW"
+  },
+  "W-N x85": {
+   "wall_end_cells": 53,
+   "backed_by_solid": 53,
+   "neighbour": "T-NE"
+  },
+  "W-E x0": {
+   "wall_end_cells": 53,
+   "backed_by_solid": 53,
+   "neighbour": "T-NE"
+  },
+  "W-E x85": {
+   "wall_end_cells": 53,
+   "backed_by_solid": 53,
+   "neighbour": "T-SE"
+  },
+  "W-W x0": {
+   "wall_end_cells": 53,
+   "backed_by_solid": 53,
+   "neighbour": "T-SW"
+  },
+  "W-W x85": {
+   "wall_end_cells": 53,
+   "backed_by_solid": 53,
+   "neighbour": "T-NW"
+  },
+  "W-SW x0": {
+   "wall_end_cells": 53,
+   "backed_by_solid": 53,
+   "neighbour": "GATE"
+  },
+  "W-SW x30": {
+   "wall_end_cells": 53,
+   "backed_by_solid": 53,
+   "neighbour": "T-SW"
+  },
+  "W-SE x0": {
+   "wall_end_cells": 53,
+   "backed_by_solid": 53,
+   "neighbour": "T-SE"
+  },
+  "W-SE x30": {
+   "wall_end_cells": 53,
+   "backed_by_solid": 53,
+   "neighbour": "GATE"
+  }
+ },
+ "joint_open_cells": [],
+ "server_strict_placement": {
+  "MT": {
+   "rotation": "none",
+   "cells_including_air": 4056,
+   "failures": [],
+   "failure_count": 0
+  },
+  "MG": {
+   "rotation": "none",
+   "cells_including_air": 5760,
+   "failures": [],
+   "failure_count": 0
+  }
+ },
+ "slope_sites": {
+  "T1_falls_to_outer_corner": {
+   "module": "MT",
+   "origin": [
+    0,
+    -55,
+    460
+   ],
+   "ground_relative_to_grade_min_max": [
+    -5,
+    0
+   ],
+   "footing_columns_filled": 163,
+   "max_fill_depth": 5,
+   "fill_blocks": 416,
+   "template_cells": 4056,
+   "template_failures": 0,
+   "failures": [],
+   "hollow_cells": [],
+   "hollow_count": 0,
+   "outside_footprint_columns_changed": [],
+   "outside_changed_count": 0,
+   "terrain_cells_above_grade_inside_box_replaced_by_air_include": 0
+  },
+  "T2_undulating": {
+   "module": "MT",
+   "origin": [
+    40,
+    -55,
+    460
+   ],
+   "ground_relative_to_grade_min_max": [
+    -4,
+    2
+   ],
+   "footing_columns_filled": 84,
+   "max_fill_depth": 4,
+   "fill_blocks": 174,
+   "template_cells": 4056,
+   "template_failures": 0,
+   "failures": [],
+   "hollow_cells": [],
+   "hollow_count": 0,
+   "outside_footprint_columns_changed": [],
+   "outside_changed_count": 0,
+   "terrain_cells_above_grade_inside_box_replaced_by_air_include": 73
+  },
+  "G1_falls_outward": {
+   "module": "MG",
+   "origin": [
+    80,
+    -55,
+    460
+   ],
+   "ground_relative_to_grade_min_max": [
+    -5,
+    0
+   ],
+   "footing_columns_filled": 192,
+   "max_fill_depth": 5,
+   "fill_blocks": 576,
+   "template_cells": 5760,
+   "template_failures": 0,
+   "failures": [],
+   "hollow_cells": [],
+   "hollow_count": 0,
+   "outside_footprint_columns_changed": [],
+   "outside_changed_count": 0,
+   "terrain_cells_above_grade_inside_box_replaced_by_air_include": 0
+  },
+  "G2_cross_slope": {
+   "module": "MG",
+   "origin": [
+    130,
+    -55,
+    460
+   ],
+   "ground_relative_to_grade_min_max": [
+    -4,
+    3
+   ],
+   "footing_columns_filled": 144,
+   "max_fill_depth": 4,
+   "fill_blocks": 312,
+   "template_cells": 5760,
+   "template_failures": 0,
+   "failures": [],
+   "hollow_cells": [],
+   "hollow_count": 0,
+   "outside_footprint_columns_changed": [],
+   "outside_changed_count": 0,
+   "terrain_cells_above_grade_inside_box_replaced_by_air_include": 192
+  }
+ },
+ "problems": []
+}

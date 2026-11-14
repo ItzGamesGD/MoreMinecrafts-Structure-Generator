@@ -1,0 +1,548 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": {
+    "st03_manor": "f0e21133f6baab46ef20f0ed2b4a5ffef78a256fd1b8c573bbaeff20eb6da5ba"
+  },
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear; night_vision only for interior views; difficulty easy with natural mob spawning off only for the two test-entity views; raised camera positions stand on an invisible barrier block set only into air cells after placement",
+  "placed": [
+    {
+      "what": "manor",
+      "origin": [
+        0,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F01",
+      "module": "M-manor",
+      "origin": [
+        48,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F02",
+      "module": "M-barracks_a",
+      "origin": [
+        24,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F03",
+      "module": "M-barracks_b",
+      "origin": [
+        75,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F04",
+      "module": "M-barracks_c",
+      "origin": [
+        75,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F05",
+      "module": "M-armory",
+      "origin": [
+        12,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F06",
+      "module": "M-yard",
+      "origin": [
+        12,
+        -61,
+        52
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F07",
+      "module": "M-warehouse_a",
+      "origin": [
+        10,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F08",
+      "module": "M-warehouse_b",
+      "origin": [
+        75,
+        -61,
+        53
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F09",
+      "module": "M-prison",
+      "origin": [
+        92,
+        -61,
+        62
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F10",
+      "module": "M-stable",
+      "origin": [
+        77,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F11",
+      "module": "M-house_a",
+      "origin": [
+        14,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F12",
+      "module": "M-house_b",
+      "origin": [
+        26,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F13",
+      "module": "M-house_c",
+      "origin": [
+        14,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F14",
+      "module": "M-house_a",
+      "origin": [
+        89,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F15",
+      "module": "M-house_b",
+      "origin": [
+        76,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F16",
+      "module": "M-house_c",
+      "origin": [
+        92,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F17",
+      "module": "M-house_d",
+      "origin": [
+        92,
+        -61,
+        40
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F18",
+      "module": "M-kitchen",
+      "origin": [
+        92,
+        -61,
+        50
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F19",
+      "module": "M-smithy",
+      "origin": [
+        28,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F20",
+      "module": "M-cart_shed",
+      "origin": [
+        44,
+        -61,
+        82
+      ],
+      "rotation": "none"
+    }
+  ],
+  "shots": [
+    {
+      "view": "f01_01_front",
+      "tp": [
+        8.0,
+        -55.0,
+        238.0,
+        -180.0,
+        -12.7
+      ],
+      "file": "f01_01_front.png",
+      "sha256": "999e7451d08ba62b908bcb25a2ef5d0414882b3eb747fc7fee907668c767fd1a"
+    },
+    {
+      "view": "f01_02_front_left",
+      "tp": [
+        -15.0,
+        -51.0,
+        230.0,
+        -135.0,
+        -3.5
+      ],
+      "file": "f01_02_front_left.png",
+      "sha256": "c32e1fdcb3e6706f053cfcd67e770fbd477e48dcda5aeff339298d154de9e159"
+    },
+    {
+      "view": "f01_03_front_right",
+      "tp": [
+        31.0,
+        -51.0,
+        230.0,
+        135.0,
+        -3.5
+      ],
+      "file": "f01_03_front_right.png",
+      "sha256": "23675aad2699f7d67414cdd41006f9948f9b303bde901d2b47a5212ed64ab6e8"
+    },
+    {
+      "view": "f01_04_side_west",
+      "tp": [
+        -22.0,
+        -53.0,
+        207.0,
+        -90.0,
+        -7.6
+      ],
+      "file": "f01_04_side_west.png",
+      "sha256": "261b1586be90f1f9482f858aaef9d1fd662cf9ee5bfef3bb63483db7d0b5669c"
+    },
+    {
+      "view": "f01_05_side_east",
+      "tp": [
+        38.0,
+        -53.0,
+        207.0,
+        90.0,
+        -7.6
+      ],
+      "file": "f01_05_side_east.png",
+      "sha256": "09466522cf9e7ad83de5fd6b7d1a84b00e43d055ef3e2a7e1b8e4fad8cfa0018"
+    },
+    {
+      "view": "f01_06_rear",
+      "tp": [
+        8.0,
+        -55.0,
+        176.0,
+        -0.0,
+        -12.7
+      ],
+      "file": "f01_06_rear.png",
+      "sha256": "c0e4eb07a5070923e5fdebdb2bdcad08ad7ce6a1c23fdde9ca8f9cee879c1bcf"
+    },
+    {
+      "view": "f01_07_rear_diag",
+      "tp": [
+        31.0,
+        -50.0,
+        184.0,
+        45.0,
+        -1.8
+      ],
+      "file": "f01_07_rear_diag.png",
+      "sha256": "a2039e38f24cfd87f0af71181263851b93fc1268e6557b7697d531b6151dc0db"
+    },
+    {
+      "view": "f01_08_roof_and_lookout",
+      "tp": [
+        -4.0,
+        -30.0,
+        223.0,
+        -143.1,
+        28.8
+      ],
+      "file": "f01_08_roof_and_lookout.png",
+      "sha256": "b569943c6acd49970a43404b84270e971323fc7c32342bc030c9dbfad6ef9826"
+    },
+    {
+      "view": "f01_09_entrance_porch",
+      "tp": [
+        7.9,
+        -58.8,
+        223.0,
+        -180.0,
+        -15.6
+      ],
+      "file": "f01_09_entrance_porch.png",
+      "sha256": "0ea16e317c6d4c79ea8f80a1d5c694214a113a31f66842fd3ed58bed46cebda9"
+    },
+    {
+      "view": "f01_10_interior_hall_from_door",
+      "tp": [
+        7.9,
+        -59.6,
+        211.4,
+        -180.0,
+        -19.1
+      ],
+      "file": "f01_10_interior_hall_from_door.png",
+      "sha256": "89a77a84fa53bd8841532cf56299d697bd17127bbd540da5cfa8646f8a9bde49"
+    },
+    {
+      "view": "f01_11_interior_chandelier_from_hall",
+      "tp": [
+        7.9,
+        -59.8,
+        211.2,
+        175.4,
+        -66.7
+      ],
+      "file": "f01_11_interior_chandelier_from_hall.png",
+      "sha256": "e3444c47f562cea7cb6740ffc958e98519b32b2f75f01ae9b143766b9dfc5832"
+    },
+    {
+      "view": "f01_12_interior_gallery_west_arm",
+      "tp": [
+        2.6,
+        -53.7,
+        211.3,
+        -134.5,
+        -7.6
+      ],
+      "file": "f01_12_interior_gallery_west_arm.png",
+      "sha256": "83ae42368e3c437969198bf25f26db7b25a839f45e2e16d5b8da61f1c4b9b79a"
+    },
+    {
+      "view": "f01_13_interior_war_room",
+      "tp": [
+        12.7,
+        -53.6,
+        204.7,
+        117.3,
+        -4.9
+      ],
+      "file": "f01_13_interior_war_room.png",
+      "sha256": "adba75e40653ca4dfc9a2f96f68d4b4d9ca26c62d8903b2c1d15c8687bc7dcda"
+    },
+    {
+      "view": "f01_14_interior_stair_from_hall",
+      "tp": [
+        7.5,
+        -59.5,
+        210.6,
+        -129.4,
+        -31.7
+      ],
+      "file": "f01_14_interior_stair_from_hall.png",
+      "sha256": "c8ba3f8f07d16b694b2069e5692dc5970de77c085828cda3a1853db871bc0ec9"
+    },
+    {
+      "view": "f01_15_interior_hall_from_war_room",
+      "tp": [
+        7.6,
+        -53.6,
+        203.3,
+        -0.0,
+        22.5
+      ],
+      "file": "f01_15_interior_hall_from_war_room.png",
+      "sha256": "3de5ca14d29769f35ec51d8892a1f9cb635af7ab4e5be3b50d63fc9159da9b2d"
+    },
+    {
+      "view": "f01_16_interior_3F_bedroom",
+      "tp": [
+        12.6,
+        -47.7,
+        204.5,
+        114.9,
+        -6.6
+      ],
+      "file": "f01_16_interior_3F_bedroom.png",
+      "sha256": "8fceadc591561d8d5e65ee84b37eb8bf80853ef8cb26817b36a3ff3de7ac6976"
+    },
+    {
+      "view": "f01_17_interior_3F_study",
+      "tp": [
+        12.3,
+        -47.7,
+        210.6,
+        104.2,
+        -5.9
+      ],
+      "file": "f01_17_interior_3F_study.png",
+      "sha256": "c3b7e97efbdb117a6d11676b50b2db0d5137c8af5737cee8b0961fb66dd365f9"
+    },
+    {
+      "view": "f01_18_interior_attic_to_lookout",
+      "tp": [
+        4.6,
+        -41.6,
+        208.0,
+        -33.1,
+        -36.1
+      ],
+      "file": "f01_18_interior_attic_to_lookout.png",
+      "sha256": "e7511c15b3d8ac01db9732fea74f818e6a1e67fb419ce5a5b4ec086eee6e7d40"
+    },
+    {
+      "view": "f01_19_interior_1F_guard_bay",
+      "tp": [
+        6.5,
+        -59.7,
+        209.6,
+        102.4,
+        -10.0
+      ],
+      "file": "f01_19_interior_1F_guard_bay.png",
+      "sha256": "3d69f55eb3594f5cfab23ee1b3cd120ac86186da518063eff4d045808a53322b"
+    },
+    {
+      "view": "ctx_01_f01_from_central_street",
+      "tp": [
+        56.5,
+        -56.5,
+        47.5,
+        -180.0,
+        -12.4
+      ],
+      "file": "ctx_01_f01_from_central_street.png",
+      "sha256": "e09c181bb352f8d9f41774ac862e7173ec65185f73a7c0fe449f2b66a107b03e"
+    },
+    {
+      "view": "ctx_02_f01_aerial_south_east",
+      "tp": [
+        79.5,
+        -36,
+        47.5,
+        142.1,
+        25.7
+      ],
+      "file": "ctx_02_f01_aerial_south_east.png",
+      "sha256": "0aa76c34ac371f19aad0207d559ac0bab339199ef7cc0e0436dbc990f79b53e7"
+    },
+    {
+      "view": "ctx_03_f01_f02_f03_from_south",
+      "tp": [
+        56.5,
+        -46,
+        64.5,
+        -180.0,
+        11.7
+      ],
+      "file": "ctx_03_f01_f02_f03_from_south.png",
+      "sha256": "e169ee2c4936d2dfb85b6603166ec71762839a91b3de50def65e2320b089ade8"
+    },
+    {
+      "view": "ctx_04_f01_with_f12_west",
+      "tp": [
+        37.5,
+        -53,
+        31.5,
+        -127.3,
+        -4.8
+      ],
+      "file": "ctx_04_f01_with_f12_west.png",
+      "sha256": "78344d5909c2a7ea6597538657bb2de49027f10bfcafb994092d16b9de874492"
+    },
+    {
+      "view": "ctx_05_f01_with_f15_east",
+      "tp": [
+        74.5,
+        -54,
+        31.5,
+        128.9,
+        -7.4
+      ],
+      "file": "ctx_05_f01_with_f15_east.png",
+      "sha256": "38503ad12a7c6005df79fe7b961f293892a361d1a3cc1799671ccb67f3129206"
+    },
+    {
+      "view": "ctx_06_north_quarter_aerial",
+      "tp": [
+        56.5,
+        -20,
+        66.5,
+        -180.0,
+        40.7
+      ],
+      "file": "ctx_06_north_quarter_aerial.png",
+      "sha256": "6c073437ad872a084c6b5905e017fba7f5ec9c08f3c2d35f5eddba9414dcc423"
+    },
+    {
+      "view": "f01_20_interior_war_room_test_commander",
+      "tp": [
+        11.6,
+        -53.6,
+        204.6,
+        127.8,
+        -10.1
+      ],
+      "file": "f01_20_interior_war_room_test_commander.png",
+      "sha256": "1c9f0bd35e269d002039f81a86bc8c6c2178f51cf90ace26c31034f5c90b4f4d"
+    },
+    {
+      "view": "f01_21_interior_bedroom_test_armor_stand",
+      "tp": [
+        9.0,
+        -47.6,
+        204.4,
+        -118.5,
+        -8.6
+      ],
+      "file": "f01_21_interior_bedroom_test_armor_stand.png",
+      "sha256": "2e6b218c2fcda0c209ff8bd625306aa1ba1085ec518db1cd2c3e1f86c4f5485e"
+    }
+  ],
+  "test_entities": "two views only (f01_20, f01_21): NoAI pillager with 40 HP at the commander position, armor stand at the recorded 3F position"
+}

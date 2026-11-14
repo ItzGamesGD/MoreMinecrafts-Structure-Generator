@@ -1,0 +1,800 @@
+{
+ "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+ "placement": "F01",
+ "module": "M-manor",
+ "nbt_sha256": "f0e21133f6baab46ef20f0ed2b4a5ffef78a256fd1b8c573bbaeff20eb6da5ba",
+ "verify": {
+  "size": [
+   17,
+   27,
+   15
+  ],
+  "blocks": 6885,
+  "non_air_blocks": 2652,
+  "palette": 88,
+  "cells_compared": 6885,
+  "mismatches": 0
+ },
+ "states": {
+  "authored_cells_checked": 2652,
+  "mismatches": 0
+ },
+ "support": {
+  "unsupported": []
+ },
+ "access": {
+  "entrance": "porch_south",
+  "outside_cell": [
+   7,
+   15
+  ],
+  "feet_cells_per_floor": {
+   "1F": 122,
+   "2F": 63,
+   "3F": 109,
+   "attic": 126
+  },
+  "usable_blocks": 28,
+  "usable_unreached": [],
+  "key_points": {
+   "1F_hall_centre": true,
+   "1F_west_guard_bay": true,
+   "1F_rear_supplies": true,
+   "1F_east_room": true,
+   "1F_flight1_foot": true,
+   "2F_landing": true,
+   "2F_war_room": true,
+   "2F_commander_position": true,
+   "2F_west_gallery_far_end": true,
+   "2F_rear_gallery_west": true,
+   "3F_arrival": true,
+   "3F_study": true,
+   "3F_bedroom": true,
+   "3F_armor_stand_position": true,
+   "attic_hatch": true,
+   "attic_lookout_platform": true,
+   "attic_rear": true
+  },
+  "rare_reward_chest_reached": true
+ },
+ "stairs": {
+  "flight1_1F_to_2F": {
+   "width_blocks": 2,
+   "steps": 6,
+   "all_cells_walkable": true,
+   "rows": [
+    {
+     "z": 11,
+     "step_top_y": 1,
+     "cells_walkable": [
+      true,
+      true
+     ]
+    },
+    {
+     "z": 10,
+     "step_top_y": 2,
+     "cells_walkable": [
+      true,
+      true
+     ]
+    },
+    {
+     "z": 9,
+     "step_top_y": 3,
+     "cells_walkable": [
+      true,
+      true
+     ]
+    },
+    {
+     "z": 8,
+     "step_top_y": 4,
+     "cells_walkable": [
+      true,
+      true
+     ]
+    },
+    {
+     "z": 7,
+     "step_top_y": 5,
+     "cells_walkable": [
+      true,
+      true
+     ]
+    },
+    {
+     "z": 6,
+     "step_top_y": 6,
+     "cells_walkable": [
+      true,
+      true
+     ]
+    }
+   ]
+  },
+  "flight2_2F_to_3F": {
+   "width_blocks": 2,
+   "steps": 6,
+   "all_cells_walkable": true,
+   "rows": [
+    {
+     "z": 6,
+     "step_top_y": 7,
+     "cells_walkable": [
+      true,
+      true
+     ]
+    },
+    {
+     "z": 7,
+     "step_top_y": 8,
+     "cells_walkable": [
+      true,
+      true
+     ]
+    },
+    {
+     "z": 8,
+     "step_top_y": 9,
+     "cells_walkable": [
+      true,
+      true
+     ]
+    },
+    {
+     "z": 9,
+     "step_top_y": 10,
+     "cells_walkable": [
+      true,
+      true
+     ]
+    },
+    {
+     "z": 10,
+     "step_top_y": 11,
+     "cells_walkable": [
+      true,
+      true
+     ]
+    },
+    {
+     "z": 11,
+     "step_top_y": 12,
+     "cells_walkable": [
+      true,
+      true
+     ]
+    }
+   ]
+  }
+ },
+ "gallery_chandelier": {
+  "chandelier_blocks": 48,
+  "chandelier_lanterns": 8,
+  "blocks_in_walkable_feet_or_head_cells": [],
+  "closest_horizontal_distance_to_walkable_upper_cell": 1.41,
+  "gallery_cells_listed": 26,
+  "gallery_cells_reached": 26
+ },
+ "entity_positions": {
+  "commander_spawn": {
+   "local": [
+    7.5,
+    7.0,
+    1.5
+   ],
+   "two_cells_clear_on_solid_floor": true,
+   "reached": true
+  },
+  "armor_stand": {
+   "local": [
+    12.5,
+    13.0,
+    2.5
+   ],
+   "two_cells_clear_on_solid_floor": true,
+   "reached": true
+  }
+ },
+ "counts": {
+  "chest": 8,
+  "barrel": 12,
+  "lantern": 25,
+  "white_wall_banner": 9,
+  "dark_oak_door": 4,
+  "ladder": 6
+ },
+ "server_strict_placement": {
+  "rotation": "none",
+  "cells": 6885,
+  "failures": []
+ },
+ "commander_ai_probe": {
+  "method": "vanilla 26.3 AI, test entities only: 40-HP vindicator (iron axe; follow range raised from its default 12 to the pillager's 32) / pillager (crossbow) summoned at the recorded commander position and turned on a NoAI villager with `damage <it> 0.5 minecraft:mob_attack by <villager>`; positions sampled every 0.25 s. Melee pass = within 2 blocks of the target (villager kept alive by Resistance V); ranged pass = the villager loses health.",
+  "placement_origin": [
+   200,
+   -61,
+   16
+  ],
+  "trials": [
+   {
+    "test_entity": "vindicator",
+    "max_health_set": 40,
+    "follow_range_set": 32,
+    "health_at_start": "Vindicator has the following entity data: 40.0f",
+    "target": "west_gallery_far_end",
+    "start_local": [
+     7.5,
+     7.0,
+     1.5
+    ],
+    "target_local": [
+     2.5,
+     7,
+     11.5
+    ],
+    "damage_reply": "Applied 0.5 damage to Vindicator",
+    "closest_distance": 1.01,
+    "seconds": 3.5,
+    "villager_health_start": "Villager has the following entity data: 20.0f",
+    "villager_health_end": 20.0,
+    "track": [
+     [
+      0.0,
+      7.68,
+      7.05,
+      1.3
+     ],
+     [
+      0.3,
+      7.95,
+      7.0,
+      1.3
+     ],
+     [
+      0.5,
+      7.97,
+      7.0,
+      1.3
+     ],
+     [
+      0.8,
+      7.97,
+      7.0,
+      1.3
+     ],
+     [
+      1.0,
+      7.97,
+      7.0,
+      1.3
+     ],
+     [
+      1.3,
+      6.95,
+      7.0,
+      1.47
+     ],
+     [
+      1.5,
+      5.62,
+      7.0,
+      1.51
+     ],
+     [
+      1.8,
+      4.51,
+      7.0,
+      1.81
+     ],
+     [
+      2.0,
+      4.45,
+      7.0,
+      3.06
+     ],
+     [
+      2.3,
+      3.83,
+      7.0,
+      4.18
+     ],
+     [
+      2.5,
+      3.48,
+      7.0,
+      5.44
+     ],
+     [
+      2.8,
+      3.49,
+      7.0,
+      6.78
+     ],
+     [
+      3.0,
+      3.5,
+      7.0,
+      8.13
+     ],
+     [
+      3.3,
+      3.42,
+      7.0,
+      9.46
+     ],
+     [
+      3.5,
+      2.66,
+      7.0,
+      10.5
+     ]
+    ],
+    "pass": true
+   },
+   {
+    "test_entity": "vindicator",
+    "max_health_set": 40,
+    "follow_range_set": 32,
+    "health_at_start": "Vindicator has the following entity data: 40.0f",
+    "target": "hall_floor_by_the_door",
+    "start_local": [
+     7.5,
+     7.0,
+     1.5
+    ],
+    "target_local": [
+     7.5,
+     1,
+     10.5
+    ],
+    "damage_reply": "Applied 0.5 damage to Vindicator",
+    "closest_distance": 1.68,
+    "seconds": 4.3,
+    "villager_health_start": "Villager has the following entity data: 20.0f",
+    "villager_health_end": 20.0,
+    "track": [
+     [
+      0.0,
+      7.5,
+      7.0,
+      1.5
+     ],
+     [
+      0.3,
+      7.5,
+      7.0,
+      1.3
+     ],
+     [
+      0.5,
+      7.5,
+      7.0,
+      1.3
+     ],
+     [
+      0.8,
+      7.5,
+      7.0,
+      1.3
+     ],
+     [
+      1.0,
+      7.5,
+      7.0,
+      1.3
+     ],
+     [
+      1.3,
+      8.27,
+      7.0,
+      1.45
+     ],
+     [
+      1.5,
+      9.58,
+      7.0,
+      1.51
+     ],
+     [
+      1.8,
+      10.93,
+      7.0,
+      1.51
+     ],
+     [
+      2.0,
+      11.58,
+      7.0,
+      2.28
+     ],
+     [
+      2.3,
+      11.53,
+      7.0,
+      3.59
+     ],
+     [
+      2.5,
+      11.5,
+      7.0,
+      4.94
+     ],
+     [
+      2.8,
+      11.5,
+      7.0,
+      6.29
+     ],
+     [
+      3.0,
+      11.5,
+      6.54,
+      7.4
+     ],
+     [
+      3.3,
+      11.5,
+      5.77,
+      8.32
+     ],
+     [
+      3.5,
+      11.09,
+      4.77,
+      9.18
+     ],
+     [
+      3.8,
+      10.49,
+      4.04,
+      9.6
+     ],
+     [
+      4.0,
+      9.98,
+      1.81,
+      9.81
+     ],
+     [
+      4.3,
+      9.15,
+      1.0,
+      10.16
+     ]
+    ],
+    "pass": true
+   },
+   {
+    "test_entity": "vindicator",
+    "max_health_set": 40,
+    "follow_range_set": 32,
+    "health_at_start": "Vindicator has the following entity data: 40.0f",
+    "target": "3F_study",
+    "start_local": [
+     7.5,
+     7.0,
+     1.5
+    ],
+    "target_local": [
+     5.5,
+     13,
+     8.5
+    ],
+    "damage_reply": "Applied 0.5 damage to Vindicator",
+    "closest_distance": 1.41,
+    "seconds": 5.5,
+    "villager_health_start": "Villager has the following entity data: 20.0f",
+    "villager_health_end": 20.0,
+    "track": [
+     [
+      0.0,
+      7.5,
+      7.0,
+      1.5
+     ],
+     [
+      0.3,
+      7.77,
+      7.0,
+      1.3
+     ],
+     [
+      0.5,
+      7.78,
+      7.0,
+      1.3
+     ],
+     [
+      0.8,
+      7.78,
+      7.0,
+      1.3
+     ],
+     [
+      1.0,
+      7.78,
+      7.0,
+      1.3
+     ],
+     [
+      1.3,
+      8.55,
+      7.0,
+      1.45
+     ],
+     [
+      1.5,
+      9.87,
+      7.0,
+      1.51
+     ],
+     [
+      1.8,
+      11.22,
+      7.0,
+      1.5
+     ],
+     [
+      2.0,
+      11.58,
+      7.0,
+      2.53
+     ],
+     [
+      2.3,
+      11.52,
+      7.0,
+      3.86
+     ],
+     [
+      2.5,
+      12.0,
+      7.0,
+      5.03
+     ],
+     [
+      2.8,
+      12.94,
+      7.5,
+      5.98
+     ],
+     [
+      3.0,
+      13.52,
+      8.5,
+      6.99
+     ],
+     [
+      3.3,
+      13.54,
+      10.0,
+      8.46
+     ],
+     [
+      3.5,
+      13.51,
+      11.0,
+      9.56
+     ],
+     [
+      3.8,
+      13.5,
+      12.5,
+      10.76
+     ],
+     [
+      4.0,
+      13.38,
+      13.0,
+      11.7
+     ],
+     [
+      4.3,
+      12.22,
+      13.0,
+      11.51
+     ],
+     [
+      4.5,
+      11.02,
+      13.0,
+      11.12
+     ],
+     [
+      4.8,
+      10.09,
+      13.0,
+      10.16
+     ],
+     [
+      5.0,
+      9.02,
+      13.0,
+      9.48
+     ],
+     [
+      5.3,
+      8.07,
+      13.0,
+      9.07
+     ],
+     [
+      5.5,
+      6.91,
+      13.0,
+      8.54
+     ]
+    ],
+    "pass": true
+   },
+   {
+    "test_entity": "pillager",
+    "max_health_set": 40,
+    "follow_range_set": "default (32)",
+    "health_at_start": "Pillager has the following entity data: 40.0f",
+    "target": "hall_floor_shot_from_war_room",
+    "start_local": [
+     7.5,
+     7.0,
+     1.5
+    ],
+    "target_local": [
+     7.5,
+     1,
+     8.5
+    ],
+    "damage_reply": "Applied 0.5 damage to Pillager",
+    "closest_distance": 7.45,
+    "seconds": 5.5,
+    "villager_health_start": "Villager has the following entity data: 20.0f",
+    "villager_health_end": 16.0,
+    "track": [
+     [
+      0.0,
+      7.5,
+      7.0,
+      1.5
+     ],
+     [
+      0.3,
+      7.5,
+      7.0,
+      1.3
+     ],
+     [
+      0.5,
+      7.5,
+      7.0,
+      1.3
+     ],
+     [
+      0.8,
+      7.5,
+      7.0,
+      1.3
+     ],
+     [
+      1.0,
+      7.5,
+      7.0,
+      1.3
+     ],
+     [
+      1.3,
+      8.03,
+      7.0,
+      1.41
+     ],
+     [
+      1.5,
+      9.32,
+      7.0,
+      1.51
+     ],
+     [
+      1.8,
+      10.66,
+      7.0,
+      1.51
+     ],
+     [
+      2.0,
+      11.58,
+      7.0,
+      2.28
+     ],
+     [
+      2.3,
+      11.53,
+      7.0,
+      3.59
+     ],
+     [
+      2.5,
+      11.5,
+      7.0,
+      4.94
+     ],
+     [
+      2.8,
+      11.5,
+      7.0,
+      6.29
+     ],
+     [
+      3.0,
+      11.5,
+      7.0,
+      6.6
+     ],
+     [
+      3.3,
+      11.5,
+      7.0,
+      6.61
+     ],
+     [
+      3.5,
+      11.5,
+      7.0,
+      6.61
+     ],
+     [
+      3.8,
+      11.5,
+      7.0,
+      6.61
+     ],
+     [
+      4.0,
+      11.5,
+      7.0,
+      6.61
+     ],
+     [
+      4.3,
+      11.5,
+      7.0,
+      6.61
+     ],
+     [
+      4.5,
+      11.5,
+      7.0,
+      6.61
+     ],
+     [
+      4.8,
+      11.5,
+      7.0,
+      6.61
+     ],
+     [
+      5.0,
+      11.5,
+      7.0,
+      6.61
+     ],
+     [
+      5.3,
+      11.5,
+      7.0,
+      6.61
+     ],
+     [
+      5.5,
+      11.5,
+      7.0,
+      6.61
+     ]
+    ],
+    "pass": true,
+    "stayed_in_war_room": false
+   }
+  ],
+  "pass": true
+ },
+ "problems": []
+}

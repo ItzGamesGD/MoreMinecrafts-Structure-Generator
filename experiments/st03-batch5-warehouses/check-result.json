@@ -1,0 +1,173 @@
+{
+ "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+ "f04_f08": {
+  "f08_origin_minus_f04_origin": [
+   0,
+   0,
+   14
+  ],
+  "gap_global_z": [
+   50,
+   52
+  ],
+  "gap_width_blocks": 3,
+  "blocks_in_gap": [],
+  "gap_cells_not_walkable_y1_y2": [],
+  "f08_north_apron_blocks_y1_y3": []
+ },
+ "buildings": {
+  "warehouse_a": {
+   "placement": "F07",
+   "module": "M-warehouse_a",
+   "nbt_sha256": "8bb4ea0061284596d6595dfc1f96e0bad1405c6ce4033fcb46ac36180401c296",
+   "verify": {
+    "size": [
+     15,
+     12,
+     13
+    ],
+    "blocks": 2340,
+    "non_air_blocks": 835,
+    "palette": 69,
+    "cells_compared": 2340,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 847,
+    "mismatches": 0
+   },
+   "exterior_supplies": {
+    "usable_on_apron": 9,
+    "unreached_from_open_ground": []
+   },
+   "access": {
+    "cart_porch_south": {
+     "outside_cell": [
+      6,
+      13
+     ],
+     "interior_feet_cells": 85,
+     "loft_feet_cells": 11,
+     "usable_blocks_inside": 31,
+     "usable_unreached": [],
+     "key_points": {
+      "porch": true,
+      "aisle_head": true,
+      "west_bay": true,
+      "east_bay": true,
+      "loft_walkway": true
+     }
+    },
+    "cart_porch_south_b": {
+     "outside_cell": [
+      7,
+      13
+     ],
+     "interior_feet_cells": 85,
+     "loft_feet_cells": 11,
+     "usable_blocks_inside": 31,
+     "usable_unreached": [],
+     "key_points": {
+      "porch": true,
+      "aisle_head": true,
+      "west_bay": true,
+      "east_bay": true,
+      "loft_walkway": true
+     }
+    }
+   },
+   "storage": {
+    "chests": 3,
+    "barrels": 24,
+    "crate_and_sack_blocks": 20,
+    "ladders": 4,
+    "loft_walkable_feet_cells": 11
+   },
+   "server_strict_placement": {
+    "rotation": "none",
+    "cells": 2340,
+    "failures": []
+   }
+  },
+  "warehouse_b": {
+   "placement": "F08",
+   "module": "M-warehouse_b",
+   "nbt_sha256": "503151fff5beb5de3389d133e780a1bec06addbb70d10b7d92d8443a4e3f261c",
+   "verify": {
+    "size": [
+     13,
+     12,
+     15
+    ],
+    "blocks": 2340,
+    "non_air_blocks": 920,
+    "palette": 65,
+    "cells_compared": 2340,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 930,
+    "mismatches": 0
+   },
+   "exterior_supplies": {
+    "usable_on_apron": 5,
+    "unreached_from_open_ground": []
+   },
+   "access": {
+    "unloading_bay_west": {
+     "outside_cell": [
+      -1,
+      7
+     ],
+     "interior_feet_cells": 143,
+     "loft_feet_cells": 38,
+     "usable_blocks_inside": 16,
+     "usable_unreached": [],
+     "key_points": {
+      "unloading_bay": true,
+      "north_stores": true,
+      "south_stores": true,
+      "rear_bay": true,
+      "north_gallery": true,
+      "gallery_bridge": true,
+      "south_gallery": true,
+      "loft_door_landing": true
+     }
+    },
+    "loft_stair_south": {
+     "outside_cell": [
+      0,
+      15
+     ],
+     "interior_feet_cells": 143,
+     "loft_feet_cells": 38,
+     "usable_blocks_inside": 16,
+     "usable_unreached": [],
+     "key_points": {
+      "unloading_bay": true,
+      "north_stores": true,
+      "south_stores": true,
+      "rear_bay": true,
+      "north_gallery": true,
+      "gallery_bridge": true,
+      "south_gallery": true,
+      "loft_door_landing": true
+     }
+    }
+   },
+   "storage": {
+    "chests": 2,
+    "barrels": 16,
+    "crate_and_sack_blocks": 33,
+    "ladders": 5,
+    "loft_walkable_feet_cells": 38
+   },
+   "server_strict_placement": {
+    "rotation": "none",
+    "cells": 2340,
+    "failures": []
+   }
+  }
+ },
+ "problems": []
+}

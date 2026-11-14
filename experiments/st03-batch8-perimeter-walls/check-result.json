@@ -1,0 +1,1694 @@
+{
+ "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+ "modules": {
+  "MW86": {
+   "placements": [
+    "W-N",
+    "W-E",
+    "W-W"
+   ],
+   "nbt": "st03_wall_86.nbt",
+   "nbt_sha256": "4ceac2ae748c0afc21a0ae9b7210f3087ee63c8e0961c83fd91600ac8a130d7f",
+   "verify": {
+    "size": [
+     86,
+     13,
+     5
+    ],
+    "blocks": 3246,
+    "non_air_blocks": 3246,
+    "palette": 26,
+    "cells_compared": 3246,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 3246,
+    "mismatches": 0,
+    "cells_not_authored": 0,
+    "air_cells_in_nbt": 0
+   },
+   "support": {
+    "unsupported": []
+   },
+   "silhouette": {
+    "columns": 86,
+    "problems": [],
+    "problem_count": 0,
+    "merlons": 58,
+    "crenels": 28,
+    "arrow_slits": 4
+   },
+   "counts": {
+    "lantern": 6,
+    "white_wall_banner": 7,
+    "barrel": 5,
+    "dark_oak_log": 28,
+    "spruce_log": 10,
+    "moss_carpet": 8
+   },
+   "materials": {
+    "mossy_stone_bricks": 105,
+    "andesite": 170,
+    "cobblestone": 876,
+    "cracked_stone_bricks": 168,
+    "stone_bricks": 1531,
+    "mossy_cobblestone": 70,
+    "stone": 54,
+    "stone_brick_stairs": 103,
+    "mossy_cobblestone_stairs": 23,
+    "dark_oak_stairs": 10,
+    "dark_oak_log": 28,
+    "cobblestone_stairs": 39,
+    "lantern": 6,
+    "barrel": 5,
+    "moss_carpet": 8,
+    "spruce_log": 10,
+    "mossy_stone_brick_stairs": 23,
+    "andesite_stairs": 10,
+    "white_wall_banner": 7
+   }
+  },
+  "MW31": {
+   "placements": [
+    "W-SW",
+    "W-SE"
+   ],
+   "nbt": "st03_wall_31.nbt",
+   "nbt_sha256": "4bb7ff4dbe4c1fb2623acc610dfacec727dffda53d99f96f978bdf9f8d8e453f",
+   "verify": {
+    "size": [
+     31,
+     13,
+     5
+    ],
+    "blocks": 1198,
+    "non_air_blocks": 1198,
+    "palette": 26,
+    "cells_compared": 1198,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 1198,
+    "mismatches": 0,
+    "cells_not_authored": 0,
+    "air_cells_in_nbt": 0
+   },
+   "support": {
+    "unsupported": []
+   },
+   "silhouette": {
+    "columns": 31,
+    "problems": [],
+    "problem_count": 0,
+    "merlons": 22,
+    "crenels": 9,
+    "arrow_slits": 2
+   },
+   "counts": {
+    "lantern": 4,
+    "white_wall_banner": 4,
+    "barrel": 4,
+    "dark_oak_log": 28,
+    "spruce_log": 10,
+    "moss_carpet": 4
+   },
+   "materials": {
+    "mossy_stone_bricks": 36,
+    "andesite": 70,
+    "cobblestone": 303,
+    "cracked_stone_bricks": 57,
+    "stone_bricks": 568,
+    "mossy_cobblestone": 25,
+    "stone": 21,
+    "stone_brick_stairs": 24,
+    "mossy_cobblestone_stairs": 8,
+    "dark_oak_stairs": 10,
+    "dark_oak_log": 28,
+    "cobblestone_stairs": 14,
+    "lantern": 4,
+    "barrel": 4,
+    "moss_carpet": 4,
+    "spruce_log": 10,
+    "mossy_stone_brick_stairs": 5,
+    "andesite_stairs": 3,
+    "white_wall_banner": 4
+   }
+  }
+ },
+ "boundaries": {
+  "0": {
+   "W-N": {
+    "rotation": "none",
+    "footprint": [
+     13,
+     0,
+     98,
+     4
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        13,
+        0
+       ],
+       [
+        13,
+        1
+       ],
+       [
+        13,
+        2
+       ],
+       [
+        13,
+        3
+       ],
+       [
+        13,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        98,
+        0
+       ],
+       [
+        98,
+        1
+       ],
+       [
+        98,
+        2
+       ],
+       [
+        98,
+        3
+       ],
+       [
+        98,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-NW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-E": {
+    "rotation": "clockwise_90",
+    "footprint": [
+     107,
+     13,
+     111,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        111,
+        13
+       ],
+       [
+        110,
+        13
+       ],
+       [
+        109,
+        13
+       ],
+       [
+        108,
+        13
+       ],
+       [
+        107,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        111,
+        98
+       ],
+       [
+        110,
+        98
+       ],
+       [
+        109,
+        98
+       ],
+       [
+        108,
+        98
+       ],
+       [
+        107,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-W": {
+    "rotation": "counterclockwise_90",
+    "footprint": [
+     0,
+     13,
+     4,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        0,
+        98
+       ],
+       [
+        1,
+        98
+       ],
+       [
+        2,
+        98
+       ],
+       [
+        3,
+        98
+       ],
+       [
+        4,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        0,
+        13
+       ],
+       [
+        1,
+        13
+       ],
+       [
+        2,
+        13
+       ],
+       [
+        3,
+        13
+       ],
+       [
+        4,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NW",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SW": {
+    "rotation": "180",
+    "footprint": [
+     13,
+     107,
+     43,
+     111
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        43,
+        111
+       ],
+       [
+        43,
+        110
+       ],
+       [
+        43,
+        109
+       ],
+       [
+        43,
+        108
+       ],
+       [
+        43,
+        107
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        13,
+        111
+       ],
+       [
+        13,
+        110
+       ],
+       [
+        13,
+        109
+       ],
+       [
+        13,
+        108
+       ],
+       [
+        13,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SE": {
+    "rotation": "180",
+    "footprint": [
+     68,
+     107,
+     98,
+     111
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        98,
+        111
+       ],
+       [
+        98,
+        110
+       ],
+       [
+        98,
+        109
+       ],
+       [
+        98,
+        108
+       ],
+       [
+        98,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        68,
+        111
+       ],
+       [
+        68,
+        110
+       ],
+       [
+        68,
+        109
+       ],
+       [
+        68,
+        108
+       ],
+       [
+        68,
+        107
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   }
+  },
+  "1": {
+   "W-N": {
+    "rotation": "clockwise_90",
+    "footprint": [
+     107,
+     13,
+     111,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        111,
+        13
+       ],
+       [
+        110,
+        13
+       ],
+       [
+        109,
+        13
+       ],
+       [
+        108,
+        13
+       ],
+       [
+        107,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        111,
+        98
+       ],
+       [
+        110,
+        98
+       ],
+       [
+        109,
+        98
+       ],
+       [
+        108,
+        98
+       ],
+       [
+        107,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-NW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-E": {
+    "rotation": "180",
+    "footprint": [
+     13,
+     107,
+     98,
+     111
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        98,
+        111
+       ],
+       [
+        98,
+        110
+       ],
+       [
+        98,
+        109
+       ],
+       [
+        98,
+        108
+       ],
+       [
+        98,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        13,
+        111
+       ],
+       [
+        13,
+        110
+       ],
+       [
+        13,
+        109
+       ],
+       [
+        13,
+        108
+       ],
+       [
+        13,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-W": {
+    "rotation": "none",
+    "footprint": [
+     13,
+     0,
+     98,
+     4
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        13,
+        0
+       ],
+       [
+        13,
+        1
+       ],
+       [
+        13,
+        2
+       ],
+       [
+        13,
+        3
+       ],
+       [
+        13,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        98,
+        0
+       ],
+       [
+        98,
+        1
+       ],
+       [
+        98,
+        2
+       ],
+       [
+        98,
+        3
+       ],
+       [
+        98,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NW",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SW": {
+    "rotation": "counterclockwise_90",
+    "footprint": [
+     0,
+     13,
+     4,
+     43
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        0,
+        43
+       ],
+       [
+        1,
+        43
+       ],
+       [
+        2,
+        43
+       ],
+       [
+        3,
+        43
+       ],
+       [
+        4,
+        43
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        0,
+        13
+       ],
+       [
+        1,
+        13
+       ],
+       [
+        2,
+        13
+       ],
+       [
+        3,
+        13
+       ],
+       [
+        4,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SE": {
+    "rotation": "counterclockwise_90",
+    "footprint": [
+     0,
+     68,
+     4,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        0,
+        98
+       ],
+       [
+        1,
+        98
+       ],
+       [
+        2,
+        98
+       ],
+       [
+        3,
+        98
+       ],
+       [
+        4,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        0,
+        68
+       ],
+       [
+        1,
+        68
+       ],
+       [
+        2,
+        68
+       ],
+       [
+        3,
+        68
+       ],
+       [
+        4,
+        68
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   }
+  },
+  "2": {
+   "W-N": {
+    "rotation": "180",
+    "footprint": [
+     13,
+     107,
+     98,
+     111
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        98,
+        111
+       ],
+       [
+        98,
+        110
+       ],
+       [
+        98,
+        109
+       ],
+       [
+        98,
+        108
+       ],
+       [
+        98,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        13,
+        111
+       ],
+       [
+        13,
+        110
+       ],
+       [
+        13,
+        109
+       ],
+       [
+        13,
+        108
+       ],
+       [
+        13,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-NW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-E": {
+    "rotation": "counterclockwise_90",
+    "footprint": [
+     0,
+     13,
+     4,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        0,
+        98
+       ],
+       [
+        1,
+        98
+       ],
+       [
+        2,
+        98
+       ],
+       [
+        3,
+        98
+       ],
+       [
+        4,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        0,
+        13
+       ],
+       [
+        1,
+        13
+       ],
+       [
+        2,
+        13
+       ],
+       [
+        3,
+        13
+       ],
+       [
+        4,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-W": {
+    "rotation": "clockwise_90",
+    "footprint": [
+     107,
+     13,
+     111,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        111,
+        13
+       ],
+       [
+        110,
+        13
+       ],
+       [
+        109,
+        13
+       ],
+       [
+        108,
+        13
+       ],
+       [
+        107,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        111,
+        98
+       ],
+       [
+        110,
+        98
+       ],
+       [
+        109,
+        98
+       ],
+       [
+        108,
+        98
+       ],
+       [
+        107,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NW",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SW": {
+    "rotation": "none",
+    "footprint": [
+     68,
+     0,
+     98,
+     4
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        68,
+        0
+       ],
+       [
+        68,
+        1
+       ],
+       [
+        68,
+        2
+       ],
+       [
+        68,
+        3
+       ],
+       [
+        68,
+        4
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        98,
+        0
+       ],
+       [
+        98,
+        1
+       ],
+       [
+        98,
+        2
+       ],
+       [
+        98,
+        3
+       ],
+       [
+        98,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SE": {
+    "rotation": "none",
+    "footprint": [
+     13,
+     0,
+     43,
+     4
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        13,
+        0
+       ],
+       [
+        13,
+        1
+       ],
+       [
+        13,
+        2
+       ],
+       [
+        13,
+        3
+       ],
+       [
+        13,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        43,
+        0
+       ],
+       [
+        43,
+        1
+       ],
+       [
+        43,
+        2
+       ],
+       [
+        43,
+        3
+       ],
+       [
+        43,
+        4
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   }
+  },
+  "3": {
+   "W-N": {
+    "rotation": "counterclockwise_90",
+    "footprint": [
+     0,
+     13,
+     4,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        0,
+        98
+       ],
+       [
+        1,
+        98
+       ],
+       [
+        2,
+        98
+       ],
+       [
+        3,
+        98
+       ],
+       [
+        4,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        0,
+        13
+       ],
+       [
+        1,
+        13
+       ],
+       [
+        2,
+        13
+       ],
+       [
+        3,
+        13
+       ],
+       [
+        4,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-NW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-E": {
+    "rotation": "none",
+    "footprint": [
+     13,
+     0,
+     98,
+     4
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        13,
+        0
+       ],
+       [
+        13,
+        1
+       ],
+       [
+        13,
+        2
+       ],
+       [
+        13,
+        3
+       ],
+       [
+        13,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-NE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        98,
+        0
+       ],
+       [
+        98,
+        1
+       ],
+       [
+        98,
+        2
+       ],
+       [
+        98,
+        3
+       ],
+       [
+        98,
+        4
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-W": {
+    "rotation": "180",
+    "footprint": [
+     13,
+     107,
+     98,
+     111
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        98,
+        111
+       ],
+       [
+        98,
+        110
+       ],
+       [
+        98,
+        109
+       ],
+       [
+        98,
+        108
+       ],
+       [
+        98,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        13,
+        111
+       ],
+       [
+        13,
+        110
+       ],
+       [
+        13,
+        109
+       ],
+       [
+        13,
+        108
+       ],
+       [
+        13,
+        107
+       ]
+      ],
+      "abuts": [
+       "T-NW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "T-NW",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SW": {
+    "rotation": "clockwise_90",
+    "footprint": [
+     107,
+     68,
+     111,
+     98
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        111,
+        68
+       ],
+       [
+        110,
+        68
+       ],
+       [
+        109,
+        68
+       ],
+       [
+        108,
+        68
+       ],
+       [
+        107,
+        68
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        111,
+        98
+       ],
+       [
+        110,
+        98
+       ],
+       [
+        109,
+        98
+       ],
+       [
+        108,
+        98
+       ],
+       [
+        107,
+        98
+       ]
+      ],
+      "abuts": [
+       "T-SW"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SW"
+    ],
+    "ok": true,
+    "top_y": 12
+   },
+   "W-SE": {
+    "rotation": "clockwise_90",
+    "footprint": [
+     107,
+     13,
+     111,
+     43
+    ],
+    "overlaps_reserved": [],
+    "ends": {
+     "x0": {
+      "end_cells": [
+       [
+        111,
+        13
+       ],
+       [
+        110,
+        13
+       ],
+       [
+        109,
+        13
+       ],
+       [
+        108,
+        13
+       ],
+       [
+        107,
+        13
+       ]
+      ],
+      "abuts": [
+       "T-SE"
+      ]
+     },
+     "xL": {
+      "end_cells": [
+       [
+        111,
+        43
+       ],
+       [
+        110,
+        43
+       ],
+       [
+        109,
+        43
+       ],
+       [
+        108,
+        43
+       ],
+       [
+        107,
+        43
+       ]
+      ],
+      "abuts": [
+       "GATE"
+      ]
+     }
+    },
+    "exterior_face_outside_box": true,
+    "expected_neighbours": [
+     "GATE",
+     "T-SE"
+    ],
+    "ok": true,
+    "top_y": 12
+   }
+  }
+ },
+ "server_strict_placement": {
+  "MW86": {
+   "rotation": "none",
+   "cells": 3246,
+   "failures": [],
+   "failure_count": 0
+  },
+  "MW31": {
+   "rotation": "none",
+   "cells": 1198,
+   "failures": [],
+   "failure_count": 0
+  }
+ },
+ "slope_sites": {
+  "S1_long_valley": {
+   "module": "MW86",
+   "origin": [
+    0,
+    -55,
+    300
+   ],
+   "ground_relative_to_grade_min_max": [
+    -5,
+    0
+   ],
+   "footing_columns_filled": 400,
+   "max_fill_depth": 5,
+   "fill_blocks": 1310,
+   "template_cells": 3246,
+   "template_failures": 0,
+   "failures": [],
+   "hollow_cells": [],
+   "hollow_count": 0,
+   "outside_footprint_columns_changed": [],
+   "outside_changed_count": 0,
+   "terrain_cells_kept_inside_box_above_grade": 0
+  },
+  "S2_cross_slope": {
+   "module": "MW31",
+   "origin": [
+    0,
+    -55,
+    370
+   ],
+   "ground_relative_to_grade_min_max": [
+    -4,
+    0
+   ],
+   "footing_columns_filled": 124,
+   "max_fill_depth": 4,
+   "fill_blocks": 301,
+   "template_cells": 1198,
+   "template_failures": 0,
+   "failures": [],
+   "hollow_cells": [],
+   "hollow_count": 0,
+   "outside_footprint_columns_changed": [],
+   "outside_changed_count": 0,
+   "terrain_cells_kept_inside_box_above_grade": 0
+  },
+  "S3_undulating": {
+   "module": "MW31",
+   "origin": [
+    70,
+    -55,
+    370
+   ],
+   "ground_relative_to_grade_min_max": [
+    -4,
+    2
+   ],
+   "footing_columns_filled": 64,
+   "max_fill_depth": 4,
+   "fill_blocks": 123,
+   "template_cells": 1198,
+   "template_failures": 0,
+   "failures": [],
+   "hollow_cells": [],
+   "hollow_count": 0,
+   "outside_footprint_columns_changed": [],
+   "outside_changed_count": 0,
+   "terrain_cells_kept_inside_box_above_grade": 5
+  }
+ },
+ "problems": []
+}

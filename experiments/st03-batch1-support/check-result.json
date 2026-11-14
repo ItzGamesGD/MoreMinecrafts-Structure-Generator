@@ -1,0 +1,136 @@
+{
+ "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+ "buildings": {
+  "kitchen": {
+   "nbt_sha256": "c97b622d4b0d7ceedd1f40bb764e06e1394d63108ae319a0d68d2940853da231",
+   "verify": {
+    "size": [
+     9,
+     11,
+     9
+    ],
+    "blocks": 891,
+    "non_air_blocks": 430,
+    "palette": 37,
+    "cells_compared": 891,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 436,
+    "mismatches": 0
+   },
+   "access": {
+    "entrance_reachable_from_outside": true,
+    "interior_walkable_columns": 27,
+    "interactive_reachable": [
+     "barrel_a",
+     "barrel_b",
+     "cauldron",
+     "chest_a",
+     "chest_b",
+     "composter",
+     "crafting_table",
+     "furnace_a",
+     "furnace_b"
+    ],
+    "containers": [
+     "barrel_a",
+     "barrel_b",
+     "chest_a",
+     "chest_b"
+    ]
+   },
+   "entrance_clearance_ok": true,
+   "server_strict_placement": {
+    "rotation": "none",
+    "cells": 891,
+    "failures": []
+   }
+  },
+  "smithy": {
+   "nbt_sha256": "5f19af5ecc64bbe37d50f8d6059864e5b3a184027563e081d3c60a249e86f629",
+   "verify": {
+    "size": [
+     9,
+     11,
+     9
+    ],
+    "blocks": 891,
+    "non_air_blocks": 394,
+    "palette": 38,
+    "cells_compared": 891,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 401,
+    "mismatches": 0
+   },
+   "access": {
+    "entrance_reachable_from_outside": true,
+    "interior_walkable_columns": 36,
+    "interactive_reachable": [
+     "anvil",
+     "barrel_e",
+     "barrel_w",
+     "blast_furnace",
+     "chest_e",
+     "chest_w",
+     "furnace",
+     "grindstone",
+     "smithing_table"
+    ],
+    "containers": [
+     "barrel_e",
+     "barrel_w",
+     "chest_e",
+     "chest_w"
+    ]
+   },
+   "entrance_clearance_ok": true,
+   "server_strict_placement": {
+    "rotation": "none",
+    "cells": 891,
+    "failures": []
+   }
+  },
+  "cart_shed": {
+   "nbt_sha256": "076d14251dabf904fe0d099e4576ac0f31f69589025c10bf9e6c130dd601c88f",
+   "verify": {
+    "size": [
+     8,
+     9,
+     7
+    ],
+    "blocks": 504,
+    "non_air_blocks": 207,
+    "palette": 27,
+    "cells_compared": 504,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 207,
+    "mismatches": 0
+   },
+   "access": {
+    "entrance_reachable_from_outside": true,
+    "interior_walkable_columns": 30,
+    "interactive_reachable": [
+     "barrel_a",
+     "chest_a",
+     "chest_b",
+     "grindstone"
+    ],
+    "containers": [
+     "barrel_a",
+     "chest_a",
+     "chest_b"
+    ]
+   },
+   "server_strict_placement": {
+    "rotation": "none",
+    "cells": 504,
+    "failures": []
+   }
+  }
+ }
+}

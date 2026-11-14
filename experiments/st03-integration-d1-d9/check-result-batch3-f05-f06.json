@@ -1,0 +1,288 @@
+{
+ "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+ "premium": {
+  "module": "M-armory",
+  "placement": "F05",
+  "chest": [
+   2,
+   1,
+   4
+  ],
+  "state": "minecraft:chest[facing=east,type=single,waterlogged=false]",
+  "only_chest_in_strongroom": true,
+  "contents": "empty in template (runtime decides; 35% once per structure)"
+ },
+ "adjacency": {
+  "yard_origin_minus_armory_origin": [
+   0,
+   0,
+   13
+  ],
+  "bay_feet_cell_walkable": true,
+  "apron_feet_cell_walkable": true,
+  "gate_alone_reaches_premium_chest": true,
+  "gate_alone_reaches_all_armory_interactive": true,
+  "portal_alone_reaches_targets": {
+   "target_a": true,
+   "target_b": true,
+   "target_c": true
+  },
+  "portal_alone_reaches_all_yard_interactive": true
+ },
+ "buildings": {
+  "armory": {
+   "nbt_sha256": "b597abcc9bfd339ea5ec63c4897a364710895cae7df2cfee648d18483d17e1cc",
+   "verify": {
+    "size": [
+     17,
+     12,
+     13
+    ],
+    "blocks": 2652,
+    "non_air_blocks": 1009,
+    "palette": 71,
+    "cells_compared": 2652,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 1159,
+    "mismatches": 0
+   },
+   "access": {
+    "entrances": {
+     "tower_portal_east": {
+      "outside_cell": [
+       17,
+       4
+      ],
+      "interior_feet_cells": 109,
+      "interactive_unreached": [],
+      "containers_unreached": []
+     },
+     "loggia_bay_south": {
+      "outside_cell": [
+       8,
+       13
+      ],
+      "interior_feet_cells": 109,
+      "interactive_unreached": [],
+      "containers_unreached": []
+     },
+     "service_door_east": {
+      "outside_cell": [
+       17,
+       10
+      ],
+      "interior_feet_cells": 109,
+      "interactive_unreached": [],
+      "containers_unreached": []
+     }
+    },
+    "interactive": [
+     "anvil",
+     "barrel_l_a",
+     "barrel_l_b",
+     "barrel_l_c",
+     "barrel_n_a",
+     "barrel_n_b",
+     "barrel_s_a",
+     "barrel_s_b",
+     "cauldron",
+     "chest_l_a",
+     "chest_l_b",
+     "chest_n_a",
+     "chest_n_b",
+     "chest_s",
+     "crafting_table",
+     "fletching_table",
+     "grindstone_a",
+     "grindstone_b",
+     "premium_chest",
+     "smithing_table"
+    ],
+    "containers": [
+     [
+      1,
+      1,
+      9
+     ],
+     [
+      1,
+      2,
+      9
+     ],
+     [
+      2,
+      1,
+      4
+     ],
+     [
+      5,
+      1,
+      1
+     ],
+     [
+      5,
+      1,
+      7
+     ],
+     [
+      6,
+      1,
+      7
+     ],
+     [
+      6,
+      1,
+      9
+     ],
+     [
+      7,
+      1,
+      1
+     ],
+     [
+      8,
+      1,
+      1
+     ],
+     [
+      10,
+      1,
+      1
+     ],
+     [
+      10,
+      1,
+      7
+     ],
+     [
+      10,
+      1,
+      9
+     ],
+     [
+      14,
+      1,
+      9
+     ],
+     [
+      15,
+      1,
+      9
+     ]
+    ]
+   },
+   "server_strict_placement": {
+    "rotation": "none",
+    "cells": 2652,
+    "failures": []
+   }
+  },
+  "yard": {
+   "nbt_sha256": "17e725dde1c621c339185932b626122c3e9db4f3f186c70c845e9058c8c2c14c",
+   "verify": {
+    "size": [
+     25,
+     5,
+     21
+    ],
+    "blocks": 2625,
+    "non_air_blocks": 869,
+    "palette": 60,
+    "cells_compared": 2625,
+    "mismatches": 0
+   },
+   "states": {
+    "authored_cells_checked": 869,
+    "mismatches": 0
+   },
+   "access": {
+    "entrances": {
+     "road_gate_east": {
+      "outside_cell": [
+       25,
+       10
+      ],
+      "interior_feet_cells": 385,
+      "interactive_unreached": [],
+      "containers_unreached": []
+     },
+     "armory_apron_north": {
+      "outside_cell": [
+       8,
+       -1
+      ],
+      "interior_feet_cells": 385,
+      "interactive_unreached": [],
+      "containers_unreached": []
+     }
+    },
+    "interactive": [
+     "cartography_table",
+     "fletching_table",
+     "grindstone_yard",
+     "quiver_a",
+     "quiver_b",
+     "range_chest",
+     "ring_barrel",
+     "ring_chest",
+     "ring_grindstone",
+     "shelter_barrel_a",
+     "shelter_barrel_b",
+     "supply_barrel",
+     "target_a",
+     "target_b",
+     "target_c"
+    ],
+    "containers": [
+     [
+      1,
+      1,
+      16
+     ],
+     [
+      2,
+      1,
+      2
+     ],
+     [
+      2,
+      1,
+      6
+     ],
+     [
+      4,
+      1,
+      15
+     ],
+     [
+      4,
+      1,
+      17
+     ],
+     [
+      5,
+      1,
+      1
+     ],
+     [
+      23,
+      1,
+      4
+     ],
+     [
+      23,
+      1,
+      5
+     ]
+    ]
+   },
+   "server_strict_placement": {
+    "rotation": "none",
+    "cells": 2625,
+    "failures": []
+   }
+  }
+ }
+}

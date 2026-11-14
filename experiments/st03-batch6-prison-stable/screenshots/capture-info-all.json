@@ -1,0 +1,811 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": {
+    "st03_prison": "e3b9eb9f18add02f0293cb92ca62946849dda48128756e00843e38ec0a205803",
+    "st03_stable": "14255f69671efa17ec5b2a23446c18f632e3bb864af89ac7094cca7736e1d192"
+  },
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear; night_vision only for interior views; difficulty easy with natural mob spawning off only for the two NoAI test-ravager views; raised camera positions stand on an invisible barrier block set only into air cells after placement",
+  "placed": [
+    {
+      "what": "prison",
+      "origin": [
+        0,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "stable",
+      "origin": [
+        40,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F02",
+      "module": "M-barracks_a",
+      "origin": [
+        24,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F03",
+      "module": "M-barracks_b",
+      "origin": [
+        75,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F04",
+      "module": "M-barracks_c",
+      "origin": [
+        75,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F05",
+      "module": "M-armory",
+      "origin": [
+        12,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F06",
+      "module": "M-yard",
+      "origin": [
+        12,
+        -61,
+        52
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F07",
+      "module": "M-warehouse_a",
+      "origin": [
+        10,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F08",
+      "module": "M-warehouse_b",
+      "origin": [
+        75,
+        -61,
+        53
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F09",
+      "module": "M-prison",
+      "origin": [
+        92,
+        -61,
+        62
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F10",
+      "module": "M-stable",
+      "origin": [
+        77,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F11",
+      "module": "M-house_a",
+      "origin": [
+        14,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F12",
+      "module": "M-house_b",
+      "origin": [
+        26,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F13",
+      "module": "M-house_c",
+      "origin": [
+        14,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F14",
+      "module": "M-house_a",
+      "origin": [
+        89,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F15",
+      "module": "M-house_b",
+      "origin": [
+        76,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F16",
+      "module": "M-house_c",
+      "origin": [
+        92,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F17",
+      "module": "M-house_d",
+      "origin": [
+        92,
+        -61,
+        40
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F18",
+      "module": "M-kitchen",
+      "origin": [
+        92,
+        -61,
+        50
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F19",
+      "module": "M-smithy",
+      "origin": [
+        28,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F20",
+      "module": "M-cart_shed",
+      "origin": [
+        44,
+        -61,
+        82
+      ],
+      "rotation": "none"
+    }
+  ],
+  "shots": [
+    {
+      "view": "f09_01_front",
+      "tp": [
+        5.5,
+        -57.0,
+        222.5,
+        -180.0,
+        -4.3
+      ],
+      "file": "f09_01_front.png",
+      "sha256": "2e3818ba458a446cda83f08771d513614636cdf5478281334a4dd2d879076c69"
+    },
+    {
+      "view": "f09_02_front_left",
+      "tp": [
+        17.5,
+        -54.5,
+        218.5,
+        135.0,
+        5.1
+      ],
+      "file": "f09_02_front_left.png",
+      "sha256": "15a54d967203d9b99c59851f86f61aa2ef466b17c31a1f5a9b5088331f2ed6fe"
+    },
+    {
+      "view": "f09_03_front_right",
+      "tp": [
+        -6.5,
+        -54.5,
+        218.5,
+        -135.0,
+        5.1
+      ],
+      "file": "f09_03_front_right.png",
+      "sha256": "5345e4a2d7bf331edc102b03f0b01308ee7fa3ec0124f880e7b73e84f7421420"
+    },
+    {
+      "view": "f09_04_side_left",
+      "tp": [
+        21.5,
+        -56.5,
+        206.5,
+        90.0,
+        -1.8
+      ],
+      "file": "f09_04_side_left.png",
+      "sha256": "151d5cfed9077d48a3685183462bafc6c5f868fecebb7fc4831527d750427559"
+    },
+    {
+      "view": "f09_05_side_right",
+      "tp": [
+        -10.5,
+        -56.5,
+        206.5,
+        -90.0,
+        -1.8
+      ],
+      "file": "f09_05_side_right.png",
+      "sha256": "79a55dca9d237b790af76f9d44dbf59de7fd23e4ebd71698e0d4f8692f277283"
+    },
+    {
+      "view": "f09_06_rear",
+      "tp": [
+        5.5,
+        -57.0,
+        190.5,
+        -0.0,
+        -4.3
+      ],
+      "file": "f09_06_rear.png",
+      "sha256": "6090aea6960d91b84be40a1633f029a43e5565586e5ed3aff2b01d20ce1a63c1"
+    },
+    {
+      "view": "f09_07_rear_diag",
+      "tp": [
+        17.5,
+        -53.5,
+        194.5,
+        45.0,
+        8.4
+      ],
+      "file": "f09_07_rear_diag.png",
+      "sha256": "4bfc15a1ad54df69f4002d1858912efaddd3897b29ebbebe6fc9e219fb0e729b"
+    },
+    {
+      "view": "f10_01_front",
+      "tp": [
+        48.5,
+        -57.0,
+        226.5,
+        -180.0,
+        -6.3
+      ],
+      "file": "f10_01_front.png",
+      "sha256": "c32e2d265d2b615ce7a849c31d47632a30d38c72a250c74cda8645f977162c08"
+    },
+    {
+      "view": "f10_02_front_left",
+      "tp": [
+        63.5,
+        -54.5,
+        221.5,
+        135.0,
+        1.4
+      ],
+      "file": "f10_02_front_left.png",
+      "sha256": "7c413c08c01a54f881a3d36a8ada399971df17e0e046f16150cbbe8d8cfb6a66"
+    },
+    {
+      "view": "f10_03_front_right",
+      "tp": [
+        33.5,
+        -54.5,
+        221.5,
+        -135.0,
+        1.4
+      ],
+      "file": "f10_03_front_right.png",
+      "sha256": "0925550af242398cbec379f08af5e023eb8674329bdc06a44764b915a84a566f"
+    },
+    {
+      "view": "f10_04_side_left",
+      "tp": [
+        68.5,
+        -56.5,
+        206.5,
+        90.0,
+        -4.3
+      ],
+      "file": "f10_04_side_left.png",
+      "sha256": "1350b46a0aeeb062bf5be2a04edd29bbbdbe1cce020ed65bd226966f80006414"
+    },
+    {
+      "view": "f10_05_side_right",
+      "tp": [
+        28.5,
+        -56.5,
+        206.5,
+        -90.0,
+        -4.3
+      ],
+      "file": "f10_05_side_right.png",
+      "sha256": "8097077c35ab86de794304a2be3000b79cbc3105d698f4d75cf4b4d781e1e591"
+    },
+    {
+      "view": "f10_06_rear",
+      "tp": [
+        48.5,
+        -57.0,
+        186.5,
+        -0.0,
+        -6.3
+      ],
+      "file": "f10_06_rear.png",
+      "sha256": "e51380b09ef37f131efcc6396af3647e9b7f4d645dd90249407f082bbc312961"
+    },
+    {
+      "view": "f10_07_rear_diag",
+      "tp": [
+        63.5,
+        -53.5,
+        191.5,
+        45.0,
+        4.0
+      ],
+      "file": "f10_07_rear_diag.png",
+      "sha256": "5d8d699e9885453a45aeabe4b4d528da5953192f1347abb4e7ab185f655a9e51"
+    },
+    {
+      "view": "f09_08_entrance_door",
+      "tp": [
+        5.5,
+        -59.4,
+        217.0,
+        -180.0,
+        -18.1
+      ],
+      "file": "f09_08_entrance_door.png",
+      "sha256": "12a58b73317b1cde7c21fd1811acb5302665e47a1ea159325586572630426164"
+    },
+    {
+      "view": "f09_09_interior_corridor_from_vestibule",
+      "tp": [
+        5.5,
+        -59.6,
+        209.7,
+        -180.0,
+        -6.2
+      ],
+      "file": "f09_09_interior_corridor_from_vestibule.png",
+      "sha256": "9b6f3d2bde00763ccc48f30b68a5f6cc2dd640f1fbefd4d6d3a074c0c665f5e9"
+    },
+    {
+      "view": "f09_10_interior_cell_nw_through_bars",
+      "tp": [
+        5.5,
+        -59.5,
+        204.3,
+        131.1,
+        -1.4
+      ],
+      "file": "f09_10_interior_cell_nw_through_bars.png",
+      "sha256": "1a7c6b99a0318f6f5b496b0a47dd6875e1fc2fbd58b07e2e8189d009483d64c4"
+    },
+    {
+      "view": "f09_11_interior_cell_se_through_bars",
+      "tp": [
+        5.5,
+        -59.5,
+        204.5,
+        -49.6,
+        -0.0
+      ],
+      "file": "f09_11_interior_cell_se_through_bars.png",
+      "sha256": "028598c252f0392935a982620f5e018876eec5792dda88434f5af7bc4153f8f6"
+    },
+    {
+      "view": "f09_12_interior_inside_cell_ne",
+      "tp": [
+        7.4,
+        -59.6,
+        203.65,
+        -157.5,
+        -4.0
+      ],
+      "file": "f09_12_interior_inside_cell_ne.png",
+      "sha256": "973021875db9c7430d9fa07c071db64dc455dcf85c425a9b23e9735bc627eef4"
+    },
+    {
+      "view": "f09_13_interior_vestibule_to_door",
+      "tp": [
+        5.5,
+        -59.7,
+        208.6,
+        -0.0,
+        -24.1
+      ],
+      "file": "f09_13_interior_vestibule_to_door.png",
+      "sha256": "159a94784e962dc4c1881edf99365272403a7e40c4365d98be2e3387fed38b22"
+    },
+    {
+      "view": "f10_08_entrance_portal",
+      "tp": [
+        48.5,
+        -59.0,
+        220.0,
+        -180.0,
+        -16.4
+      ],
+      "file": "f10_08_entrance_portal.png",
+      "sha256": "116458e875f0fb32e9102dcebeec7e099bb6482d601b1acaff0fac750fd057a6"
+    },
+    {
+      "view": "f10_09_interior_aisle_from_portal",
+      "tp": [
+        48.5,
+        -58.8,
+        213.3,
+        -180.0,
+        -7.1
+      ],
+      "file": "f10_09_interior_aisle_from_portal.png",
+      "sha256": "958251de62db1f52c19a8dc2f9ae52c72fe7edbf8a55d55d5cb061ae3e55de6c"
+    },
+    {
+      "view": "f10_10_interior_west_pen",
+      "tp": [
+        48.8,
+        -59.4,
+        207.0,
+        99.0,
+        -3.6
+      ],
+      "file": "f10_10_interior_west_pen.png",
+      "sha256": "369367351c38518767def33e848e03a38ff747bf7b947b8ab0cfa4a48bf1f1c4"
+    },
+    {
+      "view": "f10_11_interior_east_pen",
+      "tp": [
+        48.2,
+        -59.4,
+        207.0,
+        -99.0,
+        -3.6
+      ],
+      "file": "f10_11_interior_east_pen.png",
+      "sha256": "cb006297f8806ba8b0be58496e6beec6d029df9729bed893af9df0f8a6ac95cf"
+    },
+    {
+      "view": "f10_12_interior_aisle_head_store",
+      "tp": [
+        48.5,
+        -59.6,
+        206.0,
+        173.7,
+        -7.5
+      ],
+      "file": "f10_12_interior_aisle_head_store.png",
+      "sha256": "f770da75eb5a46468927aa3e62c39ed12b9b5691ef86ca9c3201e00d514a4fe8"
+    },
+    {
+      "view": "f10_13_interior_nave_beams",
+      "tp": [
+        48.5,
+        -59.7,
+        210.5,
+        -180.0,
+        -49.2
+      ],
+      "file": "f10_13_interior_nave_beams.png",
+      "sha256": "66111aa24e179a36fac0d50e270c249419ba49ecb0b55cb87b40d1c1ca1facc4"
+    },
+    {
+      "view": "f10_16_interior_west_pen_from_corner",
+      "tp": [
+        42.6,
+        -59.6,
+        209.4,
+        -138.4,
+        -10.6
+      ],
+      "file": "f10_16_interior_west_pen_from_corner.png",
+      "sha256": "686d6b090b111ad8e787e72a014c9881e598e7ed1c1a4fd01fc9e8b179293c08"
+    },
+    {
+      "view": "ctx_01_f09_from_south",
+      "tp": [
+        98.5,
+        -56.5,
+        88.5,
+        177.2,
+        -1.4
+      ],
+      "file": "ctx_01_f09_from_south.png",
+      "sha256": "8285a004dc72cc92d95aa34564d1d660e9d847ba60820f265e0cbef205895be5"
+    },
+    {
+      "view": "ctx_02_f09_f10_aerial_se",
+      "tp": [
+        108.5,
+        -41,
+        101.5,
+        142.6,
+        27.9
+      ],
+      "file": "ctx_02_f09_f10_aerial_se.png",
+      "sha256": "076112e78ef3680ecae5170dc6a8bf05614a7ef9255957c6d2cc772cb8a1e4ec"
+    },
+    {
+      "view": "ctx_03_f10_from_south_strip",
+      "tp": [
+        85.5,
+        -56.5,
+        105.5,
+        -180.0,
+        -4.2
+      ],
+      "file": "ctx_03_f10_from_south_strip.png",
+      "sha256": "7274a1a8b7495bb961a1157b32141432de55264e8c6c0fcdb8f7a02295b153c4"
+    },
+    {
+      "view": "ctx_04_f10_f09_from_south_west",
+      "tp": [
+        68.5,
+        -54,
+        101.5,
+        -137.8,
+        3.9
+      ],
+      "file": "ctx_04_f10_f09_from_south_west.png",
+      "sha256": "9554e52240023383a3234a44297560c8d81c84e7ab39b91c481217320ad061b5"
+    },
+    {
+      "view": "ctx_05_f08_f09_lane",
+      "tp": [
+        89.5,
+        -54,
+        77.5,
+        -180.0,
+        10.1
+      ],
+      "file": "ctx_05_f08_f09_lane.png",
+      "sha256": "1f4a1675b738068f1c99fc57acb7681fc23525c4fcabc31c7a2ef26fcf52bf99"
+    },
+    {
+      "view": "ctx_06_f10_f08_from_nw",
+      "tp": [
+        68.5,
+        -50,
+        70.5,
+        -52.4,
+        17.6
+      ],
+      "file": "ctx_06_f10_f08_from_nw.png",
+      "sha256": "58c387300e17f09b3c8a55a117a42439597685eceed0691a7ac2b89a985e5988"
+    },
+    {
+      "view": "ctx_07_south_east_quarter_aerial",
+      "tp": [
+        62.5,
+        -32,
+        110.5,
+        -146.5,
+        31.2
+      ],
+      "file": "ctx_07_south_east_quarter_aerial.png",
+      "sha256": "5276fc5baf2dcc7fbed42d2b675a919537acadbf41e14dd04bda6c693fa1e4d9"
+    },
+    {
+      "view": "f09_14_front_door_opened_by_button",
+      "tp": [
+        5.2,
+        -60.0,
+        215.9,
+        169.7,
+        1.8
+      ],
+      "file": "f09_14_front_door_opened_by_button.png",
+      "sha256": "52ed4c22e8fbc429806c4be15a3f691bf584f15e961c7f68a664e8849fef71a5"
+    },
+    {
+      "view": "f10_14_interior_pens_with_test_ravagers",
+      "tp": [
+        48.5,
+        -58.8,
+        213.3,
+        -180.0,
+        -3.7
+      ],
+      "file": "f10_14_interior_pens_with_test_ravagers.png",
+      "sha256": "5193609fb45ff9a1302ef89a33915f8683be011400654641ca597ae5c665de2f"
+    },
+    {
+      "view": "f10_15_interior_west_pen_test_ravager_scale",
+      "tp": [
+        48.8,
+        -57.5,
+        210.4,
+        131.3,
+        12.7
+      ],
+      "file": "f10_15_interior_west_pen_test_ravager_scale.png",
+      "sha256": "24df96714e618b8b0c88116e17216ec8d2a013474ad219b60a9ec1710a627703"
+    }
+  ],
+  "f09_button_test": {
+    "method": "player right-click (xdotool mouse button 3) in the real client on each stone button; iron door state read back with execute if block",
+    "results": [
+      {
+        "button": "front_outside",
+        "button_local": [
+          4,
+          2,
+          12
+        ],
+        "door_local": [
+          5,
+          1,
+          11
+        ],
+        "player_feet_local": [
+          5.2,
+          1.0,
+          15.9
+        ],
+        "door_open_before_click": false,
+        "button_powered_after_click": true,
+        "door_open_after_click": true,
+        "door_open_3s_later": false,
+        "pass": true
+      },
+      {
+        "button": "front_inside",
+        "button_local": [
+          6,
+          2,
+          10
+        ],
+        "door_local": [
+          5,
+          1,
+          11
+        ],
+        "player_feet_local": [
+          6.5,
+          1.0,
+          9.35
+        ],
+        "door_open_before_click": false,
+        "button_powered_after_click": true,
+        "door_open_after_click": true,
+        "door_open_3s_later": false,
+        "pass": true
+      },
+      {
+        "button": "cell_nw",
+        "button_local": [
+          5,
+          3,
+          2
+        ],
+        "door_local": [
+          4,
+          1,
+          2
+        ],
+        "player_feet_local": [
+          5.5,
+          1.0,
+          4.2
+        ],
+        "door_open_before_click": false,
+        "button_powered_after_click": true,
+        "door_open_after_click": true,
+        "door_open_3s_later": false,
+        "pass": true
+      },
+      {
+        "button": "cell_ne",
+        "button_local": [
+          5,
+          3,
+          3
+        ],
+        "door_local": [
+          6,
+          1,
+          3
+        ],
+        "player_feet_local": [
+          5.5,
+          1.0,
+          5.2
+        ],
+        "door_open_before_click": false,
+        "button_powered_after_click": true,
+        "door_open_after_click": true,
+        "door_open_3s_later": false,
+        "pass": true
+      },
+      {
+        "button": "cell_sw",
+        "button_local": [
+          5,
+          3,
+          6
+        ],
+        "door_local": [
+          4,
+          1,
+          6
+        ],
+        "player_feet_local": [
+          5.5,
+          1.0,
+          8.3
+        ],
+        "door_open_before_click": false,
+        "button_powered_after_click": true,
+        "door_open_after_click": true,
+        "door_open_3s_later": false,
+        "pass": true
+      },
+      {
+        "button": "cell_se",
+        "button_local": [
+          5,
+          3,
+          7
+        ],
+        "door_local": [
+          6,
+          1,
+          7
+        ],
+        "player_feet_local": [
+          5.5,
+          1.0,
+          9.2
+        ],
+        "door_open_before_click": false,
+        "button_powered_after_click": true,
+        "door_open_after_click": true,
+        "door_open_3s_later": false,
+        "pass": true
+      }
+    ],
+    "pass": true
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": {
+    "st03_house_d": "dd40b688144a642fd5bd89f70908c6a1bfa60b46171765941fbd6efa7bdf8ea1"
+  },
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear; night_vision effect applied from the first interior view on",
+  "placement": "place template experimental:<key> x={'house_d': 160} y=-61 z=0 rotation none (floor y=0 flush with grass; no terrain correction, no roads)",
+  "shots": [
+    {
+      "view": "house_d_01_front",
+      "tp": [
+        163.5,
+        -58,
+        17.5,
+        180,
+        5
+      ],
+      "file": "house_d_01_front.png",
+      "sha256": "24f160311205cde6785fe728ef627a6970782adf86efde4dfc915c82915751fa"
+    },
+    {
+      "view": "house_d_02_front_left_diag",
+      "tp": [
+        153.5,
+        -56,
+        15.5,
+        -135,
+        10
+      ],
+      "file": "house_d_02_front_left_diag.png",
+      "sha256": "9ebb422172310a858cd2951ecec179c067fba8888d6ddc17987a7847c0c563c2"
+    },
+    {
+      "view": "house_d_03_front_right_diag",
+      "tp": [
+        173.5,
+        -56,
+        15.5,
+        135,
+        10
+      ],
+      "file": "house_d_03_front_right_diag.png",
+      "sha256": "d4948bd9455f89d4b0cc46234ed77670407ddd92211e5f19efe839552532c32f"
+    },
+    {
+      "view": "house_d_04_back",
+      "tp": [
+        163.5,
+        -57,
+        -10.5,
+        0,
+        6
+      ],
+      "file": "house_d_04_back.png",
+      "sha256": "85f479f82fd8da314e4de75f1b8e6b9afc0cebf7213a0d3ff205f3178e15a936"
+    },
+    {
+      "view": "house_d_05_back_diag",
+      "tp": [
+        153.5,
+        -56,
+        -8.5,
+        -45,
+        10
+      ],
+      "file": "house_d_05_back_diag.png",
+      "sha256": "2b9648ab956941ffda9f03bd030699e92338df2ef82aa55fa76f36b23c04d186"
+    },
+    {
+      "view": "house_d_06_entrance",
+      "tp": [
+        163.5,
+        -59,
+        11.5,
+        180,
+        8
+      ],
+      "file": "house_d_06_entrance.png",
+      "sha256": "ae12663cbaec755f522d399a0ec31d84e5f4a5dd3abbbec90038dfe2cb5965f0"
+    },
+    {
+      "view": "house_d_07_interior_a",
+      "tp": [
+        163.5,
+        -59,
+        4.9,
+        180,
+        40
+      ],
+      "file": "house_d_07_interior_a.png",
+      "sha256": "4dc673d4fe34b96107814c34e013ee148d69a7126345df8c18b41b74b36fc1d7"
+    },
+    {
+      "view": "house_d_08_interior_b",
+      "tp": [
+        162.5,
+        -59,
+        4.85,
+        -158,
+        34
+      ],
+      "file": "house_d_08_interior_b.png",
+      "sha256": "599ce97e1c042016580ea2df0bcae2ca828e14b9e5d6bc074ee51b9b0d773a1e"
+    }
+  ]
+}

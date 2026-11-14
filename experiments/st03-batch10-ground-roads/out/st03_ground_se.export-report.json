@@ -1,0 +1,86 @@
+{
+  "air": "include",
+  "blocks": 20808,
+  "cells": 20808,
+  "config": "exports/structures/ruined_watchtower.toml",
+  "connectivity": {
+    "boundary_unresolved": [],
+    "computed_blocks": 2,
+    "corrected_blocks": 0,
+    "corrected_properties": {},
+    "explicit_differs_from_vanilla": [],
+    "reference": "tools/structure_export/reference/connectivity-26.3.json",
+    "unresolved": []
+  },
+  "converter_version": 2,
+  "defaulted_properties": {
+    "minecraft:grass_block": [
+      "snowy"
+    ],
+    "minecraft:spruce_fence": [
+      "east",
+      "north",
+      "south",
+      "waterlogged",
+      "west"
+    ]
+  },
+  "output": "/tmp/tmpvw8y7acw/pack/data/moreminecrafts/structure/seam01/st03_ground_se.nbt",
+  "output_sha256": "92ed5615105317b84f3f078f37d5d71d3ad3f8ed166240e8cf57cfa9bf49e00f",
+  "palette": 23,
+  "size": [
+    51,
+    8,
+    51
+  ],
+  "source": {
+    "data_version": 3953,
+    "metadata_keys_ignored": [],
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "palette_entries": 23,
+    "path": "/tmp/tmpvw8y7acw/st03_ground_se.schem",
+    "sha256": "c1b7e71589a4e9bb057a7a14dab7044534c7a2cbbea50f6791014515d8464933",
+    "size": [
+      51,
+      8,
+      51
+    ],
+    "unused_palette_entries": []
+  },
+  "state_counts": {
+    "minecraft:air": 18007,
+    "minecraft:andesite": 22,
+    "minecraft:barrel[facing=up,open=false]": 3,
+    "minecraft:coarse_dirt": 837,
+    "minecraft:cobblestone": 105,
+    "minecraft:cracked_stone_bricks": 4,
+    "minecraft:dirt": 20,
+    "minecraft:dirt_path": 230,
+    "minecraft:fern": 40,
+    "minecraft:grass_block[snowy=false]": 1067,
+    "minecraft:gravel": 231,
+    "minecraft:hay_block[axis=x]": 2,
+    "minecraft:hay_block[axis=y]": 2,
+    "minecraft:moss_block": 3,
+    "minecraft:mossy_cobblestone": 19,
+    "minecraft:packed_mud": 1,
+    "minecraft:polished_andesite": 5,
+    "minecraft:rooted_dirt": 49,
+    "minecraft:short_grass": 124,
+    "minecraft:spruce_fence[east=false,north=false,south=false,waterlogged=false,west=false]": 2,
+    "minecraft:stone": 14,
+    "minecraft:stone_bricks": 19,
+    "minecraft:torch": 2
+  },
+  "structure_id": "moreminecrafts:seam01/st03_ground_se",
+  "target": {
+    "data_version": 5023,
+    "minecraft_version": "26.3",
+    "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c"
+  },
+  "warnings": []
+}
