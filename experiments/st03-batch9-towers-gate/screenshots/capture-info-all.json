@@ -1,0 +1,1204 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": {
+    "st03_tower": "990bdd2336b603f8285a191a220a9d5a09aba3d7f881bcd16a04e6cda825a50c",
+    "st03_gatehouse": "da9750f241e59167e7d36e27275d4ad2a856fc37c2795c3d3d0226f6e2692a5a"
+  },
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear; slope sites are dirt/grass mounds (test terrain, not natural worldgen); raised camera positions stand on an invisible barrier block set only into air cells after placement",
+  "placed": [
+    {
+      "what": "isolated MT",
+      "module": "MT",
+      "origin": [
+        0,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "isolated MG",
+      "module": "MG",
+      "origin": [
+        40,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "rotation row MT none",
+      "module": "MT",
+      "origin": [
+        0,
+        -61,
+        260
+      ],
+      "rotation": "none",
+      "footprint": [
+        0,
+        260,
+        12,
+        272
+      ]
+    },
+    {
+      "what": "rotation row MT clockwise_90",
+      "module": "MT",
+      "origin": [
+        42,
+        -61,
+        260
+      ],
+      "rotation": "clockwise_90",
+      "footprint": [
+        30,
+        260,
+        42,
+        272
+      ]
+    },
+    {
+      "what": "rotation row MT 180",
+      "module": "MT",
+      "origin": [
+        72,
+        -61,
+        272
+      ],
+      "rotation": "180",
+      "footprint": [
+        60,
+        260,
+        72,
+        272
+      ]
+    },
+    {
+      "what": "rotation row MT counterclockwise_90",
+      "module": "MT",
+      "origin": [
+        90,
+        -61,
+        272
+      ],
+      "rotation": "counterclockwise_90",
+      "footprint": [
+        90,
+        260,
+        102,
+        272
+      ]
+    },
+    {
+      "what": "rotation row MG none",
+      "module": "MG",
+      "origin": [
+        0,
+        -61,
+        300
+      ],
+      "rotation": "none",
+      "footprint": [
+        0,
+        300,
+        23,
+        311
+      ]
+    },
+    {
+      "what": "rotation row MG clockwise_90",
+      "module": "MG",
+      "origin": [
+        51,
+        -61,
+        300
+      ],
+      "rotation": "clockwise_90",
+      "footprint": [
+        40,
+        300,
+        51,
+        323
+      ]
+    },
+    {
+      "what": "rotation row MG 180",
+      "module": "MG",
+      "origin": [
+        103,
+        -61,
+        311
+      ],
+      "rotation": "180",
+      "footprint": [
+        80,
+        300,
+        103,
+        311
+      ]
+    },
+    {
+      "what": "rotation row MG counterclockwise_90",
+      "module": "MG",
+      "origin": [
+        120,
+        -61,
+        323
+      ],
+      "rotation": "counterclockwise_90",
+      "footprint": [
+        120,
+        300,
+        131,
+        323
+      ]
+    },
+    {
+      "what": "T1_falls_to_outer_corner",
+      "module": "MT",
+      "origin": [
+        0,
+        -55,
+        460
+      ],
+      "rotation": "none",
+      "terrain": "checks.py site + capture apron/ramp, strict placement at grade, Q89 footing fill"
+    },
+    {
+      "what": "T2_undulating",
+      "module": "MT",
+      "origin": [
+        40,
+        -55,
+        460
+      ],
+      "rotation": "none",
+      "terrain": "checks.py site + capture apron/ramp, strict placement at grade, Q89 footing fill"
+    },
+    {
+      "what": "G1_falls_outward",
+      "module": "MG",
+      "origin": [
+        80,
+        -55,
+        460
+      ],
+      "rotation": "none",
+      "terrain": "checks.py site + capture apron/ramp, strict placement at grade, Q89 footing fill"
+    },
+    {
+      "what": "G2_cross_slope",
+      "module": "MG",
+      "origin": [
+        130,
+        -55,
+        460
+      ],
+      "rotation": "none",
+      "terrain": "checks.py site + capture apron/ramp, strict placement at grade, Q89 footing fill"
+    },
+    {
+      "what": "T-NE",
+      "module": "MT",
+      "origin": [
+        111,
+        -61,
+        0
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "what": "T-NW",
+      "module": "MT",
+      "origin": [
+        0,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "T-SE",
+      "module": "MT",
+      "origin": [
+        111,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "what": "T-SW",
+      "module": "MT",
+      "origin": [
+        0,
+        -61,
+        111
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "what": "W-E",
+      "module": "MW86",
+      "origin": [
+        111,
+        -61,
+        13
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "what": "W-N",
+      "module": "MW86",
+      "origin": [
+        13,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "W-SE",
+      "module": "MW31",
+      "origin": [
+        98,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "what": "W-SW",
+      "module": "MW31",
+      "origin": [
+        43,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "what": "W-W",
+      "module": "MW86",
+      "origin": [
+        0,
+        -61,
+        98
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "what": "GATE",
+      "module": "MG",
+      "origin": [
+        44,
+        -61,
+        100
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F01",
+      "module": "M-manor",
+      "origin": [
+        48,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F02",
+      "module": "M-barracks_a",
+      "origin": [
+        24,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F03",
+      "module": "M-barracks_b",
+      "origin": [
+        75,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F04",
+      "module": "M-barracks_c",
+      "origin": [
+        75,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F05",
+      "module": "M-armory",
+      "origin": [
+        12,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F06",
+      "module": "M-yard",
+      "origin": [
+        12,
+        -61,
+        52
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F07",
+      "module": "M-warehouse_a",
+      "origin": [
+        10,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F08",
+      "module": "M-warehouse_b",
+      "origin": [
+        75,
+        -61,
+        53
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F09",
+      "module": "M-prison",
+      "origin": [
+        92,
+        -61,
+        62
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F10",
+      "module": "M-stable",
+      "origin": [
+        77,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F11",
+      "module": "M-house_a",
+      "origin": [
+        14,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F12",
+      "module": "M-house_b",
+      "origin": [
+        26,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F13",
+      "module": "M-house_c",
+      "origin": [
+        14,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F14",
+      "module": "M-house_a",
+      "origin": [
+        89,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F15",
+      "module": "M-house_b",
+      "origin": [
+        76,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F16",
+      "module": "M-house_c",
+      "origin": [
+        92,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F17",
+      "module": "M-house_d",
+      "origin": [
+        92,
+        -61,
+        40
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F18",
+      "module": "M-kitchen",
+      "origin": [
+        92,
+        -61,
+        50
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F19",
+      "module": "M-smithy",
+      "origin": [
+        28,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F20",
+      "module": "M-cart_shed",
+      "origin": [
+        44,
+        -61,
+        82
+      ],
+      "rotation": "none"
+    }
+  ],
+  "shots": [
+    {
+      "view": "mt_01_exterior_corner",
+      "tp": [
+        -14,
+        -48,
+        186,
+        -45.0,
+        2.0
+      ],
+      "file": "mt_01_exterior_corner.png",
+      "sha256": "2c5e71221e0bd697e933c561c1afb1a3e85183599d821ee68ee4986fe4402d75"
+    },
+    {
+      "view": "mt_02_exterior_face_west",
+      "tp": [
+        -22,
+        -52,
+        206.5,
+        -90.0,
+        -7.8
+      ],
+      "file": "mt_02_exterior_face_west.png",
+      "sha256": "2d2ccc6ad9bb7561e6f2d5ae3cf390f0b7fef396c787b6f772f8d0ebf5ab0158"
+    },
+    {
+      "view": "mt_03_compound_side_door",
+      "tp": [
+        30,
+        -51,
+        222,
+        129.8,
+        2.4
+      ],
+      "file": "mt_03_compound_side_door.png",
+      "sha256": "dd70128f8e6a1d886c22fdf3d33de577d208fbf0dc46843c7e87252f509930da"
+    },
+    {
+      "view": "mt_04_compound_corner",
+      "tp": [
+        28,
+        -46,
+        228,
+        135.0,
+        5.5
+      ],
+      "file": "mt_04_compound_corner.png",
+      "sha256": "c13e3b097cb1abaef4107eb972800c68ba1c1eb12692f8f97dc9b71c5c772906"
+    },
+    {
+      "view": "mt_05_door_close",
+      "tp": [
+        17,
+        -57.5,
+        208.5,
+        90.0,
+        5.7
+      ],
+      "file": "mt_05_door_close.png",
+      "sha256": "e9964bfd77953c1f2910f1b74b8ccf22305a6f990f14af4f411226fc4d9cde92"
+    },
+    {
+      "view": "mt_06_shaft_ladder_up",
+      "tp": [
+        8.5,
+        -60.0,
+        208.5,
+        121.0,
+        -59.8
+      ],
+      "file": "mt_06_shaft_ladder_up.png",
+      "sha256": "891943d6d6a712117a389934b68a26be8e1bd27b6dd17f58fc69aa6036567634"
+    },
+    {
+      "view": "mt_07_lookout_interior",
+      "tp": [
+        9.5,
+        -46.0,
+        209.5,
+        135.0,
+        -2.9
+      ],
+      "file": "mt_07_lookout_interior.png",
+      "sha256": "a0bbf7336252df7e2f49a8149fce3e34253d752df952bb703d4e7333de84970d"
+    },
+    {
+      "view": "mt_08_lookout_from_ladder",
+      "tp": [
+        3.5,
+        -46.8,
+        205.5,
+        -57.5,
+        -11.3
+      ],
+      "file": "mt_08_lookout_from_ladder.png",
+      "sha256": "917286a0ba931603bc0970d5819c656fdffa434b39328dcfa109319c85ff42cb"
+    },
+    {
+      "view": "mt_09_roof_and_gaps_close",
+      "tp": [
+        -6,
+        -41,
+        218,
+        -135.0,
+        8.0
+      ],
+      "file": "mt_09_roof_and_gaps_close.png",
+      "sha256": "f4366efd96ff7891e45b9c7ec4866925724118fe93f143aa771cea508df90e6a"
+    },
+    {
+      "view": "mt_10_aerial",
+      "tp": [
+        -10,
+        -20,
+        224,
+        -138.4,
+        42.4
+      ],
+      "file": "mt_10_aerial.png",
+      "sha256": "641505edf143a79d47762d5b633e1dcabc8c4c521784a1875a52707b478f2e0a"
+    },
+    {
+      "view": "mg_01_exterior_approach",
+      "tp": [
+        52,
+        -54,
+        242,
+        180.0,
+        -3.2
+      ],
+      "file": "mg_01_exterior_approach.png",
+      "sha256": "12187474f33f5d1e9ac90924d92deae6f2f587d35dd2d30591b38e3d56d308b3"
+    },
+    {
+      "view": "mg_02_exterior_oblique",
+      "tp": [
+        26,
+        -51,
+        230,
+        -132.7,
+        1.6
+      ],
+      "file": "mg_02_exterior_oblique.png",
+      "sha256": "ba1338fe5d6f42df0dd6c52f5110029c0b00d429918bfc583d508871e1fd7265"
+    },
+    {
+      "view": "mg_03_forecourt_close",
+      "tp": [
+        52,
+        -57.5,
+        220,
+        180.0,
+        -7.8
+      ],
+      "file": "mg_03_forecourt_close.png",
+      "sha256": "474e8d3d822a3adb2858a6d4712a83bbaa175be39514d56b115350f7d4427bff"
+    },
+    {
+      "view": "mg_04_compound_side_checkpoint",
+      "tp": [
+        52,
+        -53,
+        176,
+        0.0,
+        2.0
+      ],
+      "file": "mg_04_compound_side_checkpoint.png",
+      "sha256": "9f632ffdac66b00a55d00fb655e4f0ca6c872d587d05c3a42ebf4b4394941159"
+    },
+    {
+      "view": "mg_05_checkpoint_close",
+      "tp": [
+        43,
+        -57.5,
+        193,
+        -42.0,
+        2.1
+      ],
+      "file": "mg_05_checkpoint_close.png",
+      "sha256": "c239f0e66ab9aa6963cf918e8bafc16bf6894fc7284c825ba3f8ea807508f359"
+    },
+    {
+      "view": "mg_06_passage_through",
+      "tp": [
+        52,
+        -58.5,
+        194,
+        0.0,
+        -4.3
+      ],
+      "file": "mg_06_passage_through.png",
+      "sha256": "b81e50e81fddc6c74cadc227f9d04bc15bd2dcfb54ae53e6be70691d92576658"
+    },
+    {
+      "view": "mg_07_gate_leaves_close",
+      "tp": [
+        53.5,
+        -58.5,
+        202,
+        51.3,
+        -13.2
+      ],
+      "file": "mg_07_gate_leaves_close.png",
+      "sha256": "13095818685616c20501722819b91f417598ad6233ad7b9e576ff0b07566d53c"
+    },
+    {
+      "view": "mg_08_shaft_ladder",
+      "tp": [
+        43.5,
+        -59.5,
+        205.5,
+        -0.0,
+        -68.2
+      ],
+      "file": "mg_08_shaft_ladder.png",
+      "sha256": "b69db8012f3a10e5c620b190c0efbe56767c3e48fd324800de897f8912115b7b"
+    },
+    {
+      "view": "mg_09_room_west",
+      "tp": [
+        44.5,
+        -51.0,
+        207.5,
+        -95.5,
+        -3.7
+      ],
+      "file": "mg_09_room_west.png",
+      "sha256": "7edf59a21b1e31605332428be1f2b927bddcd4b1327cf4ed8eb83b6898fde085"
+    },
+    {
+      "view": "mg_10_room_east_chest_rack",
+      "tp": [
+        53.5,
+        -51.0,
+        207.5,
+        -104.9,
+        -3.7
+      ],
+      "file": "mg_10_room_east_chest_rack.png",
+      "sha256": "2fa18539f8b15cc96fd377f94fcb56d14d9d31b7502c578ee7a84327e5d85f06"
+    },
+    {
+      "view": "mg_11_room_openings_to_approach",
+      "tp": [
+        52,
+        -51.0,
+        205.5,
+        0.0,
+        -8.7
+      ],
+      "file": "mg_11_room_openings_to_approach.png",
+      "sha256": "f68a98a9352df2663ecc3f620fcec375ed553fdacc2cf2d4608d6448f7d84f4b"
+    },
+    {
+      "view": "mg_12_battlements_aerial",
+      "tp": [
+        28,
+        -28,
+        184,
+        -47.5,
+        31.6
+      ],
+      "file": "mg_12_battlements_aerial.png",
+      "sha256": "cf6f45248c5cea09eb065e6facaea3e372430182f6edcfdc6c12c9c2e48e1dba"
+    },
+    {
+      "view": "rot_mt_0_none",
+      "tp": [
+        28.0,
+        -44,
+        292.0,
+        139.8,
+        14.8
+      ],
+      "file": "rot_mt_0_none.png",
+      "sha256": "2c9b7156ed16c9f276a7216fe6c63245ffc3c15ed089a82b4c0e050581ea846f"
+    },
+    {
+      "view": "rot_mt_1_clockwise_90",
+      "tp": [
+        58.0,
+        -44,
+        292.0,
+        139.8,
+        14.8
+      ],
+      "file": "rot_mt_1_clockwise_90.png",
+      "sha256": "91992a7d45be9f54eb9de675388143ef1b794b57b46923333ca69454a9de0776"
+    },
+    {
+      "view": "rot_mt_2_180",
+      "tp": [
+        88.0,
+        -44,
+        292.0,
+        139.8,
+        14.8
+      ],
+      "file": "rot_mt_2_180.png",
+      "sha256": "94adf7fc20b1770ee0423843eff8709bcb9b8d3e40acc50269f338b22ea659f0"
+    },
+    {
+      "view": "rot_mt_3_counterclockwise_90",
+      "tp": [
+        118.0,
+        -44,
+        292.0,
+        139.8,
+        14.8
+      ],
+      "file": "rot_mt_3_counterclockwise_90.png",
+      "sha256": "bcc63df635933cf7f9986ad392d831fd33519974811012bcd2a39b3435e20f4a"
+    },
+    {
+      "view": "rot_mt_row_aerial",
+      "tp": [
+        60,
+        -15,
+        220,
+        0.0,
+        43.2
+      ],
+      "file": "rot_mt_row_aerial.png",
+      "sha256": "08c96a691d0310efe558035e9c56d3b7600cd0d6d7f5a853661a0839ee906277"
+    },
+    {
+      "view": "rot_mg_0_none",
+      "tp": [
+        33.5,
+        -44,
+        331.5,
+        139.8,
+        14.8
+      ],
+      "file": "rot_mg_0_none.png",
+      "sha256": "be7d1374f7c4f54bd0ef3c02743ed58078204b965a55080d72f08baba77ccc60"
+    },
+    {
+      "view": "rot_mg_1_clockwise_90",
+      "tp": [
+        67.5,
+        -44,
+        337.5,
+        139.8,
+        14.8
+      ],
+      "file": "rot_mg_1_clockwise_90.png",
+      "sha256": "66b79a409d4f7e2881e1d0c7d89881b6d1122f1b73b5df3039380b094ed67b87"
+    },
+    {
+      "view": "rot_mg_2_180",
+      "tp": [
+        113.5,
+        -44,
+        331.5,
+        139.8,
+        14.8
+      ],
+      "file": "rot_mg_2_180.png",
+      "sha256": "1c3f8e2b8330fba995a6eed42e1c66e74343424510882cbcb71efb88a6a66511"
+    },
+    {
+      "view": "rot_mg_3_counterclockwise_90",
+      "tp": [
+        147.5,
+        -44,
+        337.5,
+        139.8,
+        14.8
+      ],
+      "file": "rot_mg_3_counterclockwise_90.png",
+      "sha256": "e319269734022fc155ace205c51b8c94cf58af1c803738fe1200bc039040ccb0"
+    },
+    {
+      "view": "rot_mg_row_aerial",
+      "tp": [
+        60,
+        -15,
+        260,
+        0.0,
+        43.2
+      ],
+      "file": "rot_mg_row_aerial.png",
+      "sha256": "ad28922b4db441aed2689cb77ef046328fd640f3ea6eaae8ba274aacf7c68a2c"
+    },
+    {
+      "view": "pl_01_T-NW_outside",
+      "tp": [
+        -24,
+        -46,
+        -24,
+        -45.0,
+        5.4
+      ],
+      "file": "pl_01_T-NW_outside.png",
+      "sha256": "ff4b9203eea1d3d22d0c9fc9c0ed8bb21ddd176437bb0a4c4ce7af84094adb98"
+    },
+    {
+      "view": "pl_02_T-NE_outside",
+      "tp": [
+        136,
+        -46,
+        -24,
+        45.9,
+        5.3
+      ],
+      "file": "pl_02_T-NE_outside.png",
+      "sha256": "b941c86bcd2063052bab270d58df9562bf248844d95a9a8e74c13a576de1419a"
+    },
+    {
+      "view": "pl_03_T-SE_outside",
+      "tp": [
+        136,
+        -46,
+        136,
+        135.0,
+        5.2
+      ],
+      "file": "pl_03_T-SE_outside.png",
+      "sha256": "201559be27062df1124c79718961a581d21ce84d13303109480ce60013d0c33c"
+    },
+    {
+      "view": "pl_04_T-SW_outside",
+      "tp": [
+        -24,
+        -46,
+        136,
+        -135.9,
+        5.3
+      ],
+      "file": "pl_04_T-SW_outside.png",
+      "sha256": "7b280162122bf246079629a3614e76749e22aaa04de20a3a8a6c6f919dbe6aa3"
+    },
+    {
+      "view": "pl_05_T-NW_inside_door",
+      "tp": [
+        26,
+        -54,
+        18,
+        125.5,
+        6.6
+      ],
+      "file": "pl_05_T-NW_inside_door.png",
+      "sha256": "acf8af1037438031e53abb7c2b2efc06b72e8352d741884eff9bb6aea3f2a2b2"
+    },
+    {
+      "view": "pl_06_T-NE_inside_door",
+      "tp": [
+        94,
+        -54,
+        26,
+        -147.3,
+        6.9
+      ],
+      "file": "pl_06_T-NE_inside_door.png",
+      "sha256": "7b980347313e5ad299054a1e9a4a48b3073877dbf7175622baf6cc9ec5550ea2"
+    },
+    {
+      "view": "pl_07_T-SE_inside_door",
+      "tp": [
+        86,
+        -54,
+        94,
+        -55.3,
+        7.2
+      ],
+      "file": "pl_07_T-SE_inside_door.png",
+      "sha256": "8d493aa706494c69921e89ea0c742d3f5608655b7ae4fa1ed1ca02278836a552"
+    },
+    {
+      "view": "pl_08_T-SW_inside_door",
+      "tp": [
+        18,
+        -54,
+        86,
+        37.6,
+        7.0
+      ],
+      "file": "pl_08_T-SW_inside_door.png",
+      "sha256": "1c97fe2c7dcf290744e49b94b0b11557952fb2315b9fd9855366199ec2e0e39b"
+    },
+    {
+      "view": "pl_09_GATE_outside_approach",
+      "tp": [
+        56,
+        -52,
+        146,
+        180.0,
+        1.4
+      ],
+      "file": "pl_09_GATE_outside_approach.png",
+      "sha256": "a2893bc5c252b8e1367c1e35f22eb822133f2854f5a89d1721a8a539789ef625"
+    },
+    {
+      "view": "pl_10_GATE_inside",
+      "tp": [
+        56,
+        -50,
+        80,
+        0.0,
+        9.5
+      ],
+      "file": "pl_10_GATE_inside.png",
+      "sha256": "c5b917e212f4f52501e81f0fb7cbf2953b885ad32a8c7a32ce749bbf761583be"
+    },
+    {
+      "view": "jt_01_W-N_T-NW_joint",
+      "tp": [
+        20,
+        -54,
+        -10,
+        33.7,
+        -4.0
+      ],
+      "file": "jt_01_W-N_T-NW_joint.png",
+      "sha256": "290b4e398f052e79a7f8e96e3f895e3e02512929265e4129a15fff09b59e813c"
+    },
+    {
+      "view": "jt_02_W-W_T-NW_joint",
+      "tp": [
+        -10,
+        -54,
+        20,
+        -123.7,
+        -4.0
+      ],
+      "file": "jt_02_W-W_T-NW_joint.png",
+      "sha256": "5ddfe8d0932b3644adf48d3221f214fd12baf20ec8dba5f31a860c8bfa5eb921"
+    },
+    {
+      "view": "jt_03_W-SW_GATE_joint",
+      "tp": [
+        36,
+        -55,
+        124,
+        -150.3,
+        -7.1
+      ],
+      "file": "jt_03_W-SW_GATE_joint.png",
+      "sha256": "c9359c0f8fe5caa4444bbe2f81209a6f7361e4bedea5672b173a039eeacbfcb9"
+    },
+    {
+      "view": "jt_04_W-SE_GATE_joint",
+      "tp": [
+        76,
+        -55,
+        124,
+        147.3,
+        -6.9
+      ],
+      "file": "jt_04_W-SE_GATE_joint.png",
+      "sha256": "ab8c8ce8b18d5219560ce78591734b56413dab2081862e56acd2d065526d2a4a"
+    },
+    {
+      "view": "jt_05_T-NE_from_wall_top_inside",
+      "tp": [
+        92,
+        -44,
+        12,
+        -123.7,
+        7.9
+      ],
+      "file": "jt_05_T-NE_from_wall_top_inside.png",
+      "sha256": "e08a5e67d1a8b42d5821d8094f71b78767ba8a841e1afd451db6d904e17765a8"
+    },
+    {
+      "view": "ov_01_whole_hq_aerial_south",
+      "tp": [
+        56,
+        10,
+        160,
+        180.0,
+        32.5
+      ],
+      "file": "ov_01_whole_hq_aerial_south.png",
+      "sha256": "fb811f383eea9d56987f3bb42c70c2331007f161605f23539b21fdfeadd008b2"
+    },
+    {
+      "view": "ov_02_whole_hq_aerial_north_west",
+      "tp": [
+        -30,
+        0,
+        -30,
+        -45.0,
+        25.2
+      ],
+      "file": "ov_02_whole_hq_aerial_north_west.png",
+      "sha256": "4512b16e16348d9660ed181fca25dcdc5b6a42928dfcece7be57996d8e1688bc"
+    },
+    {
+      "view": "ov_03_whole_hq_aerial_south_east",
+      "tp": [
+        142,
+        0,
+        142,
+        135.0,
+        25.2
+      ],
+      "file": "ov_03_whole_hq_aerial_south_east.png",
+      "sha256": "135b44909c4b3cfbfe63f27d1957460143d0a5da48010dc507bf00c9a2fea07d"
+    },
+    {
+      "view": "sl_T1_exterior_corner",
+      "tp": [
+        -12,
+        -50,
+        448,
+        -45.0,
+        6.7
+      ],
+      "file": "sl_T1_exterior_corner.png",
+      "sha256": "eb8aac944dd17bf132ee45be5db3313e1434ed7dc1a917623ec2197221d4211a"
+    },
+    {
+      "view": "sl_T1_compound_side",
+      "tp": [
+        24,
+        -51,
+        484,
+        135.0,
+        4.5
+      ],
+      "file": "sl_T1_compound_side.png",
+      "sha256": "1843642b053b9448f7a503d0e291508d9e50119791b16e25fbb7a4ee56ead505"
+    },
+    {
+      "view": "sl_T2_exterior_corner",
+      "tp": [
+        28,
+        -50,
+        448,
+        -45.0,
+        6.7
+      ],
+      "file": "sl_T2_exterior_corner.png",
+      "sha256": "952f42ba3fc5edcd660d68033c1413034b52ff5084752ec6c5e62a6f244ee956"
+    },
+    {
+      "view": "sl_T2_compound_side",
+      "tp": [
+        64,
+        -51,
+        484,
+        135.0,
+        4.5
+      ],
+      "file": "sl_T2_compound_side.png",
+      "sha256": "0a3d84232c9a0f08ca5da1923eb56464a89234293dccda4c2ac52863096a7722"
+    },
+    {
+      "view": "sl_G1_exterior",
+      "tp": [
+        98.0,
+        -52,
+        492,
+        164.1,
+        2.6
+      ],
+      "file": "sl_G1_exterior.png",
+      "sha256": "c632872777abc2d43f42efa8fd99040e13a50a506daa9ae66d0be096ea142658"
+    },
+    {
+      "view": "sl_G1_side_profile",
+      "tp": [
+        66,
+        -53,
+        472.0,
+        -110.6,
+        6.7
+      ],
+      "file": "sl_G1_side_profile.png",
+      "sha256": "b629852a48e3e72b5c250ff8dcf0763f8d315b5b5a8b5c7b4d5973bb2fe3469d"
+    },
+    {
+      "view": "sl_G2_exterior",
+      "tp": [
+        148.0,
+        -52,
+        492,
+        164.1,
+        2.6
+      ],
+      "file": "sl_G2_exterior.png",
+      "sha256": "089b08f00c5659975fe27b048cb849aedc5eb35ce14176350304c3c217ffe8fc"
+    },
+    {
+      "view": "sl_G2_side_profile",
+      "tp": [
+        116,
+        -53,
+        472.0,
+        -110.6,
+        6.7
+      ],
+      "file": "sl_G2_side_profile.png",
+      "sha256": "9622d102c96302962224259d7314ff8c3862af5cb77d5604cc8b21791376930d"
+    }
+  ],
+  "not_built": "ground / road modules MQ-NW/NE/SW/SE (road masterplan not in the repository; owner decision)"
+}
