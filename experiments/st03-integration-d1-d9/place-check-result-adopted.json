@@ -1,0 +1,3649 @@
+{
+ "server_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+ "offline": {
+  "overlaps": {
+   "0": [],
+   "1": [],
+   "2": [],
+   "3": []
+  },
+  "facilities": {
+   "0": {
+    "F01": {
+     "module": "M-manor",
+     "rotation": "none",
+     "footprint": [
+      48,
+      11,
+      64,
+      25
+     ],
+     "entrance_outside_cell": [
+      55,
+      26
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 74,
+     "nearest_neighbour_gap": 6,
+     "nearest": "W-N",
+     "entrances": {
+      "porch_south": {
+       "outside_cell": [
+        55,
+        26
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 74,
+       "runs_into": "GATE"
+      },
+      "porch_south_b": {
+       "outside_cell": [
+        56,
+        26
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 74,
+       "runs_into": "GATE"
+      }
+     }
+    },
+    "F02": {
+     "module": "M-barracks_a",
+     "rotation": "none",
+     "footprint": [
+      24,
+      24,
+      36,
+      34
+     ],
+     "entrance_outside_cell": [
+      36,
+      35
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 17,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F13",
+     "entrances": {
+      "front_door_east": {
+       "outside_cell": [
+        37,
+        29
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 38,
+       "runs_into": "F03"
+      }
+     }
+    },
+    "F03": {
+     "module": "M-barracks_b",
+     "rotation": "none",
+     "footprint": [
+      75,
+      24,
+      87,
+      34
+     ],
+     "entrance_outside_cell": [
+      75,
+      35
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 4,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F04",
+     "entrances": {
+      "gate_west": {
+       "outside_cell": [
+        74,
+        29
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 38,
+       "runs_into": "F02"
+      }
+     }
+    },
+    "F04": {
+     "module": "M-barracks_c",
+     "rotation": "none",
+     "footprint": [
+      75,
+      39,
+      87,
+      49
+     ],
+     "entrance_outside_cell": [
+      75,
+      50
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 3,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F08",
+     "entrances": {
+      "front_door_west": {
+       "outside_cell": [
+        74,
+        44
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 46,
+       "runs_into": "F05"
+      }
+     }
+    },
+    "F05": {
+     "module": "M-armory",
+     "rotation": "none",
+     "footprint": [
+      12,
+      39,
+      28,
+      51
+     ],
+     "entrance_outside_cell": [
+      20,
+      52
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 0,
+     "nearest_neighbour_gap": 0,
+     "nearest": "F06",
+     "entrances": {
+      "tower_portal_east": {
+       "outside_cell": [
+        29,
+        43
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 46,
+       "runs_into": "F04"
+      },
+      "loggia_bay_south": {
+       "outside_cell": [
+        20,
+        52
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 0,
+       "runs_into": "F06"
+      },
+      "service_door_east": {
+       "outside_cell": [
+        29,
+        49
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 46,
+       "runs_into": "F04"
+      }
+     }
+    },
+    "F06": {
+     "module": "M-yard",
+     "rotation": "none",
+     "footprint": [
+      12,
+      52,
+      36,
+      72
+     ],
+     "entrance_outside_cell": [
+      36,
+      73
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 6,
+     "nearest_neighbour_gap": 0,
+     "nearest": "F05",
+     "entrances": {
+      "road_gate_east": {
+       "outside_cell": [
+        37,
+        62
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 38,
+       "runs_into": "F08"
+      },
+      "armory_apron_north": {
+       "outside_cell": [
+        20,
+        51
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 0,
+       "runs_into": "F05"
+      }
+     }
+    },
+    "F07": {
+     "module": "M-warehouse_a",
+     "rotation": "none",
+     "footprint": [
+      10,
+      79,
+      24,
+      91
+     ],
+     "entrance_outside_cell": [
+      16,
+      92
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 15,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F19",
+     "entrances": {
+      "cart_porch_south": {
+       "outside_cell": [
+        16,
+        92
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 15,
+       "runs_into": "W-SW"
+      },
+      "cart_porch_south_b": {
+       "outside_cell": [
+        17,
+        92
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 15,
+       "runs_into": "W-SW"
+      }
+     }
+    },
+    "F08": {
+     "module": "M-warehouse_b",
+     "rotation": "none",
+     "footprint": [
+      75,
+      53,
+      87,
+      67
+     ],
+     "entrance_outside_cell": [
+      75,
+      68
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 39,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F04",
+     "entrances": {
+      "unloading_bay_west": {
+       "outside_cell": [
+        74,
+        60
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 38,
+       "runs_into": "F06"
+      },
+      "loft_stair_south": {
+       "outside_cell": [
+        75,
+        68
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 39,
+       "runs_into": "W-SE"
+      }
+     }
+    },
+    "F09": {
+     "module": "M-prison",
+     "rotation": "none",
+     "footprint": [
+      92,
+      62,
+      102,
+      74
+     ],
+     "entrance_outside_cell": [
+      97,
+      75
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 32,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F18",
+     "entrances": {
+      "front_door_south": {
+       "outside_cell": [
+        97,
+        75
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 32,
+       "runs_into": "W-SE"
+      }
+     }
+    },
+    "F10": {
+     "module": "M-stable",
+     "rotation": "none",
+     "footprint": [
+      77,
+      79,
+      93,
+      91
+     ],
+     "entrance_outside_cell": [
+      85,
+      92
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 15,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F09",
+     "entrances": {
+      "portal_south": {
+       "outside_cell": [
+        85,
+        92
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 15,
+       "runs_into": "W-SE"
+      }
+     }
+    },
+    "F11": {
+     "module": "M-house_a",
+     "rotation": "none",
+     "footprint": [
+      14,
+      11,
+      22,
+      17
+     ],
+     "entrance_outside_cell": [
+      18,
+      18
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 4,
+     "nearest_neighbour_gap": 1,
+     "nearest": "T-NW"
+    },
+    "F12": {
+     "module": "M-house_b",
+     "rotation": "none",
+     "footprint": [
+      26,
+      11,
+      34,
+      17
+     ],
+     "entrance_outside_cell": [
+      30,
+      18
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 6,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F11"
+    },
+    "F13": {
+     "module": "M-house_c",
+     "rotation": "none",
+     "footprint": [
+      14,
+      22,
+      20,
+      28
+     ],
+     "entrance_outside_cell": [
+      17,
+      29
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 10,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F02"
+    },
+    "F14": {
+     "module": "M-house_a",
+     "rotation": "none",
+     "footprint": [
+      89,
+      11,
+      97,
+      17
+     ],
+     "entrance_outside_cell": [
+      93,
+      18
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 4,
+     "nearest_neighbour_gap": 1,
+     "nearest": "T-NE"
+    },
+    "F15": {
+     "module": "M-house_b",
+     "rotation": "none",
+     "footprint": [
+      76,
+      11,
+      84,
+      17
+     ],
+     "entrance_outside_cell": [
+      80,
+      18
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 6,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F14"
+    },
+    "F16": {
+     "module": "M-house_c",
+     "rotation": "none",
+     "footprint": [
+      92,
+      22,
+      98,
+      28
+     ],
+     "entrance_outside_cell": [
+      95,
+      29
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 11,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F03"
+    },
+    "F17": {
+     "module": "M-house_d",
+     "rotation": "none",
+     "footprint": [
+      92,
+      40,
+      98,
+      46
+     ],
+     "entrance_outside_cell": [
+      95,
+      47
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 3,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F18"
+    },
+    "F18": {
+     "module": "M-kitchen",
+     "rotation": "none",
+     "footprint": [
+      92,
+      50,
+      100,
+      58
+     ],
+     "entrance_outside_cell": [
+      96,
+      59
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 3,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F09"
+    },
+    "F19": {
+     "module": "M-smithy",
+     "rotation": "none",
+     "footprint": [
+      28,
+      79,
+      36,
+      87
+     ],
+     "entrance_outside_cell": [
+      32,
+      88
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 19,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F07"
+    },
+    "F20": {
+     "module": "M-cart_shed",
+     "rotation": "none",
+     "footprint": [
+      44,
+      82,
+      51,
+      88
+     ],
+     "entrance_outside_cell": [
+      47,
+      89
+     ],
+     "front_direction": [
+      0,
+      1
+     ],
+     "front_free_blocks": 11,
+     "nearest_neighbour_gap": 7,
+     "nearest": "F19"
+    }
+   },
+   "1": {
+    "F01": {
+     "module": "M-manor",
+     "rotation": "clockwise_90",
+     "footprint": [
+      86,
+      48,
+      100,
+      64
+     ],
+     "entrance_outside_cell": [
+      85,
+      55
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 74,
+     "nearest_neighbour_gap": 6,
+     "nearest": "W-N",
+     "entrances": {
+      "porch_south": {
+       "outside_cell": [
+        85,
+        55
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 74,
+       "runs_into": "GATE"
+      },
+      "porch_south_b": {
+       "outside_cell": [
+        85,
+        56
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 74,
+       "runs_into": "GATE"
+      }
+     }
+    },
+    "F02": {
+     "module": "M-barracks_a",
+     "rotation": "clockwise_90",
+     "footprint": [
+      77,
+      24,
+      87,
+      36
+     ],
+     "entrance_outside_cell": [
+      76,
+      36
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 17,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F13",
+     "entrances": {
+      "front_door_east": {
+       "outside_cell": [
+        82,
+        37
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 38,
+       "runs_into": "F03"
+      }
+     }
+    },
+    "F03": {
+     "module": "M-barracks_b",
+     "rotation": "clockwise_90",
+     "footprint": [
+      77,
+      75,
+      87,
+      87
+     ],
+     "entrance_outside_cell": [
+      76,
+      75
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 4,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F04",
+     "entrances": {
+      "gate_west": {
+       "outside_cell": [
+        82,
+        74
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 38,
+       "runs_into": "F02"
+      }
+     }
+    },
+    "F04": {
+     "module": "M-barracks_c",
+     "rotation": "clockwise_90",
+     "footprint": [
+      62,
+      75,
+      72,
+      87
+     ],
+     "entrance_outside_cell": [
+      61,
+      75
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 3,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F08",
+     "entrances": {
+      "front_door_west": {
+       "outside_cell": [
+        67,
+        74
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 46,
+       "runs_into": "F05"
+      }
+     }
+    },
+    "F05": {
+     "module": "M-armory",
+     "rotation": "clockwise_90",
+     "footprint": [
+      60,
+      12,
+      72,
+      28
+     ],
+     "entrance_outside_cell": [
+      59,
+      20
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 0,
+     "nearest_neighbour_gap": 0,
+     "nearest": "F06",
+     "entrances": {
+      "tower_portal_east": {
+       "outside_cell": [
+        68,
+        29
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 46,
+       "runs_into": "F04"
+      },
+      "loggia_bay_south": {
+       "outside_cell": [
+        59,
+        20
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 0,
+       "runs_into": "F06"
+      },
+      "service_door_east": {
+       "outside_cell": [
+        62,
+        29
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 46,
+       "runs_into": "F04"
+      }
+     }
+    },
+    "F06": {
+     "module": "M-yard",
+     "rotation": "clockwise_90",
+     "footprint": [
+      39,
+      12,
+      59,
+      36
+     ],
+     "entrance_outside_cell": [
+      38,
+      36
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 6,
+     "nearest_neighbour_gap": 0,
+     "nearest": "F05",
+     "entrances": {
+      "road_gate_east": {
+       "outside_cell": [
+        49,
+        37
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 38,
+       "runs_into": "F08"
+      },
+      "armory_apron_north": {
+       "outside_cell": [
+        60,
+        20
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 0,
+       "runs_into": "F05"
+      }
+     }
+    },
+    "F07": {
+     "module": "M-warehouse_a",
+     "rotation": "clockwise_90",
+     "footprint": [
+      20,
+      10,
+      32,
+      24
+     ],
+     "entrance_outside_cell": [
+      19,
+      16
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 15,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F19",
+     "entrances": {
+      "cart_porch_south": {
+       "outside_cell": [
+        19,
+        16
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 15,
+       "runs_into": "W-SW"
+      },
+      "cart_porch_south_b": {
+       "outside_cell": [
+        19,
+        17
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 15,
+       "runs_into": "W-SW"
+      }
+     }
+    },
+    "F08": {
+     "module": "M-warehouse_b",
+     "rotation": "clockwise_90",
+     "footprint": [
+      44,
+      75,
+      58,
+      87
+     ],
+     "entrance_outside_cell": [
+      43,
+      75
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 39,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F04",
+     "entrances": {
+      "unloading_bay_west": {
+       "outside_cell": [
+        51,
+        74
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 38,
+       "runs_into": "F06"
+      },
+      "loft_stair_south": {
+       "outside_cell": [
+        43,
+        75
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 39,
+       "runs_into": "W-SE"
+      }
+     }
+    },
+    "F09": {
+     "module": "M-prison",
+     "rotation": "clockwise_90",
+     "footprint": [
+      37,
+      92,
+      49,
+      102
+     ],
+     "entrance_outside_cell": [
+      36,
+      97
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 32,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F18",
+     "entrances": {
+      "front_door_south": {
+       "outside_cell": [
+        36,
+        97
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 32,
+       "runs_into": "W-SE"
+      }
+     }
+    },
+    "F10": {
+     "module": "M-stable",
+     "rotation": "clockwise_90",
+     "footprint": [
+      20,
+      77,
+      32,
+      93
+     ],
+     "entrance_outside_cell": [
+      19,
+      85
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 15,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F09",
+     "entrances": {
+      "portal_south": {
+       "outside_cell": [
+        19,
+        85
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 15,
+       "runs_into": "W-SE"
+      }
+     }
+    },
+    "F11": {
+     "module": "M-house_a",
+     "rotation": "clockwise_90",
+     "footprint": [
+      94,
+      14,
+      100,
+      22
+     ],
+     "entrance_outside_cell": [
+      93,
+      18
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 4,
+     "nearest_neighbour_gap": 1,
+     "nearest": "T-NW"
+    },
+    "F12": {
+     "module": "M-house_b",
+     "rotation": "clockwise_90",
+     "footprint": [
+      94,
+      26,
+      100,
+      34
+     ],
+     "entrance_outside_cell": [
+      93,
+      30
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 6,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F11"
+    },
+    "F13": {
+     "module": "M-house_c",
+     "rotation": "clockwise_90",
+     "footprint": [
+      83,
+      14,
+      89,
+      20
+     ],
+     "entrance_outside_cell": [
+      82,
+      17
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 10,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F02"
+    },
+    "F14": {
+     "module": "M-house_a",
+     "rotation": "clockwise_90",
+     "footprint": [
+      94,
+      89,
+      100,
+      97
+     ],
+     "entrance_outside_cell": [
+      93,
+      93
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 4,
+     "nearest_neighbour_gap": 1,
+     "nearest": "T-NE"
+    },
+    "F15": {
+     "module": "M-house_b",
+     "rotation": "clockwise_90",
+     "footprint": [
+      94,
+      76,
+      100,
+      84
+     ],
+     "entrance_outside_cell": [
+      93,
+      80
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 6,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F14"
+    },
+    "F16": {
+     "module": "M-house_c",
+     "rotation": "clockwise_90",
+     "footprint": [
+      83,
+      92,
+      89,
+      98
+     ],
+     "entrance_outside_cell": [
+      82,
+      95
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 11,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F03"
+    },
+    "F17": {
+     "module": "M-house_d",
+     "rotation": "clockwise_90",
+     "footprint": [
+      65,
+      92,
+      71,
+      98
+     ],
+     "entrance_outside_cell": [
+      64,
+      95
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 3,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F18"
+    },
+    "F18": {
+     "module": "M-kitchen",
+     "rotation": "clockwise_90",
+     "footprint": [
+      53,
+      92,
+      61,
+      100
+     ],
+     "entrance_outside_cell": [
+      52,
+      96
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 3,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F09"
+    },
+    "F19": {
+     "module": "M-smithy",
+     "rotation": "clockwise_90",
+     "footprint": [
+      24,
+      28,
+      32,
+      36
+     ],
+     "entrance_outside_cell": [
+      23,
+      32
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 19,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F07"
+    },
+    "F20": {
+     "module": "M-cart_shed",
+     "rotation": "clockwise_90",
+     "footprint": [
+      23,
+      44,
+      29,
+      51
+     ],
+     "entrance_outside_cell": [
+      22,
+      47
+     ],
+     "front_direction": [
+      -1,
+      0
+     ],
+     "front_free_blocks": 11,
+     "nearest_neighbour_gap": 7,
+     "nearest": "F19"
+    }
+   },
+   "2": {
+    "F01": {
+     "module": "M-manor",
+     "rotation": "180",
+     "footprint": [
+      47,
+      86,
+      63,
+      100
+     ],
+     "entrance_outside_cell": [
+      56,
+      85
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 74,
+     "nearest_neighbour_gap": 6,
+     "nearest": "W-N",
+     "entrances": {
+      "porch_south": {
+       "outside_cell": [
+        56,
+        85
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 74,
+       "runs_into": "GATE"
+      },
+      "porch_south_b": {
+       "outside_cell": [
+        55,
+        85
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 74,
+       "runs_into": "GATE"
+      }
+     }
+    },
+    "F02": {
+     "module": "M-barracks_a",
+     "rotation": "180",
+     "footprint": [
+      75,
+      77,
+      87,
+      87
+     ],
+     "entrance_outside_cell": [
+      75,
+      76
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 17,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F13",
+     "entrances": {
+      "front_door_east": {
+       "outside_cell": [
+        74,
+        82
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 38,
+       "runs_into": "F03"
+      }
+     }
+    },
+    "F03": {
+     "module": "M-barracks_b",
+     "rotation": "180",
+     "footprint": [
+      24,
+      77,
+      36,
+      87
+     ],
+     "entrance_outside_cell": [
+      36,
+      76
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 4,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F04",
+     "entrances": {
+      "gate_west": {
+       "outside_cell": [
+        37,
+        82
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 38,
+       "runs_into": "F02"
+      }
+     }
+    },
+    "F04": {
+     "module": "M-barracks_c",
+     "rotation": "180",
+     "footprint": [
+      24,
+      62,
+      36,
+      72
+     ],
+     "entrance_outside_cell": [
+      36,
+      61
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 3,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F08",
+     "entrances": {
+      "front_door_west": {
+       "outside_cell": [
+        37,
+        67
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 46,
+       "runs_into": "F05"
+      }
+     }
+    },
+    "F05": {
+     "module": "M-armory",
+     "rotation": "180",
+     "footprint": [
+      83,
+      60,
+      99,
+      72
+     ],
+     "entrance_outside_cell": [
+      91,
+      59
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 0,
+     "nearest_neighbour_gap": 0,
+     "nearest": "F06",
+     "entrances": {
+      "tower_portal_east": {
+       "outside_cell": [
+        82,
+        68
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 46,
+       "runs_into": "F04"
+      },
+      "loggia_bay_south": {
+       "outside_cell": [
+        91,
+        59
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 0,
+       "runs_into": "F06"
+      },
+      "service_door_east": {
+       "outside_cell": [
+        82,
+        62
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 46,
+       "runs_into": "F04"
+      }
+     }
+    },
+    "F06": {
+     "module": "M-yard",
+     "rotation": "180",
+     "footprint": [
+      75,
+      39,
+      99,
+      59
+     ],
+     "entrance_outside_cell": [
+      75,
+      38
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 6,
+     "nearest_neighbour_gap": 0,
+     "nearest": "F05",
+     "entrances": {
+      "road_gate_east": {
+       "outside_cell": [
+        74,
+        49
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 38,
+       "runs_into": "F08"
+      },
+      "armory_apron_north": {
+       "outside_cell": [
+        91,
+        60
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 0,
+       "runs_into": "F05"
+      }
+     }
+    },
+    "F07": {
+     "module": "M-warehouse_a",
+     "rotation": "180",
+     "footprint": [
+      87,
+      20,
+      101,
+      32
+     ],
+     "entrance_outside_cell": [
+      95,
+      19
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 15,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F19",
+     "entrances": {
+      "cart_porch_south": {
+       "outside_cell": [
+        95,
+        19
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 15,
+       "runs_into": "W-SW"
+      },
+      "cart_porch_south_b": {
+       "outside_cell": [
+        94,
+        19
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 15,
+       "runs_into": "W-SW"
+      }
+     }
+    },
+    "F08": {
+     "module": "M-warehouse_b",
+     "rotation": "180",
+     "footprint": [
+      24,
+      44,
+      36,
+      58
+     ],
+     "entrance_outside_cell": [
+      36,
+      43
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 39,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F04",
+     "entrances": {
+      "unloading_bay_west": {
+       "outside_cell": [
+        37,
+        51
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 38,
+       "runs_into": "F06"
+      },
+      "loft_stair_south": {
+       "outside_cell": [
+        36,
+        43
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 39,
+       "runs_into": "W-SE"
+      }
+     }
+    },
+    "F09": {
+     "module": "M-prison",
+     "rotation": "180",
+     "footprint": [
+      9,
+      37,
+      19,
+      49
+     ],
+     "entrance_outside_cell": [
+      14,
+      36
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 32,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F18",
+     "entrances": {
+      "front_door_south": {
+       "outside_cell": [
+        14,
+        36
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 32,
+       "runs_into": "W-SE"
+      }
+     }
+    },
+    "F10": {
+     "module": "M-stable",
+     "rotation": "180",
+     "footprint": [
+      18,
+      20,
+      34,
+      32
+     ],
+     "entrance_outside_cell": [
+      26,
+      19
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 15,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F09",
+     "entrances": {
+      "portal_south": {
+       "outside_cell": [
+        26,
+        19
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 15,
+       "runs_into": "W-SE"
+      }
+     }
+    },
+    "F11": {
+     "module": "M-house_a",
+     "rotation": "180",
+     "footprint": [
+      89,
+      94,
+      97,
+      100
+     ],
+     "entrance_outside_cell": [
+      93,
+      93
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 4,
+     "nearest_neighbour_gap": 1,
+     "nearest": "T-NW"
+    },
+    "F12": {
+     "module": "M-house_b",
+     "rotation": "180",
+     "footprint": [
+      77,
+      94,
+      85,
+      100
+     ],
+     "entrance_outside_cell": [
+      81,
+      93
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 6,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F11"
+    },
+    "F13": {
+     "module": "M-house_c",
+     "rotation": "180",
+     "footprint": [
+      91,
+      83,
+      97,
+      89
+     ],
+     "entrance_outside_cell": [
+      94,
+      82
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 10,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F02"
+    },
+    "F14": {
+     "module": "M-house_a",
+     "rotation": "180",
+     "footprint": [
+      14,
+      94,
+      22,
+      100
+     ],
+     "entrance_outside_cell": [
+      18,
+      93
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 4,
+     "nearest_neighbour_gap": 1,
+     "nearest": "T-NE"
+    },
+    "F15": {
+     "module": "M-house_b",
+     "rotation": "180",
+     "footprint": [
+      27,
+      94,
+      35,
+      100
+     ],
+     "entrance_outside_cell": [
+      31,
+      93
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 6,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F14"
+    },
+    "F16": {
+     "module": "M-house_c",
+     "rotation": "180",
+     "footprint": [
+      13,
+      83,
+      19,
+      89
+     ],
+     "entrance_outside_cell": [
+      16,
+      82
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 11,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F03"
+    },
+    "F17": {
+     "module": "M-house_d",
+     "rotation": "180",
+     "footprint": [
+      13,
+      65,
+      19,
+      71
+     ],
+     "entrance_outside_cell": [
+      16,
+      64
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 3,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F18"
+    },
+    "F18": {
+     "module": "M-kitchen",
+     "rotation": "180",
+     "footprint": [
+      11,
+      53,
+      19,
+      61
+     ],
+     "entrance_outside_cell": [
+      15,
+      52
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 3,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F09"
+    },
+    "F19": {
+     "module": "M-smithy",
+     "rotation": "180",
+     "footprint": [
+      75,
+      24,
+      83,
+      32
+     ],
+     "entrance_outside_cell": [
+      79,
+      23
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 19,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F07"
+    },
+    "F20": {
+     "module": "M-cart_shed",
+     "rotation": "180",
+     "footprint": [
+      60,
+      23,
+      67,
+      29
+     ],
+     "entrance_outside_cell": [
+      64,
+      22
+     ],
+     "front_direction": [
+      0,
+      -1
+     ],
+     "front_free_blocks": 11,
+     "nearest_neighbour_gap": 7,
+     "nearest": "F19"
+    }
+   },
+   "3": {
+    "F01": {
+     "module": "M-manor",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      11,
+      47,
+      25,
+      63
+     ],
+     "entrance_outside_cell": [
+      26,
+      56
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 74,
+     "nearest_neighbour_gap": 6,
+     "nearest": "W-N",
+     "entrances": {
+      "porch_south": {
+       "outside_cell": [
+        26,
+        56
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 74,
+       "runs_into": "GATE"
+      },
+      "porch_south_b": {
+       "outside_cell": [
+        26,
+        55
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 74,
+       "runs_into": "GATE"
+      }
+     }
+    },
+    "F02": {
+     "module": "M-barracks_a",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      24,
+      75,
+      34,
+      87
+     ],
+     "entrance_outside_cell": [
+      35,
+      75
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 17,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F13",
+     "entrances": {
+      "front_door_east": {
+       "outside_cell": [
+        29,
+        74
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 38,
+       "runs_into": "F03"
+      }
+     }
+    },
+    "F03": {
+     "module": "M-barracks_b",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      24,
+      24,
+      34,
+      36
+     ],
+     "entrance_outside_cell": [
+      35,
+      36
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 4,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F04",
+     "entrances": {
+      "gate_west": {
+       "outside_cell": [
+        29,
+        37
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 38,
+       "runs_into": "F02"
+      }
+     }
+    },
+    "F04": {
+     "module": "M-barracks_c",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      39,
+      24,
+      49,
+      36
+     ],
+     "entrance_outside_cell": [
+      50,
+      36
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 3,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F08",
+     "entrances": {
+      "front_door_west": {
+       "outside_cell": [
+        44,
+        37
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 46,
+       "runs_into": "F05"
+      }
+     }
+    },
+    "F05": {
+     "module": "M-armory",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      39,
+      83,
+      51,
+      99
+     ],
+     "entrance_outside_cell": [
+      52,
+      91
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 0,
+     "nearest_neighbour_gap": 0,
+     "nearest": "F06",
+     "entrances": {
+      "tower_portal_east": {
+       "outside_cell": [
+        43,
+        82
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 46,
+       "runs_into": "F04"
+      },
+      "loggia_bay_south": {
+       "outside_cell": [
+        52,
+        91
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 0,
+       "runs_into": "F06"
+      },
+      "service_door_east": {
+       "outside_cell": [
+        49,
+        82
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 46,
+       "runs_into": "F04"
+      }
+     }
+    },
+    "F06": {
+     "module": "M-yard",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      52,
+      75,
+      72,
+      99
+     ],
+     "entrance_outside_cell": [
+      73,
+      75
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 6,
+     "nearest_neighbour_gap": 0,
+     "nearest": "F05",
+     "entrances": {
+      "road_gate_east": {
+       "outside_cell": [
+        62,
+        74
+       ],
+       "outward": [
+        0,
+        -1
+       ],
+       "free_blocks": 38,
+       "runs_into": "F08"
+      },
+      "armory_apron_north": {
+       "outside_cell": [
+        51,
+        91
+       ],
+       "outward": [
+        -1,
+        0
+       ],
+       "free_blocks": 0,
+       "runs_into": "F05"
+      }
+     }
+    },
+    "F07": {
+     "module": "M-warehouse_a",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      79,
+      87,
+      91,
+      101
+     ],
+     "entrance_outside_cell": [
+      92,
+      95
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 15,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F19",
+     "entrances": {
+      "cart_porch_south": {
+       "outside_cell": [
+        92,
+        95
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 15,
+       "runs_into": "W-SW"
+      },
+      "cart_porch_south_b": {
+       "outside_cell": [
+        92,
+        94
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 15,
+       "runs_into": "W-SW"
+      }
+     }
+    },
+    "F08": {
+     "module": "M-warehouse_b",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      53,
+      24,
+      67,
+      36
+     ],
+     "entrance_outside_cell": [
+      68,
+      36
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 39,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F04",
+     "entrances": {
+      "unloading_bay_west": {
+       "outside_cell": [
+        60,
+        37
+       ],
+       "outward": [
+        0,
+        1
+       ],
+       "free_blocks": 38,
+       "runs_into": "F06"
+      },
+      "loft_stair_south": {
+       "outside_cell": [
+        68,
+        36
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 39,
+       "runs_into": "W-SE"
+      }
+     }
+    },
+    "F09": {
+     "module": "M-prison",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      62,
+      9,
+      74,
+      19
+     ],
+     "entrance_outside_cell": [
+      75,
+      14
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 32,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F18",
+     "entrances": {
+      "front_door_south": {
+       "outside_cell": [
+        75,
+        14
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 32,
+       "runs_into": "W-SE"
+      }
+     }
+    },
+    "F10": {
+     "module": "M-stable",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      79,
+      18,
+      91,
+      34
+     ],
+     "entrance_outside_cell": [
+      92,
+      26
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 15,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F09",
+     "entrances": {
+      "portal_south": {
+       "outside_cell": [
+        92,
+        26
+       ],
+       "outward": [
+        1,
+        0
+       ],
+       "free_blocks": 15,
+       "runs_into": "W-SE"
+      }
+     }
+    },
+    "F11": {
+     "module": "M-house_a",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      11,
+      89,
+      17,
+      97
+     ],
+     "entrance_outside_cell": [
+      18,
+      93
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 4,
+     "nearest_neighbour_gap": 1,
+     "nearest": "T-NW"
+    },
+    "F12": {
+     "module": "M-house_b",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      11,
+      77,
+      17,
+      85
+     ],
+     "entrance_outside_cell": [
+      18,
+      81
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 6,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F11"
+    },
+    "F13": {
+     "module": "M-house_c",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      22,
+      91,
+      28,
+      97
+     ],
+     "entrance_outside_cell": [
+      29,
+      94
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 10,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F02"
+    },
+    "F14": {
+     "module": "M-house_a",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      11,
+      14,
+      17,
+      22
+     ],
+     "entrance_outside_cell": [
+      18,
+      18
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 4,
+     "nearest_neighbour_gap": 1,
+     "nearest": "T-NE"
+    },
+    "F15": {
+     "module": "M-house_b",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      11,
+      27,
+      17,
+      35
+     ],
+     "entrance_outside_cell": [
+      18,
+      31
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 6,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F14"
+    },
+    "F16": {
+     "module": "M-house_c",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      22,
+      13,
+      28,
+      19
+     ],
+     "entrance_outside_cell": [
+      29,
+      16
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 11,
+     "nearest_neighbour_gap": 4,
+     "nearest": "F03"
+    },
+    "F17": {
+     "module": "M-house_d",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      40,
+      13,
+      46,
+      19
+     ],
+     "entrance_outside_cell": [
+      47,
+      16
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 3,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F18"
+    },
+    "F18": {
+     "module": "M-kitchen",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      50,
+      11,
+      58,
+      19
+     ],
+     "entrance_outside_cell": [
+      59,
+      15
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 3,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F09"
+    },
+    "F19": {
+     "module": "M-smithy",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      79,
+      75,
+      87,
+      83
+     ],
+     "entrance_outside_cell": [
+      88,
+      79
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 19,
+     "nearest_neighbour_gap": 3,
+     "nearest": "F07"
+    },
+    "F20": {
+     "module": "M-cart_shed",
+     "rotation": "counterclockwise_90",
+     "footprint": [
+      82,
+      60,
+      88,
+      67
+     ],
+     "entrance_outside_cell": [
+      89,
+      64
+     ],
+     "front_direction": [
+      1,
+      0
+     ],
+     "front_free_blocks": 11,
+     "nearest_neighbour_gap": 7,
+     "nearest": "F19"
+    }
+   }
+  }
+ },
+ "live": {
+  "A_rotations": {
+   "clockwise_90": {
+    "GROUND-NE": {
+     "rotation": "clockwise_90",
+     "cells": 2812,
+     "failures": [],
+     "failure_count": 0
+    },
+    "GROUND-NW": {
+     "rotation": "clockwise_90",
+     "cells": 2868,
+     "failures": [],
+     "failure_count": 0
+    },
+    "GROUND-SE": {
+     "rotation": "clockwise_90",
+     "cells": 2801,
+     "failures": [],
+     "failure_count": 0
+    },
+    "GROUND-SW": {
+     "rotation": "clockwise_90",
+     "cells": 2847,
+     "failures": [],
+     "failure_count": 0
+    },
+    "T-NE": {
+     "rotation": "180",
+     "cells": 2003,
+     "failures": [],
+     "failure_count": 0
+    },
+    "T-NW": {
+     "rotation": "clockwise_90",
+     "cells": 2003,
+     "failures": [],
+     "failure_count": 0
+    },
+    "T-SE": {
+     "rotation": "counterclockwise_90",
+     "cells": 2003,
+     "failures": [],
+     "failure_count": 0
+    },
+    "T-SW": {
+     "rotation": "none",
+     "cells": 2003,
+     "failures": [],
+     "failure_count": 0
+    },
+    "W-E": {
+     "rotation": "180",
+     "cells": 3752,
+     "failures": [],
+     "failure_count": 0
+    },
+    "W-N": {
+     "rotation": "clockwise_90",
+     "cells": 3752,
+     "failures": [],
+     "failure_count": 0
+    },
+    "W-SE": {
+     "rotation": "counterclockwise_90",
+     "cells": 1449,
+     "failures": [],
+     "failure_count": 0
+    },
+    "W-SW": {
+     "rotation": "counterclockwise_90",
+     "cells": 1449,
+     "failures": [],
+     "failure_count": 0
+    },
+    "W-W": {
+     "rotation": "none",
+     "cells": 3752,
+     "failures": [],
+     "failure_count": 0
+    },
+    "GATE": {
+     "rotation": "clockwise_90",
+     "cells": 2206,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F01": {
+     "rotation": "clockwise_90",
+     "cells": 2652,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F02": {
+     "rotation": "clockwise_90",
+     "cells": 742,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F03": {
+     "rotation": "clockwise_90",
+     "cells": 713,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F04": {
+     "rotation": "clockwise_90",
+     "cells": 728,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F05": {
+     "rotation": "clockwise_90",
+     "cells": 1009,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F06": {
+     "rotation": "clockwise_90",
+     "cells": 869,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F07": {
+     "rotation": "clockwise_90",
+     "cells": 835,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F08": {
+     "rotation": "clockwise_90",
+     "cells": 920,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F09": {
+     "rotation": "clockwise_90",
+     "cells": 759,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F10": {
+     "rotation": "clockwise_90",
+     "cells": 956,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F12": {
+     "rotation": "clockwise_90",
+     "cells": 305,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F13": {
+     "rotation": "clockwise_90",
+     "cells": 221,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F15": {
+     "rotation": "clockwise_90",
+     "cells": 305,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F16": {
+     "rotation": "clockwise_90",
+     "cells": 221,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F17": {
+     "rotation": "clockwise_90",
+     "cells": 222,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F18": {
+     "rotation": "clockwise_90",
+     "cells": 430,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F19": {
+     "rotation": "clockwise_90",
+     "cells": 394,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F20": {
+     "rotation": "clockwise_90",
+     "cells": 207,
+     "failures": [],
+     "failure_count": 0
+    }
+   },
+   "180": {
+    "GROUND-NE": {
+     "rotation": "180",
+     "cells": 2812,
+     "failures": [],
+     "failure_count": 0
+    },
+    "GROUND-NW": {
+     "rotation": "180",
+     "cells": 2868,
+     "failures": [],
+     "failure_count": 0
+    },
+    "GROUND-SE": {
+     "rotation": "180",
+     "cells": 2801,
+     "failures": [],
+     "failure_count": 0
+    },
+    "GROUND-SW": {
+     "rotation": "180",
+     "cells": 2847,
+     "failures": [],
+     "failure_count": 0
+    },
+    "T-NE": {
+     "rotation": "counterclockwise_90",
+     "cells": 2003,
+     "failures": [],
+     "failure_count": 0
+    },
+    "T-NW": {
+     "rotation": "180",
+     "cells": 2003,
+     "failures": [],
+     "failure_count": 0
+    },
+    "T-SE": {
+     "rotation": "none",
+     "cells": 2003,
+     "failures": [],
+     "failure_count": 0
+    },
+    "T-SW": {
+     "rotation": "clockwise_90",
+     "cells": 2003,
+     "failures": [],
+     "failure_count": 0
+    },
+    "W-E": {
+     "rotation": "counterclockwise_90",
+     "cells": 3752,
+     "failures": [],
+     "failure_count": 0
+    },
+    "W-N": {
+     "rotation": "180",
+     "cells": 3752,
+     "failures": [],
+     "failure_count": 0
+    },
+    "W-SE": {
+     "rotation": "none",
+     "cells": 1449,
+     "failures": [],
+     "failure_count": 0
+    },
+    "W-SW": {
+     "rotation": "none",
+     "cells": 1449,
+     "failures": [],
+     "failure_count": 0
+    },
+    "W-W": {
+     "rotation": "clockwise_90",
+     "cells": 3752,
+     "failures": [],
+     "failure_count": 0
+    },
+    "GATE": {
+     "rotation": "180",
+     "cells": 2206,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F01": {
+     "rotation": "180",
+     "cells": 2652,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F02": {
+     "rotation": "180",
+     "cells": 742,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F03": {
+     "rotation": "180",
+     "cells": 713,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F04": {
+     "rotation": "180",
+     "cells": 728,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F05": {
+     "rotation": "180",
+     "cells": 1009,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F06": {
+     "rotation": "180",
+     "cells": 869,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F07": {
+     "rotation": "180",
+     "cells": 835,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F08": {
+     "rotation": "180",
+     "cells": 920,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F09": {
+     "rotation": "180",
+     "cells": 759,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F10": {
+     "rotation": "180",
+     "cells": 956,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F12": {
+     "rotation": "180",
+     "cells": 305,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F13": {
+     "rotation": "180",
+     "cells": 221,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F15": {
+     "rotation": "180",
+     "cells": 305,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F16": {
+     "rotation": "180",
+     "cells": 221,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F17": {
+     "rotation": "180",
+     "cells": 222,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F18": {
+     "rotation": "180",
+     "cells": 430,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F19": {
+     "rotation": "180",
+     "cells": 394,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F20": {
+     "rotation": "180",
+     "cells": 207,
+     "failures": [],
+     "failure_count": 0
+    }
+   },
+   "counterclockwise_90": {
+    "GROUND-NE": {
+     "rotation": "counterclockwise_90",
+     "cells": 2812,
+     "failures": [],
+     "failure_count": 0
+    },
+    "GROUND-NW": {
+     "rotation": "counterclockwise_90",
+     "cells": 2868,
+     "failures": [],
+     "failure_count": 0
+    },
+    "GROUND-SE": {
+     "rotation": "counterclockwise_90",
+     "cells": 2801,
+     "failures": [],
+     "failure_count": 0
+    },
+    "GROUND-SW": {
+     "rotation": "counterclockwise_90",
+     "cells": 2847,
+     "failures": [],
+     "failure_count": 0
+    },
+    "T-NE": {
+     "rotation": "none",
+     "cells": 2003,
+     "failures": [],
+     "failure_count": 0
+    },
+    "T-NW": {
+     "rotation": "counterclockwise_90",
+     "cells": 2003,
+     "failures": [],
+     "failure_count": 0
+    },
+    "T-SE": {
+     "rotation": "clockwise_90",
+     "cells": 2003,
+     "failures": [],
+     "failure_count": 0
+    },
+    "T-SW": {
+     "rotation": "180",
+     "cells": 2003,
+     "failures": [],
+     "failure_count": 0
+    },
+    "W-E": {
+     "rotation": "none",
+     "cells": 3752,
+     "failures": [],
+     "failure_count": 0
+    },
+    "W-N": {
+     "rotation": "counterclockwise_90",
+     "cells": 3752,
+     "failures": [],
+     "failure_count": 0
+    },
+    "W-SE": {
+     "rotation": "clockwise_90",
+     "cells": 1449,
+     "failures": [],
+     "failure_count": 0
+    },
+    "W-SW": {
+     "rotation": "clockwise_90",
+     "cells": 1449,
+     "failures": [],
+     "failure_count": 0
+    },
+    "W-W": {
+     "rotation": "180",
+     "cells": 3752,
+     "failures": [],
+     "failure_count": 0
+    },
+    "GATE": {
+     "rotation": "counterclockwise_90",
+     "cells": 2206,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F01": {
+     "rotation": "counterclockwise_90",
+     "cells": 2652,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F02": {
+     "rotation": "counterclockwise_90",
+     "cells": 742,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F03": {
+     "rotation": "counterclockwise_90",
+     "cells": 713,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F04": {
+     "rotation": "counterclockwise_90",
+     "cells": 728,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F05": {
+     "rotation": "counterclockwise_90",
+     "cells": 1009,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F06": {
+     "rotation": "counterclockwise_90",
+     "cells": 869,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F07": {
+     "rotation": "counterclockwise_90",
+     "cells": 835,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F08": {
+     "rotation": "counterclockwise_90",
+     "cells": 920,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F09": {
+     "rotation": "counterclockwise_90",
+     "cells": 759,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F10": {
+     "rotation": "counterclockwise_90",
+     "cells": 956,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F12": {
+     "rotation": "counterclockwise_90",
+     "cells": 305,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F13": {
+     "rotation": "counterclockwise_90",
+     "cells": 221,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F15": {
+     "rotation": "counterclockwise_90",
+     "cells": 305,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F16": {
+     "rotation": "counterclockwise_90",
+     "cells": 221,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F17": {
+     "rotation": "counterclockwise_90",
+     "cells": 222,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F18": {
+     "rotation": "counterclockwise_90",
+     "cells": 430,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F19": {
+     "rotation": "counterclockwise_90",
+     "cells": 394,
+     "failures": [],
+     "failure_count": 0
+    },
+    "F20": {
+     "rotation": "counterclockwise_90",
+     "cells": 207,
+     "failures": [],
+     "failure_count": 0
+    }
+   }
+  },
+  "B_integrated_q0": {
+   "GROUND-NE": {
+    "cells": 2010,
+    "overwritten_by_later_placements": 802,
+    "failure_count": 0,
+    "failures": []
+   },
+   "GROUND-NW": {
+    "cells": 2045,
+    "overwritten_by_later_placements": 823,
+    "failure_count": 0,
+    "failures": []
+   },
+   "GROUND-SE": {
+    "cells": 2106,
+    "overwritten_by_later_placements": 695,
+    "failure_count": 0,
+    "failures": []
+   },
+   "GROUND-SW": {
+    "cells": 1942,
+    "overwritten_by_later_placements": 905,
+    "failure_count": 0,
+    "failures": []
+   },
+   "T-NE": {
+    "cells": 2003,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "T-NW": {
+    "cells": 2003,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "T-SE": {
+    "cells": 2003,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "T-SW": {
+    "cells": 2003,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "W-E": {
+    "cells": 3752,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "W-N": {
+    "cells": 3752,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "W-SE": {
+    "cells": 1449,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "W-SW": {
+    "cells": 1449,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "W-W": {
+    "cells": 3752,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "GATE": {
+    "cells": 2206,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F01": {
+    "cells": 2652,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F02": {
+    "cells": 742,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F03": {
+    "cells": 713,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F04": {
+    "cells": 728,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F05": {
+    "cells": 1009,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F06": {
+    "cells": 869,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F07": {
+    "cells": 835,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F08": {
+    "cells": 920,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F09": {
+    "cells": 759,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F10": {
+    "cells": 956,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F11": {
+    "cells": 326,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F12": {
+    "cells": 305,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F13": {
+    "cells": 221,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F14": {
+    "cells": 326,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F15": {
+    "cells": 305,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F16": {
+    "cells": 221,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F17": {
+    "cells": 222,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F18": {
+    "cells": 430,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F19": {
+    "cells": 394,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   },
+   "F20": {
+    "cells": 207,
+    "overwritten_by_later_placements": 0,
+    "failure_count": 0,
+    "failures": []
+   }
+  },
+  "C_test_terrain_q0": {
+   "GROUND-NE": {
+    "max_drop": 2,
+    "footing_columns_filled": 2448,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 2812,
+    "template_failures": 0,
+    "failures": []
+   },
+   "GROUND-NW": {
+    "max_drop": 2,
+    "footing_columns_filled": 2448,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 2868,
+    "template_failures": 0,
+    "failures": []
+   },
+   "GROUND-SE": {
+    "max_drop": 2,
+    "footing_columns_filled": 2448,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 2801,
+    "template_failures": 0,
+    "failures": []
+   },
+   "GROUND-SW": {
+    "max_drop": 2,
+    "footing_columns_filled": 2448,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 2847,
+    "template_failures": 0,
+    "failures": []
+   },
+   "T-NE": {
+    "max_drop": 2,
+    "footing_columns_filled": 130,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 2003,
+    "template_failures": 0,
+    "failures": []
+   },
+   "T-NW": {
+    "max_drop": 2,
+    "footing_columns_filled": 130,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 2003,
+    "template_failures": 0,
+    "failures": []
+   },
+   "T-SE": {
+    "max_drop": 2,
+    "footing_columns_filled": 130,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 2003,
+    "template_failures": 0,
+    "failures": []
+   },
+   "T-SW": {
+    "max_drop": 2,
+    "footing_columns_filled": 130,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 2003,
+    "template_failures": 0,
+    "failures": []
+   },
+   "W-E": {
+    "max_drop": 2,
+    "footing_columns_filled": 415,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 3752,
+    "template_failures": 0,
+    "failures": []
+   },
+   "W-N": {
+    "max_drop": 1,
+    "footing_columns_filled": 172,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 3752,
+    "template_failures": 0,
+    "failures": []
+   },
+   "W-SE": {
+    "max_drop": 1,
+    "footing_columns_filled": 62,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 1449,
+    "template_failures": 0,
+    "failures": []
+   },
+   "W-SW": {
+    "max_drop": 1,
+    "footing_columns_filled": 62,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 1449,
+    "template_failures": 0,
+    "failures": []
+   },
+   "W-W": {
+    "max_drop": 2,
+    "footing_columns_filled": 415,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 3752,
+    "template_failures": 0,
+    "failures": []
+   },
+   "GATE": {
+    "max_drop": 2,
+    "footing_columns_filled": 216,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 2206,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F01": {
+    "max_drop": 2,
+    "footing_columns_filled": 204,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 2652,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F02": {
+    "max_drop": 2,
+    "footing_columns_filled": 104,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 742,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F03": {
+    "max_drop": 2,
+    "footing_columns_filled": 104,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 713,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F04": {
+    "max_drop": 2,
+    "footing_columns_filled": 104,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 728,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F05": {
+    "max_drop": 2,
+    "footing_columns_filled": 170,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 1009,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F06": {
+    "max_drop": 2,
+    "footing_columns_filled": 450,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 869,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F07": {
+    "max_drop": 2,
+    "footing_columns_filled": 150,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 835,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F08": {
+    "max_drop": 2,
+    "footing_columns_filled": 156,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 920,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F09": {
+    "max_drop": 2,
+    "footing_columns_filled": 110,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 759,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F10": {
+    "max_drop": 2,
+    "footing_columns_filled": 170,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 956,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F11": {
+    "max_drop": 2,
+    "footing_columns_filled": 36,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 326,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F12": {
+    "max_drop": 2,
+    "footing_columns_filled": 36,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 305,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F13": {
+    "max_drop": 2,
+    "footing_columns_filled": 28,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 221,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F14": {
+    "max_drop": 2,
+    "footing_columns_filled": 36,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 326,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F15": {
+    "max_drop": 2,
+    "footing_columns_filled": 36,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 305,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F16": {
+    "max_drop": 2,
+    "footing_columns_filled": 28,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 221,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F17": {
+    "max_drop": 2,
+    "footing_columns_filled": 28,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 222,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F18": {
+    "max_drop": 2,
+    "footing_columns_filled": 54,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 430,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F19": {
+    "max_drop": 2,
+    "footing_columns_filled": 54,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 394,
+    "template_failures": 0,
+    "failures": []
+   },
+   "F20": {
+    "max_drop": 2,
+    "footing_columns_filled": 32,
+    "hollow_cells": [],
+    "hollow_count": 0,
+    "template_cells": 207,
+    "template_failures": 0,
+    "failures": []
+   }
+  }
+ }
+}

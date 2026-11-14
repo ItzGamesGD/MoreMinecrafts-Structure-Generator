@@ -2,16 +2,21 @@
 
 Scope: only facilities that have a built NBT today (House A F11/F14, houses B/C/D, kitchen, smithy, cart shed,
 batch 3: F05 armory, F06 training yard, batch 4: F02/F03/F04 barracks, batch 5: F07/F08 warehouses, batch 6:
-F09 prison / F10 ravager stable, batch 7: F01 commander manor at the Q63 size 17x27x15, and batch 8: the perimeter
-walls MW86 (W-N, W-E, W-W) and MW31 (W-SW, W-SE), air=omit, no entrance of their own).
-Roads are NOT part of the placement table (the road masterplan and ground modules MQ-* are not in this repository and
-not built), so a road connection cannot be asserted here; the check reports the free corridor in front of each entrance.
+F09 prison / F10 ravager stable, batch 7: F01 commander manor at the Q63 size 17x27x15, batch 8: the perimeter
+walls MW86 (W-N, W-E, W-W) and MW31 (W-SW, W-SE), air=omit, no entrance of their own (since D-1 the wall F NBTs), and batch 9: the corner tower MT
+(T-NW, T-NE, T-SE, T-SW) and the gatehouse MG (GATE), air=include, and batch 10: the ground / road modules MQ-NW/NE/SW/SE, air=include,
+placed first (order 1)).
+Roads are not part of the placement table. The road network is the batch-10 MQ design; its connection to every entrance
+is checked in experiments/st03-batch10-ground-roads/checks.py. This check still reports the free corridor in front of
+each entrance.
 
   offline  footprint overlaps (all 34 placements, q=0..3), per-building nearest neighbour and front clearance
   live A   whole-structure turns q=1..3: every cell of every built facility (House A excluded, it was verified before)
            placed `strict` at the manifest origin/rotation and compared with the rotated template (block + rotated states)
   live B   q=0: all built facilities placed together at their real coordinates, every cell of every one compared
-           (adjacent facilities must not overwrite each other)
+           against the placement that owns it last in manifest order (adjacent facilities must not overwrite each
+           other; the ground modules MQ-*, placed first, are overwritten inside later footprints by design and those
+           cells are counted, not compared)
   live C   q=0 on a TEST terrain that falls away to the north (0..2 blocks): floor level kept at the entrance-side
            ground, stone footing filled straight down under every footprint column (Q09 / Q76-77 policy), and a
            check that no footprint column is left hollow. Test world only, not natural worldgen.
@@ -32,6 +37,9 @@ from tools.structure_export.stair_live import forceload, make_server
 REPO = Path(__file__).resolve().parents[2]
 EXP = REPO / "experiments"
 G = -61  # flat world grass layer; structure y=0 floor is placed flush with it
+# Perimeter walls MW86 / MW31: owner decision D-1 (2026-11-14) adopted wall F (exp/st03-wall-final-20261106 @ a57768c).
+# The batch-8 candidate NBTs stay in experiments/st03-batch8-perimeter-walls/out as history.
+WALLS = EXP / "st03-wall-redesign" / "out" / "f"
 
 
 def _load(path, name):
@@ -41,9 +49,11 @@ def _load(path, name):
     return mod
 
 
-def built_modules(perimeter=False):
-    """module id -> dict(nbt, door (x, z) boundary column, front = +z). perimeter=True adds the batch-8 walls (door None);
-    the earlier capture scripts call it without, so their layouts stay what they photographed."""
+def built_modules(perimeter=False, towers=False, ground=False):
+    """module id -> dict(nbt, door (x, z) boundary column, front = +z). perimeter=True adds the perimeter walls (door None; the adopted wall F NBTs since D-1);
+    towers=True adds the batch-9 corner tower MT and gatehouse MG (door None: their entrances are checked in batch-9
+    checks.py); ground=True adds the batch-10 ground / road modules MQ-NW/NE/SW/SE. The earlier capture scripts call it
+    without, so their layouts stay what they photographed."""
     out = {}
     b1 = _load(EXP / "st03-batch1-support" / "build.py", "b1")
     b2 = _load(EXP / "st03-batch2-houses" / "build.py", "b2")
@@ -62,9 +72,20 @@ def built_modules(perimeter=False):
                                 "entrances": b.get("entrances")}
     if perimeter:
         b8 = _load(EXP / "st03-batch8-perimeter-walls" / "build.py", "b8")
-        for b in b8.BUILDINGS.values():
+        for b in b8.BUILDINGS.values():  # module ids and sizes; the NBTs are the adopted wall F (D-1)
             m = A.modules()[b["module"]]
-            out[b["module"]] = {"nbt": EXP / "st03-batch8-perimeter-walls" / "out" / f"{m['file']}.nbt", "door": None,
+            out[b["module"]] = {"nbt": WALLS / f"{m['file']}.nbt", "door": None, "size": b["size"], "entrances": None}
+    if towers:
+        b9 = _load(EXP / "st03-batch9-towers-gate" / "build.py", "b9")
+        for b in b9.BUILDINGS.values():
+            m = A.modules()[b["module"]]
+            out[b["module"]] = {"nbt": EXP / "st03-batch9-towers-gate" / "out" / f"{m['file']}.nbt", "door": None,
+                                "size": b["size"], "entrances": None}
+    if ground:
+        b10 = _load(EXP / "st03-batch10-ground-roads" / "build.py", "b10")
+        for b in b10.BUILDINGS.values():
+            m = A.modules()[b["module"]]
+            out[b["module"]] = {"nbt": EXP / "st03-batch10-ground-roads" / "out" / f"{m['file']}.nbt", "door": None,
                                 "size": b["size"], "entrances": None}
     ha = _load(EXP / "st03-b5a-house-a" / "build.py", "ha")
     out["M-house_a"] = {"nbt": EXP / "st03-b5a-house-a" / "st03_house_a.nbt", "door": ha.DOOR, "size": (ha.W, ha.H, ha.D)}
@@ -153,7 +174,7 @@ def main():
     only = set(filter(None, a.only.split(",")))
     sha = hashlib.sha1(a.server_jar.read_bytes()).hexdigest()
     assert sha == "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c", sha
-    built = built_modules(perimeter=True)
+    built = built_modules(perimeter=True, towers=True, ground=True)
     result = {"server_sha1": sha, "offline": offline(built)}
     templates = {m: _template_cells(v["nbt"]) for m, v in built.items()}
     pack = a.work / "pack"
@@ -174,12 +195,15 @@ def main():
             r = server.cmd(f"place template {tid(e['module'])} {ax + ox} {G} {oz} {e['rotation']} none 1 0 strict")
             assert r.startswith("Loaded template"), (e["placement"], r)
 
-        def compare(e, ax, ay=G):
+        def compare(e, ax, ay=G, owner=None):
+            """owner (live B): final owner of every cell; a cell a later placement overwrites is not compared."""
             fails, n = [], 0
             for cell, (bid, props) in sorted(templates[e["module"]].items()):
                 if bid == "minecraft:air":
                     continue
                 x, y, z = A.place_cell(e, cell)
+                if owner is not None and owner.get((x, y, z)) != e["placement"]:
+                    continue
                 want = _text(bid, rot(props, e["rotation"]))
                 n += 1
                 if "passed" not in server.cmd(f"execute if block {ax + x} {ay + y} {z} {want}"):
@@ -203,9 +227,15 @@ def main():
         man = [e for e in A.manifest(0) if e["module"] in built]
         for e in man:
             place(e, ax)
+        # final owner of every cell in manifest order (the order `place template` ran in above): the ground modules
+        # MQ-* (order 1) are overwritten inside every later footprint by design; without them nothing overlaps
+        bare = {m: {p: (v[0], {}) for p, v in templates.get(m, {}).items()} for m in {e["module"] for e in A.manifest(0)}}
+        _, final_owner = A.assemble(0, bare)
         for e in man:
-            n, fails = compare(e, ax)
-            rows[e["placement"]] = {"cells": n, "failure_count": len(fails), "failures": fails[:10]}
+            n, fails = compare(e, ax, owner=final_owner)
+            total = sum(1 for v in templates[e["module"]].values() if v[0] != "minecraft:air")
+            rows[e["placement"]] = {"cells": n, "overwritten_by_later_placements": total - n,
+                                    "failure_count": len(fails), "failures": fails[:10]}
         live["B_integrated_q0"] = rows
         # live C: test terrain falling away to the north, footing fill, hollow-column check
         ax = 800

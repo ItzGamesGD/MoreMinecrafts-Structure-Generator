@@ -1,0 +1,556 @@
+{
+  "minecraft": "26.3",
+  "client": "unmodified vanilla 26.3 client.jar (sha1 e877b6a07acd633fb3bb475002175cec036e7b87)",
+  "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c",
+  "nbt_sha256": {
+    "st03_tower": "990bdd2336b603f8285a191a220a9d5a09aba3d7f881bcd16a04e6cda825a50c",
+    "st03_gatehouse": "da9750f241e59167e7d36e27275d4ad2a856fc37c2795c3d3d0226f6e2692a5a"
+  },
+  "renderer": "Mesa lavapipe (Vulkan, llvmpipe) under Xvfb 1280x720, in-game F2 screenshots, HUD hidden (F1)",
+  "world": "flat (bedrock/2 dirt/grass), plains, noon, clear; slope sites are dirt/grass mounds (test terrain, not natural worldgen); raised camera positions stand on an invisible barrier block set only into air cells after placement",
+  "placed": [
+    {
+      "what": "isolated MT",
+      "module": "MT",
+      "origin": [
+        0,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "isolated MG",
+      "module": "MG",
+      "origin": [
+        40,
+        -61,
+        200
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "rotation row MT none",
+      "module": "MT",
+      "origin": [
+        0,
+        -61,
+        260
+      ],
+      "rotation": "none",
+      "footprint": [
+        0,
+        260,
+        12,
+        272
+      ]
+    },
+    {
+      "what": "rotation row MT clockwise_90",
+      "module": "MT",
+      "origin": [
+        42,
+        -61,
+        260
+      ],
+      "rotation": "clockwise_90",
+      "footprint": [
+        30,
+        260,
+        42,
+        272
+      ]
+    },
+    {
+      "what": "rotation row MT 180",
+      "module": "MT",
+      "origin": [
+        72,
+        -61,
+        272
+      ],
+      "rotation": "180",
+      "footprint": [
+        60,
+        260,
+        72,
+        272
+      ]
+    },
+    {
+      "what": "rotation row MT counterclockwise_90",
+      "module": "MT",
+      "origin": [
+        90,
+        -61,
+        272
+      ],
+      "rotation": "counterclockwise_90",
+      "footprint": [
+        90,
+        260,
+        102,
+        272
+      ]
+    },
+    {
+      "what": "rotation row MG none",
+      "module": "MG",
+      "origin": [
+        0,
+        -61,
+        300
+      ],
+      "rotation": "none",
+      "footprint": [
+        0,
+        300,
+        23,
+        311
+      ]
+    },
+    {
+      "what": "rotation row MG clockwise_90",
+      "module": "MG",
+      "origin": [
+        51,
+        -61,
+        300
+      ],
+      "rotation": "clockwise_90",
+      "footprint": [
+        40,
+        300,
+        51,
+        323
+      ]
+    },
+    {
+      "what": "rotation row MG 180",
+      "module": "MG",
+      "origin": [
+        103,
+        -61,
+        311
+      ],
+      "rotation": "180",
+      "footprint": [
+        80,
+        300,
+        103,
+        311
+      ]
+    },
+    {
+      "what": "rotation row MG counterclockwise_90",
+      "module": "MG",
+      "origin": [
+        120,
+        -61,
+        323
+      ],
+      "rotation": "counterclockwise_90",
+      "footprint": [
+        120,
+        300,
+        131,
+        323
+      ]
+    },
+    {
+      "what": "T1_falls_to_outer_corner",
+      "module": "MT",
+      "origin": [
+        0,
+        -55,
+        460
+      ],
+      "rotation": "none",
+      "terrain": "checks.py site + capture apron/ramp, strict placement at grade, Q89 footing fill"
+    },
+    {
+      "what": "T2_undulating",
+      "module": "MT",
+      "origin": [
+        40,
+        -55,
+        460
+      ],
+      "rotation": "none",
+      "terrain": "checks.py site + capture apron/ramp, strict placement at grade, Q89 footing fill"
+    },
+    {
+      "what": "G1_falls_outward",
+      "module": "MG",
+      "origin": [
+        80,
+        -55,
+        460
+      ],
+      "rotation": "none",
+      "terrain": "checks.py site + capture apron/ramp, strict placement at grade, Q89 footing fill"
+    },
+    {
+      "what": "G2_cross_slope",
+      "module": "MG",
+      "origin": [
+        130,
+        -55,
+        460
+      ],
+      "rotation": "none",
+      "terrain": "checks.py site + capture apron/ramp, strict placement at grade, Q89 footing fill"
+    },
+    {
+      "what": "T-NE",
+      "module": "MT",
+      "origin": [
+        111,
+        -61,
+        0
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "what": "T-NW",
+      "module": "MT",
+      "origin": [
+        0,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "T-SE",
+      "module": "MT",
+      "origin": [
+        111,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "what": "T-SW",
+      "module": "MT",
+      "origin": [
+        0,
+        -61,
+        111
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "what": "W-E",
+      "module": "MW86",
+      "origin": [
+        111,
+        -61,
+        13
+      ],
+      "rotation": "clockwise_90"
+    },
+    {
+      "what": "W-N",
+      "module": "MW86",
+      "origin": [
+        13,
+        -61,
+        0
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "W-SE",
+      "module": "MW31",
+      "origin": [
+        98,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "what": "W-SW",
+      "module": "MW31",
+      "origin": [
+        43,
+        -61,
+        111
+      ],
+      "rotation": "180"
+    },
+    {
+      "what": "W-W",
+      "module": "MW86",
+      "origin": [
+        0,
+        -61,
+        98
+      ],
+      "rotation": "counterclockwise_90"
+    },
+    {
+      "what": "GATE",
+      "module": "MG",
+      "origin": [
+        44,
+        -61,
+        100
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F01",
+      "module": "M-manor",
+      "origin": [
+        48,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F02",
+      "module": "M-barracks_a",
+      "origin": [
+        24,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F03",
+      "module": "M-barracks_b",
+      "origin": [
+        75,
+        -61,
+        24
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F04",
+      "module": "M-barracks_c",
+      "origin": [
+        75,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F05",
+      "module": "M-armory",
+      "origin": [
+        12,
+        -61,
+        39
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F06",
+      "module": "M-yard",
+      "origin": [
+        12,
+        -61,
+        52
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F07",
+      "module": "M-warehouse_a",
+      "origin": [
+        10,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F08",
+      "module": "M-warehouse_b",
+      "origin": [
+        75,
+        -61,
+        53
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F09",
+      "module": "M-prison",
+      "origin": [
+        92,
+        -61,
+        62
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F10",
+      "module": "M-stable",
+      "origin": [
+        77,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F11",
+      "module": "M-house_a",
+      "origin": [
+        14,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F12",
+      "module": "M-house_b",
+      "origin": [
+        26,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F13",
+      "module": "M-house_c",
+      "origin": [
+        14,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F14",
+      "module": "M-house_a",
+      "origin": [
+        89,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F15",
+      "module": "M-house_b",
+      "origin": [
+        76,
+        -61,
+        11
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F16",
+      "module": "M-house_c",
+      "origin": [
+        92,
+        -61,
+        22
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F17",
+      "module": "M-house_d",
+      "origin": [
+        92,
+        -61,
+        40
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F18",
+      "module": "M-kitchen",
+      "origin": [
+        92,
+        -61,
+        50
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F19",
+      "module": "M-smithy",
+      "origin": [
+        28,
+        -61,
+        79
+      ],
+      "rotation": "none"
+    },
+    {
+      "what": "F20",
+      "module": "M-cart_shed",
+      "origin": [
+        44,
+        -61,
+        82
+      ],
+      "rotation": "none"
+    }
+  ],
+  "shots": [
+    {
+      "view": "pl_05_T-NW_inside_door",
+      "tp": [
+        25,
+        -57,
+        7.5,
+        85.6,
+        -0.0
+      ],
+      "file": "pl_05_T-NW_inside_door.png",
+      "sha256": "946bb31df6b31c44555f095e7a40af8fc10c0500e883e1fdf1701f7b77618056"
+    },
+    {
+      "view": "pl_06_T-NE_inside_door",
+      "tp": [
+        103.5,
+        -57,
+        25,
+        -180.0,
+        -0.0
+      ],
+      "file": "pl_06_T-NE_inside_door.png",
+      "sha256": "1c092b3463053f0d17ebd632a8a4f8cec9eec05cb3b8868f2620330821b7d42a"
+    },
+    {
+      "view": "pl_07_T-SE_inside_door",
+      "tp": [
+        86,
+        -57,
+        103.5,
+        -90.0,
+        -0.0
+      ],
+      "file": "pl_07_T-SE_inside_door.png",
+      "sha256": "01aa5ec82a1f7360db5bd2d29775d0bb6102a621ee35eb62398e32d7a898be03"
+    },
+    {
+      "view": "pl_08_T-SW_inside_door",
+      "tp": [
+        8.5,
+        -57,
+        94,
+        -0.0,
+        -0.0
+      ],
+      "file": "pl_08_T-SW_inside_door.png",
+      "sha256": "b0554217d10c63f2cb89a555f66a834b9812f651beb004ee628bf162da3c10d8"
+    }
+  ],
+  "not_built": "ground / road modules MQ-NW/NE/SW/SE (road masterplan not in the repository; owner decision)"
+}

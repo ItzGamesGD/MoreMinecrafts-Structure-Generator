@@ -1,0 +1,89 @@
+{
+  "air": "include",
+  "blocks": 20808,
+  "cells": 20808,
+  "config": "exports/structures/ruined_watchtower.toml",
+  "connectivity": {
+    "boundary_unresolved": [],
+    "computed_blocks": 2,
+    "corrected_blocks": 0,
+    "corrected_properties": {},
+    "explicit_differs_from_vanilla": [],
+    "reference": "tools/structure_export/reference/connectivity-26.3.json",
+    "unresolved": []
+  },
+  "converter_version": 2,
+  "defaulted_properties": {
+    "minecraft:grass_block": [
+      "snowy"
+    ],
+    "minecraft:spruce_fence": [
+      "east",
+      "north",
+      "south",
+      "waterlogged",
+      "west"
+    ]
+  },
+  "output": "/tmp/tmpy2tynn_0/pack/data/moreminecrafts/structure/seam01/st03_ground_ne.nbt",
+  "output_sha256": "40e20d59af27b4c6bf09ca44510a74f638828a615d3daaa402b3abb4a1b8b107",
+  "palette": 26,
+  "size": [
+    51,
+    8,
+    51
+  ],
+  "source": {
+    "data_version": 3953,
+    "metadata_keys_ignored": [],
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "palette_entries": 26,
+    "path": "/tmp/tmpy2tynn_0/st03_ground_ne.schem",
+    "sha256": "c8a32546a87e7da58df3c2eccc874f0e864ae8244be11e2501636c73d66f2e1f",
+    "size": [
+      51,
+      8,
+      51
+    ],
+    "unused_palette_entries": []
+  },
+  "state_counts": {
+    "minecraft:air": 17996,
+    "minecraft:andesite": 17,
+    "minecraft:barrel[facing=up,open=false]": 3,
+    "minecraft:coarse_dirt": 1022,
+    "minecraft:cobblestone": 43,
+    "minecraft:cracked_stone_bricks": 16,
+    "minecraft:dirt": 30,
+    "minecraft:dirt_path": 123,
+    "minecraft:fern": 39,
+    "minecraft:grass_block[snowy=false]": 1056,
+    "minecraft:gravel": 146,
+    "minecraft:hay_block[axis=x]": 1,
+    "minecraft:hay_block[axis=y]": 2,
+    "minecraft:hay_block[axis=z]": 1,
+    "minecraft:moss_block": 3,
+    "minecraft:mossy_cobblestone": 3,
+    "minecraft:mossy_stone_bricks": 7,
+    "minecraft:packed_mud": 6,
+    "minecraft:polished_andesite": 34,
+    "minecraft:rooted_dirt": 37,
+    "minecraft:short_grass": 122,
+    "minecraft:spruce_fence[east=false,north=false,south=false,waterlogged=false,west=false]": 2,
+    "minecraft:spruce_log[axis=z]": 4,
+    "minecraft:stone": 3,
+    "minecraft:stone_bricks": 90,
+    "minecraft:torch": 2
+  },
+  "structure_id": "moreminecrafts:seam01/st03_ground_ne",
+  "target": {
+    "data_version": 5023,
+    "minecraft_version": "26.3",
+    "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c"
+  },
+  "warnings": []
+}

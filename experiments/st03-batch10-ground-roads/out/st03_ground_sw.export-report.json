@@ -1,0 +1,98 @@
+{
+  "air": "include",
+  "blocks": 20808,
+  "cells": 20808,
+  "config": "exports/structures/ruined_watchtower.toml",
+  "connectivity": {
+    "boundary_unresolved": [],
+    "computed_blocks": 6,
+    "corrected_blocks": 6,
+    "corrected_properties": {
+      "east": 2,
+      "north": 2,
+      "south": 2,
+      "west": 2
+    },
+    "explicit_differs_from_vanilla": [],
+    "reference": "tools/structure_export/reference/connectivity-26.3.json",
+    "unresolved": []
+  },
+  "converter_version": 2,
+  "defaulted_properties": {
+    "minecraft:grass_block": [
+      "snowy"
+    ],
+    "minecraft:spruce_fence": [
+      "east",
+      "north",
+      "south",
+      "waterlogged",
+      "west"
+    ]
+  },
+  "output": "/tmp/tmpur396l_k/pack/data/moreminecrafts/structure/seam01/st03_ground_sw.nbt",
+  "output_sha256": "70185e7eed178e965cd097f6e90b1c7732c7a92f2cd5ebaff86de9b9d831c6c7",
+  "palette": 30,
+  "size": [
+    51,
+    8,
+    51
+  ],
+  "source": {
+    "data_version": 3953,
+    "metadata_keys_ignored": [],
+    "offset": [
+      0,
+      0,
+      0
+    ],
+    "palette_entries": 25,
+    "path": "/tmp/tmpur396l_k/st03_ground_sw.schem",
+    "sha256": "1c9c21a86b30d2da43aa3094d1026093cd8db3459b100f9b7dfd5016b97c120e",
+    "size": [
+      51,
+      8,
+      51
+    ],
+    "unused_palette_entries": []
+  },
+  "state_counts": {
+    "minecraft:air": 17961,
+    "minecraft:andesite": 39,
+    "minecraft:barrel[facing=up,open=false]": 7,
+    "minecraft:coarse_dirt": 1054,
+    "minecraft:cobblestone": 73,
+    "minecraft:cracked_stone_bricks": 2,
+    "minecraft:dirt": 46,
+    "minecraft:dirt_path": 201,
+    "minecraft:fern": 43,
+    "minecraft:grass_block[snowy=false]": 993,
+    "minecraft:gravel": 136,
+    "minecraft:hay_block[axis=x]": 1,
+    "minecraft:hay_block[axis=y]": 1,
+    "minecraft:moss_block": 7,
+    "minecraft:mossy_cobblestone": 15,
+    "minecraft:mossy_stone_bricks": 2,
+    "minecraft:packed_mud": 1,
+    "minecraft:polished_andesite": 3,
+    "minecraft:rooted_dirt": 52,
+    "minecraft:short_grass": 123,
+    "minecraft:spruce_fence[east=false,north=false,south=false,waterlogged=false,west=true]": 1,
+    "minecraft:spruce_fence[east=false,north=false,south=true,waterlogged=false,west=false]": 1,
+    "minecraft:spruce_fence[east=false,north=true,south=false,waterlogged=false,west=false]": 1,
+    "minecraft:spruce_fence[east=false,north=true,south=true,waterlogged=false,west=false]": 1,
+    "minecraft:spruce_fence[east=true,north=false,south=false,waterlogged=false,west=false]": 1,
+    "minecraft:spruce_fence[east=true,north=false,south=false,waterlogged=false,west=true]": 1,
+    "minecraft:stone": 23,
+    "minecraft:stone_bricks": 16,
+    "minecraft:stripped_spruce_log[axis=y]": 1,
+    "minecraft:torch": 2
+  },
+  "structure_id": "moreminecrafts:seam01/st03_ground_sw",
+  "target": {
+    "data_version": 5023,
+    "minecraft_version": "26.3",
+    "server_jar_sha1": "33680f5f2ac32864d6d7cf5e56a705fdb3e05f4c"
+  },
+  "warnings": []
+}
